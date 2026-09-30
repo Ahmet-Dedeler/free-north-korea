@@ -1,5 +1,7 @@
 # North Korea missile tests: a clearer explorer
 
+**Live: https://free-north-korea.vercel.app**
+
 A redesign of [nagix/nk-missile-tests](https://github.com/nagix/nk-missile-tests). Same data (the CNS North Korea
 Missile Test Database, 357 tests from 1984 to 2026), with a UI you can actually read:
 

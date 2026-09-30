@@ -7,7 +7,7 @@ Vite + React + TypeScript + MapLibre GL v6. It's a static site, with no backend.
 - `src/meta.ts`: missile class and outcome colours and labels. Change colours here only.
 - `src/MapView.tsx`: imperative MapLibre map. Selection works through feature-state `dim` plus `*-selected` filter layers.
 - `src/Timeline.tsx`: year histogram and range brush. `src/Detail.tsx`: detail card and the to-scale profile SVG.
-- MapLibre v6 has no default export (`import * as maplibregl`), and it must stay in `optimizeDeps.exclude`, or its
+- MapLibre v6 has no default export (`import * as maplibregl`). Its worker is imported with `?worker&url` and passed to `setWorkerUrl` (without that, prod builds 404 on the worker), and maplibre-gl must stay in `optimizeDeps.exclude`, or its
   module worker fails to load under Vite.
 - Basemap: OpenFreeMap Positron (free, no key). Labels are switched to `name:en` on `style.load`.
 - `upstream/` is a reference clone and is gitignored. Don't edit it.
