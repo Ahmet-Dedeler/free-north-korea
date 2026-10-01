@@ -1,3 +1,5 @@
+'use client';
+
 import type { Test } from './data';
 import { OUTCOME_COLOR, OUTCOME_LABEL, TYPES, TYPE_COLOR, formatDate, km } from './meta';
 

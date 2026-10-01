@@ -162,7 +162,7 @@ async function getJSON<T>(url: string): Promise<T> {
 }
 
 export async function loadDataset(): Promise<Dataset> {
-  const base = import.meta.env.BASE_URL + 'data/';
+  const base = '/data/';
   const [testsRaw, missilesRaw, facilitiesRaw] = await Promise.all([
     getJSON<{ timeBins: { year: number; data: RawTest[] }[] }>(base + 'test.en.json'),
     getJSON<Record<string, RawMissile>>(base + 'missile.en.json'),

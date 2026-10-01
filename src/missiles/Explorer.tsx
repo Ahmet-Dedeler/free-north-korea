@@ -1,10 +1,15 @@
+'use client';
+
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import { type Dataset, type MissileType, type Outcome, type Test, loadDataset } from './data';
 import { type ColorBy, OUTCOMES, OUTCOME_COLOR, TYPES, TYPE_COLOR, TYPE_LABEL, formatDate } from './meta';
-import MapView from './MapView';
+import dynamic from 'next/dynamic';
 import Timeline from './Timeline';
 import Detail from './Detail';
-import { useTheme } from './theme';
+
+// MapLibre touches window at import time, so the map only ever loads in the browser.
+const MapView = dynamic(() => import('./MapView'), { ssr: false, loading: () => <div className="map" /> });
+import { useTheme } from '../theme';
 
 type Filters = {
   range: [number, number];
@@ -39,7 +44,7 @@ function matches(t: Test, q: string) {
     .every((w) => hay.includes(w));
 }
 
-export default function App() {
+export default function MissileExplorer() {
   const [data, setData] = useState<Dataset | null>(null);
   const [error, setError] = useState<string | null>(null);
 
@@ -66,7 +71,7 @@ function Explorer({ data }: { data: Dataset }) {
   const [colorBy, setColorBy] = useState<ColorBy>('type');
   const [selectedId, setSelectedId] = useState<string | null>(readHash);
   const [showAbout, setShowAbout] = useState(false);
-  const { pref, theme, cycle } = useTheme();
+  const { theme } = useTheme();
 
   // Everything but the year filter. The timeline uses this so bars outside the range stay visible.
   const nonYear = useMemo(
@@ -153,12 +158,7 @@ function Explorer({ data }: { data: Dataset }) {
     <div className="app">
       <section className="sidebar">
         <header className="brand">
-          <div className="brand-top">
-            <h1>North Korea missile tests</h1>
-            <button className="theme-btn" onClick={cycle} title="Switch theme: auto → light → dark">
-              {pref === 'auto' ? '◐ Auto' : pref === 'light' ? '☀ Light' : '☾ Dark'}
-            </button>
-          </div>
+          <h1>North Korea missile tests</h1>
           <p>
             Every known ballistic missile and space launch test, {data.minYear}–{data.maxYear}.{' '}
             <button className="link" onClick={() => setShowAbout(true)}>

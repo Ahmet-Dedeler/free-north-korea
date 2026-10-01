@@ -1,3 +1,5 @@
+'use client';
+
 import { useMemo, useRef, useState } from 'react';
 import type { Test } from './data';
 import { type ColorBy, OUTCOMES, TYPES } from './meta';

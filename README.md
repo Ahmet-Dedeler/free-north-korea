@@ -1,40 +1,44 @@
-# North Korea missile tests: a clearer explorer
+# Free North Korea
 
 **Live: https://free-north-korea.vercel.app**
 
-A redesign of [nagix/nk-missile-tests](https://github.com/nagix/nk-missile-tests). Same data (the CNS North Korea
-Missile Test Database, 357 tests from 1984 to 2026), with a UI you can actually read:
+An open-source hub for understanding North Korea and helping the 26 million people living under its regime. Nothing
+like this existed: the maps, the military data, the archives and the organizations were all in separate places, and
+search results for "how can North Korea be freed" were close to empty.
 
-- **Light map** (MapLibre + OpenFreeMap Positron, English labels). You can zoom out to a globe.
-- **Flight paths coloured by missile class** (SRBM → ICBM, space launches, unidentified). Failed tests are dashed.
-  You can switch the colours to success/failure/unknown.
-- **Sidebar**: headline stats, search, type/outcome filter chips with counts, and every test listed by year.
-- **Timeline histogram**: click a year or drag across a range. The bars stay visible when they're outside the range,
-  so you keep the context.
-- **Detail card**: date and time, launch site, splashdown area, range, apogee, a to-scale side view of the flight
-  (so lofted ICBM shots read as lofted), the full description, and ←/→ to step through tests.
-- **Shareable links**: `#test=2022-03-24-hwasong-15`.
-- Works on phones: map on top, list below, details in a bottom sheet.
+- **Atlas** (`/atlas`): prison camps, nuclear and missile sites, border crossings and the escape route, each with a source.
+- **Military** (`/military`): nukes, missiles, troops, artillery, crypto theft and the war in Ukraine, 2026 numbers.
+- **Missile tests** (`/missiles`): every test since 1984 on an interactive map (a redesign of
+  [nagix/nk-missile-tests](https://github.com/nagix/nk-missile-tests), CNS database).
+- **Organizations** (`/organizations`): who is doing rescue, information, documentation and resettlement work, with a
+  status for each and how to help.
+- **Library** (`/library`): escapee memoirs, documentaries, UN reports, the regime's own sources, open data.
+- **Learn** (`/learn`): sourced explainers on the questions people search for.
+- **Take action** (`/act`): things to do, sorted by how much time you have.
 
 ## Run
 
 ```bash
 npm install
-npm run dev      # http://localhost:5173
-npm run build    # static site in dist/ (relative base, works on GitHub Pages)
+npm run dev      # http://localhost:3000
+npm run build    # static pages + sitemap.xml
+npm run lint     # oxlint + tsc
 ```
+
+## Contributing
+
+Facts and data live in `src/content/`, so most fixes are a one-line edit: a wrong number, a new organization, a
+coordinate, an article. Every fact should have a source. See `AGENTS.md` for how the code is laid out.
+
+Found something wrong? [Open an issue](https://github.com/Ahmet-Dedeler/free-north-korea/issues/new).
 
 ## Data
 
-`public/data/*.en.json` are copied as-is from upstream. `src/data.ts` normalises them: numbers stored as strings,
-the `unknown`/`na` sentinels, estimated impact points from bearing + distance, and glide/MaRV legs. To update, copy
-fresh `data/*.en.json` from upstream.
-
-Flight paths are estimates (launch site + reported bearing + reported distance), not tracks. Tests with no public
-distance have no path.
-
-`upstream/` is a local clone of the original repo for reference. It's gitignored.
+- Missile tests: `public/data/*.en.json`, copied as-is from upstream nk-missile-tests (CNS North Korea Missile Test
+  Database). Flight paths are estimates from launch site, bearing and distance.
+- Atlas coordinates: Wikipedia's geocoded articles unless marked approximate.
+- Basemap: [OpenFreeMap](https://openfreemap.org) / OpenStreetMap contributors.
 
 ## License
 
-Apache 2.0, like upstream. Data © James Martin Center for Nonproliferation Studies / NTI.
+Apache 2.0. Missile data © James Martin Center for Nonproliferation Studies / NTI.

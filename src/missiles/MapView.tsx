@@ -1,13 +1,13 @@
+'use client';
+
 import { useEffect, useRef } from 'react';
 import * as maplibregl from 'maplibre-gl';
 import type { GeoJSONSource, LngLatBoundsLike } from 'maplibre-gl';
 import type { Feature, FeatureCollection } from 'geojson';
 import 'maplibre-gl/dist/maplibre-gl.css';
-// MapLibre v6 loads its worker from a URL computed at runtime, which Vite's production build can't see.
-// Import it explicitly so Vite bundles it (with its shared chunk) and hand MapLibre the resulting URL.
-import workerUrl from 'maplibre-gl/dist/maplibre-gl-worker.mjs?worker&url';
 import type { Facility, Test } from './data';
-import type { Theme } from './theme';
+import type { Theme } from '../theme';
+import { MAPLIBRE_WORKER_URL } from '../atlas/maplibre';
 import { type ColorBy, OUTCOME_COLOR, TYPE_COLOR, TYPE_LABEL, formatDate } from './meta';
 
 interface Props {
@@ -30,7 +30,7 @@ const PALETTE: Record<Theme, { outline: string; site: string; label: string; hal
   light: { outline: '#ffffff', site: '#0f172a', label: '#334155', halo: '#ffffff', callout: '#0f172a' },
   dark: { outline: '#0b1120', site: '#e2e8f0', label: '#cbd5e1', halo: '#0b1120', callout: '#f8fafc' },
 };
-maplibregl.setWorkerUrl(workerUrl);
+maplibregl.setWorkerUrl(MAPLIBRE_WORKER_URL);
 
 const HOME: LngLatBoundsLike = [
   [121, 30],
