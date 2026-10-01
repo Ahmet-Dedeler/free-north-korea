@@ -55,9 +55,9 @@ Run order after a scrape: `node scripts/build-layers.ts && node scripts/build-en
   `scripts/copy-maplibre-worker.mjs` (runs on predev/prebuild) and set with `setWorkerUrl`.
 - Basemap: OpenFreeMap `positron` / `dark` (free, no key). Labels switched to `name:en` on `style.load`; our layers are
   re-added on every `style.load` because `setStyle` drops them.
-- Theme: `src/theme.ts` (context provider). The inline script in `src/app/layout.tsx` sets `<html data-theme>` before
-  paint; React reads the stored preference after hydration so server and client markup match. CSS colours are tokens in
-  `globals.css` with dark overrides; don't hardcode hex values in components.
+- Theme: follows device preference (`prefers-color-scheme`). `src/theme.ts` (context provider). The inline script in
+  `src/app/layout.tsx` sets `<html data-theme>` before paint so server and client match and avoid flashes. CSS colours are
+  tokens in `globals.css` with dark overrides; don't hardcode hex values in components.
 - Internal links use `next/link`; external links use `<Ext>` (new tab, noopener).
 - `upstream/` is a reference clone and is gitignored. Don't edit it.
 - Headless screenshots: the desktop app's browser pane can't capture while hidden, so use playwright-core with

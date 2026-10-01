@@ -3,7 +3,6 @@
 import Link from 'next/link';
 import type { ReactNode } from 'react';
 import { usePathname } from 'next/navigation';
-import { useTheme } from '../theme';
 import { REPO_URL, REVIEWED } from '../site/config';
 import { Ext } from './Ext';
 
@@ -27,7 +26,6 @@ const APP_PAGES = ['/map', '/missiles'];
 export default function SiteChrome({ children }: { children: ReactNode }) {
   const path = usePathname() ?? '/';
   const app = APP_PAGES.includes(path);
-  const { pref, cycle } = useTheme();
   const active = (href: string) => path === href || path.startsWith(href + '/');
   return (
     <div className={app ? 'shell shell-app' : 'shell'}>
@@ -47,10 +45,6 @@ export default function SiteChrome({ children }: { children: ReactNode }) {
           ))}
         </nav>
         <div className="topbar-end">
-          <button className="theme-btn" onClick={cycle} title="Switch theme: auto → light → dark" suppressHydrationWarning>
-            {pref === 'auto' ? '◐' : pref === 'light' ? '☀' : '☾'}
-            <span className="sr-only">Theme</span>
-          </button>
           <Link href="/act" className={`cta ${active('/act') ? 'on' : ''}`}>
             Take action
           </Link>

@@ -22,8 +22,8 @@ export const viewport: Viewport = {
   ],
 };
 
-// Set the theme before first paint so dark-mode users never see a white flash (mirrors src/theme.ts).
-const THEME_SCRIPT = `try{var t=localStorage.getItem('theme');if(t!=='light'&&t!=='dark')t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';document.documentElement.dataset.theme=t}catch(e){}`;
+// Set the theme before first paint so dark-mode users never see a white flash.
+const THEME_SCRIPT = `try{var d=matchMedia('(prefers-color-scheme: dark)').matches;document.documentElement.dataset.theme=d?'dark':'light';localStorage.removeItem('theme')}catch(e){}`;
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
