@@ -1,0 +1,432 @@
+[
+ {
+  "id": "wpk",
+  "name_en": "Workers' Party of Korea",
+  "name_ko": "조선로동당",
+  "type": "political_party",
+  "parent_org_id": null,
+  "head_person_id": "kim-jong-un",
+  "summary": "The ruling totalitarian political party of North Korea, exercising absolute control over state, military, and society under Kimilsungism-Kimjongilism. Its Central Committee departments formulate strategic national directives, foreign policy, and economic allocations.",
+  "sanctions": [],
+  "source_urls": [
+   "https://nkleadershipwatch.wordpress.com/leadership-biographies/the-central-committee/",
+   "https://nkinfo.unikorea.go.kr"
+  ]
+ },
+ {
+  "id": "wpk-politburo",
+  "name_en": "WPK Political Bureau",
+  "name_ko": "조선로동당 중앙위원회 정치국",
+  "type": "party_organ",
+  "parent_org_id": "wpk",
+  "head_person_id": "kim-jong-un",
+  "summary": "The chief policy-making organ of the Workers' Party of Korea between sessions of the Central Committee. It gathers top party secretaries, regional leaders, and military commanders to ratify state policies and personnel rotations.",
+  "sanctions": [],
+  "source_urls": [
+   "https://en.yna.co.kr/view/AEN20210111000600325",
+   "https://nkinfo.unikorea.go.kr"
+  ]
+ },
+ {
+  "id": "wpk-politburo-presidium",
+  "name_en": "WPK Politburo Presidium",
+  "name_ko": "조선로동당 중앙위원회 정치국 상무위원회",
+  "type": "party_organ",
+  "parent_org_id": "wpk-politburo",
+  "head_person_id": "kim-jong-un",
+  "summary": "The supreme inner executive council of North Korea, comprising the top five officials in the country. It wields day-to-day decision-making power across the party, military, government, and state security apparatus.",
+  "sanctions": [],
+  "source_urls": [
+   "https://www.38north.org/2021/01/north-koreas-8th-party-congress-the-leadership-lineup/",
+   "https://nkinfo.unikorea.go.kr"
+  ]
+ },
+ {
+  "id": "wpk-cmc",
+  "name_en": "Central Military Commission of the WPK",
+  "name_ko": "조선로동당 중앙군사위원회",
+  "type": "party_military_organ",
+  "parent_org_id": "wpk",
+  "head_person_id": "kim-jong-un",
+  "summary": "The supreme military decision-making body of the Party, directing the Korean People's Army and national defense policies. It authorizes strategic missile tests, military force posture changes, and war preparation drills.",
+  "sanctions": [],
+  "source_urls": [
+   "https://en.yna.co.kr/view/AEN20230810001000325",
+   "https://www.reuters.com/world/asia-pacific/north-koreas-kim-replaces-top-general-calls-war-preparations-2023-08-09/"
+  ]
+ },
+ {
+  "id": "wpk-ogd",
+  "name_en": "Organization and Guidance Department",
+  "name_ko": "조선로동당 중앙위원회 조직지도부",
+  "type": "party_department",
+  "parent_org_id": "wpk",
+  "head_person_id": "kim-jae-ryong",
+  "summary": "The most powerful executive bureaucracy in North Korea, controlling cadre appointments, political surveillance, and ideological vetting across party, government, and military cadres. Control of OGD secures decisive administrative dominance over the elite.",
+  "sanctions": [
+   {
+    "list": "OFAC",
+    "id": "20123",
+    "date": null,
+    "source_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=20123"
+   }
+  ],
+  "source_urls": [
+   "https://www.hrnk.org/uploads/pdfs/Collins_Organization_and_Guidance_Department.pdf",
+   "https://nkleadershipwatch.wordpress.com/department/organization-and-guidance-department/"
+  ]
+ },
+ {
+  "id": "wpk-pad",
+  "name_en": "Propaganda and Agitation Department",
+  "name_ko": "조선로동당 중앙위원회 선전선동부",
+  "type": "party_department",
+  "parent_org_id": "wpk",
+  "head_person_id": "ju-chang-il",
+  "summary": "The party department managing state media, public indoctrination, cultural productions, external psychological operations, and the Kim family personality cult. De facto supervised by Kim Yo Jong, it coordinates official statements and regime messaging.",
+  "sanctions": [
+   {
+    "list": "OFAC",
+    "id": "19528",
+    "date": null,
+    "source_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=19528"
+   }
+  ],
+  "source_urls": [
+   "https://nkleadershipwatch.wordpress.com/department/propaganda-and-agitation-department/",
+   "https://nkinfo.unikorea.go.kr"
+  ]
+ },
+ {
+  "id": "wpk-mid",
+  "name_en": "Munitions Industry Department",
+  "name_ko": "조선로동당 중앙위원회 군수공업부",
+  "type": "party_department",
+  "parent_org_id": "wpk",
+  "head_person_id": "jo-chun-ryong",
+  "summary": "The central party apparatus governing the research, engineering, and manufacturing of ballistic missiles, conventional weapons, and nuclear warheads. It oversees defense production facilities and manages arms deliveries to foreign allies including Russia.",
+  "sanctions": [
+   {
+    "list": "UN",
+    "id": "KPe.028",
+    "date": "2016-03-02",
+    "source_url": "https://main.un.org/securitycouncil/en/sanctions/1718/materials"
+   }
+  ],
+  "source_urls": [
+   "https://www.38north.org/2021/03/the-munitions-industry-department-north-koreas-military-industrial-heart/",
+   "https://scsanctions.un.org"
+  ]
+ },
+ {
+  "id": "wpk-office-39",
+  "name_en": "Office 39",
+  "name_ko": "조선로동당 중앙위원회 39호실",
+  "type": "clandestine_finance",
+  "parent_org_id": "wpk",
+  "head_person_id": "han-kwang-sang",
+  "summary": "The clandestine financial network managing overseas businesses, foreign exchange earnings, and luxury acquisitions directly for the Kim family. It commands state trading monopolies, gold exports, mineral smuggling, overseas labor, and illicit revenue schemes.",
+  "sanctions": [
+   {
+    "list": "OFAC",
+    "id": "12209",
+    "date": null,
+    "source_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=12209"
+   },
+   {
+    "list": "UN",
+    "id": "KPe.030",
+    "date": "2016-03-02",
+    "source_url": "https://main.un.org/securitycouncil/en/sanctions/1718/materials"
+   }
+  ],
+  "source_urls": [
+   "https://home.treasury.gov/news/press-releases/tg840",
+   "https://www.bbc.com/news/world-asia-34720970"
+  ]
+ },
+ {
+  "id": "sac",
+  "name_en": "State Affairs Commission",
+  "name_ko": "조선민주주의인민공화국 국무위원회",
+  "type": "state_organ",
+  "parent_org_id": null,
+  "head_person_id": "kim-jong-un",
+  "summary": "The supreme policy leadership body of the state, enshrined in the constitution to direct national defense, state security, and foreign affairs. Chaired by Kim Jong Un as President of State Affairs, it is the primary state-level executive authority.",
+  "sanctions": [
+   {
+    "list": "OFAC",
+    "id": "22283",
+    "date": null,
+    "source_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=22283"
+   }
+  ],
+  "source_urls": [
+   "https://en.yna.co.kr/view/AEN20210930002100325",
+   "https://nkinfo.unikorea.go.kr"
+  ]
+ },
+ {
+  "id": "spa",
+  "name_en": "Supreme People's Assembly",
+  "name_ko": "최고인민회의",
+  "type": "legislature",
+  "parent_org_id": null,
+  "head_person_id": "choe-ryong-hae",
+  "summary": "The unicameral parliament of the DPRK, formally passing legislation, approving state budgets, and ratifying cabinet appointments. Between sessions, its Standing Committee performs constitutional duties and receives foreign credentials.",
+  "sanctions": [],
+  "source_urls": [
+   "https://www.reuters.com/world/asia-pacific/north-korea-names-new-defence-minister-revises-constitution-2024-10-09/",
+   "https://nkinfo.unikorea.go.kr"
+  ]
+ },
+ {
+  "id": "cabinet",
+  "name_en": "Cabinet of North Korea",
+  "name_ko": "조선민주주의인민공화국 내각",
+  "type": "executive_government",
+  "parent_org_id": null,
+  "head_person_id": "pak-thae-song",
+  "summary": "The civilian executive government organ charged with implementing national economic directives, managing state factories, and supervising civil ministries. Premier Pak Thae Song was appointed in December 2024 to oversee state economic production.",
+  "sanctions": [],
+  "source_urls": [
+   "https://en.yna.co.kr/view/AEN20241230000800315",
+   "https://nkinfo.unikorea.go.kr"
+  ]
+ },
+ {
+  "id": "mnd",
+  "name_en": "Ministry of National Defence",
+  "name_ko": "조선민주주의인민공화국 국방성",
+  "type": "ministry",
+  "parent_org_id": "sac",
+  "head_person_id": "no-kwang-chol",
+  "summary": "The administrative defense ministry overseeing KPA logistics, defense infrastructure, international military cooperation, and arms procurement. Re-headed by No Kwang Chol in October 2024, it handles state-level military diplomacy.",
+  "sanctions": [
+   {
+    "list": "UN",
+    "id": "KPe.054",
+    "date": "2017-12-22",
+    "source_url": "https://main.un.org/securitycouncil/en/sanctions/1718/materials"
+   }
+  ],
+  "source_urls": [
+   "https://www.reuters.com/world/asia-pacific/north-korea-names-new-defence-minister-revises-constitution-2024-10-09/",
+   "https://nkleadershipwatch.wordpress.com"
+  ]
+ },
+ {
+  "id": "kpa-gpb",
+  "name_en": "KPA General Political Bureau",
+  "name_ko": "조선인민군 총정치국",
+  "type": "military_political_organ",
+  "parent_org_id": "wpk",
+  "head_person_id": "jong-kyong-thaek",
+  "summary": "The party's political commissariat embedded throughout the armed forces, enforcing ideological orthodoxy, party discipline, and absolute political obedience to Kim Jong Un. Its political officers countersign all military orders down to battalion level.",
+  "sanctions": [],
+  "source_urls": [
+   "https://nkleadershipwatch.wordpress.com/leadership-biographies/kpa-general-political-department/",
+   "https://nkinfo.unikorea.go.kr"
+  ]
+ },
+ {
+  "id": "kpa-gstaff",
+  "name_en": "KPA General Staff Department",
+  "name_ko": "조선인민군 총참모부",
+  "type": "military_command",
+  "parent_org_id": "mnd",
+  "head_person_id": "ri-yong-gil",
+  "summary": "The operational combat command headquarters of the Korean People's Army, planning war operations and directing ground corps, naval flotillas, and air wings. Led by Chief of General Staff Ri Yong Gil, it executes military doctrine and border maneuvers.",
+  "sanctions": [],
+  "source_urls": [
+   "https://en.yna.co.kr/view/AEN20230810001000325",
+   "https://nkinfo.unikorea.go.kr"
+  ]
+ },
+ {
+  "id": "kpa-strategic-force",
+  "name_en": "KPA Strategic Force",
+  "name_ko": "조선인민군 전략군",
+  "type": "military_branch",
+  "parent_org_id": "kpa-gstaff",
+  "head_person_id": null,
+  "summary": "The strategic branch of the Korean People's Army operating nuclear and conventional ballistic missile regiments. Formed in 2012 as an independent branch, it controls intermediate and intercontinental ballistic launch sites.",
+  "sanctions": [],
+  "source_urls": [
+   "https://www.csis.org/analysis/north-koreas-strategic-forces",
+   "https://scsanctions.un.org"
+  ]
+ },
+ {
+  "id": "missile-general-bureau",
+  "name_en": "Missile General Bureau",
+  "name_ko": "미사일총국",
+  "type": "military_procurement",
+  "parent_org_id": "wpk-mid",
+  "head_person_id": "jang-chang-ha",
+  "summary": "The specialized administrative and technical bureau revealed in early 2023 to direct North Korea's advanced ballistic missile programs. Under General Jang Chang Ha, it coordinates design, serial manufacturing, and field trials across missile divisions.",
+  "sanctions": [],
+  "source_urls": [
+   "https://en.yna.co.kr/view/AEN20230207002500325",
+   "https://www.nknews.org/2023/02/north-korea-reveals-new-missile-general-bureau-flag-during-military-meeting/"
+  ]
+ },
+ {
+  "id": "mss",
+  "name_en": "Ministry of State Security",
+  "name_ko": "국가보위성",
+  "type": "security_intelligence",
+  "parent_org_id": "sac",
+  "head_person_id": "ri-chang-dae",
+  "summary": "The principal secret police and counter-intelligence organ of the DPRK, answering directly to Kim Jong Un. It carries out domestic ideological surveillance, hunts defectors and foreign spies, monitors ruling elites, and runs the political prison camps (kwanliso).",
+  "sanctions": [
+   {
+    "list": "OFAC",
+    "id": "20129",
+    "date": null,
+    "source_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=20129"
+   }
+  ],
+  "source_urls": [
+   "https://www.hrnk.org/uploads/pdfs/HRNK_HiddenGulag2_Web_5-18.pdf",
+   "https://nkinfo.unikorea.go.kr"
+  ]
+ },
+ {
+  "id": "moss",
+  "name_en": "Ministry of Social Security",
+  "name_ko": "사회안전성",
+  "type": "police_internal_security",
+  "parent_org_id": "cabinet",
+  "head_person_id": "ri-tae-sop",
+  "summary": "The national civil law enforcement agency responsible for public order, crime investigation, residency registration, and internal travel travel permits. It operates local detention centers and the network of forced-labor re-education camps (kyohwaso).",
+  "sanctions": [],
+  "source_urls": [
+   "https://www.state.gov/reports/2023-country-reports-on-human-rights-practices/north-korea/",
+   "https://nkinfo.unikorea.go.kr"
+  ]
+ },
+ {
+  "id": "rgb",
+  "name_en": "Reconnaissance General Bureau",
+  "name_ko": "정찰총국",
+  "type": "intelligence_clandestine",
+  "parent_org_id": "sac",
+  "head_person_id": "ri-chang-ho",
+  "summary": "North Korea's primary clandestine intelligence agency responsible for foreign espionage, covert sabotage, assassinations, and global cyber warfare. Formed in 2009 by merging party and military spy units, it reports directly to the SAC and Party leadership.",
+  "sanctions": [
+   {
+    "list": "OFAC",
+    "id": "12210",
+    "date": null,
+    "source_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=12210"
+   },
+   {
+    "list": "UN",
+    "id": "KPe.031",
+    "date": "2016-03-02",
+    "source_url": "https://main.un.org/securitycouncil/en/sanctions/1718/materials"
+   }
+  ],
+  "source_urls": [
+   "https://home.treasury.gov/news/press-releases/tg840",
+   "https://scsanctions.un.org"
+  ]
+ },
+ {
+  "id": "bureau-121",
+  "name_en": "Bureau 121",
+  "name_ko": "정찰총국 121국",
+  "type": "cyber_warfare_unit",
+  "parent_org_id": "rgb",
+  "head_person_id": null,
+  "summary": "The offensive cyber warfare department of the Reconnaissance General Bureau, staffing specialized military cyber personnel. It conducts destructive intrusions against foreign government infrastructure, critical services, and defense targets.",
+  "sanctions": [
+   {
+    "list": "OFAC",
+    "id": "12209",
+    "date": null,
+    "source_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=12209"
+   },
+   {
+    "list": "UN",
+    "id": "KPe.030",
+    "date": "2016-03-02",
+    "source_url": "https://main.un.org/securitycouncil/en/sanctions/1718/materials"
+   }
+  ],
+  "source_urls": [
+   "https://www.reuters.com/article/us-sony-cybersecurity-northkorea-idUSKCN0JJ08B20141205",
+   "https://www.cisa.gov/news-events/cybersecurity-advisories/aa20-239a"
+  ]
+ },
+ {
+  "id": "lazarus-group",
+  "name_en": "Lazarus Group / APT38",
+  "name_ko": "라자루스 그룹",
+  "type": "cyber_threat_group",
+  "parent_org_id": "rgb",
+  "head_person_id": null,
+  "summary": "State-sponsored cyber threat cluster executing major cyber-heists, cryptocurrency theft campaigns, and ransomware attacks under the Reconnaissance General Bureau. Sanctioned globally for stealing billions of dollars to fund North Korea's prohibited WMD programs.",
+  "sanctions": [],
+  "source_urls": [
+   "https://home.treasury.gov/news/press-releases/sm774",
+   "https://www.justice.gov/opa/pr/three-north-korean-military-hackers-indicted-wide-ranging-scheme-commit-cyberattacks-and"
+  ]
+ },
+ {
+  "id": "komid",
+  "name_en": "Korea Mining Development Trading Corporation",
+  "name_ko": "조선광업개발무역총회사",
+  "type": "arms_trading_corporation",
+  "parent_org_id": "wpk-mid",
+  "head_person_id": null,
+  "summary": "The premier state arms dealer and proliferation vehicle of the DPRK, marketing ballistic missile technology, conventional weapons, and military hardware internationally. It serves as the primary conduit for military export contracts with Iran and Syria.",
+  "sanctions": [
+   {
+    "list": "OFAC",
+    "id": "9345",
+    "date": null,
+    "source_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=9345"
+   },
+   {
+    "list": "UN",
+    "id": "KPe.001",
+    "date": "2009-04-24",
+    "source_url": "https://main.un.org/securitycouncil/en/sanctions/1718/materials"
+   }
+  ],
+  "source_urls": [
+   "https://home.treasury.gov/news/press-releases/js2616",
+   "https://scsanctions.un.org"
+  ]
+ },
+ {
+  "id": "mfa",
+  "name_en": "Ministry of Foreign Affairs",
+  "name_ko": "조선민주주의인민공화국 외무성",
+  "type": "ministry",
+  "parent_org_id": "cabinet",
+  "head_person_id": "choe-son-hui",
+  "summary": "The ministry responsible for conducting foreign policy, international negotiations, and overseas mission operations. Under Minister Choe Son Hui, it steers bilateral ties with Russia and China while maintaining hostile rhetoric toward the United States and South Korea.",
+  "sanctions": [],
+  "source_urls": [
+   "https://www.reuters.com/world/asia-pacific/north-korea-names-choe-son-hui-first-female-foreign-minister-2022-06-11/",
+   "https://nkinfo.unikorea.go.kr"
+  ]
+ },
+ {
+  "id": "nads",
+  "name_en": "Academy of National Defence Science",
+  "name_ko": "국방과학원",
+  "type": "defense_research_institute",
+  "parent_org_id": "wpk-mid",
+  "head_person_id": "jang-chang-ha",
+  "summary": "The central military research and development body, historically termed the Second Academy of Natural Sciences (SANS). It designs ballistic missiles, rocket propulsion engines, guidance electronics, and nuclear weapons delivery vehicles.",
+  "sanctions": [],
+  "source_urls": [
+   "https://home.treasury.gov/news/press-releases/tg840",
+   "https://scsanctions.un.org"
+  ]
+ }
+]

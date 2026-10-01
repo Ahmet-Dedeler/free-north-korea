@@ -1,0 +1,4100 @@
+[
+ {
+  "id": "nkdb-visual-atlas-locations",
+  "name": "NKDB Visual Atlas: Geolocated Detention & Incident Map Dataset",
+  "publisher": "Database Center for North Korean Human Rights (NKDB)",
+  "url": "https://visualatlas.org/en/density",
+  "track": "camps",
+  "language": "en",
+  "category": "Detention & Human Rights Geography",
+  "description": "Interactive map dataset of 419 distinct detention, security, and human rights incident locations across North Korea and China border regions, with confirmation status and incident density counts.",
+  "format": "json-api",
+  "access": "api",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2025-12-19",
+   "maintenance": "active",
+   "cadence": "Periodic annual/semi-annual releases from NKDB Unified Database",
+   "value": 5,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Ingest all 419 points directly into our /atlas map layer as 'Detention & Human Rights Incidents', categorized by facility type (Kwanliso, Kyohwaso, Jipkyolso, MPS, MSS, China border detention) with confirmation badges.",
+  "usedBy": [
+   "/map"
+  ],
+  "watch": {
+   "type": "content",
+   "url": "https://visualatlas.org/en/density/__data.json"
+  }
+ },
+ {
+  "id": "nkdb-visual-atlas-incidents",
+  "name": "NKDB Visual Atlas: Human Rights Incidents Pool API",
+  "publisher": "Database Center for North Korean Human Rights (NKDB)",
+  "url": "https://visualatlas.org/en/incidents",
+  "track": "camps",
+  "language": "en",
+  "category": "Human Rights Incidents",
+  "description": "Structured database of 3,636 verified human rights violations occurring in the North Korean penal and state security systems, categorized by legal right, decade, perpetrator body, and location taxonomy.",
+  "format": "json-api",
+  "access": "api",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2025-12-19",
+   "maintenance": "active",
+   "cadence": "Continuous database expansion released periodically",
+   "value": 5,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Join incident records to our atlas points via the slug/location foreign key, allowing users clicking a camp or police station to read the actual witness testimonies and legal violations recorded there.",
+  "usedBy": [
+   "/map"
+  ],
+  "watch": {
+   "type": "headers",
+   "url": "https://visualatlas.org/en/incidents"
+  }
+ },
+ {
+  "id": "korea-future-nkpd-facilities",
+  "name": "North Korean Prison Database (NKPD): Penal Facilities Dataset",
+  "publisher": "Korea Future (in partnership with HURIDOCS)",
+  "url": "https://nkpd.io/en/page/bdkqwxwh7ar/penal-facilities",
+  "track": "camps",
+  "language": "en",
+  "category": "Detention & Human Rights Geography",
+  "description": "Comprehensive investigative database of 245 documented North Korean penal facilities, detailing facility types, administering agencies (MPS vs MSS), jurisdictional level, and exact GPS coordinates for 103 facilities.",
+  "format": "json-api",
+  "access": "api",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2024-03",
+   "maintenance": "active",
+   "cadence": "Continuous investigation updates",
+   "value": 5,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Import all 103 geolocated facilities and merge the remaining 142 province-level facilities into our master atlas layer, establishing the most authoritative open database of ordinary detention centers and holding camps.",
+  "usedBy": [
+   "/map"
+  ],
+  "watch": {
+   "type": "content",
+   "url": "https://nkpd.io/api/search?types=[\"5ffd3802a52dd767e173941b\"]&limit=300"
+  }
+ },
+ {
+  "id": "hrnk-prison-camp-kml",
+  "name": "HRNK: North Korea Prison Camp Location Map (Google My Maps KML)",
+  "publisher": "Committee for Human Rights in North Korea (HRNK)",
+  "url": "https://www.nkhiddengulag.org/locations.html",
+  "track": "camps",
+  "language": "en",
+  "category": "Detention & Human Rights Geography",
+  "description": "Geospatial dataset compiled by HRNK identifying 24 key political prison camps (Kwan-li-so) and long-term reeducation camps (Kyo-hwa-so) with coordinates, operational status, and provincial locations.",
+  "format": "kml",
+  "access": "download",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2024-05",
+   "maintenance": "sporadic",
+   "cadence": "Updated when major research reports or satellite reviews are published",
+   "value": 5,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Use as a primary ground truth validation dataset to cross-check our Kwan-li-so and Kyo-hwa-so atlas points.",
+  "usedBy": [
+   "/map"
+  ],
+  "watch": {
+   "type": "content",
+   "url": "https://www.google.com/maps/d/kml?mid=1uo5xseZysdNTIY-I-rTsXUWWYDu5UnGx&forcekml=1"
+  }
+ },
+ {
+  "id": "csis-beyond-parallel-markets",
+  "name": "Beyond Parallel 436 Sanctioned Markets Database",
+  "publisher": "Center for Strategic and International Studies (CSIS)",
+  "url": "https://beyondparallel.csis.org/markets-private-economy-capitalism-north-korea/",
+  "track": "economy",
+  "language": "en",
+  "category": "markets",
+  "description": "Exhaustive geolocated survey of 436 officially sanctioned North Korean markets (jangmadang) with physical footprints, estimated vendor stall counts, and calculated state rent revenues.",
+  "format": "json-api",
+  "access": "api",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2018-08-26",
+   "maintenance": "stale",
+   "cadence": "one-off research release",
+   "value": 5,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Directly ingest the 421 geocoded points into our MapLibre Atlas layer, letting users hover any market to see satellite footprint, stall capacity, and municipal revenue.",
+  "usedBy": [
+   "/map"
+  ],
+  "watch": {
+   "type": "headers",
+   "url": "https://beyondparallel.csis.org/markets-private-economy-capitalism-north-korea/"
+  }
+ },
+ {
+  "id": "un-sc-1718-sanctions-list",
+  "name": "UN Security Council Consolidated Sanctions List (1718 Committee)",
+  "publisher": "United Nations Security Council",
+  "url": "https://www.un.org/securitycouncil/sanctions/1718/materials",
+  "track": "economy",
+  "language": "en",
+  "category": "sanctions",
+  "description": "Official machine-readable XML feed of all individuals and corporate entities designated by the UN Security Council 1718 Sanctions Committee on North Korea for asset freezes and travel bans.",
+  "format": "xml",
+  "access": "download",
+  "has_geo": false,
+  "research": {
+   "last_updated": "2024-03-07",
+   "maintenance": "stale",
+   "cadence": "frozen since Russian veto in April 2024 (no new designations added)",
+   "value": 5,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Ingest directly into our sanctions explorer to show UN-designated entities, their aliases, and their historical connection to illicit procurement networks.",
+  "usedBy": [
+   "/people"
+  ],
+  "watch": {
+   "type": "content",
+   "url": "https://scsanctions.un.org/resources/xml/en/consolidated.xml"
+  }
+ },
+ {
+  "id": "us-ofac-sdn-dprk",
+  "name": "US OFAC Specially Designated Nationals (SDN) DPRK Entries",
+  "publisher": "US Department of the Treasury (OFAC)",
+  "url": "https://ofac.treasury.gov/specially-designated-nationals-and-blocked-persons-list-sdn-human-readable-lists",
+  "track": "economy",
+  "language": "en",
+  "category": "sanctions",
+  "description": "United States unilateral sanctions database containing hundreds of North Korean regime officials, military front companies, banks, cyber threat actors (Lazarus), and designated vessels.",
+  "format": "xml",
+  "access": "download",
+  "has_geo": false,
+  "research": {
+   "last_updated": "2026-09-24",
+   "maintenance": "active",
+   "cadence": "real-time as designations are declared (multiple times monthly)",
+   "value": 5,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Extract all 105 named vessels (with IMO/MMSI numbers) and digital currency wallet addresses to drive our vessel tracking and cyber theft explorer.",
+  "usedBy": [
+   "/people"
+  ],
+  "watch": {
+   "type": "content",
+   "url": "https://www.treasury.gov/ofac/downloads/sdn.xml"
+  }
+ },
+ {
+  "id": "csis-beyond-parallel-missile-bases",
+  "name": "CSIS Beyond Parallel Undeclared Missile Operating Bases",
+  "publisher": "Center for Strategic and International Studies (CSIS)",
+  "url": "https://beyondparallel.csis.org",
+  "track": "military",
+  "language": "en",
+  "category": "Ballistic Missile Infrastructure & Operating Bases",
+  "description": "In-depth satellite imagery investigations detailing 15-20 undeclared ballistic missile operating bases housing North Korea's Strategic Rocket Force TELs and intermediate/ICBM units. Each report details exact decimal coordinates for headquarters, underground facility (UGF) entrances, hardened drive-through checkout facilities, and missile assembly areas.",
+  "format": "html",
+  "access": "scrape",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2025-08",
+   "maintenance": "sporadic",
+   "cadence": "irregular (as new satellite analysis of undeclared bases is declassified)",
+   "value": 5,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Add a dedicated 'Undeclared Missile Bases' layer to /atlas with deep-dive callouts showing each base's primary valley, drive-through checkout shelter, and UGF bunker portals.",
+  "usedBy": [
+   "/map"
+  ],
+  "watch": {
+   "type": "headers",
+   "url": "https://beyondparallel.csis.org"
+  }
+ },
+ {
+  "id": "csis-beyond-parallel-provocations",
+  "name": "CSIS Beyond Parallel North Korea Provocations Database",
+  "publisher": "Center for Strategic and International Studies (CSIS) / Dan Stiles (scraper)",
+  "url": "https://beyondparallel.csis.org/database-north-korean-provocations/",
+  "track": "military",
+  "language": "en",
+  "category": "Provocations, Missile Launches & Incidents",
+  "description": "Comprehensive chronological database tracking North Korean provocative actions from 1958 to present, including missile launches, nuclear tests, DMZ landmine/shooting incidents, drone incursions, cyberattacks, and airspace violations. Automatically scraped and maintained in JSON and CSV formats via GitHub Actions.",
+  "format": "json-api",
+  "access": "download",
+  "has_geo": false,
+  "research": {
+   "last_updated": "2026-09-30",
+   "maintenance": "active",
+   "cadence": "daily automated scrape",
+   "value": 5,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Create an interactive multi-decade Provocations Timeline filterable by leader era (Kim Il Sung, Kim Jong Il, Kim Jong Un), provocation type (missile, cyber, DMZ, nuclear), and severity.",
+  "usedBy": [
+   "/military"
+  ],
+  "watch": {
+   "type": "github",
+   "repo": "stiles/north-korea-provocations"
+  }
+ },
+ {
+  "id": "nagix-nk-missile-tests",
+  "name": "nagix/nk-missile-tests GitHub Repository",
+  "publisher": "Akihiko Kusanagi (nagix)",
+  "url": "https://github.com/nagix/nk-missile-tests",
+  "track": "military",
+  "language": "en",
+  "category": "Ballistic & Tactical Missile Flight Tests",
+  "description": "Open-source interactive 3D globe visualization repository and normalized JSON datasets tracking North Korean missile launches from 1984 to 2026. Merges historical CNS data with real-time preliminary launch announcements from Japan MOD and South Korea JCS.",
+  "format": "json-api",
+  "access": "download",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2026-09-20",
+   "maintenance": "active",
+   "cadence": "within hours of new missile launches",
+   "value": 5,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Our existing /missiles map already utilizes this data! We can automate a daily GitHub fetch action to pull nagix's updates and enrich 'unknown' preliminary entries with 38 North / KCNA missile type confirmations.",
+  "usedBy": [
+   "/missiles"
+  ],
+  "watch": {
+   "type": "github",
+   "repo": "nagix/nk-missile-tests"
+  }
+ },
+ {
+  "id": "hdx-ocha-cod-ab-prk",
+  "name": "Democratic People's Republic of Korea - Subnational Administrative Boundaries (COD-AB)",
+  "publisher": "OCHA Regional Office for Asia and the Pacific (ROAP) / HDX",
+  "url": "https://data.humdata.org/dataset/cod-ab-prk",
+  "track": "population",
+  "language": "en",
+  "category": "Administrative Boundaries",
+  "description": "The standardized United Nations Common Operational Datasets for DPRK administrative levels 0 (country), 1 (11 provinces/special cities), and 2 (179 counties/cities). Features standard P-codes (KP01, KP0101, etc.) for direct linkage to humanitarian and demographic datasets.",
+  "format": "geojson",
+  "access": "download",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2026-08-14",
+   "maintenance": "active",
+   "cadence": "annual",
+   "value": 5,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Use as the primary administrative boundary layer for county-level choropleths (population density, night lights, crop stress, and defector origins) across the entire platform.",
+  "usedBy": [
+   "/map"
+  ],
+  "watch": {
+   "type": "headers",
+   "url": "https://data.humdata.org/dataset/cod-ab-prk"
+  }
+ },
+ {
+  "id": "hdx-ocha-cod-ps-prk",
+  "name": "Democratic People's Republic of Korea - Subnational Population Statistics (COD-PS)",
+  "publisher": "OCHA Regional Office for Asia and the Pacific (ROAP) / HDX",
+  "url": "https://data.humdata.org/dataset/cod-ps-prk",
+  "track": "population",
+  "language": "en",
+  "category": "Demographics",
+  "description": "County and province population statistics from the 2008 DPRK census formatted specifically for database/GIS linkage to COD-AB boundaries. Provides total, male, female, urban, and rural population counts for all 179 Admin 2 units.",
+  "format": "csv",
+  "access": "download",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2025-07-22",
+   "maintenance": "stale",
+   "cadence": "irregular",
+   "value": 5,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Directly join to COD-AB GeoJSON polygons by ADM2_PCODE to render interactive county-level population and urbanization choropleths.",
+  "usedBy": [
+   "/map"
+  ],
+  "watch": {
+   "type": "content",
+   "url": "https://data.humdata.org/dataset/0b26b6ed-8bcb-4c9a-9c69-ba3df48162c4/resource/f21a15b9-2ccb-4917-985f-1ab64c379526/download/prk_pop_adm2_v2.csv"
+  }
+ },
+ {
+  "id": "nasa-gibs-black-marble-wmts",
+  "name": "NASA GIBS VIIRS Black Marble Nighttime Lights WMTS Tile Service",
+  "publisher": "NASA Earth Science Data and Information System (ESDIS) / GIBS",
+  "url": "https://wiki.earthdata.nasa.gov/display/GIBS/GIBS+API+for+Developers",
+  "track": "population",
+  "language": "en",
+  "category": "Night Lights",
+  "description": "Standard OGC WMTS and WMS tile service streaming Suomi-NPP VIIRS Day/Night Band (DNB) Black Marble composite nighttime imagery. Completely free, public, and keyless, enabling real-time raster map overlay of electricity emissions across the Korean Peninsula.",
+  "format": "other",
+  "access": "api",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2026-10-01",
+   "maintenance": "active",
+   "cadence": "daily",
+   "value": 5,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Add a toggleable 'Night Lights / Electricity Proxy' map layer on our site to visually showcase the stark contrast between South Korea/China and North Korea's blackout conditions.",
+  "usedBy": [
+   "/map"
+  ],
+  "watch": {
+   "type": "headers",
+   "url": "https://wiki.earthdata.nasa.gov/display/GIBS/GIBS+API+for+Developers"
+  }
+ },
+ {
+  "id": "nk-missile-tests",
+  "name": "nk-missile-tests (CNS North Korea Missile Test Database, compiled)",
+  "publisher": "Akihiko Kusanagi (nagix)",
+  "url": "https://github.com/nagix/nk-missile-tests",
+  "usedBy": [
+   "/missiles"
+  ],
+  "watch": {
+   "type": "github",
+   "repo": "nagix/nk-missile-tests"
+  },
+  "manual": true
+ },
+ {
+  "id": "cns-missile-db",
+  "name": "CNS North Korea Missile Test Database",
+  "publisher": "James Martin CNS / NTI",
+  "url": "https://www.nti.org/analysis/articles/cns-north-korea-missile-test-database/",
+  "usedBy": [
+   "/missiles"
+  ],
+  "watch": {
+   "type": "headers",
+   "url": "https://www.nti.org/analysis/articles/cns-north-korea-missile-test-database/"
+  },
+  "manual": true
+ },
+ {
+  "id": "osint-tools-north-korea",
+  "name": "OSINT Tools: North Korea",
+  "publisher": "paulpogoda",
+  "url": "https://github.com/paulpogoda/OSINT-Tools-North-Korea",
+  "usedBy": [
+   "/library"
+  ],
+  "watch": {
+   "type": "github",
+   "repo": "paulpogoda/OSINT-Tools-North-Korea"
+  },
+  "manual": true
+ },
+ {
+  "id": "nkpd",
+  "name": "North Korean Prison Database",
+  "publisher": "NKDB",
+  "url": "https://nkpd.org",
+  "usedBy": [
+   "/library"
+  ],
+  "watch": {
+   "type": "headers",
+   "url": "https://nkpd.org"
+  },
+  "manual": true
+ },
+ {
+  "id": "hrnk-satellite-camp-reports",
+  "name": "HRNK: Commercial Satellite Imagery Camp Analysis Report Series",
+  "publisher": "Committee for Human Rights in North Korea (HRNK)",
+  "url": "https://www.hrnk.org/publications/hrnk-publications.php",
+  "track": "camps",
+  "language": "en",
+  "category": "Satellite Imagery & Monitoring",
+  "description": "Monographic series of multi-year high-resolution satellite imagery investigations of individual prison camps, documenting facility boundaries, guard towers, coal mines, crematoria, and security perimeters with exact imagery dates.",
+  "format": "pdf-tables",
+  "access": "download",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2024-06",
+   "maintenance": "active",
+   "cadence": "Periodic facility updates",
+   "value": 5,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Digitize the camp boundary polygons, guard tower locations, and perimeter fences from each report into our MapLibre atlas.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://www.hrnk.org/publications/hrnk-publications.php"
+  }
+ },
+ {
+  "id": "curtis-melvin-nk-uncovered",
+  "name": "Curtis Melvin / 38 North: North Korea Uncovered (Google Earth KMZ)",
+  "publisher": "Curtis Melvin (North Korean Economy Watch / US-Korea Institute at SAIS / 38 North)",
+  "url": "http://www.nkeconwatch.com/north-korea-uncovered-google-earth/",
+  "track": "camps",
+  "language": "en",
+  "category": "Geospatial OSINT Catalog",
+  "description": "The foundational crowdsourced Google Earth mapping project for North Korea, containing thousands of annotated placemarks including extensive coverage of political prison camp boundaries, guard posts, and mine shafts.",
+  "format": "kml",
+  "access": "download",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2012-04",
+   "maintenance": "stale",
+   "cadence": "Concluded (succeeded by 38 North & AccessDPRK)",
+   "value": 5,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Extract the camp boundary polygons and security perimeter vectors (Camp 14, 15, 16, 18, 22) into GeoJSON to serve as vector polygon overlays on our MapLibre atlas.",
+  "usedBy": [],
+  "watch": {
+   "type": "content",
+   "url": "http://www.nkeconwatch.com/north-korea-uncovered-google-earth/"
+  }
+ },
+ {
+  "id": "un-coi-dprk-report",
+  "name": "UN Commission of Inquiry on Human Rights in the DPRK (COI) Final Report & Satellite Annexes",
+  "publisher": "United Nations Human Rights Council",
+  "url": "https://docs.un.org/a/hrc/25/crp.1",
+  "track": "camps",
+  "language": "en",
+  "category": "Intergovernmental Investigation",
+  "description": "Landmark 372-page UN report documenting crimes against humanity in North Korea, with Chapter IV.C detailing the Kwanliso political prison camp system, Kyohwaso ordinary prison system, and UNOSAT commercial satellite imagery comparisons.",
+  "format": "pdf-tables",
+  "access": "download",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2014-02-07",
+   "maintenance": "dead",
+   "cadence": "Concluded mandate",
+   "value": 5,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Extract official UN legal findings and witness testimony quotes to include in our camp details drawer, establishing UN credibility for our atlas markers.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://docs.un.org/a/hrc/25/crp.1"
+  }
+ },
+ {
+  "id": "rok-mou-human-rights-report",
+  "name": "ROK Ministry of Unification: North Korea Human Rights Report (북한인권보고서)",
+  "publisher": "Ministry of Unification, Republic of Korea (북한인권기록센터)",
+  "url": "https://www.unikorea.go.kr/",
+  "track": "camps",
+  "language": "ko",
+  "category": "Government Investigation",
+  "description": "Comprehensive annual official Korean government investigation based on testimonies of over 1,600 defectors, providing detailed accounts of the multi-tier detention hierarchy (Kwanliso, Kyohwaso, Jipkyolso, Rodong-danryeon-dae, Kuryujang).",
+  "format": "pdf-tables",
+  "access": "download",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2026-06",
+   "maintenance": "active",
+   "cadence": "Annual (around March–June)",
+   "value": 5,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Synthesize the official South Korean government taxonomy of detention tiers (Kwanliso vs Kyohwaso vs Jipkyolso vs Danryeondae) into our site structure and filter dropdowns.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://www.unikorea.go.kr/"
+  }
+ },
+ {
+  "id": "kinu-white-paper-human-rights",
+  "name": "KINU: White Paper on Human Rights in North Korea (북한인권백서)",
+  "publisher": "Korea Institute for National Unification (통일연구원)",
+  "url": "https://www.kinu.or.kr/main/kinu/publication/pub_01_01.jsp",
+  "track": "camps",
+  "language": "ko",
+  "category": "Academic & Policy Research",
+  "description": "The benchmark annual scholarly assessment of human rights conditions in North Korea, featuring authoritative tables tracking active vs closed political prison camps (Kwanliso) and numbered correctional facilities (Kyohwaso).",
+  "format": "pdf-tables",
+  "access": "download",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2025-07",
+   "maintenance": "active",
+   "cadence": "Annual",
+   "value": 5,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Adopt KINU's authoritative operational status classification (e.g. confirmation that Camp 14, 16, 18, 25 are active, while Camp 15 and 22 are closed) as the primary status toggle in our atlas.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://www.kinu.or.kr/main/kinu/publication/pub_01_01.jsp"
+  }
+ },
+ {
+  "id": "david-hawk-hidden-gulag",
+  "name": "David Hawk / HRNK: The Hidden Gulag & The Parallel Gulag",
+  "publisher": "Committee for Human Rights in North Korea (HRNK)",
+  "url": "https://www.hrnk.org/publications/hrnk-publications.php",
+  "track": "camps",
+  "language": "en",
+  "category": "Foundational Research Monograph",
+  "description": "The seminal research series (Vol. 1 2003, Vol. 2 2012, and 'The Parallel Gulag' 2017) that first documented the dual architecture of MSS Kwanliso and MPS Kyohwaso, matching survivor sketches with satellite plates.",
+  "format": "pdf-tables",
+  "access": "download",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2017-10",
+   "maintenance": "stale",
+   "cadence": "Project editions",
+   "value": 5,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Incorporate David Hawk's historical camp facility numbering system and early baseline maps as a foundational reference layer.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://www.hrnk.org/publications/hrnk-publications.php"
+  }
+ },
+ {
+  "id": "dailynk-market-indicators",
+  "name": "Daily NK Bi-Weekly Market Price & Currency Indicators",
+  "publisher": "Daily NK",
+  "url": "https://www.dailynk.com/english/category/market-indicators/",
+  "track": "economy",
+  "language": "en",
+  "category": "market-prices",
+  "description": "Bi-weekly field survey of consumer market prices and exchange rates collected by secret reporting partners across three major commercial hubs: Pyongyang, Sinuiju, and Hyesan.",
+  "format": "json-api",
+  "access": "api",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2026-10-01",
+   "maintenance": "active",
+   "cadence": "bi-weekly (twice monthly)",
+   "value": 5,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Build an automated scraper over the WP-JSON API to parse grain (rice, corn), currency (USD/KPW, RMB/KPW), and fuel (gasoline, diesel) prices into continuous interactive charts linked to city map markers.",
+  "usedBy": [],
+  "watch": {
+   "type": "content",
+   "url": "https://www.dailynk.com/english/wp-json/wp/v2/posts?search=market%20prices"
+  }
+ },
+ {
+  "id": "un-comtrade-china-dprk",
+  "name": "UN Comtrade China-DPRK Bilateral Trade API",
+  "publisher": "United Nations Statistics Division (UNSD)",
+  "url": "https://comtradeapi.un.org/",
+  "track": "economy",
+  "language": "en",
+  "category": "trade",
+  "description": "Official bilateral customs merchandise trade data reported by China (Reporter 156) for North Korea (Partner 408) broken down by HS code, trade flow (export/import), net weight, and FOB value.",
+  "format": "json-api",
+  "access": "api",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2025-12",
+   "maintenance": "active",
+   "cadence": "monthly with annual consolidation",
+   "value": 5,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Create an interactive trade flow chart on the site showing top Chinese exports (grain, vegetable oil, machinery) and illicit sanctioned imports (coal, textiles, minerals).",
+  "usedBy": [],
+  "watch": {
+   "type": "content",
+   "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=156&period=2023&partnerCode=408"
+  }
+ },
+ {
+  "id": "kotra-dprk-trade-report",
+  "name": "KOTRA Annual North Korea External Trade Trends Report (북한 대외무역동향)",
+  "publisher": "Korea Trade-Investment Promotion Agency (KOTRA / 대한무역투자진흥공사)",
+  "url": "https://www.kotra.or.kr",
+  "track": "economy",
+  "language": "ko",
+  "category": "trade",
+  "description": "Annual flagship South Korean government intelligence report evaluating North Korea's total foreign trade, trade balance, major trading partners, and top export/import items.",
+  "format": "pdf-tables",
+  "access": "download",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2026-07-28",
+   "maintenance": "active",
+   "cadence": "annual (published each July)",
+   "value": 5,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Digitize KOTRA's annual partner country trade matrix into an interactive world map showing North Korea's shifting trade reliance from Europe/Asia to China and Russia.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://www.kotra.or.kr"
+  }
+ },
+ {
+  "id": "opensanctions-dprk-collection",
+  "name": "OpenSanctions Unified DPRK Sanctions & Maritime Dataset",
+  "publisher": "OpenSanctions Community Interest Company",
+  "url": "https://www.opensanctions.org/entities/dprk/",
+  "track": "economy",
+  "language": "en",
+  "category": "sanctions",
+  "description": "Open-source intelligence engine consolidating and deduplicating North Korean entities across UN, US OFAC, EU, UK, Japan, Swiss SECO, Canadian, and Australian sanctions registries into FollowTheMoney format.",
+  "format": "json-api",
+  "access": "download",
+  "has_geo": false,
+  "research": {
+   "last_updated": "2026-10-01",
+   "maintenance": "active",
+   "cadence": "daily",
+   "value": 5,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Use as our primary backend sanctions ingest pipeline to instantly keep all international designations synchronized with zero manual scraping.",
+  "usedBy": [],
+  "watch": {
+   "type": "content",
+   "url": "https://data.opensanctions.org/datasets/latest/sanctions/targets.nested.json"
+  }
+ },
+ {
+  "id": "rusi-dprk-reports-database",
+  "name": "RUSI / Korea Risk Group DPRK Reports Sanctions-Evasion Database",
+  "publisher": "Royal United Services Institute (RUSI) & Korea Risk Group",
+  "url": "https://dprk-reports.org",
+  "track": "economy",
+  "language": "en",
+  "category": "smuggling",
+  "description": "Exhaustive structured database compiling over a decade of UN Panel of Experts reports into 26,187 entities, 753 vessels with IMO numbers, 2,306 companies, and 58,267 investigated relationships.",
+  "format": "json-api",
+  "access": "api",
+  "has_geo": false,
+  "research": {
+   "last_updated": "2024-04",
+   "maintenance": "stale",
+   "cadence": "frozen at final UN Panel mandate expiry (2024)",
+   "value": 5,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Integrate directly into our Atlas to let users query any North Korean ship, front company, or coal smuggling network and see its entire illicit ownership graph.",
+  "usedBy": [],
+  "watch": {
+   "type": "content",
+   "url": "https://dprk-reports.org/api/search?type=Vessel&limit=50"
+  }
+ },
+ {
+  "id": "msmt-sanctions-monitoring-reports",
+  "name": "Multilateral Sanctions Monitoring Team (MSMT) Reports & API",
+  "publisher": "Multilateral Sanctions Monitoring Team (11 Member States)",
+  "url": "https://msmt.info",
+  "track": "economy",
+  "language": "en",
+  "category": "smuggling",
+  "description": "Official independent monitoring body established in October 2024 by US, South Korea, Japan, UK, France, Germany, and partners to succeed the vetoed UN Panel of Experts.",
+  "format": "json-api",
+  "access": "api",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2026-09-16",
+   "maintenance": "active",
+   "cadence": "quarterly / biannual",
+   "value": 5,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Scrape MSMT reports via its JSON API to track contemporary post-2024 sanctions evasions, Russian ammunition transfers, and overseas worker operations across 17 host nations.",
+  "usedBy": [],
+  "watch": {
+   "type": "content",
+   "url": "https://msmt.info/api/post/list?cateSn=1&page=1&size=8&kw="
+  }
+ },
+ {
+  "id": "tayvano-lazarus-research",
+  "name": "Tayvano / Lazarus & BlueNoroff Cyber Theft Research Repository",
+  "publisher": "Tayvano (MyCrypto / MetaMask / Independent Researcher)",
+  "url": "https://github.com/tayvano/lazarus-bluenoroff-research",
+  "track": "economy",
+  "language": "en",
+  "category": "crypto-theft",
+  "description": "Comprehensive open-source repository chronicling 301 distinct cyber heists, cryptocurrency drainings, social engineering campaigns, and wallet addresses attributed to DPRK state hackers.",
+  "format": "html",
+  "access": "download",
+  "has_geo": false,
+  "research": {
+   "last_updated": "2026-08-28",
+   "maintenance": "active",
+   "cadence": "continuous (as attacks occur)",
+   "value": 5,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Build a live 'Lazarus Cyber Revenue Timeline' quantifying cumulative crypto theft (over $3.5B) directly funding North Korea's ballistic missile programs.",
+  "usedBy": [],
+  "watch": {
+   "type": "github",
+   "repo": "tayvano/lazarus-bluenoroff-research"
+  }
+ },
+ {
+  "id": "geofabrik-north-korea-osm",
+  "name": "Geofabrik Daily North Korea OpenStreetMap Extracts",
+  "publisher": "Geofabrik GmbH & OpenStreetMap Contributors",
+  "url": "https://download.geofabrik.de/asia/north-korea.html",
+  "track": "economy",
+  "language": "other",
+  "category": "infrastructure",
+  "description": "Daily updated vector spatial database of North Korea containing all mapped infrastructure: complete railway lines, railway stations, power plants, substations, ports, mines, and roads.",
+  "format": "geojson",
+  "access": "download",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2026-09-29",
+   "maintenance": "active",
+   "cadence": "daily",
+   "value": 5,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Extract infrastructure layers (railways, power grid, mines, ports) directly into vector tiles for our MapLibre base map.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://download.geofabrik.de/asia/north-korea.html"
+  }
+ },
+ {
+  "id": "irenk-north-korea-mines",
+  "name": "I-RENK North Korean Mines & Mineral Deposits Database (북한지하자원넷)",
+  "publisher": "South-North Korea Exchanges & Cooperation Support Association (SONOSA) & KOMIR",
+  "url": "https://irenk.sonosa.or.kr",
+  "track": "economy",
+  "language": "ko",
+  "category": "mining",
+  "description": "Specialized South Korean government portal providing a structured database of 112 major North Korean mines with Korean names, aliases, administrative county locations, and primary/secondary mineral deposits.",
+  "format": "html",
+  "access": "scrape",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2026-06",
+   "maintenance": "active",
+   "cadence": "quarterly / biannual",
+   "value": 5,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Geocode the 112 mines using their administrative county and satellite imagery to create an interactive natural resources map (Musan iron ore, Komdok zinc, Dancheon magnesite).",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://irenk.sonosa.or.kr"
+  }
+ },
+ {
+  "id": "regional-development-20x10-factories",
+  "name": "Kim Jong Un 'Regional Development 20×10' Factory Construction Tracker (지방발전 20×10)",
+  "publisher": "38 North (Stimson Center) & Daily NK / Rodong Sinmun",
+  "url": "https://www.38north.org/tag/regional-development-20x10/",
+  "track": "economy",
+  "language": "ko",
+  "category": "infrastructure",
+  "description": "Tracking dataset of North Korea's 10-year policy (2024–2033) building modernized light industry, food, and clothing factories across 20 selected counties per year, combining satellite imagery and state media announcements.",
+  "format": "html",
+  "access": "scrape",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2026-08",
+   "maintenance": "active",
+   "cadence": "monthly as construction advances",
+   "value": 5,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Plot all 20 counties from the 2024 batch (Sukchon, Songchon, Kusong, Unsan, Kujang, etc.) and 2025 batch with before/after satellite imagery pins showing state-directed industrial investment.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://www.38north.org/tag/regional-development-20x10/"
+  }
+ },
+ {
+  "id": "unikorea-nkmap-api",
+  "name": "Ministry of Unification NKMap FastApi Gazetteer",
+  "publisher": "통일부 북한정보포털 (Ministry of Unification North Korea Information Portal)",
+  "url": "https://nkinfo.unikorea.go.kr/NKMap/",
+  "track": "korean_japanese",
+  "language": "ko",
+  "category": "geography",
+  "description": "Hidden REST search endpoint powering South Korea's official North Korea GIS portal, containing over 304,000 geocoded North Korean places, facilities, factories, mines, schools, transit stops, and historical landmarks. Coordinates are provided in Korea 2000 Central Belt (EPSG:5186) alongside detailed administrative hierarchy (province, city/county, district/ri) and rich sectoral attributes.",
+  "format": "json-api",
+  "access": "api",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2024-03",
+   "maintenance": "active",
+   "cadence": "irregular",
+   "value": 5,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "The backbone gazetteer for our entire Atlas: convert all 304,598 points from EPSG:5186 to WGS84 and build an instant autocomplete search engine for every facility, mine, railway station, and collective farm in North Korea.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://nkinfo.unikorea.go.kr/NKMap/"
+  }
+ },
+ {
+  "id": "unikorea-defector-statistics",
+  "name": "Ministry of Unification Defector Arrivals & Demographic Time Series",
+  "publisher": "통일부 (Ministry of Unification)",
+  "url": "https://unikorea.go.kr/web/unikorea/contents/status_lately",
+  "track": "korean_japanese",
+  "language": "ko",
+  "category": "defectors",
+  "description": "Official quarterly and annual statistics of North Korean escapees arriving in South Korea from before 1998 through 2026. Details arrivals by gender, age groups, year, and cumulative totals (over 34,000 individuals).",
+  "format": "html",
+  "access": "scrape",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2026-09",
+   "maintenance": "active",
+   "cadence": "quarterly",
+   "value": 5,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "An interactive defector arrivals timeline chart showing annual spikes (Arduous March aftermath, peak in 2009 at 2,914 arrivals), the dramatic border closure drop during COVID-19, and the 2024–2026 rebound.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://unikorea.go.kr/web/unikorea/contents/status_lately"
+  }
+ },
+ {
+  "id": "data-go-kr-defector-origins",
+  "name": "Defector Origin Province and Socioeconomic Demographics",
+  "publisher": "통일부 / 남북하나재단 (Korea Hana Foundation via data.go.kr)",
+  "url": "https://www.data.go.kr/data/15106185/fileData.do",
+  "track": "korean_japanese",
+  "language": "ko",
+  "category": "defectors",
+  "description": "Comprehensive statistical breakdown of North Korean defectors by pre-defection province of origin (2008–present), pre-defection occupation, educational attainment, and age structure. Reveals that over 58% originate from North Hamgyong Province, ~16% from Ryanggang Province, and ~9% from South Hamgyong Province.",
+  "format": "pdf-tables",
+  "access": "download",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2026-09-30",
+   "maintenance": "active",
+   "cadence": "annual",
+   "value": 5,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "A province-level choropleth map of North Korea displaying defector origin density: visually explaining why border regions (Hoeryong, Musan, Onsong, Hyesan) dominate escape demographics compared to interior provinces.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://www.data.go.kr/data/15106185/fileData.do"
+  }
+ },
+ {
+  "id": "kosis-bukhan-statistics",
+  "name": "KOSIS North Korea Statistics Portal",
+  "publisher": "국가데이터처 (Statistics Korea / National Data Agency)",
+  "url": "https://kosis.kr/bukhan/",
+  "track": "korean_japanese",
+  "language": "ko",
+  "category": "economy",
+  "description": "South Korea's centralized macro-statistical repository on North Korea across 14 categories, including Bank of Korea North Korean GDP/GNI estimates, population census and fertility rates, agricultural output (crop production by year), mineral output, trade with China and Russia, and energy generation.",
+  "format": "html",
+  "access": "api",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2026-08",
+   "maintenance": "active",
+   "cadence": "annual",
+   "value": 5,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Clean, interactive comparison charts of North vs. South Korea development over time: GDP per capita trajectory, energy production collapse, infant mortality rate, and trade dependency on China.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://kosis.kr/bukhan/"
+  }
+ },
+ {
+  "id": "asiapress-rimjingang-market-prices",
+  "name": "Asia Press / Rimjin-gang North Korea Underground Market Price Surveys",
+  "publisher": "アジアプレス・ネットワーク (Asia Press International Osaka / Tokyo)",
+  "url": "https://www.asiapress.org/korean/",
+  "track": "korean_japanese",
+  "language": "ko",
+  "category": "economy",
+  "description": "Bi-weekly and monthly field price surveys conducted via undercover reporting networks inside North Korean cities (Hyesan, Chongjin, Pyongsong, Musan). Tracks real street prices of white rice, corn, pork, diesel, gasoline, alongside unofficial black market exchange rates for USD/KPW and CNY/KPW.",
+  "format": "html",
+  "access": "scrape",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2026-09",
+   "maintenance": "active",
+   "cadence": "monthly",
+   "value": 5,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "A living North Korea Inflation & Market Tracker: price curves of food staples (rice vs. corn price gap is the prime famine indicator) and unofficial street exchange rate depreciation vs USD and RMB.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://www.asiapress.org/korean/"
+  }
+ },
+ {
+  "id": "soseikai-missing-persons-database",
+  "name": "Soseikai Specific Missing Persons Database (Suspected Japanese Abductees)",
+  "publisher": "特定失踪者問題調査会 (Specific Missing Persons Investigation Commission of Japan)",
+  "url": "https://www.chosa-kai.jp/archives/missing",
+  "track": "korean_japanese",
+  "language": "ja",
+  "category": "human-rights",
+  "description": "Detailed investigative registry of 276+ Japanese citizens suspected of abduction to North Korea. Each case record provides full name, exact date of disappearance, geocodable coastal location (prefecture, city, coastline), age at disappearance, occupation, physical characteristics, and investigative narrative.",
+  "format": "html",
+  "access": "scrape",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2024-11",
+   "maintenance": "active",
+   "cadence": "irregular",
+   "value": 5,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "A coastal abduction map of Japan: pinpointing every disappearance point along the Sea of Japan coast, correlated with North Korean spy ship operations, coastal radar blind spots, and infiltration routes.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://www.chosa-kai.jp/archives/missing"
+  }
+ },
+ {
+  "id": "japan-mod-missile-announcements",
+  "name": "Japan MOD Ballistic Missile Launch Press Releases",
+  "publisher": "防衛省・自衛隊 (Ministry of Defense of Japan)",
+  "url": "https://www.mod.go.jp/j/press/news/index.html",
+  "track": "korean_japanese",
+  "language": "ja",
+  "category": "military",
+  "description": "Continuous real-time military announcements of North Korean ballistic missile launches, published within minutes of detection. Contains precise launch time, launch region in DPRK, trajectory direction, apogee altitude (km), flight distance (km), and splashdown coordinates/bearing relative to Japanese islands and EEZ boundaries.",
+  "format": "html",
+  "access": "scrape",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2026-08-20",
+   "maintenance": "active",
+   "cadence": "real-time",
+   "value": 5,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Direct feed to update our /missiles map with official Japan MOD radar telemetry: verifies launch time, flight distance, apogee, and impact coordinates against CNS/USFK estimates.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://www.mod.go.jp/j/press/news/index.html"
+  }
+ },
+ {
+  "id": "kinu-human-rights-whitepaper",
+  "name": "KINU Annual White Paper on Human Rights in North Korea",
+  "publisher": "통일연구원 (Korea Institute for National Unification)",
+  "url": "https://www.kinu.or.kr/main/module/report/index.do?category=46&nav_code=mai1674786121",
+  "track": "korean_japanese",
+  "language": "ko",
+  "category": "human-rights",
+  "description": "The authoritative annual human rights white paper series published by the South Korean government's premier unification think tank since 1996. Features extensive statistical annexes on political prison camps (Kwanliso 14, 15, 16, 25), correctional facilities (Kyohwaso), public executions, and defector survey samples.",
+  "format": "pdf-tables",
+  "access": "download",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2025-12",
+   "maintenance": "active",
+   "cadence": "annual",
+   "value": 5,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Extract KINU's historical tables on detention center operations and testimony counts into structured JSON data powering camp timeline views.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://www.kinu.or.kr/main/module/report/index.do?category=46&nav_code=mai1674786121"
+  }
+ },
+ {
+  "id": "mou-nk-human-rights-report",
+  "name": "Ministry of Unification Report on North Korean Human Rights",
+  "publisher": "통일부 북한인권기록센터 (Center for North Korean Human Rights Records, Ministry of Unification)",
+  "url": "https://www.unikorea.go.kr/web/unikorea/contents/nk_humanrights",
+  "track": "korean_japanese",
+  "language": "ko",
+  "category": "human-rights",
+  "description": "Landmark official South Korean government human rights reports (published publicly in 2023, 2024, and 2025) compiling verified testimony from over 1,600 defectors on public executions, forced repatriation reception centers (집결소), secret police detention, and Reactionary Ideology and Culture Rejection Act crackdowns.",
+  "format": "pdf-tables",
+  "access": "download",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2025-06",
+   "maintenance": "active",
+   "cadence": "annual",
+   "value": 5,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Geolocate incident case studies: public trial locations, execution firing ranges, and repatriation processing hubs (Dandong-Sinuiju, Tumen-Namyang).",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://www.unikorea.go.kr/web/unikorea/contents/nk_humanrights"
+  }
+ },
+ {
+  "id": "ngii-nk-spatial-platform",
+  "name": "NGII North Korea Topographic & Spatial Data Platform",
+  "publisher": "국토지리정보원 (National Geographic Information Institute - NGII)",
+  "url": "https://map.ngii.go.kr/",
+  "track": "korean_japanese",
+  "language": "ko",
+  "category": "geography",
+  "description": "South Korea's national surveying agency repository of North Korean spatial data: 1:25,000 and 1:50,000 digital topographic maps, satellite orthophotos, road/rail networks, and administrative boundary vectors produced using national satellite imagery.",
+  "format": "geojson",
+  "access": "download",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2025-08",
+   "maintenance": "active",
+   "cadence": "annual",
+   "value": 5,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Integrate official South Korean government vector layers for North Korean infrastructure (roads, bridges, railway tunnels, river embankments) into our MapLibre basemap.",
+  "usedBy": [],
+  "watch": {
+   "type": "content",
+   "url": "https://map.ngii.go.kr/"
+  }
+ },
+ {
+  "id": "rok-jcs-missile-announcements",
+  "name": "South Korea Joint Chiefs of Staff Press Releases (대한민국 합동참모본부 보도자료)",
+  "publisher": "Republic of Korea Joint Chiefs of Staff (대한민국 합동참모본부)",
+  "url": "https://www.jcs.mil.kr",
+  "track": "military",
+  "language": "ko",
+  "category": "Government Military Telemetry & Launch Reports",
+  "description": "Official South Korean military primary source for North Korean missile launches detected by ROK-US combined radar and Green Pine early warning radar. Reports initial launch location (e.g., Sunan, Wonsan, Ryokpo), number of projectiles, flight distance, apogee, and weapon assessment.",
+  "format": "html",
+  "access": "scrape",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2026-09-20",
+   "maintenance": "active",
+   "cadence": "real-time (within minutes of launch)",
+   "value": 5,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Integrate JCS launch site coordinates directly into the missile explorer to pinpoint launch origin facilities before KCNA photos are published.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://www.jcs.mil.kr"
+  }
+ },
+ {
+  "id": "nti-dprk-nuclear-facilities",
+  "name": "NTI North Korea Nuclear Facilities Database",
+  "publisher": "Nuclear Threat Initiative (NTI) / James Martin CNS",
+  "url": "https://www.nti.org/countries/north-korea/",
+  "track": "military",
+  "language": "en",
+  "category": "Nuclear Infrastructure",
+  "description": "Profiles, operational history, and facility characteristics for all known North Korean nuclear fuel cycle and weapons complex installations, including Yongbyon, Punggye-ri, Pyongsan, Pakchon, Kangson, Taechon, and Pyongyang nuclear institutes.",
+  "format": "html",
+  "access": "scrape",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2024-11",
+   "maintenance": "sporadic",
+   "cadence": "annual / event-driven",
+   "value": 5,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Add a dedicated 'Nuclear Fuel Cycle' filter in /atlas linking uranium mining (Pyongsan), enrichment (Kangson, Yongbyon), reactor operations (5MWe, ELWR), reprocessing (Radiochemical Lab), and weapon test adits (Punggye-ri).",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://www.nti.org/countries/north-korea/"
+  }
+ },
+ {
+  "id": "nti-dprk-missile-facilities",
+  "name": "NTI North Korea Missile Facilities Database",
+  "publisher": "Nuclear Threat Initiative (NTI) / James Martin CNS",
+  "url": "https://www.nti.org/countries/north-korea/",
+  "track": "military",
+  "language": "en",
+  "category": "Missile R&D & Test Facilities",
+  "description": "Geographic profiles and operational history of North Korea's research, manufacturing, static engine test, and launch sites: Sohae Satellite Launching Station, Tonghae (Musudan-ri), Chamjin (Tae-sung Machine Factory), Sanum-dong R&D center, and Kusong test facilities.",
+  "format": "html",
+  "access": "scrape",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2024-09",
+   "maintenance": "sporadic",
+   "cadence": "annual / milestone-driven",
+   "value": 5,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Map the R&D and manufacturing pipeline: connect design institutes (Sanum-dong), production factories (Chamjin), and launch testing pads (Sohae, Tonghae).",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://www.nti.org/countries/north-korea/"
+  }
+ },
+ {
+  "id": "stimson-38-north-imagery",
+  "name": "38 North Satellite Imagery Archive",
+  "publisher": "Henry L. Stimson Center (38 North)",
+  "url": "https://www.38north.org",
+  "track": "military",
+  "language": "en",
+  "category": "Satellite Imagery & Facility Analysis",
+  "description": "Authoritative open-source satellite imagery monitoring program analyzing commercial imagery (Maxar, Planet Labs, Airbus) of key strategic facilities: Yongbyon Nuclear Research Center, Sohae Satellite Launching Ground, Sinpo South Shipyard, Punggye-ri, and Chamjin.",
+  "format": "html",
+  "access": "scrape",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2026-09",
+   "maintenance": "active",
+   "cadence": "bi-weekly / monthly per facility",
+   "value": 5,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Build a 'Facility Status Over Time' card for Yongbyon, Sohae, and Sinpo in /atlas with linked timeline milestones extracted from 38 North reports.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://www.38north.org"
+  }
+ },
+ {
+  "id": "access-dprk-bogle",
+  "name": "AccessDPRK Mapping Project",
+  "publisher": "Jacob Bogle",
+  "url": "https://www.jacobbogle.com/accessdprk.html",
+  "track": "military",
+  "language": "en",
+  "category": "Comprehensive Military & National GIS Database",
+  "description": "The most expansive crowdsourced/OSINT mapping project of North Korea for Google Earth, containing over 60,000 geolocated placemarks. Features comprehensive military layers including airbases, naval bases, SAM sites (SA-2, SA-3, SA-5), radar installations, hardened artillery caves, security perimeter fences, and bunker portals.",
+  "format": "kml",
+  "access": "download",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2025-05",
+   "maintenance": "sporadic",
+   "cadence": "annual / semi-annual major releases",
+   "value": 5,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Extract the military folder (airbases, naval ports, SAM rings, radar stations) into optimized GeoJSON tilesets for our MapLibre atlas.",
+  "usedBy": [],
+  "watch": {
+   "type": "content",
+   "url": "https://www.jacobbogle.com/accessdprk.html"
+  }
+ },
+ {
+  "id": "rusi-dprk-russia-maritime-transfers",
+  "name": "RUSI Open Source Intelligence: DPRK-Russia Maritime Munitions Transfers",
+  "publisher": "Royal United Services Institute (RUSI) - Open Source Intelligence Programme",
+  "url": "https://www.rusi.org/explore-our-research/projects/open-source-intelligence-programme",
+  "track": "military",
+  "language": "en",
+  "category": "Arms Transfers & Sanctions Evasion",
+  "description": "Trailblazing open-source satellite imagery and maritime investigation series by Joseph Byrne and James Byrne tracking Russian-flagged cargo vessels (Angara, Maria, Maia-1, Lady R) carrying millions of artillery munitions from Rajin (Rason Port) to Russian naval facilities in Dunai and Vostochny.",
+  "format": "html",
+  "access": "scrape",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2026-04",
+   "maintenance": "active",
+   "cadence": "irregular / report-based",
+   "value": 5,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Create an interactive 'DPRK-Russia Munitions Shuttle' map showing the sea corridor between Rajin Pier 1 and Dunai/Vostochny, with ship cards for the Angara and Maria.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://www.rusi.org/explore-our-research/projects/open-source-intelligence-programme"
+  }
+ },
+ {
+  "id": "car-missile-wreckage-ukraine",
+  "name": "Conflict Armament Research (CAR): Field Forensic Documentation of DPRK Ballistic Missiles in Ukraine",
+  "publisher": "Conflict Armament Research (CAR)",
+  "url": "https://www.conflictarm.com",
+  "track": "military",
+  "language": "en",
+  "category": "Weapons Forensics & Ballistic Missile Proliferation",
+  "description": "Physical forensic inspection of North Korean Hwasong-11A (KN-23) and Hwasong-11B (KN-24) missile wreckage recovered from impact sites across Ukraine (Kharkiv, Kyiv, Zaporizhzhia). Documents electronic circuit boards, flight control actuators, fake/counterfeit semiconductor chips, and factory date marks indicating 2021-2024 assembly.",
+  "format": "pdf-tables",
+  "access": "download",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2026-09",
+   "maintenance": "active",
+   "cadence": "event-driven following missile recovery",
+   "value": 5,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Build a 'Missile Teardown & Foreign Parts' interactive explainer showing how North Korea circumvents sanctions to build ballistic missiles using global electronics.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://www.conflictarm.com"
+  }
+ },
+ {
+  "id": "gur-rok-nis-storm-corps-kursk",
+  "name": "Ukrainian Defense Intelligence (GUR) & ROK NIS: KPA 11th Storm Corps Troop Deployment Tracking",
+  "publisher": "Main Directorate of Intelligence of Ukraine (GUR) & National Intelligence Service (ROK NIS)",
+  "url": "https://gur.gov.ua",
+  "track": "military",
+  "language": "other",
+  "category": "Troop Deployment & Combat Operations",
+  "description": "Intelligence releases and battlefield tracking of approximately 10,000 to 12,000 North Korean soldiers from the KPA 11th Corps (Storm Corps / Special Operations Force) deployed to Russia. Documents transit through Vladivostok/Sergeevka, distribution to Russian 810th Naval Infantry and airborne brigades, and combat engagements in Kursk Oblast.",
+  "format": "html",
+  "access": "scrape",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2026-06",
+   "maintenance": "active",
+   "cadence": "weekly to monthly",
+   "value": 5,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Feature a 'Storm Corps Overseas Deployment' timeline tracking origin garrisons in Tokchon, training grounds in the Russian Far East, and deployment areas in Kursk.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://gur.gov.ua"
+  }
+ },
+ {
+  "id": "kpaaf-airbases-dataset",
+  "name": "Korean People's Army Air Force (KPAAF) Airbases Dataset",
+  "publisher": "Federation of American Scientists (FAS) / SpottingMode / Wikipedia",
+  "url": "https://fas.org/nuke/guide/dprk/facility/air_base.htm",
+  "track": "military",
+  "language": "en",
+  "category": "Airbases & Aviation Infrastructure",
+  "description": "Structured dataset of approximately 78 operational, reserve, and emergency highway airfields operated by the KPAAF. Includes runway lengths, orientation, underground aircraft shelters (hangars cut into mountainsides), assigned air combat divisions, and coordinates.",
+  "format": "json-api",
+  "access": "scrape",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2025",
+   "maintenance": "sporadic",
+   "cadence": "annual / static",
+   "value": 5,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Add a complete 'Airbases & Air Defense' toggle layer on /atlas showing primary fighter wings, bomber bases, and underground mountain shelters.",
+  "usedBy": [],
+  "watch": {
+   "type": "content",
+   "url": "https://fas.org/nuke/guide/dprk/facility/air_base.htm"
+  }
+ },
+ {
+  "id": "kpn-naval-bases-submarines",
+  "name": "Korean People's Navy (KPN) Naval Bases & Submarine Tunnels Dataset",
+  "publisher": "Federation of American Scientists (FAS) / H.I. Sutton (Covert Shores)",
+  "url": "http://www.hisutton.com",
+  "track": "military",
+  "language": "en",
+  "category": "Naval Bases & Submarine Pens",
+  "description": "Geographic catalogue of KPN naval bases, underground submarine shelters, hovercraft staging points, and shipyard repair docks across the West Sea Fleet (Nampo HQ, Pipagot, Sagot, Chodo) and East Sea Fleet (Toejo-dong HQ, Munchon, Mayang-do, Sinpo, Chaho, Rason).",
+  "format": "html",
+  "access": "scrape",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2025-11",
+   "maintenance": "sporadic",
+   "cadence": "annual / report-driven",
+   "value": 5,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Map North Korea's dual-fleet naval deployment on /atlas, highlighting underground submarine pens at Pipagot and Chaho and ballistic submarine fitting at Sinpo.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "http://www.hisutton.com"
+  }
+ },
+ {
+  "id": "dmz-hardened-artillery-sites",
+  "name": "DMZ Hardened Artillery Sites (HARTs) & Underground Fortifications",
+  "publisher": "Nautilus Institute / Texas National Security Review (TNSR) / 38 North",
+  "url": "https://nautilus.org",
+  "track": "military",
+  "language": "en",
+  "category": "Artillery, Fortifications & Frontline Defenses",
+  "description": "Technical and geospatial research analyzing North Korea's network of Hardened Artillery Sites (HARTs) cut into mountain reverse slopes along the DMZ. Evaluates 170mm Koksan self-propelled artillery, 240mm multiple rocket launchers, and their threat to the Seoul metropolitan region.",
+  "format": "html",
+  "access": "scrape",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2026-06",
+   "maintenance": "sporadic",
+   "cadence": "irregular analytical papers",
+   "value": 5,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Create a 'DMZ Artillery Threat Range' overlay on /atlas showing the maximum firing reach of 170mm Koksan SPGs and 240mm MRLs into northern Gyeonggi and Seoul.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://nautilus.org"
+  }
+ },
+ {
+  "id": "kpa-corps-order-of-battle",
+  "name": "Korean People's Army (KPA) Corps Headquarters & Frontline Order of Battle",
+  "publisher": "ROK Ministry of National Defense / namu.wiki / Military Studies",
+  "url": "https://namu.wiki/w/조선인민군/군단",
+  "track": "military",
+  "language": "ko",
+  "category": "Ground Forces Order of Battle",
+  "description": "Geographic dataset of KPA Corps Headquarters, including frontline forward corps (1st, 2nd, 4th, 5th Corps along the DMZ), rear area corps (3rd, 7th, 8th, 9th, 10th, 12th Corps), mechanized breakout corps (820th Tank Corps), Pyongyang Defense Command (91st Corps), and Special Operations Force (11th Storm Corps).",
+  "format": "json-api",
+  "access": "scrape",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2026-03",
+   "maintenance": "sporadic",
+   "cadence": "annual / reorganization-driven",
+   "value": 5,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Plot the 13 KPA Corps Headquarters on /atlas with echelon rings (Frontline, Echelon 2, Strategic Reserve, Border Guard) and unit emblems.",
+  "usedBy": [],
+  "watch": {
+   "type": "content",
+   "url": "https://namu.wiki/w/%EC%A1%B0%EC%84%A0%EC%9D%B8%EB%AF%BC%EA%B5%B0/%EA%B5%B0%EB%8B%A8"
+  }
+ },
+ {
+  "id": "openstreetmap-dprk-military",
+  "name": "OpenStreetMap (OSM) North Korea Military Features",
+  "publisher": "OpenStreetMap Contributors / Overpass API",
+  "url": "https://www.openstreetmap.org",
+  "track": "military",
+  "language": "en",
+  "category": "Geospatial Vector Data (Runways, Bunkers, Landuse)",
+  "description": "Global collaborative geospatial database containing crowdsourced vector features inside North Korea tagged landuse=military, military=airfield, military=barracks, military=bunker, military=radar, and aeroway=runway.",
+  "format": "geojson",
+  "access": "api",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2026-09",
+   "maintenance": "active",
+   "cadence": "real-time daily edits",
+   "value": 5,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Pull all OSM military=* and aeroway=runway polygons to render high-contrast runway outlines and base perimeters on our dark/positron basemaps.",
+  "usedBy": [],
+  "watch": {
+   "type": "content",
+   "url": "https://overpass-api.de/api/interpreter?data=[out:json];area[\"ISO3166-1\"=\"KP\"][admin_level=2]->.a;(node[\"military\"](area.a);way[\"military\"](area.a);relation[\"military\"](area.a););out%20body;>;out%20skel%20qt;"
+  }
+ },
+ {
+  "id": "justin-meyers-dprk-boundaries",
+  "name": "Justin Elliot Meyers DPRK Administrative Boundary Shapefiles",
+  "publisher": "Justin Elliot Meyers (Revolutionary GIS)",
+  "url": "https://github.com/justinelliotmeyers/official_DPRK_administrative_boundary_shapefile",
+  "track": "population",
+  "language": "ko",
+  "category": "Administrative Boundaries",
+  "description": "Official DPRK administrative boundary shapefile reconstructed with Korean UFID identifiers and Hangul place names. Unlike UN datasets that group Pyongyang into one city, this dataset features 218 units detailing Pyongyang's municipal districts (낙랑구역, 만경대구역, 대동강구역, etc.) and provincial counties.",
+  "format": "shapefile",
+  "access": "download",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2017-04-10",
+   "maintenance": "stale",
+   "cadence": "never",
+   "value": 5,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Essential for high-resolution mapping of Pyongyang and major cities, where UN datasets only have one polygon but defector, market, and facility reports specify exact guyok (e.g. Moranbong-guyok).",
+  "usedBy": [],
+  "watch": {
+   "type": "github",
+   "repo": "justinelliotmeyers/official_DPRK_administrative_boundary_shapefile"
+  }
+ },
+ {
+  "id": "unfpa-cbs-2008-census-report",
+  "name": "2008 DPRK Population Census National Report & Digital Tables",
+  "publisher": "Central Bureau of Statistics, Pyongyang & UNFPA",
+  "url": "https://web.archive.org/web/20120710101736/http://unstats.un.org/unsd/demographic/sources/census/2010_PHC/North_Korea/North_Korea_more.htm",
+  "track": "population",
+  "language": "en",
+  "category": "Demographics",
+  "description": "The official report of the 2008 National Population Census conducted October 1-15, 2008 across DPRK with UNFPA technical backing. Enumerated 24,052,231 citizens, providing county-level populations by sex and urban/rural status, and provincial-level 5-year age groups, marital status, education, and household amenities.",
+  "format": "pdf-tables",
+  "access": "download",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2009",
+   "maintenance": "dead",
+   "cadence": "never",
+   "value": 5,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Foundational baseline for all North Korean demographic maps: county choropleths of sex ratio, urban percentage, and household density.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://web.archive.org/web/20120710101736/http://unstats.un.org/unsd/demographic/sources/census/2010_PHC/North_Korea/North_Korea_more.htm"
+  }
+ },
+ {
+  "id": "worldpop-prk-100m-constrained",
+  "name": "WorldPop North Korea 100m Constrained Population Raster (BSGM)",
+  "publisher": "WorldPop, University of Southampton",
+  "url": "https://hub.worldpop.org/geodata/summary?id=49814",
+  "track": "population",
+  "language": "en",
+  "category": "Gridded Population",
+  "description": "High-resolution 100m (3 arc-second) gridded population raster for North Korea for year 2020. Constrained using the Built-Settlement Growth Model (BSGM), redistributing population only to identified building footprints and human settlements while masking unpopulated mountainous terrain.",
+  "format": "other",
+  "access": "download",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2020-09-20",
+   "maintenance": "stale",
+   "cadence": "irregular",
+   "value": 5,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Run zonal statistics across COD-AB county polygons to produce updated 2020 county populations and generate settlement density heatmap layers.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://hub.worldpop.org/geodata/summary?id=49814"
+  }
+ },
+ {
+  "id": "kontur-population-h3-dprk",
+  "name": "Kontur Population 400m H3 Hexagon Density for DPRK",
+  "publisher": "Kontur",
+  "url": "https://data.humdata.org/dataset/kontur-population-democratic-people-s-republic-of-korea",
+  "track": "population",
+  "language": "en",
+  "category": "Gridded Population",
+  "description": "Population density dataset aggregated into uniform H3 hexagons at resolution 8 (approximately 400m diameter). Built by fusing Global Human Settlement Layer (GHSL), Facebook High Resolution Settlement Layer, Microsoft Building Footprints, and OpenStreetMap data.",
+  "format": "geopackage",
+  "access": "download",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2023-11-01",
+   "maintenance": "sporadic",
+   "cadence": "annual",
+   "value": 5,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Convert to vector tiles (pbf) for MapLibre to display an ultra-modern 3D hexagon population density extrusion layer across North Korea.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://data.humdata.org/dataset/kontur-population-democratic-people-s-republic-of-korea"
+  }
+ },
+ {
+  "id": "wfp-vam-subnational-rainfall",
+  "name": "WFP VAM DPRK Subnational Dekadal Rainfall & Anomalies (CHIRPS)",
+  "publisher": "World Food Programme (WFP) Vulnerability Analysis and Mapping (VAM)",
+  "url": "https://data.humdata.org/dataset/prk-rainfall-subnational",
+  "track": "population",
+  "language": "en",
+  "category": "Food Security",
+  "description": "Subnational dekadal (10-day) rainfall indicators derived from CHIRPS v2 infrared satellite precipitation data and CHIRPS-GEFS forecasts, aggregated by administrative units with P-codes. Contains 10-day rainfall, 1-month and 3-month rolling aggregations, long-term averages, and anomaly percentages.",
+  "format": "csv",
+  "access": "download",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2026-09-23",
+   "maintenance": "active",
+   "cadence": "monthly",
+   "value": 5,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Map drought and flooding anomalies by county to explain localized crop failures and food shortages on our interactive map.",
+  "usedBy": [],
+  "watch": {
+   "type": "content",
+   "url": "https://data.humdata.org/dataset/3212d9bf-51b1-4f52-bbc8-82aa392b8857/resource/40f285ff-54b2-4544-80a5-d1a79eb70935/download/prk-rainfall-subnat-5ytd.csv"
+  }
+ },
+ {
+  "id": "wfp-vam-subnational-ndvi",
+  "name": "WFP VAM DPRK Subnational Dekadal Vegetation Index (MODIS NDVI)",
+  "publisher": "World Food Programme (WFP) Vulnerability Analysis and Mapping (VAM)",
+  "url": "https://data.humdata.org/dataset/prk-ndvi-subnational",
+  "track": "population",
+  "language": "en",
+  "category": "Food Security",
+  "description": "Dekadal Normalized Difference Vegetation Index (NDVI) from NASA Terra/Aqua MODIS collection 6.1 aggregated across DPRK subnational administrative boundaries. Measures crop health and canopy vigor relative to long-term averages to detect drought impacts.",
+  "format": "csv",
+  "access": "download",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2026-09-23",
+   "maintenance": "active",
+   "cadence": "monthly",
+   "value": 5,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Provide an agricultural health layer: color counties green for healthy vegetation and brown/red for severe agricultural drought.",
+  "usedBy": [],
+  "watch": {
+   "type": "content",
+   "url": "https://data.humdata.org/dataset/84d7386b-d9a8-4fb4-b374-9429e335a9c8/resource/090d39d3-0d87-48a9-ad3d-1d7aea2ebdc8/download/prk-ndvi-subnat-5ytd.csv"
+  }
+ },
+ {
+  "id": "unicef-mics-2017-dprk",
+  "name": "UNICEF Multiple Indicator Cluster Survey 2017 (MICS6) DPRK Findings Report",
+  "publisher": "Central Bureau of Statistics, Pyongyang & UNICEF",
+  "url": "https://www.unicef.org/dprk/reports/multiple-indicator-cluster-survey-2017",
+  "track": "population",
+  "language": "en",
+  "category": "Health",
+  "description": "The landmark 2017 MICS survey covering 8,500 households across all 11 provinces of North Korea. Published in June 2018, it is the most authoritative recent health survey, providing provincial tables on child stunting (19.1% national), wasting (2.5%), infant diarrhea, maternal care, clean water access, and iodized salt.",
+  "format": "pdf-tables",
+  "access": "download",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2018-06",
+   "maintenance": "dead",
+   "cadence": "never",
+   "value": 5,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Digitize provincial nutrition tables (stunting and wasting) into a provincial choropleth to demonstrate regional inequality between Pyongyang and northern provinces.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://www.unicef.org/dprk/reports/multiple-indicator-cluster-survey-2017"
+  }
+ },
+ {
+  "id": "kosis-bukhan-population-territory",
+  "name": "Statistics Korea KOSIS North Korea Portal: Territory & Population (영토/인구)",
+  "publisher": "Statistics Korea (통계청)",
+  "url": "https://kosis.kr/bukhan/index.jsp",
+  "track": "population",
+  "language": "ko",
+  "category": "Demographics",
+  "description": "Official South Korean government portal providing 18 harmonized demographic and territorial statistical tables on North Korea, including total population projections to 2070, population density, 5-year age structures, sex ratios, major city populations, and administrative unit counts.",
+  "format": "json-api",
+  "access": "api",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2026-08",
+   "maintenance": "active",
+   "cadence": "annual",
+   "value": 5,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Import official ROK government demographic baselines (DT_1ZGA21, DT_1ZGA22, DT_1ZGA15A) to provide historical trendlines and city size comparisons.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://kosis.kr/bukhan/index.jsp"
+  }
+ },
+ {
+  "id": "kosis-bukhan-national-accounts",
+  "name": "Statistics Korea KOSIS North Korea Portal: National Accounts & BOK GDP (국민계정)",
+  "publisher": "Statistics Korea (통계청) & Bank of Korea (한국은행)",
+  "url": "https://kosis.kr/statisticsList/statisticsListIndex.do?vwcd=MT_BUKHAN&menuId=M_02_02",
+  "track": "population",
+  "language": "ko",
+  "category": "Economy",
+  "description": "Official ROK government compilation of 10 statistical tables on North Korea's macroeconomy, including real GDP growth rates (1990-2024), sector-by-sector growth (mining, manufacturing, agriculture), real/nominal GDP in KRW/USD, industrial structure, GNI, and market price index (시장물가지수).",
+  "format": "json-api",
+  "access": "api",
+  "has_geo": false,
+  "research": {
+   "last_updated": "2026-08",
+   "maintenance": "active",
+   "cadence": "annual",
+   "value": 5,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Build macro charts showing North Korea's economic cycles from post-war expansion through the 1990s collapse and recent sanctions/recovery.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://kosis.kr/statisticsList/statisticsListIndex.do?vwcd=MT_BUKHAN&menuId=M_02_02"
+  }
+ },
+ {
+  "id": "kosis-bukhan-agriculture-food",
+  "name": "Statistics Korea KOSIS North Korea Portal: Agriculture & Food Production (농림수산업)",
+  "publisher": "Statistics Korea (통계청) & Rural Development Administration (농촌진흥청)",
+  "url": "https://kosis.kr/statisticsList/statisticsListIndex.do?vwcd=MT_BUKHAN&menuId=M_02_02",
+  "track": "population",
+  "language": "ko",
+  "category": "Food Security",
+  "description": "Comprehensive time series of 18 tables on North Korean agricultural performance: food crop production (식량작물 생산량 1965-2025), rice cultivation area by province (시도별 벼 재배면적 2019-2025), agricultural productivity indicators, livestock herds, and timber production.",
+  "format": "json-api",
+  "access": "api",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2026-08",
+   "maintenance": "active",
+   "cadence": "annual",
+   "value": 5,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Render provincial rice cultivation area and annual crop production choropleths to highlight South Hwanghae and South Pyongan as the country's breadbasket.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://kosis.kr/statisticsList/statisticsListIndex.do?vwcd=MT_BUKHAN&menuId=M_02_02"
+  }
+ },
+ {
+  "id": "mou-nkinfo-nkmap-fastapi",
+  "name": "Ministry of Unification North Korea Information Portal: NKMap GIS & Search API",
+  "publisher": "Ministry of Unification (통일부 북한정보포털)",
+  "url": "https://nkinfo.unikorea.go.kr/NKMap/",
+  "track": "population",
+  "language": "ko",
+  "category": "Living Conditions",
+  "description": "Interactive GIS platform and hidden FastAPI backend powering the Ministry of Unification's North Korea map. Provides search and coordinates (Korean TM/GRS80) for hundreds of administrative divisions, factories, theaters, department stores, universities, airports, and monuments with structured attribute cards.",
+  "format": "json-api",
+  "access": "api",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2026-09",
+   "maintenance": "active",
+   "cadence": "monthly",
+   "value": 5,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Crawl all city/county names through nkmapSearchFastApi.do to extract coordinates, official North Korean names, area sizes, and facility rosters for our Atlas points of interest.",
+  "usedBy": [],
+  "watch": {
+   "type": "content",
+   "url": "https://nkinfo.unikorea.go.kr/nkp/search/nkmapSearchFastApi.do?q=평양"
+  }
+ },
+ {
+  "id": "mou-data-go-kr-defectors-origin",
+  "name": "Ministry of Unification: Defectors by DPRK Origin Province (북한이탈주민 재북 출신지역별 현황)",
+  "publisher": "Ministry of Unification / Data.go.kr (통일부)",
+  "url": "https://www.data.go.kr/data/15106194/fileData.do",
+  "track": "population",
+  "language": "ko",
+  "category": "Demographics",
+  "description": "Official statistical record of all North Korean defectors who entered South Korea, broken down by their pre-escape home province in North Korea (함경북도, 양강도, 함경남도, 평안남북도, etc.) and sex. Demonstrates that over 75% of defectors originate from northern border provinces.",
+  "format": "csv",
+  "access": "download",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2026-06",
+   "maintenance": "active",
+   "cadence": "quarterly",
+   "value": 5,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Build a provincial choropleth map of defector origins to visually show which parts of North Korea escape to freedom and where testimonies originate.",
+  "usedBy": [],
+  "watch": {
+   "type": "content",
+   "url": "https://www.data.go.kr/data/15106194/fileData.do"
+  }
+ },
+ {
+  "id": "rda-dprk-crop-production-estimates",
+  "name": "Rural Development Administration (RDA) Annual North Korea Crop Production Estimates",
+  "publisher": "Rural Development Administration (국립농업과학원 / 농촌진흥청)",
+  "url": "https://www.rda.go.kr/",
+  "track": "population",
+  "language": "ko",
+  "category": "Food Security",
+  "description": "Annual authoritative South Korean assessment of North Korean agricultural yield released every December. Combines meteorological data from 27 North Korean weather stations, satellite vegetation indices, fertilizer importation trends, and field crop disease surveillance to estimate grain harvests by crop and province.",
+  "format": "pdf-tables",
+  "access": "download",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2025-12-18",
+   "maintenance": "active",
+   "cadence": "annual",
+   "value": 5,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Update our food security tracker every December with RDA's official harvest numbers and provincial yield maps.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://www.rda.go.kr/"
+  }
+ },
+ {
+  "id": "nkdb-visual-atlas-glossary",
+  "name": "NKDB Visual Atlas: DPRK Penal & Legal Terminology Pool API",
+  "publisher": "Database Center for North Korean Human Rights (NKDB)",
+  "url": "https://visualatlas.org/en/faq",
+  "track": "camps",
+  "language": "en",
+  "category": "Terminology & Taxonomy",
+  "description": "Comprehensive bilingual dictionary of 770 terms explaining North Korea's penal architecture, legal codes, security apparatus designations, and slang used by detainees and security officers.",
+  "format": "json-api",
+  "access": "api",
+  "has_geo": false,
+  "research": {
+   "last_updated": "2025-12-19",
+   "maintenance": "active",
+   "cadence": "Periodic",
+   "value": 4,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Build a pop-up glossary on hover for terms like 'Kwanliso', 'Kyo-hwa-so', 'Jip-gyeol-so', 'Rodong-danryeon-dae', 'Daekisil' in our atlas and articles.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://visualatlas.org/en/faq"
+  }
+ },
+ {
+  "id": "korea-future-3d-models",
+  "name": "Korea Future: 3D Architectural Reconstructions of DPRK Detention Centres",
+  "publisher": "Korea Future",
+  "url": "https://nkpd.io/en/page/3iflt93xi53/3-d-model",
+  "track": "camps",
+  "language": "en",
+  "category": "Architectural & Spatial Evidence",
+  "description": "Detailed 3D architectural models of Onsong County MPS Detention Centre and North Hamgyong MPS Holding Centre built using survivor testimonies, photogrammetry, and commercial satellite imagery.",
+  "format": "html",
+  "access": "scrape",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2023-08",
+   "maintenance": "sporadic",
+   "cadence": "Project-based releases",
+   "value": 4,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Embed 3D spatial interactive viewers or thumbnail links inside the facility drawer for Onsong Detention Centre and North Hamgyong Holding Camp.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://nkpd.io/en/page/3iflt93xi53/3-d-model"
+  }
+ },
+ {
+  "id": "tjwg-mapping-fate-of-dead",
+  "name": "TJWG: Mapping the Fate of the Dead: Killings and Burials in North Korea",
+  "publisher": "Transitional Justice Working Group (TJWG)",
+  "url": "https://en.tjwg.org/mapping-project-north-korea",
+  "track": "camps",
+  "language": "en",
+  "category": "Execution & Burial Sites",
+  "description": "Pioneering geospatial investigation documenting 318 state-sanctioned execution sites, 47 burial and cremation locations, and government offices holding potential records based on interviews with 610 defectors.",
+  "format": "pdf-tables",
+  "access": "scrape",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2019-06",
+   "maintenance": "active",
+   "cadence": "Major project reports every 2-3 years",
+   "value": 4,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Display county-level choropleth and cluster pins representing execution and burial density, respecting TJWG's evidence protection protocol while educating users on the geography of public executions.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://en.tjwg.org/mapping-project-north-korea"
+  }
+ },
+ {
+  "id": "tjwg-mapping-executions-covid",
+  "name": "TJWG: Mapping North Korea's Executions Before and After COVID-19",
+  "publisher": "Transitional Justice Working Group (TJWG)",
+  "url": "https://en.tjwg.org/mapping-project-north-korea",
+  "track": "camps",
+  "language": "en",
+  "category": "Execution & Burial Sites",
+  "description": "Updated spatial analysis of 144 execution cases and death sentencings, detailing 46 execution sites utilized during Kim Jong-un's reign and spatial displacement away from urban centers.",
+  "format": "pdf-tables",
+  "access": "manual",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2026-04",
+   "maintenance": "active",
+   "cadence": "Periodic multi-year investigative studies",
+   "value": 4,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Create a timeline filter on execution sites showing how Kim Jong-un altered execution geography away from public markets toward controlled perimeter zones.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://en.tjwg.org/mapping-project-north-korea"
+  }
+ },
+ {
+  "id": "jacob-bogle-accessdprk",
+  "name": "Jacob Bogle: #AccessDPRK Mapping Project",
+  "publisher": "Jacob Bogle",
+  "url": "https://mynorthkorea.blogspot.com/",
+  "track": "camps",
+  "language": "en",
+  "category": "Geospatial OSINT Catalog",
+  "description": "Comprehensive successor to North Korea Uncovered, mapping over 50,000 installations across North Korea, featuring dedicated layers for penal facilities, labor camps, border security outposts, and military installations.",
+  "format": "kml",
+  "access": "download",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2026-01",
+   "maintenance": "active",
+   "cadence": "Quarterly / Annual major updates",
+   "value": 4,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Extract detention-related layers (penal labor camps, border holding centers) to expand our non-kwanliso detention coverage.",
+  "usedBy": [],
+  "watch": {
+   "type": "content",
+   "url": "https://www.jacobbogle.com/accessdprk.html"
+  }
+ },
+ {
+  "id": "wikipedia-dprk-concentration-camps",
+  "name": "Wikipedia / Wikidata: North Korean Concentration Camps Dataset",
+  "publisher": "Wikimedia Foundation",
+  "url": "https://en.wikipedia.org/wiki/Category:Concentration_camps_in_North_Korea",
+  "track": "camps",
+  "language": "en",
+  "category": "Encyclopedia & Gazetteer",
+  "description": "Structured encyclopedia articles and linked Wikidata items for 23 North Korean concentration camps and prisons, containing coordinates for 11 major facilities and leaving 12 un-geocoded.",
+  "format": "json-api",
+  "access": "api",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2026-09",
+   "maintenance": "active",
+   "cadence": "Community edited continuously",
+   "value": 4,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Cross-reference Wikipedia links in our atlas drawers and upstream our verified coordinates back to Wikidata/Wikipedia to resolve the 12 missing coordinate entries.",
+  "usedBy": [],
+  "watch": {
+   "type": "content",
+   "url": "https://en.wikipedia.org/w/api.php?action=query&prop=coordinates|pageprops&titles=...&format=json"
+  }
+ },
+ {
+  "id": "amnesty-kwanliso-satellite-imagery",
+  "name": "Amnesty International: North Korea Political Prison Camps Satellite Imagery Analysis",
+  "publisher": "Amnesty International",
+  "url": "https://www.amnesty.org/en/documents/asa24/010/2013/en/",
+  "track": "camps",
+  "language": "en",
+  "category": "Satellite Imagery & Monitoring",
+  "description": "Series of technical satellite briefings (2011, 2013, 2016) monitoring infrastructure changes, perimeter expansions, housing demolitions, and industrial activity at Kwanliso 15 (Yodok), 16 (Hwasong), and 25 (Chongjin).",
+  "format": "html",
+  "access": "scrape",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2016-11",
+   "maintenance": "stale",
+   "cadence": "Ad-hoc investigative briefings",
+   "value": 4,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Use Amnesty's before/after satellite findings to illustrate physical changes in camp infrastructure over time (e.g. Camp 25 perimeter expansion) in camp explainer articles.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://www.amnesty.org/en/documents/asa24/010/2013/en/"
+  }
+ },
+ {
+  "id": "csis-beyond-parallel-camp-labor",
+  "name": "CSIS Beyond Parallel: North Korea Satellite Imagery & Prison Labor Research",
+  "publisher": "Center for Strategic and International Studies (CSIS)",
+  "url": "https://beyondparallel.csis.org/",
+  "track": "camps",
+  "language": "en",
+  "category": "Satellite Imagery & Monitoring",
+  "description": "Remote-sensing analyses examining the intersection of North Korea's penal camps and national economic infrastructure projects, such as the Orangchon Hydroelectric Power Station bordering Camp 16.",
+  "format": "html",
+  "access": "scrape",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2024-03",
+   "maintenance": "active",
+   "cadence": "Periodic articles and imagery briefs",
+   "value": 4,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Link camp facilities to nearby economic infrastructure (e.g. mines, power plants, railways) on our map to demonstrate how prison labor is integrated into the state economy.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://beyondparallel.csis.org/"
+  }
+ },
+ {
+  "id": "nhrck-prison-camp-survey",
+  "name": "NHRCK: Survey on North Korean Political Prison Camps (북한 정치범수용소 실태조사)",
+  "publisher": "National Human Rights Commission of Korea (국가인권위원회)",
+  "url": "https://www.humanrights.go.kr/",
+  "track": "camps",
+  "language": "ko",
+  "category": "Government Investigation",
+  "description": "In-depth landmark investigation into the internal layout, division of labor, total control vs revolutionizing zones, and daily regimes of Camp 14, 15, 18, and 22 based on exhaustive defector interviews.",
+  "format": "pdf-tables",
+  "access": "download",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2010-01",
+   "maintenance": "stale",
+   "cadence": "One-off comprehensive study",
+   "value": 4,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Use the internal sub-camp diagrams (villages, security gates, mining pits) to flesh out the detail pages for Kwanliso 14, 15, 18, and 22.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://www.humanrights.go.kr/"
+  }
+ },
+ {
+  "id": "asiapress-rimjin-gang-penal",
+  "name": "Asia Press / Rimjin-gang: Underground Reporting on North Korea's Penal System",
+  "publisher": "Asia Press International (Jiro Ishimaru)",
+  "url": "https://www.asiapress.org/korean/nor-society/",
+  "track": "camps",
+  "language": "ja",
+  "category": "Field Investigations & News",
+  "description": "Covert in-country investigative reporting by North Korean citizen journalists documenting the operation of labor training camps (단련대), quarantine detention facilities, and public execution orders under the anti-reactionary thought law.",
+  "format": "html",
+  "access": "scrape",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2026-09",
+   "maintenance": "active",
+   "cadence": "Weekly",
+   "value": 4,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Cite recent Asia Press dispatches in our camp and holding center pages to provide up-to-date qualitative context on current penal conditions.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://www.asiapress.org/korean/nor-society/"
+  }
+ },
+ {
+  "id": "osm-geofabrik-dprk",
+  "name": "OpenStreetMap (OSM) DPRK Prison & Administrative Feature Extract",
+  "publisher": "OpenStreetMap Contributors / Geofabrik GmbH",
+  "url": "https://download.geofabrik.de/asia/north-korea.html",
+  "track": "camps",
+  "language": "en",
+  "category": "Geospatial Base Data",
+  "description": "Daily-updated complete OpenStreetMap database extract for North Korea, containing community-mapped prison polygons, perimeter fences, watchtowers, and administrative boundaries (amenity=prison, boundary=prison_camp).",
+  "format": "pbf",
+  "access": "download",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2026-09-29",
+   "maintenance": "active",
+   "cadence": "Daily automated builds",
+   "value": 4,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Extract existing OSM prison ways and relations to render detailed camp perimeter fence lines and building footprints on our MapLibre map.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://download.geofabrik.de/asia/north-korea.html"
+  }
+ },
+ {
+  "id": "namu-wiki-dprk-penal",
+  "name": "Namu.wiki: North Korean Penal Facilities & Political Prison Camps Portal",
+  "publisher": "Namu.wiki Community",
+  "url": "https://namu.wiki/w/%EC%A0%95%EC%B9%98%EB%B2%94%EC%88%98%EC%9A%A9%EC%86%8C/%EB%B6%81%ED%95%9C",
+  "track": "camps",
+  "language": "ko",
+  "category": "Crowdsourced Intelligence",
+  "description": "Extremely detailed Korean-language crowdsourced intelligence compiling facility numbers, historic redesignations, administrative boundary changes, defector account cross-references, and satellite coordinates for North Korean prisons.",
+  "format": "html",
+  "access": "scrape",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2026-09",
+   "maintenance": "active",
+   "cadence": "Real-time community edits",
+   "value": 4,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Mine Namu.wiki's extensive cross-references for Korean-language facility nicknames, former camp numbers (e.g. Camp 11, 12, 13, 26, 27), and closure dates.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://namu.wiki/w/%EC%A0%95%EC%B9%98%EB%B2%94%EC%88%98%EC%9A%A9%EC%86%8C/%EB%B6%81%ED%95%9C"
+  }
+ },
+ {
+  "id": "hrw-dprk-pretrial-detention",
+  "name": "Human Rights Watch: \"Worth Less Than An Animal\": Pre-trial Detention & Holding Centres",
+  "publisher": "Human Rights Watch (HRW)",
+  "url": "https://www.hrw.org/report/2020/10/19/worth-less-animal/abuses-and-due-process-violations-pretrial-detention-north-korea",
+  "track": "camps",
+  "language": "en",
+  "category": "Human Rights Investigation",
+  "description": "Comprehensive report investigating the opaque pre-trial detention system (kuryujang) and holding centers (jipkyolso), detailing systemic torture, forced confessions, and detention pipeline geography.",
+  "format": "html",
+  "access": "download",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2020-10-19",
+   "maintenance": "stale",
+   "cadence": "Monographic investigation",
+   "value": 4,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Create an interactive 'Path through the Penal System' explainer showing how a captured border-crosser is transferred from China -> MSS border post -> Jipkyolso -> Kuryujang -> Kyohwaso/Kwanliso.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://www.hrw.org/report/2020/10/19/worth-less-animal/abuses-and-due-process-violations-pretrial-detention-north-korea"
+  }
+ },
+ {
+  "id": "daily-nk-internal-security",
+  "name": "Daily NK: North Korean Penal System & Camp Relocation Reporting",
+  "publisher": "Daily NK",
+  "url": "https://www.dailynk.com/english/",
+  "track": "camps",
+  "language": "en",
+  "category": "Field Investigations & News",
+  "description": "Continuous covert journalism from an extensive inside-North Korea informant network reporting on camp expansions, prisoner relocations, new border detention centres, and Ministry of Social Security policy changes.",
+  "format": "html",
+  "access": "scrape",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2026-09",
+   "maintenance": "active",
+   "cadence": "Daily",
+   "value": 4,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Build a live RSS or feed parser filtering Daily NK stories tagged with detention facilities to flag operational shifts at specific camps.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://www.dailynk.com/english/"
+  }
+ },
+ {
+  "id": "nkdb-white-paper",
+  "name": "NKDB: White Paper on North Korean Human Rights",
+  "publisher": "Database Center for North Korean Human Rights (NKDB)",
+  "url": "https://nkdb.org/en/board/publication/list",
+  "track": "camps",
+  "language": "ko",
+  "category": "Academic & Policy Research",
+  "description": "Annual statistical compendium aggregating all cases documented in NKDB's Unified Database, analyzing the distribution of violations by facility type, administering agency, and year.",
+  "format": "pdf-tables",
+  "access": "download",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2025-10",
+   "maintenance": "active",
+   "cadence": "Annual",
+   "value": 4,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Extract historical trendlines of detention facility violations by decade to render timeline charts in our /learn articles.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://nkdb.org/en/board/publication/list"
+  }
+ },
+ {
+  "id": "dailynk-korean-market-prices",
+  "name": "Daily NK Korean Market Price Database (데일리NK 시장물가)",
+  "publisher": "Daily NK (데일리NK)",
+  "url": "https://www.dailynk.com/",
+  "track": "economy",
+  "language": "ko",
+  "category": "market-prices",
+  "description": "Original Korean-language source for Daily NK regular market surveys, including detailed commodity breakdowns for cooking oil, sugar, pork, and diesel alongside staple grains.",
+  "format": "json-api",
+  "access": "api",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2026-10-01",
+   "maintenance": "active",
+   "cadence": "bi-weekly",
+   "value": 4,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Feed Korean-language price tags to capture supplementary commodity series (pork, flour, cooking oil, coal) omitted from English digests.",
+  "usedBy": [],
+  "watch": {
+   "type": "content",
+   "url": "https://www.dailynk.com/wp-json/wp/v2/posts?tags=797,984"
+  }
+ },
+ {
+  "id": "asiapress-rimjin-gang-prices",
+  "name": "Asia Press / Rimjin-gang Undercover Market Price Survey",
+  "publisher": "Asia Press International (アジアプレス / リムジンガン)",
+  "url": "https://www.asiapress.org/rimjin-gang/tag/price-survey/",
+  "track": "economy",
+  "language": "en",
+  "category": "market-prices",
+  "description": "In-depth investigative field reporting and undercover price surveys conducted in northern border cities (Hyesan, Musan, Hoeryong) focusing on state enterprise wages, inflation, and black market currency rates.",
+  "format": "html",
+  "access": "scrape",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2026-09-11",
+   "maintenance": "active",
+   "cadence": "monthly / sporadic serialized investigations",
+   "value": 4,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Overlay Asia Press wage and hyperinflation field surveys alongside Daily NK market prices to visualize real purchasing power collapse.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://www.asiapress.org/rimjin-gang/tag/price-survey/"
+  }
+ },
+ {
+  "id": "gacc-china-customs-bulletin",
+  "name": "China Customs (GACC) Monthly Trade Statistics Platform",
+  "publisher": "General Administration of Customs of the People's Republic of China (海关总署)",
+  "url": "http://43.248.49.97/",
+  "track": "economy",
+  "language": "other",
+  "category": "trade",
+  "description": "Primary authoritative origin of all China-DPRK trade data, publishing monthly bilateral export and import totals in RMB and USD by partner country and HS 8-digit commodity code.",
+  "format": "html",
+  "access": "scrape",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2026-09-20",
+   "maintenance": "active",
+   "cadence": "monthly (around 18th-20th of each month)",
+   "value": 4,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Scrape monthly top-line numbers as an early-warning signal for trade border re-openings before UN Comtrade consolidates.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "http://43.248.49.97/"
+  }
+ },
+ {
+  "id": "kosis-north-korea-trade-portal",
+  "name": "KOSIS North Korea External Trade Time Series (KOSIS 북한통계포털)",
+  "publisher": "Statistics Korea (통계청 / KOSIS)",
+  "url": "https://kosis.kr/bukhan",
+  "track": "economy",
+  "language": "ko",
+  "category": "trade",
+  "description": "Official statistical database providing digitized time-series tables of North Korea's total external trade, export/import balances, and country breakdowns based on KOTRA and UN data.",
+  "format": "json-api",
+  "access": "api",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2026-08",
+   "maintenance": "active",
+   "cadence": "annual",
+   "value": 4,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Pull verified multi-decade trade statistics via KOSIS Open API to display long-term historical trade collapses (1991 Soviet collapse, 2017 sanctions, 2020 COVID).",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://kosis.kr/bukhan"
+  }
+ },
+ {
+  "id": "bank-of-korea-dprk-gdp",
+  "name": "Bank of Korea North Korea GDP Growth & Sectoral Estimates (북한 경제성장률 추정 결과)",
+  "publisher": "Bank of Korea (한국은행)",
+  "url": "https://www.bok.or.kr",
+  "track": "economy",
+  "language": "ko",
+  "category": "trade",
+  "description": "Authoritative annual macroeconomic calculation estimating North Korea's real GDP growth rate, nominal Gross National Income (GNI), per capita income, and sector-by-sector output.",
+  "format": "pdf-tables",
+  "access": "download",
+  "has_geo": false,
+  "research": {
+   "last_updated": "2026-07-31",
+   "maintenance": "active",
+   "cadence": "annual (published each July/August)",
+   "value": 4,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Construct an interactive macroeconomic overview panel showing industrial output swings (heavy vs light industry, mining, agriculture) over Kim Jong Un's rule.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://www.bok.or.kr"
+  }
+ },
+ {
+  "id": "uk-fcdo-sanctions-list",
+  "name": "UK Sanctions List (FCDO DPRK Regime)",
+  "publisher": "Foreign, Commonwealth & Development Office (FCDO)",
+  "url": "https://www.gov.uk/government/publications/the-uk-sanctions-list",
+  "track": "economy",
+  "language": "en",
+  "category": "sanctions",
+  "description": "Official UK consolidated sanctions list covering individuals, entities, and ships designated under The Democratic People's Republic of Korea (Sanctions) (EU Exit) Regulations 2019.",
+  "format": "csv",
+  "access": "download",
+  "has_geo": false,
+  "research": {
+   "last_updated": "2026-10-01",
+   "maintenance": "active",
+   "cadence": "daily",
+   "value": 4,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Cross-reference UK designations against UN and OFAC lists to highlight unilateral sanctions divergences and British enforcement targets.",
+  "usedBy": [],
+  "watch": {
+   "type": "content",
+   "url": "https://sanctionslist.fcdo.gov.uk/docs/UK-Sanctions-List.csv"
+  }
+ },
+ {
+  "id": "eu-fsf-dprk-sanctions",
+  "name": "EU Consolidated Financial Sanctions List (DPRK Regime)",
+  "publisher": "European External Action Service (EEAS) / DG FISMA",
+  "url": "https://data.europa.eu/data/datasets/consolidated-list-of-persons-groups-and-entities-subject-to-eu-financial-sanctions",
+  "track": "economy",
+  "language": "en",
+  "category": "sanctions",
+  "description": "European Union sanctions database listing all individuals, military entities, and trade enterprises subject to asset freezes and autonomous EU restrictive measures against North Korea.",
+  "format": "json-api",
+  "access": "download",
+  "has_geo": false,
+  "research": {
+   "last_updated": "2026-10-01",
+   "maintenance": "active",
+   "cadence": "daily",
+   "value": 4,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Harmonize EU autonomous designations with US OFAC and UN lists into our consolidated search engine.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://data.europa.eu/data/datasets/consolidated-list-of-persons-groups-and-entities-subject-to-eu-financial-sanctions"
+  }
+ },
+ {
+  "id": "japan-mof-meti-sanctions",
+  "name": "Japan MOF & METI Sanctions Lists (北朝鮮に対する制裁措置)",
+  "publisher": "Japan Ministry of Finance & Ministry of Economy, Trade and Industry (METI)",
+  "url": "https://www.mofa.go.jp/mofaj/gaiko/korea/k_seisai.html",
+  "track": "economy",
+  "language": "ja",
+  "category": "sanctions",
+  "description": "Japan's autonomous economic sanctions list and METI End-User List designating North Korean financial entities, weapons procurement fronts, and Chongryon-affiliated entities.",
+  "format": "json-api",
+  "access": "download",
+  "has_geo": false,
+  "research": {
+   "last_updated": "2026-10-01",
+   "maintenance": "active",
+   "cadence": "daily / as gazetted",
+   "value": 4,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Highlight Japan-specific designations involving maritime shipping bans and illicit financial remittance channels linked to Chongryon.",
+  "usedBy": [],
+  "watch": {
+   "type": "content",
+   "url": "https://data.opensanctions.org/datasets/latest/jp_mof_sanctions/targets.nested.json"
+  }
+ },
+ {
+  "id": "un-panel-of-experts-reports",
+  "name": "UN Security Council 1718 Panel of Experts Reports Archive",
+  "publisher": "United Nations Security Council",
+  "url": "https://www.un.org/securitycouncil/sanctions/1718/panel_experts/reports",
+  "track": "economy",
+  "language": "en",
+  "category": "smuggling",
+  "description": "Complete collection of biannual final and midterm investigation reports (2010–2024) documenting ship-to-ship petroleum transfers, coal smuggling, overseas workers, and cyber heists.",
+  "format": "pdf-tables",
+  "access": "download",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2024-03-07",
+   "maintenance": "dead",
+   "cadence": "permanently concluded",
+   "value": 4,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Extract coordinates of documented ship-to-ship (STS) transfer locations in the Yellow Sea and East China Sea into an interactive smuggling hotspot heat map.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://www.un.org/securitycouncil/sanctions/1718/panel_experts/reports"
+  }
+ },
+ {
+  "id": "global-fishing-watch-dark-fleet",
+  "name": "Global Fishing Watch North Korea Dark Fishing Fleet Dataset",
+  "publisher": "Global Fishing Watch & Science Advances",
+  "url": "https://globalfishingwatch.org/media-kit/illuminating-dark-fishing-fleets-in-north-korea/",
+  "track": "economy",
+  "language": "en",
+  "category": "smuggling",
+  "description": "Landmark scientific dataset combining satellite radar (SAR), optical imagery, and night lights (VIIRS) to identify ~900 Chinese dark fishing vessels operating illegally in North Korean waters.",
+  "format": "csv",
+  "access": "download",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2020-07-22",
+   "maintenance": "stale",
+   "cadence": "one-off academic release",
+   "value": 4,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Render the illegal fishing tracks as an interactive maritime layer showing the massive depletion of squid stocks in North Korean waters.",
+  "usedBy": [],
+  "watch": {
+   "type": "content",
+   "url": "https://github.com/GlobalFishingWatch/paper-dark-fishing-fleets-in-north-korea"
+  }
+ },
+ {
+  "id": "fbi-lazarus-crypto-alerts",
+  "name": "FBI Lazarus Cyber Crime & Cryptocurrency Public Advisories",
+  "publisher": "Federal Bureau of Investigation (FBI)",
+  "url": "https://www.fbi.gov/investigate/cyber",
+  "track": "economy",
+  "language": "en",
+  "category": "crypto-theft",
+  "description": "Official US law enforcement advisories and press releases detailing major state-sponsored crypto heists (Harmony Horizon, Stake.com, Ronin) with clusters of attributed blockchain addresses.",
+  "format": "html",
+  "access": "scrape",
+  "has_geo": false,
+  "research": {
+   "last_updated": "2024-09",
+   "maintenance": "sporadic",
+   "cadence": "sporadic (published following major indictments or seizure actions)",
+   "value": 4,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Parse official FBI wallet clusters into an interactive address watchlist showing fund consolidation and mixing patterns.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://www.fbi.gov/investigate/cyber"
+  }
+ },
+ {
+  "id": "zachxbt-onchain-investigations",
+  "name": "ZachXBT Lazarus On-Chain Forensic Investigations",
+  "publisher": "ZachXBT",
+  "url": "https://github.com/ZachXBT",
+  "track": "economy",
+  "language": "en",
+  "category": "crypto-theft",
+  "description": "Independent blockchain forensic investigations tracing Lazarus Group laundering networks, peel chains, cross-chain bridge hops, and mixer deposits (Tornado Cash, Sinbad, Blender).",
+  "format": "html",
+  "access": "manual",
+  "has_geo": false,
+  "research": {
+   "last_updated": "2026-05",
+   "maintenance": "active",
+   "cadence": "sporadic (as major exploits occur)",
+   "value": 4,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Aggregate ZachXBT's verified Lazarus addresses into an address intelligence tool with links to block explorers.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://github.com/ZachXBT"
+  }
+ },
+ {
+  "id": "usgs-minerals-yearbook-dprk",
+  "name": "USGS Minerals Yearbook: North Korea",
+  "publisher": "U.S. Geological Survey (USGS)",
+  "url": "https://www.usgs.gov/centers/national-minerals-information-center/international-minerals-statistics-and-information",
+  "track": "economy",
+  "language": "en",
+  "category": "mining",
+  "description": "Authoritative annual US geological survey detailing North Korea's mineral production volumes, mineral trade to China, and Table 2 listing major mines, processing facilities, capacities, and locations.",
+  "format": "xlsx",
+  "access": "download",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2024-05",
+   "maintenance": "sporadic",
+   "cadence": "annual with 1-2 year reporting lag",
+   "value": 4,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Combine USGS production capacity figures with I-RENK mine locations to show annual tonnage potential for major mining complexes.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://www.usgs.gov/centers/national-minerals-information-center/international-minerals-statistics-and-information"
+  }
+ },
+ {
+  "id": "mou-special-economic-zones",
+  "name": "MOU North Korea Special Economic Zones & Development Zones Database (경제특구·경제개발구)",
+  "publisher": "Ministry of Unification (통일부 북한정보포털)",
+  "url": "https://nkinfo.unikorea.go.kr",
+  "track": "economy",
+  "language": "ko",
+  "category": "infrastructure",
+  "description": "Comprehensive South Korean Ministry of Unification registry cataloging all 29 designated special economic zones (10 central-level SEZs including Rason, Kaesong, Sinuiju, Wonsan-Kalma, and 19 provincial-level development zones).",
+  "format": "html",
+  "access": "scrape",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2024-11",
+   "maintenance": "sporadic",
+   "cadence": "annual / policy revisions",
+   "value": 4,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Map all 29 SEZ/EDZ boundary polygons on our Atlas, color-coded by development status (operational like Rason vs paper zones like Kangnyong Green Model Zone).",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://nkinfo.unikorea.go.kr"
+  }
+ },
+ {
+  "id": "rachi-cabinet-secretariat-database",
+  "name": "Cabinet Secretariat Official Abductee and Case Dossiers",
+  "publisher": "内閣官房 拉致問題対策本部 (Headquarters for the Abduction Issue, Cabinet Secretariat of Japan)",
+  "url": "https://www.rachi.go.jp/",
+  "track": "korean_japanese",
+  "language": "ja",
+  "category": "human-rights",
+  "description": "Official Japanese government dossier of the 17 state-recognized abduction victims (Megumi Yokota, Yaeko Taguchi, Kaoru Hasuike, etc.) and 12 distinct abduction incident operations executed by North Korean agents along the Japanese coast and in Europe.",
+  "format": "html",
+  "access": "scrape",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2026-01",
+   "maintenance": "active",
+   "cadence": "monthly",
+   "value": 4,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Incorporate official state-recognized abduction incidents into the Atlas timeline, linking victims with the clandestine training camps where they were forced to instruct DPRK spies in Japanese language and customs.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://www.rachi.go.jp/"
+  }
+ },
+ {
+  "id": "npa-abduction-suspects-icpo",
+  "name": "National Police Agency Abduction Suspects & ICPO Red Notices",
+  "publisher": "警察庁 警備局 (National Police Agency of Japan, Security Bureau)",
+  "url": "https://www.npa.go.jp/bureau/security/abduct/index.html",
+  "track": "korean_japanese",
+  "language": "ja",
+  "category": "human-rights",
+  "description": "Criminal investigative records of DPRK state intelligence operatives with international arrest warrants issued via Interpol (ICPO) for kidnapping Japanese nationals, including Sin Kwang-su, Kim Se-ho, and Kim Myong-suk. Includes operation dates, methods (clandestine vessels, forged passports), and victim identities.",
+  "format": "html",
+  "access": "scrape",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2024-04",
+   "maintenance": "active",
+   "cadence": "irregular",
+   "value": 4,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Perpetrator profiles linked to coastal abduction sites: showing the operative network of North Korean Bureau 35 / Reconnaissance General Bureau that conducted maritime infiltrations.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://www.npa.go.jp/bureau/security/abduct/index.html"
+  }
+ },
+ {
+  "id": "japan-mod-sedori-surveillance",
+  "name": "Japan MOD Maritime Sanctions Evasion (Ship-to-Ship Transfers) Surveillance",
+  "publisher": "防衛省・自衛隊 (Ministry of Defense of Japan)",
+  "url": "https://www.mod.go.jp/j/approach/defense/sedori/index.html",
+  "track": "korean_japanese",
+  "language": "ja",
+  "category": "sanctions",
+  "description": "Declassified surveillance records and photographic evidence gathered by JMSDF patrol aircraft and international partners (Australia, Canada, Netherlands, New Zealand) monitoring illegal ship-to-ship transfers (瀬取り) by sanctioned North Korean oil tankers.",
+  "format": "html",
+  "access": "download",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2026-08",
+   "maintenance": "active",
+   "cadence": "irregular",
+   "value": 4,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "A Maritime Sanctions Evasion layer: plot exact coordinates of confirmed illegal mid-sea fuel transfers in the East China Sea, showing vessel names (CHON MA SAN, NAM SAN 8) and partner flags.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://www.mod.go.jp/j/approach/defense/sedori/index.html"
+  }
+ },
+ {
+  "id": "kaiho-ghost-ships-stats",
+  "name": "Japan Coast Guard North Korean Wooden Drift Boat Statistics",
+  "publisher": "海上保安庁 (Japan Coast Guard)",
+  "url": "https://www.kaiho.mlit.go.jp/",
+  "track": "korean_japanese",
+  "language": "ja",
+  "category": "maritime",
+  "description": "Annual statistical compilation of North Korean wooden fishing vessels and ghost ships (漂流・漂着木造船) washing ashore along the Sea of Japan coast (Hokkaido, Aomori, Akita, Yamagata, Niigata, Ishikawa, Fukui, Shimane). Records total vessels, survivor rescues, and deceased recovered.",
+  "format": "html",
+  "access": "scrape",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2025-06",
+   "maintenance": "active",
+   "cadence": "annual",
+   "value": 4,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "A Sea of Japan Ghost Ships map layer displaying coastal drift arrival clusters: highlighting the deadly human toll of Pyongyang's winter squid fishing quotas and diesel fuel shortages.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://www.kaiho.mlit.go.jp/"
+  }
+ },
+ {
+  "id": "chongryon-uri-hakkyo-directory",
+  "name": "Chongryon Uri Hakkyo School Directory",
+  "publisher": "在日本朝鮮人総聯合会 (General Association of Korean Residents in Japan - Chongryon)",
+  "url": "http://www.chongryon.com/j/cr/link3.html",
+  "track": "korean_japanese",
+  "language": "ja",
+  "category": "diaspora",
+  "description": "Complete official directory of all pro-Pyongyang ethnic Korean schools (ウリハッキョ) in Japan, including Korea University (小平市), high schools, middle schools, and elementary schools. Each record contains exact Japanese postal codes, street addresses, and contact numbers across every Japanese prefecture.",
+  "format": "html",
+  "access": "scrape",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2024-05",
+   "maintenance": "active",
+   "cadence": "irregular",
+   "value": 4,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "A diaspora geography layer: map all Chongryon schools and institutions in Japan, illustrating their historic relationship with Pyongyang funding, repatriation alumni, and local municipal subsidy debates.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "http://www.chongryon.com/j/cr/link3.html"
+  }
+ },
+ {
+  "id": "repatriation-project-niigata-archive",
+  "name": "Niigata Port North Korea Repatriation Project (帰国事業) Historical Data",
+  "publisher": "新潟市歴史博物館 (Niigata City History Museum) / 日本赤十字社 (Japanese Red Cross Society)",
+  "url": "https://www.city.niigata.lg.jp/kanko/rekishi/history/kikoku.html",
+  "track": "korean_japanese",
+  "language": "ja",
+  "category": "diaspora",
+  "description": "Historical voyage manifests and passenger statistics for the 1959–1984 'Paradise on Earth' repatriation program that transported 93,340 Zainichi Koreans and Japanese spouses from Niigata Port to Chongjin on Soviet vessels (Kril'on, Tobolsk).",
+  "format": "html",
+  "access": "manual",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2024-10",
+   "maintenance": "active",
+   "cadence": "static",
+   "value": 4,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "A dedicated migration corridor map from Niigata Port to Chongjin: tracing the 187 repatriation voyages, the Niigata Red Cross reception center, and the tragic fate of returnees sent to internal exile and camps.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://www.city.niigata.lg.jp/kanko/rekishi/history/kikoku.html"
+  }
+ },
+ {
+  "id": "kinu-nkhr-platform",
+  "name": "KINU North Korean Human Rights Information Platform",
+  "publisher": "통일연구원 (Korea Institute for National Unification - KINU)",
+  "url": "https://www.kinu.or.kr/nkhr/index.do",
+  "track": "korean_japanese",
+  "language": "ko",
+  "category": "human-rights",
+  "description": "Specialized digital portal aggregating South Korea's official academic research on North Korean human rights: penal facilities (정치범수용소 / 구금시설), abductees and POWs (국군포로, 납북자), overseas forced labor, and original DPRK legal codes.",
+  "format": "html",
+  "access": "scrape",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2026-06",
+   "maintenance": "active",
+   "cadence": "monthly",
+   "value": 4,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "A structured Human Rights Violation Reference: linking Atlas detention locations to KINU's legal analysis and verified defector testimony databases.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://www.kinu.or.kr/nkhr/index.do"
+  }
+ },
+ {
+  "id": "data-go-kr-nk-weather",
+  "name": "Ministry of Unification Daily North Korea Weather Dataset",
+  "publisher": "통일부 (Ministry of Unification via data.go.kr)",
+  "url": "https://www.data.go.kr/data/15039464/fileData.do",
+  "track": "korean_japanese",
+  "language": "ko",
+  "category": "weather",
+  "description": "Daily meteorological observations across North Korea's principal geographic regions: Sonbong, Samjiyon, Chongjin, Chunggang, Pungsan, Kanggye, Sinuiju, Anju, Hamhung, Pyongyang, Haeju, Kaesong, and Wonsan. Records temperature, rainfall, and weather status.",
+  "format": "csv",
+  "access": "download",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2026-09-29",
+   "maintenance": "active",
+   "cadence": "daily",
+   "value": 4,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Live weather overlay for our map: show daily temperatures, rainfall, and freezing conditions across North Korea (crucial for monitoring Yalu/Tumen river freezing during winter defection seasons).",
+  "usedBy": [],
+  "watch": {
+   "type": "content",
+   "url": "https://www.data.go.kr/data/15039464/fileData.do"
+  }
+ },
+ {
+  "id": "kma-nk-synoptic-weather",
+  "name": "KMA 27 North Korea WMO Synoptic Weather Stations",
+  "publisher": "기상청 (Korea Meteorological Administration - KMA)",
+  "url": "https://www.weather.go.kr/w/wnk/n-korea.do",
+  "track": "korean_japanese",
+  "language": "ko",
+  "category": "weather",
+  "description": "Official South Korean meteorological monitoring network for 27 World Meteorological Organization (WMO) surface observation stations across North Korea. Provides daily mean temperature, high/low, precipitation, wind speed, and snow depth for Pyongyang, Samjiyon, Hyesan, Kanggye, Chongjin, Sinuiju, Wonsan, etc.",
+  "format": "html",
+  "access": "api",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2026-10-01",
+   "maintenance": "active",
+   "cadence": "daily",
+   "value": 4,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Historical climate and drought/flood tracker: visualize extreme drought and flood seasons in North Korea that precipitate agricultural crop failures and food crises.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://www.weather.go.kr/w/wnk/n-korea.do"
+  }
+ },
+ {
+  "id": "data-go-kr-nk-elites",
+  "name": "Ministry of Unification North Korea Key Figures (Elites) OpenAPI",
+  "publisher": "통일부 (Ministry of Unification via data.go.kr)",
+  "url": "https://www.data.go.kr/data/15079264/openapi.do",
+  "track": "korean_japanese",
+  "language": "ko",
+  "category": "leadership",
+  "description": "Official South Korean government OpenAPI providing biographical and career profiles of North Korean leadership figures, Worker's Party of Korea (WPK) cadres, military generals, and state officials. Includes birth year, hometown, education, rank, and career movements.",
+  "format": "json-api",
+  "access": "api",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2026-09-30",
+   "maintenance": "active",
+   "cadence": "monthly",
+   "value": 4,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "An interactive DPRK Power Structure & Elite Network graph: view officials by organization (State Affairs Commission, Central Military Commission, Ministry of State Security) and trace promotions/purges.",
+  "usedBy": [],
+  "watch": {
+   "type": "content",
+   "url": "https://www.data.go.kr/data/15079264/openapi.do"
+  }
+ },
+ {
+  "id": "data-go-kr-nk-chronicle",
+  "name": "Ministry of Unification North Korea Historical Chronicle OpenAPI",
+  "publisher": "통일부 (Ministry of Unification via data.go.kr)",
+  "url": "https://www.data.go.kr/data/15079276/openapi.do",
+  "track": "korean_japanese",
+  "language": "ko",
+  "category": "history",
+  "description": "Comprehensive historical chronology API covering all major political, military, economic, and diplomatic events in North Korea from liberation in 1945 to the present day.",
+  "format": "json-api",
+  "access": "api",
+  "has_geo": false,
+  "research": {
+   "last_updated": "2026-09-30",
+   "maintenance": "active",
+   "cadence": "monthly",
+   "value": 4,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "An interactive historical timeline filterable by era (Kim Il Sung, Kim Jong Il, Kim Jong Un) to correlate major regime milestones with missile tests and economic milestones.",
+  "usedBy": [],
+  "watch": {
+   "type": "content",
+   "url": "https://www.data.go.kr/data/15079276/openapi.do"
+  }
+ },
+ {
+  "id": "unibook-nk-materials-center",
+  "name": "National Library Information Center on North Korea Catalog",
+  "publisher": "국립중앙도서관 북한자료센터 (Information Center on North Korea, National Library of Korea)",
+  "url": "https://unibook.unikorea.go.kr/",
+  "track": "korean_japanese",
+  "language": "ko",
+  "category": "library",
+  "description": "South Korea's premier institutional archive of original North Korean primary materials: over 110,000 cataloged books, periodicals (로동신문, 민주조선, 근로자), maps, elementary/secondary textbooks, propaganda posters, and government legal codes.",
+  "format": "html",
+  "access": "scrape",
+  "has_geo": false,
+  "research": {
+   "last_updated": "2026-09",
+   "maintenance": "active",
+   "cadence": "weekly",
+   "value": 4,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "A comprehensive primary source bibliography: link historical events and policy shifts directly to the official DPRK books and Rodong Sinmun editorials preserved in the center.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://unibook.unikorea.go.kr/"
+  }
+ },
+ {
+  "id": "kbs-nambook-window",
+  "name": "KBS Window on North and South (남북의 창) Broadcast Archive",
+  "publisher": "KBS (Korean Broadcasting System 남북교류협력단)",
+  "url": "https://news.kbs.co.kr/special/northkorea/",
+  "track": "korean_japanese",
+  "language": "ko",
+  "category": "media",
+  "description": "South Korea's premier weekly public television program specializing in North Korean affairs, broadcast continuously since 2001. Archives comprehensive video reports analyzing KCTV broadcasts, commercial satellite imagery of construction/military sites, and defector interviews.",
+  "format": "html",
+  "access": "scrape",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2026-09",
+   "maintenance": "active",
+   "cadence": "weekly",
+   "value": 4,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Embed targeted video verification clips directly into our explainer articles for visual proof of North Korean market conditions and construction projects.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://news.kbs.co.kr/special/northkorea/"
+  }
+ },
+ {
+  "id": "github-justinelliotmeyers-dprk-boundaries",
+  "name": "Official DPRK Administrative Boundary Shapefile",
+  "publisher": "Justin Elliot Meyers (GitHub)",
+  "url": "https://github.com/justinelliotmeyers/official_DPRK_administrative_boundary_shapefile",
+  "track": "korean_japanese",
+  "language": "en",
+  "category": "geography",
+  "description": "Open-source GIS vector polygon dataset of North Korea's official administrative divisions down to province, city, and county (시·군·구) levels. Sourced from Korean cartographic records and adjusted to match satellite imagery.",
+  "format": "geojson",
+  "access": "download",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2021-08",
+   "maintenance": "stale",
+   "cadence": "static",
+   "value": 4,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Use as choropleth boundary polygons for mapping county-level defector origins, famine vulnerability, and industrial facility density.",
+  "usedBy": [],
+  "watch": {
+   "type": "github",
+   "repo": "justinelliotmeyers/official_DPRK_administrative_boundary_shapefile"
+  }
+ },
+ {
+  "id": "github-kp-to-ko",
+  "name": "kp-to-ko Cultural Language Converter",
+  "publisher": "july0785 (GitHub)",
+  "url": "https://github.com/july0785/kp-to-ko",
+  "track": "korean_japanese",
+  "language": "ko",
+  "category": "tools",
+  "description": "Open-source Python linguistic utility that converts North Korean Munhwa-eo (문화어) orthography, phonology (initial consonant rule / 두음법칙 variances: 례외 -> 예외, 로동 -> 노동), and DPRK-specific vocabulary back to standard South Korean.",
+  "format": "html",
+  "access": "download",
+  "has_geo": false,
+  "research": {
+   "last_updated": "2023-09",
+   "maintenance": "sporadic",
+   "cadence": "irregular",
+   "value": 4,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "A bidirectional search normalizer for our site: allow users to search using either standard South Korean (노동신문, 이과대학) or North Korean spelling (로동신문, 리과대학) and find the exact same entities.",
+  "usedBy": [],
+  "watch": {
+   "type": "github",
+   "repo": "july0785/kp-to-ko"
+  }
+ },
+ {
+  "id": "cns-nti-missile-test-database",
+  "name": "CNS North Korea Missile Test Database",
+  "publisher": "James Martin Center for Nonproliferation Studies (CNS) / Nuclear Threat Initiative (NTI)",
+  "url": "https://www.nti.org/analysis/articles/cns-north-korea-missile-test-database/",
+  "track": "military",
+  "language": "en",
+  "category": "Ballistic Missile Launches",
+  "description": "The definitive academic baseline database recording North Korean missile flight tests capable of delivering >=500 kg payload over >=300 km from 1984 onwards. Maintained by CNS experts including Jeffrey Lewis and Shea Cotton, tracking launch dates, missile types, launch facility, apogee, distance, and failure/success outcomes.",
+  "format": "xlsx",
+  "access": "download",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2024-07",
+   "maintenance": "sporadic",
+   "cadence": "quarterly to biannual",
+   "value": 4,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Use CNS as the authoritative ground truth for historical flight parameters (apogee, distance, payload class) to cross-check real-time military announcements.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://www.nti.org/analysis/articles/cns-north-korea-missile-test-database/"
+  }
+ },
+ {
+  "id": "ja-wikipedia-missile-tests",
+  "name": "Japanese Wikipedia: North Korean Missile Launch Experiments (北朝鮮によるミサイル発射実験)",
+  "publisher": "Japanese Wikipedia Contributors",
+  "url": "https://ja.wikipedia.org/wiki/北朝鮮によるミサイル発射実験",
+  "track": "military",
+  "language": "ja",
+  "category": "Missile Launch Chronology & Tabular Records",
+  "description": "Meticulously maintained chronological table of all North Korean missile and space rocket launches from 1984 to 2026. Synthesizes Japanese MOD press releases, JCS reports, and North Korean official statements with Japanese EEZ impact assessments.",
+  "format": "html",
+  "access": "scrape",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2026-09-20",
+   "maintenance": "active",
+   "cadence": "within hours of each launch event",
+   "value": 4,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Use Wikipedia's MediaWiki API to parse and cross-validate nagix's test entries against Japanese defense community consensus.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://ja.wikipedia.org/wiki/北朝鮮によるミサイル発射実験"
+  }
+ },
+ {
+  "id": "namu-wiki-missile-provocations",
+  "name": "namu.wiki North Korean Missile Provocation Yearly Records (연도별 북한 미사일 도발)",
+  "publisher": "namu.wiki Contributors",
+  "url": "https://namu.wiki/w/2026년%20북한%20미사일%20도발",
+  "track": "military",
+  "language": "ko",
+  "category": "Tactical Missile Incident Chronicle",
+  "description": "Extremely detailed incident-by-incident Korean chronicle of every missile provocation divided into yearly dedicated pages (2022 through 2026). Documents launch times in KST, specific missile brigades, TEL vehicle movements, weapon variants (e.g. Hwasong-11Da-4.5 with 4.5-ton super-large warhead), and South Korean military responses.",
+  "format": "html",
+  "access": "scrape",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2026-09-20",
+   "maintenance": "active",
+   "cadence": "daily / hours after events",
+   "value": 4,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Scrape tactical missile designations (e.g., distinguishing KN-23 variants) to enrich our missile metadata beyond nagix's 'unknown' classifications.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://namu.wiki/w/2026년%20북한%20미사일%20도발"
+  }
+ },
+ {
+  "id": "en-wikipedia-missile-tests",
+  "name": "English Wikipedia: List of North Korean Missile Tests",
+  "publisher": "Wikipedia Contributors",
+  "url": "https://en.wikipedia.org/wiki/List_of_North_Korean_missile_tests",
+  "track": "military",
+  "language": "en",
+  "category": "Missile Launch Chronology",
+  "description": "Comprehensive English-language chronological tables of North Korean missile launches from 1984 to present, detailing missile type, launch site, coordinates, apogee, distance, and launch outcome with secondary news citations.",
+  "format": "html",
+  "access": "scrape",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2026-09",
+   "maintenance": "active",
+   "cadence": "days after launches",
+   "value": 4,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Automate automated table sync using Wikipedia API to catch new English-language analysis and cited articles.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://en.wikipedia.org/wiki/List_of_North_Korean_missile_tests"
+  }
+ },
+ {
+  "id": "north-korea-uncovered-melvin",
+  "name": "North Korea Uncovered (NKU) KMZ",
+  "publisher": "Curtis Melvin / North Korean Economy Watch",
+  "url": "https://www.nkeconwatch.com/north-korea-uncovered-google-earth/",
+  "track": "military",
+  "language": "en",
+  "category": "Historical Military GIS Layers",
+  "description": "Pioneering Google Earth KMZ project (2007-2014) documenting thousands of North Korean military sites, anti-aircraft artillery positions, radar sites, military checkpoints, trenches, coastal gun emplacements, and underground storage facilities.",
+  "format": "kml",
+  "access": "download",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2014-06",
+   "maintenance": "dead",
+   "cadence": "unmaintained (historical archive)",
+   "value": 4,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Harvest the military defensive positions (trench lines, hardened coastal artillery, AAA rings) as historical base layers for comparing post-2014 DMZ fortification build-outs.",
+  "usedBy": [],
+  "watch": {
+   "type": "content",
+   "url": "https://web.archive.org/web/20210211181829/http://www.nkeconwatch.com/nk-uploads/North-Korea-Uncovered-18.kmz"
+  }
+ },
+ {
+  "id": "sipri-arms-transfers-db",
+  "name": "SIPRI Arms Transfers Database",
+  "publisher": "Stockholm International Peace Research Institute (SIPRI)",
+  "url": "https://www.sipri.org/databases/armstransfers",
+  "track": "military",
+  "language": "en",
+  "category": "Conventional Arms Transfers & Trade",
+  "description": "Authoritative international database tracking imports and exports of major conventional weapons since 1950. Records historical Soviet/Chinese transfers to North Korea and North Korean illicit arms exports to the Middle East, Africa, and recent transfers to the Russian Federation.",
+  "format": "csv",
+  "access": "download",
+  "has_geo": false,
+  "research": {
+   "last_updated": "2025-03",
+   "maintenance": "active",
+   "cadence": "annual in March",
+   "value": 4,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Build a bilateral arms flow Sankey diagram or interactive map showing recipient countries of North Korean missile systems and heavy weapons since 1970.",
+  "usedBy": [],
+  "watch": {
+   "type": "content",
+   "url": "https://armstrade.sipri.org/armstrade/page/trade_register.php"
+  }
+ },
+ {
+  "id": "sipri-nuclear-forces-dprk",
+  "name": "SIPRI World Nuclear Forces Data (DPRK Stockpile Assessment)",
+  "publisher": "Stockholm International Peace Research Institute (SIPRI)",
+  "url": "https://www.sipri.org/yearbook",
+  "track": "military",
+  "language": "en",
+  "category": "Nuclear Warhead Stockpile Estimates",
+  "description": "Annual peer-reviewed assessment of North Korea's nuclear arsenal in the SIPRI Yearbook, providing estimates of operational warheads (~50 assembled warheads as of recent assessments), total fissile material inventory (sufficient for 70-90 warheads), and delivery vehicle breakdown.",
+  "format": "pdf-tables",
+  "access": "download",
+  "has_geo": false,
+  "research": {
+   "last_updated": "2025-06",
+   "maintenance": "active",
+   "cadence": "annual in June",
+   "value": 4,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Render a clean, transparent Nuclear Stockpile Counter & Estimate Range chart on /learn showing fissile material growth over time.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://www.sipri.org/yearbook"
+  }
+ },
+ {
+  "id": "frontelligence-dprk-russia-rail",
+  "name": "Frontelligence Insight / Open Source Centre: DPRK-Russia Munitions Transit & Ammunition Hubs",
+  "publisher": "Frontelligence Insight & Open Source Centre",
+  "url": "https://frontelligence.substack.com",
+  "track": "military",
+  "language": "en",
+  "category": "Logistics & Supply Chain Intelligence",
+  "description": "Satellite imagery and rail logistics tracking of North Korean munitions shipments moving across the Tumangang-Khasan rail bridge and the Trans-Siberian Railway to Russian ammunition depots near Ukraine (e.g. Tikhoretsk in Krasnodar Krai, Mozdok, and Kotluban).",
+  "format": "html",
+  "access": "scrape",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2026-05",
+   "maintenance": "sporadic",
+   "cadence": "monthly / milestone-driven",
+   "value": 4,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Map the complete 10,000 km logistics pipeline from Tumangang / Rajin through Siberia to the frontline depots in western Russia.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://frontelligence.substack.com"
+  }
+ },
+ {
+  "id": "csis-beyond-parallel-balloons",
+  "name": "CSIS Beyond Parallel Map of North Korea's Garbage-Filled Balloons",
+  "publisher": "Center for Strategic and International Studies (CSIS)",
+  "url": "https://beyondparallel.csis.org/map-of-north-koreas-garbage-filled-balloons/",
+  "track": "military",
+  "language": "en",
+  "category": "Gray-Zone Warfare & Border Incursions",
+  "description": "Interactive map and tracking database analyzing North Korea's balloon campaign launched across the DMZ into South Korea since May 2024. Maps thousands of balloon landings, payload compositions (waste, electronic timers, GPS tracking devices), launch weather patterns, and impact zones across Seoul and Gyeonggi.",
+  "format": "html",
+  "access": "scrape",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2026-04",
+   "maintenance": "active",
+   "cadence": "event-driven following major balloon waves",
+   "value": 4,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Recreate a gray-zone warfare layer showing balloon trajectories alongside GPS jamming corridors and drone incursions.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://beyondparallel.csis.org/map-of-north-koreas-garbage-filled-balloons/"
+  }
+ },
+ {
+  "id": "rok-mnd-defense-white-paper",
+  "name": "South Korea MND Defense White Paper (대한민국 국방백서)",
+  "publisher": "Republic of Korea Ministry of National Defense (국방부)",
+  "url": "https://www.mnd.go.kr",
+  "track": "military",
+  "language": "ko",
+  "category": "Official Government Military Assessment",
+  "description": "Biennial official assessment published by the ROK Ministry of National Defense detailing North Korean military posture, troop numbers (~1.28 million active), reserve forces (~7.6 million), division/brigade counts, tank/artillery stockpiles, and plutonium/HEU stockpiles.",
+  "format": "pdf-tables",
+  "access": "download",
+  "has_geo": false,
+  "research": {
+   "last_updated": "2025-01",
+   "maintenance": "active",
+   "cadence": "biennial (every 2 years)",
+   "value": 4,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Digitize the Defense White Paper's comparative military balance tables into interactive side-by-side charts on /learn.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://www.mnd.go.kr"
+  }
+ },
+ {
+  "id": "npec-dprk-nuclear-complex-map",
+  "name": "NPEC North Korea Nuclear Complex Interactive Map",
+  "publisher": "Nonproliferation Policy Education Center (NPEC)",
+  "url": "https://npolicy.org",
+  "track": "military",
+  "language": "en",
+  "category": "Nuclear Facilities GIS",
+  "description": "Interactive map and facility catalog documenting the geographic distribution of North Korea's nuclear weapons infrastructure, categorized by function: research, uranium mining/milling, enrichment, plutonium production, weapon assembly, and underground test tunnels.",
+  "format": "html",
+  "access": "scrape",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2024-05",
+   "maintenance": "sporadic",
+   "cadence": "periodic research updates",
+   "value": 4,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Incorporate NPEC's functional categorization into our /atlas nuclear facilities filter.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://npolicy.org"
+  }
+ },
+ {
+  "id": "geoboundaries-prk",
+  "name": "geoBoundaries DPRK Open Administrative Boundaries (ADM0-ADM2)",
+  "publisher": "William & Mary geoLab",
+  "url": "https://www.geoboundaries.org/",
+  "track": "population",
+  "language": "en",
+  "category": "Administrative Boundaries",
+  "description": "Openly licensed administrative boundary polygons for North Korea at ADM0 (country), ADM1 (provinces), and ADM2 (counties) maintained by the William & Mary geoLab. Provides standardized GeoJSON, TopoJSON, and Shapefile representations with consistent topology.",
+  "format": "geojson",
+  "access": "api",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2023-02",
+   "maintenance": "active",
+   "cadence": "annual",
+   "value": 4,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Use as a lightweight, un-zipped fallback GeoJSON for client-side MapLibre boundary overlays when OCHA geodatabases are too heavy.",
+  "usedBy": [],
+  "watch": {
+   "type": "content",
+   "url": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/PRK/ADM2/geoBoundaries-PRK-ADM2.geojson"
+  }
+ },
+ {
+  "id": "openstreetmap-overpass-dprk",
+  "name": "OpenStreetMap DPRK Administrative Relations (Levels 4 & 6 via Overpass)",
+  "publisher": "OpenStreetMap Contributors",
+  "url": "https://www.openstreetmap.org/",
+  "track": "population",
+  "language": "other",
+  "category": "Administrative Boundaries",
+  "description": "Community-maintained administrative boundary relations for North Korea with bilingual Korean (name:ko) and English (name:en) tagging. Contains 11 Level 4 relations (provinces/special cities) and 196 Level 6 relations (counties, cities, urban districts).",
+  "format": "json-api",
+  "access": "api",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2026-10-01",
+   "maintenance": "active",
+   "cadence": "daily",
+   "value": 4,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Provides bilingual Hangul/English names and live relation IDs that match our MapLibre base map perfectly without projection or alignment shifts.",
+  "usedBy": [],
+  "watch": {
+   "type": "content",
+   "url": "https://overpass-api.de/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A25%5D%3Barea%5B%22ISO3166-1%22%3D%22KP%22%5D-%3E.a%3Brel(area.a)%5B%22boundary%22%3D%22administrative%22%5D%5B%22admin_level%22%3D%226%22%5D%3Bout+count%3B"
+  }
+ },
+ {
+  "id": "geofabrik-osm-north-korea",
+  "name": "Geofabrik OpenStreetMap North Korea Daily PBF Extract",
+  "publisher": "Geofabrik GmbH",
+  "url": "https://download.geofabrik.de/asia/north-korea.html",
+  "track": "population",
+  "language": "other",
+  "category": "Administrative Boundaries",
+  "description": "Daily updated OpenStreetMap raw vector database extract covering the entire territory of North Korea. Includes all administrative boundary polygons, roads, railways, rivers, residential clusters, industrial complexes, and named settlements.",
+  "format": "other",
+  "access": "download",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2026-09-29",
+   "maintenance": "active",
+   "cadence": "daily",
+   "value": 4,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Extract all boundary relations, town centroids (ri, dong, eup), and settlement areas with osmium/gdal to power autocomplete and boundary vector tiles.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://download.geofabrik.de/asia/north-korea.html"
+  }
+ },
+ {
+  "id": "un-wpp-2024-data-portal",
+  "name": "UN World Population Prospects (WPP 2024 Revision) Data Portal API",
+  "publisher": "United Nations Department of Economic and Social Affairs, Population Division",
+  "url": "https://population.un.org/wpp/",
+  "track": "population",
+  "language": "en",
+  "category": "Demographics",
+  "description": "Official programmatic REST API for global demographic estimates and projections from 1950 to 2100. Includes 108 indicators for DPRK (Location ID 408) including total population by sex, 5-year age cohorts, crude birth/death rates, total fertility rate, and life expectancy.",
+  "format": "json-api",
+  "access": "api",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2024-07",
+   "maintenance": "active",
+   "cadence": "irregular",
+   "value": 4,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Drive national-level demographic timeline charts showing North Korea's population trajectory, aging pyramid, and historical mortality dips (1990s famine).",
+  "usedBy": [],
+  "watch": {
+   "type": "content",
+   "url": "https://population.un.org/dataportalapi/api/v1/locations/408"
+  }
+ },
+ {
+  "id": "un-wpp-2024-bulk-data",
+  "name": "UN World Population Prospects (WPP 2024) Data Repository (PPgp/wpp2024)",
+  "publisher": "UN Population Division & University of Washington",
+  "url": "https://github.com/PPgp/wpp2024",
+  "track": "population",
+  "language": "en",
+  "category": "Demographics",
+  "description": "Complete raw open-source demographic datasets of the 2024 Revision of World Population Prospects. Contains annual and 5-year age-sex demographic tables for North Korea (country code 408) from 1950 to 2023 estimates and projections up to 2100.",
+  "format": "csv",
+  "access": "download",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2024-08",
+   "maintenance": "active",
+   "cadence": "irregular",
+   "value": 4,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Extract pre-computed annual DPRK population and age-group breakdowns for offline bundling in the Next.js static build.",
+  "usedBy": [],
+  "watch": {
+   "type": "github",
+   "repo": "PPgp/wpp2024"
+  }
+ },
+ {
+  "id": "world-bank-wdi-prk",
+  "name": "World Bank World Development Indicators (WDI) API - DPRK Population & Vital Rates",
+  "publisher": "World Bank Group",
+  "url": "https://data.worldbank.org/country/korea-dem-peoples-rep",
+  "track": "population",
+  "language": "en",
+  "category": "Demographics",
+  "description": "High-availability, keyless REST API providing annual time series of North Korea's total population, female/male ratios, urban population percentage, fertility, life expectancy, and dependency ratios from 1960 through 2025.",
+  "format": "json-api",
+  "access": "api",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2026-07",
+   "maintenance": "active",
+   "cadence": "quarterly",
+   "value": 4,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Use in header stat cards and national overview summary widgets ('Total Population: 26.5M').",
+  "usedBy": [],
+  "watch": {
+   "type": "content",
+   "url": "https://api.worldbank.org/v2/country/PRK/indicator/SP.POP.TOTL?format=json&date=2015:2025"
+  }
+ },
+ {
+  "id": "worldpop-prk-100m-unconstrained",
+  "name": "WorldPop North Korea 100m Annual Population Counts 2000-2020",
+  "publisher": "WorldPop, University of Southampton",
+  "url": "https://hub.worldpop.org/geodata/summary?id=6418",
+  "track": "population",
+  "language": "en",
+  "category": "Gridded Population",
+  "description": "Annual 100m resolution gridded population datasets for North Korea for every single year from 2000 through 2020. Generated via Random Forest dasymetric modeling using land cover, lights at night, topography, and infrastructure covariates.",
+  "format": "other",
+  "access": "download",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2018-11-22",
+   "maintenance": "stale",
+   "cadence": "irregular",
+   "value": 4,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Enable time-slider comparisons of rural depopulation and urbanization shifts between 2000 and 2020.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://hub.worldpop.org/geodata/summary?id=6418"
+  }
+ },
+ {
+  "id": "worldpop-prk-age-sex-rasters",
+  "name": "WorldPop North Korea 100m Age & Sex Disaggregated Rasters 2020",
+  "publisher": "WorldPop, University of Southampton",
+  "url": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2000_2020_Constrained/2020/PRK/",
+  "track": "population",
+  "language": "en",
+  "category": "Gridded Population",
+  "description": "Gridded 100m rasters disaggregating North Korea's population by sex and 5-year age groups (0, 1, 5, 10, ... 80+) for year 2020. Allows calculating demographic pyramids and dependency ratios for any custom polygon, county, or radius.",
+  "format": "other",
+  "access": "download",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2020-11-17",
+   "maintenance": "stale",
+   "cadence": "never",
+   "value": 4,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Compute estimated 2020 age-pyramids for each individual North Korean county or prison camp zone.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://data.worldpop.org/GIS/AgeSex_structures/Global_2000_2020_Constrained/2020/PRK/"
+  }
+ },
+ {
+  "id": "eog-viirs-nighttime-lights",
+  "name": "Earth Observation Group VIIRS Nighttime Lights Annual & Monthly Composites",
+  "publisher": "Payne Institute for Public Policy, Colorado School of Mines",
+  "url": "https://eogdata.mines.edu/products/vnl/",
+  "track": "population",
+  "language": "en",
+  "category": "Night Lights",
+  "description": "Research-grade cloud-free annual and monthly nighttime radiance grids (VIIRS VNL v2.1 and v2.2) filtered for ephemeral lights (fires, aurora) and calibrated in nanowatts/cm²/sr. The primary dataset used by academic economists to estimate regional North Korean GDP.",
+  "format": "other",
+  "access": "download",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2025-12",
+   "maintenance": "active",
+   "cadence": "annual",
+   "value": 4,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Extract county-level mean nighttime radiance to calculate a 2012-2025 electrification trajectory index for each county in North Korea.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://eogdata.mines.edu/products/vnl/"
+  }
+ },
+ {
+  "id": "fao-giews-country-brief-prk",
+  "name": "FAO GIEWS Country Brief & Cereal Balance System: DPRK",
+  "publisher": "Food and Agriculture Organization of the United Nations (FAO)",
+  "url": "https://www.fao.org/giews/countrybrief/country.jsp?code=PRK",
+  "track": "population",
+  "language": "en",
+  "category": "Food Security",
+  "description": "Continuous monitoring of DPRK agricultural seasons, weather impacts, planting and harvesting progress, cereal production estimates (rice paddy, maize), and national cereal import requirements based on the FAO/GIEWS Country Cereal Balance System (CCBS).",
+  "format": "html",
+  "access": "scrape",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2026-09-04",
+   "maintenance": "active",
+   "cadence": "quarterly",
+   "value": 4,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Scrape quarterly cereal production and import deficit figures to power a live 'Food Security & Harvest Status' monitor.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://www.fao.org/giews/countrybrief/country.jsp?code=PRK"
+  }
+ },
+ {
+  "id": "who-gho-api-prk",
+  "name": "WHO Global Health Observatory (GHO) Athena API for DPRK",
+  "publisher": "World Health Organization (WHO)",
+  "url": "https://www.who.int/data/gho",
+  "track": "population",
+  "language": "en",
+  "category": "Health",
+  "description": "Open OData REST API for global health statistics. Supports filtering by SpatialDim='PRK' to retrieve time series for life expectancy, under-five mortality, maternal mortality, tuberculosis incidence, malaria cases, suicide rates, and healthcare worker densities.",
+  "format": "json-api",
+  "access": "api",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2024-08-02",
+   "maintenance": "active",
+   "cadence": "annual",
+   "value": 4,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Build interactive health trend graphs comparing North Korea's tuberculosis burden and life expectancy against regional neighbors.",
+  "usedBy": [],
+  "watch": {
+   "type": "content",
+   "url": "https://ghoapi.azureedge.net/api/WHOSIS_000001?$filter=SpatialDim%20eq%20'PRK'"
+  }
+ },
+ {
+  "id": "who-dprk-health-indicators-hdx",
+  "name": "WHO DPRK Compiled Health Indicators Dataset (HDX)",
+  "publisher": "World Health Organization / HDX",
+  "url": "https://data.humdata.org/dataset/who-data-for-prk",
+  "track": "population",
+  "language": "en",
+  "category": "Health",
+  "description": "Complete compiled CSV release containing 33 indicator category tables for North Korea from the WHO GHO portal, including malaria, tuberculosis, neglected tropical diseases, child mortality, immunization coverage, health workforce, and water/sanitation.",
+  "format": "csv",
+  "access": "download",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2026-09-17",
+   "maintenance": "active",
+   "cadence": "quarterly",
+   "value": 4,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Bulk-import verified historical health time series into our local SQLite/JSON analytics layer.",
+  "usedBy": [],
+  "watch": {
+   "type": "content",
+   "url": "https://data.humdata.org/dataset/dfdf3fc8-ac9f-4704-8304-9dcfc92e98e1/resource/3251bbc5-c631-412f-a2c7-15d92efd99d0/download/world_health_statistics_indicators_prk.csv"
+  }
+ },
+ {
+  "id": "kosis-bukhan-health-welfare",
+  "name": "Statistics Korea KOSIS North Korea Portal: Health & Social Indicators (보건)",
+  "publisher": "Statistics Korea (통계청) & World Bank / WHO",
+  "url": "https://kosis.kr/statisticsList/statisticsListIndex.do?vwcd=MT_BUKHAN&menuId=M_02_02",
+  "track": "population",
+  "language": "ko",
+  "category": "Health",
+  "description": "Ten statistical tables detailing public health and mortality in North Korea: life expectancy projections (2008-2070), number of physicians and pharmacists (1965-2024), infant mortality, under-five stunting prevalence (DT_BWB0091, 2000-2024), and maternal mortality ratios.",
+  "format": "json-api",
+  "access": "api",
+  "has_geo": false,
+  "research": {
+   "last_updated": "2026-08",
+   "maintenance": "active",
+   "cadence": "annual",
+   "value": 4,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Display child stunting and doctor availability alongside health facilities on our living conditions dashboard.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://kosis.kr/statisticsList/statisticsListIndex.do?vwcd=MT_BUKHAN&menuId=M_02_02"
+  }
+ },
+ {
+  "id": "kosis-bukhan-energy-infrastructure",
+  "name": "Statistics Korea KOSIS North Korea Portal: Energy & Electricity (에너지)",
+  "publisher": "Statistics Korea (통계청) & Korea Energy Economics Institute",
+  "url": "https://kosis.kr/statisticsList/statisticsListIndex.do?vwcd=MT_BUKHAN&menuId=M_02_02",
+  "track": "population",
+  "language": "ko",
+  "category": "Energy",
+  "description": "Seven statistical tables providing long-term empirical data on North Korea's energy sector: crude oil imports and refining capacity (1980-2024), primary energy supply (열량), electricity generation capacity (발전설비용량), total electricity generated (발전 전력량), and per capita power output.",
+  "format": "json-api",
+  "access": "api",
+  "has_geo": false,
+  "research": {
+   "last_updated": "2026-08",
+   "maintenance": "active",
+   "cadence": "annual",
+   "value": 4,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Correlate national electricity output numbers (DT_1ZGA74) directly with nighttime light radiance changes observed by VIIRS satellites.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://kosis.kr/statisticsList/statisticsListIndex.do?vwcd=MT_BUKHAN&menuId=M_02_02"
+  }
+ },
+ {
+  "id": "bok-dprk-gdp-annual-releases",
+  "name": "Bank of Korea Annual North Korea Real GDP Growth Estimates",
+  "publisher": "Bank of Korea (한국은행 경제연구원 / 국민계정국)",
+  "url": "https://www.bok.or.kr/",
+  "track": "population",
+  "language": "ko",
+  "category": "Economy",
+  "description": "The gold standard annual macroeconomic assessment of North Korea's economy, published by the Bank of Korea every summer using the UN System of National Accounts (SNA). Provides real GDP growth rates, nominal GNI, per capita income, and sector value-added (agriculture, mining, heavy/light manufacturing, services, utilities).",
+  "format": "pdf-tables",
+  "access": "download",
+  "has_geo": false,
+  "research": {
+   "last_updated": "2026-07-31",
+   "maintenance": "active",
+   "cadence": "annual",
+   "value": 4,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Feature an annual economic barometer showing growth fluctuations against sanctions regimes, Russia arms trade, and COVID border closures.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://www.bok.or.kr/"
+  }
+ },
+ {
+  "id": "krei-north-korea-agricultural-trends",
+  "name": "Korea Rural Economic Institute (KREI): North Korea Agricultural Trends (북한농업동향)",
+  "publisher": "Korea Rural Economic Institute (한국농촌경제연구원)",
+  "url": "https://www.krei.re.kr/",
+  "track": "population",
+  "language": "ko",
+  "category": "Food Security",
+  "description": "Quarterly and biannual periodical providing in-depth analysis of North Korea's agricultural policies, rural grain procurement prices, Sino-DPRK fertilizer and pesticide trade, weather conditions, greenhouse construction, and rural living standards.",
+  "format": "pdf-tables",
+  "access": "download",
+  "has_geo": false,
+  "research": {
+   "last_updated": "2026-07",
+   "maintenance": "active",
+   "cadence": "quarterly",
+   "value": 4,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Use to provide qualitative context and analysis alongside our agricultural remote-sensing data.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://www.krei.re.kr/"
+  }
+ },
+ {
+  "id": "ngii-national-atlas-north-korea",
+  "name": "National Geographic Information Institute (NGII): National Atlas of Korea (북한 행정/인구 지명)",
+  "publisher": "National Geographic Information Institute, Ministry of Land, Infrastructure and Transport (국토지리정보원)",
+  "url": "http://nationalatlas.ngii.go.kr/",
+  "track": "population",
+  "language": "ko",
+  "category": "Administrative Boundaries",
+  "description": "Authoritative national atlas published by South Korea's mapping agency, containing comprehensive chapters on North Korea's administrative reorganization history (1945-present), settlement hierarchies, urban development, and transportation networks.",
+  "format": "pdf-tables",
+  "access": "download",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2022",
+   "maintenance": "sporadic",
+   "cadence": "irregular",
+   "value": 4,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Cross-reference official South Korean historical place names and administrative border changes for our atlas and county profile pages.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "http://nationalatlas.ngii.go.kr/"
+  }
+ },
+ {
+  "id": "jaxa-maff-jasmai-satellite-monitoring",
+  "name": "JAXA & MAFF JASMAI: Satellite Agro-Meteorological Monitoring for DPRK",
+  "publisher": "Japan Aerospace Exploration Agency (JAXA) & Ministry of Agriculture, Forestry and Fisheries (農林水産省)",
+  "url": "https://www.eorc.jaxa.jp/JASMIN/index.html",
+  "track": "population",
+  "language": "ja",
+  "category": "Food Security",
+  "description": "Satellite-based agro-meteorological monitoring system (JASMAI / JASMIN) operated by JAXA and Japan's Ministry of Agriculture. Uses GCOM-W (AMSR2), GPM, and ALOS-2 satellites to track soil moisture, surface temperature, precipitation, and rice crop vegetation indices across East Asia including North Korea.",
+  "format": "other",
+  "access": "api",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2026-10-01",
+   "maintenance": "active",
+   "cadence": "daily",
+   "value": 4,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Complement WFP CHIRPS rainfall data with JAXA microwave soil moisture data to identify root-zone drought conditions in North Korea's agricultural plains.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://www.eorc.jaxa.jp/JASMIN/index.html"
+  }
+ },
+ {
+  "id": "sukuukai-abductee-camp-archive",
+  "name": "Sukuukai (救う会): Testimony Archive on Japanese Abductees in DPRK Prison Camps",
+  "publisher": "National Association for the Rescue of Japanese Kidnapped by North Korea (救う会)",
+  "url": "https://www.sukuukai.jp/",
+  "track": "camps",
+  "language": "ja",
+  "category": "Human Rights Testimonies",
+  "description": "Extensive Japanese-language repository of survivor and former guard testimonies detailing the presence of Japanese abductees and Zainichi Korean repatriates in Camp 15 (Yodok), Camp 18 (Bukchang), and Camp 22 (Hoeryong).",
+  "format": "html",
+  "access": "scrape",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2026-03",
+   "maintenance": "active",
+   "cadence": "Monthly / Bi-weekly",
+   "value": 3,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Add a 'Foreign / Abductee Detainees' tag to relevant camp profiles (Yodok, Bukchang, Sunghori) linking Japanese-language survivor records.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://www.sukuukai.jp/"
+  }
+ },
+ {
+  "id": "comjan-missing-persons-map",
+  "name": "COMJAN: Suspected Abduction and Detention Points Archive (特定失踪者問題調査会)",
+  "publisher": "Investigation Commission on Missing Japanese Probably Related to North Korea (特定失踪者問題調査会)",
+  "url": "http://www.chousakai.jp/",
+  "track": "camps",
+  "language": "ja",
+  "category": "Detention & Human Rights Geography",
+  "description": "Japanese investigative project led by Kazuhiro Araki mapping suspected maritime abduction departure points and internal detention facilities where missing Japanese citizens are believed held.",
+  "format": "html",
+  "access": "scrape",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2026-02",
+   "maintenance": "active",
+   "cadence": "Monthly",
+   "value": 3,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Map the maritime abduction corridor connecting Japanese coastal abduction points to North Korean intake security facilities (Chongjin, Wonsan, Nampo).",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "http://www.chousakai.jp/"
+  }
+ },
+ {
+  "id": "renk-camp-survivor-maps",
+  "name": "RENK: Pioneer Hand-Drawn Camp Maps & Border Facility Documentation",
+  "publisher": "Rescue the North Korean People! Urgent Action Network (RENK / 救え！北朝鮮の民衆/緊急行動ネットワーク)",
+  "url": "http://www.renk-japan.net/",
+  "track": "camps",
+  "language": "ja",
+  "category": "Historical & Eyewitness Mapping",
+  "description": "Historic Japanese-Korean human rights initiative led by Prof. Lee Young-hwa that collected the earliest defector hand-drawn maps of Camp 14, 15, and 22, and first documented the border holding facilities in Musan and Onsong.",
+  "format": "html",
+  "access": "scrape",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2015",
+   "maintenance": "stale",
+   "cadence": "Historic archive",
+   "value": 3,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Include historical survivor hand-drawn sketches alongside modern satellite imagery in camp deep-dive pages to show how defectors originally described these spaces from memory.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "http://www.renk-japan.net/"
+  }
+ },
+ {
+  "id": "nk-pro-dprk-economic-database",
+  "name": "NK Pro DPRK Economic Database & Market Price Index",
+  "publisher": "NK News / Korea Risk Group",
+  "url": "https://www.nknews.org/pro/category/economic-data/",
+  "track": "economy",
+  "language": "en",
+  "category": "market-prices",
+  "description": "Proprietary analytical index tracking market commodity prices, domestic currency devaluation, state distribution rationing, and macroeconomic trends.",
+  "format": "html",
+  "access": "manual",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2026-09",
+   "maintenance": "active",
+   "cadence": "monthly",
+   "value": 3,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Use NK Pro methodology as a benchmark to validate our open scrapers built on Daily NK and UN Comtrade.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://www.nknews.org/pro/category/economic-data/"
+  }
+ },
+ {
+  "id": "itc-trade-map-dprk",
+  "name": "ITC Trade Map North Korea Mirror Trade Portal",
+  "publisher": "International Trade Centre (UNCTAD/WTO)",
+  "url": "https://www.trademap.org",
+  "track": "economy",
+  "language": "en",
+  "category": "trade",
+  "description": "Global mirror trade statistics platform detailing imports and exports for Democratic People's Republic of Korea reported by partner countries across 5,300 HS 6-digit product groups.",
+  "format": "html",
+  "access": "scrape",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2025-10",
+   "maintenance": "active",
+   "cadence": "quarterly / annual",
+   "value": 3,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Use to detect secondary trading partners beyond China (e.g. Russia, African states, Southeast Asia).",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://www.trademap.org"
+  }
+ },
+ {
+  "id": "kosti-rok-unilateral-sanctions",
+  "name": "South Korea KOSTI Unilateral Sanctions & Watchlist (무역안보관리원 대북제재)",
+  "publisher": "Korea Trade Security Institute (무역안보관리원 / KOSTI)",
+  "url": "https://www.kosti.or.kr",
+  "track": "economy",
+  "language": "ko",
+  "category": "sanctions",
+  "description": "South Korean government comprehensive repository of unilateral sanctions targets (독자제재 명단) and high-risk trading entities under the Foreign Exchange Transactions Act and Counter-Terrorism Financing Act.",
+  "format": "html",
+  "access": "scrape",
+  "has_geo": false,
+  "research": {
+   "last_updated": "2026-05",
+   "maintenance": "active",
+   "cadence": "sporadic (updated upon each government designation announcement)",
+   "value": 3,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Track South Korea's autonomous sanctions expanding to Russia-DPRK arms shipping vessels and front companies.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://www.kosti.or.kr"
+  }
+ },
+ {
+  "id": "nk-pro-vessel-tracker",
+  "name": "NK Pro Maritime Vessel Tracker",
+  "publisher": "NK News / Korea Risk Group",
+  "url": "https://www.nknews.org/pro/vessel-tracker/",
+  "track": "economy",
+  "language": "en",
+  "category": "smuggling",
+  "description": "Specialized maritime tracking system integrating AIS telemetry, satellite radar, Port State Control inspections, and Equasis ownership data for North Korean and sanctioned merchant ships.",
+  "format": "html",
+  "access": "manual",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2026-09",
+   "maintenance": "active",
+   "cadence": "real-time / continuous",
+   "value": 3,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Use verified IMO numbers from NK Pro investigations to query free OpenSanctions maritime profiles and public AIS endpoints.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://www.nknews.org/pro/vessel-tracker/"
+  }
+ },
+ {
+  "id": "chongryon-prefectural-headquarters",
+  "name": "Chongryon Prefectural Headquarters Directory",
+  "publisher": "在日本朝鮮人総聯合会 (General Association of Korean Residents in Japan)",
+  "url": "http://www.chongryon.com/j/cr/link2.html",
+  "track": "korean_japanese",
+  "language": "ja",
+  "category": "diaspora",
+  "description": "Complete institutional directory of Chongryon's 47 prefectural headquarters across Japan, with postal codes, exact street addresses, and phone numbers.",
+  "format": "html",
+  "access": "scrape",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2024-05",
+   "maintenance": "active",
+   "cadence": "irregular",
+   "value": 3,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Map the formal organizational network of Pyongyang's de facto embassy and consulate network across Japan.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "http://www.chongryon.com/j/cr/link2.html"
+  }
+ },
+ {
+  "id": "data-go-kr-kctv-schedule",
+  "name": "Korean Central Television (KCTV) Daily Programming Schedule API",
+  "publisher": "통일부 (Ministry of Unification via data.go.kr)",
+  "url": "https://www.data.go.kr/data/15079329/openapi.do",
+  "track": "korean_japanese",
+  "language": "ko",
+  "category": "media",
+  "description": "Daily broadcasting schedule database for North Korea's state television broadcaster, Korean Central Television (조선중앙텔레비죤). Records broadcast times, program titles, and program genres (documentary, news broadcast, revolutionary drama, children's cartoons).",
+  "format": "json-api",
+  "access": "api",
+  "has_geo": false,
+  "research": {
+   "last_updated": "2026-09-30",
+   "maintenance": "active",
+   "cadence": "daily",
+   "value": 3,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "A propaganda programming dashboard: analyze what percentage of daily state TV is devoted to leader idolization, military achievements, or foreign news.",
+  "usedBy": [],
+  "watch": {
+   "type": "content",
+   "url": "https://www.data.go.kr/data/15079329/openapi.do"
+  }
+ },
+ {
+  "id": "nars-nk-legislative-reports",
+  "name": "National Assembly Research Service North Korea Policy Reports",
+  "publisher": "국회입법조사처 (National Assembly Research Service - NARS)",
+  "url": "https://www.nars.go.kr/",
+  "track": "korean_japanese",
+  "language": "ko",
+  "category": "policy",
+  "description": "In-depth legislative and policy research reports published by South Korea's parliamentary research agency on North Korean human rights law enforcement, defectors' vocational adaptation, border security, and international sanctions compliance.",
+  "format": "pdf-tables",
+  "access": "download",
+  "has_geo": false,
+  "research": {
+   "last_updated": "2026-08",
+   "maintenance": "active",
+   "cadence": "monthly",
+   "value": 3,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "A policy brief reference layer for key articles and explainer pages: citing official parliamentary legal evaluations when discussing sanctions effectiveness and defector resettlement law.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://www.nars.go.kr/"
+  }
+ },
+ {
+  "id": "iiss-military-balance-dprk",
+  "name": "IISS Military Balance (North Korea Order of Battle & Equipment)",
+  "publisher": "International Institute for Strategic Studies (IISS)",
+  "url": "https://www.iiss.org/publications/the-military-balance/",
+  "track": "military",
+  "language": "en",
+  "category": "Order of Battle & Military Inventories",
+  "description": "The premier global defense reference on armed forces strength, detailing KPA ground forces (approx 1.1 million active personnel, 4,000+ tanks, 21,000+ artillery pieces/MRLs), naval combatants (70+ submarines, patrol craft), air force inventory, and Strategic Rocket Force missile brigades.",
+  "format": "pdf-tables",
+  "access": "manual",
+  "has_geo": false,
+  "research": {
+   "last_updated": "2026-02",
+   "maintenance": "active",
+   "cadence": "annual in February",
+   "value": 3,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Extract validated equipment totals and unit hierarchy for an infographic comparing KPA conventional strength against ROK-US Combined Forces.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://www.iiss.org/publications/the-military-balance/"
+  }
+ },
+ {
+  "id": "paulpogoda-osint-tools-nk",
+  "name": "paulpogoda/OSINT-Tools-North-Korea GitHub Repository",
+  "publisher": "Paul Pogoda (paulpogoda)",
+  "url": "https://github.com/paulpogoda/OSINT-Tools-North-Korea",
+  "track": "military",
+  "language": "en",
+  "category": "OSINT Hub & Tool Directory",
+  "description": "Community-curated GitHub directory indexing open-source intelligence tools and datasets for investigating North Korea, including maritime ship tracking, WHO country health data, aircraft registries, cadastral maps, and OCCRP Aleph DPRK Reports.",
+  "format": "html",
+  "access": "download",
+  "has_geo": false,
+  "research": {
+   "last_updated": "2025-08",
+   "maintenance": "sporadic",
+   "cadence": "community PRs",
+   "value": 3,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Use this repository as a meta-directory to identify emerging third-party satellite tools and vessel tracking APIs.",
+  "usedBy": [],
+  "watch": {
+   "type": "github",
+   "repo": "paulpogoda/OSINT-Tools-North-Korea"
+  }
+ },
+ {
+  "id": "gadm-prk-boundaries",
+  "name": "GADM DPRK Database of Global Administrative Areas (Levels 0-2)",
+  "publisher": "University of California, Davis (GADM Project)",
+  "url": "https://gadm.org/download_country.html",
+  "track": "population",
+  "language": "en",
+  "category": "Administrative Boundaries",
+  "description": "High-resolution spatial database of administrative areas for North Korea covering country (Level 0), provinces (Level 1), and counties/cities (Level 2). Widely used in academic spatial econometrics and global species/climate modeling.",
+  "format": "geopackage",
+  "access": "download",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2022-07",
+   "maintenance": "sporadic",
+   "cadence": "irregular",
+   "value": 3,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Secondary boundary verification to cross-check county boundary shifts and topological disputes against OCHA COD-AB.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://gadm.org/download_country.html"
+  }
+ },
+ {
+  "id": "unfpa-dprk-planned-census",
+  "name": "UNFPA DPRK Country Programme: Planned 2018-2019 Census Documentation",
+  "publisher": "United Nations Population Fund (UNFPA)",
+  "url": "https://www.unfpa.org/data/world-population/KP",
+  "track": "population",
+  "language": "en",
+  "category": "Demographics",
+  "description": "Documentation and project files regarding the planned 2018-2019 DPRK Population and Housing Census. Tracks the initial preparations, pilot census, South Korea's planned $6 million funding via the Inter-Korean Cooperation Fund, and its subsequent cancellation due to international sanctions and border closures.",
+  "format": "pdf-tables",
+  "access": "scrape",
+  "has_geo": false,
+  "research": {
+   "last_updated": "2021",
+   "maintenance": "dead",
+   "cadence": "never",
+   "value": 3,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Document the history and reasons why North Korea lacks a post-2008 census on our site's research & data-explainer page.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://www.unfpa.org/data/world-population/KP"
+  }
+ },
+ {
+  "id": "ide-jetro-dprk-studies",
+  "name": "IDE-JETRO: North Korea Regional Studies & Demographics",
+  "publisher": "Institute of Developing Economies, Japan External Trade Organization (アジア経済研究所)",
+  "url": "https://www.ide.go.jp/",
+  "track": "population",
+  "language": "ja",
+  "category": "Demographics",
+  "description": "Japanese academic research portal publishing monographic studies on North Korea's regional administrative hierarchy, urban-rural divide, enterprise structure, and demographic trends based on official yearbooks and field defector surveys.",
+  "format": "pdf-tables",
+  "access": "download",
+  "has_geo": false,
+  "research": {
+   "last_updated": "2024",
+   "maintenance": "active",
+   "cadence": "annual",
+   "value": 3,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Incorporate Japanese scholarly insights into regional industrial classifications and municipal administration.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://www.ide.go.jp/"
+  }
+ },
+ {
+  "id": "erina-unp-dprk-regional-economy",
+  "name": "ERINA-UNP: North Korea Regional & Special Economic Zones Studies",
+  "publisher": "Economic Research Institute for Northeast Asia and the Pacific (ERINA-UNP, University of Niigata Prefecture)",
+  "url": "https://www.erina.or.jp/",
+  "track": "population",
+  "language": "ja",
+  "category": "Economy",
+  "description": "Specialized Japanese economic research institute tracking regional development in North Korea, special economic zones (Rason, Hwanggumpyong, Wonsan-Kalma), and Northeast Asian cross-border trade with China and Russia.",
+  "format": "pdf-tables",
+  "access": "download",
+  "has_geo": true,
+  "research": {
+   "last_updated": "2025",
+   "maintenance": "active",
+   "cadence": "quarterly",
+   "value": 3,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Map North Korea's 20+ central and provincial economic development zones (경제개발구) and their special statutory benefits.",
+  "usedBy": [],
+  "watch": {
+   "type": "headers",
+   "url": "https://www.erina.or.jp/"
+  }
+ },
+ {
+  "id": "mapping-north-korea",
+  "name": "Mapping North Korea",
+  "publisher": "MRVDH",
+  "url": "https://github.com/MRVDH/mapping-north-korea",
+  "usedBy": [],
+  "watch": {
+   "type": "github",
+   "repo": "MRVDH/mapping-north-korea"
+  },
+  "manual": true
+ }
+]

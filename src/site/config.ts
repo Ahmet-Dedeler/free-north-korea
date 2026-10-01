@@ -1,5 +1,5 @@
 /** Canonical origin used for <link rel=canonical>, Open Graph and the sitemap. */
-export const SITE_URL = 'https://free-north-korea.vercel.app';
+export const SITE_URL = 'https://liberatenorthkorea.com';
 export const SITE_NAME = 'Free North Korea';
 export const REPO_URL = 'https://github.com/Ahmet-Dedeler/free-north-korea';
 

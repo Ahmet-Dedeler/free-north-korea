@@ -12,11 +12,38 @@ searches like "how can North Korea be freed". SEO matters, so content must stay 
   - `articles/*.tsx`: the /learn explainers (SEO pages). Register new ones in `articles/index.ts`; route, sitemap and
     FAQ JSON-LD follow automatically. FAQ answers are plain strings because they go into JSON-LD.
   - `orgs.ts` (directory, with `status`), `library.ts`, `places.ts` (atlas points + escape route).
-- `src/atlas/`: the atlas map (`AtlasMap.tsx`) and its sidebar/detail UI. Deep links: `/atlas#place=<id>`.
+- `src/map/`: the intel map (`/map`): `config.ts` (layers, county shading), `IntelMap.tsx` (MapLibre), `Explorer.tsx`
+  (sidebar, search), `Detail.tsx` (county and point panels). Deep links: `/map#county=KP0205`, `/map#camps=camp-3`.
+- `src/entities/` + `src/app/people/`: people graph, profiles, hover cards (`PersonLink`), JSON at `/api/people`.
 - `src/missiles/`: the missile test explorer (redesign of nagix/nk-missile-tests). `data.ts` loads
   `public/data/*.en.json` (verbatim from upstream; keep them untouched so updates can be copied straight over).
   `meta.ts` holds missile class/outcome colours. Selection uses feature-state plus `*-selected` filter layers.
-- `src/components/SiteChrome.tsx`: top bar + footer. `/atlas` and `/missiles` are full-screen "app" pages (no footer).
+- `src/components/SiteChrome.tsx`: top bar + footer. `/map` and `/missiles` are full-screen "app" pages (no footer).
+
+## Data pipeline (map-first; content pages are secondary)
+
+1. `docs/research/<track>.json|md`: what sources exist (camps, population, military, economy, korean_japanese,
+   leadership, missile_gaps), found by research agents. Treat agent claims as leads, not facts: they invented many
+   URLs and Wikidata IDs. Probe scripts live in `docs/research/probes/`.
+2. `scripts/scrape/*.ts` → `data/raw/<source>/`: `sources.ts` (nkpd, hrnk, markets, missile-bases, admin,
+   provocations) and `visualatlas.ts` (needs headless Chrome via playwright-core; Visual Atlas sits behind Vercel's
+   bot checkpoint).
+3. `scripts/build-layers.ts` → `public/layers/*.geojson` + `src/content/layers.json` (manifest the map reads).
+4. `scripts/build-entities.ts` → `data/entities/{people,orgs}.json`: resolves Wikidata QIDs itself
+   (`data/entities/qids.json`, editable to pin), takes dates/family/positions from Wikidata, photos only with free
+   licenses, sanctions from the live OFAC SDN and UN 1718 lists, and drops any claim whose source page doesn't load
+   and contain the claim's numbers/words. Hand-checked claims go in `data/entities/curated.json`.
+5. `scripts/build-registry.ts` + `scripts/check-sources.mjs` (weekly GitHub Action): every source watched for
+   changes/moves/deaths → `data/sources/{registry,state,changes}.json`, shown on `/sources`.
+6. `scripts/fetch-media.ts`: book covers, film posters, org logos → `public/img/`, credits in `src/content/media.json`.
+
+Run order after a scrape: `node scripts/build-layers.ts && node scripts/build-entities.ts`.
+
+## Safety rules (non-negotiable)
+
+- Never publish NKDB points that are someone's home, or exact execution/burial sites: these only count per county.
+- No incident narratives (they contain surnames); only counts by right violated. Link to NKDB for details.
+- People data: every health/physical/notable claim must have a source that was checked. Rumors are labelled.
 
 ## Rules
 

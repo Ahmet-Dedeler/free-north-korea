@@ -1,9 +1,18 @@
 {
   "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc", "nextjs"],
+  "plugins": [
+    "react",
+    "typescript",
+    "oxc",
+    "nextjs"
+  ],
   "rules": {
     "react/rules-of-hooks": "error",
     "react/only-export-components": "off",
     "react/set-state-in-effect": "off"
-  }
+  },
+  "ignorePatterns": [
+    "docs/research/probes/**",
+    "upstream/**"
+  ]
 }

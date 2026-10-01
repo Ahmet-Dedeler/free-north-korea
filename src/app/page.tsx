@@ -14,7 +14,8 @@ const STATS = [
 ];
 
 const MODULES = [
-  { href: '/atlas', title: 'Atlas', text: 'Prison camps, nuclear sites, border crossings and the escape route, on one map.' },
+  { href: '/map', title: 'Intel map', text: 'Camps, 190+ detention sites, missile bases, markets and 3,600 documented abuses by county.' },
+  { href: '/people', title: 'People', text: 'The Kim family tree and the officials who run the country, with sources and sanctions.' },
   { href: '/military', title: 'Military capability', text: 'Troops, nukes, missiles, artillery, cyber theft, and the war in Ukraine.' },
   { href: '/missiles', title: 'Missile tests', text: 'Every missile and space launch since 1984 with flight paths and outcomes.' },
   { href: '/organizations', title: 'Organizations', text: 'Who is actually doing the work in 2026, what they do, and how to help each one.' },

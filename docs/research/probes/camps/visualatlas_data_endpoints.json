@@ -1,0 +1,32 @@
+{
+  "/en/density/__data.json": {
+    "status": 200,
+    "contentType": "application/json",
+    "textSample": "{\"type\":\"data\",\"nodes\":[{\"type\":\"data\",\"data\":[{\"user\":1,\"site\":2,\"tutorial\":5,\"router\":1,\"locale\":10,\"lang\":10,\"country\":4,\"currency\":33,\"userAgent\":34,\"colorScheme\":35},null,{\"name\":3,\"description\":3,\"image\":-1,\"meta\":4,\"gaMid\":4,\"pixelId\":4,\"naverTid\":4},\"VISUAL ATLAS\",\"\",{\"tutorial.forcedRepatriation\":6,\"tutorial.theme\":12,\"tutorial.density\":15,\"tutorial.statistics\":18,\"tutorial.incidents\":21,\"tutorial.faq\":24,\"tutorial.glossary\":27,\"tutorial.tutorial\":30},{\"_new\":7,\"id\":8,\"key\":9,\"lang\":10,\"rel\":4,\"relId\":4,\"root\":4,\"rootId\":4,\"writable\":11,\"value\":4},true,\"tl7ycsc6qpubsbjg6ngew2e7\",\"tutorial.forcedRepatriation\",\"en\",false,{\"_new\":7,\"id\":13,\"key\":14,\"lang\":10,\"rel\":4,\"relId\":4,\"root\":4,\"rootId\":4,\"writable\":11,\"value\":4},\"yr2nr62u2rtkwj76qa3v7g5u\",\"tutorial.theme\",{\"_new\":7,\"id\":16,\"key\":17,\"lang\":10,\"rel\":4,\"relId\":4,\"root\":4,\"rootId\":4,\"writable\":11,\"value\":4},\"bnou5mpnrgqppxoebk5dxsir\",\"tutorial.density\",{\"_new\":7,\"id\":19,\"key\":20,\"lang\":10,\"rel\":4,\"relId\":4,\"root\":4,\"rootId\":4"
+  },
+  "/en/theme/__data.json": {
+    "status": 200,
+    "contentType": "application/json",
+    "textSample": "{\"type\":\"data\",\"nodes\":[{\"type\":\"data\",\"data\":[{\"user\":1,\"site\":2,\"tutorial\":5,\"router\":1,\"locale\":10,\"lang\":10,\"country\":4,\"currency\":33,\"userAgent\":34,\"colorScheme\":35},null,{\"name\":3,\"description\":3,\"image\":-1,\"meta\":4,\"gaMid\":4,\"pixelId\":4,\"naverTid\":4},\"VISUAL ATLAS\",\"\",{\"tutorial.forcedRepatriation\":6,\"tutorial.theme\":12,\"tutorial.density\":15,\"tutorial.statistics\":18,\"tutorial.incidents\":21,\"tutorial.faq\":24,\"tutorial.glossary\":27,\"tutorial.tutorial\":30},{\"_new\":7,\"id\":8,\"key\":9,\"lang\":10,\"rel\":4,\"relId\":4,\"root\":4,\"rootId\":4,\"writable\":11,\"value\":4},true,\"unq4iegialgkynq4oqomkqiv\",\"tutorial.forcedRepatriation\",\"en\",false,{\"_new\":7,\"id\":13,\"key\":14,\"lang\":10,\"rel\":4,\"relId\":4,\"root\":4,\"rootId\":4,\"writable\":11,\"value\":4},\"fpkc3rpbrir3m7welxpatjc5\",\"tutorial.theme\",{\"_new\":7,\"id\":16,\"key\":17,\"lang\":10,\"rel\":4,\"relId\":4,\"root\":4,\"rootId\":4,\"writable\":11,\"value\":4},\"kaoq4wbjwqdiwojcpxjtsszn\",\"tutorial.density\",{\"_new\":7,\"id\":19,\"key\":20,\"lang\":10,\"rel\":4,\"relId\":4,\"root\":4,\"rootId\":4"
+  },
+  "/en/forced-repatriation/__data.json": {
+    "status": 200,
+    "contentType": "application/json",
+    "textSample": "{\"type\":\"data\",\"nodes\":[{\"type\":\"data\",\"data\":[{\"user\":1,\"site\":2,\"tutorial\":5,\"router\":1,\"locale\":10,\"lang\":10,\"country\":4,\"currency\":33,\"userAgent\":34,\"colorScheme\":35},null,{\"name\":3,\"description\":3,\"image\":-1,\"meta\":4,\"gaMid\":4,\"pixelId\":4,\"naverTid\":4},\"VISUAL ATLAS\",\"\",{\"tutorial.forcedRepatriation\":6,\"tutorial.theme\":12,\"tutorial.density\":15,\"tutorial.statistics\":18,\"tutorial.incidents\":21,\"tutorial.faq\":24,\"tutorial.glossary\":27,\"tutorial.tutorial\":30},{\"_new\":7,\"id\":8,\"key\":9,\"lang\":10,\"rel\":4,\"relId\":4,\"root\":4,\"rootId\":4,\"writable\":11,\"value\":4},true,\"cgstqsdnjx3baor7zgx4zucg\",\"tutorial.forcedRepatriation\",\"en\",false,{\"_new\":7,\"id\":13,\"key\":14,\"lang\":10,\"rel\":4,\"relId\":4,\"root\":4,\"rootId\":4,\"writable\":11,\"value\":4},\"oydvtjnpg7jkkvzg2aqijxah\",\"tutorial.theme\",{\"_new\":7,\"id\":16,\"key\":17,\"lang\":10,\"rel\":4,\"relId\":4,\"root\":4,\"rootId\":4,\"writable\":11,\"value\":4},\"2hluygzzbrmawoe6cqm6yvvn\",\"tutorial.density\",{\"_new\":7,\"id\":19,\"key\":20,\"lang\":10,\"rel\":4,\"relId\":4,\"root\":4,\"rootId\":4"
+  },
+  "/en/incidents/__data.json": {
+    "status": 200,
+    "contentType": "application/json",
+    "textSample": "{\"type\":\"data\",\"nodes\":[{\"type\":\"data\",\"data\":[{\"user\":1,\"site\":2,\"tutorial\":5,\"router\":1,\"locale\":10,\"lang\":10,\"country\":4,\"currency\":33,\"userAgent\":34,\"colorScheme\":35},null,{\"name\":3,\"description\":3,\"image\":-1,\"meta\":4,\"gaMid\":4,\"pixelId\":4,\"naverTid\":4},\"VISUAL ATLAS\",\"\",{\"tutorial.forcedRepatriation\":6,\"tutorial.theme\":12,\"tutorial.density\":15,\"tutorial.statistics\":18,\"tutorial.incidents\":21,\"tutorial.faq\":24,\"tutorial.glossary\":27,\"tutorial.tutorial\":30},{\"_new\":7,\"id\":8,\"key\":9,\"lang\":10,\"rel\":4,\"relId\":4,\"root\":4,\"rootId\":4,\"writable\":11,\"value\":4},true,\"n6jdizxecbie4c2noqgl322x\",\"tutorial.forcedRepatriation\",\"en\",false,{\"_new\":7,\"id\":13,\"key\":14,\"lang\":10,\"rel\":4,\"relId\":4,\"root\":4,\"rootId\":4,\"writable\":11,\"value\":4},\"hkmsj4dtsljhhs5owe3cmsmb\",\"tutorial.theme\",{\"_new\":7,\"id\":16,\"key\":17,\"lang\":10,\"rel\":4,\"relId\":4,\"root\":4,\"rootId\":4,\"writable\":11,\"value\":4},\"khltujywmxlysrubnmu2gy3i\",\"tutorial.density\",{\"_new\":7,\"id\":19,\"key\":20,\"lang\":10,\"rel\":4,\"relId\":4,\"root\":4,\"rootId\":4"
+  },
+  "/en/statistics/__data.json": {
+    "status": 200,
+    "contentType": "application/json",
+    "textSample": "{\"type\":\"data\",\"nodes\":[{\"type\":\"data\",\"data\":[{\"user\":1,\"site\":2,\"tutorial\":5,\"router\":1,\"locale\":10,\"lang\":10,\"country\":4,\"currency\":33,\"userAgent\":34,\"colorScheme\":35},null,{\"name\":3,\"description\":3,\"image\":-1,\"meta\":4,\"gaMid\":4,\"pixelId\":4,\"naverTid\":4},\"VISUAL ATLAS\",\"\",{\"tutorial.forcedRepatriation\":6,\"tutorial.theme\":12,\"tutorial.density\":15,\"tutorial.statistics\":18,\"tutorial.incidents\":21,\"tutorial.faq\":24,\"tutorial.glossary\":27,\"tutorial.tutorial\":30},{\"_new\":7,\"id\":8,\"key\":9,\"lang\":10,\"rel\":4,\"relId\":4,\"root\":4,\"rootId\":4,\"writable\":11,\"value\":4},true,\"5xqdyy6n7qosyjbhw2jn6nvf\",\"tutorial.forcedRepatriation\",\"en\",false,{\"_new\":7,\"id\":13,\"key\":14,\"lang\":10,\"rel\":4,\"relId\":4,\"root\":4,\"rootId\":4,\"writable\":11,\"value\":4},\"bkmhwjyyx2n3zmxa54qajb5z\",\"tutorial.theme\",{\"_new\":7,\"id\":16,\"key\":17,\"lang\":10,\"rel\":4,\"relId\":4,\"root\":4,\"rootId\":4,\"writable\":11,\"value\":4},\"t77fnkokhi6g4keh7kekwbba\",\"tutorial.density\",{\"_new\":7,\"id\":19,\"key\":20,\"lang\":10,\"rel\":4,\"relId\":4,\"root\":4,\"rootId\":4"
+  },
+  "/en/api/posts/pool": {
+    "status": 405,
+    "contentType": "text/plain; charset=utf-8",
+    "textSample": "GET method not allowed"
+  }
+}

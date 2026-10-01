@@ -1,0 +1,30 @@
+# Weekly check of every upstream data source (see scripts/check-sources.mjs).
+# Commits data/sources/state.json and changes.json when something changed, moved or broke,
+# which also redeploys the site so /sources shows it.
+name: Check sources
+
+on:
+  schedule:
+    - cron: '17 6 * * 1' # Mondays 06:17 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node scripts/check-sources.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Commit if anything changed
+        run: |
+          git config user.name "source-watcher"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/sources
+          git diff --cached --quiet || git commit -m "Source watch: $(date -u +%F)" && git push

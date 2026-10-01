@@ -1,0 +1,84 @@
+{
+ "scrapedAt": "2026-10-01T16:21:07.994Z",
+ "url": "https://beyondparallel.csis.org/",
+ "bases": [
+  {
+   "name": "Sinpung",
+   "lat": 40.316252,
+   "lon": 125.276505,
+   "url": "https://beyondparallel.csis.org/undeclared-north-korea-sinpung-dong-missile-operating-base/",
+   "published": "2025-08-20",
+   "summary": "Approximately 27 kilometers from the China-North Korean border, the Sinpung-dong Missile Operating Base is an undeclared North Korean missile base."
+  },
+  {
+   "name": "The Yongnim Missile Operating Base",
+   "lat": 40.483324,
+   "lon": 126.501814,
+   "url": "https://beyondparallel.csis.org/undeclared-north-korea-the-yongnim-missile-operating-base/",
+   "published": "2024-11-14",
+   "summary": "Located 242 kilometers north of the demilitarized zone and only 65 kilometers from the Chinese border, the Yongnim Missile Operating Base is an undeclared ballistic missile operating ICBM base in Chagang Province."
+  },
+  {
+   "name": "Hoejung",
+   "lat": 41.369883,
+   "lon": 126.913631,
+   "url": "https://beyondparallel.csis.org/undeclared-north-korea-hoejung-ni-missile-operating-base/",
+   "published": "2022-02-07",
+   "summary": "Located 338-kilometers north of the demilitarized zone and only 25-kilometers from the Chinese border in Chagang Province, the Hoejung-ni missile operating base will, according to informed sources, likely house a regiment-sized unit equipped with intercontinental ballistic missiles (ICBM)."
+  },
+  {
+   "name": "The Yusang",
+   "lat": 39.449886,
+   "lon": 126.259682,
+   "url": "https://beyondparallel.csis.org/undeclared-north-korea-the-yusang-ni-missile-operating-base/",
+   "published": "2019-05-09",
+   "summary": "Located 150 kilometers north of the DMZ, North Korea&#039;s Yusang-ni missile operating base is one of the more recently constructed Strategic Force missile operating bases. There has been almost no open source information about this base until this study."
+  },
+  {
+   "name": "The Kal",
+   "lat": 40.636137,
+   "lon": 126.439019,
+   "url": "https://beyondparallel.csis.org/undeclared-north-korea-the-kal-gol-missile-operating-base/",
+   "published": "2020-12-24",
+   "summary": "Located approximately 52 kilometers north of the DMZ and 125 kilometers north of Seoul, the Kal-gol missile operating base is one of the most developed of North Korea’s approximately 15-20 undeclared ballistic missile facilities. This base likely houses a reinforced brigade-sized unit equipped with 500-kilometer-range Hwasong-6 (Scud C) short-range ballistic missiles (SRBM) or Hwasong-9 (Scud-ER) medium-range ballistic missiles (MRBM)."
+  },
+  {
+   "name": "The Kumchon",
+   "lat": 38.966111,
+   "lon": 127.594722,
+   "url": "https://beyondparallel.csis.org/undeclared-north-korea-the-kumchon-ni-missile-operating-base/",
+   "published": "2019-09-06",
+   "summary": "New CSIS Beyond Parallel imagery shows the undeclared Kumchon-ni missile operating base. This is the first comprehensive public description of the base. During wartime, it is reportedly tasked with striking southern Japan and, to a lesser degree, throughout South Korea."
+  },
+  {
+   "name": "The Sangnam",
+   "lat": 40.838977,
+   "lon": 128.54165,
+   "url": "https://beyondparallel.csis.org/undeclared-north-korea-sangnam-ni-missile-operating-base/",
+   "published": "2019-02-15",
+   "summary": "Located 250 kilometers north of the DMZ, Sangnam-ni missile operating base is an operational missile base that houses a battalion- or regiment-sized unit equipped with Hwasong-10 (Musudan) intermediate-range ballistic missiles (IRBM). Multiple flight failures of the Musudan missile in 2016 could have also led the KPA Strategic Force to abandon the system and replace it with the more successful Hwasong-12 IRBM."
+  },
+  {
+   "name": "The Sino",
+   "lat": 39.644929,
+   "lon": 125.355288,
+   "url": "https://beyondparallel.csis.org/undeclared-north-korea-the-sino-ri-missile-operating-base-and-strategic-force-facilities/",
+   "published": "2019-01-21",
+   "summary": "Located 212 kilometers north of the DMZ, Sino-ri is an operational missile base that houses a regiment-sized unit equipped with Nodong-1/-2 medium-range ballistic missiles (MRBM). It is one of the oldest of approximately 20 undeclared missile operating bases and is reported to serve as the headquarters of the Strategic Rocket Forces Nodong missile brigade. It may have also played a role in development of the newest generation Pukkuksong-2 (KN-15) ballistic missile first tested or unveiled by North Korea on February 12, 2017."
+  },
+  {
+   "name": "The Sakkanmol Missile Operating Base",
+   "lat": 38.584698,
+   "lon": 126.107945,
+   "url": "https://beyondparallel.csis.org/undeclared-north-korea-sakkanmol-missile-operating-base/",
+   "published": "2018-11-12",
+   "summary": "Sakkanmol is an undeclared North Korean operational missile base for short-range ballistic missiles (SRBMs) and is one of approximately 20 undeclared missile sites and one of the closest to the demilitarized zone (DMZ) and Seoul, giving it the shortest flight time. Sakkanmol currently houses a unit equipped with SRBMs but could easily accommodate more capable medium-range ballistic missiles (MRBMs)."
+  }
+ ],
+ "failed": [
+  "undeclared-north-korea-the-yeongjeo-dong-missile-operating-base-and-the-hoe-jung-ni-missile-base",
+  "undeclared-north-korea-the-chiha-ri-missile-operating-base",
+  "undeclared-north-korea-the-sakkanmol-missile-operating-base",
+  "undeclared-north-korea-the-kal-gol-missile-operating-base-2"
+ ]
+}

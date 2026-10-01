@@ -42,7 +42,7 @@ const article: Article = {
 
       <h2>The known camps</h2>
       <p>
-        All of these are on the <Link href="/atlas">atlas</Link> with their approximate locations. Status is based on satellite imagery analysis
+        All of these are on the <Link href="/map">intel map</Link> with their approximate locations. Status is based on satellite imagery analysis
         and escapee testimony, so it lags reality by months or years.
       </p>
       <table>

@@ -1,0 +1,91 @@
+{
+ "built": "2026-10-01",
+ "totals": {
+  "population2008": 23275627,
+  "incidents": 3636,
+  "incidentsMapped": 2889,
+  "homesWithheld": 63
+ },
+ "layers": {
+  "counties": {
+   "count": 179,
+   "sources": [
+    {
+     "name": "UN OCHA COD-AB boundaries",
+     "url": "https://data.humdata.org/dataset/cod-ab-prk",
+     "updated": "2026-08-14"
+    },
+    {
+     "name": "2008 DPRK census via OCHA COD-PS",
+     "url": "https://data.humdata.org/dataset/cod-ps-prk",
+     "updated": "2026-10-01"
+    }
+   ]
+  },
+  "camps": {
+   "count": 24,
+   "sources": [
+    {
+     "name": "HRNK prison camp location map",
+     "url": "https://www.hrnk.org/",
+     "updated": "2026-10-01"
+    }
+   ]
+  },
+  "detention": {
+   "count": 193,
+   "sources": [
+    {
+     "name": "Korea Future, North Korean Prison Database",
+     "url": "https://nkpd.io",
+     "updated": "2026-10-01"
+    },
+    {
+     "name": "NKDB Visual Atlas",
+     "url": "https://www.visualatlas.org",
+     "updated": "2026-10-01"
+    }
+   ]
+  },
+  "china-detention": {
+   "count": 13,
+   "sources": [
+    {
+     "name": "NKDB Visual Atlas (forced repatriation)",
+     "url": "https://www.visualatlas.org/en/forced-repatriation",
+     "updated": "2026-10-01"
+    }
+   ]
+  },
+  "markets": {
+   "count": 421,
+   "sources": [
+    {
+     "name": "CSIS Beyond Parallel market study (2018)",
+     "url": "https://beyondparallel.csis.org/markets-in-north-korea/",
+     "updated": "2018-08"
+    }
+   ]
+  },
+  "missile-bases": {
+   "count": 9,
+   "sources": [
+    {
+     "name": "CSIS Beyond Parallel, Undeclared North Korea",
+     "url": "https://beyondparallel.csis.org/",
+     "updated": "2026-10-01"
+    }
+   ]
+  },
+  "sites": {
+   "count": 21,
+   "sources": [
+    {
+     "name": "Curated, Wikipedia coordinates",
+     "url": "https://github.com/Ahmet-Dedeler/free-north-korea/blob/main/src/content/places.ts",
+     "updated": null
+    }
+   ]
+  }
+ }
+}

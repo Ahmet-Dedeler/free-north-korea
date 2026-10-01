@@ -1,0 +1,5537 @@
+[
+ {
+  "id": "kim-il-sung",
+  "name_en": "Kim Il Sung",
+  "name_ko": "김일성",
+  "aliases": [
+   "Kim Song-ju",
+   "Great Leader",
+   "Eternal President"
+  ],
+  "wikidata": "Q41117",
+  "wikipedia": "https://en.wikipedia.org/wiki/Kim_Il_Sung",
+  "image": {
+   "src": "/img/people/kim-il-sung.jpg",
+   "credit": "Jesse Charlie / Wikimedia Commons",
+   "license": "CC0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kim_Il_Sung_Portrait-3.jpg"
+  },
+  "born": {
+   "date": "1912-04-15",
+   "place": "Mangyongdae District"
+  },
+  "died": {
+   "date": "1994-07-08",
+   "place": "Mount Myohyang, North Korea",
+   "cause": "myocardial infarction"
+  },
+  "status": {
+   "value": "dead",
+   "as_of": "1994-07-08",
+   "source_url": "https://en.wikipedia.org/wiki/Kim_Il_Sung"
+  },
+  "gender": "male",
+  "rank": "Taewonsu",
+  "roles": [
+   {
+    "title": "President of North Korea",
+    "org_id": null,
+    "start": "1972-12-28",
+    "end": "1994-07-08",
+    "source_url": "https://www.wikidata.org/wiki/Q41117"
+   },
+   {
+    "title": "Premier of North Korea",
+    "org_id": null,
+    "start": "1948-09-09",
+    "end": "1972-12-28",
+    "source_url": "https://www.wikidata.org/wiki/Q41117"
+   },
+   {
+    "title": "member of the Supreme People's Assembly",
+    "org_id": null,
+    "start": null,
+    "end": null,
+    "source_url": "https://www.wikidata.org/wiki/Q41117"
+   },
+   {
+    "title": "General Secretary of the Workers' Party of Korea",
+    "org_id": null,
+    "start": "1949-06-30",
+    "end": "1994-07-08",
+    "source_url": "https://www.wikidata.org/wiki/Q41117"
+   },
+   {
+    "title": "Supreme Leader of North Korea",
+    "org_id": null,
+    "start": "1948-09-09",
+    "end": "1994-07-08",
+    "source_url": "https://www.wikidata.org/wiki/Q41117"
+   },
+   {
+    "title": "Supreme Commander of the Korean People’s Army",
+    "org_id": null,
+    "start": "1950-07-04",
+    "end": "1991-12-24",
+    "source_url": "https://www.wikidata.org/wiki/Q41117"
+   }
+  ],
+  "family": [
+   {
+    "relation": "father",
+    "person_id": "kim-hyong-jik",
+    "note": "Anti-Japanese nationalist activist"
+   },
+   {
+    "relation": "mother",
+    "person_id": "kang-pan-sok",
+    "note": "Early communist activist reverenced as Mother of Korea"
+   },
+   {
+    "relation": "spouse",
+    "person_id": "kim-jong-suk",
+    "note": "First wife, mother of Kim Jong Il"
+   },
+   {
+    "relation": "spouse",
+    "person_id": "kim-song-ae",
+    "note": "Second wife, sidelined during succession"
+   },
+   {
+    "relation": "child",
+    "person_id": "kim-jong-il",
+    "note": "Eldest son and chosen successor"
+   },
+   {
+    "relation": "child",
+    "person_id": "kim-man-il",
+    "note": "Second son with Kim Jong Suk; drowned in childhood"
+   },
+   {
+    "relation": "child",
+    "person_id": "kim-kyong-hui",
+    "note": "Daughter with Kim Jong Suk"
+   },
+   {
+    "relation": "child",
+    "person_id": "kim-pyong-il",
+    "note": "Son with Kim Song Ae; long-serving ambassador abroad"
+   },
+   {
+    "relation": "sibling",
+    "person_id": "kim-yong-ju",
+    "note": "Younger brother, former OGD director and Vice Premier"
+   }
+  ],
+  "health": [],
+  "physical": {
+   "height_cm": null,
+   "weight_kg": null
+  },
+  "sanctions": [],
+  "summary": "Kim Il Sung was a North Korean communist revolutionary, military officer, politician, and dictator who founded the Democratic People's Republic of Korea, also known as North Korea, in 1948, and led it until his death in 1994. He was succeeded by his son Kim Jong Il and posthumously declared Eternal President.",
+  "summary_source": "wikipedia",
+  "notable": [],
+  "tags": [
+   "family"
+  ]
+ },
+ {
+  "id": "kim-hyong-jik",
+  "name_en": "Kim Hyong Jik",
+  "name_ko": "김형직",
+  "aliases": [
+   "Kim Hyong-jik"
+  ],
+  "wikidata": "Q489279",
+  "wikipedia": "https://en.wikipedia.org/wiki/Kim_Hyong-jik",
+  "image": {
+   "src": "/img/people/kim-hyong-jik.jpg",
+   "credit": "Unknown authorUnknown author / Wikimedia Commons",
+   "license": "Public domain",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E9%87%91%E4%BA%A8%E7%A8%B7_1.jpg"
+  },
+  "born": {
+   "date": "1894-07-10",
+   "place": "Mangyŏngdae"
+  },
+  "died": {
+   "date": "1926-06-05",
+   "place": "Jilin, Republic of China",
+   "cause": "frostbite"
+  },
+  "status": {
+   "value": "dead",
+   "as_of": "1926-06-05",
+   "source_url": "https://en.wikipedia.org/wiki/Kim_Hyong-jik"
+  },
+  "gender": "male",
+  "rank": null,
+  "roles": [],
+  "family": [
+   {
+    "relation": "spouse",
+    "person_id": "kang-pan-sok",
+    "note": "Wife, mother of Kim Il Sung"
+   },
+   {
+    "relation": "child",
+    "person_id": "kim-il-sung",
+    "note": "Eldest son, founder of DPRK"
+   },
+   {
+    "relation": "child",
+    "person_id": "kim-yong-ju",
+    "note": "Third son, former head of OGD"
+   }
+  ],
+  "health": [],
+  "physical": {
+   "height_cm": null,
+   "weight_kg": null
+  },
+  "sanctions": [],
+  "summary": "Kim Hyong-jik was a Korean independence activist during Japanese rule. He was the father of the North Korean founder Kim Il Sung, the paternal grandfather of Kim Jong Il, and a great-grandfather of the current leader of North Korea, Kim Jong Un.",
+  "summary_source": "wikipedia",
+  "notable": [],
+  "tags": [
+   "family"
+  ]
+ },
+ {
+  "id": "kang-pan-sok",
+  "name_en": "Kang Pan Sok",
+  "name_ko": "강반석",
+  "aliases": [
+   "Mother of Korea"
+  ],
+  "wikidata": "Q709975",
+  "wikipedia": "https://en.wikipedia.org/wiki/Kang_Pan_Sok",
+  "image": {
+   "src": "/img/people/kang-pan-sok.jpg",
+   "credit": "Unknown authorUnknown author / Wikimedia Commons",
+   "license": "Public domain",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kang_bansuk.jpg"
+  },
+  "born": {
+   "date": "1892-04-21",
+   "place": "Mangyŏngdae"
+  },
+  "died": {
+   "date": "1932-07-31",
+   "place": "Antu County, Jilin, Republic of China",
+   "cause": "Illness"
+  },
+  "status": {
+   "value": "dead",
+   "as_of": "1932-07-31",
+   "source_url": "https://en.wikipedia.org/wiki/Kang_Pan_Sok"
+  },
+  "gender": "female",
+  "rank": null,
+  "roles": [],
+  "family": [
+   {
+    "relation": "spouse",
+    "person_id": "kim-hyong-jik",
+    "note": "Husband"
+   },
+   {
+    "relation": "child",
+    "person_id": "kim-il-sung",
+    "note": "Eldest son"
+   },
+   {
+    "relation": "child",
+    "person_id": "kim-yong-ju",
+    "note": "Son"
+   }
+  ],
+  "health": [],
+  "physical": {
+   "height_cm": null,
+   "weight_kg": null
+  },
+  "sanctions": [],
+  "summary": "Kang Pan Sok was the mother of North Korean leader Kim Il Sung, the paternal grandmother of Kim Jong Il, and a great grandmother of North Korean leader Kim Jong Un.",
+  "summary_source": "wikipedia",
+  "notable": [],
+  "tags": [
+   "family"
+  ]
+ },
+ {
+  "id": "kim-jong-suk",
+  "name_en": "Kim Jong Suk",
+  "name_ko": "김정숙",
+  "aliases": [
+   "Heroine of the Anti-Japanese War",
+   "Mother of Kim Jong Il"
+  ],
+  "wikidata": "Q463949",
+  "wikipedia": "https://en.wikipedia.org/wiki/Kim_Jong-suk",
+  "image": {
+   "src": "/img/people/kim-jong-suk.jpg",
+   "credit": "Unknown authorUnknown author / Wikimedia Commons",
+   "license": "Public domain",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kim_Jeong_Suk_2.jpg"
+  },
+  "born": {
+   "date": "1917-12-24",
+   "place": "Hoeryong"
+  },
+  "died": {
+   "date": "1949-09-22",
+   "place": "Pyongyang, North Korea",
+   "cause": "disease"
+  },
+  "status": {
+   "value": "dead",
+   "as_of": "1949-09-22",
+   "source_url": "https://en.wikipedia.org/wiki/Kim_Jong-suk"
+  },
+  "gender": "female",
+  "rank": null,
+  "roles": [],
+  "family": [
+   {
+    "relation": "spouse",
+    "person_id": "kim-il-sung",
+    "note": "Husband, married in Soviet Far East"
+   },
+   {
+    "relation": "child",
+    "person_id": "kim-jong-il",
+    "note": "Eldest son, born in Soviet camp near Khabarovsk"
+   },
+   {
+    "relation": "child",
+    "person_id": "kim-man-il",
+    "note": "Second son, drowned in 1947"
+   },
+   {
+    "relation": "child",
+    "person_id": "kim-kyong-hui",
+    "note": "Daughter, married Jang Song Thaek"
+   }
+  ],
+  "health": [],
+  "physical": {
+   "height_cm": null,
+   "weight_kg": null
+  },
+  "sanctions": [],
+  "summary": "Kim Jong-suk was a North Korean revolutionary, anti-Japanese guerrilla, Communist activist, the first wife of North Korean leader Kim Il Sung, the mother of former leader Kim Jong Il and grandmother of current leader Kim Jong Un.",
+  "summary_source": "wikipedia",
+  "notable": [],
+  "tags": [
+   "family"
+  ]
+ },
+ {
+  "id": "kim-song-ae",
+  "name_en": "Kim Song Ae",
+  "name_ko": "김성애",
+  "aliases": [
+   "Kim Song-ae"
+  ],
+  "wikidata": "Q702565",
+  "wikipedia": "https://en.wikipedia.org/wiki/Kim_Song-ae",
+  "image": null,
+  "born": {
+   "date": "1924-12-29",
+   "place": "Kangso"
+  },
+  "died": {
+   "date": "2014-09-23",
+   "place": "Kanggye, Jagang Province, North Korea",
+   "cause": "Natural causes in internal exile"
+  },
+  "status": {
+   "value": "dead",
+   "as_of": "2014-09-23",
+   "source_url": "https://en.wikipedia.org/wiki/Kim_Song-ae"
+  },
+  "gender": "female",
+  "rank": null,
+  "roles": [
+   {
+    "title": "Chairwoman of the Democratic Women's Union of Korea",
+    "org_id": "wpk",
+    "start": "1971-10-01",
+    "end": "1998-04-01",
+    "source_url": "https://en.wikipedia.org/wiki/Kim_Song-ae"
+   }
+  ],
+  "family": [
+   {
+    "relation": "spouse",
+    "person_id": "kim-il-sung",
+    "note": "Second official wife of Kim Il Sung"
+   },
+   {
+    "relation": "child",
+    "person_id": "kim-pyong-il",
+    "note": "Son, sent into diplomatic exile"
+   }
+  ],
+  "health": [],
+  "physical": {
+   "height_cm": null,
+   "weight_kg": null
+  },
+  "sanctions": [],
+  "summary": "Kim Song-ae, born Kim Sŏngp'al, was a North Korean politician who served as the first lady of North Korea during the time that the position existed, from 1963 to 1974. She was the second wife of North Korea's founder, Kim Il Sung from their marriage in 1952 until his death in 1994.",
+  "summary_source": "wikipedia",
+  "notable": [],
+  "tags": [
+   "family",
+   "purged"
+  ]
+ },
+ {
+  "id": "kim-jong-il",
+  "name_en": "Kim Jong Il",
+  "name_ko": "김정일",
+  "aliases": [
+   "Dear Leader",
+   "Eternal General Secretary",
+   "Yuri Irsenovich Kim"
+  ],
+  "wikidata": "Q10665",
+  "wikipedia": "https://en.wikipedia.org/wiki/Kim_Jong_Il",
+  "image": {
+   "src": "/img/people/kim-jong-il.jpg",
+   "credit": "Jesse Charlie / Wikimedia Commons",
+   "license": "CC0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kim_Jong_il_Portrait-2.jpg"
+  },
+  "born": {
+   "date": "1941-02-16",
+   "place": "Vyatskoye",
+   "note": "Soviet birth record name: Yuri Irsenovich Kim"
+  },
+  "died": {
+   "date": "2011-12-17",
+   "place": "Pyongyang, North Korea (on board special armored train)",
+   "cause": "myocardial infarction"
+  },
+  "status": {
+   "value": "dead",
+   "as_of": "2011-12-17",
+   "source_url": "https://en.wikipedia.org/wiki/Kim_Jong_Il"
+  },
+  "gender": "male",
+  "rank": "Generalissimo",
+  "roles": [
+   {
+    "title": "member of the Supreme People's Assembly",
+    "org_id": null,
+    "start": null,
+    "end": null,
+    "source_url": "https://www.wikidata.org/wiki/Q10665"
+   },
+   {
+    "title": "General Secretary of the Workers' Party of Korea",
+    "org_id": null,
+    "start": "1997-10-08",
+    "end": "2011-12-17",
+    "source_url": "https://www.wikidata.org/wiki/Q10665"
+   },
+   {
+    "title": "President of the State Affairs Commission",
+    "org_id": null,
+    "start": null,
+    "end": null,
+    "source_url": "https://www.wikidata.org/wiki/Q10665"
+   },
+   {
+    "title": "Supreme Leader of North Korea",
+    "org_id": null,
+    "start": "1994-07-08",
+    "end": "2011-12-17",
+    "source_url": "https://www.wikidata.org/wiki/Q10665"
+   },
+   {
+    "title": "Eternal leaders of North Korea",
+    "org_id": null,
+    "start": null,
+    "end": null,
+    "source_url": "https://www.wikidata.org/wiki/Q10665"
+   }
+  ],
+  "family": [
+   {
+    "relation": "father",
+    "person_id": "kim-il-sung",
+    "note": "Father, regime founder"
+   },
+   {
+    "relation": "mother",
+    "person_id": "kim-jong-suk",
+    "note": "Mother, revolutionary heroine"
+   },
+   {
+    "relation": "spouse",
+    "person_id": "song-hye-rim",
+    "note": "First major consort, mother of Kim Jong Nam"
+   },
+   {
+    "relation": "spouse",
+    "person_id": "ko-yong-hui",
+    "note": "Consort, mother of Kim Jong Chol, Kim Jong Un, and Kim Yo Jong"
+   },
+   {
+    "relation": "spouse",
+    "person_id": "kim-ok",
+    "note": "Longtime personal secretary and final consort"
+   },
+   {
+    "relation": "child",
+    "person_id": "kim-jong-nam",
+    "note": "Eldest son, bypassed and assassinated"
+   },
+   {
+    "relation": "child",
+    "person_id": "kim-sol-song",
+    "note": "Daughter with Kim Yong Suk"
+   },
+   {
+    "relation": "child",
+    "person_id": "kim-jong-chol",
+    "note": "Second son, bypassed for leadership"
+   },
+   {
+    "relation": "child",
+    "person_id": "kim-jong-un",
+    "note": "Third son and chosen successor"
+   },
+   {
+    "relation": "child",
+    "person_id": "kim-yo-jong",
+    "note": "Daughter, key regime leader"
+   },
+   {
+    "relation": "sibling",
+    "person_id": "kim-kyong-hui",
+    "note": "Sister, core inner circle supporter"
+   },
+   {
+    "relation": "half-sibling",
+    "person_id": "kim-pyong-il",
+    "note": "Half-brother and succession rival"
+   },
+   {
+    "relation": "sibling",
+    "person_id": "kim-man-il",
+    "note": null
+   }
+  ],
+  "health": [
+   {
+    "claim": "Believed to have suffered a stroke in 2008, after which he disappeared from public view for months. Also believed to have had diabetes and heart disease.",
+    "source_name": "CNN",
+    "source_url": "https://www.cnn.com/2011/12/19/health/kim-health-mystery",
+    "date": "2011-12-19",
+    "confidence": "reported",
+    "curated": true
+   },
+   {
+    "claim": "State media said he died on 17 December 2011 of an acute myocardial infarction (heart attack) on a train trip.",
+    "source_name": "Wikipedia: Death and state funeral of Kim Jong Il",
+    "source_url": "https://en.wikipedia.org/wiki/Death_and_state_funeral_of_Kim_Jong_Il",
+    "date": "2011-12-19",
+    "confidence": "confirmed",
+    "curated": true
+   }
+  ],
+  "physical": {
+   "height_cm": null,
+   "weight_kg": null
+  },
+  "sanctions": [],
+  "summary": "Kim Jong Il was a North Korean politician and dictator who was the second supreme leader of North Korea from the death of his father Kim Il Sung in 1994 until his own death in 2011. Posthumously, Kim Jong Il was declared an eternal leader of the Workers' Party of Korea.",
+  "summary_source": "wikipedia",
+  "notable": [
+   {
+    "claim": "Conducted North Korea's first underground nuclear test on October 9, 2006 at Punggye-ri.",
+    "source_url": "https://www.armscontrol.org/factsheets/dprkchron",
+    "date": "2006-10-09"
+   }
+  ],
+  "tags": [
+   "family",
+   "politburo",
+   "military"
+  ]
+ },
+ {
+  "id": "song-hye-rim",
+  "name_en": "Song Hye Rim",
+  "name_ko": "성혜림",
+  "aliases": [
+   "Song Hye-rim"
+  ],
+  "wikidata": "Q487289",
+  "wikipedia": "https://en.wikipedia.org/wiki/Song_Hye-rim",
+  "image": null,
+  "born": {
+   "date": "1937-01-24",
+   "place": "Changnyeong County"
+  },
+  "died": {
+   "date": "2002-05-18",
+   "place": "Moscow, Russian Federation",
+   "cause": "breast cancer"
+  },
+  "status": {
+   "value": "dead",
+   "as_of": "2002-05-18",
+   "source_url": "https://en.wikipedia.org/wiki/Song_Hye-rim"
+  },
+  "gender": "female",
+  "rank": null,
+  "roles": [],
+  "family": [
+   {
+    "relation": "child",
+    "person_id": "kim-jong-nam",
+    "note": "Son, raised in seclusion"
+   },
+   {
+    "relation": "spouse",
+    "person_id": "kim-jong-il",
+    "note": "Partner / consort, forced into secret relationship"
+   }
+  ],
+  "health": [],
+  "physical": {
+   "height_cm": null,
+   "weight_kg": null
+  },
+  "sanctions": [],
+  "summary": "Song Hye-rim was a North Korean actress, best known for being the one-time favored mistress of Kim Jong Il.",
+  "summary_source": "wikipedia",
+  "notable": [],
+  "tags": [
+   "family"
+  ]
+ },
+ {
+  "id": "ko-yong-hui",
+  "name_en": "Ko Yong Hui",
+  "name_ko": "고용희",
+  "aliases": [
+   "Ko Young-hee",
+   "Respected Mother",
+   "Ko Sun-hui"
+  ],
+  "wikidata": "Q263732",
+  "wikipedia": "https://en.wikipedia.org/wiki/Ko_Yong-hui",
+  "image": null,
+  "born": {
+   "date": "1952-06-26",
+   "place": "Osaka"
+  },
+  "died": {
+   "date": "2004-05-24",
+   "place": "Paris, France",
+   "cause": "breast cancer"
+  },
+  "status": {
+   "value": "dead",
+   "as_of": "2004-05-24",
+   "source_url": "https://en.wikipedia.org/wiki/Ko_Yong-hui"
+  },
+  "gender": "female",
+  "rank": null,
+  "roles": [
+   {
+    "title": "Spouse of the Supreme Leader of the Democratic People's Republic of Korea",
+    "org_id": null,
+    "start": "1994-07-08",
+    "end": "2004-05-24",
+    "source_url": "https://www.wikidata.org/wiki/Q263732"
+   }
+  ],
+  "family": [
+   {
+    "relation": "spouse",
+    "person_id": "kim-jong-il",
+    "note": "Consort and dominant matriarch of the current line"
+   },
+   {
+    "relation": "child",
+    "person_id": "kim-jong-chol",
+    "note": "Elder son"
+   },
+   {
+    "relation": "child",
+    "person_id": "kim-jong-un",
+    "note": "Younger son and Supreme Leader"
+   },
+   {
+    "relation": "child",
+    "person_id": "kim-yo-jong",
+    "note": "Daughter, vice director of PAD"
+   }
+  ],
+  "health": [],
+  "physical": {
+   "height_cm": null,
+   "weight_kg": null
+  },
+  "sanctions": [],
+  "summary": "Ko Yong-hui, also spelled Ko Young-hee, was the mistress of North Korean supreme leader Kim Jong Il and the mother of his successor, Kim Jong Un. Within North Korea, she is only referred to by titles, such as \"The Respected Mother who is the Most Faithful and Loyal 'Subject' to the Dear Leader Comrade Supreme Commander\", \"The Mother of Pyongyang\", and \"The Mother of Great Songun Korea\".",
+  "summary_source": "wikipedia",
+  "notable": [],
+  "tags": [
+   "family"
+  ]
+ },
+ {
+  "id": "kim-ok",
+  "name_en": "Kim Ok",
+  "name_ko": "김옥",
+  "aliases": [
+   "Kim Ok"
+  ],
+  "wikidata": "Q705212",
+  "wikipedia": "https://en.wikipedia.org/wiki/Kim_Ok",
+  "image": {
+   "src": "/img/people/kim-ok.jpg",
+   "credit": "Original uploader was Danniemeadows at en.wikipedia / Wikimedia Commons",
+   "license": "Public domain",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kim_ok_cropped.png"
+  },
+  "born": {
+   "date": "1964-08-28",
+   "place": "North Korea"
+  },
+  "died": null,
+  "status": {
+   "value": "purged",
+   "as_of": "2016-07-26",
+   "source_url": "https://en.yna.co.kr/view/AEN20160726002600315"
+  },
+  "gender": "female",
+  "rank": null,
+  "roles": [
+   {
+    "title": "Spouse of the Supreme Leader of the Democratic People's Republic of Korea",
+    "org_id": null,
+    "start": "2004",
+    "end": "2011-12-17",
+    "source_url": "https://www.wikidata.org/wiki/Q705212"
+   },
+   {
+    "title": "Personal Secretary to National Defence Commission Chairman",
+    "org_id": "sac",
+    "start": "1980-01-01",
+    "end": "2011-12-17",
+    "source_url": "https://en.wikipedia.org/wiki/Kim_Ok"
+   }
+  ],
+  "family": [
+   {
+    "relation": "spouse",
+    "person_id": "kim-jong-il",
+    "note": "Fourth consort / de facto wife following Ko Yong Hui's death"
+   }
+  ],
+  "health": [],
+  "physical": {
+   "height_cm": null,
+   "weight_kg": null
+  },
+  "sanctions": [],
+  "summary": "Kim Ok is a former North Korean government employee who served as Kim Jong Il's personal secretary from the 1980s until his death in 2011. After the death of Ko Yong Hui in August 2004, she regularly met with foreign officials as the de facto first lady of North Korea, and was rumored to be the supreme leader's fourth wife.",
+  "summary_source": "wikipedia",
+  "notable": [],
+  "tags": [
+   "family",
+   "purged"
+  ]
+ },
+ {
+  "id": "kim-jong-un",
+  "name_en": "Kim Jong Un",
+  "name_ko": "김정은",
+  "aliases": [
+   "Kim Jong-eun"
+  ],
+  "wikidata": "Q56226",
+  "wikipedia": "https://en.wikipedia.org/wiki/Kim_Jong_Un",
+  "image": {
+   "src": "/img/people/kim-jong-un.jpg",
+   "credit": "Владимир Смирнов / ТАСС / Wikimedia Commons",
+   "license": "CC BY 4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kim_Jong-un_and_Vladimir_Putin_(2023-09-13)_12_(cropped).jpg"
+  },
+  "born": {
+   "date": "1984-01-08",
+   "place": "Wonsan",
+   "note": "US OFAC records list Jan 8, 1984; state propaganda claims 1982"
+  },
+  "died": null,
+  "status": {
+   "value": "alive",
+   "as_of": "2026-09-01",
+   "source_url": null
+  },
+  "gender": "male",
+  "rank": "Wonsu",
+  "roles": [
+   {
+    "title": "General Secretary of the Workers' Party of Korea",
+    "org_id": null,
+    "start": "2012-04-11",
+    "end": null,
+    "source_url": "https://www.wikidata.org/wiki/Q56226"
+   },
+   {
+    "title": "President of the State Affairs Commission",
+    "org_id": null,
+    "start": "2012-04-13",
+    "end": null,
+    "source_url": "https://www.wikidata.org/wiki/Q56226"
+   },
+   {
+    "title": "Supreme Commander of the Korean People’s Army",
+    "org_id": null,
+    "start": "2011-12-17",
+    "end": null,
+    "source_url": "https://www.wikidata.org/wiki/Q56226"
+   },
+   {
+    "title": "Supreme Leader of North Korea",
+    "org_id": null,
+    "start": "2011-12-17",
+    "end": null,
+    "source_url": "https://www.wikidata.org/wiki/Q56226"
+   },
+   {
+    "title": "member of the Presidium of the Politburo of the Workers' Party of Korea",
+    "org_id": null,
+    "start": null,
+    "end": null,
+    "source_url": "https://www.wikidata.org/wiki/Q56226"
+   },
+   {
+    "title": "member of the Supreme People's Assembly",
+    "org_id": null,
+    "start": null,
+    "end": null,
+    "source_url": "https://www.wikidata.org/wiki/Q56226"
+   }
+  ],
+  "family": [
+   {
+    "relation": "father",
+    "person_id": "kim-jong-il",
+    "note": "Father, second supreme leader"
+   },
+   {
+    "relation": "mother",
+    "person_id": "ko-yong-hui",
+    "note": "Mother, consort from Japan"
+   },
+   {
+    "relation": "spouse",
+    "person_id": "ri-sol-ju",
+    "note": "First Lady, married circa 2009"
+   },
+   {
+    "relation": "child",
+    "person_id": "kim-ju-ae",
+    "note": "Daughter and prominent public heir presumptive"
+   },
+   {
+    "relation": "sibling",
+    "person_id": "kim-jong-chol",
+    "note": "Older brother, non-political"
+   },
+   {
+    "relation": "half-sibling",
+    "person_id": "kim-jong-nam",
+    "note": "Older half-brother, assassinated 2017"
+   },
+   {
+    "relation": "sibling",
+    "person_id": "kim-yo-jong",
+    "note": "Sister, core regime gatekeeper and adviser"
+   },
+   {
+    "relation": "half-sibling",
+    "person_id": "kim-sol-song",
+    "note": "Older half-sister"
+   },
+   {
+    "relation": "uncle",
+    "person_id": "jang-song-thaek",
+    "note": "Uncle-in-law, executed Dec 2013"
+   },
+   {
+    "relation": "aunt",
+    "person_id": "kim-kyong-hui",
+    "note": "Paternal aunt, surviving elder"
+   }
+  ],
+  "health": [
+   {
+    "claim": "South Korea's NIS told lawmakers he is 'extremely obese', weighing over 140 kg and at high risk of cardiovascular disease, though he shows no difficulty with physical activity.",
+    "source_name": "The Japan Times (NIS briefing)",
+    "source_url": "https://japantimes.co.jp/news/2026/09/30/asia-pacific/north-korea-leader-obese-seoul-spy",
+    "date": "2026-09-30",
+    "confidence": "reported",
+    "curated": true
+   },
+   {
+    "claim": "NIS: about 140 kg, with signs of high blood pressure and diabetes since his early 30s; North Korean officials were looking abroad for new medicines to treat him.",
+    "source_name": "CBS News (NIS briefing)",
+    "source_url": "https://cbsnews.com/news/kim-jong-un-north-korea-weight-health-problems-medicine-south-korea",
+    "date": "2024-07-29",
+    "confidence": "reported",
+    "curated": true
+   },
+   {
+    "claim": "NIS: estimated at about 140 kg with significant sleep disorders.",
+    "source_name": "Inquirer / AFP (NIS briefing)",
+    "source_url": "https://newsinfo.inquirer.net/1777829/kim-jong-un-estimated-to-weigh-about-140-kg-with-significant-sleep-disorders-spy-agency/amp",
+    "date": "2023-05",
+    "confidence": "reported",
+    "curated": true
+   },
+   {
+    "claim": "NIS: lost about 20 kg in 2021 but showed no signs of serious illness.",
+    "source_name": "NBC News",
+    "source_url": "https://www.nbcnews.com/news/world/north-korea-s-kim-jong-un-has-lost-weight-remains-n1282691",
+    "date": "2021-07",
+    "confidence": "reported",
+    "curated": true
+   }
+  ],
+  "physical": {
+   "height_cm": null,
+   "weight_kg": {
+    "value": 140,
+    "source_name": "NIS via The Japan Times",
+    "source_url": "https://japantimes.co.jp/news/2026/09/30/asia-pacific/north-korea-leader-obese-seoul-spy",
+    "date": "2026-09-30",
+    "confidence": "reported",
+    "curated": true
+   }
+  },
+  "sanctions": [
+   {
+    "list": "OFAC",
+    "id": "20157",
+    "date": null,
+    "source_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=20157"
+   }
+  ],
+  "summary": "Kim Jong Un is a North Korean politician and dictator who has been serving as the supreme leader of North Korea since 2011, following the death of his father, Kim Jong Il. He is the third ruler from the Kim family to lead the country, which was founded by his grandfather Kim Il Sung.",
+  "summary_source": "wikipedia",
+  "notable": [],
+  "tags": [
+   "family",
+   "politburo",
+   "military",
+   "missile"
+  ]
+ },
+ {
+  "id": "ri-sol-ju",
+  "name_en": "Ri Sol Ju",
+  "name_ko": "리설주",
+  "aliases": [
+   "Respected First Lady",
+   "Ri Sol-ju"
+  ],
+  "wikidata": "Q714658",
+  "wikipedia": "https://en.wikipedia.org/wiki/Ri_Sol-ju",
+  "image": {
+   "src": "/img/people/ri-sol-ju.jpg",
+   "credit": "Blue House (Republic of Korea) / Wikimedia Commons",
+   "license": "KOGL Type 1",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ri_Sol-ju_(April_27,_2018).png"
+  },
+  "born": {
+   "date": "1989-09-28",
+   "place": "Chongjin"
+  },
+  "died": null,
+  "status": {
+   "value": "alive",
+   "as_of": "2026-09-01",
+   "source_url": null
+  },
+  "gender": "female",
+  "rank": null,
+  "roles": [
+   {
+    "title": "First Lady of North Korea",
+    "org_id": null,
+    "start": "2018-04",
+    "end": null,
+    "source_url": "https://www.wikidata.org/wiki/Q714658"
+   },
+   {
+    "title": "Spouse of the Supreme Leader of the Democratic People's Republic of Korea",
+    "org_id": null,
+    "start": "2012-04-11",
+    "end": null,
+    "source_url": "https://www.wikidata.org/wiki/Q714658"
+   }
+  ],
+  "family": [
+   {
+    "relation": "spouse",
+    "person_id": "kim-jong-un",
+    "note": "Husband, Supreme Leader"
+   },
+   {
+    "relation": "child",
+    "person_id": "kim-ju-ae",
+    "note": "Daughter"
+   }
+  ],
+  "health": [],
+  "physical": {
+   "height_cm": null,
+   "weight_kg": null
+  },
+  "sanctions": [],
+  "summary": "Ri Sol-ju is the current first lady of North Korea as the wife of Supreme Leader Kim Jong Un.",
+  "summary_source": "wikipedia",
+  "notable": [],
+  "tags": [
+   "family"
+  ]
+ },
+ {
+  "id": "kim-ju-ae",
+  "name_en": "Kim Ju Ae",
+  "name_ko": "김주애",
+  "aliases": [
+   "Respected Daughter",
+   "Beloved Child",
+   "Hyang-do (Guide)"
+  ],
+  "wikidata": "Q14864448",
+  "wikipedia": "https://en.wikipedia.org/wiki/Kim_Ju_Ae",
+  "image": null,
+  "born": {
+   "date": "2013",
+   "place": "North Korea",
+   "note": "Birth confirmed by Dennis Rodman following his 2013 visit"
+  },
+  "died": null,
+  "status": {
+   "value": "alive",
+   "as_of": "2026-09-01",
+   "source_url": null
+  },
+  "gender": "female",
+  "rank": null,
+  "roles": [],
+  "family": [
+   {
+    "relation": "father",
+    "person_id": "kim-jong-un",
+    "note": "Father, Supreme Leader"
+   },
+   {
+    "relation": "mother",
+    "person_id": "ri-sol-ju",
+    "note": "Mother, First Lady"
+   },
+   {
+    "relation": "aunt",
+    "person_id": "kim-yo-jong",
+    "note": "Aunt, PAD Vice Director"
+   }
+  ],
+  "health": [],
+  "physical": {
+   "height_cm": null,
+   "weight_kg": null
+  },
+  "sanctions": [],
+  "summary": "Kim Ju Ae is the daughter of North Korean leader Kim Jong Un and his wife Ri Sol Ju. The North Korean government has publicly disclosed little information about her, and details about her life, including her birth date and name, remain unconfirmed.",
+  "summary_source": "wikipedia",
+  "notable": [],
+  "tags": [
+   "family",
+   "missile"
+  ]
+ },
+ {
+  "id": "kim-yo-jong",
+  "name_en": "Kim Yo Jong",
+  "name_ko": "김여정",
+  "aliases": [
+   "Kim Yo-jong",
+   "Vice Department Director"
+  ],
+  "wikidata": "Q4330912",
+  "wikipedia": "https://en.wikipedia.org/wiki/Kim_Yo_Jong",
+  "image": {
+   "src": "/img/people/kim-yo-jong.jpg",
+   "credit": "Kim Jinseok (Official photographer of Republic of Korea), Blue House (Republic of Korea) / Wikimedia Commons",
+   "license": "KOGL Type 1",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kim_Yo-jong_at_Blue_House_(cropped).jpg"
+  },
+  "born": {
+   "date": "1987-09-26",
+   "place": "Pyongyang",
+   "note": "MOU nkinfo confirms 1987; US OFAC designation records list 1989"
+  },
+  "died": null,
+  "status": {
+   "value": "alive",
+   "as_of": "2026-09-01",
+   "source_url": null
+  },
+  "gender": "female",
+  "rank": null,
+  "roles": [
+   {
+    "title": "Director of the Propaganda and Agitation Department of the Workers’ Party of Korea",
+    "org_id": null,
+    "start": "2015-07-24",
+    "end": null,
+    "source_url": "https://www.wikidata.org/wiki/Q4330912"
+   },
+   {
+    "title": "member of the Supreme People's Assembly",
+    "org_id": null,
+    "start": null,
+    "end": null,
+    "source_url": "https://www.wikidata.org/wiki/Q4330912"
+   }
+  ],
+  "family": [
+   {
+    "relation": "father",
+    "person_id": "kim-jong-il",
+    "note": "Father, former leader"
+   },
+   {
+    "relation": "mother",
+    "person_id": "ko-yong-hui",
+    "note": "Mother"
+   },
+   {
+    "relation": "half-sibling",
+    "person_id": "kim-sol-song",
+    "note": null
+   },
+   {
+    "relation": "sibling",
+    "person_id": "kim-jong-chol",
+    "note": "Older brother"
+   },
+   {
+    "relation": "half-sibling",
+    "person_id": "kim-jong-nam",
+    "note": "Half-brother, deceased"
+   },
+   {
+    "relation": "sibling",
+    "person_id": "kim-jong-un",
+    "note": "Brother, Supreme Leader"
+   }
+  ],
+  "health": [],
+  "physical": {
+   "height_cm": null,
+   "weight_kg": null
+  },
+  "sanctions": [],
+  "summary": "Kim Yo Jong is a North Korean politician and diplomat, and sister of WPK General Secretary Kim Jong Un. As of February 2026 she is the director of the General Affairs Department of the Workers' Party of Korea.",
+  "summary_source": "wikipedia",
+  "notable": [
+   {
+    "claim": "Ordered the demolition of the Inter-Korean Liaison Office in Kaesong on June 16, 2020 after issuing warnings in state media.",
+    "source_url": "https://www.bbc.com/news/world-asia-53060620",
+    "date": "2020-06-16"
+   }
+  ],
+  "tags": [
+   "family",
+   "politburo",
+   "security"
+  ]
+ },
+ {
+  "id": "kim-jong-chol",
+  "name_en": "Kim Jong Chol",
+  "name_ko": "김정철",
+  "aliases": [
+   "Kim Jong-chul"
+  ],
+  "wikidata": "Q385795",
+  "wikipedia": "https://en.wikipedia.org/wiki/Kim_Jong_Chul",
+  "image": null,
+  "born": {
+   "date": "1981-09-25",
+   "place": "Pyongyang"
+  },
+  "died": null,
+  "status": {
+   "value": "alive",
+   "as_of": "2024-01-01",
+   "source_url": null
+  },
+  "gender": "male",
+  "rank": null,
+  "roles": [],
+  "family": [
+   {
+    "relation": "father",
+    "person_id": "kim-jong-il",
+    "note": "Father"
+   },
+   {
+    "relation": "mother",
+    "person_id": "ko-yong-hui",
+    "note": "Mother"
+   },
+   {
+    "relation": "half-sibling",
+    "person_id": "kim-jong-nam",
+    "note": "Half-brother"
+   },
+   {
+    "relation": "sibling",
+    "person_id": "kim-jong-un",
+    "note": "Younger brother, Supreme Leader"
+   },
+   {
+    "relation": "sibling",
+    "person_id": "kim-yo-jong",
+    "note": "Sister"
+   },
+   {
+    "relation": "half-sibling",
+    "person_id": "kim-sol-song",
+    "note": null
+   }
+  ],
+  "health": [],
+  "physical": {
+   "height_cm": null,
+   "weight_kg": null
+  },
+  "sanctions": [],
+  "summary": "Kim Jong Chul, sometimes spelled Kim Jong Chol, is the son of the former North Korean Supreme Leader Kim Jong Il. His younger brother is current Supreme Leader Kim Jong Un.",
+  "summary_source": "wikipedia",
+  "notable": [],
+  "tags": [
+   "family"
+  ]
+ },
+ {
+  "id": "kim-jong-nam",
+  "name_en": "Kim Jong Nam",
+  "name_ko": "김정남",
+  "aliases": [
+   "Kim Chol",
+   "Kim Jong-nam"
+  ],
+  "wikidata": "Q317824",
+  "wikipedia": "https://en.wikipedia.org/wiki/Kim_Jong-nam",
+  "image": null,
+  "born": {
+   "date": "1971-05-10",
+   "place": "Pyongyang"
+  },
+  "died": {
+   "date": "2017-02-13",
+   "place": "Kuala Lumpur International Airport, Malaysia",
+   "cause": "poisoning"
+  },
+  "status": {
+   "value": "dead",
+   "as_of": "2017-02-13",
+   "source_url": "https://en.wikipedia.org/wiki/Kim_Jong-nam"
+  },
+  "gender": "male",
+  "rank": "Colonel",
+  "roles": [],
+  "family": [
+   {
+    "relation": "father",
+    "person_id": "kim-jong-il",
+    "note": "Father"
+   },
+   {
+    "relation": "mother",
+    "person_id": "song-hye-rim",
+    "note": "Mother, actress who died in Moscow"
+   },
+   {
+    "relation": "child",
+    "person_id": "kim-han-sol",
+    "note": "Son, in protective exile"
+   },
+   {
+    "relation": "half-sibling",
+    "person_id": "kim-jong-un",
+    "note": "Half-brother and architect of his assassination"
+   },
+   {
+    "relation": "half-sibling",
+    "person_id": "kim-jong-chol",
+    "note": null
+   },
+   {
+    "relation": "half-sibling",
+    "person_id": "kim-sol-song",
+    "note": null
+   },
+   {
+    "relation": "half-sibling",
+    "person_id": "kim-yo-jong",
+    "note": null
+   }
+  ],
+  "health": [],
+  "physical": {
+   "height_cm": null,
+   "weight_kg": null
+  },
+  "sanctions": [],
+  "summary": "Kim Jong-nam was the eldest son of North Korean leader Kim Jong Il. From roughly 1994 to 2001, he was considered the heir apparent to his father.",
+  "summary_source": "wikipedia",
+  "notable": [],
+  "tags": [
+   "family",
+   "purged"
+  ]
+ },
+ {
+  "id": "kim-han-sol",
+  "name_en": "Kim Han Sol",
+  "name_ko": "김한솔",
+  "aliases": [
+   "Kim Han-sol"
+  ],
+  "wikidata": "Q1280778",
+  "wikipedia": "https://en.wikipedia.org/wiki/Kim_Han-sol",
+  "image": null,
+  "born": {
+   "date": "1995-06-16",
+   "place": "Pyongyang"
+  },
+  "died": null,
+  "status": {
+   "value": "alive",
+   "as_of": "2024-01-01",
+   "source_url": "https://www.newyorker.com/magazine/2020/11/23/the-underground-movement-trying-to-topple-the-north-korean-regime"
+  },
+  "gender": "male",
+  "rank": null,
+  "roles": [],
+  "family": [
+   {
+    "relation": "father",
+    "person_id": "kim-jong-nam",
+    "note": "Assassinated in Malaysia"
+   },
+   {
+    "relation": "uncle",
+    "person_id": "kim-jong-un",
+    "note": "Half-uncle, Supreme Leader"
+   }
+  ],
+  "health": [],
+  "physical": {
+   "height_cm": null,
+   "weight_kg": null
+  },
+  "sanctions": [],
+  "summary": "Kim Han-sol is the eldest son of Kim Jong-nam and a grandson of the former North Korean ruler Kim Jong Il. His father was the unofficial heir apparent until he fell out of favor with the regime after a failed attempt to secretly visit Tokyo Disneyland in May 2001.",
+  "summary_source": "wikipedia",
+  "notable": [
+   {
+    "claim": "Released a video proof of life in March 2017 following his evacuation from Macau by Free Joseon.",
+    "source_url": "https://www.newyorker.com/magazine/2020/11/23/the-underground-movement-trying-to-topple-the-north-korean-regime",
+    "date": "2017-03-08"
+   }
+  ],
+  "tags": [
+   "family"
+  ]
+ },
+ {
+  "id": "kim-sol-song",
+  "name_en": "Kim Sol Song",
+  "name_ko": "김설송",
+  "aliases": [
+   "Kim Sul-song"
+  ],
+  "wikidata": "Q705218",
+  "wikipedia": "https://en.wikipedia.org/wiki/Kim_Sol-song",
+  "image": null,
+  "born": {
+   "date": "1974-12-30",
+   "place": "North Korea"
+  },
+  "died": null,
+  "status": {
+   "value": "alive",
+   "as_of": "2023-01-01",
+   "source_url": null
+  },
+  "gender": "female",
+  "rank": null,
+  "roles": [],
+  "family": [
+   {
+    "relation": "father",
+    "person_id": "kim-jong-il",
+    "note": "Father"
+   },
+   {
+    "relation": "half-sibling",
+    "person_id": "kim-yo-jong",
+    "note": "Half-sister"
+   },
+   {
+    "relation": "half-sibling",
+    "person_id": "kim-jong-un",
+    "note": "Half-brother, Supreme Leader"
+   },
+   {
+    "relation": "half-sibling",
+    "person_id": "kim-jong-chol",
+    "note": null
+   },
+   {
+    "relation": "half-sibling",
+    "person_id": "kim-jong-nam",
+    "note": null
+   }
+  ],
+  "health": [],
+  "physical": {
+   "height_cm": null,
+   "weight_kg": null
+  },
+  "sanctions": [],
+  "summary": "Kim Sol-song is the daughter of North Korea's former leader Kim Jong Il and Kim Young-sook and a half-sister to Kim Jong Un, the current leader of North Korea. She has been active within the propaganda department, been in charge of literary affairs, and previously led the security and schedule of her father as his secretary.",
+  "summary_source": "wikipedia",
+  "notable": [],
+  "tags": [
+   "family"
+  ]
+ },
+ {
+  "id": "kim-kyong-hui",
+  "name_en": "Kim Kyong Hui",
+  "name_ko": "김경희",
+  "aliases": [
+   "Kim Kyong-hui"
+  ],
+  "wikidata": "Q271067",
+  "wikipedia": "https://en.wikipedia.org/wiki/Kim_Kyong-hui",
+  "image": {
+   "src": "/img/people/kim-kyong-hui.jpg",
+   "credit": "DIA / Wikimedia Commons",
+   "license": "Public domain",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kim_Kyong-hui,_aunt_of_North_Korean_leader_Kim_Jong-Un,_in_2013_(cropped).png"
+  },
+  "born": {
+   "date": "1946-05-30",
+   "place": "Pyongyang"
+  },
+  "died": null,
+  "status": {
+   "value": "alive",
+   "as_of": "2024-01-01",
+   "source_url": null
+  },
+  "gender": "female",
+  "rank": "General of the army",
+  "roles": [
+   {
+    "title": "member of the Supreme People's Assembly",
+    "org_id": null,
+    "start": null,
+    "end": null,
+    "source_url": "https://www.wikidata.org/wiki/Q271067"
+   },
+   {
+    "title": "Director of Light Industry Department",
+    "org_id": "wpk",
+    "start": "1988-01-01",
+    "end": "2013-12-12",
+    "source_url": "https://en.wikipedia.org/wiki/Kim_Kyong-hui"
+   },
+   {
+    "title": "KPA General",
+    "org_id": "mnd",
+    "start": "2010-09-27",
+    "end": "2013-12-12",
+    "source_url": "https://en.wikipedia.org/wiki/Kim_Kyong-hui"
+   }
+  ],
+  "family": [
+   {
+    "relation": "father",
+    "person_id": "kim-il-sung",
+    "note": "Father"
+   },
+   {
+    "relation": "mother",
+    "person_id": "kim-jong-suk",
+    "note": "Mother"
+   },
+   {
+    "relation": "spouse",
+    "person_id": "jang-song-thaek",
+    "note": "Husband, executed Dec 2013"
+   },
+   {
+    "relation": "half-sibling",
+    "person_id": "kim-pyong-il",
+    "note": null
+   },
+   {
+    "relation": "sibling",
+    "person_id": "kim-jong-il",
+    "note": "Full brother, former Supreme Leader"
+   },
+   {
+    "relation": "sibling",
+    "person_id": "kim-man-il",
+    "note": null
+   },
+   {
+    "relation": "nephew",
+    "person_id": "kim-jong-un",
+    "note": "Nephew, Supreme Leader"
+   }
+  ],
+  "health": [],
+  "physical": {
+   "height_cm": null,
+   "weight_kg": null
+  },
+  "sanctions": [],
+  "summary": "Kim Kyong-hui is the aunt of current North Korean leader, Kim Jong Un. She is the daughter of the founding North Korean leader Kim Il Sung and the sister of the late leader Kim Jong Il.",
+  "summary_source": "wikipedia",
+  "notable": [],
+  "tags": [
+   "family",
+   "politburo"
+  ]
+ },
+ {
+  "id": "jang-song-thaek",
+  "name_en": "Jang Song Thaek",
+  "name_ko": "장성택",
+  "aliases": [
+   "Chang Sung-taek"
+  ],
+  "wikidata": "Q496004",
+  "wikipedia": "https://en.wikipedia.org/wiki/Jang_Song-thaek",
+  "image": null,
+  "born": {
+   "date": "1946-01-22",
+   "place": "Kangwon Province"
+  },
+  "died": {
+   "date": "2013-12-12",
+   "place": "Ministry of State Security headquarters, Pyongyang",
+   "cause": "Execution by firing squad following special military tribunal"
+  },
+  "status": {
+   "value": "executed",
+   "as_of": "2013-12-12",
+   "source_url": "https://en.wikipedia.org/wiki/Jang_Song-thaek"
+  },
+  "gender": "male",
+  "rank": "General of the army",
+  "roles": [
+   {
+    "title": "Vice Chairman of the National Defence Commission",
+    "org_id": "sac",
+    "start": "2010-06-07",
+    "end": "2013-12-08",
+    "source_url": "https://en.wikipedia.org/wiki/Jang_Song-thaek"
+   },
+   {
+    "title": "Director of Administration Department",
+    "org_id": "wpk",
+    "start": "2007-10-01",
+    "end": "2013-12-08",
+    "source_url": "https://en.wikipedia.org/wiki/Jang_Song-thaek"
+   }
+  ],
+  "family": [
+   {
+    "relation": "spouse",
+    "person_id": "kim-kyong-hui",
+    "note": "Wife, sister of Kim Jong Il"
+   },
+   {
+    "relation": "nephew",
+    "person_id": "kim-jong-un",
+    "note": "Nephew-in-law and executor"
+   }
+  ],
+  "health": [],
+  "physical": {
+   "height_cm": null,
+   "weight_kg": null
+  },
+  "sanctions": [],
+  "summary": "Jang Song-thaek was a North Korean politician. He was married to Kim Kyong-hui — the only daughter of North Korean president Kim Il Sung and his first wife Kim Jong Suk, and the only sister of North Korean general secretary Kim Jong Il.",
+  "summary_source": "wikipedia",
+  "notable": [],
+  "tags": [
+   "family",
+   "politburo",
+   "purged",
+   "economy"
+  ]
+ },
+ {
+  "id": "kim-pyong-il",
+  "name_en": "Kim Pyong Il",
+  "name_ko": "김평일",
+  "aliases": [
+   "Kim Pyong-il"
+  ],
+  "wikidata": "Q710805",
+  "wikipedia": "https://en.wikipedia.org/wiki/Kim_Pyong_Il",
+  "image": {
+   "src": "/img/people/kim-pyong-il.jpg",
+   "credit": "Chancellery of the President of the Republic of Poland / Wikimedia Commons",
+   "license": "GFDL 1.2",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kim_Pyong-il.jpg"
+  },
+  "born": {
+   "date": "1954-08-10",
+   "place": "Pyongyang"
+  },
+  "died": null,
+  "status": {
+   "value": "alive",
+   "as_of": "2024-01-01",
+   "source_url": null
+  },
+  "gender": "male",
+  "rank": null,
+  "roles": [
+   {
+    "title": "ambassador of North Korea to the Czech Republic",
+    "org_id": null,
+    "start": "2015",
+    "end": "2019",
+    "source_url": "https://www.wikidata.org/wiki/Q710805"
+   },
+   {
+    "title": "Ambassador to the Czech Republic",
+    "org_id": "mfa",
+    "start": "2015-01-01",
+    "end": "2019-11-01",
+    "source_url": "https://en.wikipedia.org/wiki/Kim_Pyong_Il"
+   },
+   {
+    "title": "Ambassador to Poland",
+    "org_id": "mfa",
+    "start": "1998-01-01",
+    "end": "2015-01-01",
+    "source_url": "https://en.wikipedia.org/wiki/Kim_Pyong_Il"
+   }
+  ],
+  "family": [
+   {
+    "relation": "father",
+    "person_id": "kim-il-sung",
+    "note": "Father, regime founder"
+   },
+   {
+    "relation": "mother",
+    "person_id": "kim-song-ae",
+    "note": "Mother, second wife"
+   },
+   {
+    "relation": "half-sibling",
+    "person_id": "kim-kyong-hui",
+    "note": null
+   },
+   {
+    "relation": "half-sibling",
+    "person_id": "kim-jong-il",
+    "note": "Older half-brother and victor in succession struggle"
+   },
+   {
+    "relation": "half-sibling",
+    "person_id": "kim-man-il",
+    "note": null
+   },
+   {
+    "relation": "nephew",
+    "person_id": "kim-jong-un",
+    "note": "Half-nephew, Supreme Leader"
+   }
+  ],
+  "health": [],
+  "physical": {
+   "height_cm": null,
+   "weight_kg": null
+  },
+  "sanctions": [],
+  "summary": "Kim Pyong Il is a retired North Korean diplomat. He is the only surviving son of former leader and president of North Korea Kim Il Sung, the younger paternal half-brother of the late leader of North Korea, Kim Jong Il and the uncle of current North Korean leader Kim Jong Un.",
+  "summary_source": "wikipedia",
+  "notable": [],
+  "tags": [
+   "family",
+   "diplomat"
+  ]
+ },
+ {
+  "id": "kim-yong-ju",
+  "name_en": "Kim Yong Ju",
+  "name_ko": "김영주",
+  "aliases": [
+   "Kim Yong-ju"
+  ],
+  "wikidata": "Q1062006",
+  "wikipedia": "https://en.wikipedia.org/wiki/Kim_Yong-ju",
+  "image": null,
+  "born": {
+   "date": "1920-09-21",
+   "place": "Mangyŏngdae"
+  },
+  "died": {
+   "date": "2021-12",
+   "place": "Pyongyang, North Korea",
+   "cause": "Natural causes / extreme old age (101)"
+  },
+  "status": {
+   "value": "dead",
+   "as_of": "2021-12",
+   "source_url": "https://en.wikipedia.org/wiki/Kim_Yong-ju"
+  },
+  "gender": "male",
+  "rank": null,
+  "roles": [
+   {
+    "title": "Vice President of North Korea",
+    "org_id": null,
+    "start": "1993-12",
+    "end": "1997-10",
+    "source_url": "https://www.wikidata.org/wiki/Q1062006"
+   },
+   {
+    "title": "member of the Supreme People's Assembly",
+    "org_id": null,
+    "start": null,
+    "end": null,
+    "source_url": "https://www.wikidata.org/wiki/Q1062006"
+   }
+  ],
+  "family": [
+   {
+    "relation": "father",
+    "person_id": "kim-hyong-jik",
+    "note": "Father"
+   },
+   {
+    "relation": "mother",
+    "person_id": "kang-pan-sok",
+    "note": "Mother"
+   },
+   {
+    "relation": "sibling",
+    "person_id": "kim-il-sung",
+    "note": "Older brother, regime founder"
+   },
+   {
+    "relation": "nephew",
+    "person_id": "kim-jong-il",
+    "note": "Nephew and succession rival"
+   }
+  ],
+  "health": [],
+  "physical": {
+   "height_cm": null,
+   "weight_kg": null
+  },
+  "sanctions": [],
+  "summary": "Kim Yong-ju was a North Korean politician and the younger brother of Kim Il Sung, who ruled North Korea from 1948 to 1994. Under his brother's rule, Kim Yong-ju held key posts including Politburo member in the Workers' Party of Korea during the 1960s and early 1970s, but he fell out of favour in 1974 following a power struggle with his nephew Kim Jong Il.",
+  "summary_source": "wikipedia",
+  "notable": [],
+  "tags": [
+   "family",
+   "politburo",
+   "purged"
+  ]
+ },
+ {
+  "id": "kim-man-il",
+  "name_en": "Kim Man Il",
+  "name_ko": "김만일",
+  "aliases": [
+   "Shura Kim",
+   "Aleksandr Kim"
+  ],
+  "wikidata": "Q840719",
+  "wikipedia": "https://en.wikipedia.org/wiki/Kim_Man-il",
+  "image": null,
+  "born": {
+   "date": "1944",
+   "place": "Vyatskoye"
+  },
+  "died": {
+   "date": "1947",
+   "place": "Pyongyang, North Korea",
+   "cause": "drowning"
+  },
+  "status": {
+   "value": "dead",
+   "as_of": "1947",
+   "source_url": "https://en.wikipedia.org/wiki/Kim_Man-il"
+  },
+  "gender": "male",
+  "rank": null,
+  "roles": [],
+  "family": [
+   {
+    "relation": "father",
+    "person_id": "kim-il-sung",
+    "note": "Father"
+   },
+   {
+    "relation": "mother",
+    "person_id": "kim-jong-suk",
+    "note": "Mother"
+   },
+   {
+    "relation": "sibling",
+    "person_id": "kim-kyong-hui",
+    "note": null
+   },
+   {
+    "relation": "sibling",
+    "person_id": "kim-jong-il",
+    "note": "Older brother"
+   },
+   {
+    "relation": "half-sibling",
+    "person_id": "kim-pyong-il",
+    "note": null
+   }
+  ],
+  "health": [],
+  "physical": {
+   "height_cm": null,
+   "weight_kg": null
+  },
+  "sanctions": [],
+  "summary": "Kim Man-il was the second son of the North Korean founding leader Kim Il Sung and his first wife Kim Jong Suk. He was the younger brother of Kim Jong Il, the second leader of North Korea.",
+  "summary_source": "wikipedia",
+  "notable": [],
+  "tags": [
+   "family"
+  ]
+ },
+ {
+  "id": "pak-thae-song",
+  "name_en": "Pak Thae Song",
+  "name_ko": "박태성",
+  "aliases": [
+   "Pak Thae-song",
+   "Premier Pak"
+  ],
+  "wikidata": "Q16905281",
+  "wikipedia": "https://en.wikipedia.org/wiki/Pak_Thae-song",
+  "image": {
+   "src": "/img/people/pak-thae-song.jpg",
+   "credit": "State Duma / Wikimedia Commons",
+   "license": "CC BY 4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pak_Thae-song_in_Moscow_(cropped).jpg"
+  },
+  "born": {
+   "date": "1955-09-14",
+   "place": "North Korea"
+  },
+  "died": null,
+  "status": {
+   "value": "alive",
+   "as_of": "2026-09-01",
+   "source_url": null
+  },
+  "gender": "male",
+  "rank": null,
+  "roles": [
+   {
+    "title": "Chairman of the Supreme People's Assembly",
+    "org_id": null,
+    "start": "2019-04-11",
+    "end": "2023-01-17",
+    "source_url": "https://www.wikidata.org/wiki/Q16905281"
+   },
+   {
+    "title": "Vice Chairman of the Workers' Party of Korea",
+    "org_id": null,
+    "start": null,
+    "end": null,
+    "source_url": "https://www.wikidata.org/wiki/Q16905281"
+   },
+   {
+    "title": "member of the Politburo of the Workers' Party of Korea",
+    "org_id": null,
+    "start": null,
+    "end": null,
+    "source_url": "https://www.wikidata.org/wiki/Q16905281"
+   },
+   {
+    "title": "member of the Supreme People's Assembly",
+    "org_id": null,
+    "start": null,
+    "end": null,
+    "source_url": "https://www.wikidata.org/wiki/Q16905281"
+   }
+  ],
+  "family": [],
+  "health": [],
+  "physical": {
+   "height_cm": null,
+   "weight_kg": null
+  },
+  "sanctions": [],
+  "summary": "Pak Thae-song is a North Korean politician who has served as the premier of North Korea and vice president of the State Affairs Commission since December 2024. He previously served as the chairman of the Supreme People's Assembly from January 2021 to January 2023.",
+  "summary_source": "wikipedia",
+  "notable": [],
+  "tags": [
+   "politburo",
+   "economy"
+  ]
+ },
+ {
+  "id": "kim-tok-hun",
+  "name_en": "Kim Tok Hun",
+  "name_ko": "김덕훈",
+  "aliases": [
+   "Kim Tok-hun"
+  ],
+  "wikidata": "Q25035961",
+  "wikipedia": "https://en.wikipedia.org/wiki/Kim_Tok-hun",
+  "image": {
+   "src": "/img/people/kim-tok-hun.jpg",
+   "credit": "Unknown authorUnknown author / Wikimedia Commons",
+   "license": "CC BY 4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:2024%E5%B9%B4%E9%87%91%E5%BE%B3%E8%A8%93_2024%EB%85%84%EA%B9%80%EB%8D%95%ED%9B%88.jpg"
+  },
+  "born": {
+   "date": "1961",
+   "place": "North Korea"
+  },
+  "died": null,
+  "status": {
+   "value": "alive",
+   "as_of": "2026-09-01",
+   "source_url": null
+  },
+  "gender": "male",
+  "rank": null,
+  "roles": [
+   {
+    "title": "Vice Chairman of the Workers' Party of Korea",
+    "org_id": null,
+    "start": null,
+    "end": null,
+    "source_url": "https://www.wikidata.org/wiki/Q25035961"
+   },
+   {
+    "title": "member of the Presidium of the Politburo of the Workers' Party of Korea",
+    "org_id": null,
+    "start": null,
+    "end": null,
+    "source_url": "https://www.wikidata.org/wiki/Q25035961"
+   },
+   {
+    "title": "Premier of North Korea",
+    "org_id": null,
+    "start": "2020-08-13",
+    "end": null,
+    "source_url": "https://www.wikidata.org/wiki/Q25035961"
+   },
+   {
+    "title": "Vice Premier of North Korea",
+    "org_id": null,
+    "start": "2014-05",
+    "end": "2019-04-11",
+    "source_url": "https://www.wikidata.org/wiki/Q25035961"
+   },
+   {
+    "title": "Vice Premier of North Korea",
+    "org_id": null,
+    "start": "2019-04-11",
+    "end": "2020-08-13",
+    "source_url": "https://www.wikidata.org/wiki/Q25035961"
+   },
+   {
+    "title": "member of the Supreme People's Assembly",
+    "org_id": null,
+    "start": null,
+    "end": null,
+    "source_url": "https://www.wikidata.org/wiki/Q25035961"
+   }
+  ],
+  "family": [],
+  "health": [],
+  "physical": {
+   "height_cm": null,
+   "weight_kg": null
+  },
+  "sanctions": [],
+  "summary": "Kim Tok-hun is a North Korean politician who was formerly the premier of North Korea and a full member on the Presidium of the Politburo of the Workers' Party of Korea. He is additionally a vice president of the State Affairs Commission.",
+  "summary_source": "wikipedia",
+  "notable": [],
+  "tags": [
+   "politburo",
+   "economy"
+  ]
+ },
+ {
+  "id": "jo-yong-won",
+  "name_en": "Jo Yong Won",
+  "name_ko": "조용원",
+  "aliases": [
+   "Cho Yong-won"
+  ],
+  "wikidata": "Q56825089",
+  "wikipedia": "https://en.wikipedia.org/wiki/Jo_Yong-won",
+  "image": {
+   "src": "/img/people/jo-yong-won.jpg",
+   "credit": "Press Service of the State Duma of the Russian Federation / Wikimedia Commons",
+   "license": "CC BY 4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jo_Yong-won_(2026-04-25)_(cropped).jpg"
+  },
+  "born": {
+   "date": "1957",
+   "place": "Pyongyang, North Korea"
+  },
+  "died": null,
+  "status": {
+   "value": "alive",
+   "as_of": "2026-09-01",
+   "source_url": null
+  },
+  "gender": "male",
+  "rank": null,
+  "roles": [
+   {
+    "title": "Member of the Politburo Presidium",
+    "org_id": "wpk-politburo-presidium",
+    "start": "2021-01-10",
+    "end": null,
+    "source_url": "https://en.wikipedia.org/wiki/Jo_Yong-won"
+   }
+  ],
+  "family": [],
+  "health": [],
+  "physical": {
+   "height_cm": null,
+   "weight_kg": null
+  },
+  "sanctions": [
+   {
+    "list": "OFAC",
+    "id": "21303",
+    "date": null,
+    "source_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=21303"
+   },
+   {
+    "list": "UN",
+    "id": "KPi.043",
+    "date": "2017-06-02",
+    "source_url": "https://main.un.org/securitycouncil/en/sanctions/1718/materials"
+   }
+  ],
+  "summary": "Jo Yong-won is a North Korean politician who is deputy chief of the Workers' Party of Korea's Secretariat of General Secretary Kim Jong Un. From March until June 2026, he was also the Chairman of the Supreme People's Assembly, North Korea's unicameral parliament, and the Chairman of its Standing Committee.",
+  "summary_source": "wikipedia",
+  "notable": [],
+  "tags": [
+   "politburo",
+   "security"
+  ]
+ },
+ {
+  "id": "choe-ryong-hae",
+  "name_en": "Choe Ryong Hae",
+  "name_ko": "최룡해",
+  "aliases": [
+   "Choi Ryong-hae"
+  ],
+  "wikidata": "Q714509",
+  "wikipedia": "https://en.wikipedia.org/wiki/Choe_Ryong-hae",
+  "image": {
+   "src": "/img/people/choe-ryong-hae.jpg",
+   "credit": "Press Service of the President of the Republic of Azerbaijan / Wikimedia Commons",
+   "license": "CC BY 4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:18th_Summit_of_Non-Aligned_Movement_gets_underway_in_Baku_005_(cropped).jpg"
+  },
+  "born": {
+   "date": "1950-01-15",
+   "place": "Sinchon County"
+  },
+  "died": null,
+  "status": {
+   "value": "alive",
+   "as_of": "2026-09-01",
+   "source_url": null
+  },
+  "gender": "male",
+  "rank": "Ch’asu",
+  "roles": [
+   {
+    "title": "President of the Presidium of the Supreme People's Assembly",
+    "org_id": null,
+    "start": "2019-04-11",
+    "end": null,
+    "source_url": "https://www.wikidata.org/wiki/Q714509"
+   },
+   {
+    "title": "First Vice Chairman of the State Affairs Commission",
+    "org_id": null,
+    "start": null,
+    "end": null,
+    "source_url": "https://www.wikidata.org/wiki/Q714509"
+   },
+   {
+    "title": "member of the Presidium of the Politburo of the Workers' Party of Korea",
+    "org_id": null,
+    "start": null,
+    "end": null,
+    "source_url": "https://www.wikidata.org/wiki/Q714509"
+   },
+   {
+    "title": "member of funeral committee of Hwang Sun-hui",
+    "org_id": null,
+    "start": null,
+    "end": null,
+    "source_url": "https://www.wikidata.org/wiki/Q714509"
+   },
+   {
+    "title": "member of the Supreme People's Assembly",
+    "org_id": null,
+    "start": null,
+    "end": null,
+    "source_url": "https://www.wikidata.org/wiki/Q714509"
+   }
+  ],
+  "family": [],
+  "health": [],
+  "physical": {
+   "height_cm": null,
+   "weight_kg": null
+  },
+  "sanctions": [
+   {
+    "list": "OFAC",
+    "id": "23213",
+    "date": null,
+    "source_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=23213"
+   }
+  ],
+  "summary": "Choe Ryong-hae is a North Korean politician and military officer who served as the Chairman of the Standing Committee of the Supreme People's Assembly and First Vice President of the State Affairs Commission, holding both positions from April 2019 to March 2026.",
+  "summary_source": "wikipedia",
+  "notable": [
+   {
+    "claim": "Sanctioned by the US Department of the Treasury in December 2018 for severe human rights violations and state censorship.",
+    "source_url": "https://home.treasury.gov/news/press-releases/sm568",
+    "date": "2018-12-10"
+   }
+  ],
+  "tags": [
+   "politburo",
+   "military"
+  ]
+ },
+ {
+  "id": "ri-pyong-chol",
+  "name_en": "Ri Pyong Chol",
+  "name_ko": "리병철",
+  "aliases": [
+   "Ri Pyong-chol",
+   "Marshal Ri"
+  ],
+  "wikidata": "Q5367054",
+  "wikipedia": "https://en.wikipedia.org/wiki/Ri_Pyong-chol",
+  "image": null,
+  "born": {
+   "date": "1948",
+   "place": "North Korea"
+  },
+  "died": null,
+  "status": {
+   "value": "alive",
+   "as_of": "2026-09-01",
+   "source_url": null
+  },
+  "gender": "male",
+  "rank": "General",
+  "roles": [
+   {
+    "title": "Vice Chairman of the Workers' Party of Korea",
+    "org_id": null,
+    "start": null,
+    "end": null,
+    "source_url": "https://www.wikidata.org/wiki/Q5367054"
+   },
+   {
+    "title": "member of State Affairs Commission",
+    "org_id": null,
+    "start": null,
+    "end": null,
+    "source_url": "https://www.wikidata.org/wiki/Q5367054"
+   },
+   {
+    "title": "member of the Presidium of the Politburo of the Workers' Party of Korea",
+    "org_id": null,
+    "start": null,
+    "end": null,
+    "source_url": "https://www.wikidata.org/wiki/Q5367054"
+   }
+  ],
+  "family": [],
+  "health": [],
+  "physical": {
+   "height_cm": null,
+   "weight_kg": null
+  },
+  "sanctions": [
+   {
+    "list": "OFAC",
+    "id": "23215",
+    "date": null,
+    "source_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=23215"
+   },
+   {
+    "list": "UN",
+    "id": "KPi.076",
+    "date": "2017-12-22",
+    "source_url": "https://main.un.org/securitycouncil/en/sanctions/1718/materials"
+   }
+  ],
+  "summary": "Ri Pyong-chol is a North Korean military official and formerly a top advisor of supreme leader Kim Jong Un, who serves as Vice Chairman of the Central Military Commission and a member of the Presidium of the Politburo of the Workers' Party of Korea. He is a relative of Kim's wife, Ri Sol-ju.",
+  "summary_source": "wikipedia",
+  "notable": [],
+  "tags": [
+   "politburo",
+   "military",
+   "missile"
+  ]
+ },
+ {
+  "id": "pak-jong-chon",
+  "name_en": "Pak Jong Chon",
+  "name_ko": "박정천",
+  "aliases": [
+   "Pak Jong-chon",
+   "Marshal Pak"
+  ],
+  "wikidata": "Q16905280",
+  "wikipedia": "https://en.wikipedia.org/wiki/Pak_Jong-chon",
+  "image": null,
+  "born": {
+   "date": "1960",
+   "place": "Pyongyang"
+  },
+  "died": null,
+  "status": {
+   "value": "alive",
+   "as_of": "2026-09-01",
+   "source_url": null
+  },
+  "gender": "male",
+  "rank": "Wonsu",
+  "roles": [
+   {
+    "title": "member of the Politburo of the Workers' Party of Korea",
+    "org_id": null,
+    "start": null,
+    "end": null,
+    "source_url": "https://www.wikidata.org/wiki/Q16905280"
+   },
+   {
+    "title": "Chief of General Staff of the Korean People's Army",
+    "org_id": null,
+    "start": "2019-09-06",
+    "end": "2021-09-07",
+    "source_url": "https://www.wikidata.org/wiki/Q16905280"
+   }
+  ],
+  "family": [],
+  "health": [],
+  "physical": {
+   "height_cm": null,
+   "weight_kg": null
+  },
+  "sanctions": [],
+  "summary": "Pak Jong-chon is a North Korean Marshal who is a vice chairman of the Central Military Commission of the Workers' Party of Korea.",
+  "summary_source": "wikipedia",
+  "notable": [],
+  "tags": [
+   "politburo",
+   "military",
+   "missile"
+  ]
+ },
+ {
+  "id": "ri-yong-gil",
+  "name_en": "Ri Yong Gil",
+  "name_ko": "리영길",
+  "aliases": [
+   "Ri Yong-gil",
+   "General Ri"
+  ],
+  "wikidata": "Q12594419",
+  "wikipedia": "https://en.wikipedia.org/wiki/Ri_Yong-gil",
+  "image": {
+   "src": "/img/people/ri-yong-gil.jpg",
+   "credit": "The Presidential Press and Information Office / Wikimedia Commons",
+   "license": "CC BY 4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kim_Jong-un_and_Vladimir_Putin_(2019-04-25)_15_(cropped).jpg"
+  },
+  "born": {
+   "date": "1952",
+   "place": "North Korea"
+  },
+  "died": null,
+  "status": {
+   "value": "alive",
+   "as_of": "2026-09-01",
+   "source_url": null
+  },
+  "gender": "male",
+  "rank": "General",
+  "roles": [
+   {
+    "title": "Chief of General Staff of the Korean People's Army",
+    "org_id": null,
+    "start": "2013-08",
+    "end": "2016-01",
+    "source_url": "https://www.wikidata.org/wiki/Q12594419"
+   },
+   {
+    "title": "Minister of Social Security",
+    "org_id": null,
+    "start": "2019",
+    "end": "2021",
+    "source_url": "https://www.wikidata.org/wiki/Q12594419"
+   },
+   {
+    "title": "Minister of National Defence",
+    "org_id": null,
+    "start": "2021-09-29",
+    "end": "2022-12-28",
+    "source_url": "https://www.wikidata.org/wiki/Q12594419"
+   }
+  ],
+  "family": [],
+  "health": [],
+  "physical": {
+   "height_cm": null,
+   "weight_kg": null
+  },
+  "sanctions": [],
+  "summary": "Ri Yong-gil is a North Korean military officer who is currently a vice chairman of the Central Military Commission of the Workers' Party of Korea and the Chief of the General Staff.",
+  "summary_source": "wikipedia",
+  "notable": [],
+  "tags": [
+   "politburo",
+   "military"
+  ]
+ },
+ {
+  "id": "kang-sun-nam",
+  "name_en": "Kang Sun Nam",
+  "name_ko": "강순남",
+  "aliases": [
+   "Kang Sun-nam"
+  ],
+  "wikidata": "Q56682897",
+  "wikipedia": "https://en.wikipedia.org/wiki/Kang_Sun-nam",
+  "image": {
+   "src": "/img/people/kang-sun-nam.jpg",
+   "credit": "Ministry of Defense of the Russian Federation / Wikimedia Commons",
+   "license": "CC BY 4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kang_Sun-nam_2023_(cropped).png"
+  },
+  "born": {
+   "date": "1960",
+   "place": "South Pyongan, North Korea"
+  },
+  "died": null,
+  "status": {
+   "value": "alive",
+   "as_of": "2026-09-01",
+   "source_url": null
+  },
+  "gender": "male",
+  "rank": "Lieutenant general",
+  "roles": [],
+  "family": [],
+  "health": [],
+  "physical": {
+   "height_cm": null,
+   "weight_kg": null
+  },
+  "sanctions": [],
+  "summary": "Kang Sun-nam is a North Korean politician and general who was the minister of Defence from 2022 to 2024.",
+  "summary_source": "wikipedia",
+  "notable": [],
+  "tags": [
+   "politburo",
+   "military"
+  ]
+ },
+ {
+  "id": "no-kwang-chol",
+  "name_en": "No Kwang Chol",
+  "name_ko": "노광철",
+  "aliases": [
+   "Ro Kwang-chol"
+  ],
+  "wikidata": "Q12594098",
+  "wikipedia": "https://en.wikipedia.org/wiki/No_Kwang-chol",
+  "image": {
+   "src": "/img/people/no-kwang-chol.jpg",
+   "credit": "Ministry of Defence (Vadim Savitsky) / Wikimedia Commons",
+   "license": "CC BY 4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:No_Kwang-chol,_2024.jpg"
+  },
+  "born": {
+   "date": "1956",
+   "place": "Nampo"
+  },
+  "died": null,
+  "status": {
+   "value": "alive",
+   "as_of": "2026-09-01",
+   "source_url": null
+  },
+  "gender": "male",
+  "rank": "General",
+  "roles": [
+   {
+    "title": "member of the Supreme People's Assembly",
+    "org_id": null,
+    "start": null,
+    "end": null,
+    "source_url": "https://www.wikidata.org/wiki/Q12594098"
+   },
+   {
+    "title": "Minister of National Defence",
+    "org_id": "mnd",
+    "start": "2024-10-08",
+    "end": null,
+    "source_url": "https://en.wikipedia.org/wiki/No_Kwang-chol"
+   },
+   {
+    "title": "Minister of People's Armed Forces",
+    "org_id": "mnd",
+    "start": "2018-06-01",
+    "end": "2019-12-01",
+    "source_url": "https://en.wikipedia.org/wiki/No_Kwang-chol"
+   }
+  ],
+  "family": [],
+  "health": [],
+  "physical": {
+   "height_cm": null,
+   "weight_kg": null
+  },
+  "sanctions": [],
+  "summary": "No Kwang-chol is a North Korean soldier, a four-star general, and a member of the political bureau, who served as Minister of Defence of North Korea from 2024 to 2026. He previously held the same office from 2018 to 2019.",
+  "summary_source": "wikipedia",
+  "notable": [],
+  "tags": [
+   "politburo",
+   "military"
+  ]
+ },
+ {
+  "id": "jong-kyong-thaek",
+  "name_en": "Jong Kyong Thaek",
+  "name_ko": "정경택",
+  "aliases": [
+   "Jong Kyong-thaek"
+  ],
+  "wikidata": "Q55734042",
+  "wikipedia": "https://en.wikipedia.org/wiki/Jong_Kyong-thaek",
+  "image": null,
+  "born": {
+   "date": "1961",
+   "place": "Chagang Province"
+  },
+  "died": null,
+  "status": {
+   "value": "alive",
+   "as_of": "2026-09-01",
+   "source_url": null
+  },
+  "gender": "male",
+  "rank": null,
+  "roles": [
+   {
+    "title": "member of State Affairs Commission",
+    "org_id": null,
+    "start": null,
+    "end": null,
+    "source_url": "https://www.wikidata.org/wiki/Q55734042"
+   },
+   {
+    "title": "member of the Politburo of the Workers' Party of Korea",
+    "org_id": null,
+    "start": null,
+    "end": null,
+    "source_url": "https://www.wikidata.org/wiki/Q55734042"
+   },
+   {
+    "title": "Minister of State Security",
+    "org_id": null,
+    "start": "2018",
+    "end": "2022-06",
+    "source_url": "https://www.wikidata.org/wiki/Q55734042"
+   }
+  ],
+  "family": [],
+  "health": [],
+  "physical": {
+   "height_cm": null,
+   "weight_kg": null
+  },
+  "sanctions": [
+   {
+    "list": "OFAC",
+    "id": "23212",
+    "date": null,
+    "source_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=23212"
+   }
+  ],
+  "summary": "Jong Kyong-thaek is a North Korean politician. He served as the Minister of State Security from 2018 to 2022, a member of the Central Military Commission of the Workers' Party of Korea, an alternate member of the Politburo of the WPK, and a member of the State Affairs Commission of North Korea.",
+  "summary_source": "wikipedia",
+  "notable": [
+   {
+    "claim": "Sanctioned by the US Treasury in December 2018 for supervising arbitrary detention, torture, and extrajudicial killings as head of the Ministry of State Security.",
+    "source_url": "https://home.treasury.gov/news/press-releases/sm568",
+    "date": "2018-12-10"
+   }
+  ],
+  "tags": [
+   "politburo",
+   "military",
+   "security"
+  ]
+ },
+ {
+  "id": "kim-jae-ryong",
+  "name_en": "Kim Jae Ryong",
+  "name_ko": "김재룡",
+  "aliases": [
+   "Kim Jae-ryong"
+  ],
+  "wikidata": "Q56818689",
+  "wikipedia": "https://en.wikipedia.org/wiki/Kim_Jae-ryong",
+  "image": null,
+  "born": {
+   "date": "1959",
+   "place": "Chagang Province"
+  },
+  "died": null,
+  "status": {
+   "value": "alive",
+   "as_of": "2026-09-01",
+   "source_url": null
+  },
+  "gender": "male",
+  "rank": null,
+  "roles": [
+   {
+    "title": "Premier of North Korea",
+    "org_id": null,
+    "start": "2019-04-11",
+    "end": "2020-08-13",
+    "source_url": "https://www.wikidata.org/wiki/Q56818689"
+   },
+   {
+    "title": "Vice Chairman of the Workers' Party of Korea",
+    "org_id": null,
+    "start": null,
+    "end": null,
+    "source_url": "https://www.wikidata.org/wiki/Q56818689"
+   },
+   {
+    "title": "member of State Affairs Commission",
+    "org_id": null,
+    "start": null,
+    "end": null,
+    "source_url": "https://www.wikidata.org/wiki/Q56818689"
+   },
+   {
+    "title": "member of the Politburo of the Workers' Party of Korea",
+    "org_id": null,
+    "start": null,
+    "end": null,
+    "source_url": "https://www.wikidata.org/wiki/Q56818689"
+   }
+  ],
+  "family": [],
+  "health": [],
+  "physical": {
+   "height_cm": null,
+   "weight_kg": null
+  },
+  "sanctions": [],
+  "summary": "Kim Jae-ryong is a North Korean politician who served as Premier of North Korea from April 2019 to August 2020. A senior official within the Workers' Party of Korea, he has served as the director of the Organization and Guidance Department since 2020 and as a deputy to the Supreme People's Assembly.",
+  "summary_source": "wikipedia",
+  "notable": [],
+  "tags": [
+   "politburo",
+   "security"
+  ]
+ },
+ {
+  "id": "ri-il-hwan",
+  "name_en": "Ri Il Hwan",
+  "name_ko": "리일환",
+  "aliases": [
+   "Ri Il-hwan"
+  ],
+  "wikidata": "Q16905288",
+  "wikipedia": "https://en.wikipedia.org/wiki/Ri_Il-hwan",
+  "image": null,
+  "born": {
+   "date": "1960",
+   "place": "North Korea"
+  },
+  "died": null,
+  "status": {
+   "value": "alive",
+   "as_of": "2026-09-01",
+   "source_url": null
+  },
+  "gender": "male",
+  "rank": null,
+  "roles": [
+   {
+    "title": "Vice Chairman of the Workers' Party of Korea",
+    "org_id": null,
+    "start": null,
+    "end": null,
+    "source_url": "https://www.wikidata.org/wiki/Q16905288"
+   },
+   {
+    "title": "member of the Politburo of the Workers' Party of Korea",
+    "org_id": null,
+    "start": null,
+    "end": null,
+    "source_url": "https://www.wikidata.org/wiki/Q16905288"
+   },
+   {
+    "title": "member of the Supreme People's Assembly",
+    "org_id": null,
+    "start": null,
+    "end": null,
+    "source_url": "https://www.wikidata.org/wiki/Q16905288"
+   }
+  ],
+  "family": [],
+  "health": [],
+  "physical": {
+   "height_cm": null,
+   "weight_kg": null
+  },
+  "sanctions": [],
+  "summary": "Ri Il-hwan is a North Korean politician and a member of the Political Bureau of the Central Committee of the Workers' Party of Korea. He has been the Director of the Propaganda and Agitation Department of the party since 2020.",
+  "summary_source": "wikipedia",
+  "notable": [],
+  "tags": [
+   "politburo"
+  ]
+ },
+ {
+  "id": "o-su-yong",
+  "name_en": "O Su Yong",
+  "name_ko": "오수용",
+  "aliases": [
+   "O Su-yong"
+  ],
+  "wikidata": "Q11261360",
+  "wikipedia": "https://en.wikipedia.org/wiki/O_Su-yong",
+  "image": null,
+  "born": {
+   "date": "1944-07-20",
+   "place": "Pyongyang"
+  },
+  "died": null,
+  "status": {
+   "value": "alive",
+   "as_of": "2026-09-01",
+   "source_url": null
+  },
+  "gender": "male",
+  "rank": null,
+  "roles": [
+   {
+    "title": "Vice Chairman of the Workers' Party of Korea",
+    "org_id": null,
+    "start": null,
+    "end": null,
+    "source_url": "https://www.wikidata.org/wiki/Q11261360"
+   },
+   {
+    "title": "member of the Politburo of the Workers' Party of Korea",
+    "org_id": null,
+    "start": null,
+    "end": null,
+    "source_url": "https://www.wikidata.org/wiki/Q11261360"
+   },
+   {
+    "title": "Vice Premier of North Korea",
+    "org_id": null,
+    "start": "2009-04-09",
+    "end": "2010-06-07",
+    "source_url": "https://www.wikidata.org/wiki/Q11261360"
+   }
+  ],
+  "family": [],
+  "health": [],
+  "physical": {
+   "height_cm": null,
+   "weight_kg": null
+  },
+  "sanctions": [],
+  "summary": "O Su-yong is a North Korean politician. He was a Vice Chairman of the Workers' Party of Korea and the director of the Economic Affairs Department of the WPK.",
+  "summary_source": "wikipedia",
+  "notable": [],
+  "tags": [
+   "politburo",
+   "economy"
+  ]
+ },
+ {
+  "id": "jon-hyon-chol",
+  "name_en": "Jon Hyon Chol",
+  "name_ko": "전현철",
+  "aliases": [
+   "Jon Hyon-chol"
+  ],
+  "wikidata": "Q105706437",
+  "wikipedia": "https://en.wikipedia.org/wiki/Jon_Hyon-chol",
+  "image": null,
+  "born": {
+   "date": "1965",
+   "place": "Pyongyang, North Korea"
+  },
+  "died": null,
+  "status": {
+   "value": "alive",
+   "as_of": "2026-09-01",
+   "source_url": null
+  },
+  "gender": "male",
+  "rank": null,
+  "roles": [
+   {
+    "title": "Vice Premier of North Korea",
+    "org_id": null,
+    "start": "2021-01-18",
+    "end": "2022-06-08",
+    "source_url": "https://www.wikidata.org/wiki/Q105706437"
+   },
+   {
+    "title": "Vice Premier of the Cabinet",
+    "org_id": "cabinet",
+    "start": "2022-06-11",
+    "end": null,
+    "source_url": "https://en.wikipedia.org/wiki/Jon_Hyon-chol"
+   },
+   {
+    "title": "Alternate Member of the WPK Political Bureau",
+    "org_id": "wpk-politburo",
+    "start": "2022-06-11",
+    "end": null,
+    "source_url": "https://en.wikipedia.org/wiki/Jon_Hyon-chol"
+   }
+  ],
+  "family": [],
+  "health": [],
+  "physical": {
+   "height_cm": null,
+   "weight_kg": null
+  },
+  "sanctions": [],
+  "summary": "Jon Hyon-chol is a North Korean politician. He served as a Vice Premier of the Cabinet a candidate member of the Politburo of the Central Committee of the Workers' Party of Korea as well as head of the Economic Policy Office of the Central Committee.",
+  "summary_source": "wikipedia",
+  "notable": [],
+  "tags": [
+   "politburo",
+   "economy"
+  ]
+ },
+ {
+  "id": "pak-jong-gun",
+  "name_en": "Pak Jong Gun",
+  "name_ko": "박정근",
+  "aliases": [
+   "Pak Jong-gun"
+  ],
+  "wikidata": "Q12597103",
+  "wikipedia": null,
+  "image": null,
+  "born": {
+   "date": "1944-09-07",
+   "place": "North Hamgyong Province"
+  },
+  "died": null,
+  "status": {
+   "value": "alive",
+   "as_of": "2026-09-01",
+   "source_url": null
+  },
+  "gender": "male",
+  "rank": null,
+  "roles": [],
+  "family": [],
+  "health": [],
+  "physical": {
+   "height_cm": null,
+   "weight_kg": null
+  },
+  "sanctions": [],
+  "summary": "Vice Premier of the Cabinet and Chairman of the State Planning Commission, holding direct control over the formulation of North Korea's central state economic plans, grain distributions, and industrial material quotas. Elevated to full Politburo membership in late 2021, he is the key architect of central economic planning targets.",
+  "summary_source": "research",
+  "notable": [],
+  "tags": [
+   "politburo",
+   "economy"
+  ]
+ },
+ {
+  "id": "ri-hi-yong",
+  "name_en": "Ri Hi Yong",
+  "name_ko": "리히용",
+  "aliases": [
+   "Ri Hi-yong"
+  ],
+  "wikidata": "Q55729503",
+  "wikipedia": "https://en.wikipedia.org/wiki/Ri_Hi-yong",
+  "image": {
+   "src": "/img/people/ri-hi-yong.jpg",
+   "credit": "http://kremlin.ru / Wikimedia Commons",
+   "license": "CC BY 4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Meeting_with_member_of_the_Politburo_and_Secretary_of_the_Central_Committee_of_the_Workers%E2%80%99_Party_of_Korea_Ri_Hi-yong_1_(cropped).jpg"
+  },
+  "born": {
+   "date": "1960",
+   "place": "North Korea"
+  },
+  "died": null,
+  "status": {
+   "value": "alive",
+   "as_of": "2026-09-01",
+   "source_url": null
+  },
+  "gender": "male",
+  "rank": null,
+  "roles": [
+   {
+    "title": "member of the Supreme People's Assembly",
+    "org_id": null,
+    "start": null,
+    "end": null,
+    "source_url": "https://www.wikidata.org/wiki/Q55729503"
+   }
+  ],
+  "family": [],
+  "health": [],
+  "physical": {
+   "height_cm": null,
+   "weight_kg": null
+  },
+  "sanctions": [],
+  "summary": "Ri Hi-yong is a North Korean politician. He is a member of the Politburo of the Central Committee of the Workers' Party of Korea and Chairman of the Party Committee of North Hamgyong Province.",
+  "summary_source": "wikipedia",
+  "notable": [],
+  "tags": [
+   "politburo",
+   "security"
+  ]
+ },
+ {
+  "id": "kim-hyong-sik",
+  "name_en": "Kim Hyong Sik",
+  "name_ko": "김형식",
+  "aliases": [
+   "Kim Hyong-sik"
+  ],
+  "wikidata": "Q12589269",
+  "wikipedia": "https://en.wikipedia.org/wiki/Kim_Hyong-sik",
+  "image": null,
+  "born": {
+   "date": "1958",
+   "place": "Pyongyang, North Korea"
+  },
+  "died": null,
+  "status": {
+   "value": "alive",
+   "as_of": "2026-09-01",
+   "source_url": null
+  },
+  "gender": "male",
+  "rank": null,
+  "roles": [],
+  "family": [],
+  "health": [],
+  "physical": {
+   "height_cm": null,
+   "weight_kg": null
+  },
+  "sanctions": [],
+  "summary": "Kim Hyong-sik is a North Korean politician. He is a member of the Central Committee of the Workers' Party of Korea and a member of the 12th convocation of the Supreme People's Assembly, North Korea's unicameral parliament.",
+  "summary_source": "wikipedia",
+  "notable": [],
+  "tags": [
+   "politburo",
+   "security"
+  ]
+ },
+ {
+  "id": "ju-chang-il",
+  "name_en": "Ju Chang Il",
+  "name_ko": "주창일",
+  "aliases": [
+   "Ju Chang-il"
+  ],
+  "wikidata": "Q119433063",
+  "wikipedia": "https://en.wikipedia.org/wiki/Ju_Chang-il",
+  "image": null,
+  "born": {
+   "date": "1960",
+   "place": "Pyongyang, North Korea"
+  },
+  "died": null,
+  "status": {
+   "value": "alive",
+   "as_of": "2026-09-01",
+   "source_url": null
+  },
+  "gender": "male",
+  "rank": null,
+  "roles": [
+   {
+    "title": "Director of the Propaganda and Agitation Department",
+    "org_id": "wpk-pad",
+    "start": "2022-06-11",
+    "end": null,
+    "source_url": "https://en.wikipedia.org/wiki/Ju_Chang-il"
+   },
+   {
+    "title": "Member of the WPK Central Committee",
+    "org_id": "wpk",
+    "start": "2021-01-10",
+    "end": null,
+    "source_url": "https://en.wikipedia.org/wiki/Ju_Chang-il"
+   }
+  ],
+  "family": [],
+  "health": [],
+  "physical": {
+   "height_cm": null,
+   "weight_kg": null
+  },
+  "sanctions": [
+   {
+    "list": "OFAC",
+    "id": "51331",
+    "date": null,
+    "source_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=51331"
+   }
+  ],
+  "summary": "Ju Chang-il is a North Korean politician. He serves as an alternate member of the Politburo of the Central Committee of the Workers' Party of Korea and as the Director of the Propaganda and Agitation Department of the WPK Secretariat.",
+  "summary_source": "wikipedia",
+  "notable": [],
+  "tags": [
+   "politburo"
+  ]
+ },
+ {
+  "id": "choe-thae-bok",
+  "name_en": "Choe Thae Bok",
+  "name_ko": "최태복",
+  "aliases": [
+   "Choe Thae-bok"
+  ],
+  "wikidata": "Q710692",
+  "wikipedia": "https://en.wikipedia.org/wiki/Choe_Thae-bok",
+  "image": {
+   "src": "/img/people/choe-thae-bok.jpg",
+   "credit": "Пресс-служба Совета Федерации / Wikimedia Commons",
+   "license": "CC BY 4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Choe_Thae-bok_(cropped).jpg"
+  },
+  "born": {
+   "date": "1930-12-01",
+   "place": "Nampo"
+  },
+  "died": {
+   "date": "2024-01-20",
+   "place": "Pyongyang, North Korea",
+   "cause": "myocardial infarction"
+  },
+  "status": {
+   "value": "dead",
+   "as_of": "2024-01-20",
+   "source_url": "https://en.wikipedia.org/wiki/Choe_Thae-bok"
+  },
+  "gender": "male",
+  "rank": null,
+  "roles": [
+   {
+    "title": "education minister",
+    "org_id": null,
+    "start": null,
+    "end": null,
+    "source_url": "https://www.wikidata.org/wiki/Q710692"
+   },
+   {
+    "title": "Chairman of the Supreme People's Assembly",
+    "org_id": null,
+    "start": "1998-09-05",
+    "end": "2019-04-11",
+    "source_url": "https://www.wikidata.org/wiki/Q710692"
+   },
+   {
+    "title": "member of the Supreme People's Assembly",
+    "org_id": null,
+    "start": "1982-02",
+    "end": "2019",
+    "source_url": "https://www.wikidata.org/wiki/Q710692"
+   }
+  ],
+  "family": [],
+  "health": [],
+  "physical": {
+   "height_cm": null,
+   "weight_kg": null
+  },
+  "sanctions": [],
+  "summary": "Choe Thae-bok was a North Korean politician. He was a member of the Politburo and the Secretariat of the Workers' Party of Korea, and was chairman of the Supreme People's Assembly for nearly 21 years, from 1998 to 2019.",
+  "summary_source": "wikipedia",
+  "notable": [],
+  "tags": [
+   "politburo"
+  ]
+ },
+ {
+  "id": "yang-hyong-sop",
+  "name_en": "Yang Hyong Sop",
+  "name_ko": "양형섭",
+  "aliases": [
+   "Yang Hyong-sop"
+  ],
+  "wikidata": "Q710774",
+  "wikipedia": "https://en.wikipedia.org/wiki/Yang_Hyong-sop",
+  "image": null,
+  "born": {
+   "date": "1925-10-01",
+   "place": "Hamhung"
+  },
+  "died": {
+   "date": "2022-05-13",
+   "place": "Pyongyang, North Korea",
+   "cause": "Natural causes / old age (96)"
+  },
+  "status": {
+   "value": "dead",
+   "as_of": "2022-05-13",
+   "source_url": "https://en.wikipedia.org/wiki/Yang_Hyong-sop"
+  },
+  "gender": "male",
+  "rank": null,
+  "roles": [
+   {
+    "title": "education minister",
+    "org_id": null,
+    "start": null,
+    "end": null,
+    "source_url": "https://www.wikidata.org/wiki/Q710774"
+   },
+   {
+    "title": "member of the Supreme People's Assembly",
+    "org_id": null,
+    "start": null,
+    "end": null,
+    "source_url": "https://www.wikidata.org/wiki/Q710774"
+   }
+  ],
+  "family": [],
+  "health": [],
+  "physical": {
+   "height_cm": null,
+   "weight_kg": null
+  },
+  "sanctions": [],
+  "summary": "Yang Hyong-sop was a North Korean politician who served as Chairman of the Standing Committee of the Supreme People's Assembly and Chairman of the Supreme People's Assembly from 1983 to 1998. He subsequently served as Vice President of the Presidium of the SPA from 1998 to 2019.",
+  "summary_source": "wikipedia",
+  "notable": [],
+  "tags": [
+   "politburo"
+  ]
+ },
+ {
+  "id": "ri-chang-dae",
+  "name_en": "Ri Chang Dae",
+  "name_ko": "리창대",
+  "aliases": [
+   "Ri Chang-dae"
+  ],
+  "wikidata": "Q115237652",
+  "wikipedia": "https://en.wikipedia.org/wiki/Ri_Chang-dae",
+  "image": null,
+  "born": {
+   "date": "1960",
+   "place": "Pyongyang, North Korea"
+  },
+  "died": null,
+  "status": {
+   "value": "alive",
+   "as_of": "2026-09-01",
+   "source_url": null
+  },
+  "gender": "male",
+  "rank": null,
+  "roles": [
+   {
+    "title": "Minister of State Security",
+    "org_id": null,
+    "start": "2022-06",
+    "end": null,
+    "source_url": "https://www.wikidata.org/wiki/Q115237652"
+   },
+   {
+    "title": "Member of the State Affairs Commission",
+    "org_id": "sac",
+    "start": "2022-09-08",
+    "end": null,
+    "source_url": "https://en.wikipedia.org/wiki/Ri_Chang-dae"
+   }
+  ],
+  "family": [],
+  "health": [],
+  "physical": {
+   "height_cm": null,
+   "weight_kg": null
+  },
+  "sanctions": [],
+  "summary": "Ri Chang-dae is a North Korean politician who is serving as Minister of State Security since June 2022, replacing Jong Kyong-thaek.",
+  "summary_source": "wikipedia",
+  "notable": [],
+  "tags": [
+   "security",
+   "politburo"
+  ]
+ },
+ {
+  "id": "ri-tae-sop",
+  "name_en": "Ri Tae Sop",
+  "name_ko": "리태섭",
+  "aliases": [
+   "Ri Thae-sop",
+   "General Ri"
+  ],
+  "wikidata": "Q12594451",
+  "wikipedia": "https://en.wikipedia.org/wiki/Ri_Thae-sop",
+  "image": null,
+  "born": {
+   "date": "1959",
+   "place": "South Pyongan, North Korea"
+  },
+  "died": null,
+  "status": {
+   "value": "alive",
+   "as_of": "2026-09-01",
+   "source_url": null
+  },
+  "gender": "male",
+  "rank": null,
+  "roles": [
+   {
+    "title": "Chief of General Staff of the Korean People's Army",
+    "org_id": null,
+    "start": "2022-06-08",
+    "end": "2022-12-28",
+    "source_url": "https://www.wikidata.org/wiki/Q12594451"
+   },
+   {
+    "title": "Minister of Social Security",
+    "org_id": "moss",
+    "start": "2023-01-01",
+    "end": null,
+    "source_url": "https://en.wikipedia.org/wiki/Ri_Thae-sop"
+   },
+   {
+    "title": "Chief of the General Staff Department",
+    "org_id": "kpa-gstaff",
+    "start": "2022-06-11",
+    "end": "2022-12-31",
+    "source_url": "https://en.wikipedia.org/wiki/Ri_Thae-sop"
+   }
+  ],
+  "family": [],
+  "health": [],
+  "physical": {
+   "height_cm": null,
+   "weight_kg": null
+  },
+  "sanctions": [],
+  "summary": "Ri Thae-sop is a North Korean politician and general. He served as Minister of Social Security and from June 2022 to December as Chief of the General Staff.",
+  "summary_source": "wikipedia",
+  "notable": [],
+  "tags": [
+   "security",
+   "military",
+   "politburo"
+  ]
+ },
+ {
+  "id": "pang-tu-sop",
+  "name_en": "Pang Tu Sop",
+  "name_ko": "방두섭",
+  "aliases": [
+   "Pang Tu-sop"
+  ],
+  "wikidata": "Q56820589",
+  "wikipedia": "https://en.wikipedia.org/wiki/Pang_Tu-sop",
+  "image": null,
+  "born": {
+   "date": "1956",
+   "place": "Pyongyang, North Korea"
+  },
+  "died": null,
+  "status": {
+   "value": "alive",
+   "as_of": "2026-09-01",
+   "source_url": null
+  },
+  "gender": "male",
+  "rank": null,
+  "roles": [],
+  "family": [],
+  "health": [],
+  "physical": {
+   "height_cm": null,
+   "weight_kg": null
+  },
+  "sanctions": [],
+  "summary": "Pang Tu-sop is a North Korean army general and politician.",
+  "summary_source": "wikipedia",
+  "notable": [],
+  "tags": [
+   "military",
+   "politburo"
+  ]
+ },
+ {
+  "id": "ri-chang-ho",
+  "name_en": "Ri Chang Ho",
+  "name_ko": "리창호",
+  "aliases": [
+   "Ri Chang-ho",
+   "Lieutenant General Ri"
+  ],
+  "wikidata": "Q124039235",
+  "wikipedia": "https://en.wikipedia.org/wiki/Ri_Chang-ho",
+  "image": null,
+  "born": {
+   "date": "1965",
+   "place": "Pyongyang, North Korea"
+  },
+  "died": null,
+  "status": {
+   "value": "alive",
+   "as_of": "2026-09-01",
+   "source_url": null
+  },
+  "gender": "male",
+  "rank": null,
+  "roles": [
+   {
+    "title": "Director of the Reconnaissance General Bureau",
+    "org_id": "rgb",
+    "start": "2022-06-11",
+    "end": null,
+    "source_url": "https://en.wikipedia.org/wiki/Ri_Chang-ho"
+   }
+  ],
+  "family": [],
+  "health": [],
+  "physical": {
+   "height_cm": null,
+   "weight_kg": null
+  },
+  "sanctions": [],
+  "summary": "Ri Chang-ho is a North Korean military officer and politician who serves as the Director of the Reconnaissance General Bureau of the General Staff of the Korean People's Army and as an alternate member of the 9th convocation of the Central Committee of the Workers' Party of Korea.",
+  "summary_source": "wikipedia",
+  "notable": [],
+  "tags": [
+   "security",
+   "cyber",
+   "military"
+  ]
+ },
+ {
+  "id": "rim-kwang-il",
+  "name_en": "Rim Kwang Il",
+  "name_ko": "림광일",
+  "aliases": [
+   "Rim Kwang-il"
+  ],
+  "wikidata": "Q97162070",
+  "wikipedia": "https://en.wikipedia.org/wiki/Rim_Kwang-il",
+  "image": null,
+  "born": {
+   "date": "1965",
+   "place": "South Pyongan, North Korea"
+  },
+  "died": null,
+  "status": {
+   "value": "alive",
+   "as_of": "2026-09-01",
+   "source_url": null
+  },
+  "gender": "male",
+  "rank": null,
+  "roles": [
+   {
+    "title": "Chief of General Staff of the Korean People's Army",
+    "org_id": null,
+    "start": "2021-09-07",
+    "end": "2022-06-08",
+    "source_url": "https://www.wikidata.org/wiki/Q97162070"
+   },
+   {
+    "title": "Director of the Reconnaissance General Bureau",
+    "org_id": "rgb",
+    "start": "2019-12-31",
+    "end": "2021-09-07",
+    "source_url": "https://en.wikipedia.org/wiki/Rim_Kwang-il"
+   },
+   {
+    "title": "Chief of the General Staff Department",
+    "org_id": "kpa-gstaff",
+    "start": "2021-09-07",
+    "end": "2022-06-11",
+    "source_url": "https://en.wikipedia.org/wiki/Rim_Kwang-il"
+   }
+  ],
+  "family": [],
+  "health": [],
+  "physical": {
+   "height_cm": null,
+   "weight_kg": null
+  },
+  "sanctions": [],
+  "summary": "Rim Kwang-il is a North Korean general and politician who served as Chief of the General Staff Department of the Korean People's Army.",
+  "summary_source": "wikipedia",
+  "notable": [],
+  "tags": [
+   "security",
+   "military",
+   "cyber"
+  ]
+ },
+ {
+  "id": "kim-yong-chol",
+  "name_en": "Kim Yong Chol",
+  "name_ko": "김영철",
+  "aliases": [
+   "Kim Yong-chol",
+   "General Kim"
+  ],
+  "wikidata": "Q8011165",
+  "wikipedia": "https://en.wikipedia.org/wiki/Kim_Yong-chol",
+  "image": {
+   "src": "/img/people/kim-yong-chol.jpg",
+   "credit": "The White House from Washington, DC / Wikimedia Commons",
+   "license": "Public domain",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kim_Yong_Chol_2019.jpg"
+  },
+  "born": {
+   "date": "1946",
+   "place": "Ryanggang Province"
+  },
+  "died": null,
+  "status": {
+   "value": "alive",
+   "as_of": "2026-09-01",
+   "source_url": null
+  },
+  "gender": "male",
+  "rank": "General",
+  "roles": [
+   {
+    "title": "Vice Chairman of the Workers' Party of Korea",
+    "org_id": null,
+    "start": null,
+    "end": null,
+    "source_url": "https://www.wikidata.org/wiki/Q8011165"
+   },
+   {
+    "title": "member of State Affairs Commission",
+    "org_id": null,
+    "start": null,
+    "end": null,
+    "source_url": "https://www.wikidata.org/wiki/Q8011165"
+   },
+   {
+    "title": "member of the Presidium of the Supreme People's Assembly",
+    "org_id": null,
+    "start": null,
+    "end": null,
+    "source_url": "https://www.wikidata.org/wiki/Q8011165"
+   },
+   {
+    "title": "member of the Politburo of the Workers' Party of Korea",
+    "org_id": null,
+    "start": null,
+    "end": null,
+    "source_url": "https://www.wikidata.org/wiki/Q8011165"
+   },
+   {
+    "title": "member of the Supreme People's Assembly",
+    "org_id": null,
+    "start": null,
+    "end": null,
+    "source_url": "https://www.wikidata.org/wiki/Q8011165"
+   }
+  ],
+  "family": [],
+  "health": [],
+  "physical": {
+   "height_cm": null,
+   "weight_kg": null
+  },
+  "sanctions": [
+   {
+    "list": "OFAC",
+    "id": "12211",
+    "date": null,
+    "source_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=12211"
+   }
+  ],
+  "summary": "Kim Yong-chol is a North Korean general and politician.",
+  "summary_source": "wikipedia",
+  "notable": [],
+  "tags": [
+   "security",
+   "military",
+   "cyber",
+   "diplomat",
+   "politburo"
+  ]
+ },
+ {
+  "id": "park-jin-hyok",
+  "name_en": "Park Jin Hyok",
+  "name_ko": "박진혁",
+  "aliases": [
+   "Pak Jin-hyok",
+   "Jin Hyok Park",
+   "CryptoLover"
+  ],
+  "wikidata": "Q56504895",
+  "wikipedia": "https://en.wikipedia.org/wiki/Park_Jin_Hyok",
+  "image": {
+   "src": "/img/people/park-jin-hyok.jpg",
+   "credit": "FBI / Wikimedia Commons",
+   "license": "Public domain",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Park_Jin_Hyok_(Upscaled).jpg"
+  },
+  "born": {
+   "date": "1984",
+   "place": "Pyongyang, North Korea"
+  },
+  "died": null,
+  "status": {
+   "value": "alive",
+   "as_of": "2024-01-01",
+   "source_url": null
+  },
+  "gender": "male",
+  "rank": null,
+  "roles": [
+   {
+    "title": "Hacker, Lab 110 / Lazarus Group",
+    "org_id": "lazarus-group",
+    "start": "2014-01-01",
+    "end": null,
+    "source_url": "https://en.wikipedia.org/wiki/Park_Jin_Hyok"
+   }
+  ],
+  "family": [],
+  "health": [],
+  "physical": {
+   "height_cm": null,
+   "weight_kg": null
+  },
+  "sanctions": [
+   {
+    "list": "OFAC",
+    "id": "24918",
+    "date": null,
+    "source_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=24918"
+   }
+  ],
+  "summary": "Park Jin Hyok is a North Korean programmer and hacker. He is best known for his alleged involvement in some of the costliest computer intrusions in history.",
+  "summary_source": "wikipedia",
+  "notable": [
+   {
+    "claim": "Operated out of Dalian, China under the commercial cover of front company Chosun Expo Joint Venture while staging bank cyberheists.",
+    "source_url": "https://home.treasury.gov/news/press-releases/sm473",
+    "date": "2018-09-06"
+   }
+  ],
+  "tags": [
+   "cyber",
+   "security"
+  ]
+ },
+ {
+  "id": "kim-won-hong",
+  "name_en": "Kim Won Hong",
+  "name_ko": "김원홍",
+  "aliases": [
+   "Kim Won-hong",
+   "General Kim"
+  ],
+  "wikidata": "Q5366982",
+  "wikipedia": "https://en.wikipedia.org/wiki/Kim_Won-hong",
+  "image": null,
+  "born": {
+   "date": "1945-04-17",
+   "place": "Sungho County"
+  },
+  "died": null,
+  "status": {
+   "value": "unknown",
+   "as_of": null,
+   "source_url": null
+  },
+  "gender": "male",
+  "rank": "General",
+  "roles": [
+   {
+    "title": "member of the Supreme People's Assembly",
+    "org_id": null,
+    "start": null,
+    "end": null,
+    "source_url": "https://www.wikidata.org/wiki/Q5366982"
+   },
+   {
+    "title": "Minister of State Security",
+    "org_id": "mss",
+    "start": "2012-04-11",
+    "end": "2017-01-31",
+    "source_url": "https://en.wikipedia.org/wiki/Kim_Won-hong"
+   },
+   {
+    "title": "Member of the National Defence Commission",
+    "org_id": "sac",
+    "start": "2012-04-13",
+    "end": "2016-06-29",
+    "source_url": "https://en.wikipedia.org/wiki/Kim_Won-hong"
+   }
+  ],
+  "family": [],
+  "health": [],
+  "physical": {
+   "height_cm": null,
+   "weight_kg": null
+  },
+  "sanctions": [
+   {
+    "list": "OFAC",
+    "id": "21443",
+    "date": null,
+    "source_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=21443"
+   }
+  ],
+  "summary": "Kim Won-hong is a North Korean politician and military general.",
+  "summary_source": "wikipedia",
+  "notable": [],
+  "tags": [
+   "security",
+   "purged"
+  ]
+ },
+ {
+  "id": "jang-chang-ha",
+  "name_en": "Jang Chang Ha",
+  "name_ko": "장창하",
+  "aliases": [
+   "Chang Chang-ha",
+   "General Jang"
+  ],
+  "wikidata": "Q56825039",
+  "wikipedia": "https://en.wikipedia.org/wiki/Jang_Chang-ha",
+  "image": null,
+  "born": {
+   "date": "2000",
+   "place": "Pyongyang, North Korea"
+  },
+  "died": null,
+  "status": {
+   "value": "alive",
+   "as_of": "2026-09-01",
+   "source_url": null
+  },
+  "gender": "male",
+  "rank": null,
+  "roles": [
+   {
+    "title": "Head of the Missile General Bureau",
+    "org_id": "missile-general-bureau",
+    "start": "2023-01-01",
+    "end": null,
+    "source_url": "https://en.wikipedia.org/wiki/Jang_Chang-ha"
+   },
+   {
+    "title": "President of the Academy of National Defence Science",
+    "org_id": "nads",
+    "start": "2014-01-01",
+    "end": null,
+    "source_url": "https://en.wikipedia.org/wiki/Jang_Chang-ha"
+   }
+  ],
+  "family": [],
+  "health": [],
+  "physical": {
+   "height_cm": null,
+   "weight_kg": null
+  },
+  "sanctions": [],
+  "summary": "Jang Chang-ha is a North Korean general and a politician.",
+  "summary_source": "wikipedia",
+  "notable": [],
+  "tags": [
+   "missile",
+   "military",
+   "politburo"
+  ]
+ },
+ {
+  "id": "kim-jong-sik",
+  "name_en": "Kim Jong Sik",
+  "name_ko": "김정식",
+  "aliases": [
+   "Kim Jong-sik",
+   "Lieutenant General Kim"
+  ],
+  "wikidata": "Q57064566",
+  "wikipedia": "https://en.wikipedia.org/wiki/Kim_Jong-sik",
+  "image": null,
+  "born": {
+   "date": "1967",
+   "place": "Pyongyang, North Korea"
+  },
+  "died": null,
+  "status": {
+   "value": "alive",
+   "as_of": "2026-09-01",
+   "source_url": null
+  },
+  "gender": "male",
+  "rank": null,
+  "roles": [
+   {
+    "title": "First Vice Director of the Munitions Industry Department",
+    "org_id": "wpk-mid",
+    "start": "2016-01-01",
+    "end": null,
+    "source_url": "https://en.wikipedia.org/wiki/Kim_Jong-sik"
+   }
+  ],
+  "family": [],
+  "health": [],
+  "physical": {
+   "height_cm": null,
+   "weight_kg": null
+  },
+  "sanctions": [
+   {
+    "list": "OFAC",
+    "id": "23214",
+    "date": null,
+    "source_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=23214"
+   },
+   {
+    "list": "UN",
+    "id": "KPi.066",
+    "date": "2017-12-22",
+    "source_url": "https://main.un.org/securitycouncil/en/sanctions/1718/materials"
+   }
+  ],
+  "summary": "Kim Jong-sik is a North Korean politician and general who is serving is deputy director of the Munitions Industry Department of the WPK Central Committee.",
+  "summary_source": "wikipedia",
+  "notable": [],
+  "tags": [
+   "missile",
+   "military"
+  ]
+ },
+ {
+  "id": "hong-sung-mu",
+  "name_en": "Hong Sung Mu",
+  "name_ko": "홍승무",
+  "aliases": [
+   "Hong Sung-mu"
+  ],
+  "wikidata": "Q16179925",
+  "wikipedia": "https://en.wikipedia.org/wiki/Hong_Sung-mu",
+  "image": null,
+  "born": {
+   "date": "1942-01-01",
+   "place": "Pyongyang, North Korea"
+  },
+  "died": null,
+  "status": {
+   "value": "alive",
+   "as_of": "2026-09-01",
+   "source_url": null
+  },
+  "gender": "male",
+  "rank": null,
+  "roles": [
+   {
+    "title": "Member of the WPK Central Committee",
+    "org_id": "wpk",
+    "start": "2016-05-09",
+    "end": null,
+    "source_url": "https://en.wikipedia.org/wiki/Hong_Sung-mu"
+   }
+  ],
+  "family": [],
+  "health": [],
+  "physical": {
+   "height_cm": null,
+   "weight_kg": null
+  },
+  "sanctions": [],
+  "summary": "Hong Sung-mu is a North Korean nuclear weapons scientist and a Workers' Party of Korea official working with North Korea's weapons of mass destruction and space programs. He is the deputy director of the party's Machine Building Industry Department and plays a key part in the country's nuclear weapons program.",
+  "summary_source": "wikipedia",
+  "notable": [],
+  "tags": [
+   "missile",
+   "military"
+  ]
+ },
+ {
+  "id": "jo-chun-ryong",
+  "name_en": "Jo Chun Ryong",
+  "name_ko": "조춘룡",
+  "aliases": [
+   "Cho Chun-ryong"
+  ],
+  "wikidata": "Q16338026",
+  "wikipedia": "https://en.wikipedia.org/wiki/Jo_Chun-ryong",
+  "image": null,
+  "born": {
+   "date": "1960",
+   "place": "Pyongyang, North Korea"
+  },
+  "died": null,
+  "status": {
+   "value": "alive",
+   "as_of": "2026-09-01",
+   "source_url": null
+  },
+  "gender": "male",
+  "rank": null,
+  "roles": [
+   {
+    "title": "Secretary of the Central Committee for Munitions Industry",
+    "org_id": "wpk-mid",
+    "start": "2023-12-30",
+    "end": null,
+    "source_url": "https://en.wikipedia.org/wiki/Jo_Chun-ryong"
+   },
+   {
+    "title": "Member of the State Affairs Commission",
+    "org_id": "sac",
+    "start": "2022-09-08",
+    "end": null,
+    "source_url": "https://en.wikipedia.org/wiki/Jo_Chun-ryong"
+   },
+   {
+    "title": "Alternate Member of the WPK Political Bureau",
+    "org_id": "wpk-politburo",
+    "start": "2022-06-11",
+    "end": null,
+    "source_url": "https://en.wikipedia.org/wiki/Jo_Chun-ryong"
+   }
+  ],
+  "family": [],
+  "health": [],
+  "physical": {
+   "height_cm": null,
+   "weight_kg": null
+  },
+  "sanctions": [
+   {
+    "list": "OFAC",
+    "id": "20577",
+    "date": null,
+    "source_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=20577"
+   },
+   {
+    "list": "UN",
+    "id": "KPi.038",
+    "date": "2016-11-30",
+    "source_url": "https://main.un.org/securitycouncil/en/sanctions/1718/materials"
+   }
+  ],
+  "summary": "Jo Chun-ryong is a North Korean politician. Since 2019 he is a candidate member of the Politburo of the Central Committee of the Workers' Party of Korea.",
+  "summary_source": "wikipedia",
+  "notable": [],
+  "tags": [
+   "missile",
+   "military",
+   "politburo"
+  ]
+ },
+ {
+  "id": "yu-jin",
+  "name_en": "Yu Jin",
+  "name_ko": "유진",
+  "aliases": [
+   "Ryu Jin"
+  ],
+  "wikidata": null,
+  "wikipedia": null,
+  "image": null,
+  "born": {
+   "date": "1962",
+   "place": "Pyongyang, North Korea"
+  },
+  "died": null,
+  "status": {
+   "value": "alive",
+   "as_of": "2026-09-01",
+   "source_url": null
+  },
+  "gender": "male",
+  "rank": null,
+  "roles": [],
+  "family": [],
+  "health": [],
+  "physical": {
+   "height_cm": null,
+   "weight_kg": null
+  },
+  "sanctions": [],
+  "summary": "Former Director of the Munitions Industry Department (2021-2022) and defense manufacturing bureaucrat who oversaw the mass fabrication of mobile missile launcher chassis and solid-fuel rocket motor casings. Sanctioned by the US Treasury in 2022 for procuring dual-use technologies for WMD programs.",
+  "summary_source": "research",
+  "notable": [],
+  "tags": [
+   "missile",
+   "military"
+  ]
+ },
+ {
+  "id": "jon-il-ho",
+  "name_en": "Jon Il Ho",
+  "name_ko": "전일호",
+  "aliases": [
+   "Jon Il-ho",
+   "Lieutenant General Jon"
+  ],
+  "wikidata": "Q57073331",
+  "wikipedia": null,
+  "image": null,
+  "born": {
+   "date": "1956-08-24",
+   "place": "Pyongyang, North Korea"
+  },
+  "died": null,
+  "status": {
+   "value": "alive",
+   "as_of": "2026-09-01",
+   "source_url": null
+  },
+  "gender": "male",
+  "rank": null,
+  "roles": [],
+  "family": [],
+  "health": [],
+  "physical": {
+   "height_cm": null,
+   "weight_kg": null
+  },
+  "sanctions": [
+   {
+    "list": "OFAC",
+    "id": "39496",
+    "date": null,
+    "source_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=39496"
+   }
+  ],
+  "summary": "Lieutenant General and senior missile scientist at the Academy of National Defence Science, specializing in guidance systems, computer simulation, and telemetry for intercontinental ballistic missiles. One of the core triumvirate of scientists honored with Kim Jong Un at major missile test celebrations.",
+  "summary_source": "research",
+  "notable": [],
+  "tags": [
+   "missile",
+   "military"
+  ]
+ },
+ {
+  "id": "choe-chun-sik",
+  "name_en": "Choe Chun Sik",
+  "name_ko": "최춘식",
+  "aliases": [
+   "Choe Chun-sik"
+  ],
+  "wikidata": "Q12619902",
+  "wikipedia": "https://en.wikipedia.org/wiki/Choe_Chun-sik",
+  "image": null,
+  "born": {
+   "date": "1954-10-12",
+   "place": "Pyongyang, North Korea"
+  },
+  "died": null,
+  "status": {
+   "value": "alive",
+   "as_of": "2024-01-01",
+   "source_url": null
+  },
+  "gender": "male",
+  "rank": null,
+  "roles": [],
+  "family": [],
+  "health": [],
+  "physical": {
+   "height_cm": null,
+   "weight_kg": null
+  },
+  "sanctions": [
+   {
+    "list": "UN",
+    "id": "KPi.013",
+    "date": "2016-03-02",
+    "source_url": "https://main.un.org/securitycouncil/en/sanctions/1718/materials"
+   }
+  ],
+  "summary": "Choe Chun Sik was the leader of the North Korean Second Academy of Natural Sciences. He received the title of Hero of the Republic in 2012 for his work on Kwangmyŏngsŏng-3.",
+  "summary_source": "wikipedia",
+  "notable": [],
+  "tags": [
+   "missile"
+  ]
+ },
+ {
+  "id": "pak-to-chun",
+  "name_en": "Pak To Chun",
+  "name_ko": "박도춘",
+  "aliases": [
+   "Pak To-chun"
+  ],
+  "wikidata": "Q5367050",
+  "wikipedia": "https://en.wikipedia.org/wiki/Pak_To-chun",
+  "image": null,
+  "born": {
+   "date": "1944-03-09",
+   "place": "Rangrim County, Jagang, Korea"
+  },
+  "died": {
+   "date": "2022",
+   "place": "Pyongyang, North Korea",
+   "cause": "Natural causes / old age"
+  },
+  "status": {
+   "value": "dead",
+   "as_of": "2022",
+   "source_url": "https://en.wikipedia.org/wiki/Pak_To-chun"
+  },
+  "gender": "male",
+  "rank": "General",
+  "roles": [
+   {
+    "title": "member of the Supreme People's Assembly",
+    "org_id": null,
+    "start": null,
+    "end": null,
+    "source_url": "https://www.wikidata.org/wiki/Q5367050"
+   },
+   {
+    "title": "Secretary of the Central Committee for Munitions Industry",
+    "org_id": "wpk-mid",
+    "start": "2010-09-28",
+    "end": "2015-04-09",
+    "source_url": "https://en.wikipedia.org/wiki/Pak_To-chun"
+   },
+   {
+    "title": "Member of the National Defence Commission",
+    "org_id": "sac",
+    "start": "2011-04-07",
+    "end": "2015-04-09",
+    "source_url": "https://en.wikipedia.org/wiki/Pak_To-chun"
+   }
+  ],
+  "family": [],
+  "health": [],
+  "physical": {
+   "height_cm": null,
+   "weight_kg": null
+  },
+  "sanctions": [
+   {
+    "list": "UN",
+    "id": "KPi.050",
+    "date": "2017-06-02",
+    "source_url": "https://main.un.org/securitycouncil/en/sanctions/1718/materials"
+   }
+  ],
+  "summary": "General Pak To-chun was a politician of North Korea.",
+  "summary_source": "wikipedia",
+  "notable": [],
+  "tags": [
+   "missile",
+   "military",
+   "politburo"
+  ]
+ },
+ {
+  "id": "han-kwang-sang",
+  "name_en": "Han Kwang Sang",
+  "name_ko": "한광상",
+  "aliases": [
+   "Han Kwang-sang"
+  ],
+  "wikidata": "Q19657552",
+  "wikipedia": "https://en.wikipedia.org/wiki/Han_Kwang-sang",
+  "image": null,
+  "born": {
+   "date": "1958",
+   "place": "Pyongyang, North Korea"
+  },
+  "died": null,
+  "status": {
+   "value": "alive",
+   "as_of": "2026-09-01",
+   "source_url": null
+  },
+  "gender": "male",
+  "rank": null,
+  "roles": [
+   {
+    "title": "Director of Finance and Accounting Department",
+    "org_id": "wpk",
+    "start": "2014-01-01",
+    "end": null,
+    "source_url": "https://en.wikipedia.org/wiki/Han_Kwang-sang"
+   }
+  ],
+  "family": [],
+  "health": [],
+  "physical": {
+   "height_cm": null,
+   "weight_kg": null
+  },
+  "sanctions": [],
+  "summary": "Han Kwang-sang is a North Korean politician. He is a member of the Central Committee of the Workers' Party of Korea.",
+  "summary_source": "wikipedia",
+  "notable": [],
+  "tags": [
+   "economy",
+   "security"
+  ]
+ },
+ {
+  "id": "jon-il-chun",
+  "name_en": "Jon Il Chun",
+  "name_ko": "전일춘",
+  "aliases": [
+   "Jon Il-chun",
+   "Chon Il-chun"
+  ],
+  "wikidata": "Q57073318",
+  "wikipedia": null,
+  "image": null,
+  "born": {
+   "date": "1941",
+   "place": "Pyongyang, North Korea"
+  },
+  "died": null,
+  "status": {
+   "value": "alive",
+   "as_of": "2024-01-01",
+   "source_url": null
+  },
+  "gender": "male",
+  "rank": null,
+  "roles": [],
+  "family": [],
+  "health": [],
+  "physical": {
+   "height_cm": null,
+   "weight_kg": null
+  },
+  "sanctions": [],
+  "summary": "Longtime Director of Office 39 and childhood classmate of Kim Jong Il, who managed the regime's illicit overseas banking network, gold exports, and hard currency procurement for decades. His son-in-law, Ryu Hyun-woo (acting ambassador to Kuwait), defected to South Korea in 2019.",
+  "summary_source": "research",
+  "notable": [],
+  "tags": [
+   "economy"
+  ]
+ },
+ {
+  "id": "sin-ryong-man",
+  "name_en": "Sin Ryong Man",
+  "name_ko": "신룡만",
+  "aliases": [
+   "Sin Ryong-man"
+  ],
+  "wikidata": "Q55731340",
+  "wikipedia": null,
+  "image": null,
+  "born": {
+   "date": "1964",
+   "place": "Pyongyang, North Korea"
+  },
+  "died": null,
+  "status": {
+   "value": "alive",
+   "as_of": "2026-09-01",
+   "source_url": null
+  },
+  "gender": "male",
+  "rank": null,
+  "roles": [],
+  "family": [],
+  "health": [],
+  "physical": {
+   "height_cm": null,
+   "weight_kg": null
+  },
+  "sanctions": [],
+  "summary": "Vice Premier of the Cabinet and Minister of Agriculture appointed in late December 2023, tasked with solving chronic food insecurity and enforcing grain delivery quotas from collective farms. He leads state rural construction programs and irrigation revamps.",
+  "summary_source": "research",
+  "notable": [],
+  "tags": [
+   "economy"
+  ]
+ },
+ {
+  "id": "jon-sung-guk",
+  "name_en": "Jon Sung Guk",
+  "name_ko": "전승국",
+  "aliases": [
+   "Jon Sung-guk"
+  ],
+  "wikidata": "Q114595445",
+  "wikipedia": null,
+  "image": null,
+  "born": {
+   "date": "1966",
+   "place": "Pyongyang, North Korea"
+  },
+  "died": null,
+  "status": {
+   "value": "alive",
+   "as_of": "2026-09-01",
+   "source_url": null
+  },
+  "gender": "male",
+  "rank": null,
+  "roles": [
+   {
+    "title": "Vice Premier of North Korea",
+    "org_id": null,
+    "start": "2022-06-10",
+    "end": null,
+    "source_url": "https://www.wikidata.org/wiki/Q114595445"
+   }
+  ],
+  "family": [],
+  "health": [],
+  "physical": {
+   "height_cm": null,
+   "weight_kg": null
+  },
+  "sanctions": [],
+  "summary": "Vice Premier of the Cabinet appointed in June 2022, overseeing electric power generation, coal mining, and rail logistics across the national economy. He monitors the supply of coal and electricity to strategic defense plants.",
+  "summary_source": "research",
+  "notable": [],
+  "tags": [
+   "economy"
+  ]
+ },
+ {
+  "id": "pak-nam-gi",
+  "name_en": "Pak Nam Gi",
+  "name_ko": "박남기",
+  "aliases": [
+   "Pak Nam-gi"
+  ],
+  "wikidata": "Q707394",
+  "wikipedia": "https://en.wikipedia.org/wiki/Pak_Nam-gi",
+  "image": null,
+  "born": {
+   "date": "1934-02-21",
+   "place": "Haeju"
+  },
+  "died": {
+   "date": "2010-03-17",
+   "place": "Sunan District, Pyongyang, North Korea",
+   "cause": "gunshot wound"
+  },
+  "status": {
+   "value": "executed",
+   "as_of": "2010-03-17",
+   "source_url": "https://en.wikipedia.org/wiki/Pak_Nam-gi"
+  },
+  "gender": "male",
+  "rank": null,
+  "roles": [
+   {
+    "title": "Director of Planning and Financial Department",
+    "org_id": "wpk",
+    "start": "2005-01-01",
+    "end": "2010-01-01",
+    "source_url": "https://en.wikipedia.org/wiki/Pak_Nam-gi"
+   }
+  ],
+  "family": [],
+  "health": [],
+  "physical": {
+   "height_cm": null,
+   "weight_kg": null
+  },
+  "sanctions": [],
+  "summary": "Pak Nam-gi or Park Nam-ki was, until as late as January 2010, Director of the Planning and Finance Department of the ruling party of North Korea. There are doubts about his date of birth, with at least two unattributed sources reporting it as 21 February 1934 or sometime in 1928 respectively.",
+  "summary_source": "wikipedia",
+  "notable": [],
+  "tags": [
+   "economy",
+   "purged"
+  ]
+ },
+ {
+  "id": "kim-tong-gyu",
+  "name_en": "Kim Tong Gyu",
+  "name_ko": "김동규",
+  "aliases": [
+   "Kim Tong-gyu"
+  ],
+  "wikidata": "Q11647237",
+  "wikipedia": "https://en.wikipedia.org/wiki/Kim_Tong-gyu",
+  "image": null,
+  "born": {
+   "date": "1912",
+   "place": "Pyongyang, North Korea"
+  },
+  "died": null,
+  "status": {
+   "value": "alive",
+   "as_of": "2024-01-01",
+   "source_url": null
+  },
+  "gender": "male",
+  "rank": null,
+  "roles": [],
+  "family": [],
+  "health": [],
+  "physical": {
+   "height_cm": null,
+   "weight_kg": null
+  },
+  "sanctions": [],
+  "summary": "Kim Tong-gyu was a politician of North Korea who served as Vice President of North Korea.",
+  "summary_source": "wikipedia",
+  "notable": [],
+  "tags": [
+   "economy",
+   "missile"
+  ]
+ },
+ {
+  "id": "choe-son-hui",
+  "name_en": "Choe Son Hui",
+  "name_ko": "최선희",
+  "aliases": [
+   "Choe Son-hui",
+   "Foreign Minister Choe"
+  ],
+  "wikidata": "Q30436217",
+  "wikipedia": "https://en.wikipedia.org/wiki/Choe_Son-hui",
+  "image": {
+   "src": "/img/people/choe-son-hui.jpg",
+   "credit": "U.S. Department of State from United States / Wikimedia Commons",
+   "license": "Public domain",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Choe_Son-hui.jpg"
+  },
+  "born": {
+   "date": "1964-08-10",
+   "place": "North Korea"
+  },
+  "died": null,
+  "status": {
+   "value": "alive",
+   "as_of": "2026-09-01",
+   "source_url": null
+  },
+  "gender": "female",
+  "rank": null,
+  "roles": [
+   {
+    "title": "member of State Affairs Commission",
+    "org_id": null,
+    "start": null,
+    "end": null,
+    "source_url": "https://www.wikidata.org/wiki/Q30436217"
+   },
+   {
+    "title": "Minister of Foreign Affairs of the Democratic People's Republic of Korea",
+    "org_id": null,
+    "start": "2022-06-11",
+    "end": null,
+    "source_url": "https://www.wikidata.org/wiki/Q30436217"
+   }
+  ],
+  "family": [],
+  "health": [],
+  "physical": {
+   "height_cm": null,
+   "weight_kg": null
+  },
+  "sanctions": [],
+  "summary": "Choe Son-hui is a North Korean politician and diplomat who has been the country's Minister of Foreign Affairs since 11 June 2022. Previously the First Vice Minister of Foreign Affairs, she is the first woman to hold the position and is one of few North Korean women holding a high-level office.",
+  "summary_source": "wikipedia",
+  "notable": [],
+  "tags": [
+   "diplomat",
+   "politburo"
+  ]
+ },
+ {
+  "id": "kim-song",
+  "name_en": "Kim Song",
+  "name_ko": "김성",
+  "aliases": [
+   "Kim Song",
+   "Ambassador Kim"
+  ],
+  "wikidata": "Q77835256",
+  "wikipedia": null,
+  "image": null,
+  "born": {
+   "date": "1959",
+   "place": "North Korea"
+  },
+  "died": null,
+  "status": {
+   "value": "alive",
+   "as_of": "2026-09-01",
+   "source_url": null
+  },
+  "gender": "male",
+  "rank": null,
+  "roles": [],
+  "family": [],
+  "health": [],
+  "physical": {
+   "height_cm": null,
+   "weight_kg": null
+  },
+  "sanctions": [],
+  "summary": "Permanent Representative of the DPRK to the United Nations in New York since September 2018, serving as North Korea's primary direct diplomatic outpost in the United States. He defends ballistic missile tests and human rights practices before the UN Security Council and General Assembly.",
+  "summary_source": "research",
+  "notable": [],
+  "tags": [
+   "diplomat"
+  ]
+ },
+ {
+  "id": "sin-hong-chol",
+  "name_en": "Sin Hong Chol",
+  "name_ko": "신홍철",
+  "aliases": [
+   "Sin Hong-chol",
+   "Ambassador Sin"
+  ],
+  "wikidata": "Q104538821",
+  "wikipedia": null,
+  "image": {
+   "src": "/img/people/sin-hong-chol.jpg",
+   "credit": "Пресс-служба Совета Федерации / Wikimedia Commons",
+   "license": "CC BY 4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sin_Hong_Chol_(cropped).jpg"
+  },
+  "born": {
+   "date": "1960",
+   "place": "Pyongyang, North Korea"
+  },
+  "died": null,
+  "status": {
+   "value": "alive",
+   "as_of": "2026-09-01",
+   "source_url": null
+  },
+  "gender": "male",
+  "rank": null,
+  "roles": [
+   {
+    "title": "ambassador of North Korea to Russia",
+    "org_id": null,
+    "start": null,
+    "end": null,
+    "source_url": "https://www.wikidata.org/wiki/Q104538821"
+   }
+  ],
+  "family": [],
+  "health": [],
+  "physical": {
+   "height_cm": null,
+   "weight_kg": null
+  },
+  "sanctions": [],
+  "summary": "Ambassador to the Russian Federation since February 2020, playing a crucial operational role in arranging reciprocal leader summits and bilateral military pact negotiations in Moscow. He oversees diplomatic cover for arms transfers and North Korean personnel deployments in Russia.",
+  "summary_source": "research",
+  "notable": [],
+  "tags": [
+   "diplomat"
+  ]
+ },
+ {
+  "id": "ri-ryong-nam",
+  "name_en": "Ri Ryong Nam",
+  "name_ko": "리룡남",
+  "aliases": [
+   "Ri Ryong-nam",
+   "Ambassador Ri"
+  ],
+  "wikidata": "Q16181667",
+  "wikipedia": "https://en.wikipedia.org/wiki/Ri_Ryong-nam",
+  "image": {
+   "src": "/img/people/ri-ryong-nam.jpg",
+   "credit": "Eduard Xäyrullin / Wikimedia Commons",
+   "license": "CC BY 4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tatarstan%27s_delegation_in_DPRK_2014_08.jpg"
+  },
+  "born": {
+   "date": "1960-08-08",
+   "place": "Pyongyang"
+  },
+  "died": null,
+  "status": {
+   "value": "alive",
+   "as_of": "2026-09-01",
+   "source_url": null
+  },
+  "gender": "male",
+  "rank": null,
+  "roles": [
+   {
+    "title": "Vice Premier of North Korea",
+    "org_id": null,
+    "start": "2016-06-29",
+    "end": "2019-04-11",
+    "source_url": "https://www.wikidata.org/wiki/Q16181667"
+   },
+   {
+    "title": "Vice Premier of North Korea",
+    "org_id": null,
+    "start": "2019-04-11",
+    "end": "2021-01-18",
+    "source_url": "https://www.wikidata.org/wiki/Q16181667"
+   },
+   {
+    "title": "Minister of Foreign Trade of North Korea",
+    "org_id": null,
+    "start": "2014-04-09",
+    "end": "2019-04-11",
+    "source_url": "https://www.wikidata.org/wiki/Q16181667"
+   }
+  ],
+  "family": [],
+  "health": [],
+  "physical": {
+   "height_cm": null,
+   "weight_kg": null
+  },
+  "sanctions": [],
+  "summary": "Ri Ryong-nam is a North Korean politician serving as the DPRK's Ambassador to China since February 2021. With a background in economic affairs, Ri was a delegate to the 12th, 13th and 14th convocations of the Supreme People's Assembly, chairman of the North Korean-Syrian Friendship Association and chairman of the North Korean Football Association.",
+  "summary_source": "wikipedia",
+  "notable": [],
+  "tags": [
+   "diplomat",
+   "economy"
+  ]
+ },
+ {
+  "id": "kim-hyong-jun",
+  "name_en": "Kim Hyong Jun",
+  "name_ko": "김형준",
+  "aliases": [
+   "Kim Hyong-jun"
+  ],
+  "wikidata": "Q57317157",
+  "wikipedia": "https://en.wikipedia.org/wiki/Kim_Hyong-jun",
+  "image": {
+   "src": "/img/people/kim-hyong-jun.jpg",
+   "credit": "Federation Council / Wikimedia Commons",
+   "license": "CC BY 4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kim_Hyong-jun_during_a_meeting_with_Konstantin_Kosarev_(cropped).jpg"
+  },
+  "born": {
+   "date": "1949-11-26",
+   "place": "North Hamgyong Province"
+  },
+  "died": null,
+  "status": {
+   "value": "alive",
+   "as_of": "2024-01-01",
+   "source_url": null
+  },
+  "gender": "male",
+  "rank": null,
+  "roles": [
+   {
+    "title": "Vice Chairman of the Workers' Party of Korea",
+    "org_id": null,
+    "start": null,
+    "end": null,
+    "source_url": "https://www.wikidata.org/wiki/Q57317157"
+   },
+   {
+    "title": "member of State Affairs Commission",
+    "org_id": null,
+    "start": null,
+    "end": null,
+    "source_url": "https://www.wikidata.org/wiki/Q57317157"
+   },
+   {
+    "title": "ambassador of North Korea to Russia",
+    "org_id": null,
+    "start": "2014-08-28",
+    "end": null,
+    "source_url": "https://www.wikidata.org/wiki/Q57317157"
+   }
+  ],
+  "family": [],
+  "health": [],
+  "physical": {
+   "height_cm": null,
+   "weight_kg": null
+  },
+  "sanctions": [],
+  "summary": "Kim Hyong-jun is a North Korean politician and diplomat. Vice Chairman of the Workers' Party of Korea, member of the Politburo, member of the State Affairs Commission of North Korea, and former Ambassador to the Russian Federation.",
+  "summary_source": "wikipedia",
+  "notable": [],
+  "tags": [
+   "diplomat",
+   "politburo"
+  ]
+ },
+ {
+  "id": "ri-su-yong",
+  "name_en": "Ri Su Yong",
+  "name_ko": "리수용",
+  "aliases": [
+   "Ri Chol",
+   "Ri Su-yong"
+  ],
+  "wikidata": "Q9310191",
+  "wikipedia": "https://en.wikipedia.org/wiki/Ri_Su-yong",
+  "image": {
+   "src": "/img/people/ri-su-yong.jpg",
+   "credit": "Mohammad Ali Marizad / Wikimedia Commons",
+   "license": "CC BY 4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ri_Su-yong_(2014).jpg"
+  },
+  "born": {
+   "date": "1940-06-15",
+   "place": "South Hamgyong Province"
+  },
+  "died": null,
+  "status": {
+   "value": "alive",
+   "as_of": "2024-01-01",
+   "source_url": null
+  },
+  "gender": "male",
+  "rank": null,
+  "roles": [
+   {
+    "title": "foreign minister",
+    "org_id": null,
+    "start": "2014-04",
+    "end": "2016",
+    "source_url": "https://www.wikidata.org/wiki/Q9310191"
+   },
+   {
+    "title": "Minister of Foreign Affairs of the Democratic People's Republic of Korea",
+    "org_id": null,
+    "start": "2014-04-09",
+    "end": "2016-05-09",
+    "source_url": "https://www.wikidata.org/wiki/Q9310191"
+   },
+   {
+    "title": "member of the Supreme People's Assembly",
+    "org_id": null,
+    "start": null,
+    "end": null,
+    "source_url": "https://www.wikidata.org/wiki/Q9310191"
+   }
+  ],
+  "family": [],
+  "health": [],
+  "physical": {
+   "height_cm": null,
+   "weight_kg": null
+  },
+  "sanctions": [],
+  "summary": "Ri Su-yong, also known as Ri Chol, is a North Korean diplomat and politician, serving as the Minister of Foreign Affairs of North Korea from April 2014 until May 2016.",
+  "summary_source": "wikipedia",
+  "notable": [],
+  "tags": [
+   "diplomat",
+   "politburo",
+   "economy"
+  ]
+ },
+ {
+  "id": "ri-yong-ho",
+  "name_en": "Ri Yong Ho",
+  "name_ko": "리용호",
+  "aliases": [
+   "Ri Yong-ho",
+   "Foreign Minister Ri"
+  ],
+  "wikidata": "Q12594422",
+  "wikipedia": "https://en.wikipedia.org/wiki/Ri_Yong-ho_(diplomat)",
+  "image": {
+   "src": "/img/people/ri-yong-ho.jpg",
+   "credit": "Ali Khara / Wikimedia Commons",
+   "license": "CC BY 4.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ri_Yong-ho.jpg"
+  },
+  "born": {
+   "date": "1956-07-10",
+   "place": "Pyongyang"
+  },
+  "died": null,
+  "status": {
+   "value": "purged",
+   "as_of": "2023-01-05",
+   "source_url": null
+  },
+  "gender": "male",
+  "rank": null,
+  "roles": [
+   {
+    "title": "Minister of Foreign Affairs of the Democratic People's Republic of Korea",
+    "org_id": null,
+    "start": "2016-05-13",
+    "end": "2020-01-18",
+    "source_url": "https://www.wikidata.org/wiki/Q12594422"
+   },
+   {
+    "title": "member of the Supreme People's Assembly",
+    "org_id": null,
+    "start": null,
+    "end": null,
+    "source_url": "https://www.wikidata.org/wiki/Q12594422"
+   }
+  ],
+  "family": [],
+  "health": [],
+  "physical": {
+   "height_cm": null,
+   "weight_kg": null
+  },
+  "sanctions": [],
+  "summary": "Ri Yong-ho is a North Korean politician and diplomat who served as the minister of foreign affairs of North Korea from 2016 to 2020.",
+  "summary_source": "wikipedia",
+  "notable": [],
+  "tags": [
+   "diplomat",
+   "politburo",
+   "purged"
+  ]
+ },
+ {
+  "id": "kim-kye-gwan",
+  "name_en": "Kim Kye Gwan",
+  "name_ko": "김계관",
+  "aliases": [
+   "Kim Kye-gwan"
+  ],
+  "wikidata": "Q705194",
+  "wikipedia": "https://en.wikipedia.org/wiki/Kim_Kye-gwan",
+  "image": null,
+  "born": {
+   "date": "1943-07-06",
+   "place": "North Pyongan Province"
+  },
+  "died": null,
+  "status": {
+   "value": "alive",
+   "as_of": "2023-01-01",
+   "source_url": null
+  },
+  "gender": "male",
+  "rank": null,
+  "roles": [
+   {
+    "title": "member of the Supreme People's Assembly",
+    "org_id": null,
+    "start": null,
+    "end": null,
+    "source_url": "https://www.wikidata.org/wiki/Q705194"
+   },
+   {
+    "title": "First Vice Minister of Foreign Affairs",
+    "org_id": "mfa",
+    "start": "2010-09-01",
+    "end": "2019-04-11",
+    "source_url": "https://en.wikipedia.org/wiki/Kim_Kye-gwan"
+   }
+  ],
+  "family": [],
+  "health": [],
+  "physical": {
+   "height_cm": null,
+   "weight_kg": null
+  },
+  "sanctions": [],
+  "summary": "Kim Kye-gwan is a North Korean diplomat. His official position was First Vice Minister of the Ministry of Foreign Affairs, to which he was promoted immediately before the Korean Workers' Party Conference of 28 September 2010.",
+  "summary_source": "wikipedia",
+  "notable": [
+   {
+    "claim": "Negotiated the September 19, 2005 Joint Statement at the Six-Party Talks, in which North Korea pledged in principle to abandon its nuclear weapons.",
+    "source_url": "https://www.armscontrol.org/factsheets/6partytalks",
+    "date": "2005-09-19"
+   }
+  ],
+  "tags": [
+   "diplomat"
+  ]
+ },
+ {
+  "id": "ri-son-gwon",
+  "name_en": "Ri Son Gwon",
+  "name_ko": "리선권",
+  "aliases": [
+   "Ri Son-gwon"
+  ],
+  "wikidata": "Q55708195",
+  "wikipedia": "https://en.wikipedia.org/wiki/Ri_Son-gwon",
+  "image": {
+   "src": "/img/people/ri-son-gwon.jpg",
+   "credit": "대한민국 국군 Republic of Korea Armed Forces / Wikimedia Commons",
+   "license": "CC BY-SA 2.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ri_Son-gwon.jpg"
+  },
+  "born": {
+   "date": "1960",
+   "place": "Pyongyang, North Korea"
+  },
+  "died": null,
+  "status": {
+   "value": "alive",
+   "as_of": "2026-09-01",
+   "source_url": null
+  },
+  "gender": "male",
+  "rank": null,
+  "roles": [
+   {
+    "title": "member of State Affairs Commission",
+    "org_id": null,
+    "start": "2020-04-12",
+    "end": null,
+    "source_url": "https://www.wikidata.org/wiki/Q55708195"
+   },
+   {
+    "title": "Minister of Foreign Affairs of the Democratic People's Republic of Korea",
+    "org_id": null,
+    "start": "2020-01-21",
+    "end": "2022-06-11",
+    "source_url": "https://www.wikidata.org/wiki/Q55708195"
+   },
+   {
+    "title": "Chairperson of the Committee for the Peaceful Reunification of the Fatherland",
+    "org_id": null,
+    "start": "2016",
+    "end": null,
+    "source_url": "https://www.wikidata.org/wiki/Q55708195"
+   },
+   {
+    "title": "member of the Supreme People's Assembly",
+    "org_id": null,
+    "start": null,
+    "end": null,
+    "source_url": "https://www.wikidata.org/wiki/Q55708195"
+   }
+  ],
+  "family": [],
+  "health": [],
+  "physical": {
+   "height_cm": null,
+   "weight_kg": null
+  },
+  "sanctions": [],
+  "summary": "Ri Son-gwon is a North Korean politician and diplomat, best known for having served as chairman of the Committee for the Peaceful Reunification of the Fatherland prior to its dissolution in January 2024. Between January 2020 and June 2022, he served as the Minister of Foreign Affairs.",
+  "summary_source": "wikipedia",
+  "notable": [],
+  "tags": [
+   "diplomat",
+   "security",
+   "politburo"
+  ]
+ },
+ {
+  "id": "pak-myong-ho",
+  "name_en": "Pak Myong Ho",
+  "name_ko": "박명호",
+  "aliases": [
+   "Pak Myong-ho"
+  ],
+  "wikidata": null,
+  "wikipedia": null,
+  "image": null,
+  "born": {
+   "date": "1963",
+   "place": "Pyongyang, North Korea"
+  },
+  "died": null,
+  "status": {
+   "value": "alive",
+   "as_of": "2026-09-01",
+   "source_url": null
+  },
+  "gender": "male",
+  "rank": null,
+  "roles": [],
+  "family": [],
+  "health": [],
+  "physical": {
+   "height_cm": null,
+   "weight_kg": null
+  },
+  "sanctions": [],
+  "summary": "Vice Minister of Foreign Affairs overseeing relations with the People's Republic of China, Southeast Asian nations, and regional multilateral bodies. He leads diplomatic working delegations to Beijing to coordinate trade corridors and political consultations.",
+  "summary_source": "research",
+  "notable": [],
+  "tags": [
+   "diplomat"
+  ]
+ },
+ {
+  "id": "kim-son-gyong",
+  "name_en": "Kim Son Gyong",
+  "name_ko": "김선경",
+  "aliases": [
+   "Kim Son-gyong"
+  ],
+  "wikidata": "Q126282170",
+  "wikipedia": null,
+  "image": null,
+  "born": {
+   "date": "1968",
+   "place": "Pyongyang, North Korea"
+  },
+  "died": null,
+  "status": {
+   "value": "alive",
+   "as_of": "2026-09-01",
+   "source_url": null
+  },
+  "gender": "male",
+  "rank": null,
+  "roles": [],
+  "family": [],
+  "health": [],
+  "physical": {
+   "height_cm": null,
+   "weight_kg": null
+  },
+  "sanctions": [],
+  "summary": "Vice Minister of Foreign Affairs for International Organizations, responsible for DPRK engagements with the United Nations, WHO, and international treaty forums. He routinely issues official ministerial communiqués blasting UN Security Council meetings on North Korean weapons tests.",
+  "summary_source": "research",
+  "notable": [],
+  "tags": [
+   "diplomat"
+  ]
+ },
+ {
+  "id": "hyon-yong-chol",
+  "name_en": "Hyon Yong Chol",
+  "name_ko": "현영철",
+  "aliases": [
+   "Hyon Yong-chol",
+   "General Hyon"
+  ],
+  "wikidata": "Q702412",
+  "wikipedia": "https://en.wikipedia.org/wiki/Hyon_Yong-chol",
+  "image": null,
+  "born": {
+   "date": "1953-01-11",
+   "place": "Kyongsong County"
+  },
+  "died": {
+   "date": "2015-04-30",
+   "place": "Kang Kon Military Academy, Sunan, Pyongyang",
+   "cause": "Execution by anti-aircraft artillery (ZPU-4) for insubordination"
+  },
+  "status": {
+   "value": "executed",
+   "as_of": "2015-04-30",
+   "source_url": "https://en.wikipedia.org/wiki/Hyon_Yong-chol"
+  },
+  "gender": "male",
+  "rank": "General of the army",
+  "roles": [
+   {
+    "title": "defence minister",
+    "org_id": null,
+    "start": null,
+    "end": null,
+    "source_url": "https://www.wikidata.org/wiki/Q702412"
+   },
+   {
+    "title": "Minister of People's Armed Forces",
+    "org_id": "mnd",
+    "start": "2014-06-25",
+    "end": "2015-04-30",
+    "source_url": "https://en.wikipedia.org/wiki/Hyon_Yong-chol"
+   },
+   {
+    "title": "Chief of the General Staff Department",
+    "org_id": "kpa-gstaff",
+    "start": "2012-07-16",
+    "end": "2013-05-01",
+    "source_url": "https://en.wikipedia.org/wiki/Hyon_Yong-chol"
+   }
+  ],
+  "family": [],
+  "health": [],
+  "physical": {
+   "height_cm": null,
+   "weight_kg": null
+  },
+  "sanctions": [],
+  "summary": "Hyon Yong-chol was a North Korean general and Workers' Party of Korea politician. He served as Minister of Defence from 2014 to 2015.",
+  "summary_source": "wikipedia",
+  "notable": [
+   {
+    "claim": "Briefed by the South Korean National Intelligence Service as having been executed by anti-aircraft gunfire on April 30, 2015 for dozing off at an event and talking back to Kim Jong Un.",
+    "source_url": "https://www.bbc.com/news/world-asia-32716749",
+    "date": "2015-05-13"
+   }
+  ],
+  "tags": [
+   "military",
+   "purged"
+  ]
+ },
+ {
+  "id": "ri-yong-ho-kpa",
+  "name_en": "Ri Yong Ho (General)",
+  "name_ko": "리영호",
+  "aliases": [
+   "Ri Yong-ho",
+   "Vice Marshal Ri"
+  ],
+  "wikidata": "Q483800",
+  "wikipedia": "https://en.wikipedia.org/wiki/Ri_Yong-ho_(general)",
+  "image": null,
+  "born": {
+   "date": "1942-10-05",
+   "place": "Tongchon County"
+  },
+  "died": {
+   "date": "2012-07",
+   "cause": null
+  },
+  "status": {
+   "value": "dead",
+   "as_of": "2012-07",
+   "source_url": "https://en.wikipedia.org/wiki/Ri_Yong-ho_(general)"
+  },
+  "gender": "male",
+  "rank": "Ch’asu",
+  "roles": [
+   {
+    "title": "Chief of General Staff of the Korean People's Army",
+    "org_id": null,
+    "start": "2009-02",
+    "end": "2012-07",
+    "source_url": "https://www.wikidata.org/wiki/Q483800"
+   },
+   {
+    "title": "Chief of the General Staff Department of the KPA",
+    "org_id": "kpa-gstaff",
+    "start": "2009-02-11",
+    "end": "2012-07-15",
+    "source_url": "https://en.wikipedia.org/wiki/Ri_Yong-ho_(general)"
+   },
+   {
+    "title": "Vice Chairman of the Central Military Commission",
+    "org_id": "wpk-cmc",
+    "start": "2010-09-28",
+    "end": "2012-07-15",
+    "source_url": "https://en.wikipedia.org/wiki/Ri_Yong-ho_(general)"
+   },
+   {
+    "title": "Member of the Politburo Presidium",
+    "org_id": "wpk-politburo-presidium",
+    "start": "2010-09-28",
+    "end": "2012-07-15",
+    "source_url": "https://en.wikipedia.org/wiki/Ri_Yong-ho_(general)"
+   }
+  ],
+  "family": [],
+  "health": [],
+  "physical": {
+   "height_cm": null,
+   "weight_kg": null
+  },
+  "sanctions": [],
+  "summary": "Vice Marshal Ri Yong-ho was a North Korean military officer who was Chief of the General Staff of the Korean People's Army from 2009 to 2012, as well as a member of the Presidium of the Workers' Party of Korea from September 2010 to July 2012.",
+  "summary_source": "wikipedia",
+  "notable": [],
+  "tags": [
+   "military",
+   "politburo",
+   "purged"
+  ]
+ },
+ {
+  "id": "thae-yong-ho",
+  "name_en": "Thae Yong-ho",
+  "name_ko": "태영호",
+  "aliases": [
+   "Tae Yong-ho",
+   "Thae Hyong-sik"
+  ],
+  "wikidata": "Q26299233",
+  "wikipedia": "https://en.wikipedia.org/wiki/Thae_Yong-ho",
+  "image": {
+   "src": "/img/people/thae-yong-ho.jpg",
+   "credit": "Zhang Wei, Voice of America （美国之音记者张伟拍摄） / Wikimedia Commons",
+   "license": "Public domain",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Thae_Yong-ho_(Cropped).png"
+  },
+  "born": {
+   "date": "1961-07-25",
+   "place": "Pyongyang"
+  },
+  "died": null,
+  "status": {
+   "value": "defected",
+   "as_of": "2016-08-17",
+   "source_url": null
+  },
+  "gender": "male",
+  "rank": null,
+  "roles": [
+   {
+    "title": "Member of the National Assembly of South Korea",
+    "org_id": null,
+    "start": "2020-05-30",
+    "end": "2023-07-01",
+    "source_url": "https://www.wikidata.org/wiki/Q26299233"
+   },
+   {
+    "title": "Deputy Ambassador to the United Kingdom",
+    "org_id": "mfa",
+    "start": "2006-01-01",
+    "end": "2016-07-01",
+    "source_url": "https://en.wikipedia.org/wiki/Thae_Yong-ho"
+   }
+  ],
+  "family": [],
+  "health": [],
+  "physical": {
+   "height_cm": null,
+   "weight_kg": null
+  },
+  "sanctions": [],
+  "summary": "Thae Yong-ho, also known by his pseudonym Tae Ku-min, is a North Korean-born South Korean politician and former diplomat who served as a member of the National Assembly for the Gangnam district of Seoul. After studying abroad in Beijing, China, for a decade, he became North Korea's deputy ambassador to the United Kingdom, prior to defecting with his family to South Korea in 2016.",
+  "summary_source": "wikipedia",
+  "notable": [
+   {
+    "claim": "Appointed Secretary-General of the Peaceful Unification Advisory Council by South Korean President Yoon Suk Yeol in July 2024.",
+    "source_url": "https://en.yna.co.kr/view/AEN20240718006200315",
+    "date": "2024-07-18"
+   }
+  ],
+  "tags": [
+   "defector",
+   "diplomat"
+  ]
+ },
+ {
+  "id": "ri-il-gyu",
+  "name_en": "Ri Il-gyu",
+  "name_ko": "리일규",
+  "aliases": [
+   "Ri Il-gyu"
+  ],
+  "wikidata": "Q127625979",
+  "wikipedia": null,
+  "image": null,
+  "born": {
+   "date": "1972",
+   "place": "Pyongyang"
+  },
+  "died": null,
+  "status": {
+   "value": "defected",
+   "as_of": "2023-11-01",
+   "source_url": null
+  },
+  "gender": "male",
+  "rank": null,
+  "roles": [],
+  "family": [],
+  "health": [],
+  "physical": {
+   "height_cm": null,
+   "weight_kg": null
+  },
+  "sanctions": [],
+  "summary": "Counselor for Political Affairs at the North Korean Embassy in Havana who defected with his wife and child in November 2023, making him the highest-ranking diplomat to escape since 2016. In a July 2024 interview, he revealed high-level regime corruption and Kim Jong Un's personal rage over South Korea's diplomatic normalization with Cuba.",
+  "summary_source": "research",
+  "notable": [],
+  "tags": [
+   "defector",
+   "diplomat"
+  ]
+ },
+ {
+  "id": "ryu-hyun-woo",
+  "name_en": "Ryu Hyun-woo",
+  "name_ko": "류현우",
+  "aliases": [
+   "Ryu Hyun-woo"
+  ],
+  "wikidata": "Q105084732",
+  "wikipedia": "https://en.wikipedia.org/wiki/Ryu_Hyun-woo_(diplomat)",
+  "image": null,
+  "born": {
+   "date": "1973",
+   "place": "Pyongyang"
+  },
+  "died": null,
+  "status": {
+   "value": "defected",
+   "as_of": "2019-09-01",
+   "source_url": null
+  },
+  "gender": "male",
+  "rank": null,
+  "roles": [
+   {
+    "title": "ambassador of North Korea to Kuwait",
+    "org_id": null,
+    "start": "2017",
+    "end": "2019-09",
+    "source_url": "https://www.wikidata.org/wiki/Q105084732"
+   }
+  ],
+  "family": [],
+  "health": [],
+  "physical": {
+   "height_cm": null,
+   "weight_kg": null
+  },
+  "sanctions": [],
+  "summary": "Ryu Hyun-woo is a former North Korean ambassador to Kuwait. He defected to South Korea in September 2019.",
+  "summary_source": "wikipedia",
+  "notable": [],
+  "tags": [
+   "defector",
+   "diplomat",
+   "economy"
+  ]
+ },
+ {
+  "id": "jo-song-gil",
+  "name_en": "Jo Song-gil",
+  "name_ko": "조성길",
+  "aliases": [
+   "Jo Song-gil"
+  ],
+  "wikidata": "Q105706553",
+  "wikipedia": "https://en.wikipedia.org/wiki/Jo_Song-gil",
+  "image": null,
+  "born": {
+   "date": "1975-03-09",
+   "place": "Pyongyang, North Korea"
+  },
+  "died": null,
+  "status": {
+   "value": "defected",
+   "as_of": "2018-11-01",
+   "source_url": null
+  },
+  "gender": "male",
+  "rank": null,
+  "roles": [
+   {
+    "title": "Acting Ambassador to Italy",
+    "org_id": "mfa",
+    "start": "2017-10-01",
+    "end": "2018-11-01",
+    "source_url": "https://en.wikipedia.org/wiki/Jo_Song-gil"
+   }
+  ],
+  "family": [],
+  "health": [],
+  "physical": {
+   "height_cm": null,
+   "weight_kg": null
+  },
+  "sanctions": [],
+  "summary": "Jo Song-gil is a former diplomat from North Korea who defected while serving as North Korea's acting ambassador to Italy.",
+  "summary_source": "wikipedia",
+  "notable": [],
+  "tags": [
+   "defector",
+   "diplomat"
+  ]
+ },
+ {
+  "id": "hwang-jang-yop",
+  "name_en": "Hwang Jang-yop",
+  "name_ko": "황장엽",
+  "aliases": [
+   "Hwang Jang-yop"
+  ],
+  "wikidata": "Q471135",
+  "wikipedia": "https://en.wikipedia.org/wiki/Hwang_Jang-yop",
+  "image": {
+   "src": "/img/people/hwang-jang-yop.jpg",
+   "credit": "Straitgate / Wikimedia Commons",
+   "license": "Public domain",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hwang_Jang_Yeop.jpg"
+  },
+  "born": {
+   "date": "1923-02-17",
+   "place": "Kangdong County"
+  },
+  "died": {
+   "date": "2010-10-10",
+   "place": "Seoul, South Korea",
+   "cause": "myocardial infarction"
+  },
+  "status": {
+   "value": "dead",
+   "as_of": "2010-10-10",
+   "source_url": "https://en.wikipedia.org/wiki/Hwang_Jang-yop"
+  },
+  "gender": "male",
+  "rank": null,
+  "roles": [
+   {
+    "title": "head teacher",
+    "org_id": null,
+    "start": null,
+    "end": null,
+    "source_url": "https://www.wikidata.org/wiki/Q471135"
+   },
+   {
+    "title": "member of the Supreme People's Assembly",
+    "org_id": null,
+    "start": null,
+    "end": null,
+    "source_url": "https://www.wikidata.org/wiki/Q471135"
+   }
+  ],
+  "family": [],
+  "health": [],
+  "physical": {
+   "height_cm": null,
+   "weight_kg": null
+  },
+  "sanctions": [],
+  "summary": "Hwang Jang-yop was a North Korean politician who defected to South Korea. He served as the Chairman of the Supreme People's Assembly from 1972 to 1983 and was largely responsible for crafting Juche, the state ideology of North Korea.",
+  "summary_source": "wikipedia",
+  "notable": [],
+  "tags": [
+   "defector",
+   "politburo"
+  ]
+ },
+ {
+  "id": "kang-myong-do",
+  "name_en": "Kang Myong-do",
+  "name_ko": "강명도",
+  "aliases": [
+   "Kang Myong-do"
+  ],
+  "wikidata": "Q16177323",
+  "wikipedia": null,
+  "image": null,
+  "born": {
+   "date": "1958-12-04",
+   "place": "Pyongyang, North Korea"
+  },
+  "died": null,
+  "status": {
+   "value": "defected",
+   "as_of": "1994-05-01",
+   "source_url": null
+  },
+  "gender": "male",
+  "rank": null,
+  "roles": [],
+  "family": [],
+  "health": [],
+  "physical": {
+   "height_cm": null,
+   "weight_kg": null
+  },
+  "sanctions": [],
+  "summary": "Son-in-law of former North Korean Premier Kang Song San, who defected to South Korea via China in May 1994. In a historic Seoul press conference, he provided the international community with early confirmation that North Korea had successfully developed nuclear weapons.",
+  "summary_source": "research",
+  "notable": [],
+  "tags": [
+   "defector",
+   "economy"
+  ]
+ },
+ {
+  "id": "hyon-song-wol",
+  "name_en": "Hyon Song Wol",
+  "name_ko": "현송월",
+  "aliases": [
+   "Hyon Song-wol"
+  ],
+  "wikidata": "Q3372295",
+  "wikipedia": "https://en.wikipedia.org/wiki/Hyon_Song-wol",
+  "image": {
+   "src": "/img/people/hyon-song-wol.jpg",
+   "credit": "Kim Jinseok (Official photographer of the Blue House, Republic of Korea), Blue House (the executive office of the Republic of Korea head of state, the President of the Republic of Korea) / Wikimedia Commons",
+   "license": "KOGL Type 1",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:North_Korea%27s_Samjiyon_Orchestra_director_Hyon_Song-wol.jpg"
+  },
+  "born": {
+   "date": "1977",
+   "place": "Pyongyang"
+  },
+  "died": null,
+  "status": {
+   "value": "alive",
+   "as_of": "2026-09-01",
+   "source_url": null
+  },
+  "gender": "female",
+  "rank": "Colonel",
+  "roles": [
+   {
+    "title": "Leader of the Moranbong Band / Samjiyon Orchestra",
+    "org_id": "wpk-pad",
+    "start": "2012-07-01",
+    "end": null,
+    "source_url": "https://en.wikipedia.org/wiki/Hyon_Song-wol"
+   },
+   {
+    "title": "Member of the WPK Central Committee",
+    "org_id": "wpk",
+    "start": "2017-10-07",
+    "end": null,
+    "source_url": "https://en.wikipedia.org/wiki/Hyon_Song-wol"
+   }
+  ],
+  "family": [],
+  "health": [],
+  "physical": {
+   "height_cm": null,
+   "weight_kg": null
+  },
+  "sanctions": [],
+  "summary": "Hyon Song-wol is a North Korean singer, band leader, and politician. She is the leader of the Moranbong Band and of the Samjiyon Orchestra.",
+  "summary_source": "wikipedia",
+  "notable": [],
+  "tags": [
+   "politburo"
+  ]
+ },
+ {
+  "id": "ri-chun-hee",
+  "name_en": "Ri Chun Hee",
+  "name_ko": "리춘희",
+  "aliases": [
+   "Ri Chun-hee",
+   "Pink Lady"
+  ],
+  "wikidata": "Q490736",
+  "wikipedia": "https://en.wikipedia.org/wiki/Ri_Chun-hee",
+  "image": null,
+  "born": {
+   "date": "1943-07-08",
+   "place": "Tongchon County"
+  },
+  "died": null,
+  "status": {
+   "value": "alive",
+   "as_of": "2026-09-01",
+   "source_url": null
+  },
+  "gender": "female",
+  "rank": null,
+  "roles": [
+   {
+    "title": "Chief Anchor, Korean Central Television (KCTV)",
+    "org_id": "wpk-pad",
+    "start": "1974-01-01",
+    "end": null,
+    "source_url": "https://en.wikipedia.org/wiki/Ri_Chun-hee"
+   }
+  ],
+  "family": [],
+  "health": [],
+  "physical": {
+   "height_cm": null,
+   "weight_kg": null
+  },
+  "sanctions": [],
+  "summary": "Ri Chun-hee is a North Korean news anchor for Korean Central Television. She served as the network's chief presenter for decades and is known for her highly emotional and demonstrative delivery style, which has been described as passionate, aggressive, and menacing.",
+  "summary_source": "wikipedia",
+  "notable": [],
+  "tags": [
+   "politburo"
+  ]
+ },
+ {
+  "id": "kim-song-hye",
+  "name_en": "Kim Song Hye",
+  "name_ko": "김성혜",
+  "aliases": [
+   "Kim Song-hye"
+  ],
+  "wikidata": "Q13451177",
+  "wikipedia": "https://en.wikipedia.org/wiki/Kim_Song-hye",
+  "image": {
+   "src": "/img/people/kim-song-hye.jpg",
+   "credit": "Shealeah Craighead / Wikimedia Commons",
+   "license": "Public domain",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kim_Song-hye.jpg"
+  },
+  "born": {
+   "date": "1965-07-17",
+   "place": "South Pyongan Province"
+  },
+  "died": null,
+  "status": {
+   "value": "unknown",
+   "as_of": null,
+   "source_url": null
+  },
+  "gender": "female",
+  "rank": null,
+  "roles": [
+   {
+    "title": "Head of Secretariat, Committee for the Peaceful Reunification of the Fatherland",
+    "org_id": "wpk",
+    "start": "2011-01-01",
+    "end": "2019-03-01",
+    "source_url": "https://en.wikipedia.org/wiki/Kim_Song-hye"
+   }
+  ],
+  "family": [],
+  "health": [],
+  "physical": {
+   "height_cm": null,
+   "weight_kg": null
+  },
+  "sanctions": [],
+  "summary": "Kim Song-hye is a North Korean politician. As the head of the Secretarial Bureau of the Committee for the Peaceful Reunification of the Fatherland, she has taken part in numerous negotiations between North and South Korea.",
+  "summary_source": "wikipedia",
+  "notable": [],
+  "tags": [
+   "diplomat",
+   "purged"
+  ]
+ },
+ {
+  "id": "kim-ki-nam",
+  "name_en": "Kim Ki Nam",
+  "name_ko": "김기남",
+  "aliases": [
+   "Kim Ki-nam",
+   "North Korea's Goebbels"
+  ],
+  "wikidata": "Q492835",
+  "wikipedia": "https://en.wikipedia.org/wiki/Kim_Ki-nam_(politician)",
+  "image": null,
+  "born": {
+   "date": "1929-08-28",
+   "place": "Kumya County"
+  },
+  "died": {
+   "date": "2024-05-07",
+   "place": "Pyongyang, North Korea",
+   "cause": "multiple organ dysfunction syndrome"
+  },
+  "status": {
+   "value": "dead",
+   "as_of": "2024-05-07",
+   "source_url": "https://en.wikipedia.org/wiki/Kim_Ki-nam_(politician)"
+  },
+  "gender": "male",
+  "rank": null,
+  "roles": [
+   {
+    "title": "Director of the Propaganda and Agitation Department of the Workers’ Party of Korea",
+    "org_id": null,
+    "start": "1989-04",
+    "end": "2017-10-09",
+    "source_url": "https://www.wikidata.org/wiki/Q492835"
+   },
+   {
+    "title": "member of the Supreme People's Assembly",
+    "org_id": null,
+    "start": null,
+    "end": null,
+    "source_url": "https://www.wikidata.org/wiki/Q492835"
+   }
+  ],
+  "family": [],
+  "health": [],
+  "physical": {
+   "height_cm": null,
+   "weight_kg": null
+  },
+  "sanctions": [
+   {
+    "list": "OFAC",
+    "id": "20126",
+    "date": null,
+    "source_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=20126"
+   }
+  ],
+  "summary": "Kim Ki-nam was a North Korean official. He served as Vice Chairman of the Workers' Party of Korea, and Director of the Propaganda and Agitation Department from 1989 until 2017, responsible for coordinating the country's press, media, fine arts, and publishing to support government policy.",
+  "summary_source": "wikipedia",
+  "notable": [],
+  "tags": [
+   "politburo"
+  ]
+ }
+]

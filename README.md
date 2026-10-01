@@ -1,6 +1,6 @@
 # Free North Korea
 
-**Live: https://free-north-korea.vercel.app**
+**Live: https://liberatenorthkorea.com**
 
 An open-source hub for understanding North Korea and helping the 26 million people living under its regime. Nothing
 like this existed: the maps, the military data, the archives and the organizations were all in separate places, and

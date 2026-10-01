@@ -1,0 +1,174 @@
+{
+ "scrapedAt": "2026-10-01T16:20:28.884Z",
+ "url": "https://www.google.com/maps/d/kml?mid=1uo5xseZysdNTIY-I-rTsXUWWYDu5UnGx&forcekml=1",
+ "camps": [
+  {
+   "name": "Camp 14, Kaechon\nSouth Pyongan Province",
+   "description": "\n\nKaechon, South Pyongan Province, 39.5717, 126.06215.\n\nEstimated # of Prisoners: 15,000\n\nType of prisoners: Political prisoners\n\nType of Labor: Coal mining, logging, farming, raising livestock, and manufacturing\n\nDetailed analysis of Camp 14, Kaechon can be found in this 2015 HRNK report: https://www.hrnk.org/uploads/pdfs/ASA_HRNK_Camp14_v7_highrezFINAL_11_30_15.pdf",
+   "lat": 39.5717058,
+   "lon": 126.0621556,
+   "style": "#icon-960-DB4436"
+  },
+  {
+   "name": "Camp 25, Chongjin\nNorth Hamgyong Province",
+   "description": "\n\nChongjin, North Hamgyong Province, 41.83299, 129.72106\n\nEstimated # of Prisoners: 5,000\n\nType of prisoners: Political prisoners\n\nType of Labor: Bicycle manufacturing\n\nDetailed analysis of Camp 25, Chongjin can be found in this 2015 HRNK report: https://www.hrnk.org/uploads/pdfs/ASA_HRNK_Camp25_Update2.pdf",
+   "lat": 41.8329909,
+   "lon": 129.7210693,
+   "style": "#icon-960-DB4436"
+  },
+  {
+   "name": "Camp 15, Yodok\nSouth Hamgyong Province",
+   "description": "\n\nYodok, South Hamgyong Province, 39.67427, 126.85104.\n\nEstimated # of Prisoners: Unknown\n\nType of prisoners: Political prisoners\n\nType of Labor: Mining, logging, agricultural production, animal husbandry, and\nmanufacturing\n\nDetailed analysis of Camp 15, Yodok can be found in this 2015 HRNK report: https://www.hrnk.org/uploads/pdfs/ASA_AnalysisReport_HRNK_Camp15_Final.pdf",
+   "lat": 39.6742705,
+   "lon": 126.8510413,
+   "style": "#icon-960-DB4436"
+  },
+  {
+   "name": "Camp 16, Hwasong\nNorth Hamgyong Province",
+   "description": "\n\nHwasong, North Hamgyong Province, 41.28696, 129.26839.\n\nEstimated # of Prisoners: 20,000\n\nType of prisoners: Political prisoners\n\nType of Labor: Mining, forestry, farming\n\nDetailed analysis of Camp 16, Hwasong can be found in this 2015 HRNK report: https://www.hrnk.org/uploads/pdfs/ASA_HRNK_Camp16_v8_fullres_FINAL_12_15_15.pdf",
+   "lat": 41.2869653,
+   "lon": 129.2683983,
+   "style": "#icon-960-DB4436"
+  },
+  {
+   "name": "Camp 22, Hoeryong\nNorth Hamgyong Province",
+   "description": "\n\nHoeryong, North Hamgyong Province, 42.54549, 129.91401.\n\nIt is believed that Camp 22, Hoeryong was closed around 2012. The fate and whereabouts of former prisoners at Camp 22, Hoeryong is unknown.\n\nEstimated # of Prisoners: Up to 50,000\n\nType of prisoners: Political prisoners\n\nType of Labor: Coal mining, farming, distilling\n\nDetailed analysis of Camp 22, Hoeryong can be found in this 2013 HRNK report: https://www.hrnk.org/uploads/pdfs/NKHiddenGulag_DavidHawk(2).pdf",
+   "lat": 42.5844976,
+   "lon": 129.8776233,
+   "style": "#icon-960-000000"
+  },
+  {
+   "name": "Camp 18, Bukchang\nSouth Pyongan Province",
+   "description": "\n\nBukchang, South Pyongan Province, 39.55964, 126.08596.\n\nIt is believed that by 2006, nearly all of Camp 18, Bukchang had been decommissioned as a prison camp. Recent analysis shows new activity in the area that may indicate the camp is operational again. \n\nEstimated # of Prisoners: 27,000\n\nType of prisoners: Political prisoners, yeon-jwa-je guilt-by-association prisoners\n\nType of Labor: Coal mining, brick making,\ncement making, glass production, distilling \n\nDetailed analysis of Camp 18, Bukchang including prisoner testimony can be found in this 2012 HRNK report: https://www.hrnk.org/uploads/pdfs/HRNK_HiddenGulag2_Web_5-18.pdf",
+   "lat": 39.5596476,
+   "lon": 126.085968,
+   "style": "#icon-960-000000"
+  },
+  {
+   "name": "Kyo-hwa-so No. 8, Yongdam\nKangwon Province",
+   "description": "\n\nYongdam, Kangwon Province, 39° 21’42.91”N 127° 15’53.02”E.\n\nEstimated # of Prisoners: 2,000\n\nType of prisoners: Unknown\n\nType of Labor: Unknown \n\nThis location has not been confirmed by HRNK prisoner testimony. Both NKDB and KINU mention Yongdam as an unnumbered kyo-hwa-so located in Chonnae-gun, Kangwon Province. The 2011 NKDB volume, Prisoners in North Korea Today, lists a “Prison No. 8” located in the Seungho area of Pyongang. There is no further information about its current state of operation.",
+   "lat": 39.3613796,
+   "lon": 127.2649381,
+   "style": "#icon-962-CCCCCC"
+  },
+  {
+   "name": "Kyo-hwa-so No. 11, Chung-san\nSouth Pyongan Province",
+   "description": "\n\nChung-san, South Pyongan Province, 39° 4’40.35”N 125° 26’15.58”E. \n\nKyo-hwa-so No. 11, Chung-san is also transliterated as Chonsan, Jungsan, and Jeungsan.\n\nEstimated # of Prisoners: Over 500\n\nType of prisoners: Men, women, border crossers, political prisoners\n\nType of Labor: Farming, construction, manufacturing \n\nDetailed analysis of Kyo-hwa-so No. 11, Chung-san can be found in this 2017 HRNK report: https://www.hrnk.org/uploads/pdfs/Hawk_The_Parallel_Gulag_Web.pdf",
+   "lat": 39.142294,
+   "lon": 125.3218811,
+   "style": "#icon-962-CCCCCC"
+  },
+  {
+   "name": "Kyo-hwa-so No. 7, Kanggye\nChagang Province",
+   "description": "\n\nKanggye City Prison, Kanggye, Changang Province, 40° 57’15.56”N 126° 34’4.31”E. \n\nKyo-hwa-so No. 7, Kanggye is also transliterated as Kangkye and Ganggye.\n\nEstimated # of Prisoners: Unknown\n\nType of prisoners: Unknown\n\nType of Labor: Unknown \n\nThis location has not been confirmed by HRNK prisoner testimony. It has been listed in NKDB and KINU reports. There is no further information about its current state of operation.",
+   "lat": 40.9542659,
+   "lon": 126.5677088,
+   "style": "#icon-962-CCCCCC"
+  },
+  {
+   "name": "Kyo-hwa-so No. 2, Dongrim\nNorth Pyongan Province",
+   "description": "\n\nSowol-ri, Dongrim. North Pyongan Province, 39° 52’39.30”N 124° 43’46.58”E.\n\nEstimated # of Prisoners: Unknown\n\nType of prisoners: Unknown\n\nType of Labor: Unknown \n\nThis location has not been confirmed by HRNK prisoner testimony. It has been listed in NKDB reports in 2011 and 2016, as well as KINU reports in 2014 and 2016. There is no further information about its current state of operation.\n\nA second location associated with this camp known as Obong Workers' District is located at 39° 52’5.42”N 124° 44’59.35”E.\n\n",
+   "lat": 39.8775221,
+   "lon": 124.7295749,
+   "style": "#icon-962-CCCCCC"
+  },
+  {
+   "name": "Kyo-hwa-so No. 88, Wonsan\nKangwon Province",
+   "description": "\n\nSokhyol-ri, Wonsan, Kangwon Province, 39° 9’26.46”N 127° 21’51.76”E.\n\nEstimated # of Prisoners: Unknown\n\nType of prisoners: Unknown\n\nType of Labor: Unknown \n\nThis location has not been confirmed by HRNK prisoner testimony. It has been previously listed in NKDB and KINU reports. There is no further information about its current state of operation.\n\nA second location associated with this camp is located in Chuksan-ri at 39° 11’57.43”N 127° 20’45.07”E\n\n",
+   "lat": 39.1572112,
+   "lon": 127.3643518,
+   "style": "#icon-962-CCCCCC"
+  },
+  {
+   "name": "Kyo-hwa-so No. 9, Hamhung\nSouth Hamgyong Province",
+   "description": "\n\nHamhung City Prison, Hamhung, South Hamgyong Province, 39° 57’27.67”N 127° 33’47.40”E. \n\nAlso transliterated as Hamheung, the 2011 NKDB report locates Kyo-hwa-so No. 9, Hamhung Men’s Prison at Hoeyang, Hoesang Area, Hamhung City, while Hamhung Women’s Prison is located at Songwon Village, which is also spelled as Sungwon, Hoesang Area, Hamhung City.\n\nEstimated # of Prisoners: Over 500\n\nType of prisoners: Men, women, political prisoners, forcibly repatriated women\n\nType of Labor: Sewing, farming, gold mining \n\nA second location associated with this camp known as Hamhung Women's Prison is located in Sungwon-ri at 40° 3’29.86”N 127° 40’34.29”E.\n\n",
+   "lat": 39.9576574,
+   "lon": 127.5631502,
+   "style": "#icon-962-CCCCCC"
+  },
+  {
+   "name": "Sunchon Kyo-hwa-so\nSouth Pyongan Province",
+   "description": "\n\nUngbong-dong, South Pyongan Province, 39° 26’9.54”N 125° 47’44.43”E.\n\nSunchon Kyo-hwa-so is sometimes known as Sukchon Kyo-hwa-so. \n\nEstimated # of Prisoners: 400\n\nType of prisoners: Unknown\n\nType of Labor: Gold mining \n\nThis location has not been confirmed by HRNK prisoner testimony. It has been listed in NKDB and KINU reports. There is no further information about its current state of operation.",
+   "lat": 39.4359833333333,
+   "lon": 125.795675,
+   "style": "#icon-962-CCCCCC"
+  },
+  {
+   "name": "Kyo-hwa-so No. 8, Sungho-ri\nPyongyang",
+   "description": "\n\nSungho-ri, Pyongyang, 39° 0’5.25”N 126° 3’28.24”E.\n\nEstimated # of Prisoners: 2,000\n\nType of prisoners: Unknown\n\nType of Labor: Coal mining\n\nThis location has not been confirmed by HRNK prisoner testimony. It has been previously listed in NKDB and KINU reports. There is no further information about its current state of operation.\n\nDetailed analysis of Kyo-hwa-so No. 8, Sungho-ri can be found in this 2019 HRNK report: https://www.hrnk.org/uploads/pdfs/Bermudez_Pokchongni_FINALFINAL_Web.pdf",
+   "lat": 39.0014583333333,
+   "lon": 126.057844444444,
+   "style": "#icon-962-CCCCCC"
+  },
+  {
+   "name": "Facility at I-gol\nSouth Hamgyong Province",
+   "description": "\n\nI-gol, South Hamgyong Province, 40° 9’51.87”N 128° 30’43.21”E.\n\nEstimated # of Prisoners: Unknown\n\nType of prisoners: Unknown\n\nType of Labor: Unknown \n\nThis location has not been confirmed by HRNK prisoner testimony or listed by NGO reports. However, the satellite images share the appearance of other well documented\nkyo-hwa-so. There is no further information about its current state of operation.",
+   "lat": 40.1644083333333,
+   "lon": 128.512002777778,
+   "style": "#icon-962-CCCCCC"
+  },
+  {
+   "name": "Facility at Udan\nNorth Hamgyong Province",
+   "description": "\n\nUdan, North Hamgyong Province, 40° 50’57.25”N 129° 34’50.45”E.\n\nEstimated # of Prisoners: Unknown\n\nType of prisoners: Unknown\n\nType of Labor: Unknown\n\nThis location has not been confirmed by HRNK prisoner testimony or listed by NGO reports. However, the satellite images share the appearance of other well documented\nkyo-hwa-so. There is no further information about its current state of operation.",
+   "lat": 40.8492361111111,
+   "lon": 129.580680555556,
+   "style": "#icon-962-CCCCCC"
+  },
+  {
+   "name": "Ch’oma-bong Restricted Area\nSouth Pyongan Province",
+   "description": "\n\nCh’oma-bong/Dongrim-ri, South Pyongan Province, 39.63141, 125.99934\n\nEstimated # of Prisoners: Unknown\n\nType of prisoners: Unknown\n\nType of Labor: Mining, agricultural production\n\nDetailed analysis of Ch’oma-bong Restricted Area can be found in this 2016 HRNK report: https://www.hrnk.org/uploads/pdfs/ASA_HRNK_Chmbg_201603_FINAL.pdf\n\n",
+   "lat": 39.631412,
+   "lon": 125.999343,
+   "style": "#icon-962-CCCCCC"
+  },
+  {
+   "name": "Kyo-hwa-so No. 3, Sinuiju\nNorth Pyongan Province",
+   "description": "\n\nTosong-ri, Sinuiju, North Pyongan Province, 40° 3’43.00”N 124° 24’34.65”E.\n\nEstimated # of Prisoners: 2,500\n\nType of prisoners: Men, criminal offenders, political prisoners, other (uknown)\n\nType of Labor: Rock and gold mining, prison uniform manufacturing \n\nThis location is not yet confirmed. It has been listed in NKDB and KINU reports. There is no further information about its current state of operation.",
+   "lat": 40.0619444444444,
+   "lon": 124.409625,
+   "style": "#icon-962-CCCCCC"
+  },
+  {
+   "name": "Kyo-hwa-so No. 1, Kaechon\nSouth Pyongan Province",
+   "description": "\n\nKaechon, South Pyongan Province, 39° 42’34.72”E, 125° 55’24.78”E.\n\nKyo-hwa-so No. 1, Kaechon is also transliterated as Gaechon, which is located in Yaksu-dong, Kaechon City and thought to be one of the oldest kyo-hwa-so prison camps. \n\nEstimated # of Prisoners: 4,000 to 6,000 \n\nType of prisoners: Men, women, political prisoners, border crossers, genuine criminal offenders, Japanese-Koreans\n\nType of Labor: Textile production, Leather manufacturing\n\nDetailed analysis of Kyo-hwa-so No. 1, Kaechon can be found in this 2020 HRNK report: https://www.hrnk.org/uploads/pdfs/Bermudez_Kaechon_FINAL.pdf\n\n",
+   "lat": 39.7083752,
+   "lon": 125.9230614,
+   "style": "#icon-959-F8971B"
+  },
+  {
+   "name": "Kyo-hwa-so No. 4, Kangdong\nPyongyang City",
+   "description": "\n\nSamdung-ri, Kangdong-kun, South Pyongan Province,  39° 0’31.24”N 126° 9’12.42”E.\n\nAlso transliterated as Gangdong, Kyo-hwa-so No. 4, Kangdong is located in Chael-kol on the eastern outskirts of Pyongyang close to South Pyongan Province. \n\nEstimated # of Prisoners: 1,000 to 4,000\n\nType of prisoners: Men, civilian and military offenders, political prisoners\n\nType of Labor: Limestone and cement production\n\nDetailed analysis of Kyo-hwa-so No. 4, Kangdong can be found in this 2019 HRNK report: https://www.hrnk.org/uploads/pdfs/Bermudez_Kangdong_FINALFINAL.pdf",
+   "lat": 39.0089107,
+   "lon": 126.1529938,
+   "style": "#icon-959-F8971B"
+  },
+  {
+   "name": "Kyo-hwa-so No. 12, Jongo-ri\nNorth Hamgyong Province",
+   "description": "\n\nJongo-ri, North Hamgyong Province, 42° 12’34.00”N 129° 45’18.14”E.\n\nKyo-hwa-so No. 12, Jongo-ri is also transliterated as Chongo-ri.\n\nEstimated # of Prisoners: 2,300 to 2,500\n\nType of prisoners: Men, women, border crossers, political prisoners, forcibly repatriated women\n\nType of Labor: Copper and iron mining, farming, brick making, wig and eyelash production\n\nDetailed analysis of Kyo-hwa-so No. 12, Jongo-ri can be found in this 2016 HRNK report: https://www.hrnk.org/uploads/pdfs/ASA_HRNK_Camp12_201608_v10_LR.pdf",
+   "lat": 42.2086005,
+   "lon": 129.7555538,
+   "style": "#icon-959-F8971B"
+  },
+  {
+   "name": "Kyo-hwa-so No. 6, Sariwon\nNorth Hwanghae Province",
+   "description": "\n\nSariwon City Prison, Sariwon, North Hwanghae Province, 38° 30’45.41”N 125° 46’26.59”E.\n\nEstimated # of Prisoners: 3,000 to 4,000\n\nType of prisoners: Men, political prisoners\n\nType of Labor: Clothing and Shoe factory, farming, \"model detention facility\" \n\nKyo-hwa-so No. 6, Sariwon was one of the earliest North Korean prison camps to become widely known about outside of North Korea because of the involvement of Amnesty International in the release of Ali Lameda and Jacques Sedillot. They were members in good standing in the Venezuelan and French, respectively, communist parties. In 1967, both were recruited to Pyongyang by the North Korean Foreign Ministry to translate the writings of Kim Il-sung into Spanish and French. Lameda was a poet and author whose writings were well known throughout Latin America.\n\nA second location associated with this camp, a potential 'model detention facility' is located in Osu-ri at 38° 29’0.94”N 125° 49’3.31”E.\n\nDetailed analysis of Kyo-hwa-so No. 6, Sariwon can be found in this 2017 HRNK report: https://www.hrnk.org/uploads/pdfs/Hawk_The_Parallel_Gulag_Web.pdf\n\n",
+   "lat": 38.5126138888889,
+   "lon": 125.774052777778,
+   "style": "#icon-959-F8971B"
+  },
+  {
+   "name": "Kyo-hwa-so No. 22, Oro\nSouth Hamgyong Province",
+   "description": "\n\nTongjung-ri, Oro, South Hamgyong Province, 40° 2’35.88”N 127° 31’24.94”E.\n\nIt is believed that Kyo-hwa-so No. 22, Oro was closed around 2008. \n\nEstimated # of Prisoners: 1,100\n\nType of prisoners: Men, women, political prisoners, short term prisoners\n\nType of Labor:  Construction\n\nThis location is not yet confirmed. It has been listed in NKDB and KINU reports as well as identified in prisoner testimony. There is no further information about its current state of operation.\n\nA second location associated with this camp is located in Pungho-ri at 40° 1’19.71”N 127° 25’55.91”E.\n\nA third location associated with this camp is located in Sangtong-ri at 40° 5’35.68”N 127° 21’26.45”E.\n\n\n\n",
+   "lat": 40.0433,
+   "lon": 127.523594444444,
+   "style": "#icon-959-000000"
+  },
+  {
+   "name": "Kyo-hwa-so No. 77, Danchon\nSouth Hamgyong Province",
+   "description": "\n\nHangguil-dong, Danchon, South Hamgyong Province, 40° 26’15.36”N 128° 53’57.06”E.\n\nIt is believed that Kyo-hwa-so No. 77, Danchon was closed around 1997. However, the locations identified here appear to be in operation.\n\nEstimated # of Prisoners: Uknown\n\nType of prisoners: Men, political prisoners, genuine criminal offenders, border crossers\n\nType of Labor: Gold mining\n\nThis location is not yet confirmed. It has been listed in NKDB reports as well as identified in prisoner testimony. There is no further information about its current state of operation.\n\nA second location associated with this camp is located in Sangjang at 40° 24’57.26”N 128° 53’46.11”E.\n\n",
+   "lat": 40.4376,
+   "lon": 128.899183333333,
+   "style": "#icon-959-000000"
+  }
+ ]
+}

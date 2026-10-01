@@ -1,0 +1,20 @@
+{
+  "postsPoolStatus": 400,
+  "postsPoolHeaders": {
+    "cache-control": "public, max-age=0, must-revalidate",
+    "content-length": "157",
+    "content-security-policy": "style-src 'self' 'unsafe-inline' https:; script-src 'self' https: 'unsafe-inline' 'unsafe-eval'; worker-src 'self' blob:; img-src 'self' data: https: blob:; default-src 'self' data: https: blob:",
+    "content-type": "application/json",
+    "date": "Thu, 01 Oct 2026 15:26:33 GMT",
+    "server": "Vercel",
+    "strict-transport-security": "max-age=63072000",
+    "x-content-type-options": "nosniff",
+    "x-frame-options": "SAMEORIGIN",
+    "x-vercel-cache": "MISS",
+    "x-vercel-id": "fra1::sin1::4pq2b-1790868393682-5cfa81595c11",
+    "x-xss-protection": "1; mode=block"
+  },
+  "postsPoolSample": {
+    "error": "✖ Invalid input: expected array, received undefined\n  → at keys\n✖ Invalid input: expected boolean, received undefined\n  → at creatable"
+  }
+}

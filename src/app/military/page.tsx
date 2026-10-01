@@ -48,11 +48,11 @@ export default function Military() {
 
       <h2>Nuclear weapons</h2>
       <p>
-        North Korea tested nuclear devices six times between 2006 and 2017, all at <Link href="/atlas#place=punggye-ri">Punggye-ri</Link>. The last
+        North Korea tested nuclear devices six times between 2006 and 2017, all at <Link href="/map#sites=punggye-ri">Punggye-ri</Link>. The last
         one, in September 2017, was likely a thermonuclear (hydrogen) bomb. SIPRI estimates that as of January 2026 it had about 60 assembled
         warheads (up from 50 a year earlier) and enough fissile material for about 90. Plutonium comes from the reactors at{' '}
-        <Link href="/atlas#place=yongbyon">Yongbyon</Link>, and enriched uranium from Yongbyon and the covert{' '}
-        <Link href="/atlas#place=kangson">Kangson</Link> site. Kim Jong Un has called for "exponential" growth of the arsenal, and in 2023 nuclear
+        <Link href="/map#sites=yongbyon">Yongbyon</Link>, and enriched uranium from Yongbyon and the covert{' '}
+        <Link href="/map#sites=kangson">Kangson</Link> site. Kim Jong Un has called for "exponential" growth of the arsenal, and in 2023 nuclear
         status was written into the constitution.
       </p>
 

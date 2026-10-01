@@ -1,0 +1,706 @@
+{
+  "requests": [
+    {
+      "url": "https://visualatlas.org/",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/en",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/assets/LoadingBar.bDvFhYri.css",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/assets/0.BKa0ln6V.css",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/assets/Locale.BrdhWzLs.css",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/assets/Map.BCPspY9I.css",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/assets/Spinner.CCkJzRwX.css",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/assets/10.N667_v7_.css",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/assets/AccordionInner.CdCRGCwL.css",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/assets/Plain.BpE5JNqd.css",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/assets/ModalConfig.BcaeQmHx.css",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/assets/8.BviY4A_6.css",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/assets/9.DZjT15AN.css",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/assets/38.B4gn3zOF.css",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/entry/start.CrQpNGdR.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/BA6At-4s.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/DITACMkF.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/LIbm2vct.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/entry/app.BTC5f1tS.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/BapAUJpM.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/HJk7GY2s.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/DsnmJJEf.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/DvhC3Ij4.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/dU15pXxJ.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/B9wCEMtJ.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/Dgew0KUe.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/DX2LNmEp.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/nodes/0.BUbJ20_p.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/BJBStUaZ.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/BO0q7RZu.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/DRF0lTRb.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/CDFpXTLg.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/CjUfKJbp.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/BJL5Sx8W.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/DXARQzWB.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/BqfIN9CA.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/BGJFPrOl.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/Bg2HwO_5.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/DpYZW27z.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/CWI0e2_E.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/RwLDeryT.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/DWapERFb.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/C0vMq_gW.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/COvgCcm6.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/Zx1K6Qxo.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/B-PMMpDJ.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/CfNN2Hsu.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/usWo_kWW.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/BgaQaFjz.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/DLllZuMN.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/l5Ykg3O7.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/aZFuUPC0.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/CiqURDMe.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/BS9v2bZZ.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/DKP1yn1y.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/tuAllQ_h.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/VGMlGbBa.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/DN-NHfN5.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/B6bVsUR_.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/BwH5-Lq-.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/D1gsBa_2.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/BXZlH2ht.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/BCSgXDlq.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/CsjHsi2o.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/BA2VLnQ6.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/BvBCPNTc.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/B6ZE5FsC.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/MgmxK05c.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/DGdo-xRg.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/D-usTeFS.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/DwI88m7_.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/COUPJ3qD.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/EDnZjKw8.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/8LXlPhDg.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/C3IA0Y2W.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/BzlmC7Rn.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/CrW3My0g.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/nodes/8.Bz3Z3AgF.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/eIEsCOG9.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/CgmEzw0j.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/BAiPdBWo.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/C_jKtH5K.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/CwGkJcR2.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/CzKrTeA9.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/BKSttNPx.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/Iwy6pSme.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/DZdaWq8t.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/BknOuSal.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/sKgm5o2t.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/QLFgb0B9.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/CnBRltuW.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/DRJ0qBR3.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/B4mgbXZU.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/DNteC5ZB.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/YegJVbOm.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/DQ2p8w-e.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/BPD0ihRv.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/CGSSK7pQ.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/_3BJ0fkd.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/D7BRcqKz.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/DCyoNndy.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/AADHZNgH.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/D3pRAuxw.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/DkxJftVC.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/CZIz1UdI.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/BIRYNZ14.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/CPsDT35K.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/BM857H9b.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/BCpQYBRf.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/DIMKFCae.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/BXK87ti2.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/kkuGuPzA.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/B5YlvyJs.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/CdY1xlh-.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/nodes/9.W_Nxali6.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/nodes/38.DEttWc0F.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://cdn.visualatlas.org/assets/bg.mp3",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/nodes/1.CCgMQayN.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/CIXcIZmx.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/edXutfen.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://cdn.visualatlas.org/assets/bg.mp4",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/en/api/posts/pool?order=title&asc=true",
+      "method": "POST",
+      "postData": "{\"keys\":[\"glossary\"],\"creatable\":false,\"admin\":false}"
+    },
+    {
+      "url": "blob:https://www.visualatlas.org/a5465509-da6b-46d4-9fd1-efdc565426c4",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/favicon.svg?v=mupomcvb",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/_app/immutable/chunks/13FPTxtl.js",
+      "method": "GET",
+      "postData": null
+    },
+    {
+      "url": "https://www.visualatlas.org/favicon.png?v=mupomcvb",
+      "method": "GET",
+      "postData": null
+    }
+  ],
+  "responses": [
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap",
+      "status": 200,
+      "headers": {
+        "content-encoding": "gzip",
+        "x-content-type-options": "nosniff",
+        "expires": "Thu, 01 Oct 2026 15:25:57 GMT",
+        "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+        "date": "Thu, 01 Oct 2026 15:25:57 GMT",
+        "content-type": "text/css; charset=utf-8",
+        "vary": "Sec-Fetch-Dest, Sec-Fetch-Mode, Sec-Fetch-Site",
+        "last-modified": "Thu, 01 Oct 2026 15:21:23 GMT",
+        "x-frame-options": "SAMEORIGIN",
+        "strict-transport-security": "max-age=31536000",
+        "link": "<https://fonts.gstatic.com>; rel=preconnect; crossorigin",
+        "cache-control": "private, max-age=86400, stale-while-revalidate=604800",
+        "timing-allow-origin": "*",
+        "cross-origin-opener-policy": "same-origin-allow-popups",
+        "cross-origin-resource-policy": "cross-origin",
+        "access-control-allow-origin": "*",
+        "x-xss-protection": "0",
+        "server": "ESF"
+      },
+      "bodySnippet": "/* latin-ext */\n@font-face {\n  font-family: 'Figtree';\n  font-style: italic;\n  font-weight: 300 900;\n  font-display: swap;\n  src: url(https://fonts.gstatic.com/s/figtree/v9/_Xmu-HUzqDCFdgfMm4GNAa5o7Cqcs8-2.woff2) format('woff2');\n  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;\n}\n/* latin */\n@font-face {\n  font-family: 'Figtree';\n  font-style: italic;\n  font-weight: 300 900;\n  font-display: swap;\n  src: url(https://fonts.gstatic.com/s/figtree/v9/_Xmu-HUzqDCFdgfMm4GND65o7Cqcsw.woff2) format('woff2');\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;\n}\n/* latin-ext */\n@font-face {\n  font-family: 'Figtree';\n  font-style: normal;\n  font-weight: 300 900;\n  font-display: swap;\n  src: url(https:",
+      "fullBodyLength": 1715
+    },
+    {
+      "url": "https://www.visualatlas.org/en/api/posts/pool?order=title&asc=true",
+      "status": 200,
+      "headers": {
+        "strict-transport-security": "max-age=63072000",
+        "content-security-policy": "style-src 'self' 'unsafe-inline' https:; script-src 'self' https: 'unsafe-inline' 'unsafe-eval'; worker-src 'self' blob:; img-src 'self' data: https: blob:; default-src 'self' data: https: blob:",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "content-encoding": "br",
+        "x-vercel-cache": "MISS",
+        "x-content-type-options": "nosniff",
+        "date": "Thu, 01 Oct 2026 15:25:57 GMT",
+        "x-xss-protection": "1; mode=block",
+        "content-type": "application/json",
+        "server": "Vercel",
+        "x-vercel-id": "fra1::sin1::p82dm-1790868357795-4e13dfd5ebe4",
+        "x-frame-options": "SAMEORIGIN"
+      },
+      "bodySnippet": "{\"data\":{\"hash\":\"54051a814f442ed2\",\"schema\":{\"keys\":[\"glossary\"],\"path\":\"/glossary\",\"pageSize\":6,\"fields\":{\"title\":{\"type\":\"text\",\"label\":\"Title\",\"lang\":true,\"seo\":\"title\",\"app\":{\"list\":{\"visible\":true}},\"admin\":{\"list\":{\"visible\":true,\"asc\":true,\"grow\":true}}},\"content\":{\"type\":\"rich\",\"label\":\"Content\",\"lang\":true,\"app\":{\"list\":{\"visible\":true}}},\"reference\":{\"type\":\"rich\",\"label\":\"Reference\",\"lang\":true,\"app\":{\"list\":{\"visible\":true}}},\"indexNumber\":{\"type\":\"objets\",\"objets\":{\"key\":\"glossary-index-number\"},\"label\":\"Number\",\"app\":{\"list\":{\"visible\":true}},\"admin\":{\"list\":{\"visible\":true,\"hideOverflow\":true},\"update\":{\"group\":\"aside\"}}},\"indexKo\":{\"type\":\"objets\",\"objets\":{\"key\":\"glossary-index-ko\"},\"label\":\"Choseung\",\"app\":{\"list\":{\"visible\":true}},\"admin\":{\"list\":{\"visible\":true,\"hideOverflow\":true},\"update\":{\"group\":\"aside\"}}},\"indexEn\":{\"type\":\"objets\",\"objets\":{\"key\":\"glossary-index-en\"},\"label\":\"Alphabet\",\"app\":{\"list\":{\"visible\":true}},\"admin\":{\"list\":{\"visible\":true,\"hideOverfl",
+      "fullBodyLength": 132316
+    }
+  ],
+  "title": "VISUAL ATLAS",
+  "currentUrl": "https://www.visualatlas.org/en",
+  "cookies": [
+    {
+      "name": "PARAGLIDE_LOCALE",
+      "value": "en",
+      "domain": "www.visualatlas.org",
+      "path": "/",
+      "expires": 1825428357.421444,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    }
+  ]
+}

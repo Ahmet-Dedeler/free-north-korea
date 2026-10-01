@@ -1,0 +1,62 @@
+{
+  "_doc": "Hand-checked claims merged into data/entities/people.json by scripts/build-entities.ts. They still pass the same source check (page must load and mention the person).",
+  "kim-jong-un": {
+    "health": [
+      {
+        "claim": "South Korea's NIS told lawmakers he is 'extremely obese', weighing over 140 kg and at high risk of cardiovascular disease, though he shows no difficulty with physical activity.",
+        "source_name": "The Japan Times (NIS briefing)",
+        "source_url": "https://japantimes.co.jp/news/2026/09/30/asia-pacific/north-korea-leader-obese-seoul-spy",
+        "date": "2026-09-30",
+        "confidence": "reported"
+      },
+      {
+        "claim": "NIS: about 140 kg, with signs of high blood pressure and diabetes since his early 30s; North Korean officials were looking abroad for new medicines to treat him.",
+        "source_name": "CBS News (NIS briefing)",
+        "source_url": "https://cbsnews.com/news/kim-jong-un-north-korea-weight-health-problems-medicine-south-korea",
+        "date": "2024-07-29",
+        "confidence": "reported"
+      },
+      {
+        "claim": "NIS: estimated at about 140 kg with significant sleep disorders.",
+        "source_name": "Inquirer / AFP (NIS briefing)",
+        "source_url": "https://newsinfo.inquirer.net/1777829/kim-jong-un-estimated-to-weigh-about-140-kg-with-significant-sleep-disorders-spy-agency/amp",
+        "date": "2023-05",
+        "confidence": "reported"
+      },
+      {
+        "claim": "NIS: lost about 20 kg in 2021 but showed no signs of serious illness.",
+        "source_name": "NBC News",
+        "source_url": "https://www.nbcnews.com/news/world/north-korea-s-kim-jong-un-has-lost-weight-remains-n1282691",
+        "date": "2021-07",
+        "confidence": "reported"
+      }
+    ],
+    "physical": {
+      "weight_kg": {
+        "value": 140,
+        "source_name": "NIS via The Japan Times",
+        "source_url": "https://japantimes.co.jp/news/2026/09/30/asia-pacific/north-korea-leader-obese-seoul-spy",
+        "date": "2026-09-30",
+        "confidence": "reported"
+      }
+    }
+  },
+  "kim-jong-il": {
+    "health": [
+      {
+        "claim": "Believed to have suffered a stroke in 2008, after which he disappeared from public view for months. Also believed to have had diabetes and heart disease.",
+        "source_name": "CNN",
+        "source_url": "https://www.cnn.com/2011/12/19/health/kim-health-mystery",
+        "date": "2011-12-19",
+        "confidence": "reported"
+      },
+      {
+        "claim": "State media said he died on 17 December 2011 of an acute myocardial infarction (heart attack) on a train trip.",
+        "source_name": "Wikipedia: Death and state funeral of Kim Jong Il",
+        "source_url": "https://en.wikipedia.org/wiki/Death_and_state_funeral_of_Kim_Jong_Il",
+        "date": "2011-12-19",
+        "confidence": "confirmed"
+      }
+    ]
+  }
+}

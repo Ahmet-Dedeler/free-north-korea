@@ -1,0 +1,477 @@
+[
+  {
+    "style": "transform: translate(-50%, -50%) translate(475.259px, 562.479px) rotateX(0deg) rotateZ(0deg); opacity: 1;",
+    "text": "Police Holding Camp, Jungsan County, South Pyongan Province (Unconfirmed)\n2",
+    "title": "",
+    "classList": [
+      "maplibregl-marker",
+      "maplibregl-marker-anchor-center"
+    ],
+    "innerHTML": "<a href=\"/en/incidents?location=pyeongannamdo-jeungsangun-jibgyeolso-cujeong\"><div class=\"circle-marker\" style=\"--strength: 0.0056657223796034; --dela"
+  },
+  {
+    "style": "--strength: 0.0056657223796034; --delay: 0;",
+    "text": "",
+    "title": "",
+    "classList": [
+      "circle-marker"
+    ],
+    "innerHTML": ""
+  },
+  {
+    "style": "transform: translate(-50%, -50%) translate(573.069px, 272.65px) rotateX(0deg) rotateZ(0deg); opacity: 1;",
+    "text": "MSS, Gunha-ri, Manpo, Chagang Province (Unconfirmed)\n5",
+    "title": "",
+    "classList": [
+      "maplibregl-marker",
+      "maplibregl-marker-anchor-center"
+    ],
+    "innerHTML": "<a href=\"/en/incidents?location=jagangdo-manposi-si-bowibu-cujeong\"><div class=\"circle-marker\" style=\"--strength: 0.014164305949008499; --delay: 0.000"
+  },
+  {
+    "style": "--strength: 0.014164305949008499; --delay: 0.0000057233121952336254;",
+    "text": "",
+    "title": "",
+    "classList": [
+      "circle-marker"
+    ],
+    "innerHTML": ""
+  },
+  {
+    "style": "transform: translate(-50%, -50%) translate(518.417px, 578.029px) rotateX(0deg) rotateZ(0deg); opacity: 1;",
+    "text": "Mujin Stream, Songyo District, Pyongyang City\n2",
+    "title": "",
+    "classList": [
+      "maplibregl-marker",
+      "maplibregl-marker-anchor-center"
+    ],
+    "innerHTML": "<a href=\"/en/incidents?location=pyeongyangsi-seongyoguyeog-mujinceon\"><div class=\"circle-marker\" style=\"--strength: 0.0056657223796034; --delay: 0.000"
+  },
+  {
+    "style": "--strength: 0.0056657223796034; --delay: 0.000022893248780934502;",
+    "text": "",
+    "title": "",
+    "classList": [
+      "circle-marker"
+    ],
+    "innerHTML": ""
+  },
+  {
+    "style": "transform: translate(-50%, -50%) translate(976.064px, 9.70646px) rotateX(0deg) rotateZ(0deg); opacity: 1;",
+    "text": "A tobacco farm , Onsong Country, North Hamgyong Province\n1",
+    "title": "",
+    "classList": [
+      "maplibregl-marker",
+      "maplibregl-marker-anchor-center"
+    ],
+    "innerHTML": "<a href=\"/en/incidents?location=hamgyeongbugdo-onseonggun-dambaenongjang\"><div class=\"circle-marker\" style=\"--strength: 0.0028328611898017; --delay: 0"
+  },
+  {
+    "style": "--strength: 0.0028328611898017; --delay: 0.00005150980975710263;",
+    "text": "",
+    "title": "",
+    "classList": [
+      "circle-marker"
+    ],
+    "innerHTML": ""
+  },
+  {
+    "style": "transform: translate(-50%, -50%) translate(932.68px, 208.334px) rotateX(0deg) rotateZ(0deg); opacity: 1;",
+    "text": "County MPS, Kyongsong County, North Hamgyong Province\n1",
+    "title": "",
+    "classList": [
+      "maplibregl-marker",
+      "maplibregl-marker-anchor-center"
+    ],
+    "innerHTML": "<a href=\"/en/incidents?location=hamgyeongbugdo-gyeongseonggun-gun-boanseo\"><div class=\"circle-marker\" style=\"--strength: 0.0028328611898017; --delay: "
+  },
+  {
+    "style": "--strength: 0.0028328611898017; --delay: 0.00009157299512373801;",
+    "text": "",
+    "title": "",
+    "classList": [
+      "circle-marker"
+    ],
+    "innerHTML": ""
+  },
+  {
+    "style": "transform: translate(-50%, -50%) translate(869.285px, 163.214px) rotateX(0deg) rotateZ(0deg); opacity: 1;",
+    "text": "Post Office, Yonsa County, North Hamgyong Province\n1",
+    "title": "",
+    "classList": [
+      "maplibregl-marker",
+      "maplibregl-marker-anchor-center"
+    ],
+    "innerHTML": "<a href=\"/en/incidents?location=hamgyeongbugdo-yeonsagun-cesinso\"><div class=\"circle-marker\" style=\"--strength: 0.0028328611898017; --delay: 0.0001430"
+  },
+  {
+    "style": "--strength: 0.0028328611898017; --delay: 0.00014308280488084063;",
+    "text": "",
+    "title": "",
+    "classList": [
+      "circle-marker"
+    ],
+    "innerHTML": ""
+  },
+  {
+    "style": "transform: translate(-50%, -50%) translate(950.843px, 87.131px) rotateX(0deg) rotateZ(0deg); opacity: 1;",
+    "text": "The victims' house, Sanop-dong, Hoeryong City, North Hamgyong Province (Unconfirmed)\n7",
+    "title": "",
+    "classList": [
+      "maplibregl-marker",
+      "maplibregl-marker-anchor-center"
+    ],
+    "innerHTML": "<a href=\"/en/incidents?location=hamgyeongbugdo-hoeryeongsi-saneobdong-pihaejayi-jib-cujeong\"><div class=\"circle-marker\" style=\"--strength: 0.019830028"
+  },
+  {
+    "style": "--strength: 0.019830028328611898; --delay: 0.00020603923902841052;",
+    "text": "",
+    "title": "",
+    "classList": [
+      "circle-marker"
+    ],
+    "innerHTML": ""
+  },
+  {
+    "style": "transform: translate(-50%, -50%) translate(517.345px, 644.339px) rotateX(0deg) rotateZ(0deg); opacity: 1;",
+    "text": "A hill, Sangmae-dong, Sariwon City, North Hwanghae Province\n1",
+    "title": "",
+    "classList": [
+      "maplibregl-marker",
+      "maplibregl-marker-anchor-center"
+    ],
+    "innerHTML": "<a href=\"/en/incidents?location=hwanghaebugdo-sariweonsi-sangmaedong-yasan\"><div class=\"circle-marker\" style=\"--strength: 0.0028328611898017; --delay:"
+  },
+  {
+    "style": "--strength: 0.0028328611898017; --delay: 0.00028044229756644766;",
+    "text": "",
+    "title": "",
+    "classList": [
+      "circle-marker"
+    ],
+    "innerHTML": ""
+  },
+  {
+    "style": "transform: translate(-50%, -50%) translate(976.066px, 9.70564px) rotateX(0deg) rotateZ(0deg); opacity: 1;",
+    "text": "The victim's house, Onsong County, North Hamgyong Province (Unconfirmed)\n44",
+    "title": "",
+    "classList": [
+      "maplibregl-marker",
+      "maplibregl-marker-anchor-center"
+    ],
+    "innerHTML": "<a href=\"/en/incidents?location=hamgyeongbugdo-onseonggun-pihaejayi-jib-cujeong\"><div class=\"circle-marker\" style=\"--strength: 0.12464589235127478; --"
+  },
+  {
+    "style": "--strength: 0.12464589235127478; --delay: 0.00036629198049495203;",
+    "text": "",
+    "title": "",
+    "classList": [
+      "circle-marker"
+    ],
+    "innerHTML": ""
+  },
+  {
+    "style": "transform: translate(-50%, -50%) translate(777.029px, 238.649px) rotateX(0deg) rotateZ(0deg); opacity: 1;",
+    "text": "Police Holding Camp for Illegal Border-Crosser of Provincial MPS, Hyesan City, Yanggang Province\n16",
+    "title": "",
+    "classList": [
+      "maplibregl-marker",
+      "maplibregl-marker-anchor-center"
+    ],
+    "innerHTML": "<a href=\"/en/incidents?location=yanggangdo-hyesansi-do-jibgyeolso\"><div class=\"circle-marker\" style=\"--strength: 0.0453257790368272; --delay: 0.000463"
+  },
+  {
+    "style": "--strength: 0.0453257790368272; --delay: 0.00046358828781392376;",
+    "text": "",
+    "title": "",
+    "classList": [
+      "circle-marker"
+    ],
+    "innerHTML": ""
+  },
+  {
+    "style": "transform: translate(-50%, -50%) translate(1018.23px, 101.972px) rotateX(0deg) rotateZ(0deg); opacity: 1;",
+    "text": "MSS, Rajin Sonbong City, North Hamgyong Province (Unconfirmed)\n1",
+    "title": "",
+    "classList": [
+      "maplibregl-marker",
+      "maplibregl-marker-anchor-center"
+    ],
+    "innerHTML": "<a href=\"/en/incidents?location=hamgyeongbugdo-rajinseonbongsi-bowibu-cujeong\"><div class=\"circle-marker\" style=\"--strength: 0.0028328611898017; --del"
+  },
+  {
+    "style": "--strength: 0.0028328611898017; --delay: 0.0005723312195233625;",
+    "text": "",
+    "title": "",
+    "classList": [
+      "circle-marker"
+    ],
+    "innerHTML": ""
+  },
+  {
+    "style": "transform: translate(-50%, -50%) translate(954.347px, 177.949px) rotateX(0deg) rotateZ(0deg); opacity: 1;",
+    "text": "City MPS, Chongjin City, North Hamgyong Province\n1",
+    "title": "",
+    "classList": [
+      "maplibregl-marker",
+      "maplibregl-marker-anchor-center"
+    ],
+    "innerHTML": "<a href=\"/en/incidents?location=hamgyeongbugdo-ceongjinsi-si-boanseo\"><div class=\"circle-marker\" style=\"--strength: 0.0028328611898017; --delay: 0.000"
+  },
+  {
+    "style": "--strength: 0.0028328611898017; --delay: 0.0006925207756232686;",
+    "text": "",
+    "title": "",
+    "classList": [
+      "circle-marker"
+    ],
+    "innerHTML": ""
+  },
+  {
+    "style": "transform: translate(-50%, -50%) translate(618.182px, 672.373px) rotateX(0deg) rotateZ(0deg); opacity: 1;",
+    "text": "A sports field, Tosan-eup, Tosan County, North Hwanghae Province (Unconfirmed)\n1",
+    "title": "",
+    "classList": [
+      "maplibregl-marker",
+      "maplibregl-marker-anchor-center"
+    ],
+    "innerHTML": "<a href=\"/en/incidents?location=hwanghaebugdo-tosangun-tosaneub-undongjang-cujeong\"><div class=\"circle-marker\" style=\"--strength: 0.0028328611898017; "
+  },
+  {
+    "style": "--strength: 0.0028328611898017; --delay: 0.0008241569561136421;",
+    "text": "",
+    "title": "",
+    "classList": [
+      "circle-marker"
+    ],
+    "innerHTML": ""
+  },
+  {
+    "style": "transform: translate(-50%, -50%) translate(510.714px, 708.963px) rotateX(0deg) rotateZ(0deg); opacity: 1;",
+    "text": "In front of Sokchon Middle School, Haeju City, South Hwanghae Province (Unconfirmed)\n2",
+    "title": "",
+    "classList": [
+      "maplibregl-marker",
+      "maplibregl-marker-anchor-center"
+    ],
+    "innerHTML": "<a href=\"/en/incidents?location=hwanghaenamdo-haejusi-seogceonjunghaggyo-ap-cujeong\"><div class=\"circle-marker\" style=\"--strength: 0.0056657223796034;"
+  },
+  {
+    "style": "--strength: 0.0056657223796034; --delay: 0.0009672397609944827;",
+    "text": "",
+    "title": "",
+    "classList": [
+      "circle-marker"
+    ],
+    "innerHTML": ""
+  },
+  {
+    "style": "transform: translate(-50%, -50%) translate(948.152px, 183.59px) rotateX(0deg) rotateZ(0deg); opacity: 1;",
+    "text": "Provincial Police Holding Camp, Songpyong District, Chongjin City, North Hamgyong Province\n90",
+    "title": "",
+    "classList": [
+      "maplibregl-marker",
+      "maplibregl-marker-anchor-center"
+    ],
+    "innerHTML": "<a href=\"/en/incidents?location=hamgyeongbugdo-ceongjinsi-songpyeongguyeog-do-jibgyeolso\"><div class=\"circle-marker\" style=\"--strength: 0.254957507082"
+  },
+  {
+    "style": "--strength: 0.254957507082153; --delay: 0.0011217691902657906;",
+    "text": "",
+    "title": "",
+    "classList": [
+      "circle-marker"
+    ],
+    "innerHTML": ""
+  },
+  {
+    "style": "transform: translate(-50%, -50%) translate(784.115px, 232.801px) rotateX(0deg) rotateZ(0deg); opacity: 1;",
+    "text": "Songbong Police Station, Hyesan City, Yanggang Province\n1",
+    "title": "",
+    "classList": [
+      "maplibregl-marker",
+      "maplibregl-marker-anchor-center"
+    ],
+    "innerHTML": "<a href=\"/en/incidents?location=yanggangdo-hyesansi-songbongbunjuso\"><div class=\"circle-marker\" style=\"--strength: 0.0028328611898017; --delay: 0.0012"
+  },
+  {
+    "style": "--strength: 0.0028328611898017; --delay: 0.0012877452439275657;",
+    "text": "",
+    "title": "",
+    "classList": [
+      "circle-marker"
+    ],
+    "innerHTML": ""
+  },
+  {
+    "style": "transform: translate(-50%, -50%) translate(910.212px, 281.562px) rotateX(0deg) rotateZ(0deg); opacity: 1;",
+    "text": "A market, Myongchon County, North Hamgyong Province (Unconfirmed)\n1",
+    "title": "",
+    "classList": [
+      "maplibregl-marker",
+      "maplibregl-marker-anchor-center"
+    ],
+    "innerHTML": "<a href=\"/en/incidents?location=hamgyeongbugdo-myeongceongun-jangmadang-cujeong\"><div class=\"circle-marker\" style=\"--strength: 0.0028328611898017; --d"
+  },
+  {
+    "style": "--strength: 0.0028328611898017; --delay: 0.0014651679219798081;",
+    "text": "",
+    "title": "",
+    "classList": [
+      "circle-marker"
+    ],
+    "innerHTML": ""
+  },
+  {
+    "style": "transform: translate(-50%, -50%) translate(937.504px, 232.917px) rotateX(0deg) rotateZ(0deg); opacity: 1;",
+    "text": "Airfield of 797th Military Unit, Orang County, North Hamgyong Province (Unconfirmed)\n1",
+    "title": "",
+    "classList": [
+      "maplibregl-marker",
+      "maplibregl-marker-anchor-center"
+    ],
+    "innerHTML": "<a href=\"/en/incidents?location=hamgyeongbugdo-eoranggun-797-gunbudae-bihaengjang-cujeong\"><div class=\"circle-marker\" style=\"--strength: 0.00283286118"
+  },
+  {
+    "style": "--strength: 0.0028328611898017; --delay: 0.0016540372244225176;",
+    "text": "",
+    "title": "",
+    "classList": [
+      "circle-marker"
+    ],
+    "innerHTML": ""
+  },
+  {
+    "style": "transform: translate(-50%, -50%) translate(777.041px, 238.609px) rotateX(0deg) rotateZ(0deg); opacity: 1;",
+    "text": "Police Holding Camp of Inspection Department, Hyesan City, Yanggang Province (Unconfirmed)\n5",
+    "title": "",
+    "classList": [
+      "maplibregl-marker",
+      "maplibregl-marker-anchor-center"
+    ],
+    "innerHTML": "<a href=\"/en/incidents?location=yanggangdo-hyesansi-gamcalgwa-jibgyeolso-cujeong\"><div class=\"circle-marker\" style=\"--strength: 0.014164305949008499; "
+  },
+  {
+    "style": "--strength: 0.014164305949008499; --delay: 0.001854353151255695;",
+    "text": "",
+    "title": "",
+    "classList": [
+      "circle-marker"
+    ],
+    "innerHTML": ""
+  },
+  {
+    "style": "transform: translate(-50%, -50%) translate(975.135px, 8.94928px) rotateX(0deg) rotateZ(0deg); opacity: 1;",
+    "text": "County MSS, Onsong County, North Hamgyong Province\n7",
+    "title": "",
+    "classList": [
+      "maplibregl-marker",
+      "maplibregl-marker-anchor-center"
+    ],
+    "innerHTML": "<a href=\"/en/incidents?location=hamgyeongbugdo-onseonggun-gun-bowibu-1\"><div class=\"circle-marker\" style=\"--strength: 0.019830028328611898; --delay: 0"
+  },
+  {
+    "style": "--strength: 0.019830028328611898; --delay: 0.002066115702479339;",
+    "text": "",
+    "title": "",
+    "classList": [
+      "circle-marker"
+    ],
+    "innerHTML": ""
+  },
+  {
+    "style": "transform: translate(-50%, -50%) translate(914.434px, 37.5381px) rotateX(0deg) rotateZ(0deg); opacity: 1;",
+    "text": "A chinese's house, Longjing, Jilin Province, China\n4",
+    "title": "",
+    "classList": [
+      "maplibregl-marker",
+      "maplibregl-marker-anchor-center"
+    ],
+    "innerHTML": "<a href=\"/en/incidents?location=junggug-gilrimseong-yongjeongsi-jungguginyi-jib\"><div class=\"circle-marker\" style=\"--strength: 0.0113314447592068; --d"
+  },
+  {
+    "style": "--strength: 0.0113314447592068; --delay: 0.00228932487809345;",
+    "text": "",
+    "title": "",
+    "classList": [
+      "circle-marker"
+    ],
+    "innerHTML": ""
+  },
+  {
+    "style": "transform: translate(-50%, -50%) translate(1001.77px, 33.4333px) rotateX(0deg) rotateZ(0deg); opacity: 1;",
+    "text": "Hunchun PSBDC, Hunchun City, Jilin Province, China (Unconfirmed)\n9",
+    "title": "",
+    "classList": [
+      "maplibregl-marker",
+      "maplibregl-marker-anchor-center"
+    ],
+    "innerHTML": "<a href=\"/en/incidents?location=junggug-gilrimseong-huncunsi-huncunbyeonbangdae-cujeong\"><div class=\"circle-marker\" style=\"--strength: 0.0254957507082"
+  },
+  {
+    "style": "--strength: 0.025495750708215296; --delay: 0.0025239806780980286;",
+    "text": "",
+    "title": "",
+    "classList": [
+      "circle-marker"
+    ],
+    "innerHTML": ""
+  },
+  {
+    "style": "transform: translate(-50%, -50%) translate(783.514px, 235.092px) rotateX(0deg) rotateZ(0deg); opacity: 1;",
+    "text": "Yonhung Middle School, Hyesan City, Yanggang Province\n1",
+    "title": "",
+    "classList": [
+      "maplibregl-marker",
+      "maplibregl-marker-anchor-center"
+    ],
+    "innerHTML": "<a href=\"/en/incidents?location=yanggangdo-hyesansi-yeonheungjunghaggyo\"><div class=\"circle-marker\" style=\"--strength: 0.0028328611898017; --delay: 0."
+  },
+  {
+    "style": "--strength: 0.0028328611898017; --delay: 0.0027700831024930744;",
+    "text": "",
+    "title": "",
+    "classList": [
+      "circle-marker"
+    ],
+    "innerHTML": ""
+  },
+  {
+    "style": "transform: translate(-50%, -50%) translate(553.794px, 598.264px) rotateX(0deg) rotateZ(0deg); opacity: 1;",
+    "text": "Defense Security Command Training Camp in Sangwon County, Pyongyang (Unconfirmed)\n1",
+    "title": "",
+    "classList": [
+      "maplibregl-marker",
+      "maplibregl-marker-anchor-center"
+    ],
+    "innerHTML": "<a href=\"/en/incidents?location=pyeongyangsi-sangweongun-bowisaryeongbu-hunryeongiji-cujeong\"><div class=\"circle-marker\" style=\"--strength: 0.00283286"
+  },
+  {
+    "style": "--strength: 0.0028328611898017; --delay: 0.0030276321512785883;",
+    "text": "",
+    "title": "",
+    "classList": [
+      "circle-marker"
+    ],
+    "innerHTML": ""
+  },
+  {
+    "style": "transform: translate(-50%, -50%) translate(623.316px, -628.323px) rotateX(0deg) rotateZ(0deg); opacity: 1;",
+    "text": "A chinese's house, Heilongjiang Province, China\n6",
+    "title": "",
+    "classList": [
+      "maplibregl-marker",
+      "maplibregl-marker-anchor-center"
+    ],
+    "innerHTML": "<a href=\"/en/incidents?location=junggug-heugryonggangseong-jungguginyi-jib\"><div class=\"circle-marker\" style=\"--strength: 0.0169971671388102; --delay:"
+  },
+  {
+    "style": "--strength: 0.0169971671388102; --delay: 0.0032966278244545683;",
+    "text": "",
+    "title": "",
+    "classList": [
+      "circle-marker"
+    ],
+    "innerHTML": ""
+  }
+]

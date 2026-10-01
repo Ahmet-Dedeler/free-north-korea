@@ -20,7 +20,7 @@ const article: Article = {
       <h2>Step 1: crossing the border</h2>
       <p>
         Almost everyone leaves through China, across the Tumen or Yalu rivers. The usual crossing points are near border towns like Hyesan,
-        Musan and Hoeryong (you can see them on the <Link href="/atlas">atlas</Link>). Since 2020 North Korea has built new fences, added guard
+        Musan and Hoeryong (you can see them on the <Link href="/map">intel map</Link>). Since 2020 North Korea has built new fences, added guard
         posts and given border guards shoot-to-kill orders, so crossings now usually need a broker who pays off guards. Prices have gone up
         many times over.
       </p>

@@ -6,6 +6,10 @@ const config: NextConfig = {
   trailingSlash: false,
   // a stray package-lock.json in ~/Code makes Turbopack guess the wrong workspace root
   turbopack: { root: process.cwd() },
+  // the atlas grew into the intel map
+  async redirects() {
+    return [{ source: '/atlas', destination: '/map', permanent: true }];
+  },
 };
 
 export default config;

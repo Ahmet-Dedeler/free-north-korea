@@ -7,7 +7,7 @@ import type { Feature, FeatureCollection } from 'geojson';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import type { Facility, Test } from './data';
 import type { Theme } from '../theme';
-import { MAPLIBRE_WORKER_URL } from '../atlas/maplibre';
+import { MAPLIBRE_WORKER_URL } from '../map/maplibre';
 import { type ColorBy, OUTCOME_COLOR, TYPE_COLOR, TYPE_LABEL, formatDate } from './meta';
 
 interface Props {

@@ -1,0 +1,34 @@
+{
+  "Asia Press Korean Main": {
+    "url": "https://www.asiapress.org/korean/",
+    "status": 200,
+    "length": 165996,
+    "title": "아시아프레스 북한보도",
+    "has_tables": false,
+    "price_terms_count": 0
+  },
+  "Asia Press Market Price Korean": {
+    "url": "https://www.asiapress.org/korean/market-price/",
+    "error": "HTTP Error 404: Not Found"
+  },
+  "Asia Press Japanese DPRK Main": {
+    "url": "https://www.asiapress.org/apn/dprk/",
+    "error": "HTTP Error 404: Not Found"
+  },
+  "Asia Press Market Price Japanese": {
+    "url": "https://www.asiapress.org/apn/dprk/market-price/",
+    "error": "HTTP Error 404: Not Found"
+  },
+  "Asia Press NK Economy": {
+    "url": "https://www.asiapress.org/korean/category/nk-economy/",
+    "error": "HTTP Error 404: Not Found"
+  },
+  "Asia Press Korean RSS Feed": {
+    "url": "https://www.asiapress.org/korean/feed/",
+    "status": 200,
+    "length": 339,
+    "title": "Redirecting...",
+    "has_tables": false,
+    "price_terms_count": 0
+  }
+}

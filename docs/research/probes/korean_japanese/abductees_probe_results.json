@@ -1,0 +1,30 @@
+{
+  "Soseikai Homepage": {
+    "url": "https://www.chosa-kai.jp/",
+    "status": 200,
+    "length": 34757,
+    "title": "特定失踪者問題調査会"
+  },
+  "Soseikai Missing Persons Archive": {
+    "url": "https://www.chosa-kai.jp/archives/missing_persons",
+    "error": "HTTP Error 404: Not Found"
+  },
+  "Cabinet Secretariat Rachi Main": {
+    "url": "https://www.rachi.go.jp/",
+    "status": 200,
+    "length": 24918,
+    "title": "日本国政府:北朝鮮による日本人拉致問題"
+  },
+  "Rachi Abductees List": {
+    "url": "https://www.rachi.go.jp/jp/ratimondai/higaisya.html",
+    "error": "HTTP Error 404: Not Found"
+  },
+  "Rachi Incidents List": {
+    "url": "https://www.rachi.go.jp/jp/ratimondai/jian.html",
+    "error": "HTTP Error 404: Not Found"
+  },
+  "NPA Abduction Suspects": {
+    "url": "https://www.npa.go.jp/bureau/security/keibi1/abduct/suspect.html",
+    "error": "HTTP Error 404: Not Found"
+  }
+}

@@ -1,0 +1,1897 @@
+{
+ "qidMismatch": [
+  {
+   "id": "kim-hyong-jik",
+   "agentQid": "Q484251",
+   "resolved": "Q489279"
+  },
+  {
+   "id": "kang-pan-sok",
+   "agentQid": "Q465545",
+   "resolved": "Q709975"
+  },
+  {
+   "id": "kim-jong-suk",
+   "agentQid": "Q272449",
+   "resolved": "Q463949"
+  },
+  {
+   "id": "kim-song-ae",
+   "agentQid": "Q461937",
+   "resolved": "Q702565"
+  },
+  {
+   "id": "song-hye-rim",
+   "agentQid": "Q448833",
+   "resolved": "Q487289"
+  },
+  {
+   "id": "kim-ok",
+   "agentQid": "Q489370",
+   "resolved": "Q705212"
+  },
+  {
+   "id": "ri-sol-ju",
+   "agentQid": "Q272719",
+   "resolved": "Q714658"
+  },
+  {
+   "id": "kim-yo-jong",
+   "agentQid": "Q498833",
+   "resolved": "Q4330912"
+  },
+  {
+   "id": "kim-jong-nam",
+   "agentQid": "Q313367",
+   "resolved": "Q317824"
+  },
+  {
+   "id": "kim-han-sol",
+   "agentQid": "Q6408719",
+   "resolved": "Q1280778"
+  },
+  {
+   "id": "kim-sol-song",
+   "agentQid": "Q494877",
+   "resolved": "Q705218"
+  },
+  {
+   "id": "kim-kyong-hui",
+   "agentQid": "Q268593",
+   "resolved": "Q271067"
+  },
+  {
+   "id": "jang-song-thaek",
+   "agentQid": "Q312521",
+   "resolved": "Q496004"
+  },
+  {
+   "id": "kim-pyong-il",
+   "agentQid": "Q494851",
+   "resolved": "Q710805"
+  },
+  {
+   "id": "kim-yong-ju",
+   "agentQid": "Q494870",
+   "resolved": "Q1062006"
+  },
+  {
+   "id": "kim-man-il",
+   "agentQid": "Q494857",
+   "resolved": "Q840719"
+  },
+  {
+   "id": "kim-tok-hun",
+   "agentQid": "Q85978153",
+   "resolved": "Q25035961"
+  },
+  {
+   "id": "jo-yong-won",
+   "agentQid": "Q104771569",
+   "resolved": "Q56825089"
+  },
+  {
+   "id": "choe-ryong-hae",
+   "agentQid": "Q496924",
+   "resolved": "Q714509"
+  },
+  {
+   "id": "ri-pyong-chol",
+   "agentQid": "Q43078715",
+   "resolved": "Q5367054"
+  },
+  {
+   "id": "pak-jong-chon",
+   "agentQid": "Q67936746",
+   "resolved": "Q16905280"
+  },
+  {
+   "id": "ri-yong-gil",
+   "agentQid": "Q15088267",
+   "resolved": "Q12594419"
+  },
+  {
+   "id": "kang-sun-nam",
+   "agentQid": "Q116030999",
+   "resolved": "Q56682897"
+  },
+  {
+   "id": "no-kwang-chol",
+   "agentQid": "Q21824967",
+   "resolved": "Q12594098"
+  },
+  {
+   "id": "jong-kyong-thaek",
+   "agentQid": "Q47035368",
+   "resolved": "Q55734042"
+  },
+  {
+   "id": "ri-il-hwan",
+   "agentQid": "Q16091484",
+   "resolved": "Q16905288"
+  },
+  {
+   "id": "o-su-yong",
+   "agentQid": "Q12607997",
+   "resolved": "Q11261360"
+  },
+  {
+   "id": "jon-hyon-chol",
+   "agentQid": "Q112671560",
+   "resolved": "Q105706437"
+  },
+  {
+   "id": "pak-jong-gun",
+   "agentQid": "Q107119253",
+   "resolved": "Q12597103"
+  },
+  {
+   "id": "ri-hi-yong",
+   "agentQid": "Q108740520",
+   "resolved": "Q55729503"
+  },
+  {
+   "id": "kim-hyong-sik",
+   "agentQid": "Q108740522",
+   "resolved": "Q12589269"
+  },
+  {
+   "id": "ju-chang-il",
+   "agentQid": "Q112671563",
+   "resolved": "Q119433063"
+  },
+  {
+   "id": "choe-thae-bok",
+   "agentQid": "Q710899",
+   "resolved": "Q710692"
+  },
+  {
+   "id": "yang-hyong-sop",
+   "agentQid": "Q494541",
+   "resolved": "Q710774"
+  },
+  {
+   "id": "ri-chang-dae",
+   "agentQid": "Q112671565",
+   "resolved": "Q115237652"
+  },
+  {
+   "id": "pang-tu-sop",
+   "agentQid": "Q112671568",
+   "resolved": "Q56820589"
+  },
+  {
+   "id": "ri-chang-ho",
+   "agentQid": "Q124029272",
+   "resolved": "Q124039235"
+  },
+  {
+   "id": "rim-kwang-il",
+   "agentQid": "Q85978152",
+   "resolved": "Q97162070"
+  },
+  {
+   "id": "kim-yong-chol",
+   "agentQid": "Q6409605",
+   "resolved": "Q8011165"
+  },
+  {
+   "id": "park-jin-hyok",
+   "agentQid": "Q56525167",
+   "resolved": "Q56504895"
+  },
+  {
+   "id": "kim-won-hong",
+   "agentQid": "Q3196836",
+   "resolved": "Q5366982"
+  },
+  {
+   "id": "jang-chang-ha",
+   "agentQid": "Q64093863",
+   "resolved": "Q56825039"
+  },
+  {
+   "id": "kim-jong-sik",
+   "agentQid": "Q23682703",
+   "resolved": "Q57064566"
+  },
+  {
+   "id": "hong-sung-mu",
+   "agentQid": "Q24856015",
+   "resolved": "Q16179925"
+  },
+  {
+   "id": "jo-chun-ryong",
+   "agentQid": "Q17050017",
+   "resolved": "Q16338026"
+  },
+  {
+   "id": "yu-jin",
+   "agentQid": "Q108740523",
+   "resolved": null
+  },
+  {
+   "id": "jon-il-ho",
+   "agentQid": "Q64093867",
+   "resolved": "Q57073331"
+  },
+  {
+   "id": "choe-chun-sik",
+   "agentQid": "Q64093860",
+   "resolved": "Q12619902"
+  },
+  {
+   "id": "han-kwang-sang",
+   "agentQid": "Q18605273",
+   "resolved": "Q19657552"
+  },
+  {
+   "id": "jon-il-chun",
+   "agentQid": "Q6259461",
+   "resolved": "Q57073318"
+  },
+  {
+   "id": "sin-ryong-man",
+   "agentQid": "Q124029278",
+   "resolved": "Q55731340"
+  },
+  {
+   "id": "jon-sung-guk",
+   "agentQid": "Q112671562",
+   "resolved": "Q114595445"
+  },
+  {
+   "id": "pak-nam-gi",
+   "agentQid": "Q707834",
+   "resolved": "Q707394"
+  },
+  {
+   "id": "kim-tong-gyu",
+   "agentQid": "Q11046422",
+   "resolved": "Q11647237"
+  },
+  {
+   "id": "choe-son-hui",
+   "agentQid": "Q50382875",
+   "resolved": "Q30436217"
+  },
+  {
+   "id": "kim-song",
+   "agentQid": "Q57315182",
+   "resolved": "Q77835256"
+  },
+  {
+   "id": "sin-hong-chol",
+   "agentQid": "Q108740525",
+   "resolved": "Q104538821"
+  },
+  {
+   "id": "ri-ryong-nam",
+   "agentQid": "Q7329486",
+   "resolved": "Q16181667"
+  },
+  {
+   "id": "kim-hyong-jun",
+   "agentQid": "Q85978155",
+   "resolved": "Q57317157"
+  },
+  {
+   "id": "ri-su-yong",
+   "agentQid": "Q16275150",
+   "resolved": "Q9310191"
+  },
+  {
+   "id": "ri-yong-ho",
+   "agentQid": "Q24083656",
+   "resolved": "Q12594422"
+  },
+  {
+   "id": "kim-kye-gwan",
+   "agentQid": "Q494872",
+   "resolved": "Q705194"
+  },
+  {
+   "id": "ri-son-gwon",
+   "agentQid": "Q47035372",
+   "resolved": "Q55708195"
+  },
+  {
+   "id": "pak-myong-ho",
+   "agentQid": "Q124029280",
+   "resolved": null
+  },
+  {
+   "id": "kim-son-gyong",
+   "agentQid": "Q124029282",
+   "resolved": "Q126282170"
+  },
+  {
+   "id": "hyon-yong-chol",
+   "agentQid": "Q492582",
+   "resolved": "Q702412"
+  },
+  {
+   "id": "ri-yong-ho-kpa",
+   "agentQid": "Q492576",
+   "resolved": "Q483800"
+  },
+  {
+   "id": "thae-yong-ho",
+   "agentQid": "Q26398188",
+   "resolved": "Q26299233"
+  },
+  {
+   "id": "ri-il-gyu",
+   "agentQid": "Q127513903",
+   "resolved": "Q127625979"
+  },
+  {
+   "id": "jo-song-gil",
+   "agentQid": "Q60395727",
+   "resolved": "Q105706553"
+  },
+  {
+   "id": "hwang-jang-yop",
+   "agentQid": "Q488668",
+   "resolved": "Q471135"
+  },
+  {
+   "id": "hyon-song-wol",
+   "agentQid": "Q11287042",
+   "resolved": "Q3372295"
+  },
+  {
+   "id": "ri-chun-hee",
+   "agentQid": "Q483789",
+   "resolved": "Q490736"
+  },
+  {
+   "id": "kim-song-hye",
+   "agentQid": "Q16174780",
+   "resolved": "Q13451177"
+  },
+  {
+   "id": "kim-ki-nam",
+   "agentQid": "Q7004480",
+   "resolved": "Q492835"
+  }
+ ],
+ "datesFixed": [
+  {
+   "id": "kim-song-ae",
+   "which": "died",
+   "from": "2014-01-01",
+   "to": "2014-09-23"
+  },
+  {
+   "id": "kim-ju-ae",
+   "which": "born",
+   "from": "2013-02-19",
+   "to": "2013"
+  },
+  {
+   "id": "kim-yong-ju",
+   "which": "died",
+   "from": "2021-12-14",
+   "to": "2021-12"
+  },
+  {
+   "id": "kim-man-il",
+   "which": "born",
+   "from": "1944-01-01",
+   "to": "1944"
+  },
+  {
+   "id": "kim-man-il",
+   "which": "died",
+   "from": "1947-07-01",
+   "to": "1947"
+  },
+  {
+   "id": "kim-tok-hun",
+   "which": "born",
+   "from": "1961-01-01",
+   "to": "1961"
+  },
+  {
+   "id": "jo-yong-won",
+   "which": "born",
+   "from": "1957-10-24",
+   "to": "1957"
+  },
+  {
+   "id": "ri-pyong-chol",
+   "which": "born",
+   "from": "1948-01-01",
+   "to": "1948"
+  },
+  {
+   "id": "pak-jong-chon",
+   "which": "born",
+   "from": "1960-01-01",
+   "to": "1960"
+  },
+  {
+   "id": "ri-yong-gil",
+   "which": "born",
+   "from": "1955-04-14",
+   "to": "1952"
+  },
+  {
+   "id": "kang-sun-nam",
+   "which": "born",
+   "from": "1960-01-01",
+   "to": "1960"
+  },
+  {
+   "id": "no-kwang-chol",
+   "which": "born",
+   "from": "1956-01-01",
+   "to": "1956"
+  },
+  {
+   "id": "jong-kyong-thaek",
+   "which": "born",
+   "from": "1959-01-01",
+   "to": "1961"
+  },
+  {
+   "id": "kim-jae-ryong",
+   "which": "born",
+   "from": "1959-01-01",
+   "to": "1959"
+  },
+  {
+   "id": "ri-il-hwan",
+   "which": "born",
+   "from": "1960-01-01",
+   "to": "1960"
+  },
+  {
+   "id": "o-su-yong",
+   "which": "born",
+   "from": "1944-01-01",
+   "to": "1944-07-20"
+  },
+  {
+   "id": "jon-hyon-chol",
+   "which": "born",
+   "from": "1965-01-01",
+   "to": "1965"
+  },
+  {
+   "id": "pak-jong-gun",
+   "which": "born",
+   "from": "1962-01-01",
+   "to": "1944-09-07"
+  },
+  {
+   "id": "ri-hi-yong",
+   "which": "born",
+   "from": "1960-01-01",
+   "to": "1960"
+  },
+  {
+   "id": "kim-hyong-sik",
+   "which": "born",
+   "from": "1958-01-01",
+   "to": "1958"
+  },
+  {
+   "id": "ju-chang-il",
+   "which": "born",
+   "from": "1960-01-01",
+   "to": "1960"
+  },
+  {
+   "id": "ri-chang-dae",
+   "which": "born",
+   "from": "1960-01-01",
+   "to": "1960"
+  },
+  {
+   "id": "ri-tae-sop",
+   "which": "born",
+   "from": "1959-01-01",
+   "to": "1959"
+  },
+  {
+   "id": "pang-tu-sop",
+   "which": "born",
+   "from": "1956-01-01",
+   "to": "1956"
+  },
+  {
+   "id": "ri-chang-ho",
+   "which": "born",
+   "from": "1965-01-01",
+   "to": "1965"
+  },
+  {
+   "id": "rim-kwang-il",
+   "which": "born",
+   "from": "1965-01-01",
+   "to": "1965"
+  },
+  {
+   "id": "kim-yong-chol",
+   "which": "born",
+   "from": "1945-01-01",
+   "to": "1946"
+  },
+  {
+   "id": "park-jin-hyok",
+   "which": "born",
+   "from": "1984-01-01",
+   "to": "1984"
+  },
+  {
+   "id": "kim-won-hong",
+   "which": "born",
+   "from": "1945-07-17",
+   "to": "1945-04-17"
+  },
+  {
+   "id": "jang-chang-ha",
+   "which": "born",
+   "from": "1964-01-01",
+   "to": "2000"
+  },
+  {
+   "id": "kim-jong-sik",
+   "which": "born",
+   "from": "1967-01-01",
+   "to": "1967"
+  },
+  {
+   "id": "jo-chun-ryong",
+   "which": "born",
+   "from": "1960-01-01",
+   "to": "1960"
+  },
+  {
+   "id": "yu-jin",
+   "which": "born",
+   "from": "1962-01-01",
+   "to": "1962"
+  },
+  {
+   "id": "choe-chun-sik",
+   "which": "born",
+   "from": "1954-01-01",
+   "to": "1954-10-12"
+  },
+  {
+   "id": "pak-to-chun",
+   "which": "died",
+   "from": "2022-07-27",
+   "to": "2022"
+  },
+  {
+   "id": "han-kwang-sang",
+   "which": "born",
+   "from": "1957-01-01",
+   "to": "1958"
+  },
+  {
+   "id": "jon-il-chun",
+   "which": "born",
+   "from": "1941-08-24",
+   "to": "1941"
+  },
+  {
+   "id": "sin-ryong-man",
+   "which": "born",
+   "from": "1964-01-01",
+   "to": "1964"
+  },
+  {
+   "id": "jon-sung-guk",
+   "which": "born",
+   "from": "1966-01-01",
+   "to": "1966"
+  },
+  {
+   "id": "pak-nam-gi",
+   "which": "died",
+   "from": "2010-03-12",
+   "to": "2010-03-17"
+  },
+  {
+   "id": "kim-tong-gyu",
+   "which": "born",
+   "from": "1940-01-01",
+   "to": "1912"
+  },
+  {
+   "id": "kim-song",
+   "which": "born",
+   "from": "1959-01-01",
+   "to": "1959"
+  },
+  {
+   "id": "sin-hong-chol",
+   "which": "born",
+   "from": "1960-01-01",
+   "to": "1960"
+  },
+  {
+   "id": "kim-hyong-jun",
+   "which": "born",
+   "from": "1949-01-01",
+   "to": "1949-11-26"
+  },
+  {
+   "id": "ri-son-gwon",
+   "which": "born",
+   "from": "1955-01-01",
+   "to": "1960"
+  },
+  {
+   "id": "pak-myong-ho",
+   "which": "born",
+   "from": "1963-01-01",
+   "to": "1963"
+  },
+  {
+   "id": "kim-son-gyong",
+   "which": "born",
+   "from": "1968-01-01",
+   "to": "1968"
+  },
+  {
+   "id": "hyon-yong-chol",
+   "which": "born",
+   "from": "1949-01-11",
+   "to": "1953-01-11"
+  },
+  {
+   "id": "ri-yong-ho-kpa",
+   "which": "died",
+   "to": "2012-07"
+  },
+  {
+   "id": "thae-yong-ho",
+   "which": "born",
+   "from": "1962-07-25",
+   "to": "1961-07-25"
+  },
+  {
+   "id": "ri-il-gyu",
+   "which": "born",
+   "from": "1972-01-01",
+   "to": "1972"
+  },
+  {
+   "id": "ryu-hyun-woo",
+   "which": "born",
+   "from": "1973-01-01",
+   "to": "1973"
+  },
+  {
+   "id": "kang-myong-do",
+   "which": "born",
+   "from": "1958-01-01",
+   "to": "1958-12-04"
+  },
+  {
+   "id": "hyon-song-wol",
+   "which": "born",
+   "from": "1977-01-01",
+   "to": "1977"
+  },
+  {
+   "id": "kim-ki-nam",
+   "which": "born",
+   "from": "1929-08-17",
+   "to": "1929-08-28"
+  }
+ ],
+ "images": [
+  {
+   "id": "kim-il-sung",
+   "file": "Kim Il Sung Portrait-3.jpg",
+   "license": "CC0"
+  },
+  {
+   "id": "kim-hyong-jik",
+   "file": "金亨稷 1.jpg",
+   "license": "Public domain"
+  },
+  {
+   "id": "kang-pan-sok",
+   "file": "Kang bansuk.jpg",
+   "license": "Public domain"
+  },
+  {
+   "id": "kim-jong-suk",
+   "file": "Kim Jeong Suk 2.jpg",
+   "license": "Public domain"
+  },
+  {
+   "id": "kim-jong-il",
+   "file": "Kim Jong il Portrait-2.jpg",
+   "license": "CC0"
+  },
+  {
+   "id": "kim-ok",
+   "file": "Kim ok cropped.png",
+   "license": "Public domain"
+  },
+  {
+   "id": "kim-jong-un",
+   "file": "Kim Jong-un and Vladimir Putin (2023-09-13) 12 (cropped).jpg",
+   "license": "CC BY 4.0"
+  },
+  {
+   "id": "ri-sol-ju",
+   "file": "Ri Sol-ju (April 27, 2018).png",
+   "license": "KOGL Type 1"
+  },
+  {
+   "id": "kim-yo-jong",
+   "file": "Kim Yo-jong at Blue House (cropped).jpg",
+   "license": "KOGL Type 1"
+  },
+  {
+   "id": "kim-kyong-hui",
+   "file": "Kim Kyong-hui, aunt of North Korean leader Kim Jong-Un, in 2013 (cropped).png",
+   "license": "Public domain"
+  },
+  {
+   "id": "kim-pyong-il",
+   "file": "Kim Pyong-il.jpg",
+   "license": "GFDL 1.2"
+  },
+  {
+   "id": "pak-thae-song",
+   "file": "Pak Thae-song in Moscow (cropped).jpg",
+   "license": "CC BY 4.0"
+  },
+  {
+   "id": "kim-tok-hun",
+   "file": "2024年金徳訓 2024년김덕훈.jpg",
+   "license": "CC BY 4.0"
+  },
+  {
+   "id": "jo-yong-won",
+   "file": "Jo Yong-won (2026-04-25) (cropped).jpg",
+   "license": "CC BY 4.0"
+  },
+  {
+   "id": "choe-ryong-hae",
+   "file": "18th Summit of Non-Aligned Movement gets underway in Baku 005 (cropped).jpg",
+   "license": "CC BY 4.0"
+  },
+  {
+   "id": "ri-yong-gil",
+   "file": "Kim Jong-un and Vladimir Putin (2019-04-25) 15 (cropped).jpg",
+   "license": "CC BY 4.0"
+  },
+  {
+   "id": "kang-sun-nam",
+   "file": "Kang Sun-nam 2023 (cropped).png",
+   "license": "CC BY 4.0"
+  },
+  {
+   "id": "no-kwang-chol",
+   "file": "No Kwang-chol, 2024.jpg",
+   "license": "CC BY 4.0"
+  },
+  {
+   "id": "ri-hi-yong",
+   "file": "Meeting with member of the Politburo and Secretary of the Central Committee of the Workers’ Party of Korea Ri Hi-yong 1 (cropped).jpg",
+   "license": "CC BY 4.0"
+  },
+  {
+   "id": "choe-thae-bok",
+   "file": "Choe Thae-bok (cropped).jpg",
+   "license": "CC BY 4.0"
+  },
+  {
+   "id": "kim-yong-chol",
+   "file": "Kim Yong Chol 2019.jpg",
+   "license": "Public domain"
+  },
+  {
+   "id": "park-jin-hyok",
+   "file": "Park Jin Hyok (Upscaled).jpg",
+   "license": "Public domain"
+  },
+  {
+   "id": "choe-son-hui",
+   "file": "Choe Son-hui.jpg",
+   "license": "Public domain"
+  },
+  {
+   "id": "sin-hong-chol",
+   "file": "Sin Hong Chol (cropped).jpg",
+   "license": "CC BY 4.0"
+  },
+  {
+   "id": "ri-ryong-nam",
+   "file": "Tatarstan's delegation in DPRK 2014 08.jpg",
+   "license": "CC BY 4.0"
+  },
+  {
+   "id": "kim-hyong-jun",
+   "file": "Kim Hyong-jun during a meeting with Konstantin Kosarev (cropped).jpg",
+   "license": "CC BY 4.0"
+  },
+  {
+   "id": "ri-su-yong",
+   "file": "Ri Su-yong (2014).jpg",
+   "license": "CC BY 4.0"
+  },
+  {
+   "id": "ri-yong-ho",
+   "file": "Ri Yong-ho.jpg",
+   "license": "CC BY 4.0"
+  },
+  {
+   "id": "ri-son-gwon",
+   "file": "Ri Son-gwon.jpg",
+   "license": "CC BY-SA 2.0"
+  },
+  {
+   "id": "thae-yong-ho",
+   "file": "Thae Yong-ho (Cropped).png",
+   "license": "Public domain"
+  },
+  {
+   "id": "hwang-jang-yop",
+   "file": "Hwang Jang Yeop.jpg",
+   "license": "Public domain"
+  },
+  {
+   "id": "hyon-song-wol",
+   "file": "North Korea's Samjiyon Orchestra director Hyon Song-wol.jpg",
+   "license": "KOGL Type 1"
+  },
+  {
+   "id": "kim-song-hye",
+   "file": "Kim Song-hye.jpg",
+   "license": "Public domain"
+  }
+ ],
+ "sanctions": [
+  {
+   "id": "kim-jong-un",
+   "sanctions": [
+    "OFAC 20157"
+   ]
+  },
+  {
+   "id": "jo-yong-won",
+   "sanctions": [
+    "OFAC 21303",
+    "UN KPi.043"
+   ]
+  },
+  {
+   "id": "choe-ryong-hae",
+   "sanctions": [
+    "OFAC 23213"
+   ]
+  },
+  {
+   "id": "ri-pyong-chol",
+   "sanctions": [
+    "OFAC 23215",
+    "UN KPi.076"
+   ]
+  },
+  {
+   "id": "jong-kyong-thaek",
+   "sanctions": [
+    "OFAC 23212"
+   ]
+  },
+  {
+   "id": "ju-chang-il",
+   "sanctions": [
+    "OFAC 51331"
+   ]
+  },
+  {
+   "id": "kim-yong-chol",
+   "sanctions": [
+    "OFAC 12211"
+   ]
+  },
+  {
+   "id": "park-jin-hyok",
+   "sanctions": [
+    "OFAC 24918"
+   ]
+  },
+  {
+   "id": "kim-won-hong",
+   "sanctions": [
+    "OFAC 21443"
+   ]
+  },
+  {
+   "id": "kim-jong-sik",
+   "sanctions": [
+    "OFAC 23214",
+    "UN KPi.066"
+   ]
+  },
+  {
+   "id": "jo-chun-ryong",
+   "sanctions": [
+    "OFAC 20577",
+    "UN KPi.038"
+   ]
+  },
+  {
+   "id": "jon-il-ho",
+   "sanctions": [
+    "OFAC 39496"
+   ]
+  },
+  {
+   "id": "choe-chun-sik",
+   "sanctions": [
+    "UN KPi.013"
+   ]
+  },
+  {
+   "id": "pak-to-chun",
+   "sanctions": [
+    "UN KPi.050"
+   ]
+  },
+  {
+   "id": "kim-ki-nam",
+   "sanctions": [
+    "OFAC 20126"
+   ]
+  }
+ ],
+ "deadLinks": [],
+ "notes": [],
+ "droppedClaims": [
+  {
+   "id": "kim-il-sung",
+   "kind": "health",
+   "claim": "Suffered from an inoperable, tennis-ball-sized calcinosis benign tumor on the right rear of his neck, requiring state photographers to shoot him strictly from the left front angle.",
+   "url": "https://www.latimes.com/archives/la-xpm-1994-07-09-mn-13540-story.html"
+  },
+  {
+   "id": "kim-il-sung",
+   "kind": "health",
+   "claim": "Died of a massive acute myocardial infarction following high stress and exhaustion at his Mount Myohyang villa during preparations for an inter-Korean summit with Kim Young-sam.",
+   "url": "https://nkinfo.unikorea.go.kr"
+  },
+  {
+   "id": "kim-il-sung",
+   "kind": "notable",
+   "claim": "Launched the Korean War on June 25, 1950 by ordering the invasion of South Korea with Soviet military backing.",
+   "url": "https://www.wilsoncenter.org/collection/korean-war"
+  },
+  {
+   "id": "kim-il-sung",
+   "kind": "notable",
+   "claim": "Purged all domestic rival factions (Soviet, Yanan, and domestic communist factions) following the 1956 August Incident to establish monolithic family rule.",
+   "url": "https://www.wilsoncenter.org/publication/the-august-1956-plenum-and-the-roots-north-korean-unilateralism"
+  },
+  {
+   "id": "kim-il-sung",
+   "kind": "height_cm",
+   "url": "https://www.wilsoncenter.org"
+  },
+  {
+   "id": "kim-il-sung",
+   "kind": "weight_kg",
+   "url": "https://nkinfo.unikorea.go.kr"
+  },
+  {
+   "id": "kim-hyong-jik",
+   "kind": "notable",
+   "claim": "Founded the Korean National Association in 1917 to campaign against Japanese colonial occupation.",
+   "url": "https://nkinfo.unikorea.go.kr"
+  },
+  {
+   "id": "kang-pan-sok",
+   "kind": "notable",
+   "claim": "Established the Anti-Japanese Women's Association in northeast China in 1926.",
+   "url": "https://nkinfo.unikorea.go.kr"
+  },
+  {
+   "id": "kim-jong-suk",
+   "kind": "health",
+   "claim": "Died in Pyongyang at age 31 during an emergency stillbirth delivery.",
+   "url": "https://nkinfo.unikorea.go.kr"
+  },
+  {
+   "id": "kim-jong-suk",
+   "kind": "notable",
+   "claim": "Served as a guerrilla fighter in the 88th Separate Reconnaissance Brigade of the Soviet Red Army during World War II.",
+   "url": "https://www.wilsoncenter.org"
+  },
+  {
+   "id": "kim-song-ae",
+   "kind": "notable",
+   "claim": "Appeared alongside Jimmy Carter during his 1994 diplomatic visit to Pyongyang, her final prominent public engagement.",
+   "url": "https://www.reuters.com/article/us-northkorea-kim-song-ae-idUSKBN1OB0M8"
+  },
+  {
+   "id": "kim-jong-il",
+   "kind": "health",
+   "claim": "Suffered a debilitating stroke / cerebral hemorrhage in August 2008 that paralyzed his left side and precipitated the accelerated succession plan for Kim Jong Un.",
+   "url": "https://www.reuters.com/article/world/french-doctor-confirms-treated-kim-jong-il-for-stroke-idUSTRE4BB5L9/"
+  },
+  {
+   "id": "kim-jong-il",
+   "kind": "health",
+   "claim": "Suffered from long-term chronic diabetes, severe hypertension, and arteriosclerosis exacerbated by heavy cognac consumption and tobacco smoking.",
+   "url": "https://koreajoongangdaily.joins.com"
+  },
+  {
+   "id": "kim-jong-il",
+   "kind": "health",
+   "claim": "Died of an acute myocardial infarction complicated by cardiogenic shock on his train during an inspection tour.",
+   "url": "https://www.reuters.com/article/world/north-korean-leader-kim-jong-il-dies-state-tv-idUSTRE7BH04N/"
+  },
+  {
+   "id": "kim-jong-il",
+   "kind": "notable",
+   "claim": "Held the historic first Inter-Korean Summit in Pyongyang with South Korean President Kim Dae-jung in June 2000.",
+   "url": "https://www.usip.org/publications/2000/06/first-inter-korean-summit"
+  },
+  {
+   "id": "kim-jong-il",
+   "kind": "height_cm",
+   "url": "https://www.bbc.com/news/world-asia-16239693"
+  },
+  {
+   "id": "kim-jong-il",
+   "kind": "weight_kg",
+   "url": "https://nkinfo.unikorea.go.kr"
+  },
+  {
+   "id": "song-hye-rim",
+   "kind": "health",
+   "claim": "Suffered from severe chronic nervous breakdown, clinical depression, and diabetes, treated in Moscow elite clinics from the 1980s until her death.",
+   "url": "https://www.theguardian.com/world/2002/may/25/northkorea"
+  },
+  {
+   "id": "song-hye-rim",
+   "kind": "notable",
+   "claim": "Fled to Moscow in the late 1970s for psychiatric treatment after being displaced by Kim Jong Il's subsequent relationships.",
+   "url": "https://www.theguardian.com/world/2002/may/25/northkorea"
+  },
+  {
+   "id": "ko-yong-hui",
+   "kind": "health",
+   "claim": "Diagnosed with advanced breast cancer in the late 1990s; received specialized chemotherapy treatment in Paris before succumbing in May 2004.",
+   "url": "https://www.reuters.com/article/us-northkorea-leader-mother-idUSBRE85A04X20120611"
+  },
+  {
+   "id": "ko-yong-hui",
+   "kind": "notable",
+   "claim": "Arrived in North Korea in the early 1960s under the mass repatriation program for ethnic Koreans in Japan.",
+   "url": "https://www.reuters.com/article/us-northkorea-leader-mother-idUSBRE85A04X20120611"
+  },
+  {
+   "id": "kim-ok",
+   "kind": "notable",
+   "claim": "Accompanied Special Envoy Jo Myong Rok to the White House in October 2000 to meet President Bill Clinton under diplomatic cover.",
+   "url": "https://www.nknews.org/2016/07/kim-jong-ils-last-mistress-purged-by-kim-jong-un-rfa/"
+  },
+  {
+   "id": "kim-ok",
+   "kind": "notable",
+   "claim": "Sent to a political prison / labor re-education camp around 2016 along with her relatives to eliminate rival patronage networks.",
+   "url": "https://en.yna.co.kr/view/AEN20160726002600315"
+  },
+  {
+   "id": "kim-jong-un",
+   "kind": "health",
+   "claim": "South Korean National Intelligence Service (NIS) assessed in July 2024 that Kim Jong Un's weight reached approximately 140 kg, placing him at severe risk of cardiovascular disease, with symptoms of insomnia and high blood pressure.",
+   "url": "https://en.yna.co.kr/view/AEN20240729005400315"
+  },
+  {
+   "id": "kim-jong-un",
+   "kind": "health",
+   "claim": "Underwent surgery in autumn 2014 to remove a cyst from his right ankle (tarsal tunnel syndrome) caused by obesity and acute gout, causing a 40-day public disappearance.",
+   "url": "https://www.theguardian.com/world/2014/oct/28/kim-jong-un-had-cyst-removed-from-ankle-south-korean-intelligence-says"
+  },
+  {
+   "id": "kim-jong-un",
+   "kind": "health",
+   "claim": "Heavily consumes alcohol and imported cigarettes, showing high genetic predisposition to myocardial infarction (the fatal cause of death for both his father and grandfather).",
+   "url": "https://www.bbc.com/news/world-asia-65766861"
+  },
+  {
+   "id": "kim-jong-un",
+   "kind": "notable",
+   "claim": "Ordered the public execution of his uncle and de facto regent Jang Song Thaek on treason charges in December 2013.",
+   "url": "https://www.nytimes.com/2013/12/13/world/asia/north-korea-says-uncles-execution-cleared-a-faction.html"
+  },
+  {
+   "id": "kim-jong-un",
+   "kind": "notable",
+   "claim": "Authorized the assassination of his half-brother Kim Jong Nam using VX nerve agent at Kuala Lumpur International Airport in February 2017.",
+   "url": "https://www.justice.gov/opa/pr/north-korean-national-extradited-united-states-money-laundering-charges"
+  },
+  {
+   "id": "kim-jong-un",
+   "kind": "notable",
+   "claim": "Signed a mutual defense treaty with Russian President Vladimir Putin in Pyongyang in June 2024, providing artillery ammunition and troops to Russia.",
+   "url": "https://www.reuters.com/world/asia-pacific/putin-kim-sign-partnership-agreement-pledge-mutual-aid-against-aggression-2024-06-19/"
+  },
+  {
+   "id": "kim-jong-un",
+   "kind": "height_cm",
+   "url": "https://en.yna.co.kr/view/AEN20240729005400315"
+  },
+  {
+   "id": "ri-sol-ju",
+   "kind": "health",
+   "claim": "Absences from public view in 2010, 2013, and 2017 were assessed by the NIS as coinciding with childbirth pregnancies.",
+   "url": "https://en.yna.co.kr/view/AEN20170829007400315"
+  },
+  {
+   "id": "ri-sol-ju",
+   "kind": "notable",
+   "claim": "Visited South Korea in 2005 as a member of North Korea's cheerleading squad for the Asian Athletics Championships in Incheon.",
+   "url": "https://www.bbc.com/news/world-asia-19008272"
+  },
+  {
+   "id": "ri-sol-ju",
+   "kind": "notable",
+   "claim": "Granted the title 'Respected First Lady' by state media in April 2018, the first time in over 40 years that designation was used.",
+   "url": "https://www.straitstimes.com/asia/east-asia/north-korea-gives-kim-jong-uns-wife-ri-sol-ju-new-title-of-first-lady"
+  },
+  {
+   "id": "ri-sol-ju",
+   "kind": "height_cm",
+   "url": "https://nkinfo.unikorea.go.kr"
+  },
+  {
+   "id": "kim-ju-ae",
+   "kind": "notable",
+   "claim": "Made her public debut on November 18, 2022 inspecting the launch of a Hwasong-17 intercontinental ballistic missile.",
+   "url": "https://www.reuters.com/world/asia-pacific/north-koreas-kim-reveals-daughter-public-first-time-icbm-launch-2022-11-19/"
+  },
+  {
+   "id": "kim-ju-ae",
+   "kind": "notable",
+   "claim": "Referred to by state media in March 2024 with the honorific term 'hyangdo' (guide/beacon), an ideological term reserved exclusively for supreme leaders and designated successors.",
+   "url": "https://en.yna.co.kr/view/AEN20240318005300315"
+  },
+  {
+   "id": "kim-yo-jong",
+   "kind": "notable",
+   "claim": "Served as special envoy to the 2018 PyeongChang Winter Olympics, becoming the first direct member of the Kim family to visit South Korea since the Korean War.",
+   "url": "https://www.reuters.com/article/us-olympics-2018-northkorea-kimyojong-idUSKBN1FT04Z"
+  },
+  {
+   "id": "kim-yo-jong",
+   "kind": "height_cm",
+   "url": "https://nkinfo.unikorea.go.kr"
+  },
+  {
+   "id": "kim-jong-chol",
+   "kind": "notable",
+   "claim": "Filmed by international media attending Eric Clapton rock concerts in Singapore (2011) and London Royal Albert Hall (2015).",
+   "url": "https://www.bbc.com/news/world-asia-32846467"
+  },
+  {
+   "id": "kim-jong-nam",
+   "kind": "health",
+   "claim": "Assassinated via dermal exposure to VX nerve agent smeared on his face by two recruited operatives directed by RGB intelligence handlers.",
+   "url": "https://www.reuters.com/article/us-northkorea-malaysia-kim-idUSKBN16307T"
+  },
+  {
+   "id": "kim-jong-nam",
+   "kind": "notable",
+   "claim": "Detained at Tokyo Narita Airport in May 2001 attempting to visit Tokyo Disneyland on a fraudulent passport, precipitating his loss of succession favor.",
+   "url": "https://www.theguardian.com/world/2001/may/04/japan"
+  },
+  {
+   "id": "kim-jong-nam",
+   "kind": "notable",
+   "claim": "Met with US Central Intelligence Agency (CIA) contacts in Southeast Asia prior to his assassination, according to Malaysian court testimony.",
+   "url": "https://www.wsj.com/articles/north-korean-leader-s-slain-half-brother-was-a-cia-informant-11560203008"
+  },
+  {
+   "id": "kim-jong-nam",
+   "kind": "height_cm",
+   "url": "https://www.reuters.com/article/us-northkorea-malaysia-kim-idUSKBN16307T"
+  },
+  {
+   "id": "kim-jong-nam",
+   "kind": "weight_kg",
+   "url": "https://www.reuters.com/article/us-northkorea-malaysia-kim-idUSKBN16307T"
+  },
+  {
+   "id": "kim-han-sol",
+   "kind": "notable",
+   "claim": "Openly criticized Kim Jong Un as a 'dictator' during a televised interview with former Finnish Defense Minister Elisabeth Rehn in 2012.",
+   "url": "https://www.bbc.com/news/world-asia-20003058"
+  },
+  {
+   "id": "kim-sol-song",
+   "kind": "notable",
+   "claim": "Served as head of security and itinerary scheduling for Kim Jong Il during the 2000s.",
+   "url": "https://nkleadershipwatch.wordpress.com"
+  },
+  {
+   "id": "kim-kyong-hui",
+   "kind": "health",
+   "claim": "Suffered from chronic alcoholism, clinical depression, and cardiovascular disease following the 2006 suicide of her daughter Jang Kum-song in Paris.",
+   "url": "https://english.chosun.com"
+  },
+  {
+   "id": "kim-kyong-hui",
+   "kind": "notable",
+   "claim": "Promoted to four-star KPA General alongside Kim Jong Un at the September 2010 Party Conference.",
+   "url": "https://www.reuters.com/article/us-korea-north-promotion-idUSTRE68Q3U520100927"
+  },
+  {
+   "id": "kim-kyong-hui",
+   "kind": "notable",
+   "claim": "Reappeared publicly on January 25, 2020 at the Samjiyon Theater in Pyongyang, dispelling rumors that she had been poisoned or executed.",
+   "url": "https://en.yna.co.kr/view/AEN20200126000700325"
+  },
+  {
+   "id": "jang-song-thaek",
+   "kind": "notable",
+   "claim": "Arrested by uniformed security officers in front of cameras during an expanded Politburo meeting on December 8, 2013.",
+   "url": "https://www.bbc.com/news/world-asia-25301884"
+  },
+  {
+   "id": "jang-song-thaek",
+   "kind": "notable",
+   "claim": "Executed on December 12, 2013 following a special military tribunal of the Ministry of State Security on charges of attempting to overthrow the state.",
+   "url": "https://www.nytimes.com/2013/12/13/world/asia/north-korea-says-uncles-execution-cleared-a-faction.html"
+  },
+  {
+   "id": "kim-pyong-il",
+   "kind": "notable",
+   "claim": "Recalled to Pyongyang in November 2019 after 31 continuous years abroad as an ambassador, ending his external postings.",
+   "url": "https://en.yna.co.kr/view/AEN20191130001500325"
+  },
+  {
+   "id": "kim-pyong-il",
+   "kind": "height_cm",
+   "url": "https://en.yna.co.kr"
+  },
+  {
+   "id": "kim-yong-ju",
+   "kind": "notable",
+   "claim": "Formulated the 1974 'Ten Principles for the Establishment of a Monolithic Ideological System', the supreme totalitarian code governing North Korean society.",
+   "url": "https://www.hrnk.org"
+  },
+  {
+   "id": "kim-yong-ju",
+   "kind": "notable",
+   "claim": "Co-signed the July 4, 1972 South-North Joint Communiqué with South Korean KCIA Director Lee Hu-rak.",
+   "url": "https://www.usip.org"
+  },
+  {
+   "id": "kim-man-il",
+   "kind": "notable",
+   "claim": "Drowned in a garden pond at Kim Il Sung's official residence in Pyongyang in the summer of 1947.",
+   "url": "https://nkinfo.unikorea.go.kr"
+  },
+  {
+   "id": "pak-thae-song",
+   "kind": "notable",
+   "claim": "Elected Premier of the Cabinet at the 11th Plenary Meeting of the 8th Central Committee on December 29, 2024.",
+   "url": "https://en.yna.co.kr/view/AEN20241230000800315"
+  },
+  {
+   "id": "pak-thae-song",
+   "kind": "notable",
+   "claim": "Led a delegation of North Korean scientists and regional cadres to Beijing and Shenzhen in 2018 to inspect Chinese high-tech facilities.",
+   "url": "https://www.reuters.com/article/us-northkorea-china-delegation-idUSKCN1IG05F"
+  },
+  {
+   "id": "kim-tok-hun",
+   "kind": "notable",
+   "claim": "Publicly denounced by Kim Jong Un in August 2023 for 'irresponsibility' following the flooding of the Ansok tideland, yet remarkably survived and kept his Presidium seat.",
+   "url": "https://www.reuters.com/world/asia-pacific/north-koreas-kim-slams-premier-over-flooding-disaster-kcna-2023-08-21/"
+  },
+  {
+   "id": "jo-yong-won",
+   "kind": "notable",
+   "claim": "Accompanied Kim Jong Un on more public inspections than any other official during 2016-2023, solidifying his status as the leader's shadow gatekeeper.",
+   "url": "https://www.nknews.org/2021/01/the-rise-of-jo-yong-won-north-koreas-new-number-two-and-master-bureaucrat/"
+  },
+  {
+   "id": "jo-yong-won",
+   "kind": "height_cm",
+   "url": "https://en.yna.co.kr"
+  },
+  {
+   "id": "choe-ryong-hae",
+   "kind": "notable",
+   "claim": "Served as special envoy of Kim Jong Un to Beijing in May 2013 to deliver a personal letter to Chinese President Xi Jinping following North Korea's third nuclear test.",
+   "url": "https://www.reuters.com/article/us-northkorea-china-choe-idUSBRE94M06620130523"
+  },
+  {
+   "id": "choe-ryong-hae",
+   "kind": "height_cm",
+   "url": "https://en.yna.co.kr"
+  },
+  {
+   "id": "ri-pyong-chol",
+   "kind": "notable",
+   "claim": "Promoted to Marshal of the KPA in October 2020 in recognition of his decisive contributions to missile and nuclear warhead development.",
+   "url": "https://en.yna.co.kr/view/AEN20201006001000325"
+  },
+  {
+   "id": "ri-pyong-chol",
+   "kind": "notable",
+   "claim": "Demoted temporarily from the Politburo Presidium in June 2021 over an unspecified 'grave incident' in anti-epidemic quarantine before being fully reinstated in April 2022.",
+   "url": "https://www.reuters.com/world/asia-pacific/north-korea-reinstates-top-missile-official-ri-pyong-chol-leadership-2022-04-15/"
+  },
+  {
+   "id": "pak-jong-chon",
+   "kind": "notable",
+   "claim": "Oversaw the development and field deployment of super-large 600mm multiple rocket launch systems (KN-25) capable of tactical nuclear delivery.",
+   "url": "https://www.csis.org/analysis/north-koreas-super-large-multiple-rocket-launcher"
+  },
+  {
+   "id": "pak-jong-chon",
+   "kind": "notable",
+   "claim": "Replaced at the end of 2022 as vice chairman of the CMC, then dramatically returned to the position at the Central Committee plenum in December 2023.",
+   "url": "https://en.yna.co.kr/view/AEN20240101001200325"
+  },
+  {
+   "id": "ri-yong-gil",
+   "kind": "notable",
+   "claim": "Reported executed in early 2016 by South Korean news citing intelligence sources, only to reappear alive months later at the 7th Party Congress.",
+   "url": "https://www.bbc.com/news/world-asia-36259079"
+  },
+  {
+   "id": "ri-yong-gil",
+   "kind": "notable",
+   "claim": "Appointed Chief of the General Staff Department in August 2023 as Kim Jong Un ordered accelerated war preparations against South Korea.",
+   "url": "https://www.reuters.com/world/asia-pacific/north-koreas-kim-replaces-top-general-calls-war-preparations-2023-08-09/"
+  },
+  {
+   "id": "kang-sun-nam",
+   "kind": "notable",
+   "claim": "Hosted Russian Defense Minister Sergei Shoigu in Pyongyang in July 2023 for the 70th anniversary of the Korean War armistice, opening large-scale defense supply lines.",
+   "url": "https://www.reuters.com/world/asia-pacific/shoigu-says-russia-north-korea-cooperation-fully-meets-security-interests-2023-07-27/"
+  },
+  {
+   "id": "kang-sun-nam",
+   "kind": "notable",
+   "claim": "Replaced as Minister of National Defence by No Kwang Chol at the 11th Session of the 14th Supreme People's Assembly in October 2024.",
+   "url": "https://www.reuters.com/world/asia-pacific/north-korea-names-new-defence-minister-revises-constitution-2024-10-09/"
+  },
+  {
+   "id": "no-kwang-chol",
+   "kind": "notable",
+   "claim": "Accompanied Kim Jong Un to the June 2018 Singapore Summit with US President Donald Trump, visibly saluting Trump in an encounter captured by international media.",
+   "url": "https://www.reuters.com/article/us-northkorea-usa-salute-idUSKBN1JA2O7"
+  },
+  {
+   "id": "no-kwang-chol",
+   "kind": "notable",
+   "claim": "Re-appointed Minister of National Defence at the 11th Session of the 14th Supreme People's Assembly in October 2024.",
+   "url": "https://www.reuters.com/world/asia-pacific/north-korea-names-new-defence-minister-revises-constitution-2024-10-09/"
+  },
+  {
+   "id": "jong-kyong-thaek",
+   "kind": "notable",
+   "claim": "Appointed Director of the KPA General Political Bureau in June 2022, completing his transition from secret police chief to senior military commissar.",
+   "url": "https://en.yna.co.kr/view/AEN20220611001400325"
+  },
+  {
+   "id": "kim-jae-ryong",
+   "kind": "notable",
+   "claim": "Served as Chief Secretary of the Chagang Provincial Party Committee, the secretive mountainous region housing North Korea's underground missile and munitions plants.",
+   "url": "https://www.38north.org/2019/04/nkleadership041219/"
+  },
+  {
+   "id": "kim-jae-ryong",
+   "kind": "notable",
+   "claim": "Appointed Director of OGD at the Fifth Plenary Meeting of the 8th Central Committee in June 2022.",
+   "url": "https://en.yna.co.kr/view/AEN20220611001400325"
+  },
+  {
+   "id": "ri-il-hwan",
+   "kind": "notable",
+   "claim": "Supervised nationwide enforcement of the Law on Rejecting Reactionary Ideology and Culture enacted in late 2020.",
+   "url": "https://www.reuters.com/world/asia-pacific/north-korea-passes-law-toughen-crackdown-k-pop-foreign-culture-2021-01-15/"
+  },
+  {
+   "id": "o-su-yong",
+   "kind": "notable",
+   "claim": "Reappointed Director of the Economic Affairs Department at the Eighth Plenary Meeting in June 2023 to tackle systemic agricultural and manufacturing bottlenecks.",
+   "url": "https://en.yna.co.kr/view/AEN20230619001300325"
+  },
+  {
+   "id": "jon-hyon-chol",
+   "kind": "notable",
+   "claim": "Elected Alternate Member of the Politburo and promoted to Vice Premier in June 2022.",
+   "url": "https://en.yna.co.kr/view/AEN20220611001400325"
+  },
+  {
+   "id": "pak-jong-gun",
+   "kind": "notable",
+   "claim": "Promoted to full Politburo membership at the Fourth Plenary Meeting of the 8th Central Committee in December 2021.",
+   "url": "https://en.yna.co.kr/view/AEN20220101001500325"
+  },
+  {
+   "id": "ri-hi-yong",
+   "kind": "notable",
+   "claim": "Served as a key point man for reconstruction after major typhoons damaged northeastern mining regions in 2020.",
+   "url": "https://www.nknews.org/2020/09/north-korean-party-congress-personnel/"
+  },
+  {
+   "id": "kim-hyong-sik",
+   "kind": "notable",
+   "claim": "Elected head of the newly revived Legal Affairs Department at the 8th Party Congress in January 2021 to tighten legal control over the populace.",
+   "url": "https://en.yna.co.kr/view/AEN20210111000600325"
+  },
+  {
+   "id": "ju-chang-il",
+   "kind": "notable",
+   "claim": "Appointed Director of PAD at the Fifth Plenary Meeting of the 8th Central Committee in June 2022.",
+   "url": "https://en.yna.co.kr/view/AEN20220611001400325"
+  },
+  {
+   "id": "choe-thae-bok",
+   "kind": "notable",
+   "claim": "Served as one of the seven high-ranking officials alongside Kim Jong Un escorting Kim Jong Il's hearse in December 2011.",
+   "url": "https://www.reuters.com/article/idUSL3E7NR06V/"
+  },
+  {
+   "id": "choe-thae-bok",
+   "kind": "notable",
+   "claim": "Passed away on January 20, 2024 at age 93, with Kim Jong Un personally visiting his bier to pay respects.",
+   "url": "https://en.yna.co.kr/view/AEN20240121001100325"
+  },
+  {
+   "id": "yang-hyong-sop",
+   "kind": "notable",
+   "claim": "Served as President of the Academy of Social Sciences and drafted key philosophical treatises interpreting Juche ideology.",
+   "url": "https://nkinfo.unikorea.go.kr"
+  },
+  {
+   "id": "yang-hyong-sop",
+   "kind": "notable",
+   "claim": "Served as a hearse escort during Kim Jong Il's state funeral procession in December 2011.",
+   "url": "https://www.reuters.com/article/idUSL3E7NR06V/"
+  },
+  {
+   "id": "ri-chang-dae",
+   "kind": "notable",
+   "claim": "Appointed Minister of State Security in June 2022, replacing Jong Kyong Thaek to intensify border controls and internal ideological discipline.",
+   "url": "https://en.yna.co.kr/view/AEN20220611001400325"
+  },
+  {
+   "id": "ri-chang-dae",
+   "kind": "notable",
+   "claim": "Sanctioned by the European Union in December 2022 for serious human rights violations, including arbitrary detention and torture within the kwanliso system.",
+   "url": "https://eur-lex.europa.eu"
+  },
+  {
+   "id": "ri-tae-sop",
+   "kind": "notable",
+   "claim": "Served as commander of the VII Army Corps during frontline border reinforcement drills before transitioning to national police leadership.",
+   "url": "https://nkinfo.unikorea.go.kr"
+  },
+  {
+   "id": "ri-tae-sop",
+   "kind": "notable",
+   "claim": "Sanctioned by the European Union in December 2021 for overseeing brutal interrogation methods and forced labor as head of the Ministry of Social Security.",
+   "url": "https://eur-lex.europa.eu"
+  },
+  {
+   "id": "pang-tu-sop",
+   "kind": "notable",
+   "claim": "Promoted to General and named Chief of the Operations Bureau of the KPA General Staff in June 2022.",
+   "url": "https://en.yna.co.kr/view/AEN20220611001400325"
+  },
+  {
+   "id": "ri-chang-ho",
+   "kind": "notable",
+   "claim": "Sanctioned unilaterally by South Korea and the United States on December 27, 2023 for orchestrating global cyberattacks and stealing cryptocurrency to fund weapons programs.",
+   "url": "https://en.yna.co.kr/view/AEN20231227003400315"
+  },
+  {
+   "id": "ri-chang-ho",
+   "kind": "notable",
+   "claim": "Oversees the cyber hacking units (Bureau 121 and Lab 110) responsible for stealing over $1 billion annually in decentralized cryptocurrency assets.",
+   "url": "https://www.reuters.com/world/asia-pacific/north-korean-hackers-stole-record-crypto-assets-2022-un-report-2023-02-06/"
+  },
+  {
+   "id": "rim-kwang-il",
+   "kind": "notable",
+   "claim": "Appointed Chief of the General Staff Department in September 2021 after serving as the head of the Reconnaissance General Bureau.",
+   "url": "https://en.yna.co.kr/view/AEN20210908001800325"
+  },
+  {
+   "id": "kim-yong-chol",
+   "kind": "notable",
+   "claim": "Orchestrated the March 2010 sinking of the South Korean corvette ROKS Cheonan, killing 46 South Korean sailors.",
+   "url": "https://www.reuters.com/article/us-northkorea-southkorea-spy-idUSKCN0US01Z20160104"
+  },
+  {
+   "id": "kim-yong-chol",
+   "kind": "notable",
+   "claim": "Visited the White House Oval Office in June 2018 to personally deliver a massive letter from Kim Jong Un to President Donald Trump.",
+   "url": "https://www.reuters.com/article/us-northkorea-usa-idUSKCN1IX4O3"
+  },
+  {
+   "id": "kim-yong-chol",
+   "kind": "height_cm",
+   "url": "https://en.yna.co.kr"
+  },
+  {
+   "id": "park-jin-hyok",
+   "kind": "notable",
+   "claim": "Indicted by the US Department of Justice in September 2018 on federal charges of computer fraud and wire fraud conspiracy for state-sponsored cyberattacks.",
+   "url": "https://www.justice.gov/opa/pr/north-korean-regime-backed-programmer-charged-conspiracy-conduct-multiple-cyberattacks-and"
+  },
+  {
+   "id": "kim-won-hong",
+   "kind": "notable",
+   "claim": "Arrested and prepared the treason prosecution case leading to the execution of Jang Song Thaek in December 2013.",
+   "url": "https://www.reuters.com/article/us-northkorea-purge-idUSKBN15H0HQ/"
+  },
+  {
+   "id": "kim-won-hong",
+   "kind": "notable",
+   "claim": "Dismissed from the Ministry of State Security in January 2017 and demoted from four-star general following an OGD corruption audit.",
+   "url": "https://www.reuters.com/article/us-northkorea-purge-idUSKBN15H0HQ/"
+  },
+  {
+   "id": "jang-chang-ha",
+   "kind": "notable",
+   "claim": "Promoted to four-star General following the successful maiden flight test of the solid-fueled Hwasong-18 ICBM in April 2023.",
+   "url": "https://en.yna.co.kr/view/AEN20230414001900325"
+  },
+  {
+   "id": "jang-chang-ha",
+   "kind": "notable",
+   "claim": "Designated by the UN Security Council in Resolution 2321 (2016) for leading North Korea's ballistic missile and WMD development.",
+   "url": "https://scsanctions.un.org"
+  },
+  {
+   "id": "kim-jong-sik",
+   "kind": "notable",
+   "claim": "Appeared walking arm-in-arm with Kim Jong Un following the Kwangmyongsong-4 satellite launch in February 2016, marking his entry into the inner circle.",
+   "url": "https://www.reuters.com/article/us-northkorea-missiles-scientists-idUSKBN18P00F"
+  },
+  {
+   "id": "kim-jong-sik",
+   "kind": "notable",
+   "claim": "Sanctioned by the UN Security Council in Resolution 2397 in December 2017 as a key official driving the DPRK's prohibited missile technology acquisitions.",
+   "url": "https://scsanctions.un.org"
+  },
+  {
+   "id": "hong-sung-mu",
+   "kind": "notable",
+   "claim": "Photographed briefing Kim Jong Un alongside a two-stage thermonuclear warhead ('Hwasan-31' design prototype) prior to the September 2017 hydrogen bomb test.",
+   "url": "https://www.reuters.com/article/us-northkorea-missiles-scientists-idUSKBN18P00F"
+  },
+  {
+   "id": "jo-chun-ryong",
+   "kind": "notable",
+   "claim": "Accompanied Kim Jong Un to visit artillery shell and rocket launcher production plants in August 2023 ahead of the Putin-Kim summit.",
+   "url": "https://www.reuters.com/world/asia-pacific/north-koreas-kim-inspects-major-arms-factories-urges-production-boost-2023-08-06/"
+  },
+  {
+   "id": "jo-chun-ryong",
+   "kind": "notable",
+   "claim": "Promoted to Secretary of the Central Committee in December 2023 to coordinate defense-industrial cooperation with Moscow.",
+   "url": "https://en.yna.co.kr/view/AEN20240101001200325"
+  },
+  {
+   "id": "yu-jin",
+   "kind": "notable",
+   "claim": "Served as a key liaison between the MID and state heavy machine fabrication complexes for missile transporter-erector-launcher (TEL) production.",
+   "url": "https://home.treasury.gov/news/press-releases/jy1136"
+  },
+  {
+   "id": "jon-il-ho",
+   "kind": "notable",
+   "claim": "Designated by the US Treasury and EU in December 2022 for advancing missile guidance electronics and satellite payload integration.",
+   "url": "https://home.treasury.gov/news/press-releases/jy1136"
+  },
+  {
+   "id": "choe-chun-sik",
+   "kind": "notable",
+   "claim": "Supervised the launch of the Unha-3 carrier rocket from Sohae Satellite Launching Ground in December 2012, which placed North Korea's first satellite into orbit.",
+   "url": "https://www.reuters.com/article/us-korea-north-rocket-idUSBRE8BA05520121212"
+  },
+  {
+   "id": "pak-to-chun",
+   "kind": "notable",
+   "claim": "Managed the 2013 nuclear test at Punggye-ri, earning promotion to General of the KPA.",
+   "url": "https://en.yna.co.kr/view/AEN20220728001700325"
+  },
+  {
+   "id": "han-kwang-sang",
+   "kind": "notable",
+   "claim": "Appointed chief cashier for Kim Jong Un's direct household expenditures, managing private bank accounts and luxury acquisitions.",
+   "url": "https://www.nknews.org/2019/12/whos-who-in-north-koreas-new-cabinet/"
+  },
+  {
+   "id": "jon-il-chun",
+   "kind": "notable",
+   "claim": "Served as personal financial manager for Kim Jong Il, operating secret slush fund bank accounts in Switzerland, Austria, and Macau.",
+   "url": "https://www.bbc.com/news/world-asia-55799988"
+  },
+  {
+   "id": "sin-ryong-man",
+   "kind": "notable",
+   "claim": "Promoted to Vice Premier at the Central Committee plenum in December 2023 to spearhead state grain collection crackdowns.",
+   "url": "https://en.yna.co.kr/view/AEN20240101001200325"
+  },
+  {
+   "id": "jon-sung-guk",
+   "kind": "notable",
+   "claim": "Promoted to Vice Premier at the Fifth Plenary Meeting of the 8th Central Committee in June 2022.",
+   "url": "https://en.yna.co.kr/view/AEN20220611001400325"
+  },
+  {
+   "id": "pak-nam-gi",
+   "kind": "notable",
+   "claim": "Executed by firing squad at a military range in Pyongyang on charges of 'conspiring to ruin the national economy as a bourgeois landowner's son'.",
+   "url": "https://www.reuters.com/article/idUSTRE62I0Z520100319/"
+  },
+  {
+   "id": "kim-tong-gyu",
+   "kind": "notable",
+   "claim": "Designated under UN Security Council Resolution 2270 for brokering missile components and defense supplies through front companies.",
+   "url": "https://scsanctions.un.org"
+  },
+  {
+   "id": "choe-son-hui",
+   "kind": "notable",
+   "claim": "Served as North Korea's chief working-level nuclear negotiator during the 2018-2019 Trump-Kim summits in Singapore and Hanoi.",
+   "url": "https://www.reuters.com/world/asia-pacific/north-korea-names-choe-son-hui-first-female-foreign-minister-2022-06-11/"
+  },
+  {
+   "id": "choe-son-hui",
+   "kind": "notable",
+   "claim": "Met with Russian President Vladimir Putin in Moscow in January 2024 to finalize technical and military cooperation protocols.",
+   "url": "https://www.reuters.com/world/europe/putin-meets-north-koreas-foreign-minister-kremlin-2024-01-16/"
+  },
+  {
+   "id": "choe-son-hui",
+   "kind": "height_cm",
+   "url": "https://en.yna.co.kr"
+  },
+  {
+   "id": "kim-song",
+   "kind": "notable",
+   "claim": "Presented North Korea's official position justifying military reconnaissance satellite launches before emergency UN Security Council sessions in 2023-2024.",
+   "url": "https://www.reuters.com/world/asia-pacific/un-security-council-meets-over-north-korea-satellite-launch-2023-11-27/"
+  },
+  {
+   "id": "sin-hong-chol",
+   "kind": "notable",
+   "claim": "Coordinated logistics for Kim Jong Un's high-profile summit tour with Vladimir Putin at Vostochny Cosmodrome in September 2023.",
+   "url": "https://www.reuters.com/world/asia-pacific/kim-putin-meet-russias-vostochny-cosmodrome-2023-09-13/"
+  },
+  {
+   "id": "ri-ryong-nam",
+   "kind": "notable",
+   "claim": "Appointed ambassador to Beijing in February 2021, an unusually high-level posting for a former Vice Premier, reflecting the strategic importance of trade with China.",
+   "url": "https://www.reuters.com/article/us-northkorea-china-envoy-idUSKBN2AN064"
+  },
+  {
+   "id": "kim-hyong-jun",
+   "kind": "notable",
+   "claim": "Organized the first Kim-Putin bilateral summit in Vladivostok in April 2019.",
+   "url": "https://www.reuters.com/article/us-northkorea-russia-idUSKCN1S01S9"
+  },
+  {
+   "id": "ri-su-yong",
+   "kind": "notable",
+   "claim": "Served as guardian for Kim Jong Un and Kim Yo Jong during their private education in Bern, Switzerland in the late 1990s.",
+   "url": "https://www.reuters.com/article/us-northkorea-diplomat-idUSKCN0YG02Z"
+  },
+  {
+   "id": "ri-yong-ho",
+   "kind": "notable",
+   "claim": "Gave the dramatic midnight press conference in Hanoi in February 2019 following the abrupt breakdown of summit talks between Kim Jong Un and Donald Trump.",
+   "url": "https://www.reuters.com/article/us-northkorea-usa-minister-idUSKCN1QI37N"
+  },
+  {
+   "id": "ri-yong-ho",
+   "kind": "notable",
+   "claim": "South Korean National Intelligence Service reported in January 2023 that Ri Yong Ho was purged in late 2019 or 2020, though his execution remains unconfirmed.",
+   "url": "https://en.yna.co.kr/view/AEN20230105005800325"
+  },
+  {
+   "id": "ri-yong-ho",
+   "kind": "height_cm",
+   "url": "https://en.yna.co.kr"
+  },
+  {
+   "id": "kim-kye-gwan",
+   "kind": "health",
+   "claim": "Suffered a debilitating stroke around 2016 that significantly curtailed his active diplomatic travel, moving him into an advisory elder role.",
+   "url": "https://en.yna.co.kr"
+  },
+  {
+   "id": "ri-son-gwon",
+   "kind": "notable",
+   "claim": "Infamously scolded South Korean corporate tycoons during a lunch at the 2018 Pyongyang summit, demanding 'Does the naengmyeon [cold noodles] go down your throat?' to pressure them on economic investments.",
+   "url": "https://en.yna.co.kr/view/AEN20181031008000315"
+  },
+  {
+   "id": "ri-son-gwon",
+   "kind": "notable",
+   "claim": "Shifted to head the United Front Department in June 2022, overseeing the institutional dissolution and restructuring of South Korea-focused agencies.",
+   "url": "https://en.yna.co.kr/view/AEN20220611001400325"
+  },
+  {
+   "id": "pak-myong-ho",
+   "kind": "notable",
+   "claim": "Led a high-level diplomatic delegation to Beijing in December 2023 for bilateral consultations with Chinese Vice Foreign Minister Sun Weidong.",
+   "url": "https://www.reuters.com/world/asia-pacific/north-korea-china-hold-high-level-talks-beijing-2023-12-18/"
+  },
+  {
+   "id": "kim-son-gyong",
+   "kind": "notable",
+   "claim": "Issued formal state statements through KCNA condemning UN Secretary-General António Guterres for expressing concern over North Korean ICBM launches.",
+   "url": "https://www.reuters.com/world/asia-pacific/north-korea-slams-un-chief-deploring-missile-launch-bias-2023-03-05/"
+  },
+  {
+   "id": "ri-yong-ho-kpa",
+   "kind": "notable",
+   "claim": "Walked at the front right corner of Kim Jong Il's hearse in December 2011 as the top military custodian of the transition.",
+   "url": "https://www.reuters.com/article/idUSL3E7NR06V/"
+  },
+  {
+   "id": "ri-yong-ho-kpa",
+   "kind": "notable",
+   "claim": "Relieved of all party, military, and state positions during a snap Politburo meeting on July 15, 2012, marking Kim Jong Un's assertion of personal authority over the military.",
+   "url": "https://www.nytimes.com/2012/07/16/world/asia/north-korea-military-leader-relieved-of-duties.html"
+  },
+  {
+   "id": "thae-yong-ho",
+   "kind": "notable",
+   "claim": "Defected from the DPRK Embassy in London in July 2016 with assistance from British and South Korean intelligence.",
+   "url": "https://www.bbc.com/news/world-asia-37107412"
+  },
+  {
+   "id": "thae-yong-ho",
+   "kind": "notable",
+   "claim": "Elected as a constituency lawmaker for the conservative People Power Party in South Korea's National Assembly in April 2020.",
+   "url": "https://www.reuters.com/article/us-southkorea-election-defectors-idUSKBN21Y074"
+  },
+  {
+   "id": "thae-yong-ho",
+   "kind": "height_cm",
+   "url": "https://assembly.go.kr"
+  },
+  {
+   "id": "ri-il-gyu",
+   "kind": "notable",
+   "claim": "Successfully resolved the 2013 Panamanian seizure of the Chong Chon Gang freighter carrying disassembled Cuban MiG fighter jets and surface-to-air missiles, receiving a commendation letter signed by Kim Jong Un.",
+   "url": "https://www.chosun.com/english/national-en/2024/07/16/N6CEX7R67FCYDKS77E5Z37T4GE/"
+  },
+  {
+   "id": "ri-il-gyu",
+   "kind": "notable",
+   "claim": "Fled Havana in November 2023 after being denied medical travel for a spinal ailment, going public with his defection in July 2024.",
+   "url": "https://www.bbc.com/news/articles/c4ng08l41gdo"
+  },
+  {
+   "id": "ryu-hyun-woo",
+   "kind": "notable",
+   "claim": "Took over as acting ambassador in Kuwait City after the Kuwaiti government expelled Ambassador So Chang Sik under UN sanctions in September 2017.",
+   "url": "https://www.bbc.com/news/world-asia-55799988"
+  },
+  {
+   "id": "ryu-hyun-woo",
+   "kind": "notable",
+   "claim": "Defected to the South Korean Embassy in Kuwait in September 2019, securing the escape of the daughter of the head of Office 39.",
+   "url": "https://www.reuters.com/article/us-northkorea-southkorea-diplomat-kuwait-idUSKBN29U0B2"
+  },
+  {
+   "id": "jo-song-gil",
+   "kind": "notable",
+   "claim": "Disappeared from the Rome embassy compound in November 2018, seeking political asylum in a Western nation before relocating to Seoul.",
+   "url": "https://www.bbc.com/news/world-asia-54445037"
+  },
+  {
+   "id": "hwang-jang-yop",
+   "kind": "notable",
+   "claim": "Walked into the South Korean consulate in Beijing on February 12, 1997 while returning from an ideological conference in Japan, causing a 35-day diplomatic standoff.",
+   "url": "https://www.nytimes.com/1997/02/13/world/top-north-korean-official-defects-at-embassy-in-beijing.html"
+  },
+  {
+   "id": "hwang-jang-yop",
+   "kind": "notable",
+   "claim": "Survived multiple assassination attempts by North Korean Reconnaissance General Bureau hit teams sent to Seoul, dying of natural heart failure in 2010 at age 87.",
+   "url": "https://www.reuters.com/article/idUSTRE6990C220101010/"
+  },
+  {
+   "id": "kang-myong-do",
+   "kind": "notable",
+   "claim": "Stated at a July 1994 press conference in Seoul that North Korea had already manufactured five nuclear bombs and was developing delivery missiles, escalating the 1994 nuclear crisis.",
+   "url": "https://www.washingtonpost.com/archive/politics/1994/07/28/defector-says-north-korea-has-5-nuclear-bombs/2c1d29fe-bc5d-4f05-89f5-455a0f5e1f98/"
+  },
+  {
+   "id": "hyon-song-wol",
+   "kind": "notable",
+   "claim": "Falsely reported by South Korean media in August 2013 to have been executed by firing squad for pornography, but reappeared healthy months later.",
+   "url": "https://www.bbc.com/news/world-asia-27443885"
+  },
+  {
+   "id": "hyon-song-wol",
+   "kind": "notable",
+   "claim": "Led the North Korean cultural advance team across the DMZ to Seoul and Gangneung in January 2018 ahead of the PyeongChang Winter Olympics.",
+   "url": "https://www.reuters.com/article/us-olympics-2018-northkorea-hyon-idUSKBN1FA06P"
+  },
+  {
+   "id": "ri-chun-hee",
+   "kind": "notable",
+   "claim": "Gifted a two-story luxury riverside terrace residence in Pyongyang by Kim Jong Un in April 2022 in recognition of her lifetime of state broadcasting loyalty.",
+   "url": "https://en.yna.co.kr/view/AEN20220414002400325"
+  },
+  {
+   "id": "ri-chun-hee",
+   "kind": "notable",
+   "claim": "Announced the official state broadcasts for the deaths of Kim Il Sung (1994) and Kim Jong Il (2011), as well as North Korea's first thermonuclear bomb test (2017).",
+   "url": "https://www.reuters.com/article/us-northkorea-tv-anchor-idUSKCN1BN0P2"
+  },
+  {
+   "id": "kim-song-hye",
+   "kind": "notable",
+   "claim": "Accompanied Kim Yo Jong and Kim Yong Chol during the historic inter-Korean summit talks at Peace House in Panmunjom in April 2018.",
+   "url": "https://www.reuters.com/article/us-northkorea-southkorea-aide-idUSKBN1HY0H3"
+  },
+  {
+   "id": "kim-song-hye",
+   "kind": "notable",
+   "claim": "Purged and sent to a political prison camp (Yodok / Camp 15) in spring 2019 following an audit into the breakdown of negotiations with Washington.",
+   "url": "https://www.bloomberg.com/news/articles/2019-05-31/north-korea-purges-key-officials-after-failed-hanoi-summit-chosun"
+  },
+  {
+   "id": "kim-ki-nam",
+   "kind": "health",
+   "claim": "Received hospital treatment for chronic kidney disease and multiple organ dysfunction from 2022 until his death in May 2024 at age 94.",
+   "url": "https://www.bbc.com/news/world-asia-68972828"
+  },
+  {
+   "id": "kim-ki-nam",
+   "kind": "notable",
+   "claim": "Served as Editor-in-Chief of Rodong Sinmun in the 1970s before becoming the chief architect of the Kim family dynastic personality cult.",
+   "url": "https://www.bbc.com/news/world-asia-68972828"
+  },
+  {
+   "id": "kim-ki-nam",
+   "kind": "notable",
+   "claim": "Kim Jong Un personally attended his funeral in May 2024, visibly mourning and bowing before the open casket.",
+   "url": "https://www.reuters.com/world/asia-pacific/north-koreas-kim-mourns-master-propagandist-state-funeral-2024-05-09/"
+  }
+ ]
+}

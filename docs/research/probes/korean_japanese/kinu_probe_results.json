@@ -1,0 +1,21 @@
+{
+  "KINU Main": {
+    "url": "https://www.kinu.or.kr/",
+    "status": 200,
+    "length": 132,
+    "title": "",
+    "wp_links": []
+  },
+  "KINU Reports Category 01": {
+    "url": "https://www.kinu.or.kr/www/jsp/prg/reportList.jsp?category=01",
+    "error": "HTTP Error 404: "
+  },
+  "KINU Report List DO": {
+    "url": "https://www.kinu.or.kr/kor/module/report/list.do",
+    "error": "HTTP Error 500: "
+  },
+  "KINU Kor Index": {
+    "url": "https://www.kinu.or.kr/kor/index.do",
+    "error": "HTTP Error 500: "
+  }
+}

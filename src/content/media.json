@@ -1,0 +1,167 @@
+{
+  "library:the-aquariums-of-pyongyang": {
+    "src": "/img/library/the-aquariums-of-pyongyang.jpg",
+    "credit": "Poster via Wikipedia (non-free, used for identification)",
+    "sourceUrl": "https://en.wikipedia.org/wiki/The_Aquariums_of_Pyongyang"
+  },
+  "library:the-girl-with-seven-names": {
+    "src": "/img/library/the-girl-with-seven-names.jpg",
+    "credit": "Cover via Open Library",
+    "sourceUrl": "https://openlibrary.org/works/OL20006234W"
+  },
+  "library:in-order-to-live": {
+    "src": "/img/library/in-order-to-live.jpg",
+    "credit": "Cover via Open Library",
+    "sourceUrl": "https://openlibrary.org/works/OL17330816W"
+  },
+  "library:a-river-in-darkness": {
+    "src": "/img/library/a-river-in-darkness.jpg",
+    "credit": "Cover via Open Library",
+    "sourceUrl": "https://openlibrary.org/works/OL20572591W"
+  },
+  "library:every-falling-star": {
+    "src": "/img/library/every-falling-star.jpg",
+    "credit": "Cover via Open Library",
+    "sourceUrl": "https://openlibrary.org/works/OL20042180W"
+  },
+  "library:dear-leader": {
+    "src": "/img/library/dear-leader.jpg",
+    "credit": "Cover via Open Library",
+    "sourceUrl": "https://openlibrary.org/works/OL19916465W"
+  },
+  "library:nothing-to-envy": {
+    "src": "/img/library/nothing-to-envy.jpg",
+    "credit": "Poster via Wikipedia (non-free, used for identification)",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Nothing_to_Envy"
+  },
+  "library:the-real-north-korea": {
+    "src": "/img/library/the-real-north-korea.jpg",
+    "credit": "Poster via Wikipedia (non-free, used for identification)",
+    "sourceUrl": "https://en.wikipedia.org/wiki/The_Real_North_Korea"
+  },
+  "library:north-korea-confidential": {
+    "src": "/img/library/north-korea-confidential.jpg",
+    "credit": "Cover via Open Library",
+    "sourceUrl": "https://openlibrary.org/works/OL20010248W"
+  },
+  "library:the-great-successor": {
+    "src": "/img/library/the-great-successor.jpg",
+    "credit": "Cover via Open Library",
+    "sourceUrl": "https://openlibrary.org/works/OL20894314W"
+  },
+  "library:the-cleanest-race": {
+    "src": "/img/library/the-cleanest-race.jpg",
+    "credit": "Poster via Wikipedia (non-free, used for identification)",
+    "sourceUrl": "https://en.wikipedia.org/wiki/The_Cleanest_Race"
+  },
+  "library:without-you-there-is-no-us": {
+    "src": "/img/library/without-you-there-is-no-us.jpg",
+    "credit": "Cover via Open Library",
+    "sourceUrl": "https://openlibrary.org/works/OL17079997W"
+  },
+  "library:the-impossible-state": {
+    "src": "/img/library/the-impossible-state.jpg",
+    "credit": "Cover via Open Library",
+    "sourceUrl": "https://openlibrary.org/works/OL16572260W"
+  },
+  "library:beyond-utopia": {
+    "src": "/img/library/beyond-utopia.jpg",
+    "credit": "Poster via Wikipedia (non-free, used for identification)",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Beyond_Utopia"
+  },
+  "library:under-the-sun": {
+    "src": "/img/library/under-the-sun.jpg",
+    "credit": "Poster via Wikipedia (non-free, used for identification)",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Under_the_Sun_(2015_film)"
+  },
+  "library:the-mole-undercover-in-north-korea": {
+    "src": "/img/library/the-mole-undercover-in-north-korea.jpg",
+    "credit": "Poster via Wikipedia (non-free, used for identification)",
+    "sourceUrl": "https://en.wikipedia.org/wiki/The_Mole:_Undercover_in_North_Korea"
+  },
+  "library:the-lovers-and-the-despot": {
+    "src": "/img/library/the-lovers-and-the-despot.png",
+    "credit": "Poster via Wikipedia (non-free, used for identification)",
+    "sourceUrl": "https://en.wikipedia.org/wiki/The_Lovers_and_the_Despot"
+  },
+  "library:crossing-the-line": {
+    "src": "/img/library/crossing-the-line.jpg",
+    "credit": "Poster via Wikipedia (non-free, used for identification)",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Crossing_the_Line_(2006_film)"
+  },
+  "org:liberty-in-north-korea": {
+    "src": "/img/orgs/liberty-in-north-korea.png",
+    "credit": "Logo via Wikipedia",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Liberty_in_North_Korea"
+  },
+  "org:flash-drives-for-freedom": {
+    "src": "/img/orgs/flash-drives-for-freedom.webp",
+    "credit": "Logo from flashdrivesforfreedom.org",
+    "sourceUrl": "https://flashdrivesforfreedom.org"
+  },
+  "org:daily-nk": {
+    "src": "/img/orgs/daily-nk.png",
+    "credit": "Logo from www.dailynk.com",
+    "sourceUrl": "https://www.dailynk.com"
+  },
+  "org:nkdb": {
+    "src": "/img/orgs/nkdb.png",
+    "credit": "Logo via Wikipedia",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Database_Center_for_North_Korean_Human_Rights"
+  },
+  "org:korea-future": {
+    "src": "/img/orgs/korea-future.webp",
+    "credit": "Logo from www.koreafuture.org",
+    "sourceUrl": "https://www.koreafuture.org"
+  },
+  "org:hrnk": {
+    "src": "/img/orgs/hrnk.png",
+    "credit": "Logo from www.hrnk.org",
+    "sourceUrl": "https://www.hrnk.org"
+  },
+  "org:pscore": {
+    "src": "/img/orgs/pscore.png",
+    "credit": "Logo from www.pscore.org",
+    "sourceUrl": "https://www.pscore.org"
+  },
+  "org:fsi": {
+    "src": "/img/orgs/fsi.png",
+    "credit": "Logo from lovefsi.org",
+    "sourceUrl": "https://lovefsi.org"
+  },
+  "org:crossing-borders": {
+    "src": "/img/orgs/crossing-borders.webp",
+    "credit": "Logo from crossingbordersnk.org",
+    "sourceUrl": "https://crossingbordersnk.org"
+  },
+  "org:nk-freedom-coalition": {
+    "src": "/img/orgs/nk-freedom-coalition.png",
+    "credit": "Logo from www.nkfreedom.org",
+    "sourceUrl": "https://www.nkfreedom.org"
+  },
+  "org:ohchr-seoul": {
+    "src": "/img/orgs/ohchr-seoul.png",
+    "credit": "Logo via Wikipedia",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Office_of_the_United_Nations_High_Commissioner_for_Human_Rights"
+  },
+  "org:nk-news": {
+    "src": "/img/orgs/nk-news.png",
+    "credit": "Logo via Wikipedia",
+    "sourceUrl": "https://en.wikipedia.org/wiki/NK_News"
+  },
+  "org:hrw": {
+    "src": "/img/orgs/hrw.png",
+    "credit": "Logo via Wikipedia",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Human_Rights_Watch"
+  },
+  "library:escape-from-camp-14": {
+    "src": "/img/library/escape-from-camp-14.jpg",
+    "credit": "Cover via Open Library (Viking, 2012)",
+    "sourceUrl": "https://openlibrary.org/isbn/9780670023325"
+  },
+  "org:durihana": {
+    "src": "/img/orgs/durihana.png",
+    "credit": "Logo from www.durihana.com",
+    "sourceUrl": "https://www.durihana.com"
+  }
+}

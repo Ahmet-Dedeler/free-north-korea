@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>North Korea Prison Camp Location Map</name>
+    <description/>
+    <Style id="icon-959-000000-normal">
+      <IconStyle>
+        <color>ff000000</color>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/959-wht-circle-blank.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-959-000000-highlight">
+      <IconStyle>
+        <color>ff000000</color>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/959-wht-circle-blank.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1.1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-959-000000">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-959-000000-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-959-000000-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-959-F8971B-normal">
+      <IconStyle>
+        <color>ff1b97f8</color>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/959-wht-circle-blank.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-959-F8971B-highlight">
+      <IconStyle>
+        <color>ff1b97f8</color>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/959-wht-circle-blank.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1.1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-959-F8971B">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-959-F8971B-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-959-F8971B-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-960-000000-normal">
+      <IconStyle>
+        <color>ff000000</color>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/960-wht-star-blank.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-960-000000-highlight">
+      <IconStyle>
+        <color>ff000000</color>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/960-wht-star-blank.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1.1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-960-000000">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-960-000000-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-960-000000-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-960-DB4436-normal">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/960-wht-star-blank.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-960-DB4436-highlight">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/960-wht-star-blank.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1.1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-960-DB4436">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-960-DB4436-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-960-DB4436-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-962-CCCCCC-normal">
+      <IconStyle>
+        <color>ffcccccc</color>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/962-wht-diamond-blank.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-962-CCCCCC-highlight">
+      <IconStyle>
+        <color>ffcccccc</color>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/962-wht-diamond-blank.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1.1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-962-CCCCCC">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-962-CCCCCC-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-962-CCCCCC-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Folder>
+      <name>Operational Kwan-li-so</name>
+      <Placemark>
+        <name>Camp 14, Kaechon
+South Pyongan Province</name>
+        <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR7oSj10XV1UKcUhqB8yX-pb5GO27JVGJm1K9Bpz2ykpsh6-5DIDt9sowTFLDP4-0c4JtM0QUIBKGKYLvPsvhBEWrKpKEqAi6IPooKUqedXuCpdk_ZUFPS4_t_Ri6yq_YmYpIho6pl8Tkkj6V2SFQz6fx33yRQvs-3OyfU1srxf65eJLuRPiiBvN9LzIAVeQWTjF40ly2EFqJqQ?fife=s16383" height="200" width="auto" /><br><br>Kaechon, South Pyongan Province, 39.5717, 126.06215.<br><br>Estimated # of Prisoners: 15,000<br><br>Type of prisoners: Political prisoners<br><br>Type of Labor: Coal mining, logging, farming, raising livestock, and manufacturing<br><br>Detailed analysis of Camp 14, Kaechon can be found in this 2015 HRNK report: https://www.hrnk.org/uploads/pdfs/ASA_HRNK_Camp14_v7_highrezFINAL_11_30_15.pdf]]></description>
+        <styleUrl>#icon-960-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR7oSj10XV1UKcUhqB8yX-pb5GO27JVGJm1K9Bpz2ykpsh6-5DIDt9sowTFLDP4-0c4JtM0QUIBKGKYLvPsvhBEWrKpKEqAi6IPooKUqedXuCpdk_ZUFPS4_t_Ri6yq_YmYpIho6pl8Tkkj6V2SFQz6fx33yRQvs-3OyfU1srxf65eJLuRPiiBvN9LzIAVeQWTjF40ly2EFqJqQ?fife=s16383</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            126.0621556,39.5717058,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Camp 25, Chongjin
+North Hamgyong Province</name>
+        <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR6DMVEuD01adyLb9q3B55w9A1choWBUn00GeeqacljjCsIDdsQfx6Ceo9WewROY2fZjuNpD8AAm723rJjpiq_yYl5wgNxPevY592571s6yk6zxajlj-Fs7zP1QpkYsOui2TYlkqgLzF7aLAAGe5wwcZ2t7HxM5yc5Bjg6H2xV_yXGog_DB-b-4l6udW9lRM1YOLNqpBva1Al3c?fife=s16383" height="200" width="auto" /><br><br>Chongjin, North Hamgyong Province, 41.83299, 129.72106<br><br>Estimated # of Prisoners: 5,000<br><br>Type of prisoners: Political prisoners<br><br>Type of Labor: Bicycle manufacturing<br><br>Detailed analysis of Camp 25, Chongjin can be found in this 2015 HRNK report: https://www.hrnk.org/uploads/pdfs/ASA_HRNK_Camp25_Update2.pdf]]></description>
+        <styleUrl>#icon-960-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR6DMVEuD01adyLb9q3B55w9A1choWBUn00GeeqacljjCsIDdsQfx6Ceo9WewROY2fZjuNpD8AAm723rJjpiq_yYl5wgNxPevY592571s6yk6zxajlj-Fs7zP1QpkYsOui2TYlkqgLzF7aLAAGe5wwcZ2t7HxM5yc5Bjg6H2xV_yXGog_DB-b-4l6udW9lRM1YOLNqpBva1Al3c?fife=s16383</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            129.7210693,41.8329909,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Camp 15, Yodok
+South Hamgyong Province</name>
+        <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR7z9cdrakviF4qhrVV18nxhASAFV_DLfKQo6CUSkexavVGTMeM9aGakvg9LMJc3Zwl_emFY4ZqjsmKQ1_WVI4CkKCCbxvToJr__CYF2SH_rFTv9mAXB3fOULVVGvUXW0YAf_0M__sfdXHiTwj62w4EGzv02w7LFQB5lZZvsSWB3nzFAMhJswzFr2_jhOKhR3ht-C58bkpPyYEc?fife=s16383" height="200" width="auto" /><br><br>Yodok, South Hamgyong Province, 39.67427, 126.85104.<br><br>Estimated # of Prisoners: Unknown<br><br>Type of prisoners: Political prisoners<br><br>Type of Labor: Mining, logging, agricultural production, animal husbandry, and<br>manufacturing<br><br>Detailed analysis of Camp 15, Yodok can be found in this 2015 HRNK report: https://www.hrnk.org/uploads/pdfs/ASA_AnalysisReport_HRNK_Camp15_Final.pdf]]></description>
+        <styleUrl>#icon-960-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR7z9cdrakviF4qhrVV18nxhASAFV_DLfKQo6CUSkexavVGTMeM9aGakvg9LMJc3Zwl_emFY4ZqjsmKQ1_WVI4CkKCCbxvToJr__CYF2SH_rFTv9mAXB3fOULVVGvUXW0YAf_0M__sfdXHiTwj62w4EGzv02w7LFQB5lZZvsSWB3nzFAMhJswzFr2_jhOKhR3ht-C58bkpPyYEc?fife=s16383</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            126.8510413,39.6742705,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Camp 16, Hwasong
+North Hamgyong Province</name>
+        <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR6WdgRihOfnEI2eX56HfdW-C2d-UPI5OI7Z2dolZGfKg_9bxmJ5TtoS8-zE5vjvHNgks9_4_x86XbSk_xYri1dlXB5WtOMcd2E8ky88NLimizZikTXDdI9WkTLwRC6mRqGDq7Vlr7JIZEV0y7HeMpQLPOrBnAX3LQeDsfSXkTlE9sTQeUx_5DKaA2gkeu7LPZf3wy08oZR5TlM?fife=s16383" height="200" width="auto" /><br><br>Hwasong, North Hamgyong Province, 41.28696, 129.26839.<br><br>Estimated # of Prisoners: 20,000<br><br>Type of prisoners: Political prisoners<br><br>Type of Labor: Mining, forestry, farming<br><br>Detailed analysis of Camp 16, Hwasong can be found in this 2015 HRNK report: https://www.hrnk.org/uploads/pdfs/ASA_HRNK_Camp16_v8_fullres_FINAL_12_15_15.pdf]]></description>
+        <styleUrl>#icon-960-DB4436</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR6WdgRihOfnEI2eX56HfdW-C2d-UPI5OI7Z2dolZGfKg_9bxmJ5TtoS8-zE5vjvHNgks9_4_x86XbSk_xYri1dlXB5WtOMcd2E8ky88NLimizZikTXDdI9WkTLwRC6mRqGDq7Vlr7JIZEV0y7HeMpQLPOrBnAX3LQeDsfSXkTlE9sTQeUx_5DKaA2gkeu7LPZf3wy08oZR5TlM?fife=s16383</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            129.2683983,41.2869653,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Kwan-li-so Believed to be Closed</name>
+      <Placemark>
+        <name>Camp 22, Hoeryong
+North Hamgyong Province</name>
+        <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR680E_oKI6FN1N_Yi_8H3OV9w933NN5i0ZUgR6K2Rq6VAkIkWgjquGcsjbyj0WI-wjLPQq2CSFpaqAROSNr46ghP6Ik0z2eiEMBUBPYQ998IoYW5LrwQ3gvkzKOpwstQXwuE2nKehDuEURIg1WsiMOrjJOLx7oLbhbPzaRjGBKPa8NEB-nJWU8ppZzsOLJ5g-aW8yZ7T_zqS-Q?fife=s16383" height="200" width="auto" /><br><br>Hoeryong, North Hamgyong Province, 42.54549, 129.91401.<br><br>It is believed that Camp 22, Hoeryong was closed around 2012. The fate and whereabouts of former prisoners at Camp 22, Hoeryong is unknown.<br><br>Estimated # of Prisoners: Up to 50,000<br><br>Type of prisoners: Political prisoners<br><br>Type of Labor: Coal mining, farming, distilling<br><br>Detailed analysis of Camp 22, Hoeryong can be found in this 2013 HRNK report: https://www.hrnk.org/uploads/pdfs/NKHiddenGulag_DavidHawk(2).pdf]]></description>
+        <styleUrl>#icon-960-000000</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR680E_oKI6FN1N_Yi_8H3OV9w933NN5i0ZUgR6K2Rq6VAkIkWgjquGcsjbyj0WI-wjLPQq2CSFpaqAROSNr46ghP6Ik0z2eiEMBUBPYQ998IoYW5LrwQ3gvkzKOpwstQXwuE2nKehDuEURIg1WsiMOrjJOLx7oLbhbPzaRjGBKPa8NEB-nJWU8ppZzsOLJ5g-aW8yZ7T_zqS-Q?fife=s16383</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            129.8776233,42.5844976,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Camp 18, Bukchang
+South Pyongan Province</name>
+        <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR4i89t14vp9pkwVkvar_hCIYB4bntwi0kRn92Gk0tRJtmlzJhpgBV-aY9nFP_OaBzHFtBm8jq8foBUIWk9Uys-bcXCliaqXnKTukCJ5vfKhyK4VFmgMh1NQrUtHSOCRGvkEihduIC7XJBA8D6jMNblfiNzaHc5iIeA8elGwtzZkpQF8-LgO-JgPa6qHjlXb8p2swzg7p2MpqZg?fife=s16383" height="200" width="auto" /><br><br>Bukchang, South Pyongan Province, 39.55964, 126.08596.<br><br>It is believed that by 2006, nearly all of Camp 18, Bukchang had been decommissioned as a prison camp. Recent analysis shows new activity in the area that may indicate the camp is operational again. <br><br>Estimated # of Prisoners: 27,000<br><br>Type of prisoners: Political prisoners, yeon-jwa-je guilt-by-association prisoners<br><br>Type of Labor: Coal mining, brick making,<br>cement making, glass production, distilling <br><br>Detailed analysis of Camp 18, Bukchang including prisoner testimony can be found in this 2012 HRNK report: https://www.hrnk.org/uploads/pdfs/HRNK_HiddenGulag2_Web_5-18.pdf]]></description>
+        <styleUrl>#icon-960-000000</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR4i89t14vp9pkwVkvar_hCIYB4bntwi0kRn92Gk0tRJtmlzJhpgBV-aY9nFP_OaBzHFtBm8jq8foBUIWk9Uys-bcXCliaqXnKTukCJ5vfKhyK4VFmgMh1NQrUtHSOCRGvkEihduIC7XJBA8D6jMNblfiNzaHc5iIeA8elGwtzZkpQF8-LgO-JgPa6qHjlXb8p2swzg7p2MpqZg?fife=s16383</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            126.085968,39.5596476,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Unconfirmed Probable Camp Locations</name>
+      <Placemark>
+        <name>Kyo-hwa-so No. 8, Yongdam
+Kangwon Province</name>
+        <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR7I9lwpq830unsuAdVLUzlBsFvboqi5p9Df8nclGcYCuRPGYHI6Rq3Lh07ZLLcCdDew3eopE_gBmC1TyAtW4GtUvcSurc-l3i4TEs_PgoEByrXjCwbkpw1bvcLJ4jbWx-RH3uv_-oDNmOahYkf7Up0jl-OPSBwnEAO7svDCFelJHf_XUlui1hoM_1ntidCwijrs-h6B6XtKn5I?fife=s16383" height="200" width="auto" /><br><br>Yongdam, Kangwon Province, 39° 21’42.91”N 127° 15’53.02”E.<br><br>Estimated # of Prisoners: 2,000<br><br>Type of prisoners: Unknown<br><br>Type of Labor: Unknown <br><br>This location has not been confirmed by HRNK prisoner testimony. Both NKDB and KINU mention Yongdam as an unnumbered kyo-hwa-so located in Chonnae-gun, Kangwon Province. The 2011 NKDB volume, Prisoners in North Korea Today, lists a “Prison No. 8” located in the Seungho area of Pyongang. There is no further information about its current state of operation.]]></description>
+        <styleUrl>#icon-962-CCCCCC</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR7I9lwpq830unsuAdVLUzlBsFvboqi5p9Df8nclGcYCuRPGYHI6Rq3Lh07ZLLcCdDew3eopE_gBmC1TyAtW4GtUvcSurc-l3i4TEs_PgoEByrXjCwbkpw1bvcLJ4jbWx-RH3uv_-oDNmOahYkf7Up0jl-OPSBwnEAO7svDCFelJHf_XUlui1hoM_1ntidCwijrs-h6B6XtKn5I?fife=s16383</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            127.2649381,39.3613796,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kyo-hwa-so No. 11, Chung-san
+South Pyongan Province</name>
+        <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR4YIESuRxRJiWh3YxwgTxqQFTjCD9BlAxtXeP_GM1UA69PHgZ_QdZWrwFTTgpU92iqurhlxhX5fz6SC52W3KjLiby-9IjUVGWx3NoOIv5MkxxFAnwF-7nLMgOvZYnAq0cGFuywqpK0v0TU6swhlkhbU3g8NjvGKm-NVK4CgHL36Dc5rWBPrFARAeSPcLFeUgMrePs4vYn5kSvQ?fife=s16383" height="200" width="auto" /><br><br>Chung-san, South Pyongan Province, 39° 4’40.35”N 125° 26’15.58”E. <br><br>Kyo-hwa-so No. 11, Chung-san is also transliterated as Chonsan, Jungsan, and Jeungsan.<br><br>Estimated # of Prisoners: Over 500<br><br>Type of prisoners: Men, women, border crossers, political prisoners<br><br>Type of Labor: Farming, construction, manufacturing <br><br>Detailed analysis of Kyo-hwa-so No. 11, Chung-san can be found in this 2017 HRNK report: https://www.hrnk.org/uploads/pdfs/Hawk_The_Parallel_Gulag_Web.pdf]]></description>
+        <styleUrl>#icon-962-CCCCCC</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR4YIESuRxRJiWh3YxwgTxqQFTjCD9BlAxtXeP_GM1UA69PHgZ_QdZWrwFTTgpU92iqurhlxhX5fz6SC52W3KjLiby-9IjUVGWx3NoOIv5MkxxFAnwF-7nLMgOvZYnAq0cGFuywqpK0v0TU6swhlkhbU3g8NjvGKm-NVK4CgHL36Dc5rWBPrFARAeSPcLFeUgMrePs4vYn5kSvQ?fife=s16383</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            125.3218811,39.142294,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kyo-hwa-so No. 7, Kanggye
+Chagang Province</name>
+        <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR7_8bYSEQYSGRboxhRFE5hRKvwxlMeA6cRLeJOhSVD7VYArGzeFd-It-gBla34GTaED41v2MlzUTLzcv3vdddztlbFwYSSowD-z8uqX92wU8ZVx1ek6VdGqgJpYXgeO2_lHDFMU4zRDSHIaiOWsovjMhQGoPdRHYAczSMegRRnRq8_fCMkL1QCoEGIJO53Pa0Ij8wJNitKPBgo?fife=s16383" height="200" width="auto" /><br><br>Kanggye City Prison, Kanggye, Changang Province, 40° 57’15.56”N 126° 34’4.31”E. <br><br>Kyo-hwa-so No. 7, Kanggye is also transliterated as Kangkye and Ganggye.<br><br>Estimated # of Prisoners: Unknown<br><br>Type of prisoners: Unknown<br><br>Type of Labor: Unknown <br><br>This location has not been confirmed by HRNK prisoner testimony. It has been listed in NKDB and KINU reports. There is no further information about its current state of operation.]]></description>
+        <styleUrl>#icon-962-CCCCCC</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR7_8bYSEQYSGRboxhRFE5hRKvwxlMeA6cRLeJOhSVD7VYArGzeFd-It-gBla34GTaED41v2MlzUTLzcv3vdddztlbFwYSSowD-z8uqX92wU8ZVx1ek6VdGqgJpYXgeO2_lHDFMU4zRDSHIaiOWsovjMhQGoPdRHYAczSMegRRnRq8_fCMkL1QCoEGIJO53Pa0Ij8wJNitKPBgo?fife=s16383</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            126.5677088,40.9542659,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kyo-hwa-so No. 2, Dongrim
+North Pyongan Province</name>
+        <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR5-7Hgkd8fT1Ta5_k6rJ5hAdI2wDMfCFprVXJdj1sz35BkDSHFwIkUpTkDgcfZvVg_n1aVClr4dH2vZm-cX4uEF2J5wbnFRGNwrHeJtylnzYwnrOD2EQpfMWwg7imT644k1Rkn8pBOCaUvU-ifaxPV1ORQiVpu88G1ZfEC1eClGc4F5Jny9H2gypjfTsA_KxVBCAG1L0ZVJz8w?fife=s16383" height="200" width="auto" /><br><br>Sowol-ri, Dongrim. North Pyongan Province, 39° 52’39.30”N 124° 43’46.58”E.<br><br>Estimated # of Prisoners: Unknown<br><br>Type of prisoners: Unknown<br><br>Type of Labor: Unknown <br><br>This location has not been confirmed by HRNK prisoner testimony. It has been listed in NKDB reports in 2011 and 2016, as well as KINU reports in 2014 and 2016. There is no further information about its current state of operation.<br><br>A second location associated with this camp known as Obong Workers' District is located at 39° 52’5.42”N 124° 44’59.35”E.<br><br><img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR6cWEqqlAEofFKHQUIyZz9_V0QQ89acDxgYJlXxJp_HBX5Xqkijw21IA5V_piB8SitlgZudLLI8wiMrcxJTZLB06oScHzAb-5uRtIl8A3aPL3VXgAmMkTVXTn7w4jUXnZZcF53iCi4GZKQEyGpz8KUXl8jP8zL9E7bW3NG7EGmdi7vdH3ULP3QNZyJYKLbOcsNMl9uCNaxpmKs?fife=s16383" height="200" width="auto" />]]></description>
+        <styleUrl>#icon-962-CCCCCC</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR5-7Hgkd8fT1Ta5_k6rJ5hAdI2wDMfCFprVXJdj1sz35BkDSHFwIkUpTkDgcfZvVg_n1aVClr4dH2vZm-cX4uEF2J5wbnFRGNwrHeJtylnzYwnrOD2EQpfMWwg7imT644k1Rkn8pBOCaUvU-ifaxPV1ORQiVpu88G1ZfEC1eClGc4F5Jny9H2gypjfTsA_KxVBCAG1L0ZVJz8w?fife=s16383 https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR6cWEqqlAEofFKHQUIyZz9_V0QQ89acDxgYJlXxJp_HBX5Xqkijw21IA5V_piB8SitlgZudLLI8wiMrcxJTZLB06oScHzAb-5uRtIl8A3aPL3VXgAmMkTVXTn7w4jUXnZZcF53iCi4GZKQEyGpz8KUXl8jP8zL9E7bW3NG7EGmdi7vdH3ULP3QNZyJYKLbOcsNMl9uCNaxpmKs?fife=s16383</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            124.7295749,39.8775221,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kyo-hwa-so No. 88, Wonsan
+Kangwon Province</name>
+        <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR5rDgICePbnhaAu4VycIIt7sVPIqDEyof5GCe8h_UdzrWXZmFownavALIjxTTEH7I2mfpQO_s6gNfCVmDi7s2RlNWtPkJyakLibEIq_U1ZRSu29aZbh9B6ICxkLryoUTLmnq8pZgXrYx6FOGj4_B66z1jQRR7vpoHo6q4KUTcYVWGzehzq9-hMKBaHYe4cGIT0d145qxKmWBoM?fife=s16383" height="200" width="auto" /><br><br>Sokhyol-ri, Wonsan, Kangwon Province, 39° 9’26.46”N 127° 21’51.76”E.<br><br>Estimated # of Prisoners: Unknown<br><br>Type of prisoners: Unknown<br><br>Type of Labor: Unknown <br><br>This location has not been confirmed by HRNK prisoner testimony. It has been previously listed in NKDB and KINU reports. There is no further information about its current state of operation.<br><br>A second location associated with this camp is located in Chuksan-ri at 39° 11’57.43”N 127° 20’45.07”E<br><br><img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR6Ny-wtQTA8zqKQCZy5gGgm9AwydUXNeVSHEa_oDWTIoEQglLxy2LmuoW6SdoGTcRNP7Ikae_L04TZaz_d3dCR4W2URLa31WdbGvhL2DS9MpCfc6Wv52ibnHBCb72lI7dHPJSDJTE6YypTdsEii2dUBFUa4xOXcc7eUxUFXSJe4gW-qzo4NK-mbtVdOz_fuujxd2Xb0BS2K1v8?fife=s16383" height="200" width="auto" />]]></description>
+        <styleUrl>#icon-962-CCCCCC</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR5rDgICePbnhaAu4VycIIt7sVPIqDEyof5GCe8h_UdzrWXZmFownavALIjxTTEH7I2mfpQO_s6gNfCVmDi7s2RlNWtPkJyakLibEIq_U1ZRSu29aZbh9B6ICxkLryoUTLmnq8pZgXrYx6FOGj4_B66z1jQRR7vpoHo6q4KUTcYVWGzehzq9-hMKBaHYe4cGIT0d145qxKmWBoM?fife=s16383 https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR6Ny-wtQTA8zqKQCZy5gGgm9AwydUXNeVSHEa_oDWTIoEQglLxy2LmuoW6SdoGTcRNP7Ikae_L04TZaz_d3dCR4W2URLa31WdbGvhL2DS9MpCfc6Wv52ibnHBCb72lI7dHPJSDJTE6YypTdsEii2dUBFUa4xOXcc7eUxUFXSJe4gW-qzo4NK-mbtVdOz_fuujxd2Xb0BS2K1v8?fife=s16383</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            127.3643518,39.1572112,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kyo-hwa-so No. 9, Hamhung
+South Hamgyong Province</name>
+        <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR7MrrSU7mNQtNPgUdjKuqHtIxbA2uXL296o6HAvk9jgiaI3qro99-NEnvt9Z_wyvLKRoIdta63Vv2giTKY4aVKIMuDibqUybHx53FGIj_pkLaWrITOwjrzOha8foprzL7kTll0bPqPFDB6qAEbkixDpNMILMIUe2AjXRKBiS7FCmEhxFbG-m2iUG8eZrhmF8bExkvMzP_GgI3c?fife=s16383" height="200" width="auto" /><br><br>Hamhung City Prison, Hamhung, South Hamgyong Province, 39° 57’27.67”N 127° 33’47.40”E. <br><br>Also transliterated as Hamheung, the 2011 NKDB report locates Kyo-hwa-so No. 9, Hamhung Men’s Prison at Hoeyang, Hoesang Area, Hamhung City, while Hamhung Women’s Prison is located at Songwon Village, which is also spelled as Sungwon, Hoesang Area, Hamhung City.<br><br>Estimated # of Prisoners: Over 500<br><br>Type of prisoners: Men, women, political prisoners, forcibly repatriated women<br><br>Type of Labor: Sewing, farming, gold mining <br><br>A second location associated with this camp known as Hamhung Women's Prison is located in Sungwon-ri at 40° 3’29.86”N 127° 40’34.29”E.<br><br><img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR6viiQY0P_oEfdJ_qc_kC7AAg4UK5YyMi323ekqubmWwdoaOTA9sPq7WUeQtWpN6X2vGNBn2tQYrYs5qSqGBJnA9ooEpnUZ8PCYyQUfA-WxvCPnLP6G4u8CQoRz4fYRimKV8c6HHIKFxTyCSeECmpX4RTDLP6liS4pGpxsRFvkTI_Ep_ugdmpskk-r4v3VlRQtQlcSZyt4ro5k?fife=s16383" height="200" width="auto" />]]></description>
+        <styleUrl>#icon-962-CCCCCC</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR7MrrSU7mNQtNPgUdjKuqHtIxbA2uXL296o6HAvk9jgiaI3qro99-NEnvt9Z_wyvLKRoIdta63Vv2giTKY4aVKIMuDibqUybHx53FGIj_pkLaWrITOwjrzOha8foprzL7kTll0bPqPFDB6qAEbkixDpNMILMIUe2AjXRKBiS7FCmEhxFbG-m2iUG8eZrhmF8bExkvMzP_GgI3c?fife=s16383 https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR6viiQY0P_oEfdJ_qc_kC7AAg4UK5YyMi323ekqubmWwdoaOTA9sPq7WUeQtWpN6X2vGNBn2tQYrYs5qSqGBJnA9ooEpnUZ8PCYyQUfA-WxvCPnLP6G4u8CQoRz4fYRimKV8c6HHIKFxTyCSeECmpX4RTDLP6liS4pGpxsRFvkTI_Ep_ugdmpskk-r4v3VlRQtQlcSZyt4ro5k?fife=s16383</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            127.5631502,39.9576574,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sunchon Kyo-hwa-so
+South Pyongan Province</name>
+        <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR5zQauLFG8u4gKjOS0Hs0pT2X-TG8D9wWsRebWMKDh61AdnepxxsqOzBwmGPkfbB_beVib_PlwIwtAFRj0H6JIbb_mVfdqhFRzNogbouVfIPLzfXPOhPNv-AxLBj-U4uSbmTkysqUsQkcIWQtfn_v5EIZ39TYC4_1scS6bmRZPPkXASbUG-wjcGL7sPDlxegMFu-lAlXbTSIQs?fife=s16383" height="200" width="auto" /><br><br>Ungbong-dong, South Pyongan Province, 39° 26’9.54”N 125° 47’44.43”E.<br><br>Sunchon Kyo-hwa-so is sometimes known as Sukchon Kyo-hwa-so. <br><br>Estimated # of Prisoners: 400<br><br>Type of prisoners: Unknown<br><br>Type of Labor: Gold mining <br><br>This location has not been confirmed by HRNK prisoner testimony. It has been listed in NKDB and KINU reports. There is no further information about its current state of operation.]]></description>
+        <styleUrl>#icon-962-CCCCCC</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR5zQauLFG8u4gKjOS0Hs0pT2X-TG8D9wWsRebWMKDh61AdnepxxsqOzBwmGPkfbB_beVib_PlwIwtAFRj0H6JIbb_mVfdqhFRzNogbouVfIPLzfXPOhPNv-AxLBj-U4uSbmTkysqUsQkcIWQtfn_v5EIZ39TYC4_1scS6bmRZPPkXASbUG-wjcGL7sPDlxegMFu-lAlXbTSIQs?fife=s16383</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            125.795675,39.4359833333333,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kyo-hwa-so No. 8, Sungho-ri
+Pyongyang</name>
+        <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR51N2zAY_pcntLh9ZW2srqdLIL-9qZYGQ0P159__HHWGQzkrgpyMivSgeEJJY8__rHjIgNd3eLgz-eoYprXLhi6tLuQpsVFdIRtxtTvAio8uUH3o3XOC8ABHEAcDQTgfo_rShjo_tS_BNpVgQDyqr2wd9t3FfE3A1TV0BD7rED7JBM70kpAoUauDNih7pe0CeNAqffQN8f1hmg?fife=s16383" height="200" width="auto" /><br><br>Sungho-ri, Pyongyang, 39° 0’5.25”N 126° 3’28.24”E.<br><br>Estimated # of Prisoners: 2,000<br><br>Type of prisoners: Unknown<br><br>Type of Labor: Coal mining<br><br>This location has not been confirmed by HRNK prisoner testimony. It has been previously listed in NKDB and KINU reports. There is no further information about its current state of operation.<br><br>Detailed analysis of Kyo-hwa-so No. 8, Sungho-ri can be found in this 2019 HRNK report: https://www.hrnk.org/uploads/pdfs/Bermudez_Pokchongni_FINALFINAL_Web.pdf]]></description>
+        <styleUrl>#icon-962-CCCCCC</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR51N2zAY_pcntLh9ZW2srqdLIL-9qZYGQ0P159__HHWGQzkrgpyMivSgeEJJY8__rHjIgNd3eLgz-eoYprXLhi6tLuQpsVFdIRtxtTvAio8uUH3o3XOC8ABHEAcDQTgfo_rShjo_tS_BNpVgQDyqr2wd9t3FfE3A1TV0BD7rED7JBM70kpAoUauDNih7pe0CeNAqffQN8f1hmg?fife=s16383</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            126.057844444444,39.0014583333333,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Facility at I-gol
+South Hamgyong Province
+</name>
+        <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR7J3HPRQr1GYs6-DnFpLYr4cfsXT0UfUFxdsoCLqLgmmba3ytkkTziGDATq_uHb8pUgYeVhkaEu-acd8ldRdprSbdcFbzanlj3MGyq090o0tznvWz-aZI9dyPg5_stY65S7Jl_DlP9zXgJ1b8eT46pOaB7Ua5uPXe9DrGTX8Rrk_CHinYBV83LeFdvbC02w7x864q3747VZcQ0?fife=s16383" height="200" width="auto" /><br><br>I-gol, South Hamgyong Province, 40° 9’51.87”N 128° 30’43.21”E.<br><br>Estimated # of Prisoners: Unknown<br><br>Type of prisoners: Unknown<br><br>Type of Labor: Unknown <br><br>This location has not been confirmed by HRNK prisoner testimony or listed by NGO reports. However, the satellite images share the appearance of other well documented<br>kyo-hwa-so. There is no further information about its current state of operation.]]></description>
+        <styleUrl>#icon-962-CCCCCC</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR7J3HPRQr1GYs6-DnFpLYr4cfsXT0UfUFxdsoCLqLgmmba3ytkkTziGDATq_uHb8pUgYeVhkaEu-acd8ldRdprSbdcFbzanlj3MGyq090o0tznvWz-aZI9dyPg5_stY65S7Jl_DlP9zXgJ1b8eT46pOaB7Ua5uPXe9DrGTX8Rrk_CHinYBV83LeFdvbC02w7x864q3747VZcQ0?fife=s16383</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            128.512002777778,40.1644083333333,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Facility at Udan
+North Hamgyong Province</name>
+        <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR67vfK3wANUJDKhGnDgQsnxGDmOw0tCXcCM5OuzzoP2303j8s1l_ZkttxtmPbSI5eGnOZCHYGqLzg-FETXw7MTWVjD7hGhjbhM4snYd6VYJb2Cs8_zrtMHjiAmWS1eH3iFwdsw-duYN-7l0ZASAURE3a_SvwPgEUy6iT8JAIusia32SGqkCj3vusfEz2vLBTNROR6ibF-gsYlI?fife=s16383" height="200" width="auto" /><br><br>Udan, North Hamgyong Province, 40° 50’57.25”N 129° 34’50.45”E.<br><br>Estimated # of Prisoners: Unknown<br><br>Type of prisoners: Unknown<br><br>Type of Labor: Unknown<br><br>This location has not been confirmed by HRNK prisoner testimony or listed by NGO reports. However, the satellite images share the appearance of other well documented<br>kyo-hwa-so. There is no further information about its current state of operation.]]></description>
+        <styleUrl>#icon-962-CCCCCC</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR67vfK3wANUJDKhGnDgQsnxGDmOw0tCXcCM5OuzzoP2303j8s1l_ZkttxtmPbSI5eGnOZCHYGqLzg-FETXw7MTWVjD7hGhjbhM4snYd6VYJb2Cs8_zrtMHjiAmWS1eH3iFwdsw-duYN-7l0ZASAURE3a_SvwPgEUy6iT8JAIusia32SGqkCj3vusfEz2vLBTNROR6ibF-gsYlI?fife=s16383</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            129.580680555556,40.8492361111111,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ch’oma-bong Restricted Area
+South Pyongan Province
+</name>
+        <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR7Hj5pOFFZMe9ExheLQGMa-JpBlSdFYt6okmicRxq4djUnWQGJ5QCKG1Au0gFO6XZUWBikA7gklW4iWIoXl7fxojYLtKIqgRRwofOOKKIPMxk7VzKPD6YbTXMpjJOLQAmBHkryPgJOqJIEF8T9d77V9XL-rHovRhOObNoHqPSsqLfrVsO3O-we54wsT1pgTQ_YP9y5iyuj2vz0?fife=s16383" height="200" width="auto" /><br><br>Ch’oma-bong/Dongrim-ri, South Pyongan Province, 39.63141, 125.99934<br><br>Estimated # of Prisoners: Unknown<br><br>Type of prisoners: Unknown<br><br>Type of Labor: Mining, agricultural production<br><br>Detailed analysis of Ch’oma-bong Restricted Area can be found in this 2016 HRNK report: https://www.hrnk.org/uploads/pdfs/ASA_HRNK_Chmbg_201603_FINAL.pdf<br><br><img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR4QVGyShNWGRjRhBGjg02kI-9XlweV27LDrHOUDhnTtJ3IXRo9intDCjUG5a0YVgNMpB_inC6i-iWk2VQL6d-0smB4jYxU28kJ6RxBypVu-BLuIEoyxO6NhU6VhKbnYQ25oqr2lpxYGGbcVEg4UQGMsKNPqTlF_ag7BqCxuJpEQZsX9RRgVsWveHMIQ7qc9OfELwxpsrzATST8?fife=s16383" height="200" width="auto" />]]></description>
+        <styleUrl>#icon-962-CCCCCC</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR7Hj5pOFFZMe9ExheLQGMa-JpBlSdFYt6okmicRxq4djUnWQGJ5QCKG1Au0gFO6XZUWBikA7gklW4iWIoXl7fxojYLtKIqgRRwofOOKKIPMxk7VzKPD6YbTXMpjJOLQAmBHkryPgJOqJIEF8T9d77V9XL-rHovRhOObNoHqPSsqLfrVsO3O-we54wsT1pgTQ_YP9y5iyuj2vz0?fife=s16383 https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR4QVGyShNWGRjRhBGjg02kI-9XlweV27LDrHOUDhnTtJ3IXRo9intDCjUG5a0YVgNMpB_inC6i-iWk2VQL6d-0smB4jYxU28kJ6RxBypVu-BLuIEoyxO6NhU6VhKbnYQ25oqr2lpxYGGbcVEg4UQGMsKNPqTlF_ag7BqCxuJpEQZsX9RRgVsWveHMIQ7qc9OfELwxpsrzATST8?fife=s16383</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            125.999343,39.631412,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kyo-hwa-so No. 3, Sinuiju
+North Pyongan Province</name>
+        <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR5bwnF3OWvAG75tHuXPFrDxcHbuyiRe-TvGsCtrH0sIQ_2k2VRnQQynRZcrppEnTW0keXwa_i3XByVP6zjBY_U50pqTbLBTPVGCqR04GR6cuh54Ok5bDwFEtGIqzjW2u5rnO70eXvlO1zBRaZu-y6wUhFhNjf7Rux61MiUGjgFBntssqQ0jju5z_PUsKe7B5QUiBkcdu_YlS7Q?fife=s16383" height="200" width="auto" /><br><br>Tosong-ri, Sinuiju, North Pyongan Province, 40° 3’43.00”N 124° 24’34.65”E.<br><br>Estimated # of Prisoners: 2,500<br><br>Type of prisoners: Men, criminal offenders, political prisoners, other (uknown)<br><br>Type of Labor: Rock and gold mining, prison uniform manufacturing <br><br>This location is not yet confirmed. It has been listed in NKDB and KINU reports. There is no further information about its current state of operation.]]></description>
+        <styleUrl>#icon-962-CCCCCC</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR5bwnF3OWvAG75tHuXPFrDxcHbuyiRe-TvGsCtrH0sIQ_2k2VRnQQynRZcrppEnTW0keXwa_i3XByVP6zjBY_U50pqTbLBTPVGCqR04GR6cuh54Ok5bDwFEtGIqzjW2u5rnO70eXvlO1zBRaZu-y6wUhFhNjf7Rux61MiUGjgFBntssqQ0jju5z_PUsKe7B5QUiBkcdu_YlS7Q?fife=s16383</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            124.409625,40.0619444444444,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Operational Kyo-hwa-so</name>
+      <Placemark>
+        <name>Kyo-hwa-so No. 1, Kaechon
+South Pyongan Province</name>
+        <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR6Q7hNvgu-WlYI3NI_uRKwVTX1luPTVgv6asLJb8Qp1fowsjSPMjS116hSrbqAk0zmpIuXuFDOv2Hq5MaGrIIFgIzO5e9ieSnsy3VcFASuYak9YoX-yGn8KLHXnJJ8K1eUz7WXoSw2IHfkBA2UkduQ2zOiBm2V8ZpTMOnoswaTZ8fprICkRozpehJqeVzJErUk1txNFU4iJE4Y?fife=s16383" height="200" width="auto" /><br><br>Kaechon, South Pyongan Province, 39° 42’34.72”E, 125° 55’24.78”E.<br><br>Kyo-hwa-so No. 1, Kaechon is also transliterated as Gaechon, which is located in Yaksu-dong, Kaechon City and thought to be one of the oldest kyo-hwa-so prison camps. <br><br>Estimated # of Prisoners: 4,000 to 6,000 <br><br>Type of prisoners: Men, women, political prisoners, border crossers, genuine criminal offenders, Japanese-Koreans<br><br>Type of Labor: Textile production, Leather manufacturing<br><br>Detailed analysis of Kyo-hwa-so No. 1, Kaechon can be found in this 2020 HRNK report: https://www.hrnk.org/uploads/pdfs/Bermudez_Kaechon_FINAL.pdf<br><br><img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR5vdATbKvQ8S2ZvSB5gNapQzTndAib_e6BWHiZawruOwMwx__zbXtlgHCwKthMUuN7azxkAiAw4nMzEcxSu8gcAuwl8hjbpW3OD_tm9OwxnOTiwfkNe0OvRdF266UXCrP0DQVQirnv35lEdcD1HN5FQhJQ8WX03onZBbqoqCQmvTP3AuPeqSW5VCbOn6pnxf3-Dt7T1kA5oW9U?fife=s16383" height="200" width="auto" />]]></description>
+        <styleUrl>#icon-959-F8971B</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR6Q7hNvgu-WlYI3NI_uRKwVTX1luPTVgv6asLJb8Qp1fowsjSPMjS116hSrbqAk0zmpIuXuFDOv2Hq5MaGrIIFgIzO5e9ieSnsy3VcFASuYak9YoX-yGn8KLHXnJJ8K1eUz7WXoSw2IHfkBA2UkduQ2zOiBm2V8ZpTMOnoswaTZ8fprICkRozpehJqeVzJErUk1txNFU4iJE4Y?fife=s16383 https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR5vdATbKvQ8S2ZvSB5gNapQzTndAib_e6BWHiZawruOwMwx__zbXtlgHCwKthMUuN7azxkAiAw4nMzEcxSu8gcAuwl8hjbpW3OD_tm9OwxnOTiwfkNe0OvRdF266UXCrP0DQVQirnv35lEdcD1HN5FQhJQ8WX03onZBbqoqCQmvTP3AuPeqSW5VCbOn6pnxf3-Dt7T1kA5oW9U?fife=s16383</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            125.9230614,39.7083752,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kyo-hwa-so No. 4, Kangdong
+Pyongyang City</name>
+        <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR6uyAEutgb01S_cPtetf7baUqd7PKKDQXyhMTi8CB_VKx5i4ONoB6oW2r0mJGLuANh5DxD_fbI1WnlUxcamyiltuu0fEUeonqpirqJZv0tUIPl7V-WfmNBjdMDKAQfT6e7hPEDIkiaHW5FJum8xWB3vrSRQQXRprxA6QVMQltNBsZpNdVWf5s1jqwJJkYuFttpA6oMJUZWdKQA?fife=s16383" height="200" width="auto" /><br><br>Samdung-ri, Kangdong-kun, South Pyongan Province,  39° 0’31.24”N 126° 9’12.42”E.<br><br>Also transliterated as Gangdong, Kyo-hwa-so No. 4, Kangdong is located in Chael-kol on the eastern outskirts of Pyongyang close to South Pyongan Province. <br><br>Estimated # of Prisoners: 1,000 to 4,000<br><br>Type of prisoners: Men, civilian and military offenders, political prisoners<br><br>Type of Labor: Limestone and cement production<br><br>Detailed analysis of Kyo-hwa-so No. 4, Kangdong can be found in this 2019 HRNK report: https://www.hrnk.org/uploads/pdfs/Bermudez_Kangdong_FINALFINAL.pdf]]></description>
+        <styleUrl>#icon-959-F8971B</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR6uyAEutgb01S_cPtetf7baUqd7PKKDQXyhMTi8CB_VKx5i4ONoB6oW2r0mJGLuANh5DxD_fbI1WnlUxcamyiltuu0fEUeonqpirqJZv0tUIPl7V-WfmNBjdMDKAQfT6e7hPEDIkiaHW5FJum8xWB3vrSRQQXRprxA6QVMQltNBsZpNdVWf5s1jqwJJkYuFttpA6oMJUZWdKQA?fife=s16383</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            126.1529938,39.0089107,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kyo-hwa-so No. 12, Jongo-ri
+North Hamgyong Province</name>
+        <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR6ss6rypwdexr0l_4blIpGX7RPcG-lCKgsHgsU5d9EoTovTV0T6vMpKoJM_pDC33ikVF4l84w6mdXobtdEhsrU28nryNhWL_d2FlhRfBG2Xl8JTI8LnY1uo2Oq8OGGNhRAJ9w_s26spEPg7UNGvJT2YjrToVA-h99ir5dZQmuzCHx4P_MGTcapF3ULdBTPlY-RWfEerh-upamw?fife=s16383" height="200" width="auto" /><br><br>Jongo-ri, North Hamgyong Province, 42° 12’34.00”N 129° 45’18.14”E.<br><br>Kyo-hwa-so No. 12, Jongo-ri is also transliterated as Chongo-ri.<br><br>Estimated # of Prisoners: 2,300 to 2,500<br><br>Type of prisoners: Men, women, border crossers, political prisoners, forcibly repatriated women<br><br>Type of Labor: Copper and iron mining, farming, brick making, wig and eyelash production<br><br>Detailed analysis of Kyo-hwa-so No. 12, Jongo-ri can be found in this 2016 HRNK report: https://www.hrnk.org/uploads/pdfs/ASA_HRNK_Camp12_201608_v10_LR.pdf]]></description>
+        <styleUrl>#icon-959-F8971B</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR6ss6rypwdexr0l_4blIpGX7RPcG-lCKgsHgsU5d9EoTovTV0T6vMpKoJM_pDC33ikVF4l84w6mdXobtdEhsrU28nryNhWL_d2FlhRfBG2Xl8JTI8LnY1uo2Oq8OGGNhRAJ9w_s26spEPg7UNGvJT2YjrToVA-h99ir5dZQmuzCHx4P_MGTcapF3ULdBTPlY-RWfEerh-upamw?fife=s16383</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            129.7555538,42.2086005,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kyo-hwa-so No. 6, Sariwon
+North Hwanghae Province</name>
+        <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR5K3JyS6lWuID-sirhLPd38-SfrBbooFnolyRVu83V_EDS2YRRE_mjOMpySNDVo7y-ZSdDNbCHpuMKY0DC88o1N6MP0DcedApe-8s0eoEVG-Ofvc24F-Kdz2c0FAs0W2hTQud9feeltm7nBvAtN8fzOKzUns3NWiEEXD_BYEeVXW9LN4Wa52FReFCt24wvcywT2h3EDZCCPf6k?fife=s16383" height="200" width="auto" /><br><br>Sariwon City Prison, Sariwon, North Hwanghae Province, 38° 30’45.41”N 125° 46’26.59”E.<br><br>Estimated # of Prisoners: 3,000 to 4,000<br><br>Type of prisoners: Men, political prisoners<br><br>Type of Labor: Clothing and Shoe factory, farming, "model detention facility" <br><br>Kyo-hwa-so No. 6, Sariwon was one of the earliest North Korean prison camps to become widely known about outside of North Korea because of the involvement of Amnesty International in the release of Ali Lameda and Jacques Sedillot. They were members in good standing in the Venezuelan and French, respectively, communist parties. In 1967, both were recruited to Pyongyang by the North Korean Foreign Ministry to translate the writings of Kim Il-sung into Spanish and French. Lameda was a poet and author whose writings were well known throughout Latin America.<br><br>A second location associated with this camp, a potential 'model detention facility' is located in Osu-ri at 38° 29’0.94”N 125° 49’3.31”E.<br><br>Detailed analysis of Kyo-hwa-so No. 6, Sariwon can be found in this 2017 HRNK report: https://www.hrnk.org/uploads/pdfs/Hawk_The_Parallel_Gulag_Web.pdf<br><br><img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR6EOQBNdNB6CBGXPxfPexJwl9vyyosB09-kvmcjgkaK-gbOImkA6RiP5IzNfL0V7pMoJAivdA266YCPtssjV2Io5wO_PfGyxqQJENAc8loU-0Rh8nhazo4L2wU5Co3ep2KH-rWTEP03o3WXLYA1ZVJQrVf0AkPAxh46Aeq_dRA82b4rv2ADqEY9H2Eb9Mop_sbG2HY_jMwhXt4?fife=s16383" height="200" width="auto" />]]></description>
+        <styleUrl>#icon-959-F8971B</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR5K3JyS6lWuID-sirhLPd38-SfrBbooFnolyRVu83V_EDS2YRRE_mjOMpySNDVo7y-ZSdDNbCHpuMKY0DC88o1N6MP0DcedApe-8s0eoEVG-Ofvc24F-Kdz2c0FAs0W2hTQud9feeltm7nBvAtN8fzOKzUns3NWiEEXD_BYEeVXW9LN4Wa52FReFCt24wvcywT2h3EDZCCPf6k?fife=s16383 https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR6EOQBNdNB6CBGXPxfPexJwl9vyyosB09-kvmcjgkaK-gbOImkA6RiP5IzNfL0V7pMoJAivdA266YCPtssjV2Io5wO_PfGyxqQJENAc8loU-0Rh8nhazo4L2wU5Co3ep2KH-rWTEP03o3WXLYA1ZVJQrVf0AkPAxh46Aeq_dRA82b4rv2ADqEY9H2Eb9Mop_sbG2HY_jMwhXt4?fife=s16383</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            125.774052777778,38.5126138888889,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Kyo-hwa-so Believed to be Closed</name>
+      <Placemark>
+        <name>Kyo-hwa-so No. 22, Oro
+South Hamgyong Province</name>
+        <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR7F6ae9x3EEz_FySJfNLm3pSzTQrqMdIPpyNv4DuAAaeTeL7OkIwc80JLs2oc3IGY5AO2nY-Xgp29W6egmrkwGGYBUfCi5D0DWXjjwPRIPV5Ay3gJ1qRYbJzcj7JjYDS03DHIA9PRdcvRxsoH9zdx3QSlWCOnE83jgDGnlOW2Ox6F7JyqQ5Q76zJPbVwQOtH661-uDd2JpcB2Q?fife=s16383" height="200" width="auto" /><br><br>Tongjung-ri, Oro, South Hamgyong Province, 40° 2’35.88”N 127° 31’24.94”E.<br><br>It is believed that Kyo-hwa-so No. 22, Oro was closed around 2008. <br><br>Estimated # of Prisoners: 1,100<br><br>Type of prisoners: Men, women, political prisoners, short term prisoners<br><br>Type of Labor:  Construction<br><br>This location is not yet confirmed. It has been listed in NKDB and KINU reports as well as identified in prisoner testimony. There is no further information about its current state of operation.<br><br>A second location associated with this camp is located in Pungho-ri at 40° 1’19.71”N 127° 25’55.91”E.<br><br>A third location associated with this camp is located in Sangtong-ri at 40° 5’35.68”N 127° 21’26.45”E.<br><br><img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR4HLYZqVgHVXsaE8A-U-yPEzKG3KXaWLWT4hrdYHkBkbq6YDDuiS8pyqVLlYZEQ0CLkXAIWQ_W7f6GxerBWISWHXG_rfYD2juQjNlhGpBJ9p4msMPmVtzYotc6kQFYVCSgxjTtHwhd8wS97GG3UGonr7R67b8VNZ-k7MMzzmSLtLpv7mA1rUgMzfqc9eV1uDUxFfcQgrO_IdUo?fife=s16383" height="200" width="auto" /><br><br><img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR7W5adwOKDFgjrT3q6iVZk6OmQ75RjF9fTo3XMAnV1-j3ahK2WEsaqcsJfRwifVHo_hSpulQknPEAtwKO37C8zIGCMOBOIeDVqeb1h3n3fh_a9Yn6FMrCwRxKw_g8JsWFf-5muj-H55SBn377QiFgbWwQOP6xOJ-AK62Xf1t-adegxooXxkIIm3cHs2a8AJPgeP-WpTa-1SO7c?fife=s16383" height="200" width="auto" />]]></description>
+        <styleUrl>#icon-959-000000</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR7F6ae9x3EEz_FySJfNLm3pSzTQrqMdIPpyNv4DuAAaeTeL7OkIwc80JLs2oc3IGY5AO2nY-Xgp29W6egmrkwGGYBUfCi5D0DWXjjwPRIPV5Ay3gJ1qRYbJzcj7JjYDS03DHIA9PRdcvRxsoH9zdx3QSlWCOnE83jgDGnlOW2Ox6F7JyqQ5Q76zJPbVwQOtH661-uDd2JpcB2Q?fife=s16383 https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR4HLYZqVgHVXsaE8A-U-yPEzKG3KXaWLWT4hrdYHkBkbq6YDDuiS8pyqVLlYZEQ0CLkXAIWQ_W7f6GxerBWISWHXG_rfYD2juQjNlhGpBJ9p4msMPmVtzYotc6kQFYVCSgxjTtHwhd8wS97GG3UGonr7R67b8VNZ-k7MMzzmSLtLpv7mA1rUgMzfqc9eV1uDUxFfcQgrO_IdUo?fife=s16383 https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR7W5adwOKDFgjrT3q6iVZk6OmQ75RjF9fTo3XMAnV1-j3ahK2WEsaqcsJfRwifVHo_hSpulQknPEAtwKO37C8zIGCMOBOIeDVqeb1h3n3fh_a9Yn6FMrCwRxKw_g8JsWFf-5muj-H55SBn377QiFgbWwQOP6xOJ-AK62Xf1t-adegxooXxkIIm3cHs2a8AJPgeP-WpTa-1SO7c?fife=s16383</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            127.523594444444,40.0433,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kyo-hwa-so No. 77, Danchon
+South Hamgyong Province</name>
+        <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR68h41Q2jCwn2jBd5_qSGGBK-U7_XTV6IoG5PnR-zIpXj27GnTABaQJSMGjMlgWwwQLE5boyAANr-LVs50WO2etx8_hZ_aSuSi_e0CvthFbGkCvQy-1EPCVQvbZV6G2iKNFzna2b3LzgCxTAfrQAWw49dU-LgFGWPYEwFSDkV8JFS1OdQcZOfj0xmNZpiaDddqDfC7OAQbgFTQ?fife=s16383" height="200" width="auto" /><br><br>Hangguil-dong, Danchon, South Hamgyong Province, 40° 26’15.36”N 128° 53’57.06”E.<br><br>It is believed that Kyo-hwa-so No. 77, Danchon was closed around 1997. However, the locations identified here appear to be in operation.<br><br>Estimated # of Prisoners: Uknown<br><br>Type of prisoners: Men, political prisoners, genuine criminal offenders, border crossers<br><br>Type of Labor: Gold mining<br><br>This location is not yet confirmed. It has been listed in NKDB reports as well as identified in prisoner testimony. There is no further information about its current state of operation.<br><br>A second location associated with this camp is located in Sangjang at 40° 24’57.26”N 128° 53’46.11”E.<br><br><img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR5M4T-ldr-YKDEeAqGIJe9CnDsBdKdYh6bffbLG-bi2s0dPqerGpQRAtqqZ17f1V7bjWmlLGR7grnr3OiQS2JD2aEU0fLni1EOGvQSN7vuhNh6dhzonQgDYzLpdd8zNQzfhUToUOQ9ZWRZHeXRbg9wKI10wUiJ2OkRzjyV-l5zPFrFjDmOXMC87m4TeQz7WPKgaPlbkKy1kVWE?fife=s16383" height="200" width="auto" />]]></description>
+        <styleUrl>#icon-959-000000</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value>https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR68h41Q2jCwn2jBd5_qSGGBK-U7_XTV6IoG5PnR-zIpXj27GnTABaQJSMGjMlgWwwQLE5boyAANr-LVs50WO2etx8_hZ_aSuSi_e0CvthFbGkCvQy-1EPCVQvbZV6G2iKNFzna2b3LzgCxTAfrQAWw49dU-LgFGWPYEwFSDkV8JFS1OdQcZOfj0xmNZpiaDddqDfC7OAQbgFTQ?fife=s16383 https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR5M4T-ldr-YKDEeAqGIJe9CnDsBdKdYh6bffbLG-bi2s0dPqerGpQRAtqqZ17f1V7bjWmlLGR7grnr3OiQS2JD2aEU0fLni1EOGvQSN7vuhNh6dhzonQgDYzLpdd8zNQzfhUToUOQ9ZWRZHeXRbg9wKI10wUiJ2OkRzjyV-l5zPFrFjDmOXMC87m4TeQz7WPKgaPlbkKy1kVWE?fife=s16383</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            128.899183333333,40.4376,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

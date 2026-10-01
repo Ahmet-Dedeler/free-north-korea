@@ -8,9 +8,10 @@ import { REPO_URL, REVIEWED } from '../site/config';
 import { Ext } from './Ext';
 
 const NAV = [
-  { href: '/atlas', label: 'Atlas' },
+  { href: '/map', label: 'Map' },
   { href: '/military', label: 'Military' },
   { href: '/missiles', label: 'Missile tests' },
+  { href: '/people', label: 'People' },
   { href: '/organizations', label: 'Organizations' },
   { href: '/library', label: 'Library' },
   { href: '/learn', label: 'Learn' },
@@ -21,7 +22,7 @@ const NAV = [
  * Map pages fill the viewport under the bar and skip the footer.
  */
 /** Pages that are a full-screen map: no footer, body doesn't scroll. */
-const APP_PAGES = ['/atlas', '/missiles'];
+const APP_PAGES = ['/map', '/missiles'];
 
 export default function SiteChrome({ children }: { children: ReactNode }) {
   const path = usePathname() ?? '/';
@@ -70,10 +71,11 @@ export default function SiteChrome({ children }: { children: ReactNode }) {
             </div>
             <div>
               <b>Explore</b>
-              <Link href="/atlas">Atlas</Link>
+              <Link href="/map">Intel map</Link>
               <Link href="/military">Military capability</Link>
               <Link href="/missiles">Missile tests</Link>
               <Link href="/library">Library</Link>
+              <Link href="/sources">Data sources</Link>
             </div>
             <div>
               <b>Help</b>

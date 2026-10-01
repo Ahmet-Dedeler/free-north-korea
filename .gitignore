@@ -32,3 +32,9 @@ public/maplibre/
 .next/
 next-env.d.ts
 *.tsbuildinfo
+
+# research agent logs and big probe dumps (regenerable)
+docs/research/logs/
+docs/research/probes/camps/visualatlas_deep.json
+docs/research/probes/**/*.pdf
+docs/research/probes/korean_japanese/github_korean_results.json

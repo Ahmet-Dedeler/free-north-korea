@@ -1,0 +1,810 @@
+[
+  {
+    "id": "101_001_001",
+    "name": "영토/인구",
+    "table_count": 18,
+    "tables": [
+      {
+        "name": "남북의 위치",
+        "tblId": "DT_1ZGA02",
+        "prdInfo": "년 2007~2024"
+      },
+      {
+        "name": "영토의 이용",
+        "tblId": "DT_1ZGA11",
+        "prdInfo": "년 1990~2024"
+      },
+      {
+        "name": "행정구역 수",
+        "tblId": "DT_1ZGA15",
+        "prdInfo": "년 2006~2024"
+      },
+      {
+        "name": "행정구역명",
+        "tblId": "DT_1ZGA15A",
+        "prdInfo": "년 2014~2024"
+      },
+      {
+        "name": "지역별 면적",
+        "tblId": "DT_1ZGA17",
+        "prdInfo": "년 2006~2024"
+      },
+      {
+        "name": "인구",
+        "tblId": "DT_1ZGA21",
+        "prdInfo": "년 2008~2070"
+      },
+      {
+        "name": "인구밀도",
+        "tblId": "DT_1ZGA22",
+        "prdInfo": "년 2008~2024"
+      },
+      {
+        "name": "연령계층별 인구",
+        "tblId": "DT_1ZGA01_008",
+        "prdInfo": "년 2008~2070"
+      },
+      {
+        "name": "성별 인구 및 성비",
+        "tblId": "DT_1ZGA23",
+        "prdInfo": "년 2008~2070"
+      },
+      {
+        "name": "분단 이후 출생인구",
+        "tblId": "DT_1ZGA24",
+        "prdInfo": "년 2008~2024"
+      },
+      {
+        "name": "15~49세 여성인구 수 및 비율",
+        "tblId": "DT_1ZGAE02",
+        "prdInfo": "년 2008~2070"
+      },
+      {
+        "name": "합계출산율",
+        "tblId": "DT_1ZGA283",
+        "prdInfo": "년 2008~2070"
+      },
+      {
+        "name": "성별 사망자 수",
+        "tblId": "DT_1ZGAE04",
+        "prdInfo": "년 1950~2100"
+      },
+      {
+        "name": "주요 도시 인구",
+        "tblId": "DT_1ZGA281",
+        "prdInfo": "년 1975~2050"
+      },
+      {
+        "name": "도시화율",
+        "tblId": "DT_1ZGA282",
+        "prdInfo": "년 1950~2050"
+      },
+      {
+        "name": "경제활동인구 및 경제활동참가율",
+        "tblId": "DT_1ZGA27",
+        "prdInfo": "년 2008~2024"
+      },
+      {
+        "name": "(파일) 주택의 형태별 가구수",
+        "tblId": "DT_BUKHAN_FILE04",
+        "prdInfo": "년 2010~2024"
+      },
+      {
+        "name": "연령별(5세별) 추계인구",
+        "tblId": "DT_1ZGA261",
+        "prdInfo": "년 2008~2070"
+      }
+    ]
+  },
+  {
+    "id": "101_001_002",
+    "name": "보건",
+    "table_count": 10,
+    "tables": [
+      {
+        "name": "기대수명",
+        "tblId": "DT_1ZGAB1",
+        "prdInfo": "년 2008~2070"
+      },
+      {
+        "name": "의사·약사 수",
+        "tblId": "DT_1ZGAB2",
+        "prdInfo": "년 1965~2024"
+      },
+      {
+        "name": "준의료활동 종사자 수",
+        "tblId": "DT_1ZGAB3",
+        "prdInfo": "년 1975~2024"
+      },
+      {
+        "name": "1인 1일당 영양공급량",
+        "tblId": "DT_1ZGAB4",
+        "prdInfo": "년 1987~2018"
+      },
+      {
+        "name": "영아사망률(출생아 천명당)",
+        "tblId": "DT_1ZGA284",
+        "prdInfo": "년 1950~2100"
+      },
+      {
+        "name": "5세 미만 사망률(출생아 천명당)",
+        "tblId": "DT_1ZGAE03",
+        "prdInfo": "년 1985~2024"
+      },
+      {
+        "name": "5세 미만 저체중 아동 비율",
+        "tblId": "DT_BWB0090",
+        "prdInfo": "년 2000~2020"
+      },
+      {
+        "name": "5세 미만 발육부진 아동 비율",
+        "tblId": "DT_BWB0091",
+        "prdInfo": "년 2000~2024"
+      },
+      {
+        "name": "질환별 사망률(30~69세)",
+        "tblId": "DT_BWB0092",
+        "prdInfo": "년 2000~2021"
+      },
+      {
+        "name": "모성 사망비(출생아 십만명당)",
+        "tblId": "DT_BWB0093",
+        "prdInfo": "년 2000~2023"
+      }
+    ]
+  },
+  {
+    "id": "101_001_003",
+    "name": "교육",
+    "table_count": 4,
+    "tables": [
+      {
+        "name": "교육체계",
+        "tblId": "DT_1ZGAC6",
+        "prdInfo": "년 2007~2024"
+      },
+      {
+        "name": "교육기관 수",
+        "tblId": "DT_1ZGAC2",
+        "prdInfo": "년 1965~2024"
+      },
+      {
+        "name": "학생 수",
+        "tblId": "DT_1ZGAC3",
+        "prdInfo": "년 1965~2024"
+      },
+      {
+        "name": "인구 만 명당 대학생 수",
+        "tblId": "DT_1ZGAC4",
+        "prdInfo": "년 1965~2024"
+      }
+    ]
+  },
+  {
+    "id": "101_001_004",
+    "name": "농림수산업",
+    "table_count": 18,
+    "tables": [
+      {
+        "name": "농업생산지수",
+        "tblId": "DT_1ZGAE22",
+        "prdInfo": "년 1961~2024"
+      },
+      {
+        "name": "농업생산성 지표",
+        "tblId": "DT_1ZGA57",
+        "prdInfo": "년 1970~2025"
+      },
+      {
+        "name": "경지면적의 구성",
+        "tblId": "DT_1ZGA54",
+        "prdInfo": "년 1965~2024"
+      },
+      {
+        "name": "경지면적 및 식량작물 재배면적",
+        "tblId": "DT_1ZGA53",
+        "prdInfo": "년 1965~2024"
+      },
+      {
+        "name": "시도별 벼 재배면적",
+        "tblId": "DT_1ZGA532",
+        "prdInfo": "년 2019~2025"
+      },
+      {
+        "name": "식량작물 생산량",
+        "tblId": "DT_1ZGA55",
+        "prdInfo": "년 1965~2025"
+      },
+      {
+        "name": "주요 식량작물 생산량",
+        "tblId": "DT_1ZGA56",
+        "prdInfo": "년 1965~2025"
+      },
+      {
+        "name": "기타 식량작물 생산량",
+        "tblId": "DT_1ZGA5B",
+        "prdInfo": "년 2006~2025"
+      },
+      {
+        "name": "가축사육 마릿수",
+        "tblId": "DT_1ZGA59",
+        "prdInfo": "년 1961~2024"
+      },
+      {
+        "name": "육류 생산량",
+        "tblId": "DT_1ZGA5C",
+        "prdInfo": "년 1980~2024"
+      },
+      {
+        "name": "계란 및 우유 생산량",
+        "tblId": "DT_1ZGAE13",
+        "prdInfo": "년 1995~2024"
+      },
+      {
+        "name": "채소류 생산량",
+        "tblId": "DT_1ZGAE09",
+        "prdInfo": "년 1980~2024"
+      },
+      {
+        "name": "과일류 생산량",
+        "tblId": "DT_1ZGAE08",
+        "prdInfo": "년 1980~2024"
+      },
+      {
+        "name": "밤 생산량",
+        "tblId": "DT_1ZGAE10",
+        "prdInfo": "년 1980~2024"
+      },
+      {
+        "name": "원목 및 연료목 생산량",
+        "tblId": "DT_1ZGA60",
+        "prdInfo": "년 1961~2024"
+      },
+      {
+        "name": "누에고치 생산량",
+        "tblId": "DT_1ZGAE11",
+        "prdInfo": "년 1980~2024"
+      },
+      {
+        "name": "섬유작물 생산량",
+        "tblId": "DT_1ZGAE12",
+        "prdInfo": "년 1980~2024"
+      },
+      {
+        "name": "어업 및 양식 생산량",
+        "tblId": "DT_1ZGA58",
+        "prdInfo": "년 1965~2024"
+      }
+    ]
+  },
+  {
+    "id": "101_001_005",
+    "name": "광업 및 제조업",
+    "table_count": 14,
+    "tables": [
+      {
+        "name": "주요 광종 광산 수",
+        "tblId": "DT_1ZGA6D",
+        "prdInfo": "년 2012~2024"
+      },
+      {
+        "name": "주요 광종 매장량",
+        "tblId": "DT_1ZGA6C",
+        "prdInfo": "년 2010~2024"
+      },
+      {
+        "name": "석탄 생산량",
+        "tblId": "DT_1ZGA61",
+        "prdInfo": "년 1965~2024"
+      },
+      {
+        "name": "철광석 생산량",
+        "tblId": "DT_1ZGA100",
+        "prdInfo": "년 1965~2024"
+      },
+      {
+        "name": "조강 생산량",
+        "tblId": "DT_1ZGA6B",
+        "prdInfo": "년 1985~2024"
+      },
+      {
+        "name": "철강공업 생산능력",
+        "tblId": "DT_1ZGA62",
+        "prdInfo": "년 1960~2024"
+      },
+      {
+        "name": "비철금속 생산량",
+        "tblId": "DT_1ZGA63",
+        "prdInfo": "년 1965~2024"
+      },
+      {
+        "name": "직물 생산량",
+        "tblId": "DT_1ZGA69",
+        "prdInfo": "년 1990~2024"
+      },
+      {
+        "name": "화학섬유 생산능력 및 생산량",
+        "tblId": "DT_1ZGA67",
+        "prdInfo": "년 1985~2024"
+      },
+      {
+        "name": "화학비료 생산능력 및 생산량",
+        "tblId": "DT_1ZGA65",
+        "prdInfo": "년 1965~2024"
+      },
+      {
+        "name": "판유리 생산능력",
+        "tblId": "DT_1ZGAE15",
+        "prdInfo": "년 1990~2024"
+      },
+      {
+        "name": "시멘트 생산량",
+        "tblId": "DT_1ZGA66",
+        "prdInfo": "년 1990~2024"
+      },
+      {
+        "name": "자동차 생산량",
+        "tblId": "DT_1ZGA64",
+        "prdInfo": "년 1965~2024"
+      },
+      {
+        "name": "국영기업 제조업 사업체 수",
+        "tblId": "DT_1ZGG4",
+        "prdInfo": "년 2022~2023"
+      }
+    ]
+  },
+  {
+    "id": "101_001_006",
+    "name": "국민계정",
+    "table_count": 10,
+    "tables": [
+      {
+        "name": "경제성장률",
+        "tblId": "DT_1ZGA31",
+        "prdInfo": "년 1990~2024"
+      },
+      {
+        "name": "산업별 성장률",
+        "tblId": "DT_1ZGA32",
+        "prdInfo": "년 1990~2024"
+      },
+      {
+        "name": "경제활동별 실질 국내총생산",
+        "tblId": "DT_1ZGA35",
+        "prdInfo": "년 1990~2024"
+      },
+      {
+        "name": "경제활동별 명목 국내총생산",
+        "tblId": "DT_1ZGA36",
+        "prdInfo": "년 1953~2024"
+      },
+      {
+        "name": "산업구조",
+        "tblId": "DT_1ZGA33",
+        "prdInfo": "년 1953~2024"
+      },
+      {
+        "name": "국민총소득",
+        "tblId": "DT_1ZGA37",
+        "prdInfo": "년 1953~2024"
+      },
+      {
+        "name": "제조업 생산지수(2020=100)",
+        "tblId": "DT_1ZGG5",
+        "prdInfo": "년 2000~2024"
+      },
+      {
+        "name": "서비스업 생산지수(2020=100)",
+        "tblId": "DT_1ZGG6",
+        "prdInfo": "년 2000~2024"
+      },
+      {
+        "name": "시장물가지수(2020=100)",
+        "tblId": "DT_1ZGG7",
+        "prdInfo": "년 2006~2024"
+      },
+      {
+        "name": "전산업 생산지수(2020=100)",
+        "tblId": "DT_1ZGG8",
+        "prdInfo": "년 2000~2024"
+      }
+    ]
+  },
+  {
+    "id": "101_001_007",
+    "name": "대외무역",
+    "table_count": 11,
+    "tables": [
+      {
+        "name": "무역총액",
+        "tblId": "DT_1ZGA91",
+        "prdInfo": "년 1990~2025"
+      },
+      {
+        "name": "수출입액",
+        "tblId": "DT_1ZGA92",
+        "prdInfo": "년 1990~2025"
+      },
+      {
+        "name": "주요국별 수출입액",
+        "tblId": "DT_1ZGA96",
+        "prdInfo": "년 2000~2025"
+      },
+      {
+        "name": "주요국별 교역비중 변화 추이",
+        "tblId": "DT_1ZGA97",
+        "prdInfo": "년 2000~2025"
+      },
+      {
+        "name": "북한의 품목별 수출입액",
+        "tblId": "DT_1ZGA98",
+        "prdInfo": "년 2011~2025"
+      },
+      {
+        "name": "북한의 주요국별/품목별 수출입액",
+        "tblId": "DT_1ZGA99A",
+        "prdInfo": "년 2011~2025"
+      },
+      {
+        "name": "무연탄 수출입",
+        "tblId": "DT_1ZGAE17",
+        "prdInfo": "년 1990~2023"
+      },
+      {
+        "name": "대미환율",
+        "tblId": "DT_1ZGA34",
+        "prdInfo": "년 1975~2024"
+      },
+      {
+        "name": "북한의 대(對)중국 곡물 수입실적",
+        "tblId": "DT_1ZGA99",
+        "prdInfo": "년 2008~2024"
+      },
+      {
+        "name": "시장환율",
+        "tblId": "DT_1ZGG9",
+        "prdInfo": "년 2006~2024"
+      },
+      {
+        "name": "무역의존도",
+        "tblId": "DT_1ZGG20",
+        "prdInfo": "년 2010~2023"
+      }
+    ]
+  },
+  {
+    "id": "101_001_008",
+    "name": "교통/물류",
+    "table_count": 8,
+    "tables": [
+      {
+        "name": "철도 총연장",
+        "tblId": "DT_1ZGA81",
+        "prdInfo": "년 1965~2024"
+      },
+      {
+        "name": "전철 총연장 및 전철화율",
+        "tblId": "DT_1ZGA82",
+        "prdInfo": "년 1985~2024"
+      },
+      {
+        "name": "지하철 총연장",
+        "tblId": "DT_1ZGA83",
+        "prdInfo": "년 1975~2024"
+      },
+      {
+        "name": "철도차량 보유대수",
+        "tblId": "DT_1ZGA86",
+        "prdInfo": "년 1975~2024"
+      },
+      {
+        "name": "도로 총연장 및 고속도로 길이",
+        "tblId": "DT_1ZGA84",
+        "prdInfo": "년 1965~2024"
+      },
+      {
+        "name": "자동차등록 및 항공기 보유대수",
+        "tblId": "DT_1ZGA87",
+        "prdInfo": "년 1990~2024"
+      },
+      {
+        "name": "항만 하역능력",
+        "tblId": "DT_1ZGA85",
+        "prdInfo": "년 1980~2024"
+      },
+      {
+        "name": "선박 보유톤수",
+        "tblId": "DT_1ZGA88",
+        "prdInfo": "년 1975~2024"
+      }
+    ]
+  },
+  {
+    "id": "101_001_009",
+    "name": "남북한 교류",
+    "table_count": 17,
+    "tables": [
+      {
+        "name": "분야별 남북회담 개최",
+        "tblId": "DT_1ZGAA52",
+        "prdInfo": "년 1971~2024"
+      },
+      {
+        "name": "남북 인적교류 현황",
+        "tblId": "DT_1ZGAA103",
+        "prdInfo": "월,년 1997~2024"
+      },
+      {
+        "name": "분야별 북한 방문자 수(1999~2018)",
+        "tblId": "DT_1ZGAA2",
+        "prdInfo": "년 2009~2018"
+      },
+      {
+        "name": "분야별 북한 방문자수(2019년 ~)",
+        "tblId": "DT_1ZGAA21",
+        "prdInfo": "년 2019~2024"
+      },
+      {
+        "name": "육로 출경",
+        "tblId": "DT_1ZGAI",
+        "prdInfo": "년 2003~2024"
+      },
+      {
+        "name": "남북 차량 왕래 현황",
+        "tblId": "DT_1ZGAA51",
+        "prdInfo": "년 2003~2024"
+      },
+      {
+        "name": "남북 선박 왕래 현황",
+        "tblId": "DT_1ZGAB9",
+        "prdInfo": "년 2000~2024"
+      },
+      {
+        "name": "남북 항공기 왕래 현황",
+        "tblId": "DT_1ZGAB10",
+        "prdInfo": "년 2000~2024"
+      },
+      {
+        "name": "북한이탈주민 입국 현황",
+        "tblId": "DT_1ZGAA42",
+        "prdInfo": "년 2002~2025"
+      },
+      {
+        "name": "이산가족 교류",
+        "tblId": "DT_1ZGAA41",
+        "prdInfo": "년 1985~2025"
+      },
+      {
+        "name": "관광객 현황",
+        "tblId": "DT_1ZGAG",
+        "prdInfo": "년 1998~2024"
+      },
+      {
+        "name": "협력사업 승인 현황",
+        "tblId": "DT_1ZGAB",
+        "prdInfo": "년 1991~2024"
+      },
+      {
+        "name": "대북 인도적 지원 현황",
+        "tblId": "DT_1ZGAC",
+        "prdInfo": "년 1995~2025"
+      },
+      {
+        "name": "분야별 대북 지원 현황",
+        "tblId": "DT_1ZGAD",
+        "prdInfo": "년 2016~2024"
+      },
+      {
+        "name": "대북 비료지원(정부차원)",
+        "tblId": "DT_1ZGAK",
+        "prdInfo": "년 1999~2024"
+      },
+      {
+        "name": "기금조성 현황",
+        "tblId": "DT_1ZGAD1",
+        "prdInfo": "년 1991~2025"
+      },
+      {
+        "name": "기금집행",
+        "tblId": "DT_1ZGAD2",
+        "prdInfo": "년 1994~2025"
+      }
+    ]
+  },
+  {
+    "id": "101_001_010",
+    "name": "남북한 교역",
+    "table_count": 10,
+    "tables": [
+      {
+        "name": "남북 교역 현황",
+        "tblId": "DT_1ZGAA6",
+        "prdInfo": "월,년 1989.01~2024.12"
+      },
+      {
+        "name": "유형별 남북 교역액 현황",
+        "tblId": "DT_1ZGAB5",
+        "prdInfo": "년 2004~2024"
+      },
+      {
+        "name": "위탁가공 교역 현황",
+        "tblId": "DT_1ZGAA7",
+        "prdInfo": "월,년 1989~2024.12"
+      },
+      {
+        "name": "반입통관 품목별 현황",
+        "tblId": "DT_1ZGAA8",
+        "prdInfo": "월,년 1989~2024.12"
+      },
+      {
+        "name": "반출통관 품목별 현황",
+        "tblId": "DT_1ZGAA9",
+        "prdInfo": "월,년 1989~2024.12"
+      },
+      {
+        "name": "남북 농림수산물 교역 현황",
+        "tblId": "DT_1ZGAJ",
+        "prdInfo": "년 1997~2024"
+      },
+      {
+        "name": "개성공단 사업",
+        "tblId": "DT_1ZGAA",
+        "prdInfo": "월,년 1989~2024.12"
+      },
+      {
+        "name": "개성공단 입주기업 수 및 근로자 현황",
+        "tblId": "DT_1ZGAB6",
+        "prdInfo": "년 2005~2015"
+      },
+      {
+        "name": "개성공단 방문 현황",
+        "tblId": "DT_1ZGAB7",
+        "prdInfo": "년 2005~2015"
+      },
+      {
+        "name": "남북교류협력협의사무소 사업협의 현황",
+        "tblId": "DT_1ZGAB8",
+        "prdInfo": "년 2005~2011"
+      }
+    ]
+  },
+  {
+    "id": "101_001_011",
+    "name": "환경",
+    "table_count": 3,
+    "tables": [
+      {
+        "name": "연평균기온",
+        "tblId": "DT_1ZGA13",
+        "prdInfo": "년 1980~2025"
+      },
+      {
+        "name": "연강수량",
+        "tblId": "DT_1ZGA14",
+        "prdInfo": "년 1980~2025"
+      },
+      {
+        "name": "연평균풍속(바람)",
+        "tblId": "DT_1ZGA141",
+        "prdInfo": "년 1980~2025"
+      }
+    ]
+  },
+  {
+    "id": "101_001_012",
+    "name": "에너지",
+    "table_count": 7,
+    "tables": [
+      {
+        "name": "원유수입량 및 정제능력",
+        "tblId": "DT_1ZGA75",
+        "prdInfo": "년 1980~2024"
+      },
+      {
+        "name": "1차에너지 공급(열량)",
+        "tblId": "DT_1ZGA72",
+        "prdInfo": "년 1980~2024"
+      },
+      {
+        "name": "1차에너지 총공급량 및 1인당 공급량",
+        "tblId": "DT_1ZGA71",
+        "prdInfo": "년 1980~2024"
+      },
+      {
+        "name": "발전설비용량",
+        "tblId": "DT_1ZGA73",
+        "prdInfo": "년 1980~2024"
+      },
+      {
+        "name": "발전 전력량",
+        "tblId": "DT_1ZGA74",
+        "prdInfo": "년 1980~2024"
+      },
+      {
+        "name": "1인당 전력생산량",
+        "tblId": "DT_1ZGG10",
+        "prdInfo": "년 1995~2024"
+      },
+      {
+        "name": "1차에너지 원단위",
+        "tblId": "DT_1ZGG11",
+        "prdInfo": "년 1990~2024"
+      }
+    ]
+  },
+  {
+    "id": "101_001_013",
+    "name": "수교국 및 국제기구 가입",
+    "table_count": 6,
+    "tables": [
+      {
+        "name": "지역별 수교 현황",
+        "tblId": "DT_1ZGAA10",
+        "prdInfo": "년 2003~2024"
+      },
+      {
+        "name": "단독 수교국 현황",
+        "tblId": "DT_1ZGAA15",
+        "prdInfo": "년 2007~2024"
+      },
+      {
+        "name": "남북한 주재 외국 공관 및 국제기구 현황",
+        "tblId": "DT_1ZGAA16",
+        "prdInfo": "년 2016~2024"
+      },
+      {
+        "name": "재외공관 현황",
+        "tblId": "DT_1ZGAA12",
+        "prdInfo": "년 2007~2024"
+      },
+      {
+        "name": "국제기구 가입 현황",
+        "tblId": "DT_1ZGAA11",
+        "prdInfo": "년 2012~2025"
+      },
+      {
+        "name": "남북 모두 가입한 국제기구",
+        "tblId": "DT_1ZGAA17",
+        "prdInfo": "년 2014~2025"
+      }
+    ]
+  },
+  {
+    "id": "101_001_014",
+    "name": "기타",
+    "table_count": 6,
+    "tables": [
+      {
+        "name": "남북 군사력 현황",
+        "tblId": "DT_1ZGAB12",
+        "prdInfo": "년 2008~2022"
+      },
+      {
+        "name": "예산규모",
+        "tblId": "DT_1ZGAB11",
+        "prdInfo": "년 1990~2023"
+      },
+      {
+        "name": "여성 국회의원 비율",
+        "tblId": "DT_1ZGAE20",
+        "prdInfo": "년 1997~2025"
+      },
+      {
+        "name": "유선전화 가입자 수",
+        "tblId": "DT_1ZGAE18",
+        "prdInfo": "년 1990~2024"
+      },
+      {
+        "name": "이동전화 가입자 수",
+        "tblId": "DT_1ZGAE21",
+        "prdInfo": "년 2000~2024"
+      },
+      {
+        "name": "재해 사망자 및 피해자 수",
+        "tblId": "DT_1ZGAE19",
+        "prdInfo": "년 2005~2019"
+      }
+    ]
+  }
+]

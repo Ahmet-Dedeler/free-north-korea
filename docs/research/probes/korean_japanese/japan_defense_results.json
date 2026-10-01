@@ -1,0 +1,24 @@
+{
+  "MOD Press Releases Index": {
+    "url": "https://www.mod.go.jp/j/press/news/index.html",
+    "status": 200,
+    "length": 187737,
+    "title": "防衛省・自衛隊：お知らせ",
+    "nk_links": []
+  },
+  "MOD North Korea Portal": {
+    "url": "https://www.mod.go.jp/j/approach/surround/northkorea/index.html",
+    "error": "HTTP Error 404: Not Found"
+  },
+  "Coast Guard Main": {
+    "url": "https://www.kaiho.mlit.go.jp/",
+    "status": 200,
+    "length": 80289,
+    "title": "海上保安庁",
+    "nk_links": []
+  },
+  "Coast Guard Press": {
+    "url": "https://www.kaiho.mlit.go.jp/doc/press.html",
+    "error": "HTTP Error 404: Not Found"
+  }
+}

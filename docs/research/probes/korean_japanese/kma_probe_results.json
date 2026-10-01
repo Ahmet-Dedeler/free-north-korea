@@ -1,0 +1,30 @@
+{
+  "KMA North Korea Main Weather": {
+    "url": "https://www.weather.go.kr/w/wnk/n-korea.do",
+    "status": 200,
+    "length": 59270,
+    "title": "기상청 날씨누리",
+    "stations_count": 6
+  },
+  "KMA North Korea Weather Map": {
+    "url": "https://www.weather.go.kr/w/wnk/n-korea-map.do",
+    "status": 200,
+    "length": 59270,
+    "title": "기상청 날씨누리",
+    "stations_count": 6
+  },
+  "KMA Open Data Portal NK Grd": {
+    "url": "https://data.kma.go.kr/data/grd/selectGrdRltmList.do?pgmNo=161",
+    "status": 200,
+    "length": 1872,
+    "title": "컨텐츠 준비중",
+    "stations_count": 0
+  },
+  "KMA NK Special Old": {
+    "url": "https://www.weather.go.kr/weather/special/special_northkorea_01.jsp",
+    "status": 200,
+    "length": 26116,
+    "title": "기상청",
+    "stations_count": 3
+  }
+}
