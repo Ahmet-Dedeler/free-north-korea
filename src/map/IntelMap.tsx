@@ -192,10 +192,8 @@ export default function IntelMap({ data, visible, shade, selected, theme, onSele
       if (!f) return void tip.remove();
       const p = f.properties;
       const { shade } = latest.current;
-      const extra =
-        !hits.length && shade !== 'none' && shade !== 'lights' && p[shade] !== undefined
-          ? ` · ${Number(p[shade]).toLocaleString('en-US')} ${SHADES.find((s) => s.id === shade)!.label.toLowerCase()}`
-          : '';
+      const fmt = SHADES.find((s) => s.id === shade)?.tip;
+      const extra = !hits.length && fmt && p[shade] !== undefined ? ` · ${fmt(Number(p[shade]))}` : '';
       tip
         .setLngLat(e.lngLat)
         .setHTML(`<b>${String(p.name).replace(/</g, '&lt;')}</b>${hits.length ? '' : `<span>${String(p.province ?? '')}${extra}</span>`}`)

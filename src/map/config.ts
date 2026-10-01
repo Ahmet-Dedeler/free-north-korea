@@ -29,12 +29,15 @@ export const LAYERS: LayerDef[] = [
 
 export type Shade = 'none' | 'incidents' | 'density' | 'population' | 'markets' | 'detention' | 'lights';
 
-export const SHADES: { id: Shade; label: string; hint: string; unit?: string; stops?: number[] }[] = [
-  { id: 'incidents', label: 'Documented abuses', hint: 'Human rights violations recorded by NKDB, per county', stops: [0, 5, 20, 60, 150, 300] },
-  { id: 'density', label: 'Population density', hint: 'People per km² (2008 census)', unit: '/km²', stops: [0, 50, 100, 250, 500, 2000] },
-  { id: 'population', label: 'Population', hint: 'People per county (2008 census)', stops: [0, 50_000, 100_000, 200_000, 400_000, 1_000_000] },
-  { id: 'detention', label: 'Detention facilities', hint: 'Known detention and security facilities per county', stops: [0, 1, 2, 4, 8, 15] },
-  { id: 'markets', label: 'Markets', hint: 'Official markets per county', stops: [0, 1, 2, 4, 8, 15] },
+/** "1 market" / "3 markets": the hover tooltip reads as a plain number with its unit. */
+const count = (one: string, many: string) => (v: number) => `${v.toLocaleString('en-US')} ${v === 1 ? one : many}`;
+
+export const SHADES: { id: Shade; label: string; hint: string; unit?: string; stops?: number[]; tip?: (v: number) => string }[] = [
+  { id: 'incidents', label: 'Documented abuses', hint: 'Human rights violations recorded by NKDB, per county', stops: [0, 5, 20, 60, 150, 300], tip: count('documented abuse', 'documented abuses') },
+  { id: 'density', label: 'Population density', hint: 'People per km² (2008 census)', unit: '/km²', stops: [0, 50, 100, 250, 500, 2000], tip: (v) => `${Math.round(v).toLocaleString('en-US')} people per km²` },
+  { id: 'population', label: 'Population', hint: 'People per county (2008 census)', stops: [0, 50_000, 100_000, 200_000, 400_000, 1_000_000], tip: count('person', 'people') },
+  { id: 'detention', label: 'Detention facilities', hint: 'Known detention and security facilities per county', stops: [0, 1, 2, 4, 8, 15], tip: count('detention facility', 'detention facilities') },
+  { id: 'markets', label: 'Markets', hint: 'Official markets per county', stops: [0, 1, 2, 4, 8, 15], tip: count('market', 'markets') },
   { id: 'lights', label: 'Night lights (NASA)', hint: 'Black Marble satellite composite, 2016. Electricity is a rough proxy for wealth.' },
   { id: 'none', label: 'Nothing', hint: 'Plain map' },
 ];
