@@ -45,7 +45,10 @@ async function check(w) {
     return { status: 200, fingerprint: c.sha.slice(0, 12), detail: `last commit ${c.commit.committer.date.slice(0, 10)}: ${c.commit.message.split('\n')[0].slice(0, 80)}`, upstreamDate: c.commit.committer.date.slice(0, 10) };
   }
   const res = await get(w);
-  const moved = res.redirected ? ` (redirected to ${res.url})` : '';
+  // Drop the query string: download redirects are often pre-signed S3 URLs with temporary credentials in them
+  // (GitHub flags those as leaked secrets), and they change on every request anyway.
+  const finalUrl = res.url.split('?')[0];
+  const moved = res.redirected ? ` (redirected to ${finalUrl})` : '';
   if (!res.ok) return { status: res.status, fingerprint: null, detail: `HTTP ${res.status}${moved}` };
   if (w.type === 'headers') {
     const h = ['etag', 'last-modified', 'content-length'].map((k) => res.headers.get(k)).filter(Boolean);
@@ -54,7 +57,7 @@ async function check(w) {
     // Pages without cache headers can't tell us when they change, but we still know they're up (and if they move).
     return {
       status: res.status,
-      fingerprint: h.length ? sha(h.join('|')) : `up:${res.url}`,
+      fingerprint: h.length ? sha(h.join('|')) : `up:${finalUrl}`,
       detail: (lm ? `last-modified ${lm}` : 'reachable, no change signal') + moved,
       upstreamDate: lm ? new Date(lm).toISOString().slice(0, 10) : undefined,
     };

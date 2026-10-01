@@ -48,7 +48,7 @@
     "checkedAt": "2026-10-01T16:33:48.222Z",
     "status": 200,
     "fingerprint": "c08321270b316138",
-    "detail": "2,177,850 bytes (redirected to https://unsolprodfiles.blob.core.windows.net/publiclegacyxmlfiles/EN/consolidatedLegacyByPRN.xml?sv=2024-05-04&st=2026-10-01T16%3A33%3A50Z&se=2026-10-01T17%3A33%3A50Z&sr=b&sp=r&sig=nMfWfRG6yIDiVfp4B9GzNh7HuIxgkeEonoXCTxVWaZk%3D&rscd=attachment%3B%20filename%3D%22consolidatedLegacyByPRN.xml%22)",
+    "detail": "2,177,850 bytes (redirected to https://unsolprodfiles.blob.core.windows.net/publiclegacyxmlfiles/EN/consolidatedLegacyByPRN.xml)",
     "upstreamDate": null,
     "changedAt": null,
     "ok": true
@@ -57,7 +57,7 @@
     "checkedAt": "2026-10-01T16:33:48.222Z",
     "status": 200,
     "fingerprint": "aa5e6f8f9ba4b4e1",
-    "detail": "29,187,997 bytes (redirected to https://wc2h-sls-prod-public-published.s3.us-gov-west-1.amazonaws.com/Published/9f3c49e0-bd93-431c-8f2c-e96babe51280/2026-09-29/b53cbec8-352a-4fe6-aa65-13e05d04ce4b/SDN.XML?X-Amz-Expires=3600&X-Amz-Security-Token=FwoDYXdzEL7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDLFyO%2BlFKR4Blq0b7SLtBE3WHjnUpc3QJJUWMQTSHG68ZJxRyRR3PsG8DFuLIQIelwhqTBzBRHC1U96vVSby8Yv6bG5uU5osX6GCdvpN4%2FL6izt3l0om2qmlOAIXmaLlGu3tW%2Fti5BP%2B6h8bs%2F3IF6Xr6M9IF1JXk9yFT%2B4Q44E5YdAViUhY%2BhP1ztFynZLuUQDeudkviZuVXLBrMtM4aMp3FIqg1Qqz%2BRRQ87hXbaJ9Sm%2B1%2BgugJnXZcxxsQna0FW9nrb1hB77s2wzFwwyxTbNGWAR8Pjzq1RQuXjSrNXXzK4vsoS3bulY88xYxDOJslCcRixJLg2IYjUbHqvrGGYij%2B5MWQm4VTN6WvMab5MCBfaFaLKlC16bISbnL2HNrVh4XS%2FtH9YMP4gvyXx7UFEvUhiDDLRpAioweG37YWCkJY%2BtvTT4zVYa%2B7wR6t6jimGhsj12TwauLiFVhYpby4DCduR0ucvuvqhZ6jduj3PKhSWckqmJo%2BBF0WAApzQxt%2BXjVUFAjeKO3p8IIwPcAvD2Y4DEgVSZBKF8O3MRBO4q6R8m5zb%2FfQ2b6%2FiZrYli46FkKPdLOjhtFPlSB8GqnHuDQAODsqUfVaU3RWAnmmgWqikhLEZKXOXpnEYTMNqWSXCqk1BLsCs7vtZGbMBkkZigkVcri17s7bnR6d8%2FGzR8KkgCdH%2FOIJanOtzowmZY3vtqQE697oYaNC6Dippl5sDxoPES%2FKMkOXiijyZxASW3JVdApFtiVEYNzluBXKZsJdMCT2%2Fkx3ZbsUwSoQ2zibF9A53L%2BuPUQhDAZZCi3%2Bv%2BOewkbWIzqpcXtgcT%2BbGLUWUh2aMea1AHG76MrHCifhvrVBjJBP1NRsYkaFTDu3Du2Zx52bQ4DR3CySxLuA3HuUBLI2NgWrW9LixTzj%2BWWSzeShoUErVL7Kif1GZJywWUb3Bra8M0%3D&response-content-disposition=attachment%3B%20filename%3D%22sdn.xml%22&response-content-type=text%2Fxml&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIASARBLFPLBZGC2E5Y%2F20261001%2Fus-gov-west-1%2Fs3%2Faws4_request&X-Amz-Date=20261001T163402Z&X-Amz-SignedHeaders=host&X-Amz-Signature=fdf9eec64ce20091f1b4d31383057767b55a4014f3f1eab9471420d70799a856)",
+    "detail": "29,187,997 bytes (redirected to https://wc2h-sls-prod-public-published.s3.us-gov-west-1.amazonaws.com/Published/9f3c49e0-bd93-431c-8f2c-e96babe51280/2026-09-29/b53cbec8-352a-4fe6-aa65-13e05d04ce4b/SDN.XML)",
     "upstreamDate": null,
     "changedAt": null,
     "ok": true
@@ -102,7 +102,7 @@
     "checkedAt": "2026-10-01T16:33:48.222Z",
     "status": 200,
     "fingerprint": "fb2fe628388aea0b",
-    "detail": "23,201 bytes (redirected to https://s3.us-east-1.amazonaws.com/hdx-production-filestore/resources/f21a15b9-2ccb-4917-985f-1ab64c379526/prk_pop_adm2_v2.csv?AWSAccessKeyId=ASIAXYC32WNA7BJ5CQJ6&Signature=GO4AuyBBHcqme7SE88gkiO%2FnBN8%3D&x-amz-security-token=FwoGZXIvYXdzEMn%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDKU557P%2BPi1OiExM6iLBAZfcBbwG8FM3Ov4CeG1jZtHwPIXyS8d49Z9IrPYLTqVZQRSdPXmqAzo5D1AbEiJ1rL7GMSW5309KWxbyvb93gEYAnlmg8Wb5%2FPkG2JT2i5qoAGGafFWJPoOEvFdpQLoBsZhEMlN%2BqbkzZVSJpL7ymZIBl2UACBhNMg48HmrMBrwl6ogD8T2gohapZuuOlbg%2F%2FUXlbRBhMh9XTWbJjYRj4MfaX5Y4qzZZwUZVOZCW3PIMaXjrngpMaTpggd%2FxIk%2FqdnMok%2F751QYyLTeoDJ3PRIef3tSJxqN0JS98VKMG7jNz%2BqZ%2B4avFikTQLQjUWNF9v4Wj5dcA5A%3D%3D&Expires=1790872630)",
+    "detail": "23,201 bytes (redirected to https://s3.us-east-1.amazonaws.com/hdx-production-filestore/resources/f21a15b9-2ccb-4917-985f-1ab64c379526/prk_pop_adm2_v2.csv)",
     "upstreamDate": null,
     "changedAt": null,
     "ok": true
@@ -110,8 +110,8 @@
   "nasa-gibs-black-marble-wmts": {
     "checkedAt": "2026-10-01T16:33:48.222Z",
     "status": 200,
-    "fingerprint": "up:https://idfs.earthdatacloud.nasa.gov/realms/edl/protocol/openid-connect/auth?acr_values=edl_mfa&client_id=edl&exclude_idps=esa-eoiam%2Cgoogle&redirect_uri=https%3A%2F%2Furs.earthdata.nasa.gov%2Ffederated_keycloak&response_type=code&scope=openid&state=eyJjbGllbnRfaWQiOiJ1MW9fOHpPdW9scU5qdUxRejZ3ellRIiwicmVkaXJlY3RfdXJpIjoiaHR0cHM6Ly93aWtpLmVhcnRoZGF0YS5uYXNhLmdvdi9wbHVnaW5zL3NlcnZsZXQvQ29uZmx1ZW5jZU9BdXRoMiIsInJlc3BvbnNlX3R5cGUiOiJjb2RlIiwic3RhdGUiOiIvcGFnZXMvdmlld3BhZ2UuYWN0aW9uP3NwYWNlS2V5PUdJQlNcdTAwMjZ0aXRsZT1HSUJTK0FQSStmb3IrRGV2ZWxvcGVycyJ9",
-    "detail": "reachable, no change signal (redirected to https://idfs.earthdatacloud.nasa.gov/realms/edl/protocol/openid-connect/auth?acr_values=edl_mfa&client_id=edl&exclude_idps=esa-eoiam%2Cgoogle&redirect_uri=https%3A%2F%2Furs.earthdata.nasa.gov%2Ffederated_keycloak&response_type=code&scope=openid&state=eyJjbGllbnRfaWQiOiJ1MW9fOHpPdW9scU5qdUxRejZ3ellRIiwicmVkaXJlY3RfdXJpIjoiaHR0cHM6Ly93aWtpLmVhcnRoZGF0YS5uYXNhLmdvdi9wbHVnaW5zL3NlcnZsZXQvQ29uZmx1ZW5jZU9BdXRoMiIsInJlc3BvbnNlX3R5cGUiOiJjb2RlIiwic3RhdGUiOiIvcGFnZXMvdmlld3BhZ2UuYWN0aW9uP3NwYWNlS2V5PUdJQlNcdTAwMjZ0aXRsZT1HSUJTK0FQSStmb3IrRGV2ZWxvcGVycyJ9)",
+    "fingerprint": "up:https://idfs.earthdatacloud.nasa.gov/realms/edl/protocol/openid-connect/auth",
+    "detail": "reachable, no change signal (redirected to https://idfs.earthdatacloud.nasa.gov/realms/edl/protocol/openid-connect/auth)",
     "upstreamDate": null,
     "changedAt": null,
     "ok": true
@@ -282,7 +282,7 @@
     "checkedAt": "2026-10-01T16:33:48.222Z",
     "status": 200,
     "fingerprint": "27f41933856b7106",
-    "detail": "reachable, no change signal (redirected to https://irenk.sonosa.or.kr/?menuno=2)",
+    "detail": "reachable, no change signal (redirected to https://irenk.sonosa.or.kr/)",
     "upstreamDate": null,
     "changedAt": null,
     "ok": true
@@ -362,7 +362,7 @@
   "kinu-human-rights-whitepaper": {
     "checkedAt": "2026-10-01T16:33:48.222Z",
     "status": 200,
-    "fingerprint": "up:https://www.kinu.or.kr/main/module/report/index.do?category=46&nav_code=mai1674786121",
+    "fingerprint": "up:https://www.kinu.or.kr/main/module/report/index.do",
     "detail": "reachable, no change signal",
     "upstreamDate": null,
     "changedAt": null,
@@ -524,7 +524,7 @@
   "worldpop-prk-100m-constrained": {
     "checkedAt": "2026-10-01T16:33:48.222Z",
     "status": 200,
-    "fingerprint": "up:https://hub.worldpop.org/geodata/summary?id=49814",
+    "fingerprint": "up:https://hub.worldpop.org/geodata/summary",
     "detail": "reachable, no change signal",
     "upstreamDate": null,
     "changedAt": null,
@@ -543,7 +543,7 @@
     "checkedAt": "2026-10-01T16:33:48.222Z",
     "status": 200,
     "fingerprint": "a9bd2d551d60b138",
-    "detail": "3,952,482 bytes (redirected to https://s3.us-east-1.amazonaws.com/hdx-production-filestore/resources/40f285ff-54b2-4544-80a5-d1a79eb70935/prk-rainfall-subnat-5ytd.csv?AWSAccessKeyId=ASIAXYC32WNA7BJ5CQJ6&Signature=spRdxzMwoS6jbKO4muhLDPsGNQs%3D&x-amz-security-token=FwoGZXIvYXdzEMn%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDKU557P%2BPi1OiExM6iLBAZfcBbwG8FM3Ov4CeG1jZtHwPIXyS8d49Z9IrPYLTqVZQRSdPXmqAzo5D1AbEiJ1rL7GMSW5309KWxbyvb93gEYAnlmg8Wb5%2FPkG2JT2i5qoAGGafFWJPoOEvFdpQLoBsZhEMlN%2BqbkzZVSJpL7ymZIBl2UACBhNMg48HmrMBrwl6ogD8T2gohapZuuOlbg%2F%2FUXlbRBhMh9XTWbJjYRj4MfaX5Y4qzZZwUZVOZCW3PIMaXjrngpMaTpggd%2FxIk%2FqdnMok%2F751QYyLTeoDJ3PRIef3tSJxqN0JS98VKMG7jNz%2BqZ%2B4avFikTQLQjUWNF9v4Wj5dcA5A%3D%3D&Expires=1790872709)",
+    "detail": "3,952,482 bytes (redirected to https://s3.us-east-1.amazonaws.com/hdx-production-filestore/resources/40f285ff-54b2-4544-80a5-d1a79eb70935/prk-rainfall-subnat-5ytd.csv)",
     "upstreamDate": null,
     "changedAt": null,
     "ok": true
@@ -552,7 +552,7 @@
     "checkedAt": "2026-10-01T16:33:48.222Z",
     "status": 200,
     "fingerprint": "bdf0c377233653d2",
-    "detail": "2,021,934 bytes (redirected to https://s3.us-east-1.amazonaws.com/hdx-production-filestore/resources/090d39d3-0d87-48a9-ad3d-1d7aea2ebdc8/prk-ndvi-subnat-5ytd.csv?AWSAccessKeyId=ASIAXYC32WNA7BJ5CQJ6&Signature=Ym4RTMJASN%2B9HYQ9j6GxOsyOQA0%3D&x-amz-security-token=FwoGZXIvYXdzEMn%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDKU557P%2BPi1OiExM6iLBAZfcBbwG8FM3Ov4CeG1jZtHwPIXyS8d49Z9IrPYLTqVZQRSdPXmqAzo5D1AbEiJ1rL7GMSW5309KWxbyvb93gEYAnlmg8Wb5%2FPkG2JT2i5qoAGGafFWJPoOEvFdpQLoBsZhEMlN%2BqbkzZVSJpL7ymZIBl2UACBhNMg48HmrMBrwl6ogD8T2gohapZuuOlbg%2F%2FUXlbRBhMh9XTWbJjYRj4MfaX5Y4qzZZwUZVOZCW3PIMaXjrngpMaTpggd%2FxIk%2FqdnMok%2F751QYyLTeoDJ3PRIef3tSJxqN0JS98VKMG7jNz%2BqZ%2B4avFikTQLQjUWNF9v4Wj5dcA5A%3D%3D&Expires=1790872712)",
+    "detail": "2,021,934 bytes (redirected to https://s3.us-east-1.amazonaws.com/hdx-production-filestore/resources/090d39d3-0d87-48a9-ad3d-1d7aea2ebdc8/prk-ndvi-subnat-5ytd.csv)",
     "upstreamDate": null,
     "changedAt": null,
     "ok": true
@@ -578,8 +578,8 @@
   "kosis-bukhan-national-accounts": {
     "checkedAt": "2026-10-01T16:33:48.222Z",
     "status": 200,
-    "fingerprint": "up:https://kosis.kr/statisticsList/statisticsListIndex.do?vwcd=MT_BUKHAN&menuId=M_02_02&outLink=Y&entrType=",
-    "detail": "reachable, no change signal (redirected to https://kosis.kr/statisticsList/statisticsListIndex.do?vwcd=MT_BUKHAN&menuId=M_02_02&outLink=Y&entrType=)",
+    "fingerprint": "up:https://kosis.kr/statisticsList/statisticsListIndex.do",
+    "detail": "reachable, no change signal (redirected to https://kosis.kr/statisticsList/statisticsListIndex.do)",
     "upstreamDate": null,
     "changedAt": null,
     "ok": true
@@ -587,8 +587,8 @@
   "kosis-bukhan-agriculture-food": {
     "checkedAt": "2026-10-01T16:33:48.222Z",
     "status": 200,
-    "fingerprint": "up:https://kosis.kr/statisticsList/statisticsListIndex.do?vwcd=MT_BUKHAN&menuId=M_02_02&outLink=Y&entrType=",
-    "detail": "reachable, no change signal (redirected to https://kosis.kr/statisticsList/statisticsListIndex.do?vwcd=MT_BUKHAN&menuId=M_02_02&outLink=Y&entrType=)",
+    "fingerprint": "up:https://kosis.kr/statisticsList/statisticsListIndex.do",
+    "detail": "reachable, no change signal (redirected to https://kosis.kr/statisticsList/statisticsListIndex.do)",
     "upstreamDate": null,
     "changedAt": null,
     "ok": true
@@ -1172,7 +1172,7 @@
   "worldpop-prk-100m-unconstrained": {
     "checkedAt": "2026-10-01T16:33:48.222Z",
     "status": 200,
-    "fingerprint": "up:https://hub.worldpop.org/geodata/summary?id=6418",
+    "fingerprint": "up:https://hub.worldpop.org/geodata/summary",
     "detail": "reachable, no change signal",
     "upstreamDate": null,
     "changedAt": null,
@@ -1199,7 +1199,7 @@
   "fao-giews-country-brief-prk": {
     "checkedAt": "2026-10-01T16:33:48.222Z",
     "status": 200,
-    "fingerprint": "up:https://www.fao.org/giews/countrybrief/country.jsp?code=PRK",
+    "fingerprint": "up:https://www.fao.org/giews/countrybrief/country.jsp",
     "detail": "reachable, no change signal",
     "upstreamDate": null,
     "changedAt": null,
@@ -1218,7 +1218,7 @@
     "checkedAt": "2026-10-01T16:33:48.222Z",
     "status": 200,
     "fingerprint": "c8f37627812953e5",
-    "detail": "6,619,940 bytes (redirected to https://s3.us-east-1.amazonaws.com/hdx-production-filestore/resources/3251bbc5-c631-412f-a2c7-15d92efd99d0/world_health_statistics_indicators_prk.csv?AWSAccessKeyId=ASIAXYC32WNAUEI5PTZB&Signature=mCko1ZdYjdTgbqsGaE8eHWWruoE%3D&x-amz-security-token=FwoGZXIvYXdzEMr%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDKWZfUFgeLGp%2BLoQSyLBAWKk5r6iRLmncjQDW9tN8pc0b3V3tghvW7gqoarB29yiI377I1MzJdowa5F%2B2hWkyJxyDp4O5tODKI19UxiwkFmlLbcThKD9NMclgRFRwJCQCkbiHSrI6yjzYYooMimvMGCSWe%2BJY0JabBMXYaF7fGcKOQiuLGrMMdwQKOcrZkGTtzTFC5jU%2F7fO0WpirdWjoYRrSiH0LXw7d52%2Bx30gj3ERhBZxtjPska3WZ9z1EhNQBoFFpckvSzcqGjeEfOWcVgIo%2BJf61QYyLfE%2FGf4JWvbjqHz9eGlxNEmxOhoj18QhrpK8wl6Io7r5ZND78WNLEEDN3dRjnw%3D%3D&Expires=1790872813)",
+    "detail": "6,619,940 bytes (redirected to https://s3.us-east-1.amazonaws.com/hdx-production-filestore/resources/3251bbc5-c631-412f-a2c7-15d92efd99d0/world_health_statistics_indicators_prk.csv)",
     "upstreamDate": null,
     "changedAt": null,
     "ok": true
@@ -1226,8 +1226,8 @@
   "kosis-bukhan-health-welfare": {
     "checkedAt": "2026-10-01T16:33:48.222Z",
     "status": 200,
-    "fingerprint": "up:https://kosis.kr/statisticsList/statisticsListIndex.do?vwcd=MT_BUKHAN&menuId=M_02_02&outLink=Y&entrType=",
-    "detail": "reachable, no change signal (redirected to https://kosis.kr/statisticsList/statisticsListIndex.do?vwcd=MT_BUKHAN&menuId=M_02_02&outLink=Y&entrType=)",
+    "fingerprint": "up:https://kosis.kr/statisticsList/statisticsListIndex.do",
+    "detail": "reachable, no change signal (redirected to https://kosis.kr/statisticsList/statisticsListIndex.do)",
     "upstreamDate": null,
     "changedAt": null,
     "ok": true
@@ -1235,8 +1235,8 @@
   "kosis-bukhan-energy-infrastructure": {
     "checkedAt": "2026-10-01T16:33:48.222Z",
     "status": 200,
-    "fingerprint": "up:https://kosis.kr/statisticsList/statisticsListIndex.do?vwcd=MT_BUKHAN&menuId=M_02_02&outLink=Y&entrType=",
-    "detail": "reachable, no change signal (redirected to https://kosis.kr/statisticsList/statisticsListIndex.do?vwcd=MT_BUKHAN&menuId=M_02_02&outLink=Y&entrType=)",
+    "fingerprint": "up:https://kosis.kr/statisticsList/statisticsListIndex.do",
+    "detail": "reachable, no change signal (redirected to https://kosis.kr/statisticsList/statisticsListIndex.do)",
     "upstreamDate": null,
     "changedAt": null,
     "ok": true
@@ -1361,8 +1361,8 @@
   "nars-nk-legislative-reports": {
     "checkedAt": "2026-10-01T16:33:48.222Z",
     "status": 200,
-    "fingerprint": "up:https://www.nars.go.kr/index.do?sgrp=S01&APP=Web",
-    "detail": "reachable, no change signal (redirected to https://www.nars.go.kr/index.do?sgrp=S01&APP=Web)",
+    "fingerprint": "up:https://www.nars.go.kr/index.do",
+    "detail": "reachable, no change signal (redirected to https://www.nars.go.kr/index.do)",
     "upstreamDate": null,
     "changedAt": null,
     "ok": true
