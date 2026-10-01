@@ -337,7 +337,12 @@
   ],
   "wikidata": "Q702565",
   "wikipedia": "https://en.wikipedia.org/wiki/Kim_Song-ae",
-  "image": null,
+  "image": {
+   "src": "/img/people/kim-song-ae.jpg",
+   "credit": "KCNA via Ministry of Unification North Korea Information Portal",
+   "license": "Fair use",
+   "sourceUrl": "https://nkinfo.unikorea.go.kr/nkp/prsn/view.do?menuId=PEOPLE_86&prsnMngNo=933"
+  },
   "born": {
    "date": "1924-12-29",
    "place": "Kangso"
@@ -574,7 +579,12 @@
   ],
   "wikidata": "Q487289",
   "wikipedia": "https://en.wikipedia.org/wiki/Song_Hye-rim",
-  "image": null,
+  "image": {
+   "src": "/img/people/song-hye-rim.jpg",
+   "credit": "Wikipedia (non-free file)",
+   "license": "Fair use",
+   "sourceUrl": "https://en.wikipedia.org/wiki/File:Song_Hye-rim_portrait.jpg"
+  },
   "born": {
    "date": "1937-01-24",
    "place": "Changnyeong County"
@@ -628,7 +638,12 @@
   ],
   "wikidata": "Q263732",
   "wikipedia": "https://en.wikipedia.org/wiki/Ko_Yong-hui",
-  "image": null,
+  "image": {
+   "src": "/img/people/ko-yong-hui.jpg",
+   "credit": "Wikipedia (non-free file)",
+   "license": "Fair use",
+   "sourceUrl": "https://en.wikipedia.org/wiki/File:Ko_Yong-hui_portrait.jpg"
+  },
   "born": {
    "date": "1952-06-26",
    "place": "Osaka"
@@ -1020,7 +1035,12 @@
   ],
   "wikidata": "Q14864448",
   "wikipedia": "https://en.wikipedia.org/wiki/Kim_Ju_Ae",
-  "image": null,
+  "image": {
+   "src": "/img/people/kim-ju-ae.jpg",
+   "credit": "KCNA, Feb 2023 army founding banquet, via GlobalSecurity.org",
+   "license": "Fair use",
+   "sourceUrl": "https://www.globalsecurity.org/military/world/dprk/kim-ju-ae.htm"
+  },
   "born": {
    "date": "2013",
    "place": "North Korea",
@@ -1242,7 +1262,12 @@
   ],
   "wikidata": "Q317824",
   "wikipedia": "https://en.wikipedia.org/wiki/Kim_Jong-nam",
-  "image": null,
+  "image": {
+   "src": "/img/people/kim-jong-nam.jpg",
+   "credit": "Wikipedia (non-free file)",
+   "license": "Fair use",
+   "sourceUrl": "https://en.wikipedia.org/wiki/File:Kim_Jong-nam.jpg"
+  },
   "born": {
    "date": "1971-05-10",
    "place": "Pyongyang"
@@ -1538,7 +1563,12 @@
   ],
   "wikidata": "Q496004",
   "wikipedia": "https://en.wikipedia.org/wiki/Jang_Song-thaek",
-  "image": null,
+  "image": {
+   "src": "/img/people/jang-song-thaek.jpg",
+   "credit": "KCNA via Ministry of Unification North Korea Information Portal",
+   "license": "Fair use",
+   "sourceUrl": "https://nkinfo.unikorea.go.kr/nkp/prsn/view.do?menuId=PEOPLE_86&prsnMngNo=1169"
+  },
   "born": {
    "date": "1946-01-22",
    "place": "Kangwon Province"
@@ -1704,7 +1734,12 @@
   ],
   "wikidata": "Q1062006",
   "wikipedia": "https://en.wikipedia.org/wiki/Kim_Yong-ju",
-  "image": null,
+  "image": {
+   "src": "/img/people/kim-yong-ju.jpg",
+   "credit": "Wikipedia (non-free file)",
+   "license": "Fair use",
+   "sourceUrl": "https://en.wikipedia.org/wiki/File:Kim_Yong-ju.jpg"
+  },
   "born": {
    "date": "1920-09-21",
    "place": "Mangyŏngdae"
@@ -2167,7 +2202,12 @@
   ],
   "wikidata": "Q5367054",
   "wikipedia": "https://en.wikipedia.org/wiki/Ri_Pyong-chol",
-  "image": null,
+  "image": {
+   "src": "/img/people/ri-pyong-chol.jpg",
+   "credit": "KCNA via Ministry of Unification North Korea Information Portal",
+   "license": "Fair use",
+   "sourceUrl": "https://nkinfo.unikorea.go.kr/nkp/prsn/view.do?menuId=PEOPLE_86&prsnMngNo=23305"
+  },
   "born": {
    "date": "1948",
    "place": "North Korea"
@@ -2242,7 +2282,12 @@
   ],
   "wikidata": "Q16905280",
   "wikipedia": "https://en.wikipedia.org/wiki/Pak_Jong-chon",
-  "image": null,
+  "image": {
+   "src": "/img/people/pak-jong-chon.jpg",
+   "credit": "KCNA via Ministry of Unification North Korea Information Portal",
+   "license": "Fair use",
+   "sourceUrl": "https://nkinfo.unikorea.go.kr/nkp/prsn/view.do?menuId=PEOPLE_86&prsnMngNo=30443"
+  },
   "born": {
    "date": "1960",
    "place": "Pyongyang"
@@ -2470,7 +2515,12 @@
   ],
   "wikidata": "Q55734042",
   "wikipedia": "https://en.wikipedia.org/wiki/Jong_Kyong-thaek",
-  "image": null,
+  "image": {
+   "src": "/img/people/jong-kyong-thaek.jpg",
+   "credit": "KCNA via Ministry of Unification North Korea Information Portal",
+   "license": "Fair use",
+   "sourceUrl": "https://nkinfo.unikorea.go.kr/nkp/prsn/view.do?menuId=PEOPLE_86&prsnMngNo=49815"
+  },
   "born": {
    "date": "1961",
    "place": "Chagang Province"
@@ -2544,7 +2594,12 @@
   ],
   "wikidata": "Q56818689",
   "wikipedia": "https://en.wikipedia.org/wiki/Kim_Jae-ryong",
-  "image": null,
+  "image": {
+   "src": "/img/people/kim-jae-ryong.jpg",
+   "credit": "KCNA via Ministry of Unification North Korea Information Portal",
+   "license": "Fair use",
+   "sourceUrl": "https://nkinfo.unikorea.go.kr/nkp/prsn/view.do?menuId=PEOPLE_86&prsnMngNo=36936"
+  },
   "born": {
    "date": "1959",
    "place": "Chagang Province"
@@ -2611,7 +2666,12 @@
   ],
   "wikidata": "Q16905288",
   "wikipedia": "https://en.wikipedia.org/wiki/Ri_Il-hwan",
-  "image": null,
+  "image": {
+   "src": "/img/people/ri-il-hwan.jpg",
+   "credit": "KCNA via Ministry of Unification North Korea Information Portal",
+   "license": "Fair use",
+   "sourceUrl": "https://nkinfo.unikorea.go.kr/nkp/prsn/view.do?menuId=PEOPLE_86&prsnMngNo=6943"
+  },
   "born": {
    "date": "1960",
    "place": "North Korea"
@@ -2670,7 +2730,12 @@
   ],
   "wikidata": "Q11261360",
   "wikipedia": "https://en.wikipedia.org/wiki/O_Su-yong",
-  "image": null,
+  "image": {
+   "src": "/img/people/o-su-yong.jpg",
+   "credit": "KCNA via Ministry of Unification North Korea Information Portal",
+   "license": "Fair use",
+   "sourceUrl": "https://nkinfo.unikorea.go.kr/nkp/prsn/view.do?menuId=PEOPLE_86&prsnMngNo=10496"
+  },
   "born": {
    "date": "1944-07-20",
    "place": "Pyongyang"
@@ -2730,7 +2795,12 @@
   ],
   "wikidata": "Q105706437",
   "wikipedia": "https://en.wikipedia.org/wiki/Jon_Hyon-chol",
-  "image": null,
+  "image": {
+   "src": "/img/people/jon-hyon-chol.jpg",
+   "credit": "KCNA via Ministry of Unification North Korea Information Portal",
+   "license": "Fair use",
+   "sourceUrl": "https://nkinfo.unikorea.go.kr/nkp/prsn/view.do?menuId=PEOPLE_86&prsnMngNo=23951"
+  },
   "born": {
    "date": "1965",
    "place": "Pyongyang, North Korea"
@@ -2790,7 +2860,12 @@
   ],
   "wikidata": "Q12597103",
   "wikipedia": null,
-  "image": null,
+  "image": {
+   "src": "/img/people/pak-jong-gun.jpg",
+   "credit": "KCNA via Ministry of Unification North Korea Information Portal",
+   "license": "Fair use",
+   "sourceUrl": "https://nkinfo.unikorea.go.kr/nkp/prsn/view.do?menuId=PEOPLE_86&prsnMngNo=2905"
+  },
   "born": {
    "date": "1944-09-07",
    "place": "North Hamgyong Province"
@@ -2879,7 +2954,12 @@
   ],
   "wikidata": "Q12589269",
   "wikipedia": "https://en.wikipedia.org/wiki/Kim_Hyong-sik",
-  "image": null,
+  "image": {
+   "src": "/img/people/kim-hyong-sik.jpg",
+   "credit": "KCNA via Ministry of Unification North Korea Information Portal",
+   "license": "Fair use",
+   "sourceUrl": "https://nkinfo.unikorea.go.kr/nkp/prsn/view.do?menuId=PEOPLE_86&prsnMngNo=21201"
+  },
   "born": {
    "date": "1958",
    "place": "Pyongyang, North Korea"
@@ -2917,7 +2997,12 @@
   ],
   "wikidata": "Q119433063",
   "wikipedia": "https://en.wikipedia.org/wiki/Ju_Chang-il",
-  "image": null,
+  "image": {
+   "src": "/img/people/ju-chang-il.jpg",
+   "credit": "KCNA via Ministry of Unification North Korea Information Portal",
+   "license": "Fair use",
+   "sourceUrl": "https://nkinfo.unikorea.go.kr/nkp/prsn/view.do?menuId=PEOPLE_86&prsnMngNo=13559"
+  },
   "born": {
    "date": "1960",
    "place": "Pyongyang, North Korea"
@@ -3044,7 +3129,12 @@
   ],
   "wikidata": "Q710774",
   "wikipedia": "https://en.wikipedia.org/wiki/Yang_Hyong-sop",
-  "image": null,
+  "image": {
+   "src": "/img/people/yang-hyong-sop.jpg",
+   "credit": "KCNA via Ministry of Unification North Korea Information Portal",
+   "license": "Fair use",
+   "sourceUrl": "https://nkinfo.unikorea.go.kr/nkp/prsn/view.do?menuId=PEOPLE_86&prsnMngNo=1064"
+  },
   "born": {
    "date": "1925-10-01",
    "place": "Hamhung"
@@ -3100,7 +3190,12 @@
   ],
   "wikidata": "Q115237652",
   "wikipedia": "https://en.wikipedia.org/wiki/Ri_Chang-dae",
-  "image": null,
+  "image": {
+   "src": "/img/people/ri-chang-dae.jpg",
+   "credit": "KCNA via Ministry of Unification North Korea Information Portal",
+   "license": "Fair use",
+   "sourceUrl": "https://nkinfo.unikorea.go.kr/nkp/prsn/view.do?menuId=PEOPLE_86&prsnMngNo=49885"
+  },
   "born": {
    "date": "1960",
    "place": "Pyongyang, North Korea"
@@ -3154,7 +3249,12 @@
   ],
   "wikidata": "Q12594451",
   "wikipedia": "https://en.wikipedia.org/wiki/Ri_Thae-sop",
-  "image": null,
+  "image": {
+   "src": "/img/people/ri-tae-sop.jpg",
+   "credit": "KCNA via Ministry of Unification North Korea Information Portal",
+   "license": "Fair use",
+   "sourceUrl": "https://nkinfo.unikorea.go.kr/nkp/prsn/view.do?menuId=PEOPLE_86&prsnMngNo=20307"
+  },
   "born": {
    "date": "1959",
    "place": "South Pyongan, North Korea"
@@ -3215,7 +3315,12 @@
   ],
   "wikidata": "Q56820589",
   "wikipedia": "https://en.wikipedia.org/wiki/Pang_Tu-sop",
-  "image": null,
+  "image": {
+   "src": "/img/people/pang-tu-sop.jpg",
+   "credit": "KCNA via Ministry of Unification North Korea Information Portal",
+   "license": "Fair use",
+   "sourceUrl": "https://nkinfo.unikorea.go.kr/nkp/prsn/view.do?menuId=PEOPLE_86&prsnMngNo=43250"
+  },
   "born": {
    "date": "1956",
    "place": "Pyongyang, North Korea"
@@ -3254,7 +3359,12 @@
   ],
   "wikidata": "Q124039235",
   "wikipedia": "https://en.wikipedia.org/wiki/Ri_Chang-ho",
-  "image": null,
+  "image": {
+   "src": "/img/people/ri-chang-ho.jpg",
+   "credit": "KCNA via Ministry of Unification North Korea Information Portal",
+   "license": "Fair use",
+   "sourceUrl": "https://nkinfo.unikorea.go.kr/nkp/prsn/view.do?menuId=PEOPLE_86&prsnMngNo=2307"
+  },
   "born": {
    "date": "1965",
    "place": "Pyongyang, North Korea"
@@ -3301,7 +3411,12 @@
   ],
   "wikidata": "Q97162070",
   "wikipedia": "https://en.wikipedia.org/wiki/Rim_Kwang-il",
-  "image": null,
+  "image": {
+   "src": "/img/people/rim-kwang-il.jpg",
+   "credit": "KCNA via Ministry of Unification North Korea Information Portal",
+   "license": "Fair use",
+   "sourceUrl": "https://nkinfo.unikorea.go.kr/nkp/prsn/view.do?menuId=PEOPLE_86&prsnMngNo=23769"
+  },
   "born": {
    "date": "1965",
    "place": "South Pyongan, North Korea"
@@ -3519,7 +3634,12 @@
   ],
   "wikidata": "Q5366982",
   "wikipedia": "https://en.wikipedia.org/wiki/Kim_Won-hong",
-  "image": null,
+  "image": {
+   "src": "/img/people/kim-won-hong.jpg",
+   "credit": "KCNA via Ministry of Unification North Korea Information Portal",
+   "license": "Fair use",
+   "sourceUrl": "https://nkinfo.unikorea.go.kr/nkp/prsn/view.do?menuId=PEOPLE_86&prsnMngNo=5981"
+  },
   "born": {
    "date": "1945-04-17",
    "place": "Sungho County"
@@ -3587,7 +3707,12 @@
   ],
   "wikidata": "Q56825039",
   "wikipedia": "https://en.wikipedia.org/wiki/Jang_Chang-ha",
-  "image": null,
+  "image": {
+   "src": "/img/people/jang-chang-ha.jpg",
+   "credit": "KCNA via Ministry of Unification North Korea Information Portal",
+   "license": "Fair use",
+   "sourceUrl": "https://nkinfo.unikorea.go.kr/nkp/prsn/view.do?menuId=PEOPLE_86&prsnMngNo=44297"
+  },
   "born": {
    "date": "2000",
    "place": "Pyongyang, North Korea"
@@ -3642,7 +3767,12 @@
   ],
   "wikidata": "Q57064566",
   "wikipedia": "https://en.wikipedia.org/wiki/Kim_Jong-sik",
-  "image": null,
+  "image": {
+   "src": "/img/people/kim-jong-sik.jpg",
+   "credit": "KCNA via Ministry of Unification North Korea Information Portal",
+   "license": "Fair use",
+   "sourceUrl": "https://nkinfo.unikorea.go.kr/nkp/prsn/view.do?menuId=PEOPLE_86&prsnMngNo=181"
+  },
   "born": {
    "date": "1967",
    "place": "Pyongyang, North Korea"
@@ -3701,7 +3831,12 @@
   ],
   "wikidata": "Q16179925",
   "wikipedia": "https://en.wikipedia.org/wiki/Hong_Sung-mu",
-  "image": null,
+  "image": {
+   "src": "/img/people/hong-sung-mu.jpg",
+   "credit": "KCNA via Ministry of Unification North Korea Information Portal",
+   "license": "Fair use",
+   "sourceUrl": "https://nkinfo.unikorea.go.kr/nkp/prsn/view.do?menuId=PEOPLE_86&prsnMngNo=24537"
+  },
   "born": {
    "date": "1942-01-01",
    "place": "Pyongyang, North Korea"
@@ -3747,7 +3882,12 @@
   ],
   "wikidata": "Q16338026",
   "wikipedia": "https://en.wikipedia.org/wiki/Jo_Chun-ryong",
-  "image": null,
+  "image": {
+   "src": "/img/people/jo-chun-ryong.jpg",
+   "credit": "KCNA via Ministry of Unification North Korea Information Portal",
+   "license": "Fair use",
+   "sourceUrl": "https://nkinfo.unikorea.go.kr/nkp/prsn/view.do?menuId=PEOPLE_86&prsnMngNo=44172"
+  },
   "born": {
    "date": "1960",
    "place": "Pyongyang, North Korea"
@@ -3821,7 +3961,12 @@
   ],
   "wikidata": null,
   "wikipedia": null,
-  "image": null,
+  "image": {
+   "src": "/img/people/yu-jin.jpg",
+   "credit": "KCNA via Ministry of Unification North Korea Information Portal",
+   "license": "Fair use",
+   "sourceUrl": "https://nkinfo.unikorea.go.kr/nkp/prsn/view.do?menuId=PEOPLE_86&prsnMngNo=44763"
+  },
   "born": {
    "date": "1962",
    "place": "Pyongyang, North Korea"
@@ -3860,7 +4005,12 @@
   ],
   "wikidata": "Q57073331",
   "wikipedia": null,
-  "image": null,
+  "image": {
+   "src": "/img/people/jon-il-ho.jpg",
+   "credit": "KCNA via Ministry of Unification North Korea Information Portal",
+   "license": "Fair use",
+   "sourceUrl": "https://nkinfo.unikorea.go.kr/nkp/prsn/view.do?menuId=PEOPLE_86&prsnMngNo=13159"
+  },
   "born": {
    "date": "1956-08-24",
    "place": "Pyongyang, North Korea"
@@ -3905,7 +4055,12 @@
   ],
   "wikidata": "Q12619902",
   "wikipedia": "https://en.wikipedia.org/wiki/Choe_Chun-sik",
-  "image": null,
+  "image": {
+   "src": "/img/people/choe-chun-sik.jpg",
+   "credit": "KCNA via Ministry of Unification North Korea Information Portal",
+   "license": "Fair use",
+   "sourceUrl": "https://nkinfo.unikorea.go.kr/nkp/prsn/view.do?menuId=PEOPLE_86&prsnMngNo=24341"
+  },
   "born": {
    "date": "1954-10-12",
    "place": "Pyongyang, North Korea"
@@ -3949,7 +4104,12 @@
   ],
   "wikidata": "Q5367050",
   "wikipedia": "https://en.wikipedia.org/wiki/Pak_To-chun",
-  "image": null,
+  "image": {
+   "src": "/img/people/pak-to-chun.jpg",
+   "credit": "KCNA via Ministry of Unification North Korea Information Portal",
+   "license": "Fair use",
+   "sourceUrl": "https://nkinfo.unikorea.go.kr/nkp/prsn/view.do?menuId=PEOPLE_86&prsnMngNo=7443"
+  },
   "born": {
    "date": "1944-03-09",
    "place": "Rangrim County, Jagang, Korea"
@@ -4021,7 +4181,12 @@
   ],
   "wikidata": "Q19657552",
   "wikipedia": "https://en.wikipedia.org/wiki/Han_Kwang-sang",
-  "image": null,
+  "image": {
+   "src": "/img/people/han-kwang-sang.jpg",
+   "credit": "KCNA via Ministry of Unification North Korea Information Portal",
+   "license": "Fair use",
+   "sourceUrl": "https://nkinfo.unikorea.go.kr/nkp/prsn/view.do?menuId=PEOPLE_86&prsnMngNo=24382"
+  },
   "born": {
    "date": "1958",
    "place": "Pyongyang, North Korea"
@@ -4068,7 +4233,12 @@
   ],
   "wikidata": "Q57073318",
   "wikipedia": null,
-  "image": null,
+  "image": {
+   "src": "/img/people/jon-il-chun.jpg",
+   "credit": "KCNA via Ministry of Unification North Korea Information Portal",
+   "license": "Fair use",
+   "sourceUrl": "https://nkinfo.unikorea.go.kr/nkp/prsn/view.do?menuId=PEOPLE_86&prsnMngNo=25286"
+  },
   "born": {
    "date": "1941",
    "place": "Pyongyang, North Korea"
@@ -4105,7 +4275,12 @@
   ],
   "wikidata": "Q55731340",
   "wikipedia": null,
-  "image": null,
+  "image": {
+   "src": "/img/people/sin-ryong-man.jpg",
+   "credit": "KCNA via Ministry of Unification North Korea Information Portal",
+   "license": "Fair use",
+   "sourceUrl": "https://nkinfo.unikorea.go.kr/nkp/prsn/view.do?menuId=PEOPLE_86&prsnMngNo=49823"
+  },
   "born": {
    "date": "1964",
    "place": "Pyongyang, North Korea"
@@ -4142,7 +4317,12 @@
   ],
   "wikidata": "Q114595445",
   "wikipedia": null,
-  "image": null,
+  "image": {
+   "src": "/img/people/jon-sung-guk.jpg",
+   "credit": "KCNA via Ministry of Unification North Korea Information Portal",
+   "license": "Fair use",
+   "sourceUrl": "https://nkinfo.unikorea.go.kr/nkp/prsn/view.do?menuId=PEOPLE_86&prsnMngNo=1799"
+  },
   "born": {
    "date": "1966",
    "place": "Pyongyang, North Korea"
@@ -4187,7 +4367,12 @@
   ],
   "wikidata": "Q707394",
   "wikipedia": "https://en.wikipedia.org/wiki/Pak_Nam-gi",
-  "image": null,
+  "image": {
+   "src": "/img/people/pak-nam-gi.jpg",
+   "credit": "Wikipedia (non-free file)",
+   "license": "Fair use",
+   "sourceUrl": "https://en.wikipedia.org/wiki/File:Pak_Nam-gi.jpg"
+  },
   "born": {
    "date": "1934-02-21",
    "place": "Haeju"
@@ -4335,7 +4520,12 @@
   ],
   "wikidata": "Q77835256",
   "wikipedia": null,
-  "image": null,
+  "image": {
+   "src": "/img/people/kim-song.jpg",
+   "credit": "KCNA via Ministry of Unification North Korea Information Portal",
+   "license": "Fair use",
+   "sourceUrl": "https://nkinfo.unikorea.go.kr/nkp/prsn/view.do?menuId=PEOPLE_86&prsnMngNo=37357"
+  },
   "born": {
    "date": "1959",
    "place": "North Korea"
@@ -4681,7 +4871,12 @@
   ],
   "wikidata": "Q705194",
   "wikipedia": "https://en.wikipedia.org/wiki/Kim_Kye-gwan",
-  "image": null,
+  "image": {
+   "src": "/img/people/kim-kye-gwan.jpg",
+   "credit": "KCNA via Ministry of Unification North Korea Information Portal",
+   "license": "Fair use",
+   "sourceUrl": "https://nkinfo.unikorea.go.kr/nkp/prsn/view.do?menuId=PEOPLE_86&prsnMngNo=906"
+  },
   "born": {
    "date": "1943-07-06",
    "place": "North Pyongan Province"
@@ -4887,7 +5082,12 @@
   ],
   "wikidata": "Q702412",
   "wikipedia": "https://en.wikipedia.org/wiki/Hyon_Yong-chol",
-  "image": null,
+  "image": {
+   "src": "/img/people/hyon-yong-chol.jpg",
+   "credit": "KCNA via Ministry of Unification North Korea Information Portal",
+   "license": "Fair use",
+   "sourceUrl": "https://nkinfo.unikorea.go.kr/nkp/prsn/view.do?menuId=PEOPLE_86&prsnMngNo=24506"
+  },
   "born": {
    "date": "1953-01-11",
    "place": "Kyongsong County"
@@ -4958,7 +5158,12 @@
   ],
   "wikidata": "Q483800",
   "wikipedia": "https://en.wikipedia.org/wiki/Ri_Yong-ho_(general)",
-  "image": null,
+  "image": {
+   "src": "/img/people/ri-yong-ho-kpa.jpg",
+   "credit": "KCNA via Ministry of Unification North Korea Information Portal",
+   "license": "Fair use",
+   "sourceUrl": "https://nkinfo.unikorea.go.kr/nkp/prsn/view.do?menuId=PEOPLE_86&prsnMngNo=16033"
+  },
   "born": {
    "date": "1942-10-05",
    "place": "Tongchon County"
@@ -5287,7 +5492,12 @@
   ],
   "wikidata": "Q16177323",
   "wikipedia": null,
-  "image": null,
+  "image": {
+   "src": "/img/people/kang-myong-do.jpg",
+   "credit": "채널A 캔버스 / Wikimedia Commons",
+   "license": "CC BY 3.0",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File:%EA%B9%80%EB%AA%85%EB%8F%84_%EA%B5%90%EC%88%98.jpg"
+  },
   "born": {
    "date": "1958-12-04",
    "place": "Pyongyang, North Korea"
@@ -5383,7 +5593,12 @@
   ],
   "wikidata": "Q490736",
   "wikipedia": "https://en.wikipedia.org/wiki/Ri_Chun-hee",
-  "image": null,
+  "image": {
+   "src": "/img/people/ri-chun-hee.jpg",
+   "credit": "Wikipedia (non-free file)",
+   "license": "Fair use",
+   "sourceUrl": "https://ru.wikipedia.org/wiki/%D0%A4%D0%B0%D0%B9%D0%BB:%D0%9B%D0%B8_%D0%A7%D1%85%D1%83%D0%BD_%D0%A5%D0%B8.jpg"
+  },
   "born": {
    "date": "1943-07-08",
    "place": "Tongchon County"
@@ -5480,7 +5695,12 @@
   ],
   "wikidata": "Q492835",
   "wikipedia": "https://en.wikipedia.org/wiki/Kim_Ki-nam_(politician)",
-  "image": null,
+  "image": {
+   "src": "/img/people/kim-ki-nam.jpg",
+   "credit": "KCNA via Ministry of Unification North Korea Information Portal",
+   "license": "Fair use",
+   "sourceUrl": "https://nkinfo.unikorea.go.kr/nkp/prsn/view.do?menuId=PEOPLE_86&prsnMngNo=914"
+  },
   "born": {
    "date": "1929-08-28",
    "place": "Kumya County"

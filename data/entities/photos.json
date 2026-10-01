@@ -1,0 +1,261 @@
+{
+ "_doc": "Portraits for people with no freely licensed photo. North Korean state media photos (mostly via the South Korean Ministry of Unification people directory, which also confirms identity) used as low-resolution fair use. scripts/build-entities.ts uses these only when Commons has nothing free.",
+ "choe-chun-sik": {
+  "src": "/img/people/choe-chun-sik.jpg",
+  "credit": "KCNA via Ministry of Unification North Korea Information Portal",
+  "license": "Fair use",
+  "sourceUrl": "https://nkinfo.unikorea.go.kr/nkp/prsn/view.do?menuId=PEOPLE_86&prsnMngNo=24341"
+ },
+ "han-kwang-sang": {
+  "src": "/img/people/han-kwang-sang.jpg",
+  "credit": "KCNA via Ministry of Unification North Korea Information Portal",
+  "license": "Fair use",
+  "sourceUrl": "https://nkinfo.unikorea.go.kr/nkp/prsn/view.do?menuId=PEOPLE_86&prsnMngNo=24382"
+ },
+ "hong-sung-mu": {
+  "src": "/img/people/hong-sung-mu.jpg",
+  "credit": "KCNA via Ministry of Unification North Korea Information Portal",
+  "license": "Fair use",
+  "sourceUrl": "https://nkinfo.unikorea.go.kr/nkp/prsn/view.do?menuId=PEOPLE_86&prsnMngNo=24537"
+ },
+ "hyon-yong-chol": {
+  "src": "/img/people/hyon-yong-chol.jpg",
+  "credit": "KCNA via Ministry of Unification North Korea Information Portal",
+  "license": "Fair use",
+  "sourceUrl": "https://nkinfo.unikorea.go.kr/nkp/prsn/view.do?menuId=PEOPLE_86&prsnMngNo=24506"
+ },
+ "jang-chang-ha": {
+  "src": "/img/people/jang-chang-ha.jpg",
+  "credit": "KCNA via Ministry of Unification North Korea Information Portal",
+  "license": "Fair use",
+  "sourceUrl": "https://nkinfo.unikorea.go.kr/nkp/prsn/view.do?menuId=PEOPLE_86&prsnMngNo=44297"
+ },
+ "jang-song-thaek": {
+  "src": "/img/people/jang-song-thaek.jpg",
+  "credit": "KCNA via Ministry of Unification North Korea Information Portal",
+  "license": "Fair use",
+  "sourceUrl": "https://nkinfo.unikorea.go.kr/nkp/prsn/view.do?menuId=PEOPLE_86&prsnMngNo=1169"
+ },
+ "jo-chun-ryong": {
+  "src": "/img/people/jo-chun-ryong.jpg",
+  "credit": "KCNA via Ministry of Unification North Korea Information Portal",
+  "license": "Fair use",
+  "sourceUrl": "https://nkinfo.unikorea.go.kr/nkp/prsn/view.do?menuId=PEOPLE_86&prsnMngNo=44172"
+ },
+ "jon-hyon-chol": {
+  "src": "/img/people/jon-hyon-chol.jpg",
+  "credit": "KCNA via Ministry of Unification North Korea Information Portal",
+  "license": "Fair use",
+  "sourceUrl": "https://nkinfo.unikorea.go.kr/nkp/prsn/view.do?menuId=PEOPLE_86&prsnMngNo=23951"
+ },
+ "jon-il-chun": {
+  "src": "/img/people/jon-il-chun.jpg",
+  "credit": "KCNA via Ministry of Unification North Korea Information Portal",
+  "license": "Fair use",
+  "sourceUrl": "https://nkinfo.unikorea.go.kr/nkp/prsn/view.do?menuId=PEOPLE_86&prsnMngNo=25286"
+ },
+ "jon-il-ho": {
+  "src": "/img/people/jon-il-ho.jpg",
+  "credit": "KCNA via Ministry of Unification North Korea Information Portal",
+  "license": "Fair use",
+  "sourceUrl": "https://nkinfo.unikorea.go.kr/nkp/prsn/view.do?menuId=PEOPLE_86&prsnMngNo=13159"
+ },
+ "jon-sung-guk": {
+  "src": "/img/people/jon-sung-guk.jpg",
+  "credit": "KCNA via Ministry of Unification North Korea Information Portal",
+  "license": "Fair use",
+  "sourceUrl": "https://nkinfo.unikorea.go.kr/nkp/prsn/view.do?menuId=PEOPLE_86&prsnMngNo=1799"
+ },
+ "jong-kyong-thaek": {
+  "src": "/img/people/jong-kyong-thaek.jpg",
+  "credit": "KCNA via Ministry of Unification North Korea Information Portal",
+  "license": "Fair use",
+  "sourceUrl": "https://nkinfo.unikorea.go.kr/nkp/prsn/view.do?menuId=PEOPLE_86&prsnMngNo=49815"
+ },
+ "ju-chang-il": {
+  "src": "/img/people/ju-chang-il.jpg",
+  "credit": "KCNA via Ministry of Unification North Korea Information Portal",
+  "license": "Fair use",
+  "sourceUrl": "https://nkinfo.unikorea.go.kr/nkp/prsn/view.do?menuId=PEOPLE_86&prsnMngNo=13559"
+ },
+ "kim-hyong-sik": {
+  "src": "/img/people/kim-hyong-sik.jpg",
+  "credit": "KCNA via Ministry of Unification North Korea Information Portal",
+  "license": "Fair use",
+  "sourceUrl": "https://nkinfo.unikorea.go.kr/nkp/prsn/view.do?menuId=PEOPLE_86&prsnMngNo=21201"
+ },
+ "kim-jae-ryong": {
+  "src": "/img/people/kim-jae-ryong.jpg",
+  "credit": "KCNA via Ministry of Unification North Korea Information Portal",
+  "license": "Fair use",
+  "sourceUrl": "https://nkinfo.unikorea.go.kr/nkp/prsn/view.do?menuId=PEOPLE_86&prsnMngNo=36936"
+ },
+ "kim-jong-nam": {
+  "src": "/img/people/kim-jong-nam.jpg",
+  "credit": "Wikipedia (non-free file)",
+  "license": "Fair use",
+  "sourceUrl": "https://en.wikipedia.org/wiki/File:Kim_Jong-nam.jpg"
+ },
+ "kim-jong-sik": {
+  "src": "/img/people/kim-jong-sik.jpg",
+  "credit": "KCNA via Ministry of Unification North Korea Information Portal",
+  "license": "Fair use",
+  "sourceUrl": "https://nkinfo.unikorea.go.kr/nkp/prsn/view.do?menuId=PEOPLE_86&prsnMngNo=181"
+ },
+ "kim-ju-ae": {
+  "src": "/img/people/kim-ju-ae.jpg",
+  "credit": "KCNA, Feb 2023 army founding banquet, via GlobalSecurity.org",
+  "license": "Fair use",
+  "sourceUrl": "https://www.globalsecurity.org/military/world/dprk/kim-ju-ae.htm"
+ },
+ "kim-ki-nam": {
+  "src": "/img/people/kim-ki-nam.jpg",
+  "credit": "KCNA via Ministry of Unification North Korea Information Portal",
+  "license": "Fair use",
+  "sourceUrl": "https://nkinfo.unikorea.go.kr/nkp/prsn/view.do?menuId=PEOPLE_86&prsnMngNo=914"
+ },
+ "kim-kye-gwan": {
+  "src": "/img/people/kim-kye-gwan.jpg",
+  "credit": "KCNA via Ministry of Unification North Korea Information Portal",
+  "license": "Fair use",
+  "sourceUrl": "https://nkinfo.unikorea.go.kr/nkp/prsn/view.do?menuId=PEOPLE_86&prsnMngNo=906"
+ },
+ "kim-song": {
+  "src": "/img/people/kim-song.jpg",
+  "credit": "KCNA via Ministry of Unification North Korea Information Portal",
+  "license": "Fair use",
+  "sourceUrl": "https://nkinfo.unikorea.go.kr/nkp/prsn/view.do?menuId=PEOPLE_86&prsnMngNo=37357"
+ },
+ "kim-song-ae": {
+  "src": "/img/people/kim-song-ae.jpg",
+  "credit": "KCNA via Ministry of Unification North Korea Information Portal",
+  "license": "Fair use",
+  "sourceUrl": "https://nkinfo.unikorea.go.kr/nkp/prsn/view.do?menuId=PEOPLE_86&prsnMngNo=933"
+ },
+ "kim-won-hong": {
+  "src": "/img/people/kim-won-hong.jpg",
+  "credit": "KCNA via Ministry of Unification North Korea Information Portal",
+  "license": "Fair use",
+  "sourceUrl": "https://nkinfo.unikorea.go.kr/nkp/prsn/view.do?menuId=PEOPLE_86&prsnMngNo=5981"
+ },
+ "kim-yong-ju": {
+  "src": "/img/people/kim-yong-ju.jpg",
+  "credit": "Wikipedia (non-free file)",
+  "license": "Fair use",
+  "sourceUrl": "https://en.wikipedia.org/wiki/File:Kim_Yong-ju.jpg"
+ },
+ "ko-yong-hui": {
+  "src": "/img/people/ko-yong-hui.jpg",
+  "credit": "Wikipedia (non-free file)",
+  "license": "Fair use",
+  "sourceUrl": "https://en.wikipedia.org/wiki/File:Ko_Yong-hui_portrait.jpg"
+ },
+ "o-su-yong": {
+  "src": "/img/people/o-su-yong.jpg",
+  "credit": "KCNA via Ministry of Unification North Korea Information Portal",
+  "license": "Fair use",
+  "sourceUrl": "https://nkinfo.unikorea.go.kr/nkp/prsn/view.do?menuId=PEOPLE_86&prsnMngNo=10496"
+ },
+ "pak-jong-chon": {
+  "src": "/img/people/pak-jong-chon.jpg",
+  "credit": "KCNA via Ministry of Unification North Korea Information Portal",
+  "license": "Fair use",
+  "sourceUrl": "https://nkinfo.unikorea.go.kr/nkp/prsn/view.do?menuId=PEOPLE_86&prsnMngNo=30443"
+ },
+ "pak-jong-gun": {
+  "src": "/img/people/pak-jong-gun.jpg",
+  "credit": "KCNA via Ministry of Unification North Korea Information Portal",
+  "license": "Fair use",
+  "sourceUrl": "https://nkinfo.unikorea.go.kr/nkp/prsn/view.do?menuId=PEOPLE_86&prsnMngNo=2905"
+ },
+ "pak-nam-gi": {
+  "src": "/img/people/pak-nam-gi.jpg",
+  "credit": "Wikipedia (non-free file)",
+  "license": "Fair use",
+  "sourceUrl": "https://en.wikipedia.org/wiki/File:Pak_Nam-gi.jpg"
+ },
+ "pak-to-chun": {
+  "src": "/img/people/pak-to-chun.jpg",
+  "credit": "KCNA via Ministry of Unification North Korea Information Portal",
+  "license": "Fair use",
+  "sourceUrl": "https://nkinfo.unikorea.go.kr/nkp/prsn/view.do?menuId=PEOPLE_86&prsnMngNo=7443"
+ },
+ "pang-tu-sop": {
+  "src": "/img/people/pang-tu-sop.jpg",
+  "credit": "KCNA via Ministry of Unification North Korea Information Portal",
+  "license": "Fair use",
+  "sourceUrl": "https://nkinfo.unikorea.go.kr/nkp/prsn/view.do?menuId=PEOPLE_86&prsnMngNo=43250"
+ },
+ "ri-chang-dae": {
+  "src": "/img/people/ri-chang-dae.jpg",
+  "credit": "KCNA via Ministry of Unification North Korea Information Portal",
+  "license": "Fair use",
+  "sourceUrl": "https://nkinfo.unikorea.go.kr/nkp/prsn/view.do?menuId=PEOPLE_86&prsnMngNo=49885"
+ },
+ "ri-chang-ho": {
+  "src": "/img/people/ri-chang-ho.jpg",
+  "credit": "KCNA via Ministry of Unification North Korea Information Portal",
+  "license": "Fair use",
+  "sourceUrl": "https://nkinfo.unikorea.go.kr/nkp/prsn/view.do?menuId=PEOPLE_86&prsnMngNo=2307"
+ },
+ "ri-chun-hee": {
+  "src": "/img/people/ri-chun-hee.jpg",
+  "credit": "Wikipedia (non-free file)",
+  "license": "Fair use",
+  "sourceUrl": "https://ru.wikipedia.org/wiki/%D0%A4%D0%B0%D0%B9%D0%BB:%D0%9B%D0%B8_%D0%A7%D1%85%D1%83%D0%BD_%D0%A5%D0%B8.jpg"
+ },
+ "ri-il-hwan": {
+  "src": "/img/people/ri-il-hwan.jpg",
+  "credit": "KCNA via Ministry of Unification North Korea Information Portal",
+  "license": "Fair use",
+  "sourceUrl": "https://nkinfo.unikorea.go.kr/nkp/prsn/view.do?menuId=PEOPLE_86&prsnMngNo=6943"
+ },
+ "ri-pyong-chol": {
+  "src": "/img/people/ri-pyong-chol.jpg",
+  "credit": "KCNA via Ministry of Unification North Korea Information Portal",
+  "license": "Fair use",
+  "sourceUrl": "https://nkinfo.unikorea.go.kr/nkp/prsn/view.do?menuId=PEOPLE_86&prsnMngNo=23305"
+ },
+ "ri-tae-sop": {
+  "src": "/img/people/ri-tae-sop.jpg",
+  "credit": "KCNA via Ministry of Unification North Korea Information Portal",
+  "license": "Fair use",
+  "sourceUrl": "https://nkinfo.unikorea.go.kr/nkp/prsn/view.do?menuId=PEOPLE_86&prsnMngNo=20307"
+ },
+ "ri-yong-ho-kpa": {
+  "src": "/img/people/ri-yong-ho-kpa.jpg",
+  "credit": "KCNA via Ministry of Unification North Korea Information Portal",
+  "license": "Fair use",
+  "sourceUrl": "https://nkinfo.unikorea.go.kr/nkp/prsn/view.do?menuId=PEOPLE_86&prsnMngNo=16033"
+ },
+ "rim-kwang-il": {
+  "src": "/img/people/rim-kwang-il.jpg",
+  "credit": "KCNA via Ministry of Unification North Korea Information Portal",
+  "license": "Fair use",
+  "sourceUrl": "https://nkinfo.unikorea.go.kr/nkp/prsn/view.do?menuId=PEOPLE_86&prsnMngNo=23769"
+ },
+ "sin-ryong-man": {
+  "src": "/img/people/sin-ryong-man.jpg",
+  "credit": "KCNA via Ministry of Unification North Korea Information Portal",
+  "license": "Fair use",
+  "sourceUrl": "https://nkinfo.unikorea.go.kr/nkp/prsn/view.do?menuId=PEOPLE_86&prsnMngNo=49823"
+ },
+ "song-hye-rim": {
+  "src": "/img/people/song-hye-rim.jpg",
+  "credit": "Wikipedia (non-free file)",
+  "license": "Fair use",
+  "sourceUrl": "https://en.wikipedia.org/wiki/File:Song_Hye-rim_portrait.jpg"
+ },
+ "yang-hyong-sop": {
+  "src": "/img/people/yang-hyong-sop.jpg",
+  "credit": "KCNA via Ministry of Unification North Korea Information Portal",
+  "license": "Fair use",
+  "sourceUrl": "https://nkinfo.unikorea.go.kr/nkp/prsn/view.do?menuId=PEOPLE_86&prsnMngNo=1064"
+ },
+ "yu-jin": {
+  "src": "/img/people/yu-jin.jpg",
+  "credit": "KCNA via Ministry of Unification North Korea Information Portal",
+  "license": "Fair use",
+  "sourceUrl": "https://nkinfo.unikorea.go.kr/nkp/prsn/view.do?menuId=PEOPLE_86&prsnMngNo=44763"
+ }
+}

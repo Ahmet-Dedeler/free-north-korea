@@ -3,6 +3,7 @@
 //   1. Wikidata: confirms each QID is really that person, takes birth/death dates at their real precision
 //      (no fake "-01-01" days), gender, and a photo.
 //   2. Wikimedia Commons: photos are kept only if freely licensed; downloaded to public/img/people/.
+//      People with no free photo fall back to data/entities/photos.json (hand-picked state media portraits, fair use).
 //   3. Sanctions: matched by name (+ birth year) against the live US Treasury OFAC SDN list and the UN 1718
 //      consolidated list. The agent's own sanction claims are discarded.
 //   4. Every source link is fetched; dead ones are flagged (link_ok: false).
@@ -18,6 +19,8 @@ const report: Record<string, unknown[]> = { qidMismatch: [], datesFixed: [], ima
 
 type Any = Record<string, any>; // research JSON is loosely typed; we normalise it below
 const src = JSON.parse(readFileSync('docs/research/leadership.json', 'utf8')) as { people: Any[]; orgs: Any[] };
+// Fallback portraits for people Commons has nothing free for (see the file's _doc).
+const photos: Record<string, Any> = existsSync(OUT + 'photos.json') ? JSON.parse(readFileSync(OUT + 'photos.json', 'utf8')) : {};
 
 const norm = (s: string) =>
   s
@@ -285,7 +288,7 @@ for (const p of src.people) {
 
   let image = null;
   if (!NO_IMAGES) {
-    const files = [claim(ent ?? {}, 'P18'), p.image_commons].filter(Boolean) as string[];
+    const files = [claim(ent ?? {}, 'P18'), p.image_commons?.replace(/^File:/, '')].filter(Boolean) as string[];
     for (const f of files) {
       try {
         image = await commonsImage(f.replace(/ /g, '_'), `/img/people/${p.id}.jpg`);
@@ -299,6 +302,7 @@ for (const p of src.people) {
     const prev = existsSync(OUT + 'people.json') ? (JSON.parse(readFileSync(OUT + 'people.json', 'utf8')) as Any[]).find((x) => x.id === p.id) : null;
     image = prev?.image ?? null;
   }
+  if (!image && photos[p.id] && existsSync(`public${photos[p.id].src}`)) image = photos[p.id];
 
   const sanctions = sanctionsFor([p.name_en, ...(p.aliases ?? [])], born?.date?.slice(0, 4) ?? null, true);
   if (sanctions.length) (report.sanctions as unknown[]).push({ id: p.id, sanctions: sanctions.map((s) => `${s.list} ${s.id}`) });
