@@ -22,7 +22,10 @@ export default function OgImage() {
         }}
       >
         <div style={{ display: 'flex', alignItems: 'center', gap: 18, fontSize: 34, fontWeight: 700 }}>
-          <div style={{ width: 44, height: 44, borderRadius: 22, background: '#dc2626' }} />
+          <svg width="44" height="44" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="10" fill="#dc2626" />
+            <path d="M12 6.2l1.6 3.9 4.2.3-3.2 2.7 1 4.1L12 15l-3.6 2.2 1-4.1-3.2-2.7 4.2-.3z" fill="#ffffff" />
+          </svg>
           Free North Korea
         </div>
         <div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>

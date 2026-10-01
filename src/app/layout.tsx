@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   description:
     'An open-source hub on North Korea: a map of prison camps and nuclear sites, military capability, every missile test, a library, and the organizations helping North Koreans, with clear ways to act.',
   applicationName: SITE_NAME,
-  icons: { icon: '/favicon.svg' },
+  icons: { icon: '/favicon.svg', apple: '/favicon.svg' },
 };
 
 export const viewport: Viewport = {
