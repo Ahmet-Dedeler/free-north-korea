@@ -593,20 +593,24 @@ a {
   color: var(--ink-3);
   font-size: 12px;
 }
-.bars {
+.timeline .bars {
   flex: 1;
   display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin: 0;
+  padding: 0;
   gap: 2px;
   cursor: crosshair;
   touch-action: none;
 }
-.bar {
+.timeline .bar {
   flex: 1;
   display: flex;
   flex-direction: column;
   min-width: 0;
 }
-.stack {
+.timeline .stack {
   flex: 1;
   display: flex;
   flex-direction: column-reverse;
@@ -614,16 +618,16 @@ a {
   overflow: hidden;
   background: linear-gradient(to top, var(--line) 1px, transparent 1px);
 }
-.bar.on .stack {
+.timeline .bar.on .stack {
   background-color: var(--bar-on);
 }
-.bar.off .stack > div {
+.timeline .bar.off .stack > div {
   opacity: 0.22;
 }
-.bar.hover .stack {
+.timeline .bar.hover .stack {
   outline: 1px solid var(--ink-3);
 }
-.year {
+.timeline .year {
   height: 14px;
   font-size: 10.5px;
   color: var(--ink-3);

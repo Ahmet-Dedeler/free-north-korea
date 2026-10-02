@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 import { KO_ARTICLES } from '@/content/translations/ko';
 import { Ext } from '@/components/Ext';
 import { absolute, jsonLd, pageMeta } from '@/site/seo';
+import { SITE_NAME, SITE_URL } from '@/site/config';
 
 type Params = { params: Promise<{ slug: string }> };
 
@@ -41,8 +42,8 @@ export default async function KoreanArticlePage({ params }: Params) {
     mainEntityOfPage: absolute(`/ko/learn/${a.slug}`),
     publisher: {
       '@type': 'Organization',
-      name: 'Free North Korea',
-      url: 'https://liberatenorthkorea.com',
+      name: SITE_NAME,
+      url: SITE_URL,
     },
   };
 
