@@ -1,4 +1,8 @@
-import Link from 'next/link';
+import { Lock, ShieldAlert, Store, Users } from 'lucide-react';
+import CountyExplorer, { type CountyRow } from '@/components/CountyExplorer';
+import { Ext } from '@/components/Ext';
+import { StatTile } from '@/components/Visual';
+import { getCountyShapes, getProvinceShapes, VIEW_H, VIEW_W } from '@/site/geo';
 import { getAllCounties } from '@/content/counties';
 import { pageMeta } from '@/site/seo';
 
@@ -11,95 +15,37 @@ export const metadata = pageMeta({
 
 export default function CountiesIndex() {
   const counties = getAllCounties();
-
-  // Group counties by province
-  const provinces = Array.from(new Set(counties.map((c) => c.province))).sort();
-
-  const totalPop = counties.reduce((acc, c) => acc + (c.pop ?? 0), 0);
-  const totalIncidents = counties.reduce((acc, c) => acc + c.incidents, 0);
-  const totalDetention = counties.reduce((acc, c) => acc + c.detention, 0);
-  const totalMarkets = counties.reduce((acc, c) => acc + c.markets, 0);
+  const shapes = new Map(getCountyShapes().map((s) => [s.pcode, s.d]));
+  const rows: CountyRow[] = counties.map((c) => ({
+    pcode: c.pcode,
+    slug: c.slug,
+    name: c.name,
+    province: c.province,
+    pop: c.pop,
+    density: c.density,
+    incidents: c.incidents,
+    detention: c.detention,
+    markets: c.markets,
+    d: shapes.get(c.pcode) ?? '',
+  }));
+  const sum = (k: 'pop' | 'incidents' | 'detention' | 'markets') => counties.reduce((a, c) => a + (c[k] ?? 0), 0);
 
   return (
     <div className="wide">
-      <p className="eyebrow">Demographics & Local Intel</p>
-      <h1>North Korea Counties & Cities</h1>
-      <p className="lede">
-        Detailed profiles for all 179 administrative divisions in the DPRK: census populations, population density,
-        documented human rights violations recorded by the NKDB, known detention facilities, and official markets.
-      </p>
-
-      <div className="d-stats" style={{ margin: '2rem 0' }}>
-        <div>
-          <b>{counties.length}</b>
-          <span>counties & cities</span>
-        </div>
-        <div>
-          <b>{totalPop.toLocaleString()}</b>
-          <span>population (2008 census)</span>
-        </div>
-        <div>
-          <b>{totalIncidents.toLocaleString()}</b>
-          <span>documented abuses</span>
-        </div>
-        <div>
-          <b>{totalDetention}</b>
-          <span>detention facilities</span>
-        </div>
-        <div>
-          <b>{totalMarkets}</b>
-          <span>official markets</span>
-        </div>
+      <p className="eyebrow">Demographics · Local intel</p>
+      <h1>All 179 counties and cities</h1>
+      <p className="lede">Every county in North Korea with its 2008 census population, abuses documented by NKDB, detention sites and official markets.</p>
+      <div className="tiles">
+        <StatTile icon={Users} value={`${(sum('pop') / 1e6).toFixed(1)}M`} label="people (2008 census)" />
+        <StatTile icon={ShieldAlert} value={sum('incidents').toLocaleString()} label="documented abuses" note="NKDB" tone="danger" />
+        <StatTile icon={Lock} value={sum('detention')} label="detention sites" tone="warn" />
+        <StatTile icon={Store} value={sum('markets')} label="official markets" tone="ok" />
       </div>
-
-      <p>
-        <Link href="/map" className="chip on">
-          Explore all counties on the Intel Map →
-        </Link>
+      <CountyExplorer rows={rows} provinces={getProvinceShapes().map((p) => ({ pcode: p.pcode, d: p.d }))} viewBox={`0 0 ${VIEW_W} ${VIEW_H}`} />
+      <p className="muted small" style={{ marginTop: 16 }}>
+        Sources: <Ext href="https://data.humdata.org/dataset/cod-ab-prk">UN OCHA boundaries</Ext>, <Ext href="https://data.humdata.org/dataset/cod-ps-prk">2008 census (UNFPA)</Ext>,{' '}
+        <Ext href="https://www.visualatlas.org">NKDB Visual Atlas</Ext>. Few documented abuses usually means few escapees from that county, not fewer abuses.
       </p>
-
-      {provinces.map((prov) => {
-        const inProv = counties.filter((c) => c.province === prov);
-        return (
-          <section key={prov} style={{ marginTop: '3.5rem' }}>
-            <h2>
-              {prov} <small className="muted" style={{ fontSize: '0.6em', fontWeight: 'normal' }}>({inProv.length} counties/cities)</small>
-            </h2>
-
-            <div className="cards three" style={{ marginTop: '1.5rem' }}>
-              {inProv.map((c) => (
-                <article key={c.pcode} className="card">
-                  <p className="kicker">{c.pcode}</p>
-                  <h3>
-                    <Link href={`/counties/${c.slug}`}>{c.name}</Link>
-                  </h3>
-                  <div style={{ fontSize: '0.88rem', margin: '0.6rem 0', color: 'var(--ink-2)', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '6px' }}>
-                    <div>
-                      <b>{c.pop ? c.pop.toLocaleString() : '—'}</b> people
-                    </div>
-                    <div>
-                      <b>{c.density ? `${c.density}/km²` : '—'}</b> density
-                    </div>
-                    <div>
-                      <b style={{ color: c.incidents > 0 ? '#dc2626' : 'inherit' }}>{c.incidents}</b> abuses
-                    </div>
-                    <div>
-                      <b>{c.detention}</b> detention fac.
-                    </div>
-                  </div>
-                  <p style={{ marginTop: '0.8rem', fontSize: '0.85rem' }}>
-                    <Link href={`/counties/${c.slug}`}>View county dossier →</Link>
-                    {' · '}
-                    <Link href={`/map#county=${c.pcode}`} className="muted">
-                      Map
-                    </Link>
-                  </p>
-                </article>
-              ))}
-            </div>
-          </section>
-        );
-      })}
     </div>
   );
 }

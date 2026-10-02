@@ -18,6 +18,12 @@ searches like "how can North Korea be freed". SEO matters, so content must stay 
 - `src/missiles/`: the missile test explorer (redesign of nagix/nk-missile-tests). `data.ts` loads
   `public/data/*.en.json` (verbatim from upstream; keep them untouched so updates can be copied straight over).
   `meta.ts` holds missile class/outcome colours. Selection uses feature-state plus `*-selected` filter layers.
+- Content pages are visual, not text walls. Reuse the building blocks before writing paragraphs:
+  `components/Visual.tsx` (StatTile, icon chips, SourceCards), `SatView` (Esri satellite tiles, no map lib), `Locator`
+  (server SVG of NK from `site/geo.ts`), `HoverLinks` (OrgLink/PlaceLink hover previews, like PersonLink), `ArticleBlocks`
+  (in-article visuals), `CampCard`/`PlaceCard`. Icons come from `lucide-react`, brand marks from `simple-icons`. Their CSS
+  lives in `src/app/visual.css`. Images go through `src/content/media.ts` (lookups into media.json) and are downloaded by
+  `scripts/fetch-media.ts`, never hotlinked (satellite tiles are the exception).
 - `src/components/SiteChrome.tsx`: top bar + footer. `/map` and `/missiles` are full-screen "app" pages (no footer).
 
 ## Data pipeline (map-first; content pages are secondary)

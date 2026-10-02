@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import { ArrivalsChart, EscapeRoute } from '@/components/ArticleBlocks';
+import { OrgLink, PlaceLink } from '@/components/HoverLinks';
 import type { Article } from './types';
 
 const article: Article = {
@@ -17,10 +19,12 @@ const article: Article = {
         drop isn't because fewer people want to leave. The border and China both got much harder to get through.
       </p>
 
-      <h2>Step 1: crossing the border</h2>
+      <EscapeRoute />
+
+      <h2 id="border">Step 1: crossing the border</h2>
       <p>
-        Almost everyone leaves through China, across the Tumen or Yalu rivers. The usual crossing points are near border towns like Hyesan,
-        Musan and Hoeryong (you can see them on the <Link href="/map">intel map</Link>). Since 2020 North Korea has built new fences, added guard
+        Almost everyone leaves through China, across the Tumen or Yalu rivers. The usual crossing points are near border towns like <PlaceLink slug="hyesan">Hyesan</PlaceLink>,{" "}
+        <PlaceLink slug="musan">Musan</PlaceLink> and <PlaceLink slug="hoeryong">Hoeryong</PlaceLink> (you can see them on the <Link href="/map">intel map</Link>). Since 2020 North Korea has built new fences, added guard
         posts and given border guards shoot-to-kill orders, so crossings now usually need a broker who pays off guards. Prices have gone up
         many times over.
       </p>
@@ -28,7 +32,7 @@ const article: Article = {
         Escaping by sea or directly across the DMZ happens, but rarely. Those cases make the news because they are so unusual.
       </p>
 
-      <h2>Step 2: hiding in China</h2>
+      <h2 id="china">Step 2: hiding in China</h2>
       <p>
         China treats North Koreans as illegal economic migrants, not refugees, and sends them back. Women, who make up most escapees (198 of
         the 224 in 2025), are often trafficked into forced marriages or the sex trade. Many live in China for years without papers. China's
@@ -39,62 +43,25 @@ const article: Article = {
         they're interrogated, and anyone who had contact with South Koreans or Christians can end up in a <Link href="/learn/north-korea-prison-camps">prison camp</Link>.
       </p>
 
-      <h2>Step 3: the long route out</h2>
+      <h2 id="route">Step 3: the long route out</h2>
       <p>
         The usual route runs about 3,000 miles south through China to Southeast Asia, often into Laos and then Thailand, where escapees can
         turn themselves in and are eventually sent to South Korea. Mongolia was an alternative route in the past. The trip takes weeks and
         goes through safe houses, buses and jungle crossings. This is the part that rescue groups like{' '}
-        <Link href="/organizations#liberty-in-north-korea">Liberty in North Korea</Link> fund, at about $3,000 per person.
+        <OrgLink id="liberty-in-north-korea">Liberty in North Korea</OrgLink> fund, at about $3,000 per person.
       </p>
 
-      <h2>Step 4: South Korea</h2>
+      <h2 id="south-korea">Step 4: South Korea</h2>
       <p>
         Escapees are questioned by South Korean intelligence and then spend about three months at Hanawon, a resettlement center, learning
         how to live in a market society. They get South Korean citizenship and some housing and job support. The adjustment is still very
         hard: new technology, different vocabulary, discrimination, and family left behind. Groups like{' '}
-        <Link href="/organizations#fsi">Freedom Speakers International</Link> and <Link href="/organizations#pscore">PSCORE</Link> help with English,
+        <OrgLink id="fsi">Freedom Speakers International</OrgLink> and <OrgLink id="pscore">PSCORE</OrgLink> help with English,
         education and public speaking.
       </p>
 
-      <h2>The numbers</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Year</th>
-            <th>Arrivals in South Korea</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>2009 (peak)</td>
-            <td>2,914</td>
-          </tr>
-          <tr>
-            <td>2019</td>
-            <td>1,047</td>
-          </tr>
-          <tr>
-            <td>2021</td>
-            <td>63</td>
-          </tr>
-          <tr>
-            <td>2023</td>
-            <td>196</td>
-          </tr>
-          <tr>
-            <td>2024</td>
-            <td>236</td>
-          </tr>
-          <tr>
-            <td>2025</td>
-            <td>224</td>
-          </tr>
-          <tr>
-            <td>Total to end of 2025</td>
-            <td>34,538</td>
-          </tr>
-        </tbody>
-      </table>
+      <h2 id="numbers">The numbers</h2>
+      <ArrivalsChart />
     </>
   ),
   faq: [

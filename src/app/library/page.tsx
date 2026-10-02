@@ -1,3 +1,4 @@
+import { CoverCard, DocCard } from '@/components/Covers';
 import { SHELVES } from '@/content/library';
 import { pageMeta } from '@/site/seo';
 
@@ -20,7 +21,7 @@ export default function Library() {
       <nav className="chips tabs" aria-label="Shelves">
         {SHELVES.map((s) => (
           <a key={s.id} className="chip" href={`#${s.id}`}>
-            {s.title}
+            {s.title} <small>{s.items.length}</small>
           </a>
         ))}
       </nav>
@@ -28,21 +29,19 @@ export default function Library() {
         <section key={s.id} id={s.id} className="shelf">
           <h2>{s.title}</h2>
           <p className="muted">{s.intro}</p>
-          <ul className="books">
-            {s.items.map((it) => (
-              <li key={it.title}>
-                <a href={it.url} target="_blank" rel="noopener noreferrer">
-                  {it.title}
-                </a>
-                <span className="by">
-                  {it.by}
-                  {it.year ? `, ${it.year}` : ''}
-                </span>
-                <p>{it.note}</p>
-                {it.caveat && <p className="caveat">Note: {it.caveat}</p>}
-              </li>
-            ))}
-          </ul>
+          {s.id === 'memoir' || s.id === 'nonfiction' || s.id === 'film' ? (
+            <ul className="cover-grid">
+              {s.items.map((it) => (
+                <CoverCard key={it.title} item={it} kind={s.id === 'film' ? 'film' : 'book'} />
+              ))}
+            </ul>
+          ) : (
+            <ul className="doc-grid">
+              {s.items.map((it) => (
+                <DocCard key={it.title} item={it} />
+              ))}
+            </ul>
+          )}
         </section>
       ))}
     </div>

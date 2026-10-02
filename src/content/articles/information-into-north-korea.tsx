@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import { Channels, OrgActions } from '@/components/ArticleBlocks';
+import { OrgLink } from '@/components/HoverLinks';
 import type { Article } from './types';
 
 const article: Article = {
@@ -18,7 +20,9 @@ const article: Article = {
         directly.
       </p>
 
-      <h2>USB drives and SD cards</h2>
+      <Channels />
+
+      <h2 id="usb">USB drives and SD cards</h2>
       <p>
         These are the main channel today. Many households have a "notel" (a cheap Chinese media player) or a phone that reads SD and
         microSD cards. Drives come in through traders on the Chinese border, hidden in cargo, and get copied and passed hand to hand. A
@@ -29,20 +33,20 @@ const article: Article = {
         lecture. Watching normal life in Seoul does that by itself.
       </p>
       <p>
-        <Link href="/organizations#flash-drives-for-freedom">Flash Drives for Freedom</Link> (Human Rights Foundation) collects donated drives and
+        <OrgLink id="flash-drives-for-freedom">Flash Drives for Freedom</OrgLink> (Human Rights Foundation) collects donated drives and
         says over 140,000 have been donated or pledged. It's still active in 2026, contrary to what a lot of people assume.
       </p>
 
-      <h2>Radio</h2>
+      <h2 id="radio">Radio</h2>
       <p>
         Official radios are fixed to state channels, but modified or smuggled radios pick up shortwave and medium-wave broadcasts at night.
         This was the most-cut channel in 2025: Radio Free Asia's Korean service shut down on July 17, 2025 after US grants were terminated,
         Voice of America was gutted, and South Korea's new government ended its own government broadcasts and border loudspeakers in June
-        2025. Independent broadcasters like <Link href="/organizations#unification-media-group">Unification Media Group</Link> are now a much
+        2025. Independent broadcasters like <OrgLink id="unification-media-group">Unification Media Group</OrgLink> are now a much
         bigger share of what's left.
       </p>
 
-      <h2>Balloons</h2>
+      <h2 id="balloons">Balloons</h2>
       <p>
         Activists in South Korea have floated balloons carrying leaflets, USB drives, dollar bills and rice across the border for decades.
         In 2024 North Korea answered with thousands of trash balloons. In 2025 South Korea's government asked activists to stop and began
@@ -57,6 +61,7 @@ const article: Article = {
       </p>
 
       <h2>How to help</h2>
+      <OrgActions ids={['flash-drives-for-freedom', 'unification-media-group', 'daily-nk']} />
       <ul>
         <li>
           Mail spare USB drives or microSD cards to <a href="https://flashdrivesforfreedom.org/">Flash Drives for Freedom</a>.

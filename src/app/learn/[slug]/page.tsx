@@ -1,7 +1,9 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { ARTICLES, articleBySlug } from '@/content/articles';
-import { Ext } from '@/components/Ext';
+import ArticleArt, { artCredit } from '@/components/ArticleArt';
+import ArticleCards from '@/components/ArticleCards';
+import { SourceCards } from '@/components/Visual';
 import { formatDate } from '@/missiles/meta';
 import { SITE_NAME, SITE_URL } from '@/site/config';
 import { absolute, jsonLd, pageMeta } from '@/site/seo';
@@ -53,13 +55,26 @@ export default async function ArticlePage({ params }: Params) {
       : []),
   ];
 
+  const credit = artCredit(a);
+
   return (
-    <article className="prose">
+    <article className="article">
       <script type="application/ld+json" dangerouslySetInnerHTML={jsonLd(ld)} />
-      <p className="eyebrow">
-        <Link href="/learn">Learn</Link> · {a.minutes} min read · Updated {formatDate(a.updated)}
-      </p>
-      <h1>{a.h1}</h1>
+      <header className="art-hero">
+        <ArticleArt a={a} height={420} />
+        <div className="art-hero-text">
+          <p className="eyebrow">
+            <Link href="/learn">Learn</Link> · {a.minutes} min read · Updated {formatDate(a.updated)}
+          </p>
+          <h1>{a.h1}</h1>
+        </div>
+        {credit && (
+          <a className="art-credit" href={credit.sourceUrl} target={credit.sourceUrl.startsWith('/') ? undefined : '_blank'} rel="noopener noreferrer">
+            {credit.credit}
+          </a>
+        )}
+      </header>
+      <div className="prose">
       {a.body()}
 
       {a.faq && (
@@ -85,25 +100,11 @@ export default async function ArticlePage({ params }: Params) {
       </aside>
 
       <h2>Sources</h2>
-      <ul className="sources">
-        {a.sources.map((s) => (
-          <li key={s.url}>
-            <Ext href={s.url}>{s.label}</Ext>
-          </li>
-        ))}
-      </ul>
+      <SourceCards sources={a.sources.map((s) => ({ name: s.label, url: s.url }))} />
+      </div>
 
-      <h2>Keep reading</h2>
-      <ul className="article-list">
-        {others.map((o) => (
-          <li key={o.slug}>
-            <a href={`/learn/${o.slug}`}>
-              <b>{o.h1}</b>
-              <span>{o.teaser}</span>
-            </a>
-          </li>
-        ))}
-      </ul>
+      <h2 className="keep-h">Keep reading</h2>
+      <ArticleCards articles={others} />
     </article>
   );
 }

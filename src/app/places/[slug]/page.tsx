@@ -2,7 +2,13 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { getAllPlaces, getAllPlaceSlugs, getPlaceBySlug } from '@/content/places-data';
 import { getCountyBySlug } from '@/content/counties';
-import { Ext } from '@/components/Ext';
+import { Activity, BookOpen, Building2, CalendarDays, MapPin } from 'lucide-react';
+import Locator from '@/components/Locator';
+import PlaceCard, { PLACE_ICON, placeZoom } from '@/components/PlaceCard';
+import SatView from '@/components/SatView';
+import { SourceCards, StatTile } from '@/components/Visual';
+import { PLACE_COLOR } from '@/content/places';
+import { media } from '@/content/media';
 import { absolute, jsonLd, pageMeta } from '@/site/seo';
 
 type Params = { params: Promise<{ slug: string }> };
@@ -32,7 +38,9 @@ export default async function PlacePage({ params }: Params) {
 
   const county = place.countyCode ? getCountyBySlug(place.countyCode) : null;
   const allPlaces = getAllPlaces();
-  const relatedPlaces = allPlaces.filter((p) => p.id !== place.id && p.category === place.category).slice(0, 3);
+  const sameKind = allPlaces.filter((p) => p.id !== place.id && p.category === place.category);
+  const relatedPlaces = sameKind.slice(0, 4);
+  const relatedPins = sameKind.map((p) => ({ lat: p.lat, lon: p.lon, title: p.name, href: `/places/${p.slug}`, color: PLACE_COLOR[p.category] }));
 
   const ld = {
     '@context': 'https://schema.org',
@@ -49,97 +57,83 @@ export default async function PlacePage({ params }: Params) {
 
   const mapHash = place.category === 'missile' && place.id.startsWith('base-') ? `missile-bases=${place.id}` : `sites=${place.id}`;
 
+  const photo = media(`place:${place.id}`);
+  const Icon = PLACE_ICON[place.category];
+  const color = PLACE_COLOR[place.category];
+  const sat = <SatView lat={place.lat} lon={place.lon} zoom={placeZoom(place)} label={place.name} approx={place.approx} height={photo ? 380 : 440} />;
+
   return (
-    <article className="dossier">
+    <article className="dossier-x">
       <script type="application/ld+json" dangerouslySetInnerHTML={jsonLd(ld)} />
 
       <p className="eyebrow">
-        <Link href="/places">Strategic Sites</Link> · {place.categoryLabel}
+        <Link href="/places">Key sites</Link> · <Link href={`/places#${place.category}`}>{place.categoryLabel}</Link>
       </p>
 
-      <header className="dossier-head" style={{ display: 'block' }}>
-        <div>
+      <header className="dx-hero">
+        <div className="dx-main">
+          <span className="kind-tag" style={{ '--tag': color } as React.CSSProperties}>
+            <Icon size={14} /> {place.categoryLabel}
+          </span>
           <h1>{place.name}</h1>
-          <p className="dossier-role">{place.categoryLabel}</p>
-          <p className="dossier-badges">
-            {place.status && <span className="badge badge-alive">{place.status}</span>}
-            <span className="badge">
-              {place.lat.toFixed(4)}°N, {place.lon.toFixed(4)}°E {place.approx ? '(Approx)' : ''}
-            </span>
-          </p>
-          <p className="dossier-summary" style={{ fontSize: '1.1rem', marginTop: '1rem', lineHeight: '1.6' }}>
-            {place.note}
-          </p>
+          <p className="dx-summary">{place.note}</p>
+          <div className="tiles">
+            {place.status && <StatTile icon={Activity} value={place.status.replace(/\s*\(.*\)/, '')} label="status" note={place.status.match(/\((.*)\)/)?.[1]} />}
+            {county && <StatTile icon={Building2} value={county.name} label={`${county.province} province`} />}
+            {place.published && <StatTile icon={CalendarDays} value={place.published.slice(0, 4)} label="CSIS report" />}
+          </div>
         </div>
+        <Locator lat={place.lat} lon={place.lon} county={place.countyCode} label={place.name} pins={relatedPins} />
       </header>
 
-      <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap', margin: '1.5rem 0' }}>
-        <Link href={`/map#${mapHash}`} className="chip on">
-          View on Intel Map →
+      {photo ? (
+        <div className="media-pair">
+          <figure className="photo">
+            <img src={photo.src} alt={place.name} />
+            <figcaption>
+              <a href={photo.sourceUrl} target="_blank" rel="noopener noreferrer">
+                {photo.credit}
+              </a>
+            </figcaption>
+          </figure>
+          {sat}
+        </div>
+      ) : (
+        sat
+      )}
+
+      <p className="dx-actions">
+        <Link href={`/map#${mapHash}`} className="btn">
+          <MapPin size={15} /> Open on the intel map
         </Link>
-        {place.more && (
-          <Link href={place.more} className="chip">
-            Read Related Section →
+        {county && (
+          <Link href={`/counties/${county.slug}`} className="btn">
+            <Building2 size={15} /> {county.name} county
           </Link>
         )}
-      </div>
+        {place.more && (
+          <Link href={place.more} className="btn">
+            <BookOpen size={15} /> {place.more === '/military' ? 'North Korea’s military' : 'Read more'}
+          </Link>
+        )}
+      </p>
 
-      <section className="facts">
-        <div>
-          <dt>Category</dt>
-          <dd>{place.categoryLabel}</dd>
-        </div>
-        {place.status && (
-          <div>
-            <dt>Status</dt>
-            <dd>{place.status}</dd>
-          </div>
-        )}
-        {county && (
-          <div>
-            <dt>County</dt>
-            <dd>
-              <Link href={`/counties/${county.slug}`}>{county.name}</Link> ({county.province})
-            </dd>
-          </div>
-        )}
-        <div>
-          <dt>Coordinates</dt>
-          <dd>
-            {place.lat.toFixed(4)}°N, {place.lon.toFixed(4)}°E {place.approx ? '(Approximate)' : ''}
-          </dd>
-        </div>
-        {place.source && (
-          <div>
-            <dt>Primary Source</dt>
-            <dd>
-              <Ext href={place.source.url}>{place.source.label}</Ext>
-            </dd>
-          </div>
-        )}
-      </section>
+      {place.source && (
+        <>
+          <h2>Source</h2>
+          <SourceCards sources={[{ name: place.source.label, url: place.source.url }]} />
+        </>
+      )}
 
       {relatedPlaces.length > 0 && (
-        <section style={{ marginTop: '2.5rem' }}>
-          <h2>Related {place.categoryLabel} Sites</h2>
-          <div className="cards three" style={{ marginTop: '1rem' }}>
+        <>
+          <h2>More {place.categoryLabel.toLowerCase()} sites</h2>
+          <ul className="place-cards">
             {relatedPlaces.map((rp) => (
-              <div key={rp.id} className="card">
-                <h4>
-                  <Link href={`/places/${rp.slug}`}>{rp.name}</Link>
-                </h4>
-                {rp.status && (
-                  <p className="muted" style={{ fontSize: '0.85rem' }}>
-                    {rp.status}
-                  </p>
-                )}
-                <p style={{ fontSize: '0.85rem', marginTop: '0.5rem' }}>
-                  <Link href={`/places/${rp.slug}`}>View details →</Link>
-                </p>
-              </div>
+              <PlaceCard key={rp.id} place={rp} />
             ))}
-          </div>
-        </section>
+          </ul>
+        </>
       )}
     </article>
   );

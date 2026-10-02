@@ -1,4 +1,8 @@
 import Link from 'next/link';
+import { Lock, ShieldAlert } from 'lucide-react';
+import { Books, CampGrid, Compare, OrgNotes } from '@/components/ArticleBlocks';
+import { OrgLink } from '@/components/HoverLinks';
+import { getAllCamps } from '@/content/camps';
 import type { Article } from './types';
 
 const article: Article = {
@@ -19,15 +23,33 @@ const article: Article = {
       </p>
 
       <h2>Two kinds of camp</h2>
-      <p>
-        <b>Kwanliso (political prison camps)</b> are for people the state calls enemies, and often their families. Many are "total control
-        zones" where prisoners are never released. Prisoners mine coal, log, farm and work in factories on starvation rations.
-      </p>
-      <p>
-        <b>Kyohwaso ("re-education" prisons)</b> hold people convicted of crimes, including things like watching South Korean TV, trading
-        without permission or trying to leave the country. Sentences have an end date, but survivors describe forced labor and death rates
-        that look a lot like the political camps.
-      </p>
+      <Compare
+        items={[
+          {
+            icon: ShieldAlert,
+            title: 'Kwanliso: political prison camps',
+            tone: 'danger',
+            children: (
+              <p>
+                For people the state calls enemies, and often their families. Many are "total control zones" where prisoners are never
+                released. Prisoners mine coal, log, farm and work in factories on starvation rations.
+              </p>
+            ),
+          },
+          {
+            icon: Lock,
+            title: 'Kyohwaso: "re-education" prisons',
+            tone: 'warn',
+            children: (
+              <p>
+                For people convicted of crimes, including watching South Korean TV, trading without permission or trying to leave the
+                country. Sentences have an end date, but survivors describe forced labor and death rates that look a lot like the political
+                camps.
+              </p>
+            ),
+          },
+        ]}
+      />
       <p>
         On top of that, there are short-term detention and interrogation centers, which is where people forcibly sent back from China
         usually go first.
@@ -45,89 +67,25 @@ const article: Article = {
         All of these are on the <Link href="/map">intel map</Link> with their approximate locations. Status is based on satellite imagery analysis
         and escapee testimony, so it lags reality by months or years.
       </p>
-      <table>
-        <thead>
-          <tr>
-            <th>Camp</th>
-            <th>Type</th>
-            <th>Province</th>
-            <th>Status</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Camp 14, Kaechon</td>
-            <td>Political (total control)</td>
-            <td>South Pyongan</td>
-            <td>Operating</td>
-          </tr>
-          <tr>
-            <td>Camp 15, Yodok</td>
-            <td>Political</td>
-            <td>South Hamgyong</td>
-            <td>Reported closed or downsized, disputed</td>
-          </tr>
-          <tr>
-            <td>Camp 16, Hwasong</td>
-            <td>Political (total control)</td>
-            <td>North Hamgyong</td>
-            <td>Operating, the largest known camp</td>
-          </tr>
-          <tr>
-            <td>Camp 18, Pukchang</td>
-            <td>Political</td>
-            <td>South Pyongan</td>
-            <td>Reported closed or merged</td>
-          </tr>
-          <tr>
-            <td>Camp 22, Hoeryong</td>
-            <td>Political</td>
-            <td>North Hamgyong</td>
-            <td>Closed around 2012, fate of prisoners unknown</td>
-          </tr>
-          <tr>
-            <td>Camp 25, Chongjin</td>
-            <td>Political</td>
-            <td>North Hamgyong</td>
-            <td>Operating, expanded in the 2010s</td>
-          </tr>
-          <tr>
-            <td>Kyohwaso No. 1, Kaechon</td>
-            <td>Prison</td>
-            <td>South Pyongan</td>
-            <td>Operating</td>
-          </tr>
-          <tr>
-            <td>Kyohwaso No. 12, Chongori</td>
-            <td>Prison</td>
-            <td>North Hamgyong</td>
-            <td>Operating, holds many repatriated escapees</td>
-          </tr>
-        </tbody>
-      </table>
+      <CampGrid slugs={['kwanliso-14', 'kwanliso-15', 'kwanliso-16', 'kwanliso-18', 'kwanliso-22', 'kwanliso-25', 'kyohwaso-1-kaechon', 'kyohwaso-12-chongori']} />
       <p>
-        Some researchers, like the Transitional Justice Working Group, see signs that the political camp population has shrunk under Kim
+        See all {getAllCamps().length} tracked facilities on the <Link href="/camps">prison camps page</Link>.
+      </p>
+      <p>
+        Some researchers, like the <OrgLink id="tjwg">Transitional Justice Working Group</OrgLink>, see signs that the political camp population has shrunk under Kim
         Jong Un while ordinary prisons have grown. The UN's 2025 report found that overall repression got worse over the decade since 2014,
         not better.
       </p>
 
       <h2>Who documents them</h2>
-      <ul>
-        <li>
-          <Link href="/organizations#hrnk">HRNK</Link> publishes satellite imagery analysis of individual camps (its <i>Hidden Gulag</i> report is
-          the standard reference).
-        </li>
-        <li>
-          <Link href="/organizations#nkdb">NKDB</Link> keeps a database of violations and a prison database built from tens of thousands of
-          testimonies.
-        </li>
-        <li>
-          <Link href="/organizations#korea-future">Korea Future</Link> documents the penal system case by case, naming perpetrators.
-        </li>
-        <li>
-          <Link href="/organizations#tjwg">TJWG</Link> maps execution and burial sites for future accountability.
-        </li>
-      </ul>
+      <OrgNotes
+        items={[
+          { id: 'hrnk', note: <>publishes satellite imagery analysis of individual camps (its <i>Hidden Gulag</i> report is the standard reference).</> },
+          { id: 'nkdb', note: 'keeps a database of violations and a prison database built from tens of thousands of testimonies.' },
+          { id: 'korea-future', note: 'documents the penal system case by case, naming perpetrators.' },
+          { id: 'tjwg', note: 'maps execution and burial sites for future accountability.' },
+        ]}
+      />
 
       <h2>What to read</h2>
       <p>
@@ -135,6 +93,7 @@ const article: Article = {
         known first-hand accounts. Note that Shin Dong-hyuk later changed parts of his story, though the core of what he described is
         consistent with other testimony. More in the <Link href="/library">library</Link>.
       </p>
+      <Books titles={['The Aquariums of Pyongyang', 'Escape from Camp 14', 'Eyes of the Tailless Animals: Prison Memoirs of a North Korean Woman', 'Long Road Home: Testimony of a North Korean Camp Survivor']} />
     </>
   ),
   faq: [

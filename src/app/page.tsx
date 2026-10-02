@@ -1,29 +1,108 @@
 import Link from 'next/link';
-import { ARTICLES } from '@/content/articles';
+import { ArrowRight, BookOpen, Building2, Footprints, Map, Radiation, Rocket, Shield, Usb, Users } from 'lucide-react';
+import ArticleCards from '@/components/ArticleCards';
+import Avatar from '@/components/Avatar';
 import { Ext } from '@/components/Ext';
+import Locator from '@/components/Locator';
+import { StatTile } from '@/components/Visual';
+import { ARTICLES } from '@/content/articles';
+import { getAllCamps } from '@/content/camps';
+import { SHELVES } from '@/content/library';
+import { cover, orgLogo } from '@/content/media';
+import { ORGS } from '@/content/orgs';
+import { getAllPlaces } from '@/content/places-data';
+import { PLACE_COLOR } from '@/content/places';
+import { person } from '@/entities';
+import testsRaw from '../../public/data/test.en.json';
 import { REPO_URL, SITE_NAME, SITE_URL } from '@/site/config';
 import { jsonLd } from '@/site/seo';
 
 export const metadata = { alternates: { canonical: '/' } };
 
-const STATS = [
-  { n: '26M', label: 'people living under the Kim regime', src: 'UN estimate' },
-  { n: '80–120k', label: 'held in political prison camps', src: 'UN Commission of Inquiry, 2014' },
-  { n: '224', label: 'escapees reached South Korea in 2025', src: 'Unification Ministry' },
-  { n: '~60', label: 'assembled nuclear warheads', src: 'SIPRI, Jan 2026' },
-];
+const TESTS = (testsRaw as unknown as { timeBins: { data: { date: string }[] }[] }).timeBins.flatMap((b) => b.data);
 
-const MODULES = [
-  { href: '/map', title: 'Intel map', text: 'Camps, 190+ detention sites, missile bases, markets and 3,600 documented abuses by county.' },
-  { href: '/people', title: 'People', text: 'The Kim family tree and the officials who run the country, with sources and sanctions.' },
-  { href: '/military', title: 'Military capability', text: 'Troops, nukes, missiles, artillery, cyber theft, and the war in Ukraine.' },
-  { href: '/missiles', title: 'Missile tests', text: 'Every missile and space launch since 1984 with flight paths and outcomes.' },
-  { href: '/organizations', title: 'Organizations', text: 'Who is actually doing the work in 2026, what they do, and how to help each one.' },
-  { href: '/library', title: 'Library', text: 'Escapee memoirs, documentaries, UN reports, regime sources and open data.' },
-  { href: '/learn', title: 'Learn', text: 'Straight answers: can North Korea be freed, how people escape, what the camps are.' },
+/** Tiny previews for the Explore tiles, so each one shows what is behind it. */
+function MapPreview() {
+  const pins = [
+    ...getAllCamps().map((c) => ({ lat: c.lat, lon: c.lon, title: c.name, color: '#dc2626', r: 7 })),
+    ...getAllPlaces().map((p) => ({ lat: p.lat, lon: p.lon, title: p.name, color: PLACE_COLOR[p.category], r: 6 })),
+  ];
+  return <Locator pins={pins} label="camps and key sites" />;
+}
+
+function PeoplePreview() {
+  const ids = ['kim-il-sung', 'kim-jong-il', 'kim-jong-un', 'kim-yo-jong', 'kim-ju-ae'];
+  return (
+    <span className="face-stack">
+      {ids.map((id) => {
+        const p = person(id);
+        return p ? <Avatar key={id} person={p} size={52} /> : null;
+      })}
+    </span>
+  );
+}
+
+function TestsPreview() {
+  const years = Array.from({ length: 2026 - 1984 + 1 }, (_, i) => 1984 + i);
+  const counts = years.map((y) => TESTS.filter((t) => t.date.startsWith(String(y))).length);
+  const max = Math.max(...counts, 1);
+  return (
+    <span className="spark">
+      {counts.map((n, i) => (
+        <i key={years[i]} style={{ height: `${Math.max(2, (n / max) * 100)}%` }} />
+      ))}
+    </span>
+  );
+}
+
+function OrgsPreview() {
+  return (
+    <span className="logo-grid">
+      {ORGS.filter((o) => orgLogo(o.id))
+        .slice(0, 8)
+        .map((o) => (
+          <span key={o.id} className="hl-logo">
+            <img src={orgLogo(o.id)!.src} alt="" loading="lazy" />
+          </span>
+        ))}
+    </span>
+  );
+}
+
+function LibraryPreview() {
+  const books = SHELVES.flatMap((s) => s.items)
+    .filter((i) => cover(i.title))
+    .slice(0, 5);
+  return (
+    <span className="cover-fan">
+      {books.map((b) => (
+        <img key={b.title} src={cover(b.title)!.src} alt="" loading="lazy" />
+      ))}
+    </span>
+  );
+}
+
+function MilitaryPreview() {
+  return (
+    <span className="mil-preview">
+      {Array.from({ length: 60 }, (_, i) => (
+        <i key={i} />
+      ))}
+    </span>
+  );
+}
+
+const MODULES: { href: string; title: string; text: string; icon: typeof Map; preview: React.ReactNode }[] = [
+  { href: '/people', title: 'People', text: 'The Kim family tree and the officials who run the country, with sources and sanctions.', icon: Users, preview: <PeoplePreview /> },
+  { href: '/missiles', title: 'Missile tests', text: `All ${TESTS.length} missile and space launches since 1984, with flight paths.`, icon: Rocket, preview: <TestsPreview /> },
+  { href: '/military', title: 'Military', text: 'Nukes, missiles, artillery, cyber theft, and the war in Ukraine.', icon: Shield, preview: <MilitaryPreview /> },
+  { href: '/organizations', title: 'Organizations', text: 'Who is doing the work in 2026 and how to help each one.', icon: Building2, preview: <OrgsPreview /> },
+  { href: '/library', title: 'Library', text: 'Escapee memoirs, documentaries, UN reports and open data.', icon: BookOpen, preview: <LibraryPreview /> },
 ];
 
 export default function Home() {
+  const flash = orgLogo('flash-drives-for-freedom');
+  const link = orgLogo('liberty-in-north-korea');
   return (
     <>
       <script
@@ -31,78 +110,95 @@ export default function Home() {
         dangerouslySetInnerHTML={jsonLd({ '@context': 'https://schema.org', '@type': 'WebSite', name: SITE_NAME, url: SITE_URL })}
       />
 
-      <section className="hero">
-        <p className="eyebrow">Open source · No ads · No tracking</p>
-        <h1>Understand North Korea. Help free its people.</h1>
-        <p className="hero-sub">
-          One place for the map, the military picture, the history, and the groups doing the work, plus clear things you can do today. The
-          regime survives on keeping its people in the dark and everyone else uninterested. This site is for fixing both.
-        </p>
-        <div className="hero-cta">
-          <Link className="btn primary" href="/act">
-            What can I do?
-          </Link>
-          <Link className="btn" href="/learn/how-can-north-korea-be-freed">
-            How could North Korea be freed?
-          </Link>
+      <section className="home-hero">
+        <div>
+          <p className="eyebrow">Open source · No ads · No tracking</p>
+          <h1>Understand North Korea. Help free its people.</h1>
+          <p className="hero-sub">
+            The map, the military picture, the history and the groups doing the work, plus clear things you can do today. The regime survives on
+            keeping its people in the dark and everyone else uninterested. This site is for fixing both.
+          </p>
+          <div className="hero-cta">
+            <Link className="btn primary" href="/act">
+              What can I do?
+            </Link>
+            <Link className="btn" href="/learn/how-can-north-korea-be-freed">
+              How could North Korea be freed?
+            </Link>
+          </div>
         </div>
+        <Link href="/map" className="home-map" aria-label="Open the intel map">
+          <MapPreview />
+          <span className="home-map-cta">
+            <Map size={15} /> Open the intel map
+          </span>
+        </Link>
       </section>
 
-      <section className="stat-row" aria-label="Key numbers">
-        {STATS.map((s) => (
-          <div key={s.label} className="stat">
-            <b>{s.n}</b>
-            <span>{s.label}</span>
-            <small>{s.src}</small>
-          </div>
-        ))}
-      </section>
+      <div className="tiles home-stats">
+        <StatTile icon={Users} value="26M" label="people living under the Kim regime" note="UN estimate" />
+        <StatTile icon={Shield} value="80–120k" label="held in political prison camps" note="UN Commission of Inquiry, 2014" tone="danger" />
+        <StatTile icon={Footprints} value="224" label="escapees reached South Korea in 2025" note="Unification Ministry" tone="ok" />
+        <StatTile icon={Radiation} value="~60" label="assembled nuclear warheads" note="SIPRI, Jan 2026" tone="warn" />
+      </div>
 
       <section className="band">
         <h2>Do something in the next 10 minutes</h2>
-        <div className="cards three">
-          <a className="card action" href="https://flashdrivesforfreedom.org" target="_blank" rel="noopener noreferrer">
-            <span className="card-kicker">Free</span>
-            <h3>Mail your old USB drives</h3>
-            <p>They get wiped, loaded with films and news, and smuggled into North Korea. 140,000+ so far.</p>
+        <div className="quick-acts">
+          <a className="quick-act" href="https://flashdrivesforfreedom.org" target="_blank" rel="noopener noreferrer">
+            <span className="hl-logo">{flash ? <img src={flash.src} alt="" /> : <Usb />}</span>
+            <span className="qa-kicker ok">Free</span>
+            <b>Mail your old USB drives</b>
+            <span>They get wiped, loaded with films and news, and smuggled into North Korea. 140,000+ so far.</span>
+            <em>
+              Flash Drives for Freedom <ArrowRight size={14} />
+            </em>
           </a>
-          <a className="card action" href="https://libertyinnorthkorea.org/donate" target="_blank" rel="noopener noreferrer">
-            <span className="card-kicker">$3,000 = one person</span>
-            <h3>Fund a rescue</h3>
-            <p>Liberty in North Korea has brought 1,400+ people from China to safety. Any amount counts toward the next one.</p>
+          <a className="quick-act" href="https://libertyinnorthkorea.org/donate" target="_blank" rel="noopener noreferrer">
+            <span className="hl-logo">{link ? <img src={link.src} alt="" /> : <Footprints />}</span>
+            <span className="qa-kicker">$3,000 = one person</span>
+            <b>Fund a rescue</b>
+            <span>Liberty in North Korea has brought 1,400+ people from China to safety. Any amount counts toward the next one.</span>
+            <em>
+              Donate to LiNK <ArrowRight size={14} />
+            </em>
           </a>
-          <Link className="card action" href="/learn/information-into-north-korea">
-            <span className="card-kicker">Context</span>
-            <h3>Know what changed in 2025</h3>
-            <p>Radio Free Asia’s Korean service closed and many groups lost funding. The pipeline into the country is at its weakest in years.</p>
+          <Link className="quick-act" href="/learn/information-into-north-korea">
+            <span className="hl-logo icon">
+              <Usb size={22} />
+            </span>
+            <span className="qa-kicker warn">Context</span>
+            <b>Know what changed in 2025</b>
+            <span>Radio Free Asia’s Korean service closed and many groups lost funding. The pipeline into the country is at its weakest in years.</span>
+            <em>
+              Read the explainer <ArrowRight size={14} />
+            </em>
           </Link>
         </div>
       </section>
 
       <section className="band">
         <h2>Explore</h2>
-        <div className="cards three">
+        <ul className="explore">
           {MODULES.map((m) => (
-            <a key={m.href} className="card" href={m.href}>
-              <h3>{m.title} →</h3>
-              <p>{m.text}</p>
-            </a>
+            <li key={m.href}>
+              <Link href={m.href} className="explore-tile">
+                <span className="ex-preview">{m.preview}</span>
+                <span className="ex-body">
+                  <b>
+                    <m.icon size={17} /> {m.title}
+                  </b>
+                  <span>{m.text}</span>
+                </span>
+              </Link>
+            </li>
           ))}
-        </div>
+        </ul>
       </section>
 
       <section className="band">
         <h2>Questions people ask</h2>
-        <ul className="article-list">
-          {ARTICLES.map((a) => (
-            <li key={a.slug}>
-              <a href={`/learn/${a.slug}`}>
-                <b>{a.h1}</b>
-                <span>{a.teaser}</span>
-              </a>
-            </li>
-          ))}
-        </ul>
+        <ArticleCards articles={ARTICLES} lead />
       </section>
 
       <section className="band callout">

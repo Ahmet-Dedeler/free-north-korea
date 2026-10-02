@@ -3,6 +3,12 @@ import registry from '../../../data/sources/registry.json';
 import state from '../../../data/sources/state.json';
 import changes from '../../../data/sources/changes.json';
 import { pageMeta } from '@/site/seo';
+import type { LucideIcon } from 'lucide-react';
+import { CalendarDays, ChevronDown, Coins, Database, Languages, Layers, Lock, Rocket, Skull, Users, Wifi } from 'lucide-react';
+import { SiteMark } from '@/components/Covers';
+import { StatTile } from '@/components/Visual';
+
+const TRACK_ICON: Record<string, LucideIcon> = { camps: Lock, population: Users, military: Rocket, economy: Coins, korean_japanese: Languages };
 
 export const metadata = pageMeta({
   title: 'North Korea Data Sources: What Exists and What Is Maintained',
@@ -50,103 +56,92 @@ export default function Sources() {
         {list.length} public sources, in English, Korean and Japanese. A lot of the best intel on North Korea is raw, abandoned, or only in Korean. This
         is the list of what exists, who maintains it, and whether it still works. We check every source weekly and log what changed.
       </p>
-      <div className="stat-row compact">
-        <div className="stat">
-          <b>{list.length}</b>
-          <span>sources tracked</span>
-        </div>
-        <div className="stat">
-          <b>{used.length}</b>
-          <span>feed this site</span>
-        </div>
-        <div className="stat">
-          <b>{up}</b>
-          <span>reachable on the last check</span>
-          <small>{lastCheck}</small>
-        </div>
-        <div className="stat">
-          <b>{list.filter((s) => ['stale', 'dead'].includes(s.research?.maintenance ?? '')).length}</b>
-          <span>stale or abandoned</span>
-          <small>what we should rebuild</small>
-        </div>
+      <div className="tiles">
+        <StatTile icon={Database} value={list.length} label="sources tracked" />
+        <StatTile icon={Layers} value={used.length} label="feed this site" tone="ok" />
+        <StatTile icon={Wifi} value={up} label="reachable on the last check" note={lastCheck} />
+        <StatTile icon={Skull} value={list.filter((s) => ['stale', 'dead'].includes(s.research?.maintenance ?? '')).length} label="stale or abandoned" note="what we should rebuild" tone="danger" />
       </div>
 
       {(changes as { id: string; at: string; kind: string; detail: string }[]).length > 0 && (
         <section>
           <h2>Recent changes</h2>
-          <ul className="claims">
-            {(changes as { id: string; at: string; kind: string; detail: string }[]).slice(0, 15).map((c, i) => (
-              <li key={i}>
-                <span className="when">{c.at.slice(0, 10)}</span> <b>{list.find((s) => s.id === c.id)?.name ?? c.id}</b> {c.kind}: {c.detail}
-              </li>
-            ))}
+          <ul className="change-feed">
+            {(changes as { id: string; at: string; kind: string; detail: string }[]).slice(0, 12).map((c, i) => {
+              const src = list.find((s) => s.id === c.id);
+              return (
+                <li key={i}>
+                  {src ? <SiteMark url={src.url} size={28} /> : <span />}
+                  <span>
+                    <b>{src?.name ?? c.id}</b> <span className={`chg chg-${c.kind}`}>{c.kind}</span>
+                    <small>{c.detail}</small>
+                  </span>
+                  <time>{c.at.slice(0, 10)}</time>
+                </li>
+              );
+            })}
           </ul>
         </section>
       )}
 
-      <nav className="chips tabs" aria-label="Topics">
-        {tracks.map((t) => (
-          <a key={t} className="chip" href={`#${t}`}>
-            {TRACKS[t]} <small>{list.filter((s) => s.track === t).length}</small>
-          </a>
-        ))}
-      </nav>
-
-      {tracks.map((t) => (
-        <section key={t} id={t} className="shelf">
-          <h2>{TRACKS[t]}</h2>
-          <div className="table-wrap">
-            <table className="src-table">
-              <thead>
-                <tr>
-                  <th>Source</th>
-                  <th>Format</th>
-                  <th>Last updated</th>
-                  <th>Maintained</th>
-                  <th>Link</th>
-                </tr>
-              </thead>
-              <tbody>
-                {list
-                  .filter((s) => s.track === t)
-                  .map((s) => {
-                    const st = ST[s.id];
-                    const w = watchLabel(st);
-                    return (
-                      <tr key={s.id}>
-                        <td>
-                          <a href={s.url} target="_blank" rel="noopener noreferrer">
-                            {s.name}
-                          </a>
-                          <small>
-                            {s.publisher}
-                            {s.language && s.language !== 'en' ? ` · ${s.language.toUpperCase()}` : ''}
-                            {(s.usedBy ?? []).map((u: string) => (
-                              <Link key={u} href={u} className="used">
-                                used on {u}
-                              </Link>
-                            ))}
-                          </small>
-                          <span className="src-desc">{s.description}</span>
-                        </td>
-                        <td>{s.format}</td>
-                        <td className="when">{st?.upstreamDate ?? s.research?.last_updated ?? '—'}</td>
-                        <td>
-                          <span className={`maint maint-${s.research?.maintenance ?? 'unknown'}`}>{MAINT[s.research?.maintenance ?? 'unknown']}</span>
-                        </td>
-                        <td>
-                          <span className={`watch watch-${w.cls}`} title={st?.detail}>
-                            {w.text}
-                          </span>
-                        </td>
-                      </tr>
-                    );
-                  })}
-              </tbody>
-            </table>
-          </div>
-        </section>
-      ))}
+      {tracks.map((t, i) => {
+        const inTrack = list.filter((s) => s.track === t);
+        const Icon = TRACK_ICON[t];
+        const counts = (['active', 'sporadic', 'stale', 'dead', 'unknown'] as const).map((m) => [m, inTrack.filter((s) => (s.research?.maintenance ?? 'unknown') === m).length] as const);
+        return (
+          <details key={t} id={t} className="src-group" open={i === 0}>
+            <summary>
+              <span className="sg-icon">
+                <Icon size={20} />
+              </span>
+              <span className="sg-title">
+                <b>{TRACKS[t]}</b>
+                <small>{inTrack.length} sources</small>
+              </span>
+              <span className="sg-bar" aria-label="Maintenance status">
+                {counts.map(([m, n]) => (n ? <i key={m} className={`maint-bg-${m}`} style={{ flex: n }} title={`${MAINT[m]}: ${n}`} /> : null))}
+              </span>
+              <ChevronDown size={18} className="sg-chev" />
+            </summary>
+            <ul className="src-cards">
+              {inTrack.map((s) => {
+                const st = ST[s.id];
+                const w = watchLabel(st);
+                return (
+                  <li key={s.id}>
+                    <SiteMark url={s.url} size={36} />
+                    <div className="src-main">
+                      <a href={s.url} target="_blank" rel="noopener noreferrer" className="src-name">
+                        {s.name}
+                      </a>
+                      <small>
+                        {s.publisher}
+                        {s.language && s.language !== 'en' ? ` · ${s.language.toUpperCase()}` : ''}
+                      </small>
+                      <p>{s.description}</p>
+                      <span className="src-tags">
+                        <span>{s.format}</span>
+                        <span>
+                          <CalendarDays size={11} /> {st?.upstreamDate ?? s.research?.last_updated ?? '—'}
+                        </span>
+                        <span className={`maint maint-${s.research?.maintenance ?? 'unknown'}`}>{MAINT[s.research?.maintenance ?? 'unknown']}</span>
+                        <span className={`watch watch-${w.cls}`} title={st?.detail}>
+                          {w.text}
+                        </span>
+                        {(s.usedBy ?? []).map((u: string) => (
+                          <Link key={u} href={u} className="used">
+                            used on {u}
+                          </Link>
+                        ))}
+                      </span>
+                    </div>
+                  </li>
+                );
+              })}
+            </ul>
+          </details>
+        );
+      })}
       <p className="muted">
         “Maintained” is our research assessment from {list[0]?.research ? 'October 2026' : 'research'}; “Link” is the weekly automated check. Raw
         research notes, scrapers and probe scripts are in the{' '}

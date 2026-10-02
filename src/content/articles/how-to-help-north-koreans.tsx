@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import { HelpMenu, OrgActions } from '@/components/ArticleBlocks';
+import { OrgLink } from '@/components/HoverLinks';
 import type { Article } from './types';
 
 const article: Article = {
@@ -18,45 +20,54 @@ const article: Article = {
         had in a long time, so a little money and time goes further here than in most causes.
       </p>
 
-      <h2>Fund a rescue (about $3,000)</h2>
+      <HelpMenu />
+
+      <h2 id="rescue">Fund a rescue (about $3,000)</h2>
       <p>
         Most people who escape North Korea cross into China first. In China they have no legal status, and if caught they're sent back to
         face prison or worse. Getting from northern China to safety in Southeast Asia is a roughly 3,000-mile trip through brokers and
-        safe houses. <Link href="/organizations#liberty-in-north-korea">Liberty in North Korea</Link> funds these journeys and says each one costs
+        safe houses. <OrgLink id="liberty-in-north-korea">Liberty in North Korea</OrgLink> funds these journeys and says each one costs
         about $3,000. It has done more than 1,400 so far. It's getting harder: LiNK's 2025 report says China's biometric checkpoints and
         AI surveillance make every route slower and more expensive.
       </p>
+      <OrgActions ids={['liberty-in-north-korea', 'crossing-borders']} />
 
-      <h2>Send information in</h2>
+      <h2 id="information">Send information in</h2>
       <p>
         Outside information is how North Koreans learn that their government is lying to them.{' '}
-        <Link href="/organizations#flash-drives-for-freedom">Flash Drives for Freedom</Link> (run by the Human Rights Foundation) takes donated USB
+        <OrgLink id="flash-drives-for-freedom">Flash Drives for Freedom</OrgLink> (run by the Human Rights Foundation) takes donated USB
         drives, wipes them, loads them with films, Korean Wikipedia, news and so on, and partner groups get them into the country. It's
         still running in 2026, with over 140,000 drives donated or pledged. Mailing a few old drives takes ten minutes.
       </p>
       <p>
         Radio matters too, and was hit hardest: Radio Free Asia's Korean service closed in July 2025 after US funding was cut, and South
-        Korea ended its own broadcasts. Groups like <Link href="/organizations#unification-media-group">Unification Media Group</Link> still
+        Korea ended its own broadcasts. Groups like <OrgLink id="unification-media-group">Unification Media Group</OrgLink> still
         broadcast and badly need support.
       </p>
 
-      <h2>Help escapees who already made it</h2>
+      <OrgActions ids={['flash-drives-for-freedom', 'unification-media-group']} />
+
+      <h2 id="escapees">Help escapees who already made it</h2>
       <p>
         34,538 North Koreans had reached South Korea by the end of 2025 (224 arrived that year, mostly women). Starting over is hard: new
         language registers, English, job hunting, and trauma. Volunteers can tutor English online through{' '}
-        <Link href="/organizations#fsi">Freedom Speakers International</Link> (formerly TNKR) or volunteer with <Link href="/organizations#pscore">PSCORE</Link> in Seoul. If you speak English and
+        <OrgLink id="fsi">Freedom Speakers International</OrgLink> (formerly TNKR) or volunteer with <OrgLink id="pscore">PSCORE</OrgLink> in Seoul. If you speak English and
         can commit an hour a week, this is one of the most direct things you can do.
       </p>
 
-      <h2>Keep the evidence</h2>
+      <OrgActions ids={['fsi', 'pscore']} />
+
+      <h2 id="evidence">Keep the evidence</h2>
       <p>
         One day there will be trials, truth commissions and families looking for graves. Groups like{' '}
-        <Link href="/organizations#nkdb">NKDB</Link>, <Link href="/organizations#tjwg">TJWG</Link> and{' '}
-        <Link href="/organizations#korea-future">Korea Future</Link> interview escapees and map prisons and execution sites now, so that record exists.
+        <OrgLink id="nkdb">NKDB</OrgLink>, <OrgLink id="tjwg">TJWG</OrgLink> and{' '}
+        <OrgLink id="korea-future">Korea Future</OrgLink> interview escapees and map prisons and execution sites now, so that record exists.
         Several lost US grants in 2025.
       </p>
 
-      <h2>Use your voice</h2>
+      <OrgActions ids={['nkdb', 'tjwg', 'korea-future']} />
+
+      <h2 id="voice">Use your voice</h2>
       <ul>
         <li>Ask your representatives to fund broadcasting into North Korea and to restore support for human rights groups.</li>
         <li>Push for pressure on China to stop forcibly sending escapees back (it sent back an estimated 500-600 people in October 2023).</li>

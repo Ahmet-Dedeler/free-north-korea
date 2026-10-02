@@ -5,6 +5,7 @@ import { ThemeProvider } from '@/theme';
 import { SITE_NAME, SITE_URL } from '@/site/config';
 import './globals.css';
 import './site.css';
+import './visual.css';
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),

@@ -19,6 +19,78 @@ export interface Camp {
   sources: { name: string; url: string }[];
   more?: string;
   overview?: string;
+  /** Structured facts pulled out of HRNK's free-text notes (see parseNote). */
+  facts: CampFacts;
+}
+
+export interface CampFacts {
+  /** Readable summary with the HRNK boilerplate removed. */
+  summary: string;
+  aka?: string[];
+  prisoners?: string[];
+  labor?: string[];
+  /** How well the site is established, from HRNK's own wording. */
+  evidence?: 'testimony' | 'reports' | 'imagery';
+  report?: { year?: string; url: string };
+  /** Count of extra locations HRNK ties to the same facility. */
+  extraSites: number;
+}
+
+const list = (s: string) =>
+  s
+    .replace(/"/g, '')
+    .split(/,\s*/)
+    .map((x) => x.trim().replace(/^\w/, (c) => c.toUpperCase()))
+    .filter((x) => x && !/^unknown$/i.test(x) && !/^other/i.test(x));
+
+/**
+ * HRNK notes are one paragraph mixing aliases, "Type of prisoners: … Type of Labor: …", stock phrases about
+ * confirmation, report links and DMS coordinates of secondary sites. Split them into fields so pages can show
+ * chips instead of the raw dump. Hand-written notes (no "Type of" markers) pass through unchanged.
+ */
+export function parseNote(note: string): CampFacts {
+  // "No. 9" would split sentences; protect it and restore at the end.
+  let t = ` ${note} `.replace(/\bNo\.\s/g, 'No§');
+  const facts: CampFacts = { summary: '', extraSites: 0 };
+  const report = t.match(/Detailed analysis of .*? can be found in this (\d{4})? ?HRNK report:\s*(https?:\/\/\S+)/);
+  if (report) {
+    facts.report = { year: report[1], url: report[2] };
+    t = t.replace(report[0], ' ');
+  }
+  const aka = t.match(/(?:is )?also (?:transliterated|spelled|known) as ([^.]+?)\./i) ;
+  if (aka)
+    facts.aka = aka[1]
+      .split(/,\s*(?:and\s+)?|\s+and\s+/)
+      .map((x) => x.trim().replace(/No§/g, 'No. '))
+      .filter((x, i, a) => /^[A-Z][\w-]+$/.test(x) && a.indexOf(x) === i);
+  const known = t.match(/sometimes known as ([^.]+?)\./i);
+  if (known) facts.aka = [known[1].trim()];
+  const pris = t.match(/Type of prisoners:\s*(.*?)\s*Type of Labor:/);
+  if (pris) facts.prisoners = list(pris[1]);
+  const labor = t.match(/Type of Labor:\s*(.*?)(?=\s+(?:This location|Detailed|A second|A third|It has|It is|Kyo-hwa-so|[A-Z][a-z]+ was)\b|\s*$)/);
+  if (labor) facts.labor = list(labor[1]);
+  if (/not been confirmed by HRNK prisoner testimony or listed by NGO/.test(t)) facts.evidence = 'imagery';
+  else if (/identified in prisoner testimony|confirmed by .*testimony(?! )/.test(t) && !/not been confirmed/.test(t)) facts.evidence = 'testimony';
+  else if (/listed in (?:NKDB|KINU)|NKDB and KINU/.test(t)) facts.evidence = 'reports';
+  facts.extraSites = (t.match(/A (?:second|third|fourth) location/g) ?? []).length;
+  if (!pris) {
+    facts.summary = note.trim();
+    return facts;
+  }
+  // Keep only the sentences that say something specific to this facility.
+  const before = t.slice(0, t.indexOf('Type of prisoners:'));
+  const after = t.slice(t.indexOf('Type of Labor:')).replace(/^Type of Labor:\s*.*?(?=\s+(?:This location|Detailed|A second|A third|It has|It is|Kyo-hwa-so|[A-Z][a-z]+ was)\b|\s*$)/, '');
+  facts.summary = `${before} ${after}`
+    .split(/(?<=\.)\s+/)
+    .map((x) => x.replace(/^\s*Also (?:transliterated|spelled) as [A-Z][\w-]+,\s*(\w)/, (_, c: string) => c.toUpperCase()))
+    .filter((x) => !/transliterated|sometimes known as|not been confirmed|not yet confirmed|no further information|has been (?:previously )?listed|location (?:is|associated)|^\s*However, the satellite|^\s*(?:to )?[\d,]+\s*$|^\s*$/i.test(x))
+    .join(' ')
+    .replace(/^\s*(?:to\s+)?[\d,]+\s+/, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+  // A truncated tail ("... A third location associated with t") is noise.
+  facts.summary = facts.summary.replace(/\s+A (?:second|third)[^.]*$/, '').replace(/[^.]*$/, (m) => (m.length < 60 ? '' : m)).replace(/No§/g, 'No. ').trim();
+  return facts;
 }
 
 interface CampMeta {
@@ -266,6 +338,7 @@ export function getAllCamps(): Camp[] {
       sources,
       more: p.more,
       overview: meta.overview,
+      facts: parseNote(p.note ?? ''),
     };
   });
 

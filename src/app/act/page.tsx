@@ -1,4 +1,28 @@
+import Link from 'next/link';
+import type { LucideIcon } from 'lucide-react';
+import {
+  ArrowRight,
+  Ban,
+  BookOpen,
+  CalendarDays,
+  Clock,
+  Code,
+  GraduationCap,
+  HandCoins,
+  Languages,
+  Mail,
+  MessageCircleWarning,
+  PenLine,
+  Plane,
+  Satellite,
+  Scale,
+  Share2,
+  Star,
+  Timer,
+  Wrench,
+} from 'lucide-react';
 import { Ext } from '@/components/Ext';
+import { orgLogo } from '@/content/media';
 import { REPO_URL } from '@/site/config';
 import { pageMeta } from '@/site/seo';
 
@@ -9,11 +33,12 @@ export const metadata = pageMeta({
   path: '/act',
 });
 
-type Step = { title: string; text: string; href: string; cta: string; ext?: boolean };
+type Step = { title: string; text: string; href: string; cta: string; ext?: boolean; org?: string; icon?: LucideIcon };
 
-const GROUPS: { time: string; intro: string; steps: Step[] }[] = [
+const GROUPS: { time: string; icon: LucideIcon; intro: string; steps: Step[] }[] = [
   {
     time: '5 minutes',
+    icon: Timer,
     intro: 'Small, but real.',
     steps: [
       {
@@ -22,12 +47,14 @@ const GROUPS: { time: string; intro: string; steps: Step[] }[] = [
         href: 'https://libertyinnorthkorea.org/donate',
         cta: 'Liberty in North Korea',
         ext: true,
+        org: 'liberty-in-north-korea',
       },
       {
         title: 'Share one explainer',
         text: 'Most people know North Korea from memes. Send someone a page that tells them what is actually going on.',
         href: '/learn/how-can-north-korea-be-freed',
         cta: 'How could North Korea be freed?',
+        icon: Share2,
       },
       {
         title: 'Star and share this project',
@@ -35,11 +62,13 @@ const GROUPS: { time: string; intro: string; steps: Step[] }[] = [
         href: REPO_URL,
         cta: 'GitHub',
         ext: true,
+        icon: Star,
       },
     ],
   },
   {
     time: 'An hour',
+    icon: Clock,
     intro: 'Things that put something physical or political in motion.',
     steps: [
       {
@@ -48,6 +77,7 @@ const GROUPS: { time: string; intro: string; steps: Step[] }[] = [
         href: 'https://flashdrivesforfreedom.org',
         cta: 'Flash Drives for Freedom',
         ext: true,
+        org: 'flash-drives-for-freedom',
       },
       {
         title: 'Write to your representatives',
@@ -55,17 +85,20 @@ const GROUPS: { time: string; intro: string; steps: Step[] }[] = [
           'Ask them to restore funding for Korean-language broadcasting (Radio Free Asia’s Korean service shut down in 2025), support human rights groups that lost grants, and press China to stop forcibly returning escapees.',
         href: '/learn/information-into-north-korea',
         cta: 'Background to cite',
+        icon: Mail,
       },
       {
         title: 'Read one memoir or watch Beyond Utopia',
         text: 'It changes how you talk about North Korea, and people around you will notice.',
         href: '/library',
         cta: 'Library',
+        icon: BookOpen,
       },
     ],
   },
   {
     time: 'Every week',
+    icon: CalendarDays,
     intro: 'The highest-impact thing most people can do is consistent, boring help.',
     steps: [
       {
@@ -74,12 +107,14 @@ const GROUPS: { time: string; intro: string; steps: Step[] }[] = [
         href: 'https://lovefsi.org',
         cta: 'Freedom Speakers International',
         ext: true,
+        org: 'fsi',
       },
       {
         title: 'Give monthly to a group that lost funding',
         text: 'Documentation and media groups like NKDB, TJWG, Daily NK and Unification Media Group were hit by the 2025 US grant cuts.',
         href: '/organizations',
         cta: 'Organizations',
+        icon: HandCoins,
       },
       {
         title: 'Run a fundraiser',
@@ -87,18 +122,19 @@ const GROUPS: { time: string; intro: string; steps: Step[] }[] = [
         href: 'https://libertyinnorthkorea.org',
         cta: 'LiNK',
         ext: true,
+        org: 'liberty-in-north-korea',
       },
     ],
   },
 ];
 
-const SKILLS: { who: string; what: string }[] = [
-  { who: 'Developers', what: 'This site is open source. Add data layers, build tools, improve the maps, fix bugs.' },
-  { who: 'OSINT & mapping people', what: 'Geolocate camps and facilities from satellite imagery, check our coordinates, add sources.' },
-  { who: 'Korean speakers', what: 'Translation is a bottleneck for documentation groups, and we want Korean versions of these pages.' },
-  { who: 'Writers & creators', what: 'Good English content on North Korea is rare. Write explainers, make videos, pitch them here.' },
-  { who: 'Students', what: 'Start a LiNK chapter, write a paper with escapee interviews, or run a screening of Beyond Utopia.' },
-  { who: 'Lawyers & policy people', what: 'Accountability work (TJWG, Korea Future, the UN Seoul office) needs legal and policy help.' },
+const SKILLS: { who: string; what: string; icon: LucideIcon }[] = [
+  { who: 'Developers', icon: Code, what: 'This site is open source. Add data layers, build tools, improve the maps, fix bugs.' },
+  { who: 'OSINT & mapping people', icon: Satellite, what: 'Geolocate camps and facilities from satellite imagery, check our coordinates, add sources.' },
+  { who: 'Korean speakers', icon: Languages, what: 'Translation is a bottleneck for documentation groups, and we want Korean versions of these pages.' },
+  { who: 'Writers & creators', icon: PenLine, what: 'Good English content on North Korea is rare. Write explainers, make videos, pitch them here.' },
+  { who: 'Students', icon: GraduationCap, what: 'Start a LiNK chapter, write a paper with escapee interviews, or run a screening of Beyond Utopia.' },
+  { who: 'Lawyers & policy people', icon: Scale, what: 'Accountability work (TJWG, Korea Future, the UN Seoul office) needs legal and policy help.' },
 ];
 
 export default function Act() {
@@ -113,33 +149,58 @@ export default function Act() {
 
       {GROUPS.map((g) => (
         <section key={g.time} className="act-group">
-          <h2>
-            {g.time} <small>{g.intro}</small>
+          <h2 className="act-h">
+            <span className="act-time">
+              <g.icon size={18} /> {g.time}
+            </span>
+            <small>{g.intro}</small>
           </h2>
-          <div className="cards three">
-            {g.steps.map((s) => (
-              <div key={s.title} className="card">
-                <h3>{s.title}</h3>
-                <p>{s.text}</p>
-                {s.ext ? <Ext href={s.href}>{s.cta} →</Ext> : <a href={s.href}>{s.cta} →</a>}
-              </div>
-            ))}
+          <div className="quick-acts">
+            {g.steps.map((s) => {
+              const logo = s.org ? orgLogo(s.org) : undefined;
+              const Icon = s.icon ?? ArrowRight;
+              const inner = (
+                <>
+                  <span className={`hl-logo ${logo ? '' : 'icon'}`}>{logo ? <img src={logo.src} alt="" /> : <Icon size={22} />}</span>
+                  <b>{s.title}</b>
+                  <span>{s.text}</span>
+                  <em>
+                    {s.cta} <ArrowRight size={14} />
+                  </em>
+                </>
+              );
+              return s.ext ? (
+                <a key={s.title} className="quick-act" href={s.href} target="_blank" rel="noopener noreferrer">
+                  {inner}
+                </a>
+              ) : (
+                <Link key={s.title} className="quick-act" href={s.href}>
+                  {inner}
+                </Link>
+              );
+            })}
           </div>
         </section>
       ))}
 
       <section className="act-group">
-        <h2>
-          If you have a specific skill <small>These are the gaps.</small>
+        <h2 className="act-h">
+          <span className="act-time">
+            <Wrench size={18} /> If you have a specific skill
+          </span>
+          <small>These are the gaps.</small>
         </h2>
-        <dl className="skills">
+        <ul className="icon-cards">
           {SKILLS.map((s) => (
-            <div key={s.who}>
-              <dt>{s.who}</dt>
-              <dd>{s.what}</dd>
-            </div>
+            <li key={s.who}>
+              <span className="ic-icon">
+                <s.icon size={20} />
+              </span>
+              <b>{s.who}</b>
+              <p>{s.what}</p>
+            </li>
           ))}
-        </dl>
+        </ul>
         <p>
           <Ext className="btn primary" href={REPO_URL}>
             Contribute on GitHub
@@ -148,11 +209,30 @@ export default function Act() {
       </section>
 
       <section className="act-group">
-        <h2>Please don’t</h2>
-        <ul>
-          <li>Try to contact people inside North Korea or travel there to "help". It puts them in danger.</li>
-          <li>Give to aid that goes through the regime without independent monitoring.</li>
-          <li>Share unverified viral stories (execution rumors are often wrong). Check against Daily NK, NK News or the UN.</li>
+        <h2 className="act-h">
+          <span className="act-time danger">
+            <Ban size={18} /> Please don’t
+          </span>
+        </h2>
+        <ul className="dont">
+          <li>
+            <Plane size={20} />
+            <span>
+              <b>Contact people inside or travel there to "help".</b> It puts them in danger.
+            </span>
+          </li>
+          <li>
+            <HandCoins size={20} />
+            <span>
+              <b>Give to aid that goes through the regime</b> without independent monitoring.
+            </span>
+          </li>
+          <li>
+            <MessageCircleWarning size={20} />
+            <span>
+              <b>Share unverified viral stories.</b> Execution rumors are often wrong. Check against Daily NK, NK News or the UN.
+            </span>
+          </li>
         </ul>
       </section>
     </div>

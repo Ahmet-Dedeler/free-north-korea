@@ -412,24 +412,78 @@ a.card:hover {
 }
 .org-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 12px;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr));
+  gap: 14px;
   margin-bottom: 28px;
 }
+/* Category hues, shared by filter dots, tags and monogram tiles. */
+.cat-rescue { --cat: #e11d48; }
+.cat-information { --cat: #d97706; }
+.cat-documentation { --cat: #7c3aed; }
+.cat-resettlement { --cat: #059669; }
+.cat-research { --cat: #0284c7; }
+.cat-news { --cat: #64748b; }
+.cat-advocacy { --cat: #db2777; }
+.chip i[class^='cat-'] {
+  background: var(--cat);
+}
 .org {
+  display: flex;
+  flex-direction: column;
   padding: 18px;
   background: var(--panel);
   border: 1px solid var(--line);
-  border-radius: 12px;
+  border-radius: 14px;
   scroll-margin-top: calc(var(--bar-h) + 16px);
+  transition: border-color 0.15s, box-shadow 0.15s, transform 0.15s;
+}
+.org:hover {
+  border-color: var(--line-strong);
+  box-shadow: var(--shadow);
+  transform: translateY(-1px);
 }
 .org:target {
   border-color: var(--accent);
   box-shadow: 0 0 0 3px var(--sel-ring);
 }
+.org-top {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.org-logo {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  padding: 7px;
+  border-radius: 12px;
+  background: #fff; /* logos are drawn for white backgrounds, in both themes */
+  border: 1px solid var(--line);
+  overflow: hidden;
+}
+.org-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.org-logo.mono {
+  padding: 0;
+  border: 0;
+  background: color-mix(in srgb, var(--cat) 14%, var(--panel));
+  color: var(--cat);
+  font-weight: 800;
+  font-size: 15px;
+  letter-spacing: -0.02em;
+}
+.org-title {
+  min-width: 0;
+}
 .org h2 {
-  font-size: 17px;
-  margin: 8px 0 2px;
+  font-size: 16.5px;
+  line-height: 1.3;
+  margin: 0;
 }
 .org h2 a {
   color: var(--ink);
@@ -439,94 +493,310 @@ a.card:hover {
   color: var(--accent);
 }
 .org p {
-  margin: 8px 0 0;
+  margin: 0;
   color: var(--ink-body);
-  line-height: 1.5;
-}
-.org-head {
-  display: flex;
-  justify-content: space-between;
-  gap: 8px;
-  font-size: 12px;
-}
-.org-cat {
-  color: var(--ink-3);
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-}
-.status {
-  font-weight: 600;
-  padding: 1px 8px;
-  border-radius: 999px;
-  border: 1px solid currentColor;
-}
-.status-active {
-  color: var(--ok);
-}
-.status-at-risk {
-  color: var(--warn);
-}
-.status-paused {
-  color: var(--danger);
-}
-.status-unclear {
-  color: var(--ink-3);
+  line-height: 1.55;
 }
 .org .org-meta {
-  margin-top: 0;
+  margin-top: 2px;
   color: var(--ink-3);
   font-size: 13px;
 }
+.org-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 14px 0 10px;
+  font-size: 12px;
+}
+.org-cat {
+  padding: 2px 9px;
+  border-radius: 999px;
+  font-weight: 600;
+  color: var(--cat);
+  background: color-mix(in srgb, var(--cat) 12%, transparent);
+}
+.status {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 2px 9px;
+  border-radius: 999px;
+  font-weight: 600;
+  color: var(--ink-2);
+  background: var(--hover);
+}
+.status::before {
+  content: '';
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--dot);
+}
+.status-active { --dot: var(--ok); }
+.status-at-risk { --dot: var(--warn); }
+.status-paused { --dot: var(--danger); }
+.status-unclear { --dot: var(--ink-3); }
 .org .org-note {
+  margin-top: 12px;
+  padding: 9px 12px;
+  border-radius: 10px;
+  background: var(--hover);
   color: var(--ink-2);
   font-size: 13.5px;
 }
-.org-help {
+.org-foot {
   display: flex;
   flex-wrap: wrap;
-  gap: 4px 14px;
-  font-weight: 600;
-  font-size: 14px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: auto;
+  padding-top: 16px;
+}
+.org-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.org-actions .btn {
+  padding: 8px 13px;
+  font-size: 13.5px;
+}
+.org-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-left: auto;
+}
+.social {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  color: var(--ink-2);
+  transition: color 0.12s, border-color 0.12s, background 0.12s;
+}
+.social:hover {
+  color: var(--brand, var(--accent));
+  border-color: currentColor;
+  background: color-mix(in srgb, currentColor 8%, transparent);
+}
+.social small {
+  position: absolute;
+  right: -5px;
+  bottom: -4px;
+  padding: 0 3px;
+  border-radius: 4px;
+  font-size: 9px;
+  font-weight: 700;
+  color: var(--ink-inverse);
+  background: var(--ink-2);
+}
+/* X, TikTok and Threads are black marks: keep them readable on dark panels. */
+:root[data-theme='dark'] .social:hover[style*='#000000'] {
+  color: var(--ink);
 }
 
 /* ---------- library ---------- */
 .shelf {
   scroll-margin-top: calc(var(--bar-h) + 16px);
 }
-.books {
+/* Book and film covers: the image is the card. */
+.cover-grid {
   list-style: none;
   padding: 0;
+  margin: 16px 0 36px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 4px 28px;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 26px 18px;
 }
-.books li {
-  padding: 12px 0;
-  border-bottom: 1px solid var(--line);
-}
-.books a {
-  font-weight: 650;
-  font-size: 15.5px;
+.cover-card a {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
   color: var(--ink);
   text-decoration: none;
 }
-.books a:hover {
+.cover {
+  position: relative;
+  display: block;
+  aspect-ratio: 2 / 3;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  overflow: hidden;
+  background: var(--hover);
+  box-shadow: 0 1px 2px rgb(0 0 0 / 0.12), 0 6px 16px rgb(0 0 0 / 0.12);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.cover-card a:hover .cover,
+.cover-card a:focus-visible .cover {
+  transform: translateY(-4px);
+  box-shadow: 0 2px 4px rgb(0 0 0 / 0.14), 0 16px 34px rgb(0 0 0 / 0.22);
+}
+.cover-note {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 8px;
+  padding: 14px 12px;
+  font-size: 12.5px;
+  line-height: 1.45;
+  color: #fff;
+  background: linear-gradient(to top, rgb(0 0 0 / 0.92) 0%, rgb(0 0 0 / 0.75) 60%, rgb(0 0 0 / 0.3));
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.cover-note em {
+  font-style: normal;
+  color: #fcd34d;
+}
+.cover-card a:hover .cover-note,
+.cover-card a:focus-visible .cover-note {
+  opacity: 1;
+}
+.cover-flag {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  padding: 2px 7px;
+  border-radius: 999px;
+  font-size: 10.5px;
+  font-weight: 700;
+  color: #78350f;
+  background: #fcd34d;
+}
+.cover-card strong {
+  font-size: 14px;
+  line-height: 1.3;
+}
+.cover-card a:hover strong {
   color: var(--accent);
 }
-.books .by {
-  display: block;
+.cover-by {
+  font-size: 12.5px;
   color: var(--ink-3);
-  font-size: 13px;
 }
-.books p {
-  margin: 6px 0 0;
-  color: var(--ink-body);
-  line-height: 1.5;
+/* Generated cover: a plain paperback in a colour picked from the title. */
+.made-cover {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 18px 14px;
+  color: #fff;
+  background: linear-gradient(160deg, hsl(var(--h) 45% 32%), hsl(calc(var(--h) + 30) 50% 18%));
+  font-family: Georgia, 'Times New Roman', serif;
 }
-.books .caveat {
-  color: var(--warn);
+.made-cover b {
+  font-size: 19px;
+  line-height: 1.15;
+}
+.made-cover i {
+  font-size: 12px;
+  opacity: 0.8;
+}
+.made-cover small {
+  margin-top: auto;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.85;
+  font-family: inherit;
+}
+.cover.film .made-cover {
+  background: linear-gradient(180deg, hsl(var(--h) 30% 14%), #000);
+}
+/* Touch screens can't hover: show a clipped note under the cover instead. */
+@media (hover: none) {
+  .cover-note {
+    display: none;
+  }
+}
+
+/* Reports and datasets: publisher mark plus text. */
+.doc-grid {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0 36px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 380px), 1fr));
+  gap: 12px;
+}
+.doc-card {
+  display: flex;
+  gap: 14px;
+  height: 100%;
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--panel);
+  color: var(--ink);
+  text-decoration: none;
+  transition: border-color 0.15s, box-shadow 0.15s, transform 0.15s;
+}
+.doc-card:hover {
+  border-color: var(--line-strong);
+  box-shadow: var(--shadow);
+  transform: translateY(-1px);
+}
+.doc-body {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 0;
+}
+.doc-card strong {
+  font-size: 14.5px;
+  line-height: 1.35;
+}
+.doc-card:hover strong {
+  color: var(--accent);
+}
+.doc-meta {
+  font-size: 12.5px;
+  color: var(--ink-3);
+}
+.doc-host {
+  color: var(--ink-2);
+}
+.doc-note {
+  margin-top: 3px;
   font-size: 13.5px;
+  line-height: 1.5;
+  color: var(--ink-body);
+}
+.site-mark {
+  flex: none;
+  display: grid;
+  place-items: center;
+  padding: 5px;
+  border-radius: 10px;
+  background: #fff;
+  border: 1px solid var(--line);
+  overflow: hidden;
+}
+.site-mark img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.site-mark:has(b) {
+  border: 0;
+  background: hsl(var(--h) 60% 92%);
+  color: hsl(var(--h) 55% 32%);
+  font-size: 16px;
 }
 
 /* ---------- act ---------- */
@@ -669,8 +939,6 @@ a.card:hover {
     grid-template-columns: repeat(2, 1fr);
   }
   .cards.three,
-  .org-grid,
-  .books,
   .skills {
     grid-template-columns: 1fr;
   }
@@ -1201,7 +1469,7 @@ a.card:hover {
   font-size: 12px;
   color: var(--ink-2);
 }
-.bars {
+ul.bars {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -1209,7 +1477,7 @@ a.card:hover {
   flex-direction: column;
   gap: 5px;
 }
-.bars li {
+ul.bars li {
   display: grid;
   grid-template-columns: 1fr 90px 32px;
   gap: 8px;
@@ -1232,7 +1500,7 @@ a.card:hover {
   height: 100%;
   border-radius: 4px;
 }
-.bars b {
+ul.bars b {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }

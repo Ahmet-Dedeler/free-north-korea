@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import { FivePaths } from '@/components/ArticleBlocks';
+import PersonLink from '@/components/PersonLink';
 import type { Article } from './types';
 
 const article: Article = {
@@ -23,7 +25,9 @@ const article: Article = {
         from most to least likely to matter.
       </p>
 
-      <h2>1. Information gets in, and loyalty leaks out</h2>
+      <FivePaths />
+
+      <h2 id="information">1. Information gets in, and loyalty leaks out</h2>
       <p>
         The Kim family's power rests on control of what 26 million people know. Most North Koreans are taught that South Koreans are
         starving and that the outside world is hostile. When that story breaks, obedience gets more expensive to buy.
@@ -43,19 +47,18 @@ const article: Article = {
         the content. See <Link href="/learn/information-into-north-korea">how information gets into North Korea</Link>.
       </p>
 
-      <h2>2. A split at the top</h2>
+      <h2 id="split">2. A split at the top</h2>
       <p>
         Most dictatorships end because the people around the dictator stop backing him, not because of a mass uprising. In North Korea that
         means the military, the security services (the Ministry of State Security) and the party elite in Pyongyang.
       </p>
       <p>
-        Kim Jong Un has worked hard to prevent this. He had his uncle Jang Song Thaek executed in 2013 and his half-brother Kim Jong Nam
+        <PersonLink id="kim-jong-un">Kim Jong Un</PersonLink> has worked hard to prevent this. He had his uncle <PersonLink id="jang-song-thaek">Jang Song Thaek</PersonLink> executed in 2013 and his half-brother <PersonLink id="kim-jong-nam">Kim Jong Nam</PersonLink>
         assassinated with VX nerve agent in 2017. Purges keep the elite scared. But a succession crisis (Kim's health, a contested heir)
-        is exactly the moment when an elite split becomes possible. Elite defections, like the 2016 defection of deputy ambassador Thae
-        Yong-ho, show that loyalty at the top is not total.
+        is exactly the moment when an elite split becomes possible. Elite defections, like the 2016 defection of deputy ambassador <PersonLink id="thae-yong-ho">Thae Yong-ho</PersonLink>, show that loyalty at the top is not total.
       </p>
 
-      <h2>3. Reform from the inside (the China or Vietnam route)</h2>
+      <h2 id="reform">3. Reform from the inside (the China or Vietnam route)</h2>
       <p>
         A future leader could open the economy without giving up power, the way China did after 1978. Life would get a lot better for
         ordinary people, even if it wouldn't be "free" in the full sense. The Kim regime has flirted with market reforms several times
@@ -66,7 +69,7 @@ const article: Article = {
         reunification and demolished the Arch of Reunification in Pyongyang.
       </p>
 
-      <h2>4. Collapse</h2>
+      <h2 id="collapse">4. Collapse</h2>
       <p>
         Economic collapse, famine or a failed succession could bring the state down suddenly. This is the scenario South Korean and US
         planners prepare for, and it is messy: loose nuclear material, refugee flows into China and South Korea, and the question of
@@ -78,7 +81,7 @@ const article: Article = {
         collected now.
       </p>
 
-      <h2>5. Outside pressure</h2>
+      <h2 id="pressure">5. Outside pressure</h2>
       <p>
         Sanctions, UN action and diplomatic pressure don't free anyone by themselves. They raise the cost of the regime's weapons programs
         and cut into the money that keeps the elite loyal. The regime's biggest new income streams are now crypto theft (the Lazarus

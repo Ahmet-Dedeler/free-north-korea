@@ -1,3 +1,4 @@
+import ArticleCards from '@/components/ArticleCards';
 import { ARTICLES } from '@/content/articles';
 import { pageMeta } from '@/site/seo';
 
@@ -14,17 +15,7 @@ export default function Learn() {
       <p className="eyebrow">Learn</p>
       <h1>Straight answers about North Korea</h1>
       <p className="lede">Short, sourced explainers on the questions people actually search for. Each one ends with something you can do.</p>
-      <ul className="article-list big">
-        {ARTICLES.map((a) => (
-          <li key={a.slug}>
-            <a href={`/learn/${a.slug}`}>
-              <b>{a.h1}</b>
-              <span>{a.teaser}</span>
-              <small>{a.minutes} min read</small>
-            </a>
-          </li>
-        ))}
-      </ul>
+      <ArticleCards articles={ARTICLES} lead />
     </div>
   );
 }

@@ -163,5 +163,465 @@
     "src": "/img/orgs/durihana.png",
     "credit": "Logo from www.durihana.com",
     "sourceUrl": "https://www.durihana.com"
+  },
+  "library:under-the-same-sky": {
+    "src": "/img/library/under-the-same-sky.jpg",
+    "credit": "Cover via Open Library",
+    "sourceUrl": "https://openlibrary.org/works/OL19354364W"
+  },
+  "library:stars-between-the-sun-and-moon": {
+    "src": "/img/library/stars-between-the-sun-and-moon.jpg",
+    "credit": "Cover via Open Library",
+    "sourceUrl": "https://openlibrary.org/works/OL20009089W"
+  },
+  "library:under-the-loving-care-of-the-fatherly-leader": {
+    "src": "/img/library/under-the-loving-care-of-the-fatherly-leader.jpg",
+    "credit": "Cover via Open Library",
+    "sourceUrl": "https://openlibrary.org/works/OL9164358W"
+  },
+  "library:the-sister-the-extraordinary-story-of-kim-yo-jong": {
+    "src": "/img/library/the-sister-the-extraordinary-story-of-kim-yo-jong.png",
+    "credit": "Poster via Wikipedia (non-free, used for identification)",
+    "sourceUrl": "https://en.wikipedia.org/wiki/The_Sister%3A_The_extraordinary_story_of_Kim_Yo_Jong%2C_the_most_powerful_woman_in_North_Korea"
+  },
+  "library:the-invitation-only-zone": {
+    "src": "/img/library/the-invitation-only-zone.jpg",
+    "credit": "Cover via Open Library",
+    "sourceUrl": "https://openlibrary.org/works/OL20018842W"
+  },
+  "library:camp-14-total-control-zone": {
+    "src": "/img/library/camp-14-total-control-zone.png",
+    "credit": "Poster via Wikipedia (non-free, used for identification)",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Camp_14:_Total_Control_Zone"
+  },
+  "library:seoul-train": {
+    "src": "/img/library/seoul-train.jpg",
+    "credit": "Poster via Wikipedia (non-free, used for identification)",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Seoul_Train"
+  },
+  "library:eyes-of-the-tailless-animals-prison-memoirs-of-a-north-korean-woman": {
+    "src": "/img/library/eyes-of-the-tailless-animals-prison-memoirs-of-a-north-korean-woman.jpg",
+    "credit": "Cover via Open Library",
+    "sourceUrl": "https://openlibrary.org/works/OL8591086W"
+  },
+  "library:the-accusation": {
+    "src": "/img/library/the-accusation.jpg",
+    "credit": "Cover via Open Library",
+    "sourceUrl": "https://openlibrary.org/works/OL20174741W"
+  },
+  "library:north-of-the-dmz-essays-on-daily-life-in-north-korea": {
+    "src": "/img/library/north-of-the-dmz-essays-on-daily-life-in-north-korea.jpg",
+    "credit": "Cover via Open Library",
+    "sourceUrl": "https://openlibrary.org/works/OL1657632W"
+  },
+  "library:escape-from-north-korea-the-untold-story-of-asia-s-underground-railroad": {
+    "src": "/img/library/escape-from-north-korea-the-untold-story-of-asia-s-underground-railroad.jpg",
+    "credit": "Cover via Open Library",
+    "sourceUrl": "https://openlibrary.org/works/OL16548144W"
+  },
+  "library:north-korea-state-of-paranoia": {
+    "src": "/img/library/north-korea-state-of-paranoia.jpg",
+    "credit": "Cover via Open Library",
+    "sourceUrl": "https://openlibrary.org/works/OL8162861W"
+  },
+  "library:north-korea-markets-and-military-rule": {
+    "src": "/img/library/north-korea-markets-and-military-rule.jpg",
+    "credit": "Cover via Open Library",
+    "sourceUrl": "https://openlibrary.org/works/OL20312397W"
+  },
+  "host:www.hrnk.org": {
+    "src": "/img/hosts/www-hrnk-org.png",
+    "credit": "Icon from www.hrnk.org",
+    "sourceUrl": "https://www.hrnk.org"
+  },
+  "host:koreafuture.org": {
+    "src": "/img/hosts/koreafuture-org.webp",
+    "credit": "Icon from koreafuture.org",
+    "sourceUrl": "https://koreafuture.org"
+  },
+  "host:www.undocs.org": {
+    "src": "/img/hosts/www-undocs-org.ico",
+    "credit": "Icon from www.undocs.org",
+    "sourceUrl": "https://www.undocs.org"
+  },
+  "host:kcnawatch.org": {
+    "src": "/img/hosts/kcnawatch-org.png",
+    "credit": "Icon from kcnawatch.org",
+    "sourceUrl": "https://kcnawatch.org"
+  },
+  "host:archive.org": {
+    "src": "/img/hosts/archive-org.ico",
+    "credit": "Icon from archive.org",
+    "sourceUrl": "https://archive.org"
+  },
+  "host:guides.library.manoa.hawaii.edu": {
+    "src": "/img/hosts/guides-library-manoa-hawaii-edu.png",
+    "credit": "Icon from guides.library.manoa.hawaii.edu",
+    "sourceUrl": "https://guides.library.manoa.hawaii.edu"
+  },
+  "host:www.northkoreaintheworld.org": {
+    "src": "/img/hosts/www-northkoreaintheworld-org.png",
+    "credit": "Icon from www.northkoreaintheworld.org",
+    "sourceUrl": "https://www.northkoreaintheworld.org"
+  },
+  "host:github.com": {
+    "src": "/img/hosts/github-com.png",
+    "credit": "Icon from github.com",
+    "sourceUrl": "https://github.com"
+  },
+  "host:www.nti.org": {
+    "src": "/img/hosts/www-nti-org.png",
+    "credit": "Icon from www.nti.org",
+    "sourceUrl": "https://www.nti.org"
+  },
+  "host:www.dailynk.com": {
+    "src": "/img/hosts/www-dailynk-com.png",
+    "credit": "Icon from www.dailynk.com",
+    "sourceUrl": "https://www.dailynk.com"
+  },
+  "host:www.sipri.org": {
+    "src": "/img/hosts/www-sipri-org.ico",
+    "credit": "Icon from www.sipri.org",
+    "sourceUrl": "https://www.sipri.org"
+  },
+  "host:www.nknews.org": {
+    "src": "/img/hosts/www-nknews-org.png",
+    "credit": "Icon from www.nknews.org",
+    "sourceUrl": "https://www.nknews.org"
+  },
+  "library:a-thousand-miles-to-freedom": {
+    "src": "/img/library/a-thousand-miles-to-freedom.jpg",
+    "credit": "Cover via Open Library (St. Martin’s, 2015)",
+    "sourceUrl": "https://openlibrary.org/search?q=A+Thousand+Miles+to+Freedom"
+  },
+  "library:this-is-paradise-my-north-korean-childhood": {
+    "src": "/img/library/this-is-paradise-my-north-korean-childhood.jpg",
+    "credit": "Cover via Open Library (Abacus)",
+    "sourceUrl": "https://openlibrary.org/isbn/9780349118659"
+  },
+  "library:long-road-home-testimony-of-a-north-korean-camp-survivor": {
+    "src": "/img/library/long-road-home-testimony-of-a-north-korean-camp-survivor.jpg",
+    "credit": "Cover via Open Library (Columbia UP, 2009)",
+    "sourceUrl": "https://openlibrary.org/isbn/9780231147477"
+  },
+  "host:en.wikipedia.org": {
+    "src": "/img/hosts/en-wikipedia-org.png",
+    "credit": "Icon from en.wikipedia.org",
+    "sourceUrl": "https://en.wikipedia.org"
+  },
+  "host:nkpd.io": {
+    "src": "/img/hosts/nkpd-io.ico",
+    "credit": "Icon from nkpd.io",
+    "sourceUrl": "https://nkpd.io"
+  },
+  "host:data.humdata.org": {
+    "src": "/img/hosts/data-humdata-org.ico",
+    "credit": "Icon from data.humdata.org",
+    "sourceUrl": "https://data.humdata.org"
+  },
+  "host:wiki.earthdata.nasa.gov": {
+    "src": "/img/hosts/wiki-earthdata-nasa-gov.ico",
+    "credit": "Icon from wiki.earthdata.nasa.gov",
+    "sourceUrl": "https://wiki.earthdata.nasa.gov"
+  },
+  "host:docs.un.org": {
+    "src": "/img/hosts/docs-un-org.ico",
+    "credit": "Icon from docs.un.org",
+    "sourceUrl": "https://docs.un.org"
+  },
+  "host:www.unikorea.go.kr": {
+    "src": "/img/hosts/www-unikorea-go-kr.ico",
+    "credit": "Icon from www.unikorea.go.kr",
+    "sourceUrl": "https://www.unikorea.go.kr"
+  },
+  "host:www.kotra.or.kr": {
+    "src": "/img/hosts/www-kotra-or-kr.png",
+    "credit": "Icon from www.kotra.or.kr",
+    "sourceUrl": "https://www.kotra.or.kr"
+  },
+  "host:www.opensanctions.org": {
+    "src": "/img/hosts/www-opensanctions-org.png",
+    "credit": "Icon from www.opensanctions.org",
+    "sourceUrl": "https://www.opensanctions.org"
+  },
+  "host:msmt.info": {
+    "src": "/img/hosts/msmt-info.jpg",
+    "credit": "Icon from msmt.info",
+    "sourceUrl": "https://msmt.info"
+  },
+  "host:irenk.sonosa.or.kr": {
+    "src": "/img/hosts/irenk-sonosa-or-kr.ico",
+    "credit": "Icon from irenk.sonosa.or.kr",
+    "sourceUrl": "https://irenk.sonosa.or.kr"
+  },
+  "host:unikorea.go.kr": {
+    "src": "/img/hosts/unikorea-go-kr.ico",
+    "credit": "Icon from unikorea.go.kr",
+    "sourceUrl": "https://unikorea.go.kr"
+  },
+  "host:www.data.go.kr": {
+    "src": "/img/hosts/www-data-go-kr.ico",
+    "credit": "Icon from www.data.go.kr",
+    "sourceUrl": "https://www.data.go.kr"
+  },
+  "host:kosis.kr": {
+    "src": "/img/hosts/kosis-kr.ico",
+    "credit": "Icon from kosis.kr",
+    "sourceUrl": "https://kosis.kr"
+  },
+  "host:www.chosa-kai.jp": {
+    "src": "/img/hosts/www-chosa-kai-jp.png",
+    "credit": "Icon from www.chosa-kai.jp",
+    "sourceUrl": "https://www.chosa-kai.jp"
+  },
+  "host:www.rusi.org": {
+    "src": "/img/hosts/www-rusi-org.png",
+    "credit": "Icon from www.rusi.org",
+    "sourceUrl": "https://www.rusi.org"
+  },
+  "host:www.conflictarm.com": {
+    "src": "/img/hosts/www-conflictarm-com.ico",
+    "credit": "Icon from www.conflictarm.com",
+    "sourceUrl": "https://www.conflictarm.com"
+  },
+  "host:fas.org": {
+    "src": "/img/hosts/fas-org.ico",
+    "credit": "Icon from fas.org",
+    "sourceUrl": "https://fas.org"
+  },
+  "host:nautilus.org": {
+    "src": "/img/hosts/nautilus-org.ico",
+    "credit": "Icon from nautilus.org",
+    "sourceUrl": "https://nautilus.org"
+  },
+  "host:namu.wiki": {
+    "src": "/img/hosts/namu-wiki.ico",
+    "credit": "Icon from namu.wiki",
+    "sourceUrl": "https://namu.wiki"
+  },
+  "host:www.openstreetmap.org": {
+    "src": "/img/hosts/www-openstreetmap-org.png",
+    "credit": "Icon from www.openstreetmap.org",
+    "sourceUrl": "https://www.openstreetmap.org"
+  },
+  "host:web.archive.org": {
+    "src": "/img/hosts/web-archive-org.ico",
+    "credit": "Icon from web.archive.org",
+    "sourceUrl": "https://web.archive.org"
+  },
+  "host:hub.worldpop.org": {
+    "src": "/img/hosts/hub-worldpop-org.png",
+    "credit": "Icon from hub.worldpop.org",
+    "sourceUrl": "https://hub.worldpop.org"
+  },
+  "host:www.unicef.org": {
+    "src": "/img/hosts/www-unicef-org.ico",
+    "credit": "Icon from www.unicef.org",
+    "sourceUrl": "https://www.unicef.org"
+  },
+  "host:www.rda.go.kr": {
+    "src": "/img/hosts/www-rda-go-kr.png",
+    "credit": "Icon from www.rda.go.kr",
+    "sourceUrl": "https://www.rda.go.kr"
+  },
+  "host:mynorthkorea.blogspot.com": {
+    "src": "/img/hosts/mynorthkorea-blogspot-com.ico",
+    "credit": "Icon from mynorthkorea.blogspot.com",
+    "sourceUrl": "https://mynorthkorea.blogspot.com"
+  },
+  "host:www.amnesty.org": {
+    "src": "/img/hosts/www-amnesty-org.png",
+    "credit": "Icon from www.amnesty.org",
+    "sourceUrl": "https://www.amnesty.org"
+  },
+  "host:nkdb.org": {
+    "src": "/img/hosts/nkdb-org.png",
+    "credit": "Icon from nkdb.org",
+    "sourceUrl": "https://nkdb.org"
+  },
+  "host:www.bok.or.kr": {
+    "src": "/img/hosts/www-bok-or-kr.jpg",
+    "credit": "Icon from www.bok.or.kr",
+    "sourceUrl": "https://www.bok.or.kr"
+  },
+  "host:www.gov.uk": {
+    "src": "/img/hosts/www-gov-uk.png",
+    "credit": "Icon from www.gov.uk",
+    "sourceUrl": "https://www.gov.uk"
+  },
+  "host:data.europa.eu": {
+    "src": "/img/hosts/data-europa-eu.png",
+    "credit": "Icon from data.europa.eu",
+    "sourceUrl": "https://data.europa.eu"
+  },
+  "host:globalfishingwatch.org": {
+    "src": "/img/hosts/globalfishingwatch-org.png",
+    "credit": "Icon from globalfishingwatch.org",
+    "sourceUrl": "https://globalfishingwatch.org"
+  },
+  "host:www.usgs.gov": {
+    "src": "/img/hosts/www-usgs-gov.ico",
+    "credit": "Icon from www.usgs.gov",
+    "sourceUrl": "https://www.usgs.gov"
+  },
+  "host:www.npa.go.jp": {
+    "src": "/img/hosts/www-npa-go-jp.png",
+    "credit": "Icon from www.npa.go.jp",
+    "sourceUrl": "https://www.npa.go.jp"
+  },
+  "host:www.kaiho.mlit.go.jp": {
+    "src": "/img/hosts/www-kaiho-mlit-go-jp.ico",
+    "credit": "Icon from www.kaiho.mlit.go.jp",
+    "sourceUrl": "https://www.kaiho.mlit.go.jp"
+  },
+  "host:www.city.niigata.lg.jp": {
+    "src": "/img/hosts/www-city-niigata-lg-jp.png",
+    "credit": "Icon from www.city.niigata.lg.jp",
+    "sourceUrl": "https://www.city.niigata.lg.jp"
+  },
+  "host:www.weather.go.kr": {
+    "src": "/img/hosts/www-weather-go-kr.png",
+    "credit": "Icon from www.weather.go.kr",
+    "sourceUrl": "https://www.weather.go.kr"
+  },
+  "host:ja.wikipedia.org": {
+    "src": "/img/hosts/ja-wikipedia-org.png",
+    "credit": "Icon from ja.wikipedia.org",
+    "sourceUrl": "https://ja.wikipedia.org"
+  },
+  "host:frontelligence.substack.com": {
+    "src": "/img/hosts/frontelligence-substack-com.jpg",
+    "credit": "Icon from frontelligence.substack.com",
+    "sourceUrl": "https://frontelligence.substack.com"
+  },
+  "host:www.mnd.go.kr": {
+    "src": "/img/hosts/www-mnd-go-kr.png",
+    "credit": "Icon from www.mnd.go.kr",
+    "sourceUrl": "https://www.mnd.go.kr"
+  },
+  "host:npolicy.org": {
+    "src": "/img/hosts/npolicy-org.png",
+    "credit": "Icon from npolicy.org",
+    "sourceUrl": "https://npolicy.org"
+  },
+  "host:www.who.int": {
+    "src": "/img/hosts/www-who-int.png",
+    "credit": "Icon from www.who.int",
+    "sourceUrl": "https://www.who.int"
+  },
+  "host:www.krei.re.kr": {
+    "src": "/img/hosts/www-krei-re-kr.ico",
+    "credit": "Icon from www.krei.re.kr",
+    "sourceUrl": "https://www.krei.re.kr"
+  },
+  "host:nationalatlas.ngii.go.kr": {
+    "src": "/img/hosts/nationalatlas-ngii-go-kr.png",
+    "credit": "Icon from nationalatlas.ngii.go.kr",
+    "sourceUrl": "https://nationalatlas.ngii.go.kr"
+  },
+  "host:www.eorc.jaxa.jp": {
+    "src": "/img/hosts/www-eorc-jaxa-jp.ico",
+    "credit": "Icon from www.eorc.jaxa.jp",
+    "sourceUrl": "https://www.eorc.jaxa.jp"
+  },
+  "host:www.iiss.org": {
+    "src": "/img/hosts/www-iiss-org.webp",
+    "credit": "Icon from www.iiss.org",
+    "sourceUrl": "https://www.iiss.org"
+  },
+  "host:gadm.org": {
+    "src": "/img/hosts/gadm-org.ico",
+    "credit": "Icon from gadm.org",
+    "sourceUrl": "https://gadm.org"
+  },
+  "host:www.unfpa.org": {
+    "src": "/img/hosts/www-unfpa-org.ico",
+    "credit": "Icon from www.unfpa.org",
+    "sourceUrl": "https://www.unfpa.org"
+  },
+  "host:www.ide.go.jp": {
+    "src": "/img/hosts/www-ide-go-jp.ico",
+    "credit": "Icon from www.ide.go.jp",
+    "sourceUrl": "https://www.ide.go.jp"
+  },
+  "place:yongbyon": {
+    "src": "/img/places/yongbyon.jpg",
+    "credit": "Photo via Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Yongbyon_5MWe_Magnox_reactor.jpg"
+  },
+  "place:punggye-ri": {
+    "src": "/img/places/punggye-ri.jpg",
+    "credit": "Photo via Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Punggye-ri_Nuclear_Test_Site.jpg"
+  },
+  "place:sohae": {
+    "src": "/img/places/sohae.jpg",
+    "credit": "Photo via Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:North_Korean_Unha-3_rocket_at_launch_pad.jpg"
+  },
+  "place:kumsusan": {
+    "src": "/img/places/kumsusan.jpg",
+    "credit": "Photo via Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kumsusan_Memorial_Palace,_Pyongyang.jpg"
+  },
+  "place:kim-il-sung-square": {
+    "src": "/img/places/kim-il-sung-square.jpg",
+    "credit": "Photo via Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Laika_ac_Juche_Tower_(12108772354).jpg"
+  },
+  "place:ryugyong": {
+    "src": "/img/places/ryugyong.jpg",
+    "credit": "Photo via Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Prázdné_slnice_a_rozestavěný_hotel_Ryugyong_-_panoramio.jpg"
+  },
+  "place:hyesan": {
+    "src": "/img/places/hyesan.jpg",
+    "credit": "Photo via Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:巡道工出品_photo_by_Xundaogong_-_panoramio_(106).jpg"
+  },
+  "place:hoeryong": {
+    "src": "/img/places/hoeryong.jpg",
+    "credit": "Photo via Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hoeryong_North_Korea.JPG"
+  },
+  "place:jsa": {
+    "src": "/img/places/jsa.jpg",
+    "credit": "Photo via Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:JSA_SSI.jpg"
+  },
+  "place:kaesong-ic": {
+    "src": "/img/places/kaesong-ic.jpg",
+    "credit": "Photo via Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kaesong_model_complex.jpg"
+  },
+  "place:rason": {
+    "src": "/img/places/rason.png",
+    "credit": "Photo via Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rason_montage.png"
+  },
+  "article:how-can-north-korea-be-freed": {
+    "src": "/img/articles/how-can-north-korea-be-freed.jpg",
+    "credit": "Photo via Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:West_and_East_Germans_at_the_Brandenburg_Gate_in_1989.jpg"
+  },
+  "article:is-it-possible-to-free-north-korea": {
+    "src": "/img/articles/is-it-possible-to-free-north-korea.jpg",
+    "credit": "Photo via Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Arch_of_Triumph_(11360607534).jpg"
+  },
+  "article:how-to-help-north-koreans": {
+    "src": "/img/articles/how-to-help-north-koreans.jpg",
+    "credit": "Photo via Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:070401_Panmunjeom3.jpg"
+  },
+  "article:how-north-koreans-escape": {
+    "src": "/img/articles/how-north-koreans-escape.jpg",
+    "credit": "Photo via Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:302国道60公里，图们棚洞附近_-_panoramio.jpg"
+  },
+  "article:information-into-north-korea": {
+    "src": "/img/articles/information-into-north-korea.jpg",
+    "credit": "Photo via Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:EVD_Video_Player.jpg"
   }
 }

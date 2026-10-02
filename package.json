@@ -12,10 +12,12 @@
     "lint": "oxlint && tsc --noEmit"
   },
   "dependencies": {
+    "lucide-react": "^1.50.0",
     "maplibre-gl": "^6.11.2",
     "next": "^16.3.8",
     "react": "^19.3.0",
-    "react-dom": "^19.3.0"
+    "react-dom": "^19.3.0",
+    "simple-icons": "^16.33.0"
   },
   "devDependencies": {
     "@types/node": "^24.13.3",

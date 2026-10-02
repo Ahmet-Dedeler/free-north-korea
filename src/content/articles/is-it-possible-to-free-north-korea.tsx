@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import { Handshake, ListOrdered, Radiation, RadioTower, Sprout, Store, Swords, Usb, Users } from 'lucide-react';
+import { Dynasty, IconCards } from '@/components/ArticleBlocks';
 import type { Article } from './types';
 
 const article: Article = {
@@ -22,49 +24,45 @@ const article: Article = {
         The Kim family has ruled since 1948, through three generations. That is longer than the Soviet Union lasted after Stalin. A few
         things explain it:
       </p>
-      <ul>
-        <li>
-          <b>Total information control.</b> No open internet, radios fixed to state channels, and a population taught from childhood that
-          the outside world is worse off.
-        </li>
-        <li>
-          <b>Songbun.</b> Every family is ranked by its loyalty to the regime going back generations. Your rank decides where you can live,
-          whether you can go to university and whether you can join the party.
-        </li>
-        <li>
-          <b>Collective punishment.</b> If one person commits a political crime, up to three generations of their family can be sent to a
-          prison camp. This makes organizing almost impossible, because nobody risks only themselves.
-        </li>
-        <li>
-          <b>China.</b> China supplies most of North Korea's trade and fuel and sends escapees back. A collapsed North Korea would put US
-          allies on China's border, so Beijing keeps it alive.
-        </li>
-        <li>
-          <b>Nuclear weapons.</b> Around 60 warheads (SIPRI, January 2026) make outside regime change unthinkable. That is exactly why the
-          regime built them.
-        </li>
-      </ul>
+      <Dynasty />
+      <IconCards
+        items={[
+          { icon: RadioTower, title: 'Total information control', children: 'No open internet, radios fixed to state channels, and a population taught from childhood that the outside world is worse off.' },
+          { icon: ListOrdered, title: 'Songbun', children: 'Every family is ranked by its loyalty to the regime going back generations. Your rank decides where you can live, whether you can go to university and whether you can join the party.' },
+          { icon: Users, title: 'Collective punishment', children: 'If one person commits a political crime, up to three generations of their family can be sent to a prison camp. Nobody risks only themselves, so organizing is almost impossible.' },
+          { icon: Handshake, title: 'China', children: "China supplies most of North Korea's trade and fuel and sends escapees back. A collapsed North Korea would put US allies on China's border, so Beijing keeps it alive." },
+          { icon: Radiation, title: 'Nuclear weapons', children: 'Around 60 warheads (SIPRI, January 2026) make outside regime change unthinkable. That is exactly why the regime built them.' },
+        ]}
+      />
 
       <h2>The cracks that are already there</h2>
-      <p>
-        <b>Markets.</b> After the state ration system collapsed in the 1990s famine, people survived by trading. Most household income now
-        comes from private markets (jangmadang), not the state. People who feed themselves depend less on the regime and see it more
-        clearly.
-      </p>
-      <p>
-        <b>Foreign media.</b> South Korean dramas and music spread through USB sticks and SD cards, and young North Koreans have picked up
-        South Korean slang. The regime responded with laws (2020, 2021, 2023) punishing South Korean media, slang and even hairstyles, some
-        with the death penalty. Those laws are a sign that it is losing that fight.
-      </p>
-      <p>
-        <b>The jangmadang generation.</b> People born after the famine grew up relying on markets, not the state, and many of them have
-        never believed the propaganda the way their parents did.
-      </p>
-      <p>
-        <b>Soldiers abroad.</b> Since late 2024 North Korea has sent more than 20,000 troops to fight for Russia, and Ukrainian and South
-        Korean intelligence estimate around 6,000-7,000 were killed or wounded. Thousands of young men have now seen another country, and
-        some have been captured and asked not to be sent back.
-      </p>
+      <IconCards
+        items={[
+          {
+            icon: Store,
+            title: 'Markets',
+            children:
+              'After the state ration system collapsed in the 1990s famine, people survived by trading. Most household income now comes from private markets (jangmadang), not the state. People who feed themselves depend less on the regime and see it more clearly.',
+          },
+          {
+            icon: Usb,
+            title: 'Foreign media',
+            children:
+              'South Korean dramas and music spread through USB sticks and SD cards, and young North Koreans picked up South Korean slang. The regime answered with laws (2020, 2021, 2023) punishing South Korean media, slang and even hairstyles, some with the death penalty. Those laws are a sign it is losing.',
+          },
+          {
+            icon: Sprout,
+            title: 'The jangmadang generation',
+            children: 'People born after the famine grew up relying on markets, not the state, and many never believed the propaganda the way their parents did.',
+          },
+          {
+            icon: Swords,
+            title: 'Soldiers abroad',
+            children:
+              'Since late 2024 more than 20,000 troops went to fight for Russia; Ukrainian and South Korean intelligence estimate about 6,000-7,000 were killed or wounded. Thousands of young men have now seen another country, and some captured soldiers asked not to be sent back.',
+          },
+        ]}
+      />
 
       <h2>What history says</h2>
       <p>
