@@ -64,6 +64,9 @@ function CountyDetail({ f, data, onSelect }: { f: Feature; data: Data; onSelect:
     <>
       <p className="d-kicker">County · {p.province}</p>
       <h2>{p.name}</h2>
+      <p style={{ margin: '0.2rem 0 0.8rem', fontSize: '0.9rem' }}>
+        <Link href={`/counties/${String(p.pcode).toLowerCase()}`}>View full county dossier →</Link>
+      </p>
       <div className="d-stats">
         <div>
           <b>{n(p.pop)}</b>
@@ -199,6 +202,16 @@ function PointDetail({ layer, f }: { layer: LayerId; f: Feature }) {
         {lat.toFixed(4)}°N, {lon.toFixed(4)}°E{p.approx ? ' (approximate)' : ''}
         {layer === 'detention' && p.confirmed === false ? ' · location unconfirmed' : ''}
       </p>
+      {layer === 'camps' && (
+        <p>
+          <Link href={`/camps/${String(p.id)}`}>View full camp dossier →</Link>
+        </p>
+      )}
+      {(layer === 'sites' || layer === 'missile-bases') && (
+        <p>
+          <Link href={`/places/${String(p.id)}`}>View full site details →</Link>
+        </p>
+      )}
       {p.more && (
         <p>
           <Link href={p.more}>Read more →</Link>

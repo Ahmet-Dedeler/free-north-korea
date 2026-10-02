@@ -6,7 +6,7 @@ An open-source hub for understanding North Korea and helping the 26 million peop
 like this existed: the maps, the military data, the archives and the organizations were all in separate places, and
 search results for "how can North Korea be freed" were close to empty.
 
-- **Atlas** (`/atlas`): prison camps, nuclear and missile sites, border crossings and the escape route, each with a source.
+- **Intel map** (`/map`): prison camps, nuclear and missile sites, border crossings and the escape route, each with a source.
 - **Military** (`/military`): nukes, missiles, troops, artillery, crypto theft and the war in Ukraine, 2026 numbers.
 - **Missile tests** (`/missiles`): every test since 1984 on an interactive map (a redesign of
   [nagix/nk-missile-tests](https://github.com/nagix/nk-missile-tests), CNS database).
@@ -36,7 +36,7 @@ Found something wrong? [Open an issue](https://github.com/Ahmet-Dedeler/free-nor
 
 - Missile tests: `public/data/*.en.json`, copied as-is from upstream nk-missile-tests (CNS North Korea Missile Test
   Database). Flight paths are estimates from launch site, bearing and distance.
-- Atlas coordinates: Wikipedia's geocoded articles unless marked approximate.
+- Map coordinates: Wikipedia's geocoded articles unless marked approximate.
 - Basemap: [OpenFreeMap](https://openfreemap.org) / OpenStreetMap contributors.
 
 ## License

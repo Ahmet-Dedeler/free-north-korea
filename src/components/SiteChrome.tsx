@@ -45,6 +45,19 @@ export default function SiteChrome({ children }: { children: ReactNode }) {
           ))}
         </nav>
         <div className="topbar-end">
+          <div style={{ display: 'inline-flex', gap: '6px', alignItems: 'center', marginRight: '10px', fontSize: '12px' }}>
+            <Link href="/" className={!path.startsWith('/ko') && !path.startsWith('/ja') ? 'muted on' : 'muted'} style={{ fontWeight: !path.startsWith('/ko') && !path.startsWith('/ja') ? 600 : 'normal' }}>
+              EN
+            </Link>
+            <span className="muted" style={{ opacity: 0.4 }}>/</span>
+            <Link href="/ko" className={path.startsWith('/ko') ? 'muted on' : 'muted'} style={{ fontWeight: path.startsWith('/ko') ? 600 : 'normal' }}>
+              한국어
+            </Link>
+            <span className="muted" style={{ opacity: 0.4 }}>/</span>
+            <Link href="/ja" className={path.startsWith('/ja') ? 'muted on' : 'muted'} style={{ fontWeight: path.startsWith('/ja') ? 600 : 'normal' }}>
+              日本語
+            </Link>
+          </div>
           <Link href="/act" className={`cta ${active('/act') ? 'on' : ''}`}>
             Take action
           </Link>
@@ -62,14 +75,18 @@ export default function SiteChrome({ children }: { children: ReactNode }) {
                 An open-source hub for understanding North Korea and helping the 26 million people living under its regime. No ads, no
                 tracking, no affiliation with any government.
               </p>
+              <div style={{ marginTop: '0.8rem', fontSize: '0.88rem' }}>
+                <Link href="/ko">한국어 (Korean)</Link> · <Link href="/ja">日本語 (Japanese)</Link>
+              </div>
             </div>
             <div>
               <b>Explore</b>
               <Link href="/map">Intel map</Link>
-              <Link href="/military">Military capability</Link>
+              <Link href="/camps">Prison camps</Link>
+              <Link href="/places">Key strategic sites</Link>
+              <Link href="/counties">179 counties</Link>
               <Link href="/missiles">Missile tests</Link>
               <Link href="/library">Library</Link>
-              <Link href="/sources">Data sources</Link>
             </div>
             <div>
               <b>Help</b>
