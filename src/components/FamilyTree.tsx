@@ -1,78 +1,71 @@
 import Link from 'next/link';
-import { isDead } from '@/entities';
-import { CARD_H, CARD_W, buildFamilyTree } from '@/entities/familyTree';
-import type { Person } from '@/entities/types';
+import { age, isDead } from '@/entities';
+import { LEADER, buildFamilyTree, type TreeEdge } from '@/entities/familyTree';
+import { KIM_FAMILY_NOW } from '@/content/kimFamilyNow';
 import Avatar from './Avatar';
 import FamilyTreeFocus from './FamilyTreeFocus';
 
-/** Years as Supreme Leader, from the person's roles. */
-function ruled(p: Person) {
-  const r = p.roles.find((x) => x.title === 'Supreme Leader of North Korea');
-  if (!r?.start) return null;
-  return r.end ? `Ruled ${r.start.slice(0, 4)}–${r.end.slice(0, 4)}` : `Ruling since ${r.start.slice(0, 4)}`;
-}
+const CARD_H = 224;
+const ROW = 278; // card height + room for the connector lines
+const ROW_LABELS = ['His father’s generation', 'Kim Jong Un and his siblings', 'The next generation'];
 
-/** How someone fell, when the data says so. */
-function fate(p: Person) {
-  const cause = p.died?.cause ?? '';
-  if (p.status?.value === 'executed' || /execution/i.test(cause)) return 'executed';
-  if (/poison/i.test(cause)) return 'assassinated';
-  if (p.status?.value === 'purged' || p.tags.includes('purged')) return 'sidelined';
-  return null;
+/** Line geometry: x in column units (100 per column, scaled to the container by the SVG), y in pixels. */
+function path(e: TreeEdge) {
+  const x1 = (e.from.col + 0.5) * 100;
+  const x2 = (e.to.col + 0.5) * 100;
+  const top = e.from.row * ROW;
+  if (e.kind === 'marriage') return `M${x1} ${top + CARD_H / 2} H${x2}`;
+  const y1 = top + (e.from.at === 'middle' ? CARD_H / 2 : CARD_H);
+  const bus = top + CARD_H + (ROW - CARD_H) / 2;
+  return `M${x1} ${y1} V${bus} H${x2} V${e.to.row * ROW}`;
 }
 
 /**
- * The Kim family as a connected tree: server-rendered cards and SVG lines, so it's indexable and works without JS.
- * Hovering (or tapping) a person highlights their parents, partners, children and siblings.
+ * The Kim family as it stands today, as a connected tree that always fits its container (columns are percentages,
+ * lines are a stretched SVG). Server-rendered; on phones it turns into a list grouped by generation.
  */
 export default function FamilyTree() {
   const tree = buildFamilyTree();
+  const height = (tree.rows - 1) * ROW + CARD_H;
+  const nodes = [...tree.nodes].sort((a, b) => a.row - b.row || a.col - b.col);
   return (
     <FamilyTreeFocus>
-      <div className="ftree-canvas" style={{ width: tree.width, height: tree.height }}>
-        <svg className="ftree-lines" width={tree.width} height={tree.height} aria-hidden="true">
+      <div className="ftree-canvas" style={{ height, ['--cols' as string]: tree.cols }}>
+        <svg className="ftree-lines" viewBox={`0 0 ${tree.cols * 100} ${height}`} preserveAspectRatio="none" aria-hidden="true">
           {tree.edges.map((e, i) => (
-            <path key={i} d={e.d} className={`ftree-edge ${e.kind}`} data-ids={e.ids.join(' ')} />
+            <path key={i} d={path(e)} className={`ftree-edge ${e.kind}`} data-ids={e.ids.join(' ')} vectorEffect="non-scaling-stroke" />
           ))}
         </svg>
-        {tree.nodes.map((n) => {
-          if (n.ghost)
-            return (
-              <span
-                key={n.id}
-                className="ftree-ghost"
-                data-node={n.id}
-                data-related={n.related.join(' ')}
-                style={{ left: n.x, top: n.y, width: CARD_W }}
-                title="The other parent is not in our data"
-              >
-                Other parent
-              </span>
-            );
-          const p = n.person!;
+        {nodes.map((n, i) => {
+          const p = n.person;
           const dead = isDead(p);
-          const r = ruled(p);
-          const f = fate(p);
-          return (
+          const a = age(p);
+          const now = KIM_FAMILY_NOW[p.id];
+          return [
+            (i === 0 || nodes[i - 1].row !== n.row) && (
+              <h3 key={`row-${n.row}`} className="ftree-rowlabel">
+                {ROW_LABELS[n.row]}
+              </h3>
+            ),
             <Link
-              key={n.id}
+              key={p.id}
               id={`ft-${p.id}`}
               href={`/people/${p.id}`}
-              className={`ftree-card ${dead ? 'is-dead' : ''} ${r ? 'is-ruler' : ''}`}
+              className={`ftree-card ${dead ? 'is-dead' : ''} ${p.id === LEADER ? 'is-leader' : ''}`}
+              style={{ ['--col' as string]: n.col, top: n.row * ROW, height: CARD_H }}
               data-node={p.id}
               data-related={n.related.join(' ')}
-              style={{ left: n.x, top: n.y, width: CARD_W, height: CARD_H }}
             >
+              <span className="ftree-rel">{n.relation}</span>
               <Avatar person={p} size={52} />
               <b>{p.name_en}</b>
-              {p.name_ko && <span className="ko">{p.name_ko}</span>}
-              <span className="ftree-years">
-                {p.born?.date?.slice(0, 4) ?? '?'}
-                {dead ? `–${p.died?.date?.slice(0, 4) ?? '?'}` : ''}
-              </span>
-              {r ? <span className="ftree-badge ruler">{r}</span> : f ? <span className="ftree-badge fate">{f}</span> : null}
-            </Link>
-          );
+              <span className="ftree-age">
+                {dead ? `${p.born?.date?.slice(0, 4) ?? '?'}–${p.died?.date?.slice(0, 4) ?? '?'}` : a !== null ? `${a} years old` : 'Age unknown'}
+                </span>
+              {p.sanctions.length > 0 && <span className="ftree-sanction">Sanctioned</span>}
+              {now && <span className="ftree-now">{now.text}</span>}
+            </Link>,
+          ];
         })}
       </div>
     </FamilyTreeFocus>

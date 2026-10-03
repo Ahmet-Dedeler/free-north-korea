@@ -1624,49 +1624,25 @@ ul.bars b {
 }
 
 /* ---------- Kim family tree (src/components/FamilyTree.tsx) ---------- */
+/* Columns are percentages of the container, so the tree always fits: no sideways scroll. */
 .ftree {
   margin: 20px 0 28px;
-}
-.ftree-tools {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 8px 14px;
-  margin-bottom: 10px;
-  font-size: 13px;
-}
-.ftree-toggle {
-  border: 1px solid var(--line-strong);
-  background: var(--panel);
-  color: var(--ink);
-  border-radius: 999px;
-  padding: 6px 14px;
-  font: inherit;
-  font-weight: 600;
-  cursor: pointer;
-}
-.ftree-toggle.active {
-  background: var(--ink);
-  color: var(--ink-inverse);
-  border-color: var(--ink);
-}
-.ftree-scroll {
-  overflow-x: auto;
+  padding: 20px 8px;
   border: 1px solid var(--line);
   border-radius: 14px;
   background: var(--bg);
   background-image: radial-gradient(var(--line) 1px, transparent 1px);
   background-size: 18px 18px;
-  padding: 24px;
-  overscroll-behavior-x: contain;
 }
 .ftree-canvas {
   position: relative;
-  margin: 0 auto;
+  --gap: 10px;
 }
 .ftree-lines {
   position: absolute;
   inset: 0;
+  width: 100%;
+  height: 100%;
   overflow: visible;
 }
 .ftree-edge {
@@ -1678,77 +1654,82 @@ ul.bars b {
 .ftree-edge.marriage {
   stroke-dasharray: 5 4;
 }
+.ftree-rowlabel {
+  display: none;
+}
 .ftree-card {
   position: absolute;
+  left: calc(var(--col) * 100% / var(--cols) + var(--gap) / 2);
+  width: calc(100% / var(--cols) - var(--gap));
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  gap: 2px;
-  padding: 10px 6px 8px;
+  gap: 3px;
+  padding: 10px 8px;
   border: 1px solid var(--line);
   border-radius: 12px;
   background: var(--panel);
   color: var(--ink);
   text-decoration: none;
   font-size: 12px;
+  overflow: hidden;
   transition: opacity 0.15s, box-shadow 0.15s, border-color 0.15s;
+}
+.ftree-card:hover {
+  box-shadow: var(--shadow);
+}
+.ftree-rel {
+  font-size: 10.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--ink-3);
+  margin-bottom: 2px;
 }
 .ftree-card b {
   margin-top: 4px;
-  font-size: 13px;
+  font-size: 13.5px;
   line-height: 1.2;
 }
-.ftree-card .ko {
-  color: var(--ink-3);
-  font-size: 11px;
-}
-.ftree-years {
+.ftree-age {
   color: var(--ink-2);
   font-variant-numeric: tabular-nums;
+}
+.ftree-sanction {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--warn);
+}
+.ftree-now {
+  margin-top: 4px;
+  color: var(--ink-body);
+  font-size: 11.5px;
+  line-height: 1.35;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .ftree-card.is-dead {
   background: var(--hover);
 }
-.ftree-card.is-dead b {
+.ftree-card.is-dead b,
+.ftree-card.is-dead .ftree-now {
   color: var(--ink-2);
 }
-.ftree-card.is-ruler {
-  border: 2px solid var(--warn);
+.ftree-card.is-leader {
+  border: 2px solid var(--danger);
 }
-.ftree-badge {
-  margin-top: auto;
-  font-size: 10.5px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.03em;
-  line-height: 1.2;
-}
-.ftree-badge.ruler {
-  color: var(--warn);
-}
-.ftree-badge.fate {
+.ftree-card.is-leader .ftree-rel {
   color: var(--danger);
 }
-.ftree-ghost {
-  position: absolute;
-  height: 34px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px dashed var(--line-strong);
-  border-radius: 999px;
-  background: var(--panel);
-  color: var(--ink-3);
-  font-size: 11.5px;
-  transition: opacity 0.15s;
-}
 /* focus mode: dim everything except the hovered person and their direct relatives */
-.ftree-scroll.has-focus .ftree-card:not(.on),
-.ftree-scroll.has-focus .ftree-ghost:not(.on) {
+.ftree.has-focus .ftree-card:not(.on) {
   opacity: 0.3;
 }
-.ftree-scroll.has-focus .ftree-edge:not(.on) {
+.ftree.has-focus .ftree-edge:not(.on) {
   opacity: 0.25;
 }
 .ftree-edge.on {
@@ -1757,62 +1738,64 @@ ul.bars b {
 }
 .ftree-card.on {
   border-color: var(--accent);
-  box-shadow: var(--shadow);
 }
 .ftree-card.is-focus {
   outline: 3px solid var(--sel-ring);
 }
-.ftree-legend {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px 18px;
-  list-style: none;
-  padding: 0;
-  margin: 10px 0 0;
-  color: var(--ink-2);
-  font-size: 12.5px;
-}
-.ftree-legend li {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-.ftree-legend i {
-  display: inline-block;
-  width: 18px;
-  height: 12px;
-  border-radius: 4px;
-}
-.lg-ruler {
-  border: 2px solid var(--warn);
-}
-.lg-dead {
-  background: var(--hover);
-  border: 1px solid var(--line-strong);
-}
-.lg-marriage {
-  height: 0 !important;
-  border-top: 2px dashed var(--line-strong);
-  border-radius: 0 !important;
-}
-.lg-child {
-  height: 0 !important;
-  border-top: 2px solid var(--line-strong);
-  border-radius: 0 !important;
-}
-.lg-ghost {
-  border: 1px dashed var(--line-strong);
-  border-radius: 999px !important;
-}
 .ftree-notes {
   max-width: 760px;
 }
-@media (max-width: 700px) {
-  .ftree-scroll {
-    padding: 14px;
-    margin: 0 -16px;
-    border-radius: 0;
-    border-left: 0;
-    border-right: 0;
+.ftree-promo {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 18px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--panel);
+  color: var(--ink);
+  text-decoration: none;
+}
+.ftree-promo:hover {
+  box-shadow: var(--shadow);
+}
+.ftree-promo-faces {
+  display: flex;
+}
+.ftree-promo-faces > * + * {
+  margin-left: -12px;
+}
+.ftree-promo > span:last-child {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+/* phones and narrow windows: a list grouped by generation instead of the tree (cards would get too narrow) */
+@media (max-width: 960px) {
+  .ftree {
+    padding: 12px;
+  }
+  .ftree-canvas {
+    height: auto !important;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+  .ftree-lines {
+    display: none;
+  }
+  .ftree-rowlabel {
+    display: block;
+    grid-column: 1 / -1;
+    margin: 10px 0 0;
+    font-size: 12.5px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--ink-3);
+  }
+  .ftree-card {
+    position: static;
+    width: auto;
+    height: auto !important;
   }
 }

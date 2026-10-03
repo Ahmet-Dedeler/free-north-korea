@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import Avatar from '@/components/Avatar';
-import FamilyTree from '@/components/FamilyTree';
-import { PEOPLE, age, currentRole, isDead } from '@/entities';
+import { PEOPLE, age, currentRole, isDead, person } from '@/entities';
 import type { Person } from '@/entities/types';
 import { pageMeta } from '@/site/seo';
 
@@ -55,10 +54,18 @@ export default function People() {
       </p>
 
       <section className="tree">
-        <h2>
-          The Kim family <small><Link href="/kim-family-tree">Open the family tree page</Link></small>
-        </h2>
-        <FamilyTree />
+        <Link href="/kim-family-tree" className="ftree-promo">
+          <span className="ftree-promo-faces">
+            {['kim-jong-un', 'kim-ju-ae', 'kim-yo-jong', 'ri-sol-ju'].map((id) => {
+              const p = person(id);
+              return p ? <Avatar key={id} person={p} size={44} /> : null;
+            })}
+          </span>
+          <span>
+            <b>The Kim family now</b>
+            <small className="muted">Family tree: who is who around Kim Jong Un, their ages, roles and the named successor</small>
+          </span>
+        </Link>
       </section>
 
       {GROUPS.map((g) => {

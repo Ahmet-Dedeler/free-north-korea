@@ -4,6 +4,7 @@ import Avatar from '@/components/Avatar';
 import PersonLink from '@/components/PersonLink';
 import { Ext } from '@/components/Ext';
 import { PEOPLE, RELATION_ORDER, age, currentRole, entityOrg, familyOf, isDead, person } from '@/entities';
+import { familyTreeIds } from '@/entities/familyTree';
 import type { Claim, NumberClaim } from '@/entities/types';
 import { absolute, jsonLd, pageMeta } from '@/site/seo';
 
@@ -162,7 +163,7 @@ export default async function PersonPage({ params }: Params) {
         <section>
           <h2>
             Family{' '}
-            {p.tags.includes('family') && (
+            {familyTreeIds().has(p.id) && (
               <small>
                 <Link href={`/kim-family-tree#${p.id}`}>See in the family tree</Link>
               </small>

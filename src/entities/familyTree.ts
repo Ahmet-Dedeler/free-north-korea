@@ -1,160 +1,145 @@
 /**
- * Layout for the Kim family tree (/kim-family-tree and /people).
+ * Layout for the Kim family tree on /kim-family-tree. It shows the family as it matters today, centred on the
+ * current leader, not the full history:
+ *   row 0: the leader's father, his living partners and his living siblings (the leader's aunts/uncles)
+ *   row 1: the father's children, each followed by their living partners
+ *   row 2: grandchildren, under their parents
+ * The dead are only kept when they connect living people (Kim Jong Il, Kim Jong Nam).
  *
- * Everything is computed at build time from data/entities/people.json, so the tree is plain server-rendered HTML + SVG
- * and updates itself when a person or family link is added. Rules:
- * - Blood members are the descendants of the oldest ancestor we have. People who married in sit to the right of
- *   their partner on the same row, joined by a marriage line.
- * - Children hang under the parent who married in (or under a dashed "not in our data" marker when the other
- *   parent isn't recorded), so a father with several partners shows which children came from whom.
- * - Subtrees are packed left to right by bounding box. Simple, never overlaps, and the Kim tree is small.
+ * Positions are in column units, not pixels, so the page can size the tree to its container: no sideways scrolling.
+ * Built at build time from data/entities/people.json; adding a person or family link updates it.
  */
-import { PEOPLE, familyOf } from '.';
-import type { Person } from './types';
+import { familyOf, isDead, person } from '.';
+import type { Person, Relation } from './types';
 
-export const CARD_W = 128;
-export const CARD_H = 150;
-const GAP = 14; // horizontal gap between cards
-const ROW = 220; // vertical distance between generations
-const GHOST_H = 34;
+export const LEADER = 'kim-jong-un';
 
 export interface TreeNode {
-  id: string; // person id, or `ghost:<parent>` for an unrecorded co-parent
-  person?: Person;
-  x: number; // left edge
-  y: number; // top edge
-  ghost?: boolean;
-  /** Ids this node is directly related to (parents, partners, children, siblings), for hover highlighting. */
-  related: string[];
+  person: Person;
+  col: number; // column of the card's left edge (may be fractional)
+  row: number;
+  relation: string; // what this person is to the leader ("Sister", "Daughter", ...)
+  related: string[]; // ids directly linked to this person, for hover highlighting
 }
 
 export interface TreeEdge {
-  d: string; // SVG path
   kind: 'marriage' | 'child';
-  ids: string[]; // people the edge touches, for highlighting
+  /** Points in (column, row-relative) units; rendered by FamilyTree.tsx. */
+  from: { col: number; row: number; at: 'bottom' | 'middle' };
+  to: { col: number; row: number };
+  ids: string[];
 }
 
 export interface FamilyTree {
   nodes: TreeNode[];
   edges: TreeEdge[];
-  width: number;
-  height: number;
-}
-
-interface Group {
-  coparent: Person | null; // null: the other parent isn't in our data
-  children: Person[];
-}
-
-interface Sub {
-  nodes: TreeNode[];
-  edges: TreeEdge[];
-  minX: number;
-  maxX: number;
+  cols: number;
+  rows: number;
 }
 
 const year = (p: Person) => p.born?.date ?? '9999';
+const byAge = (a: Person, b: Person) => year(a).localeCompare(year(b));
+const rel = (p: Person, ...r: Relation[]) => familyOf(p).filter((f) => r.includes(f.relation)).map((f) => f.person);
 
-export function buildFamilyTree(people: Person[] = PEOPLE.filter((p) => p.tags.includes('family'))): FamilyTree {
-  const ids = new Set(people.map((p) => p.id));
-  const rel = (p: Person, ...r: string[]) => familyOf(p).filter((f) => r.includes(f.relation) && ids.has(f.person.id)).map((f) => f.person);
-  const parents = (p: Person) => rel(p, 'father', 'mother');
+const LABEL: Record<Relation, [string, string]> = {
+  father: ['Father', 'Father'],
+  mother: ['Mother', 'Mother'],
+  spouse: ['Husband', 'Wife'],
+  child: ['Son', 'Daughter'],
+  sibling: ['Brother', 'Sister'],
+  'half-sibling': ['Half-brother', 'Half-sister'],
+  uncle: ['Uncle', 'Uncle'],
+  aunt: ['Aunt', 'Aunt'],
+  nephew: ['Nephew', 'Nephew'],
+  niece: ['Niece', 'Niece'],
+  'in-law': ['In-law', 'In-law'],
+};
 
-  // Root: the oldest person with no recorded parents who has children (Kim Hyong Jik). Their partner joins as a spouse.
-  const root = people
-    .filter((p) => parents(p).length === 0 && rel(p, 'child').length > 0)
-    .sort((a, b) => Number(b.gender === 'male') - Number(a.gender === 'male') || year(a).localeCompare(year(b)))[0];
-
-  /** Children of p, grouped by the other parent, ordered by the eldest child (childless partners last). */
-  const groups = (p: Person): Group[] => {
-    const out = new Map<string, Group>();
-    for (const s of rel(p, 'spouse')) out.set(s.id, { coparent: s, children: [] });
-    for (const c of rel(p, 'child')) {
-      const other = parents(c).find((x) => x.id !== p.id) ?? null;
-      const key = other?.id ?? '?';
-      if (!out.has(key)) out.set(key, { coparent: other, children: [] });
-      out.get(key)!.children.push(c);
-    }
-    const gs = [...out.values()];
-    gs.forEach((g) => g.children.sort((a, b) => year(a).localeCompare(year(b))));
-    const first = (g: Group) => (g.children[0] ? year(g.children[0]) : 'zzzz' + year(g.coparent!));
-    return gs.sort((a, b) => first(a).localeCompare(first(b)));
-  };
-
-  const relatedOf = (p: Person) => familyOf(p).filter((f) => ids.has(f.person.id)).map((f) => f.person.id);
-
-  const shift = (s: Sub, dx: number): Sub => ({
-    nodes: s.nodes.map((n) => ({ ...n, x: n.x + dx })),
-    edges: s.edges.map((e) => ({ ...e, d: e.d.replace(/(M|L|H) ?(-?[\d.]+)/g, (_, c, v) => `${c}${+v + dx}`) })),
-    minX: s.minX + dx,
-    maxX: s.maxX + dx,
-  });
-
-  const lay = (p: Person, depth: number): Sub => {
-    const y = depth * ROW;
-    const gs = groups(p);
-    if (!gs.length) return { nodes: [{ id: p.id, person: p, x: 0, y, related: relatedOf(p) }], edges: [], minX: 0, maxX: CARD_W };
-
-    const nodes: TreeNode[] = [];
-    const edges: TreeEdge[] = [];
-    let cursor = 0;
-    const slots: { node: TreeNode; children: TreeNode[] }[] = [];
-    for (const g of gs) {
-      // lay out this group's children side by side
-      const kids: TreeNode[] = [];
-      let kx = cursor;
-      for (const c of g.children) {
-        const sub = lay(c, depth + 1);
-        const placed = shift(sub, kx - sub.minX);
-        nodes.push(...placed.nodes);
-        edges.push(...placed.edges);
-        kids.push(placed.nodes.find((n) => n.id === c.id)!);
-        kx = placed.maxX + GAP;
-      }
-      const span = g.children.length ? kx - GAP - cursor : CARD_W;
-      const width = Math.max(span, CARD_W);
-      if (span < width) {
-        // a single narrow child under a partner card: centre it
-        const dx = (width - span) / 2;
-        for (const k of kids) k.x += dx;
-      }
-      const cx = cursor + width / 2;
-      const node: TreeNode = g.coparent
-        ? { id: g.coparent.id, person: g.coparent, x: cx - CARD_W / 2, y, related: relatedOf(g.coparent) }
-        : { id: `ghost:${p.id}:${slots.length}`, ghost: true, x: cx - CARD_W / 2, y: y + CARD_H / 2 - GHOST_H / 2, related: [p.id, ...g.children.map((c) => c.id)] };
-      nodes.push(node);
-      slots.push({ node, children: kids });
-      cursor += width + GAP;
-    }
-
-    // p sits just left of its first partner
-    const self: TreeNode = { id: p.id, person: p, x: slots[0].node.x - CARD_W - GAP, y, related: relatedOf(p) };
-    nodes.push(self);
-
-    // marriage line along the card middles, from p to the last partner
-    const my = y + CARD_H / 2;
-    const last = slots[slots.length - 1].node;
-    edges.push({ d: `M${self.x + CARD_W} ${my} H${last.x}`, kind: 'marriage', ids: [p.id, ...slots.map((s) => s.node.id)] });
-
-    // children: drop from the co-parent to a bus, then down to each child
-    for (const { node, children } of slots) {
-      if (!children.length) continue;
-      const top = node.ghost ? node.y + GHOST_H : node.y + CARD_H;
-      const bus = y + CARD_H + (ROW - CARD_H) / 2;
-      const pcx = node.x + CARD_W / 2;
-      // one path per child (they overlap on the shared bus), so a highlight shows exactly one parent-child line
-      for (const c of children) {
-        const x = c.x + CARD_W / 2;
-        edges.push({ d: `M${pcx} ${top} L${pcx} ${bus} H${x} L${x} ${y + ROW}`, kind: 'child', ids: [p.id, node.id, c.id] });
-      }
-    }
-
-    const xs = nodes.map((n) => n.x);
-    return { nodes, edges, minX: Math.min(...xs), maxX: Math.max(...xs) + CARD_W };
-  };
-
-  const full = lay(root, 0);
-  const placed = shift(full, -full.minX + 2);
-  const depth = Math.max(...placed.nodes.map((n) => n.y));
-  return { nodes: placed.nodes, edges: placed.edges, width: placed.maxX + 2, height: depth + CARD_H + 4 };
+/** What `p` is to the leader, in plain words. */
+function relationToLeader(leader: Person, p: Person, father: Person): string {
+  if (p.id === leader.id) return 'Supreme Leader';
+  const f = familyOf(leader).find((x) => x.person.id === p.id);
+  if (f) return LABEL[f.relation][p.gender === 'female' ? 1 : 0];
+  if (rel(father, 'spouse').some((s) => s.id === p.id)) return 'Father’s partner';
+  return 'Relative';
 }
+
+export function buildFamilyTree(): FamilyTree {
+  const leader = person(LEADER)!;
+  const father = rel(leader, 'father')[0];
+  const alive = (p: Person) => !isDead(p);
+
+  const children = rel(father, 'child').sort(byAge);
+  // a dead child stays only if they have living children (Kim Jong Nam -> Kim Han Sol)
+  const kept = children.filter((c) => alive(c) || rel(c, 'child').some(alive));
+
+  // row 1: each child, then their living partners
+  const row1: Person[] = [];
+  for (const c of kept) row1.push(c, ...rel(c, 'spouse').filter(alive));
+  const col1 = new Map(row1.map((p, i) => [p.id, i]));
+
+  // row 0: father's living siblings, the father, his living partners; centred over his children
+  const siblings = rel(father, 'sibling', 'half-sibling').filter(alive).sort(byAge);
+  const partners = rel(father, 'spouse').filter(alive);
+  const row0 = [...siblings, father, ...partners];
+  const kidsMid = (col1.get(kept[0].id)! + col1.get(kept[kept.length - 1].id)!) / 2;
+  let start0 = kidsMid - siblings.length;
+  start0 = Math.max(0, Math.min(start0, row1.length - row0.length));
+
+  // row 2: grandchildren under their parent (or between a parent couple)
+  const row2: { p: Person; col: number; parents: Person[] }[] = [];
+  for (const c of kept) {
+    for (const g of rel(c, 'child').filter(alive).sort(byAge)) {
+      const other = rel(g, 'father', 'mother').find((x) => x.id !== c.id && col1.has(x.id)) ?? null;
+      const col = other ? (col1.get(c.id)! + col1.get(other.id)!) / 2 : col1.get(c.id)!;
+      row2.push({ p: g, col, parents: other ? [c, other] : [c] });
+    }
+  }
+  // push right on collisions
+  row2.sort((a, b) => a.col - b.col);
+  for (let i = 1; i < row2.length; i++) row2[i].col = Math.max(row2[i].col, row2[i - 1].col + 1);
+
+  const placed: { p: Person; col: number; row: number }[] = [
+    ...row0.map((p, i) => ({ p, col: start0 + i, row: 0 })),
+    ...row1.map((p, i) => ({ p, col: i, row: 1 })),
+    ...row2.map((g) => ({ p: g.p, col: g.col, row: 2 })),
+  ];
+  const inTree = new Set(placed.map((x) => x.p.id));
+  const nodes: TreeNode[] = placed.map(({ p, col, row }) => ({
+    person: p,
+    col,
+    row,
+    relation: relationToLeader(leader, p, father),
+    related: familyOf(p).filter((f) => inTree.has(f.person.id)).map((f) => f.person.id),
+  }));
+  const at = new Map(nodes.map((n) => [n.person.id, n]));
+
+  const edges: TreeEdge[] = [];
+  // marriages: father and his partners, each child and their partners
+  for (const pt of partners) edges.push(marriage(at.get(father.id)!, at.get(pt.id)!));
+  for (const c of kept) for (const s of rel(c, 'spouse').filter((s) => at.has(s.id))) edges.push(marriage(at.get(c.id)!, at.get(s.id)!));
+  // father -> children
+  const f = at.get(father.id)!;
+  for (const c of kept) {
+    const n = at.get(c.id)!;
+    edges.push({ kind: 'child', from: { col: f.col, row: 0, at: 'bottom' }, to: { col: n.col, row: 1 }, ids: [father.id, c.id] });
+  }
+  // parents -> grandchildren (from the middle of the couple's marriage line, or the single parent's card)
+  for (const g of row2) {
+    const n = at.get(g.p.id)!;
+    const ps = g.parents.map((p) => at.get(p.id)!);
+    const couple = ps.length === 2;
+    const col = couple ? (ps[0].col + ps[1].col) / 2 : ps[0].col;
+    edges.push({ kind: 'child', from: { col, row: 1, at: couple ? 'middle' : 'bottom' }, to: { col: n.col, row: 2 }, ids: [...g.parents.map((p) => p.id), g.p.id] });
+  }
+
+  const cols = Math.max(...nodes.map((n) => n.col)) + 1;
+  return { nodes, edges, cols, rows: 3 };
+}
+
+function marriage(a: TreeNode, b: TreeNode): TreeEdge {
+  return { kind: 'marriage', from: { col: a.col, row: a.row, at: 'middle' }, to: { col: b.col, row: b.row }, ids: [a.person.id, b.person.id] };
+}
+
+/** Ids shown in the tree, so profile pages only link to it for people who are on it. */
+export const familyTreeIds = () => new Set(buildFamilyTree().nodes.map((n) => n.person.id));
