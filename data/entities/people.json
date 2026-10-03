@@ -1117,18 +1117,39 @@
   "rank": null,
   "roles": [
    {
-    "title": "Director of the Propaganda and Agitation Department of the Workers’ Party of Korea",
+    "title": "Director of the General Affairs Department of the Workers' Party of Korea",
     "org_id": null,
-    "start": "2015-07-24",
+    "start": "2026-02-28",
     "end": null,
-    "source_url": "https://www.wikidata.org/wiki/Q4330912"
+    "source_url": "https://en.wikipedia.org/wiki/Kim_Yo_Jong"
    },
    {
-    "title": "member of the Supreme People's Assembly",
+    "title": "Alternate member of the Politburo of the Workers' Party of Korea",
     "org_id": null,
-    "start": null,
+    "start": "2026-03",
     "end": null,
-    "source_url": "https://www.wikidata.org/wiki/Q4330912"
+    "source_url": "https://en.wikipedia.org/wiki/Kim_Yo_Jong"
+   },
+   {
+    "title": "Member of the State Affairs Commission",
+    "org_id": null,
+    "start": "2021-09-30",
+    "end": "2026-03-22",
+    "source_url": "https://en.wikipedia.org/wiki/Kim_Yo_Jong"
+   },
+   {
+    "title": "Deputy Director of the Propaganda and Agitation Department of the Workers' Party of Korea",
+    "org_id": null,
+    "start": "2014-11-28",
+    "end": "2026-02-23",
+    "source_url": "https://en.wikipedia.org/wiki/Kim_Yo_Jong"
+   },
+   {
+    "title": "Member of the Supreme People's Assembly",
+    "org_id": null,
+    "start": "2019-03-10",
+    "end": null,
+    "source_url": "https://en.wikipedia.org/wiki/Kim_Yo_Jong"
    }
   ],
   "family": [

@@ -414,6 +414,8 @@ for (const p of people) {
   const mark = (arr: Any[] = []) => arr.map((x) => ({ ...x, curated: true }));
   p.health = [...mark(c.health), ...p.health];
   p.notable = [...mark(c.notable), ...p.notable];
+  // roles: Wikidata lags on North Korean appointments, so a curated list replaces the Wikidata one
+  if (c.roles) p.roles = c.roles;
   if (c.physical) p.physical = { ...(p.physical ?? {}), ...Object.fromEntries(Object.entries(c.physical).map(([k, v]) => [k, { ...(v as Any), curated: true }])) };
 }
 
