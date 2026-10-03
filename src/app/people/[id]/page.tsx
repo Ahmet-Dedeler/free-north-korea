@@ -160,7 +160,14 @@ export default async function PersonPage({ params }: Params) {
 
       {family.length > 0 && (
         <section>
-          <h2>Family</h2>
+          <h2>
+            Family{' '}
+            {p.tags.includes('family') && (
+              <small>
+                <Link href={`/kim-family-tree#${p.id}`}>See in the family tree</Link>
+              </small>
+            )}
+          </h2>
           <ul className="family">
             {family.map((f) => (
               <li key={f.person.id}>

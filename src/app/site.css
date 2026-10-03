@@ -1032,22 +1032,6 @@ a.card:hover {
 .tree {
   margin-top: 8px;
 }
-.tree-row {
-  display: grid;
-  grid-template-columns: 150px 1fr;
-  gap: 16px;
-  padding: 14px 0;
-  border-bottom: 1px dashed var(--line);
-}
-.tree-label {
-  color: var(--ink-3);
-  font-size: 12.5px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  padding-top: 20px;
-}
-.tree-cards,
 .pgrid {
   display: flex;
   flex-wrap: wrap;
@@ -1101,7 +1085,9 @@ a.card:hover {
 .pcard-flag.sanction {
   color: var(--warn);
 }
-.pgroup h2 small {
+.pgroup h2 small,
+.tree h2 small,
+.dossier h2 small {
   font-size: 14px;
   font-weight: 400;
   color: var(--ink-3);
@@ -1281,13 +1267,6 @@ a.card:hover {
   .dossier-head {
     flex-direction: column;
     gap: 14px;
-  }
-  .tree-row {
-    grid-template-columns: 1fr;
-    gap: 6px;
-  }
-  .tree-label {
-    padding-top: 0;
   }
   .pcard {
     width: calc(50% - 5px);
@@ -1642,4 +1621,198 @@ ul.bars b {
 .maint-unknown,
 .watch-unknown {
   color: var(--ink-3);
+}
+
+/* ---------- Kim family tree (src/components/FamilyTree.tsx) ---------- */
+.ftree {
+  margin: 20px 0 28px;
+}
+.ftree-tools {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 14px;
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+.ftree-toggle {
+  border: 1px solid var(--line-strong);
+  background: var(--panel);
+  color: var(--ink);
+  border-radius: 999px;
+  padding: 6px 14px;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+.ftree-toggle.active {
+  background: var(--ink);
+  color: var(--ink-inverse);
+  border-color: var(--ink);
+}
+.ftree-scroll {
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--bg);
+  background-image: radial-gradient(var(--line) 1px, transparent 1px);
+  background-size: 18px 18px;
+  padding: 24px;
+  overscroll-behavior-x: contain;
+}
+.ftree-canvas {
+  position: relative;
+  margin: 0 auto;
+}
+.ftree-lines {
+  position: absolute;
+  inset: 0;
+  overflow: visible;
+}
+.ftree-edge {
+  fill: none;
+  stroke: var(--line-strong);
+  stroke-width: 1.5;
+  transition: stroke 0.15s, opacity 0.15s;
+}
+.ftree-edge.marriage {
+  stroke-dasharray: 5 4;
+}
+.ftree-card {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 2px;
+  padding: 10px 6px 8px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--panel);
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 12px;
+  transition: opacity 0.15s, box-shadow 0.15s, border-color 0.15s;
+}
+.ftree-card b {
+  margin-top: 4px;
+  font-size: 13px;
+  line-height: 1.2;
+}
+.ftree-card .ko {
+  color: var(--ink-3);
+  font-size: 11px;
+}
+.ftree-years {
+  color: var(--ink-2);
+  font-variant-numeric: tabular-nums;
+}
+.ftree-card.is-dead {
+  background: var(--hover);
+}
+.ftree-card.is-dead b {
+  color: var(--ink-2);
+}
+.ftree-card.is-ruler {
+  border: 2px solid var(--warn);
+}
+.ftree-badge {
+  margin-top: auto;
+  font-size: 10.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  line-height: 1.2;
+}
+.ftree-badge.ruler {
+  color: var(--warn);
+}
+.ftree-badge.fate {
+  color: var(--danger);
+}
+.ftree-ghost {
+  position: absolute;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px dashed var(--line-strong);
+  border-radius: 999px;
+  background: var(--panel);
+  color: var(--ink-3);
+  font-size: 11.5px;
+  transition: opacity 0.15s;
+}
+/* focus mode: dim everything except the hovered person and their direct relatives */
+.ftree-scroll.has-focus .ftree-card:not(.on),
+.ftree-scroll.has-focus .ftree-ghost:not(.on) {
+  opacity: 0.3;
+}
+.ftree-scroll.has-focus .ftree-edge:not(.on) {
+  opacity: 0.25;
+}
+.ftree-edge.on {
+  stroke: var(--accent);
+  stroke-width: 2.5;
+}
+.ftree-card.on {
+  border-color: var(--accent);
+  box-shadow: var(--shadow);
+}
+.ftree-card.is-focus {
+  outline: 3px solid var(--sel-ring);
+}
+.ftree-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 18px;
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+  color: var(--ink-2);
+  font-size: 12.5px;
+}
+.ftree-legend li {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.ftree-legend i {
+  display: inline-block;
+  width: 18px;
+  height: 12px;
+  border-radius: 4px;
+}
+.lg-ruler {
+  border: 2px solid var(--warn);
+}
+.lg-dead {
+  background: var(--hover);
+  border: 1px solid var(--line-strong);
+}
+.lg-marriage {
+  height: 0 !important;
+  border-top: 2px dashed var(--line-strong);
+  border-radius: 0 !important;
+}
+.lg-child {
+  height: 0 !important;
+  border-top: 2px solid var(--line-strong);
+  border-radius: 0 !important;
+}
+.lg-ghost {
+  border: 1px dashed var(--line-strong);
+  border-radius: 999px !important;
+}
+.ftree-notes {
+  max-width: 760px;
+}
+@media (max-width: 700px) {
+  .ftree-scroll {
+    padding: 14px;
+    margin: 0 -16px;
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+  }
 }

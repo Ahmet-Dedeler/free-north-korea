@@ -22,6 +22,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/library',
     '/learn',
     '/people',
+    '/kim-family-tree',
     '/sources',
     '/camps',
     '/places',

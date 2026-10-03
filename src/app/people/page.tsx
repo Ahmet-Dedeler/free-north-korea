@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Avatar from '@/components/Avatar';
-import { PEOPLE, age, currentRole, familyOf, isDead } from '@/entities';
+import FamilyTree from '@/components/FamilyTree';
+import { PEOPLE, age, currentRole, isDead } from '@/entities';
 import type { Person } from '@/entities/types';
 import { pageMeta } from '@/site/seo';
 
@@ -23,38 +24,6 @@ const GROUPS: { tag: string; title: string; hint: string }[] = [
   { tag: 'defector', title: 'Elite defectors', hint: 'Officials who escaped' },
 ];
 
-/** Generation number within the Kim family, counted down from the oldest ancestors we have. */
-function generations(family: Person[]) {
-  const ids = new Set(family.map((p) => p.id));
-  const gen = new Map<string, number>();
-  const parentsOf = (p: Person) => familyOf(p).filter((f) => (f.relation === 'father' || f.relation === 'mother') && ids.has(f.person.id)).map((f) => f.person);
-  const visit = (p: Person, seen = new Set<string>()): number => {
-    if (gen.has(p.id)) return gen.get(p.id)!;
-    if (seen.has(p.id)) return 0;
-    seen.add(p.id);
-    const ps = parentsOf(p);
-    const g = ps.length ? Math.max(...ps.map((x) => visit(x, seen))) + 1 : -1; // -1 = unknown yet
-    if (g >= 0) gen.set(p.id, g);
-    return g;
-  };
-  for (const p of family) visit(p);
-  // people with no parents in the graph: put them next to their spouse or sibling, else at the top
-  for (let pass = 0; pass < 3; pass++) {
-    for (const p of family) {
-      if (gen.has(p.id)) continue;
-      const peer = familyOf(p).find((f) => ['spouse', 'sibling', 'half-sibling'].includes(f.relation) && gen.has(f.person.id));
-      const child = familyOf(p).find((f) => f.relation === 'child' && gen.has(f.person.id));
-      if (peer) gen.set(p.id, gen.get(peer.person.id)!);
-      else if (child) gen.set(p.id, gen.get(child.person.id)! - 1);
-    }
-  }
-  for (const p of family) if (!gen.has(p.id)) gen.set(p.id, 0);
-  const min = Math.min(...gen.values());
-  const rows: Person[][] = [];
-  for (const p of family) (rows[gen.get(p.id)! - min] ??= []).push(p);
-  return rows.map((r) => r.sort((a, b) => (a.born?.date ?? '9999').localeCompare(b.born?.date ?? '9999')));
-}
-
 function Card({ p }: { p: Person }) {
   const a = age(p);
   const dead = isDead(p);
@@ -75,11 +44,6 @@ function Card({ p }: { p: Person }) {
 }
 
 export default function People() {
-  const family = PEOPLE.filter((p) => p.tags.includes('family'));
-  const rows = generations(family);
-  const LABEL = ['Ancestors', 'Kim Il Sung’s generation', 'Kim Jong Il’s generation', 'Kim Jong Un’s generation', 'The next generation'];
-  // which generation is Kim Il Sung in? label rows relative to him
-  const kisRow = rows.findIndex((r) => r.some((p) => p.id === 'kim-il-sung'));
   return (
     <div className="wide">
       <p className="eyebrow">People</p>
@@ -91,17 +55,10 @@ export default function People() {
       </p>
 
       <section className="tree">
-        <h2>The Kim family</h2>
-        {rows.map((row, i) => (
-          <div key={i} className="tree-row">
-            <span className="tree-label">{LABEL[i - kisRow + 1] ?? `Generation ${i + 1}`}</span>
-            <div className="tree-cards">
-              {row.map((p) => (
-                <Card key={p.id} p={p} />
-              ))}
-            </div>
-          </div>
-        ))}
+        <h2>
+          The Kim family <small><Link href="/kim-family-tree">Open the family tree page</Link></small>
+        </h2>
+        <FamilyTree />
       </section>
 
       {GROUPS.map((g) => {

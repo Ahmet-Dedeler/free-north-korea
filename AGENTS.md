@@ -15,6 +15,8 @@ searches like "how can North Korea be freed". SEO matters, so content must stay 
 - `src/map/`: the intel map (`/map`): `config.ts` (layers, county shading), `IntelMap.tsx` (MapLibre), `Explorer.tsx`
   (sidebar, search), `Detail.tsx` (county and point panels). Deep links: `/map#county=KP0205`, `/map#camps=camp-3`.
 - `src/entities/` + `src/app/people/`: people graph, profiles, hover cards (`PersonLink`), JSON at `/api/people`.
+  `/kim-family-tree` (also embedded on `/people`) is laid out at build time by `src/entities/familyTree.ts` from the
+  `family` links of people tagged `family`; adding a person or link there updates the tree. Deep link: `#kim-yo-jong`.
 - `src/missiles/`: the missile test explorer (redesign of nagix/nk-missile-tests). `data.ts` loads
   `public/data/*.en.json` (verbatim from upstream; keep them untouched so updates can be copied straight over).
   `meta.ts` holds missile class/outcome colours. Selection uses feature-state plus `*-selected` filter layers.
