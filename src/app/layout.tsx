@@ -14,6 +14,9 @@ export const metadata: Metadata = {
     'An open-source hub on North Korea: a map of prison camps and nuclear sites, military capability, every missile test, a library, and the organizations helping North Koreans, with clear ways to act.',
   applicationName: SITE_NAME,
   icons: { icon: '/favicon.svg', apple: '/favicon.svg' },
+  verification: {
+    google: 'zRiIRB-Q4rVRvS7j9UdUPrjrD-oMO8XxaeYi21lCtOg',
+  },
 };
 
 export const viewport: Viewport = {
