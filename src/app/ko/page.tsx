@@ -1,12 +1,19 @@
 import Link from 'next/link';
 import { KO_HUB, KO_ARTICLES } from '@/content/translations/ko';
 import { pageMeta } from '@/site/seo';
+import { HUB_PATHS } from '@/content/translations';
 
-export const metadata = pageMeta({
+export const metadata = {
+  ...pageMeta({
   title: KO_HUB.title,
   description: KO_HUB.description,
   path: '/ko',
-});
+  lang: 'ko',
+  languages: HUB_PATHS,
+  }),
+  // the hub title already names the site, so skip the "| Free North Korea" template
+  title: { absolute: KO_HUB.title },
+};
 
 export default function KoreanHubPage() {
   return (
@@ -31,6 +38,9 @@ export default function KoreanHubPage() {
         </Link>
         <Link href="/camps" className="chip">
           정치범수용소 도감 (24개소) →
+        </Link>
+        <Link href="/ko/sanctions" className="chip">
+          대북 제재 명단 →
         </Link>
         <Link href="/counties" className="chip">
           179개 시·군 인권 지도 →

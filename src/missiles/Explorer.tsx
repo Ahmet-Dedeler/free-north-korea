@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import { type Dataset, type MissileType, type Outcome, type Test, loadDataset } from './data';
 import { type ColorBy, OUTCOMES, OUTCOME_COLOR, TYPES, TYPE_COLOR, TYPE_LABEL, formatDate } from './meta';
@@ -163,8 +164,10 @@ function Explorer({ data }: { data: Dataset }) {
             Every known ballistic missile and space launch test, {data.minYear}–{data.maxYear}.{' '}
             <button className="link" onClick={() => setShowAbout(true)}>
               About the data
-            </button>
+            </button>{' '}
+            · <Link href="/missiles/list">Full list</Link>
           </p>
+          <p className="brand-asof">Latest test in the data: {formatDate(data.tests[0].date)}. Newer launches may not be listed yet.</p>
         </header>
 
         <div className="stats">

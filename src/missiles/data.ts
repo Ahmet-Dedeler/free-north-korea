@@ -161,14 +161,23 @@ async function getJSON<T>(url: string): Promise<T> {
   return res.json() as Promise<T>;
 }
 
+type RawTests = { timeBins: { year: number; data: RawTest[] }[] };
+type RawMissiles = Record<string, RawMissile>;
+type RawFacilities = { facilities: Record<string, RawFacility> };
+
+/** Fetches the three upstream files in the browser (the /missiles map). */
 export async function loadDataset(): Promise<Dataset> {
   const base = '/data/';
   const [testsRaw, missilesRaw, facilitiesRaw] = await Promise.all([
-    getJSON<{ timeBins: { year: number; data: RawTest[] }[] }>(base + 'test.en.json'),
-    getJSON<Record<string, RawMissile>>(base + 'missile.en.json'),
-    getJSON<{ facilities: Record<string, RawFacility> }>(base + 'facility.en.json'),
+    getJSON<RawTests>(base + 'test.en.json'),
+    getJSON<RawMissiles>(base + 'missile.en.json'),
+    getJSON<RawFacilities>(base + 'facility.en.json'),
   ]);
+  return buildDataset(testsRaw, missilesRaw, facilitiesRaw);
+}
 
+/** Pure: turns the raw upstream JSON into the dataset. Server pages import the JSON and call this directly. */
+export function buildDataset(testsRaw: RawTests, missilesRaw: RawMissiles, facilitiesRaw: RawFacilities): Dataset {
   const missiles = new Map(Object.entries(missilesRaw).map(([id, m]) => [id, { id, ...m }]));
   const facilities = new Map(Object.entries(facilitiesRaw.facilities).map(([id, f]) => [id, { id, ...f }]));
 

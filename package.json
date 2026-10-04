@@ -9,12 +9,13 @@
     "prebuild": "node scripts/copy-maplibre-worker.mjs",
     "build": "next build",
     "start": "next start",
-    "lint": "oxlint && tsc --noEmit"
+    "lint": "oxlint && tsc --noEmit && node scripts/check-translations.mjs"
   },
   "dependencies": {
     "lucide-react": "^1.50.0",
     "maplibre-gl": "^6.11.2",
     "next": "^16.3.8",
+    "posthog-js": "^1.435.8",
     "react": "^19.3.0",
     "react-dom": "^19.3.0",
     "simple-icons": "^16.33.0"

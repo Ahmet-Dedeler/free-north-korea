@@ -2,7 +2,8 @@
 
 import Link from 'next/link';
 import type { Feature } from 'geojson';
-import { LAYERS, type LayerId } from './config';
+import AsOf, { isStale } from '@/components/AsOf';
+import { LAYERS, MANIFEST, type LayerId } from './config';
 import type { Data, Selection } from './types';
 
 type P = Record<string, any>;
@@ -86,6 +87,10 @@ function CountyDetail({ f, data, onSelect }: { f: Feature; data: Data; onSelect:
         </div>
       </div>
 
+      <p className="d-asof">
+        <AsOf date="2008" label="Population from the census of" />
+      </p>
+
       <h3>
         Documented abuses <small>{n(p.incidents)} recorded by NKDB</small>
       </h3>
@@ -142,6 +147,8 @@ function PointDetail({ layer, f }: { layer: LayerId; f: Feature }) {
   if (p.url) extra.push({ name: layer === 'missile-bases' ? 'CSIS report' : 'Source', url: p.url });
   const src = parse<{ label: string; url: string } | null>(p.source, null);
   if (src) extra.push({ name: src.label, url: src.url });
+  // when the whole layer comes from an old survey (markets: 2018), say so on every point
+  const layerDate = MANIFEST.layers[layer]?.sources[0]?.updated;
 
   return (
     <>
@@ -197,6 +204,11 @@ function PointDetail({ layer, f }: { layer: LayerId; f: Feature }) {
         </p>
       )}
       {(p.note || p.summary) && <p>{p.note ?? p.summary}</p>}
+      {layerDate && isStale(layerDate) && (
+        <p className="d-asof">
+          <AsOf date={layerDate.slice(0, 7)} />
+        </p>
+      )}
       {p.published && <p className="muted">Report published {p.published}</p>}
       <p className="place-meta">
         {lat.toFixed(4)}°N, {lon.toFixed(4)}°E{p.approx ? ' (approximate)' : ''}

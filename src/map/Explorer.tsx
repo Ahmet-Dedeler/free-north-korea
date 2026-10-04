@@ -4,6 +4,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import dynamic from 'next/dynamic';
 import Link from 'next/link';
 import { useTheme } from '../theme';
+import { formatAsOf, isStale } from '@/components/AsOf';
 import { LAYERS, MANIFEST, SHADES, SHADE_COLORS, type LayerId, type Shade } from './config';
 import Detail from './Detail';
 import { type Data, type Selection, loadData } from './types';
@@ -154,7 +155,8 @@ export default function MapExplorer() {
                       {m && (
                         <small>
                           {m.sources.map((s) => s.name.split(',')[0]).join(' + ')}
-                          {m.sources[0]?.updated ? ` · ${m.sources[0].updated.slice(0, 7)}` : ''}
+                          {m.sources[0]?.updated ? ` · ${formatAsOf(m.sources[0].updated.slice(0, 7))}` : ''}
+                          {m.sources[0]?.updated && isStale(m.sources[0].updated) && <em className="layer-stale"> · may be outdated</em>}
                         </small>
                       )}
                     </span>

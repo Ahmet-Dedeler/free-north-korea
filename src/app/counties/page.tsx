@@ -1,3 +1,4 @@
+import AsOf from '@/components/AsOf';
 import { Lock, ShieldAlert, Store, Users } from 'lucide-react';
 import CountyExplorer, { type CountyRow } from '@/components/CountyExplorer';
 import { Ext } from '@/components/Ext';
@@ -41,6 +42,9 @@ export default function CountiesIndex() {
         <StatTile icon={Lock} value={sum('detention')} label="detention sites" tone="warn" />
         <StatTile icon={Store} value={sum('markets')} label="official markets" tone="ok" />
       </div>
+      <p>
+        <AsOf date="2008" label="Population from the census of" />
+      </p>
       <CountyExplorer rows={rows} provinces={getProvinceShapes().map((p) => ({ pcode: p.pcode, d: p.d }))} viewBox={`0 0 ${VIEW_W} ${VIEW_H}`} />
       <p className="muted small" style={{ marginTop: 16 }}>
         Sources: <Ext href="https://data.humdata.org/dataset/cod-ab-prk">UN OCHA boundaries</Ext>, <Ext href="https://data.humdata.org/dataset/cod-ps-prk">2008 census (UNFPA)</Ext>,{' '}

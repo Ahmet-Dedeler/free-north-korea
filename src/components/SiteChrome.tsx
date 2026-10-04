@@ -73,7 +73,7 @@ export default function SiteChrome({ children }: { children: ReactNode }) {
               <b>Free North Korea</b>
               <p>
                 An open-source hub for understanding North Korea and helping the 26 million people living under its regime. No ads, no
-                tracking, no affiliation with any government.
+                cookies, no affiliation with any government. Page views are counted anonymously.
               </p>
               <div style={{ marginTop: '0.8rem', fontSize: '0.88rem' }}>
                 <Link href="/ko">한국어 (Korean)</Link> · <Link href="/ja">日本語 (Japanese)</Link>
@@ -86,6 +86,8 @@ export default function SiteChrome({ children }: { children: ReactNode }) {
               <Link href="/places">Key strategic sites</Link>
               <Link href="/counties">179 counties</Link>
               <Link href="/missiles">Missile tests</Link>
+              <Link href="/missiles/list">Missile test list</Link>
+              <Link href="/sanctions">Sanctions</Link>
               <Link href="/library">Library</Link>
             </div>
             <div>

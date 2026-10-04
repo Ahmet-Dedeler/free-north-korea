@@ -89,7 +89,7 @@ export default async function CountyPage({ params }: Params) {
           </span>
           <h1>{county.name}</h1>
           <div className="tiles">
-            <StatTile icon={Users} value={county.pop ? county.pop.toLocaleString() : '—'} label="people" note="2008 census" />
+            <StatTile icon={Users} value={county.pop ? county.pop.toLocaleString() : '—'} label="people" note="2008 census, may be outdated" />
             <StatTile
               icon={Ruler}
               value={county.area.toLocaleString()}

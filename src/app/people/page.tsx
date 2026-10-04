@@ -50,7 +50,7 @@ export default function People() {
       <p className="lede">
         {PEOPLE.length} people: the Kim family and the officials around them. Hover a name for a quick card, click for the full profile with
         family, positions, health reports and sanctions. Every fact links to its source.{' '}
-        <a href="/api/people">Get it all as JSON</a>.
+        <a href="/api/people">Get it all as JSON</a>. For everyone on the UN and US lists, see <Link href="/sanctions">sanctions</Link>.
       </p>
 
       <section className="tree">

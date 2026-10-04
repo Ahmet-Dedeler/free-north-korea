@@ -734,3 +734,15 @@ a {
 :root[data-theme='dark'] .maplibregl-ctrl-attrib a {
   color: var(--ink-2);
 }
+.brand .brand-asof {
+  margin-top: 6px;
+  font-size: 12px;
+  color: var(--ink-3);
+}
+.layer-stale {
+  font-style: normal;
+  color: var(--warn);
+}
+.d-asof {
+  margin: 6px 0 10px;
+}

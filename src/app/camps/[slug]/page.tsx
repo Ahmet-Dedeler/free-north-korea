@@ -25,6 +25,7 @@ export async function generateMetadata({ params }: Params) {
     title: `${camp.name}: North Korea Prison Camp Dossier`,
     description: `${camp.name} (${camp.kind}): ${camp.status}. Located in ${camp.province}. ${camp.note}`,
     path: `/camps/${camp.slug}`,
+    image: `/camps/${camp.slug}/opengraph-image`,
   });
 }
 

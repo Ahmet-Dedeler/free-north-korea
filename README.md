@@ -10,6 +10,8 @@ search results for "how can North Korea be freed" were close to empty.
 - **Military** (`/military`): nukes, missiles, troops, artillery, crypto theft and the war in Ukraine, 2026 numbers.
 - **Missile tests** (`/missiles`): every test since 1984 on an interactive map (a redesign of
   [nagix/nk-missile-tests](https://github.com/nagix/nk-missile-tests), CNS database).
+- **Missile test list** (`/missiles/list`): the same tests as one plain table.
+- **Sanctions** (`/sanctions`): everyone on the UN and US Treasury lists, refreshed weekly from the official files.
 - **Organizations** (`/organizations`): who is doing rescue, information, documentation and resettlement work, with a
   status for each and how to help.
 - **Library** (`/library`): escapee memoirs, documentaries, UN reports, the regime's own sources, open data.
@@ -24,6 +26,10 @@ npm run dev      # http://localhost:3000
 npm run build    # static pages + sitemap.xml
 npm run lint     # oxlint + tsc
 ```
+
+Available in English, Korean (`/ko`) and Japanese (`/ja`).
+
+Analytics is off unless `NEXT_PUBLIC_POSTHOG_KEY` is set (see `.env.example`). It is cookieless and anonymous.
 
 ## Contributing
 

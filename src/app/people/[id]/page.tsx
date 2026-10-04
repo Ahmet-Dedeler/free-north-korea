@@ -21,6 +21,7 @@ export async function generateMetadata({ params }: Params) {
     title: `${p.name_en}${role ? `: ${role.title}` : ''}`,
     description: p.summary.slice(0, 160),
     path: `/people/${p.id}`,
+    image: `/people/${p.id}/opengraph-image`,
   });
 }
 
@@ -250,7 +251,12 @@ export default async function PersonPage({ params }: Params) {
 
       {p.sanctions.length > 0 && (
         <section>
-          <h2>Sanctions</h2>
+          <h2>
+            Sanctions{' '}
+            <small>
+              <Link href="/sanctions">everyone sanctioned →</Link>
+            </small>
+          </h2>
           <ul className="claims">
             {p.sanctions.map((s, i) => (
               <li key={i}>

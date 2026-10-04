@@ -1,12 +1,19 @@
 import Link from 'next/link';
 import { JA_HUB, JA_ARTICLES } from '@/content/translations/ja';
 import { pageMeta } from '@/site/seo';
+import { HUB_PATHS } from '@/content/translations';
 
-export const metadata = pageMeta({
+export const metadata = {
+  ...pageMeta({
   title: JA_HUB.title,
   description: JA_HUB.description,
   path: '/ja',
-});
+  lang: 'ja',
+  languages: HUB_PATHS,
+  }),
+  // the hub title already names the site, so skip the "| Free North Korea" template
+  title: { absolute: JA_HUB.title },
+};
 
 export default function JapaneseHubPage() {
   return (
@@ -34,6 +41,9 @@ export default function JapaneseHubPage() {
         </Link>
         <Link href="/places" className="chip">
           核・ミサイル関連重要拠点 →
+        </Link>
+        <Link href="/ja/sanctions" className="chip">
+          対北朝鮮制裁リスト →
         </Link>
         <Link href="/missiles" className="chip">
           ミサイル発射実験データベース →

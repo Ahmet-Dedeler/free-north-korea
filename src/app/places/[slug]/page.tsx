@@ -28,6 +28,7 @@ export async function generateMetadata({ params }: Params) {
     title: `${place.name}: North Korea Strategic Site Dossier`,
     description: `${place.name} (${place.categoryLabel}): ${place.note}`,
     path: `/places/${place.slug}`,
+    image: `/places/${place.slug}/opengraph-image`,
   });
 }
 

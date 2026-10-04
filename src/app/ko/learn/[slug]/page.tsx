@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { KO_ARTICLES } from '@/content/translations/ko';
+import { articleLanguages } from '@/content/translations';
+import { REVIEWED } from '@/site/config';
 import { Ext } from '@/components/Ext';
 import { absolute, jsonLd, pageMeta } from '@/site/seo';
 import { SITE_NAME, SITE_URL } from '@/site/config';
@@ -19,10 +21,13 @@ export async function generateMetadata({ params }: Params) {
   if (!a) return {};
 
   return pageMeta({
-    title: `${a.title} | 자유 북한`,
+    title: a.title,
     description: a.description,
     path: `/ko/learn/${a.slug}`,
     type: 'article',
+    lang: 'ko',
+    languages: articleLanguages(a.slug),
+    image: `/ko/learn/${a.slug}/opengraph-image`,
   });
 }
 
@@ -33,12 +38,13 @@ export default async function KoreanArticlePage({ params }: Params) {
 
   const others = KO_ARTICLES.filter((x) => x.slug !== a.slug);
 
-  const ld = {
+  const article = {
     '@context': 'https://schema.org',
     '@type': 'Article',
     headline: a.h1,
     description: a.description,
     inLanguage: 'ko',
+    dateModified: REVIEWED,
     mainEntityOfPage: absolute(`/ko/learn/${a.slug}`),
     publisher: {
       '@type': 'Organization',
@@ -46,6 +52,19 @@ export default async function KoreanArticlePage({ params }: Params) {
       url: SITE_URL,
     },
   };
+  const ld = [
+    article,
+    ...(a.faq?.length
+      ? [
+          {
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            inLanguage: 'ko',
+            mainEntity: a.faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
+          },
+        ]
+      : []),
+  ];
 
   return (
     <article className="prose">
@@ -56,7 +75,7 @@ export default async function KoreanArticlePage({ params }: Params) {
           <Link href="/ko">한국어 허브</Link> · 심층 해설 · {a.minutes}분 소요
         </p>
         <div style={{ fontSize: '0.82rem' }}>
-          <Link href="/learn" className="chip">English</Link>
+          <Link href={articleLanguages(a.slug).en ?? '/learn'} className="chip" hrefLang="en" lang="en">English</Link>
         </div>
       </div>
 
@@ -75,6 +94,20 @@ export default async function KoreanArticlePage({ params }: Params) {
             </div>
           ))}
         </div>
+      )}
+
+      {a.faq && a.faq.length > 0 && (
+        <>
+          <h2>자주 묻는 질문</h2>
+          <dl className="faq">
+            {a.faq.map((f) => (
+              <div key={f.q}>
+                <dt>{f.q}</dt>
+                <dd>{f.a}</dd>
+              </div>
+            ))}
+          </dl>
+        </>
       )}
 
       <aside className="act-box" style={{ marginTop: '2.5rem' }}>

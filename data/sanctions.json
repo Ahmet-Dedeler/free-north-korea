@@ -1,0 +1,5941 @@
+{
+ "_doc": "Built by scripts/build-sanctions.ts from the live UN and OFAC lists. Do not edit by hand.",
+ "fetched": "2026-10-04",
+ "sources": {
+  "un": "https://scsanctions.un.org/resources/xml/en/consolidated.xml",
+  "ofac": "https://www.treasury.gov/ofac/downloads/sdn.csv"
+ },
+ "un": {
+  "generated": "2026-10-03",
+  "individuals": [
+   {
+    "ref": "KPi.001",
+    "name": "Yun Ho-Jin",
+    "aliases": [
+     "Yun Ho-chin"
+    ],
+    "listed": "2009-07-16",
+    "role": "Director of Namchongang Trading Corporation",
+    "note": "Director of Namchongang Trading Corporation; oversees the import of items needed for the uranium enrichment program."
+   },
+   {
+    "ref": "KPi.002",
+    "name": "Ri Je-Son",
+    "aliases": [
+     "Ri Che-son"
+    ],
+    "listed": "2009-07-16",
+    "role": "Former Minister of Atomic Energy Industry.",
+    "note": "Former Minister of Atomic Energy Industry. Former Director of the General Bureau of Atomic Energy (GBAE), chief agency directing DPRK's nuclear program; facilitated several nuclear endeavors including GBAE's management of Yongbyon Nuclear Research Center and Namchongang Trading Corporation."
+   },
+   {
+    "ref": "KPi.003",
+    "name": "Hwang Sok-Hwa",
+    "aliases": [
+     "HWANG SOK HA"
+    ],
+    "listed": "2009-07-16",
+    "role": "Director in the General Bureau of Atomic Energy (GBAE)",
+    "note": "Director in the General Bureau of Atomic Energy (GBAE); involved in DPRK’s nuclear program; as Chief of the Scientific Guidance Bureau in the GBAE, served on the Science Committee inside the Joint Institute for Nuclear Research."
+   },
+   {
+    "ref": "KPi.004",
+    "name": "Ri Hong-Sop",
+    "aliases": [],
+    "listed": "2009-07-16",
+    "role": "Former director, Yongbyon Nuclear Research Center, and Head of Nuclear Weapons Institute",
+    "note": "Former director, Yongbyon Nuclear Research Center, oversaw three core facilities that assist in the production of weapons-grade plutonium: the Fuel Fabrication Facility, the Nuclear Reactor, and the Reprocessing Plant."
+   },
+   {
+    "ref": "KPi.005",
+    "name": "Han Yu-Ro",
+    "aliases": [],
+    "listed": "2009-07-16",
+    "role": "Director of Korea Ryongaksan General Trading Corporation",
+    "note": "Director of Korea Ryongaksan General Trading Corporation; involved in DPRK’s ballistic missile program."
+   },
+   {
+    "ref": "KPi.006",
+    "name": "Paek Chang-Ho",
+    "aliases": [
+     "Pak Chang-Ho",
+     "Paek Ch'ang-Ho"
+    ],
+    "listed": "2013-01-22",
+    "role": "Senior official and head of the satellite control center of Korean Committee for Space Technology",
+    "note": "Senior official and head of the satellite control center of Korean Committee for Space Technology."
+   },
+   {
+    "ref": "KPi.007",
+    "name": "Chang Myong-Chin",
+    "aliases": [
+     "Jang Myong-Jin"
+    ],
+    "listed": "2013-01-22",
+    "role": "General Manager of the Sohae Satellite Launching Station and head of launch center at which the 13 April and 12 December 2012 launches took place.",
+    "note": "General Manager of the Sohae Satellite Launching Station and head of launch center at which the 13 April and 12 December 2012 launches took place."
+   },
+   {
+    "ref": "KPi.008",
+    "name": "Ra Ky'ong-Su",
+    "aliases": [
+     "Ra Kyung-Su",
+     "Chang Myong Ho",
+     "Chang Myo’ng-Ho",
+     "Chang Myong-Ho",
+     "Ra Kyong-Su"
+    ],
+    "listed": "2013-01-22",
+    "role": "Tanchon Commercial Bank (TCB) official",
+    "note": "Ra Ky'ong-Su is a Tanchon Commercial Bank (TCB) official. In this capacity he has facilitated transactions for TCB. Tanchon was designated by the Committee in April 2009 as the main DPRK financial entity responsible for sales of conventional arms, ballistic missiles, and goods related to the assembly and manufacture of such weapons."
+   },
+   {
+    "ref": "KPi.009",
+    "name": "Kim Kwang-Il",
+    "aliases": [],
+    "listed": "2013-01-22",
+    "role": "Tanchon Commercial Bank (TCB) official",
+    "note": "Kim Kwang-il is a Tanchon Commercial Bank (TCB) official. In this capacity, he has facilitated transactions for TCB and the Korea Mining Development Trading Corporation (KOMID). Tanchon was designated by the Committee in April 2009 as the main DPRK financial entity responsible for sales of conventional arms, ballistic missiles, and goods related to the assembly and manufacture of such weapons. KOMID was designated by the Committee in April 2009 and is the DPRK’s primary arms dealer and main exporter of goods and equipment related to ballistic missiles and conventional weapons."
+   },
+   {
+    "ref": "KPi.010",
+    "name": "Yo'n Cho'ng Nam",
+    "aliases": [],
+    "listed": "2013-03-07",
+    "role": "Chief Representative for the Korea Mining Development Trading Corporation (KOMID)",
+    "note": "Chief Representative for the Korea Mining Development Trading Corporation (KOMID). The KOMID was designated by the Committee in April 2009 and is the DPRK’s primary arms dealer and main exporter of goods and equipment related to ballistic missiles and conventional weapons."
+   },
+   {
+    "ref": "KPi.011",
+    "name": "Ko Ch'o'l-Chae",
+    "aliases": [],
+    "listed": "2013-03-07",
+    "role": "Deputy Chief Representative for the Korea Mining Development Trading Corporation (KOMID)",
+    "note": "Deputy Chief Representative for the Korea Mining Development Trading Corporation (KOMID). The KOMID was designated by the Committee in April 2009 and is the DPRK’s primary arms dealer and main exporter of goods and equipment related to ballistic missiles and conventional weapons."
+   },
+   {
+    "ref": "KPi.012",
+    "name": "Mun Cho'ng-Ch'o'l",
+    "aliases": [
+     "Mun Chong-Chol"
+    ],
+    "listed": "2013-03-07",
+    "role": "Tanchon Commercial Bank (TCB) official",
+    "note": "Mun Cho'ng-Ch'o'l is a TCB official. In this capacity he has facilitated transactions for TCB. Tanchon was designated by the Committee in April 2009 is the main DPRK financial entity for sales of conventional arms, ballistic missiles, and goods related to the assembly and manufacture of such weapons."
+   },
+   {
+    "ref": "KPi.013",
+    "name": "Choe Chun-Sik",
+    "aliases": [
+     "Choe Chun Sik",
+     "Ch’oe Ch’un Sik"
+    ],
+    "listed": "2016-03-02",
+    "role": "Former Director of the Second Academy of Natural Sciences (SANS)",
+    "note": "Choe Chun-sik was the director of the Second Academy of Natural Sciences (SANS) and was the head of the DPRK’s long-range missile program."
+   },
+   {
+    "ref": "KPi.014",
+    "name": "Choe Song Il",
+    "aliases": [],
+    "listed": "2016-03-02",
+    "role": "Tanchon Commercial Bank Representative",
+    "note": "Served as the Tanchon Commercial Bank representative in Vietnam."
+   },
+   {
+    "ref": "KPi.015",
+    "name": "Hyon Kwang Il",
+    "aliases": [
+     "Hyon Gwang Il"
+    ],
+    "listed": "2016-03-02",
+    "role": "Department Director for Scientific Development at the National Aerospace Development Administration"
+   },
+   {
+    "ref": "KPi.016",
+    "name": "Jang Bom Su",
+    "aliases": [
+     "Jang Pom Su",
+     "Jang Hyon U"
+    ],
+    "listed": "2016-03-02",
+    "role": "Tanchon Commercial Bank Representative in Syria",
+    "note": "Pursuant to Resolution 2371(2017) the Security Council added the following information: New AKA: Jang Hyon U with date of birth 22 February 1958 and diplomatic passport number 836110034, which expires on 1 January 2020."
+   },
+   {
+    "ref": "KPi.017",
+    "name": "Jang Yong Son",
+    "aliases": [],
+    "listed": "2016-03-02",
+    "role": "Korea Mining Development Trading Corporation (KOMID) Representative",
+    "note": "Served as the KOMID representative in Iran."
+   },
+   {
+    "ref": "KPi.018",
+    "name": "Jon Myong Guk",
+    "aliases": [
+     "Cho’n Myo’ng-kuk",
+     "Jon Yong Sang"
+    ],
+    "listed": "2016-03-02",
+    "role": "Tanchon Commercial Bank Representative in Syria",
+    "note": "Pursuant to Resolution 2371(2017) the Security Council added the following information: New AKA: Jon Yong Sang with date of birth 25 August 1976 and diplomatic passport number 836110035, which expires on 1 January 2020."
+   },
+   {
+    "ref": "KPi.019",
+    "name": "Kang Mun Kil",
+    "aliases": [
+     "Jiang Wen-ji",
+     "Jian Wenji"
+    ],
+    "listed": "2016-03-02",
+    "note": "Kang Mun Kil has conducted nuclear procurement activities as a representative of Namchongang, also known as Namhung."
+   },
+   {
+    "ref": "KPi.020",
+    "name": "Kang Ryong",
+    "aliases": [],
+    "listed": "2016-03-02",
+    "role": "Former Korea Mining Development Trading Corporation (KOMID) Representative in Syria"
+   },
+   {
+    "ref": "KPi.021",
+    "name": "Kim Jung Jong",
+    "aliases": [
+     "Kim Chung Chong"
+    ],
+    "listed": "2016-03-02",
+    "role": "Tanchon Commercial Bank Representative",
+    "note": "Served as the Tanchon Commercial Bank representative in Vietnam."
+   },
+   {
+    "ref": "KPi.022",
+    "name": "Kim Kyu",
+    "aliases": [],
+    "listed": "2016-03-02",
+    "role": "Korea Mining Development Trading Corporation (KOMID) External Affairs Officer"
+   },
+   {
+    "ref": "KPi.023",
+    "name": "Kim Tong My’ong",
+    "aliases": [
+     "Kim Chin-So’k",
+     "Kim Tong-Myong",
+     "Kim Jin-Sok",
+     "Kim Hyok-Chol",
+     "Kim Tong-Myo’ng",
+     "Kim Tong Myong"
+    ],
+    "listed": "2016-03-02",
+    "role": "President of Tanchon Commercial Bank",
+    "note": "Kim Tong My’ong is the President of Tanchon Commercial Bank and has held various positions within Tanchon Commercial bank since at least 2002. He has also played a role in managing Amroggang’s affairs."
+   },
+   {
+    "ref": "KPi.024",
+    "name": "Kim Yong Chol",
+    "aliases": [
+     "Kim Yong-Chol",
+     "Kim Young-Chol",
+     "Kim Young-Cheol",
+     "Young-Chul"
+    ],
+    "listed": "2016-03-02",
+    "role": "KOMID Representative",
+    "note": "Served as the KOMID representative in Iran."
+   },
+   {
+    "ref": "KPi.025",
+    "name": "Ko Tae Hun",
+    "aliases": [
+     "Kim Myong Gi"
+    ],
+    "listed": "2016-03-02",
+    "role": "Tanchon Commercial Bank official"
+   },
+   {
+    "ref": "KPi.026",
+    "name": "Ri Man Gon",
+    "aliases": [],
+    "listed": "2016-03-02",
+    "role": "Former Minister of the Munitions Industry Department"
+   },
+   {
+    "ref": "KPi.027",
+    "name": "Ryu Jin",
+    "aliases": [],
+    "listed": "2016-03-02",
+    "role": "KOMID Representative in Syria"
+   },
+   {
+    "ref": "KPi.028",
+    "name": "Yu Chol U",
+    "aliases": [],
+    "listed": "2016-03-02",
+    "role": "Director of the National Aerospace Development Administration"
+   },
+   {
+    "ref": "KPi.029",
+    "name": "Pak Chun Il",
+    "aliases": [],
+    "listed": "2016-11-30",
+    "role": "Served as DPRK Ambassador to Egypt",
+    "note": "Pak Chun Il has served as the DPRK Ambassador to Egypt and provides support to KOMID. He concluded his tour of duty and left Egypt on 15 November 2016."
+   },
+   {
+    "ref": "KPi.030",
+    "name": "Kim Song Chol",
+    "aliases": [
+     "Kim Hak Song"
+    ],
+    "listed": "2016-11-30",
+    "note": "Kim Song Chol is a KOMID official that has conducted business in Sudan on behalf of KOMID’s interests."
+   },
+   {
+    "ref": "KPi.031",
+    "name": "Son Jong Hyok",
+    "aliases": [
+     "Son Min"
+    ],
+    "listed": "2016-11-30",
+    "note": "Son Jong Hyok is a KOMID official that has conducted business in Sudan on behalf of KOMID’s interests."
+   },
+   {
+    "ref": "KPi.032",
+    "name": "Kim Se Gon",
+    "aliases": [],
+    "listed": "2016-11-30",
+    "note": "Kim Se Gon works on behalf of the Ministry of Atomic Energy Industry."
+   },
+   {
+    "ref": "KPi.033",
+    "name": "Ri Won Ho",
+    "aliases": [],
+    "listed": "2016-11-30",
+    "role": "DPRK Ministry of State Security Official",
+    "note": "Ri Won Ho is a DPRK Ministry of State Security Official stationed in Syria supporting KOMID."
+   },
+   {
+    "ref": "KPi.034",
+    "name": "Jo Yong Chol",
+    "aliases": [
+     "Cho Yong Chol"
+    ],
+    "listed": "2016-11-30",
+    "role": "DPRK Ministry of State Security Official",
+    "note": "Jo Yong Chol is a DPRK Ministry of State Security Official stationed in Syria supporting KOMID."
+   },
+   {
+    "ref": "KPi.035",
+    "name": "Kim Chol Sam",
+    "aliases": [
+     "Jin Tiesan (金铁三)"
+    ],
+    "listed": "2016-11-30",
+    "role": "Representative for Daedong Credit Bank (DCB)",
+    "note": "Kim Chol Sam is a representative for Daedong Credit Bank (DCB) who has been involved in managing transactions on behalf of DCB Finance Limited. As an overseas-based representative of DCB, it is suspected that Kim Chol Sam has facilitated transactions worth hundreds of thousands of dollars and likely managed millions of dollars in DPRK related accounts with potential links to nuclear/missile programs."
+   },
+   {
+    "ref": "KPi.036",
+    "name": "Kim Sok Chol",
+    "aliases": [],
+    "listed": "2016-11-30",
+    "role": "Former DPRK Ambassador to Burma",
+    "note": "Kim Sok Chol acted as the DPRK Ambassador to Burma and he operates as a KOMID facilitator. He was paid by KOMID for his assistance and arranges meetings on behalf of KOMID, including a meeting between KOMID and Burmese defense related persons to discuss financial matters."
+   },
+   {
+    "ref": "KPi.037",
+    "name": "Chang Chang Ha",
+    "aliases": [
+     "Jang Chang Ha"
+    ],
+    "listed": "2016-11-30",
+    "role": "President of the Second Academy of Natural Sciences (SANS)"
+   },
+   {
+    "ref": "KPi.038",
+    "name": "Cho Chun Ryong",
+    "aliases": [
+     "Jo Chun Ryong"
+    ],
+    "listed": "2016-11-30",
+    "role": "Chairman of the Second Economic Committee (SEC)"
+   },
+   {
+    "ref": "KPi.039",
+    "name": "Son Mun San",
+    "aliases": [],
+    "listed": "2016-11-30",
+    "role": "Director-General of the External Affairs Bureau of the General Bureau of Atomic Energy (GBAE)"
+   },
+   {
+    "ref": "KPi.040",
+    "name": "Cho Il U",
+    "aliases": [
+     "Cho Il Woo",
+     "Cho Ch’o’l",
+     "Jo Chol"
+    ],
+    "listed": "2017-06-02",
+    "role": "Director of the Fifth Bureau of the Reconnaissance General Bureau",
+    "note": "Cho is believed to be in charge of overseas espionage operations and foreign intelligence collection for the Democratic People's Republic of Korea."
+   },
+   {
+    "ref": "KPi.041",
+    "name": "Cho Yon Chun",
+    "aliases": [
+     "Jo Yon Jun"
+    ],
+    "listed": "2017-06-02",
+    "role": "Vice Director of the Organization and Guidance Department, which directs key personnel appointments for the Workers’ Party of Korea and the DPRK’s military"
+   },
+   {
+    "ref": "KPi.042",
+    "name": "Choe Hwi",
+    "aliases": [],
+    "listed": "2017-06-02",
+    "role": "First Vice Director of the Workers' Party of Korea Propaganda and Agitation Department, which controls all DPRK media and is used by the government to control the public",
+    "note": "Gender: male."
+   },
+   {
+    "ref": "KPi.043",
+    "name": "Jo Yong-Won",
+    "aliases": [
+     "Cho Yongwon"
+    ],
+    "listed": "2017-06-02",
+    "role": "Secretary and Chief of Organization and Guidance Department of the Worker’s Party of Korea",
+    "note": "Gender: male"
+   },
+   {
+    "ref": "KPi.044",
+    "name": "Kim Chol Nam",
+    "aliases": [],
+    "listed": "2017-06-02",
+    "role": "President of Korea Kumsan Trading Corporation, a company that procures supplies for General Bureau of Atomic Energy and serves as a cash route to the DPRK"
+   },
+   {
+    "ref": "KPi.045",
+    "name": "Kim Kyong Ok",
+    "aliases": [
+     "Kim Kyong Ok"
+    ],
+    "listed": "2017-06-02",
+    "role": "Vice Director of the Organization and Guidance Department, which directs key personnel appointments for the Workers’ Party of Korea and the DPRK’s military"
+   },
+   {
+    "ref": "KPi.046",
+    "name": "Kim Tong-Ho",
+    "aliases": [],
+    "listed": "2017-06-02",
+    "role": "Vietnam Representative for Tanchon Commercial Bank, which is the main DPRK financial entity for weapons and missile-related sales",
+    "note": "Gender: male."
+   },
+   {
+    "ref": "KPi.047",
+    "name": "Min Byong Chol",
+    "aliases": [
+     "Min Pyo’ng-ch’o’l",
+     "Min Byong-chol",
+     "Min Byong Chun"
+    ],
+    "listed": "2017-06-02",
+    "role": "Member of the Worker’s Party of Korea’s Organization and Guidance Department, which directs key personnel appointments for the Workers’ Party of Korea and the DPRK’s military",
+    "note": "Gender: male"
+   },
+   {
+    "ref": "KPi.048",
+    "name": "Paek Se Bong",
+    "aliases": [
+     "Paek Se Pong"
+    ],
+    "listed": "2017-06-02",
+    "note": "Paek Se Bong is a former Chairman of the Second Economic Committee, a former member of the National Defense Commission, and a former Vice Director of Munitions Industry Department (MID)"
+   },
+   {
+    "ref": "KPi.049",
+    "name": "Pak Han Se",
+    "aliases": [
+     "Kang Myong Chol"
+    ],
+    "listed": "2017-06-02",
+    "role": "Vice Chairman of the Second Economic Committee, which oversees the production of the DPRK’s ballistic missiles",
+    "note": "Directs the activities of Korea Mining Development Corporation, the DPRK’s premier arms dealer and main exporter of goods and equipment related to ballistic missiles and conventional weapons."
+   },
+   {
+    "ref": "KPi.050",
+    "name": "Pak To Chun",
+    "aliases": [
+     "Pak Do Chun",
+     "Pak To’-Ch’un"
+    ],
+    "listed": "2017-06-02",
+    "note": "Pak To Chun is a former Secretary of Munitions Industry Department (MID) and currently advises on affairs relating to nuclear and missile programmes. He is a former State Affairs Commission member and is a member Workers’ Party of Korea Political Bureau. Died on 27 July 2022."
+   },
+   {
+    "ref": "KPi.051",
+    "name": "Ri Jae Il",
+    "aliases": [
+     "RI Chae-Il"
+    ],
+    "listed": "2017-06-02",
+    "role": "Vice Director of the Workers’ Party of Korea Propaganda and Agitation Department, which controls all DPRK’s media and is used by the government to control the public",
+    "note": "Died on 4 February 2021."
+   },
+   {
+    "ref": "KPi.052",
+    "name": "Ri Su Yong",
+    "aliases": [],
+    "listed": "2017-06-02",
+    "role": "Official for Korea Ryonbong General Corporation, specializes in acquisition for DPRK’s defence industries and support to Pyongyang’s military-related sales. Its procurements also probably support the DPRK’s chemical weapons programme",
+    "note": "Gender: male. Served as Korea Ryonbong General Corporation representative in Cuba."
+   },
+   {
+    "ref": "KPi.053",
+    "name": "Ri Yong Mu",
+    "aliases": [
+     "Ri Yong-Mu"
+    ],
+    "listed": "2017-06-02",
+    "role": "Ri Yong Mu is a Vice Chairman of the State Affairs Commission, which directs and guides all DPRK’s military, defence, and security-related affairs, including acquisition and procurement",
+    "note": "Died on 27 January 2022."
+   },
+   {
+    "ref": "KPi.054",
+    "name": "Choe Chun Yong",
+    "aliases": [
+     "Ch’oe Ch’un-yo’ng"
+    ],
+    "listed": "2017-08-05",
+    "role": "Representative for Ilsim International Bank",
+    "note": "Representative for Ilsim International Bank, which is affiliated with the DPRK military and has a close relationship with the Korea Kwangson Banking Corporation. Ilsim International Bank has attempted to evade United Nations sanctions. Gender: male."
+   },
+   {
+    "ref": "KPi.055",
+    "name": "Han Jang Su",
+    "aliases": [
+     "Chang-Su Han"
+    ],
+    "listed": "2017-08-05",
+    "role": "Former Representative of the Foreign Trade Bank",
+    "note": "Gender: male"
+   },
+   {
+    "ref": "KPi.056",
+    "name": "Jang Song Chol",
+    "aliases": [],
+    "listed": "2017-08-05",
+    "role": "Jang Song Chol is a Korea Mining Development Corporation (KOMID) representative overseas"
+   },
+   {
+    "ref": "KPi.057",
+    "name": "Jang Sung Nam",
+    "aliases": [],
+    "listed": "2017-08-05",
+    "role": "Chief of an overseas Tangun Trading Corporation branch",
+    "note": "Chief of an overseas Tangun Trading Corporation branch, which is primarily responsible for the procurement of commodities and technologies to support the DPRK’s defense research and development programs. Gender: male"
+   },
+   {
+    "ref": "KPi.058",
+    "name": "Jo Chol Song",
+    "aliases": [
+     "Cho Ch’o’l-so’ng"
+    ],
+    "listed": "2017-08-05",
+    "role": "Representative for the Korea Kwangson Banking Corporation",
+    "note": "Deputy Representative for the Korea Kwangson Banking Corporation, which provides financial services in support to Tanchon Commercial Bank and Korea Hyoksin Trading, a subordinate entity of Korea Ryonbong General Corporation. Gender: male."
+   },
+   {
+    "ref": "KPi.059",
+    "name": "Kang Chol Su",
+    "aliases": [],
+    "listed": "2017-08-05",
+    "role": "Official for Korea Ryonbong General Corporation",
+    "note": "Official for Korea Ryonbong General Corporation, which specializes in acquisition for the DPRK’s defense industries and support for the DPRK’s military-related overseas sales. Its procurements also likely support the DPRK’s chemical weapons program."
+   },
+   {
+    "ref": "KPi.060",
+    "name": "Kim Mun Chol",
+    "aliases": [
+     "Kim Mun-ch’o’l"
+    ],
+    "listed": "2017-08-05",
+    "role": "Representative for Korea United Development Bank"
+   },
+   {
+    "ref": "KPi.061",
+    "name": "Kim Nam Ung",
+    "aliases": [],
+    "listed": "2017-08-05",
+    "role": "Representative for Ilsim International Bank",
+    "note": "Representative for Ilsim International Bank, which is affiliated with the DPRK military and has a close relationship with the Korea Kwangson Banking Corporation. Ilsim International Bank has attempted to evade United Nations sanctions."
+   },
+   {
+    "ref": "KPi.062",
+    "name": "Pak Il Kyu",
+    "aliases": [
+     "Pak Il-Gyu"
+    ],
+    "listed": "2017-08-05",
+    "role": "Official for Korea Ryonbong General Corporation",
+    "note": "Official for Korea Ryonbong General Corporation, which specializes in acquisition for DPRK’s defense industries and support to Pyongyang’s military-related sales. Its procurements also likely support the DPRK’s chemical weapons program. Gender: male."
+   },
+   {
+    "ref": "KPi.063",
+    "name": "Pak Yong Sik",
+    "aliases": [
+     "Pak Yo’ng-sik"
+    ],
+    "listed": "2017-09-11",
+    "role": "Former Member of the Workers’ Party of Korea Central Military Commission",
+    "note": "Pak Yong Sik is a member of the Workers’ Party of Korea Central Military Commission, which is responsible for the development and implementation of the Workers’ Party of Korea military policies, commands and controls the DPRK’s military, and helps direct the country’s military defense industries."
+   },
+   {
+    "ref": "KPi.064",
+    "name": "Ch'oe So’k Min",
+    "aliases": [
+     "Choe Sok Min"
+    ],
+    "listed": "2017-12-22",
+    "role": "Former overseas Foreign Trade Bank representative",
+    "note": "In 2016, Ch’oe So’k-min was the deputy representative at the Foreign Trade Bank branch office in that overseas location. He has been associated with cash transfers from that overseas Foreign Trade Bank office to banks affiliated with North Korean special organizations and Reconnaissance General Bureau operatives located overseas in an effort to evade sanctions. Gender: male.in response to the DPRK test of an ICBM on 28 November 2017"
+   },
+   {
+    "ref": "KPi.065",
+    "name": "Chu Hyo’k",
+    "aliases": [
+     "Ju Hyok"
+    ],
+    "listed": "2017-12-22",
+    "role": "Former overseas Foreign Trade Bank Deputy representative",
+    "note": "Gender: male"
+   },
+   {
+    "ref": "KPi.066",
+    "name": "Kim Jong Sik",
+    "aliases": [
+     "Kim Cho’ng-sik"
+    ],
+    "listed": "2017-12-22",
+    "role": "A leading official guiding the DPRK’s WMD development efforts. Serving as Deputy Director of the Workers’ Party of Korea Munitions Industry Department",
+    "note": "Gender: male"
+   },
+   {
+    "ref": "KPi.067",
+    "name": "Kim Kyong Il",
+    "aliases": [
+     "Kim Kyo'ng-il"
+    ],
+    "listed": "2017-12-22",
+    "role": "Kim Kyong Il is a Foreign Trade Bank deputy chief representative in Libya",
+    "note": "Location Libya. Gender: male"
+   },
+   {
+    "ref": "KPi.068",
+    "name": "Kim Tong Chol",
+    "aliases": [
+     "Kim Tong-ch'o'l"
+    ],
+    "listed": "2017-12-22",
+    "role": "Former overseas Foreign Trade Bank Deputy representative",
+    "note": "Gender: male"
+   },
+   {
+    "ref": "KPi.069",
+    "name": "Ko Chol Man",
+    "aliases": [
+     "Ko Ch'o'l-man"
+    ],
+    "listed": "2017-12-22",
+    "role": "Ko Chol Man is an overseas Foreign Trade Bank representative",
+    "note": "Gender: male"
+   },
+   {
+    "ref": "KPi.070",
+    "name": "Ku Ja Hyong",
+    "aliases": [
+     "Ku Cha-hyo'ng"
+    ],
+    "listed": "2017-12-22",
+    "role": "Ku Ja Hyong is a Foreign Trade Bank chief representative in Libya",
+    "note": "Location Libya. Gender: male"
+   },
+   {
+    "ref": "KPi.071",
+    "name": "Mun Kyong Hwan",
+    "aliases": [
+     "Mun Kyo'ng-hwan"
+    ],
+    "listed": "2017-12-22",
+    "role": "Mun Kyong Hwan is an overseas Bank of East Land representative",
+    "note": "Gender: male"
+   },
+   {
+    "ref": "KPi.072",
+    "name": "Pae Won Uk",
+    "aliases": [
+     "Pae Wo'n-uk"
+    ],
+    "listed": "2017-12-22",
+    "role": "Pae Won Uk is an overseas Daesong Bank representative",
+    "note": "Gender: male"
+   },
+   {
+    "ref": "KPi.073",
+    "name": "Pak Bong Nam",
+    "aliases": [
+     "Lui Wai Ming",
+     "Pak Pong Nam",
+     "Pak Pong-nam"
+    ],
+    "listed": "2017-12-22",
+    "role": "Pak Bong Nam is an overseas Ilsim International Bank representative",
+    "note": "Gender: male"
+   },
+   {
+    "ref": "KPi.074",
+    "name": "Ri Chun Hwan",
+    "aliases": [
+     "Ri Ch'un-hwan"
+    ],
+    "listed": "2017-12-22",
+    "role": "Ri Chun Hwan is an overseas Foreign Trade Bank representative",
+    "note": "Gender: male"
+   },
+   {
+    "ref": "KPi.075",
+    "name": "Ri Chun Song",
+    "aliases": [
+     "Ri Ch'un-so'ng"
+    ],
+    "listed": "2017-12-22",
+    "role": "Ri Chun Song is an overseas Foreign Trade Bank representative",
+    "note": "Gender: male"
+   },
+   {
+    "ref": "KPi.076",
+    "name": "Ri Pyong Chul",
+    "aliases": [
+     "Ri Pyo’ng-ch’o’l",
+     "Ri Pyong Chol"
+    ],
+    "listed": "2017-12-22",
+    "role": "Vice Chairman of the Workers’ Party of Korea (WPK) Central Military Commission",
+    "note": "Gender: male"
+   },
+   {
+    "ref": "KPi.077",
+    "name": "Ri Song Hyok",
+    "aliases": [
+     "Li Cheng He"
+    ],
+    "listed": "2017-12-22",
+    "role": "Ri Song Hyok is an overseas representative for Koryo Bank and Koryo Credit Development Bank",
+    "note": "Ri Song Hyok has reportedly established front companies to procure items and conduct financial transactions on behalf of North Korea. Gender: male"
+   },
+   {
+    "ref": "KPi.078",
+    "name": "Ri U’n So’ng",
+    "aliases": [
+     "Ri Eun Song",
+     "Ri Un Song"
+    ],
+    "listed": "2017-12-22",
+    "role": "Former overseas Korea Unification Development Bank representative",
+    "note": "Gender: male"
+   },
+   {
+    "ref": "KPi.079",
+    "name": "Pak Mun Il",
+    "aliases": [
+     "Pak Mun-il"
+    ],
+    "listed": "2017-12-22",
+    "role": "Former overseas representative of Korea Daesong Bank",
+    "note": "Gender: male"
+   },
+   {
+    "ref": "KPi.080",
+    "name": "Tsang Yung Yuan",
+    "aliases": [
+     "Neil Tsang",
+     "Yun Yuan Tsang"
+    ],
+    "listed": "2018-03-30",
+    "note": "Tsang Yung Yuan has coordinated DPRK coal exports with a DPRK broker operating in a third country, and he has a history of other sanctions evasion activities."
+   }
+  ],
+  "entities": [
+   {
+    "ref": "KPe.001",
+    "name": "Korea Mining Development Trading Corporation",
+    "aliases": [
+     "CHANGGWANG SINYONG CORPORATION",
+     "EXTERNAL TECHNOLOGY GENERAL CORPORATION",
+     "DPRKN MINING DEVELOPMENT TRADING COOPERATION",
+     "\"KOMID\""
+    ],
+    "listed": "2009-04-24",
+    "note": "Primary arms dealer and main exporter of goods and equipment related to ballistic missiles and conventional weapons."
+   },
+   {
+    "ref": "KPe.002",
+    "name": "Korea Ryonbong General Corporation",
+    "aliases": [
+     "KOREA YONBONG GENERAL CORPORATION",
+     "LYONGAKSAN GENERAL TRADING CORPORATION"
+    ],
+    "listed": "2009-04-24",
+    "note": "Defense conglomerate specializing in acquisition for DPRK defense industries and support to that country’s military-related sales."
+   },
+   {
+    "ref": "KPe.003",
+    "name": "Tanchon Commercial Bank",
+    "aliases": [
+     "CHANGGWANG CREDIT BANK",
+     "KOREA CHANGGWANG CREDIT BANK"
+    ],
+    "listed": "2009-04-24",
+    "note": "Main DPRK financial entity for sales of conventional arms, ballistic missiles, and goods related to the assembly and manufacture of such weapons."
+   },
+   {
+    "ref": "KPe.004",
+    "name": "Namchongang Trading Corporation",
+    "aliases": [
+     "NCG",
+     "NAMCHONGANG TRADING",
+     "NAM CHON GANG CORPORATION",
+     "NOMCHONGANG TRADING CO.",
+     "NAM CHONG GAN TRADING CORPORATION",
+     "Namhung Trading Corporation"
+    ],
+    "listed": "2009-07-16",
+    "note": "Namchongang is a DPRK trading company subordinate to the General Bureau of Atomic Energy (GBAE). Namchongang has been involved in the procurement of Japanese origin vacuum pumps that were identified at a DPRK nuclear facility, as well as nuclear-related procurement associated with a German individual. It has further been involved in the purchase of aluminum tubes and other equipment specifically suitable for a uranium enrichment program from the late 1990s. Its representative is a former diplomat who served as DPRK’s representative for the IAEA inspection of the Yongbyon nuclear facilities in 2007. Namchongang's proliferation activities are of grave concern given the DPRK’s past proliferation activities. Telephone numbers: +850-2-18111, 18222 (ext. 8573). Facsimile number: +850-2-381-4687."
+   },
+   {
+    "ref": "KPe.005",
+    "name": "Hong Kong Electronics",
+    "aliases": [
+     "HONG KONG ELECTRONICS KISH CO."
+    ],
+    "listed": "2009-07-16",
+    "note": "Owned or controlled by, or acts or purports to act for or on behalf of Tanchon Commercial Bank and KOMID. Hong Kong Electronics has transferred millions of dollars of proliferation-related funds on behalf of Tanchon Commercial Bank and KOMID (both designated by the Committee in April 2009) since 2007. Hong Kong Electronics has facilitated the movement of money from Iran to the DPRK on behalf of KOMID."
+   },
+   {
+    "ref": "KPe.006",
+    "name": "Korea Hyoksin Trading Corporation",
+    "aliases": [
+     "KOREA HYOKSIN EXPORT AND IMPORT CORPORATION"
+    ],
+    "listed": "2009-07-16",
+    "note": "A DPRK company based in Pyongyang that is subordinate to Korea Ryonbong General Corporation (designated by the Committee in April 2009) and is involved in the development of WMD."
+   },
+   {
+    "ref": "KPe.007",
+    "name": "General Bureau Of Atomic Energy (Gbae)",
+    "aliases": [
+     "General Department of Atomic Energy (GDAE)"
+    ],
+    "listed": "2009-07-16",
+    "note": "The GBAE is responsible for the DPRK’s nuclear program, which includes the Yongbyon Nuclear Research Center and its 5 MWe (25 MWt) plutonium production research reactor, as well as its fuel fabrication and reprocessing facilities. The GBAE has held nuclear-related meetings and discussions with the International Atomic Energy Agency. GBAE is the primary DPRK government agency that oversees nuclear programs, including the operation of the Yongbyon Nuclear Research Center. Changed name as Ministry of Atomic Energy Industry (KPe.027) in 2013."
+   },
+   {
+    "ref": "KPe.008",
+    "name": "Korean Tangun Trading Corporation",
+    "aliases": [
+     "Kuryonggang Trading Corporation",
+     "Ryungseng Trading Corporation",
+     "Ryung Seng Trading Corporation",
+     "Ryungsong Trading Corporation",
+     "Kore Kuryonggang Trading Corporation"
+    ],
+    "listed": "2009-07-16",
+    "note": "Korea Tangun Trading Corporation is subordinate to DPRK’s Second Academy of Natural Sciences and is primarily responsible for the procurement of commodities and technologies to support DPRK’s defense research and development programs, including, but not limited to, WMD and delivery system programs and procurement, including materials that are controlled or prohibited under relevant multilateral control regimes."
+   },
+   {
+    "ref": "KPe.009",
+    "name": "Amroggang Development Banking Corporation",
+    "aliases": [
+     "AMROGGANG Development Bank",
+     "Amnokkang Development Bank"
+    ],
+    "listed": "2012-05-02",
+    "note": "Amroggang, which was established in 2006, is a Tanchon Commercial Bank-related company managed by Tanchon officials. Tanchon plays a role in financing KOMID’s sales of ballistic missiles and has also been involved in ballistic missile transactions from KOMID to Iran’s Shahid Hemmat Industrial Group (SHIG). Tanchon Commercial Bank was designated by the Committee in April 2009 and is the main DPRK financial entity for sales of conventional arms, ballistic missiles, and goods related to the assembly and manufacture of such weapons. KOMID was designated by the Committee in April 2009 and is the DPRK’s primary arms dealer and main exporter of goods and equipment related to ballistic missiles and conventional weapons. The Security Council designated SHIG in resolution 1737 (2006) as an entity involved in Iran’s ballistic missile programme."
+   },
+   {
+    "ref": "KPe.010",
+    "name": "Green Pine Associated Corporation",
+    "aliases": [
+     "CHO'NGSONG UNITED TRADING COMPANY",
+     "CHONGSONG YONHAP",
+     "CH'O'NGSONG YO'NHAP",
+     "CHOSUN CHAWO'N KAEBAL T'UJA HOESA",
+     "JINDALLAE",
+     "KU'MHAERYONG COMPANY LTD."
+    ],
+    "listed": "2012-05-02",
+    "note": "Green Pine Associated Corporation (“Green Pine”) has taken over many of the activities of the Korea Mining Development Trading Corporation (KOMID). KOMID was designated by the Committee in April 2009 and is the DPRK's primary arms dealer and main exporter of goods and equipment related to ballistic missiles and conventional weapons. Green Pine is also responsible for approximately half of the arms and related materiel exported by the DPRK. Green Pine has been identified for sanctions for exporting arms or related material from North Korea. Green Pine specializes in the production of maritime military craft and armaments, such as submarines, military boats and missile systems, and has exported torpedoes and technical assistance to Iranian defence-related firms. Telephone number: +850-2-18111(ext. 8327). Facsimile number: +850-2-3814685 and +850-2-3813372. Email addresses: pac@silibank.com and kndic@co.chesin.com."
+   },
+   {
+    "ref": "KPe.011",
+    "name": "Korea Heungjin Trading Company",
+    "aliases": [
+     "Hunjin TRADING Co.",
+     "Korea Henjin Trading Co.",
+     "Korea Hengjin Trading Company"
+    ],
+    "listed": "2012-05-02",
+    "note": "The Korea Heungjin Trading Company is used by KOMID for trading purposes. We suspect it has been involved in supplying missile-related goods to Iran’s Shahid Hemmat Industrial Group (SHIG). Heungjin has been associated with KOMID, and, more specifically, KOMID’s procurement office. Heungjin has been used to procure an advanced digital controller with applications in missile design. KOMID was designated by the Committee in April 2009 and is the DPRK’s primary arms dealer and main exporter of goods and equipment related to ballistic missiles and conventional weapons. The Security Council designated SHIG in resolution 1737 (2006) as an entity involved in Iran’s ballistic missile programme."
+   },
+   {
+    "ref": "KPe.012",
+    "name": "Korean Committee For Space Technology",
+    "aliases": [
+     "DPRK Committee for Space Technology",
+     "Department of Space Technology of the DPRK",
+     "Committee for Space Technology",
+     "KCST"
+    ],
+    "listed": "2013-01-22",
+    "note": "The Korean Committee for Space Technology (KCST) orchestrated the DPRK’s launches on 13 April 2012 and 12 December 2012 via the satellite control center and Sohae launch area."
+   },
+   {
+    "ref": "KPe.013",
+    "name": "Bank Of East Land",
+    "aliases": [
+     "Dongbang BANK",
+     "TONGBANG U’NHAENG",
+     "TONGBANG BANK"
+    ],
+    "listed": "2013-01-22",
+    "note": "DPRK financial institution Bank of East Land facilitates weapons-related transactions for, and other support to, arms manufacturer and exporter Green Pine Associated Corporation (Green Pine). Bank of East Land has actively worked with Green Pine to transfer funds in a manner that circumvents sanctions. In 2007 and 2008, Bank of East Land facilitated transactions involving Green Pine and Iranian financial institutions, including Bank Melli and Bank Sepah. The Security Council designated Bank Sepah in resolution 1747 (2007) for providing support to Iran’s ballistic missile program. Green Pine was designated by the Committee in April 2012."
+   },
+   {
+    "ref": "KPe.014",
+    "name": "Korea Kumryong Trading Corporation",
+    "aliases": [],
+    "listed": "2013-01-22",
+    "note": "Used as an alias by the Korea Mining Development Trading Corporation (KOMID) to carry out procurement activities. KOMID was designated by the Committee in April 2009 and is the DPRK’s primary arms dealer and main exporter of goods and equipment related to ballistic missiles and conventional weapons."
+   },
+   {
+    "ref": "KPe.015",
+    "name": "Tosong Technology Trading Corporation",
+    "aliases": [],
+    "listed": "2013-01-22",
+    "note": "The Korea Mining Development Corporation (KOMID) is the parent company of Tosong Technology Trading Corporation. KOMID was designated by the Committee in April 2009 and is the DPRK’s primary arms dealer and main exporter of goods and equipment related to ballistic missiles and conventional weapons."
+   },
+   {
+    "ref": "KPe.016",
+    "name": "Korea Ryonha Machinery Joint Venture Corporation",
+    "aliases": [
+     "Chosun Yunha Machinery Joint Operation Company",
+     "Korea Ryenha Machinery J/V Corporation",
+     "Ryonha Machinery Joint Venture Corporation",
+     "Ryonha Machinery Corporation",
+     "Ryonha Machinery",
+     "Ryonha Machine Tool"
+    ],
+    "listed": "2013-01-22",
+    "note": "Korea Ryonbong General Corporation is the parent company of Korea Ryonha Machinery Joint Venture Corporation. Korea Ryonbong General Corporation was designated by the Committee in April 2009 and is a defense conglomerate specializing in acquisition for DPRK defense industries and support to that country's military-related sales. Email addresses: ryonha@silibank.com; sjc-117@hotmail.com; and millim@silibank.com. Telephone numbers: 850-2-18111; 850-2-18111-8642; and 850 2 18111-3818642. Facsimile number: 850-2-381-4410"
+   },
+   {
+    "ref": "KPe.017",
+    "name": "Leader (Hong Kong) International",
+    "aliases": [
+     "Leader International Trading Limited",
+     "Leader (Hong Kong) International Trading Limited"
+    ],
+    "listed": "2013-01-22",
+    "note": "Facilitates shipments on behalf of the Korea Mining Development Trading Corporation (KOMID). KOMID was designated by the Committee in April 2009 and is the DPRK’s primary arms dealer and main exporter of goods and equipment related to ballistic missiles and conventional weapons. Hong Kong company registration number 1177053."
+   },
+   {
+    "ref": "KPe.018",
+    "name": "Second Academy Of Natural Sciences",
+    "aliases": [
+     "2ND ACADEMY OF NATURAL SCIENCES",
+     "CHE 2 CHAYON KWAHAKWON",
+     "ACADEMY OF NATURAL SCIENCES",
+     "CHAYON KWAHAK-WON",
+     "NATIONAL DEFENSE ACADEMY",
+     "KUKPANG KWAHAK-WON"
+    ],
+    "listed": "2013-03-07",
+    "note": "The Second Academy of Natural Sciences is a national-level organization responsible for research and development of the DPRK’s advanced weapons systems, including missiles and probably nuclear weapons. The Second Academy of Natural Sciences uses a number of subordinate organizations to obtain technology, equipment, and information from overseas, including Tangun Trading Corporation, for use in the DPRK’s missile and probably nuclear weapons programs. Tangun Trading Corporation was designated by the Committee in July 2009 and is primarily responsible for the procurement of commodities and technologies to support DPRK’s defense research and development programs, including, but not limited to, weapons of mass destruction and delivery system programs and procurement, including materials that are controlled or prohibited under relevant multilateral control regimes."
+   },
+   {
+    "ref": "KPe.019",
+    "name": "Korea Complex Equipment Import Corporation",
+    "aliases": [],
+    "listed": "2013-03-07",
+    "note": "Korea Ryonbong General Corporation is the parent company of Korea Complex Equipment Import Corporation. Korea Ryonbong General Corporation was designated by the Committee in April 2009 and is a defense conglomerate specializing in acquisition for DPRK defense industries and support to that country’s military-related sales."
+   },
+   {
+    "ref": "KPe.020",
+    "name": "Ocean Maritime Management Company, Limited (Omm)",
+    "aliases": [
+     "East Sea Shipping Company",
+     "Korea Mirae Shipping Co. Ltd",
+     "Haeyang Crew Management Company"
+    ],
+    "listed": "2014-07-28",
+    "note": "Ocean Maritime Management Company, Limited is the operator/manager of the vessel Chong Chon Gang. It played a key role in arranging the shipment of concealed cargo of arms and related materiel from Cuba to the DPRK in July 2013. As such, Ocean Maritime Management Company, Limited contributed to activities prohibited by the resolutions, namely the arms embargo imposed by resolution 1718 (2006), as modified by resolution 1874 (2009), and contributed to the evasion of the measures imposed by these resolutions. International Maritime Organization (IMO) Number: 1790183."
+   },
+   {
+    "ref": "KPe.021",
+    "name": "Academy Of National Defense Science",
+    "aliases": [
+     "SECOND ACADEMY OF NATURAL SCIENCES (KPE.018)"
+    ],
+    "listed": "2016-03-02",
+    "note": "The Academy of National Defense Science is involved in the DPRK's efforts to advance the development of its ballistic missile and nuclear weapons programs."
+   },
+   {
+    "ref": "KPe.022",
+    "name": "Chongchongang Shipping Company",
+    "aliases": [
+     "Chong Chon Gang Shipping Co. Ltd.",
+     "Chongchongang Shipping Co LTD"
+    ],
+    "listed": "2016-03-02",
+    "note": "IMO Number: 5342883. The Chongchongang Shipping Company, through its vessel, the Chong Chon Gang, attempted to directly import the illicit shipment of conventional weapons and arms to the DPRK in July 2013."
+   },
+   {
+    "ref": "KPe.023",
+    "name": "Daedong Credit Bank (Dcb)",
+    "aliases": [
+     "DCB",
+     "Taedong Credit Bank",
+     "Dae-Dong Credit Bank"
+    ],
+    "listed": "2016-03-02",
+    "note": "SWIFT: DCBKKPPY. Daedong Credit Bank has provided financial services to the Korea Mining Development Trading Corporation (KOMID) and Tanchon Commercial Bank. Since at least 2007, DCB has facilitated hundreds of financial transactions worth millions of dollars on behalf of KOMID and Tanchon Commercial Bank. In some cases, DCB has knowingly facilitated transactions by using deceptive financial practices."
+   },
+   {
+    "ref": "KPe.024",
+    "name": "Hesong Trading Company",
+    "aliases": [],
+    "listed": "2016-03-02",
+    "note": "The Korea Mining Development Trading Corporation (KOMID) is the parent company of Hesong Trading Corporation."
+   },
+   {
+    "ref": "KPe.025",
+    "name": "Korea Kwangson Banking Corporation (Kkbc)",
+    "aliases": [
+     "KKBC"
+    ],
+    "listed": "2016-03-02",
+    "note": "KKBC provides financial services in support to Tanchon Commercial Bank and Korea Hyoksin Trading Corporation, a subordinate of the Korea Ryonbong General Corporation. Tanchon Commercial Bank has used KKBC to facilitate funds transfers likely amounting to millions of dollars, including transfers involving Korea Mining Development Corporation related funds."
+   },
+   {
+    "ref": "KPe.026",
+    "name": "Korea Kwangsong Trading Corporation",
+    "aliases": [],
+    "listed": "2016-03-02",
+    "note": "The Korea Ryongbong General Corporation is the parent company of Korea Kwangsong Trading Corporation."
+   },
+   {
+    "ref": "KPe.027",
+    "name": "Ministry Of Atomic Energy Industry",
+    "aliases": [
+     "MAEI"
+    ],
+    "listed": "2016-03-02",
+    "note": "The Ministry of Atomic Energy Industry was created in 2013 for the purpose of modernizing the DPRK’s atomic energy industry to increase the production of nuclear materials, improve their quality, and further develop an independent DPRK nuclear industry. As such, the MAEI is known to be a critical player in the DPRK’s development of nuclear weapons and is in charge of day-to-day operation of the country’s nuclear weapons program, and under it are other nuclear-related organizations. Under this ministry are a number of nuclear-related organizations and research centers, as well as two committees: an Isotope Application Committee and a Nuclear Energy Committee. The MAEI also directs a nuclear research center at Yongbyun, the site of the DPRK's known plutonium facilities. Furthermore, in the 2015 Panel of Experts (POE) report, the POE stated that Ri Je-son, a former director of the GBAE who was designated by the Committee established pursuant to resolution 1718 (2006) in 2009 for engagement in or support for nuclear related programs, was appointed as head of the MAEI on April 9, 2014."
+   },
+   {
+    "ref": "KPe.028",
+    "name": "Munitions Industry Department",
+    "aliases": [
+     "Military Supplies Industry Department",
+     "MID",
+     "MACHINE INDUSTRY DEPARTMENT"
+    ],
+    "listed": "2016-03-02",
+    "note": "The Munitions Industry Department is involved in key aspects of the DPRK's missile program. MID is responsible for overseeing the development of the DPRK's ballistic missiles, including the Taepo Dong-2.The MID oversees the DPRK's weapons production and R&D programs, including the DPRK's ballistic missile program. The Second Economic Committee and the Second Academy of Natural Sciences – also designated in August 2010 – are subordinate to the MID. The MID in recent years has worked to develop the KN08 road-mobile ICBM. The MID oversees the DPRK’s nuclear program. The Nuclear Weapons Institute is subordinate to the MID."
+   },
+   {
+    "ref": "KPe.029",
+    "name": "National Aerospace Technology Administration",
+    "aliases": [
+     "NATA",
+     "NATIONAL AEROSPACE DEVELOPMENT ADMINISTRATION",
+     "NADA"
+    ],
+    "listed": "2016-03-02",
+    "note": "NATA is involved in the DPRK's development of space science and technology, including satellite launches and carrier rockets."
+   },
+   {
+    "ref": "KPe.030",
+    "name": "Office 39",
+    "aliases": [
+     "Office #39",
+     "Office No. 39",
+     "Bureau 39",
+     "Central Committee Bureau 39",
+     "Third Floor",
+     "Division 39"
+    ],
+    "listed": "2016-03-02",
+    "note": "DPRK government entity"
+   },
+   {
+    "ref": "KPe.031",
+    "name": "Reconnaissance General Bureau",
+    "aliases": [
+     "Chongch’al Ch’ongguk",
+     "KPA Unit 586",
+     "RGB"
+    ],
+    "listed": "2016-03-02",
+    "note": "The Reconnaissance General Bureau is the DPRK's premiere intelligence organization, created in early 2009 by the merger of existing intelligence organizations from the Korean Workers' Party, the Operations Department and Office 35, and the Reconnaissance Bureau of the Korean People's Army. The Reconnaissance General Bureau trades in conventional arms and controls the DPRK conventional arms firm Green Pine Associated Corporation."
+   },
+   {
+    "ref": "KPe.032",
+    "name": "Second Economic Committee",
+    "aliases": [],
+    "listed": "2016-03-02",
+    "note": "The Second Economic Committee is involved in key aspects of the DPRK's missile program. The Second Economic Committee is responsible for overseeing the production of the DPRK's ballistic missiles, and directs the activities of KOMID."
+   },
+   {
+    "ref": "KPe.033",
+    "name": "Korea United Development Bank",
+    "aliases": [],
+    "listed": "2016-11-30",
+    "note": "Korea United Development Bank operates in the financial services industry of the DPRK economy. SWIFT/BIC: KUDBKPPY"
+   },
+   {
+    "ref": "KPe.034",
+    "name": "Ilsim International Bank",
+    "aliases": [],
+    "listed": "2016-11-30",
+    "note": "Ilsim International Bank is affiliated with the DPRK military and has a close relationship with Korea Kwangson Banking Corporation (KKBC). Ilsim International Bank has attempted to evade United Nations sanctions. SWIFT: ILSIKPPY"
+   },
+   {
+    "ref": "KPe.035",
+    "name": "Korea Daesong Bank",
+    "aliases": [
+     "Choson Taesong Unhaeng",
+     "Taesong Bank"
+    ],
+    "listed": "2016-11-30",
+    "note": "Daesong Bank is owned and controlled by Office 39 of the Korea Workers’ Party. SWIFT/BIC: KDBKKPPY"
+   },
+   {
+    "ref": "KPe.036",
+    "name": "Singwang Economics And Trading General Corporation",
+    "aliases": [],
+    "listed": "2016-11-30",
+    "note": "Singwang Economics and Trading General Corporation is a DPRK firm for trading in coal. DPRK generates a significant share of the money for its nuclear and ballistic missile programs by mining natural resources and selling those resources abroad."
+   },
+   {
+    "ref": "KPe.037",
+    "name": "Korea Foreign Technical Trade Center",
+    "aliases": [],
+    "listed": "2016-11-30",
+    "note": "Korea Foreign Technical Trade Center is a DPRK firm trading in coal. DPRK generates a significant share of the funds needed to finance its nuclear and ballistic missile programs by mining natural resources and selling those resources abroad."
+   },
+   {
+    "ref": "KPe.038",
+    "name": "Korea Pugang Trading Corporation",
+    "aliases": [],
+    "listed": "2016-11-30",
+    "note": "Korea Pugang Trading Corporation is owned by the Korea Ryonbong General Corporation, DPRK’s defense conglomerate specializing in acquisition for DPRK defense industries and support to Pyongyang’s military related sales."
+   },
+   {
+    "ref": "KPe.039",
+    "name": "Korea International Chemical Joint Venture Company",
+    "aliases": [
+     "Choson International Chemicals Joint Operation Company",
+     "Chosun International Chemicals Joint Operation Company",
+     "International Chemical Joint Venture Company"
+    ],
+    "listed": "2016-11-30",
+    "note": "Korea International Chemical Joint Venture Company is a subsidiary of Korea Ryonbong General Corporation – DPRK’s defense conglomerate specializing in acquisition for DPRK defense industries and support to Pyongyang’s military related sales – and has engaged in proliferation-related transactions."
+   },
+   {
+    "ref": "KPe.040",
+    "name": "Dcb Finance Limited",
+    "aliases": [],
+    "listed": "2016-11-30",
+    "note": "DCB Finance Limited is a front company for Daedong Credit Bank (DCB), a listed entity."
+   },
+   {
+    "ref": "KPe.041",
+    "name": "Korea Taesong Trading Company",
+    "aliases": [],
+    "listed": "2016-11-30",
+    "note": "Korea Taesong Trading Company has acted on behalf of KOMID in dealings with Syria."
+   },
+   {
+    "ref": "KPe.042",
+    "name": "Korea Daesong General Trading Corporation",
+    "aliases": [
+     "Daesong Trading",
+     "Daesong Trading Company",
+     "Korea Daesong Trading Company",
+     "Korea Daesong Trading Corporation"
+    ],
+    "listed": "2016-11-30",
+    "note": "Korea Daesong General Trading Corporation is affiliated with Office 39 through minerals (gold) exports, metals, machinery, agricultural products, ginseng, jewelry, and light industry products.Telephone: +850-2-18111-8208. Fax: +850-2-381-4432. Email: daesong@star-co.net.kp."
+   },
+   {
+    "ref": "KPe.043",
+    "name": "Kangbong Trading Corporation",
+    "aliases": [],
+    "listed": "2017-06-02",
+    "note": "The Kangbong Trading Corporation sold, supplied, transferred, or purchased, directly or indirectly, to or from the DPRK, metal, graphite, coal, or software, where revenue or goods received may benefit the Government of the DPRK or the Workers’ Party of Korea. The Kangbong Trading Corporation’s parent is the Ministry of People’s Armed Forces"
+   },
+   {
+    "ref": "KPe.044",
+    "name": "Korea Kumsan Trading Corporation",
+    "aliases": [],
+    "listed": "2017-06-02",
+    "note": "Korea Kumsan Trading Corporation is owned or controlled by, or acting or purporting to act for or on behalf of, directly or indirectly, the General Bureau of Atomic Energy, which oversees the DPRK’s nuclear programme. Telephone: +850-2-18111-8550. Fax: +850-2-381-4410/4416. Email: mhs-ip@star-co.net.kp."
+   },
+   {
+    "ref": "KPe.045",
+    "name": "Koryo Bank",
+    "aliases": [],
+    "listed": "2017-06-02",
+    "note": "Koryo Bank operates in the financial services industry in the DPRK’s economy and is associated with Office 38 and Office 39 of the KWP"
+   },
+   {
+    "ref": "KPe.046",
+    "name": "Strategic Rocket Force Of The Korean People’s Army",
+    "aliases": [
+     "Strategic Rocket Force",
+     "Strategic Rocket Force Command of KPA",
+     "Strategic Force",
+     "Strategic Forces"
+    ],
+    "listed": "2017-06-02",
+    "note": "The Strategic Rocket Force of the Korean People’s Army is in charge of all DPRK ballistic missile programmes and is responsible for SCUD and NODONG launches"
+   },
+   {
+    "ref": "KPe.047",
+    "name": "Foreign Trade Bank (Ftb)",
+    "aliases": [
+     "Mooyokbank",
+     "Korea Trading Bank"
+    ],
+    "listed": "2017-08-05",
+    "note": "Foreign Trade Bank is a state-owned bank and acts as the DPRK’s primary foreign exchange bank and has provided key financial support to the Korea Kwangson Banking Corporation. SWIFT/BIC: FTBDKPPY."
+   },
+   {
+    "ref": "KPe.048",
+    "name": "Korean National Insurance Company (Knic)",
+    "aliases": [
+     "Korea Foreign Insurance Company"
+    ],
+    "listed": "2017-08-05",
+    "note": "The Korean National Insurance Company is a DPRK financial and insurance company and is affiliated with Office 39."
+   },
+   {
+    "ref": "KPe.049",
+    "name": "Koryo Credit Development Bank",
+    "aliases": [
+     "Daesong Credit Development Bank",
+     "Koryo Global Credit Bank",
+     "Koryo Global Trust Bank"
+    ],
+    "listed": "2017-08-05",
+    "note": "Koryo Credit Development Bank operates in the financial services industry in the DPRK’s economy."
+   },
+   {
+    "ref": "KPe.050",
+    "name": "Mansudae Overseas Project Group Of Companies",
+    "aliases": [
+     "Mansudae Art Studio"
+    ],
+    "listed": "2017-08-05",
+    "note": "Mansudae Overseas Project Group of Companies engaged in, facilitated, or was responsible for the exportation of workers from the DPRK to other nations for construction-related activities including for statues and monuments to generate revenue for the Government of the DPRK or the Workers’ Party of Korea. The Mansudae Overseas Project Group of Companies has been reported to conduct business in countries in Africa and Southeast Asia including Algeria, Angola, Botswana, Benin, Cambodia, Chad, the Democratic Republic of the Congo, Equatorial Guinea, Malaysia, Mozambique, Madagascar, Namibia, Syria, Togo, and Zimbabwe."
+   },
+   {
+    "ref": "KPe.051",
+    "name": "Central Military Commission Of The Workers’ Party Of Korea (Cmc)",
+    "aliases": [],
+    "listed": "2017-09-11",
+    "note": "The Central Military Commission is responsible for the development and implementation of the Workers’ Party of Korea’s military policies, commands and controls the DPRK’s military, and directs the country’s military defense industries in coordination with the State Affairs Commission."
+   },
+   {
+    "ref": "KPe.052",
+    "name": "Organization And Guidance Department (Ogd)",
+    "aliases": [],
+    "listed": "2017-09-11",
+    "note": "The Organization and Guidance Department is a very powerful body of the Worker’s Party of Korea. It directs key personnel appointments for the Workers’ Party of Korea, the DPRK’s military, and the DPRK’s government administration. It also purports to control the political affairs of all of the DPRK and is instrumental in implementing the DPRK’s censorship policies."
+   },
+   {
+    "ref": "KPe.053",
+    "name": "Propaganda And Agitation Department (Pad)",
+    "aliases": [],
+    "listed": "2017-09-11",
+    "note": "The Propaganda and Agitation Department has full control over the media, which it uses as a tool to control the public on behalf of the DPRK leadership. The Propaganda and Agitation Department also engages in or is responsible for censorship by the Government of the DPRK, including newspaper and broadcast censorship."
+   },
+   {
+    "ref": "KPe.054",
+    "name": "Ministry Of National Defence",
+    "aliases": [
+     "MINISTRY OF NATIONAL DEFENSE",
+     "MINISTRY OF DEFENCE",
+     "MINISTRY OF DEFENSE",
+     "MINISTRY OF THE PEOPLE’S ARMED FORCES (MPAF)"
+    ],
+    "listed": "2017-12-22",
+    "note": "The Ministry of National Defence manages the general administrative and logistical needs of the Korean People’s Army."
+   },
+   {
+    "ref": "KPe.055",
+    "name": "Chang An Shipping & Technology",
+    "aliases": [
+     "長安海連技術有限公司",
+     "CHANG AN SHIPPING AND TECHNOLOGY"
+    ],
+    "listed": "2018-03-30",
+    "note": "Registered owner, ship manager, and commercial manager of Panama-flagged vessel HUA FU, a cargo ship that loaded DPRK coal at Najin, DPRK on 24 September 2017."
+   },
+   {
+    "ref": "KPe.056",
+    "name": "Chonmyong Shipping Co",
+    "aliases": [
+     "CHON MYONG SHIPPING COMPANY LIMITED"
+    ],
+    "listed": "2018-03-30",
+    "note": "Registered owner of CHON MYONG 1, a DPRK-flagged vessel that conducted ship-to-ship transfer of fuel in late December 2017. IMO number: 5571322."
+   },
+   {
+    "ref": "KPe.057",
+    "name": "First Oil Jv Co Ltd",
+    "aliases": [],
+    "listed": "2018-03-30",
+    "note": "Owner of the DPRK tanker PAEK MA, which was involved in ship-to-ship transfer operations for oil in mid-January 2018. IMO number: 5963351."
+   },
+   {
+    "ref": "KPe.058",
+    "name": "Hapjanggang Shipping Corp",
+    "aliases": [],
+    "listed": "2018-03-30",
+    "note": "Registered owner of the DPRK tanker NAM SAN 8, believed to have been involved in ship-to-ship transfer operations for oil, and owner of vessel HAP JANG GANG 6. IMO number: 5787684."
+   },
+   {
+    "ref": "KPe.059",
+    "name": "Huaxin Shipping Hongkong Ltd",
+    "aliases": [
+     "華信船務(香港)有限公司"
+    ],
+    "listed": "2018-03-30",
+    "note": "Ship and commercial manager of the ASIA BRIDGE 1. Hong Kong-owned vessel, the probable “ASIA BRIDGE 1” was instructed on 19 October 2017 by Huaxin Shipping to make preparations for entry into Nampo, DPRK to receive a shipment of coal bound for Vietnam. The “ASIA BRIDGE 1” was instructed by an unidentified employee of Huaxin Shipping Ltd. to make preparations to receive 8,000 metric tons of coal and then sail to Cam Pha, Vietnam. The master of the vessel was instructed to cover the ship’s name and other markings using canvas while in port at Nampo."
+   },
+   {
+    "ref": "KPe.060",
+    "name": "Kingly Won International Co., Ltd",
+    "aliases": [],
+    "listed": "2018-03-30",
+    "note": "In 2017, Tsang Yung Yuan (aka Neil Tsang) and Kingly Won attempted to engage in an oil deal valued at over $1 million with a petroleum company in a third country to illicitly transfer to the DPRK. Kingly Won acted as a broker for that petroleum company and a Chinese company that reached out to Kingly Won to purchase marine oil on its behalf."
+   },
+   {
+    "ref": "KPe.061",
+    "name": "Korea Achim Shipping Co",
+    "aliases": [],
+    "listed": "2018-03-30",
+    "note": "Registered owner of DPRK tanker CHON MA SAN. DPRK-flagged CHON MA SAN prepared for likely ship-to-ship transfer operations in late January 2018. The master of the DPRK-flagged motor tanker YU JONG 2 reported on 18 November 2017 to an unidentified DPRK-based controller that the vessel was avoiding a storm in advance of a ship-to-ship transfer. The master suggested that the YU JONG 2 load fuel oil before the DPRK-flagged tanker CHON MA SAN since the CHON MA SAN’s larger size was better suited to conduct ship-to-ship transfers in a storm. After the CHON MA SAN loaded fuel oil from a vessel, the YU JONG 2 loaded 1,168 kiloliters of fuel oil on 19 November 2017 through a ship-to-ship transfer operation. IMO number: 5936312."
+   },
+   {
+    "ref": "KPe.062",
+    "name": "Korea Ansan Shipping Company",
+    "aliases": [
+     "KOREA ANSAN SHPG COMPANY",
+     "Korea Ansan SHPG CO"
+    ],
+    "listed": "2018-03-30",
+    "note": "Registered owner of DPRK tanker AN SAN 1 believed to have been involved in ship-to-ship transfer operations for oil. IMO number: 5676084"
+   },
+   {
+    "ref": "KPe.063",
+    "name": "Korea Myongdok Shipping Co",
+    "aliases": [],
+    "listed": "2018-03-30",
+    "note": "Registered owner of the YU PHYONG 5. In late November 2017, the YU PHYONG 5 conducted a ship-to-ship transfer of 1,721 metric tons of fuel oil. IMO number: 5985863."
+   },
+   {
+    "ref": "KPe.064",
+    "name": "Korea Samjong Shipping",
+    "aliases": [],
+    "listed": "2018-03-30",
+    "note": "Registered owner of DPRK tankers SAM JONG 1 and SAM JONG 2. Both vessels are believed to have imported refined petroleum to DPRK in violation of UN sanctions in late January 2018. IMO number: 5954061."
+   },
+   {
+    "ref": "KPe.065",
+    "name": "Korea Samma Shipping Co",
+    "aliases": [
+     "Korea Samma SHPG CO"
+    ],
+    "listed": "2018-03-30",
+    "note": "A DPRK-flagged tanker, SAM MA 2 owned by Korea Samma Shipping Company, conducted a ship-to-ship transfer of oil and fabricated documents in mid-October 2017, loading almost 1,600 metric tons of fuel oil in one transaction. The ship master was instructed to erase SAMMA SHIPPING and the Korean words found on the ship’s seal and instead put “Hai Xin You 606” to mask its identity as a DPRK vessel. IMO number: 5145892."
+   },
+   {
+    "ref": "KPe.066",
+    "name": "Korea Yujong Shipping Co Ltd",
+    "aliases": [],
+    "listed": "2018-03-30",
+    "note": "Registered owner of the DPRK tanker YU JONG 2, which loaded 1,168 kiloliters of fuel oil on 19 November 2017 through a ship-to-ship transfer operation. Company Number IMO 5434358."
+   },
+   {
+    "ref": "KPe.067",
+    "name": "Koti Corp",
+    "aliases": [],
+    "listed": "2018-03-30",
+    "note": "Ship manager and commercial manager of the Panama-flagged vessel KOTI, which conducted ship-to-ship transfers of likely petroleum product to the DPRK-flagged KUM UN SAN 3 on 9 December 2017. IMO number: 5982254."
+   },
+   {
+    "ref": "KPe.068",
+    "name": "Myohyang Shipping Co",
+    "aliases": [],
+    "listed": "2018-03-30",
+    "note": "Ship manager of DPRK oil products tanker YU SON, which is believed to have been involved in ship-to-ship transfer operations for oil. IMO number: 5988369."
+   },
+   {
+    "ref": "KPe.069",
+    "name": "Paekma Shipping Co",
+    "aliases": [
+     "Care of First Oil JV Co Ltd"
+    ],
+    "listed": "2018-03-30",
+    "note": "Registered owner of the DPRK tanker PAEK MA, which was involved in ship-to-ship transfer operations for oil in mid-January 2018."
+   },
+   {
+    "ref": "KPe.070",
+    "name": "Phyongchon Shipping & Marine",
+    "aliases": [
+     "PHYONGCHON SHIPPING AND MARINE"
+    ],
+    "listed": "2018-03-30",
+    "note": "Registered owner of DPRK tanker JI SONG 6, which is believed to have been involved in ship-to-ship transfer operations of oil in late January 2018. The company also owns vessels JI SONG 8 and WOORY STAR. IMO number: 5878561."
+   },
+   {
+    "ref": "KPe.071",
+    "name": "Pro-Gain Group Corporation",
+    "aliases": [],
+    "listed": "2018-03-30",
+    "note": "Company owned or controlled by Tsang Yung Yuan and involved in illicit transfers of DPRK coal."
+   },
+   {
+    "ref": "KPe.072",
+    "name": "Shanghai Dongfeng Shipping Co Ltd",
+    "aliases": [],
+    "listed": "2018-03-30",
+    "note": "Registered owner, ship and commercial manager of the DONG FENG 6, a vessel that loaded coal at Hamhung, DPRK, on 11 July 2017 for export in violation of UN sanctions."
+   },
+   {
+    "ref": "KPe.073",
+    "name": "Shen Zhong International Shipping",
+    "aliases": [
+     "沈忠國際海運有限公司"
+    ],
+    "listed": "2018-03-30",
+    "note": "Ship and commercial manager of HAO FAN 2 and HAO FAN 6, St Kitts-Nevis-flagged vessels. The HAO FAN 6 loaded coal at Nampo, DPRK, on 27 August 2017. HAO FAN 2 loaded DPRK coal at Nampo, DPRK, on 3 June 2017."
+   },
+   {
+    "ref": "KPe.074",
+    "name": "Weihai World-Shipping Freight",
+    "aliases": [],
+    "listed": "2018-03-30",
+    "note": "Ship and commercial manager of the XIN GUANG HAI, a vessel that on loaded coal at Taean, DPRK, on 27 October 2017 and had an ETA of 14 November 2017 to Cam Pha, Vietnam, but it did not arrive. IMO number: 5905801."
+   },
+   {
+    "ref": "KPe.075",
+    "name": "Yuk Tung Energy Pte Ltd",
+    "aliases": [],
+    "listed": "2018-03-30",
+    "note": "Ship manager and commercial manager of the YUK TUNG, which conducted ship-to-ship transfer of refined petroleum product. IMO number: 5987860."
+   }
+  ]
+ },
+ "ofac": [
+  {
+   "id": "43338",
+   "name": "110th Research Center",
+   "kind": "entity",
+   "programs": [
+    "DPRK2"
+   ]
+  },
+  {
+   "id": "23156",
+   "name": "7-28",
+   "kind": "vessel",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "22983",
+   "name": "Agricultural Development Bank",
+   "kind": "entity",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "20520",
+   "name": "Air Koryo",
+   "kind": "entity",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "27531",
+   "name": "Always Smooth Ltd",
+   "kind": "entity",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "17084",
+   "name": "Am Nok Gang",
+   "kind": "vessel",
+   "programs": [
+    "DPRK"
+   ]
+  },
+  {
+   "id": "57056",
+   "name": "Amnokgang Technology Development Company",
+   "kind": "entity",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "26096",
+   "name": "Amtchentsev Vladlen",
+   "kind": "individual",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "23730",
+   "name": "An San 1",
+   "kind": "vessel",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "27309",
+   "name": "Andariel",
+   "kind": "entity",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "55065",
+   "name": "Andreyev Vitaliy Sergeyevich",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ]
+  },
+  {
+   "id": "39358",
+   "name": "Anfasar Trading S Pte. Ltd.",
+   "kind": "entity",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "35753",
+   "name": "Apollon Ooo",
+   "kind": "entity",
+   "programs": [
+    "DPRK2"
+   ]
+  },
+  {
+   "id": "53824",
+   "name": "Asatryan Gayk",
+   "kind": "individual",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "53820",
+   "name": "Asatryan Limited Liability Company",
+   "kind": "entity",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "27408",
+   "name": "Asia Bridge",
+   "kind": "vessel",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "23778",
+   "name": "Asia Bridge 1",
+   "kind": "vessel",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "53175",
+   "name": "Aung Tin Myo",
+   "kind": "individual",
+   "programs": [
+    "DPRK",
+    "BURMA-EO14014"
+   ]
+  },
+  {
+   "id": "17085",
+   "name": "Baek Ma Kang",
+   "kind": "vessel",
+   "programs": [
+    "DPRK"
+   ]
+  },
+  {
+   "id": "12696",
+   "name": "Bank Of East Land",
+   "kind": "entity",
+   "programs": [
+    "DPRK"
+   ]
+  },
+  {
+   "id": "23523",
+   "name": "Beijing Chengxing Trading Co. Ltd.",
+   "kind": "entity",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "27254",
+   "name": "Beijing Sukbakso",
+   "kind": "entity",
+   "programs": [
+    "DPRK3",
+    "DPRK-NKSPEA"
+   ]
+  },
+  {
+   "id": "24510",
+   "name": "Bella",
+   "kind": "vessel",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "27308",
+   "name": "Bluenoroff",
+   "kind": "entity",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "24511",
+   "name": "Bogatyr",
+   "kind": "vessel",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "48987",
+   "name": "Budnev Aleksey",
+   "kind": "individual",
+   "programs": [
+    "DPRK"
+   ]
+  },
+  {
+   "id": "27529",
+   "name": "Calm Bridge",
+   "kind": "vessel",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "57036",
+   "name": "Celestino Herrera York Louis",
+   "kind": "individual",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "23015",
+   "name": "Central Bank Of The Democratic People's Republic Of Korea",
+   "kind": "entity",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "30184",
+   "name": "Central Public Prosecutors Office",
+   "kind": "entity",
+   "programs": [
+    "DPRK2"
+   ]
+  },
+  {
+   "id": "23001",
+   "name": "Ch'oe So'k-min",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ],
+   "title": "Foreign Trade Bank of the Democratic People's Republic of Korea representative"
+  },
+  {
+   "id": "23084",
+   "name": "Ch'olhyo'n Overseas Construction Company",
+   "kind": "entity",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "23012",
+   "name": "Cha Sung Jun",
+   "kind": "individual",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "23763",
+   "name": "Chang An Shipping & Technology",
+   "kind": "entity",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "20575",
+   "name": "Chang Chang-ha",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ],
+   "title": "President of Second Academy of Natural Sciences"
+  },
+  {
+   "id": "20576",
+   "name": "Chang Kyong-hwa",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ],
+   "title": "Official at Second Academy of Natural Sciences"
+  },
+  {
+   "id": "35756",
+   "name": "Chasovnikov Aleksandr Aleksandrovich",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ]
+  },
+  {
+   "id": "22985",
+   "name": "Cheil Credit Bank",
+   "kind": "entity",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "26928",
+   "name": "Chen Mei Hsiang",
+   "kind": "individual",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "39357",
+   "name": "Chen Shih Huan",
+   "kind": "individual",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "42497",
+   "name": "Cheng Hung Man",
+   "kind": "individual",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "22612",
+   "name": "Chi Yupeng",
+   "kind": "individual",
+   "programs": [
+    "DPRK3"
+   ],
+   "title": "Chairman and Majority Owner, Dandong Zhicheng Metallic Material Co., Ltd."
+  },
+  {
+   "id": "39500",
+   "name": "Chilsong Trading Corporation",
+   "kind": "entity",
+   "programs": [
+    "DPRK2"
+   ]
+  },
+  {
+   "id": "43379",
+   "name": "Chinyong Information Technology Cooperation Company",
+   "kind": "entity",
+   "programs": [
+    "DPRK2"
+   ]
+  },
+  {
+   "id": "20577",
+   "name": "Cho Chun-ryong",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ],
+   "title": "Chairman of the Second Economic Committee"
+  },
+  {
+   "id": "19791",
+   "name": "Cho Il-U",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ],
+   "title": "Director of the Fifth Bureau of the Reconnaissance General Bureau"
+  },
+  {
+   "id": "20124",
+   "name": "Cho Yon Chun",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ],
+   "title": "First Vice Director of the Organization and Guidance Department"
+  },
+  {
+   "id": "19793",
+   "name": "Choe Chang Pong",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ],
+   "title": "Director of the Investigation Bureau of the Ministry of People's Security"
+  },
+  {
+   "id": "56039",
+   "name": "Choe Chun Pom",
+   "kind": "individual",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "21747",
+   "name": "Choe Chun Yong",
+   "kind": "individual",
+   "programs": [
+    "DPRK3"
+   ],
+   "title": "Ilsim International Bank representative"
+  },
+  {
+   "id": "21306",
+   "name": "Choe Hwi",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ],
+   "title": "First Vice Director of the Workers' Party of Korea Propaganda and Agitation Department"
+  },
+  {
+   "id": "20120",
+   "name": "Choe Pu Il",
+   "kind": "individual",
+   "programs": [
+    "DPRK3"
+   ],
+   "title": "Minister of People's Security"
+  },
+  {
+   "id": "23213",
+   "name": "Choe Ryong Hae",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ],
+   "title": "Director of the Workers' Party of Korea Organization and Guidance Department"
+  },
+  {
+   "id": "46129",
+   "name": "Choe Song Chol",
+   "kind": "individual",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "23482",
+   "name": "Choe Song Nam",
+   "kind": "individual",
+   "programs": [
+    "DPRK4"
+   ],
+   "title": "Korea Daesong Bank Representative"
+  },
+  {
+   "id": "46449",
+   "name": "Choe Un Hyok",
+   "kind": "individual",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "43616",
+   "name": "Choe Un Jong",
+   "kind": "individual",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "23729",
+   "name": "Chon Ma San",
+   "kind": "vessel",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "23726",
+   "name": "Chon Myong 1",
+   "kind": "vessel",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "19588",
+   "name": "Chong Bong",
+   "kind": "vessel",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "17069",
+   "name": "Chong Chon Gang",
+   "kind": "vessel",
+   "programs": [
+    "DPRK"
+   ]
+  },
+  {
+   "id": "19589",
+   "name": "Chong Rim 2",
+   "kind": "vessel",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "19569",
+   "name": "Chongbong Shipping Co Ltd",
+   "kind": "entity",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "17067",
+   "name": "Chongchongang Shipping Company Limited",
+   "kind": "entity",
+   "programs": [
+    "DPRK"
+   ]
+  },
+  {
+   "id": "23705",
+   "name": "Chonmyong Shipping Co",
+   "kind": "entity",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "52283",
+   "name": "Chonsurim Trading Corporation",
+   "kind": "entity",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "23014",
+   "name": "Chu Hyo'k",
+   "kind": "individual",
+   "programs": [
+    "DPRK4"
+   ],
+   "title": "Foreign Trade Bank of the Democratic People's Republic of Korea representative"
+  },
+  {
+   "id": "23524",
+   "name": "Ck International Ltd",
+   "kind": "entity",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "24606",
+   "name": "Commercial Bank Agrosoyuz",
+   "kind": "entity",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "40938",
+   "name": "Congo Aconde Sarl",
+   "kind": "entity",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "24999",
+   "name": "Culha Erhan",
+   "kind": "individual",
+   "programs": [
+    "DPRK"
+   ],
+   "title": "General Manager"
+  },
+  {
+   "id": "20579",
+   "name": "Daewon Industries",
+   "kind": "entity",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "17086",
+   "name": "Dai Hong Dan",
+   "kind": "vessel",
+   "programs": [
+    "DPRK"
+   ]
+  },
+  {
+   "id": "22624",
+   "name": "Dalian Global Unity Shipping Co., Ltd.",
+   "kind": "entity",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "26243",
+   "name": "Dalian Haibo International Freight Co. Ltd.",
+   "kind": "entity",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "24566",
+   "name": "Dalian Sun Moon Star International Logistics Trading Co., Ltd",
+   "kind": "entity",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "23171",
+   "name": "Dandong Dongyuan Industrial Co., Ltd.",
+   "kind": "entity",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "23177",
+   "name": "Dandong Hongda Trade Co. Ltd.",
+   "kind": "entity",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "23476",
+   "name": "Dandong Jinxiang Trade Co., Ltd.",
+   "kind": "entity",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "23175",
+   "name": "Dandong Kehua Economy & Trade Co., Ltd.",
+   "kind": "entity",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "22614",
+   "name": "Dandong Tianfu Trade Co., Ltd.",
+   "kind": "entity",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "23176",
+   "name": "Dandong Xianghe Trading Co., Ltd.",
+   "kind": "entity",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "22603",
+   "name": "Dandong Zhicheng Metallic Material Co., Ltd.",
+   "kind": "entity",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "23151",
+   "name": "Dawn Marine Management Co Ltd",
+   "kind": "entity",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "18346",
+   "name": "Dawnlight",
+   "kind": "vessel",
+   "programs": [
+    "DPRK"
+   ]
+  },
+  {
+   "id": "44578",
+   "name": "Defense Engineering Limited Liability Partnership",
+   "kind": "entity",
+   "programs": [
+    "DPRK"
+   ]
+  },
+  {
+   "id": "52262",
+   "name": "Department 53 Of The Ministry Of The People's Armed Forces",
+   "kind": "entity",
+   "programs": [
+    "DPRK2"
+   ]
+  },
+  {
+   "id": "17091",
+   "name": "Dok Chon",
+   "kind": "vessel",
+   "programs": [
+    "DPRK"
+   ]
+  },
+  {
+   "id": "23780",
+   "name": "Dong Feng 6",
+   "kind": "vessel",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "52120",
+   "name": "Dv Ink Limited Liability Company",
+   "kind": "entity",
+   "programs": [
+    "DPRK4",
+    "RUSSIA-EO14024"
+   ]
+  },
+  {
+   "id": "18553",
+   "name": "Eko Development And Investment Company",
+   "kind": "entity",
+   "programs": [
+    "DPRK2"
+   ]
+  },
+  {
+   "id": "34020",
+   "name": "European Institute Justo",
+   "kind": "entity",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "19570",
+   "name": "Ever Bright 88",
+   "kind": "vessel",
+   "programs": [
+    "DPRK"
+   ]
+  },
+  {
+   "id": "23522",
+   "name": "Ever Glory",
+   "kind": "vessel",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "40207",
+   "name": "Everlasting Empire Limited",
+   "kind": "entity",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "23083",
+   "name": "External Construction Bureau",
+   "kind": "entity",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "37517",
+   "name": "Far Eastern Bank",
+   "kind": "entity",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "23725",
+   "name": "First Oil Jv Co Ltd",
+   "kind": "entity",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "15603",
+   "name": "Foreign Trade Bank Of The Democratic People's Republic Of Korea",
+   "kind": "entity",
+   "programs": [
+    "NPWMD",
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "53822",
+   "name": "Fortuna Limited Liability Company",
+   "kind": "entity",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "40213",
+   "name": "Fujian Nanan Import And Export Corporation",
+   "kind": "entity",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "35757",
+   "name": "Gayevoy Aleksandr Andreyevich",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ]
+  },
+  {
+   "id": "48986",
+   "name": "Gazaryan Rafael Anatolyevich",
+   "kind": "individual",
+   "programs": [
+    "DPRK"
+   ]
+  },
+  {
+   "id": "19572",
+   "name": "Gold Star 3",
+   "kind": "vessel",
+   "programs": [
+    "DPRK"
+   ]
+  },
+  {
+   "id": "47148",
+   "name": "Golden Triangle Bank",
+   "kind": "entity",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "23511",
+   "name": "Goo Ryong",
+   "kind": "vessel",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "27526",
+   "name": "Good Siblings Ltd",
+   "kind": "entity",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "23510",
+   "name": "Gooryong Shipping Co Ltd",
+   "kind": "entity",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "19585",
+   "name": "Grand Karo",
+   "kind": "vessel",
+   "programs": [
+    "DPRK"
+   ]
+  },
+  {
+   "id": "12212",
+   "name": "Green Pine Associated Corporation",
+   "kind": "entity",
+   "programs": [
+    "DPRK"
+   ]
+  },
+  {
+   "id": "24451",
+   "name": "Gudzon Shipping Co Llc",
+   "kind": "entity",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "18953",
+   "name": "Haejin Ship Management Company Limited",
+   "kind": "entity",
+   "programs": [
+    "DPRK"
+   ]
+  },
+  {
+   "id": "48267",
+   "name": "Han Chol Man",
+   "kind": "individual",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "56043",
+   "name": "Han Hong Gil",
+   "kind": "individual",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "23509",
+   "name": "Han Kwon U",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ],
+   "title": "Korea Ryonbong General Corporation Representative in Zhuhai, China"
+  },
+  {
+   "id": "22986",
+   "name": "Hana Banking Corporation Ltd",
+   "kind": "entity",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "23519",
+   "name": "Hana Electronics Jvc",
+   "kind": "entity",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "23770",
+   "name": "Hao Fan 2",
+   "kind": "vessel",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "23771",
+   "name": "Hao Fan 6",
+   "kind": "vessel",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "23728",
+   "name": "Hap Jang Gang 6",
+   "kind": "vessel",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "23706",
+   "name": "Hapjanggang Shipping Corp",
+   "kind": "entity",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "55197",
+   "name": "Ho Jong Son",
+   "kind": "individual",
+   "programs": [
+    "DPRK4",
+    "CYBER4"
+   ]
+  },
+  {
+   "id": "56038",
+   "name": "Ho Yong Chol",
+   "kind": "individual",
+   "programs": [
+    "DPRK"
+   ]
+  },
+  {
+   "id": "23000",
+   "name": "Ho Yong Il",
+   "kind": "individual",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "57035",
+   "name": "Hoang Minh Quang",
+   "kind": "individual",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "19591",
+   "name": "Hoe Ryong",
+   "kind": "vessel",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "19574",
+   "name": "Hoeryong Shipping Co Ltd",
+   "kind": "entity",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "23765",
+   "name": "Hongxiang Marine Hong Kong Ltd",
+   "kind": "entity",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "23764",
+   "name": "Hua Fu",
+   "kind": "vessel",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "26927",
+   "name": "Huang Wang Ken",
+   "kind": "individual",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "23777",
+   "name": "Huaxin Shipping Hongkong Ltd",
+   "kind": "entity",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "20602",
+   "name": "Hussain Mavungal",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ]
+  },
+  {
+   "id": "23514",
+   "name": "Hwa Song",
+   "kind": "vessel",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "17087",
+   "name": "Hwang Gum San 2",
+   "kind": "vessel",
+   "programs": [
+    "DPRK"
+   ]
+  },
+  {
+   "id": "40356",
+   "name": "Hwang Kil Su",
+   "kind": "individual",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "19496",
+   "name": "Hwang Pyong So",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ],
+   "title": "Vice Chairman of the National Defense Commission"
+  },
+  {
+   "id": "18552",
+   "name": "Hwang Su Man",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ]
+  },
+  {
+   "id": "23513",
+   "name": "Hwasong Shipping Co Ltd",
+   "kind": "entity",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "17088",
+   "name": "Hyok Sin 2",
+   "kind": "vessel",
+   "programs": [
+    "DPRK"
+   ]
+  },
+  {
+   "id": "19508",
+   "name": "Ilsim International Bank",
+   "kind": "entity",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "52113",
+   "name": "Im Song Jin",
+   "kind": "individual",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "46130",
+   "name": "Im Song Sun",
+   "kind": "individual",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "36217",
+   "name": "Intellekt Llc",
+   "kind": "entity",
+   "programs": [
+    "DPRK2"
+   ]
+  },
+  {
+   "id": "23002",
+   "name": "International Industrial Development Bank",
+   "kind": "entity",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "23159",
+   "name": "Jang Gyong",
+   "kind": "vessel",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "17089",
+   "name": "Jang Ja San Chong Nyon Ho",
+   "kind": "vessel",
+   "programs": [
+    "DPRK"
+   ]
+  },
+  {
+   "id": "55183",
+   "name": "Jang Kuk Chol",
+   "kind": "individual",
+   "programs": [
+    "DPRK4",
+    "CYBER4"
+   ]
+  },
+  {
+   "id": "46131",
+   "name": "Jang Myong Chol",
+   "kind": "individual",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "17620",
+   "name": "Jang Song Chol",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ],
+   "title": "KOMID representative in Russia"
+  },
+  {
+   "id": "17615",
+   "name": "Jang Yong Son",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ],
+   "title": "KOMID Representative in Iran"
+  },
+  {
+   "id": "19573",
+   "name": "Jh 86",
+   "kind": "vessel",
+   "programs": [
+    "DPRK"
+   ]
+  },
+  {
+   "id": "23010",
+   "name": "Ji Sang Jun",
+   "kind": "individual",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "23738",
+   "name": "Ji Song 6",
+   "kind": "vessel",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "23739",
+   "name": "Ji Song 8",
+   "kind": "vessel",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "19575",
+   "name": "Jin Tai",
+   "kind": "vessel",
+   "programs": [
+    "DPRK"
+   ]
+  },
+  {
+   "id": "19577",
+   "name": "Jin Teng",
+   "kind": "vessel",
+   "programs": [
+    "DPRK"
+   ]
+  },
+  {
+   "id": "22613",
+   "name": "Jinhou International Holdings Co., Ltd.",
+   "kind": "entity",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "23006",
+   "name": "Jinmyong Joint Bank",
+   "kind": "entity",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "23003",
+   "name": "Jinsong Joint Bank",
+   "kind": "entity",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "23090",
+   "name": "Jo Kyong-Chol",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ],
+   "title": "DPRK Director of Military Security Command"
+  },
+  {
+   "id": "19610",
+   "name": "Jo Yong Chol",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ],
+   "title": "North Korea's Ministry of State Security Official"
+  },
+  {
+   "id": "21303",
+   "name": "Jo Yong-Won",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ],
+   "title": "Vice Director of the Organization and Guidance Department"
+  },
+  {
+   "id": "39496",
+   "name": "Jon Il Ho",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ]
+  },
+  {
+   "id": "17090",
+   "name": "Jon Jin 2",
+   "kind": "vessel",
+   "programs": [
+    "DPRK"
+   ]
+  },
+  {
+   "id": "27743",
+   "name": "Jon Jin Yong",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ]
+  },
+  {
+   "id": "48262",
+   "name": "Jon Yun Gun",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ]
+  },
+  {
+   "id": "52289",
+   "name": "Jong In Chol",
+   "kind": "individual",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "23212",
+   "name": "Jong Kyong Thaek",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ],
+   "title": "Minister of State Security"
+  },
+  {
+   "id": "23504",
+   "name": "Jong Man Bok",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ],
+   "title": "Korea Ryonbong General Corporation Representative in Dandong, China"
+  },
+  {
+   "id": "48269",
+   "name": "Jong Song Ho",
+   "kind": "individual",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "24979",
+   "name": "Jong Song Hwa",
+   "kind": "individual",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "56042",
+   "name": "Jong Sung Hyok",
+   "kind": "individual",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "23091",
+   "name": "Jong Yong Su",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ],
+   "title": "Minister of Labor"
+  },
+  {
+   "id": "51331",
+   "name": "Ju Chang Il",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ],
+   "title": "Director of the Workers' Party of Korea Propaganda and Agitation Department"
+  },
+  {
+   "id": "26930",
+   "name": "Jui Cheng Shipping Company Limited",
+   "kind": "entity",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "26929",
+   "name": "Jui Pang Shipping Co Ltd",
+   "kind": "entity",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "26931",
+   "name": "Jui Zong Ship Management Co Ltd",
+   "kind": "entity",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "37658",
+   "name": "Kang Kyong Il",
+   "kind": "individual",
+   "programs": [
+    "DPRK"
+   ]
+  },
+  {
+   "id": "22989",
+   "name": "Kang Min",
+   "kind": "individual",
+   "programs": [
+    "DPRK4"
+   ],
+   "title": "Korea Daesong Bank representative"
+  },
+  {
+   "id": "21304",
+   "name": "Kang P'il-Hun",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ],
+   "title": "Director of the General Political Bureau of the Ministry of People's Security"
+  },
+  {
+   "id": "37656",
+   "name": "Kang Phyong Guk",
+   "kind": "individual",
+   "programs": [
+    "DPRK"
+   ]
+  },
+  {
+   "id": "17627",
+   "name": "Kang Ryong",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ],
+   "title": "KOMID official in Syria"
+  },
+  {
+   "id": "23184",
+   "name": "Kang Song 1",
+   "kind": "vessel",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "20130",
+   "name": "Kang Song Nam",
+   "kind": "individual",
+   "programs": [
+    "DPRK3"
+   ],
+   "title": "Bureau Director"
+  },
+  {
+   "id": "20580",
+   "name": "Kangbong Trading Corporation",
+   "kind": "entity",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "17619",
+   "name": "Kil Jong Hun",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ],
+   "title": "KOMID Representative in Namibia"
+  },
+  {
+   "id": "23483",
+   "name": "Kim Chol",
+   "kind": "individual",
+   "programs": [
+    "DPRK4"
+   ],
+   "title": "Korea United Development Bank Representative"
+  },
+  {
+   "id": "52115",
+   "name": "Kim Geum Cheol",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ],
+   "title": "President of Pyongyang University of Automation"
+  },
+  {
+   "id": "23477",
+   "name": "Kim Ho Kyu",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ],
+   "title": "Korea Ryonbong General Corporation Official"
+  },
+  {
+   "id": "22995",
+   "name": "Kim Hyok Chol",
+   "kind": "individual",
+   "programs": [
+    "DPRK4"
+   ],
+   "title": "Korea United Development Bank representative"
+  },
+  {
+   "id": "21327",
+   "name": "Kim Il-Nam",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ],
+   "title": "Chief, South Hamgyong Province, Ministry of State Security"
+  },
+  {
+   "id": "22992",
+   "name": "Kim Jong Man",
+   "kind": "individual",
+   "programs": [
+    "DPRK4"
+   ],
+   "title": "Korea United Development Bank representative"
+  },
+  {
+   "id": "23214",
+   "name": "Kim Jong Sik",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ],
+   "title": "Deputy Director of the Workers' Party of Korea Military Industry Department"
+  },
+  {
+   "id": "20157",
+   "name": "Kim Jong Un",
+   "kind": "individual",
+   "programs": [
+    "DPRK3"
+   ],
+   "title": "Chairman of the Workers' Party of Korea"
+  },
+  {
+   "id": "23088",
+   "name": "Kim Kang Jin",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ],
+   "title": "Director, External Construction Bureau"
+  },
+  {
+   "id": "20126",
+   "name": "Kim Ki Nam",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ],
+   "title": "Director of the Workers' Party of Korea Propaganda and Agitation Department"
+  },
+  {
+   "id": "17617",
+   "name": "Kim Kwang Chun",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ],
+   "title": "Korea Ryungseng Trading Corporation Representative in Shenyang, China"
+  },
+  {
+   "id": "18848",
+   "name": "Kim Kwang Hyok",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ],
+   "title": "Korean Mining Development Trading Corporation Representative in Burma"
+  },
+  {
+   "id": "17618",
+   "name": "Kim Kwang Yon",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ]
+  },
+  {
+   "id": "23506",
+   "name": "Kim Kyong Hak",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ],
+   "title": "Korea Ryonbong General Corporation Representative in Zhuhai, China"
+  },
+  {
+   "id": "23007",
+   "name": "Kim Kyong Hyok",
+   "kind": "individual",
+   "programs": [
+    "DPRK4"
+   ],
+   "title": "Cheil Credit Bank representative"
+  },
+  {
+   "id": "23016",
+   "name": "Kim Kyong Il",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ],
+   "title": "Foreign Trade Bank of the Democratic People's Republic of Korea deputy chief representative in Libya"
+  },
+  {
+   "id": "20125",
+   "name": "Kim Kyong Ok",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ],
+   "title": "First Vice Director of the Organization and Guidance Department"
+  },
+  {
+   "id": "17624",
+   "name": "Kim Kyu",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ],
+   "title": "KOMID External Affairs Officer"
+  },
+  {
+   "id": "23505",
+   "name": "Kim Man Chun",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ],
+   "title": "Korea Ryonbong General Corporation Representative in Linjiang, China"
+  },
+  {
+   "id": "23092",
+   "name": "Kim Min Chol",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ],
+   "title": "Diplomat at North Korean Embassy"
+  },
+  {
+   "id": "21745",
+   "name": "Kim Mun Chol",
+   "kind": "individual",
+   "programs": [
+    "DPRK3"
+   ],
+   "title": "Korea United Development Bank representative"
+  },
+  {
+   "id": "40205",
+   "name": "Kim Myong Chol",
+   "kind": "individual",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "51328",
+   "name": "Kim Myong Jin",
+   "kind": "individual",
+   "programs": [
+    "DPRK"
+   ]
+  },
+  {
+   "id": "21746",
+   "name": "Kim Nam Ung",
+   "kind": "individual",
+   "programs": [
+    "DPRK3"
+   ],
+   "title": "Ilsim International Bank representative"
+  },
+  {
+   "id": "23507",
+   "name": "Kim Pyong Chan",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ],
+   "title": "Workers' Party of Korea Official"
+  },
+  {
+   "id": "43377",
+   "name": "Kim Sang Man",
+   "kind": "individual",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "22991",
+   "name": "Kim Sang-ho",
+   "kind": "individual",
+   "programs": [
+    "DPRK4"
+   ],
+   "title": "Korea Daesong Bank representative"
+  },
+  {
+   "id": "17622",
+   "name": "Kim Sok Chol",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ],
+   "title": "North Korean Ambassador to Burma"
+  },
+  {
+   "id": "23508",
+   "name": "Kim Song",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ],
+   "title": "Representative of the Korea Ryonbong General Corporation in Linjiang, China"
+  },
+  {
+   "id": "39498",
+   "name": "Kim Su Gil",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ]
+  },
+  {
+   "id": "26944",
+   "name": "Kim Su Il",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ],
+   "title": "Munitions Industry Department Representative in Vietnam"
+  },
+  {
+   "id": "22286",
+   "name": "Kim Su-Kwang",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ]
+  },
+  {
+   "id": "22996",
+   "name": "Kim Tong Chol",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ],
+   "title": "Foreign Trade Bank of the Democratic People's Republic of Korea official"
+  },
+  {
+   "id": "22702",
+   "name": "Kim Tong-chol",
+   "kind": "individual",
+   "programs": [
+    "DPRK3"
+   ],
+   "title": "Managing Director, Mansudae Overseas Projects; Director, Mansudae Overseas Projects Architectural and Technical Services (PTY) Ltd.; Deputy Managing Director, Qingdao Construction (Namibia) CC"
+  },
+  {
+   "id": "21748",
+   "name": "Kim Tong-ho",
+   "kind": "individual",
+   "programs": [
+    "DPRK3"
+   ],
+   "title": "Tanchon Commercial Bank representative"
+  },
+  {
+   "id": "55064",
+   "name": "Kim Ung Sun",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ]
+  },
+  {
+   "id": "21443",
+   "name": "Kim Won Hong",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ],
+   "title": "Minister of State Security"
+  },
+  {
+   "id": "21444",
+   "name": "Kim Yo Jong",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ],
+   "title": "Vice Director of the Workers' Party of Korea Propaganda and Agitation Department"
+  },
+  {
+   "id": "52114",
+   "name": "Kim Yong Bok",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ],
+   "title": "Deputy Chief of the Korean People's Army General Staff"
+  },
+  {
+   "id": "12211",
+   "name": "Kim Yong Chol",
+   "kind": "individual",
+   "programs": [
+    "DPRK"
+   ]
+  },
+  {
+   "id": "17614",
+   "name": "Kim Yong Chol",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ],
+   "title": "KOMID Representative in Iran"
+  },
+  {
+   "id": "55451",
+   "name": "Kim Yong Ju",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ]
+  },
+  {
+   "id": "21743",
+   "name": "Kim Yong Su",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ],
+   "title": "Chief Representative of the Marine Transport Office in Vietnam"
+  },
+  {
+   "id": "45430",
+   "name": "Kimsuky",
+   "kind": "entity",
+   "programs": [
+    "DPRK2"
+   ]
+  },
+  {
+   "id": "23825",
+   "name": "Kingly Won International Co., Ltd.",
+   "kind": "entity",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "40203",
+   "name": "Kinoatis Llc",
+   "kind": "entity",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "22990",
+   "name": "Ko Chol Man",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ],
+   "title": "Foreign Trade Bank of the Democratic People's Republic of Korea representative"
+  },
+  {
+   "id": "23232",
+   "name": "Ko Il Hwan",
+   "kind": "individual",
+   "programs": [
+    "DPRK4"
+   ],
+   "title": "Korea Daesong Bank Official"
+  },
+  {
+   "id": "24517",
+   "name": "Kolchanov Vasili Aleksandrovich",
+   "kind": "individual",
+   "programs": [
+    "DPRK4"
+   ],
+   "title": "Profinet Director General"
+  },
+  {
+   "id": "23707",
+   "name": "Korea Achim Shipping Co",
+   "kind": "entity",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "23708",
+   "name": "Korea Ansan Shipping Company",
+   "kind": "entity",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "30082",
+   "name": "Korea Cholsan General Trading Corporation",
+   "kind": "entity",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "22323",
+   "name": "Korea Computer Center",
+   "kind": "entity",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "23152",
+   "name": "Korea Daebong Shipping Co",
+   "kind": "entity",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "12312",
+   "name": "Korea Daesong Bank",
+   "kind": "entity",
+   "programs": [
+    "DPRK"
+   ]
+  },
+  {
+   "id": "12313",
+   "name": "Korea Daesong General Trading Corporation",
+   "kind": "entity",
+   "programs": [
+    "DPRK"
+   ]
+  },
+  {
+   "id": "28546",
+   "name": "Korea Daizin Trading Corp.",
+   "kind": "entity",
+   "programs": [
+    "DPRK2",
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "24917",
+   "name": "Korea Expo Joint Venture",
+   "kind": "entity",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "19630",
+   "name": "Korea Foreign Technical Trade Center",
+   "kind": "entity",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "19611",
+   "name": "Korea General Corporation For External Construction",
+   "kind": "entity",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "20574",
+   "name": "Korea Haegumgang Trading Corporation",
+   "kind": "entity",
+   "programs": [
+    "DPRK2"
+   ]
+  },
+  {
+   "id": "23183",
+   "name": "Korea Kumbyol Trading Company",
+   "kind": "entity",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "23515",
+   "name": "Korea Kumunsan Shipping Co",
+   "kind": "entity",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "48219",
+   "name": "Korea Mandal Credit Bank",
+   "kind": "entity",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "56044",
+   "name": "Korea Mangyongdae Computer Technology Corporation",
+   "kind": "entity",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "23520",
+   "name": "Korea Marine & Industrial Trdg",
+   "kind": "entity",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "9345",
+   "name": "Korea Mining Development Trading Corporation",
+   "kind": "entity",
+   "programs": [
+    "NPWMD",
+    "DPRK2"
+   ]
+  },
+  {
+   "id": "23711",
+   "name": "Korea Myongdok Shipping Co",
+   "kind": "entity",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "27383",
+   "name": "Korea Namgang Trading Corporation",
+   "kind": "entity",
+   "programs": [
+    "DPRK3",
+    "DPRK-NKSPEA"
+   ]
+  },
+  {
+   "id": "20573",
+   "name": "Korea National Insurance Corporation",
+   "kind": "entity",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "19586",
+   "name": "Korea Ocean Shipping Agency",
+   "kind": "entity",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "20581",
+   "name": "Korea Oil Exploration Corporation",
+   "kind": "entity",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "52282",
+   "name": "Korea Osong Shipping Corporation",
+   "kind": "entity",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "39499",
+   "name": "Korea Paekho Trading Corporation",
+   "kind": "entity",
+   "programs": [
+    "DPRK2"
+   ]
+  },
+  {
+   "id": "19613",
+   "name": "Korea Rungrado General Trading Corporation",
+   "kind": "entity",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "23153",
+   "name": "Korea Rungrado Ryongak Trading Co",
+   "kind": "entity",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "23154",
+   "name": "Korea Rungrado Shipping Co",
+   "kind": "entity",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "53817",
+   "name": "Korea Saenal Trading Corporation",
+   "kind": "entity",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "19579",
+   "name": "Korea Samilpo Shipping Co",
+   "kind": "entity",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "23712",
+   "name": "Korea Samjong Shipping Co",
+   "kind": "entity",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "23713",
+   "name": "Korea Samma Shpg Co",
+   "kind": "entity",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "55063",
+   "name": "Korea Sinjin Trading Corporation",
+   "kind": "entity",
+   "programs": [
+    "DPRK2"
+   ]
+  },
+  {
+   "id": "53816",
+   "name": "Korea Songkwang Trading General Corporation",
+   "kind": "entity",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "23178",
+   "name": "Korea South-South Cooperation Corporation",
+   "kind": "entity",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "11599",
+   "name": "Korea Tangun Trading Corporation",
+   "kind": "entity",
+   "programs": [
+    "NPWMD",
+    "DPRK2"
+   ]
+  },
+  {
+   "id": "24515",
+   "name": "Korea Ungum Corporation",
+   "kind": "entity",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "19509",
+   "name": "Korea United Development Bank",
+   "kind": "entity",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "23710",
+   "name": "Korea Unpha Shipping & Trading",
+   "kind": "entity",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "23714",
+   "name": "Korea Yujong Shipping Co Ltd",
+   "kind": "entity",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "22325",
+   "name": "Korea Zinc Industrial Group",
+   "kind": "entity",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "19583",
+   "name": "Korea Zuzagbong Maritime Ltd",
+   "kind": "entity",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "19587",
+   "name": "Korean Buyon Shipping Co. Ltd.",
+   "kind": "entity",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "22284",
+   "name": "Korean People's Army",
+   "kind": "entity",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "19580",
+   "name": "Korean Polish Shpg Co Ltd",
+   "kind": "entity",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "19528",
+   "name": "Korean Workers Party, Propaganda And Agitation Department",
+   "kind": "entity",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "20572",
+   "name": "Koryo Bank",
+   "kind": "entity",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "23004",
+   "name": "Koryo Commercial Bank Ltd.",
+   "kind": "entity",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "20569",
+   "name": "Koryo Credit Development Bank",
+   "kind": "entity",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "23786",
+   "name": "Koti",
+   "kind": "vessel",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "23785",
+   "name": "Koti Corp",
+   "kind": "entity",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "37621",
+   "name": "Kozlov Sergey Mikhaylovich",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ]
+  },
+  {
+   "id": "23185",
+   "name": "Ku Bong Ryong",
+   "kind": "vessel",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "23017",
+   "name": "Ku Ja Hyong",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ],
+   "title": "Foreign Trade Bank of the Democratic People's Republic of Korea chief representative in Libya"
+  },
+  {
+   "id": "23089",
+   "name": "Ku Sung Sop",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ],
+   "title": "Consul General, Shenyang, China"
+  },
+  {
+   "id": "23731",
+   "name": "Kum Gang 3",
+   "kind": "vessel",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "23160",
+   "name": "Kum Song 3",
+   "kind": "vessel",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "23161",
+   "name": "Kum Song 5",
+   "kind": "vessel",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "23162",
+   "name": "Kum Song 7",
+   "kind": "vessel",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "23517",
+   "name": "Kum Un San",
+   "kind": "vessel",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "23163",
+   "name": "Kum Un San 3",
+   "kind": "vessel",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "20571",
+   "name": "Kumgang Bank",
+   "kind": "entity",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "22998",
+   "name": "Kwak Chong-chol",
+   "kind": "individual",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "37878",
+   "name": "Kwek Kee Seng",
+   "kind": "individual",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "18344",
+   "name": "Lai Leonard",
+   "kind": "individual",
+   "programs": [
+    "DPRK"
+   ]
+  },
+  {
+   "id": "27307",
+   "name": "Lazarus Group",
+   "kind": "entity",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "22609",
+   "name": "Li Hong Ri",
+   "kind": "individual",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "28264",
+   "name": "Li Jiadong",
+   "kind": "individual",
+   "programs": [
+    "DPRK3",
+    "CYBER2"
+   ]
+  },
+  {
+   "id": "52264",
+   "name": "Liaoning China Trade Industry Co., Ltd.",
+   "kind": "entity",
+   "programs": [
+    "DPRK2"
+   ]
+  },
+  {
+   "id": "26244",
+   "name": "Liaoning Danxing International Forwarding Co. Ltd.",
+   "kind": "entity",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "23773",
+   "name": "Liberty Shipping Co Ltd",
+   "kind": "entity",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "48260",
+   "name": "Limited Liability Company Alis",
+   "kind": "entity",
+   "programs": [
+    "DPRK2"
+   ]
+  },
+  {
+   "id": "44544",
+   "name": "Limited Liability Company Verus",
+   "kind": "entity",
+   "programs": [
+    "DPRK"
+   ]
+  },
+  {
+   "id": "34024",
+   "name": "Lu Hezheng",
+   "kind": "individual",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "27528",
+   "name": "Lucky Star",
+   "kind": "vessel",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "20578",
+   "name": "Mansudae Overseas Project Group Of Companies",
+   "kind": "entity",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "22703",
+   "name": "Mansudae Overseas Projects Architectural And Technical Services (Pty) Limited",
+   "kind": "entity",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "23173",
+   "name": "Maritime Administration Of The Democratic People's Republic Of Korea",
+   "kind": "entity",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "19592",
+   "name": "Mi Rim",
+   "kind": "vessel",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "19593",
+   "name": "Mi Rim 2",
+   "kind": "vessel",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "23085",
+   "name": "Military Security Command",
+   "kind": "entity",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "21305",
+   "name": "Min Byong Chol",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ],
+   "title": "Member of the Worker's Party of Korea's Organization and Guidance Department"
+  },
+  {
+   "id": "23211",
+   "name": "Ministry Of Crude Oil Industry",
+   "kind": "entity",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "21308",
+   "name": "Ministry Of Labor",
+   "kind": "entity",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "23174",
+   "name": "Ministry Of Land And Maritime Transportation Of The Democratic People's Republic Of Korea",
+   "kind": "entity",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "22285",
+   "name": "Ministry Of People's Armed Forces",
+   "kind": "entity",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "20118",
+   "name": "Ministry Of People's Security",
+   "kind": "entity",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "19790",
+   "name": "Ministry Of People's Security Correctional Bureau",
+   "kind": "entity",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "20129",
+   "name": "Ministry Of State Security",
+   "kind": "entity",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "40135",
+   "name": "Ministry Of State Security Border Guard General Bureau",
+   "kind": "entity",
+   "programs": [
+    "DPRK2"
+   ]
+  },
+  {
+   "id": "19789",
+   "name": "Ministry Of State Security Prisons Bureau",
+   "kind": "entity",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "19576",
+   "name": "Mirim Shipping Co Ltd",
+   "kind": "entity",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "41736",
+   "name": "Mkrtychev Ashot",
+   "kind": "individual",
+   "programs": [
+    "DPRK"
+   ]
+  },
+  {
+   "id": "30083",
+   "name": "Mokran Llc",
+   "kind": "entity",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "31042",
+   "name": "Moxing Cartoon",
+   "kind": "entity",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "50604",
+   "name": "Mrb Bank",
+   "kind": "entity",
+   "programs": [
+    "DPRK3",
+    "RUSSIA-EO14024"
+   ]
+  },
+  {
+   "id": "17092",
+   "name": "Mu Du Bong",
+   "kind": "vessel",
+   "programs": [
+    "DPRK"
+   ]
+  },
+  {
+   "id": "22997",
+   "name": "Mun Kyong Hwan",
+   "kind": "individual",
+   "programs": [
+    "DPRK4"
+   ],
+   "title": "Bank of East Land representative"
+  },
+  {
+   "id": "53176",
+   "name": "Myint Kyaw Thu Myo",
+   "kind": "individual",
+   "programs": [
+    "DPRK",
+    "BURMA-EO14014"
+   ]
+  },
+  {
+   "id": "23724",
+   "name": "Myohyang Shipping Co",
+   "kind": "entity",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "54762",
+   "name": "Myong Chol Min",
+   "kind": "individual",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "55442",
+   "name": "Nam Chol Ung",
+   "kind": "individual",
+   "programs": [
+    "DPRK"
+   ]
+  },
+  {
+   "id": "23727",
+   "name": "Nam San 8",
+   "kind": "vessel",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "19612",
+   "name": "Namgang Construction",
+   "kind": "entity",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "19490",
+   "name": "National Defense Commission",
+   "kind": "entity",
+   "programs": [
+    "DPRK2"
+   ]
+  },
+  {
+   "id": "24509",
+   "name": "Neptun",
+   "kind": "vessel",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "39356",
+   "name": "New Eastern Shipping Co Ltd",
+   "kind": "entity",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "57058",
+   "name": "Nguyen Quang Viet",
+   "kind": "individual",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "50603",
+   "name": "Nikulin Dmitry Yuryevich",
+   "kind": "individual",
+   "programs": [
+    "DPRK3",
+    "RUSSIA-EO14024"
+   ],
+   "title": "Vice-President, TSMRBANK, OOO"
+  },
+  {
+   "id": "34023",
+   "name": "Nings Cartoon Studio",
+   "kind": "entity",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "20568",
+   "name": "North East Asia Bank",
+   "kind": "entity",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "52118",
+   "name": "Novosibirskoblgaz Limited Liability Company",
+   "kind": "entity",
+   "programs": [
+    "DPRK4",
+    "RUSSIA-EO14024"
+   ]
+  },
+  {
+   "id": "25689",
+   "name": "Nymex Star",
+   "kind": "vessel",
+   "programs": [
+    "DPRK"
+   ]
+  },
+  {
+   "id": "19792",
+   "name": "O Chong Ok",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ],
+   "title": "Director of the First Bureau of the Reconnaissance General Bureau"
+  },
+  {
+   "id": "48268",
+   "name": "O In Chun",
+   "kind": "individual",
+   "programs": [
+    "DPRK"
+   ]
+  },
+  {
+   "id": "15771",
+   "name": "O Kuk-Ryol",
+   "kind": "individual",
+   "programs": [
+    "NPWMD",
+    "DPRK2"
+   ],
+   "title": "Vice Chairman of the National Defense Commission"
+  },
+  {
+   "id": "17093",
+   "name": "O Un Chong Nyon Ho",
+   "kind": "vessel",
+   "programs": [
+    "DPRK"
+   ]
+  },
+  {
+   "id": "19571",
+   "name": "Ocean Bunkering Jv Co",
+   "kind": "entity",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "17068",
+   "name": "Ocean Maritime Management Company Limited",
+   "kind": "entity",
+   "programs": [
+    "DPRK"
+   ]
+  },
+  {
+   "id": "12209",
+   "name": "Office 39",
+   "kind": "entity",
+   "programs": [
+    "DPRK"
+   ]
+  },
+  {
+   "id": "52131",
+   "name": "Okryu Trading Company",
+   "kind": "entity",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "55454",
+   "name": "Oo Aung Ko Ko",
+   "kind": "individual",
+   "programs": [
+    "DPRK",
+    "BURMA-EO14014"
+   ]
+  },
+  {
+   "id": "20123",
+   "name": "Organization And Guidance Department",
+   "kind": "entity",
+   "programs": [
+    "DPRK2"
+   ]
+  },
+  {
+   "id": "23766",
+   "name": "Oriental Treasure",
+   "kind": "vessel",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "19578",
+   "name": "Orion Star",
+   "kind": "vessel",
+   "programs": [
+    "DPRK"
+   ]
+  },
+  {
+   "id": "20540",
+   "name": "P-532",
+   "kind": "aircraft",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "20541",
+   "name": "P-533",
+   "kind": "aircraft",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "20542",
+   "name": "P-537",
+   "kind": "aircraft",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "20543",
+   "name": "P-552",
+   "kind": "aircraft",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "20544",
+   "name": "P-561",
+   "kind": "aircraft",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "20545",
+   "name": "P-632",
+   "kind": "aircraft",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "20546",
+   "name": "P-633",
+   "kind": "aircraft",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "20547",
+   "name": "P-671",
+   "kind": "aircraft",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "20548",
+   "name": "P-672",
+   "kind": "aircraft",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "20549",
+   "name": "P-813",
+   "kind": "aircraft",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "20551",
+   "name": "P-835",
+   "kind": "aircraft",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "20552",
+   "name": "P-881",
+   "kind": "aircraft",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "20553",
+   "name": "P-885",
+   "kind": "aircraft",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "20554",
+   "name": "P-912",
+   "kind": "aircraft",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "20555",
+   "name": "P-913",
+   "kind": "aircraft",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "20556",
+   "name": "P-914",
+   "kind": "aircraft",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "22987",
+   "name": "Pae Won Uk",
+   "kind": "individual",
+   "programs": [
+    "DPRK4"
+   ],
+   "title": "Korea Daesong Bank representative"
+  },
+  {
+   "id": "23484",
+   "name": "Paek Jong Sam",
+   "kind": "individual",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "23737",
+   "name": "Paek Ma",
+   "kind": "vessel",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "23715",
+   "name": "Paekma Shipping Co",
+   "kind": "entity",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "21724",
+   "name": "Paeksol Trading Corporation",
+   "kind": "entity",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "22994",
+   "name": "Pak Bong Nam",
+   "kind": "individual",
+   "programs": [
+    "DPRK4"
+   ],
+   "title": "ILSIM International Bank Representative in Shenyang, China"
+  },
+  {
+   "id": "23008",
+   "name": "Pak Chol Nam",
+   "kind": "individual",
+   "programs": [
+    "DPRK4"
+   ],
+   "title": "Cheil Credit Bank representative in Beijing"
+  },
+  {
+   "id": "19533",
+   "name": "Pak Chun Il",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ],
+   "title": "North Korean Ambassador to Egypt"
+  },
+  {
+   "id": "40937",
+   "name": "Pak Hwa Song",
+   "kind": "individual",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "52117",
+   "name": "Pak Jong Chon",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ]
+  },
+  {
+   "id": "26168",
+   "name": "Pak Kwang Ho",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ],
+   "title": "Director of the Propaganda and Agitation Department"
+  },
+  {
+   "id": "23516",
+   "name": "Pak Kwang Hun",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ],
+   "title": "Representative of Korea Ryonbong General Corporation in Vladivostok, Russia"
+  },
+  {
+   "id": "23011",
+   "name": "Pak Mun Il",
+   "kind": "individual",
+   "programs": [
+    "DPRK4"
+   ],
+   "title": "Korea Daesong Bank official"
+  },
+  {
+   "id": "23478",
+   "name": "Pak Tong Sok",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ],
+   "title": "Korea Ryonbong General Corporation Official"
+  },
+  {
+   "id": "19497",
+   "name": "Pak Yong Sik",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ],
+   "title": "Member of the Workers' Party of Korea Central Military Commission"
+  },
+  {
+   "id": "22984",
+   "name": "Pang Su Nam",
+   "kind": "individual",
+   "programs": [
+    "DPRK2",
+    "DPRK4"
+   ],
+   "title": "ILSIM International Bank representative in Zhuhai, China"
+  },
+  {
+   "id": "24918",
+   "name": "Park Jin Hyok",
+   "kind": "individual",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "24512",
+   "name": "Partizan",
+   "kind": "vessel",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "24508",
+   "name": "Patriot",
+   "kind": "vessel",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "17095",
+   "name": "Pho Thae",
+   "kind": "vessel",
+   "programs": [
+    "DPRK"
+   ]
+  },
+  {
+   "id": "23717",
+   "name": "Phyongchon Shipping & Marine",
+   "kind": "entity",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "17096",
+   "name": "Pi Ruy Gang",
+   "kind": "vessel",
+   "programs": [
+    "DPRK"
+   ]
+  },
+  {
+   "id": "48261",
+   "name": "Pioneer Bencont Star Real Estate",
+   "kind": "entity",
+   "programs": [
+    "DPRK2"
+   ]
+  },
+  {
+   "id": "22610",
+   "name": "Pisklin Mikhail Yur'evich",
+   "kind": "individual",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "23741",
+   "name": "Po Chon",
+   "kind": "vessel",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "17094",
+   "name": "Po Thong Gang",
+   "kind": "vessel",
+   "programs": [
+    "DPRK"
+   ]
+  },
+  {
+   "id": "23718",
+   "name": "Pochon Shipping & Management",
+   "kind": "entity",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "24450",
+   "name": "Primorye Maritime Logistics Co Ltd",
+   "kind": "entity",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "23824",
+   "name": "Pro-Gain Group Corporation",
+   "kind": "entity",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "24516",
+   "name": "Profinet Pte. Ltd.",
+   "kind": "entity",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "23165",
+   "name": "Pu Hung 1",
+   "kind": "vessel",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "18955",
+   "name": "Pyongjin Ship Management Company Limited",
+   "kind": "entity",
+   "programs": [
+    "DPRK"
+   ]
+  },
+  {
+   "id": "43336",
+   "name": "Pyongyang University Of Automation",
+   "kind": "entity",
+   "programs": [
+    "DPRK2"
+   ]
+  },
+  {
+   "id": "22704",
+   "name": "Qingdao Construction (Namibia) Cc",
+   "kind": "entity",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "57057",
+   "name": "Quangvietdnbg International Services Company Limited",
+   "kind": "entity",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "40212",
+   "name": "Quanzhou Yiyangjin Import And Export Trade Co., Ltd.",
+   "kind": "entity",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "19594",
+   "name": "Ra Nam 2",
+   "kind": "vessel",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "19595",
+   "name": "Ra Nam 3",
+   "kind": "vessel",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "48988",
+   "name": "Rafort Limited Liability Company",
+   "kind": "entity",
+   "programs": [
+    "DPRK"
+   ]
+  },
+  {
+   "id": "23164",
+   "name": "Rak Rang",
+   "kind": "vessel",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "17102",
+   "name": "Rak Won 2",
+   "kind": "vessel",
+   "programs": [
+    "DPRK"
+   ]
+  },
+  {
+   "id": "20570",
+   "name": "Rason International Commercial Bank",
+   "kind": "entity",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "12210",
+   "name": "Reconnaissance General Bureau",
+   "kind": "entity",
+   "programs": [
+    "DPRK",
+    "DPRK2"
+   ]
+  },
+  {
+   "id": "51330",
+   "name": "Ri Chang Ho",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ],
+   "title": "Director of Korean People's Army, Reconnaissance General Bureau"
+  },
+  {
+   "id": "18668",
+   "name": "Ri Chong Chol",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ]
+  },
+  {
+   "id": "22993",
+   "name": "Ri Chun Hwan",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ],
+   "title": "Foreign Trade Bank of the Democratic People's Republic of Korea representative"
+  },
+  {
+   "id": "22988",
+   "name": "Ri Chun Song",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ],
+   "title": "Foreign Trade Bank of the Democratic People's Republic of Korea representative"
+  },
+  {
+   "id": "23009",
+   "name": "Ri Ho Nam",
+   "kind": "individual",
+   "programs": [
+    "DPRK4"
+   ],
+   "title": "Ryugyong Commercial Bank representative"
+  },
+  {
+   "id": "20127",
+   "name": "Ri Jae Il",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ],
+   "title": "First Vice Director of the Workers' Party of Korea Propaganda and Agitation Department"
+  },
+  {
+   "id": "56041",
+   "name": "Ri Jin Hyok",
+   "kind": "individual",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "24607",
+   "name": "Ri Jong Won",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ]
+  },
+  {
+   "id": "19491",
+   "name": "Ri Man Gon",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ]
+  },
+  {
+   "id": "23231",
+   "name": "Ri Myong Hun",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ]
+  },
+  {
+   "id": "23215",
+   "name": "Ri Pyong Chol",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ],
+   "title": "First Vice Department Director of the Workers' Party of Korea Central Committee"
+  },
+  {
+   "id": "39660",
+   "name": "Ri Sok",
+   "kind": "individual",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "20121",
+   "name": "Ri Song Chol",
+   "kind": "individual",
+   "programs": [
+    "DPRK3"
+   ],
+   "title": "Ministry of People's Security Counselor"
+  },
+  {
+   "id": "24997",
+   "name": "Ri Song Un",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ],
+   "title": "Economic and Commercial Counsellor at DPRK Embassy in Mongolia"
+  },
+  {
+   "id": "22326",
+   "name": "Ri Song-hyok",
+   "kind": "individual",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "37657",
+   "name": "Ri Sung Il",
+   "kind": "individual",
+   "programs": [
+    "DPRK"
+   ]
+  },
+  {
+   "id": "23086",
+   "name": "Ri Thae Chol",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ],
+   "title": "DPRK First Vice Minister of People's Security"
+  },
+  {
+   "id": "23503",
+   "name": "Ri Tok Jin",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ],
+   "title": "Korea Ryonbong General Corporation Representative in Ji'an, China"
+  },
+  {
+   "id": "23013",
+   "name": "Ri U'n-so'ng",
+   "kind": "individual",
+   "programs": [
+    "DPRK4"
+   ],
+   "title": "Korea United Development Bank representative"
+  },
+  {
+   "id": "19609",
+   "name": "Ri Won Ho",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ],
+   "title": "North Korea's Ministry of State Security Official"
+  },
+  {
+   "id": "33936",
+   "name": "Ri Yong Gil",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ]
+  },
+  {
+   "id": "19494",
+   "name": "Ri Yong Mu",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ],
+   "title": "Vice Chairman of the National Defense Commission"
+  },
+  {
+   "id": "35758",
+   "name": "Rk Briz, Ooo",
+   "kind": "entity",
+   "programs": [
+    "DPRK2"
+   ]
+  },
+  {
+   "id": "52116",
+   "name": "Ro Kwang Chol",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ],
+   "title": "Minister of the Ministry of People's Armed Forces"
+  },
+  {
+   "id": "53174",
+   "name": "Royal Shune Lei Company Limited",
+   "kind": "entity",
+   "programs": [
+    "DPRK",
+    "BURMA-EO14014"
+   ]
+  },
+  {
+   "id": "23168",
+   "name": "Rung Ra 1",
+   "kind": "vessel",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "23169",
+   "name": "Rung Ra 2",
+   "kind": "vessel",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "23166",
+   "name": "Rung Ra Do",
+   "kind": "vessel",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "24026",
+   "name": "Russian Financial Corporation",
+   "kind": "entity",
+   "programs": [
+    "DPRK3",
+    "RUSSIA-EO14024"
+   ]
+  },
+  {
+   "id": "23512",
+   "name": "Ryang Tae Chol",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ],
+   "title": "Representative of the Korea Ryonbong General Corporation in Tumen, China"
+  },
+  {
+   "id": "23186",
+   "name": "Rye Song Gang 1",
+   "kind": "vessel",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "19596",
+   "name": "Ryo Myong",
+   "kind": "vessel",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "22999",
+   "name": "Ryom Hui-bong",
+   "kind": "individual",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "17103",
+   "name": "Ryong Gang 2",
+   "kind": "vessel",
+   "programs": [
+    "DPRK"
+   ]
+  },
+  {
+   "id": "17104",
+   "name": "Ryong Gun Bong",
+   "kind": "vessel",
+   "programs": [
+    "DPRK"
+   ]
+  },
+  {
+   "id": "17616",
+   "name": "Ryu Jin",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ],
+   "title": "KOMID official in Syria"
+  },
+  {
+   "id": "23005",
+   "name": "Ryugyong Commercial Bank",
+   "kind": "entity",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "56037",
+   "name": "Ryujong Credit Bank",
+   "kind": "entity",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "24998",
+   "name": "Sahin Huseyin",
+   "kind": "individual",
+   "programs": [
+    "DPRK"
+   ],
+   "title": "Chief Executive Officer"
+  },
+  {
+   "id": "23733",
+   "name": "Sam Jong 1",
+   "kind": "vessel",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "23734",
+   "name": "Sam Jong 2",
+   "kind": "vessel",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "23735",
+   "name": "Sam Ma 2",
+   "kind": "vessel",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "34022",
+   "name": "Sek Studio",
+   "kind": "entity",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "44718",
+   "name": "Semenov Roman",
+   "kind": "individual",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "18345",
+   "name": "Senat Shipping Limited",
+   "kind": "entity",
+   "programs": [
+    "DPRK"
+   ]
+  },
+  {
+   "id": "22701",
+   "name": "Serbin Andrey",
+   "kind": "individual",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "24513",
+   "name": "Sevastopol",
+   "kind": "vessel",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "26933",
+   "name": "Shang Yuan Bao",
+   "kind": "vessel",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "23779",
+   "name": "Shanghai Dongfeng Shpg Co Ltd",
+   "kind": "entity",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "34025",
+   "name": "Shanghai Hongman Cartoon And Animation Design Studio",
+   "kind": "entity",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "23769",
+   "name": "Shen Zhong International Shpg",
+   "kind": "entity",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "55062",
+   "name": "Shenyang Geumpungri Network Technology Co., Ltd",
+   "kind": "entity",
+   "programs": [
+    "DPRK2"
+   ]
+  },
+  {
+   "id": "25000",
+   "name": "Sia Falcon International Group",
+   "kind": "entity",
+   "programs": [
+    "DPRK"
+   ]
+  },
+  {
+   "id": "27533",
+   "name": "Silver Bridge Shipping Co-Hkg",
+   "kind": "entity",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "23087",
+   "name": "Sin Yong Il",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ],
+   "title": "Deputy Director of the Military Security Command"
+  },
+  {
+   "id": "44437",
+   "name": "Sinbad",
+   "kind": "entity",
+   "programs": [
+    "DPRK3",
+    "CYBER2"
+   ]
+  },
+  {
+   "id": "19629",
+   "name": "Singwang Economics And Trading General Corporation",
+   "kind": "entity",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "24567",
+   "name": "Sinsms Pte. Ltd.",
+   "kind": "entity",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "23187",
+   "name": "So Baek San",
+   "kind": "vessel",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "34021",
+   "name": "Soin Dmitriy Yurevich",
+   "kind": "individual",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "52286",
+   "name": "Son Kyong Sik",
+   "kind": "individual",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "23742",
+   "name": "Song Won",
+   "kind": "vessel",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "22324",
+   "name": "Songi Trading Company",
+   "kind": "entity",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "23720",
+   "name": "Songwon Shipping & Management",
+   "kind": "entity",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "19582",
+   "name": "South Hill 2",
+   "kind": "vessel",
+   "programs": [
+    "DPRK"
+   ]
+  },
+  {
+   "id": "19584",
+   "name": "South Hill 5",
+   "kind": "vessel",
+   "programs": [
+    "DPRK"
+   ]
+  },
+  {
+   "id": "28716",
+   "name": "Star 18",
+   "kind": "vessel",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "22283",
+   "name": "State Affairs Commission",
+   "kind": "entity",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "21323",
+   "name": "State Planning Commission",
+   "kind": "entity",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "50607",
+   "name": "Stroytreyd Llc",
+   "kind": "entity",
+   "programs": [
+    "DPRK3",
+    "RUSSIA-EO14024"
+   ]
+  },
+  {
+   "id": "23170",
+   "name": "Sun Sidong",
+   "kind": "individual",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "39359",
+   "name": "Swanseas Port Services Pte. Ltd.",
+   "kind": "entity",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "17105",
+   "name": "Tae Dong Gang",
+   "kind": "vessel",
+   "programs": [
+    "DPRK"
+   ]
+  },
+  {
+   "id": "25686",
+   "name": "Tan Wee Beng",
+   "kind": "individual",
+   "programs": [
+    "DPRK"
+   ],
+   "title": "Director of Wee Tiong (S) Pte Ltd; Managing Director of WT Marine Pte Ltd"
+  },
+  {
+   "id": "43337",
+   "name": "Technical Reconnaissance Bureau",
+   "kind": "entity",
+   "programs": [
+    "DPRK2"
+   ]
+  },
+  {
+   "id": "48989",
+   "name": "Tekhnologiya, Ooo",
+   "kind": "entity",
+   "programs": [
+    "DPRK"
+   ]
+  },
+  {
+   "id": "19597",
+   "name": "Thae Pyong San",
+   "kind": "vessel",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "19581",
+   "name": "Thaephyongsan Shipping Co Ltd",
+   "kind": "entity",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "27688",
+   "name": "Thinh Cuong Company Limited",
+   "kind": "entity",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "40209",
+   "name": "Tian Fang Hong Kong Holdings Limited",
+   "kind": "entity",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "28263",
+   "name": "Tian Yinyin",
+   "kind": "individual",
+   "programs": [
+    "DPRK3",
+    "CYBER2"
+   ]
+  },
+  {
+   "id": "50610",
+   "name": "Timer Bank, Ao",
+   "kind": "entity",
+   "programs": [
+    "DPRK3",
+    "RUSSIA-EO14024"
+   ]
+  },
+  {
+   "id": "19598",
+   "name": "Tong Hung 1",
+   "kind": "vessel",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "23743",
+   "name": "Tong Hung 5",
+   "kind": "vessel",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "23723",
+   "name": "Tonghung Shipping & Trading Co",
+   "kind": "entity",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "48990",
+   "name": "Trans Kapital Limited Liability Company",
+   "kind": "entity",
+   "programs": [
+    "DPRK"
+   ]
+  },
+  {
+   "id": "22605",
+   "name": "Transatlantic Partners Pte. Ltd.",
+   "kind": "entity",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "23823",
+   "name": "Tsang Yung Yuan",
+   "kind": "individual",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "22488",
+   "name": "Tsmrbank, Ooo",
+   "kind": "entity",
+   "programs": [
+    "UKRAINE-EO13660",
+    "DPRK3",
+    "RUSSIA-EO14024"
+   ]
+  },
+  {
+   "id": "56045",
+   "name": "U Yong Su",
+   "kind": "individual",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "23525",
+   "name": "Ul Ji Bong 6",
+   "kind": "vessel",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "23521",
+   "name": "Un Ryul",
+   "kind": "vessel",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "22606",
+   "name": "Velmur Management Pte Ltd",
+   "kind": "entity",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "44579",
+   "name": "Versor S.r.o.",
+   "kind": "entity",
+   "programs": [
+    "DPRK"
+   ]
+  },
+  {
+   "id": "19590",
+   "name": "Victory 2",
+   "kind": "vessel",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "24978",
+   "name": "Volasys Silver Star",
+   "kind": "entity",
+   "programs": [
+    "DPRK3",
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "52119",
+   "name": "Vostok Trading Limited Liability Company",
+   "kind": "entity",
+   "programs": [
+    "DPRK4",
+    "RUSSIA-EO14024"
+   ]
+  },
+  {
+   "id": "25687",
+   "name": "Wee Tiong (S) Pte Ltd",
+   "kind": "entity",
+   "programs": [
+    "DPRK"
+   ]
+  },
+  {
+   "id": "27532",
+   "name": "Weihai Huijiang Trade Limited",
+   "kind": "entity",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "23775",
+   "name": "Weihai World-Shipping Freight",
+   "kind": "entity",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "23150",
+   "name": "Won San 2",
+   "kind": "vessel",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "23740",
+   "name": "Woory Star",
+   "kind": "vessel",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "19489",
+   "name": "Workers' Party Of Korea Central Military Commission",
+   "kind": "entity",
+   "programs": [
+    "DPRK2"
+   ]
+  },
+  {
+   "id": "25688",
+   "name": "Wt Marine Pte Ltd",
+   "kind": "entity",
+   "programs": [
+    "DPRK"
+   ]
+  },
+  {
+   "id": "42496",
+   "name": "Wu Huihui",
+   "kind": "individual",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "23776",
+   "name": "Xin Guang Hai",
+   "kind": "vessel",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "39661",
+   "name": "Yan Zhiyong",
+   "kind": "individual",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "24977",
+   "name": "Yanbian Silverstar Network Technology Co., Ltd.",
+   "kind": "entity",
+   "programs": [
+    "DPRK3",
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "40210",
+   "name": "Yancheng Three Line One Point Animation Co., Ltd.",
+   "kind": "entity",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
+   "id": "23167",
+   "name": "Yang Gak Do",
+   "kind": "vessel",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "18954",
+   "name": "Yongjin Ship Management Company Limited",
+   "kind": "entity",
+   "programs": [
+    "DPRK"
+   ]
+  },
+  {
+   "id": "19488",
+   "name": "Yu Chol U",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ],
+   "title": "Director, National Aerospace Development Administration"
+  },
+  {
+   "id": "39497",
+   "name": "Yu Jin",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ]
+  },
+  {
+   "id": "23736",
+   "name": "Yu Jong 2",
+   "kind": "vessel",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "17625",
+   "name": "Yu Kwang Ho",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ]
+  },
+  {
+   "id": "23732",
+   "name": "Yu Phyong 5",
+   "kind": "vessel",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "23744",
+   "name": "Yu Son",
+   "kind": "vessel",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "23157",
+   "name": "Yu Song 12",
+   "kind": "vessel",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "23158",
+   "name": "Yu Song 7",
+   "kind": "vessel",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "23788",
+   "name": "Yuk Tung",
+   "kind": "vessel",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "23787",
+   "name": "Yuk Tung Energy Pte Ltd",
+   "kind": "entity",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "57034",
+   "name": "Yun Song Guk",
+   "kind": "individual",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "23149",
+   "name": "Yusong Shipping Co",
+   "kind": "entity",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "23155",
+   "name": "Za Ryok 2",
+   "kind": "vessel",
+   "programs": [
+    "DPRK4"
+   ]
+  },
+  {
+   "id": "35754",
+   "name": "Zeel - M Co., Ltd.",
+   "kind": "entity",
+   "programs": [
+    "DPRK2"
+   ]
+  }
+ ]
+}

@@ -16,8 +16,12 @@ import { person } from '@/entities';
 import testsRaw from '../../public/data/test.en.json';
 import { REPO_URL, SITE_NAME, SITE_URL } from '@/site/config';
 import { jsonLd } from '@/site/seo';
+import { HUB_PATHS } from '@/content/translations';
 
-export const metadata = { alternates: { canonical: '/' } };
+const HUB_PATHS_WITH_DEFAULT = { ...HUB_PATHS, 'x-default': '/' };
+
+// the root layout supplies title and description; this adds the canonical URL and the translated hubs
+export const metadata = { alternates: { canonical: '/', languages: HUB_PATHS_WITH_DEFAULT } };
 
 const TESTS = (testsRaw as unknown as { timeBins: { data: { date: string }[] }[] }).timeBins.flatMap((b) => b.data);
 

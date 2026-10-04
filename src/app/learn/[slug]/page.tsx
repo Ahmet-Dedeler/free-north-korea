@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { ARTICLES, articleBySlug } from '@/content/articles';
+import { articleLanguages } from '@/content/translations';
 import ArticleArt, { artCredit } from '@/components/ArticleArt';
 import ArticleCards from '@/components/ArticleCards';
 import { SourceCards } from '@/components/Visual';
@@ -16,7 +17,14 @@ export const generateStaticParams = () => ARTICLES.map((a) => ({ slug: a.slug })
 export async function generateMetadata({ params }: Params) {
   const a = articleBySlug((await params).slug);
   if (!a) return {};
-  return pageMeta({ title: a.title, description: a.description, path: `/learn/${a.slug}`, type: 'article' });
+  return pageMeta({
+    title: a.title,
+    description: a.description,
+    path: `/learn/${a.slug}`,
+    type: 'article',
+    languages: articleLanguages(a.slug),
+    image: `/learn/${a.slug}/opengraph-image`,
+  });
 }
 
 export default async function ArticlePage({ params }: Params) {
@@ -31,6 +39,7 @@ export default async function ArticlePage({ params }: Params) {
       '@type': 'Article',
       headline: a.h1,
       description: a.description,
+      inLanguage: 'en',
       dateModified: a.updated,
       mainEntityOfPage: url,
       author: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
@@ -56,6 +65,7 @@ export default async function ArticlePage({ params }: Params) {
   ];
 
   const credit = artCredit(a);
+  const langs = articleLanguages(a.slug);
 
   return (
     <article className="article">
@@ -67,6 +77,20 @@ export default async function ArticlePage({ params }: Params) {
             <Link href="/learn">Learn</Link> · {a.minutes} min read · Updated {formatDate(a.updated)}
           </p>
           <h1>{a.h1}</h1>
+          {(langs.ko || langs.ja) && (
+            <p className="art-langs">
+              {langs.ko && (
+                <Link href={langs.ko} hrefLang="ko" lang="ko">
+                  한국어
+                </Link>
+              )}
+              {langs.ja && (
+                <Link href={langs.ja} hrefLang="ja" lang="ja">
+                  日本語
+                </Link>
+              )}
+            </p>
+          )}
         </div>
         {credit && (
           <a className="art-credit" href={credit.sourceUrl} target={credit.sourceUrl.startsWith('/') ? undefined : '_blank'} rel="noopener noreferrer">
