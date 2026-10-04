@@ -31,10 +31,13 @@ Available in English, Korean (`/ko`) and Japanese (`/ja`).
 
 Analytics is off unless `NEXT_PUBLIC_POSTHOG_KEY` is set (see `.env.example`). It is cookieless and anonymous.
 
-## Contributing
+## Contributing & Architecture
 
 Facts and data live in `src/content/`, so most fixes are a one-line edit: a wrong number, a new organization, a
-coordinate, an article. Every fact should have a source. See `AGENTS.md` for how the code is laid out.
+coordinate, an article. Every fact should have a source.
+
+- See [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines, workflow, and safety rules.
+- See [LEARN.md](LEARN.md) for the technical architecture, GIS pipeline, and design decisions.
 
 Found something wrong? [Open an issue](https://github.com/Ahmet-Dedeler/free-north-korea/issues/new).
 
