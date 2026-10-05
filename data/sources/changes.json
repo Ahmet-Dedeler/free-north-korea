@@ -1,1 +1,314 @@
-[]
+[
+  {
+    "id": "unfpa-dprk-planned-census",
+    "at": "2026-10-05T14:36:15.582Z",
+    "kind": "changed",
+    "detail": "last-modified Mon, 05 Oct 2026 07:57:58 GMT"
+  },
+  {
+    "id": "paulpogoda-osint-tools-nk",
+    "at": "2026-10-05T14:36:15.582Z",
+    "kind": "changed",
+    "detail": "last commit 2026-10-02: Fix HTML entities in README.md"
+  },
+  {
+    "id": "data-go-kr-kctv-schedule",
+    "at": "2026-10-05T14:36:15.582Z",
+    "kind": "changed",
+    "detail": "191,538 bytes"
+  },
+  {
+    "id": "who-gho-api-prk",
+    "at": "2026-10-05T14:36:15.582Z",
+    "kind": "changed",
+    "detail": "43,299 bytes"
+  },
+  {
+    "id": "geofabrik-osm-north-korea",
+    "at": "2026-10-05T14:36:15.582Z",
+    "kind": "changed",
+    "detail": "last-modified Mon, 05 Oct 2026 14:30:45 GMT"
+  },
+  {
+    "id": "openstreetmap-overpass-dprk",
+    "at": "2026-10-05T14:36:15.582Z",
+    "kind": "changed",
+    "detail": "484 bytes"
+  },
+  {
+    "id": "npec-dprk-nuclear-complex-map",
+    "at": "2026-10-05T14:36:15.582Z",
+    "kind": "changed",
+    "detail": "reachable, no change signal"
+  },
+  {
+    "id": "frontelligence-dprk-russia-rail",
+    "at": "2026-10-05T14:36:15.582Z",
+    "kind": "broken",
+    "detail": "HTTP 403"
+  },
+  {
+    "id": "sipri-nuclear-forces-dprk",
+    "at": "2026-10-05T14:36:15.582Z",
+    "kind": "changed",
+    "detail": "last-modified Mon, 05 Oct 2026 13:30:28 GMT"
+  },
+  {
+    "id": "sipri-arms-transfers-db",
+    "at": "2026-10-05T14:36:15.582Z",
+    "kind": "changed",
+    "detail": "60,200 bytes (redirected to https://www.sipri.org/databases/armstransfers)"
+  },
+  {
+    "id": "en-wikipedia-missile-tests",
+    "at": "2026-10-05T14:36:15.582Z",
+    "kind": "changed",
+    "detail": "last-modified Tue, 29 Sep 2026 19:09:04 GMT"
+  },
+  {
+    "id": "ja-wikipedia-missile-tests",
+    "at": "2026-10-05T14:36:15.582Z",
+    "kind": "changed",
+    "detail": "last-modified Mon, 21 Sep 2026 11:05:43 GMT"
+  },
+  {
+    "id": "data-go-kr-nk-chronicle",
+    "at": "2026-10-05T14:36:15.582Z",
+    "kind": "changed",
+    "detail": "190,267 bytes"
+  },
+  {
+    "id": "data-go-kr-nk-elites",
+    "at": "2026-10-05T14:36:15.582Z",
+    "kind": "changed",
+    "detail": "190,370 bytes"
+  },
+  {
+    "id": "kaiho-ghost-ships-stats",
+    "at": "2026-10-05T14:36:15.582Z",
+    "kind": "changed",
+    "detail": "last-modified Mon, 05 Oct 2026 08:50:51 GMT"
+  },
+  {
+    "id": "rachi-cabinet-secretariat-database",
+    "at": "2026-10-05T14:36:15.582Z",
+    "kind": "changed",
+    "detail": "last-modified Mon, 05 Oct 2026 01:15:11 GMT"
+  },
+  {
+    "id": "mou-special-economic-zones",
+    "at": "2026-10-05T14:36:15.582Z",
+    "kind": "changed",
+    "detail": "last-modified Fri, 22 Dec 2023 11:22:30 GMT"
+  },
+  {
+    "id": "usgs-minerals-yearbook-dprk",
+    "at": "2026-10-05T14:36:15.582Z",
+    "kind": "changed",
+    "detail": "last-modified Mon, 05 Oct 2026 14:39:01 GMT"
+  },
+  {
+    "id": "zachxbt-onchain-investigations",
+    "at": "2026-10-05T14:36:15.582Z",
+    "kind": "changed",
+    "detail": "reachable, no change signal"
+  },
+  {
+    "id": "global-fishing-watch-dark-fleet",
+    "at": "2026-10-05T14:36:15.582Z",
+    "kind": "changed",
+    "detail": "267,714 bytes"
+  },
+  {
+    "id": "japan-mof-meti-sanctions",
+    "at": "2026-10-05T14:36:15.582Z",
+    "kind": "changed",
+    "detail": "7,069,712 bytes (redirected to https://data.opensanctions.org/artifacts/jp_mof_sanctions/20261005123804-jhi/targets.nested.json)"
+  },
+  {
+    "id": "uk-fcdo-sanctions-list",
+    "at": "2026-10-05T14:36:15.582Z",
+    "kind": "changed",
+    "detail": "49,730,931 bytes"
+  },
+  {
+    "id": "dailynk-korean-market-prices",
+    "at": "2026-10-05T14:36:15.582Z",
+    "kind": "changed",
+    "detail": "298,425 bytes"
+  },
+  {
+    "id": "daily-nk-internal-security",
+    "at": "2026-10-05T14:36:15.582Z",
+    "kind": "changed",
+    "detail": "reachable, no change signal"
+  },
+  {
+    "id": "osm-geofabrik-dprk",
+    "at": "2026-10-05T14:36:15.582Z",
+    "kind": "changed",
+    "detail": "last-modified Mon, 05 Oct 2026 14:30:45 GMT"
+  },
+  {
+    "id": "amnesty-kwanliso-satellite-imagery",
+    "at": "2026-10-05T14:36:15.582Z",
+    "kind": "changed",
+    "detail": "last-modified Mon, 05 Oct 2026 14:38:34 GMT"
+  },
+  {
+    "id": "korea-future-3d-models",
+    "at": "2026-10-05T14:36:15.582Z",
+    "kind": "changed",
+    "detail": "reachable, no change signal"
+  },
+  {
+    "id": "mou-nkinfo-nkmap-fastapi",
+    "at": "2026-10-05T14:36:15.582Z",
+    "kind": "changed",
+    "detail": "7,375 bytes"
+  },
+  {
+    "id": "wfp-vam-subnational-rainfall",
+    "at": "2026-10-05T14:36:15.582Z",
+    "kind": "changed",
+    "detail": "3,976,020 bytes (redirected to https://s3.us-east-1.amazonaws.com/hdx-production-filestore/resources/40f285ff-54b2-4544-80a5-d1a79eb70935/prk-rainfall-subnat-5ytd.csv)"
+  },
+  {
+    "id": "openstreetmap-dprk-military",
+    "at": "2026-10-05T14:36:15.582Z",
+    "kind": "broken",
+    "detail": "HTTP 504"
+  },
+  {
+    "id": "dmz-hardened-artillery-sites",
+    "at": "2026-10-05T14:36:15.582Z",
+    "kind": "changed",
+    "detail": "last-modified Mon, 05 Oct 2026 14:29:39 GMT"
+  },
+  {
+    "id": "kpaaf-airbases-dataset",
+    "at": "2026-10-05T14:36:15.582Z",
+    "kind": "changed",
+    "detail": "16,384 bytes (redirected to https://nuke.fas.org/guide/dprk/facility/air_base.htm)"
+  },
+  {
+    "id": "car-missile-wreckage-ukraine",
+    "at": "2026-10-05T14:36:15.582Z",
+    "kind": "changed",
+    "detail": "last-modified Mon, 05 Oct 2026 14:37:39 GMT"
+  },
+  {
+    "id": "stimson-38-north-imagery",
+    "at": "2026-10-05T14:36:15.582Z",
+    "kind": "recovered",
+    "detail": "reachable, no change signal"
+  },
+  {
+    "id": "unikorea-nkmap-api",
+    "at": "2026-10-05T14:36:15.582Z",
+    "kind": "changed",
+    "detail": "last-modified Mon, 28 Sep 2026 06:18:40 GMT"
+  },
+  {
+    "id": "geofabrik-north-korea-osm",
+    "at": "2026-10-05T14:36:15.582Z",
+    "kind": "changed",
+    "detail": "last-modified Mon, 05 Oct 2026 14:15:55 GMT"
+  },
+  {
+    "id": "msmt-sanctions-monitoring-reports",
+    "at": "2026-10-05T14:36:15.582Z",
+    "kind": "changed",
+    "detail": "3,463 bytes"
+  },
+  {
+    "id": "rusi-dprk-reports-database",
+    "at": "2026-10-05T14:36:15.582Z",
+    "kind": "broken",
+    "detail": "HTTP 403"
+  },
+  {
+    "id": "opensanctions-dprk-collection",
+    "at": "2026-10-05T14:36:15.582Z",
+    "kind": "changed",
+    "detail": "395,146,827 bytes (redirected to https://data.opensanctions.org/artifacts/sanctions/20261005134705-dil/targets.nested.json)"
+  },
+  {
+    "id": "un-comtrade-china-dprk",
+    "at": "2026-10-05T14:36:15.582Z",
+    "kind": "changed",
+    "detail": "448,543 bytes"
+  },
+  {
+    "id": "dailynk-market-indicators",
+    "at": "2026-10-05T14:36:15.582Z",
+    "kind": "changed",
+    "detail": "283,701 bytes"
+  },
+  {
+    "id": "david-hawk-hidden-gulag",
+    "at": "2026-10-05T14:36:15.582Z",
+    "kind": "changed",
+    "detail": "last-modified Sat, 26 Sep 2026 02:11:21 GMT (redirected to https://www.hrnk.org/documentation/)"
+  },
+  {
+    "id": "curtis-melvin-nk-uncovered",
+    "at": "2026-10-05T14:36:15.582Z",
+    "kind": "recovered",
+    "detail": "200,336 bytes"
+  },
+  {
+    "id": "hrnk-satellite-camp-reports",
+    "at": "2026-10-05T14:36:15.582Z",
+    "kind": "changed",
+    "detail": "last-modified Sat, 26 Sep 2026 02:11:21 GMT (redirected to https://www.hrnk.org/documentation/)"
+  },
+  {
+    "id": "nkpd",
+    "at": "2026-10-05T14:36:15.582Z",
+    "kind": "broken",
+    "detail": "error: fetch failed"
+  },
+  {
+    "id": "osint-tools-north-korea",
+    "at": "2026-10-05T14:36:15.582Z",
+    "kind": "changed",
+    "detail": "last commit 2026-10-02: Fix HTML entities in README.md"
+  },
+  {
+    "id": "nk-missile-tests",
+    "at": "2026-10-05T14:36:15.582Z",
+    "kind": "changed",
+    "detail": "last commit 2026-10-03: Add 2026-10-02 test as preliminary figure"
+  },
+  {
+    "id": "nagix-nk-missile-tests",
+    "at": "2026-10-05T14:36:15.582Z",
+    "kind": "changed",
+    "detail": "last commit 2026-10-03: Add 2026-10-02 test as preliminary figure"
+  },
+  {
+    "id": "csis-beyond-parallel-provocations",
+    "at": "2026-10-05T14:36:15.582Z",
+    "kind": "changed",
+    "detail": "last commit 2026-10-05: bot fetched/updated data"
+  },
+  {
+    "id": "us-ofac-sdn-dprk",
+    "at": "2026-10-05T14:36:15.582Z",
+    "kind": "changed",
+    "detail": "29,240,384 bytes (redirected to https://wc2h-sls-prod-public-published.s3.us-gov-west-1.amazonaws.com/Published/72c82e29-cc88-487b-9d3e-a305a134956d/2026-10-02/0c48024c-5001-47a9-9378-c87b68dd9de8/SDN.XML)"
+  },
+  {
+    "id": "un-sc-1718-sanctions-list",
+    "at": "2026-10-05T14:36:15.582Z",
+    "kind": "changed",
+    "detail": "2,177,850 bytes (redirected to https://unsolprodfiles.blob.core.windows.net/publiclegacyxmlfiles/EN/consolidatedLegacyByPRN.xml)"
+  },
+  {
+    "id": "hrnk-prison-camp-kml",
+    "at": "2026-10-05T14:36:15.582Z",
+    "kind": "changed",
+    "detail": "48,801 bytes"
+  }
+]

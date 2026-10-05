@@ -1,6 +1,6 @@
 {
   "nkdb-visual-atlas-locations": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 429,
     "fingerprint": null,
     "detail": "HTTP 429",
@@ -9,7 +9,7 @@
     "ok": false
   },
   "nkdb-visual-atlas-incidents": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 429,
     "fingerprint": null,
     "detail": "HTTP 429",
@@ -18,7 +18,7 @@
     "ok": false
   },
   "korea-future-nkpd-facilities": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
     "fingerprint": "37036279493b4840",
     "detail": "234,303 bytes",
@@ -27,16 +27,16 @@
     "ok": true
   },
   "hrnk-prison-camp-kml": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
-    "fingerprint": "42757f3b5652259a",
+    "fingerprint": "494b671c94a6c6a6",
     "detail": "48,801 bytes",
     "upstreamDate": null,
-    "changedAt": null,
+    "changedAt": "2026-10-05T14:36:15.582Z",
     "ok": true
   },
   "csis-beyond-parallel-markets": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
     "fingerprint": "up:https://beyondparallel.csis.org/markets-private-economy-capitalism-north-korea/",
     "detail": "reachable, no change signal",
@@ -45,25 +45,25 @@
     "ok": true
   },
   "un-sc-1718-sanctions-list": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
-    "fingerprint": "c08321270b316138",
+    "fingerprint": "a749134d99220941",
     "detail": "2,177,850 bytes (redirected to https://unsolprodfiles.blob.core.windows.net/publiclegacyxmlfiles/EN/consolidatedLegacyByPRN.xml)",
     "upstreamDate": null,
-    "changedAt": null,
+    "changedAt": "2026-10-05T14:36:15.582Z",
     "ok": true
   },
   "us-ofac-sdn-dprk": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
-    "fingerprint": "aa5e6f8f9ba4b4e1",
-    "detail": "29,187,997 bytes (redirected to https://wc2h-sls-prod-public-published.s3.us-gov-west-1.amazonaws.com/Published/9f3c49e0-bd93-431c-8f2c-e96babe51280/2026-09-29/b53cbec8-352a-4fe6-aa65-13e05d04ce4b/SDN.XML)",
+    "fingerprint": "0367408834e4af4d",
+    "detail": "29,240,384 bytes (redirected to https://wc2h-sls-prod-public-published.s3.us-gov-west-1.amazonaws.com/Published/72c82e29-cc88-487b-9d3e-a305a134956d/2026-10-02/0c48024c-5001-47a9-9378-c87b68dd9de8/SDN.XML)",
     "upstreamDate": null,
-    "changedAt": null,
+    "changedAt": "2026-10-05T14:36:15.582Z",
     "ok": true
   },
   "csis-beyond-parallel-missile-bases": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
     "fingerprint": "up:https://beyondparallel.csis.org/",
     "detail": "reachable, no change signal",
@@ -72,25 +72,25 @@
     "ok": true
   },
   "csis-beyond-parallel-provocations": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
-    "fingerprint": "e846b417f228",
-    "detail": "last commit 2026-10-01: bot fetched/updated data",
-    "upstreamDate": "2026-10-01",
-    "changedAt": null,
+    "fingerprint": "3d1ace5a7525",
+    "detail": "last commit 2026-10-05: bot fetched/updated data",
+    "upstreamDate": "2026-10-05",
+    "changedAt": "2026-10-05T14:36:15.582Z",
     "ok": true
   },
   "nagix-nk-missile-tests": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
-    "fingerprint": "94f591eb57d3",
-    "detail": "last commit 2026-09-20: Add 2026-09-20 tests as preliminary figures",
-    "upstreamDate": "2026-09-20",
-    "changedAt": null,
+    "fingerprint": "9ff3445cc2ef",
+    "detail": "last commit 2026-10-03: Add 2026-10-02 test as preliminary figure",
+    "upstreamDate": "2026-10-03",
+    "changedAt": "2026-10-05T14:36:15.582Z",
     "ok": true
   },
   "hdx-ocha-cod-ab-prk": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 406,
     "fingerprint": null,
     "detail": "HTTP 406",
@@ -99,7 +99,7 @@
     "ok": false
   },
   "hdx-ocha-cod-ps-prk": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
     "fingerprint": "fb2fe628388aea0b",
     "detail": "23,201 bytes (redirected to https://s3.us-east-1.amazonaws.com/hdx-production-filestore/resources/f21a15b9-2ccb-4917-985f-1ab64c379526/prk_pop_adm2_v2.csv)",
@@ -108,7 +108,7 @@
     "ok": true
   },
   "nasa-gibs-black-marble-wmts": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
     "fingerprint": "up:https://idfs.earthdatacloud.nasa.gov/realms/edl/protocol/openid-connect/auth",
     "detail": "reachable, no change signal (redirected to https://idfs.earthdatacloud.nasa.gov/realms/edl/protocol/openid-connect/auth)",
@@ -117,16 +117,16 @@
     "ok": true
   },
   "nk-missile-tests": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
-    "fingerprint": "94f591eb57d3",
-    "detail": "last commit 2026-09-20: Add 2026-09-20 tests as preliminary figures",
-    "upstreamDate": "2026-09-20",
-    "changedAt": null,
+    "fingerprint": "9ff3445cc2ef",
+    "detail": "last commit 2026-10-03: Add 2026-10-02 test as preliminary figure",
+    "upstreamDate": "2026-10-03",
+    "changedAt": "2026-10-05T14:36:15.582Z",
     "ok": true
   },
   "cns-missile-db": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 403,
     "fingerprint": null,
     "detail": "HTTP 403",
@@ -135,43 +135,43 @@
     "ok": false
   },
   "osint-tools-north-korea": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
-    "fingerprint": "b276c038b120",
-    "detail": "last commit 2025-05-01: Update README.md",
-    "upstreamDate": "2025-05-01",
-    "changedAt": null,
+    "fingerprint": "28f8535bf4fd",
+    "detail": "last commit 2026-10-02: Fix HTML entities in README.md",
+    "upstreamDate": "2026-10-02",
+    "changedAt": "2026-10-05T14:36:15.582Z",
     "ok": true
   },
   "nkpd": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
-    "status": 200,
-    "fingerprint": "9f1f9dce319c4700",
-    "detail": "reachable, no change signal",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
+    "status": 0,
+    "fingerprint": null,
+    "detail": "error: fetch failed",
     "upstreamDate": null,
-    "changedAt": null,
-    "ok": true
+    "changedAt": "2026-10-05T14:36:15.582Z",
+    "ok": false
   },
   "hrnk-satellite-camp-reports": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
-    "fingerprint": "dcbae44e6d83d7ca",
-    "detail": "last-modified Sat, 26 Sep 2026 02:22:57 GMT (redirected to https://www.hrnk.org/documentation/)",
+    "fingerprint": "86b75248448bd6e3",
+    "detail": "last-modified Sat, 26 Sep 2026 02:11:21 GMT (redirected to https://www.hrnk.org/documentation/)",
     "upstreamDate": "2026-09-26",
-    "changedAt": null,
+    "changedAt": "2026-10-05T14:36:15.582Z",
     "ok": true
   },
   "curtis-melvin-nk-uncovered": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
-    "status": 403,
-    "fingerprint": null,
-    "detail": "HTTP 403",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
+    "status": 200,
+    "fingerprint": "55125806870c6827",
+    "detail": "200,336 bytes",
     "upstreamDate": null,
-    "changedAt": null,
-    "ok": false
+    "changedAt": "2026-10-05T14:36:15.582Z",
+    "ok": true
   },
   "un-coi-dprk-report": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
     "fingerprint": "bd8389937860ff9e",
     "detail": "reachable, no change signal",
@@ -180,7 +180,7 @@
     "ok": true
   },
   "rok-mou-human-rights-report": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
     "fingerprint": "up:https://www.unikorea.go.kr/web/unikorea/main",
     "detail": "reachable, no change signal (redirected to https://www.unikorea.go.kr/web/unikorea/main)",
@@ -189,7 +189,7 @@
     "ok": true
   },
   "kinu-white-paper-human-rights": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 404,
     "fingerprint": null,
     "detail": "HTTP 404",
@@ -198,34 +198,34 @@
     "ok": false
   },
   "david-hawk-hidden-gulag": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
-    "fingerprint": "dcbae44e6d83d7ca",
-    "detail": "last-modified Sat, 26 Sep 2026 02:22:57 GMT (redirected to https://www.hrnk.org/documentation/)",
+    "fingerprint": "86b75248448bd6e3",
+    "detail": "last-modified Sat, 26 Sep 2026 02:11:21 GMT (redirected to https://www.hrnk.org/documentation/)",
     "upstreamDate": "2026-09-26",
-    "changedAt": null,
+    "changedAt": "2026-10-05T14:36:15.582Z",
     "ok": true
   },
   "dailynk-market-indicators": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
-    "fingerprint": "d475afb2a1d623d8",
-    "detail": "281,506 bytes",
+    "fingerprint": "df51d56bf9c2aa33",
+    "detail": "283,701 bytes",
     "upstreamDate": null,
-    "changedAt": null,
+    "changedAt": "2026-10-05T14:36:15.582Z",
     "ok": true
   },
   "un-comtrade-china-dprk": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
-    "fingerprint": "c31ed3bb8acd2285",
+    "fingerprint": "9edc04814fa02401",
     "detail": "448,543 bytes",
     "upstreamDate": null,
-    "changedAt": null,
+    "changedAt": "2026-10-05T14:36:15.582Z",
     "ok": true
   },
   "kotra-dprk-trade-report": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
     "fingerprint": "up:https://www.kotra.or.kr/index.do",
     "detail": "reachable, no change signal (redirected to https://www.kotra.or.kr/index.do)",
@@ -234,34 +234,34 @@
     "ok": true
   },
   "opensanctions-dprk-collection": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
-    "fingerprint": "799ecb64cde951d7",
-    "detail": "394,854,084 bytes (redirected to https://data.opensanctions.org/artifacts/sanctions/20261001134831-ooy/targets.nested.json)",
+    "fingerprint": "db03804c2b7014e1",
+    "detail": "395,146,827 bytes (redirected to https://data.opensanctions.org/artifacts/sanctions/20261005134705-dil/targets.nested.json)",
     "upstreamDate": null,
-    "changedAt": null,
+    "changedAt": "2026-10-05T14:36:15.582Z",
     "ok": true
   },
   "rusi-dprk-reports-database": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
-    "status": 200,
-    "fingerprint": "0dac2ea85b9236e9",
-    "detail": "44,382 bytes",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
+    "status": 403,
+    "fingerprint": null,
+    "detail": "HTTP 403",
     "upstreamDate": null,
-    "changedAt": null,
-    "ok": true
+    "changedAt": "2026-10-05T14:36:15.582Z",
+    "ok": false
   },
   "msmt-sanctions-monitoring-reports": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
-    "fingerprint": "9ce744bf605125fa",
+    "fingerprint": "cab42420a566d4b8",
     "detail": "3,463 bytes",
     "upstreamDate": null,
-    "changedAt": null,
+    "changedAt": "2026-10-05T14:36:15.582Z",
     "ok": true
   },
   "tayvano-lazarus-research": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
     "fingerprint": "8d36d1c2aeac",
     "detail": "last commit 2026-09-25: Update bitget.md",
@@ -270,16 +270,16 @@
     "ok": true
   },
   "geofabrik-north-korea-osm": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
-    "fingerprint": "4f81ccc2d8003f15",
-    "detail": "last-modified Thu, 01 Oct 2026 16:18:14 GMT",
-    "upstreamDate": "2026-10-01",
-    "changedAt": null,
+    "fingerprint": "9cff00d5fc08df25",
+    "detail": "last-modified Mon, 05 Oct 2026 14:15:55 GMT",
+    "upstreamDate": "2026-10-05",
+    "changedAt": "2026-10-05T14:36:15.582Z",
     "ok": true
   },
   "irenk-north-korea-mines": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
     "fingerprint": "27f41933856b7106",
     "detail": "reachable, no change signal (redirected to https://irenk.sonosa.or.kr/)",
@@ -288,7 +288,7 @@
     "ok": true
   },
   "regional-development-20x10-factories": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 403,
     "fingerprint": null,
     "detail": "HTTP 403",
@@ -297,16 +297,16 @@
     "ok": false
   },
   "unikorea-nkmap-api": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
-    "fingerprint": "00d979bb7d1534a0",
-    "detail": "last-modified Mon, 28 Sep 2026 06:18:54 GMT",
+    "fingerprint": "b5d25ce8faf73278",
+    "detail": "last-modified Mon, 28 Sep 2026 06:18:40 GMT",
     "upstreamDate": "2026-09-28",
-    "changedAt": null,
+    "changedAt": "2026-10-05T14:36:15.582Z",
     "ok": true
   },
   "unikorea-defector-statistics": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
     "fingerprint": "up:https://unikorea.go.kr/web/unikorea/contents/status_lately",
     "detail": "reachable, no change signal",
@@ -315,7 +315,7 @@
     "ok": true
   },
   "data-go-kr-defector-origins": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
     "fingerprint": "up:https://www.data.go.kr/data/15106185/fileData.do",
     "detail": "reachable, no change signal",
@@ -324,7 +324,7 @@
     "ok": true
   },
   "kosis-bukhan-statistics": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
     "fingerprint": "up:https://kosis.kr/bukhan/",
     "detail": "reachable, no change signal",
@@ -333,7 +333,7 @@
     "ok": true
   },
   "asiapress-rimjingang-market-prices": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
     "fingerprint": "d0531cda0443a725",
     "detail": "last-modified Wed, 30 Sep 2026 04:30:28 GMT",
@@ -342,7 +342,7 @@
     "ok": true
   },
   "soseikai-missing-persons-database": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
     "fingerprint": "05f2a7bed4eaba6f",
     "detail": "reachable, no change signal",
@@ -351,7 +351,7 @@
     "ok": true
   },
   "japan-mod-missile-announcements": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
     "fingerprint": "43a3114cc8d40c31",
     "detail": "last-modified Wed, 30 Sep 2026 15:02:03 GMT",
@@ -360,7 +360,7 @@
     "ok": true
   },
   "kinu-human-rights-whitepaper": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
     "fingerprint": "up:https://www.kinu.or.kr/main/module/report/index.do",
     "detail": "reachable, no change signal",
@@ -369,7 +369,7 @@
     "ok": true
   },
   "mou-nk-human-rights-report": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
     "fingerprint": "6f6a4e56098cfd9a",
     "detail": "reachable, no change signal",
@@ -378,7 +378,7 @@
     "ok": true
   },
   "ngii-nk-spatial-platform": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 400,
     "fingerprint": null,
     "detail": "HTTP 400",
@@ -387,7 +387,7 @@
     "ok": false
   },
   "rok-jcs-missile-announcements": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
     "fingerprint": "b46182ae093003f5",
     "detail": "last-modified Fri, 12 Sep 2025 06:44:52 GMT",
@@ -396,7 +396,7 @@
     "ok": true
   },
   "nti-dprk-nuclear-facilities": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 403,
     "fingerprint": null,
     "detail": "HTTP 403",
@@ -405,7 +405,7 @@
     "ok": false
   },
   "nti-dprk-missile-facilities": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 403,
     "fingerprint": null,
     "detail": "HTTP 403",
@@ -414,16 +414,16 @@
     "ok": false
   },
   "stimson-38-north-imagery": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
-    "status": 403,
-    "fingerprint": null,
-    "detail": "HTTP 403",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
+    "status": 200,
+    "fingerprint": "up:https://www.38north.org/",
+    "detail": "reachable, no change signal",
     "upstreamDate": null,
-    "changedAt": null,
-    "ok": false
+    "changedAt": "2026-10-05T14:36:15.582Z",
+    "ok": true
   },
   "access-dprk-bogle": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 0,
     "fingerprint": null,
     "detail": "error: The operation was aborted due to timeout",
@@ -432,7 +432,7 @@
     "ok": false
   },
   "rusi-dprk-russia-maritime-transfers": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 404,
     "fingerprint": null,
     "detail": "HTTP 404",
@@ -441,16 +441,16 @@
     "ok": false
   },
   "car-missile-wreckage-ukraine": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
-    "fingerprint": "248cea379eb9f34a",
-    "detail": "last-modified Thu, 01 Oct 2026 16:35:17 GMT",
-    "upstreamDate": "2026-10-01",
-    "changedAt": null,
+    "fingerprint": "3d1be15f5dc64564",
+    "detail": "last-modified Mon, 05 Oct 2026 14:37:39 GMT",
+    "upstreamDate": "2026-10-05",
+    "changedAt": "2026-10-05T14:36:15.582Z",
     "ok": true
   },
   "gur-rok-nis-storm-corps-kursk": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 403,
     "fingerprint": null,
     "detail": "HTTP 403",
@@ -459,16 +459,16 @@
     "ok": false
   },
   "kpaaf-airbases-dataset": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
-    "fingerprint": "9f403e07f009a53c",
+    "fingerprint": "01eff4455bc5a1a1",
     "detail": "16,384 bytes (redirected to https://nuke.fas.org/guide/dprk/facility/air_base.htm)",
     "upstreamDate": null,
-    "changedAt": null,
+    "changedAt": "2026-10-05T14:36:15.582Z",
     "ok": true
   },
   "kpn-naval-bases-submarines": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
     "fingerprint": "2fea83ed1f00d4be",
     "detail": "last-modified Wed, 23 Sep 2026 20:19:27 GMT (redirected to https://www.hisutton.com/)",
@@ -477,16 +477,16 @@
     "ok": true
   },
   "dmz-hardened-artillery-sites": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
-    "fingerprint": "80e3ae2bdb086eb7",
-    "detail": "last-modified Thu, 01 Oct 2026 16:25:59 GMT",
-    "upstreamDate": "2026-10-01",
-    "changedAt": null,
+    "fingerprint": "2d6f5b4fed03a751",
+    "detail": "last-modified Mon, 05 Oct 2026 14:29:39 GMT",
+    "upstreamDate": "2026-10-05",
+    "changedAt": "2026-10-05T14:36:15.582Z",
     "ok": true
   },
   "kpa-corps-order-of-battle": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 403,
     "fingerprint": null,
     "detail": "HTTP 403",
@@ -495,16 +495,16 @@
     "ok": false
   },
   "openstreetmap-dprk-military": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
-    "status": 200,
-    "fingerprint": "7a7de345bcf7da82",
-    "detail": "1,512,542 bytes",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
+    "status": 504,
+    "fingerprint": null,
+    "detail": "HTTP 504",
     "upstreamDate": null,
-    "changedAt": null,
-    "ok": true
+    "changedAt": "2026-10-05T14:36:15.582Z",
+    "ok": false
   },
   "justin-meyers-dprk-boundaries": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
     "fingerprint": "f86353a1b18e",
     "detail": "last commit 2017-04-10: upload admin 1s",
@@ -513,7 +513,7 @@
     "ok": true
   },
   "unfpa-cbs-2008-census-report": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
     "fingerprint": "up:https://web.archive.org/web/20120710101736/http://unstats.un.org/unsd/demographic/sources/census/2010_PHC/North_Korea/North_Korea_more.htm",
     "detail": "reachable, no change signal",
@@ -522,7 +522,7 @@
     "ok": true
   },
   "worldpop-prk-100m-constrained": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
     "fingerprint": "up:https://hub.worldpop.org/geodata/summary",
     "detail": "reachable, no change signal",
@@ -531,7 +531,7 @@
     "ok": true
   },
   "kontur-population-h3-dprk": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 406,
     "fingerprint": null,
     "detail": "HTTP 406",
@@ -540,16 +540,16 @@
     "ok": false
   },
   "wfp-vam-subnational-rainfall": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
-    "fingerprint": "a9bd2d551d60b138",
-    "detail": "3,952,482 bytes (redirected to https://s3.us-east-1.amazonaws.com/hdx-production-filestore/resources/40f285ff-54b2-4544-80a5-d1a79eb70935/prk-rainfall-subnat-5ytd.csv)",
+    "fingerprint": "a058d3fc96d58dde",
+    "detail": "3,976,020 bytes (redirected to https://s3.us-east-1.amazonaws.com/hdx-production-filestore/resources/40f285ff-54b2-4544-80a5-d1a79eb70935/prk-rainfall-subnat-5ytd.csv)",
     "upstreamDate": null,
-    "changedAt": null,
+    "changedAt": "2026-10-05T14:36:15.582Z",
     "ok": true
   },
   "wfp-vam-subnational-ndvi": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
     "fingerprint": "bdf0c377233653d2",
     "detail": "2,021,934 bytes (redirected to https://s3.us-east-1.amazonaws.com/hdx-production-filestore/resources/090d39d3-0d87-48a9-ad3d-1d7aea2ebdc8/prk-ndvi-subnat-5ytd.csv)",
@@ -558,7 +558,7 @@
     "ok": true
   },
   "unicef-mics-2017-dprk": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 404,
     "fingerprint": null,
     "detail": "HTTP 404",
@@ -567,7 +567,7 @@
     "ok": false
   },
   "kosis-bukhan-population-territory": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
     "fingerprint": "up:https://kosis.kr/bukhan/index.jsp",
     "detail": "reachable, no change signal",
@@ -576,7 +576,7 @@
     "ok": true
   },
   "kosis-bukhan-national-accounts": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
     "fingerprint": "up:https://kosis.kr/statisticsList/statisticsListIndex.do",
     "detail": "reachable, no change signal (redirected to https://kosis.kr/statisticsList/statisticsListIndex.do)",
@@ -585,7 +585,7 @@
     "ok": true
   },
   "kosis-bukhan-agriculture-food": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
     "fingerprint": "up:https://kosis.kr/statisticsList/statisticsListIndex.do",
     "detail": "reachable, no change signal (redirected to https://kosis.kr/statisticsList/statisticsListIndex.do)",
@@ -594,16 +594,16 @@
     "ok": true
   },
   "mou-nkinfo-nkmap-fastapi": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
-    "fingerprint": "89d33e23c730f002",
+    "fingerprint": "714db08649efdb6a",
     "detail": "7,375 bytes",
     "upstreamDate": null,
-    "changedAt": null,
+    "changedAt": "2026-10-05T14:36:15.582Z",
     "ok": true
   },
   "mou-data-go-kr-defectors-origin": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
     "fingerprint": "83a9b272c06d29a9",
     "detail": "187,104 bytes",
@@ -612,7 +612,7 @@
     "ok": true
   },
   "rda-dprk-crop-production-estimates": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
     "fingerprint": "up:https://www.rda.go.kr/main/mainPage.do",
     "detail": "reachable, no change signal (redirected to https://www.rda.go.kr/main/mainPage.do)",
@@ -621,7 +621,7 @@
     "ok": true
   },
   "nkdb-visual-atlas-glossary": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 429,
     "fingerprint": null,
     "detail": "HTTP 429",
@@ -630,16 +630,16 @@
     "ok": false
   },
   "korea-future-3d-models": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
-    "fingerprint": "29cc6b571ecaf53f",
+    "fingerprint": "8913491b399134fb",
     "detail": "reachable, no change signal",
     "upstreamDate": null,
-    "changedAt": null,
+    "changedAt": "2026-10-05T14:36:15.582Z",
     "ok": true
   },
   "tjwg-mapping-fate-of-dead": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 429,
     "fingerprint": null,
     "detail": "HTTP 429",
@@ -648,7 +648,7 @@
     "ok": false
   },
   "tjwg-mapping-executions-covid": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 429,
     "fingerprint": null,
     "detail": "HTTP 429",
@@ -657,7 +657,7 @@
     "ok": false
   },
   "jacob-bogle-accessdprk": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 0,
     "fingerprint": null,
     "detail": "error: The operation was aborted due to timeout",
@@ -666,7 +666,7 @@
     "ok": false
   },
   "wikipedia-dprk-concentration-camps": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
     "fingerprint": "7af6033caa244995",
     "detail": "145 bytes",
@@ -675,16 +675,16 @@
     "ok": true
   },
   "amnesty-kwanliso-satellite-imagery": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
-    "fingerprint": "a6d28e6906b563f3",
-    "detail": "last-modified Thu, 01 Oct 2026 16:31:37 GMT",
-    "upstreamDate": "2026-10-01",
-    "changedAt": null,
+    "fingerprint": "cc652f1539887d9c",
+    "detail": "last-modified Mon, 05 Oct 2026 14:38:34 GMT",
+    "upstreamDate": "2026-10-05",
+    "changedAt": "2026-10-05T14:36:15.582Z",
     "ok": true
   },
   "csis-beyond-parallel-camp-labor": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
     "fingerprint": "up:https://beyondparallel.csis.org/",
     "detail": "reachable, no change signal",
@@ -693,7 +693,7 @@
     "ok": true
   },
   "nhrck-prison-camp-survey": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
     "fingerprint": "d52640dd8dcaf61e",
     "detail": "reachable, no change signal",
@@ -702,7 +702,7 @@
     "ok": true
   },
   "asiapress-rimjin-gang-penal": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 404,
     "fingerprint": null,
     "detail": "HTTP 404",
@@ -711,16 +711,16 @@
     "ok": false
   },
   "osm-geofabrik-dprk": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
-    "fingerprint": "4f81ccc2d8003f15",
-    "detail": "last-modified Thu, 01 Oct 2026 16:18:14 GMT",
-    "upstreamDate": "2026-10-01",
-    "changedAt": null,
+    "fingerprint": "ef3f1d3b227f1df5",
+    "detail": "last-modified Mon, 05 Oct 2026 14:30:45 GMT",
+    "upstreamDate": "2026-10-05",
+    "changedAt": "2026-10-05T14:36:15.582Z",
     "ok": true
   },
   "namu-wiki-dprk-penal": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 403,
     "fingerprint": null,
     "detail": "HTTP 403",
@@ -729,7 +729,7 @@
     "ok": false
   },
   "hrw-dprk-pretrial-detention": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 404,
     "fingerprint": null,
     "detail": "HTTP 404",
@@ -738,16 +738,16 @@
     "ok": false
   },
   "daily-nk-internal-security": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
-    "fingerprint": "522588ce905a4747",
+    "fingerprint": "up:https://www.dailynk.com/english/",
     "detail": "reachable, no change signal",
     "upstreamDate": null,
-    "changedAt": null,
+    "changedAt": "2026-10-05T14:36:15.582Z",
     "ok": true
   },
   "nkdb-white-paper": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 404,
     "fingerprint": null,
     "detail": "HTTP 404",
@@ -756,16 +756,16 @@
     "ok": false
   },
   "dailynk-korean-market-prices": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
-    "fingerprint": "fe2571f749d091ce",
+    "fingerprint": "981d1d83205dc3b4",
     "detail": "298,425 bytes",
     "upstreamDate": null,
-    "changedAt": null,
+    "changedAt": "2026-10-05T14:36:15.582Z",
     "ok": true
   },
   "asiapress-rimjin-gang-prices": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
     "fingerprint": "d4d1098204970197",
     "detail": "last-modified Thu, 17 Sep 2026 06:12:55 GMT",
@@ -774,7 +774,7 @@
     "ok": true
   },
   "gacc-china-customs-bulletin": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 0,
     "fingerprint": null,
     "detail": "error: fetch failed",
@@ -783,7 +783,7 @@
     "ok": false
   },
   "kosis-north-korea-trade-portal": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
     "fingerprint": "up:https://kosis.kr/bukhan/",
     "detail": "reachable, no change signal (redirected to https://kosis.kr/bukhan/)",
@@ -792,7 +792,7 @@
     "ok": true
   },
   "bank-of-korea-dprk-gdp": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
     "fingerprint": "up:https://www.bok.or.kr/portal/main/main.do",
     "detail": "reachable, no change signal (redirected to https://www.bok.or.kr/portal/main/main.do)",
@@ -801,16 +801,16 @@
     "ok": true
   },
   "uk-fcdo-sanctions-list": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
-    "fingerprint": "b15a14da36547567",
-    "detail": "49,727,548 bytes",
+    "fingerprint": "819d6a92c7e9a08c",
+    "detail": "49,730,931 bytes",
     "upstreamDate": null,
-    "changedAt": null,
+    "changedAt": "2026-10-05T14:36:15.582Z",
     "ok": true
   },
   "eu-fsf-dprk-sanctions": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
     "fingerprint": "730d2a85e4214d00",
     "detail": "last-modified Fri, 25 Sep 2026 10:20:26 GMT",
@@ -819,16 +819,16 @@
     "ok": true
   },
   "japan-mof-meti-sanctions": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
-    "fingerprint": "7a04433fd3d8b865",
-    "detail": "6,956,446 bytes (redirected to https://data.opensanctions.org/artifacts/jp_mof_sanctions/20261001153801-kzc/targets.nested.json)",
+    "fingerprint": "04b9fb5167f1e6ae",
+    "detail": "7,069,712 bytes (redirected to https://data.opensanctions.org/artifacts/jp_mof_sanctions/20261005123804-jhi/targets.nested.json)",
     "upstreamDate": null,
-    "changedAt": null,
+    "changedAt": "2026-10-05T14:36:15.582Z",
     "ok": true
   },
   "un-panel-of-experts-reports": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 202,
     "fingerprint": "5feceb66ffc86f38",
     "detail": "reachable, no change signal (redirected to https://main.un.org/securitycouncil/sanctions/1718/panel_experts/reports)",
@@ -837,16 +837,16 @@
     "ok": true
   },
   "global-fishing-watch-dark-fleet": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
-    "fingerprint": "32f01a55c40eb64c",
-    "detail": "267,303 bytes",
+    "fingerprint": "eef68d13bdc25052",
+    "detail": "267,714 bytes",
     "upstreamDate": null,
-    "changedAt": null,
+    "changedAt": "2026-10-05T14:36:15.582Z",
     "ok": true
   },
   "fbi-lazarus-crypto-alerts": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 403,
     "fingerprint": null,
     "detail": "HTTP 403",
@@ -855,43 +855,43 @@
     "ok": false
   },
   "zachxbt-onchain-investigations": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
-    "fingerprint": "80645bc73b9f89eb",
+    "fingerprint": "553a45cc2a00c1a6",
     "detail": "reachable, no change signal",
     "upstreamDate": null,
-    "changedAt": null,
+    "changedAt": "2026-10-05T14:36:15.582Z",
     "ok": true
   },
   "usgs-minerals-yearbook-dprk": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
-    "fingerprint": "e7813f2e99c8a9c3",
-    "detail": "last-modified Thu, 01 Oct 2026 16:32:05 GMT",
-    "upstreamDate": "2026-10-01",
-    "changedAt": null,
+    "fingerprint": "3d87626245ffd0a2",
+    "detail": "last-modified Mon, 05 Oct 2026 14:39:01 GMT",
+    "upstreamDate": "2026-10-05",
+    "changedAt": "2026-10-05T14:36:15.582Z",
     "ok": true
   },
   "mou-special-economic-zones": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
-    "fingerprint": "2ff9a4e91befd38c",
-    "detail": "last-modified Fri, 22 Dec 2023 11:22:59 GMT",
+    "fingerprint": "f98023e599e349df",
+    "detail": "last-modified Fri, 22 Dec 2023 11:22:30 GMT",
     "upstreamDate": "2023-12-22",
-    "changedAt": null,
+    "changedAt": "2026-10-05T14:36:15.582Z",
     "ok": true
   },
   "rachi-cabinet-secretariat-database": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
-    "fingerprint": "74e938c610a61272",
-    "detail": "last-modified Thu, 01 Oct 2026 06:43:11 GMT",
-    "upstreamDate": "2026-10-01",
-    "changedAt": null,
+    "fingerprint": "d2edb6be68aa2fbc",
+    "detail": "last-modified Mon, 05 Oct 2026 01:15:11 GMT",
+    "upstreamDate": "2026-10-05",
+    "changedAt": "2026-10-05T14:36:15.582Z",
     "ok": true
   },
   "npa-abduction-suspects-icpo": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
     "fingerprint": "up:https://www.npa.go.jp/bureau/security/abduct/index.html",
     "detail": "reachable, no change signal",
@@ -900,7 +900,7 @@
     "ok": true
   },
   "japan-mod-sedori-surveillance": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 403,
     "fingerprint": null,
     "detail": "HTTP 403",
@@ -909,16 +909,16 @@
     "ok": false
   },
   "kaiho-ghost-ships-stats": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
-    "fingerprint": "212386339914145b",
-    "detail": "last-modified Wed, 30 Sep 2026 07:42:50 GMT",
-    "upstreamDate": "2026-09-30",
-    "changedAt": null,
+    "fingerprint": "86b45df46c7c59e5",
+    "detail": "last-modified Mon, 05 Oct 2026 08:50:51 GMT",
+    "upstreamDate": "2026-10-05",
+    "changedAt": "2026-10-05T14:36:15.582Z",
     "ok": true
   },
   "chongryon-uri-hakkyo-directory": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
     "fingerprint": "435e28cc624d2985",
     "detail": "last-modified Fri, 07 Aug 2026 06:41:11 GMT",
@@ -927,7 +927,7 @@
     "ok": true
   },
   "repatriation-project-niigata-archive": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 404,
     "fingerprint": null,
     "detail": "HTTP 404",
@@ -936,7 +936,7 @@
     "ok": false
   },
   "kinu-nkhr-platform": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
     "fingerprint": "up:https://www.kinu.or.kr/nkhr/index.do",
     "detail": "reachable, no change signal",
@@ -945,7 +945,7 @@
     "ok": true
   },
   "data-go-kr-nk-weather": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
     "fingerprint": "b61bd746a119098f",
     "detail": "156,901 bytes",
@@ -954,7 +954,7 @@
     "ok": true
   },
   "kma-nk-synoptic-weather": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
     "fingerprint": "up:https://www.weather.go.kr/w/wnk/n-korea.do",
     "detail": "reachable, no change signal",
@@ -963,25 +963,25 @@
     "ok": true
   },
   "data-go-kr-nk-elites": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
-    "fingerprint": "28a92b2337972872",
+    "fingerprint": "77030afa5a8d2aaa",
     "detail": "190,370 bytes",
     "upstreamDate": null,
-    "changedAt": null,
+    "changedAt": "2026-10-05T14:36:15.582Z",
     "ok": true
   },
   "data-go-kr-nk-chronicle": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
-    "fingerprint": "37f057e02b441225",
+    "fingerprint": "1154da4137cbc13c",
     "detail": "190,267 bytes",
     "upstreamDate": null,
-    "changedAt": null,
+    "changedAt": "2026-10-05T14:36:15.582Z",
     "ok": true
   },
   "unibook-nk-materials-center": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 403,
     "fingerprint": null,
     "detail": "HTTP 403",
@@ -990,7 +990,7 @@
     "ok": false
   },
   "kbs-nambook-window": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 404,
     "fingerprint": null,
     "detail": "HTTP 404",
@@ -999,7 +999,7 @@
     "ok": false
   },
   "github-justinelliotmeyers-dprk-boundaries": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
     "fingerprint": "f86353a1b18e",
     "detail": "last commit 2017-04-10: upload admin 1s",
@@ -1008,7 +1008,7 @@
     "ok": true
   },
   "github-kp-to-ko": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
     "fingerprint": "086d2ca05c81",
     "detail": "last commit 2026-06-27: docs: set jsDelivr CDN path to july0785",
@@ -1017,7 +1017,7 @@
     "ok": true
   },
   "cns-nti-missile-test-database": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 403,
     "fingerprint": null,
     "detail": "HTTP 403",
@@ -1026,16 +1026,16 @@
     "ok": false
   },
   "ja-wikipedia-missile-tests": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
-    "fingerprint": "6bbc95ec91df0309",
-    "detail": "last-modified Thu, 17 Sep 2026 16:32:28 GMT",
-    "upstreamDate": "2026-09-17",
-    "changedAt": null,
+    "fingerprint": "d3195edcb5fca764",
+    "detail": "last-modified Mon, 21 Sep 2026 11:05:43 GMT",
+    "upstreamDate": "2026-09-21",
+    "changedAt": "2026-10-05T14:36:15.582Z",
     "ok": true
   },
   "namu-wiki-missile-provocations": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 403,
     "fingerprint": null,
     "detail": "HTTP 403",
@@ -1044,16 +1044,16 @@
     "ok": false
   },
   "en-wikipedia-missile-tests": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
-    "fingerprint": "b060d84f61189386",
+    "fingerprint": "26ccabab9b5975f7",
     "detail": "last-modified Tue, 29 Sep 2026 19:09:04 GMT",
     "upstreamDate": "2026-09-29",
-    "changedAt": null,
+    "changedAt": "2026-10-05T14:36:15.582Z",
     "ok": true
   },
   "north-korea-uncovered-melvin": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 404,
     "fingerprint": null,
     "detail": "HTTP 404",
@@ -1062,34 +1062,34 @@
     "ok": false
   },
   "sipri-arms-transfers-db": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
-    "fingerprint": "8989ca19db400cd6",
-    "detail": "60,194 bytes (redirected to https://www.sipri.org/databases/armstransfers)",
+    "fingerprint": "4f91c3aacee0a867",
+    "detail": "60,200 bytes (redirected to https://www.sipri.org/databases/armstransfers)",
     "upstreamDate": null,
-    "changedAt": null,
+    "changedAt": "2026-10-05T14:36:15.582Z",
     "ok": true
   },
   "sipri-nuclear-forces-dprk": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
-    "fingerprint": "b415df5f8cd9879c",
-    "detail": "last-modified Thu, 01 Oct 2026 08:45:45 GMT",
-    "upstreamDate": "2026-10-01",
-    "changedAt": null,
+    "fingerprint": "706b6585623571da",
+    "detail": "last-modified Mon, 05 Oct 2026 13:30:28 GMT",
+    "upstreamDate": "2026-10-05",
+    "changedAt": "2026-10-05T14:36:15.582Z",
     "ok": true
   },
   "frontelligence-dprk-russia-rail": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
-    "status": 200,
-    "fingerprint": "up:https://frontelligence.substack.com/",
-    "detail": "reachable, no change signal",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
+    "status": 403,
+    "fingerprint": null,
+    "detail": "HTTP 403",
     "upstreamDate": null,
-    "changedAt": null,
-    "ok": true
+    "changedAt": "2026-10-05T14:36:15.582Z",
+    "ok": false
   },
   "csis-beyond-parallel-balloons": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
     "fingerprint": "up:https://beyondparallel.csis.org/map-of-north-koreas-garbage-filled-balloons/",
     "detail": "reachable, no change signal",
@@ -1098,7 +1098,7 @@
     "ok": true
   },
   "rok-mnd-defense-white-paper": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
     "fingerprint": "ea6c09d08857e71a",
     "detail": "last-modified Wed, 10 Jun 2026 05:26:46 GMT",
@@ -1107,16 +1107,16 @@
     "ok": true
   },
   "npec-dprk-nuclear-complex-map": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
-    "status": 200,
-    "fingerprint": "up:https://npolicy.org/",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
+    "status": 202,
+    "fingerprint": "73d3f1ba062585bc",
     "detail": "reachable, no change signal",
     "upstreamDate": null,
-    "changedAt": null,
+    "changedAt": "2026-10-05T14:36:15.582Z",
     "ok": true
   },
   "geoboundaries-prk": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
     "fingerprint": "4265ce501c4402a8",
     "detail": "1,694,102 bytes (redirected to https://media.githubusercontent.com/media/wmgeolab/geoBoundaries/9469f09592ced973a3448cf66b6100b741b64c0d/releaseData/gbOpen/PRK/ADM2/geoBoundaries-PRK-ADM2.geojson)",
@@ -1125,25 +1125,25 @@
     "ok": true
   },
   "openstreetmap-overpass-dprk": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
-    "fingerprint": "41b20e86997d6484",
+    "fingerprint": "0298e06a2af555c0",
     "detail": "484 bytes",
     "upstreamDate": null,
-    "changedAt": null,
+    "changedAt": "2026-10-05T14:36:15.582Z",
     "ok": true
   },
   "geofabrik-osm-north-korea": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
-    "fingerprint": "4f81ccc2d8003f15",
-    "detail": "last-modified Thu, 01 Oct 2026 16:18:14 GMT",
-    "upstreamDate": "2026-10-01",
-    "changedAt": null,
+    "fingerprint": "ef3f1d3b227f1df5",
+    "detail": "last-modified Mon, 05 Oct 2026 14:30:45 GMT",
+    "upstreamDate": "2026-10-05",
+    "changedAt": "2026-10-05T14:36:15.582Z",
     "ok": true
   },
   "un-wpp-2024-data-portal": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
     "fingerprint": "31b20fc85339e2c2",
     "detail": "134 bytes",
@@ -1152,7 +1152,7 @@
     "ok": true
   },
   "un-wpp-2024-bulk-data": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
     "fingerprint": "2da7768ae64f",
     "detail": "last commit 2025-06-24: local installation description added",
@@ -1161,7 +1161,7 @@
     "ok": true
   },
   "world-bank-wdi-prk": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
     "fingerprint": "6a26dd8b2be6a2f3",
     "detail": "2,445 bytes",
@@ -1170,7 +1170,7 @@
     "ok": true
   },
   "worldpop-prk-100m-unconstrained": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
     "fingerprint": "up:https://hub.worldpop.org/geodata/summary",
     "detail": "reachable, no change signal",
@@ -1179,7 +1179,7 @@
     "ok": true
   },
   "worldpop-prk-age-sex-rasters": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
     "fingerprint": "up:https://data.worldpop.org/GIS/AgeSex_structures/Global_2000_2020_Constrained/2020/PRK/",
     "detail": "reachable, no change signal",
@@ -1188,7 +1188,7 @@
     "ok": true
   },
   "eog-viirs-nighttime-lights": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
     "fingerprint": "be3d4912e36210d6",
     "detail": "last-modified Wed, 17 Jun 2026 19:26:44 GMT",
@@ -1197,7 +1197,7 @@
     "ok": true
   },
   "fao-giews-country-brief-prk": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
     "fingerprint": "up:https://www.fao.org/giews/countrybrief/country.jsp",
     "detail": "reachable, no change signal",
@@ -1206,16 +1206,16 @@
     "ok": true
   },
   "who-gho-api-prk": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
-    "fingerprint": "b77f4dfa91154a92",
-    "detail": "39,797 bytes",
+    "fingerprint": "fab3ebd54757481c",
+    "detail": "43,299 bytes",
     "upstreamDate": null,
-    "changedAt": null,
+    "changedAt": "2026-10-05T14:36:15.582Z",
     "ok": true
   },
   "who-dprk-health-indicators-hdx": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
     "fingerprint": "c8f37627812953e5",
     "detail": "6,619,940 bytes (redirected to https://s3.us-east-1.amazonaws.com/hdx-production-filestore/resources/3251bbc5-c631-412f-a2c7-15d92efd99d0/world_health_statistics_indicators_prk.csv)",
@@ -1224,7 +1224,7 @@
     "ok": true
   },
   "kosis-bukhan-health-welfare": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
     "fingerprint": "up:https://kosis.kr/statisticsList/statisticsListIndex.do",
     "detail": "reachable, no change signal (redirected to https://kosis.kr/statisticsList/statisticsListIndex.do)",
@@ -1233,7 +1233,7 @@
     "ok": true
   },
   "kosis-bukhan-energy-infrastructure": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
     "fingerprint": "up:https://kosis.kr/statisticsList/statisticsListIndex.do",
     "detail": "reachable, no change signal (redirected to https://kosis.kr/statisticsList/statisticsListIndex.do)",
@@ -1242,7 +1242,7 @@
     "ok": true
   },
   "bok-dprk-gdp-annual-releases": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
     "fingerprint": "up:https://www.bok.or.kr/portal/main/main.do",
     "detail": "reachable, no change signal (redirected to https://www.bok.or.kr/portal/main/main.do)",
@@ -1251,7 +1251,7 @@
     "ok": true
   },
   "krei-north-korea-agricultural-trends": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
     "fingerprint": "up:https://www.krei.re.kr/krei/index.do",
     "detail": "reachable, no change signal (redirected to https://www.krei.re.kr/krei/index.do)",
@@ -1260,7 +1260,7 @@
     "ok": true
   },
   "ngii-national-atlas-north-korea": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
     "fingerprint": "up:https://nationalatlas.ngii.go.kr/",
     "detail": "reachable, no change signal (redirected to https://nationalatlas.ngii.go.kr/)",
@@ -1269,7 +1269,7 @@
     "ok": true
   },
   "jaxa-maff-jasmai-satellite-monitoring": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 404,
     "fingerprint": null,
     "detail": "HTTP 404",
@@ -1278,7 +1278,7 @@
     "ok": false
   },
   "sukuukai-abductee-camp-archive": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 0,
     "fingerprint": null,
     "detail": "error: fetch failed",
@@ -1287,7 +1287,7 @@
     "ok": false
   },
   "comjan-missing-persons-map": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 0,
     "fingerprint": null,
     "detail": "error: fetch failed",
@@ -1296,7 +1296,7 @@
     "ok": false
   },
   "renk-camp-survivor-maps": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 0,
     "fingerprint": null,
     "detail": "error: fetch failed",
@@ -1305,7 +1305,7 @@
     "ok": false
   },
   "nk-pro-dprk-economic-database": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 404,
     "fingerprint": null,
     "detail": "HTTP 404",
@@ -1314,7 +1314,7 @@
     "ok": false
   },
   "itc-trade-map-dprk": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
     "fingerprint": "ba07a910effb78e2",
     "detail": "last-modified Wed, 30 Sep 2026 10:12:46 GMT",
@@ -1323,7 +1323,7 @@
     "ok": true
   },
   "kosti-rok-unilateral-sanctions": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
     "fingerprint": "up:https://www.kosti.or.kr/main",
     "detail": "reachable, no change signal (redirected to https://www.kosti.or.kr/main)",
@@ -1332,7 +1332,7 @@
     "ok": true
   },
   "nk-pro-vessel-tracker": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 404,
     "fingerprint": null,
     "detail": "HTTP 404",
@@ -1341,7 +1341,7 @@
     "ok": false
   },
   "chongryon-prefectural-headquarters": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
     "fingerprint": "471b9a8423cc3877",
     "detail": "last-modified Wed, 21 Aug 2024 01:58:40 GMT",
@@ -1350,16 +1350,16 @@
     "ok": true
   },
   "data-go-kr-kctv-schedule": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
-    "fingerprint": "b221bd6d5311ff10",
+    "fingerprint": "7cc5a63682fd0da8",
     "detail": "191,538 bytes",
     "upstreamDate": null,
-    "changedAt": null,
+    "changedAt": "2026-10-05T14:36:15.582Z",
     "ok": true
   },
   "nars-nk-legislative-reports": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
     "fingerprint": "up:https://www.nars.go.kr/index.do",
     "detail": "reachable, no change signal (redirected to https://www.nars.go.kr/index.do)",
@@ -1368,7 +1368,7 @@
     "ok": true
   },
   "iiss-military-balance-dprk": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
     "fingerprint": "up:https://www.iiss.org/publications/the-military-balance/",
     "detail": "reachable, no change signal",
@@ -1377,16 +1377,16 @@
     "ok": true
   },
   "paulpogoda-osint-tools-nk": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
-    "fingerprint": "b276c038b120",
-    "detail": "last commit 2025-05-01: Update README.md",
-    "upstreamDate": "2025-05-01",
-    "changedAt": null,
+    "fingerprint": "28f8535bf4fd",
+    "detail": "last commit 2026-10-02: Fix HTML entities in README.md",
+    "upstreamDate": "2026-10-02",
+    "changedAt": "2026-10-05T14:36:15.582Z",
     "ok": true
   },
   "gadm-prk-boundaries": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
     "fingerprint": "40e2f06f4ae55960",
     "detail": "last-modified Wed, 17 Sep 2025 00:15:25 GMT",
@@ -1395,16 +1395,16 @@
     "ok": true
   },
   "unfpa-dprk-planned-census": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
-    "fingerprint": "98d52aaab7033f96",
-    "detail": "last-modified Wed, 30 Sep 2026 17:52:31 GMT",
-    "upstreamDate": "2026-09-30",
-    "changedAt": null,
+    "fingerprint": "f39445cad076f691",
+    "detail": "last-modified Mon, 05 Oct 2026 07:57:58 GMT",
+    "upstreamDate": "2026-10-05",
+    "changedAt": "2026-10-05T14:36:15.582Z",
     "ok": true
   },
   "ide-jetro-dprk-studies": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
     "fingerprint": "up:https://www.ide.go.jp/",
     "detail": "reachable, no change signal",
@@ -1413,7 +1413,7 @@
     "ok": true
   },
   "erina-unp-dprk-regional-economy": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 0,
     "fingerprint": null,
     "detail": "error: fetch failed",
@@ -1422,7 +1422,7 @@
     "ok": false
   },
   "mapping-north-korea": {
-    "checkedAt": "2026-10-01T16:33:48.222Z",
+    "checkedAt": "2026-10-05T14:36:15.582Z",
     "status": 200,
     "fingerprint": "6a3436cfcf7f",
     "detail": "last commit 2025-07-28: Update README.md",

@@ -1,6 +1,6 @@
 {
  "_doc": "Built by scripts/build-sanctions.ts from the live UN and OFAC lists. Do not edit by hand.",
- "fetched": "2026-10-04",
+ "fetched": "2026-10-05",
  "sources": {
   "un": "https://scsanctions.un.org/resources/xml/en/consolidated.xml",
   "ofac": "https://www.treasury.gov/ofac/downloads/sdn.csv"
