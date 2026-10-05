@@ -6,7 +6,7 @@
  */
 import { Download, Link2, Maximize2, Check } from 'lucide-react';
 import Link from 'next/link';
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useEffect, useId, useMemo, useRef, useState } from 'react';
 import { siX } from 'simple-icons';
 import { SITE_URL } from '@/site/config';
 import type { ChartProps } from './data';
@@ -57,8 +57,15 @@ function yearTicks(min: number, max: number, width: number) {
 function makeFormat(locale: string) {
   const full = (v: number) =>
     new Intl.NumberFormat(locale, { maximumFractionDigits: Math.abs(v) < 10 ? 2 : Math.abs(v) < 100 ? 1 : 0 }).format(v);
-  const axis = (v: number) => new Intl.NumberFormat(locale, { notation: Math.abs(v) >= 10000 ? 'compact' : 'standard', maximumFractionDigits: 2 }).format(v);
+  const axis = (v: number) => new Intl.NumberFormat(locale, { notation: Math.abs(v) >= 10000 ? 'compact' : 'standard', maximumFractionDigits: Math.abs(v) >= 10000 ? 1 : 2 }).format(v);
   return { full, axis };
+}
+
+/** Rough rendered width of a label at 12.5px: CJK glyphs are about twice as wide as Latin ones. */
+function textW(s: string) {
+  let w = 0;
+  for (const ch of s) w += /[\u1100-\u11ff\u3000-\u9fff\uac00-\ud7af\uff00-\uffef]/.test(ch) ? 12.5 : 7;
+  return w;
 }
 
 function timeLabel(t: string, dated: boolean, locale: string) {
@@ -80,6 +87,26 @@ export default function ChartView(p: ChartProps) {
   const stacked = p.kind !== 'line';
   const canLog = !stacked && p.lines.every((l) => l.pts.every((q) => q[1] > 0));
   const log = logOn && canLog;
+  const uid = useId().replace(/[^a-zA-Z0-9_-]/g, '');
+  // Lines draw themselves in when the chart scrolls into view. Only charts that start below the fold are armed, so
+  // nothing visible ever blinks, and without JavaScript (or with reduced motion) the chart is simply there.
+  const [anim, setAnim] = useState<'' | 'pre' | 'go'>('');
+  useEffect(() => {
+    const el = wrap.current;
+    if (!el || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    if (el.getBoundingClientRect().top < innerHeight * 0.9) return;
+    setAnim('pre');
+    const io = new IntersectionObserver(
+      ([e]) => {
+        if (!e.isIntersecting) return;
+        setAnim('go');
+        io.disconnect();
+      },
+      { rootMargin: '0px 0px -20% 0px' }, // fires once the top fifth of the screen is passed, whatever the chart's height
+    );
+    io.observe(el);
+    return () => io.disconnect();
+  }, []);
 
   useEffect(() => {
     const el = wrap.current;
@@ -101,8 +128,14 @@ export default function ChartView(p: ChartProps) {
   const narrow = width < 520;
   const H = p.compact ? 230 : Math.round(Math.min(440, Math.max(280, width * 0.56)));
   const endLabels = !stacked && !narrow && lines.length > 0;
-  const longest = Math.max(...lines.map((l) => l.label.length), 4);
-  const right = endLabels ? Math.min(150, longest * 7 + 52) : 12;
+  const endVal = (v: number) =>
+    (Math.abs(v) >= 10000 ? fmt.axis(v) : new Intl.NumberFormat(p.locale, { maximumFractionDigits: Math.abs(v) < 1 ? 2 : Math.abs(v) < 100 ? 1 : 0 }).format(v)) + (p.unit === '%' ? '%' : '');
+  const lastOf = (l: (typeof lines)[number]) => l.pts[l.pts.length - 1];
+  const gapLines = p.gap && endLabels ? [lines.find((l) => l.key === p.gap!.hi), lines.find((l) => l.key === p.gap!.lo)] : [];
+  const showGap = gapLines.length === 2 && gapLines.every((l) => l && l.pts.length);
+  const gutter = showGap ? 16 : 0;
+  const longest = Math.max(...lines.map((l) => textW(l.label) + (l.pts.length ? textW(endVal(lastOf(l)[1])) * 0.95 : 0)), 30);
+  const right = endLabels ? Math.min(210, longest + 34 + gutter) : 12;
 
   let yMin = 0;
   let yMax = 1;
@@ -121,7 +154,7 @@ export default function ChartView(p: ChartProps) {
   const y0 = log ? yMin : yt[0];
   const y1 = log ? yMax : yt[yt.length - 1];
   const left = Math.max(...yt.map((v) => fmt.axis(v).length + (p.unit === '%' ? 1 : 0))) * 7 + 10;
-  const top = 12;
+  const top = p.bands.length && !stacked ? 22 : 12;
   const bottom = 26;
   const plotW = Math.max(40, width - left - right);
   const plotH = H - top - bottom;
@@ -139,11 +172,44 @@ export default function ChartView(p: ChartProps) {
   /* end labels, pushed apart so they never overlap */
   const labels = endLabels
     ? lines
-        .map((l) => ({ l, y: sy(l.pts[l.pts.length - 1]?.[1] ?? 0) }))
-        .filter((o) => o.l.pts.length)
+        .filter((l) => l.pts.length)
+        .map((l) => ({ l, py: sy(lastOf(l)[1]), px: sx(lastOf(l)[0]), y: sy(lastOf(l)[1]) }))
         .sort((a, b) => a.y - b.y)
     : [];
-  for (let i = 1; i < labels.length; i++) if (labels[i].y - labels[i - 1].y < 15) labels[i].y = labels[i - 1].y + 15;
+  for (let i = 1; i < labels.length; i++) if (labels[i].y - labels[i - 1].y < 16) labels[i].y = labels[i - 1].y + 16;
+  // if the push ran off the bottom, slide the whole stack back up
+  const over = labels.length ? labels[labels.length - 1].y - (top + plotH + 4) : 0;
+  if (over > 0) for (const o of labels) o.y -= over;
+  for (let i = labels.length - 2; i >= 0; i--) if (labels[i + 1].y - labels[i].y < 16) labels[i].y = labels[i + 1].y - 16;
+  const labelX = left + plotW + 12 + gutter;
+
+  /* gap callout: a bracket in the gutter between two lines' latest values, with the ratio or difference */
+  let gap: { x: number; y1: number; y2: number; my: number; text: string; px: number } | null = null;
+  if (showGap) {
+    const [hi, lo] = gapLines as (typeof lines)[number][];
+    const a = lastOf(hi);
+    const b = lastOf(lo);
+    const y1 = Math.min(sy(a[1]), sy(b[1]));
+    const y2 = Math.max(sy(a[1]), sy(b[1]));
+    const r = a[1] / b[1];
+    const text = p.gap!.mode === 'ratio' ? `${fmt.full(r >= 10 ? Math.round(r) : Math.round(r * 10) / 10)}×` : `+${fmt.full(Math.round((a[1] - b[1]) * 10) / 10)}`;
+    if (y2 - y1 >= 22) {
+      // put the pill where it is furthest from the other lines' end points
+      const others = labels.filter((o) => o.l !== hi && o.l !== lo).map((o) => o.py);
+      // put the pill near the middle, but clear of the other lines' end points
+      const mid = (y1 + y2) / 2;
+      let my = mid;
+      let best = -Infinity;
+      for (let y = y1 + 13; y <= y2 - 13; y += 2) {
+        const score = Math.min(30, ...others.map((o) => Math.abs(o - y))) - Math.abs(y - mid) * 0.05;
+        if (score > best) {
+          best = score;
+          my = y;
+        }
+      }
+      gap = { x: left + plotW + 9, y1, y2, my, text, px: left + plotW - 6 };
+    }
+  }
 
   /* hover */
   function pick(clientX: number, rect: DOMRect) {
@@ -168,6 +234,14 @@ export default function ChartView(p: ChartProps) {
           .filter((r): r is { l: (typeof lines)[number]; v: number } => !!r)
           .sort((a, b) => (stacked ? 0 : b.v - a.v));
   const total = rows.reduce((s, r) => s + r.v, 0);
+  const gHi = p.gap && rows.find((r) => r.l.key === p.gap!.hi);
+  const gLo = p.gap && rows.find((r) => r.l.key === p.gap!.lo);
+  const tipGap =
+    gHi && gLo && gLo.v > 0
+      ? p.gap!.mode === 'ratio'
+        ? `${fmt.full(gHi.v / gLo.v >= 10 ? Math.round(gHi.v / gLo.v) : Math.round((gHi.v / gLo.v) * 10) / 10)}×`
+        : `${gHi.v - gLo.v >= 0 ? '+' : ''}${fmt.full(Math.round((gHi.v - gLo.v) * 10) / 10)}`
+      : '';
 
   // Annual series: short holes (up to 15 years, e.g. decade-only world estimates) are bridged with a faint dotted
   // line; longer ones (no estimates for North Korea 1944-1989) are left empty instead of faking a trend.
@@ -185,6 +259,43 @@ export default function ChartView(p: ChartProps) {
     });
     return { solid, bridge };
   };
+
+  // Shading. With a gap set, the space between the two compared lines is tinted (that space is the story); a chart
+  // with one solid line gets a soft fill under it. Runs stop at holes in the data, so nothing is drawn across them.
+  const base = top + plotH;
+  const runs = (xsIn: number[]) => {
+    const out: number[][] = [];
+    let run: number[] = [];
+    xsIn.forEach((x, i) => {
+      if (i && !p.dated && x - xsIn[i - 1] > 1.5) {
+        out.push(run);
+        run = [];
+      }
+      run.push(x);
+    });
+    out.push(run);
+    return out.filter((r) => r.length > 1);
+  };
+  const P = (x: number, v: number) => `${sx(x).toFixed(1)},${sy(v).toFixed(1)}`;
+  let shade: { d: string; color: string; key: string } | null = null;
+  const gHiL = p.gap && lines.find((l) => l.key === p.gap!.hi);
+  const gLoL = p.gap && lines.find((l) => l.key === p.gap!.lo);
+  if (!stacked && gHiL && gLoL) {
+    const a = new Map(gHiL.pts.map((q) => [q[0], q[1]]));
+    const b = new Map(gLoL.pts.map((q) => [q[0], q[1]]));
+    const both = [...a.keys()].filter((x) => b.has(x)).sort((m, n) => m - n);
+    const d = runs(both)
+      .map((r) => 'M' + r.map((x) => P(x, a.get(x)!)).join('L') + 'L' + [...r].reverse().map((x) => P(x, b.get(x)!)).join('L') + 'Z')
+      .join('');
+    if (d) shade = { d, color: gHiL.color, key: 'gap' };
+  } else if (!stacked && lines.length === 1 && !lines[0].dashed) {
+    const l = lines[0];
+    const v = new Map(l.pts.map((q) => [q[0], q[1]]));
+    const d = runs(l.pts.map((q) => q[0]))
+      .map((r) => `M${sx(r[0]).toFixed(1)},${base}L` + r.map((x) => P(x, v.get(x)!)).join('L') + `L${sx(r[r.length - 1]).toFixed(1)},${base}Z`)
+      .join('');
+    if (d) shade = { d, color: l.color, key: l.key };
+  }
 
   /* actions */
   const shareUrl = SITE_URL + p.permalink;
@@ -214,7 +325,7 @@ export default function ChartView(p: ChartProps) {
   const unit = p.unit === '%' ? '%' : ` ${p.unit}`;
 
   return (
-    <figure className={`chart${p.compact ? ' compact' : ''}`} lang={p.lang}>
+    <figure className={`chart${p.compact ? ' compact' : ''}${anim ? ` anim ${anim}` : ''}`} lang={p.lang}>
       <figcaption className="chart-head">
         <h3>{p.title}</h3>
         {p.sub && <p>{p.sub}</p>}
@@ -285,14 +396,28 @@ export default function ChartView(p: ChartProps) {
                 setHover((h) => Math.min(xs.length - 1, Math.max(0, (h ?? xs.length) + (e.key === 'ArrowRight' ? 1 : -1))));
               }}
             >
+              <defs>
+                <pattern id={`${uid}-hatch`} width={6} height={6} patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+                  <line x1={0} y1={0} x2={0} y2={6} className="hatch" />
+                </pattern>
+                {shade && (
+                  <linearGradient id={`${uid}-shade`} x1={0} y1={0} x2={0} y2={1}>
+                    <stop offset="0%" style={{ stopColor: shade.color }} stopOpacity={shade.key === 'gap' ? 0.26 : 0.22} />
+                    <stop offset="100%" style={{ stopColor: shade.color }} stopOpacity={shade.key === 'gap' ? 0.1 : 0} />
+                  </linearGradient>
+                )}
+              </defs>
               {p.bands.map((b) => {
                 const a = Math.max(b.from, xMin);
                 const z = Math.min(b.to, xMax);
                 if (stacked || z <= a) return null;
+                const w = Math.max(3, sx(z) - sx(a));
                 return (
                   <g key={b.label} className="chart-band">
-                    <rect x={sx(a)} y={top} width={Math.max(2, sx(z) - sx(a))} height={plotH} />
-                    <text x={sx(a) + 4} y={top + 12}>
+                    <rect x={sx(a)} y={top} width={w} height={plotH} style={{ fill: `url(#${uid}-hatch)` }} />
+                    <rect x={sx(a)} y={top} width={w} height={plotH} className="band-tint" />
+                    <line x1={sx(a)} x2={sx(a)} y1={top} y2={top + plotH} />
+                    <text x={sx(a) + w / 2} y={top - 2} textAnchor={sx(a) + w / 2 > left + plotW - 60 ? 'end' : sx(a) + w / 2 < left + 60 ? 'start' : 'middle'}>
                       {b.label}
                     </text>
                   </g>
@@ -315,6 +440,7 @@ export default function ChartView(p: ChartProps) {
                 ))}
               </g>
 
+              {shade && <path d={shade.d} className="area" style={{ fill: `url(#${uid}-shade)` }} />}
               {stacked
                 ? xs.map((x) => {
                     let acc = 0;
@@ -334,19 +460,36 @@ export default function ChartView(p: ChartProps) {
                   })
                 : [...lines].reverse().map((l) => {
                     const { solid, bridge } = segs(l.pts);
+                    const last = l.pts[l.pts.length - 1];
                     return (
-                      <g key={l.key}>
+                      <g key={l.key} className="series">
                         {bridge && <path d={bridge} className="line bridge" style={{ stroke: l.color }} />}
-                        <path d={solid} className={l.dashed ? 'line dashed' : 'line'} style={{ stroke: l.color }} />
+                        <path d={solid} pathLength={l.dashed ? undefined : 1} className={l.dashed ? 'line dashed' : 'line solid'} style={{ stroke: l.color }} />
                         {l.pts.length < 12 && l.pts.map((q) => <circle key={q[0]} cx={sx(q[0])} cy={sy(q[1])} r={3} className="dot" style={{ fill: l.color }} />)}
+                        {last && l.pts.length >= 12 && <circle cx={sx(last[0])} cy={sy(last[1])} r={3.5} className="dot end" style={{ fill: l.color }} />}
                       </g>
                     );
                   })}
 
-              {labels.map(({ l, y }) => (
+              {gap && (
+                <g className="chart-gap">
+                  <path d={`M${gap.x - 4},${gap.y1 + 1}H${gap.x}V${gap.y2 - 1}H${gap.x - 4}`} />
+                  <line x1={gap.x} x2={gap.px} y1={gap.my} y2={gap.my} />
+                  <rect x={gap.px - textW(gap.text) * 1.1 - 12} y={gap.my - 11} width={textW(gap.text) * 1.1 + 12} height={22} rx={11} />
+                  <text x={gap.px - (textW(gap.text) * 1.1 + 12) / 2} y={gap.my + 4.5} textAnchor="middle">
+                    {gap.text}
+                  </text>
+                </g>
+              )}
+
+              {labels.map(({ l, y, py, px }) => (
                 <g key={l.key} className="chart-end">
-                  <text x={left + plotW + 8} y={y + 4}>
+                  {Math.abs(y - py) > 3 && <path d={`M${px + 5},${py}L${labelX - 8},${y}L${labelX - 4},${y}`} className="leader" />}
+                  <text x={labelX} y={y + 4}>
                     <tspan className="end-name">{l.label}</tspan>
+                    <tspan className="end-val" dx={6}>
+                      {endVal(lastOf(l)[1])}
+                    </tspan>
                   </text>
                 </g>
               ))}
@@ -372,6 +515,14 @@ export default function ChartView(p: ChartProps) {
                       <span>{r.l.label}</span>
                     </li>
                   ))}
+                  {tipGap && (
+                    <li className="tip-gap">
+                      <strong>{tipGap}</strong>
+                      <span>
+                        {rows.find((r) => r.l.key === p.gap!.hi)!.l.label} {p.gap!.mode === 'ratio' ? '/' : '−'} {rows.find((r) => r.l.key === p.gap!.lo)!.l.label}
+                      </span>
+                    </li>
+                  )}
                   {stacked && rows.length > 1 && (
                     <li className="tip-total">
                       <strong>{fmt.full(total)}</strong>

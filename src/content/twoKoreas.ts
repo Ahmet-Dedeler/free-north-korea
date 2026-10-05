@@ -18,9 +18,11 @@ type Text = {
   lede: string;
   nightCaption: string;
   vs: { life: string; gdp: string; power: string; kids: string };
-  times: (x: string) => string;
-  timesNorth: (x: string) => string;
-  shorter: (x: string) => string;
+  /** Headline of each comparison tile: the big number and what it means. */
+  vsHead: { years: (x: string) => string; times: (x: string) => string; life: string; gdp: string; power: string; kids: string };
+  /** How to read each tile's picture. */
+  vsNote: { life: string; gdp: string; power: (x: string) => string; kids: string };
+  yrs: string;
   bands: { division: string; war: string; famine: string; covid: string; democracy: string };
   sections: Section[];
   moreTitle: string;
@@ -48,9 +50,21 @@ export const TWO_KOREAS: Record<Lang, Text> = {
     lede: 'Same people, same language, same food. In 1945 the peninsula was cut in two along the 38th parallel, and for a while the two halves were roughly even (in 1990 people in both lived about 70 years). Then they split apart. These charts show how far.',
     nightCaption: 'The Korean peninsula at night. The bright blob is Seoul, the single dot up north is Pyongyang.',
     vs: { life: 'Life expectancy', gdp: 'Income per person', power: 'Electricity per person', kids: 'Children who die before 5' },
-    times: (x) => `${x}× more in the South`,
-    timesNorth: (x) => `${x}× higher in the North`,
-    shorter: (x) => `${x} years shorter in the North`,
+    vsHead: {
+      years: (x) => `${x} yrs`,
+      times: (x) => `${x}×`,
+      life: 'shorter lives in the North',
+      gdp: 'more income per person in the South',
+      power: 'more electricity per person in the South',
+      kids: 'higher child death rate in the North',
+    },
+    vsNote: {
+      life: 'Hatched: the years a North Korean loses',
+      gdp: 'Square area = income per person',
+      power: (x) => `Each bolt = ${x} kWh, what one North Korean uses in a year`,
+      kids: 'Each dot = 1 death per 1,000 children born',
+    },
+    yrs: 'yrs',
     bands: { division: 'Division', war: 'Korean War', famine: 'Famine', covid: 'Border closed', democracy: 'South becomes a democracy' },
     sections: [
       {
@@ -135,9 +149,21 @@ export const TWO_KOREAS: Record<Lang, Text> = {
     lede: '같은 민족, 같은 말, 같은 음식. 1945년 한반도는 38선을 따라 둘로 나뉘었고, 한동안은 남북이 대체로 비슷했습니다 (1990년에는 양쪽 모두 기대수명이 약 70세였습니다). 그 뒤로 둘은 갈라졌습니다. 이 차트들이 얼마나 벌어졌는지 보여줍니다.',
     nightCaption: '밤의 한반도. 밝게 빛나는 곳이 서울, 북쪽의 점 하나가 평양입니다.',
     vs: { life: '기대수명', gdp: '1인당 소득', power: '1인당 전력', kids: '5세 미만 사망률' },
-    times: (x) => `한국이 ${x}배`,
-    timesNorth: (x) => `북한이 ${x}배 높음`,
-    shorter: (x) => `북한이 ${x}년 짧음`,
+    vsHead: {
+      years: (x) => `${x}년`,
+      times: (x) => `${x}배`,
+      life: '북한의 기대수명이 그만큼 짧습니다',
+      gdp: '한국의 1인당 소득이 그만큼 많습니다',
+      power: '한국의 1인당 전력 사용량이 그만큼 많습니다',
+      kids: '북한의 5세 미만 사망률이 그만큼 높습니다',
+    },
+    vsNote: {
+      life: '빗금: 북한 주민이 잃는 햇수',
+      gdp: '사각형 면적 = 1인당 소득',
+      power: (x) => `번개 하나 = ${x} kWh, 북한 주민 한 명이 1년에 쓰는 양`,
+      kids: '점 하나 = 출생아 1,000명당 사망 1명',
+    },
+    yrs: '세',
     bands: { division: '분단', war: '한국전쟁', famine: '대기근', covid: '국경 봉쇄', democracy: '한국 민주화' },
     sections: [
       {
@@ -222,9 +248,21 @@ export const TWO_KOREAS: Record<Lang, Text> = {
     lede: '同じ民族、同じ言葉、同じ食べ物。1945年、朝鮮半島は38度線で二つに分けられ、しばらくは南北がだいたい同じくらいでした（1990年には両方とも平均寿命が約70歳）。そこから二つは引き離されていきます。どれだけ離れたかをグラフで見ていきます。',
     nightCaption: '夜の朝鮮半島。明るく光っているのがソウル、北にある一つの点が平壌です。',
     vs: { life: '平均寿命', gdp: '1人あたり所得', power: '1人あたり電力', kids: '5歳未満で亡くなる子ども' },
-    times: (x) => `韓国が${x}倍`,
-    timesNorth: (x) => `北朝鮮が${x}倍高い`,
-    shorter: (x) => `北朝鮮が${x}年短い`,
+    vsHead: {
+      years: (x) => `${x}年`,
+      times: (x) => `${x}倍`,
+      life: '北朝鮮の平均寿命はこれだけ短い',
+      gdp: '韓国の1人あたり所得はこれだけ多い',
+      power: '韓国の1人あたり電力使用量はこれだけ多い',
+      kids: '北朝鮮の5歳未満死亡率はこれだけ高い',
+    },
+    vsNote: {
+      life: '斜線：北朝鮮の人が失う年数',
+      gdp: '正方形の面積＝1人あたり所得',
+      power: (x) => `稲妻1つ＝${x} kWh、北朝鮮の人1人が1年に使う量`,
+      kids: '点1つ＝出生1,000人あたり1人の死亡',
+    },
+    yrs: '歳',
     bands: { division: '分断', war: '朝鮮戦争', famine: '大飢饉', covid: '国境封鎖', democracy: '韓国の民主化' },
     sections: [
       {

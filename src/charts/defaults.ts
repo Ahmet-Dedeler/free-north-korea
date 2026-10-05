@@ -2,15 +2,16 @@
 import type { ChartOptions } from './data';
 
 const COUNTRIES = ['PRK', 'KOR', 'CHN', 'WLD'];
+const SOUTH_X = { hi: 'KOR', lo: 'PRK', mode: 'ratio' } as const;
 
 export const DEFAULTS: Record<string, ChartOptions> = {
-  'life-expectancy': { entities: COUNTRIES, from: 1950 },
-  'child-mortality': { entities: COUNTRIES, from: 1960 },
-  'gdp-per-capita': { entities: COUNTRIES, from: 1911 },
+  'life-expectancy': { entities: COUNTRIES, from: 1950, gap: { hi: 'KOR', lo: 'PRK', mode: 'diff' } },
+  'child-mortality': { entities: COUNTRIES, from: 1960, gap: { hi: 'PRK', lo: 'KOR', mode: 'ratio' } },
+  'gdp-per-capita': { entities: COUNTRIES, from: 1911, gap: SOUTH_X },
   'height-men': { entities: ['PRK', 'KOR', 'CHN'] },
   'height-women': { entities: ['PRK', 'KOR', 'CHN'] },
-  'electricity-per-person': { entities: COUNTRIES },
-  'energy-per-person': { entities: COUNTRIES, from: 1965 },
+  'electricity-per-person': { entities: COUNTRIES, gap: SOUTH_X },
+  'energy-per-person': { entities: COUNTRIES, from: 1965, gap: SOUTH_X },
   'electricity-access': { entities: COUNTRIES },
   'mobile-phones': { entities: COUNTRIES, from: 2000 },
   fertility: { entities: COUNTRIES },

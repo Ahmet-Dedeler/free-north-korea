@@ -45,9 +45,29 @@ function Sparkline({ s }: { s: Series }) {
   const lo = Math.min(...vals);
   const hi = Math.max(...vals);
   const sy = (v: number) => H - 2 - ((v - lo) / (hi - lo || 1)) * (H - 4);
+  const first = lines.find((l) => !l.dashed);
+  // fill only the latest unbroken stretch, so it never spans a hole in the data
+  let cut = 0;
+  if (first && !p.dated) for (let i = 1; i < first.pts.length; i++) if (first.pts[i][0] - first.pts[i - 1][0] > 3) cut = i;
+  const run = first?.pts.slice(cut) ?? [];
   return (
     <svg className="spark" viewBox={`0 0 ${W} ${H}`} preserveAspectRatio="none" aria-hidden="true">
-      {lines.map((l) => (
+      {run.length > 1 && first && (
+        <>
+          <defs>
+            <linearGradient id={`sp-${s.id}`} x1={0} y1={0} x2={0} y2={1}>
+              <stop offset="0%" style={{ stopColor: first.color }} stopOpacity={0.22} />
+              <stop offset="100%" style={{ stopColor: first.color }} stopOpacity={0} />
+            </linearGradient>
+          </defs>
+          <path
+            className="spark-area"
+            style={{ fill: `url(#sp-${s.id})` }}
+            d={`M${sx(run[0][0]).toFixed(1)},${H}` + run.map((q) => `L${sx(q[0]).toFixed(1)},${sy(q[1]).toFixed(1)}`).join('') + `L${sx(run.at(-1)![0]).toFixed(1)},${H}Z`}
+          />
+        </>
+      )}
+      {[...lines].reverse().map((l) => (
         <path
           key={l.key}
           className={l.dashed ? 'dashed' : ''}
@@ -60,8 +80,8 @@ function Sparkline({ s }: { s: Series }) {
   );
 }
 
-/** "North Korea: 73.6 years (2023)" for a card. Stacked series show the latest total. */
-function latestLine(s: Series, lang: Lang) {
+/** Latest value for a card, in parts: who, number, unit, when. Stacked series show the latest total. */
+function latestParts(s: Series, lang: Lang): { key: string; who: string; v: string; unit: string; when: string } {
   const nf = (v: number) => new Intl.NumberFormat(LOCALE[lang], { maximumFractionDigits: Math.abs(v) < 10 ? 2 : Math.abs(v) < 100 ? 1 : 0 }).format(v);
   const unit = UNIT_LABEL[s.unit]?.[lang] ?? s.unit;
   const u = unit === '%' ? '%' : ` ${unit}`;
@@ -71,11 +91,38 @@ function latestLine(s: Series, lang: Lang) {
   if (kind !== 'line') {
     const lastT = keys.map((k) => s.entities[k].at(-1)![0]).sort().at(-1)!;
     const total = keys.reduce((sum, k) => sum + (s.entities[k].find(([t]) => t === lastT)?.[1] ?? 0), 0);
-    return `${nf(total)}${u} (${when(lastT)})`;
+    return { key: '', who: '', v: nf(total), unit: u, when: when(lastT) };
   }
   const k = keys.includes('PRK') ? 'PRK' : keys.includes('pyongyang') ? 'pyongyang' : keys[0];
   const last = s.entities[k].at(-1)!;
-  return `${ENTITY_LABEL[k]?.[lang] ?? k}: ${nf(last[1])}${u} (${when(last[0])})`;
+  return { key: k, who: ENTITY_LABEL[k]?.[lang] ?? k, v: nf(last[1]), unit: u, when: when(last[0]) };
+}
+
+/** "North Korea: 73.6 years (2023)". */
+function latestLine(s: Series, lang: Lang) {
+  const l = latestParts(s, lang);
+  return `${l.who ? `${l.who}: ` : ''}${l.v}${l.unit} (${l.when})`;
+}
+
+function Latest({ s, lang }: { s: Series; lang: Lang }) {
+  const l = latestParts(s, lang);
+  return (
+    <span className="series-latest">
+      <b>
+        {l.v}
+        <small>{l.unit.trim()}</small>
+      </b>
+      <em>
+        {l.who && (
+          <>
+            <i style={{ background: chartProps(s.id, lang, defaultsFor(s.id)).lines.find((x) => x.key === l.key)?.color }} />
+            {l.who} ·{' '}
+          </>
+        )}
+        {l.when}
+      </em>
+    </span>
+  );
 }
 
 export function DataHub({ lang }: { lang: Lang }) {
@@ -138,7 +185,7 @@ export function DataHub({ lang }: { lang: Lang }) {
                     <b>{text?.title ?? s.title}</b>
                     <span className="series-sub">{text?.sub}</span>
                     <Sparkline s={s} />
-                    <span className="series-latest">{latestLine(s, lang)}</span>
+                    <Latest s={s} lang={lang} />
                   </Link>
                   <div className="series-foot">
                     <span className="series-src">{s.source.name.replace(/, via Our World in Data$/, '')}</span>

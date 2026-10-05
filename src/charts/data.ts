@@ -53,6 +53,9 @@ export function toX(t: number | string): number {
 
 export type Band = { from: number; to: number; label: string };
 
+/** Callout between two lines at their latest values: "26×" (ratio, hi / lo) or "10.7" (difference). */
+export type Gap = { hi: string; lo: string; mode: 'ratio' | 'diff' };
+
 export type ChartProps = {
   id: string;
   lang: Lang;
@@ -64,6 +67,7 @@ export type ChartProps = {
   dated: boolean;
   lines: { key: string; label: string; color: string; dashed: boolean; pts: [x: number, v: number, t: string][] }[];
   bands: Band[];
+  gap?: Gap;
   source: { name: string; url: string; license?: string };
   fetched: string;
   updated?: string;
@@ -84,6 +88,7 @@ export type ChartOptions = {
   title?: string;
   sub?: string;
   bands?: Band[];
+  gap?: Gap;
   /** Smaller frame for grids: no tabs or table, still interactive. */
   compact?: boolean;
 };
@@ -116,6 +121,7 @@ export function chartProps(id: string, lang: Lang, o: ChartOptions = {}): ChartP
         .map(([t, v]) => [toX(t), v, String(t)] as [number, number, string]),
     })),
     bands: o.bands ?? [],
+    gap: o.gap,
     source: s.source,
     fetched: s.fetched,
     updated: s.updated,
