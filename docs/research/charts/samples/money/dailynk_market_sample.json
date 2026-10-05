@@ -1,0 +1,162 @@
+{
+  "rate": {
+    "total_rows": 344,
+    "latest": {
+      "date": "26-09-27",
+      "pyongyang": 69100,
+      "sinuiju": 69120,
+      "hyesan": 69120
+    },
+    "earliest": {
+      "date": "09-08-15",
+      "pyongyang": 3600,
+      "sinuiju": 3500,
+      "hyesan": 3620
+    },
+    "recent_10": [
+      {
+        "date": "26-09-27",
+        "pyongyang": 69100,
+        "sinuiju": 69120,
+        "hyesan": 69120
+      },
+      {
+        "date": "26-09-13",
+        "pyongyang": 69500,
+        "sinuiju": 69510,
+        "hyesan": 69520
+      },
+      {
+        "date": "26-08-30",
+        "pyongyang": 68200,
+        "sinuiju": 68210,
+        "hyesan": 68220
+      },
+      {
+        "date": "26-08-16",
+        "pyongyang": 67500,
+        "sinuiju": 67530,
+        "hyesan": 67530
+      },
+      {
+        "date": "26-08-01",
+        "pyongyang": 67100,
+        "sinuiju": 67120,
+        "hyesan": 67130
+      },
+      {
+        "date": "26-07-19",
+        "pyongyang": 65000,
+        "sinuiju": 65100,
+        "hyesan": 65150
+      },
+      {
+        "date": "26-07-05",
+        "pyongyang": 60000,
+        "sinuiju": 60100,
+        "hyesan": 60120
+      },
+      {
+        "date": "26-06-21",
+        "pyongyang": 63100,
+        "sinuiju": 63120,
+        "hyesan": 63130
+      },
+      {
+        "date": "26-06-07",
+        "pyongyang": 65200,
+        "sinuiju": 65220,
+        "hyesan": 65230
+      },
+      {
+        "date": "26-05-24",
+        "pyongyang": 71800,
+        "sinuiju": 71820,
+        "hyesan": 71830
+      }
+    ]
+  },
+  "rice": {
+    "total_rows": 344,
+    "latest": {
+      "date": "26-09-27",
+      "pyongyang": 40800,
+      "sinuiju": 40700,
+      "hyesan": 41000
+    },
+    "earliest": {
+      "date": "09-08-15",
+      "pyongyang": 2300,
+      "sinuiju": 2200,
+      "hyesan": 2350
+    },
+    "recent_10": [
+      {
+        "date": "26-09-27",
+        "pyongyang": 40800,
+        "sinuiju": 40700,
+        "hyesan": 41000
+      },
+      {
+        "date": "26-09-13",
+        "pyongyang": 41100,
+        "sinuiju": 41200,
+        "hyesan": 41400
+      },
+      {
+        "date": "26-08-30",
+        "pyongyang": 45100,
+        "sinuiju": 45200,
+        "hyesan": 45300
+      },
+      {
+        "date": "26-08-16",
+        "pyongyang": 46800,
+        "sinuiju": 46900,
+        "hyesan": 47200
+      },
+      {
+        "date": "26-08-01",
+        "pyongyang": 45000,
+        "sinuiju": 45100,
+        "hyesan": 45500
+      },
+      {
+        "date": "26-07-19",
+        "pyongyang": 40000,
+        "sinuiju": 40200,
+        "hyesan": 40600
+      },
+      {
+        "date": "26-07-05",
+        "pyongyang": 31200,
+        "sinuiju": 31000,
+        "hyesan": 31300
+      },
+      {
+        "date": "26-06-21",
+        "pyongyang": 38200,
+        "sinuiju": 38100,
+        "hyesan": 38400
+      },
+      {
+        "date": "26-06-07",
+        "pyongyang": 38500,
+        "sinuiju": 38600,
+        "hyesan": 38800
+      },
+      {
+        "date": "26-05-24",
+        "pyongyang": 31500,
+        "sinuiju": 31400,
+        "hyesan": 31800
+      }
+    ]
+  },
+  "latest_post": {
+    "id": 325948,
+    "date": "2026-10-01T23:34:00",
+    "title": "Yuan loses ground against dollar as North Korean market prices keep falling",
+    "link": "https://www.dailynk.com/english/north-korea-market-prices-rice-corn-exchange-rate/"
+  }
+}

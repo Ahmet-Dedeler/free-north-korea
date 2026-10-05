@@ -1,0 +1,55 @@
+{
+  "version": "v1.13 (2000-2025)",
+  "tiles": [
+    {
+      "layer": "lossyear",
+      "tile_id": "40N_120E",
+      "filename": "Hansen_GFC-2025-v1.13_lossyear_40N_120E.tif",
+      "url": "https://storage.googleapis.com/earthenginepartners-hansen/GFC-2025-v1.13/Hansen_GFC-2025-v1.13_lossyear_40N_120E.tif",
+      "size_mb": 22.16,
+      "accept_ranges": "bytes",
+      "last_modified": "Mon, 16 Mar 2026 18:19:12 GMT",
+      "description": "Year of gross tree cover loss (values 1-25 = 2001-2025)"
+    },
+    {
+      "layer": "lossyear",
+      "tile_id": "50N_120E",
+      "filename": "Hansen_GFC-2025-v1.13_lossyear_50N_120E.tif",
+      "url": "https://storage.googleapis.com/earthenginepartners-hansen/GFC-2025-v1.13/Hansen_GFC-2025-v1.13_lossyear_50N_120E.tif",
+      "size_mb": 28.02,
+      "accept_ranges": "bytes",
+      "last_modified": "Mon, 16 Mar 2026 18:20:15 GMT",
+      "description": "Year of gross tree cover loss (northern DPRK border)"
+    },
+    {
+      "layer": "treecover2000",
+      "tile_id": "40N_120E",
+      "filename": "Hansen_GFC-2025-v1.13_treecover2000_40N_120E.tif",
+      "url": "https://storage.googleapis.com/earthenginepartners-hansen/GFC-2025-v1.13/Hansen_GFC-2025-v1.13_treecover2000_40N_120E.tif",
+      "size_mb": 131.56,
+      "accept_ranges": "bytes",
+      "last_modified": "Thu, 19 Mar 2026 20:37:33 GMT",
+      "description": "Tree canopy cover in year 2000 (0-100%)"
+    },
+    {
+      "layer": "gain",
+      "tile_id": "40N_120E",
+      "filename": "Hansen_GFC-2025-v1.13_gain_40N_120E.tif",
+      "url": "https://storage.googleapis.com/earthenginepartners-hansen/GFC-2025-v1.13/Hansen_GFC-2025-v1.13_gain_40N_120E.tif",
+      "size_mb": 13.33,
+      "accept_ranges": "bytes",
+      "last_modified": "Thu, 19 Mar 2026 20:37:35 GMT",
+      "description": "Forest gain over 2000-2012 (1 = gain)"
+    },
+    {
+      "layer": "datamask",
+      "tile_id": "40N_120E",
+      "filename": "Hansen_GFC-2025-v1.13_datamask_40N_120E.tif",
+      "url": "https://storage.googleapis.com/earthenginepartners-hansen/GFC-2025-v1.13/Hansen_GFC-2025-v1.13_datamask_40N_120E.tif",
+      "size_mb": 25.88,
+      "accept_ranges": "bytes",
+      "last_modified": "Thu, 19 Mar 2026 20:37:37 GMT",
+      "description": "Land/water mask"
+    }
+  ]
+}

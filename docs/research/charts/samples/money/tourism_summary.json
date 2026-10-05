@@ -1,0 +1,39 @@
+{
+  "description": "DPRK Foreign and Domestic Tourism Visitor Counts & Status (2018-2026)",
+  "pre_pandemic_baseline_2018_2019": {
+    "chinese_visitors_annual": "120,000 - 200,000",
+    "western_foreign_visitors_annual": "4,000 - 5,000",
+    "estimated_annual_regime_revenue_usd": "50 - 150 Million USD",
+    "notes": "Peak year 2019 following Xi Jinping visit to Pyongyang. Banned US passports since 2017."
+  },
+  "pandemic_border_closure_2020_2023": {
+    "foreign_tourists": 0,
+    "status": "Total border shutdown implemented January 22, 2020."
+  },
+  "post_pandemic_reopening_timeline": [
+    {
+      "year": 2024,
+      "foreign_leisure_tourists": 1200,
+      "total_russian_visits": 6469,
+      "key_markets": "Russia (Vladivostok to Pyongyang & Masikryong Ski Resort via Air Koryo / Vostok Intur)",
+      "wonsan_kalma_status": "Under construction; Kim Jong Un inspected July 2024, announced target opening May 2025.",
+      "western_tourists": 0
+    },
+    {
+      "year": 2025,
+      "foreign_leisure_tourists": 5000,
+      "total_russian_visits": 9800,
+      "key_markets": "Russia (Vostok Intur handled ~4,000 tourists). China cross-border day trips resumed selectively in Rason.",
+      "wonsan_kalma_status": "Opened July 1, 2025 (inaugurated June 24, 2025 by Kim Jong Un). 20,000 overnight guest capacity; operated almost exclusively for domestic citizens after brief Russian pilot visit in July 2025.",
+      "western_tourists": 0
+    },
+    {
+      "year": 2026,
+      "foreign_leisure_tourists_projected": 6000,
+      "total_russian_visits_projected": 12000,
+      "key_markets": "Russia (Air Koryo / Vostok Intur charter flights), selective Chinese business/border visitors in Rason.",
+      "wonsan_kalma_status": "Domestic operation active; foreign general tourism remains restricted through October 2026.",
+      "western_tourists": 0
+    }
+  ]
+}

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import ArticleCards from '@/components/ArticleCards';
 import { JA_HUB, JA_ARTICLES } from '@/content/translations/ja';
 import { pageMeta } from '@/site/seo';
 import { HUB_PATHS } from '@/content/translations';
@@ -53,23 +54,8 @@ export default function JapaneseHubPage() {
       <section style={{ marginTop: '3.5rem' }}>
         <h2>主要テーマ・深層解説</h2>
         <p className="muted">体制の抑圧構造、日本人拉致問題、帰還事業、そして脱北者支援の実態を整理した客観的レポートです。</p>
-        <div className="cards two" style={{ marginTop: '1.5rem' }}>
-          {JA_ARTICLES.map((a) => (
-            <article key={a.slug} className="card">
-              <p className="kicker" style={{ color: 'var(--accent)' }}>
-                解説レポート · 読了目安 {a.minutes}分
-              </p>
-              <h3>
-                <Link href={`/ja/learn/${a.slug}`}>{a.h1}</Link>
-              </h3>
-              <p style={{ fontSize: '0.92rem', color: 'var(--ink-2)', marginTop: '0.5rem', lineHeight: '1.5' }}>
-                {a.teaser}
-              </p>
-              <p style={{ marginTop: '1.2rem', fontSize: '0.88rem' }}>
-                <Link href={`/ja/learn/${a.slug}`}>記事を読む →</Link>
-              </p>
-            </article>
-          ))}
+        <div style={{ marginTop: '1.5rem' }}>
+          <ArticleCards articles={JA_ARTICLES} lead />
         </div>
       </section>
 

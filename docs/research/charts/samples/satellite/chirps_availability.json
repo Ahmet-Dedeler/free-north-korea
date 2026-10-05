@@ -1,0 +1,16 @@
+{
+  "annual": {
+    "start_year": 1981,
+    "latest_year": 2024,
+    "latest_url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_annual/tifs/chirps-v2.0.2024.tif",
+    "size_mb": 54.94,
+    "last_modified": "Wed, 15 Jan 2025 22:44:23 GMT"
+  },
+  "monthly": {
+    "start_month": "1981-01",
+    "latest_month": "2026-08",
+    "latest_url": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_monthly/tifs/chirps-v2.0.2026.08.tif.gz",
+    "size_mb": 14.02,
+    "last_modified": "Fri, 11 Sep 2026 19:00:48 GMT"
+  }
+}

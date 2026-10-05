@@ -1,0 +1,135 @@
+// probe_crypto.js
+// Compiles yearly DPRK cryptocurrency theft attribution from Chainalysis, TRM Labs, Elliptic, and FBI statements.
+
+import fs from 'node:fs';
+
+const yearlyTheft = [
+  {
+    year: 2017,
+    amount_usd_millions: 35,
+    major_targets: ["Youbit (South Korea)", "Bithumb (early breach)", "WannaCry ransomware"],
+    primary_sources: [
+      "Chainalysis 2020 Crypto Crime Report",
+      "ROK National Intelligence Service (NIS) testimony to National Assembly",
+      "US DOJ Indictment against Park Jin Hyok (2018)"
+    ],
+    notes: "Initial strategic pivot of RGB / Lazarus units to cryptocurrency exchange heists."
+  },
+  {
+    year: 2018,
+    amount_usd_millions: 545,
+    major_targets: ["Coincheck ($534M NEM hack, Japan)", "Bithumb ($31M)"],
+    primary_sources: [
+      "UN Security Council Panel of Experts Report S/2019/171",
+      "Asahi Shimbun / Tokyo Metropolitan Police investigation",
+      "Chainalysis 2021 Crypto Crime Report"
+    ],
+    notes: "Coincheck hack remained the single largest theft for 4 years until Ronin."
+  },
+  {
+    year: 2019,
+    amount_usd_millions: 275,
+    major_targets: ["UpBit (342,000 ETH, ~$49M)", "DragonEx ($7M)", "Bithumb ($19M)"],
+    primary_sources: [
+      "ROK National Police Agency official attribution of UpBit hack to Lazarus (confirmed 2024)",
+      "Chainalysis 2020 Crypto Crime Report",
+      "UN Panel of Experts Report S/2020/151"
+    ],
+    notes: "Heists diversified across Asian crypto exchanges with early automated mixer laundering."
+  },
+  {
+    year: 2020,
+    amount_usd_millions: 300,
+    major_targets: ["KuCoin ($281M)", "Eterbase ($5.4M)"],
+    primary_sources: [
+      "US DOJ Civil Forfeiture Complaint (2020)",
+      "Chainalysis: The 2021 Crypto Crime Report",
+      "UN Panel of Experts Report S/2021/211"
+    ],
+    notes: "KuCoin breach demonstrated sophisticated laundering through decentralized protocols (Uniswap)."
+  },
+  {
+    year: 2021,
+    amount_usd_millions: 429,
+    major_targets: ["Liquid Global ($97M)", "BadgerDAO ($120M)", "bZx ($55M)"],
+    primary_sources: [
+      "Chainalysis: 2022 Crypto Crime Report (North Korean Hackers Had a Banner Year in 2021)",
+      "TRM Labs DPRK Cyber Intelligence Report",
+      "UN Panel of Experts Report S/2022/132"
+    ],
+    notes: "Transition toward targeting DeFi protocols and smart contract attack surfaces."
+  },
+  {
+    year: 2022,
+    amount_usd_millions: 1700,
+    major_targets: ["Axie Infinity Ronin Network ($625M)", "Harmony Horizon Bridge ($100M)", "Nomad Bridge ($190M)"],
+    primary_sources: [
+      "FBI National Press Release: FBI Statement on Attribution of Malicious Cyber Activity Pertaining to the Axie Infinity Ronin Compromise (April 14, 2022)",
+      "FBI PSA: FBI Identifies Lazarus Group Cyber Actors as Responsible for Harmony Horizon Bridge Hack (Jan 23, 2023)",
+      "Chainalysis 2023 Crypto Crime Report",
+      "OFAC SDN Listing of Ronin Validator Address (0x098B716B8Aaf21512996dC57EB0615e2383E2f96)"
+    ],
+    notes: "All-time record cross-chain bridge exploits; US OFAC began blacklisting smart contract mixers (Tornado Cash, Blender.io)."
+  },
+  {
+    year: 2023,
+    amount_usd_millions: 660,
+    major_targets: ["Atomic Wallet ($100M)", "Alphapo ($60M)", "CoinsPaid ($37M)", "Stake.com ($41M)", "Mixin Network ($200M)"],
+    primary_sources: [
+      "FBI PSA: FBI Identifies Lazarus Group Actors as Responsible for $41 Million Cyber Heist from Stake.com (Sept 6, 2023)",
+      "FBI PSA: FBI Identifies Lazarus Group Actors as Responsible for Theft of $60 Million from Alphapo (Aug 22, 2023)",
+      "Chainalysis 2024 Crypto Crime Report",
+      "TRM Labs: The Year of the Social Engineering Exploit"
+    ],
+    notes: "Shift toward infrastructure and human-layer phishing (fake LinkedIn recruiters, weaponized Python packages)."
+  },
+  {
+    year: 2024,
+    amount_usd_millions: 1340,
+    major_targets: ["DMM Bitcoin ($305M, Japan)", "WazirX ($235M, India)", "Orbit Bridge ($81.5M)", "Radiant Capital ($50M)"],
+    primary_sources: [
+      "TRM Labs: North Korean Hackers Stole Over $1.3 Billion in 2024",
+      "Chainalysis: Mid-Year Crypto Crime Update 2024",
+      "Elliptic: WazirX Hack Investigation & Attribution to Lazarus Group",
+      "UN Panel of Experts Final Report S/2024/171"
+    ],
+    notes: "Second billion-dollar year; large centralized exchange hot/cold wallet compromises in Asia."
+  },
+  {
+    year: 2025,
+    amount_usd_millions: 2020,
+    major_targets: ["Bybit ($1.50B cold-wallet/settlement breach, Feb 2025)", "Multiple DeFi and Web3 treasury thefts ($520M)"],
+    primary_sources: [
+      "Chainalysis: 2026 Crypto Crime Report (North Korea Sets New Record of $2.02B Stolen)",
+      "TRM Labs 2025 Comprehensive Analysis of State-Sponsored Cybercrime",
+      "Bybit Official Incident Disclosure & Joint Forensic Report",
+      "MSMT (Multilateral Sanctions Monitoring Team) Report on DPRK Cyber Revenue (2025)"
+    ],
+    notes: "Historic high. The $1.5B Bybit hack represents the largest single cryptocurrency heist in world history."
+  },
+  {
+    year: 2026,
+    amount_usd_millions: 1050,
+    major_targets: ["Bitget ($387M, Sept 2026)", "Drift Protocol ($215M, May 2026)", "KelpDAO ($130M, July 2026)", "Developer laptop drains via BeaverTail malware ($318M)"],
+    primary_sources: [
+      "Chainalysis Q3 2026 Cyber Threat Intelligence Briefing",
+      "Decrypt / Cointelegraph Investigative Coverage (Sept/Oct 2026)",
+      "ZachXBT On-Chain Tracing Ledger",
+      "Tayvano Lazarus Incident Repository (301 entries)"
+    ],
+    notes: "Over $1B stolen in first 9 months of 2026. Heavy deployment of AI-enhanced phishing and fake developer interviews."
+  }
+];
+
+const totalStolen = yearlyTheft.reduce((sum, item) => sum + item.amount_usd_millions, 0);
+
+const output = {
+  description: "DPRK State-Sponsored Cryptocurrency Thefts Attributed Annually (2017-2026)",
+  unit: "USD (Millions)",
+  cumulative_stolen_usd_millions: totalStolen,
+  cumulative_stolen_usd_billions: (totalStolen / 1000).toFixed(2),
+  yearly_table: yearlyTheft
+};
+
+fs.writeFileSync("docs/research/charts/samples/money/crypto_thefts_yearly.json", JSON.stringify(output, null, 2));
+console.log(`Saved yearly crypto table. Cumulative stolen: $${(totalStolen / 1000).toFixed(2)} Billion USD`);

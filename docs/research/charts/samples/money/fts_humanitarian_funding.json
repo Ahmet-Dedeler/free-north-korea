@@ -1,0 +1,333 @@
+{
+  "description": "UN OCHA Financial Tracking Service (FTS) Humanitarian Aid to DPRK (2010-2026)",
+  "source_api": "https://api.hpc.tools/v1/public/fts/flow?countryISO3=PRK",
+  "publisher": "UN OCHA Financial Tracking Service",
+  "fetched_at": "2026-10-05T20:20:53.877Z",
+  "series": [
+    {
+      "year": 2010,
+      "total_usd": 24492052,
+      "flow_count": 25,
+      "donors": {
+        "Central Emergency Response Fund": 13440519,
+        "France, Government of": 404859,
+        "Switzerland, Government of": 3024262,
+        "Italy, Government of": 433198,
+        "Norway, Government of": 2308635,
+        "Brazil, Government of": 200000,
+        "Germany, Government of": 791011,
+        "Sweden, Government of": 850543,
+        "Canada, Government of": 2439024,
+        "United States of America, Government of": 600001
+      }
+    },
+    {
+      "year": 2011,
+      "total_usd": 89656012,
+      "flow_count": 68,
+      "donors": {
+        "Liechtenstein, Government of": 200458,
+        "European Commission's Humanitarian Aid and Civil Protection Department": 14398461,
+        "Central Emergency Response Fund": 15410406,
+        "Sweden, Government of": 9007449,
+        "Italy, Government of": 1681345,
+        "France, Government of": 679932,
+        "Switzerland, Government of": 8382923,
+        "Norway, Government of": 2660249,
+        "Germany, Government of": 1497654,
+        "Ireland, Government of": 356125,
+        "Luxembourg, Government of": 642933,
+        "Denmark, Government of": 191763,
+        "Canada, Government of": 112590,
+        "Australia, Government of": 7054304,
+        "China, Government of": 1000000,
+        "India, Government of": 1000000,
+        "Private (individuals & organizations)": 190130,
+        "South Africa, Government of": 142878,
+        "Food and Agriculture Organization of the United Nations": 199000,
+        "UNICEF National Committee/Germany": 176733,
+        "World Food Programme": 16617100,
+        "Unknown / Unspecified": 19541,
+        "Poland, Government of": 164056,
+        "Finland, Government of": 954979,
+        "Hungary, Government of": 15003,
+        "World Health Organization": 6900000
+      }
+    },
+    {
+      "year": 2012,
+      "total_usd": 117793008,
+      "flow_count": 71,
+      "donors": {
+        "European Commission": 719230,
+        "Norway, Government of": 3512431,
+        "China, Government of": 2000000,
+        "Indonesia, Government of": 2000000,
+        "South Africa, Government of": 123222,
+        "Cuba, Government of": 155241,
+        "Germany, Government of": 2393305,
+        "Switzerland, Government of": 7139445,
+        "Luxembourg, Government of": 423758,
+        "Liechtenstein, Government of": 107991,
+        "Sweden, Government of": 3495158,
+        "Kuwait, Government of": 49288,
+        "Brazil, Government of": 4115060,
+        "Russian Federation, Government of": 5000000,
+        "Canada, Government of": 7987689,
+        "Central Emergency Response Fund": 12920667,
+        "Denmark, Government of": 90158,
+        "France, Government of": 708861,
+        "Australia, Government of": 2018163,
+        "Private (individuals & organizations)": 93226,
+        "Italy, Government of": 535893,
+        "Korea, Republic of, Government of": 8264704,
+        "World Food Programme": 50040713,
+        "United Nations Population Fund": 947199,
+        "Unknown / Unspecified": 73000,
+        "World Health Organization": 424998,
+        "European Commission's Humanitarian Aid and Civil Protection Department": 2091510,
+        "GAVI Alliance": 117000,
+        "Ireland, Government of": 245098
+      }
+    },
+    {
+      "year": 2013,
+      "total_usd": 62796881,
+      "flow_count": 62,
+      "donors": {
+        "Russian Federation, Government of": 3000000,
+        "Central Emergency Response Fund": 15099387,
+        "Switzerland, Government of": 10569101,
+        "World Food Programme": 4661528,
+        "Australia, Government of": 1500000,
+        "France, Government of": 913455,
+        "Canada, Government of": 1012491,
+        "Unknown / Unspecified": 500000,
+        "Sweden, Government of": 5294027,
+        "Italy, Government of": 261780,
+        "Private (individuals & organizations)": 219154,
+        "Norway, Government of": 2616180,
+        "Germany, Government of": 2138470,
+        "Ireland, Government of": 325945,
+        "Luxembourg, Government of": 483080,
+        "Korea, Republic of, Government of": 12082764,
+        "United Nations Children's Fund": 419992,
+        "World Health Organization": 192000,
+        "Liechtenstein, Government of": 107527,
+        "OPEC Fund for International Development": 400000,
+        "China, Government of": 1000000
+      }
+    },
+    {
+      "year": 2014,
+      "total_usd": 33228010,
+      "flow_count": 30,
+      "donors": {
+        "Korea, Republic of, Government of": 6566322,
+        "Switzerland, Government of": 5038979,
+        "Central Emergency Response Fund": 6497013,
+        "Canada, Government of": 3597975,
+        "Sweden, Government of": 4888692,
+        "Norway, Government of": 1001001,
+        "France, Government of": 1037050,
+        "Germany, Government of": 1563451,
+        "Luxembourg, Government of": 103659,
+        "Private (individuals & organizations)": 744087,
+        "Australia, Government of": 2189781
+      }
+    },
+    {
+      "year": 2015,
+      "total_usd": 35482321,
+      "flow_count": 39,
+      "donors": {
+        "Switzerland, Government of": 10274573,
+        "Central Emergency Response Fund": 8276986,
+        "Sweden, Government of": 4441883,
+        "Canada, Government of": 2154641,
+        "France, Government of": 565372,
+        "Korea, Republic of, Government of": 4000000,
+        "Germany, Government of": 936257,
+        "Norway, Government of": 2182642,
+        "Ireland, Government of": 264550,
+        "Liechtenstein, Government of": 97087,
+        "Australia, Government of": 2288330
+      }
+    },
+    {
+      "year": 2016,
+      "total_usd": 45272971,
+      "flow_count": 57,
+      "donors": {
+        "Germany, Government of": 2958212,
+        "Central Emergency Response Fund": 13055211,
+        "Switzerland, Government of": 10380599,
+        "Canada, Government of": 2015270,
+        "Sweden, Government of": 3181161,
+        "European Commission's Humanitarian Aid and Civil Protection Department": 658222,
+        "Private (individuals & organizations)": 421936,
+        "European Commission Directorate-General for International Partnerships (formerly EuropeAid DEVCO)": 1725962,
+        "European Commission": 1698630,
+        "Russian Federation, Government of": 3000000,
+        "Unknown / Unspecified": 685,
+        "World Food Programme": 1519400,
+        "India, Government of": 1000000,
+        "France, Government of": 327868,
+        "Australia, Government of": 2189781,
+        "Denmark, Government of": 177925,
+        "Start Network": 314548,
+        "United States Fund for UNICEF": 550000,
+        "Liechtenstein, Government of": 97561
+      }
+    },
+    {
+      "year": 2017,
+      "total_usd": 39403285,
+      "flow_count": 41,
+      "donors": {
+        "Central Emergency Response Fund": 12347758,
+        "Sweden, Government of": 2390173,
+        "Switzerland, Government of": 6998470,
+        "Denmark, Government of": 55933,
+        "Finland, Government of": 318134,
+        "Canada, Government of": 1486989,
+        "United States of America, Government of": 1000000,
+        "Norway, Government of": 887103,
+        "Russian Federation, Government of": 3000000,
+        "Unknown / Unspecified": 7766213,
+        "World Food Programme": 2492748,
+        "France, Government of": 494056,
+        "Liechtenstein, Government of": 105708,
+        "Private (individuals & organizations)": 60000
+      }
+    },
+    {
+      "year": 2018,
+      "total_usd": 38387592,
+      "flow_count": 51,
+      "donors": {
+        "Switzerland, Government of": 13060728,
+        "Germany, Government of": 857170,
+        "Sweden, Government of": 5687783,
+        "France, Government of": 873477,
+        "Norway, Government of": 1737734,
+        "United Nations Population Fund": 243834,
+        "Canada, Government of": 1554001,
+        "United Nations Children's Fund": 207948,
+        "Ireland, Government of": 58480,
+        "Russian Federation, Government of": 4000000,
+        "Central Emergency Response Fund": 10003768,
+        "Liechtenstein, Government of": 102669
+      }
+    },
+    {
+      "year": 2019,
+      "total_usd": 45912120,
+      "flow_count": 75,
+      "donors": {
+        "Switzerland, Government of": 8635082,
+        "Germany, Government of": 1049905,
+        "Sweden, Government of": 5123615,
+        "Ireland, Government of": 113766,
+        "Canada, Government of": 1521903,
+        "France, Government of": 616275,
+        "Russian Federation, Government of": 8795000,
+        "Norway, Government of": 1464720,
+        "Denmark, Government of": 336951,
+        "United Nations Children's Fund": 309613,
+        "Korea, Republic of, Government of": 10470796,
+        "Finland, Government of": 156296,
+        "Central Emergency Response Fund": 5999898,
+        "Italy, Government of": 12479,
+        "Liechtenstein, Government of": 100806,
+        "Unknown / Unspecified": 1199422,
+        "Bulgaria, Government of": 5593
+      }
+    },
+    {
+      "year": 2020,
+      "total_usd": 40910737,
+      "flow_count": 65,
+      "donors": {
+        "Switzerland, Government of": 8649987,
+        "Germany, Government of": 2563091,
+        "Korea, Republic of, Government of": 6136374,
+        "Central Emergency Response Fund": 7740498,
+        "Canada, Government of": 996129,
+        "Sweden, Government of": 3509326,
+        "United Nations Children's Fund": 6182696,
+        "United Nations Population Fund": 329804,
+        "Norway, Government of": 1416654,
+        "Russian Federation, Government of": 3000000,
+        "United Kingdom, Government of": 100000,
+        "France, Government of": 227272,
+        "Bulgaria, Government of": 5599,
+        "COVID-19 Humanitarian Thematic Fund": 53307
+      }
+    },
+    {
+      "year": 2021,
+      "total_usd": 13410130,
+      "flow_count": 29,
+      "donors": {
+        "Germany, Government of": 15716,
+        "Switzerland, Government of": 5235901,
+        "Finland, Government of": 586166,
+        "European Commission's Humanitarian Aid and Civil Protection Department": 933131,
+        "Canada, Government of": 1170960,
+        "Norway, Government of": 454606,
+        "Sweden, Government of": 597443,
+        "United Nations Children's Fund": 4302312,
+        "France, Government of": 113895
+      }
+    },
+    {
+      "year": 2022,
+      "total_usd": 1940302,
+      "flow_count": 10,
+      "donors": {
+        "Switzerland, Government of": 629402,
+        "European Commission's Humanitarian Aid and Civil Protection Department": 597372,
+        "Sweden, Government of": 513927,
+        "Norway, Government of": 199601
+      }
+    },
+    {
+      "year": 2023,
+      "total_usd": 518874,
+      "flow_count": 7,
+      "donors": {
+        "Switzerland, Government of": 207064,
+        "Norway, Government of": 277378,
+        "UNICEF National Committee/Hong Kong": 34432
+      }
+    },
+    {
+      "year": 2024,
+      "total_usd": 2872747,
+      "flow_count": 14,
+      "donors": {
+        "Switzerland, Government of": 1817911,
+        "Norway, Government of": 76650,
+        "Sweden, Government of": 978186
+      }
+    },
+    {
+      "year": 2025,
+      "total_usd": 2438832,
+      "flow_count": 4,
+      "donors": {
+        "Switzerland, Government of": 2438832
+      }
+    },
+    {
+      "year": 2026,
+      "total_usd": 2141464,
+      "flow_count": 4,
+      "donors": {
+        "Switzerland, Government of": 1855469,
+        "International Planned Parenthood Federation": 285995
+      }
+    }
+  ]
+}

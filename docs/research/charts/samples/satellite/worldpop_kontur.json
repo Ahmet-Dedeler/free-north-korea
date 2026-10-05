@@ -1,0 +1,127 @@
+{
+  "worldpop_years": 21,
+  "worldpop_range": "2000-2020",
+  "worldpop_series": [
+    {
+      "year": 2000,
+      "title": "The spatial distribution of population in 2000, North Korea",
+      "url": "https://data.worldpop.org/GIS/Population/Global_2000_2020/2000/PRK/prk_ppp_2000.tif"
+    },
+    {
+      "year": 2001,
+      "title": "The spatial distribution of population in 2001, North Korea",
+      "url": "https://data.worldpop.org/GIS/Population/Global_2000_2020/2001/PRK/prk_ppp_2001.tif"
+    },
+    {
+      "year": 2002,
+      "title": "The spatial distribution of population in 2002, North Korea",
+      "url": "https://data.worldpop.org/GIS/Population/Global_2000_2020/2002/PRK/prk_ppp_2002.tif"
+    },
+    {
+      "year": 2003,
+      "title": "The spatial distribution of population in 2003, North Korea",
+      "url": "https://data.worldpop.org/GIS/Population/Global_2000_2020/2003/PRK/prk_ppp_2003.tif"
+    },
+    {
+      "year": 2004,
+      "title": "The spatial distribution of population in 2004, North Korea",
+      "url": "https://data.worldpop.org/GIS/Population/Global_2000_2020/2004/PRK/prk_ppp_2004.tif"
+    },
+    {
+      "year": 2005,
+      "title": "The spatial distribution of population in 2005, North Korea",
+      "url": "https://data.worldpop.org/GIS/Population/Global_2000_2020/2005/PRK/prk_ppp_2005.tif"
+    },
+    {
+      "year": 2006,
+      "title": "The spatial distribution of population in 2006, North Korea",
+      "url": "https://data.worldpop.org/GIS/Population/Global_2000_2020/2006/PRK/prk_ppp_2006.tif"
+    },
+    {
+      "year": 2007,
+      "title": "The spatial distribution of population in 2007, North Korea",
+      "url": "https://data.worldpop.org/GIS/Population/Global_2000_2020/2007/PRK/prk_ppp_2007.tif"
+    },
+    {
+      "year": 2008,
+      "title": "The spatial distribution of population in 2008, North Korea",
+      "url": "https://data.worldpop.org/GIS/Population/Global_2000_2020/2008/PRK/prk_ppp_2008.tif"
+    },
+    {
+      "year": 2009,
+      "title": "The spatial distribution of population in 2009, North Korea",
+      "url": "https://data.worldpop.org/GIS/Population/Global_2000_2020/2009/PRK/prk_ppp_2009.tif"
+    },
+    {
+      "year": 2010,
+      "title": "The spatial distribution of population in 2010, North Korea",
+      "url": "https://data.worldpop.org/GIS/Population/Global_2000_2020/2010/PRK/prk_ppp_2010.tif"
+    },
+    {
+      "year": 2011,
+      "title": "The spatial distribution of population in 2011, North Korea",
+      "url": "https://data.worldpop.org/GIS/Population/Global_2000_2020/2011/PRK/prk_ppp_2011.tif"
+    },
+    {
+      "year": 2012,
+      "title": "The spatial distribution of population in 2012, North Korea",
+      "url": "https://data.worldpop.org/GIS/Population/Global_2000_2020/2012/PRK/prk_ppp_2012.tif"
+    },
+    {
+      "year": 2013,
+      "title": "The spatial distribution of population in 2013, North Korea",
+      "url": "https://data.worldpop.org/GIS/Population/Global_2000_2020/2013/PRK/prk_ppp_2013.tif"
+    },
+    {
+      "year": 2014,
+      "title": "The spatial distribution of population in 2014, North Korea",
+      "url": "https://data.worldpop.org/GIS/Population/Global_2000_2020/2014/PRK/prk_ppp_2014.tif"
+    },
+    {
+      "year": 2015,
+      "title": "The spatial distribution of population in 2015, North Korea",
+      "url": "https://data.worldpop.org/GIS/Population/Global_2000_2020/2015/PRK/prk_ppp_2015.tif"
+    },
+    {
+      "year": 2016,
+      "title": "The spatial distribution of population in 2016, North Korea",
+      "url": "https://data.worldpop.org/GIS/Population/Global_2000_2020/2016/PRK/prk_ppp_2016.tif"
+    },
+    {
+      "year": 2017,
+      "title": "The spatial distribution of population in 2017, North Korea",
+      "url": "https://data.worldpop.org/GIS/Population/Global_2000_2020/2017/PRK/prk_ppp_2017.tif"
+    },
+    {
+      "year": 2018,
+      "title": "The spatial distribution of population in 2018, North Korea",
+      "url": "https://data.worldpop.org/GIS/Population/Global_2000_2020/2018/PRK/prk_ppp_2018.tif"
+    },
+    {
+      "year": 2019,
+      "title": "The spatial distribution of population in 2019, North Korea",
+      "url": "https://data.worldpop.org/GIS/Population/Global_2000_2020/2019/PRK/prk_ppp_2019.tif"
+    },
+    {
+      "year": 2020,
+      "title": "The spatial distribution of population in 2020, North Korea",
+      "url": "https://data.worldpop.org/GIS/Population/Global_2000_2020/2020/PRK/prk_ppp_2020.tif"
+    }
+  ],
+  "kontur_resources": [
+    {
+      "name": "kontur_population_KP_20220630.gpkg",
+      "url": "https://geodata-eu-central-1-kontur-public.s3.amazonaws.com/kontur_datasets/kontur_population_KP_20220630.gpkg.gz",
+      "format": "Geopackage",
+      "size_mb": 2.39,
+      "last_modified": "2022-06-30T13:10:28.976480"
+    },
+    {
+      "name": "kontur_population_KP_20231101.gpkg",
+      "url": "https://geodata-eu-central-1-kontur-public.s3.amazonaws.com/kontur_datasets/kontur_population_KP_20231101.gpkg.gz",
+      "format": "Geopackage",
+      "size_mb": 3.31,
+      "last_modified": "2023-10-31T16:36:49.296058"
+    }
+  ]
+}

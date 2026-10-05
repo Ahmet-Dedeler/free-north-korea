@@ -3157,3 +3157,137 @@
 .art-langs a:hover {
   opacity: 1;
 }
+
+/* ---------- article blocks: stats, timeline, tldr, border map ---------- */
+.prose .art-tiles {
+  margin: 20px 0 24px;
+}
+.events {
+  list-style: none;
+  padding: 0;
+  margin: 22px 0 26px;
+  border-left: 2px solid var(--line);
+}
+.prose .events li {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin: 0 0 18px;
+  padding-left: 22px;
+}
+.prose .events li:last-child {
+  margin-bottom: 0;
+}
+.events li::before {
+  content: '';
+  position: absolute;
+  left: -7px;
+  top: 4px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid var(--bg);
+  background: var(--accent);
+}
+.events li.danger::before {
+  background: var(--danger);
+}
+.events li.warn::before {
+  background: var(--warn);
+}
+.events li.ok::before {
+  background: var(--ok);
+}
+.events time {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  font-variant-numeric: tabular-nums;
+}
+.events b {
+  font-size: 15.5px;
+  color: var(--ink);
+}
+.events span {
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--ink-2);
+}
+.tldr {
+  margin: 34px 0 10px;
+  padding: 18px 22px;
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--accent);
+  border-radius: 0 14px 14px 0;
+  background: var(--panel);
+}
+.tldr > b {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 14px;
+  color: var(--accent);
+}
+.prose .tldr ul {
+  margin: 8px 0 0;
+  padding-left: 18px;
+}
+.prose .tldr li {
+  margin: 6px 0;
+}
+.border-map {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 8px 20px;
+  margin: 20px 0 24px;
+  padding: 14px 18px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--panel);
+}
+.border-map .locator {
+  margin: 0;
+  max-width: 340px;
+}
+.prose .border-towns {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.prose .border-towns li {
+  margin: 0;
+}
+.border-towns a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  color: var(--ink);
+  text-decoration: none;
+}
+.border-towns i {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--danger);
+}
+.border-map figcaption {
+  grid-column: 1 / -1;
+  font-size: 13px;
+  color: var(--ink-3);
+}
+@media (max-width: 560px) {
+  .border-map {
+    grid-template-columns: 1fr;
+  }
+  .prose .border-towns {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+}

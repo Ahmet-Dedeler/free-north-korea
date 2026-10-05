@@ -1,0 +1,44 @@
+[
+  {
+    "id": 49,
+    "name": "Total Population (both sexes)",
+    "has_data": false,
+    "error": "HTTP Error 401: Unauthorized"
+  },
+  {
+    "id": 61,
+    "name": "Life Expectancy at Birth (both sexes)",
+    "has_data": false,
+    "error": "HTTP Error 401: Unauthorized"
+  },
+  {
+    "id": 68,
+    "name": "Total Fertility Rate",
+    "has_data": false,
+    "error": "HTTP Error 401: Unauthorized"
+  },
+  {
+    "id": 67,
+    "name": "Infant Mortality Rate",
+    "has_data": false,
+    "error": "HTTP Error 401: Unauthorized"
+  },
+  {
+    "id": 66,
+    "name": "Under-five Mortality Rate",
+    "has_data": false,
+    "error": "HTTP Error 401: Unauthorized"
+  },
+  {
+    "id": 65,
+    "name": "Median Age",
+    "has_data": false,
+    "error": "HTTP Error 401: Unauthorized"
+  },
+  {
+    "id": 69,
+    "name": "Net Migration",
+    "has_data": false,
+    "error": "HTTP Error 401: Unauthorized"
+  }
+]

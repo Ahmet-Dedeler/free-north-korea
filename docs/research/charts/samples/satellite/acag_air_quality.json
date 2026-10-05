@@ -1,0 +1,28 @@
+{
+  "acag_pm25": {
+    "source": "Atmospheric Composition Analysis Group (ACAG) / Washington University in St. Louis",
+    "lead_authors": "Aaron van Donkelaar, Randall V. Martin et al.",
+    "citation": "Shen et al., 2024 (ACS ES&T Air) / van Donkelaar et al., 2021 (V5.GL.04)",
+    "portal_url": "https://sites.wustl.edu/acag/datasets/surface-pm2-5/",
+    "gee_collection": "projects/sat-io/open-datasets/ACAG/surface_pm25",
+    "resolution": "0.01 deg (~1 km)",
+    "coverage": "1998-2023",
+    "format": "NetCDF-4 / GeoTIFF",
+    "verified": true
+  },
+  "acag_tropomi_no2": {
+    "source": "ACAG / Cooper et al.",
+    "citation": "Cooper et al., Global fine-scale changes in ambient NO2, Nature 601, 380-387 (2022)",
+    "portal_url": "https://sites.wustl.edu/acag/datasets/sat-no2/",
+    "zenodo_records": [
+      "https://doi.org/10.5281/zenodo.5484305",
+      "https://doi.org/10.5281/zenodo.5424752",
+      "https://doi.org/10.5281/zenodo.19740022"
+    ],
+    "resolution": "0.01 deg (~1 km)",
+    "coverage": "2005-2023",
+    "format": "NetCDF-4",
+    "verified": true,
+    "notes": "Zenodo web API applies Cloudflare WAF; data files directly downloadable via browser or Zenodo token."
+  }
+}

@@ -1,17 +1,27 @@
 /**
  * Visual blocks used inside /learn articles, so explainers read like a field guide rather than a blog post.
  * Every number here also appears in the article text or its sources.
+ *
+ * Blocks that carry their own words take `lang` (default English), so the Korean and Japanese articles reuse the
+ * same visuals. Text inside a block lives in a `Record<Lang, …>` next to it.
  */
+import type { ReactNode } from 'react';
 import type { LucideIcon } from 'lucide-react';
 import { Building2, Footprints, Home, Landmark, Megaphone, Radio, Route, Scale, Search, ShieldOff, Usb, Waves } from 'lucide-react';
 import Avatar from './Avatar';
 import CampCard from './CampCard';
+import Locator from './Locator';
+import { StatTile } from './Visual';
 import { person } from '@/entities';
 import { CoverCard } from './Covers';
 import { getAllCamps } from '@/content/camps';
 import { SHELVES } from '@/content/library';
 import { orgLogo } from '@/content/media';
 import { ORGS } from '@/content/orgs';
+import { PLACES } from '@/content/places';
+import type { Lang } from '@/site/seo';
+
+const num = (n: number, lang: Lang) => n.toLocaleString(lang === 'en' ? 'en-US' : lang);
 
 /* ---------- generic ---------- */
 
@@ -22,6 +32,48 @@ export function Fact({ value, label, tone }: { value: string; label: string; ton
       <b>{value}</b>
       <span>{label}</span>
     </span>
+  );
+}
+
+/** A row of stat tiles. Put the date a number is from in `note`. */
+export function Stats({ items }: { items: { value: ReactNode; label: string; note?: string; tone?: 'danger' | 'warn' | 'ok'; icon?: LucideIcon }[] }) {
+  return (
+    <div className="tiles art-tiles">
+      {items.map((it) => (
+        <StatTile key={it.label} {...it} />
+      ))}
+    </div>
+  );
+}
+
+/** Dated events on a vertical line. */
+export function Timeline({ items }: { items: { date: string; title: string; text?: ReactNode; tone?: 'danger' | 'warn' | 'ok' }[] }) {
+  return (
+    <ol className="events">
+      {items.map((it) => (
+        <li key={it.date + it.title} className={it.tone ?? ''}>
+          <time>{it.date}</time>
+          <b>{it.title}</b>
+          {it.text && <span>{it.text}</span>}
+        </li>
+      ))}
+    </ol>
+  );
+}
+
+const TLDR: Record<Lang, string> = { en: 'tldr:', ko: '세 줄 요약', ja: '3行まとめ' };
+
+/** The short version, at the end of an article (never the top). */
+export function Tldr({ lang = 'en', items }: { lang?: Lang; items: ReactNode[] }) {
+  return (
+    <aside className="tldr">
+      <b>{TLDR[lang]}</b>
+      <ul>
+        {items.map((it, i) => (
+          <li key={i}>{it}</li>
+        ))}
+      </ul>
+    </aside>
   );
 }
 
@@ -43,8 +95,10 @@ export function Steps({ steps }: { steps: { icon: LucideIcon; title: string; fac
   );
 }
 
+const WEBSITE: Record<Lang, string> = { en: 'Website', ko: '웹사이트', ja: 'ウェブサイト' };
+
 /** Org cards with logos and the direct way to help, for "how to help" sections. */
-export function OrgActions({ ids }: { ids: string[] }) {
+export function OrgActions({ ids, lang = 'en' }: { ids: string[]; lang?: Lang }) {
   return (
     <ul className="org-actions-row">
       {ids.map((id) => {
@@ -56,9 +110,9 @@ export function OrgActions({ ids }: { ids: string[] }) {
           <li key={id}>
             <a href={help?.url ?? o.url} target="_blank" rel="noopener noreferrer">
               <span className="hl-logo">{logo ? <img src={logo.src} alt="" /> : <b>{o.name[0]}</b>}</span>
-              <span>
+              <span lang="en">
                 <strong>{o.name.replace(/\s*\(.*\)/, '')}</strong>
-                <small>{help?.label ?? 'Website'} ↗</small>
+                <small lang={help ? 'en' : lang}>{help?.label ?? WEBSITE[lang]} ↗</small>
               </span>
             </a>
           </li>
@@ -70,26 +124,50 @@ export function OrgActions({ ids }: { ids: string[] }) {
 
 /* ---------- how can North Korea be freed ---------- */
 
-const PATHS: { n: number; icon: LucideIcon; title: string; anchor: string; push: 'yes' | 'some' | 'no'; pushText: string }[] = [
-  { n: 1, icon: Usb, title: 'Information gets in', anchor: 'information', push: 'yes', pushText: 'Outsiders can push directly' },
-  { n: 2, icon: Landmark, title: 'A split at the top', anchor: 'split', push: 'no', pushText: 'Happens inside the elite' },
-  { n: 3, icon: Building2, title: 'Reform from inside', anchor: 'reform', push: 'some', pushText: 'Depends on a future leader' },
-  { n: 4, icon: ShieldOff, title: 'Collapse', anchor: 'collapse', push: 'some', pushText: 'Outsiders can prepare evidence' },
-  { n: 5, icon: Scale, title: 'Outside pressure', anchor: 'pressure', push: 'yes', pushText: 'Through governments and China' },
+type Push = 'yes' | 'some' | 'no';
+const PATHS: { icon: LucideIcon; anchor: string; push: Push }[] = [
+  { icon: Usb, anchor: 'information', push: 'yes' },
+  { icon: Landmark, anchor: 'split', push: 'no' },
+  { icon: Building2, anchor: 'reform', push: 'some' },
+  { icon: ShieldOff, anchor: 'collapse', push: 'some' },
+  { icon: Scale, anchor: 'pressure', push: 'yes' },
 ];
+const PATH_TEXT: Record<Lang, [string, string][]> = {
+  en: [
+    ['Information gets in', 'Outsiders can push directly'],
+    ['A split at the top', 'Happens inside the elite'],
+    ['Reform from inside', 'Depends on a future leader'],
+    ['Collapse', 'Outsiders can prepare evidence'],
+    ['Outside pressure', 'Through governments and China'],
+  ],
+  ko: [
+    ['외부 정보 유입', '바깥에서 직접 도울 수 있음'],
+    ['권력층 내부 분열', '엘리트 내부에서 일어남'],
+    ['내부 개혁', '미래 지도자에게 달림'],
+    ['체제 붕괴', '바깥에서는 증거를 준비할 수 있음'],
+    ['외부 압력', '각국 정부와 중국을 통해서'],
+  ],
+  ja: [
+    ['外の情報が入る', '外から直接後押しできる'],
+    ['上層部の分裂', 'エリート内部で起きる'],
+    ['内側からの改革', '将来の指導者しだい'],
+    ['体制の崩壊', '外では証拠を準備できる'],
+    ['外からの圧力', '各国政府と中国を通じて'],
+  ],
+};
 
-export function FivePaths() {
+export function FivePaths({ lang = 'en' }: { lang?: Lang }) {
   return (
     <ol className="paths">
-      {PATHS.map((p) => (
-        <li key={p.n}>
+      {PATHS.map((p, i) => (
+        <li key={p.anchor}>
           <a href={`#${p.anchor}`}>
-            <span className="path-n">{p.n}</span>
+            <span className="path-n">{i + 1}</span>
             <p.icon size={22} className="path-icon" />
-            <b>{p.title}</b>
+            <b>{PATH_TEXT[lang][i][0]}</b>
             <span className={`push ${p.push}`}>
               <i />
-              {p.pushText}
+              {PATH_TEXT[lang][i][1]}
             </span>
           </a>
         </li>
@@ -100,16 +178,61 @@ export function FivePaths() {
 
 /* ---------- how North Koreans escape ---------- */
 
-export function EscapeRoute() {
+const ESCAPE_TEXT: Record<Lang, [string, string][]> = {
+  en: [
+    ['Cross the river', 'Tumen or Yalu into China, usually with a broker who pays off guards.'],
+    ['Hide in China', 'No legal status. Caught means sent back: ~500-600 in one operation in Oct 2023.'],
+    ['~3,000 miles south', 'Safe houses, buses and jungle crossings into Laos and Thailand. ~$3,000 per rescue.'],
+    ['South Korea', 'Questioning, then about three months at Hanawon before starting over.'],
+  ],
+  ko: [
+    ['강을 건넌다', '두만강이나 압록강을 건너 중국으로. 보통 경비대에 돈을 쥐여주는 브로커를 통한다.'],
+    ['중국에서 숨어 지낸다', '법적 신분이 없다. 잡히면 강제송환 (2023년 10월 한 번에 약 500~600명).'],
+    ['남쪽으로 약 4,800km', '은신처, 버스, 정글을 거쳐 라오스와 태국으로. 구출 1건에 약 3,000달러.'],
+    ['한국', '합동신문을 받고 하나원에서 약 3개월을 보낸 뒤 새로 시작한다.'],
+  ],
+  ja: [
+    ['川を渡る', '豆満江か鴨緑江を渡って中国へ。たいていは警備兵に賄賂を渡すブローカーを使う。'],
+    ['中国で隠れて暮らす', '法的な身分がない。捕まれば送還（2023年10月には一度に推定500〜600人）。'],
+    ['南へ約4,800km', '隠れ家、バス、ジャングルを抜けてラオスとタイへ。救出1件あたり約3,000ドル。'],
+    ['韓国', '取り調べのあと、ハナ院で約3か月過ごしてから新しい生活を始める。'],
+  ],
+};
+const ESCAPE_ICONS: { icon: LucideIcon; anchor: string }[] = [
+  { icon: Waves, anchor: 'border' },
+  { icon: Search, anchor: 'china' },
+  { icon: Route, anchor: 'route' },
+  { icon: Home, anchor: 'south-korea' },
+];
+
+export function EscapeRoute({ lang = 'en' }: { lang?: Lang }) {
+  return <Steps steps={ESCAPE_ICONS.map((s, i) => ({ icon: s.icon, title: ESCAPE_TEXT[lang][i][0], fact: ESCAPE_TEXT[lang][i][1], href: `#${s.anchor}` }))} />;
+}
+
+const BORDER_TEXT: Record<Lang, { names: Record<string, string>; caption: string }> = {
+  en: { names: { hyesan: 'Hyesan', musan: 'Musan', hoeryong: 'Hoeryong' }, caption: 'Common crossing areas on the Yalu and Tumen rivers. Click a dot for the place.' },
+  ko: { names: { hyesan: '혜산', musan: '무산', hoeryong: '회령' }, caption: '압록강과 두만강의 주요 도강 지역. 점을 누르면 해당 장소로 이동한다.' },
+  ja: { names: { hyesan: '恵山', musan: '茂山', hoeryong: '会寧' }, caption: '鴨緑江と豆満江の主な渡河地点。点をクリックするとその場所へ。' },
+};
+
+/** The border towns people usually cross near, on the server-rendered map of North Korea. */
+export function BorderMap({ lang = 'en' }: { lang?: Lang }) {
+  const t = BORDER_TEXT[lang];
+  const towns = ['hyesan', 'musan', 'hoeryong'].map((id) => PLACES.find((p) => p.id === id)!).filter(Boolean);
   return (
-    <Steps
-      steps={[
-        { icon: Waves, title: 'Cross the river', fact: 'Tumen or Yalu into China, usually with a broker who pays off guards.', href: '#border' },
-        { icon: Search, title: 'Hide in China', fact: 'No legal status. Caught means sent back: ~500–600 in one operation in Oct 2023.', href: '#china' },
-        { icon: Route, title: '~3,000 miles south', fact: 'Safe houses, buses and jungle crossings into Laos and Thailand. ~$3,000 per rescue.', href: '#route' },
-        { icon: Home, title: 'South Korea', fact: 'Questioning, then about three months at Hanawon before starting over.', href: '#south-korea' },
-      ]}
-    />
+    <figure className="border-map">
+      <Locator pins={towns.map((p) => ({ lat: p.lat, lon: p.lon, title: t.names[p.id], href: `/places/${p.id}`, color: 'var(--danger)', r: 7 }))} />
+      <ul className="border-towns">
+        {towns.map((p) => (
+          <li key={p.id}>
+            <a href={`/places/${p.id}`}>
+              <i /> {t.names[p.id]}
+            </a>
+          </li>
+        ))}
+      </ul>
+      <figcaption>{t.caption}</figcaption>
+    </figure>
   );
 }
 
@@ -145,29 +268,54 @@ const ARRIVALS: [number, number | null, number | null, number][] = [
   [2025, 198, 26, 224],
 ];
 
-export function ArrivalsChart() {
+const ARRIVALS_TEXT: Record<Lang, { people: (n: string) => string; women: string; men: string; covid: string; caption: string }> = {
+  en: {
+    people: (n) => `${n} people`,
+    women: 'Women',
+    men: 'Men',
+    covid: 'Border sealed for COVID, 2020',
+    caption: 'North Koreans arriving in South Korea per year. 34,538 in total by the end of 2025.',
+  },
+  ko: {
+    people: (n) => `${n}명`,
+    women: '여성',
+    men: '남성',
+    covid: '2020년 코로나로 국경 봉쇄',
+    caption: '연도별 탈북민 한국 입국 인원. 2025년 말까지 누적 34,538명.',
+  },
+  ja: {
+    people: (n) => `${n}人`,
+    women: '女性',
+    men: '男性',
+    covid: '2020年 コロナで国境封鎖',
+    caption: '韓国に到着した脱北者の年別人数。2025年末までの累計は34,538人。',
+  },
+};
+
+export function ArrivalsChart({ lang = 'en' }: { lang?: Lang }) {
   const max = 3000;
+  const t = ARRIVALS_TEXT[lang];
   return (
     <figure className="arrivals">
       <div className="arrivals-plot">
         {[1000, 2000, 3000].map((g) => (
           <span key={g} className="grid-line" style={{ bottom: `${(g / max) * 100}%` }}>
-            {g.toLocaleString('en-US')}
+            {num(g, lang)}
           </span>
         ))}
         <ol>
-          {ARRIVALS.map(([y, w, m, t]) => (
+          {ARRIVALS.map(([y, w, m, total]) => (
             <li key={y} className={y >= 2020 ? 'after' : ''}>
               <span className="arr-tip">
-                <b>{y}</b> {t.toLocaleString('en-US')} people
+                <b>{y}</b> {t.people(num(total, lang))}
                 {w != null && (
                   <>
                     <br />
-                    {w.toLocaleString('en-US')} women · {m!.toLocaleString('en-US')} men
+                    {t.women} {num(w, lang)} · {t.men} {num(m!, lang)}
                   </>
                 )}
               </span>
-              <span className="arr-bar" style={{ height: `${(t / max) * 100}%` }}>
+              <span className="arr-bar" style={{ height: `${(total / max) * 100}%` }}>
                 {w != null ? (
                   <>
                     <i className="w" style={{ flex: w }} />
@@ -182,17 +330,17 @@ export function ArrivalsChart() {
           ))}
         </ol>
         <span className="arr-note" style={{ left: `${(18 / ARRIVALS.length) * 100}%` }}>
-          Border sealed for COVID, 2020
+          {t.covid}
         </span>
       </div>
       <figcaption className="key left">
         <span>
-          <i style={{ background: '#db2777' }} /> Women
+          <i style={{ background: '#db2777' }} /> {t.women}
         </span>
         <span>
-          <i style={{ background: '#0ea5e9' }} /> Men
+          <i style={{ background: '#0ea5e9' }} /> {t.men}
         </span>
-        <span className="muted">North Koreans arriving in South Korea per year. 34,538 in total by the end of 2025.</span>
+        <span className="muted">{t.caption}</span>
       </figcaption>
     </figure>
   );
@@ -200,49 +348,94 @@ export function ArrivalsChart() {
 
 /* ---------- information into North Korea ---------- */
 
-const CHANNELS: { icon: LucideIcon; title: string; status: string; tone: 'ok' | 'warn' | 'danger'; text: string; anchor: string }[] = [
-  { icon: Usb, title: 'USB drives & microSD', status: 'Main channel', tone: 'ok', text: 'Copied hand to hand and played on cheap "notel" players. 140,000+ drives donated or pledged to Flash Drives for Freedom.', anchor: 'usb' },
-  { icon: Radio, title: 'Radio', status: 'Hit hardest in 2025', tone: 'danger', text: 'RFA Korean shut down July 2025, VOA gutted, South Korea ended its broadcasts in June 2025.', anchor: 'radio' },
-  { icon: Megaphone, title: 'Balloons', status: 'Mostly paused', tone: 'warn', text: 'South Korea began enforcing a launch ban in 2025. Always the most visible method, not the most effective.', anchor: 'balloons' },
+const CHANNELS: { icon: LucideIcon; tone: 'ok' | 'warn' | 'danger'; anchor: string }[] = [
+  { icon: Usb, tone: 'ok', anchor: 'usb' },
+  { icon: Radio, tone: 'danger', anchor: 'radio' },
+  { icon: Megaphone, tone: 'warn', anchor: 'balloons' },
 ];
+const CHANNEL_TEXT: Record<Lang, [string, string, string][]> = {
+  en: [
+    ['USB drives & microSD', 'Main channel', 'Copied hand to hand and played on cheap "notel" players. 140,000+ drives donated or pledged to Flash Drives for Freedom.'],
+    ['Radio', 'Hit hardest in 2025', 'RFA Korean shut down July 2025, VOA gutted, South Korea ended its broadcasts in June 2025.'],
+    ['Balloons', 'Mostly paused', 'South Korea began enforcing a launch ban in 2025. The most visible method, probably not the most effective.'],
+  ],
+  ko: [
+    ['USB와 마이크로SD', '주요 통로', '손에서 손으로 복사되고 값싼 "노텔"로 재생된다. Flash Drives for Freedom에 기부·약정된 USB만 14만 개 이상.'],
+    ['라디오', '2025년 가장 큰 타격', 'RFA 한국어 방송은 2025년 7월 중단, VOA는 대폭 축소, 한국 정부도 2025년 6월 대북 방송을 중단했다.'],
+    ['풍선', '대부분 중단', '2025년 한국 정부가 살포 금지를 집행하기 시작했다. 가장 눈에 띄는 방법이지만 아마 가장 효과적인 방법은 아니다.'],
+  ],
+  ja: [
+    ['USBとmicroSD', '主なルート', '手から手へコピーされ、安い「ノーテル」で再生される。Flash Drives for Freedomへの寄付・寄付予定は14万本以上。'],
+    ['ラジオ', '2025年に最も打撃', 'RFA朝鮮語放送は2025年7月に停止、VOAは大幅縮小、韓国政府も2025年6月に対北放送をやめた。'],
+    ['風船', 'ほぼ停止', '韓国政府が2025年に打ち上げ禁止の取り締まりを始めた。いちばん目立つ方法だが、たぶん一番効果的な方法ではない。'],
+  ],
+};
 
-export function Channels() {
+export function Channels({ lang = 'en' }: { lang?: Lang }) {
   return (
     <ul className="channels">
-      {CHANNELS.map((c) => (
-        <li key={c.title} className={c.tone}>
-          <a href={`#${c.anchor}`}>
-            <span className="ch-icon">
-              <c.icon size={24} />
-            </span>
-            <span className={`ch-status ${c.tone}`}>{c.status}</span>
-            <b>{c.title}</b>
-            <span>{c.text}</span>
-          </a>
-        </li>
-      ))}
+      {CHANNELS.map((c, i) => {
+        const [title, status, text] = CHANNEL_TEXT[lang][i];
+        return (
+          <li key={c.anchor} className={c.tone}>
+            <a href={`#${c.anchor}`}>
+              <span className="ch-icon">
+                <c.icon size={24} />
+              </span>
+              <span className={`ch-status ${c.tone}`}>{status}</span>
+              <b>{title}</b>
+              <span>{text}</span>
+            </a>
+          </li>
+        );
+      })}
     </ul>
   );
 }
 
 /* ---------- how to help ---------- */
 
-export function HelpMenu() {
-  const items: { icon: LucideIcon; title: string; cost: string; anchor: string }[] = [
-    { icon: Footprints, title: 'Fund a rescue', cost: '~$3,000 per person', anchor: 'rescue' },
-    { icon: Usb, title: 'Send information in', cost: 'Mail an old USB drive', anchor: 'information' },
-    { icon: Home, title: 'Help escapees', cost: 'An hour a week of tutoring', anchor: 'escapees' },
-    { icon: Search, title: 'Keep the evidence', cost: 'Fund documentation groups', anchor: 'evidence' },
-    { icon: Megaphone, title: 'Use your voice', cost: 'Call your representatives', anchor: 'voice' },
-  ];
+const HELP: { icon: LucideIcon; anchor: string }[] = [
+  { icon: Footprints, anchor: 'rescue' },
+  { icon: Usb, anchor: 'information' },
+  { icon: Home, anchor: 'escapees' },
+  { icon: Search, anchor: 'evidence' },
+  { icon: Megaphone, anchor: 'voice' },
+];
+const HELP_TEXT: Record<Lang, [string, string][]> = {
+  en: [
+    ['Fund a rescue', '~$3,000 per person'],
+    ['Send information in', 'Mail an old USB drive'],
+    ['Help escapees', 'An hour a week of tutoring'],
+    ['Keep the evidence', 'Fund documentation groups'],
+    ['Use your voice', 'Call your representatives'],
+  ],
+  ko: [
+    ['구출 비용 후원', '1명당 약 3,000달러'],
+    ['정보 보내기', '안 쓰는 USB 한 개 우편으로'],
+    ['탈북민 돕기', '일주일에 한 시간 튜터링'],
+    ['증거 남기기', '기록 단체 후원'],
+    ['목소리 내기', '지역 의원에게 연락'],
+  ],
+  ja: [
+    ['救出を支援する', '1人あたり約3,000ドル'],
+    ['情報を送る', '使わないUSBを郵送'],
+    ['脱北者を助ける', '週1時間のチューター'],
+    ['証拠を残す', '記録団体を支援'],
+    ['声を上げる', '議員に連絡する'],
+  ],
+};
+
+/** The ways to help as a menu. `base` points the links at another page (e.g. from a different article). */
+export function HelpMenu({ lang = 'en', base = '' }: { lang?: Lang; base?: string }) {
   return (
     <ul className="help-menu">
-      {items.map((it) => (
-        <li key={it.title}>
-          <a href={`#${it.anchor}`}>
+      {HELP.map((it, i) => (
+        <li key={it.anchor}>
+          <a href={`${base}#${it.anchor}`}>
             <it.icon size={22} />
-            <b>{it.title}</b>
-            <span>{it.cost}</span>
+            <b>{HELP_TEXT[lang][i][0]}</b>
+            <span>{HELP_TEXT[lang][i][1]}</span>
           </a>
         </li>
       ))}
@@ -250,13 +443,12 @@ export function HelpMenu() {
   );
 }
 
-
 /* ---------- prison camps ---------- */
 
 export function CampGrid({ slugs }: { slugs: string[] }) {
   const all = getAllCamps();
   return (
-    <ul className="place-cards wide-block">
+    <ul className="place-cards wide-block" lang="en">
       {slugs.map((s) => {
         const c = all.find((x) => x.slug === s);
         return c ? <CampCard key={s} camp={c} /> : null;
@@ -266,7 +458,7 @@ export function CampGrid({ slugs }: { slugs: string[] }) {
 }
 
 /** Side-by-side comparison of two things, each a titled card. */
-export function Compare({ items }: { items: { icon: LucideIcon; title: string; tone?: string; children: React.ReactNode }[] }) {
+export function Compare({ items }: { items: { icon: LucideIcon; title: string; tone?: string; children: ReactNode }[] }) {
   return (
     <div className="compare">
       {items.map((it) => (
@@ -282,7 +474,7 @@ export function Compare({ items }: { items: { icon: LucideIcon; title: string; t
 }
 
 /** Orgs with their logo and a sentence about what they do, as a list of cards. */
-export function OrgNotes({ items }: { items: { id: string; note: React.ReactNode }[] }) {
+export function OrgNotes({ items }: { items: { id: string; note: ReactNode }[] }) {
   return (
     <ul className="org-notes">
       {items.map(({ id, note }) => {
@@ -294,7 +486,7 @@ export function OrgNotes({ items }: { items: { id: string; note: React.ReactNode
             <span className="hl-logo">{logo ? <img src={logo.src} alt="" /> : <b>{o.name[0]}</b>}</span>
             <span>
               <a href={`/organizations#${o.id}`}>
-                <strong>{o.name.replace(/\s*\(.*\)/, '')}</strong>
+                <strong lang="en">{o.name.replace(/\s*\(.*\)/, '')}</strong>
               </a>{' '}
               {note}
             </span>
@@ -309,7 +501,7 @@ export function OrgNotes({ items }: { items: { id: string; note: React.ReactNode
 export function Books({ titles }: { titles: string[] }) {
   const items = SHELVES.flatMap((s) => s.items);
   return (
-    <ul className="cover-grid inline-books">
+    <ul className="cover-grid inline-books" lang="en">
       {titles.map((t) => {
         const it = items.find((i) => i.title === t);
         return it ? <CoverCard key={t} item={it} kind="book" /> : null;
@@ -319,7 +511,7 @@ export function Books({ titles }: { titles: string[] }) {
 }
 
 /** Grid of icon cards: a title and a sentence or two each. */
-export function IconCards({ items }: { items: { icon: LucideIcon; title: string; children: React.ReactNode }[] }) {
+export function IconCards({ items }: { items: { icon: LucideIcon; title: string; children: ReactNode }[] }) {
   return (
     <ul className="icon-cards">
       {items.map((it) => (
@@ -335,8 +527,14 @@ export function IconCards({ items }: { items: { icon: LucideIcon; title: string;
   );
 }
 
+const KIM_NAMES: Record<'ko' | 'ja', Record<string, string>> = {
+  ko: { 'kim-il-sung': '김일성', 'kim-jong-il': '김정일', 'kim-jong-un': '김정은' },
+  ja: { 'kim-il-sung': '金日成', 'kim-jong-il': '金正日', 'kim-jong-un': '金正恩' },
+};
+const NOW: Record<Lang, string> = { en: 'now', ko: '현재', ja: '現在' };
+
 /** The three Kims as a timeline with portraits. */
-export function Dynasty() {
+export function Dynasty({ lang = 'en' }: { lang?: Lang }) {
   const rows = [
     { id: 'kim-il-sung', from: 1948, to: 1994 },
     { id: 'kim-jong-il', from: 1994, to: 2011 },
@@ -352,9 +550,9 @@ export function Dynasty() {
           <li key={r.id} style={{ flex: (r.to ?? end) - r.from }}>
             <a href={`/people/${p.id}`}>
               <Avatar person={p} size={52} />
-              <b>{p.name_en}</b>
+              <b>{lang === 'en' ? p.name_en : KIM_NAMES[lang][r.id]}</b>
               <span>
-                {r.from}–{r.to ?? 'now'}
+                {r.from}–{r.to ?? NOW[lang]}
               </span>
             </a>
             <i className="dyn-bar" />

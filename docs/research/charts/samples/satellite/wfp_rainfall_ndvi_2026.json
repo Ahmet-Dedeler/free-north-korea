@@ -1,0 +1,158 @@
+{
+  "latest_rainfall_dekad": "2026-09-21",
+  "latest_ndvi_dekad": "2026-09-11",
+  "rainfall_by_province": {
+    "KP01": {
+      "pcode": "KP01",
+      "dekad_rf_mm": 38.27649,
+      "dekad_rf_norm_mm": 20.040564,
+      "dekad_anomaly_pct": 172.82555,
+      "season_3m_rf_mm": 822.40894,
+      "season_3m_anomaly_pct": 204.97734,
+      "version": "prelim"
+    },
+    "KP02": {
+      "pcode": "KP02",
+      "dekad_rf_mm": 42.17655,
+      "dekad_rf_norm_mm": 27.506207,
+      "dekad_anomaly_pct": 145.1309,
+      "season_3m_rf_mm": 794.5545,
+      "season_3m_anomaly_pct": 194.09663,
+      "version": "prelim"
+    },
+    "KP03": {
+      "pcode": "KP03",
+      "dekad_rf_mm": 40.285892,
+      "dekad_rf_norm_mm": 29.273594,
+      "dekad_anomaly_pct": 132.13057,
+      "season_3m_rf_mm": 1101.3201,
+      "season_3m_anomaly_pct": 210.37238,
+      "version": "prelim"
+    },
+    "KP04": {
+      "pcode": "KP04",
+      "dekad_rf_mm": 31.013044,
+      "dekad_rf_norm_mm": 41.130436,
+      "dekad_anomaly_pct": 78.06786,
+      "season_3m_rf_mm": 1742.0979,
+      "season_3m_anomaly_pct": 203.10864,
+      "version": "prelim"
+    },
+    "KP05": {
+      "pcode": "KP05",
+      "dekad_rf_mm": 49.548935,
+      "dekad_rf_norm_mm": 21.888464,
+      "dekad_anomaly_pct": 202.87115,
+      "season_3m_rf_mm": 985.1688,
+      "season_3m_anomaly_pct": 169.34859,
+      "version": "prelim"
+    },
+    "KP06": {
+      "pcode": "KP06",
+      "dekad_rf_mm": 68.78503,
+      "dekad_rf_norm_mm": 28.418875,
+      "dekad_anomaly_pct": 220.78848,
+      "season_3m_rf_mm": 1222.4261,
+      "season_3m_anomaly_pct": 173.0149,
+      "version": "prelim"
+    },
+    "KP07": {
+      "pcode": "KP07",
+      "dekad_rf_mm": 75.720406,
+      "dekad_rf_norm_mm": 33.755375,
+      "dekad_anomaly_pct": 208.28183,
+      "season_3m_rf_mm": 1376.9613,
+      "season_3m_anomaly_pct": 200.32613,
+      "version": "prelim"
+    },
+    "KP08": {
+      "pcode": "KP08",
+      "dekad_rf_mm": 27.231672,
+      "dekad_rf_norm_mm": 28.471651,
+      "dekad_anomaly_pct": 96.29545,
+      "season_3m_rf_mm": 1636.8943,
+      "season_3m_anomaly_pct": 222.71521,
+      "version": "prelim"
+    },
+    "KP09": {
+      "pcode": "KP09",
+      "dekad_rf_mm": 22.232876,
+      "dekad_rf_norm_mm": 23.978994,
+      "dekad_anomaly_pct": 93.97453,
+      "season_3m_rf_mm": 1382.9316,
+      "season_3m_anomaly_pct": 221.40172,
+      "version": "prelim"
+    },
+    "KP10": {
+      "pcode": "KP10",
+      "dekad_rf_mm": 51.036366,
+      "dekad_rf_norm_mm": 31.270605,
+      "dekad_anomaly_pct": 154.49525,
+      "season_3m_rf_mm": 1322.3092,
+      "season_3m_anomaly_pct": 197.21567,
+      "version": "prelim"
+    }
+  },
+  "ndvi_by_province": {
+    "KP01": {
+      "pcode": "KP01",
+      "ndvi": 0.82248116,
+      "ndvi_norm": 0.74706113,
+      "ndvi_anomaly_pct": 109.462265
+    },
+    "KP02": {
+      "pcode": "KP02",
+      "ndvi": 0.8381986,
+      "ndvi_norm": 0.7724239,
+      "ndvi_anomaly_pct": 107.997665
+    },
+    "KP03": {
+      "pcode": "KP03",
+      "ndvi": 0.8373692,
+      "ndvi_norm": 0.7701826,
+      "ndvi_anomaly_pct": 108.191666
+    },
+    "KP04": {
+      "pcode": "KP04",
+      "ndvi": 0.84008133,
+      "ndvi_norm": 0.7974383,
+      "ndvi_anomaly_pct": 105.03199
+    },
+    "KP05": {
+      "pcode": "KP05",
+      "ndvi": 0.85690874,
+      "ndvi_norm": 0.78833,
+      "ndvi_anomaly_pct": 108.18039
+    },
+    "KP06": {
+      "pcode": "KP06",
+      "ndvi": 0.7969455,
+      "ndvi_norm": 0.73588794,
+      "ndvi_anomaly_pct": 107.76924
+    },
+    "KP07": {
+      "pcode": "KP07",
+      "ndvi": 0.8167408,
+      "ndvi_norm": 0.7338077,
+      "ndvi_anomaly_pct": 110.5808
+    },
+    "KP08": {
+      "pcode": "KP08",
+      "ndvi": 0.8054513,
+      "ndvi_norm": 0.73511285,
+      "ndvi_anomaly_pct": 108.95903
+    },
+    "KP09": {
+      "pcode": "KP09",
+      "ndvi": 0.7806238,
+      "ndvi_norm": 0.69444263,
+      "ndvi_anomaly_pct": 111.57661
+    },
+    "KP10": {
+      "pcode": "KP10",
+      "ndvi": 0.72650176,
+      "ndvi_norm": 0.65493184,
+      "ndvi_anomaly_pct": 110.15275
+    }
+  }
+}

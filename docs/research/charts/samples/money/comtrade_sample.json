@@ -1,0 +1,38 @@
+{
+  "2020": [
+    {
+      "flowCode": "M",
+      "value": 47948195,
+      "period": "2020"
+    },
+    {
+      "flowCode": "X",
+      "value": 490967988,
+      "period": "2020"
+    }
+  ],
+  "2022": [
+    {
+      "flowCode": "M",
+      "value": 133677748,
+      "period": "2022"
+    },
+    {
+      "flowCode": "X",
+      "value": 894039906,
+      "period": "2022"
+    }
+  ],
+  "202412": [
+    {
+      "flowCode": "M",
+      "value": 37651684,
+      "period": "202412"
+    },
+    {
+      "flowCode": "X",
+      "value": 212455984,
+      "period": "202412"
+    }
+  ]
+}

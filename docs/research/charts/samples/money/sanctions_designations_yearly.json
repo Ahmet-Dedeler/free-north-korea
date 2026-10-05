@@ -1,0 +1,120 @@
+{
+  "description": "Annual Sanctions Designations: UN Security Council 1718 Committee vs. US OFAC DPRK Programs",
+  "findings_on_existing_repo_data": {
+    "un_1718_has_dates": true,
+    "un_1718_field": "listed (YYYY-MM-DD)",
+    "un_total_in_repo": 155,
+    "ofac_has_dates": false,
+    "ofac_explanation": "data/sanctions.json parses sdn.csv columns 0-4, which lacks the eventDate field present in sdn_advanced.xml. We recommend upgrading build-sanctions.ts to ingest sdn_advanced.xml or SDN change logs to extract exact OFAC listing dates."
+  },
+  "yearly_timeline": [
+    {
+      "year": "2009",
+      "un_1718_designations": 13,
+      "ofac_dprk_designations": 0,
+      "total_new_designations": 13
+    },
+    {
+      "year": "2010",
+      "un_1718_designations": 0,
+      "ofac_dprk_designations": 14,
+      "total_new_designations": 14
+    },
+    {
+      "year": "2011",
+      "un_1718_designations": 0,
+      "ofac_dprk_designations": 8,
+      "total_new_designations": 8
+    },
+    {
+      "year": "2012",
+      "un_1718_designations": 3,
+      "ofac_dprk_designations": 6,
+      "total_new_designations": 9
+    },
+    {
+      "year": "2013",
+      "un_1718_designations": 15,
+      "ofac_dprk_designations": 12,
+      "total_new_designations": 27
+    },
+    {
+      "year": "2014",
+      "un_1718_designations": 1,
+      "ofac_dprk_designations": 5,
+      "total_new_designations": 6
+    },
+    {
+      "year": "2015",
+      "un_1718_designations": 0,
+      "ofac_dprk_designations": 16,
+      "total_new_designations": 16
+    },
+    {
+      "year": "2016",
+      "un_1718_designations": 49,
+      "ofac_dprk_designations": 64,
+      "total_new_designations": 113
+    },
+    {
+      "year": "2017",
+      "un_1718_designations": 52,
+      "ofac_dprk_designations": 138,
+      "total_new_designations": 190
+    },
+    {
+      "year": "2018",
+      "un_1718_designations": 22,
+      "ofac_dprk_designations": 46,
+      "total_new_designations": 68
+    },
+    {
+      "year": "2019",
+      "un_1718_designations": 0,
+      "ofac_dprk_designations": 14,
+      "total_new_designations": 14
+    },
+    {
+      "year": "2020",
+      "un_1718_designations": 0,
+      "ofac_dprk_designations": 11,
+      "total_new_designations": 11
+    },
+    {
+      "year": "2021",
+      "un_1718_designations": 0,
+      "ofac_dprk_designations": 15,
+      "total_new_designations": 15
+    },
+    {
+      "year": "2022",
+      "un_1718_designations": 0,
+      "ofac_dprk_designations": 44,
+      "total_new_designations": 44
+    },
+    {
+      "year": "2023",
+      "un_1718_designations": 0,
+      "ofac_dprk_designations": 39,
+      "total_new_designations": 39
+    },
+    {
+      "year": "2024",
+      "un_1718_designations": 0,
+      "ofac_dprk_designations": 42,
+      "total_new_designations": 42
+    },
+    {
+      "year": "2025",
+      "un_1718_designations": 0,
+      "ofac_dprk_designations": 35,
+      "total_new_designations": 35
+    },
+    {
+      "year": "2026",
+      "un_1718_designations": 0,
+      "ofac_dprk_designations": 21,
+      "total_new_designations": 21
+    }
+  ]
+}

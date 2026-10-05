@@ -1,0 +1,124 @@
+{
+  "provinces": {
+    "KP05": {
+      "name": "Jagang",
+      "pcode": "KP05",
+      "ntl_2012": 43298.77,
+      "ntl_2024": 41554.43,
+      "ntl_change_pct": -4.0,
+      "built_1975_km2": 6.9,
+      "built_2025_km2": 18.22,
+      "pop_2020": 1431991
+    },
+    "KP04": {
+      "name": "Kangwon",
+      "pcode": "KP04",
+      "ntl_2012": 35397.96,
+      "ntl_2024": 30796.57,
+      "ntl_change_pct": -13.0,
+      "built_1975_km2": 7.24,
+      "built_2025_km2": 17.68,
+      "pop_2020": 1493517
+    },
+    "KP11": {
+      "name": "Nampo",
+      "pcode": "KP11",
+      "ntl_2012": 4077.97,
+      "ntl_2024": 3616.85,
+      "ntl_change_pct": -11.3,
+      "built_1975_km2": 8.87,
+      "built_2025_km2": 20.06,
+      "pop_2020": 1065112
+    },
+    "KP02": {
+      "name": "North Hamgyong",
+      "pcode": "KP02",
+      "ntl_2012": 47844.91,
+      "ntl_2024": 40637.09,
+      "ntl_change_pct": -15.1,
+      "built_1975_km2": 22.58,
+      "built_2025_km2": 59.29,
+      "pop_2020": 2498111
+    },
+    "KP08": {
+      "name": "North Hwanghae",
+      "pcode": "KP08",
+      "ntl_2012": 31175.11,
+      "ntl_2024": 27613.4,
+      "ntl_change_pct": -11.4,
+      "built_1975_km2": 13.38,
+      "built_2025_km2": 30.85,
+      "pop_2020": 2674198
+    },
+    "KP06": {
+      "name": "North Pyongan",
+      "pcode": "KP06",
+      "ntl_2012": 38032.65,
+      "ntl_2024": 38226.15,
+      "ntl_change_pct": 0.5,
+      "built_1975_km2": 16.4,
+      "built_2025_km2": 41.49,
+      "pop_2020": 3156187
+    },
+    "KP10": {
+      "name": "Pyongyang",
+      "pcode": "KP10",
+      "ntl_2012": 10292.75,
+      "ntl_2024": 15569.64,
+      "ntl_change_pct": 51.3,
+      "built_1975_km2": 29.75,
+      "built_2025_km2": 64.34,
+      "pop_2020": 3421728
+    },
+    "KP01": {
+      "name": "Ryanggang",
+      "pcode": "KP01",
+      "ntl_2012": 34943.03,
+      "ntl_2024": 33524.69,
+      "ntl_change_pct": -4.1,
+      "built_1975_km2": 2.83,
+      "built_2025_km2": 7.9,
+      "pop_2020": 754635
+    },
+    "KP03": {
+      "name": "South Hamgyong",
+      "pcode": "KP03",
+      "ntl_2012": 48405.99,
+      "ntl_2024": 43845.04,
+      "ntl_change_pct": -9.4,
+      "built_1975_km2": 20.84,
+      "built_2025_km2": 49.17,
+      "pop_2020": 3284601
+    },
+    "KP09": {
+      "name": "South Hwanghae",
+      "pcode": "KP09",
+      "ntl_2012": 21912.86,
+      "ntl_2024": 18820.03,
+      "ntl_change_pct": -14.1,
+      "built_1975_km2": 9.5,
+      "built_2025_km2": 21.9,
+      "pop_2020": 2488558
+    },
+    "KP07": {
+      "name": "South Pyongan",
+      "pcode": "KP07",
+      "ntl_2012": 31124.62,
+      "ntl_2024": 28739.07,
+      "ntl_change_pct": -7.7,
+      "built_1975_km2": 15.79,
+      "built_2025_km2": 50.17,
+      "pop_2020": 3301518
+    }
+  },
+  "comparisons": {
+    "Seoul Metro (ROK)": {
+      "ntl_2012": 305774.55,
+      "ntl_2024": 292085.55
+    },
+    "Dandong Border City (CHN)": {
+      "ntl_2012": 19525.67,
+      "ntl_2024": 24976.9
+    }
+  }
+}

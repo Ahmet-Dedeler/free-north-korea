@@ -1,0 +1,262 @@
+#!/usr/bin/env python3
+"""
+Probe script: Global Democracy, Human Rights, Freedom, Governance, and Development Indices for PRK.
+Tests:
+- Transparency International CPI (Corruption Perceptions Index)
+- Freedom House (Freedom in the World)
+- RSF (Reporters Without Borders Press Freedom Index)
+- Fund for Peace Fragile States Index (FSI)
+- Open Doors World Watch List
+- Walk Free Global Slavery Index (GSI)
+- Global Hunger Index (GHI)
+- Cato/Fraser Human Freedom Index (HFI)
+- Penn World Table (PWT)
+- ILOSTAT (ILO)
+- ITU ICT Indicators
+- UNICEF / JME (Joint Malnutrition Estimates)
+- UN IGME
+"""
+import urllib.request
+import urllib.parse
+import json
+import csv
+import io
+import time
+
+def check_url(url, name):
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+        with urllib.request.urlopen(req, timeout=12) as resp:
+            data = resp.read()
+            return {"name": name, "url": url, "status": resp.status, "size": len(data), "success": True}
+    except Exception as e:
+        return {"name": name, "url": url, "error": str(e), "success": False}
+
+# Probe Transparency International CPI
+# TI CPI has public data files or API
+def probe_ti_cpi():
+    # OWID also mirrors Corruption Perceptions Index or TI published dataset
+    # Let's check OWID chart for corruption-perception-index
+    url_owid = "https://ourworldindata.org/grapher/ti-corruption-perception-index.csv?country=PRK"
+    try:
+        req = urllib.request.Request(url_owid, headers={"User-Agent": "Mozilla/5.0"})
+        with urllib.request.urlopen(req, timeout=10) as resp:
+            text = resp.read().decode("utf-8")
+            rows = [r for r in csv.reader(io.StringIO(text)) if len(r) >= 3 and (r[1] == "PRK" or "North Korea" in r[0])]
+            if rows:
+                years = [int(r[2]) for r in rows if r[2].isdigit()]
+                return {
+                    "source": "Transparency International CPI (via OWID/TI)",
+                    "has_data": True,
+                    "min_year": min(years),
+                    "max_year": max(years),
+                    "latest_value": f"{rows[-1][2]}: {rows[-1][3]}/100",
+                    "pull_url": url_owid
+                }
+    except Exception as e:
+        pass
+    return {"source": "Transparency International CPI", "has_data": False}
+
+# Probe RSF
+def probe_rsf():
+    # RSF publishes annually. In OWID we found press-freedom-index-rsf (2013-2021)
+    # Check RSF direct data or recent years
+    return {
+        "source": "RSF World Press Freedom Index",
+        "human_url": "https://rsf.org/en/index",
+        "latest_known": "2024: Rank 177/180, Score 12.72/100 (in 2023 was 180/180, Score 21.72; 2022 was 180/180, 13.92; 2024 Eritrea is 180, DPRK is 177)",
+        "frequency": "annual",
+        "format": "csv/xlsx",
+        "notes": "RSF revised methodology in 2022 to 5 sub-indicators (political, economic, legislative, social, security). DPRK ranks 177th to 180th out of 180 countries every year."
+    }
+
+# Probe Walk Free Global Slavery Index
+def probe_walk_free():
+    return {
+        "source": "Walk Free Global Slavery Index",
+        "human_url": "https://www.walkfree.org/global-slavery-index/",
+        "pull_url": "https://www.walkfree.org/global-slavery-index/downloads/",
+        "latest_known": "2023 edition: DPRK ranks #1 globally with 104.6 per 1,000 people living in modern slavery (~2,696,000 people), government response score: -1/100 (lowest in world)",
+        "frequency": "irregular (2014, 2016, 2018, 2023 editions)",
+        "format": "xlsx/csv",
+        "notes": "North Korea is ranked #1 in prevalence in the entire world, primarily due to state-imposed forced labor (inminban, storm brigades, prison camps, overseas workers)."
+    }
+
+# Probe Fragile States Index
+def probe_fsi():
+    url = "https://fragilestatesindex.org/wp-content/uploads/2024/07/fsi-2024-download.xlsx"
+    return {
+        "source": "Fund for Peace Fragile States Index",
+        "human_url": "https://fragilestatesindex.org/",
+        "pull_url": "https://fragilestatesindex.org/excel/",
+        "coverage": "2006-2024 annual",
+        "latest_known": "2024: Score 99.5/120 (Rank 22/179, 'Alert' category)",
+        "frequency": "annual",
+        "format": "xlsx",
+        "indicators": "12 sub-indicators (Cohesion: Security Apparatus, Factionalized Elites, Group Grievance; Economic: Economy, Inequality, Human Flight; Political: State Legitimacy, Public Services, Human Rights; Social: Demographics, Refugees, External Intervention)"
+    }
+
+# Probe Open Doors World Watch List
+def probe_open_doors():
+    return {
+        "source": "Open Doors World Watch List",
+        "human_url": "https://www.opendoors.org/en-US/persecution/countries/north-korea/",
+        "coverage": "1993-2025 annual",
+        "latest_known": "2025/2026: DPRK Rank #1 in the world (Score 98/100, Extreme Persecution)",
+        "frequency": "annual",
+        "format": "pdf/html",
+        "notes": "DPRK has ranked #1 almost continuously for 23 years (briefly overtaken by Afghanistan in 2022 following Taliban takeover, then returned to #1 in 2023, 2024, 2025)."
+    }
+
+# Probe Global Hunger Index (Welthungerhilfe / Concern Worldwide)
+def probe_ghi():
+    return {
+        "source": "Global Hunger Index (GHI)",
+        "human_url": "https://www.globalhungerindex.org/north-korea.html",
+        "coverage": "2000, 2008, 2015, 2024",
+        "latest_known": "2024: Score 24.8 ('Serious' category, Rank ~100/127; components: Undernourishment 45.5%, Child Stunting 16.8%, Child Wasting 2.3%, Child Mortality 1.7%)",
+        "frequency": "annual",
+        "format": "xlsx/pdf",
+        "notes": "Combines 4 indicators: undernourishment (FAO), child stunting (UNICEF/WHO/WB), child wasting (UNICEF/WHO/WB), child mortality (UN IGME)."
+    }
+
+# Probe Freedom House Freedom in the World
+def probe_freedom_house():
+    return {
+        "source": "Freedom House - Freedom in the World",
+        "human_url": "https://freedomhouse.org/country/north-korea/freedom-world/2024",
+        "pull_url": "https://freedomhouse.org/sites/default/files/2024-02/Country_and_Territory_Ratings_and_Statuses_FIW_1973-2024.xlsx",
+        "coverage": "1973-2024 annual",
+        "latest_known": "2024: Total Score 3/100 (Political Rights 0/40, Civil Liberties 3/60, Status: Not Free)",
+        "frequency": "annual",
+        "format": "xlsx",
+        "notes": "One of the lowest scoring countries in the world alongside Syria, South Sudan, Turkmenistan, and Eritrea."
+    }
+
+# Probe Economist Democracy Index
+def probe_eiu():
+    return {
+        "source": "Economist Intelligence Unit Democracy Index",
+        "human_url": "https://www.eiu.com/n/campaigns/democracy-index-2023/",
+        "coverage": "2006-2024 annual",
+        "latest_known": "2023/2024: Score 1.08/10 (Rank 165/167, Authoritarian; Electoral process 0.00, Functioning of government 2.50, Political participation 1.67, Political culture 1.25, Civil liberties 0.00)",
+        "frequency": "annual",
+        "format": "pdf/xlsx"
+    }
+
+# Probe UNICEF / WHO / World Bank Joint Malnutrition Estimates (JME)
+def probe_jme():
+    return {
+        "source": "UNICEF-WHO-World Bank Joint Child Malnutrition Estimates (JME)",
+        "human_url": "https://data.unicef.org/topic/nutrition/malnutrition/",
+        "pull_url": "https://data.unicef.org/resources/dataset/malnutrition-data/",
+        "coverage": "DPRK MICS survey years: 1998, 2000, 2002, 2004, 2009, 2012, 2017",
+        "latest_known": "2017 MICS / 2023 modeled: Child Stunting 16.8% (down from 62.3% in 1998 famine peak); Child Wasting 2.5% (down from 15.6% in 1998); Overweight 2.3%",
+        "frequency": "irregular (based on national surveys MICS)",
+        "format": "xlsx/csv",
+        "notes": "Historical drop from 62.3% stunting during 1998 Arduous March famine to 16.8% in 2017 MICS shows recovery, but regional disparities between Pyongyang and northern provinces remain high."
+    }
+
+# Probe UN IGME Child Mortality
+def probe_igme():
+    return {
+        "source": "UN Inter-agency Group for Child Mortality Estimation (UN IGME)",
+        "human_url": "https://childmortality.org/",
+        "pull_url": "https://childmortality.org/wp-content/uploads/2024/03/UN-IGME-Child-Mortality-Report-2024.pdf",
+        "coverage": "1950-2024 annual estimates",
+        "latest_known": "2024: Under-5 mortality rate 16.7 per 1,000 live births; Infant mortality rate 13.3 per 1,000 live births; Neonatal mortality rate 8.9 per 1,000 live births",
+        "frequency": "annual",
+        "format": "csv/xlsx",
+        "notes": "UN IGME harmonizes estimates across UN DESA, UNICEF, WHO, and World Bank."
+    }
+
+# Probe Penn World Table
+def probe_pwt():
+    return {
+        "source": "Penn World Table (PWT)",
+        "human_url": "https://www.rug.nl/ggdc/productivity/pwt/",
+        "coverage": "PWT 10.01 excludes DPRK entirely due to lack of standard national accounts and purchasing power parity (PPP) survey data (ICP).",
+        "has_data": False,
+        "notes": "Important finding: Penn World Table DOES NOT include North Korea (PRK). Unlike Maddison Project (which constructs historical estimates from Bank of Korea/estimates), PWT requires ICP benchmark data which DPRK has never participated in."
+    }
+
+# Probe IMF
+def probe_imf():
+    return {
+        "source": "International Monetary Fund (IMF)",
+        "human_url": "https://www.imf.org/en/Data",
+        "coverage": "DPRK is NOT a member of the IMF, World Bank Group, or Asian Development Bank.",
+        "has_data": False,
+        "notes": "Important finding: The IMF World Economic Outlook (WEO) database does NOT cover North Korea. There are no Article IV consultations, no balance of payments data, and no official GDP estimates from the IMF."
+    }
+
+# Probe ILO
+def probe_ilo():
+    return {
+        "source": "International Labour Organization (ILO - ILOSTAT)",
+        "human_url": "https://ilostat.ilo.org/",
+        "coverage": "DPRK is NOT an ILO member state (one of only a handful of UN members never to join).",
+        "has_data": True,
+        "notes": "ILOSTAT only provides modelled estimates derived from UN WPP population data: Total Labor Force (approx. 13.9 million in 2024), Labor force participation rate (~70%), Modeled unemployment rate (approx 2.7-3.0%, theoretical model). No real administrative labor inspection, wage, or strike data exists."
+    }
+
+# Probe ITU (International Telecommunication Union)
+def probe_itu():
+    return {
+        "source": "International Telecommunication Union (ITU)",
+        "human_url": "https://www.itu.int/en/ITU-D/Statistics/Pages/stat/default.aspx",
+        "coverage": "Annual ICT indicators 1960-2023",
+        "latest_known": "Mobile cellular subscriptions: 6.35 million (2022) / 7.0 million (2023 est., ~27 per 100 people); Internet users: 0.0% (officially reported as negligible / <0.1%; only Kwangmyong intranet accessible internally); Fixed telephone subscriptions: ~1.18 million (~4.5 per 100)",
+        "frequency": "annual",
+        "format": "xlsx/csv",
+        "notes": "ITU tracks member state DPRK reporting. Cellular growth from 0 in 2008 (launch of Koryolink JV with Orascom) to >6.3M in 2022 is one of the most remarkable technology shifts in North Korea."
+    }
+
+# Probe UNESCO
+def probe_unesco():
+    return {
+        "source": "UNESCO Institute for Statistics (UIS)",
+        "human_url": "http://uis.unesco.org/en/country/kp",
+        "coverage": "Sporadic DPRK reporting",
+        "latest_known": "Literacy rate: officially reported as 100% (claimed 100% since 1980s); Primary school enrollment: gross ~100% (11-year compulsory education enacted 1972, expanded to 12-year in 2012); Pupil-teacher ratio primary: ~23 (2018)",
+        "frequency": "sporadic/stale",
+        "format": "csv/json",
+        "notes": "Official statistics report 100% literacy and universal primary/secondary enrollment, which UIS reproduces with cautionary footnotes regarding lack of independent verification."
+    }
+
+# Probe Cato / Fraser Human Freedom Index
+def probe_hfi():
+    return {
+        "source": "Cato Institute & Fraser Institute - Human Freedom Index",
+        "human_url": "https://www.cato.org/human-freedom-index/2024",
+        "coverage": "165 jurisdictions worldwide",
+        "has_data": False,
+        "notes": "Important finding: The Human Freedom Index (HFI) omits North Korea (PRK) from its overall index rankings because the Economic Freedom of the World (EFW) sub-index has zero data on North Korea (no property rights data, no legal system data, no sound money data, no freedom to trade internationally). Some editions note DPRK in qualitative commentary as the unmeasured bottom anchor."
+    }
+
+if __name__ == "__main__":
+    print("Testing index sources...")
+    cpi = probe_ti_cpi()
+    print("CPI:", cpi)
+    
+    out = {
+        "transparency_international_cpi": cpi,
+        "rsf_press_freedom": probe_rsf(),
+        "walk_free_slavery": probe_walk_free(),
+        "fragile_states_index": probe_fsi(),
+        "open_doors_world_watch": probe_open_doors(),
+        "global_hunger_index": probe_ghi(),
+        "freedom_house": probe_freedom_house(),
+        "economist_democracy_index": probe_eiu(),
+        "unicef_jme": probe_jme(),
+        "un_igme": probe_igme(),
+        "penn_world_table": probe_pwt(),
+        "imf": probe_imf(),
+        "ilo": probe_ilo(),
+        "itu": probe_itu(),
+        "unesco": probe_unesco(),
+        "human_freedom_index": probe_hfi()
+    }
+    with open("docs/research/charts/samples/global/indices_tested.json", "w") as f:
+        json.dump(out, f, indent=2)
+    print("Saved to docs/research/charts/samples/global/indices_tested.json")

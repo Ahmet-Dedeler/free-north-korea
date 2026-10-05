@@ -1,0 +1,44 @@
+[
+  {
+    "domain": "FS",
+    "name": "Suite of Food Security Indicators",
+    "has_data": false,
+    "error": "The read operation timed out"
+  },
+  {
+    "domain": "QCL",
+    "name": "Cereal production (Rice, Maize, Wheat, Potatoes)",
+    "has_data": false,
+    "error": "The read operation timed out"
+  },
+  {
+    "domain": "QCL",
+    "name": "Rice production",
+    "has_data": false,
+    "error": "The read operation timed out"
+  },
+  {
+    "domain": "QCL",
+    "name": "Maize (corn) production",
+    "has_data": false,
+    "error": "The read operation timed out"
+  },
+  {
+    "domain": "QCL",
+    "name": "Potatoes production",
+    "has_data": false,
+    "error": "HTTP Error 521: <none>"
+  },
+  {
+    "domain": "FBS",
+    "name": "Dietary energy supply (kcal/capita/day)",
+    "has_data": false,
+    "error": "The read operation timed out"
+  },
+  {
+    "domain": "FBS",
+    "name": "Protein supply quantity (g/capita/day)",
+    "has_data": false,
+    "error": "The read operation timed out"
+  }
+]

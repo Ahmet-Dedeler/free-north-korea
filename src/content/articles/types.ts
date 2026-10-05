@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react';
+import type { Lang } from '@/site/seo';
 
 export interface Faq {
   q: string;
@@ -7,7 +8,10 @@ export interface Faq {
 }
 
 export interface Article {
+  /** Same slug in every language, so hreflang can pair the versions. */
   slug: string;
+  /** Language of this version. Missing means English. */
+  lang?: Lang;
   /** <title>, kept under ~60 characters where possible. */
   title: string;
   h1: string;

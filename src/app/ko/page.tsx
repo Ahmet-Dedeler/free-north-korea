@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import ArticleCards from '@/components/ArticleCards';
 import { KO_HUB, KO_ARTICLES } from '@/content/translations/ko';
 import { pageMeta } from '@/site/seo';
 import { HUB_PATHS } from '@/content/translations';
@@ -53,23 +54,8 @@ export default function KoreanHubPage() {
       <section style={{ marginTop: '3.5rem' }}>
         <h2>핵심 심층 해설</h2>
         <p className="muted">북한 체제의 구조적 현실과 자유를 향한 경로를 정리한 검증된 심층 분석입니다.</p>
-        <div className="cards two" style={{ marginTop: '1.5rem' }}>
-          {KO_ARTICLES.map((a) => (
-            <article key={a.slug} className="card">
-              <p className="kicker" style={{ color: 'var(--accent)' }}>
-                심층 분석 · {a.minutes}분 소요
-              </p>
-              <h3>
-                <Link href={`/ko/learn/${a.slug}`}>{a.h1}</Link>
-              </h3>
-              <p style={{ fontSize: '0.92rem', color: 'var(--ink-2)', marginTop: '0.5rem', lineHeight: '1.5' }}>
-                {a.teaser}
-              </p>
-              <p style={{ marginTop: '1.2rem', fontSize: '0.88rem' }}>
-                <Link href={`/ko/learn/${a.slug}`}>전문 읽기 →</Link>
-              </p>
-            </article>
-          ))}
+        <div style={{ marginTop: '1.5rem' }}>
+          <ArticleCards articles={KO_ARTICLES} lead />
         </div>
       </section>
 

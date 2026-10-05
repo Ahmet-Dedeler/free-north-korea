@@ -1,0 +1,64 @@
+{
+  "granules": [
+    {
+      "title": "MCD12Q1.A2024001.h28v05.061.2025206061402",
+      "year": "2024",
+      "size_mb": 5.7,
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/MCD12Q1.061/MCD12Q1.A2024001.h28v05.061.2025206061402/MCD12Q1.A2024001.h28v05.061.2025206061402.hdf"
+    },
+    {
+      "title": "MCD12Q1.A2024001.h28v04.061.2025206052331",
+      "year": "2024",
+      "size_mb": 1.86,
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/MCD12Q1.061/MCD12Q1.A2024001.h28v04.061.2025206052331/MCD12Q1.A2024001.h28v04.061.2025206052331.hdf"
+    },
+    {
+      "title": "MCD12Q1.A2024001.h27v04.061.2025206054203",
+      "year": "2024",
+      "size_mb": 8.76,
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/MCD12Q1.061/MCD12Q1.A2024001.h27v04.061.2025206054203/MCD12Q1.A2024001.h27v04.061.2025206054203.hdf"
+    },
+    {
+      "title": "MCD12Q1.A2024001.h27v05.061.2025206052531",
+      "year": "2024",
+      "size_mb": 10.59,
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/MCD12Q1.061/MCD12Q1.A2024001.h27v05.061.2025206052531/MCD12Q1.A2024001.h27v05.061.2025206052531.hdf"
+    },
+    {
+      "title": "MCD12Q1.A2024001.h15v01.061.2025205104633",
+      "year": "2024",
+      "size_mb": 7.25,
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/MCD12Q1.061/MCD12Q1.A2024001.h15v01.061.2025205104633/MCD12Q1.A2024001.h15v01.061.2025205104633.hdf"
+    },
+    {
+      "title": "MCD12Q1.A2023001.h15v01.061.2024252124135",
+      "year": "2023",
+      "size_mb": 7.26,
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/MCD12Q1.061/MCD12Q1.A2023001.h15v01.061.2024252124135/MCD12Q1.A2023001.h15v01.061.2024252124135.hdf"
+    },
+    {
+      "title": "MCD12Q1.A2023001.h27v04.061.2024252132326",
+      "year": "2023",
+      "size_mb": 8.54,
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/MCD12Q1.061/MCD12Q1.A2023001.h27v04.061.2024252132326/MCD12Q1.A2023001.h27v04.061.2024252132326.hdf"
+    },
+    {
+      "title": "MCD12Q1.A2023001.h27v05.061.2024252132339",
+      "year": "2023",
+      "size_mb": 10.44,
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/MCD12Q1.061/MCD12Q1.A2023001.h27v05.061.2024252132339/MCD12Q1.A2023001.h27v05.061.2024252132339.hdf"
+    },
+    {
+      "title": "MCD12Q1.A2023001.h28v04.061.2024252132640",
+      "year": "2023",
+      "size_mb": 1.85,
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/MCD12Q1.061/MCD12Q1.A2023001.h28v04.061.2024252132640/MCD12Q1.A2023001.h28v04.061.2024252132640.hdf"
+    },
+    {
+      "title": "MCD12Q1.A2023001.h28v05.061.2024252132651",
+      "year": "2023",
+      "size_mb": 5.67,
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/MCD12Q1.061/MCD12Q1.A2023001.h28v05.061.2024252132651/MCD12Q1.A2023001.h28v05.061.2024252132651.hdf"
+    }
+  ]
+}

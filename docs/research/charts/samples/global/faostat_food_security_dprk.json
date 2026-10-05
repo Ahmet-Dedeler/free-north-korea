@@ -1,0 +1,346 @@
+[
+  {
+    "item": "Average dietary energy supply adequacy (percent) (3-year average)",
+    "min_year": "2000-2002",
+    "max_year": "2017-2019",
+    "latest_year": "2017-2019",
+    "latest_value": "84 %",
+    "unit": "%"
+  },
+  {
+    "item": "Dietary energy supply used in the estimation of the prevalence of undernourishment (kcal/cap/day)",
+    "min_year": "2001",
+    "max_year": "2018",
+    "latest_year": "2018",
+    "latest_value": "1981 kcal/cap/d",
+    "unit": "kcal/cap/d"
+  },
+  {
+    "item": "Dietary energy supply used in the estimation of the prevalence of undernourishment (kcal/cap/day) (3-year average)",
+    "min_year": "2000-2002",
+    "max_year": "2017-2019",
+    "latest_year": "2017-2019",
+    "latest_value": "2022 kcal/cap/d",
+    "unit": "kcal/cap/d"
+  },
+  {
+    "item": "Share of dietary energy supply derived from cereals, roots and tubers (percent) (3-year average)",
+    "min_year": "2000-2002",
+    "max_year": "2016-2018",
+    "latest_year": "2016-2018",
+    "latest_value": "68 %",
+    "unit": "%"
+  },
+  {
+    "item": "Average protein supply (g/cap/day) (3-year average)",
+    "min_year": "2000-2002",
+    "max_year": "2016-2018",
+    "latest_year": "2016-2018",
+    "latest_value": "57.8 g/cap/d",
+    "unit": "g/cap/d"
+  },
+  {
+    "item": "Average supply of protein of animal origin (g/cap/day) (3-year average)",
+    "min_year": "2000-2002",
+    "max_year": "2016-2018",
+    "latest_year": "2016-2018",
+    "latest_value": "11.7 g/cap/d",
+    "unit": "g/cap/d"
+  },
+  {
+    "item": "Prevalence of undernourishment (percent) (3-year average)",
+    "min_year": "2000-2002",
+    "max_year": "2017-2019",
+    "latest_year": "2023-2025",
+    "latest_value": "%",
+    "unit": "%"
+  },
+  {
+    "item": "Number of people undernourished (million) (3-year average)",
+    "min_year": "2000-2002",
+    "max_year": "2017-2019",
+    "latest_year": "2023-2025",
+    "latest_value": "million No",
+    "unit": "million No"
+  },
+  {
+    "item": "Prevalence of severe food insecurity in the total population (percent) (3-year average)",
+    "min_year": null,
+    "max_year": null,
+    "latest_year": "2023-2025",
+    "latest_value": "%",
+    "unit": "%"
+  },
+  {
+    "item": "Prevalence of severe food insecurity in the male adult population (percent) (3-year average)",
+    "min_year": null,
+    "max_year": null,
+    "latest_year": "2023-2025",
+    "latest_value": "%",
+    "unit": "%"
+  },
+  {
+    "item": "Prevalence of severe food insecurity in the female adult population (percent) (3-year average)",
+    "min_year": null,
+    "max_year": null,
+    "latest_year": "2023-2025",
+    "latest_value": "%",
+    "unit": "%"
+  },
+  {
+    "item": "Prevalence of moderate or severe food insecurity in the total population (percent) (3-year average)",
+    "min_year": null,
+    "max_year": null,
+    "latest_year": "2023-2025",
+    "latest_value": "%",
+    "unit": "%"
+  },
+  {
+    "item": "Prevalence of moderate or severe food insecurity in the male adult population (percent) (3-year average)",
+    "min_year": null,
+    "max_year": null,
+    "latest_year": "2023-2025",
+    "latest_value": "%",
+    "unit": "%"
+  },
+  {
+    "item": "Prevalence of moderate or severe food insecurity in the female adult population (percent) (3-year average)",
+    "min_year": null,
+    "max_year": null,
+    "latest_year": "2023-2025",
+    "latest_value": "%",
+    "unit": "%"
+  },
+  {
+    "item": "Number of severely food insecure people (million) (3-year average)",
+    "min_year": null,
+    "max_year": null,
+    "latest_year": "2023-2025",
+    "latest_value": "million No",
+    "unit": "million No"
+  },
+  {
+    "item": "Number of severely food insecure male adults (million) (3-year average)",
+    "min_year": null,
+    "max_year": null,
+    "latest_year": "2023-2025",
+    "latest_value": "million No",
+    "unit": "million No"
+  },
+  {
+    "item": "Number of severely food insecure female adults (million) (3-year average)",
+    "min_year": null,
+    "max_year": null,
+    "latest_year": "2023-2025",
+    "latest_value": "million No",
+    "unit": "million No"
+  },
+  {
+    "item": "Number of moderately or severely food insecure people (million) (3-year average)",
+    "min_year": null,
+    "max_year": null,
+    "latest_year": "2023-2025",
+    "latest_value": "million No",
+    "unit": "million No"
+  },
+  {
+    "item": "Number of moderately or severely food insecure male adults (million) (3-year average)",
+    "min_year": null,
+    "max_year": null,
+    "latest_year": "2023-2025",
+    "latest_value": "million No",
+    "unit": "million No"
+  },
+  {
+    "item": "Number of moderately or severely food insecure female adults (million) (3-year average)",
+    "min_year": null,
+    "max_year": null,
+    "latest_year": "2023-2025",
+    "latest_value": "million No",
+    "unit": "million No"
+  },
+  {
+    "item": "Cereal import dependency ratio (percent) (3-year average)",
+    "min_year": "2000-2002",
+    "max_year": "2016-2018",
+    "latest_year": "2016-2018",
+    "latest_value": "19 %",
+    "unit": "%"
+  },
+  {
+    "item": "Percent of arable land equipped for irrigation (percent) (3-year average)",
+    "min_year": "2000-2002",
+    "max_year": "2021-2023",
+    "latest_year": "2021-2023",
+    "latest_value": "12.1 %",
+    "unit": "%"
+  },
+  {
+    "item": "Value of food imports in total merchandise exports (percent) (3-year average)",
+    "min_year": "2000-2002",
+    "max_year": "2022-2024",
+    "latest_year": "2022-2024",
+    "latest_value": "136 %",
+    "unit": "%"
+  },
+  {
+    "item": "Per capita food supply variability (kcal/cap/day)",
+    "min_year": "2001",
+    "max_year": "2018",
+    "latest_year": "2018",
+    "latest_value": "15 kcal/cap/d",
+    "unit": "kcal/cap/d"
+  },
+  {
+    "item": "Percentage of population using safely managed drinking water services (percent)",
+    "min_year": "2000",
+    "max_year": "2023",
+    "latest_year": "2023",
+    "latest_value": "67 %",
+    "unit": "%"
+  },
+  {
+    "item": "Percentage of population using at least basic drinking water services (percent)",
+    "min_year": "2000",
+    "max_year": "2023",
+    "latest_year": "2023",
+    "latest_value": "94 %",
+    "unit": "%"
+  },
+  {
+    "item": "Percentage of population using at least basic sanitation services (percent)",
+    "min_year": "2002",
+    "max_year": "2023",
+    "latest_year": "2023",
+    "latest_value": "85 %",
+    "unit": "%"
+  },
+  {
+    "item": "Percentage of children under 5 years affected by wasting (percent)",
+    "min_year": "2000",
+    "max_year": "2017",
+    "latest_year": "2017",
+    "latest_value": "2.5 %",
+    "unit": "%"
+  },
+  {
+    "item": "Number of children under 5 years affected by wasting (million)",
+    "min_year": "2000",
+    "max_year": "2017",
+    "latest_year": "2017",
+    "latest_value": "<0.1 million No",
+    "unit": "million No"
+  },
+  {
+    "item": "Percentage of children under 5 years of age who are stunted (modelled estimates) (percent)",
+    "min_year": "2000",
+    "max_year": "2024",
+    "latest_year": "2024",
+    "latest_value": "16.6 %",
+    "unit": "%"
+  },
+  {
+    "item": "Number of children under 5 years of age who are stunted (modeled estimates) (million)",
+    "min_year": "2000",
+    "max_year": "2024",
+    "latest_year": "2024",
+    "latest_value": "0.3 million No",
+    "unit": "million No"
+  },
+  {
+    "item": "Percentage of children under 5 years of age who are overweight (modelled estimates) (percent)",
+    "min_year": "2000",
+    "max_year": "2024",
+    "latest_year": "2024",
+    "latest_value": "3.3 %",
+    "unit": "%"
+  },
+  {
+    "item": "Number of children under 5 years of age who are overweight (modeled estimates) (million)",
+    "min_year": "2000",
+    "max_year": "2024",
+    "latest_year": "2024",
+    "latest_value": "0.1 million No",
+    "unit": "million No"
+  },
+  {
+    "item": "Prevalence of obesity in the adult population (18 years and older) (percent)",
+    "min_year": "2000",
+    "max_year": "2024",
+    "latest_year": "2024",
+    "latest_value": "12 %",
+    "unit": "%"
+  },
+  {
+    "item": "Number of obese adults (18 years and older) (million)",
+    "min_year": "2000",
+    "max_year": "2024",
+    "latest_year": "2024",
+    "latest_value": "2.4 million No",
+    "unit": "million No"
+  },
+  {
+    "item": "Prevalence of anemia among women of reproductive age (15-49 years) (percent)",
+    "min_year": "2000",
+    "max_year": "2023",
+    "latest_year": "2023",
+    "latest_value": "27.5 %",
+    "unit": "%"
+  },
+  {
+    "item": "Number of women of reproductive age (15-49 years) affected by anemia (million)",
+    "min_year": "2000",
+    "max_year": "2023",
+    "latest_year": "2023",
+    "latest_value": "1.7 million No",
+    "unit": "million No"
+  },
+  {
+    "item": "Prevalence of exclusive breastfeeding among infants 0-5 months of age (percent)",
+    "min_year": "2004",
+    "max_year": "2017",
+    "latest_year": "2017",
+    "latest_value": "71.4 %",
+    "unit": "%"
+  },
+  {
+    "item": "Minimum dietary energy requirement (kcal/cap/day)",
+    "min_year": "2000",
+    "max_year": "2025",
+    "latest_year": "2025",
+    "latest_value": "1857 kcal/cap/d",
+    "unit": "kcal/cap/d"
+  },
+  {
+    "item": "Average dietary energy requirement (kcal/cap/day)",
+    "min_year": "2000",
+    "max_year": "2025",
+    "latest_year": "2025",
+    "latest_value": "2403 kcal/cap/d",
+    "unit": "kcal/cap/d"
+  },
+  {
+    "item": "Coefficient of variation of habitual caloric consumption distribution (real number)",
+    "min_year": "2001",
+    "max_year": "2018",
+    "latest_year": "2018",
+    "latest_value": "0.26 No",
+    "unit": "No"
+  },
+  {
+    "item": "Incidence of caloric losses at retail distribution level (percent)",
+    "min_year": "2000",
+    "max_year": "2025",
+    "latest_year": "2025",
+    "latest_value": "3.15 %",
+    "unit": "%"
+  },
+  {
+    "item": "Average fat supply (g/cap/day) (3-year average)",
+    "min_year": "2000-2002",
+    "max_year": "2016-2018",
+    "latest_year": "2016-2018",
+    "latest_value": "34 g/cap/d",
+    "unit": "g/cap/d"
+  }
+]

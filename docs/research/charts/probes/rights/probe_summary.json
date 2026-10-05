@@ -1,0 +1,27 @@
+{
+  "csis_provocations": {
+    "total": 504,
+    "latest_date": "2026-10-03",
+    "verified": true
+  },
+  "nkpd_violations": {
+    "total": 9149,
+    "year_buckets": 30,
+    "verified": true
+  },
+  "soseikai_abductees": {
+    "public_profiles": 276,
+    "verified": true
+  },
+  "missile_tests_baseline": {
+    "total": 357,
+    "y2025": 11,
+    "y2026": 43,
+    "verified": true
+  },
+  "mou_defector_dataset": {
+    "name": "통일부_북한이탈주민 주요 현황",
+    "date_modified": "2026-09-30",
+    "verified": true
+  }
+}

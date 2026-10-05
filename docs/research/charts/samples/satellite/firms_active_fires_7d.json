@@ -1,0 +1,99 @@
+{
+  "source": "NASA FIRMS Suomi-NPP VIIRS C2 375m",
+  "dprk_total_fires": 24,
+  "dprk_total_frp_mw": 56.67,
+  "provinces": {
+    "KP07": {
+      "name": "South Pyongan",
+      "pcode": "KP07",
+      "fire_count": 19,
+      "total_frp_mw": 51.21,
+      "dates": [
+        "2026-09-28",
+        "2026-09-29",
+        "2026-09-30",
+        "2026-10-01",
+        "2026-10-02",
+        "2026-10-03"
+      ]
+    },
+    "KP08": {
+      "name": "North Hwanghae",
+      "pcode": "KP08",
+      "fire_count": 2,
+      "total_frp_mw": 1.35,
+      "dates": [
+        "2026-09-30",
+        "2026-10-01"
+      ]
+    },
+    "KP09": {
+      "name": "South Hwanghae",
+      "pcode": "KP09",
+      "fire_count": 2,
+      "total_frp_mw": 3.56,
+      "dates": [
+        "2026-09-29",
+        "2026-10-04"
+      ]
+    },
+    "KP03": {
+      "name": "South Hamgyong",
+      "pcode": "KP03",
+      "fire_count": 1,
+      "total_frp_mw": 0.55,
+      "dates": [
+        "2026-10-01"
+      ]
+    },
+    "KP05": {
+      "name": "Jagang",
+      "pcode": "KP05",
+      "fire_count": 0,
+      "total_frp_mw": 0.0,
+      "dates": []
+    },
+    "KP04": {
+      "name": "Kangwon",
+      "pcode": "KP04",
+      "fire_count": 0,
+      "total_frp_mw": 0.0,
+      "dates": []
+    },
+    "KP11": {
+      "name": "Nampo",
+      "pcode": "KP11",
+      "fire_count": 0,
+      "total_frp_mw": 0.0,
+      "dates": []
+    },
+    "KP02": {
+      "name": "North Hamgyong",
+      "pcode": "KP02",
+      "fire_count": 0,
+      "total_frp_mw": 0.0,
+      "dates": []
+    },
+    "KP06": {
+      "name": "North Pyongan",
+      "pcode": "KP06",
+      "fire_count": 0,
+      "total_frp_mw": 0.0,
+      "dates": []
+    },
+    "KP10": {
+      "name": "Pyongyang",
+      "pcode": "KP10",
+      "fire_count": 0,
+      "total_frp_mw": 0.0,
+      "dates": []
+    },
+    "KP01": {
+      "name": "Ryanggang",
+      "pcode": "KP01",
+      "fire_count": 0,
+      "total_frp_mw": 0.0,
+      "dates": []
+    }
+  }
+}
