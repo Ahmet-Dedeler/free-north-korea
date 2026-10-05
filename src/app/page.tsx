@@ -17,6 +17,7 @@ import testsRaw from '../../public/data/test.en.json';
 import { REPO_URL, SITE_NAME, SITE_URL } from '@/site/config';
 import { jsonLd } from '@/site/seo';
 import { HUB_PATHS } from '@/content/translations';
+import { latest } from '@/charts/data';
 
 const HUB_PATHS_WITH_DEFAULT = { ...HUB_PATHS, 'x-default': '/' };
 
@@ -104,6 +105,13 @@ const MODULES: { href: string; title: string; text: string; icon: typeof Map; pr
   { href: '/library', title: 'Library', text: 'Escapee memoirs, documentaries, UN reports and open data.', icon: BookOpen, preview: <LibraryPreview /> },
 ];
 
+// Latest full year of arrivals, from the weekly chart datasets (data/series), so the tile never goes stale.
+const arrivals = (() => {
+  const w = latest('defector-arrivals', 'women')!;
+  const m = latest('defector-arrivals', 'men')!;
+  return { total: w.v + m.v, year: w.t };
+})();
+
 export default function Home() {
   const flash = orgLogo('flash-drives-for-freedom');
   const link = orgLogo('liberty-in-north-korea');
@@ -142,7 +150,7 @@ export default function Home() {
       <div className="tiles home-stats">
         <StatTile icon={Users} value="26M" label="people living under the Kim regime" note="UN estimate" />
         <StatTile icon={Shield} value="80–120k" label="held in political prison camps" note="UN Commission of Inquiry, 2014" tone="danger" />
-        <StatTile icon={Footprints} value="224" label="escapees reached South Korea in 2025" note="Unification Ministry" tone="ok" />
+        <StatTile icon={Footprints} value={arrivals.total} label={`escapees reached South Korea in ${arrivals.year}`} note="Unification Ministry" tone="ok" />
         <StatTile icon={Radiation} value="~60" label="assembled nuclear warheads" note="SIPRI, Jan 2026" tone="warn" />
       </div>
 
