@@ -1,5 +1,8 @@
 # Weekly check of every upstream data source (see scripts/check-sources.mjs).
-# Also re-downloads the sanctions lists (scripts/build-sanctions.ts).
+# Also re-downloads the sanctions lists (scripts/build-sanctions.ts) and refreshes the chart datasets in
+# data/series (scripts/build-series.ts; each source group skips itself until its data is due, so most weeks only
+# the market prices and the UN-list counts are fetched).
+# Plain Node with no npm install, so the whole job takes well under a minute.
 # Commits data/sources/state.json, changes.json and data/sanctions.json when something changed, moved or broke,
 # which also redeploys the site so /sources shows it.
 name: Check sources
@@ -12,9 +15,14 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: data-refresh
+  cancel-in-progress: false
+
 jobs:
   check:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -25,9 +33,12 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       # Refresh the UN and OFAC lists behind /sanctions. A failed download keeps last week's file.
       - run: node scripts/build-sanctions.ts || echo "sanctions refresh skipped"
+      # pdftotext reads the Ministry of Unification defector PDF. A failed source keeps its previous series.
+      - run: sudo apt-get install -y -qq --no-install-recommends poppler-utils > /dev/null
+      - run: node scripts/build-series.ts || echo "series refresh skipped"
       - name: Commit if anything changed
         run: |
           git config user.name "source-watcher"
           git config user.email "actions@users.noreply.github.com"
-          git add data/sources data/sanctions.json
+          git add data/sources data/sanctions.json data/series
           git diff --cached --quiet || git commit -m "Source watch: $(date -u +%F)" && git push

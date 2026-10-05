@@ -1,0 +1,219 @@
+[
+  {
+    "year": 1995,
+    "government_grant_billion_krw": 1854.0,
+    "government_total_billion_krw": 1854.0,
+    "civilian_ngo_total_billion_krw": 1854.0,
+    "grand_total_billion_krw": 1856.0
+  },
+  {
+    "year": 1996,
+    "government_grant_billion_krw": 0.0,
+    "government_total_billion_krw": 24.0,
+    "civilian_ngo_total_billion_krw": 24.0,
+    "grand_total_billion_krw": 37.0
+  },
+  {
+    "year": 1997,
+    "government_grant_billion_krw": 0.0,
+    "government_total_billion_krw": 240.0,
+    "civilian_ngo_total_billion_krw": 240.0,
+    "grand_total_billion_krw": 422.0
+  },
+  {
+    "year": 1998,
+    "government_grant_billion_krw": 0.0,
+    "government_total_billion_krw": 154.0,
+    "civilian_ngo_total_billion_krw": 154.0,
+    "grand_total_billion_krw": 429.0
+  },
+  {
+    "year": 1999,
+    "government_grant_billion_krw": 339.0,
+    "government_total_billion_krw": 339.0,
+    "civilian_ngo_total_billion_krw": 339.0,
+    "grand_total_billion_krw": 562.0
+  },
+  {
+    "year": 2000,
+    "government_grant_billion_krw": 944.0,
+    "government_total_billion_krw": 977.0,
+    "civilian_ngo_total_billion_krw": 2034.0,
+    "grand_total_billion_krw": 2421.0
+  },
+  {
+    "year": 2001,
+    "government_grant_billion_krw": 684.0,
+    "government_total_billion_krw": 976.0,
+    "civilian_ngo_total_billion_krw": 976.0,
+    "grand_total_billion_krw": 1757.0
+  },
+  {
+    "year": 2002,
+    "government_grant_billion_krw": 832.0,
+    "government_total_billion_krw": 1140.0,
+    "civilian_ngo_total_billion_krw": 2650.0,
+    "grand_total_billion_krw": 3228.0
+  },
+  {
+    "year": 2003,
+    "government_grant_billion_krw": 811.0,
+    "government_total_billion_krw": 1097.0,
+    "civilian_ngo_total_billion_krw": 2607.0,
+    "grand_total_billion_krw": 3373.0
+  },
+  {
+    "year": 2004,
+    "government_grant_billion_krw": 949.0,
+    "government_total_billion_krw": 1314.0,
+    "civilian_ngo_total_billion_krw": 2673.0,
+    "grand_total_billion_krw": 4231.0
+  },
+  {
+    "year": 2005,
+    "government_grant_billion_krw": 1221.0,
+    "government_total_billion_krw": 1360.0,
+    "civilian_ngo_total_billion_krw": 3147.0,
+    "grand_total_billion_krw": 3926.0
+  },
+  {
+    "year": 2006,
+    "government_grant_billion_krw": 2000.0,
+    "government_total_billion_krw": 2273.0,
+    "civilian_ngo_total_billion_krw": 2273.0,
+    "grand_total_billion_krw": 2982.0
+  },
+  {
+    "year": 2007,
+    "government_grant_billion_krw": 1428.0,
+    "government_total_billion_krw": 1983.0,
+    "civilian_ngo_total_billion_krw": 3488.0,
+    "grand_total_billion_krw": 4397.0
+  },
+  {
+    "year": 2008,
+    "government_grant_billion_krw": 0.0,
+    "government_total_billion_krw": 438.0,
+    "civilian_ngo_total_billion_krw": 438.0,
+    "grand_total_billion_krw": 1164.0
+  },
+  {
+    "year": 2009,
+    "government_grant_billion_krw": 0.0,
+    "government_total_billion_krw": 294.0,
+    "civilian_ngo_total_billion_krw": 294.0,
+    "grand_total_billion_krw": 671.0
+  },
+  {
+    "year": 2010,
+    "government_grant_billion_krw": 183.0,
+    "government_total_billion_krw": 204.0,
+    "civilian_ngo_total_billion_krw": 204.0,
+    "grand_total_billion_krw": 405.0
+  },
+  {
+    "year": 2011,
+    "government_grant_billion_krw": 0.0,
+    "government_total_billion_krw": 65.0,
+    "civilian_ngo_total_billion_krw": 65.0,
+    "grand_total_billion_krw": 196.0
+  },
+  {
+    "year": 2012,
+    "government_grant_billion_krw": 0.0,
+    "government_total_billion_krw": 23.0,
+    "civilian_ngo_total_billion_krw": 23.0,
+    "grand_total_billion_krw": 141.0
+  },
+  {
+    "year": 2013,
+    "government_grant_billion_krw": 0.0,
+    "government_total_billion_krw": 133.0,
+    "civilian_ngo_total_billion_krw": 133.0,
+    "grand_total_billion_krw": 1831.0
+  },
+  {
+    "year": 2014,
+    "government_grant_billion_krw": 0.0,
+    "government_total_billion_krw": 141.0,
+    "civilian_ngo_total_billion_krw": 141.0,
+    "grand_total_billion_krw": 195.0
+  },
+  {
+    "year": 2015,
+    "government_grant_billion_krw": 0.0,
+    "government_total_billion_krw": 140.0,
+    "civilian_ngo_total_billion_krw": 140.0,
+    "grand_total_billion_krw": 254.0
+  },
+  {
+    "year": 2016,
+    "government_grant_billion_krw": 0.0,
+    "government_total_billion_krw": 2.0,
+    "civilian_ngo_total_billion_krw": 2.0,
+    "grand_total_billion_krw": 30.0
+  },
+  {
+    "year": 2017,
+    "government_grant_billion_krw": 0.0,
+    "government_total_billion_krw": 0.0,
+    "civilian_ngo_total_billion_krw": 0.0,
+    "grand_total_billion_krw": 11.0
+  },
+  {
+    "year": 2018,
+    "government_grant_billion_krw": 12.0,
+    "government_total_billion_krw": 12.0,
+    "civilian_ngo_total_billion_krw": 12.0,
+    "grand_total_billion_krw": 77.0
+  },
+  {
+    "year": 2019,
+    "government_grant_billion_krw": 0.0,
+    "government_total_billion_krw": 106.0,
+    "civilian_ngo_total_billion_krw": 106.0,
+    "grand_total_billion_krw": 277.0
+  },
+  {
+    "year": 2020,
+    "government_grant_billion_krw": 0.0,
+    "government_total_billion_krw": 125.0,
+    "civilian_ngo_total_billion_krw": 125.0,
+    "grand_total_billion_krw": 149.0
+  },
+  {
+    "year": 2021,
+    "government_grant_billion_krw": 0.0,
+    "government_total_billion_krw": 5.0,
+    "civilian_ngo_total_billion_krw": 5.0,
+    "grand_total_billion_krw": 31.0
+  },
+  {
+    "year": 2022,
+    "government_grant_billion_krw": 0.0,
+    "government_total_billion_krw": 9.0,
+    "civilian_ngo_total_billion_krw": 9.0,
+    "grand_total_billion_krw": 30.0
+  },
+  {
+    "year": 2023,
+    "government_grant_billion_krw": 0.0,
+    "government_total_billion_krw": 2.0,
+    "civilian_ngo_total_billion_krw": 2.0,
+    "grand_total_billion_krw": 10.0
+  },
+  {
+    "year": 2024,
+    "government_grant_billion_krw": 0.0,
+    "government_total_billion_krw": 0.0,
+    "civilian_ngo_total_billion_krw": 0.0,
+    "grand_total_billion_krw": 0.0
+  },
+  {
+    "year": 2025,
+    "government_grant_billion_krw": 0.0,
+    "government_total_billion_krw": 0.0,
+    "civilian_ngo_total_billion_krw": 0.0,
+    "grand_total_billion_krw": 0.0
+  }
+]

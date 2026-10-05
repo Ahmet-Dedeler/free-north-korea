@@ -623,5 +623,10 @@
     "src": "/img/articles/information-into-north-korea.jpg",
     "credit": "Photo via Wikimedia Commons",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:EVD_Video_Player.jpg"
+  },
+  "page:korea-at-night": {
+    "src": "/img/pages/korea-at-night.jpg",
+    "credit": "NASA Earth Observatory, Black Marble 2016 (public domain)",
+    "sourceUrl": "https://earthobservatory.nasa.gov/features/NightLights"
   }
 }

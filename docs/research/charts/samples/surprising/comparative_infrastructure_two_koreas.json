@@ -1,0 +1,440 @@
+{
+  "electricity_per_capita": [
+    {
+      "year": 2000,
+      "dprk_kwh_per_capita": 815.5,
+      "rok_kwh_per_capita": 6210.6,
+      "ratio_rok_to_dprk": 7.6
+    },
+    {
+      "year": 2001,
+      "dprk_kwh_per_capita": 843.6,
+      "rok_kwh_per_capita": 6587.1,
+      "ratio_rok_to_dprk": 7.8
+    },
+    {
+      "year": 2002,
+      "dprk_kwh_per_capita": 821.1,
+      "rok_kwh_per_capita": 7019.4,
+      "ratio_rok_to_dprk": 8.5
+    },
+    {
+      "year": 2003,
+      "dprk_kwh_per_capita": 866.7,
+      "rok_kwh_per_capita": 7319.3,
+      "ratio_rok_to_dprk": 8.4
+    },
+    {
+      "year": 2004,
+      "dprk_kwh_per_capita": 901.3,
+      "rok_kwh_per_capita": 7715.8,
+      "ratio_rok_to_dprk": 8.6
+    },
+    {
+      "year": 2005,
+      "dprk_kwh_per_capita": 933.3,
+      "rok_kwh_per_capita": 8139.1,
+      "ratio_rok_to_dprk": 8.7
+    },
+    {
+      "year": 2006,
+      "dprk_kwh_per_capita": 909.7,
+      "rok_kwh_per_capita": 8394.5,
+      "ratio_rok_to_dprk": 9.2
+    },
+    {
+      "year": 2007,
+      "dprk_kwh_per_capita": 867.9,
+      "rok_kwh_per_capita": 8829.9,
+      "ratio_rok_to_dprk": 10.2
+    },
+    {
+      "year": 2008,
+      "dprk_kwh_per_capita": 931.2,
+      "rok_kwh_per_capita": 9153.1,
+      "ratio_rok_to_dprk": 9.8
+    },
+    {
+      "year": 2009,
+      "dprk_kwh_per_capita": 939.8,
+      "rok_kwh_per_capita": 9319.9,
+      "ratio_rok_to_dprk": 9.9
+    },
+    {
+      "year": 2010,
+      "dprk_kwh_per_capita": 943.3,
+      "rok_kwh_per_capita": 10150.4,
+      "ratio_rok_to_dprk": 10.8
+    },
+    {
+      "year": 2011,
+      "dprk_kwh_per_capita": 831.5,
+      "rok_kwh_per_capita": 10547.2,
+      "ratio_rok_to_dprk": 12.7
+    },
+    {
+      "year": 2012,
+      "dprk_kwh_per_capita": 847.2,
+      "rok_kwh_per_capita": 10710.0,
+      "ratio_rok_to_dprk": 12.6
+    },
+    {
+      "year": 2013,
+      "dprk_kwh_per_capita": 867.4,
+      "rok_kwh_per_capita": 10727.9,
+      "ratio_rok_to_dprk": 12.4
+    },
+    {
+      "year": 2014,
+      "dprk_kwh_per_capita": 844.0,
+      "rok_kwh_per_capita": 10692.3,
+      "ratio_rok_to_dprk": 12.7
+    },
+    {
+      "year": 2015,
+      "dprk_kwh_per_capita": 740.2,
+      "rok_kwh_per_capita": 10744.6,
+      "ratio_rok_to_dprk": 14.5
+    },
+    {
+      "year": 2016,
+      "dprk_kwh_per_capita": 926.5,
+      "rok_kwh_per_capita": 10935.7,
+      "ratio_rok_to_dprk": 11.8
+    },
+    {
+      "year": 2017,
+      "dprk_kwh_per_capita": 907.5,
+      "rok_kwh_per_capita": 11195.4,
+      "ratio_rok_to_dprk": 12.3
+    },
+    {
+      "year": 2018,
+      "dprk_kwh_per_capita": 957.5,
+      "rok_kwh_per_capita": 11481.4,
+      "ratio_rok_to_dprk": 12.0
+    },
+    {
+      "year": 2019,
+      "dprk_kwh_per_capita": 917.1,
+      "rok_kwh_per_capita": 11335.2,
+      "ratio_rok_to_dprk": 12.4
+    },
+    {
+      "year": 2020,
+      "dprk_kwh_per_capita": 922.1,
+      "rok_kwh_per_capita": 11128.6,
+      "ratio_rok_to_dprk": 12.1
+    },
+    {
+      "year": 2021,
+      "dprk_kwh_per_capita": 977.0,
+      "rok_kwh_per_capita": 11721.9,
+      "ratio_rok_to_dprk": 12.0
+    },
+    {
+      "year": 2022,
+      "dprk_kwh_per_capita": 1008.4,
+      "rok_kwh_per_capita": 12023.2,
+      "ratio_rok_to_dprk": 11.9
+    },
+    {
+      "year": 2023,
+      "dprk_kwh_per_capita": 1011.4,
+      "rok_kwh_per_capita": 11932.5,
+      "ratio_rok_to_dprk": 11.8
+    },
+    {
+      "year": 2024,
+      "dprk_kwh_per_capita": 1022.7,
+      "rok_kwh_per_capita": 12092.2,
+      "ratio_rok_to_dprk": 11.8
+    }
+  ],
+  "mobile_subscriptions_per_100": [
+    {
+      "year": 1980,
+      "dprk_per_100": 0.0,
+      "rok_per_100": 0.0,
+      "dprk_approx_subscribers_millions": 0.0
+    },
+    {
+      "year": 1981,
+      "dprk_per_100": 0.0,
+      "rok_per_100": 0.0,
+      "dprk_approx_subscribers_millions": 0.0
+    },
+    {
+      "year": 1982,
+      "dprk_per_100": 0.0,
+      "rok_per_100": 0.0,
+      "dprk_approx_subscribers_millions": 0.0
+    },
+    {
+      "year": 1983,
+      "dprk_per_100": 0.0,
+      "rok_per_100": 0.0,
+      "dprk_approx_subscribers_millions": 0.0
+    },
+    {
+      "year": 1986,
+      "dprk_per_100": 0.0,
+      "rok_per_100": 0.02,
+      "dprk_approx_subscribers_millions": 0.0
+    },
+    {
+      "year": 1987,
+      "dprk_per_100": 0.0,
+      "rok_per_100": 0.02,
+      "dprk_approx_subscribers_millions": 0.0
+    },
+    {
+      "year": 1988,
+      "dprk_per_100": 0.0,
+      "rok_per_100": 0.05,
+      "dprk_approx_subscribers_millions": 0.0
+    },
+    {
+      "year": 1989,
+      "dprk_per_100": 0.0,
+      "rok_per_100": 0.09,
+      "dprk_approx_subscribers_millions": 0.0
+    },
+    {
+      "year": 1990,
+      "dprk_per_100": 0.0,
+      "rok_per_100": 0.18,
+      "dprk_approx_subscribers_millions": 0.0
+    },
+    {
+      "year": 1991,
+      "dprk_per_100": 0.0,
+      "rok_per_100": 0.37,
+      "dprk_approx_subscribers_millions": 0.0
+    },
+    {
+      "year": 1992,
+      "dprk_per_100": 0.0,
+      "rok_per_100": 0.61,
+      "dprk_approx_subscribers_millions": 0.0
+    },
+    {
+      "year": 1993,
+      "dprk_per_100": 0.0,
+      "rok_per_100": 1.05,
+      "dprk_approx_subscribers_millions": 0.0
+    },
+    {
+      "year": 1994,
+      "dprk_per_100": 0.0,
+      "rok_per_100": 2.13,
+      "dprk_approx_subscribers_millions": 0.0
+    },
+    {
+      "year": 1995,
+      "dprk_per_100": 0.0,
+      "rok_per_100": 3.62,
+      "dprk_approx_subscribers_millions": 0.0
+    },
+    {
+      "year": 1996,
+      "dprk_per_100": 0.0,
+      "rok_per_100": 6.97,
+      "dprk_approx_subscribers_millions": 0.0
+    },
+    {
+      "year": 1997,
+      "dprk_per_100": 0.0,
+      "rok_per_100": 14.97,
+      "dprk_approx_subscribers_millions": 0.0
+    },
+    {
+      "year": 1998,
+      "dprk_per_100": 0.0,
+      "rok_per_100": 30.31,
+      "dprk_approx_subscribers_millions": 0.0
+    },
+    {
+      "year": 1999,
+      "dprk_per_100": 0.0,
+      "rok_per_100": 50.39,
+      "dprk_approx_subscribers_millions": 0.0
+    },
+    {
+      "year": 2000,
+      "dprk_per_100": 0.0,
+      "rok_per_100": 57.34,
+      "dprk_approx_subscribers_millions": 0.0
+    },
+    {
+      "year": 2001,
+      "dprk_per_100": 0.0,
+      "rok_per_100": 61.74,
+      "dprk_approx_subscribers_millions": 0.0
+    },
+    {
+      "year": 2002,
+      "dprk_per_100": 0.0,
+      "rok_per_100": 68.38,
+      "dprk_approx_subscribers_millions": 0.0
+    },
+    {
+      "year": 2003,
+      "dprk_per_100": 0.0,
+      "rok_per_100": 70.7,
+      "dprk_approx_subscribers_millions": 0.0
+    },
+    {
+      "year": 2004,
+      "dprk_per_100": 0.0,
+      "rok_per_100": 76.71,
+      "dprk_approx_subscribers_millions": 0.0
+    },
+    {
+      "year": 2005,
+      "dprk_per_100": 0.0,
+      "rok_per_100": 80.13,
+      "dprk_approx_subscribers_millions": 0.0
+    },
+    {
+      "year": 2006,
+      "dprk_per_100": 0.0,
+      "rok_per_100": 83.73,
+      "dprk_approx_subscribers_millions": 0.0
+    },
+    {
+      "year": 2007,
+      "dprk_per_100": 0.0,
+      "rok_per_100": 92.09,
+      "dprk_approx_subscribers_millions": 0.0
+    },
+    {
+      "year": 2008,
+      "dprk_per_100": 0.0,
+      "rok_per_100": 94.31,
+      "dprk_approx_subscribers_millions": 0.0
+    },
+    {
+      "year": 2009,
+      "dprk_per_100": 0.28,
+      "rok_per_100": 98.76,
+      "dprk_approx_subscribers_millions": 0.07
+    },
+    {
+      "year": 2010,
+      "dprk_per_100": 1.73,
+      "rok_per_100": 104.1,
+      "dprk_approx_subscribers_millions": 0.45
+    },
+    {
+      "year": 2011,
+      "dprk_per_100": 3.98,
+      "rok_per_100": 106.88,
+      "dprk_approx_subscribers_millions": 1.04
+    },
+    {
+      "year": 2012,
+      "dprk_per_100": 6.74,
+      "rok_per_100": 108.11,
+      "dprk_approx_subscribers_millions": 1.75
+    },
+    {
+      "year": 2013,
+      "dprk_per_100": 9.55,
+      "rok_per_100": 109.21,
+      "dprk_approx_subscribers_millions": 2.48
+    },
+    {
+      "year": 2014,
+      "dprk_per_100": 11.0,
+      "rok_per_100": 113.36,
+      "dprk_approx_subscribers_millions": 2.86
+    },
+    {
+      "year": 2015,
+      "dprk_per_100": 12.67,
+      "rok_per_100": 115.6,
+      "dprk_approx_subscribers_millions": 3.29
+    },
+    {
+      "year": 2016,
+      "dprk_per_100": 14.03,
+      "rok_per_100": 119.49,
+      "dprk_approx_subscribers_millions": 3.65
+    },
+    {
+      "year": 2017,
+      "dprk_per_100": 14.76,
+      "rok_per_100": 123.64,
+      "dprk_approx_subscribers_millions": 3.84
+    },
+    {
+      "year": 2019,
+      "dprk_per_100": 16.33,
+      "rok_per_100": 133.08,
+      "dprk_approx_subscribers_millions": 4.25
+    },
+    {
+      "year": 2020,
+      "dprk_per_100": 22.96,
+      "rok_per_100": 135.97,
+      "dprk_approx_subscribers_millions": 5.97
+    },
+    {
+      "year": 2021,
+      "dprk_per_100": 22.87,
+      "rok_per_100": 140.52,
+      "dprk_approx_subscribers_millions": 5.95
+    },
+    {
+      "year": 2022,
+      "dprk_per_100": 24.13,
+      "rok_per_100": 148.68,
+      "dprk_approx_subscribers_millions": 6.27
+    }
+  ],
+  "motor_vehicles": [
+    {
+      "year": 2010,
+      "dprk_vehicles": 257000,
+      "rok_vehicles": 17941000,
+      "dprk_per_1000": 10.5,
+      "rok_per_1000": 363.0
+    },
+    {
+      "year": 2015,
+      "dprk_vehicles": 268000,
+      "rok_vehicles": 20990000,
+      "dprk_per_1000": 10.7,
+      "rok_per_1000": 411.0
+    },
+    {
+      "year": 2018,
+      "dprk_vehicles": 272000,
+      "rok_vehicles": 23203000,
+      "dprk_per_1000": 10.7,
+      "rok_per_1000": 448.0
+    },
+    {
+      "year": 2020,
+      "dprk_vehicles": 261000,
+      "rok_vehicles": 24366000,
+      "dprk_per_1000": 10.1,
+      "rok_per_1000": 470.0
+    },
+    {
+      "year": 2022,
+      "dprk_vehicles": 253000,
+      "rok_vehicles": 25503000,
+      "dprk_per_1000": 9.7,
+      "rok_per_1000": 493.0
+    },
+    {
+      "year": 2024,
+      "dprk_vehicles": 226000,
+      "rok_vehicles": 26150000,
+      "dprk_per_1000": 8.5,
+      "rok_per_1000": 508.0
+    }
+  ]
+}

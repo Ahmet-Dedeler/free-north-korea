@@ -180,6 +180,16 @@ const ARTICLE_PHOTOS: Record<string, string> = {
 for (const [slugId, page] of Object.entries(ARTICLE_PHOTOS))
   jobs.push({ key: `article:${slugId}`, dest: `/img/articles/${slugId}`, minPx: 300, run: async () => [await wikiLeadPhoto(`https://en.wikipedia.org/wiki/${page}`)] });
 
+// The Korean peninsula at night (NASA Black Marble 2016 composite, public domain), cut from NASA GIBS WMS.
+const GIBS_NIGHT =
+  'https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi?SERVICE=WMS&REQUEST=GetMap&VERSION=1.3.0&LAYERS=VIIRS_Black_Marble&CRS=EPSG:4326&BBOX=33.0,124.0,43.2,131.0&WIDTH=840&HEIGHT=1224&FORMAT=image/jpeg';
+jobs.push({
+  key: 'page:korea-at-night',
+  dest: '/img/pages/korea-at-night',
+  minPx: 300,
+  run: async () => [{ url: GIBS_NIGHT, sourceUrl: 'https://earthobservatory.nasa.gov/features/NightLights', credit: 'NASA Earth Observatory, Black Marble 2016 (public domain)' }],
+});
+
 /** Hand-picked images where automatic lookup picks the wrong thing (e.g. a foreign edition). */
 const OVERRIDES: Record<string, { url: string; sourceUrl: string; credit: string }> = {
   'library:escape-from-camp-14': {

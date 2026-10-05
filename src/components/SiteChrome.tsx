@@ -88,6 +88,8 @@ export default function SiteChrome({ children }: { children: ReactNode }) {
               <Link href="/missiles">Missile tests</Link>
               <Link href="/missiles/list">Missile test list</Link>
               <Link href="/sanctions">Sanctions</Link>
+              <Link href="/north-korea-vs-south-korea">North vs South Korea</Link>
+              <Link href="/data">Charts and data</Link>
               <Link href="/library">Library</Link>
             </div>
             <div>

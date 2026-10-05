@@ -1,0 +1,911 @@
+[
+  {
+    "birth_cohort": 1896,
+    "prk_men_cm": 160.58,
+    "kor_men_cm": 159.75,
+    "gap_men_cm": -0.82,
+    "prk_women_cm": 149.12,
+    "kor_women_cm": 142.17,
+    "gap_women_cm": -6.95
+  },
+  {
+    "birth_cohort": 1897,
+    "prk_men_cm": 160.7,
+    "kor_men_cm": 159.89,
+    "gap_men_cm": -0.81,
+    "prk_women_cm": 149.25,
+    "kor_women_cm": 142.43,
+    "gap_women_cm": -6.81
+  },
+  {
+    "birth_cohort": 1898,
+    "prk_men_cm": 160.82,
+    "kor_men_cm": 160.02,
+    "gap_men_cm": -0.79,
+    "prk_women_cm": 149.37,
+    "kor_women_cm": 142.69,
+    "gap_women_cm": -6.68
+  },
+  {
+    "birth_cohort": 1899,
+    "prk_men_cm": 160.93,
+    "kor_men_cm": 160.16,
+    "gap_men_cm": -0.78,
+    "prk_women_cm": 149.5,
+    "kor_women_cm": 142.95,
+    "gap_women_cm": -6.55
+  },
+  {
+    "birth_cohort": 1900,
+    "prk_men_cm": 161.05,
+    "kor_men_cm": 160.3,
+    "gap_men_cm": -0.76,
+    "prk_women_cm": 149.62,
+    "kor_women_cm": 143.21,
+    "gap_women_cm": -6.41
+  },
+  {
+    "birth_cohort": 1901,
+    "prk_men_cm": 161.18,
+    "kor_men_cm": 160.43,
+    "gap_men_cm": -0.74,
+    "prk_women_cm": 149.75,
+    "kor_women_cm": 143.47,
+    "gap_women_cm": -6.28
+  },
+  {
+    "birth_cohort": 1902,
+    "prk_men_cm": 161.29,
+    "kor_men_cm": 160.57,
+    "gap_men_cm": -0.73,
+    "prk_women_cm": 149.87,
+    "kor_women_cm": 143.73,
+    "gap_women_cm": -6.14
+  },
+  {
+    "birth_cohort": 1903,
+    "prk_men_cm": 161.41,
+    "kor_men_cm": 160.7,
+    "gap_men_cm": -0.71,
+    "prk_women_cm": 149.99,
+    "kor_women_cm": 143.98,
+    "gap_women_cm": -6.01
+  },
+  {
+    "birth_cohort": 1904,
+    "prk_men_cm": 161.53,
+    "kor_men_cm": 160.84,
+    "gap_men_cm": -0.69,
+    "prk_women_cm": 150.11,
+    "kor_women_cm": 144.24,
+    "gap_women_cm": -5.88
+  },
+  {
+    "birth_cohort": 1905,
+    "prk_men_cm": 161.65,
+    "kor_men_cm": 160.98,
+    "gap_men_cm": -0.67,
+    "prk_women_cm": 150.23,
+    "kor_women_cm": 144.49,
+    "gap_women_cm": -5.74
+  },
+  {
+    "birth_cohort": 1906,
+    "prk_men_cm": 161.77,
+    "kor_men_cm": 161.11,
+    "gap_men_cm": -0.66,
+    "prk_women_cm": 150.35,
+    "kor_women_cm": 144.74,
+    "gap_women_cm": -5.61
+  },
+  {
+    "birth_cohort": 1907,
+    "prk_men_cm": 161.88,
+    "kor_men_cm": 161.24,
+    "gap_men_cm": -0.64,
+    "prk_women_cm": 150.47,
+    "kor_women_cm": 144.99,
+    "gap_women_cm": -5.47
+  },
+  {
+    "birth_cohort": 1908,
+    "prk_men_cm": 162.0,
+    "kor_men_cm": 161.38,
+    "gap_men_cm": -0.62,
+    "prk_women_cm": 150.58,
+    "kor_women_cm": 145.24,
+    "gap_women_cm": -5.34
+  },
+  {
+    "birth_cohort": 1909,
+    "prk_men_cm": 162.11,
+    "kor_men_cm": 161.51,
+    "gap_men_cm": -0.6,
+    "prk_women_cm": 150.69,
+    "kor_women_cm": 145.49,
+    "gap_women_cm": -5.2
+  },
+  {
+    "birth_cohort": 1910,
+    "prk_men_cm": 162.22,
+    "kor_men_cm": 161.65,
+    "gap_men_cm": -0.58,
+    "prk_women_cm": 150.8,
+    "kor_women_cm": 145.74,
+    "gap_women_cm": -5.07
+  },
+  {
+    "birth_cohort": 1911,
+    "prk_men_cm": 162.34,
+    "kor_men_cm": 161.78,
+    "gap_men_cm": -0.56,
+    "prk_women_cm": 150.92,
+    "kor_women_cm": 145.98,
+    "gap_women_cm": -4.93
+  },
+  {
+    "birth_cohort": 1912,
+    "prk_men_cm": 162.46,
+    "kor_men_cm": 161.92,
+    "gap_men_cm": -0.54,
+    "prk_women_cm": 151.03,
+    "kor_women_cm": 146.23,
+    "gap_women_cm": -4.8
+  },
+  {
+    "birth_cohort": 1913,
+    "prk_men_cm": 162.58,
+    "kor_men_cm": 162.06,
+    "gap_men_cm": -0.52,
+    "prk_women_cm": 151.14,
+    "kor_women_cm": 146.48,
+    "gap_women_cm": -4.66
+  },
+  {
+    "birth_cohort": 1914,
+    "prk_men_cm": 162.7,
+    "kor_men_cm": 162.2,
+    "gap_men_cm": -0.49,
+    "prk_women_cm": 151.25,
+    "kor_women_cm": 146.73,
+    "gap_women_cm": -4.53
+  },
+  {
+    "birth_cohort": 1915,
+    "prk_men_cm": 162.81,
+    "kor_men_cm": 162.35,
+    "gap_men_cm": -0.47,
+    "prk_women_cm": 151.37,
+    "kor_women_cm": 146.98,
+    "gap_women_cm": -4.39
+  },
+  {
+    "birth_cohort": 1916,
+    "prk_men_cm": 162.93,
+    "kor_men_cm": 162.49,
+    "gap_men_cm": -0.44,
+    "prk_women_cm": 151.48,
+    "kor_women_cm": 147.23,
+    "gap_women_cm": -4.25
+  },
+  {
+    "birth_cohort": 1917,
+    "prk_men_cm": 163.05,
+    "kor_men_cm": 162.64,
+    "gap_men_cm": -0.4,
+    "prk_women_cm": 151.6,
+    "kor_women_cm": 147.49,
+    "gap_women_cm": -4.11
+  },
+  {
+    "birth_cohort": 1918,
+    "prk_men_cm": 163.16,
+    "kor_men_cm": 162.8,
+    "gap_men_cm": -0.36,
+    "prk_women_cm": 151.72,
+    "kor_women_cm": 147.75,
+    "gap_women_cm": -3.97
+  },
+  {
+    "birth_cohort": 1919,
+    "prk_men_cm": 163.27,
+    "kor_men_cm": 162.95,
+    "gap_men_cm": -0.32,
+    "prk_women_cm": 151.84,
+    "kor_women_cm": 148.01,
+    "gap_women_cm": -3.83
+  },
+  {
+    "birth_cohort": 1920,
+    "prk_men_cm": 163.38,
+    "kor_men_cm": 163.11,
+    "gap_men_cm": -0.27,
+    "prk_women_cm": 151.97,
+    "kor_women_cm": 148.28,
+    "gap_women_cm": -3.68
+  },
+  {
+    "birth_cohort": 1921,
+    "prk_men_cm": 163.49,
+    "kor_men_cm": 163.27,
+    "gap_men_cm": -0.21,
+    "prk_women_cm": 152.09,
+    "kor_women_cm": 148.55,
+    "gap_women_cm": -3.54
+  },
+  {
+    "birth_cohort": 1922,
+    "prk_men_cm": 163.59,
+    "kor_men_cm": 163.43,
+    "gap_men_cm": -0.16,
+    "prk_women_cm": 152.22,
+    "kor_women_cm": 148.82,
+    "gap_women_cm": -3.4
+  },
+  {
+    "birth_cohort": 1923,
+    "prk_men_cm": 163.68,
+    "kor_men_cm": 163.59,
+    "gap_men_cm": -0.09,
+    "prk_women_cm": 152.36,
+    "kor_women_cm": 149.1,
+    "gap_women_cm": -3.26
+  },
+  {
+    "birth_cohort": 1924,
+    "prk_men_cm": 163.78,
+    "kor_men_cm": 163.75,
+    "gap_men_cm": -0.03,
+    "prk_women_cm": 152.49,
+    "kor_women_cm": 149.37,
+    "gap_women_cm": -3.12
+  },
+  {
+    "birth_cohort": 1925,
+    "prk_men_cm": 163.87,
+    "kor_men_cm": 163.91,
+    "gap_men_cm": 0.04,
+    "prk_women_cm": 152.63,
+    "kor_women_cm": 149.65,
+    "gap_women_cm": -2.99
+  },
+  {
+    "birth_cohort": 1926,
+    "prk_men_cm": 163.97,
+    "kor_men_cm": 164.07,
+    "gap_men_cm": 0.1,
+    "prk_women_cm": 152.78,
+    "kor_women_cm": 149.93,
+    "gap_women_cm": -2.85
+  },
+  {
+    "birth_cohort": 1927,
+    "prk_men_cm": 164.06,
+    "kor_men_cm": 164.24,
+    "gap_men_cm": 0.17,
+    "prk_women_cm": 152.93,
+    "kor_women_cm": 150.21,
+    "gap_women_cm": -2.72
+  },
+  {
+    "birth_cohort": 1928,
+    "prk_men_cm": 164.16,
+    "kor_men_cm": 164.41,
+    "gap_men_cm": 0.25,
+    "prk_women_cm": 153.08,
+    "kor_women_cm": 150.5,
+    "gap_women_cm": -2.58
+  },
+  {
+    "birth_cohort": 1929,
+    "prk_men_cm": 164.26,
+    "kor_men_cm": 164.58,
+    "gap_men_cm": 0.32,
+    "prk_women_cm": 153.23,
+    "kor_women_cm": 150.79,
+    "gap_women_cm": -2.44
+  },
+  {
+    "birth_cohort": 1930,
+    "prk_men_cm": 164.36,
+    "kor_men_cm": 164.76,
+    "gap_men_cm": 0.4,
+    "prk_women_cm": 153.38,
+    "kor_women_cm": 151.08,
+    "gap_women_cm": -2.3
+  },
+  {
+    "birth_cohort": 1931,
+    "prk_men_cm": 164.46,
+    "kor_men_cm": 164.93,
+    "gap_men_cm": 0.48,
+    "prk_women_cm": 153.53,
+    "kor_women_cm": 151.37,
+    "gap_women_cm": -2.16
+  },
+  {
+    "birth_cohort": 1932,
+    "prk_men_cm": 164.55,
+    "kor_men_cm": 165.11,
+    "gap_men_cm": 0.55,
+    "prk_women_cm": 153.67,
+    "kor_women_cm": 151.66,
+    "gap_women_cm": -2.01
+  },
+  {
+    "birth_cohort": 1933,
+    "prk_men_cm": 164.65,
+    "kor_men_cm": 165.28,
+    "gap_men_cm": 0.63,
+    "prk_women_cm": 153.81,
+    "kor_women_cm": 151.95,
+    "gap_women_cm": -1.87
+  },
+  {
+    "birth_cohort": 1934,
+    "prk_men_cm": 164.75,
+    "kor_men_cm": 165.45,
+    "gap_men_cm": 0.7,
+    "prk_women_cm": 153.95,
+    "kor_women_cm": 152.23,
+    "gap_women_cm": -1.72
+  },
+  {
+    "birth_cohort": 1935,
+    "prk_men_cm": 164.86,
+    "kor_men_cm": 165.62,
+    "gap_men_cm": 0.77,
+    "prk_women_cm": 154.09,
+    "kor_women_cm": 152.51,
+    "gap_women_cm": -1.58
+  },
+  {
+    "birth_cohort": 1936,
+    "prk_men_cm": 164.96,
+    "kor_men_cm": 165.79,
+    "gap_men_cm": 0.83,
+    "prk_women_cm": 154.23,
+    "kor_women_cm": 152.8,
+    "gap_women_cm": -1.43
+  },
+  {
+    "birth_cohort": 1937,
+    "prk_men_cm": 165.07,
+    "kor_men_cm": 165.96,
+    "gap_men_cm": 0.9,
+    "prk_women_cm": 154.36,
+    "kor_women_cm": 153.08,
+    "gap_women_cm": -1.29
+  },
+  {
+    "birth_cohort": 1938,
+    "prk_men_cm": 165.17,
+    "kor_men_cm": 166.13,
+    "gap_men_cm": 0.96,
+    "prk_women_cm": 154.5,
+    "kor_women_cm": 153.35,
+    "gap_women_cm": -1.14
+  },
+  {
+    "birth_cohort": 1939,
+    "prk_men_cm": 165.27,
+    "kor_men_cm": 166.3,
+    "gap_men_cm": 1.03,
+    "prk_women_cm": 154.62,
+    "kor_women_cm": 153.63,
+    "gap_women_cm": -1.0
+  },
+  {
+    "birth_cohort": 1940,
+    "prk_men_cm": 165.37,
+    "kor_men_cm": 166.47,
+    "gap_men_cm": 1.1,
+    "prk_women_cm": 154.74,
+    "kor_women_cm": 153.89,
+    "gap_women_cm": -0.85
+  },
+  {
+    "birth_cohort": 1941,
+    "prk_men_cm": 165.48,
+    "kor_men_cm": 166.64,
+    "gap_men_cm": 1.16,
+    "prk_women_cm": 154.86,
+    "kor_women_cm": 154.16,
+    "gap_women_cm": -0.71
+  },
+  {
+    "birth_cohort": 1942,
+    "prk_men_cm": 165.58,
+    "kor_men_cm": 166.81,
+    "gap_men_cm": 1.23,
+    "prk_women_cm": 154.98,
+    "kor_women_cm": 154.41,
+    "gap_women_cm": -0.57
+  },
+  {
+    "birth_cohort": 1943,
+    "prk_men_cm": 165.7,
+    "kor_men_cm": 166.98,
+    "gap_men_cm": 1.29,
+    "prk_women_cm": 155.09,
+    "kor_women_cm": 154.66,
+    "gap_women_cm": -0.43
+  },
+  {
+    "birth_cohort": 1944,
+    "prk_men_cm": 165.81,
+    "kor_men_cm": 167.16,
+    "gap_men_cm": 1.34,
+    "prk_women_cm": 155.2,
+    "kor_women_cm": 154.9,
+    "gap_women_cm": -0.3
+  },
+  {
+    "birth_cohort": 1945,
+    "prk_men_cm": 165.94,
+    "kor_men_cm": 167.33,
+    "gap_men_cm": 1.4,
+    "prk_women_cm": 155.32,
+    "kor_women_cm": 155.14,
+    "gap_women_cm": -0.18
+  },
+  {
+    "birth_cohort": 1946,
+    "prk_men_cm": 166.07,
+    "kor_men_cm": 167.51,
+    "gap_men_cm": 1.45,
+    "prk_women_cm": 155.43,
+    "kor_women_cm": 155.37,
+    "gap_women_cm": -0.06
+  },
+  {
+    "birth_cohort": 1947,
+    "prk_men_cm": 166.2,
+    "kor_men_cm": 167.7,
+    "gap_men_cm": 1.5,
+    "prk_women_cm": 155.55,
+    "kor_women_cm": 155.59,
+    "gap_women_cm": 0.04
+  },
+  {
+    "birth_cohort": 1948,
+    "prk_men_cm": 166.34,
+    "kor_men_cm": 167.88,
+    "gap_men_cm": 1.54,
+    "prk_women_cm": 155.66,
+    "kor_women_cm": 155.8,
+    "gap_women_cm": 0.15
+  },
+  {
+    "birth_cohort": 1949,
+    "prk_men_cm": 166.48,
+    "kor_men_cm": 168.07,
+    "gap_men_cm": 1.59,
+    "prk_women_cm": 155.77,
+    "kor_women_cm": 156.01,
+    "gap_women_cm": 0.25
+  },
+  {
+    "birth_cohort": 1950,
+    "prk_men_cm": 166.62,
+    "kor_men_cm": 168.26,
+    "gap_men_cm": 1.64,
+    "prk_women_cm": 155.88,
+    "kor_women_cm": 156.22,
+    "gap_women_cm": 0.34
+  },
+  {
+    "birth_cohort": 1951,
+    "prk_men_cm": 166.76,
+    "kor_men_cm": 168.45,
+    "gap_men_cm": 1.69,
+    "prk_women_cm": 155.98,
+    "kor_women_cm": 156.42,
+    "gap_women_cm": 0.43
+  },
+  {
+    "birth_cohort": 1952,
+    "prk_men_cm": 166.91,
+    "kor_men_cm": 168.64,
+    "gap_men_cm": 1.74,
+    "prk_women_cm": 156.08,
+    "kor_women_cm": 156.61,
+    "gap_women_cm": 0.53
+  },
+  {
+    "birth_cohort": 1953,
+    "prk_men_cm": 167.05,
+    "kor_men_cm": 168.84,
+    "gap_men_cm": 1.79,
+    "prk_women_cm": 156.18,
+    "kor_women_cm": 156.8,
+    "gap_women_cm": 0.62
+  },
+  {
+    "birth_cohort": 1954,
+    "prk_men_cm": 167.19,
+    "kor_men_cm": 169.04,
+    "gap_men_cm": 1.85,
+    "prk_women_cm": 156.27,
+    "kor_women_cm": 156.99,
+    "gap_women_cm": 0.72
+  },
+  {
+    "birth_cohort": 1955,
+    "prk_men_cm": 167.32,
+    "kor_men_cm": 169.24,
+    "gap_men_cm": 1.91,
+    "prk_women_cm": 156.36,
+    "kor_women_cm": 157.17,
+    "gap_women_cm": 0.81
+  },
+  {
+    "birth_cohort": 1956,
+    "prk_men_cm": 167.46,
+    "kor_men_cm": 169.43,
+    "gap_men_cm": 1.98,
+    "prk_women_cm": 156.44,
+    "kor_women_cm": 157.35,
+    "gap_women_cm": 0.91
+  },
+  {
+    "birth_cohort": 1957,
+    "prk_men_cm": 167.59,
+    "kor_men_cm": 169.64,
+    "gap_men_cm": 2.04,
+    "prk_women_cm": 156.52,
+    "kor_women_cm": 157.53,
+    "gap_women_cm": 1.01
+  },
+  {
+    "birth_cohort": 1958,
+    "prk_men_cm": 167.72,
+    "kor_men_cm": 169.84,
+    "gap_men_cm": 2.12,
+    "prk_women_cm": 156.6,
+    "kor_women_cm": 157.71,
+    "gap_women_cm": 1.11
+  },
+  {
+    "birth_cohort": 1959,
+    "prk_men_cm": 167.85,
+    "kor_men_cm": 170.04,
+    "gap_men_cm": 2.2,
+    "prk_women_cm": 156.68,
+    "kor_women_cm": 157.88,
+    "gap_women_cm": 1.21
+  },
+  {
+    "birth_cohort": 1960,
+    "prk_men_cm": 167.97,
+    "kor_men_cm": 170.25,
+    "gap_men_cm": 2.28,
+    "prk_women_cm": 156.75,
+    "kor_women_cm": 158.06,
+    "gap_women_cm": 1.31
+  },
+  {
+    "birth_cohort": 1961,
+    "prk_men_cm": 168.09,
+    "kor_men_cm": 170.47,
+    "gap_men_cm": 2.38,
+    "prk_women_cm": 156.82,
+    "kor_women_cm": 158.24,
+    "gap_women_cm": 1.42
+  },
+  {
+    "birth_cohort": 1962,
+    "prk_men_cm": 168.2,
+    "kor_men_cm": 170.68,
+    "gap_men_cm": 2.48,
+    "prk_women_cm": 156.89,
+    "kor_women_cm": 158.42,
+    "gap_women_cm": 1.53
+  },
+  {
+    "birth_cohort": 1963,
+    "prk_men_cm": 168.31,
+    "kor_men_cm": 170.89,
+    "gap_men_cm": 2.58,
+    "prk_women_cm": 156.96,
+    "kor_women_cm": 158.59,
+    "gap_women_cm": 1.64
+  },
+  {
+    "birth_cohort": 1964,
+    "prk_men_cm": 168.41,
+    "kor_men_cm": 171.1,
+    "gap_men_cm": 2.68,
+    "prk_women_cm": 157.02,
+    "kor_women_cm": 158.77,
+    "gap_women_cm": 1.75
+  },
+  {
+    "birth_cohort": 1965,
+    "prk_men_cm": 168.51,
+    "kor_men_cm": 171.3,
+    "gap_men_cm": 2.79,
+    "prk_women_cm": 157.08,
+    "kor_women_cm": 158.94,
+    "gap_women_cm": 1.86
+  },
+  {
+    "birth_cohort": 1966,
+    "prk_men_cm": 168.6,
+    "kor_men_cm": 171.5,
+    "gap_men_cm": 2.9,
+    "prk_women_cm": 157.13,
+    "kor_women_cm": 159.1,
+    "gap_women_cm": 1.97
+  },
+  {
+    "birth_cohort": 1967,
+    "prk_men_cm": 168.68,
+    "kor_men_cm": 171.69,
+    "gap_men_cm": 3.01,
+    "prk_women_cm": 157.19,
+    "kor_women_cm": 159.27,
+    "gap_women_cm": 2.08
+  },
+  {
+    "birth_cohort": 1968,
+    "prk_men_cm": 168.77,
+    "kor_men_cm": 171.88,
+    "gap_men_cm": 3.11,
+    "prk_women_cm": 157.24,
+    "kor_women_cm": 159.42,
+    "gap_women_cm": 2.18
+  },
+  {
+    "birth_cohort": 1969,
+    "prk_men_cm": 168.87,
+    "kor_men_cm": 172.07,
+    "gap_men_cm": 3.21,
+    "prk_women_cm": 157.3,
+    "kor_women_cm": 159.57,
+    "gap_women_cm": 2.27
+  },
+  {
+    "birth_cohort": 1970,
+    "prk_men_cm": 168.96,
+    "kor_men_cm": 172.26,
+    "gap_men_cm": 3.3,
+    "prk_women_cm": 157.35,
+    "kor_women_cm": 159.72,
+    "gap_women_cm": 2.36
+  },
+  {
+    "birth_cohort": 1971,
+    "prk_men_cm": 169.06,
+    "kor_men_cm": 172.44,
+    "gap_men_cm": 3.38,
+    "prk_women_cm": 157.41,
+    "kor_women_cm": 159.86,
+    "gap_women_cm": 2.45
+  },
+  {
+    "birth_cohort": 1972,
+    "prk_men_cm": 169.17,
+    "kor_men_cm": 172.63,
+    "gap_men_cm": 3.45,
+    "prk_women_cm": 157.46,
+    "kor_women_cm": 159.99,
+    "gap_women_cm": 2.53
+  },
+  {
+    "birth_cohort": 1973,
+    "prk_men_cm": 169.28,
+    "kor_men_cm": 172.8,
+    "gap_men_cm": 3.52,
+    "prk_women_cm": 157.52,
+    "kor_women_cm": 160.12,
+    "gap_women_cm": 2.6
+  },
+  {
+    "birth_cohort": 1974,
+    "prk_men_cm": 169.4,
+    "kor_men_cm": 172.98,
+    "gap_men_cm": 3.57,
+    "prk_women_cm": 157.57,
+    "kor_women_cm": 160.25,
+    "gap_women_cm": 2.67
+  },
+  {
+    "birth_cohort": 1975,
+    "prk_men_cm": 169.53,
+    "kor_men_cm": 173.14,
+    "gap_men_cm": 3.61,
+    "prk_women_cm": 157.63,
+    "kor_women_cm": 160.37,
+    "gap_women_cm": 2.74
+  },
+  {
+    "birth_cohort": 1976,
+    "prk_men_cm": 169.66,
+    "kor_men_cm": 173.3,
+    "gap_men_cm": 3.64,
+    "prk_women_cm": 157.69,
+    "kor_women_cm": 160.49,
+    "gap_women_cm": 2.79
+  },
+  {
+    "birth_cohort": 1977,
+    "prk_men_cm": 169.79,
+    "kor_men_cm": 173.45,
+    "gap_men_cm": 3.66,
+    "prk_women_cm": 157.75,
+    "kor_women_cm": 160.6,
+    "gap_women_cm": 2.85
+  },
+  {
+    "birth_cohort": 1978,
+    "prk_men_cm": 169.92,
+    "kor_men_cm": 173.59,
+    "gap_men_cm": 3.67,
+    "prk_women_cm": 157.81,
+    "kor_women_cm": 160.7,
+    "gap_women_cm": 2.89
+  },
+  {
+    "birth_cohort": 1979,
+    "prk_men_cm": 170.05,
+    "kor_men_cm": 173.72,
+    "gap_men_cm": 3.67,
+    "prk_women_cm": 157.87,
+    "kor_women_cm": 160.81,
+    "gap_women_cm": 2.94
+  },
+  {
+    "birth_cohort": 1980,
+    "prk_men_cm": 170.18,
+    "kor_men_cm": 173.84,
+    "gap_men_cm": 3.66,
+    "prk_women_cm": 157.93,
+    "kor_women_cm": 160.91,
+    "gap_women_cm": 2.97
+  },
+  {
+    "birth_cohort": 1981,
+    "prk_men_cm": 170.31,
+    "kor_men_cm": 173.95,
+    "gap_men_cm": 3.65,
+    "prk_women_cm": 157.99,
+    "kor_women_cm": 161.0,
+    "gap_women_cm": 3.01
+  },
+  {
+    "birth_cohort": 1982,
+    "prk_men_cm": 170.44,
+    "kor_men_cm": 174.06,
+    "gap_men_cm": 3.62,
+    "prk_women_cm": 158.06,
+    "kor_women_cm": 161.1,
+    "gap_women_cm": 3.05
+  },
+  {
+    "birth_cohort": 1983,
+    "prk_men_cm": 170.56,
+    "kor_men_cm": 174.16,
+    "gap_men_cm": 3.59,
+    "prk_women_cm": 158.12,
+    "kor_women_cm": 161.2,
+    "gap_women_cm": 3.08
+  },
+  {
+    "birth_cohort": 1984,
+    "prk_men_cm": 170.69,
+    "kor_men_cm": 174.25,
+    "gap_men_cm": 3.56,
+    "prk_women_cm": 158.19,
+    "kor_women_cm": 161.3,
+    "gap_women_cm": 3.11
+  },
+  {
+    "birth_cohort": 1985,
+    "prk_men_cm": 170.81,
+    "kor_men_cm": 174.33,
+    "gap_men_cm": 3.52,
+    "prk_women_cm": 158.25,
+    "kor_women_cm": 161.4,
+    "gap_women_cm": 3.15
+  },
+  {
+    "birth_cohort": 1986,
+    "prk_men_cm": 170.93,
+    "kor_men_cm": 174.4,
+    "gap_men_cm": 3.48,
+    "prk_women_cm": 158.32,
+    "kor_women_cm": 161.49,
+    "gap_women_cm": 3.18
+  },
+  {
+    "birth_cohort": 1987,
+    "prk_men_cm": 171.04,
+    "kor_men_cm": 174.47,
+    "gap_men_cm": 3.43,
+    "prk_women_cm": 158.38,
+    "kor_women_cm": 161.59,
+    "gap_women_cm": 3.2
+  },
+  {
+    "birth_cohort": 1988,
+    "prk_men_cm": 171.15,
+    "kor_men_cm": 174.53,
+    "gap_men_cm": 3.38,
+    "prk_women_cm": 158.45,
+    "kor_women_cm": 161.68,
+    "gap_women_cm": 3.23
+  },
+  {
+    "birth_cohort": 1989,
+    "prk_men_cm": 171.26,
+    "kor_men_cm": 174.58,
+    "gap_men_cm": 3.32,
+    "prk_women_cm": 158.51,
+    "kor_women_cm": 161.76,
+    "gap_women_cm": 3.25
+  },
+  {
+    "birth_cohort": 1990,
+    "prk_men_cm": 171.37,
+    "kor_men_cm": 174.64,
+    "gap_men_cm": 3.27,
+    "prk_women_cm": 158.57,
+    "kor_women_cm": 161.85,
+    "gap_women_cm": 3.27
+  },
+  {
+    "birth_cohort": 1991,
+    "prk_men_cm": 171.47,
+    "kor_men_cm": 174.68,
+    "gap_men_cm": 3.21,
+    "prk_women_cm": 158.64,
+    "kor_women_cm": 161.93,
+    "gap_women_cm": 3.29
+  },
+  {
+    "birth_cohort": 1992,
+    "prk_men_cm": 171.58,
+    "kor_men_cm": 174.73,
+    "gap_men_cm": 3.15,
+    "prk_women_cm": 158.7,
+    "kor_women_cm": 162.01,
+    "gap_women_cm": 3.31
+  },
+  {
+    "birth_cohort": 1993,
+    "prk_men_cm": 171.68,
+    "kor_men_cm": 174.78,
+    "gap_men_cm": 3.1,
+    "prk_women_cm": 158.77,
+    "kor_women_cm": 162.09,
+    "gap_women_cm": 3.32
+  },
+  {
+    "birth_cohort": 1994,
+    "prk_men_cm": 171.79,
+    "kor_men_cm": 174.83,
+    "gap_men_cm": 3.04,
+    "prk_women_cm": 158.83,
+    "kor_women_cm": 162.17,
+    "gap_women_cm": 3.34
+  },
+  {
+    "birth_cohort": 1995,
+    "prk_men_cm": 171.89,
+    "kor_men_cm": 174.87,
+    "gap_men_cm": 2.98,
+    "prk_women_cm": 158.9,
+    "kor_women_cm": 162.25,
+    "gap_women_cm": 3.35
+  },
+  {
+    "birth_cohort": 1996,
+    "prk_men_cm": 171.99,
+    "kor_men_cm": 174.92,
+    "gap_men_cm": 2.93,
+    "prk_women_cm": 158.97,
+    "kor_women_cm": 162.34,
+    "gap_women_cm": 3.37
+  }
+]

@@ -1,0 +1,24 @@
+{
+  "source": "Korea Institute for National Unification (KINU) Kim Jong Un Public Activities DB (nksdb)",
+  "url": "https://www.kinu.or.kr/nksdb",
+  "years": [
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025,
+    2026
+  ],
+  "latest_year": 2026,
+  "latest_year_total": 106,
+  "latest_year_military_pct": 30.2
+}

@@ -1,0 +1,222 @@
+[
+  {
+    "period": "2015Q1",
+    "kpw_per_usd": 8100.0,
+    "kpw_per_cny": 1340.0
+  },
+  {
+    "period": "2015Q2",
+    "kpw_per_usd": 8150.0,
+    "kpw_per_cny": 1310.0
+  },
+  {
+    "period": "2015Q3",
+    "kpw_per_usd": 8260.0,
+    "kpw_per_cny": 1270.0
+  },
+  {
+    "period": "2015Q4",
+    "kpw_per_usd": 8640.0,
+    "kpw_per_cny": 1320.0
+  },
+  {
+    "period": "2016Q1",
+    "kpw_per_usd": 8150.0,
+    "kpw_per_cny": 1300.0
+  },
+  {
+    "period": "2016Q2",
+    "kpw_per_usd": 8328.0,
+    "kpw_per_cny": 1300.0
+  },
+  {
+    "period": "2016Q3",
+    "kpw_per_usd": 8205.0,
+    "kpw_per_cny": 1260.0
+  },
+  {
+    "period": "2016Q4",
+    "kpw_per_usd": 8060.0,
+    "kpw_per_cny": 1200.0
+  },
+  {
+    "period": "2017Q1",
+    "kpw_per_usd": 8030.0,
+    "kpw_per_cny": 1185.0
+  },
+  {
+    "period": "2017Q2",
+    "kpw_per_usd": 8100.0,
+    "kpw_per_cny": 1210.0
+  },
+  {
+    "period": "2017Q3",
+    "kpw_per_usd": 8100.0,
+    "kpw_per_cny": 1220.0
+  },
+  {
+    "period": "2017Q4",
+    "kpw_per_usd": 8000.0,
+    "kpw_per_cny": 1135.0
+  },
+  {
+    "period": "2018Q1",
+    "kpw_per_usd": 8150.0,
+    "kpw_per_cny": 1270.0
+  },
+  {
+    "period": "2018Q2",
+    "kpw_per_usd": 8040.0,
+    "kpw_per_cny": 1200.0
+  },
+  {
+    "period": "2018Q3",
+    "kpw_per_usd": 8220.0,
+    "kpw_per_cny": 1300.0
+  },
+  {
+    "period": "2018Q4",
+    "kpw_per_usd": 8500.0,
+    "kpw_per_cny": 1240.0
+  },
+  {
+    "period": "2019Q1",
+    "kpw_per_usd": 8000.0,
+    "kpw_per_cny": 1270.0
+  },
+  {
+    "period": "2019Q2",
+    "kpw_per_usd": 7750.0,
+    "kpw_per_cny": 1210.0
+  },
+  {
+    "period": "2019Q3",
+    "kpw_per_usd": 8424.0,
+    "kpw_per_cny": 1200.0
+  },
+  {
+    "period": "2019Q4",
+    "kpw_per_usd": 8400.0,
+    "kpw_per_cny": 1200.0
+  },
+  {
+    "period": "2020Q1",
+    "kpw_per_usd": 8470.0,
+    "kpw_per_cny": 1300.0
+  },
+  {
+    "period": "2020Q2",
+    "kpw_per_usd": 8370.0,
+    "kpw_per_cny": 1205.0
+  },
+  {
+    "period": "2020Q3",
+    "kpw_per_usd": 8400.0,
+    "kpw_per_cny": 1170.0
+  },
+  {
+    "period": "2020Q4",
+    "kpw_per_usd": 6600.0,
+    "kpw_per_cny": 970.0
+  },
+  {
+    "period": "2021Q1",
+    "kpw_per_usd": 6900.0,
+    "kpw_per_cny": 990.0
+  },
+  {
+    "period": "2021Q2",
+    "kpw_per_usd": 5400.0,
+    "kpw_per_cny": 630.0
+  },
+  {
+    "period": "2021Q3",
+    "kpw_per_usd": 5900.0,
+    "kpw_per_cny": 590.0
+  },
+  {
+    "period": "2021Q4",
+    "kpw_per_usd": 5950.0,
+    "kpw_per_cny": 600.0
+  },
+  {
+    "period": "2022Q1",
+    "kpw_per_usd": 6300.0,
+    "kpw_per_cny": 660.0
+  },
+  {
+    "period": "2022Q2",
+    "kpw_per_usd": 8000.0,
+    "kpw_per_cny": 850.0
+  },
+  {
+    "period": "2022Q3",
+    "kpw_per_usd": 8030.0,
+    "kpw_per_cny": 860.0
+  },
+  {
+    "period": "2022Q4",
+    "kpw_per_usd": 8100.0,
+    "kpw_per_cny": 960.0
+  },
+  {
+    "period": "2023Q1",
+    "kpw_per_usd": 8100.0,
+    "kpw_per_cny": 995.0
+  },
+  {
+    "period": "2023Q2",
+    "kpw_per_usd": 8210.0,
+    "kpw_per_cny": 1230.0
+  },
+  {
+    "period": "2023Q3",
+    "kpw_per_usd": 8250.0,
+    "kpw_per_cny": 1255.0
+  },
+  {
+    "period": "2023Q4",
+    "kpw_per_usd": 8500.0,
+    "kpw_per_cny": 1275.0
+  },
+  {
+    "period": "2024Q1",
+    "kpw_per_usd": 8630.0,
+    "kpw_per_cny": 1290.0
+  },
+  {
+    "period": "2024Q2",
+    "kpw_per_usd": 11500.0,
+    "kpw_per_cny": 1550.0
+  },
+  {
+    "period": "2024Q3",
+    "kpw_per_usd": 16020.0,
+    "kpw_per_cny": 1730.0
+  },
+  {
+    "period": "2024Q4",
+    "kpw_per_usd": 17730.0,
+    "kpw_per_cny": 2080.0
+  },
+  {
+    "period": "2025Q1",
+    "kpw_per_usd": 20070.0,
+    "kpw_per_cny": 2570.0
+  },
+  {
+    "period": "2025Q2",
+    "kpw_per_usd": 27570.0,
+    "kpw_per_cny": 3700.0
+  },
+  {
+    "period": "2025Q3",
+    "kpw_per_usd": 33180.0,
+    "kpw_per_cny": 4220.0
+  },
+  {
+    "period": "2025Q4",
+    "kpw_per_usd": 37550.0,
+    "kpw_per_cny": 5200.0
+  }
+]

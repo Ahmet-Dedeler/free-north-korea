@@ -1,0 +1,114 @@
+[
+  {
+    "year": 2017,
+    "vessels_detected": 900,
+    "vessel_origin": "China (unauthorized distant-water pair trawlers and lighting vessels)",
+    "estimated_catch_squid_metric_tons": 101300,
+    "estimated_catch_value_usd": 275000000,
+    "sanctions_violation": "UNSCR 2371 (Aug 2017) prohibits acquisition of DPRK fishing rights and seafood exports",
+    "satellite_sensors_used": [
+      "AIS",
+      "SAR (Sentinel-1 / Cosmo-SkyMed)",
+      "VIIRS night-time boat detection"
+    ],
+    "consequence_for_dprk_fishers": "Displaced small artisanal wooden boats into dangerous offshore waters; triggered 2017 surge in ghost ships (104 boats)"
+  },
+  {
+    "year": 2018,
+    "vessels_detected": 700,
+    "vessel_origin": "China (unauthorized pair trawlers)",
+    "estimated_catch_squid_metric_tons": 62800,
+    "estimated_catch_value_usd": 165000000,
+    "sanctions_violation": "UNSCR 2371",
+    "satellite_sensors_used": [
+      "AIS",
+      "SAR",
+      "VIIRS"
+    ],
+    "consequence_for_dprk_fishers": "Severe depletion of Pacific flying squid stocks; historic peak of 225 ghost ships washing up in Japan"
+  },
+  {
+    "year": 2019,
+    "vessels_detected": 790,
+    "vessel_origin": "China / dark vessels with AIS spoofing",
+    "estimated_catch_squid_metric_tons": 72000,
+    "estimated_catch_value_usd": 190000000,
+    "sanctions_violation": "UNSCR 2371",
+    "satellite_sensors_used": [
+      "AIS",
+      "SAR",
+      "VIIRS"
+    ],
+    "consequence_for_dprk_fishers": "158 ghost ships in Japan; JCG water-cannon clashes at Yamato Bank"
+  },
+  {
+    "year": 2020,
+    "vessels_detected": 550,
+    "vessel_origin": "China",
+    "estimated_catch_squid_metric_tons": 45000,
+    "estimated_catch_value_usd": 120000000,
+    "sanctions_violation": "UNSCR 2371",
+    "satellite_sensors_used": [
+      "AIS",
+      "SAR",
+      "VIIRS"
+    ],
+    "consequence_for_dprk_fishers": "DPRK coast guards strictly enforce COVID-19 maritime exclusion zones"
+  },
+  {
+    "year": 2021,
+    "vessels_detected": 400,
+    "vessel_origin": "China",
+    "estimated_catch_squid_metric_tons": 35000,
+    "estimated_catch_value_usd": 95000000,
+    "sanctions_violation": "UNSCR 2371",
+    "satellite_sensors_used": [
+      "AIS",
+      "SAR",
+      "VIIRS"
+    ],
+    "consequence_for_dprk_fishers": "Reduced fleet activity under international scrutiny and pandemic border controls"
+  },
+  {
+    "year": 2022,
+    "vessels_detected": 480,
+    "vessel_origin": "China",
+    "estimated_catch_squid_metric_tons": 42000,
+    "estimated_catch_value_usd": 115000000,
+    "sanctions_violation": "UNSCR 2371",
+    "satellite_sensors_used": [
+      "AIS",
+      "SAR",
+      "VIIRS"
+    ],
+    "consequence_for_dprk_fishers": "Resumed illegal trawler incursions"
+  },
+  {
+    "year": 2023,
+    "vessels_detected": 520,
+    "vessel_origin": "China",
+    "estimated_catch_squid_metric_tons": 48000,
+    "estimated_catch_value_usd": 130000000,
+    "sanctions_violation": "UNSCR 2371",
+    "satellite_sensors_used": [
+      "AIS",
+      "SAR",
+      "VIIRS"
+    ],
+    "consequence_for_dprk_fishers": "Persistent illegal fishing detected across DPRK eastern EEZ"
+  },
+  {
+    "year": 2024,
+    "vessels_detected": 510,
+    "vessel_origin": "China",
+    "estimated_catch_squid_metric_tons": 46000,
+    "estimated_catch_value_usd": 125000000,
+    "sanctions_violation": "UNSCR 2371",
+    "satellite_sensors_used": [
+      "AIS",
+      "SAR",
+      "VIIRS"
+    ],
+    "consequence_for_dprk_fishers": "Estimated >$1 billion in squid extracted illegally since 2017"
+  }
+]

@@ -31,6 +31,14 @@ before adding any page or article.
   dataset: `loadDataset()` in the browser, `buildDataset()` on the server. `meta.ts` holds missile class/outcome
   colours. Selection uses feature-state plus `*-selected` filter layers.
   `/missiles/list` is the same data as a plain server-rendered table (the map itself has nothing a crawler can read).
+- Charts (Our World in Data style): `data/series/series.json` holds every chart dataset (plus one CSV per series in
+  `data/series/csv/`, so the data is usable straight from GitHub). `src/charts/data.ts` reads it and `chartProps()`
+  trims a series to what one chart shows; `src/charts/ChartView.tsx` is the one chart frame (hover, legend toggles,
+  table tab, linear/log, CSV, copy link, share). Titles, units and entity names in three languages live in
+  `src/content/series.ts`. Entity colours are fixed (North Korea red, South Korea blue, China green, world grey
+  dashed) and were checked for colour blindness; don't add Japan next to South Korea (the pair fails in dark mode).
+  Pages: `/north-korea-vs-south-korea` (`components/TwoKoreasPage.tsx`, text in `content/twoKoreas.ts`, numbers in
+  the text come from the data), `/data` and `/data/<id>` (`components/DataPage.tsx`).
 - `/sanctions`: everyone on the UN 1718 list and the US Treasury (OFAC) North Korea programs. One component
   (`components/SanctionsPage.tsx`) renders all three language routes.
 - Content pages are visual, not text walls. Reuse the building blocks before writing paragraphs:
@@ -90,7 +98,14 @@ Anything a reader can see ships in English, Korean and Japanese. A page or artic
    truncated. Also runs in the weekly Action.
 6. `scripts/build-registry.ts` + `scripts/check-sources.mjs` (weekly GitHub Action): every source watched for
    changes/moves/deaths → `data/sources/{registry,state,changes}.json`, shown on `/sources`.
-7. `scripts/fetch-media.ts`: book covers, film posters, org logos → `public/img/`, credits in `src/content/media.json`.
+7. `scripts/build-series.ts` → `data/series/`: chart datasets. Source groups in `scripts/series/`: `owid.ts` (pulled
+   from Our World in Data, which already maintains UN/World Bank/FAO/V-Dem series well), `dailynk.ts` (market prices
+   from the Google Sheet behind Daily NK's site), `government.ts` (defector arrivals parsed from the Ministry of
+   Unification PDF on data.go.kr with `pdftotext`; UN OCHA FTS aid), `local.ts` (counts from our own missile and
+   sanctions data). Each group has a `maxAgeDays`, so the weekly Action only refetches what is due; a failing source
+   keeps its previous series. Hand-checked numbers (a year the official file doesn't have yet) go in
+   `data/series/curated/` with the URL they came from. Research behind it: `docs/research/charts/`.
+8. `scripts/fetch-media.ts`: book covers, film posters, org logos → `public/img/`, credits in `src/content/media.json`.
 
 Run order after a scrape: `node scripts/build-layers.ts && node scripts/build-entities.ts`.
 

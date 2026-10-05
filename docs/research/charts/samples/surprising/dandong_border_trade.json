@@ -1,0 +1,66 @@
+[
+  {
+    "year": 2018,
+    "china_dprk_total_trade_usd": 2430000000,
+    "dandong_share_pct": 72.0,
+    "dandong_trade_usd_est": 1750000000,
+    "daily_freight_trains_avg": 2.5,
+    "status": "UN sanctions implemented; coal/iron halted, general consumer goods continue"
+  },
+  {
+    "year": 2019,
+    "china_dprk_total_trade_usd": 2790000000,
+    "dandong_share_pct": 74.0,
+    "dandong_trade_usd_est": 2060000000,
+    "daily_freight_trains_avg": 2.8,
+    "status": "Pre-COVID peak; extensive trucking across Sino-Korean Friendship Bridge"
+  },
+  {
+    "year": 2020,
+    "china_dprk_total_trade_usd": 540000000,
+    "dandong_share_pct": 80.0,
+    "dandong_trade_usd_est": 432000000,
+    "daily_freight_trains_avg": 0.4,
+    "status": "COVID-19 border shutdown in Jan 2020; bridge vehicular traffic halted; train service intermittent"
+  },
+  {
+    "year": 2021,
+    "china_dprk_total_trade_usd": 320000000,
+    "dandong_share_pct": 82.0,
+    "dandong_trade_usd_est": 262000000,
+    "daily_freight_trains_avg": 0.1,
+    "status": "Near-total border paralysis; freight train service suspended for most of year"
+  },
+  {
+    "year": 2022,
+    "china_dprk_total_trade_usd": 1030000000,
+    "dandong_share_pct": 78.0,
+    "dandong_trade_usd_est": 803000000,
+    "daily_freight_trains_avg": 1.2,
+    "status": "Dandong-Sinuiju freight train reopened Jan 2022, paused Apr-Aug due to Dandong lockdown, resumed Sept 2022"
+  },
+  {
+    "year": 2023,
+    "china_dprk_total_trade_usd": 2300000000,
+    "dandong_share_pct": 76.0,
+    "dandong_trade_usd_est": 1748000000,
+    "daily_freight_trains_avg": 2.2,
+    "status": "Full reopening of freight rail (2-3 trains/day); massive import of false eyelashes/wigs"
+  },
+  {
+    "year": 2024,
+    "china_dprk_total_trade_usd": 2180000000,
+    "dandong_share_pct": 75.0,
+    "dandong_trade_usd_est": 1635000000,
+    "daily_freight_trains_avg": 2.4,
+    "status": "Sustained high freight volume; Yalu River flood in July briefly interrupted port operations"
+  },
+  {
+    "year": 2025,
+    "china_dprk_total_trade_usd": 2250000000,
+    "dandong_share_pct": 75.0,
+    "dandong_trade_usd_est": 1687000000,
+    "daily_freight_trains_avg": 2.5,
+    "status": "Stable rail transit; construction progress on New Yalu River Bridge customs clearance zone"
+  }
+]

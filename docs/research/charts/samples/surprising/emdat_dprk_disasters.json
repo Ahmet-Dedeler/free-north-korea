@@ -1,0 +1,227 @@
+[
+  {
+    "year": 1987,
+    "deaths_total": 315,
+    "deaths_floods": 315,
+    "deaths_storms": 0,
+    "people_affected_total": 20071,
+    "people_affected_floods": 20071,
+    "people_affected_droughts": 0
+  },
+  {
+    "year": 1993,
+    "deaths_total": 6,
+    "deaths_floods": 0,
+    "deaths_storms": 6,
+    "people_affected_total": 2500,
+    "people_affected_floods": 0,
+    "people_affected_droughts": 0
+  },
+  {
+    "year": 1995,
+    "deaths_total": 68,
+    "deaths_floods": 68,
+    "deaths_storms": 0,
+    "people_affected_total": 6200000,
+    "people_affected_floods": 6200000,
+    "people_affected_droughts": 0
+  },
+  {
+    "year": 1996,
+    "deaths_total": 116,
+    "deaths_floods": 116,
+    "deaths_storms": 0,
+    "people_affected_total": 3270000,
+    "people_affected_floods": 3270000,
+    "people_affected_droughts": 0
+  },
+  {
+    "year": 1997,
+    "deaths_total": 0,
+    "deaths_floods": 0,
+    "deaths_storms": 0,
+    "people_affected_total": 29000,
+    "people_affected_floods": 29000,
+    "people_affected_droughts": 0
+  },
+  {
+    "year": 1998,
+    "deaths_total": 50,
+    "deaths_floods": 50,
+    "deaths_storms": 0,
+    "people_affected_total": 10172,
+    "people_affected_floods": 10172,
+    "people_affected_droughts": 0
+  },
+  {
+    "year": 1999,
+    "deaths_total": 42,
+    "deaths_floods": 42,
+    "deaths_storms": 0,
+    "people_affected_total": 42135,
+    "people_affected_floods": 42135,
+    "people_affected_droughts": 0
+  },
+  {
+    "year": 2000,
+    "deaths_total": 46,
+    "deaths_floods": 0,
+    "deaths_storms": 46,
+    "people_affected_total": 627180,
+    "people_affected_floods": 0,
+    "people_affected_droughts": 0
+  },
+  {
+    "year": 2001,
+    "deaths_total": 124,
+    "deaths_floods": 124,
+    "deaths_storms": 0,
+    "people_affected_total": 187584,
+    "people_affected_floods": 187584,
+    "people_affected_droughts": 0
+  },
+  {
+    "year": 2002,
+    "deaths_total": 3,
+    "deaths_floods": 0,
+    "deaths_storms": 3,
+    "people_affected_total": 65844,
+    "people_affected_floods": 58443,
+    "people_affected_droughts": 0
+  },
+  {
+    "year": 2004,
+    "deaths_total": 24,
+    "deaths_floods": 24,
+    "deaths_storms": 0,
+    "people_affected_total": 199705,
+    "people_affected_floods": 199705,
+    "people_affected_droughts": 0
+  },
+  {
+    "year": 2005,
+    "deaths_total": 193,
+    "deaths_floods": 193,
+    "deaths_storms": 0,
+    "people_affected_total": 16298,
+    "people_affected_floods": 16298,
+    "people_affected_droughts": 0
+  },
+  {
+    "year": 2006,
+    "deaths_total": 278,
+    "deaths_floods": 278,
+    "deaths_storms": 0,
+    "people_affected_total": 91824,
+    "people_affected_floods": 91824,
+    "people_affected_droughts": 0
+  },
+  {
+    "year": 2007,
+    "deaths_total": 610,
+    "deaths_floods": 610,
+    "deaths_storms": 0,
+    "people_affected_total": 1172167,
+    "people_affected_floods": 1170518,
+    "people_affected_droughts": 0
+  },
+  {
+    "year": 2010,
+    "deaths_total": 20,
+    "deaths_floods": 0,
+    "deaths_storms": 20,
+    "people_affected_total": 95785,
+    "people_affected_floods": 55785,
+    "people_affected_droughts": 0
+  },
+  {
+    "year": 2011,
+    "deaths_total": 74,
+    "deaths_floods": 64,
+    "deaths_storms": 10,
+    "people_affected_total": 57592,
+    "people_affected_floods": 51093,
+    "people_affected_droughts": 0
+  },
+  {
+    "year": 2012,
+    "deaths_total": 147,
+    "deaths_floods": 88,
+    "deaths_storms": 59,
+    "people_affected_total": 3137550,
+    "people_affected_floods": 93089,
+    "people_affected_droughts": 3000000
+  },
+  {
+    "year": 2013,
+    "deaths_total": 51,
+    "deaths_floods": 51,
+    "deaths_storms": 0,
+    "people_affected_total": 848690,
+    "people_affected_floods": 848690,
+    "people_affected_droughts": 0
+  },
+  {
+    "year": 2015,
+    "deaths_total": 33,
+    "deaths_floods": 33,
+    "deaths_storms": 0,
+    "people_affected_total": 18003541,
+    "people_affected_floods": 3541,
+    "people_affected_droughts": 18000000
+  },
+  {
+    "year": 2016,
+    "deaths_total": 552,
+    "deaths_floods": 552,
+    "deaths_storms": 0,
+    "people_affected_total": 667715,
+    "people_affected_floods": 667715,
+    "people_affected_droughts": 0
+  },
+  {
+    "year": 2018,
+    "deaths_total": 234,
+    "deaths_floods": 148,
+    "deaths_storms": 86,
+    "people_affected_total": 653179,
+    "people_affected_floods": 581268,
+    "people_affected_droughts": 0
+  },
+  {
+    "year": 2019,
+    "deaths_total": 5,
+    "deaths_floods": 0,
+    "deaths_storms": 5,
+    "people_affected_total": 15400000,
+    "people_affected_floods": 0,
+    "people_affected_droughts": 10100000
+  },
+  {
+    "year": 2020,
+    "deaths_total": 22,
+    "deaths_floods": 22,
+    "deaths_storms": 0,
+    "people_affected_total": 85000,
+    "people_affected_floods": 85000,
+    "people_affected_droughts": 0
+  },
+  {
+    "year": 2021,
+    "deaths_total": 0,
+    "deaths_floods": 0,
+    "deaths_storms": 0,
+    "people_affected_total": 5000,
+    "people_affected_floods": 5000,
+    "people_affected_droughts": 0
+  },
+  {
+    "year": 2024,
+    "deaths_total": 0,
+    "deaths_floods": 0,
+    "deaths_storms": 0,
+    "people_affected_total": 4200,
+    "people_affected_floods": 4200,
+    "people_affected_droughts": 0
+  }
+]

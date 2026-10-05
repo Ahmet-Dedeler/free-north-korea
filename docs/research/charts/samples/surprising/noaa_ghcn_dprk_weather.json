@@ -1,0 +1,2693 @@
+{
+  "KNM00047035": {
+    "name": "Sinuiju",
+    "lat": 40.1,
+    "lon": 124.383,
+    "elev_m": 7.0,
+    "first_year": 1957,
+    "last_year": 2026,
+    "july_2024_daily_prcp": [
+      {
+        "day": 3,
+        "prcp_mm": 10.9
+      },
+      {
+        "day": 6,
+        "prcp_mm": 54.1
+      },
+      {
+        "day": 8,
+        "prcp_mm": 0.0
+      },
+      {
+        "day": 17,
+        "prcp_mm": 61.0
+      },
+      {
+        "day": 22,
+        "prcp_mm": 23.1
+      },
+      {
+        "day": 23,
+        "prcp_mm": 0.5
+      },
+      {
+        "day": 24,
+        "prcp_mm": 8.4
+      },
+      {
+        "day": 25,
+        "prcp_mm": 34.0
+      },
+      {
+        "day": 26,
+        "prcp_mm": 20.1
+      },
+      {
+        "day": 27,
+        "prcp_mm": 126.0
+      },
+      {
+        "day": 28,
+        "prcp_mm": 11.9
+      },
+      {
+        "day": 29,
+        "prcp_mm": 29.2
+      }
+    ],
+    "annual": {
+      "1958": {
+        "tavg_c": 9.39,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 53.6,
+        "coverage_days": 250
+      },
+      "1959": {
+        "tavg_c": 10.51,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 110.0,
+        "coverage_days": 340
+      },
+      "1960": {
+        "tavg_c": 9.46,
+        "prcp_mm": 740.1,
+        "max_daily_prcp_mm": 110.2,
+        "coverage_days": 344
+      },
+      "1961": {
+        "tavg_c": 9.94,
+        "prcp_mm": 654.8,
+        "max_daily_prcp_mm": 230.1,
+        "coverage_days": 365
+      },
+      "1962": {
+        "tavg_c": 9.39,
+        "prcp_mm": 458.9,
+        "max_daily_prcp_mm": 101.1,
+        "coverage_days": 365
+      },
+      "1963": {
+        "tavg_c": 9.31,
+        "prcp_mm": 429.7,
+        "max_daily_prcp_mm": 134.1,
+        "coverage_days": 364
+      },
+      "1964": {
+        "tavg_c": 9.48,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 86.1,
+        "coverage_days": 363
+      },
+      "1965": {
+        "tavg_c": 8.96,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 87.1,
+        "coverage_days": 350
+      },
+      "1966": {
+        "tavg_c": 8.81,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 37.3,
+        "coverage_days": 354
+      },
+      "1967": {
+        "tavg_c": 8.74,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 100.1,
+        "coverage_days": 342
+      },
+      "1968": {
+        "tavg_c": 9.27,
+        "prcp_mm": 477.8,
+        "max_daily_prcp_mm": 84.1,
+        "coverage_days": 360
+      },
+      "1969": {
+        "tavg_c": 8.1,
+        "prcp_mm": 1025.1,
+        "max_daily_prcp_mm": 193.0,
+        "coverage_days": 359
+      },
+      "1970": {
+        "tavg_c": 8.91,
+        "prcp_mm": 541.6,
+        "max_daily_prcp_mm": 65.0,
+        "coverage_days": 365
+      },
+      "1971": {
+        "tavg_c": 9.8,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 85.1,
+        "coverage_days": 243
+      },
+      "1973": {
+        "tavg_c": 9.74,
+        "prcp_mm": 313.9,
+        "max_daily_prcp_mm": 51.1,
+        "coverage_days": 363
+      },
+      "1974": {
+        "tavg_c": 8.95,
+        "prcp_mm": 2.8,
+        "max_daily_prcp_mm": 0.5,
+        "coverage_days": 365
+      },
+      "1975": {
+        "tavg_c": 10.07,
+        "prcp_mm": 2.5,
+        "max_daily_prcp_mm": 0.5,
+        "coverage_days": 364
+      },
+      "1976": {
+        "tavg_c": 8.8,
+        "prcp_mm": 3.6,
+        "max_daily_prcp_mm": 0.8,
+        "coverage_days": 366
+      },
+      "1977": {
+        "tavg_c": 9.46,
+        "prcp_mm": 2.3,
+        "max_daily_prcp_mm": 0.5,
+        "coverage_days": 365
+      },
+      "1978": {
+        "tavg_c": 9.64,
+        "prcp_mm": 1.3,
+        "max_daily_prcp_mm": 0.5,
+        "coverage_days": 365
+      },
+      "1979": {
+        "tavg_c": 9.66,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 0.3,
+        "coverage_days": 365
+      },
+      "1980": {
+        "tavg_c": 8.46,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 0,
+        "coverage_days": 366
+      },
+      "1981": {
+        "tavg_c": 8.71,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 0,
+        "coverage_days": 365
+      },
+      "1982": {
+        "tavg_c": 9.86,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 102.1,
+        "coverage_days": 365
+      },
+      "1983": {
+        "tavg_c": 9.77,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 101.1,
+        "coverage_days": 365
+      },
+      "1984": {
+        "tavg_c": 9.11,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 176.0,
+        "coverage_days": 366
+      },
+      "1985": {
+        "tavg_c": 8.7,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 177.0,
+        "coverage_days": 365
+      },
+      "1986": {
+        "tavg_c": 9.05,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 83.1,
+        "coverage_days": 365
+      },
+      "1987": {
+        "tavg_c": 9.08,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 98.0,
+        "coverage_days": 365
+      },
+      "1988": {
+        "tavg_c": 9.73,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 66.0,
+        "coverage_days": 366
+      },
+      "1989": {
+        "tavg_c": 10.58,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 262.4,
+        "coverage_days": 365
+      },
+      "1990": {
+        "tavg_c": 10.14,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 19.1,
+        "coverage_days": 364
+      },
+      "1991": {
+        "tavg_c": 9.99,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 15.0,
+        "coverage_days": 361
+      },
+      "1992": {
+        "tavg_c": 10.07,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 25.9,
+        "coverage_days": 366
+      },
+      "1993": {
+        "tavg_c": 9.48,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 82.0,
+        "coverage_days": 365
+      },
+      "1994": {
+        "tavg_c": 10.49,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 110.0,
+        "coverage_days": 365
+      },
+      "1995": {
+        "tavg_c": 9.88,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 81.0,
+        "coverage_days": 365
+      },
+      "1996": {
+        "tavg_c": 9.51,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 178.1,
+        "coverage_days": 366
+      },
+      "1997": {
+        "tavg_c": 10.15,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 73.9,
+        "coverage_days": 365
+      },
+      "1998": {
+        "tavg_c": 10.63,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 143.0,
+        "coverage_days": 359
+      },
+      "1999": {
+        "tavg_c": 10.48,
+        "prcp_mm": 978.1,
+        "max_daily_prcp_mm": 151.9,
+        "coverage_days": 362
+      },
+      "2000": {
+        "tavg_c": 9.32,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 51.1,
+        "coverage_days": 359
+      },
+      "2001": {
+        "tavg_c": 9.73,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 196.1,
+        "coverage_days": 365
+      },
+      "2002": {
+        "tavg_c": 9.85,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 115.1,
+        "coverage_days": 352
+      },
+      "2003": {
+        "tavg_c": 10.32,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 119.9,
+        "coverage_days": 360
+      },
+      "2004": {
+        "tavg_c": 10.46,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 117.1,
+        "coverage_days": 356
+      },
+      "2005": {
+        "tavg_c": 9.05,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 99.1,
+        "coverage_days": 329
+      },
+      "2006": {
+        "tavg_c": 9.86,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 159.0,
+        "coverage_days": 323
+      },
+      "2007": {
+        "tavg_c": 12.5,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 84.8,
+        "coverage_days": 302
+      },
+      "2008": {
+        "tavg_c": 10.28,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 105.9,
+        "coverage_days": 365
+      },
+      "2009": {
+        "tavg_c": 9.73,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 93.0,
+        "coverage_days": 358
+      },
+      "2010": {
+        "tavg_c": 9.33,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 86.9,
+        "coverage_days": 364
+      },
+      "2011": {
+        "tavg_c": 9.58,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 88.1,
+        "coverage_days": 361
+      },
+      "2012": {
+        "tavg_c": 9.3,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 112.0,
+        "coverage_days": 366
+      },
+      "2014": {
+        "tavg_c": 10.91,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 118.1,
+        "coverage_days": 365
+      },
+      "2015": {
+        "tavg_c": 10.83,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 93.0,
+        "coverage_days": 365
+      },
+      "2016": {
+        "tavg_c": 10.55,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 83.1,
+        "coverage_days": 366
+      },
+      "2017": {
+        "tavg_c": 10.75,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 146.1,
+        "coverage_days": 365
+      },
+      "2018": {
+        "tavg_c": 10.26,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 120.9,
+        "coverage_days": 365
+      },
+      "2019": {
+        "tavg_c": 11.15,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 93.0,
+        "coverage_days": 365
+      },
+      "2020": {
+        "tavg_c": 10.88,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 125.0,
+        "coverage_days": 366
+      },
+      "2021": {
+        "tavg_c": 11.15,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 118.1,
+        "coverage_days": 362
+      },
+      "2022": {
+        "tavg_c": 10.38,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 136.9,
+        "coverage_days": 365
+      },
+      "2023": {
+        "tavg_c": 11.43,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 119.9,
+        "coverage_days": 365
+      },
+      "2024": {
+        "tavg_c": 11.96,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 126.0,
+        "coverage_days": 353
+      },
+      "2025": {
+        "tavg_c": 11.39,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 187.0,
+        "coverage_days": 357
+      },
+      "2026": {
+        "tavg_c": 13.84,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 0.8,
+        "coverage_days": 265
+      }
+    }
+  },
+  "KNM00047058": {
+    "name": "Pyongyang Intl",
+    "lat": 39.224,
+    "lon": 125.67,
+    "elev_m": 35.7,
+    "first_year": 1950,
+    "last_year": 2025,
+    "july_2024_daily_prcp": [
+      {
+        "day": 6,
+        "prcp_mm": 31.0
+      },
+      {
+        "day": 17,
+        "prcp_mm": 42.9
+      },
+      {
+        "day": 18,
+        "prcp_mm": 16.0
+      },
+      {
+        "day": 22,
+        "prcp_mm": 47.0
+      },
+      {
+        "day": 24,
+        "prcp_mm": 0.0
+      },
+      {
+        "day": 26,
+        "prcp_mm": 7.9
+      },
+      {
+        "day": 27,
+        "prcp_mm": 17.0
+      },
+      {
+        "day": 28,
+        "prcp_mm": 0.0
+      },
+      {
+        "day": 29,
+        "prcp_mm": 40.9
+      }
+    ],
+    "annual": {
+      "1958": {
+        "tavg_c": 9.96,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 37.1,
+        "coverage_days": 237
+      },
+      "1959": {
+        "tavg_c": 10.98,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 160.3,
+        "coverage_days": 341
+      },
+      "1960": {
+        "tavg_c": 10.57,
+        "prcp_mm": 693.7,
+        "max_daily_prcp_mm": 103.1,
+        "coverage_days": 341
+      },
+      "1961": {
+        "tavg_c": 10.71,
+        "prcp_mm": 686.1,
+        "max_daily_prcp_mm": 119.1,
+        "coverage_days": 365
+      },
+      "1962": {
+        "tavg_c": 9.93,
+        "prcp_mm": 856.4,
+        "max_daily_prcp_mm": 178.1,
+        "coverage_days": 365
+      },
+      "1963": {
+        "tavg_c": 9.59,
+        "prcp_mm": 995.6,
+        "max_daily_prcp_mm": 149.1,
+        "coverage_days": 365
+      },
+      "1964": {
+        "tavg_c": 10.13,
+        "prcp_mm": 1427.8,
+        "max_daily_prcp_mm": 214.9,
+        "coverage_days": 366
+      },
+      "1965": {
+        "tavg_c": 9.54,
+        "prcp_mm": 856.5,
+        "max_daily_prcp_mm": 87.1,
+        "coverage_days": 361
+      },
+      "1966": {
+        "tavg_c": 9.72,
+        "prcp_mm": 884.6,
+        "max_daily_prcp_mm": 133.1,
+        "coverage_days": 365
+      },
+      "1967": {
+        "tavg_c": 9.49,
+        "prcp_mm": 694.5,
+        "max_daily_prcp_mm": 180.1,
+        "coverage_days": 356
+      },
+      "1968": {
+        "tavg_c": 9.91,
+        "prcp_mm": 420.3,
+        "max_daily_prcp_mm": 120.4,
+        "coverage_days": 363
+      },
+      "1969": {
+        "tavg_c": 9.14,
+        "prcp_mm": 864.6,
+        "max_daily_prcp_mm": 223.0,
+        "coverage_days": 363
+      },
+      "1970": {
+        "tavg_c": 9.55,
+        "prcp_mm": 570.0,
+        "max_daily_prcp_mm": 70.1,
+        "coverage_days": 365
+      },
+      "1971": {
+        "tavg_c": 10.89,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 124.0,
+        "coverage_days": 243
+      },
+      "1973": {
+        "tavg_c": 10.25,
+        "prcp_mm": 344.8,
+        "max_daily_prcp_mm": 51.1,
+        "coverage_days": 364
+      },
+      "1974": {
+        "tavg_c": 9.64,
+        "prcp_mm": 0.9,
+        "max_daily_prcp_mm": 0.3,
+        "coverage_days": 353
+      },
+      "1975": {
+        "tavg_c": 10.6,
+        "prcp_mm": 3.9,
+        "max_daily_prcp_mm": 0.5,
+        "coverage_days": 364
+      },
+      "1976": {
+        "tavg_c": 9.46,
+        "prcp_mm": 4.5,
+        "max_daily_prcp_mm": 0.8,
+        "coverage_days": 366
+      },
+      "1977": {
+        "tavg_c": 10.16,
+        "prcp_mm": 3.2,
+        "max_daily_prcp_mm": 0.8,
+        "coverage_days": 365
+      },
+      "1978": {
+        "tavg_c": 10.26,
+        "prcp_mm": 2.0,
+        "max_daily_prcp_mm": 0.8,
+        "coverage_days": 365
+      },
+      "1979": {
+        "tavg_c": 10.6,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 0.3,
+        "coverage_days": 365
+      },
+      "1980": {
+        "tavg_c": 9.03,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 0,
+        "coverage_days": 366
+      },
+      "1981": {
+        "tavg_c": 9.25,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 0,
+        "coverage_days": 365
+      },
+      "1982": {
+        "tavg_c": 10.43,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 103.9,
+        "coverage_days": 365
+      },
+      "1983": {
+        "tavg_c": 10.38,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 135.9,
+        "coverage_days": 365
+      },
+      "1984": {
+        "tavg_c": 9.56,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 65.0,
+        "coverage_days": 366
+      },
+      "1985": {
+        "tavg_c": 9.49,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 81.3,
+        "coverage_days": 365
+      },
+      "1986": {
+        "tavg_c": 9.49,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 99.8,
+        "coverage_days": 365
+      },
+      "1987": {
+        "tavg_c": 9.95,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 72.9,
+        "coverage_days": 365
+      },
+      "1988": {
+        "tavg_c": 10.12,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 73.9,
+        "coverage_days": 366
+      },
+      "1989": {
+        "tavg_c": 11.06,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 77.0,
+        "coverage_days": 365
+      },
+      "1990": {
+        "tavg_c": 10.74,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 98.0,
+        "coverage_days": 364
+      },
+      "1991": {
+        "tavg_c": 10.47,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 10.9,
+        "coverage_days": 361
+      },
+      "1992": {
+        "tavg_c": 10.49,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 17.8,
+        "coverage_days": 366
+      },
+      "1993": {
+        "tavg_c": 10.19,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 54.1,
+        "coverage_days": 365
+      },
+      "1994": {
+        "tavg_c": 11.51,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 117.1,
+        "coverage_days": 365
+      },
+      "1995": {
+        "tavg_c": 10.63,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 99.1,
+        "coverage_days": 365
+      },
+      "1996": {
+        "tavg_c": 10.43,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 156.0,
+        "coverage_days": 366
+      },
+      "1997": {
+        "tavg_c": 10.87,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 104.9,
+        "coverage_days": 365
+      },
+      "1998": {
+        "tavg_c": 11.91,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 77.0,
+        "coverage_days": 361
+      },
+      "1999": {
+        "tavg_c": 11.41,
+        "prcp_mm": 699.6,
+        "max_daily_prcp_mm": 112.0,
+        "coverage_days": 363
+      },
+      "2000": {
+        "tavg_c": 10.61,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 42.9,
+        "coverage_days": 361
+      },
+      "2001": {
+        "tavg_c": 10.59,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 58.2,
+        "coverage_days": 365
+      },
+      "2002": {
+        "tavg_c": 10.77,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 69.9,
+        "coverage_days": 353
+      },
+      "2003": {
+        "tavg_c": 11.11,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 115.1,
+        "coverage_days": 362
+      },
+      "2004": {
+        "tavg_c": 11.47,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 149.9,
+        "coverage_days": 356
+      },
+      "2005": {
+        "tavg_c": 9.97,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 65.3,
+        "coverage_days": 329
+      },
+      "2006": {
+        "tavg_c": 10.97,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 68.1,
+        "coverage_days": 324
+      },
+      "2007": {
+        "tavg_c": 13.21,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 205.0,
+        "coverage_days": 302
+      },
+      "2008": {
+        "tavg_c": 11.33,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 86.9,
+        "coverage_days": 365
+      },
+      "2009": {
+        "tavg_c": 11.12,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 232.9,
+        "coverage_days": 357
+      },
+      "2010": {
+        "tavg_c": 10.62,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 207.0,
+        "coverage_days": 364
+      },
+      "2011": {
+        "tavg_c": 10.68,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 85.1,
+        "coverage_days": 361
+      },
+      "2012": {
+        "tavg_c": 10.37,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 140.0,
+        "coverage_days": 366
+      },
+      "2013": {
+        "tavg_c": 10.83,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 144.0,
+        "coverage_days": 365
+      },
+      "2014": {
+        "tavg_c": 11.79,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 115.1,
+        "coverage_days": 365
+      },
+      "2015": {
+        "tavg_c": 11.69,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 130.0,
+        "coverage_days": 365
+      },
+      "2016": {
+        "tavg_c": 11.64,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 59.9,
+        "coverage_days": 366
+      },
+      "2017": {
+        "tavg_c": 11.24,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 128.0,
+        "coverage_days": 365
+      },
+      "2018": {
+        "tavg_c": 11.09,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 111.0,
+        "coverage_days": 365
+      },
+      "2019": {
+        "tavg_c": 11.92,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 108.0,
+        "coverage_days": 365
+      },
+      "2020": {
+        "tavg_c": 11.56,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 150.1,
+        "coverage_days": 366
+      },
+      "2021": {
+        "tavg_c": 11.9,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 56.9,
+        "coverage_days": 362
+      },
+      "2022": {
+        "tavg_c": 11.05,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 178.1,
+        "coverage_days": 365
+      },
+      "2023": {
+        "tavg_c": 12.28,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 98.0,
+        "coverage_days": 365
+      },
+      "2024": {
+        "tavg_c": 13.06,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 89.9,
+        "coverage_days": 353
+      },
+      "2025": {
+        "tavg_c": 12.8,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 151.9,
+        "coverage_days": 236
+      }
+    }
+  },
+  "KNM00047055": {
+    "name": "Wonsan",
+    "lat": 39.183,
+    "lon": 127.433,
+    "elev_m": 36.0,
+    "first_year": 1957,
+    "last_year": 2026,
+    "july_2024_daily_prcp": [
+      {
+        "day": 2,
+        "prcp_mm": 55.9
+      },
+      {
+        "day": 3,
+        "prcp_mm": 30.0
+      },
+      {
+        "day": 6,
+        "prcp_mm": 33.0
+      },
+      {
+        "day": 15,
+        "prcp_mm": 1.0
+      },
+      {
+        "day": 16,
+        "prcp_mm": 4.3
+      },
+      {
+        "day": 17,
+        "prcp_mm": 27.9
+      },
+      {
+        "day": 18,
+        "prcp_mm": 21.1
+      },
+      {
+        "day": 26,
+        "prcp_mm": 13.0
+      },
+      {
+        "day": 27,
+        "prcp_mm": 15.0
+      },
+      {
+        "day": 28,
+        "prcp_mm": 13.0
+      },
+      {
+        "day": 29,
+        "prcp_mm": 4.6
+      }
+    ],
+    "annual": {
+      "1958": {
+        "tavg_c": 11.35,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 91.9,
+        "coverage_days": 261
+      },
+      "1959": {
+        "tavg_c": 12.21,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 202.9,
+        "coverage_days": 338
+      },
+      "1960": {
+        "tavg_c": 11.7,
+        "prcp_mm": 956.5,
+        "max_daily_prcp_mm": 93.0,
+        "coverage_days": 345
+      },
+      "1961": {
+        "tavg_c": 11.9,
+        "prcp_mm": 822.2,
+        "max_daily_prcp_mm": 70.4,
+        "coverage_days": 365
+      },
+      "1962": {
+        "tavg_c": 10.88,
+        "prcp_mm": 1128.9,
+        "max_daily_prcp_mm": 119.9,
+        "coverage_days": 363
+      },
+      "1963": {
+        "tavg_c": 10.35,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 97.0,
+        "coverage_days": 361
+      },
+      "1964": {
+        "tavg_c": 10.32,
+        "prcp_mm": 1058.9,
+        "max_daily_prcp_mm": 85.1,
+        "coverage_days": 365
+      },
+      "1965": {
+        "tavg_c": 10.58,
+        "prcp_mm": 841.3,
+        "max_daily_prcp_mm": 94.0,
+        "coverage_days": 353
+      },
+      "1966": {
+        "tavg_c": 10.39,
+        "prcp_mm": 1253.4,
+        "max_daily_prcp_mm": 140.0,
+        "coverage_days": 362
+      },
+      "1967": {
+        "tavg_c": 10.11,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 80.0,
+        "coverage_days": 350
+      },
+      "1968": {
+        "tavg_c": 10.41,
+        "prcp_mm": 930.8,
+        "max_daily_prcp_mm": 119.1,
+        "coverage_days": 362
+      },
+      "1969": {
+        "tavg_c": 10.21,
+        "prcp_mm": 858.2,
+        "max_daily_prcp_mm": 108.0,
+        "coverage_days": 364
+      },
+      "1970": {
+        "tavg_c": 10.18,
+        "prcp_mm": 1223.2,
+        "max_daily_prcp_mm": 140.0,
+        "coverage_days": 364
+      },
+      "1971": {
+        "tavg_c": 10.98,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 89.9,
+        "coverage_days": 243
+      },
+      "1973": {
+        "tavg_c": 10.92,
+        "prcp_mm": 302.1,
+        "max_daily_prcp_mm": 67.1,
+        "coverage_days": 363
+      },
+      "1974": {
+        "tavg_c": 9.75,
+        "prcp_mm": 3.0,
+        "max_daily_prcp_mm": 0.5,
+        "coverage_days": 360
+      },
+      "1975": {
+        "tavg_c": 10.95,
+        "prcp_mm": 2.0,
+        "max_daily_prcp_mm": 0.5,
+        "coverage_days": 364
+      },
+      "1976": {
+        "tavg_c": 10.27,
+        "prcp_mm": 3.4,
+        "max_daily_prcp_mm": 0.8,
+        "coverage_days": 366
+      },
+      "1977": {
+        "tavg_c": 10.81,
+        "prcp_mm": 3.0,
+        "max_daily_prcp_mm": 0.8,
+        "coverage_days": 365
+      },
+      "1978": {
+        "tavg_c": 11.66,
+        "prcp_mm": 1.5,
+        "max_daily_prcp_mm": 0.5,
+        "coverage_days": 365
+      },
+      "1979": {
+        "tavg_c": 11.63,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 0.5,
+        "coverage_days": 365
+      },
+      "1980": {
+        "tavg_c": 10.32,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 0,
+        "coverage_days": 366
+      },
+      "1981": {
+        "tavg_c": 10.56,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 0,
+        "coverage_days": 365
+      },
+      "1982": {
+        "tavg_c": 11.26,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 150.1,
+        "coverage_days": 365
+      },
+      "1983": {
+        "tavg_c": 10.89,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 159.0,
+        "coverage_days": 365
+      },
+      "1984": {
+        "tavg_c": 10.2,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 246.9,
+        "coverage_days": 366
+      },
+      "1985": {
+        "tavg_c": 10.58,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 83.1,
+        "coverage_days": 365
+      },
+      "1986": {
+        "tavg_c": 9.98,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 250.2,
+        "coverage_days": 365
+      },
+      "1987": {
+        "tavg_c": 11.24,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 69.1,
+        "coverage_days": 365
+      },
+      "1988": {
+        "tavg_c": 11.05,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 222.0,
+        "coverage_days": 366
+      },
+      "1989": {
+        "tavg_c": 11.64,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 112.0,
+        "coverage_days": 365
+      },
+      "1990": {
+        "tavg_c": 11.53,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 54.1,
+        "coverage_days": 364
+      },
+      "1991": {
+        "tavg_c": 11.09,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 45.0,
+        "coverage_days": 360
+      },
+      "1992": {
+        "tavg_c": 11.21,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 100.1,
+        "coverage_days": 366
+      },
+      "1993": {
+        "tavg_c": 10.89,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 170.9,
+        "coverage_days": 365
+      },
+      "1994": {
+        "tavg_c": 12.25,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 181.1,
+        "coverage_days": 365
+      },
+      "1995": {
+        "tavg_c": 11.41,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 149.1,
+        "coverage_days": 365
+      },
+      "1996": {
+        "tavg_c": 10.94,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 182.9,
+        "coverage_days": 363
+      },
+      "1997": {
+        "tavg_c": 11.64,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 215.9,
+        "coverage_days": 365
+      },
+      "1998": {
+        "tavg_c": 11.87,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 130.0,
+        "coverage_days": 361
+      },
+      "1999": {
+        "tavg_c": 12.07,
+        "prcp_mm": 1242.9,
+        "max_daily_prcp_mm": 200.9,
+        "coverage_days": 363
+      },
+      "2000": {
+        "tavg_c": 11.24,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 93.0,
+        "coverage_days": 359
+      },
+      "2001": {
+        "tavg_c": 11.66,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 83.1,
+        "coverage_days": 365
+      },
+      "2002": {
+        "tavg_c": 11.11,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 275.1,
+        "coverage_days": 354
+      },
+      "2003": {
+        "tavg_c": 11.43,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 109.0,
+        "coverage_days": 361
+      },
+      "2004": {
+        "tavg_c": 12.43,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 135.9,
+        "coverage_days": 356
+      },
+      "2005": {
+        "tavg_c": 11.39,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 93.0,
+        "coverage_days": 329
+      },
+      "2006": {
+        "tavg_c": 11.72,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 127.0,
+        "coverage_days": 320
+      },
+      "2007": {
+        "tavg_c": 13.96,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 112.0,
+        "coverage_days": 302
+      },
+      "2008": {
+        "tavg_c": 12.03,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 131.1,
+        "coverage_days": 365
+      },
+      "2009": {
+        "tavg_c": 11.44,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 175.0,
+        "coverage_days": 357
+      },
+      "2010": {
+        "tavg_c": 11.11,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 233.9,
+        "coverage_days": 364
+      },
+      "2011": {
+        "tavg_c": 11.04,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 109.0,
+        "coverage_days": 361
+      },
+      "2012": {
+        "tavg_c": 10.78,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 167.9,
+        "coverage_days": 366
+      },
+      "2013": {
+        "tavg_c": 11.55,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 170.9,
+        "coverage_days": 365
+      },
+      "2014": {
+        "tavg_c": 12.42,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 102.1,
+        "coverage_days": 365
+      },
+      "2015": {
+        "tavg_c": 12.31,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 121.9,
+        "coverage_days": 365
+      },
+      "2016": {
+        "tavg_c": 12.24,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 173.0,
+        "coverage_days": 366
+      },
+      "2017": {
+        "tavg_c": 12.55,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 160.0,
+        "coverage_days": 365
+      },
+      "2018": {
+        "tavg_c": 12.05,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 172.0,
+        "coverage_days": 365
+      },
+      "2019": {
+        "tavg_c": 13.15,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 89.9,
+        "coverage_days": 365
+      },
+      "2020": {
+        "tavg_c": 12.65,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 192.0,
+        "coverage_days": 366
+      },
+      "2021": {
+        "tavg_c": 12.49,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 119.9,
+        "coverage_days": 362
+      },
+      "2022": {
+        "tavg_c": 12.27,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 141.7,
+        "coverage_days": 365
+      },
+      "2023": {
+        "tavg_c": 13.02,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 150.9,
+        "coverage_days": 365
+      },
+      "2024": {
+        "tavg_c": 13.51,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 81.0,
+        "coverage_days": 353
+      },
+      "2025": {
+        "tavg_c": 13.02,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 164.0,
+        "coverage_days": 357
+      },
+      "2026": {
+        "tavg_c": 14.6,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 21.2,
+        "coverage_days": 265
+      }
+    }
+  },
+  "KNM00047069": {
+    "name": "Haeju",
+    "lat": 38.033,
+    "lon": 125.7,
+    "elev_m": 81.0,
+    "first_year": 1957,
+    "last_year": 2025,
+    "july_2024_daily_prcp": [
+      {
+        "day": 2,
+        "prcp_mm": 31.5
+      },
+      {
+        "day": 3,
+        "prcp_mm": 4.1
+      },
+      {
+        "day": 6,
+        "prcp_mm": 35.1
+      },
+      {
+        "day": 10,
+        "prcp_mm": 11.9
+      },
+      {
+        "day": 17,
+        "prcp_mm": 70.1
+      },
+      {
+        "day": 18,
+        "prcp_mm": 11.9
+      },
+      {
+        "day": 21,
+        "prcp_mm": 3.0
+      },
+      {
+        "day": 22,
+        "prcp_mm": 77.0
+      },
+      {
+        "day": 23,
+        "prcp_mm": 1.0
+      },
+      {
+        "day": 24,
+        "prcp_mm": 4.1
+      },
+      {
+        "day": 25,
+        "prcp_mm": 1.0
+      },
+      {
+        "day": 26,
+        "prcp_mm": 1.5
+      },
+      {
+        "day": 27,
+        "prcp_mm": 5.1
+      },
+      {
+        "day": 29,
+        "prcp_mm": 0.8
+      },
+      {
+        "day": 31,
+        "prcp_mm": 0.8
+      }
+    ],
+    "annual": {
+      "1958": {
+        "tavg_c": 11.36,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 110.5,
+        "coverage_days": 257
+      },
+      "1959": {
+        "tavg_c": 11.8,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 162.1,
+        "coverage_days": 347
+      },
+      "1960": {
+        "tavg_c": 11.36,
+        "prcp_mm": 606.4,
+        "max_daily_prcp_mm": 86.1,
+        "coverage_days": 345
+      },
+      "1961": {
+        "tavg_c": 11.62,
+        "prcp_mm": 906.7,
+        "max_daily_prcp_mm": 83.1,
+        "coverage_days": 365
+      },
+      "1962": {
+        "tavg_c": 10.9,
+        "prcp_mm": 847.3,
+        "max_daily_prcp_mm": 148.1,
+        "coverage_days": 364
+      },
+      "1963": {
+        "tavg_c": 10.51,
+        "prcp_mm": 699.4,
+        "max_daily_prcp_mm": 69.1,
+        "coverage_days": 365
+      },
+      "1964": {
+        "tavg_c": 11.32,
+        "prcp_mm": 679.0,
+        "max_daily_prcp_mm": 59.9,
+        "coverage_days": 365
+      },
+      "1965": {
+        "tavg_c": 10.31,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 130.0,
+        "coverage_days": 345
+      },
+      "1966": {
+        "tavg_c": 10.86,
+        "prcp_mm": 1450.1,
+        "max_daily_prcp_mm": 329.9,
+        "coverage_days": 359
+      },
+      "1967": {
+        "tavg_c": 10.71,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 110.0,
+        "coverage_days": 338
+      },
+      "1968": {
+        "tavg_c": 10.96,
+        "prcp_mm": 571.2,
+        "max_daily_prcp_mm": 53.1,
+        "coverage_days": 346
+      },
+      "1969": {
+        "tavg_c": 9.82,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 182.1,
+        "coverage_days": 363
+      },
+      "1970": {
+        "tavg_c": 10.27,
+        "prcp_mm": 932.1,
+        "max_daily_prcp_mm": 85.1,
+        "coverage_days": 365
+      },
+      "1971": {
+        "tavg_c": 10.96,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 116.1,
+        "coverage_days": 243
+      },
+      "1973": {
+        "tavg_c": 11.24,
+        "prcp_mm": 179.1,
+        "max_daily_prcp_mm": 62.0,
+        "coverage_days": 363
+      },
+      "1974": {
+        "tavg_c": 10.15,
+        "prcp_mm": 3.7,
+        "max_daily_prcp_mm": 0.5,
+        "coverage_days": 365
+      },
+      "1975": {
+        "tavg_c": 11.55,
+        "prcp_mm": 1.7,
+        "max_daily_prcp_mm": 0.5,
+        "coverage_days": 364
+      },
+      "1976": {
+        "tavg_c": 10.37,
+        "prcp_mm": 3.6,
+        "max_daily_prcp_mm": 0.5,
+        "coverage_days": 366
+      },
+      "1977": {
+        "tavg_c": 11.09,
+        "prcp_mm": 3.1,
+        "max_daily_prcp_mm": 0.5,
+        "coverage_days": 365
+      },
+      "1978": {
+        "tavg_c": 11.31,
+        "prcp_mm": 1.9,
+        "max_daily_prcp_mm": 0.8,
+        "coverage_days": 365
+      },
+      "1979": {
+        "tavg_c": 11.42,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 0.8,
+        "coverage_days": 365
+      },
+      "1980": {
+        "tavg_c": 9.87,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 0,
+        "coverage_days": 366
+      },
+      "1981": {
+        "tavg_c": 10.2,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 0,
+        "coverage_days": 365
+      },
+      "1982": {
+        "tavg_c": 11.5,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 205.0,
+        "coverage_days": 365
+      },
+      "1983": {
+        "tavg_c": 11.34,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 80.0,
+        "coverage_days": 365
+      },
+      "1984": {
+        "tavg_c": 10.54,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 145.0,
+        "coverage_days": 366
+      },
+      "1985": {
+        "tavg_c": 10.65,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 108.0,
+        "coverage_days": 365
+      },
+      "1986": {
+        "tavg_c": 10.44,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 56.9,
+        "coverage_days": 365
+      },
+      "1987": {
+        "tavg_c": 10.96,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 113.3,
+        "coverage_days": 365
+      },
+      "1988": {
+        "tavg_c": 11.27,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 82.3,
+        "coverage_days": 366
+      },
+      "1989": {
+        "tavg_c": 12.07,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 73.9,
+        "coverage_days": 365
+      },
+      "1990": {
+        "tavg_c": 11.58,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 39.9,
+        "coverage_days": 364
+      },
+      "1991": {
+        "tavg_c": 11.38,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 11.9,
+        "coverage_days": 361
+      },
+      "1992": {
+        "tavg_c": 11.56,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 69.1,
+        "coverage_days": 366
+      },
+      "1993": {
+        "tavg_c": 11.0,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 79.0,
+        "coverage_days": 365
+      },
+      "1994": {
+        "tavg_c": 12.08,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 132.1,
+        "coverage_days": 365
+      },
+      "1995": {
+        "tavg_c": 11.17,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 140.0,
+        "coverage_days": 365
+      },
+      "1996": {
+        "tavg_c": 11.05,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 223.0,
+        "coverage_days": 365
+      },
+      "1997": {
+        "tavg_c": 11.6,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 115.1,
+        "coverage_days": 365
+      },
+      "1998": {
+        "tavg_c": 12.57,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 150.1,
+        "coverage_days": 361
+      },
+      "1999": {
+        "tavg_c": 12.26,
+        "prcp_mm": 786.5,
+        "max_daily_prcp_mm": 89.9,
+        "coverage_days": 363
+      },
+      "2000": {
+        "tavg_c": 11.21,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 36.1,
+        "coverage_days": 359
+      },
+      "2001": {
+        "tavg_c": 11.7,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 98.0,
+        "coverage_days": 365
+      },
+      "2002": {
+        "tavg_c": 11.58,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 144.0,
+        "coverage_days": 353
+      },
+      "2003": {
+        "tavg_c": 11.83,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 173.2,
+        "coverage_days": 362
+      },
+      "2004": {
+        "tavg_c": 12.13,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 136.9,
+        "coverage_days": 356
+      },
+      "2005": {
+        "tavg_c": 10.72,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 108.0,
+        "coverage_days": 329
+      },
+      "2006": {
+        "tavg_c": 11.8,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 71.1,
+        "coverage_days": 322
+      },
+      "2007": {
+        "tavg_c": 14.3,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 126.0,
+        "coverage_days": 301
+      },
+      "2008": {
+        "tavg_c": 12.14,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 106.9,
+        "coverage_days": 365
+      },
+      "2009": {
+        "tavg_c": 11.97,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 93.2,
+        "coverage_days": 358
+      },
+      "2010": {
+        "tavg_c": 11.54,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 86.1,
+        "coverage_days": 364
+      },
+      "2011": {
+        "tavg_c": 11.35,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 120.1,
+        "coverage_days": 361
+      },
+      "2012": {
+        "tavg_c": 11.51,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 89.9,
+        "coverage_days": 366
+      },
+      "2013": {
+        "tavg_c": 11.55,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 135.9,
+        "coverage_days": 365
+      },
+      "2014": {
+        "tavg_c": 12.55,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 63.0,
+        "coverage_days": 365
+      },
+      "2015": {
+        "tavg_c": 12.62,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 204.0,
+        "coverage_days": 365
+      },
+      "2016": {
+        "tavg_c": 12.81,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 84.1,
+        "coverage_days": 366
+      },
+      "2017": {
+        "tavg_c": 12.31,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 195.1,
+        "coverage_days": 365
+      },
+      "2018": {
+        "tavg_c": 12.05,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 154.9,
+        "coverage_days": 365
+      },
+      "2019": {
+        "tavg_c": 12.96,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 83.1,
+        "coverage_days": 365
+      },
+      "2020": {
+        "tavg_c": 12.51,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 136.9,
+        "coverage_days": 366
+      },
+      "2021": {
+        "tavg_c": 13.04,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 70.1,
+        "coverage_days": 362
+      },
+      "2022": {
+        "tavg_c": 12.14,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 148.1,
+        "coverage_days": 365
+      },
+      "2023": {
+        "tavg_c": 13.19,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 122.9,
+        "coverage_days": 365
+      },
+      "2024": {
+        "tavg_c": 13.96,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 79.0,
+        "coverage_days": 353
+      },
+      "2025": {
+        "tavg_c": 13.02,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 115.1,
+        "coverage_days": 236
+      }
+    }
+  },
+  "KNM00047014": {
+    "name": "Chunggang",
+    "lat": 41.783,
+    "lon": 126.883,
+    "elev_m": 331.0,
+    "first_year": 1957,
+    "last_year": 2026,
+    "july_2024_daily_prcp": [
+      {
+        "day": 1,
+        "prcp_mm": 0.5
+      },
+      {
+        "day": 5,
+        "prcp_mm": 0.8
+      },
+      {
+        "day": 6,
+        "prcp_mm": 25.9
+      },
+      {
+        "day": 8,
+        "prcp_mm": 9.9
+      },
+      {
+        "day": 23,
+        "prcp_mm": 8.1
+      },
+      {
+        "day": 24,
+        "prcp_mm": 18.5
+      },
+      {
+        "day": 25,
+        "prcp_mm": 38.1
+      },
+      {
+        "day": 26,
+        "prcp_mm": 3.3
+      },
+      {
+        "day": 27,
+        "prcp_mm": 113.0
+      },
+      {
+        "day": 28,
+        "prcp_mm": 110.0
+      },
+      {
+        "day": 29,
+        "prcp_mm": 43.9
+      }
+    ],
+    "annual": {
+      "1958": {
+        "tavg_c": 3.86,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 54.1,
+        "coverage_days": 238
+      },
+      "1959": {
+        "tavg_c": 6.14,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 46.0,
+        "coverage_days": 334
+      },
+      "1960": {
+        "tavg_c": 5.42,
+        "prcp_mm": 678.5,
+        "max_daily_prcp_mm": 80.0,
+        "coverage_days": 338
+      },
+      "1961": {
+        "tavg_c": 5.02,
+        "prcp_mm": 455.1,
+        "max_daily_prcp_mm": 47.0,
+        "coverage_days": 360
+      },
+      "1962": {
+        "tavg_c": 4.52,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 31.0,
+        "coverage_days": 357
+      },
+      "1963": {
+        "tavg_c": 3.59,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 15.0,
+        "coverage_days": 338
+      },
+      "1964": {
+        "tavg_c": 3.4,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 135.9,
+        "coverage_days": 334
+      },
+      "1965": {
+        "tavg_c": 4.15,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 50.0,
+        "coverage_days": 355
+      },
+      "1966": {
+        "tavg_c": 4.61,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 35.1,
+        "coverage_days": 360
+      },
+      "1967": {
+        "tavg_c": 4.12,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 55.9,
+        "coverage_days": 353
+      },
+      "1968": {
+        "tavg_c": 4.78,
+        "prcp_mm": 417.7,
+        "max_daily_prcp_mm": 45.0,
+        "coverage_days": 354
+      },
+      "1969": {
+        "tavg_c": 3.82,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 53.1,
+        "coverage_days": 344
+      },
+      "1970": {
+        "tavg_c": 4.58,
+        "prcp_mm": 402.8,
+        "max_daily_prcp_mm": 110.0,
+        "coverage_days": 363
+      },
+      "1971": {
+        "tavg_c": 6.3,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 114.0,
+        "coverage_days": 243
+      },
+      "1973": {
+        "tavg_c": 5.34,
+        "prcp_mm": 348.0,
+        "max_daily_prcp_mm": 55.1,
+        "coverage_days": 362
+      },
+      "1974": {
+        "tavg_c": 4.73,
+        "prcp_mm": 3.2,
+        "max_daily_prcp_mm": 0.5,
+        "coverage_days": 365
+      },
+      "1975": {
+        "tavg_c": 5.64,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 0.5,
+        "coverage_days": 364
+      },
+      "1976": {
+        "tavg_c": 4.54,
+        "prcp_mm": 3.8,
+        "max_daily_prcp_mm": 0.8,
+        "coverage_days": 366
+      },
+      "1977": {
+        "tavg_c": 5.45,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 0.8,
+        "coverage_days": 365
+      },
+      "1978": {
+        "tavg_c": 5.04,
+        "prcp_mm": 3.8,
+        "max_daily_prcp_mm": 0.5,
+        "coverage_days": 365
+      },
+      "1979": {
+        "tavg_c": 5.45,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 0.3,
+        "coverage_days": 365
+      },
+      "1980": {
+        "tavg_c": 4.73,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 0.8,
+        "coverage_days": 366
+      },
+      "1981": {
+        "tavg_c": 4.84,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 0,
+        "coverage_days": 364
+      },
+      "1982": {
+        "tavg_c": 5.61,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 93.0,
+        "coverage_days": 365
+      },
+      "1983": {
+        "tavg_c": 5.4,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 30.0,
+        "coverage_days": 365
+      },
+      "1984": {
+        "tavg_c": 4.77,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 22.1,
+        "coverage_days": 366
+      },
+      "1985": {
+        "tavg_c": 4.67,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 68.1,
+        "coverage_days": 365
+      },
+      "1986": {
+        "tavg_c": 5.02,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 82.0,
+        "coverage_days": 365
+      },
+      "1987": {
+        "tavg_c": 5.2,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 43.9,
+        "coverage_days": 365
+      },
+      "1988": {
+        "tavg_c": 5.76,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 51.1,
+        "coverage_days": 366
+      },
+      "1989": {
+        "tavg_c": 6.2,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 45.0,
+        "coverage_days": 365
+      },
+      "1990": {
+        "tavg_c": 6.24,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 55.9,
+        "coverage_days": 354
+      },
+      "1991": {
+        "tavg_c": 5.09,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 91.9,
+        "coverage_days": 355
+      },
+      "1992": {
+        "tavg_c": 5.62,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 16.0,
+        "coverage_days": 358
+      },
+      "1993": {
+        "tavg_c": 5.24,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 100.6,
+        "coverage_days": 365
+      },
+      "1994": {
+        "tavg_c": 5.96,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 42.9,
+        "coverage_days": 365
+      },
+      "1995": {
+        "tavg_c": 5.47,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 115.1,
+        "coverage_days": 360
+      },
+      "1996": {
+        "tavg_c": 5.26,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 36.1,
+        "coverage_days": 308
+      },
+      "2000": {
+        "tavg_c": 8.31,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 27.9,
+        "coverage_days": 228
+      },
+      "2001": {
+        "tavg_c": 5.7,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 82.8,
+        "coverage_days": 297
+      },
+      "2002": {
+        "tavg_c": 5.14,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 21.1,
+        "coverage_days": 310
+      },
+      "2003": {
+        "tavg_c": 5.83,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 66.8,
+        "coverage_days": 343
+      },
+      "2004": {
+        "tavg_c": 5.02,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 42.9,
+        "coverage_days": 310
+      },
+      "2005": {
+        "tavg_c": 4.41,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 52.8,
+        "coverage_days": 303
+      },
+      "2006": {
+        "tavg_c": 5.12,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 65.8,
+        "coverage_days": 300
+      },
+      "2007": {
+        "tavg_c": 8.72,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 94.2,
+        "coverage_days": 292
+      },
+      "2008": {
+        "tavg_c": 6.06,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 53.8,
+        "coverage_days": 363
+      },
+      "2009": {
+        "tavg_c": 5.25,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 32.8,
+        "coverage_days": 358
+      },
+      "2010": {
+        "tavg_c": 5.05,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 169.2,
+        "coverage_days": 363
+      },
+      "2011": {
+        "tavg_c": 4.99,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 74.9,
+        "coverage_days": 361
+      },
+      "2012": {
+        "tavg_c": 4.7,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 43.9,
+        "coverage_days": 366
+      },
+      "2013": {
+        "tavg_c": 4.91,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 61.0,
+        "coverage_days": 358
+      },
+      "2014": {
+        "tavg_c": 6.09,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 47.0,
+        "coverage_days": 364
+      },
+      "2015": {
+        "tavg_c": 5.91,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 104.9,
+        "coverage_days": 364
+      },
+      "2016": {
+        "tavg_c": 5.52,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 36.1,
+        "coverage_days": 366
+      },
+      "2017": {
+        "tavg_c": 5.77,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 50.0,
+        "coverage_days": 365
+      },
+      "2018": {
+        "tavg_c": 6.43,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 121.9,
+        "coverage_days": 365
+      },
+      "2019": {
+        "tavg_c": 6.81,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 40.9,
+        "coverage_days": 365
+      },
+      "2020": {
+        "tavg_c": 6.82,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 63.0,
+        "coverage_days": 366
+      },
+      "2021": {
+        "tavg_c": 6.96,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 52.6,
+        "coverage_days": 362
+      },
+      "2022": {
+        "tavg_c": 6.06,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 65.0,
+        "coverage_days": 365
+      },
+      "2023": {
+        "tavg_c": 7.38,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 93.0,
+        "coverage_days": 365
+      },
+      "2024": {
+        "tavg_c": 7.85,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 113.0,
+        "coverage_days": 353
+      },
+      "2025": {
+        "tavg_c": 6.99,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 110.0,
+        "coverage_days": 357
+      },
+      "2026": {
+        "tavg_c": 9.98,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 9.0,
+        "coverage_days": 265
+      }
+    }
+  },
+  "KNM00047025": {
+    "name": "Kimchaek",
+    "lat": 40.667,
+    "lon": 129.2,
+    "elev_m": 23.0,
+    "first_year": 1957,
+    "last_year": 2025,
+    "july_2024_daily_prcp": [],
+    "annual": {
+      "1958": {
+        "tavg_c": 9.1,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 100.1,
+        "coverage_days": 245
+      },
+      "1959": {
+        "tavg_c": 10.08,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 34.0,
+        "coverage_days": 337
+      },
+      "1960": {
+        "tavg_c": 10.02,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 47.0,
+        "coverage_days": 322
+      },
+      "1961": {
+        "tavg_c": 9.42,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 70.1,
+        "coverage_days": 363
+      },
+      "1962": {
+        "tavg_c": 8.6,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 124.0,
+        "coverage_days": 362
+      },
+      "1963": {
+        "tavg_c": 8.15,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 70.4,
+        "coverage_days": 364
+      },
+      "1964": {
+        "tavg_c": 8.79,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 63.0,
+        "coverage_days": 363
+      },
+      "1965": {
+        "tavg_c": 8.2,
+        "prcp_mm": 476.8,
+        "max_daily_prcp_mm": 68.1,
+        "coverage_days": 356
+      },
+      "1966": {
+        "tavg_c": 8.29,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 47.0,
+        "coverage_days": 364
+      },
+      "1967": {
+        "tavg_c": 8.03,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 30.0,
+        "coverage_days": 343
+      },
+      "1968": {
+        "tavg_c": 8.65,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 138.9,
+        "coverage_days": 350
+      },
+      "1969": {
+        "tavg_c": 8.05,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 55.1,
+        "coverage_days": 325
+      },
+      "1970": {
+        "tavg_c": 8.21,
+        "prcp_mm": 495.8,
+        "max_daily_prcp_mm": 134.9,
+        "coverage_days": 364
+      },
+      "1971": {
+        "tavg_c": 8.49,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 42.9,
+        "coverage_days": 243
+      },
+      "1973": {
+        "tavg_c": 9.15,
+        "prcp_mm": 225.7,
+        "max_daily_prcp_mm": 52.1,
+        "coverage_days": 364
+      },
+      "1974": {
+        "tavg_c": 7.97,
+        "prcp_mm": 3.2,
+        "max_daily_prcp_mm": 0.5,
+        "coverage_days": 365
+      },
+      "1975": {
+        "tavg_c": 9.35,
+        "prcp_mm": 4.8,
+        "max_daily_prcp_mm": 0.8,
+        "coverage_days": 364
+      },
+      "1976": {
+        "tavg_c": 8.74,
+        "prcp_mm": 4.4,
+        "max_daily_prcp_mm": 0.5,
+        "coverage_days": 366
+      },
+      "1977": {
+        "tavg_c": 8.73,
+        "prcp_mm": 1.4,
+        "max_daily_prcp_mm": 0.8,
+        "coverage_days": 365
+      },
+      "1978": {
+        "tavg_c": 9.54,
+        "prcp_mm": 5.2,
+        "max_daily_prcp_mm": 1.0,
+        "coverage_days": 365
+      },
+      "1979": {
+        "tavg_c": 9.8,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 0.5,
+        "coverage_days": 365
+      },
+      "1980": {
+        "tavg_c": 8.49,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 0,
+        "coverage_days": 366
+      },
+      "1981": {
+        "tavg_c": 8.21,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 0.5,
+        "coverage_days": 365
+      },
+      "1982": {
+        "tavg_c": 9.2,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 236.0,
+        "coverage_days": 365
+      },
+      "1983": {
+        "tavg_c": 8.67,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 55.9,
+        "coverage_days": 365
+      },
+      "1984": {
+        "tavg_c": 8.21,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 132.1,
+        "coverage_days": 366
+      },
+      "1985": {
+        "tavg_c": 8.62,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 40.9,
+        "coverage_days": 365
+      },
+      "1986": {
+        "tavg_c": 7.72,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 82.0,
+        "coverage_days": 364
+      },
+      "1987": {
+        "tavg_c": 8.6,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 56.9,
+        "coverage_days": 365
+      },
+      "1988": {
+        "tavg_c": 9.13,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 55.1,
+        "coverage_days": 366
+      },
+      "1989": {
+        "tavg_c": 9.76,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 67.1,
+        "coverage_days": 365
+      },
+      "1990": {
+        "tavg_c": 9.6,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 35.1,
+        "coverage_days": 364
+      },
+      "1991": {
+        "tavg_c": 8.91,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 33.0,
+        "coverage_days": 360
+      },
+      "1992": {
+        "tavg_c": 9.32,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 25.9,
+        "coverage_days": 366
+      },
+      "1993": {
+        "tavg_c": 8.77,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 96.0,
+        "coverage_days": 365
+      },
+      "1994": {
+        "tavg_c": 9.82,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 180.3,
+        "coverage_days": 365
+      },
+      "1995": {
+        "tavg_c": 9.37,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 71.1,
+        "coverage_days": 363
+      },
+      "1996": {
+        "tavg_c": 8.17,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 63.0,
+        "coverage_days": 310
+      },
+      "2000": {
+        "tavg_c": 11.92,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 97.0,
+        "coverage_days": 201
+      },
+      "2001": {
+        "tavg_c": 9.94,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 159.8,
+        "coverage_days": 352
+      },
+      "2002": {
+        "tavg_c": 9.25,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 55.9,
+        "coverage_days": 348
+      },
+      "2003": {
+        "tavg_c": 9.83,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 56.9,
+        "coverage_days": 361
+      },
+      "2004": {
+        "tavg_c": 10.33,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 77.0,
+        "coverage_days": 355
+      },
+      "2005": {
+        "tavg_c": 9.04,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 83.1,
+        "coverage_days": 326
+      },
+      "2006": {
+        "tavg_c": 9.12,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 102.9,
+        "coverage_days": 323
+      },
+      "2007": {
+        "tavg_c": 12.01,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 100.8,
+        "coverage_days": 302
+      },
+      "2008": {
+        "tavg_c": 10.19,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 84.1,
+        "coverage_days": 364
+      },
+      "2009": {
+        "tavg_c": 9.23,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 85.9,
+        "coverage_days": 358
+      },
+      "2010": {
+        "tavg_c": 9.12,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 134.9,
+        "coverage_days": 364
+      },
+      "2011": {
+        "tavg_c": 9.02,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 90.9,
+        "coverage_days": 361
+      },
+      "2012": {
+        "tavg_c": 8.76,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 166.9,
+        "coverage_days": 366
+      },
+      "2013": {
+        "tavg_c": 9.23,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 101.6,
+        "coverage_days": 365
+      },
+      "2014": {
+        "tavg_c": 9.92,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 114.0,
+        "coverage_days": 365
+      },
+      "2015": {
+        "tavg_c": 10.0,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 176.0,
+        "coverage_days": 365
+      },
+      "2016": {
+        "tavg_c": 9.75,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 0,
+        "coverage_days": 366
+      },
+      "2017": {
+        "tavg_c": 10.42,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 88.9,
+        "coverage_days": 365
+      },
+      "2018": {
+        "tavg_c": 9.57,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 14.2,
+        "coverage_days": 365
+      },
+      "2019": {
+        "tavg_c": 10.94,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 122.9,
+        "coverage_days": 365
+      },
+      "2020": {
+        "tavg_c": 10.68,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 163.1,
+        "coverage_days": 363
+      },
+      "2021": {
+        "tavg_c": 10.64,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 121.9,
+        "coverage_days": 362
+      },
+      "2022": {
+        "tavg_c": 10.25,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 159.0,
+        "coverage_days": 365
+      },
+      "2023": {
+        "tavg_c": 10.93,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 0,
+        "coverage_days": 365
+      },
+      "2024": {
+        "tavg_c": 11.35,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 0,
+        "coverage_days": 353
+      },
+      "2025": {
+        "tavg_c": 11.28,
+        "prcp_mm": null,
+        "max_daily_prcp_mm": 0,
+        "coverage_days": 236
+      }
+    }
+  }
+}

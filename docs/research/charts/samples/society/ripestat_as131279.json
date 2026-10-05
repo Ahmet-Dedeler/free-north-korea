@@ -1,0 +1,47 @@
+{
+  "resource": "AS131279",
+  "description": "Star Joint Venture Company, Ryugyong-dong, Pyongyang, DPRK",
+  "first_seen": {
+    "prefix": "175.45.176.0/24",
+    "origin": "131279",
+    "time": "2010-09-17T08:00:00"
+  },
+  "last_seen": {
+    "prefix": "175.45.176.0/24",
+    "origin": "131279",
+    "time": "2026-10-05T16:00:00"
+  },
+  "visibility": {
+    "v4": {
+      "ris_peers_seeing": 325,
+      "total_ris_peers": 325
+    },
+    "v6": {
+      "ris_peers_seeing": 0,
+      "total_ris_peers": 315
+    }
+  },
+  "announced_prefixes": [
+    "175.45.177.0/24",
+    "175.45.178.0/24",
+    "175.45.179.0/24",
+    "175.45.176.0/24"
+  ],
+  "total_ipv4_addresses": 1024,
+  "transit_providers_upstream": [
+    {
+      "asn": 134544,
+      "type": "left",
+      "power": 513,
+      "v4_peers": 989,
+      "v6_peers": 0
+    },
+    {
+      "asn": 20485,
+      "type": "left",
+      "power": 265,
+      "v4_peers": 338,
+      "v6_peers": 0
+    }
+  ]
+}

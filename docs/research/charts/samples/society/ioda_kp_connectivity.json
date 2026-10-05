@@ -1,0 +1,88 @@
+{
+  "entity": "KP",
+  "entityName": "North Korea",
+  "ioda_datasources_detected": [
+    "bgp",
+    "ping-slash24",
+    "ping-slash24-loss",
+    "ping-slash24-latency"
+  ],
+  "recent_probe": {
+    "from_epoch": 1790973540,
+    "until_epoch": 1791232740,
+    "signals": {
+      "bgp": {
+        "step_sec": 300,
+        "non_null_samples": 863,
+        "latest_value": 22,
+        "min": 22,
+        "max": 22
+      },
+      "ping-slash24": {
+        "step_sec": 600,
+        "non_null_samples": 432,
+        "latest_value": 1,
+        "min": 1,
+        "max": 2
+      },
+      "ping-slash24-loss": {
+        "step_sec": 600,
+        "non_null_samples": 433,
+        "latest_value": [
+          {
+            "country_code": "KP",
+            "country_label": "Korea, Democratic People's Republic of",
+            "geo_db": "ipinfo",
+            "team": "team-2",
+            "agg_values": {
+              "loss_pct": null,
+              "probe_count": null
+            }
+          }
+        ],
+        "min": null,
+        "max": null
+      },
+      "ping-slash24-latency": {
+        "step_sec": 600,
+        "non_null_samples": 433,
+        "latest_value": [
+          {
+            "country_code": "KP",
+            "country_label": "Korea, Democratic People's Republic of",
+            "geo_db": "ipinfo",
+            "team": "team-2",
+            "agg_values": {
+              "max_latency": null,
+              "mean_latency": null,
+              "median_latency": null,
+              "min_latency": null,
+              "p10_latency": null,
+              "p90_latency": null
+            }
+          }
+        ],
+        "min": null,
+        "max": null
+      }
+    }
+  },
+  "ddos_outage_jan_2022": {
+    "from_epoch": 1642118400,
+    "until_epoch": 1643241600,
+    "signals": {
+      "merit-nt": {
+        "step_sec": 300,
+        "non_null_samples": 2328,
+        "min": 0,
+        "max": 1
+      },
+      "bgp": {
+        "step_sec": 300,
+        "non_null_samples": 2457,
+        "min": 26,
+        "max": 28
+      }
+    }
+  }
+}

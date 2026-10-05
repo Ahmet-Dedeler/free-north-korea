@@ -1,0 +1,17 @@
+term,date,year,seats,turnout_pct,vote_yes_pct,vote_no_pct,source,notes
+1st SPA,1948-08-25,1948,572,99.97,100.0,0.0,Nohlen et al. / KCNA,360 deputies claimed from South Korea; 212 from North Korea
+2nd SPA,1957-08-27,1957,215,99.99,100.0,0.0,Nohlen et al. / KCNA,Post-war consolidation; 99.92% for Fatherland Front candidates
+3rd SPA,1962-10-08,1962,383,100.0,100.0,0.0,Nohlen et al. / KCNA,First officially reported 100% turnout
+4th SPA,1967-11-25,1967,457,100.0,100.0,0.0,Nohlen et al. / KCNA,Purge of Kapsan faction; 100% turnout and 100% yes
+5th SPA,1972-12-12,1972,541,100.0,100.0,0.0,Nohlen et al. / KCNA,Socialist Constitution adopted; Kim Il Sung elected President
+6th SPA,1977-11-11,1977,579,100.0,100.0,0.0,Nohlen et al. / KCNA,100% turnout and 100% vote reported
+7th SPA,1982-02-28,1982,615,100.0,100.0,0.0,Nohlen et al. / KCNA,Kim Il Sung's 70th birthday year; 100% turnout
+8th SPA,1986-11-02,1986,655,100.0,100.0,0.0,Nohlen et al. / KCNA,100% turnout and 100% vote reported
+9th SPA,1990-04-22,1990,687,99.78,100.0,0.0,Nohlen et al. / IPU,Last election under Kim Il Sung; slight shortfall due to citizens at sea
+10th SPA,1998-07-26,1998,687,99.85,100.0,0.0,IPU / KCNA,Delayed by famine and Kim Il Sung 3-year mourning; Kim Jong Il Chairman of NDC
+11th SPA,2003-08-03,2003,687,99.9,100.0,0.0,IPU / KCNA,100% approval of all 687 candidates
+12th SPA,2009-03-08,2009,687,99.98,100.0,0.0,IPU / KCNA,Post-Kim Jong Il stroke; Kim Jong Un's succession maneuvering begins
+13th SPA,2014-03-09,2014,687,99.97,100.0,0.0,IPU / KCNA,"First parliamentary election under Kim Jong Un (elected in Constituency 111, Paektusan)"
+14th SPA,2019-03-10,2019,687,99.99,100.0,0.0,IPU / KCNA,"Kim Jong Un not registered on ballot, establishing separation as head of state"
+Local Assemblies (Provincial),2023-11-26,2023,27858,99.63,99.91,0.09,KCNA / Rodong Sinmun,First time DPRK state media ever officially reported dissenting votes (0.09% against)
+Local Assemblies (City/County),2023-11-26,2023,27858,99.63,99.82,0.18,KCNA / Rodong Sinmun,0.18% voted against candidates in city and county people's assemblies

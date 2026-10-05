@@ -5,11 +5,14 @@ import { getAllCamps } from '@/content/camps';
 import { getAllPlaces } from '@/content/places-data';
 import { getAllCounties } from '@/content/counties';
 import { SANCTIONS, SANCTIONS_PATHS } from '@/content/sanctions';
+import { SERIES, SERIES_BUILT } from '@/charts/data';
+import { DATA_PATHS, dataPath } from '@/content/series';
+import { TWO_KOREAS_PATHS } from '@/content/twoKoreas';
 import { HUB_PATHS, articleLanguages } from '@/content/translations';
 import { KO_ARTICLES } from '@/content/translations/ko';
 import { JA_ARTICLES } from '@/content/translations/ja';
 import { REVIEWED } from '@/site/config';
-import { absolute, type Languages } from '@/site/seo';
+import { LANGS, absolute, type Languages } from '@/site/seo';
 
 export const dynamic = 'force-static';
 
@@ -47,6 +50,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...Object.values(HUB_PATHS).map((p) => ({ url: absolute(p === '/' ? '' : p), lastModified: REVIEWED, priority: p === '/' ? 1 : 0.8, alternates: alternates(HUB_PATHS) })),
     ...pages.map((p) => ({ url: absolute(p), lastModified: REVIEWED, priority: 0.8 })),
     ...Object.values(SANCTIONS_PATHS).map((p) => ({ url: absolute(p), lastModified: SANCTIONS.fetched, priority: 0.8, alternates: alternates(SANCTIONS_PATHS) })),
+    ...Object.values(TWO_KOREAS_PATHS).map((p) => ({ url: absolute(p), lastModified: SERIES_BUILT, priority: 0.9, alternates: alternates(TWO_KOREAS_PATHS) })),
+    ...Object.values(DATA_PATHS).map((p) => ({ url: absolute(p), lastModified: SERIES_BUILT, priority: 0.8, alternates: alternates(DATA_PATHS) })),
+    ...SERIES.flatMap((s) => {
+      const langs = Object.fromEntries(LANGS.map((l) => [l, dataPath(l, s.id)]));
+      return LANGS.map((l) => ({ url: absolute(dataPath(l, s.id)), lastModified: s.fetched, priority: 0.6, alternates: alternates(langs) }));
+    }),
     ...ARTICLES.map((a) => ({ url: absolute(`/learn/${a.slug}`), lastModified: a.updated, priority: 0.9, alternates: alternates(articleLanguages(a.slug)) })),
     ...KO_ARTICLES.map((a) => ({ url: absolute(`/ko/learn/${a.slug}`), lastModified: a.updated, priority: 0.85, alternates: alternates(articleLanguages(a.slug)) })),
     ...JA_ARTICLES.map((a) => ({ url: absolute(`/ja/learn/${a.slug}`), lastModified: a.updated, priority: 0.85, alternates: alternates(articleLanguages(a.slug)) })),

@@ -1,0 +1,184 @@
+[
+  {
+    "period": "~98",
+    "male": 831,
+    "female": 116,
+    "total": 947,
+    "female_pct": 12.2
+  },
+  {
+    "period": "~01",
+    "male": 565,
+    "female": 478,
+    "total": 1043,
+    "female_pct": 45.8
+  },
+  {
+    "period": "02",
+    "male": 510,
+    "female": 632,
+    "total": 1142,
+    "female_pct": 55.3
+  },
+  {
+    "period": "03",
+    "male": 474,
+    "female": 811,
+    "total": 1285,
+    "female_pct": 63.1
+  },
+  {
+    "period": "04",
+    "male": 626,
+    "female": 1272,
+    "total": 1898,
+    "female_pct": 67.0
+  },
+  {
+    "period": "05",
+    "male": 424,
+    "female": 960,
+    "total": 1384,
+    "female_pct": 69.4
+  },
+  {
+    "period": "06",
+    "male": 515,
+    "female": 1513,
+    "total": 2028,
+    "female_pct": 74.6
+  },
+  {
+    "period": "07",
+    "male": 573,
+    "female": 1981,
+    "total": 2554,
+    "female_pct": 77.6
+  },
+  {
+    "period": "08",
+    "male": 608,
+    "female": 2195,
+    "total": 2803,
+    "female_pct": 78.3
+  },
+  {
+    "period": "09",
+    "male": 662,
+    "female": 2252,
+    "total": 2914,
+    "female_pct": 77.3
+  },
+  {
+    "period": "10",
+    "male": 591,
+    "female": 1811,
+    "total": 2402,
+    "female_pct": 75.4
+  },
+  {
+    "period": "11",
+    "male": 795,
+    "female": 1911,
+    "total": 2706,
+    "female_pct": 70.6
+  },
+  {
+    "period": "12",
+    "male": 404,
+    "female": 1098,
+    "total": 1502,
+    "female_pct": 73.1
+  },
+  {
+    "period": "13",
+    "male": 369,
+    "female": 1145,
+    "total": 1514,
+    "female_pct": 75.6
+  },
+  {
+    "period": "14",
+    "male": 305,
+    "female": 1092,
+    "total": 1397,
+    "female_pct": 78.2
+  },
+  {
+    "period": "15",
+    "male": 251,
+    "female": 1024,
+    "total": 1275,
+    "female_pct": 80.3
+  },
+  {
+    "period": "16",
+    "male": 302,
+    "female": 1116,
+    "total": 1418,
+    "female_pct": 78.7
+  },
+  {
+    "period": "17",
+    "male": 188,
+    "female": 939,
+    "total": 1127,
+    "female_pct": 83.3
+  },
+  {
+    "period": "18",
+    "male": 168,
+    "female": 969,
+    "total": 1137,
+    "female_pct": 85.2
+  },
+  {
+    "period": "19",
+    "male": 202,
+    "female": 845,
+    "total": 1047,
+    "female_pct": 80.7
+  },
+  {
+    "period": "20",
+    "male": 72,
+    "female": 157,
+    "total": 229,
+    "female_pct": 68.6
+  },
+  {
+    "period": "21",
+    "male": 40,
+    "female": 23,
+    "total": 63,
+    "female_pct": 36.5
+  },
+  {
+    "period": "22",
+    "male": 35,
+    "female": 32,
+    "total": 67,
+    "female_pct": 47.8
+  },
+  {
+    "period": "23",
+    "male": 32,
+    "female": 164,
+    "total": 196,
+    "female_pct": 83.7
+  },
+  {
+    "period": "24",
+    "male": 26,
+    "female": 210,
+    "total": 236,
+    "female_pct": 89.0
+  },
+  {
+    "period": "25.12(잠정)",
+    "male": 25,
+    "female": 198,
+    "total": 223,
+    "female_pct": 88.8
+  }
+]

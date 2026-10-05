@@ -1,0 +1,44 @@
+{
+  "source": "이산가족정보통합시스템 (reunion.unikorea.go.kr)",
+  "as_of": "2026-08-31",
+  "monthly_report_title": "2026년 8월 이산가족 신청 현황",
+  "summary": {
+    "total_registered": 134843,
+    "living_survivors": 32948,
+    "deceased": 101895,
+    "deceased_pct": 75.6,
+    "alive_pct": 24.4
+  },
+  "survivors_by_age": {
+    "90_and_older": {
+      "count": 11007,
+      "pct": 33.4
+    },
+    "80_to_89": {
+      "count": 10945,
+      "pct": 33.2
+    },
+    "70_to_79": {
+      "count": 5707,
+      "pct": 17.3
+    },
+    "60_to_69": {
+      "count": 3385,
+      "pct": 10.3
+    },
+    "59_and_younger": {
+      "count": 1904,
+      "pct": 5.8
+    },
+    "total": 32948,
+    "80_and_older_combined_pct": 66.6
+  },
+  "survivors_by_gender": {
+    "male": 11007,
+    "female": 10945,
+    "male_pct": 192.9,
+    "female_pct": 191.8
+  },
+  "survivors_by_relation": {},
+  "survivors_by_dprk_origin": {}
+}

@@ -1,0 +1,187 @@
+[
+  {
+    "period": "2018-2019 (Pre-COVID Baseline)",
+    "year": 2019,
+    "weekly_scheduled_flights_intl": 8,
+    "annual_estimated_flights_intl": 416,
+    "active_destinations": [
+      "Beijing (PEK)",
+      "Shenyang (SHE)",
+      "Vladivostok (VVO)"
+    ],
+    "routes": {
+      "PEK": {
+        "frequency_weekly": 3,
+        "flight_numbers": [
+          "JS151",
+          "JS152"
+        ],
+        "days": [
+          "Tue",
+          "Thu",
+          "Sat"
+        ]
+      },
+      "SHE": {
+        "frequency_weekly": 2,
+        "flight_numbers": [
+          "JS155",
+          "JS156"
+        ],
+        "days": [
+          "Mon",
+          "Fri"
+        ]
+      },
+      "VVO": {
+        "frequency_weekly": 2,
+        "flight_numbers": [
+          "JS271",
+          "JS272"
+        ],
+        "days": [
+          "Mon",
+          "Fri"
+        ]
+      },
+      "charters": {
+        "frequency_weekly": 1,
+        "destinations": [
+          "Shanghai (PVG)",
+          "Macau (MFM)"
+        ]
+      }
+    },
+    "fleet_active": [
+      "Tupolev Tu-204-300 (P-632)",
+      "Tupolev Tu-204-100B (P-633)",
+      "Antonov An-148-100B (P-671)"
+    ],
+    "status": "Regular international commercial service"
+  },
+  {
+    "period": "2020-2022 (Total COVID Shutdown)",
+    "year": 2021,
+    "weekly_scheduled_flights_intl": 0,
+    "annual_estimated_flights_intl": 4,
+    "active_destinations": [],
+    "routes": {},
+    "fleet_active": [
+      "Parked at Sunan International Airport"
+    ],
+    "status": "Complete border quarantine freeze; zero scheduled passenger flights"
+  },
+  {
+    "period": "2023 (Initial Reopening)",
+    "year": 2023,
+    "weekly_scheduled_flights_intl": 3,
+    "annual_estimated_flights_intl": 60,
+    "active_destinations": [
+      "Beijing (PEK)",
+      "Vladivostok (VVO)"
+    ],
+    "routes": {
+      "PEK": {
+        "frequency_weekly": 2,
+        "resumed_date": "2023-08-22",
+        "notes": "First flight after 3.5-year halt"
+      },
+      "VVO": {
+        "frequency_weekly": 1,
+        "resumed_date": "2023-08-25"
+      }
+    },
+    "fleet_active": [
+      "Tu-204-300 (P-632)",
+      "Tu-204-100B (P-633)"
+    ],
+    "status": "Diplomatic and student/worker repatriation flights resume"
+  },
+  {
+    "period": "2024 (Stabilization & Russia Surge)",
+    "year": 2024,
+    "weekly_scheduled_flights_intl": 6,
+    "annual_estimated_flights_intl": 310,
+    "active_destinations": [
+      "Beijing (PEK)",
+      "Vladivostok (VVO)",
+      "Shenyang (SHE)"
+    ],
+    "routes": {
+      "PEK": {
+        "frequency_weekly": 2,
+        "days": [
+          "Tue",
+          "Sat"
+        ]
+      },
+      "VVO": {
+        "frequency_weekly": 2,
+        "days": [
+          "Mon",
+          "Fri"
+        ]
+      },
+      "SHE": {
+        "frequency_weekly": 2,
+        "days": [
+          "Wed",
+          "Sat"
+        ]
+      }
+    },
+    "fleet_active": [
+      "Tu-204-300",
+      "Tu-204-100B",
+      "An-148"
+    ],
+    "status": "Resumption of Shenyang and increased Russian delegation traffic"
+  },
+  {
+    "period": "2025-2026 (Strategic Expansion)",
+    "year": 2026,
+    "weekly_scheduled_flights_intl": 7,
+    "annual_estimated_flights_intl": 364,
+    "active_destinations": [
+      "Beijing (PEK)",
+      "Vladivostok (VVO)",
+      "Shenyang (SHE)",
+      "Wonsan (WOS, domestic)"
+    ],
+    "routes": {
+      "PEK": {
+        "frequency_weekly": 2,
+        "days": [
+          "Tue",
+          "Sat"
+        ]
+      },
+      "VVO": {
+        "frequency_weekly": 3,
+        "days": [
+          "Mon",
+          "Wed",
+          "Fri"
+        ],
+        "notes": "Expanded to 3x weekly amid DPRK-Russia strategic partnership"
+      },
+      "SHE": {
+        "frequency_weekly": 2,
+        "days": [
+          "Wed",
+          "Sat"
+        ]
+      },
+      "WOS": {
+        "frequency_weekly": 2,
+        "notes": "Domestic resort shuttle Pyongyang-Wonsan Kalma"
+      }
+    },
+    "fleet_active": [
+      "Tu-204-300",
+      "Tu-204-100B",
+      "An-148-100B"
+    ],
+    "status": "High frequency to Vladivostok; Russian tourist tours and domestic leisure routes"
+  }
+]

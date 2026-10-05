@@ -1,0 +1,12 @@
+{
+  "_doc": "Full-year defector arrivals announced by South Korea's Ministry of Unification that the official data.go.kr PDF does not include yet. scripts/series/government.ts uses a year from here only until the PDF has it. Add a year with the announcement's URL.",
+  "years": [
+    {
+      "year": 2025,
+      "men": 25,
+      "women": 198,
+      "url": "https://www.spnews.co.kr/news/articleView.html?idxno=103644",
+      "note": "Ministry of Unification figures announced 2026-01-20 (223 people; cumulative 34,537)."
+    }
+  ]
+}
