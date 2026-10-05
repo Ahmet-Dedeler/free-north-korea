@@ -1,11 +1,14 @@
 /**
- * Directory of organizations working on North Korea.
+ * Directory of organizations, companies and individuals working on North Korea.
+ * Not only nonprofits: a lone investigator who freezes the regime's stolen money counts as much as a charity.
  *
  * `status` is our best reading of public activity as of `checked`. It is not an endorsement or an audit.
  * Corrections are welcome via GitHub issues.
  */
 
-export type OrgCategory = 'rescue' | 'information' | 'documentation' | 'resettlement' | 'research' | 'news' | 'advocacy';
+export type OrgCategory = 'rescue' | 'information' | 'documentation' | 'resettlement' | 'money' | 'research' | 'news' | 'advocacy';
+/** Who is behind an entry, when it isn't a nonprofit or public body. Shown on the card. */
+export type OrgKind = 'individual' | 'company';
 export type OrgStatus = 'active' | 'at-risk' | 'paused' | 'unclear';
 
 export interface Org {
@@ -16,6 +19,7 @@ export interface Org {
   based: string;
   founded?: number;
   status: OrgStatus;
+  kind?: OrgKind;
   /** What they do, in one or two plain sentences. */
   summary: string;
   /** Short note on recent activity or context. */
@@ -37,6 +41,7 @@ export const CATEGORIES: { id: OrgCategory; label: string; hint: string }[] = [
   { id: 'information', label: 'Information in', hint: 'Radio, USB drives and media into North Korea' },
   { id: 'documentation', label: 'Documentation', hint: 'Recording abuses for future justice' },
   { id: 'resettlement', label: 'Resettlement', hint: 'Education and support for escapees' },
+  { id: 'money', label: 'Cutting the money', hint: "Tracing and freezing the regime's stolen crypto" },
   { id: 'research', label: 'Research', hint: 'Analysis, satellite imagery, data' },
   { id: 'news', label: 'News', hint: 'Reporting on and from inside North Korea' },
   { id: 'advocacy', label: 'Advocacy', hint: 'Pressure on governments and the UN' },
@@ -49,7 +54,12 @@ export const STATUS_LABEL: Record<OrgStatus, string> = {
   unclear: 'Status unclear',
 };
 
-export const ORGS_CHECKED = '2026-10-01';
+export const KIND_LABEL: Record<OrgKind, string> = {
+  individual: 'Individual',
+  company: 'Company',
+};
+
+export const ORGS_CHECKED = '2026-10-05';
 
 export const ORGS: Org[] = [
   {
@@ -399,6 +409,71 @@ export const ORGS: Org[] = [
       facebook: 'https://www.facebook.com/HumanRightsWatch',
       linkedin: 'https://www.linkedin.com/company/human-rights-watch/',
     },
+  },
+  {
+    id: 'zachxbt',
+    name: 'ZachXBT',
+    url: 'https://t.me/investigations',
+    category: 'money',
+    kind: 'individual',
+    based: 'Independent, online',
+    founded: 2021,
+    status: 'active',
+    summary:
+      'Pseudonymous on-chain investigator. Traces stolen crypto, named Lazarus as the thief in the $1.5 billion Bybit hack in 2025, and gets exchanges and stablecoin issuers to freeze North Korean funds before they are laundered.',
+    note: 'Has helped freeze more than $75 million tied to North Korea since 2022. In 2025 he went undercover with a Lazarus laundering crew, which got about 442,000 USDT frozen.',
+    help: [
+      { label: 'Read his investigations', url: 'https://t.me/investigations' },
+      { label: 'The $75M figure', url: 'https://panews.io/articles/01a10c01-72bb-7487-a271-fd5374b44b26' },
+    ],
+    socials: {
+      x: 'https://x.com/zachxbt',
+    },
+  },
+  {
+    id: 'tayvano',
+    name: 'Taylor Monahan (tayvano)',
+    url: 'https://github.com/tayvano/lazarus-bluenoroff-research',
+    category: 'money',
+    kind: 'individual',
+    based: 'Independent, online',
+    founded: 2016,
+    status: 'active',
+    summary:
+      'Security researcher who has tracked North Korean hackers since 2016. Keeps an open list of every heist attributed to Lazarus and its sister units, and exposes North Korean IT workers hired by crypto projects.',
+    note: '295+ incidents and $6.9 billion+ in stolen crypto logged, from 2016 to the $350M Bitget theft in September 2026.',
+    help: [{ label: 'The Lazarus heist list', url: 'https://github.com/tayvano/lazarus-bluenoroff-research' }],
+    noSite: true,
+  },
+  {
+    id: 'seal',
+    name: 'Security Alliance (SEAL)',
+    url: 'https://securityalliance.org',
+    category: 'money',
+    based: 'Online',
+    status: 'active',
+    summary:
+      'Volunteer security researchers. SEAL 911 is a free 24/7 hotline for anyone being hacked, and their guides teach companies how to spot and stop North Korean IT workers.',
+    help: [
+      { label: 'Spot a North Korean IT worker', url: 'https://frameworks.securityalliance.org/dprk-it-workers/overview/' },
+    ],
+    socials: {
+      x: 'https://x.com/_SEAL_Org',
+    },
+  },
+  {
+    id: 'lazarus-bounty',
+    name: 'LazarusBounty (Bybit)',
+    url: 'https://www.lazarusbounty.com',
+    category: 'money',
+    kind: 'company',
+    based: 'Dubai',
+    founded: 2025,
+    status: 'active',
+    summary:
+      'Bounty site the exchange Bybit opened after Lazarus stole $1.5 billion from it. Anyone who traces the stolen money and gets it frozen earns 10% of what is frozen.',
+    note: 'Up to $140 million in bounties on offer.',
+    help: [{ label: 'Hunt the stolen funds', url: 'https://www.lazarusbounty.com' }],
   },
   {
     id: 'leaflet-groups',

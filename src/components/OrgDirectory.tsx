@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { CATEGORIES, ORGS, STATUS_LABEL, type Org, type OrgCategory, type Social } from '@/content/orgs';
+import { CATEGORIES, KIND_LABEL, ORGS, STATUS_LABEL, type Org, type OrgCategory, type Social } from '@/content/orgs';
 import { orgLogo } from '@/content/media';
 import { GlobeIcon, SOCIALS, SocialIcon } from './SocialIcon';
 
@@ -41,6 +41,7 @@ function OrgCard({ org: o }: { org: Org }) {
             </a>
           </h2>
           <p className="org-meta">
+            {o.kind ? `${KIND_LABEL[o.kind]} · ` : ''}
             {o.based}
             {o.founded ? ` · since ${o.founded}` : ''}
           </p>

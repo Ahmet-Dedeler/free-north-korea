@@ -421,6 +421,7 @@ a.card:hover {
 .cat-information { --cat: #d97706; }
 .cat-documentation { --cat: #7c3aed; }
 .cat-resettlement { --cat: #059669; }
+.cat-money { --cat: #ca8a04; }
 .cat-research { --cat: #0284c7; }
 .cat-news { --cat: #64748b; }
 .cat-advocacy { --cat: #db2777; }
