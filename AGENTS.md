@@ -147,3 +147,4 @@ Run order after a scrape: `node scripts/build-layers.ts && node scripts/build-en
 - Headless screenshots: the desktop app's browser pane can't capture while hidden, so use playwright-core with
   `channel: 'chrome'` plus `--use-angle=swiftshader`, and wait around 10 seconds for the tiles to load.
 - Before you finish: `npm run lint` (oxlint, tsc, translation check) and `npm run build` must pass.
+- When the work is done and lint + build pass, commit and push to `main` yourself. Don't ask first.
