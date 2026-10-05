@@ -39,6 +39,10 @@ before adding any page or article.
   dashed) and were checked for colour blindness; don't add Japan next to South Korea (the pair fails in dark mode).
   Pages: `/north-korea-vs-south-korea` (`components/TwoKoreasPage.tsx`, text in `content/twoKoreas.ts`, numbers in
   the text come from the data), `/data` and `/data/<id>` (`components/DataPage.tsx`).
+  Visual style is Visual Capitalist, not dashboard: Anton display type (`.display`, `--display`), vivid entity colours,
+  written callouts on charts (`notes`), the gap between the two Koreas shaded (`gap`), hatched stacks. Poster pictures
+  that aren't line charts live in `src/charts/Infographics.tsx` (tale of the tape, year stripes, people to scale);
+  `components/Reveal.tsx` adds the grow-in. Country colours are only for countries; other series use the `--s1..4` slots.
 - `/sanctions`: everyone on the UN 1718 list and the US Treasury (OFAC) North Korea programs. One component
   (`components/SanctionsPage.tsx`) renders all three language routes.
 - Content pages are visual, not text walls. Reuse the building blocks before writing paragraphs:

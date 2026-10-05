@@ -36,7 +36,7 @@ function Sparkline({ s }: { s: Series }) {
     return (
       <svg className="spark" viewBox={`0 0 ${W} ${H}`} preserveAspectRatio="none" aria-hidden="true">
         {xs.map((x, i) => (
-          <rect key={x} x={(i * W) / xs.length} y={H - (totals[i] / max) * H} width={bw} height={(totals[i] / max) * H} rx={1} style={{ fill: 'var(--e-prk)' }} />
+          <rect key={x} x={(i * W) / xs.length} y={H - (totals[i] / max) * H} width={bw} height={(totals[i] / max) * H} rx={1} style={{ fill: 'var(--s1)' }} />
         ))}
       </svg>
     );

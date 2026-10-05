@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from 'next';
+import { Anton } from 'next/font/google';
 import type { ReactNode } from 'react';
 import SiteChrome from '@/components/SiteChrome';
 import { ThemeProvider } from '@/theme';
@@ -26,13 +27,17 @@ export const viewport: Viewport = {
   ],
 };
 
+// Condensed display face for big numbers and chart headlines (self-hosted by next/font at build, no request to Google
+// from the reader's browser). Latin only: Korean and Japanese fall back to the system's heaviest sans.
+const display = Anton({ weight: '400', subsets: ['latin'], variable: '--font-anton', display: 'swap' });
+
 // Set the theme before first paint so dark-mode users never see a white flash.
 const THEME_SCRIPT = `try{var d=matchMedia('(prefers-color-scheme: dark)').matches;document.documentElement.dataset.theme=d?'dark':'light';localStorage.removeItem('theme')}catch(e){}`;
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     // data-theme is set by the inline script before React hydrates
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" className={display.variable} suppressHydrationWarning>
       <head>
         <script dangerouslySetInnerHTML={{ __html: THEME_SCRIPT }} />
       </head>

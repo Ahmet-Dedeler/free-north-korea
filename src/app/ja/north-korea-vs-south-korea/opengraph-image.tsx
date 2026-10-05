@@ -13,5 +13,5 @@ export default function OgImage() {
   const le = [latest('life-expectancy', 'PRK')!.v, latest('life-expectancy', 'KOR')!.v];
   const gdp = [latest('gdp-per-capita', 'PRK')!.v, latest('gdp-per-capita', 'KOR')!.v];
   const vs = `${ENTITY_LABEL.PRK.ja} / ${ENTITY_LABEL.KOR.ja}`;
-  return ogCard({ kicker: t.eyebrow, title: t.h1, sub: `${vs}: ${t.vs.life} ${f(le[0])} / ${f(le[1])} · ${t.vs.gdp} $${f(gdp[0], 0)} / $${f(gdp[1], 0)}` });
+  return ogCard({ kicker: t.eyebrow, title: t.h1, sub: `${vs}: ${t.tape.life} ${f(le[0])} / ${f(le[1])} · ${t.tape.gdp} $${f(gdp[0], 0)} / $${f(gdp[1], 0)}` });
 }

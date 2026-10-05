@@ -126,7 +126,7 @@ export default function ChartView(p: ChartProps) {
 
   /* geometry */
   const narrow = width < 520;
-  const H = p.compact ? 230 : Math.round(Math.min(440, Math.max(280, width * 0.56)));
+  const H = p.compact ? 250 : Math.round(Math.min(480, Math.max(300, width * 0.56)));
   const endLabels = !stacked && !narrow && lines.length > 0;
   const endVal = (v: number) =>
     (Math.abs(v) >= 10000 ? fmt.axis(v) : new Intl.NumberFormat(p.locale, { maximumFractionDigits: Math.abs(v) < 1 ? 2 : Math.abs(v) < 100 ? 1 : 0 }).format(v)) + (p.unit === '%' ? '%' : '');
@@ -135,7 +135,7 @@ export default function ChartView(p: ChartProps) {
   const showGap = gapLines.length === 2 && gapLines.every((l) => l && l.pts.length);
   const gutter = showGap ? 16 : 0;
   const longest = Math.max(...lines.map((l) => textW(l.label) + (l.pts.length ? textW(endVal(lastOf(l)[1])) * 0.95 : 0)), 30);
-  const right = endLabels ? Math.min(210, longest + 34 + gutter) : 12;
+  const right = endLabels ? Math.min(240, longest + 50 + gutter) : 12;
 
   let yMin = 0;
   let yMax = 1;
@@ -176,12 +176,42 @@ export default function ChartView(p: ChartProps) {
         .map((l) => ({ l, py: sy(lastOf(l)[1]), px: sx(lastOf(l)[0]), y: sy(lastOf(l)[1]) }))
         .sort((a, b) => a.y - b.y)
     : [];
-  for (let i = 1; i < labels.length; i++) if (labels[i].y - labels[i - 1].y < 16) labels[i].y = labels[i - 1].y + 16;
+  for (let i = 1; i < labels.length; i++) if (labels[i].y - labels[i - 1].y < 22) labels[i].y = labels[i - 1].y + 22;
   // if the push ran off the bottom, slide the whole stack back up
   const over = labels.length ? labels[labels.length - 1].y - (top + plotH + 4) : 0;
   if (over > 0) for (const o of labels) o.y -= over;
-  for (let i = labels.length - 2; i >= 0; i--) if (labels[i + 1].y - labels[i].y < 16) labels[i].y = labels[i + 1].y - 16;
+  for (let i = labels.length - 2; i >= 0; i--) if (labels[i + 1].y - labels[i].y < 22) labels[i].y = labels[i + 1].y - 22;
   const labelX = left + plotW + 12 + gutter;
+
+  /* written callouts: a ring on the point, a leader line, and the text where there is room */
+  const callouts = narrow
+    ? []
+    : p.notes.flatMap((n) => {
+        const l = lines.find((q) => q.key === n.key);
+        if (!l || !l.pts.length) return [];
+        let q = l.pts[0];
+        for (const c of l.pts) if (Math.abs(c[0] - n.x) < Math.abs(q[0] - n.x)) q = c;
+        if (Math.abs(q[0] - n.x) > 1.5) return [];
+        const px = sx(q[0]);
+        const py = sy(q[1]);
+        const up = n.side ? n.side === 'up' : py > top + plotH * 0.45;
+        // Wrap to about 190px. Text with spaces (English, Korean) breaks between words; Japanese breaks between
+        // characters but keeps runs like "$2,624" or "1996年" whole.
+        const spaced = n.text.includes(' ');
+        const tokens = spaced ? n.text.split(' ') : (n.text.match(/[\x21-\x7e]+|./gu) ?? []);
+        const out: string[] = [];
+        for (const word of tokens) {
+          const last = out[out.length - 1];
+          const next = last === undefined ? word : last + (spaced ? ' ' : '') + word;
+          if (last !== undefined && textW(next) <= 190) out[out.length - 1] = next;
+          else out.push(word);
+        }
+        const lh = 15;
+        const block = out.length * lh;
+        const ly = up ? Math.max(top + 4, py - 34 - block) : Math.min(top + plotH - block - 4, py + 30);
+        const anchor: 'start' | 'end' = px > left + plotW * 0.62 ? 'end' : 'start';
+        return [{ n, l, px, py, lines: out, ly, up, anchor, lh }];
+      });
 
   /* gap callout: a bracket in the gutter between two lines' latest values, with the ratio or difference */
   let gap: { x: number; y1: number; y2: number; my: number; text: string; px: number } | null = null;
@@ -194,7 +224,6 @@ export default function ChartView(p: ChartProps) {
     const r = a[1] / b[1];
     const text = p.gap!.mode === 'ratio' ? `${fmt.full(r >= 10 ? Math.round(r) : Math.round(r * 10) / 10)}×` : `+${fmt.full(Math.round((a[1] - b[1]) * 10) / 10)}`;
     if (y2 - y1 >= 22) {
-      // put the pill where it is furthest from the other lines' end points
       const others = labels.filter((o) => o.l !== hi && o.l !== lo).map((o) => o.py);
       // put the pill near the middle, but clear of the other lines' end points
       const mid = (y1 + y2) / 2;
@@ -327,7 +356,7 @@ export default function ChartView(p: ChartProps) {
   return (
     <figure className={`chart${p.compact ? ' compact' : ''}${anim ? ` anim ${anim}` : ''}`} lang={p.lang}>
       <figcaption className="chart-head">
-        <h3>{p.title}</h3>
+        <h3 className="display">{p.title}</h3>
         {p.sub && <p>{p.sub}</p>}
       </figcaption>
 
@@ -400,6 +429,16 @@ export default function ChartView(p: ChartProps) {
                 <pattern id={`${uid}-hatch`} width={6} height={6} patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
                   <line x1={0} y1={0} x2={0} y2={6} className="hatch" />
                 </pattern>
+                {stacked &&
+                  lines.map((l, i) =>
+                    i % 2 ? (
+                      // every second stacked series is hatched (Everest style), so the stack never relies on colour alone
+                      <pattern key={l.key} id={`${uid}-h-${l.key}`} width={7} height={7} patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+                        <rect width={7} height={7} style={{ fill: l.color }} />
+                        <line x1={0} y1={0} x2={0} y2={7} className="bar-hatch" />
+                      </pattern>
+                    ) : null,
+                  )}
                 {shade && (
                   <linearGradient id={`${uid}-shade`} x1={0} y1={0} x2={0} y2={1}>
                     <stop offset="0%" style={{ stopColor: shade.color }} stopOpacity={shade.key === 'gap' ? 0.26 : 0.22} />
@@ -444,17 +483,32 @@ export default function ChartView(p: ChartProps) {
               {stacked
                 ? xs.map((x) => {
                     let acc = 0;
-                    const w = Math.max(2, Math.min(36, band - 2));
+                    const w = Math.max(2, Math.min(52, band * 0.78));
                     return (
                       <g key={x} className={hx === x ? 'bar on' : 'bar'}>
-                        {lines.map((l) => {
+                        {lines.map((l, i) => {
                           const v = l.pts.find((q) => q[0] === x)?.[1] ?? 0;
                           if (!v) return null;
                           const yTop = sy(acc + v);
                           const yBot = sy(acc);
                           acc += v;
-                          return <rect key={l.key} x={sx(x) - w / 2} y={yTop} width={w} height={Math.max(0.5, yBot - yTop)} rx={w > 8 ? 2 : 0} style={{ fill: l.color }} />;
+                          return (
+                            <rect
+                              key={l.key}
+                              x={sx(x) - w / 2}
+                              y={yTop}
+                              width={w}
+                              height={Math.max(0.5, yBot - yTop)}
+                              rx={w > 10 ? 3 : 0}
+                              style={{ fill: i % 2 ? `url(#${uid}-h-${l.key})` : l.color }}
+                            />
+                          );
                         })}
+                        {!p.compact && w >= 24 && acc > 0 && (
+                          <text x={sx(x)} y={sy(acc) - 6} textAnchor="middle" className="bar-total">
+                            {fmt.axis(acc)}
+                          </text>
+                        )}
                       </g>
                     );
                   })
@@ -482,17 +536,39 @@ export default function ChartView(p: ChartProps) {
                 </g>
               )}
 
-              {labels.map(({ l, y, py, px }) => (
-                <g key={l.key} className="chart-end">
-                  {Math.abs(y - py) > 3 && <path d={`M${px + 5},${py}L${labelX - 8},${y}L${labelX - 4},${y}`} className="leader" />}
-                  <text x={labelX} y={y + 4}>
-                    <tspan className="end-name">{l.label}</tspan>
-                    <tspan className="end-val" dx={6}>
+              {callouts.map((c) => {
+                const tx = c.anchor === 'start' ? c.px - 2 : c.px + 2;
+                const edge = c.up ? c.ly + c.lines.length * c.lh - 2 : c.ly - 6;
+                return (
+                  <g key={`${c.n.key}-${c.n.x}`} className="chart-note">
+                    <line x1={c.px} x2={c.px} y1={c.up ? c.py - 7 : c.py + 7} y2={edge} />
+                    <circle cx={c.px} cy={c.py} r={6} style={{ stroke: c.l.color }} />
+                    <text x={tx} y={c.ly + 11} textAnchor={c.anchor}>
+                      {c.lines.map((t, i) => (
+                        <tspan key={i} x={tx} dy={i ? c.lh : 0}>
+                          {t}
+                        </tspan>
+                      ))}
+                    </text>
+                  </g>
+                );
+              })}
+
+              {labels.map(({ l, y, py, px }) => {
+                const w = textW(l.label) * 0.97 + 16;
+                return (
+                  <g key={l.key} className="chart-end">
+                    {Math.abs(y - py) > 3 && <path d={`M${px + 5},${py}L${labelX - 8},${y}L${labelX - 4},${y}`} className="leader" />}
+                    <rect x={labelX} y={y - 10} width={w} height={20} rx={10} style={{ fill: l.color }} />
+                    <text x={labelX + w / 2} y={y + 4.2} textAnchor="middle" className="end-name">
+                      {l.label}
+                    </text>
+                    <text x={labelX + w + 6} y={y + 4.2} className="end-val">
                       {endVal(lastOf(l)[1])}
-                    </tspan>
-                  </text>
-                </g>
-              ))}
+                    </text>
+                  </g>
+                );
+              })}
 
               {hx !== null && (
                 <g className="chart-hover" pointerEvents="none">

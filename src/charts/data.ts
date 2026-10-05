@@ -39,6 +39,7 @@ const COLOR: Record<string, string> = {
   JPN: 'var(--e-jpn)',
   WLD: 'var(--e-wld)',
 };
+// Series that are not countries (women/men, missile classes, cities) never borrow the country colours.
 const SLOTS = ['var(--s1)', 'var(--s2)', 'var(--s3)', 'var(--s4)'];
 
 export const LOCALE: Record<Lang, string> = { en: 'en-US', ko: 'ko-KR', ja: 'ja-JP' };
@@ -56,6 +57,9 @@ export type Band = { from: number; to: number; label: string };
 /** Callout between two lines at their latest values: "26×" (ratio, hi / lo) or "10.7" (difference). */
 export type Gap = { hi: string; lo: string; mode: 'ratio' | 'diff' };
 
+/** A written callout pinned to one line at one year ("1994-98 famine: life expectancy falls to 61"). */
+export type Note = { x: number; key: string; text: string; side?: 'up' | 'down' };
+
 export type ChartProps = {
   id: string;
   lang: Lang;
@@ -68,6 +72,7 @@ export type ChartProps = {
   lines: { key: string; label: string; color: string; dashed: boolean; pts: [x: number, v: number, t: string][] }[];
   bands: Band[];
   gap?: Gap;
+  notes: Note[];
   source: { name: string; url: string; license?: string };
   fetched: string;
   updated?: string;
@@ -89,6 +94,7 @@ export type ChartOptions = {
   sub?: string;
   bands?: Band[];
   gap?: Gap;
+  notes?: Note[];
   /** Smaller frame for grids: no tabs or table, still interactive. */
   compact?: boolean;
 };
@@ -122,6 +128,7 @@ export function chartProps(id: string, lang: Lang, o: ChartOptions = {}): ChartP
     })),
     bands: o.bands ?? [],
     gap: o.gap,
+    notes: o.notes ?? [],
     source: s.source,
     fetched: s.fetched,
     updated: s.updated,

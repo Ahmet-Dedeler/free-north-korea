@@ -17,12 +17,15 @@ type Text = {
   h1: string;
   lede: string;
   nightCaption: string;
-  vs: { life: string; gdp: string; power: string; kids: string };
-  /** Headline of each comparison tile: the big number and what it means. */
-  vsHead: { years: (x: string) => string; times: (x: string) => string; life: string; gdp: string; power: string; kids: string };
-  /** How to read each tile's picture. */
-  vsNote: { life: string; gdp: string; power: (x: string) => string; kids: string };
-  yrs: string;
+  /** The poster at the top: kicker line, the two names in the headline (they make up h1), photo credit lead-in. */
+  poster: { kicker: string; north: string; vs: string; south: string; tape: string };
+  /** Rows of the "tale of the tape": metric names and units. */
+  tape: { life: string; gdp: string; power: string; kids: string; food: string; phones: string; height: string; freedom: string };
+  units: { years: string; kcal: string; per100: string; cm: string; index: string; bornIn: (y: string) => string };
+  /** Callouts written onto the charts. */
+  notes: { money: (n: Nums) => string; life: (n: Nums) => string; kids: (n: Nums) => string; energy: string };
+  stripes: { low: string; high: string; open: string; twoStates: string };
+  height: { men: string; women: string };
   bands: { division: string; war: string; famine: string; covid: string; democracy: string };
   sections: Section[];
   moreTitle: string;
@@ -49,22 +52,26 @@ export const TWO_KOREAS: Record<Lang, Text> = {
     h1: 'North Korea vs South Korea',
     lede: 'Same people, same language, same food. In 1945 the peninsula was cut in two along the 38th parallel, and for a while the two halves were roughly even (in 1990 people in both lived about 70 years). Then they split apart. These charts show how far.',
     nightCaption: 'The Korean peninsula at night. The bright blob is Seoul, the single dot up north is Pyongyang.',
-    vs: { life: 'Life expectancy', gdp: 'Income per person', power: 'Electricity per person', kids: 'Children who die before 5' },
-    vsHead: {
-      years: (x) => `${x} yrs`,
-      times: (x) => `${x}×`,
-      life: 'shorter lives in the North',
-      gdp: 'more income per person in the South',
-      power: 'more electricity per person in the South',
-      kids: 'higher child death rate in the North',
+    poster: { kicker: 'Same people · same language · split in 1945', north: 'North Korea', vs: 'vs', south: 'South Korea', tape: 'The gap in eight numbers' },
+    tape: {
+      life: 'Life expectancy',
+      gdp: 'Income per person',
+      power: 'Electricity per person',
+      kids: 'Children who die before 5',
+      food: 'Food per person per day',
+      phones: 'Mobile phones',
+      height: 'Height of men',
+      freedom: 'Democracy score',
     },
-    vsNote: {
-      life: 'Hatched: the years a North Korean loses',
-      gdp: 'Square area = income per person',
-      power: (x) => `Each bolt = ${x} kWh, what one North Korean uses in a year`,
-      kids: 'Each dot = 1 death per 1,000 children born',
+    units: { years: 'years', kcal: 'kcal', per100: 'per 100 people', cm: 'cm', index: '0 to 1', bornIn: (y) => `born ${y}` },
+    notes: {
+      money: (n) => `1940: the north is richer ($${n.gdp40P} vs $${n.gdp40K})`,
+      life: (n) => `Famine: life expectancy falls to ${n.leFamine}`,
+      kids: (n) => `1996: ${n.cm96}% of children die before 5`,
+      energy: '1980: the North still uses more energy per person',
     },
-    yrs: 'yrs',
+    stripes: { low: 'Closed dictatorship', high: 'Full democracy', open: 'Open the full chart', twoStates: 'Two states' },
+    height: { men: 'Men', women: 'Women' },
     bands: { division: 'Division', war: 'Korean War', famine: 'Famine', covid: 'Border closed', democracy: 'South becomes a democracy' },
     sections: [
       {
@@ -100,11 +107,27 @@ export const TWO_KOREAS: Record<Lang, Text> = {
         ],
       },
       {
+        id: 'height',
+        h2: 'The South grew taller',
+        body: (n) => [
+          `Men born in 1930 were the same height on both sides: ${n.hm30P} cm in the North, ${n.hm30K} cm in the South. Men born in 1996 were ${n.hmP} cm in the North and ${n.hmK} cm in the South.`,
+          `Height mostly comes down to food and health in childhood. The same people drifting ${n.hmGap} cm apart in a few decades is a record of hunger. Women show the same gap (${n.hwP} vs ${n.hwK} cm).`,
+        ],
+      },
+      {
         id: 'freedom',
         h2: 'The South was a dictatorship too, then it changed',
         body: (n) => [
           `People forget this, but South Korea was run by military strongmen until 1987. Then mass protests forced free elections and its democracy score jumped from ${n.dem86K} to ${n.dem88K} in two years.`,
           `North Korea's score has sat near zero for 80 years (${n.demP} in ${n.demYear}, on a 0 to 1 scale). Same people, different system. That is probably the most important chart here.`,
+        ],
+      },
+      {
+        id: 'leaving',
+        h2: 'People still leave, at great risk',
+        body: (n) => [
+          `${n.defTotal} North Koreans reached South Korea between ${n.defFrom} and ${n.defLastYear}, and ${n.defWomen}% of them were women. The busiest year was ${n.defPeakYear}, with ${n.defPeak} arrivals.`,
+          `Arrivals fell after 2011, the year Kim Jong Un took power, and almost stopped when North Korea sealed its border for COVID in 2020 (${n.defMin} people in ${n.defMinYear}). In ${n.defLastYear}, ${n.defLast} people made it.`,
         ],
       },
     ],
@@ -148,22 +171,26 @@ export const TWO_KOREAS: Record<Lang, Text> = {
     h1: '북한 vs 한국',
     lede: '같은 민족, 같은 말, 같은 음식. 1945년 한반도는 38선을 따라 둘로 나뉘었고, 한동안은 남북이 대체로 비슷했습니다 (1990년에는 양쪽 모두 기대수명이 약 70세였습니다). 그 뒤로 둘은 갈라졌습니다. 이 차트들이 얼마나 벌어졌는지 보여줍니다.',
     nightCaption: '밤의 한반도. 밝게 빛나는 곳이 서울, 북쪽의 점 하나가 평양입니다.',
-    vs: { life: '기대수명', gdp: '1인당 소득', power: '1인당 전력', kids: '5세 미만 사망률' },
-    vsHead: {
-      years: (x) => `${x}년`,
-      times: (x) => `${x}배`,
-      life: '북한의 기대수명이 그만큼 짧습니다',
-      gdp: '한국의 1인당 소득이 그만큼 많습니다',
-      power: '한국의 1인당 전력 사용량이 그만큼 많습니다',
-      kids: '북한의 5세 미만 사망률이 그만큼 높습니다',
+    poster: { kicker: '같은 민족 · 같은 말 · 1945년 분단', north: '북한', vs: 'vs', south: '한국', tape: '여덟 개의 숫자로 본 격차' },
+    tape: {
+      life: '기대수명',
+      gdp: '1인당 소득',
+      power: '1인당 전력',
+      kids: '5세 미만 사망률',
+      food: '1인당 하루 식량',
+      phones: '휴대전화',
+      height: '남성의 키',
+      freedom: '민주주의 점수',
     },
-    vsNote: {
-      life: '빗금: 북한 주민이 잃는 햇수',
-      gdp: '사각형 면적 = 1인당 소득',
-      power: (x) => `번개 하나 = ${x} kWh, 북한 주민 한 명이 1년에 쓰는 양`,
-      kids: '점 하나 = 출생아 1,000명당 사망 1명',
+    units: { years: '세', kcal: 'kcal', per100: '100명당', cm: 'cm', index: '0~1', bornIn: (y) => `${y}년생` },
+    notes: {
+      money: (n) => `1940년: 북쪽이 더 부유 ($${n.gdp40P} 대 $${n.gdp40K})`,
+      life: (n) => `대기근: 기대수명이 ${n.leFamine}세로 떨어짐`,
+      kids: (n) => `1996년: 아이 ${n.cm96}%가 5세 전에 사망`,
+      energy: '1980년: 1인당 에너지 사용량은 아직 북한이 더 많았다',
     },
-    yrs: '세',
+    stripes: { low: '폐쇄적 독재', high: '완전한 민주주의', open: '전체 차트 보기', twoStates: '두 국가' },
+    height: { men: '남성', women: '여성' },
     bands: { division: '분단', war: '한국전쟁', famine: '대기근', covid: '국경 봉쇄', democracy: '한국 민주화' },
     sections: [
       {
@@ -199,11 +226,27 @@ export const TWO_KOREAS: Record<Lang, Text> = {
         ],
       },
       {
+        id: 'height',
+        h2: '남쪽 사람들이 더 커졌다',
+        body: (n) => [
+          `1930년에 태어난 남성의 키는 남북이 같았습니다. 북한 ${n.hm30P}cm, 한국 ${n.hm30K}cm. 1996년에 태어난 남성은 북한 ${n.hmP}cm, 한국 ${n.hmK}cm입니다.`,
+          `키는 대부분 어린 시절의 영양과 건강으로 정해집니다. 같은 민족이 몇십 년 만에 ${n.hmGap}cm나 벌어졌다는 건 굶주림의 기록입니다. 여성도 같은 차이를 보입니다 (${n.hwP}cm 대 ${n.hwK}cm).`,
+        ],
+      },
+      {
         id: 'freedom',
         h2: '한국도 독재였다, 그리고 바뀌었다',
         body: (n) => [
           `잊기 쉽지만 한국은 1987년까지 군사정권이었습니다. 대규모 시위가 직선제를 끌어냈고, 민주주의 점수는 2년 만에 ${n.dem86K}에서 ${n.dem88K}로 뛰었습니다.`,
           `북한의 점수는 80년 동안 0 근처에 머물러 있습니다 (${n.demYear}년 ${n.demP}, 0~1 척도). 같은 민족, 다른 체제. 아마 여기서 가장 중요한 차트일 겁니다.`,
+        ],
+      },
+      {
+        id: 'leaving',
+        h2: '지금도 목숨을 걸고 떠난다',
+        body: (n) => [
+          `${n.defFrom}년부터 ${n.defLastYear}년까지 북한 주민 ${n.defTotal}명이 한국에 들어왔고, 그중 ${n.defWomen}%가 여성입니다. 가장 많았던 해는 ${n.defPeakYear}년으로 ${n.defPeak}명이었습니다.`,
+          `김정은이 집권한 2011년 이후 입국자는 줄었고, 2020년 북한이 코로나로 국경을 봉쇄하자 거의 끊겼습니다 (${n.defMinYear}년 ${n.defMin}명). ${n.defLastYear}년에는 ${n.defLast}명이 들어왔습니다.`,
         ],
       },
     ],
@@ -247,22 +290,26 @@ export const TWO_KOREAS: Record<Lang, Text> = {
     h1: '北朝鮮と韓国',
     lede: '同じ民族、同じ言葉、同じ食べ物。1945年、朝鮮半島は38度線で二つに分けられ、しばらくは南北がだいたい同じくらいでした（1990年には両方とも平均寿命が約70歳）。そこから二つは引き離されていきます。どれだけ離れたかをグラフで見ていきます。',
     nightCaption: '夜の朝鮮半島。明るく光っているのがソウル、北にある一つの点が平壌です。',
-    vs: { life: '平均寿命', gdp: '1人あたり所得', power: '1人あたり電力', kids: '5歳未満で亡くなる子ども' },
-    vsHead: {
-      years: (x) => `${x}年`,
-      times: (x) => `${x}倍`,
-      life: '北朝鮮の平均寿命はこれだけ短い',
-      gdp: '韓国の1人あたり所得はこれだけ多い',
-      power: '韓国の1人あたり電力使用量はこれだけ多い',
-      kids: '北朝鮮の5歳未満死亡率はこれだけ高い',
+    poster: { kicker: '同じ民族・同じ言葉・1945年に分断', north: '北朝鮮', vs: 'と', south: '韓国', tape: '8つの数字で見る差' },
+    tape: {
+      life: '平均寿命',
+      gdp: '1人あたり所得',
+      power: '1人あたり電力',
+      kids: '5歳未満で亡くなる子ども',
+      food: '1人1日あたりの食料',
+      phones: '携帯電話',
+      height: '男性の身長',
+      freedom: '民主主義スコア',
     },
-    vsNote: {
-      life: '斜線：北朝鮮の人が失う年数',
-      gdp: '正方形の面積＝1人あたり所得',
-      power: (x) => `稲妻1つ＝${x} kWh、北朝鮮の人1人が1年に使う量`,
-      kids: '点1つ＝出生1,000人あたり1人の死亡',
+    units: { years: '歳', kcal: 'kcal', per100: '100人あたり', cm: 'cm', index: '0〜1', bornIn: (y) => `${y}年生まれ` },
+    notes: {
+      money: (n) => `1940年：北の方が豊か（$${n.gdp40P}対$${n.gdp40K}）`,
+      life: (n) => `大飢饉：平均寿命が${n.leFamine}歳まで低下`,
+      kids: (n) => `1996年：子どもの${n.cm96}%が5歳までに死亡`,
+      energy: '1980年：1人あたりエネルギー使用量はまだ北朝鮮の方が多い',
     },
-    yrs: '歳',
+    stripes: { low: '閉鎖的な独裁', high: '完全な民主主義', open: 'チャート全体を見る', twoStates: '二つの国家' },
+    height: { men: '男性', women: '女性' },
     bands: { division: '分断', war: '朝鮮戦争', famine: '大飢饉', covid: '国境封鎖', democracy: '韓国の民主化' },
     sections: [
       {
@@ -298,11 +345,27 @@ export const TWO_KOREAS: Record<Lang, Text> = {
         ],
       },
       {
+        id: 'height',
+        h2: '南の人の方が背が高くなった',
+        body: (n) => [
+          `1930年生まれの男性の身長は南北で同じでした。北朝鮮${n.hm30P}cm、韓国${n.hm30K}cm。1996年生まれでは北朝鮮${n.hmP}cm、韓国${n.hmK}cmです。`,
+          `身長はほぼ子どもの頃の栄養と健康で決まります。同じ民族が数十年で${n.hmGap}cmも離れたのは、飢えの記録です。女性にも同じ差があります（${n.hwP}cm対${n.hwK}cm）。`,
+        ],
+      },
+      {
         id: 'freedom',
         h2: '韓国も独裁だった、そして変わった',
         body: (n) => [
           `忘れられがちですが、韓国は1987年まで軍事政権でした。大規模なデモが直接選挙を勝ち取り、民主主義スコアは2年で${n.dem86K}から${n.dem88K}に跳ね上がりました。`,
           `北朝鮮のスコアは80年間ずっとゼロ近くです（${n.demYear}年は${n.demP}、0〜1の尺度）。同じ民族、違う体制。おそらくここで一番大事なグラフです。`,
+        ],
+      },
+      {
+        id: 'leaving',
+        h2: '今も命がけで逃れてくる',
+        body: (n) => [
+          `${n.defFrom}年から${n.defLastYear}年までに${n.defTotal}人の北朝鮮の人が韓国にたどり着き、その${n.defWomen}%が女性です。最も多かったのは${n.defPeakYear}年の${n.defPeak}人でした。`,
+          `金正恩が権力を継いだ2011年以降は減り、2020年に北朝鮮が新型コロナで国境を封鎖するとほぼ途絶えました（${n.defMinYear}年は${n.defMin}人）。${n.defLastYear}年は${n.defLast}人でした。`,
         ],
       },
     ],
