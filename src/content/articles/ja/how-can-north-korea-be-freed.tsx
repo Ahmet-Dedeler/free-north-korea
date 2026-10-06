@@ -49,7 +49,7 @@ const article: Article = {
         ほとんどの独裁は、大きな蜂起ではなく、独裁者の周りの人たちが支持をやめることで終わる。北朝鮮なら軍、秘密警察（国家保衛省）、そして平壌の党エリートだ。
       </p>
       <p>
-        <PersonLink id="kim-jong-un">金正恩</PersonLink>はこれをよくわかっているように見える。2013年に叔父の<PersonLink id="jang-song-thaek">張成沢</PersonLink>を処刑し、2017年には異母兄の<PersonLink id="kim-jong-nam">金正男</PersonLink>をVX神経剤で殺害した。粛清はみんなを怯えさせる。でも後継の危機（金正恩の病気、誰も納得しない後継者など）こそ、分裂が起こりうる瞬間だ。それにトップの忠誠も完全ではない。2016年には公使だった<PersonLink id="thae-yong-ho">太永浩</PersonLink>が亡命している。
+        <PersonLink lang="ja" id="kim-jong-un">金正恩</PersonLink>はこれをよくわかっているように見える。2013年に叔父の<PersonLink lang="ja" id="jang-song-thaek">張成沢</PersonLink>を処刑し、2017年には異母兄の<PersonLink lang="ja" id="kim-jong-nam">金正男</PersonLink>をVX神経剤で殺害した。粛清はみんなを怯えさせる。でも後継の危機（金正恩の病気、誰も納得しない後継者など）こそ、分裂が起こりうる瞬間だ。それにトップの忠誠も完全ではない。2016年には公使だった<PersonLink lang="ja" id="thae-yong-ho">太永浩</PersonLink>が亡命している。
       </p>
       <p>これは外からはほとんど後押しできない。そこがちょっともどかしい。</p>
 

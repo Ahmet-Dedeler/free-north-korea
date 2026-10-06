@@ -59,10 +59,10 @@ const article: Article = {
         당 엘리트다.
       </p>
       <p>
-        <PersonLink id="kim-jong-un">김정은</PersonLink>은 이걸 아주 잘 아는 것 같다. 2013년에 고모부{' '}
-        <PersonLink id="jang-song-thaek">장성택</PersonLink>을 처형했고, 2017년에는 이복형 <PersonLink id="kim-jong-nam">김정남</PersonLink>을 VX
+        <PersonLink lang="ko" id="kim-jong-un">김정은</PersonLink>은 이걸 아주 잘 아는 것 같다. 2013년에 고모부{' '}
+        <PersonLink lang="ko" id="jang-song-thaek">장성택</PersonLink>을 처형했고, 2017년에는 이복형 <PersonLink lang="ko" id="kim-jong-nam">김정남</PersonLink>을 VX
         신경작용제로 살해했다. 숙청은 모두를 겁먹게 만든다. 그런데 후계 위기(김정은의 건강 문제, 아무도 동의하지 않는 후계자 등)야말로 분열이
-        가능해지는 순간이다. 그리고 최상층의 충성도 완벽하지 않다. 2016년에는 공사였던 <PersonLink id="thae-yong-ho">태영호</PersonLink>가
+        가능해지는 순간이다. 그리고 최상층의 충성도 완벽하지 않다. 2016년에는 공사였던 <PersonLink lang="ko" id="thae-yong-ho">태영호</PersonLink>가
         망명했다.
       </p>
       <p>바깥에서 이건 거의 밀어줄 수가 없다. 그게 좀 답답한 부분이다.</p>

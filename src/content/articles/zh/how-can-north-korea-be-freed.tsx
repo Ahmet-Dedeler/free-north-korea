@@ -49,10 +49,10 @@ const article: Article = {
         大多数独裁政权的终结，是因为独裁者身边的人不再支持他，而不是因为一场大起义。在朝鲜，这些人就是军队、秘密警察（国家保卫省）和平壤的党内精英。
       </p>
       <p>
-        <PersonLink id="kim-jong-un">金正恩</PersonLink>似乎非常清楚这一点。他在2013年处决了姑父
-        <PersonLink id="jang-song-thaek">张成泽</PersonLink>，2017年又用VX神经毒剂杀了同父异母的哥哥
-        <PersonLink id="kim-jong-nam">金正男</PersonLink>。清洗让所有人都心怀恐惧。但继承危机（比如金正恩病倒，或者继承人谁都不服）恰恰是分裂可能出现的时刻。而且高层的忠诚也不是铁板一块：驻英国副大使
-        <PersonLink id="thae-yong-ho">太永浩</PersonLink>就在2016年叛逃了。
+        <PersonLink lang="zh" id="kim-jong-un">金正恩</PersonLink>似乎非常清楚这一点。他在2013年处决了姑父
+        <PersonLink lang="zh" id="jang-song-thaek">张成泽</PersonLink>，2017年又用VX神经毒剂杀了同父异母的哥哥
+        <PersonLink lang="zh" id="kim-jong-nam">金正男</PersonLink>。清洗让所有人都心怀恐惧。但继承危机（比如金正恩病倒，或者继承人谁都不服）恰恰是分裂可能出现的时刻。而且高层的忠诚也不是铁板一块：驻英国副大使
+        <PersonLink lang="zh" id="thae-yong-ho">太永浩</PersonLink>就在2016年叛逃了。
       </p>
       <p>这一条外界其实推不动。这也是让人有点无奈的地方。</p>
 

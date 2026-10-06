@@ -189,7 +189,7 @@ export default function PersonDossier({ lang, id }: { lang: Lang; id: string }) 
                 <Avatar person={f.person} size={44} />
                 <span>
                   <small>{t.relation[f.relation]}</small>
-                  <PersonLink id={f.person.id} />
+                  <PersonLink id={f.person.id} lang={lang} />
                   {f.note && <small className="muted">{familyNote(f.note, lang)}</small>}
                 </span>
               </li>
