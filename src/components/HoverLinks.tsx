@@ -6,26 +6,28 @@ import Link from 'next/link';
 import { getAllCamps } from '@/content/camps';
 import { orgLogo } from '@/content/media';
 import { media } from '@/content/media';
-import { ORGS, STATUS_LABEL } from '@/content/orgs';
+import { ORGS } from '@/content/orgs';
+import { ORG_PAGE, orgHref, orgStatusLabel, orgSummary } from '@/content/orgsI18n';
 import { getPlaceBySlug } from '@/content/places-data';
+import type { Lang } from '@/site/seo';
 import SatView from './SatView';
 
-export function OrgLink({ id, children }: { id: string; children?: React.ReactNode }) {
+export function OrgLink({ id, lang = 'en', children }: { id: string; lang?: Lang; children?: React.ReactNode }) {
   const o = ORGS.find((x) => x.id === id);
   if (!o) return <>{children}</>;
   const logo = orgLogo(o.id);
   return (
     <span className="plink hl">
-      <Link href={`/organizations#${o.id}`}>{children ?? o.name}</Link>
+      <Link href={orgHref(lang, o.id)}>{children ?? o.name}</Link>
       <span className="plink-card hl-card" role="tooltip">
         <span className="hl-logo">{logo ? <img src={logo.src} alt="" /> : <b>{o.name[0]}</b>}</span>
         <span className="plink-body">
-          <b>{o.name}</b>
+          <b lang={lang === 'en' ? undefined : 'en'}>{o.name}</b>
           <span className="muted">
-            {o.based}
-            {o.founded ? ` · since ${o.founded}` : ''} · {STATUS_LABEL[o.status]}
+            <span lang={lang === 'en' ? undefined : 'en'}>{o.based}</span>
+            {o.founded ? ` · ${ORG_PAGE[lang].founded(o.founded)}` : ''} · {orgStatusLabel(o, lang)}
           </span>
-          <span className="hl-text">{o.summary}</span>
+          <span className="hl-text">{orgSummary(o, lang)}</span>
         </span>
       </span>
     </span>

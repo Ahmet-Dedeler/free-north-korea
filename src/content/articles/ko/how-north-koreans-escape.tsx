@@ -60,7 +60,7 @@ const article: Article = {
       <p>
         보통 경로는 중국을 가로질러 남쪽으로 약 3,000마일(약 4,800km)을 내려가 동남아시아, 주로 라오스를 거쳐 태국으로 간다. 태국에서는 자수할
         수 있고 결국 한국으로 보내진다 (예전에는 몽골도 하나의 길이었다). 몇 주가 걸린다. 은신처, 버스, 밤에 하는 정글 횡단.{' '}
-        <OrgLink id="liberty-in-north-korea">Liberty in North Korea</OrgLink> 같은 구출 단체가 비용을 대는 게 이 부분이고, 1인당 약 3,000달러다.
+        <OrgLink lang="ko" id="liberty-in-north-korea">Liberty in North Korea</OrgLink> 같은 구출 단체가 비용을 대는 게 이 부분이고, 1인당 약 3,000달러다.
       </p>
 
       <h2 id="south-korea">4단계: 한국</h2>
@@ -70,7 +70,7 @@ const article: Article = {
       </p>
       <p>
         그래도 정말 힘들다. 새로운 기술, 많이 다른 어휘 (한국어에는 영어 단어가 가득하다), 차별, 두고 온 가족.{' '}
-        <OrgLink id="fsi">Freedom Speakers International</OrgLink>과 <OrgLink id="pscore">PSCORE</OrgLink> 같은 단체가 영어, 학업, 말하기를 돕는다.
+        <OrgLink lang="ko" id="fsi">Freedom Speakers International</OrgLink>과 <OrgLink lang="ko" id="pscore">PSCORE</OrgLink> 같은 단체가 영어, 학업, 말하기를 돕는다.
       </p>
 
       <h2 id="numbers">숫자로 보면</h2>

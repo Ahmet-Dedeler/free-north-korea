@@ -30,14 +30,14 @@ const article: Article = {
         里面装的是什么？主要是韩剧和韩国电影、K-pop、新闻、韩文维基百科和脱北者的证词。不需要谁去说教。看看首尔一个普通的晚上是什么样子，这件事自己就说明了一切。
       </p>
       <p>
-        <OrgLink id="flash-drives-for-freedom">Flash Drives for Freedom</OrgLink>
+        <OrgLink lang="zh" id="flash-drives-for-freedom">Flash Drives for Freedom</OrgLink>
         （人权基金会）收集捐赠的U盘，称已有超过14万个被捐赠或承诺捐赠。它在2026年仍然活跃（很多人以为它已经停了）。
       </p>
 
       <h2 id="radio">广播</h2>
       <p>
         官方收音机被固定在国家频道上，但改装过的或走私进去的收音机夜里可以收到短波和中波广播。而这正是2025年被削减得最厉害的渠道：美国终止资助后，自由亚洲电台韩语节目于2025年7月17日停播，美国之音被大幅裁撤，韩国新政府也在2025年6月停止了自己的对朝广播和边境喇叭。所以像
-        <OrgLink id="unification-media-group">国民统一广播（Unification Media Group）</OrgLink>
+        <OrgLink lang="zh" id="unification-media-group">国民统一广播（Unification Media Group）</OrgLink>
         这样的独立广播机构，如今在剩下的渠道里占了大得多的比重。
       </p>
 

@@ -18,6 +18,7 @@ import { getAllCamps } from '@/content/camps';
 import { SHELVES } from '@/content/library';
 import { orgLogo } from '@/content/media';
 import { ORGS } from '@/content/orgs';
+import { orgHelpLabel, orgHref } from '@/content/orgsI18n';
 import { PLACES } from '@/content/places';
 import type { Lang } from '@/site/seo';
 
@@ -106,13 +107,14 @@ export function OrgActions({ ids, lang = 'en' }: { ids: string[]; lang?: Lang })
         if (!o) return null;
         const logo = orgLogo(o.id);
         const help = o.help[0];
+        const helpLabel = help ? orgHelpLabel(o, 0, lang) : undefined;
         return (
           <li key={id}>
             <a href={help?.url ?? o.url} target="_blank" rel="noopener noreferrer">
               <span className="hl-logo">{logo ? <img src={logo.src} alt="" /> : <b>{o.name[0]}</b>}</span>
-              <span lang="en">
-                <strong>{o.name.replace(/\s*\(.*\)/, '')}</strong>
-                <small lang={help ? 'en' : lang}>{help?.label ?? WEBSITE[lang]} ↗</small>
+              <span>
+                <strong lang="en">{o.name.replace(/\s*\(.*\)/, '')}</strong>
+                <small>{helpLabel ?? WEBSITE[lang]} ↗</small>
               </span>
             </a>
           </li>
@@ -509,7 +511,7 @@ export function Compare({ items }: { items: { icon: LucideIcon; title: string; t
 }
 
 /** Orgs with their logo and a sentence about what they do, as a list of cards. */
-export function OrgNotes({ items }: { items: { id: string; note: ReactNode }[] }) {
+export function OrgNotes({ items, lang = 'en' }: { items: { id: string; note: ReactNode }[]; lang?: Lang }) {
   return (
     <ul className="org-notes">
       {items.map(({ id, note }) => {
@@ -520,7 +522,7 @@ export function OrgNotes({ items }: { items: { id: string; note: ReactNode }[] }
           <li key={id}>
             <span className="hl-logo">{logo ? <img src={logo.src} alt="" /> : <b>{o.name[0]}</b>}</span>
             <span>
-              <a href={`/organizations#${o.id}`}>
+              <a href={orgHref(lang, o.id)}>
                 <strong lang="en">{o.name.replace(/\s*\(.*\)/, '')}</strong>
               </a>{' '}
               {note}

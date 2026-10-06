@@ -30,13 +30,13 @@ const article: Article = {
         何が入っているのか？ほとんどは韓国のドラマや映画、K-POP、ニュース、韓国語版ウィキペディア、脱北者の証言だ。誰かが説教する必要はない。ソウルの普通の夕方を見るだけで十分伝わる。
       </p>
       <p>
-        <OrgLink id="flash-drives-for-freedom">Flash Drives for Freedom</OrgLink>（人権財団HRF）は寄付されたUSBを集めていて、これまでに14万本以上が寄付・寄付予定だという。2026年も活動中だ（もう止まったと思っている人が多い）。
+        <OrgLink lang="ja" id="flash-drives-for-freedom">Flash Drives for Freedom</OrgLink>（人権財団HRF）は寄付されたUSBを集めていて、これまでに14万本以上が寄付・寄付予定だという。2026年も活動中だ（もう止まったと思っている人が多い）。
       </p>
 
       <h2 id="radio">ラジオ</h2>
       <p>
         公式のラジオは国営チャンネルに固定されているけど、改造したり密輸したりしたラジオなら夜に短波や中波の放送が聞ける。そしてこれが2025年にいちばん削られたルートだ。自由アジア放送の朝鮮語サービスは米国の助成金が打ち切られて2025年7月17日に閉鎖、ボイス・オブ・アメリカ（VOA）は大幅に縮小、韓国の新政権は2025年6月に独自の対北放送と国境の拡声器をやめた。だから
-        <OrgLink id="unification-media-group">国民統一放送（UMG）</OrgLink>のような民間の放送局が、残ったものの中でずっと大きな割合を占めるようになった。
+        <OrgLink lang="ja" id="unification-media-group">国民統一放送（UMG）</OrgLink>のような民間の放送局が、残ったものの中でずっと大きな割合を占めるようになった。
       </p>
 
       <h2 id="balloons">風船</h2>

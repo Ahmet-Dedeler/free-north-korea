@@ -55,7 +55,7 @@ const article: Article = {
       <h2 id="route">第三步：漫长的出路</h2>
       <p>
         常走的路线是从中国一路向南约4,800公里进入东南亚，通常先到老挝，再到泰国。在泰国，脱北者可以向当局自首，最终被送往韩国（以前蒙古也是一条路）。这一程要走好几个星期：安全屋、长途汽车、夜里穿越丛林。像
-        <OrgLink id="liberty-in-north-korea">Liberty in North Korea</OrgLink>这样的营救机构资助的就是这一段，每人约3,000美元。
+        <OrgLink lang="zh" id="liberty-in-north-korea">Liberty in North Korea</OrgLink>这样的营救机构资助的就是这一段，每人约3,000美元。
       </p>
 
       <h2 id="south-korea">第四步：韩国</h2>
@@ -64,7 +64,7 @@ const article: Article = {
       </p>
       <p>
         但日子仍然很难。陌生的技术，大量不同的词汇（韩国话里满是英语外来词），歧视，还有留在北边的家人。
-        <OrgLink id="fsi">Freedom Speakers International</OrgLink>和<OrgLink id="pscore">PSCORE</OrgLink>
+        <OrgLink lang="zh" id="fsi">Freedom Speakers International</OrgLink>和<OrgLink lang="zh" id="pscore">PSCORE</OrgLink>
         这样的机构帮助他们学英语、上学和练习公开演讲。
       </p>
 

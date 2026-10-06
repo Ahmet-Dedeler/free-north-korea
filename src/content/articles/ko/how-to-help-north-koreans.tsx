@@ -37,7 +37,7 @@ const article: Article = {
         ]}
       />
       <p>
-        <OrgLink id="liberty-in-north-korea">Liberty in North Korea(LiNK)</OrgLink>가 이 여정 비용을 댄다. 다만 점점 어려워지고 있다. LiNK의 2025년
+        <OrgLink lang="ko" id="liberty-in-north-korea">Liberty in North Korea(LiNK)</OrgLink>가 이 여정 비용을 댄다. 다만 점점 어려워지고 있다. LiNK의 2025년
         보고서에 따르면 중국의 생체인식 검문소와 AI 감시 때문에 모든 경로가 더 느리고 더 비싸졌다.
       </p>
       <OrgActions lang="ko" ids={['liberty-in-north-korea', 'crossing-borders']} />
@@ -45,13 +45,13 @@ const article: Article = {
       <h2 id="information">정보 보내기</h2>
       <p>
         바깥 정보는 북한 사람들이 정부가 거짓말하고 있다는 걸 알게 되는 방법이다.{' '}
-        <OrgLink id="flash-drives-for-freedom">Flash Drives for Freedom</OrgLink>(인권재단 HRF 운영)은 기부받은 USB를 초기화하고 영화, 한국어
+        <OrgLink lang="ko" id="flash-drives-for-freedom">Flash Drives for Freedom</OrgLink>(인권재단 HRF 운영)은 기부받은 USB를 초기화하고 영화, 한국어
         위키백과, 뉴스 등을 담아서, 협력 단체가 북한 안으로 들여보낸다. 2026년에도 운영 중이고, 기부·약정된 USB가 14만 개가 넘는다. 안 쓰는 USB
         몇 개 부치는 데 10분 정도 걸린다.
       </p>
       <p>
         라디오도 중요한데, 가장 큰 타격을 입었다. 자유아시아방송 한국어 서비스는 미국 예산이 끊긴 뒤 2025년 7월 문을 닫았고, 한국도 자체 방송을
-        끝냈다. <OrgLink id="unification-media-group">국민통일방송(UMG)</OrgLink> 같은 단체는 여전히 방송하고 있고, 도움이 정말 필요하다.
+        끝냈다. <OrgLink lang="ko" id="unification-media-group">국민통일방송(UMG)</OrgLink> 같은 단체는 여전히 방송하고 있고, 도움이 정말 필요하다.
       </p>
       <OrgActions lang="ko" ids={['flash-drives-for-freedom', 'unification-media-group']} />
 
@@ -61,16 +61,16 @@ const article: Article = {
         말, 영어, 구직, 트라우마, 두고 온 가족.
       </p>
       <p>
-        <OrgLink id="fsi">Freedom Speakers International</OrgLink>(옛 TNKR)을 통해 온라인으로 영어를 가르치거나, 서울에서{' '}
-        <OrgLink id="pscore">PSCORE</OrgLink> 봉사를 할 수 있다. 영어를 할 줄 알고 일주일에 한 시간을 낼 수 있다면, 할 수 있는 가장 직접적인 일
+        <OrgLink lang="ko" id="fsi">Freedom Speakers International</OrgLink>(옛 TNKR)을 통해 온라인으로 영어를 가르치거나, 서울에서{' '}
+        <OrgLink lang="ko" id="pscore">PSCORE</OrgLink> 봉사를 할 수 있다. 영어를 할 줄 알고 일주일에 한 시간을 낼 수 있다면, 할 수 있는 가장 직접적인 일
         중 하나다 (그리고 돕는 사람을 실제로 알게 된다).
       </p>
       <OrgActions lang="ko" ids={['fsi', 'pscore']} />
 
       <h2 id="evidence">증거 남기기</h2>
       <p>
-        언젠가는 아마 재판, 진실위원회, 그리고 무덤을 찾는 가족들이 있을 거다. <OrgLink id="nkdb">NKDB(북한인권정보센터)</OrgLink>,{' '}
-        <OrgLink id="tjwg">TJWG(전환기정의워킹그룹)</OrgLink>, <OrgLink id="korea-future">Korea Future</OrgLink> 같은 단체는 지금 탈북민을
+        언젠가는 아마 재판, 진실위원회, 그리고 무덤을 찾는 가족들이 있을 거다. <OrgLink lang="ko" id="nkdb">NKDB(북한인권정보센터)</OrgLink>,{' '}
+        <OrgLink lang="ko" id="tjwg">TJWG(전환기정의워킹그룹)</OrgLink>, <OrgLink lang="ko" id="korea-future">Korea Future</OrgLink> 같은 단체는 지금 탈북민을
         인터뷰하고 감옥과 처형 장소를 지도로 만든다. 그 기록이 필요할 때 존재하도록. 이 중 몇 곳은 2025년에 미국 지원금을 잃었다.
       </p>
       <OrgActions lang="ko" ids={['nkdb', 'tjwg', 'korea-future']} />

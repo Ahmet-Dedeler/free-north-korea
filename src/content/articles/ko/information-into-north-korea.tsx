@@ -34,7 +34,7 @@ const article: Article = {
         보는 것만으로 충분하다.
       </p>
       <p>
-        <OrgLink id="flash-drives-for-freedom">Flash Drives for Freedom</OrgLink>(인권재단 HRF)은 기부받은 USB를 모으고, 지금까지 14만 개 넘게
+        <OrgLink lang="ko" id="flash-drives-for-freedom">Flash Drives for Freedom</OrgLink>(인권재단 HRF)은 기부받은 USB를 모으고, 지금까지 14만 개 넘게
         기부·약정됐다고 한다. 2026년에도 운영 중이다 (멈춘 줄 아는 사람이 많다).
       </p>
 
@@ -43,7 +43,7 @@ const article: Article = {
         공식 라디오는 국영 채널에 고정돼 있지만, 개조하거나 밀수한 라디오로는 밤에 단파와 중파 방송을 들을 수 있다. 그리고 이게 2025년에 가장
         많이 잘린 통로다. 자유아시아방송 한국어 서비스는 미국 지원금이 끊긴 뒤 2025년 7월 17일 문을 닫았고, 미국의소리(VOA)는 대폭 축소됐고, 한국의
         새 정부는 2025년 6월 자체 대북 방송과 확성기를 중단했다. 그래서{' '}
-        <OrgLink id="unification-media-group">국민통일방송(UMG)</OrgLink> 같은 민간 방송이 이제 남은 것 중 훨씬 큰 비중을 차지한다.
+        <OrgLink lang="ko" id="unification-media-group">국민통일방송(UMG)</OrgLink> 같은 민간 방송이 이제 남은 것 중 훨씬 큰 비중을 차지한다.
       </p>
 
       <h2 id="balloons">풍선</h2>

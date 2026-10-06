@@ -34,18 +34,18 @@ const article: Article = {
         ]}
       />
       <p>
-        <OrgLink id="liberty-in-north-korea">Liberty in North Korea（LiNK）</OrgLink>がこの旅の費用を出している。ただ、どんどん難しくなっている。LiNKの2025年の報告によると、中国の生体認証検問所とAI監視のせいで、どのルートも遅く高くなった。
+        <OrgLink lang="ja" id="liberty-in-north-korea">Liberty in North Korea（LiNK）</OrgLink>がこの旅の費用を出している。ただ、どんどん難しくなっている。LiNKの2025年の報告によると、中国の生体認証検問所とAI監視のせいで、どのルートも遅く高くなった。
       </p>
       <OrgActions lang="ja" ids={['liberty-in-north-korea', 'crossing-borders']} />
 
       <h2 id="information">情報を送る</h2>
       <p>
-        外の情報は、北朝鮮の人々が政府に嘘をつかれていると知る手段だ。<OrgLink id="flash-drives-for-freedom">Flash Drives for Freedom</OrgLink>
+        外の情報は、北朝鮮の人々が政府に嘘をつかれていると知る手段だ。<OrgLink lang="ja" id="flash-drives-for-freedom">Flash Drives for Freedom</OrgLink>
         （人権財団HRFが運営）は寄付されたUSBを初期化して、映画、韓国語版ウィキペディア、ニュースなどを入れ、協力団体が国内に届ける。2026年も活動中で、寄付・寄付予定のUSBは14万本を超える。使わないUSBを何本か送るのに10分くらいしかかからない。
       </p>
       <p>
         ラジオも大事だけど、いちばん打撃を受けた。自由アジア放送の朝鮮語サービスは米国の予算が切られて2025年7月に閉鎖され、韓国も独自の放送をやめた。
-        <OrgLink id="unification-media-group">国民統一放送（UMG）</OrgLink>のような団体は今も放送していて、支援を本当に必要としている。
+        <OrgLink lang="ja" id="unification-media-group">国民統一放送（UMG）</OrgLink>のような団体は今も放送していて、支援を本当に必要としている。
       </p>
       <OrgActions lang="ja" ids={['flash-drives-for-freedom', 'unification-media-group']} />
 
@@ -54,15 +54,15 @@ const article: Article = {
         2025年末までに34,538人の北朝鮮の人が韓国に着いた（その年に来たのは224人で、ほとんどが女性）。一からやり直すのは大変だ。同じ言語なのに違う言葉、英語、仕事探し、トラウマ、残してきた家族。
       </p>
       <p>
-        <OrgLink id="fsi">Freedom Speakers International</OrgLink>（旧TNKR）でオンラインで英語を教えたり、ソウルで<OrgLink id="pscore">PSCORE</OrgLink>
+        <OrgLink lang="ja" id="fsi">Freedom Speakers International</OrgLink>（旧TNKR）でオンラインで英語を教えたり、ソウルで<OrgLink lang="ja" id="pscore">PSCORE</OrgLink>
         のボランティアをしたりできる。英語ができて週に1時間使えるなら、できることの中でいちばん直接的なものの一つだ（そして助けている相手と実際に知り合える）。
       </p>
       <OrgActions lang="ja" ids={['fsi', 'pscore']} />
 
       <h2 id="evidence">証拠を残す</h2>
       <p>
-        いつかはたぶん裁判や真実委員会があり、墓を探す家族が出てくる。<OrgLink id="nkdb">NKDB（北韓人権情報センター）</OrgLink>、
-        <OrgLink id="tjwg">TJWG（移行期正義ワーキンググループ）</OrgLink>、<OrgLink id="korea-future">Korea Future</OrgLink>
+        いつかはたぶん裁判や真実委員会があり、墓を探す家族が出てくる。<OrgLink lang="ja" id="nkdb">NKDB（北韓人権情報センター）</OrgLink>、
+        <OrgLink lang="ja" id="tjwg">TJWG（移行期正義ワーキンググループ）</OrgLink>、<OrgLink lang="ja" id="korea-future">Korea Future</OrgLink>
         のような団体は、今のうちに脱北者に聞き取りをし、刑務所や処刑場所を地図にしている。必要になったときにその記録があるように。このうちいくつかは2025年に米国の助成金を失った。
       </p>
       <OrgActions lang="ja" ids={['nkdb', 'tjwg', 'korea-future']} />

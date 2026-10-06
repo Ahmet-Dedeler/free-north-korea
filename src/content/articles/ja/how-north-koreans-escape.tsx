@@ -54,7 +54,7 @@ const article: Article = {
       <h2 id="route">ステップ3：長い道のり</h2>
       <p>
         よくあるルートは中国を南へ約3,000マイル（約4,800km）下って東南アジアへ、多くはラオスを通ってタイに入る。タイでは自首でき、最終的に韓国へ送られる（以前はモンゴルも一つの道だった）。何週間もかかる。隠れ家、バス、夜のジャングル越え。
-        <OrgLink id="liberty-in-north-korea">Liberty in North Korea</OrgLink>のような救出団体が費用を出すのがこの部分で、1人あたり約3,000ドルだ。
+        <OrgLink lang="ja" id="liberty-in-north-korea">Liberty in North Korea</OrgLink>のような救出団体が費用を出すのがこの部分で、1人あたり約3,000ドルだ。
       </p>
 
       <h2 id="south-korea">ステップ4：韓国</h2>
@@ -63,7 +63,7 @@ const article: Article = {
       </p>
       <p>
         それでも本当に大変だ。新しい技術、かなり違う語彙（韓国語は英語由来の言葉だらけだ）、差別、残してきた家族。
-        <OrgLink id="fsi">Freedom Speakers International</OrgLink>や<OrgLink id="pscore">PSCORE</OrgLink>のような団体が英語、学業、スピーチを手伝っている。
+        <OrgLink lang="ja" id="fsi">Freedom Speakers International</OrgLink>や<OrgLink lang="ja" id="pscore">PSCORE</OrgLink>のような団体が英語、学業、スピーチを手伝っている。
       </p>
 
       <h2 id="numbers">数字で見ると</h2>

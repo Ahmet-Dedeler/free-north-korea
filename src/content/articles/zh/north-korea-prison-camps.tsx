@@ -70,12 +70,12 @@ const article: Article = {
         本站追踪的全部{getAllCamps().length}处设施见<Link href="/camps">收容所页面</Link>（英文）。
       </p>
       <p>
-        情况在好转吗？很难说。一些研究者，比如<OrgLink id="tjwg">转型正义工作组（TJWG）</OrgLink>
+        情况在好转吗？很难说。一些研究者，比如<OrgLink lang="zh" id="tjwg">转型正义工作组（TJWG）</OrgLink>
         ，看到迹象表明金正恩时代政治犯收容所的人数减少了，而普通监狱的人数增加了。但联合国2025年的报告发现，2014年之后的十年里，整体镇压是变本加厉，而不是有所好转。
       </p>
 
       <h2>谁在记录它们</h2>
-      <OrgNotes
+      <OrgNotes lang="zh"
         items={[
           { id: 'hrnk', note: <>发布针对单个收容所的卫星图像分析（它的报告《隐藏的古拉格》（<i>Hidden Gulag</i>）是标准参考资料）。</> },
           { id: 'nkdb', note: '维护一个人权侵害数据库，以及一个根据数万份证词建立的监狱数据库。' },

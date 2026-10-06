@@ -3,10 +3,31 @@
  * (lang === 'en', and the other pages that import them). This file is the page chrome in every language, plus
  * Korean, Japanese and Chinese overlays keyed by org id.
  */
-import { ORGS, type OrgCategory, type OrgKind, type OrgStatus } from './orgs';
+import { ORGS, STATUS_LABEL, type Org, type OrgCategory, type OrgKind, type OrgStatus } from './orgs';
 import type { Lang } from '@/site/seo';
 
 export const ORG_PATHS = { en: '/organizations', ko: '/ko/organizations', ja: '/ja/organizations', zh: '/zh/organizations' } as const;
+
+export function orgHref(lang: Lang, id: string) {
+  return `${ORG_PATHS[lang]}#${id}`;
+}
+
+/** English comes from orgs.ts. Other languages use the overlay, falling back to English if a row is missing. */
+export function orgSummary(org: Org, lang: Lang) {
+  if (lang === 'en') return org.summary;
+  return ORG_LABELS[lang].orgs[org.id]?.summary ?? org.summary;
+}
+
+export function orgStatusLabel(org: Org, lang: Lang) {
+  if (lang === 'en') return STATUS_LABEL[org.status];
+  return ORG_LABELS[lang].status[org.status];
+}
+
+export function orgHelpLabel(org: Org, index: number, lang: Lang) {
+  const en = org.help[index]?.label;
+  if (!en || lang === 'en') return en;
+  return ORG_LABELS[lang].orgs[org.id]?.help[index] ?? en;
+}
 
 export type OrgPageText = {
   metaTitle: string;

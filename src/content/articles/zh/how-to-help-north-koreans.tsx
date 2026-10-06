@@ -34,7 +34,7 @@ const article: Article = {
         ]}
       />
       <p>
-        <OrgLink id="liberty-in-north-korea">Liberty in North Korea</OrgLink>
+        <OrgLink lang="zh" id="liberty-in-north-korea">Liberty in North Korea</OrgLink>
         （LiNK）资助这样的营救。不过难度越来越大：LiNK的2025年报告说，中国的生物识别检查站和AI监控让每条路线都变得更慢、更贵。
       </p>
       <OrgActions lang="zh" ids={['liberty-in-north-korea', 'crossing-borders']} />
@@ -42,12 +42,12 @@ const article: Article = {
       <h2 id="information">把信息送进去</h2>
       <p>
         外部信息是朝鲜人发现政府在骗他们的途径。
-        <OrgLink id="flash-drives-for-freedom">Flash Drives for Freedom</OrgLink>
+        <OrgLink lang="zh" id="flash-drives-for-freedom">Flash Drives for Freedom</OrgLink>
         （由人权基金会运营）接收捐赠的U盘，清空后装上电影、韩文维基百科、新闻等，再由合作机构送进朝鲜。这个项目2026年仍在运行，捐赠或承诺捐赠的U盘已超过14万个。寄几个旧U盘大概只要十分钟。
       </p>
       <p>
         广播也很重要，而它受到的打击最大。美国削减资金后，自由亚洲电台的韩语节目在2025年7月停播，韩国也停止了自己的对朝广播。
-        <OrgLink id="unification-media-group">国民统一广播（Unification Media Group）</OrgLink>这样的机构仍在广播，非常需要支持。
+        <OrgLink lang="zh" id="unification-media-group">国民统一广播（Unification Media Group）</OrgLink>这样的机构仍在广播，非常需要支持。
       </p>
       <OrgActions lang="zh" ids={['flash-drives-for-freedom', 'unification-media-group']} />
 
@@ -56,15 +56,15 @@ const article: Article = {
         截至2025年底，共有34,538名朝鲜人抵达韩国（当年抵达224人，大多数是女性）。重新开始很难：要学另一种版本的母语，要学英语，要找工作，要面对创伤，还有留在北边的家人。
       </p>
       <p>
-        你可以通过<OrgLink id="fsi">Freedom Speakers International</OrgLink>（原TNKR）在线教英语，或者在首尔给
-        <OrgLink id="pscore">PSCORE</OrgLink>当志愿者。如果你会说英语，每周能抽出一小时，这是你能做的最直接的事情之一（而且你会真正认识你在帮助的那个人）。
+        你可以通过<OrgLink lang="zh" id="fsi">Freedom Speakers International</OrgLink>（原TNKR）在线教英语，或者在首尔给
+        <OrgLink lang="zh" id="pscore">PSCORE</OrgLink>当志愿者。如果你会说英语，每周能抽出一小时，这是你能做的最直接的事情之一（而且你会真正认识你在帮助的那个人）。
       </p>
       <OrgActions lang="zh" ids={['fsi', 'pscore']} />
 
       <h2 id="evidence">保存证据</h2>
       <p>
-        总有一天大概会有审判、真相委员会，还有寻找亲人坟墓的家属。<OrgLink id="nkdb">NKDB</OrgLink>、<OrgLink id="tjwg">TJWG</OrgLink>
-        和<OrgLink id="korea-future">Korea Future</OrgLink>
+        总有一天大概会有审判、真相委员会，还有寻找亲人坟墓的家属。<OrgLink lang="zh" id="nkdb">NKDB</OrgLink>、<OrgLink lang="zh" id="tjwg">TJWG</OrgLink>
+        和<OrgLink lang="zh" id="korea-future">Korea Future</OrgLink>
         这样的机构现在就在访谈脱北者，标出监狱和处决地点，好让需要的时候有记录可查。其中好几家在2025年失去了美国的资助。
       </p>
       <OrgActions lang="zh" ids={['nkdb', 'tjwg', 'korea-future']} />

@@ -76,13 +76,13 @@ const article: Article = {
         추적 중인 시설 {getAllCamps().length}곳 전체는 <Link href="/camps">수용소 페이지</Link>(영어)에 있다.
       </p>
       <p>
-        나아지고 있을까? 말하기 어렵다. <OrgLink id="tjwg">전환기정의워킹그룹(TJWG)</OrgLink> 같은 연구자들은 김정은 시대에 정치범수용소 인원은
+        나아지고 있을까? 말하기 어렵다. <OrgLink lang="ko" id="tjwg">전환기정의워킹그룹(TJWG)</OrgLink> 같은 연구자들은 김정은 시대에 정치범수용소 인원은
         줄고 일반 감옥은 늘어난 징후를 본다. 하지만 유엔의 2025년 보고서는 2014년 이후 10년 동안 전체적인 탄압이 나아진 게 아니라 더 나빠졌다고
         봤다.
       </p>
 
       <h2>누가 기록하나</h2>
-      <OrgNotes
+      <OrgNotes lang="ko"
         items={[
           { id: 'hrnk', note: <>개별 수용소의 위성사진 분석을 발표한다 (『숨겨진 수용소(Hidden Gulag)』 보고서가 표준 참고 자료다).</> },
           { id: 'nkdb', note: '수만 건의 증언으로 만든 인권 침해 데이터베이스와 구금시설 데이터베이스를 운영한다.' },
