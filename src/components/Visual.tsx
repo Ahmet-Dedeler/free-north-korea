@@ -20,7 +20,7 @@ import {
 import { hostLabel } from '@/content/media';
 import { SiteMark } from './Covers';
 
-export function StatTile({ icon: Icon, value, label, note, tone }: { icon?: LucideIcon; value: React.ReactNode; label: string; note?: string; tone?: 'danger' | 'warn' | 'ok' }) {
+export function StatTile({ icon: Icon, value, label, note, tone }: { icon?: LucideIcon; value: React.ReactNode; label: string; note?: React.ReactNode; tone?: 'danger' | 'warn' | 'ok' }) {
   return (
     <div className={`tile ${tone ?? ''}`}>
       {Icon && <Icon className="tile-icon" size={18} aria-hidden="true" />}
