@@ -8,5 +8,5 @@ export const generateStaticParams = () => PEOPLE.map((p) => ({ id: p.id }));
 
 export default async function OgImage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
-  return ogCard(personOgText('en', id));
+  return ogCard(personOgText('zh', id));
 }

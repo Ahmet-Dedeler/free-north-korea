@@ -14,12 +14,12 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
   const p = person((await params).id);
   if (!p) return {};
   const role = currentRole(p);
-  const path = personLanguages(p.id).en;
+  const path = personLanguages(p.id).ko;
   return pageMeta({
-    title: `${p.name_en}${role ? `: ${roleTitle(role.title, 'en')}` : ''}`,
-    description: summaryOf(p.id, 'en', p.summary).slice(0, 160),
+    title: `${p.name_en}${role ? `: ${roleTitle(role.title, 'ko')}` : ''}`,
+    description: summaryOf(p.id, 'ko', p.summary).slice(0, 160),
     path,
-    lang: 'en',
+    lang: 'ko',
     languages: personLanguages(p.id),
     image: `${path}/opengraph-image`,
   });
@@ -28,5 +28,5 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
 export default async function Page({ params }: Params) {
   const { id } = await params;
   if (!person(id)) notFound();
-  return <PersonDossier lang="en" id={id} />;
+  return <PersonDossier lang="ko" id={id} />;
 }
