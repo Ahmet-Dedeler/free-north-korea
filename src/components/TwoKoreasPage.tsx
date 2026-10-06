@@ -1,5 +1,5 @@
 /**
- * /north-korea-vs-south-korea, shared by the English, Korean and Japanese routes. Built like a poster: a "tale of the
+ * /north-korea-vs-south-korea, shared by the English, Korean, Japanese and Chinese routes. Built like a poster: a "tale of the
  * tape" up top, then numbered chapters, each with its own kind of picture (annotated line charts, a stripe timeline,
  * people drawn to scale, hatched bars). Every number in the text and the pictures is read from data/series at build
  * time, so the page follows the weekly data refresh by itself.
@@ -13,9 +13,9 @@ import { dataPath } from '@/content/series';
 import { media } from '@/content/media';
 import { TWO_KOREAS, TWO_KOREAS_PATHS, type Nums } from '@/content/twoKoreas';
 import { REPO_URL } from '@/site/config';
-import { absolute, jsonLd, type Lang } from '@/site/seo';
+import { LANG_TAG, absolute, jsonLd, type Lang } from '@/site/seo';
 
-const ROOT: Record<Lang, string> = { en: '', ko: '/ko', ja: '/ja' };
+const ROOT: Record<Lang, string> = { en: '', ko: '/ko', ja: '/ja', zh: '/zh' };
 
 function numbers(lang: Lang) {
   const nf = (v: number | undefined, digits = 1) =>
@@ -104,7 +104,7 @@ export default function TwoKoreasPage({ lang }: { lang: Lang }) {
       .entities.PRK.filter(([y]) => +y >= 1994 && +y <= 2002)
       .reduce((a, b) => (b[1] < a[1] ? b : a))[0],
   );
-  const sp = lang === 'ja' ? '' : ' '; // the h1 text must read exactly like t.h1
+  const sp = lang === 'ja' || lang === 'zh' ? '' : ' '; // the h1 text must read exactly like t.h1
   const times = (a: number, b: number) => `${nf(a / b, a / b >= 10 ? 0 : 1)}×`;
 
   const tape: TapeRow[] = [
@@ -202,7 +202,7 @@ export default function TwoKoreasPage({ lang }: { lang: Lang }) {
       '@type': 'Article',
       headline: t.metaTitle,
       description: t.metaDescription,
-      inLanguage: lang,
+      inLanguage: LANG_TAG[lang],
       url: absolute(TWO_KOREAS_PATHS[lang]),
       dateModified: getSeries('life-expectancy').fetched,
     },

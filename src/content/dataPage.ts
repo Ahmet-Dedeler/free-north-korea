@@ -1,4 +1,4 @@
-/** Text for /data (the chart and dataset hub) and /data/<id> (one chart) in all three languages. */
+/** Text for /data (the chart and dataset hub) and /data/<id> (one chart) in every language the site has. */
 import type { Lang } from '@/site/seo';
 
 export const DATA_TEXT: Record<
@@ -127,5 +127,38 @@ export const DATA_TEXT: Record<
     related: '関連するグラフ',
     back: 'すべてのグラフ',
     seriesMetaDescription: (title, sub) => `${title}：${sub} インタラクティブなグラフ、表、CSVダウンロード、出典と日付付き。`,
+  },
+  zh: {
+    metaTitle: '朝鲜数据与图表：公开、注明日期、每周更新',
+    metaDescription:
+      '关于朝鲜的免费图表和可下载数据：预期寿命、收入、粮食、市场价格、汇率、脱北者、导弹、制裁和援助。每个数据系列都注明来源和日期。',
+    eyebrow: '公开数据',
+    h1: '朝鲜图表与数据',
+    lede: '本站所有图表，以及图表背后的数据。已经有好的来源（联合国、世界银行、Our World in Data）的，我们直接从那里取。数字埋在PDF、电子表格或新闻报道里的，我们把它们提取出来，在这里保留一份干净的副本。所有数据每周在GitHub上重新生成。',
+    featuredKicker: '从这里开始',
+    featuredTitle: '朝鲜与韩国',
+    featuredBody: '同一个民族，1945年被分开。收入、预期寿命、粮食、电力、身高和自由，并排比较。',
+    tiles: {
+      series: '个数据集',
+      built: '最近更新',
+      builtNote: '每张图表也标有自己的日期',
+      weekly: '每周',
+      weeklyNote: '由GitHub Action自动更新',
+    },
+    oursTitle: '我们自己维护的数据',
+    ours: '这些数据别处没有以干净格式公开：Daily NK调查的市场价格（2009年至今，取自其网站背后的电子表格）、韩国统一部PDF中的脱北者入境人数、CNS数据库的历年导弹发射次数，以及历年联合国制裁指定。',
+    chart: '图表',
+    csv: 'CSV',
+    latestLabel: '最新',
+    citeTitle: '引用方式',
+    cite: (title, url, source, year) => `Free North Korea (${year}).《${title}》. 数据来源：${source}. ${url}`,
+    licenseTitle: '许可协议',
+    license:
+      '我们的代码和处理流程采用Apache-2.0。每个数据集沿用其原始许可（标在来源旁边）。请先注明原始来源；如果我们的整理帮你省了时间，也请提一下我们。',
+    github: 'GitHub上的全部数据',
+    about: '关于这组数据',
+    related: '相关图表',
+    back: '全部图表',
+    seriesMetaDescription: (title, sub) => `${title}：${sub} 交互式图表、表格和CSV下载，附来源和日期。`,
   },
 };

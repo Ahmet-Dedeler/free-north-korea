@@ -1,6 +1,6 @@
 /**
- * One /learn article in any language. The English, Korean and Japanese routes are thin wrappers around this, so all
- * three get the same hero, visuals, FAQ, sources and structured data.
+ * One /learn article in any language. The English, Korean, Japanese and Chinese routes are thin wrappers around this,
+ * so all four get the same hero, visuals, FAQ, sources and structured data.
  */
 import Link from 'next/link';
 import type { Article } from '@/content/articles/types';
@@ -9,7 +9,7 @@ import ArticleArt, { artCredit } from './ArticleArt';
 import ArticleCards from './ArticleCards';
 import { SourceCards } from './Visual';
 import { SITE_NAME, SITE_URL } from '@/site/config';
-import { absolute, jsonLd, type Lang } from '@/site/seo';
+import { LANG_TAG, absolute, jsonLd, type Lang } from '@/site/seo';
 
 const UI: Record<
   Lang,
@@ -54,9 +54,22 @@ const UI: Record<
     more: '続けて読む',
     locale: 'ja-JP',
   },
+  zh: {
+    learn: '解读',
+    learnHref: '/zh',
+    minRead: (n) => `约${n}分钟读完`,
+    updated: '更新于',
+    faq: '简短回答',
+    actTitle: '想做点什么？',
+    actText: '资助一次营救，把信息送进去，或者支持那些记录人权侵害的人。开始只需要十分钟左右。',
+    actBtn: '看看你能做什么',
+    sources: '来源',
+    more: '继续阅读',
+    locale: 'zh-CN',
+  },
 };
 
-const LANG_LABEL: Record<Lang, string> = { en: 'English', ko: '한국어', ja: '日本語' };
+const LANG_LABEL: Record<Lang, string> = { en: 'English', ko: '한국어', ja: '日本語', zh: '中文' };
 
 export default function ArticleView({ a, others }: { a: Article; others: Article[] }) {
   const lang = a.lang ?? 'en';
@@ -73,7 +86,7 @@ export default function ArticleView({ a, others }: { a: Article; others: Article
       '@type': 'Article',
       headline: a.h1,
       description: a.description,
-      inLanguage: lang,
+      inLanguage: LANG_TAG[lang],
       dateModified: a.updated,
       mainEntityOfPage: url,
       author: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
@@ -92,7 +105,7 @@ export default function ArticleView({ a, others }: { a: Article; others: Article
           {
             '@context': 'https://schema.org',
             '@type': 'FAQPage',
-            inLanguage: lang,
+            inLanguage: LANG_TAG[lang],
             mainEntity: a.faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
           },
         ]

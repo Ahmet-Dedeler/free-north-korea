@@ -7,9 +7,9 @@ import { SourceCards, StatTile } from '@/components/Visual';
 import { RESOLUTIONS, SANCTIONS, SANCTIONS_PATHS, SANCTIONS_TEXT, SANCTION_SOURCES, type OfacKind, type UnEntry } from '@/content/sanctions';
 import { ENTITY_ORGS, PEOPLE, currentRole } from '@/entities';
 import { REVIEWED } from '@/site/config';
-import { absolute, jsonLd, type Lang } from '@/site/seo';
+import { LANG_TAG, absolute, jsonLd, type Lang } from '@/site/seo';
 
-const LOCALE: Record<Lang, string> = { en: 'en-GB', ko: 'ko-KR', ja: 'ja-JP' };
+const LOCALE: Record<Lang, string> = { en: 'en-GB', ko: 'ko-KR', ja: 'ja-JP', zh: 'zh-CN' };
 const KIND_ICON: Record<OfacKind, typeof User> = { individual: User, entity: Building2, vessel: Ship, aircraft: Plane };
 const KINDS: OfacKind[] = ['individual', 'entity', 'vessel', 'aircraft'];
 
@@ -50,7 +50,7 @@ function UnTable({ rows, people, t, lang }: { rows: UnEntry[]; people: boolean; 
   );
 }
 
-/** The sanctions page, shared by /sanctions, /ko/sanctions and /ja/sanctions. Only the text changes per language. */
+/** The sanctions page, shared by /sanctions, /ko/sanctions, /ja/sanctions and /zh/sanctions. Only the text changes per language. */
 export default function SanctionsPage({ lang }: { lang: Lang }) {
   const t = SANCTIONS_TEXT[lang];
   const { un, ofac, fetched } = SANCTIONS;
@@ -74,7 +74,7 @@ export default function SanctionsPage({ lang }: { lang: Lang }) {
     '@type': 'Dataset',
     name: t.metaTitle,
     description: t.metaDescription,
-    inLanguage: lang,
+    inLanguage: LANG_TAG[lang],
     url: absolute(SANCTIONS_PATHS[lang]),
     dateModified: fetched,
     isBasedOn: [SANCTION_SOURCES[0].url, SANCTION_SOURCES[2].url],

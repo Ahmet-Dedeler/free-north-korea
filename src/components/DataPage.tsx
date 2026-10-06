@@ -11,7 +11,7 @@ import { DATA_TEXT } from '@/content/dataPage';
 import { ENTITY_LABEL, SERIES_TEXT, TOPICS, UNIT_LABEL, dataPath } from '@/content/series';
 import { TWO_KOREAS_PATHS } from '@/content/twoKoreas';
 import { REPO_URL } from '@/site/config';
-import { absolute, jsonLd, type Lang } from '@/site/seo';
+import { LANG_TAG, absolute, jsonLd, type Lang } from '@/site/seo';
 import '@/charts/charts.css';
 
 const RAW = `${REPO_URL.replace('github.com', 'raw.githubusercontent.com')}/main/data/series/csv`;
@@ -133,7 +133,7 @@ export function DataHub({ lang }: { lang: Lang }) {
     '@type': 'DataCatalog',
     name: t.metaTitle,
     description: t.metaDescription,
-    inLanguage: lang,
+    inLanguage: LANG_TAG[lang],
     url: absolute(dataPath(lang)),
     dateModified: SERIES_BUILT,
     dataset: SERIES.map((s) => ({ '@type': 'Dataset', name: SERIES_TEXT[s.id]?.[lang]?.title ?? s.title, url: absolute(dataPath(lang, s.id)) })),
@@ -233,7 +233,7 @@ export function SeriesPage({ lang, id }: { lang: Lang; id: string }) {
     '@type': 'Dataset',
     name: title,
     description: text?.sub ?? s.title,
-    inLanguage: lang,
+    inLanguage: LANG_TAG[lang],
     url,
     dateModified: s.fetched,
     temporalCoverage: `${String(all.reduce((m, [x]) => (toX(x) < toX(m) ? x : m), all[0][0]))}/${String(all.reduce((m, [x]) => (toX(x) > toX(m) ? x : m), all[0][0]))}`,

@@ -2,7 +2,7 @@
  * Visual blocks used inside /learn articles, so explainers read like a field guide rather than a blog post.
  * Every number here also appears in the article text or its sources.
  *
- * Blocks that carry their own words take `lang` (default English), so the Korean and Japanese articles reuse the
+ * Blocks that carry their own words take `lang` (default English), so the Korean, Japanese and Chinese articles reuse the
  * same visuals. Text inside a block lives in a `Record<Lang, …>` next to it.
  */
 import type { CSSProperties, ReactNode } from 'react';
@@ -61,7 +61,7 @@ export function Timeline({ items }: { items: { date: string; title: string; text
   );
 }
 
-const TLDR: Record<Lang, string> = { en: 'tldr:', ko: '세 줄 요약', ja: '3行まとめ' };
+const TLDR: Record<Lang, string> = { en: 'tldr:', ko: '세 줄 요약', ja: '3行まとめ', zh: '要点' };
 
 /** The short version, at the end of an article (never the top). */
 export function Tldr({ lang = 'en', items }: { lang?: Lang; items: ReactNode[] }) {
@@ -95,7 +95,7 @@ export function Steps({ steps }: { steps: { icon: LucideIcon; title: string; fac
   );
 }
 
-const WEBSITE: Record<Lang, string> = { en: 'Website', ko: '웹사이트', ja: 'ウェブサイト' };
+const WEBSITE: Record<Lang, string> = { en: 'Website', ko: '웹사이트', ja: 'ウェブサイト', zh: '网站' };
 
 /** Org cards with logos and the direct way to help, for "how to help" sections. */
 export function OrgActions({ ids, lang = 'en' }: { ids: string[]; lang?: Lang }) {
@@ -154,6 +154,13 @@ const PATH_TEXT: Record<Lang, [string, string][]> = {
     ['体制の崩壊', '外では証拠を準備できる'],
     ['外からの圧力', '各国政府と中国を通じて'],
   ],
+  zh: [
+    ['外部信息流入', '外界可以直接推动'],
+    ['高层分裂', '发生在精英内部'],
+    ['内部改革', '取决于未来的领导人'],
+    ['政权崩溃', '外界可以提前准备证据'],
+    ['外部压力', '通过各国政府和中国'],
+  ],
 };
 
 export function FivePaths({ lang = 'en' }: { lang?: Lang }) {
@@ -197,6 +204,12 @@ const ESCAPE_TEXT: Record<Lang, [string, string][]> = {
     ['南へ約4,800km', '隠れ家、バス、ジャングルを抜けてラオスとタイへ。救出1件あたり約3,000ドル。'],
     ['韓国', '取り調べのあと、ハナ院で約3か月過ごしてから新しい生活を始める。'],
   ],
+  zh: [
+    ['过河', '渡过图们江或鸭绿江进入中国，通常要靠向边防兵行贿的中间人。'],
+    ['藏身中国', '没有合法身份。被抓就会被遣返：2023年10月一次就送回约500到600人。'],
+    ['南下约4,800公里', '经过安全屋、长途汽车和丛林，进入老挝和泰国。每救一人约3,000美元。'],
+    ['韩国', '先接受审查，再在统一院（Hanawon）住约三个月，然后开始新生活。'],
+  ],
 };
 const ESCAPE_ICONS: { icon: LucideIcon; anchor: string }[] = [
   { icon: Waves, anchor: 'border' },
@@ -213,6 +226,7 @@ const BORDER_TEXT: Record<Lang, { names: Record<string, string>; caption: string
   en: { names: { hyesan: 'Hyesan', musan: 'Musan', hoeryong: 'Hoeryong' }, caption: 'Common crossing areas on the Yalu and Tumen rivers. Click a dot for the place.' },
   ko: { names: { hyesan: '혜산', musan: '무산', hoeryong: '회령' }, caption: '압록강과 두만강의 주요 도강 지역. 점을 누르면 해당 장소로 이동한다.' },
   ja: { names: { hyesan: '恵山', musan: '茂山', hoeryong: '会寧' }, caption: '鴨緑江と豆満江の主な渡河地点。点をクリックするとその場所へ。' },
+  zh: { names: { hyesan: '惠山', musan: '茂山', hoeryong: '会宁' }, caption: '鸭绿江和图们江上常见的越境地段。点击圆点查看该地。' },
 };
 
 /** The border towns people usually cross near, on the server-rendered map of North Korea. */
@@ -289,6 +303,13 @@ const ARRIVALS_TEXT: Record<Lang, { people: (n: string) => string; women: string
     men: '男性',
     covid: '2020年 コロナで国境封鎖',
     caption: '韓国に到着した脱北者の年別人数。2025年末までの累計は34,538人。',
+  },
+  zh: {
+    people: (n) => `${n}人`,
+    women: '女性',
+    men: '男性',
+    covid: '2020年因新冠封锁边境',
+    caption: '每年抵达韩国的朝鲜人数。截至2025年底累计34,538人。',
   },
 };
 
@@ -369,6 +390,11 @@ const CHANNEL_TEXT: Record<Lang, [string, string, string][]> = {
     ['ラジオ', '2025年に最も打撃', 'RFA朝鮮語放送は2025年7月に停止、VOAは大幅縮小、韓国政府も2025年6月に対北放送をやめた。'],
     ['風船', 'ほぼ停止', '韓国政府が2025年に打ち上げ禁止の取り締まりを始めた。いちばん目立つ方法だが、たぶん一番効果的な方法ではない。'],
   ],
+  zh: [
+    ['U盘和microSD卡', '主要渠道', '在人与人之间手手相传地拷贝，用便宜的“Notel”播放器播放。捐给或承诺捐给 Flash Drives for Freedom 的U盘超过14万个。'],
+    ['广播', '2025年受打击最重', '自由亚洲电台韩语节目2025年7月停播，美国之音被大幅削减，韩国政府也在2025年6月停止了对朝广播。'],
+    ['气球', '基本停止', '韩国政府2025年开始执行放飞禁令。这是最显眼的方法，但很可能不是最有效的。'],
+  ],
 };
 
 export function Channels({ lang = 'en' }: { lang?: Lang }) {
@@ -423,6 +449,13 @@ const HELP_TEXT: Record<Lang, [string, string][]> = {
     ['脱北者を助ける', '週1時間のチューター'],
     ['証拠を残す', '記録団体を支援'],
     ['声を上げる', '議員に連絡する'],
+  ],
+  zh: [
+    ['资助营救', '每人约3,000美元'],
+    ['把信息送进去', '寄出一个旧U盘'],
+    ['帮助脱北者', '每周一小时辅导'],
+    ['保存证据', '资助记录机构'],
+    ['发出声音', '联系你的议员'],
   ],
 };
 
@@ -554,11 +587,12 @@ export function IconCards({
   );
 }
 
-const KIM_NAMES: Record<'ko' | 'ja', Record<string, string>> = {
+const KIM_NAMES: Record<Exclude<Lang, 'en'>, Record<string, string>> = {
   ko: { 'kim-il-sung': '김일성', 'kim-jong-il': '김정일', 'kim-jong-un': '김정은' },
   ja: { 'kim-il-sung': '金日成', 'kim-jong-il': '金正日', 'kim-jong-un': '金正恩' },
+  zh: { 'kim-il-sung': '金日成', 'kim-jong-il': '金正日', 'kim-jong-un': '金正恩' },
 };
-const NOW: Record<Lang, string> = { en: 'now', ko: '현재', ja: '現在' };
+const NOW: Record<Lang, string> = { en: 'now', ko: '현재', ja: '現在', zh: '至今' };
 
 /** The three Kims as a timeline with portraits. */
 export function Dynasty({ lang = 'en' }: { lang?: Lang }) {

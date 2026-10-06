@@ -4,7 +4,8 @@ Next.js 16 (App Router, Turbopack) + React 19 + TypeScript + MapLibre GL v6. Eve
 no backend. Goal of the site: be the open-source hub for understanding North Korea and helping its people, and rank for
 searches like "how can North Korea be freed". SEO matters, so content must stay server-rendered.
 
-The site is published in three languages: English (root), Korean (`/ko`) and Japanese (`/ja`). See "Languages" below
+The site is published in four languages: English (root), Korean (`/ko`), Japanese (`/ja`) and Simplified Chinese
+(`/zh`, hreflang `zh-Hans`). See "Languages" below
 before adding any page or article.
 
 ## Layout
@@ -15,10 +16,10 @@ before adding any page or article.
 - `src/content/`: all facts live here as typed data, not in components.
   - `articles/*.tsx`: the /learn explainers (SEO pages). Register new ones in `articles/index.ts`; route, sitemap and
     FAQ JSON-LD follow automatically. FAQ answers are plain strings because they go into JSON-LD.
-  - `translations/ko.ts`, `translations/ja.ts`: the Korean and Japanese articles and hub text.
+  - `translations/{ko,ja,zh}.ts`: the Korean, Japanese and Chinese articles (`articles/<lang>/`) and hub text.
     `translations/index.ts` maps each page to its versions in other languages (`articleLanguages`, `HUB_PATHS`).
   - `orgs.ts` (directory, with `status`), `library.ts`, `places.ts` (atlas points + escape route).
-  - `sanctions.ts`: text for /sanctions in all three languages plus the UN resolution timeline. The lists themselves
+  - `sanctions.ts`: text for /sanctions in every language plus the UN resolution timeline. The lists themselves
     are `data/sanctions.json` (built, never hand-edited).
 - `src/map/`: the intel map (`/map`): `config.ts` (layers, county shading), `IntelMap.tsx` (MapLibre), `Explorer.tsx`
   (sidebar, search), `Detail.tsx` (county and point panels). Deep links: `/map#county=KP0205`, `/map#camps=camp-3`.
@@ -34,7 +35,7 @@ before adding any page or article.
 - Charts (Our World in Data style): `data/series/series.json` holds every chart dataset (plus one CSV per series in
   `data/series/csv/`, so the data is usable straight from GitHub). `src/charts/data.ts` reads it and `chartProps()`
   trims a series to what one chart shows; `src/charts/ChartView.tsx` is the one chart frame (hover, legend toggles,
-  table tab, linear/log, CSV, copy link, share). Titles, units and entity names in three languages live in
+  table tab, linear/log, CSV, copy link, share). Titles, units and entity names in every language live in
   `src/content/series.ts`. Entity colours are fixed (North Korea red, South Korea blue, China green, world grey
   dashed) and were checked for colour blindness; don't add Japan next to South Korea (the pair fails in dark mode).
   Pages: `/north-korea-vs-south-korea` (`components/TwoKoreasPage.tsx`, text in `content/twoKoreas.ts`, numbers in
@@ -44,7 +45,7 @@ before adding any page or article.
   that aren't line charts live in `src/charts/Infographics.tsx` (tale of the tape, year stripes, people to scale);
   `components/Reveal.tsx` adds the grow-in. Country colours are only for countries; other series use the `--s1..4` slots.
 - `/sanctions`: everyone on the UN 1718 list and the US Treasury (OFAC) North Korea programs. One component
-  (`components/SanctionsPage.tsx`) renders all three language routes.
+  (`components/SanctionsPage.tsx`) renders every language route.
 - Content pages are visual, not text walls. Reuse the building blocks before writing paragraphs:
   `components/Visual.tsx` (StatTile, icon chips, SourceCards), `AsOf` (date a number is from), `SatView` (Esri satellite
   tiles, no map lib), `Locator` (server SVG of NK from `site/geo.ts`), `HoverLinks` (OrgLink/PlaceLink hover previews,
@@ -56,21 +57,23 @@ before adding any page or article.
 
 ## Languages (non-negotiable)
 
-Anything a reader can see ships in English, Korean and Japanese. A page or article is not done until all three exist.
+Anything a reader can see ships in English, Korean, Japanese and Chinese. A page or article is not done until all four
+exist.
 
-- **Articles.** A new `/learn` article needs an entry with the same `slug` in `translations/ko.ts` and
-  `translations/ja.ts` in the same change. `npm run lint` fails if one is missing (`scripts/check-translations.mjs`).
-  When you edit facts in an English article, update both translations too. An article may exist in only one language
+- **Articles.** A new `/learn` article needs a file with the same `slug` in `articles/ko/`, `articles/ja/` and
+  `articles/zh/` (listed in each folder's `index.ts`) in the same change. `npm run lint` fails if one is missing (`scripts/check-translations.mjs`).
+  When you edit facts in an English article, update every translation too. An article may exist in only one language
   when it is written for that audience (the Japanese abductees piece).
 - **Pages.** Build new pages the way `/sanctions` is built: one shared component that takes `lang`, text in a
-  `Record<Lang, …>` in `src/content/`, and three thin routes (`/x`, `/ko/x`, `/ja/x`). Don't fork the JSX per language.
+  `Record<Lang, …>` in `src/content/`, and thin routes (`/x`, `/ko/x`, `/ja/x`, `/zh/x`). Don't fork the JSX per language.
   Older pages (`/act`, `/organizations`, `/military`, `/camps`, `/people`, `/library` and the rest) are still English
   only. When you touch one in a meaningful way, move it to this pattern and translate it.
 - **hreflang.** Every translated route passes `lang` and `languages` to `pageMeta()`, listing all versions including
   itself, and gets the same `alternates` in `sitemap.ts`. All versions must list the same set.
 - **Translate, don't summarize.** Same facts, same numbers, same sources as the English. Proper names follow local
-  usage (국민통일방송, 自由アジア放送). Official text such as sanctions listings stays in English, with a line saying so.
-- The root layout owns `<html lang="en">`; `/ko` and `/ja` set `lang` on a wrapper in their `layout.tsx`. Put
+  usage (국민통일방송, 自由アジア放送, 自由亚洲电台). Chinese uses mainland terms: 朝鲜 / 韩国. Official text such as sanctions listings stays in English, with a line saying so.
+- The root layout owns `<html lang="en">`; `/ko`, `/ja` and `/zh` set `lang` on a wrapper in their `layout.tsx`
+  (`zh-Hans` for Chinese; `LANG_TAG` in `site/seo.ts` maps `Lang` to hreflang/`inLanguage` codes). Put
   `lang="en"` on English blocks inside translated pages.
 
 ## SEO
@@ -132,7 +135,7 @@ Run order after a scrape: `node scripts/build-layers.ts && node scripts/build-en
   two years before `REVIEWED`; `isStale()` gives the same answer for custom markup. Built data files carry their own
   date (`fetched`, `built`, `updated`) so the page never has to guess. If you don't know how old a number is, find
   out before publishing it.
-- Writing: plain, direct, concrete numbers, no em dashes, no marketing voice. Same in Korean and Japanese.
+- Writing: plain, direct, concrete numbers, no em dashes, no marketing voice. Same in Korean, Japanese and Chinese.
 - Analytics: PostHog, initialised in `src/instrumentation-client.ts` from `NEXT_PUBLIC_POSTHOG_KEY` (unset = off, so
   forks and local dev send nothing). It runs cookieless with no person profiles, no session recording and Do Not
   Track respected. Keep it that way: readers may be at risk, and the footer promises no cookies. Don't add other

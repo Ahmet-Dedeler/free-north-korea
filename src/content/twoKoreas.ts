@@ -1,5 +1,5 @@
 /**
- * Text for /north-korea-vs-south-korea in all three languages. Numbers are filled in from data/series at build
+ * Text for /north-korea-vs-south-korea in every language the site has. Numbers are filled in from data/series at build
  * time (see TwoKoreasPage), so the text never goes stale when a source updates. Only historical facts that don't
  * change (dates of the war, the famine) are written out.
  */
@@ -41,7 +41,7 @@ type Text = {
   readNext: string;
 };
 
-export const TWO_KOREAS_PATHS = { en: '/north-korea-vs-south-korea', ko: '/ko/north-korea-vs-south-korea', ja: '/ja/north-korea-vs-south-korea' } as const;
+export const TWO_KOREAS_PATHS = { en: '/north-korea-vs-south-korea', ko: '/ko/north-korea-vs-south-korea', ja: '/ja/north-korea-vs-south-korea', zh: '/zh/north-korea-vs-south-korea' } as const;
 
 export const TWO_KOREAS: Record<Lang, Text> = {
   en: {
@@ -400,5 +400,123 @@ export const TWO_KOREAS: Record<Lang, Text> = {
     dataCta: 'すべてのグラフとデータ',
     githubCta: 'GitHubのデータ',
     readNext: '次に読む',
+  },
+  zh: {
+    metaTitle: '朝鲜与韩国对比：同一个民族，相隔80年（图表）',
+    metaDescription: '用联合国、世界银行、粮农组织和V-Dem的数据制成图表，比较1945年以来朝鲜和韩国的预期寿命、收入、粮食、电力、身高和自由。',
+    eyebrow: '数据 · 南北对比',
+    h1: '朝鲜与韩国',
+    lede: '同一个民族，同一种语言，同样的饭菜。1945年，朝鲜半岛沿北纬38度线被一分为二，此后一段时间南北两边大致相当（1990年两边的人均预期寿命都在70岁左右）。然后两边越拉越远。这些图表告诉你差距有多大。',
+    nightCaption: '夜晚的朝鲜半岛。最亮的一片是首尔，北边孤零零的一个光点是平壤。',
+    poster: { kicker: '同一个民族 · 同一种语言 · 1945年分裂', north: '朝鲜', vs: '与', south: '韩国', tape: '八个数字看差距' },
+    tape: {
+      life: '预期寿命',
+      gdp: '人均收入',
+      power: '人均用电',
+      kids: '五岁前夭折的儿童',
+      food: '人均每日食物',
+      phones: '手机',
+      height: '男性身高',
+      freedom: '民主指数',
+    },
+    units: { years: '岁', kcal: '千卡', per100: '每百人', cm: '厘米', index: '0到1', bornIn: (y) => `${y}年出生` },
+    notes: {
+      money: (n) => `1940年：北方更富（$${n.gdp40P} 对 $${n.gdp40K}）`,
+      life: (n) => `大饥荒：预期寿命跌到${n.leFamine}岁`,
+      kids: (n) => `1996年：${n.cm96}%的儿童活不到五岁`,
+      energy: '1980年：朝鲜的人均能源消耗仍然更高',
+    },
+    stripes: { low: '封闭的独裁', high: '完全民主', open: '查看完整图表', twoStates: '两个国家' },
+    height: { men: '男性', women: '女性' },
+    bands: { division: '分裂', war: '朝鲜战争', famine: '大饥荒', covid: '关闭边境', democracy: '韩国民主化' },
+    sections: [
+      {
+        id: 'money',
+        h2: '分裂之前，北方是更富的一半',
+        body: (n) => [
+          `日本把工厂、矿山和水坝主要建在北方，所以1940年北半部人均收入约${n.gdp40P}美元，南半部约${n.gdp40K}美元。战争之后，局面很快反转。`,
+          `到${n.gdpYear}年，韩国是${n.gdpK}美元，朝鲜是${n.gdpP}美元，相差约${n.gdpRatio}倍。1944年到1989年间朝鲜的真实数字没有人知道（朝鲜几乎什么都不公布），所以它的线中间有一段空白。`,
+        ],
+      },
+      {
+        id: 'life',
+        h2: '饥荒之前，两边不相上下',
+        body: (n) => [
+          `1990年，朝鲜出生的婴儿预期寿命是${n.le90P}岁，韩国是${n.le90K}岁，基本一样。随后苏联解体，援助中断，又遇上洪水，1990年代中期的大饥荒夺去了几十万到几百万人的生命。`,
+          `联合国的估计在1995年跌到${n.leFamine}岁。现在朝鲜是${n.leP}岁，韩国是${n.leK}岁，朝鲜人平均早死约${n.leGap}年。（1995年之后那段平线是联合国对危机年份的建模方式，真实的逐年变化没有人知道。）`,
+        ],
+      },
+      {
+        id: 'kids',
+        h2: '饥荒的代价，孩子最先承担',
+        body: (n) => [
+          `1990年，朝鲜约${n.cm90}%的儿童活不到五岁。到1996年是${n.cm96}%，十个孩子里就有一个。`,
+          `此后大幅下降，${n.cmYear}年为${n.cmP}%，但仍是韩国（${n.cmK}%）的约${n.cmRatio}倍。`,
+        ],
+      },
+      {
+        id: 'energy',
+        h2: '灯灭了，就再也没亮回来',
+        body: (n) => [
+          `朝鲜1980年的人均能源消耗（${n.en80P}千瓦时）比现在（${n.enP}千瓦时）还高，是极少数倒退的国家之一。同一时期，韩国从${n.en80K}千瓦时增长到${n.enK}千瓦时。`,
+          `上面那张照片就是结果。约${n.accP}%的朝鲜人家里通了电，而且即使通电，往往一天也只有几个小时。`,
+        ],
+      },
+      {
+        id: 'height',
+        h2: '南方的人长高了',
+        body: (n) => [
+          `1930年出生的男性，南北身高一样：朝鲜${n.hm30P}厘米，韩国${n.hm30K}厘米。1996年出生的男性，朝鲜是${n.hmP}厘米，韩国是${n.hmK}厘米。`,
+          `身高主要取决于童年时的营养和健康。同一个民族在几十年里拉开${n.hmGap}厘米，这是饥饿留下的记录。女性也有同样的差距（${n.hwP}厘米对${n.hwK}厘米）。`,
+        ],
+      },
+      {
+        id: 'freedom',
+        h2: '韩国也曾是独裁，后来变了',
+        body: (n) => [
+          `很多人忘了，韩国直到1987年都由军人强权统治。后来大规模抗议逼出了自由选举，它的民主指数在两年里从${n.dem86K}跳到${n.dem88K}。`,
+          `朝鲜的指数80年来一直接近零（${n.demYear}年为${n.demP}，满分为1）。同一个民族，不同的制度。这可能是这里最重要的一张图。`,
+        ],
+      },
+      {
+        id: 'leaving',
+        h2: '至今仍有人冒着生命危险离开',
+        body: (n) => [
+          `${n.defFrom}年到${n.defLastYear}年，共有${n.defTotal}名朝鲜人抵达韩国，其中${n.defWomen}%是女性。人数最多的是${n.defPeakYear}年，有${n.defPeak}人。`,
+          `2011年金正恩掌权后，抵达人数下降；2020年朝鲜因新冠封锁边境后几乎断绝（${n.defMinYear}年仅${n.defMin}人）。${n.defLastYear}年有${n.defLast}人成功抵达。`,
+        ],
+      },
+    ],
+    moreTitle: '更多对比',
+    moreHint: '把鼠标移到图表上或点一下就能看到数字，点国家名可以隐藏它。每张图表都有带表格和CSV的完整页面。',
+    caveatTitle: '朝鲜的数字有多可信？',
+    caveat: [
+      '比几乎任何其他国家都低。朝鲜几十年前就停止公布大部分统计数据，所以这些数字多数是外界（联合国、韩国银行、粮农组织）的估计，依据卫星图像、贸易数据、脱北者访谈，以及朝鲜允许进行的两次人口普查（1993年和2008年）。',
+      '所以请把它们当作目前能得到的最佳估计，而不是精确的统计。估计特别不可靠的地方，我们会在图表下方注明。每张图表都链接到来源。',
+    ],
+    faqTitle: '简短回答',
+    faq: (n) => [
+      {
+        q: '韩国比朝鲜富多少？',
+        a: `按人均算约${n.gdpRatio}倍。${n.gdpYear}年韩国人均GDP约${n.gdpK}美元，朝鲜为${n.gdpP}美元（麦迪逊项目估计，2011年美元）。`,
+      },
+      {
+        q: '韩国人比朝鲜人活得更久吗？',
+        a: `是的，约长${n.leGap}年。联合国对${n.leYear}年的估计是韩国${n.leK}岁，朝鲜${n.leP}岁。1990年两边几乎相同，都在70岁左右。`,
+      },
+      {
+        q: '朝鲜和韩国曾经差不多吗？',
+        a: '大致是的。1940年，工业集中的北方人均收入高于南方；1990年，两边的预期寿命几乎一样。巨大的差距是在1990年代大饥荒之后，以及韩国实现工业化和民主化的过程中拉开的。',
+      },
+      {
+        q: '朝鲜人比韩国人矮吗？',
+        a: `平均来说是的。根据NCD-RisC的估计，1930年出生的南北男性身高差不多（${n.hm30P}厘米对${n.hm30K}厘米），但1996年出生的男性，朝鲜平均${n.hmP}厘米，韩国${n.hmK}厘米。针对脱北者的研究发现，在饥荒中长大的孩子差距更大。`,
+      },
+    ],
+    dataTitle: '使用这些数据',
+    dataBody: '这里的每个数字都在我们每周更新的公开数据集里，每个数据系列都附有原始来源。欢迎下载、核对、在此基础上做更多。',
+    dataCta: '全部图表和数据',
+    githubCta: 'GitHub上的数据',
+    readNext: '接着读',
   },
 };

@@ -25,6 +25,7 @@ const APP_PAGES = ['/map', '/missiles'];
 
 export default function SiteChrome({ children }: { children: ReactNode }) {
   const path = usePathname() ?? '/';
+  const translated = ['/ko', '/ja', '/zh'].some((p) => path === p || path.startsWith(p + '/'));
   const app = APP_PAGES.includes(path);
   const active = (href: string) => path === href || path.startsWith(href + '/');
   return (
@@ -46,7 +47,7 @@ export default function SiteChrome({ children }: { children: ReactNode }) {
         </nav>
         <div className="topbar-end">
           <div style={{ display: 'inline-flex', gap: '6px', alignItems: 'center', marginRight: '10px', fontSize: '12px' }}>
-            <Link href="/" className={!path.startsWith('/ko') && !path.startsWith('/ja') ? 'muted on' : 'muted'} style={{ fontWeight: !path.startsWith('/ko') && !path.startsWith('/ja') ? 600 : 'normal' }}>
+            <Link href="/" className={!translated ? 'muted on' : 'muted'} style={{ fontWeight: !translated ? 600 : 'normal' }}>
               EN
             </Link>
             <span className="muted" style={{ opacity: 0.4 }}>/</span>
@@ -56,6 +57,10 @@ export default function SiteChrome({ children }: { children: ReactNode }) {
             <span className="muted" style={{ opacity: 0.4 }}>/</span>
             <Link href="/ja" className={path.startsWith('/ja') ? 'muted on' : 'muted'} style={{ fontWeight: path.startsWith('/ja') ? 600 : 'normal' }}>
               日本語
+            </Link>
+            <span className="muted" style={{ opacity: 0.4 }}>/</span>
+            <Link href="/zh" className={path.startsWith('/zh') ? 'muted on' : 'muted'} style={{ fontWeight: path.startsWith('/zh') ? 600 : 'normal' }}>
+              中文
             </Link>
           </div>
           <Link href="/act" className={`cta ${active('/act') ? 'on' : ''}`}>
@@ -76,7 +81,7 @@ export default function SiteChrome({ children }: { children: ReactNode }) {
                 cookies, no affiliation with any government. Page views are counted anonymously.
               </p>
               <div style={{ marginTop: '0.8rem', fontSize: '0.88rem' }}>
-                <Link href="/ko">한국어 (Korean)</Link> · <Link href="/ja">日本語 (Japanese)</Link>
+                <Link href="/ko">한국어 (Korean)</Link> · <Link href="/ja">日本語 (Japanese)</Link> · <Link href="/zh">中文 (Chinese)</Link>
               </div>
             </div>
             <div>

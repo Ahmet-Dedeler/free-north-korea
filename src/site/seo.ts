@@ -1,10 +1,15 @@
 import type { Metadata } from 'next';
 import { SITE_NAME, SITE_URL } from './config';
 
-/** Languages the site is published in. English lives at the root, the others under /ko and /ja. */
-export type Lang = 'en' | 'ko' | 'ja';
-export const LANGS: Lang[] = ['en', 'ko', 'ja'];
-const OG_LOCALE: Record<Lang, string> = { en: 'en_US', ko: 'ko_KR', ja: 'ja_JP' };
+/** Languages the site is published in. English lives at the root, the others under /ko, /ja and /zh. */
+export type Lang = 'en' | 'ko' | 'ja' | 'zh';
+export const LANGS: Lang[] = ['en', 'ko', 'ja', 'zh'];
+const OG_LOCALE: Record<Lang, string> = { en: 'en_US', ko: 'ko_KR', ja: 'ja_JP', zh: 'zh_CN' };
+/** hreflang / html lang code per language. Chinese is published in Simplified characters. */
+export const LANG_TAG: Record<Lang, string> = { en: 'en', ko: 'ko', ja: 'ja', zh: 'zh-Hans' };
+/** `{ zh: '/zh/x' }` → `{ 'zh-Hans': '/zh/x' }`, the keys search engines expect in hreflang. */
+export const hreflang = (langs: Languages) =>
+  Object.fromEntries(Object.entries(langs).map(([l, p]) => [LANG_TAG[l as Lang] ?? l, p]));
 
 /** The same page in each language it exists in, as paths: `{ en: '/sanctions', ko: '/ko/sanctions' }`. */
 export type Languages = Partial<Record<Lang, string>>;
@@ -40,7 +45,7 @@ export function pageMeta({
     description,
     alternates: {
       canonical: path,
-      ...(languages && { languages: { ...languages, 'x-default': languages.en ?? path } }),
+      ...(languages && { languages: { ...hreflang(languages), 'x-default': languages.en ?? path } }),
     },
     // setting openGraph here replaces the root one, so the share card has to be named again
     openGraph: { title, description, url: path, siteName: SITE_NAME, type, locale: OG_LOCALE[lang], images: [og] },

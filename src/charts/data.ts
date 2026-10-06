@@ -42,7 +42,7 @@ const COLOR: Record<string, string> = {
 // Series that are not countries (women/men, missile classes, cities) never borrow the country colours.
 const SLOTS = ['var(--s1)', 'var(--s2)', 'var(--s3)', 'var(--s4)'];
 
-export const LOCALE: Record<Lang, string> = { en: 'en-US', ko: 'ko-KR', ja: 'ja-JP' };
+export const LOCALE: Record<Lang, string> = { en: 'en-US', ko: 'ko-KR', ja: 'ja-JP', zh: 'zh-CN' };
 
 /** Decimal year for plotting: 2024 → 2024, '2026-07-01' → 2026.5. */
 export function toX(t: number | string): number {

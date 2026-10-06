@@ -1,5 +1,5 @@
 /**
- * Content for /sanctions (and /ko/sanctions, /ja/sanctions).
+ * Content for /sanctions (and /ko/sanctions, /ja/sanctions, /zh/sanctions).
  *
  * The lists themselves (who is sanctioned) come from data/sanctions.json, built by scripts/build-sanctions.ts from
  * the live UN and OFAC files. This file holds what a list can't say: which resolution did what, and the page text
@@ -32,7 +32,7 @@ export const SANCTIONS = raw as unknown as {
   ofac: OfacEntry[];
 };
 
-export const SANCTIONS_PATHS = { en: '/sanctions', ko: '/ko/sanctions', ja: '/ja/sanctions' } as const;
+export const SANCTIONS_PATHS = { en: '/sanctions', ko: '/ko/sanctions', ja: '/ja/sanctions', zh: '/zh/sanctions' } as const;
 
 type L = Record<Lang, string>;
 
@@ -44,81 +44,89 @@ export const RESOLUTIONS: { no: number; date: string; trigger: L; did: L }[] = [
   {
     no: 1718,
     date: '2006-10-14',
-    trigger: { en: 'First nuclear test', ko: '1차 핵실험', ja: '第1回核実験' },
+    trigger: { en: 'First nuclear test', ko: '1차 핵실험', ja: '第1回核実験', zh: '第一次核试验' },
     did: {
       en: 'Arms embargo, asset freezes, travel bans and a ban on luxury goods. Sets up the sanctions committee.',
       ko: '무기 금수, 자산 동결, 여행 금지, 사치품 금수. 제재위원회 설치.',
       ja: '武器禁輸、資産凍結、渡航禁止、ぜいたく品の禁輸。制裁委員会を設置。',
+      zh: '武器禁运、冻结资产、旅行禁令、禁止奢侈品。设立制裁委员会。',
     },
   },
   {
     no: 1874,
     date: '2009-06-12',
-    trigger: { en: 'Second nuclear test', ko: '2차 핵실험', ja: '第2回核実験' },
+    trigger: { en: 'Second nuclear test', ko: '2차 핵실험', ja: '第2回核実験', zh: '第二次核试验' },
     did: {
       en: 'Embargo widened to nearly all arms. Creates the Panel of Experts that investigates violations.',
       ko: '거의 모든 무기로 금수 확대. 위반을 조사하는 전문가 패널 설치.',
       ja: '禁輸をほぼすべての武器に拡大。違反を調査する専門家パネルを設置。',
+      zh: '禁运扩大到几乎所有武器。设立调查违规行为的专家小组。',
     },
   },
   {
     no: 2094,
     date: '2013-03-07',
-    trigger: { en: 'Third nuclear test', ko: '3차 핵실험', ja: '第3回核実験' },
+    trigger: { en: 'Third nuclear test', ko: '3차 핵실험', ja: '第3回核実験', zh: '第三次核试验' },
     did: {
       en: 'Targeted financial sanctions and a longer list of banned weapons items and luxury goods.',
       ko: '표적 금융 제재, 금지 무기 품목과 사치품 목록 확대.',
       ja: '対象を絞った金融制裁。禁止される兵器関連品目とぜいたく品のリストを拡大。',
+      zh: '定向金融制裁，扩大禁运武器物项和奢侈品清单。',
     },
   },
   {
     no: 2270,
     date: '2016-03-02',
-    trigger: { en: 'Fourth nuclear test', ko: '4차 핵실험', ja: '第4回核実験' },
+    trigger: { en: 'Fourth nuclear test', ko: '4차 핵실험', ja: '第4回核実験', zh: '第四次核试验' },
     did: {
       en: 'All cargo to and from North Korea must be inspected. First limits on coal, iron and gold exports.',
       ko: '북한을 오가는 모든 화물 검색 의무화. 석탄, 철, 금 수출에 대한 첫 제한.',
       ja: '北朝鮮を出入りするすべての貨物の検査を義務化。石炭、鉄、金の輸出に初の制限。',
+      zh: '所有进出朝鲜的货物必须接受检查。首次限制煤、铁和黄金出口。',
     },
   },
   {
     no: 2321,
     date: '2016-11-30',
-    trigger: { en: 'Fifth nuclear test', ko: '5차 핵실험', ja: '第5回核実験' },
+    trigger: { en: 'Fifth nuclear test', ko: '5차 핵실험', ja: '第5回核実験', zh: '第五次核试验' },
     did: {
       en: 'Caps coal exports. Bans exports of copper, nickel, silver, zinc and statues.',
       ko: '석탄 수출 상한 설정. 구리, 니켈, 은, 아연, 조형물 수출 금지.',
       ja: '石炭輸出に上限。銅、ニッケル、銀、亜鉛、彫像の輸出を禁止。',
+      zh: '为煤炭出口设上限。禁止出口铜、镍、银、锌和雕像。',
     },
   },
   {
     no: 2371,
     date: '2017-08-05',
-    trigger: { en: 'Two ICBM tests in July 2017', ko: '2017년 7월 ICBM 두 차례 발사', ja: '2017年7月のICBM発射2回' },
+    trigger: { en: 'Two ICBM tests in July 2017', ko: '2017년 7월 ICBM 두 차례 발사', ja: '2017年7月のICBM発射2回', zh: '2017年7月两次洲际弹道导弹试射' },
     did: {
       en: 'Full ban on exports of coal, iron, iron ore, lead and seafood. No additional workers may be hired abroad.',
       ko: '석탄, 철, 철광석, 납, 수산물 수출 전면 금지. 해외 노동자 신규 고용 금지.',
       ja: '石炭、鉄、鉄鉱石、鉛、海産物の輸出を全面禁止。海外での労働者の新規雇用を禁止。',
+      zh: '全面禁止出口煤、铁、铁矿石、铅和海产品。不得在海外新增雇用朝鲜劳工。',
     },
   },
   {
     no: 2375,
     date: '2017-09-11',
-    trigger: { en: 'Sixth nuclear test', ko: '6차 핵실험', ja: '第6回核実験' },
+    trigger: { en: 'Sixth nuclear test', ko: '6차 핵실험', ja: '第6回核実験', zh: '第六次核试验' },
     did: {
       en: 'Bans textile exports, limits refined petroleum and crude oil, bans joint ventures and new work permits.',
       ko: '섬유 수출 금지, 정제유와 원유 공급 제한, 합작 사업과 신규 노동 허가 금지.',
       ja: '繊維製品の輸出を禁止。石油精製品と原油の供給を制限。合弁事業と新規の就労許可を禁止。',
+      zh: '禁止纺织品出口，限制成品油和原油供应，禁止合资企业和新的工作许可。',
     },
   },
   {
     no: 2397,
     date: '2017-12-22',
-    trigger: { en: 'Hwasong-15 ICBM test', ko: '화성-15형 ICBM 발사', ja: '火星15型ICBMの発射' },
+    trigger: { en: 'Hwasong-15 ICBM test', ko: '화성-15형 ICBM 발사', ja: '火星15型ICBMの発射', zh: '试射“火星-15”洲际弹道导弹' },
     did: {
       en: 'Refined petroleum capped at 500,000 barrels a year and crude oil at 4 million. All workers abroad to be sent home within 24 months. Bans exports of food, machinery and wood.',
       ko: '정제유 연 50만 배럴, 원유 연 400만 배럴로 제한. 해외 노동자 24개월 내 전원 송환. 식품, 기계, 목재 수출 금지.',
       ja: '石油精製品を年50万バレル、原油を年400万バレルに制限。海外労働者を24か月以内に全員送還。食品、機械、木材の輸出を禁止。',
+      zh: '成品油每年上限50万桶，原油400万桶。海外劳工须在24个月内全部遣返。禁止出口食品、机械和木材。',
     },
   },
 ];
@@ -278,5 +286,44 @@ export const SANCTIONS_TEXT: Record<Lang, SanctionsText> = {
     kinds: { individual: '個人', entity: '団体・企業', vessel: '船舶', aircraft: '航空機' },
     usLookup: '名前をクリックするとOFACの記録が開きます。',
     sources: '出典',
+  },
+  zh: {
+    metaTitle: '对朝制裁名单：谁被制裁，为什么',
+    metaDescription:
+      '联合国安理会和美国财政部因朝鲜问题制裁的所有个人、公司和船只，列入时间和理由，以及每项联合国决议禁止了什么。',
+    eyebrow: '资金 · 制裁',
+    h1: '因朝鲜问题被制裁的是谁',
+    lede: '最重要的名单有两份。联合国安理会的名单对所有国家都有约束力。美国财政部的名单更长，因为它还覆盖帮助朝鲜政权绕过联合国制裁的船只、银行和黑客。',
+    englishNote: '姓名和列名理由照录官方名单的英文原文。',
+    tiles: {
+      unPeople: '联合国名单上的个人',
+      unEntities: '联合国名单上的公司和机构',
+      us: '美国名单上的对象',
+      lastUn: '联合国最近一次新增',
+      lastUnNote: '此后再无新增',
+    },
+    fetched: '名单下载日期',
+    byYearTitle: '联合国历年列名',
+    byYearHint: '每年新增到联合国名单上的个人和实体数量。',
+    stalledTitle: '联合国名单为什么不再增加',
+    stalled: [
+      '新的联合国制裁需要安理会五个常任理事国全部同意。2022年5月26日，在朝鲜试射洲际弹道导弹之后，中国和俄罗斯否决了一项加强制裁的决议草案。',
+      '2024年3月28日，俄罗斯否决了专家小组的年度延期。这个联合国小组自2009年起一直调查违反制裁的行为。制裁仍然有效，但联合国内部已经没有人负责核查。',
+      '现在由一些国家政府在联合国之外，通过多边制裁监测小组（MSMT）发布自己的报告。',
+    ],
+    resolutionsTitle: '每项联合国决议禁止了什么',
+    resolutionsHint: '每一轮制裁都紧跟在一次核试验或远程导弹试射之后。',
+    after: '起因：',
+    profiledTitle: '本站有资料页的被制裁人员和机构',
+    profiledHint: '按姓名和出生年份与两份名单核对。',
+    unPeopleTitle: '联合国名单：个人',
+    unEntitiesTitle: '联合国名单：公司和机构',
+    unHint: '冻结资产，个人还受旅行禁令限制。理由为联合国原文。',
+    col: { name: '名称', role: '职务', listed: '列名日期', ref: '联合国编号', why: '理由' },
+    usTitle: '美国财政部名单（OFAC）',
+    usHint: '在朝鲜相关项目下列入特别指定国民（SDN）名单的所有对象。美国人不得与其交易，与其往来的外国银行可能被切断美元结算渠道。',
+    kinds: { individual: '个人', entity: '公司和机构', vessel: '船只', aircraft: '飞机' },
+    usLookup: '点击名称可查看OFAC原始记录。',
+    sources: '来源',
   },
 };

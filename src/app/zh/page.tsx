@@ -1,91 +1,94 @@
 import Link from 'next/link';
 import ArticleCards from '@/components/ArticleCards';
-import { JA_HUB, JA_ARTICLES } from '@/content/translations/ja';
+import { ZH_HUB, ZH_ARTICLES } from '@/content/translations/zh';
 import { pageMeta } from '@/site/seo';
 import { HUB_PATHS } from '@/content/translations';
 
 export const metadata = {
   ...pageMeta({
-  title: JA_HUB.title,
-  description: JA_HUB.description,
-  path: '/ja',
-  lang: 'ja',
-  languages: HUB_PATHS,
+    title: ZH_HUB.title,
+    description: ZH_HUB.description,
+    path: '/zh',
+    lang: 'zh',
+    languages: HUB_PATHS,
   }),
   // the hub title already names the site, so skip the "| Free North Korea" template
-  title: { absolute: JA_HUB.title },
+  title: { absolute: ZH_HUB.title },
 };
 
-export default function JapaneseHubPage() {
+export default function ChineseHubPage() {
   return (
     <div className="wide">
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem' }}>
-        <p className="eyebrow" style={{ margin: 0 }}>{JA_HUB.eyebrow}</p>
+        <p className="eyebrow" style={{ margin: 0 }}>{ZH_HUB.eyebrow}</p>
         <div style={{ fontSize: '0.85rem' }}>
           <Link href="/" className="chip">English</Link>
           {' '}
           <Link href="/ko" className="chip">한국어</Link>
           {' '}
-          <span className="chip on">日本語</span>
+          <Link href="/ja" className="chip">日本語</Link>
           {' '}
-          <Link href="/zh" className="chip">中文</Link>
+          <span className="chip on">中文</span>
         </div>
       </div>
 
-      <h1>{JA_HUB.heading}</h1>
-      <p className="lede">{JA_HUB.lede}</p>
+      <h1>{ZH_HUB.heading}</h1>
+      <p className="lede">{ZH_HUB.lede}</p>
 
       <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap', margin: '2rem 0' }}>
         <Link href="/map" className="chip on">
-          インタラクティブ軍事・人権地図を開く →
+          打开交互式情报地图 →
         </Link>
         <Link href="/camps" className="chip">
-          政治犯収容所一覧（24施設） →
+          政治犯收容所图鉴（24处） →
         </Link>
-        <Link href="/places" className="chip">
-          核・ミサイル関連重要拠点 →
+        <Link href="/zh/north-korea-vs-south-korea" className="chip">
+          朝鲜与韩国对比 →
         </Link>
-        <Link href="/ja/sanctions" className="chip">
-          対北朝鮮制裁リスト →
+        <Link href="/zh/sanctions" className="chip">
+          对朝制裁名单 →
+        </Link>
+        <Link href="/zh/data" className="chip">
+          图表与数据 →
         </Link>
         <Link href="/missiles" className="chip">
-          ミサイル発射実験データベース →
+          导弹试射数据库 →
         </Link>
       </div>
 
       <section style={{ marginTop: '3.5rem' }}>
-        <h2>主要テーマ・深層解説</h2>
-        <p className="muted">体制の抑圧構造、日本人拉致問題、帰還事業、そして脱北者支援の実態を整理した客観的レポートです。</p>
+        <h2>深度解读</h2>
+        <p className="muted">关于朝鲜体制的现实，以及通往自由的路径，经过核实的深度分析。</p>
         <div style={{ marginTop: '1.5rem' }}>
-          <ArticleCards articles={JA_ARTICLES} lead />
+          <ArticleCards articles={ZH_ARTICLES} lead />
         </div>
       </section>
 
       <section style={{ marginTop: '4rem' }}>
-        <h2>データベースとアーカイブ</h2>
+        <h2>数据与档案</h2>
         <div className="cards three" style={{ marginTop: '1.5rem' }}>
           <div className="card">
             <h4>
-              <Link href="/camps">政治犯収容所（管理所・教化所）</Link>
+              <Link href="/camps">政治犯收容所（管理所・教化所）</Link>
             </h4>
             <p className="muted" style={{ fontSize: '0.88rem', marginTop: '0.4rem' }}>
-              第14号价川、第15号耀徳、第16号化成など主要施設の衛星画像解析と証言に基づく実態。
+              14号价川、15号耀德、16号化城等24处主要收容所的位置、估计关押人数和卫星监测记录。（英文）
             </p>
           </div>
           <div className="card">
             <h4>
-              <Link href="/counties">北朝鮮179市郡人権アトラス</Link>
+              <Link href="/counties">179个市郡人权地图</Link>
             </h4>
             <p className="muted" style={{ fontSize: '0.88rem', marginTop: '0.4rem' }}>
-              NKDBに記録された人権侵害事案と2008年公式国勢調査の人口データを統合した地域別指標。
+              结合朝鲜人权信息中心（NKDB）的受害证词数据和2008年人口普查统计的地区人权指标。（英文）
             </p>
           </div>
           <div className="card">
             <h4>
-              <Link href="/library">文献・報告書ライブラリ</Link>
+              <Link href="/organizations">脱北者援助机构名录</Link>
             </h4>
             <p className="muted" style={{ fontSize: '0.88rem', marginTop: '0.4rem' }}>
-              国連調査委員会報告書、脱北生還者の手記、ドキュメンタリー映画、オープンデータツール集。
+              从事实地营救、紧急援助、法律援助和信息传入的、经过核实的各国非营利机构。（英文）
             </p>
           </div>
         </div>

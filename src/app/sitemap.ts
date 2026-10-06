@@ -11,8 +11,9 @@ import { TWO_KOREAS_PATHS } from '@/content/twoKoreas';
 import { HUB_PATHS, articleLanguages } from '@/content/translations';
 import { KO_ARTICLES } from '@/content/translations/ko';
 import { JA_ARTICLES } from '@/content/translations/ja';
+import { ZH_ARTICLES } from '@/content/translations/zh';
 import { REVIEWED } from '@/site/config';
-import { LANGS, absolute, type Languages } from '@/site/seo';
+import { LANGS, absolute, hreflang, type Languages } from '@/site/seo';
 
 export const dynamic = 'force-static';
 
@@ -20,7 +21,7 @@ type Entry = MetadataRoute.Sitemap[number];
 
 /** hreflang links for a page that exists in several languages (absolute URLs, as the sitemap spec wants). */
 const alternates = (langs: Languages): Entry['alternates'] => ({
-  languages: Object.fromEntries(Object.entries(langs).map(([l, p]) => [l, absolute(p === '/' ? '' : p)])),
+  languages: Object.fromEntries(Object.entries(hreflang(langs)).map(([l, p]) => [l, absolute(p === '/' ? '' : p)])),
 });
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -59,6 +60,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...ARTICLES.map((a) => ({ url: absolute(`/learn/${a.slug}`), lastModified: a.updated, priority: 0.9, alternates: alternates(articleLanguages(a.slug)) })),
     ...KO_ARTICLES.map((a) => ({ url: absolute(`/ko/learn/${a.slug}`), lastModified: a.updated, priority: 0.85, alternates: alternates(articleLanguages(a.slug)) })),
     ...JA_ARTICLES.map((a) => ({ url: absolute(`/ja/learn/${a.slug}`), lastModified: a.updated, priority: 0.85, alternates: alternates(articleLanguages(a.slug)) })),
+    ...ZH_ARTICLES.map((a) => ({ url: absolute(`/zh/learn/${a.slug}`), lastModified: a.updated, priority: 0.85, alternates: alternates(articleLanguages(a.slug)) })),
     ...PEOPLE.map((p) => ({ url: absolute(`/people/${p.id}`), lastModified: REVIEWED, priority: 0.6 })),
     ...camps.map((c) => ({ url: absolute(`/camps/${c.slug}`), lastModified: REVIEWED, priority: 0.85 })),
     ...places.map((p) => ({ url: absolute(`/places/${p.slug}`), lastModified: REVIEWED, priority: 0.75 })),

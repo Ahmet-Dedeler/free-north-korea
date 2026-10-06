@@ -27,6 +27,8 @@ export default function KoreanHubPage() {
           <span className="chip on">한국어</span>
           {' '}
           <Link href="/ja" className="chip">日本語</Link>
+          {' '}
+          <Link href="/zh" className="chip">中文</Link>
         </div>
       </div>
 

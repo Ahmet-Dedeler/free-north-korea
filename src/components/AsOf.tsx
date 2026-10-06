@@ -6,6 +6,7 @@ const TEXT: Record<Lang, { from: string; stale: string; locale: string }> = {
   en: { from: 'Data from', stale: 'may be outdated', locale: 'en-GB' },
   ko: { from: '자료 기준일', stale: '최신 정보가 아닐 수 있음', locale: 'ko-KR' },
   ja: { from: 'データ時点', stale: '古い可能性があります', locale: 'ja-JP' },
+  zh: { from: '数据截至', stale: '可能已过时', locale: 'zh-CN' },
 };
 
 /** "2018" → 2018, "2018-08" → Aug 2018, "2018-08-14" → 14 Aug 2018. Anything else is shown as written. */
