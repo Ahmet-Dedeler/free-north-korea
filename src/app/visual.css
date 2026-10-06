@@ -2245,41 +2245,90 @@
 .org-notes a:hover strong {
   color: var(--accent);
 }
+/* Compare: two poster cards, a coloured band on top, condensed headline, "vs" disc between a pair */
 .compare {
+  --tone: var(--accent);
+  position: relative;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 10px;
-  margin: 16px 0;
+  gap: 14px;
+  margin: 18px 0 22px;
 }
 .compare-card {
-  padding: 16px 18px;
-  border: 1px solid var(--line);
-  border-top: 3px solid var(--accent);
-  border-radius: 14px;
-  background: var(--panel);
+  --tone: var(--accent);
+  position: relative;
+  overflow: hidden;
+  padding: 22px 22px 20px;
+  border: 1px solid color-mix(in srgb, var(--tone) 22%, var(--line));
+  border-radius: 16px;
+  background:
+    linear-gradient(180deg, color-mix(in srgb, var(--tone) 10%, transparent), transparent 55%),
+    var(--panel);
+  box-shadow: inset 0 4px 0 var(--tone);
 }
 .compare-card.danger {
-  border-top-color: var(--danger);
+  --tone: var(--danger);
 }
 .compare-card.warn {
-  border-top-color: var(--warn);
+  --tone: var(--warn);
+}
+.compare-card.ok {
+  --tone: var(--ok);
+}
+.cc-icon {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 14px;
+  border-radius: 50%;
+  color: #fff;
+  background: var(--tone);
+  box-shadow: 0 6px 18px color-mix(in srgb, var(--tone) 40%, transparent);
 }
 .prose .compare-card h3 {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin: 0 0 6px;
-  font-size: 16px;
-}
-.compare-card.danger svg {
-  color: var(--danger);
-}
-.compare-card.warn svg {
-  color: var(--warn);
+  position: relative;
+  margin: 0 0 10px;
+  font-family: var(--font-anton), 'Arial Narrow', 'Apple SD Gothic Neo', 'Hiragino Sans', sans-serif;
+  font-weight: 900;
+  font-synthesis: none;
+  font-size: 24px;
+  line-height: 1.1;
+  letter-spacing: 0.005em;
+  text-transform: uppercase;
+  color: var(--ink);
 }
 .prose .compare-card p {
+  position: relative;
   margin: 0;
   font-size: 15px;
+  line-height: 1.55;
+  color: var(--ink-2);
+}
+.compare.versus::after {
+  content: 'vs';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border: 3px solid var(--bg);
+  border-radius: 50%;
+  font-family: var(--font-anton), 'Arial Narrow', sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: var(--ink-inverse);
+  background: var(--ink);
+  pointer-events: none;
+}
+@media (max-width: 560px) {
+  .compare.versus::after {
+    display: none;
+  }
 }
 .inline-books {
   grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
@@ -2287,41 +2336,130 @@
 .prose .inline-books li {
   margin: 0;
 }
+/* IconCards: poster cards. 6-column grid; each card's --span (set in the component) balances the rows. */
 .icon-cards {
+  --tone: var(--accent);
   list-style: none;
   padding: 0;
-  margin: 16px 0 22px;
+  margin: 18px 0 24px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr));
-  gap: 10px;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 12px;
+}
+.icon-cards.tone-danger {
+  --tone: var(--danger);
+}
+.icon-cards.tone-ok {
+  --tone: var(--ok);
+}
+.icon-cards.tone-warn {
+  --tone: var(--warn);
 }
 .icon-cards li {
+  grid-column: span var(--span, 2);
+  position: relative;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
-  gap: 4px;
-  padding: 16px;
+  padding: 20px 20px 18px;
   border: 1px solid var(--line);
-  border-radius: 14px;
-  background: var(--panel);
+  border-radius: 16px;
+  background:
+    radial-gradient(120% 70% at 100% 100%, color-mix(in srgb, var(--tone) 9%, transparent), transparent 70%),
+    var(--panel);
+  transition: border-color 0.15s, translate 0.15s;
+}
+.icon-cards li:hover {
+  border-color: color-mix(in srgb, var(--tone) 45%, var(--line));
+  translate: 0 -2px;
+}
+/* the icon again, huge and faint, bleeding off the bottom-right corner */
+.ic-mark {
+  position: absolute;
+  right: -18px;
+  bottom: -22px;
+  width: 132px;
+  height: 132px;
+  stroke-width: 1.25;
+  color: var(--tone);
+  opacity: 0.09;
+  pointer-events: none;
+}
+.ic-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
 }
 .ic-icon {
   display: grid;
   place-items: center;
   width: 38px;
   height: 38px;
-  margin-bottom: 6px;
-  border-radius: 10px;
-  color: var(--accent);
-  background: var(--sel-bg);
+  border-radius: 50%;
+  color: #fff;
+  background: var(--tone);
+  box-shadow: 0 6px 18px color-mix(in srgb, var(--tone) 38%, transparent);
 }
-.icon-cards b {
-  font-size: 15.5px;
+.ic-num {
+  font-family: var(--font-anton), 'Arial Narrow', sans-serif;
+  font-size: 30px;
+  line-height: 1;
+  color: color-mix(in srgb, var(--tone) 55%, var(--ink-3));
+  opacity: 0.55;
+}
+.icon-cards .ic-title {
+  position: relative;
+  font-family: var(--font-anton), 'Arial Narrow', 'Apple SD Gothic Neo', 'Hiragino Sans', sans-serif;
+  font-weight: 900;
+  font-synthesis: none;
+  font-size: 22px;
+  line-height: 1.1;
+  letter-spacing: 0.005em;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+.ic-stat {
+  position: relative;
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px dashed color-mix(in srgb, var(--tone) 35%, var(--line));
+}
+.ic-stat-v {
+  font-family: var(--font-anton), 'Arial Narrow', sans-serif;
+  font-size: 34px;
+  line-height: 1;
+  color: var(--tone);
+}
+.ic-stat-u {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-2);
 }
 .prose .icon-cards p {
-  margin: 0;
-  font-size: 14px;
-  line-height: 1.5;
+  position: relative;
+  margin: 10px 0 0;
+  font-size: 14.5px;
+  line-height: 1.55;
   color: var(--ink-2);
+}
+@media (max-width: 900px) {
+  .icon-cards li {
+    grid-column: span 3;
+  }
+  .icon-cards li:last-child:nth-child(odd) {
+    grid-column: span 6;
+  }
+}
+@media (max-width: 560px) {
+  .icon-cards li {
+    grid-column: span 6;
+  }
 }
 .dynasty {
   list-style: none;

@@ -28,17 +28,19 @@ const article: Article = {
       <Dynasty />
       <p>A few things hold it up, and they kind of feed each other:</p>
       <IconCards
+        tone="danger"
         items={[
           { icon: RadioTower, title: 'Total information control', children: 'No open internet, radios fixed to state channels, and kids taught from day one that the outside world is worse off.' },
           { icon: ListOrdered, title: 'Songbun', children: 'Every family is ranked by its loyalty going back generations. Your rank decides where you live, whether you go to university and whether you can join the party.' },
-          { icon: Users, title: 'Collective punishment', children: 'One political crime can send up to three generations of a family to a prison camp. Nobody only risks themselves, so organizing anything is almost impossible.' },
+          { icon: Users, title: 'Collective punishment', stat: { value: '3', unit: 'generations' }, children: 'One political crime can send up to three generations of a family to a prison camp. Nobody only risks themselves, so organizing anything is almost impossible.' },
           { icon: Handshake, title: 'China', children: "China supplies most of North Korea's trade and fuel and sends escapees back. A collapsed North Korea would put US allies on its border, so Beijing keeps it alive." },
-          { icon: Radiation, title: 'Nuclear weapons', children: 'Around 60 warheads (SIPRI, January 2026) make outside regime change basically unthinkable. Which is probably the whole point of building them.' },
+          { icon: Radiation, title: 'Nuclear weapons', stat: { value: '~60', unit: 'warheads' }, children: 'Around 60 warheads (SIPRI, January 2026) make outside regime change basically unthinkable. Which is probably the whole point of building them.' },
         ]}
       />
 
       <h2>The cracks that are already there</h2>
       <IconCards
+        tone="ok"
         items={[
           {
             icon: Store,
@@ -59,7 +61,7 @@ const article: Article = {
           },
           {
             icon: Swords,
-            title: 'Soldiers abroad',
+            title: 'Soldiers abroad', stat: { value: '20,000+', unit: 'troops sent to Russia' },
             children:
               'Since late 2024 more than 20,000 troops went to fight for Russia, and Ukrainian and South Korean intelligence estimate about 6,000-7,000 were killed or wounded. Thousands of young men have now seen another country, and some captured soldiers asked not to be sent back.',
           },

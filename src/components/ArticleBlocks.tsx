@@ -5,7 +5,7 @@
  * Blocks that carry their own words take `lang` (default English), so the Korean and Japanese articles reuse the
  * same visuals. Text inside a block lives in a `Record<Lang, …>` next to it.
  */
-import type { ReactNode } from 'react';
+import type { CSSProperties, ReactNode } from 'react';
 import type { LucideIcon } from 'lucide-react';
 import { Building2, Footprints, Home, Landmark, Megaphone, Radio, Route, Scale, Search, ShieldOff, Usb, Waves } from 'lucide-react';
 import Avatar from './Avatar';
@@ -457,15 +457,17 @@ export function CampGrid({ slugs }: { slugs: string[] }) {
   );
 }
 
-/** Side-by-side comparison of two things, each a titled card. */
+/** Side-by-side comparison of two things, poster style: a coloured band with the icon, a condensed headline, then text. */
 export function Compare({ items }: { items: { icon: LucideIcon; title: string; tone?: string; children: ReactNode }[] }) {
   return (
-    <div className="compare">
+    <div className={`compare${items.length === 2 ? ' versus' : ''}`}>
       {items.map((it) => (
         <section key={it.title} className={`compare-card ${it.tone ?? ''}`}>
-          <h3>
-            <it.icon size={18} /> {it.title}
-          </h3>
+          <it.icon className="ic-mark" aria-hidden />
+          <span className="cc-icon">
+            <it.icon size={20} strokeWidth={2.25} />
+          </span>
+          <h3>{it.title}</h3>
           {it.children}
         </section>
       ))}
@@ -510,19 +512,44 @@ export function Books({ titles }: { titles: string[] }) {
   );
 }
 
-/** Grid of icon cards: a title and a sentence or two each. */
-export function IconCards({ items }: { items: { icon: LucideIcon; title: string; children: ReactNode }[] }) {
+/**
+ * Grid of icon cards, poster style: a numbered kicker, a condensed headline, an optional big number pulled out of the
+ * text, and the icon blown up as a watermark. Rows are balanced (5 cards = 3 + 2, 4 = 2 + 2) so no card is left alone
+ * on the last row. `tone` colours the whole set: danger for what holds the regime up, ok for what wears it down.
+ */
+export function IconCards({
+  items,
+  tone = 'accent',
+}: {
+  items: { icon: LucideIcon; title: string; stat?: { value: string; unit: string }; children: ReactNode }[];
+  tone?: 'accent' | 'danger' | 'ok' | 'warn';
+}) {
+  const n = items.length;
+  const perRow = n <= 3 ? n : n === 4 ? 2 : 3;
+  const lastRow = n % perRow || perRow;
   return (
-    <ul className="icon-cards">
-      {items.map((it) => (
-        <li key={it.title}>
-          <span className="ic-icon">
-            <it.icon size={20} />
-          </span>
-          <b>{it.title}</b>
-          <p>{it.children}</p>
-        </li>
-      ))}
+    <ul className={`icon-cards tone-${tone}`}>
+      {items.map((it, i) => {
+        const span = i >= n - lastRow ? 6 / lastRow : 6 / perRow;
+        return (
+          <li key={it.title} style={{ '--span': span } as CSSProperties}>
+            <it.icon className="ic-mark" aria-hidden />
+            <span className="ic-head">
+              <span className="ic-icon">
+                <it.icon size={18} strokeWidth={2.25} />
+              </span>
+              <span className="ic-num">{String(i + 1).padStart(2, '0')}</span>
+            </span>
+            <b className="ic-title">{it.title}</b>
+            {it.stat && (
+              <span className="ic-stat">
+                <span className="ic-stat-v">{it.stat.value}</span> <span className="ic-stat-u">{it.stat.unit}</span>
+              </span>
+            )}
+            <p>{it.children}</p>
+          </li>
+        );
+      })}
     </ul>
   );
 }

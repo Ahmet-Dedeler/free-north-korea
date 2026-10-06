@@ -26,17 +26,19 @@ const article: Article = {
       <Dynasty lang="ko" />
       <p>몇 가지가 정권을 받치고 있고, 서로를 강화한다:</p>
       <IconCards
+        tone="danger"
         items={[
           { icon: RadioTower, title: '완전한 정보 통제', children: '열린 인터넷이 없고, 라디오는 국영 채널에 고정돼 있고, 아이들은 처음부터 바깥세상이 더 못산다고 배운다.' },
           { icon: ListOrdered, title: '성분', children: '모든 가족이 몇 대에 걸친 충성도로 등급이 매겨진다. 그 등급이 어디 살지, 대학에 갈지, 입당할 수 있을지를 정한다.' },
-          { icon: Users, title: '연좌제', children: '정치범 한 명 때문에 일가 3대까지 수용소에 갈 수 있다. 누구도 자기 혼자만 위험해지는 게 아니라서, 뭔가를 조직하는 게 거의 불가능하다.' },
+          { icon: Users, title: '연좌제', stat: { value: '3', unit: '대' }, children: '정치범 한 명 때문에 일가 3대까지 수용소에 갈 수 있다. 누구도 자기 혼자만 위험해지는 게 아니라서, 뭔가를 조직하는 게 거의 불가능하다.' },
           { icon: Handshake, title: '중국', children: '중국은 북한 무역과 연료의 대부분을 공급하고 탈북민을 돌려보낸다. 북한이 무너지면 미국의 동맹이 국경에 오게 되니까, 베이징은 북한을 살려둔다.' },
-          { icon: Radiation, title: '핵무기', children: '핵탄두 약 60개(SIPRI, 2026년 1월) 때문에 외부에 의한 정권 교체는 사실상 생각할 수도 없다. 아마 그게 핵을 만든 이유 전부일 거다.' },
+          { icon: Radiation, title: '핵무기', stat: { value: '~60', unit: '핵탄두' }, children: '핵탄두 약 60개(SIPRI, 2026년 1월) 때문에 외부에 의한 정권 교체는 사실상 생각할 수도 없다. 아마 그게 핵을 만든 이유 전부일 거다.' },
         ]}
       />
 
       <h2>이미 생긴 균열</h2>
       <IconCards
+        tone="ok"
         items={[
           {
             icon: Store,
@@ -57,7 +59,7 @@ const article: Article = {
           },
           {
             icon: Swords,
-            title: '해외로 간 병사들',
+            title: '해외로 간 병사들', stat: { value: '20,000+', unit: '러시아 파병' },
             children:
               '2024년 말부터 2만 명 넘는 병력이 러시아를 위해 싸우러 갔고, 우크라이나와 한국 정보당국은 약 6,000~7,000명이 죽거나 다친 것으로 추정한다. 수천 명의 젊은 남성이 이제 다른 나라를 봤고, 포로가 된 병사 중 일부는 북한으로 돌려보내지 말아 달라고 했다.',
           },
