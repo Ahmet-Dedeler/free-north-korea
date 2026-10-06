@@ -17,20 +17,20 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
   const { slug } = await params;
   const place = getPlaceBySlug(slug);
   if (!place) return {};
-  const t = PLACES_TEXT.en;
-  const fields = placeFields('en', place);
+  const t = PLACES_TEXT.zh;
+  const fields = placeFields('zh', place);
   return pageMeta({
     title: t.dossierTitle(place.name),
     description: t.dossierDescription(place.name, fields.categoryLabel, fields.note),
-    path: `${PLACES_PATHS.en}/${place.slug}`,
-    lang: 'en',
+    path: `${PLACES_PATHS.zh}/${place.slug}`,
+    lang: 'zh',
     languages: placeLanguages(place.slug),
-    image: `${PLACES_PATHS.en}/${place.slug}/opengraph-image`,
+    image: `${PLACES_PATHS.zh}/${place.slug}/opengraph-image`,
   });
 }
 
 export default async function Page({ params }: Params) {
   const { slug } = await params;
   if (!getPlaceBySlug(slug)) notFound();
-  return <PlaceDossier lang="en" slug={slug} />;
+  return <PlaceDossier lang="zh" slug={slug} />;
 }

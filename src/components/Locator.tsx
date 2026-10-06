@@ -21,6 +21,7 @@ export default function Locator({
   county,
   label,
   pins,
+  ariaLabel,
 }: {
   lat?: number;
   lon?: number;
@@ -29,6 +30,8 @@ export default function Locator({
   label?: string;
   /** Extra dots, e.g. other facilities in the same province. */
   pins?: Pin[];
+  /** Full aria sentence. When omitted, the English "Location of … in North Korea" line is used. */
+  ariaLabel?: string;
 }) {
   const provinces = getProvinceShapes();
   const c = county ? getCountyShapes().find((s) => s.pcode === county) : undefined;
@@ -36,7 +39,7 @@ export default function Locator({
   const province = c ? provinces.find((p) => p.pcode === c.pcode.slice(0, 4)) : undefined;
   return (
     <figure className="locator">
-      <svg viewBox={`0 0 ${VIEW_W} ${VIEW_H}`} role="img" aria-label={label ? `Location of ${label} in North Korea` : 'Map of North Korea'}>
+      <svg viewBox={`0 0 ${VIEW_W} ${VIEW_H}`} role="img" aria-label={ariaLabel ?? (label ? `Location of ${label} in North Korea` : 'Map of North Korea')}>
         {provinces.map((p) => (
           <path key={p.pcode} d={p.d} className={p.pcode === province?.pcode ? 'prov on' : 'prov'}>
             <title>{p.name}</title>
