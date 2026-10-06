@@ -1,8 +1,11 @@
 'use client';
 
 import { useState } from 'react';
+import { Ext } from '@/components/Ext';
 import { CATEGORIES, KIND_LABEL, ORGS, STATUS_LABEL, type Org, type OrgCategory, type Social } from '@/content/orgs';
+import { ORG_LABELS, ORG_PAGE } from '@/content/orgsI18n';
 import { orgLogo } from '@/content/media';
+import type { Lang } from '@/site/seo';
 import { GlobeIcon, SOCIALS, SocialIcon } from './SocialIcon';
 
 /** "Liberty in North Korea (LiNK)" → "LiNK"; otherwise initials of the first words. */
@@ -27,68 +30,89 @@ function Logo({ org }: { org: Org }) {
   );
 }
 
-function OrgCard({ org: o }: { org: Org }) {
-  const category = CATEGORIES.find((c) => c.id === o.category)!;
+/** English card fields stay in orgs.ts. Other languages overlay summary, note, help, category and status. */
+function cardText(org: Org, lang: Lang) {
+  if (lang === 'en') {
+    return {
+      summary: org.summary,
+      note: org.note,
+      help: org.help.map((h) => h.label),
+      category: CATEGORIES.find((c) => c.id === org.category)!,
+      status: STATUS_LABEL[org.status],
+      kind: org.kind ? KIND_LABEL[org.kind] : '',
+    };
+  }
+  const pack = ORG_LABELS[lang];
+  const row = pack.orgs[org.id];
+  return {
+    summary: row.summary,
+    note: row.note,
+    help: row.help,
+    category: pack.categories[org.category],
+    status: pack.status[org.status],
+    kind: org.kind ? pack.kind[org.kind] : '',
+  };
+}
+
+function OrgCard({ org: o, lang }: { org: Org; lang: Lang }) {
+  const ui = ORG_PAGE[lang];
+  const text = cardText(o, lang);
   const socials = Object.entries(o.socials ?? {}) as [Social, string][];
   return (
     <article id={o.id} className="org">
       <header className="org-top">
         <Logo org={o} />
         <div className="org-title">
-          <h2>
-            <a href={o.url} target="_blank" rel="noopener noreferrer">
-              {o.name}
-            </a>
+          <h2 lang="en">
+            <Ext href={o.url}>{o.name}</Ext>
           </h2>
           <p className="org-meta">
-            {o.kind ? `${KIND_LABEL[o.kind]} · ` : ''}
-            {o.based}
-            {o.founded ? ` · since ${o.founded}` : ''}
+            {text.kind ? `${text.kind} · ` : ''}
+            <span lang="en">{o.based}</span>
+            {o.founded ? ` · ${ui.founded(o.founded)}` : ''}
           </p>
         </div>
       </header>
 
       <div className="org-tags">
-        <span className={`org-cat cat-${o.category}`} title={category.hint}>
-          {category.label}
+        <span className={`org-cat cat-${o.category}`} title={text.category.hint}>
+          {text.category.label}
         </span>
-        <span className={`status status-${o.status}`}>{STATUS_LABEL[o.status]}</span>
+        <span className={`status status-${o.status}`}>{text.status}</span>
       </div>
 
-      <p className="org-summary">{o.summary}</p>
-      {o.note && <p className="org-note">{o.note}</p>}
+      <p className="org-summary">{text.summary}</p>
+      {text.note && <p className="org-note">{text.note}</p>}
 
       <footer className="org-foot">
         {o.help.length > 0 && (
           <div className="org-actions">
             {o.help.map((h, i) => (
-              <a key={h.url + h.label} className={`btn ${i === 0 ? 'primary' : ''}`} href={h.url} target="_blank" rel="noopener noreferrer">
-                {h.label}
-              </a>
+              <Ext key={h.url + text.help[i]} className={`btn ${i === 0 ? 'primary' : ''}`} href={h.url}>
+                {text.help[i]}
+              </Ext>
             ))}
           </div>
         )}
         <div className="org-links">
           {!o.noSite && (
-            <a className="social" href={o.url} target="_blank" rel="noopener noreferrer" title={o.lang ? `Website (${o.lang})` : 'Website'}>
+            <Ext className="social" href={o.url} title={o.lang ? ui.websiteIn(o.lang) : ui.website}>
               <GlobeIcon />
-              <span className="sr-only">Website</span>
-              {o.lang && <small>{o.lang.slice(0, 2).toUpperCase()}</small>}
-            </a>
+              <span className="sr-only">{ui.website}</span>
+              {o.lang && <small lang="en">{o.lang.slice(0, 2).toUpperCase()}</small>}
+            </Ext>
           )}
           {socials.map(([kind, url]) => (
-            <a
+            <Ext
               key={kind}
               className="social"
               href={url}
-              target="_blank"
-              rel="noopener noreferrer"
               title={SOCIALS[kind].label}
               style={{ '--brand': `#${SOCIALS[kind].hex}` } as React.CSSProperties}
             >
               <SocialIcon kind={kind} />
               <span className="sr-only">{SOCIALS[kind].label}</span>
-            </a>
+            </Ext>
           ))}
         </div>
       </footer>
@@ -97,16 +121,18 @@ function OrgCard({ org: o }: { org: Org }) {
 }
 
 /** Filterable org cards. Every card is in the server HTML; filtering only hides cards. */
-export default function OrgDirectory() {
+export default function OrgDirectory({ lang = 'en' }: { lang?: Lang }) {
   const [cat, setCat] = useState<OrgCategory | 'all'>('all');
+  const ui = ORG_PAGE[lang];
   const shown = cat === 'all' ? ORGS : ORGS.filter((o) => o.category === cat);
+  const cats = lang === 'en' ? CATEGORIES : CATEGORIES.map((c) => ({ id: c.id, ...ORG_LABELS[lang].categories[c.id] }));
   return (
     <>
-      <div className="chips tabs" role="tablist" aria-label="Filter by focus">
+      <div className="chips tabs" role="tablist" aria-label={ui.filterLabel}>
         <button role="tab" aria-selected={cat === 'all'} className={`chip ${cat === 'all' ? 'on' : ''}`} onClick={() => setCat('all')}>
-          All <small>{ORGS.length}</small>
+          {ui.all} <small>{ORGS.length}</small>
         </button>
-        {CATEGORIES.map((c) => (
+        {cats.map((c) => (
           <button
             key={c.id}
             role="tab"
@@ -123,7 +149,7 @@ export default function OrgDirectory() {
 
       <div className="org-grid">
         {shown.map((o) => (
-          <OrgCard key={o.id} org={o} />
+          <OrgCard key={o.id} org={o} lang={lang} />
         ))}
       </div>
     </>
