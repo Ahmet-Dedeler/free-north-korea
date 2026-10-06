@@ -628,5 +628,10 @@
     "src": "/img/pages/korea-at-night.jpg",
     "credit": "NASA Earth Observatory, Black Marble 2016 (public domain)",
     "sourceUrl": "https://earthobservatory.nasa.gov/features/NightLights"
+  },
+  "page:og-background": {
+    "src": "/img/pages/og-background.jpg",
+    "credit": "Share card background: street in North Korea by Matt Paish (CC BY 2.0, blurred), Panmunjom via Wikimedia Commons, NASA Black Marble 2016 (public domain)",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:People-street-north-korea-walk.jpg"
   }
 }
