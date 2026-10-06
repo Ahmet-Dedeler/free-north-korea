@@ -1,5 +1,7 @@
 import type { Item } from '@/content/library';
+import { LIBRARY_TEXT, libraryItemCopy } from '@/content/libraryI18n';
 import { cover, hostIcon, hostInitial, hostLabel, type Media } from '@/content/media';
+import { LANG_TAG, type Lang } from '@/site/seo';
 
 /** Stable hue per title so generated covers don't change between builds. */
 function hue(s: string) {
@@ -12,7 +14,7 @@ function hue(s: string) {
 function MadeCover({ item }: { item: Item }) {
   const [main, sub] = item.title.split(/:\s*/);
   return (
-    <span className="made-cover" style={{ '--h': hue(item.title) } as React.CSSProperties}>
+    <span className="made-cover" lang="en" style={{ '--h': hue(item.title) } as React.CSSProperties}>
       <b>{main}</b>
       {sub && <i>{sub}</i>}
       <small>{item.by.split(/&|,/)[0].trim()}</small>
@@ -21,25 +23,34 @@ function MadeCover({ item }: { item: Item }) {
 }
 
 /** Book or film card: the cover is the card, details show on hover (and always on touch screens). */
-export function CoverCard({ item, kind }: { item: Item; kind: 'book' | 'film' }) {
+export function CoverCard({ item, kind, lang = 'en' }: { item: Item; kind: 'book' | 'film'; lang?: Lang }) {
   const img = cover(item.title);
+  const copy = libraryItemCopy(lang, item);
+  const ui = LIBRARY_TEXT[lang];
+  const short = item.title.split(/:\s*/)[0];
+  const altTitle = copy.localTitle ? `${copy.localTitle} (${item.title})` : item.title;
   return (
     <li className="cover-card">
       <a href={item.url} target="_blank" rel="noopener noreferrer">
         <span className={`cover ${kind}`}>
-          {img ? <img src={img.src} alt={`${kind === 'book' ? 'Cover' : 'Poster'} of ${item.title}`} loading="lazy" /> : <MadeCover item={item} />}
+          {img ? (
+            <img src={img.src} alt={kind === 'book' ? ui.coverOf(altTitle) : ui.posterOf(altTitle)} loading="lazy" />
+          ) : (
+            <MadeCover item={item} />
+          )}
           <span className="cover-note">
-            {item.note}
-            {item.caveat && <em>{item.caveat}</em>}
+            {copy.note}
+            {copy.caveat && <em>{copy.caveat}</em>}
           </span>
-          {item.caveat && (
-            <span className="cover-flag" title={item.caveat}>
-              Disputed details
+          {copy.caveat && (
+            <span className="cover-flag" title={copy.caveat}>
+              {ui.disputed}
             </span>
           )}
         </span>
-        <strong>{item.title.split(/:\s*/)[0]}</strong>
-        <span className="cover-by">
+        {copy.localTitle ? <strong lang={LANG_TAG[lang]}>{copy.localTitle}</strong> : <strong lang="en">{short}</strong>}
+        <span className="cover-by" lang="en">
+          {copy.localTitle ? `${short} · ` : ''}
           {item.by}
           {item.year ? ` · ${item.year}` : ''}
         </span>
@@ -60,18 +71,23 @@ export function SiteMark({ url, size = 40, icon }: { url: string; size?: number;
 }
 
 /** Report / dataset card: publisher mark, title, publisher and year, one-line note. */
-export function DocCard({ item }: { item: Item }) {
+export function DocCard({ item, lang = 'en' }: { item: Item; lang?: Lang }) {
+  const copy = libraryItemCopy(lang, item);
   return (
     <li>
       <a className="doc-card" href={item.url} target="_blank" rel="noopener noreferrer">
         <SiteMark url={item.url} />
         <span className="doc-body">
-          <strong>{item.title}</strong>
+          <strong lang="en">{item.title}</strong>
           <span className="doc-meta">
-            {item.by}
-            {item.year ? ` · ${item.year}` : ''} · <span className="doc-host">{hostLabel(item.url)} ↗</span>
+            <span lang="en">
+              {item.by}
+              {item.year ? ` · ${item.year}` : ''}
+            </span>
+            {' · '}
+            <span className="doc-host">{hostLabel(item.url)} ↗</span>
           </span>
-          <span className="doc-note">{item.note}</span>
+          <span className="doc-note">{copy.note}</span>
         </span>
       </a>
     </li>
