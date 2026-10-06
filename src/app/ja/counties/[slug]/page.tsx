@@ -12,10 +12,10 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: Params): Promise<Metadata> {
   const { slug } = await params;
-  return countyMetadata('en', slug);
+  return countyMetadata('ja', slug);
 }
 
 export default async function Page({ params }: Params) {
   const { slug } = await params;
-  return <CountyDossier lang="en" slug={slug} />;
+  return <CountyDossier lang="ja" slug={slug} />;
 }

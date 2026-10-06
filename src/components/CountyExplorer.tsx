@@ -3,6 +3,8 @@
 import Link from 'next/link';
 import { useMemo, useState } from 'react';
 import { ArrowDown, ArrowUp, Search } from 'lucide-react';
+import { COUNTIES_TEXT, NUM_LOCALE, formatCount, provinceName, sitePath } from '@/content/countiesI18n';
+import type { Lang } from '@/site/seo';
 
 export interface CountyRow {
   pcode: string;
@@ -18,12 +20,13 @@ export interface CountyRow {
 }
 
 type Metric = 'density' | 'incidents' | 'detention' | 'markets';
-const METRICS: { id: Metric; label: string; unit: string; color: string }[] = [
-  { id: 'incidents', label: 'Documented abuses', unit: 'abuses', color: '#dc2626' },
-  { id: 'detention', label: 'Detention sites', unit: 'sites', color: '#ea580c' },
-  { id: 'density', label: 'Population density', unit: 'people/km²', color: '#2563eb' },
-  { id: 'markets', label: 'Markets', unit: 'markets', color: '#059669' },
-];
+const COLOR: Record<Metric, string> = {
+  incidents: '#dc2626',
+  detention: '#ea580c',
+  density: '#2563eb',
+  markets: '#059669',
+};
+const METRIC_ORDER: Metric[] = ['incidents', 'detention', 'density', 'markets'];
 type SortKey = 'name' | 'province' | 'pop' | Metric;
 
 /** Log scale so Pyongyang doesn't wash every other county out. Returns 0..1. */
@@ -35,25 +38,42 @@ function scale(v: number, max: number) {
  * County choropleth + sortable table. Both are rendered on the server too (this is a client component, but its
  * first render ships as HTML), so search engines see every county name and number.
  */
-export default function CountyExplorer({ rows, provinces, viewBox }: { rows: CountyRow[]; provinces: { pcode: string; d: string }[]; viewBox: string }) {
+export default function CountyExplorer({
+  rows,
+  provinces,
+  viewBox,
+  lang = 'en',
+}: {
+  rows: CountyRow[];
+  provinces: { pcode: string; d: string }[];
+  viewBox: string;
+  lang?: Lang;
+}) {
+  const t = COUNTIES_TEXT[lang];
+  const metrics = METRIC_ORDER.map((id) => ({ id, ...t.metrics[id], color: COLOR[id] }));
   const [metric, setMetric] = useState<Metric>('incidents');
   const [hover, setHover] = useState<CountyRow | null>(null);
   const [sort, setSort] = useState<{ key: SortKey; desc: boolean }>({ key: 'incidents', desc: true });
   const [q, setQ] = useState('');
-  const m = METRICS.find((x) => x.id === metric)!;
+  const m = metrics.find((x) => x.id === metric)!;
   const max = useMemo(() => Math.max(...rows.map((r) => r[metric] ?? 0), 1), [rows, metric]);
+  const href = (slug: string) => sitePath(lang, `/counties/${slug}`);
 
   const shown = useMemo(() => {
     const needle = q.trim().toLowerCase();
-    const list = needle ? rows.filter((r) => `${r.name} ${r.province}`.toLowerCase().includes(needle)) : rows;
+    const list = needle ? rows.filter((r) => `${r.name} ${r.province} ${provinceName(r.province, lang)}`.toLowerCase().includes(needle)) : rows;
     const k = sort.key;
     return [...list].sort((a, b) => {
+      if (k === 'province' && lang !== 'en') {
+        const c = provinceName(a.province, lang).localeCompare(provinceName(b.province, lang), NUM_LOCALE[lang]);
+        return sort.desc ? -c : c;
+      }
       const x = a[k] ?? -1;
       const y = b[k] ?? -1;
       const c = typeof x === 'string' ? x.localeCompare(y as string) : (x as number) - (y as number);
       return sort.desc ? -c : c;
     });
-  }, [rows, q, sort]);
+  }, [rows, q, sort, lang]);
 
   const th = (key: SortKey, label: string, num = false) => (
     <th className={num ? 'num' : ''} aria-sort={sort.key === key ? (sort.desc ? 'descending' : 'ascending') : 'none'}>
@@ -69,25 +89,26 @@ export default function CountyExplorer({ rows, provinces, viewBox }: { rows: Cou
       <span className="cell-bar">
         <i style={{ width: `${((v ?? 0) / maxOf(k)) * 100}%`, background: color }} />
       </span>
-      {v == null ? '—' : v.toLocaleString('en-US')}
+      {v == null ? '—' : formatCount(v, lang)}
     </td>
   );
+  const name = (value: string) => (lang === 'en' ? value : <span lang="en">{value}</span>);
 
   return (
     <>
       <div className="choro">
         <div className="choro-map">
-          <svg viewBox={viewBox} role="img" aria-label={`Map of North Korean counties by ${m.label.toLowerCase()}`} onMouseLeave={() => setHover(null)}>
+          <svg viewBox={viewBox} role="img" aria-label={t.mapAria(m.label)} onMouseLeave={() => setHover(null)}>
             {rows.map((r) => {
-              const t = scale(r[metric] ?? 0, max);
+              const fill = scale(r[metric] ?? 0, max);
               return (
-                <Link key={r.pcode} href={`/counties/${r.slug}`} onMouseEnter={() => setHover(r)} onFocus={() => setHover(r)}>
+                <Link key={r.pcode} href={href(r.slug)} onMouseEnter={() => setHover(r)} onFocus={() => setHover(r)}>
                   <path
                     d={r.d}
                     className={hover?.pcode === r.pcode ? 'on' : ''}
-                    style={{ fill: t === 0 ? 'var(--hover)' : `color-mix(in srgb, ${m.color} ${Math.round(12 + t * 88)}%, var(--panel))` }}
+                    style={{ fill: fill === 0 ? 'var(--hover)' : `color-mix(in srgb, ${m.color} ${Math.round(12 + fill * 88)}%, var(--panel))` }}
                   >
-                    <title>{`${r.name}: ${(r[metric] ?? 0).toLocaleString('en-US')} ${m.unit}`}</title>
+                    <title>{`${r.name}: ${formatCount(r[metric] ?? 0, lang)} ${m.unit}`}</title>
                   </path>
                 </Link>
               );
@@ -99,25 +120,26 @@ export default function CountyExplorer({ rows, provinces, viewBox }: { rows: Cou
           <div className={`choro-tip ${hover ? 'show' : ''}`}>
             {hover ? (
               <>
-                <strong>{hover.name}</strong>
-                <span>{hover.province}</span>
+                <strong>{name(hover.name)}</strong>
+                <span>{provinceName(hover.province, lang)}</span>
                 <b style={{ color: m.color }}>
-                  {(hover[metric] ?? 0).toLocaleString('en-US')} <small>{m.unit}</small>
+                  {formatCount(hover[metric] ?? 0, lang)} <small>{m.unit}</small>
                 </b>
                 <span className="choro-mini">
-                  {hover.pop ? `${hover.pop.toLocaleString('en-US')} people · ` : ''}
-                  {hover.incidents} abuses · {hover.detention} detention · {hover.markets} markets
+                  {[hover.pop != null ? t.tipPeople(formatCount(hover.pop, lang)) : null, t.tipAbuses(hover.incidents), t.tipDetention(hover.detention), t.tipMarkets(hover.markets)]
+                    .filter((part) => part != null)
+                    .join(' · ')}
                 </span>
               </>
             ) : (
-              <span>Hover a county</span>
+              <span>{t.hoverHint}</span>
             )}
           </div>
         </div>
         <div className="choro-side">
-          <p className="choro-label">Colour by</p>
-          <div className="seg" role="radiogroup" aria-label="Map metric">
-            {METRICS.map((x) => (
+          <p className="choro-label">{t.colourBy}</p>
+          <div className="seg" role="radiogroup" aria-label={t.mapMetric}>
+            {metrics.map((x) => (
               <button key={x.id} type="button" role="radio" aria-checked={metric === x.id} className={metric === x.id ? 'on' : ''} onClick={() => setMetric(x.id)} style={{ '--c': x.color } as React.CSSProperties}>
                 <i />
                 {x.label}
@@ -127,17 +149,17 @@ export default function CountyExplorer({ rows, provinces, viewBox }: { rows: Cou
           <div className="choro-scale" style={{ '--c': m.color } as React.CSSProperties}>
             <span>0</span>
             <i />
-            <span>{max.toLocaleString('en-US')}</span>
+            <span>{formatCount(max, lang)}</span>
           </div>
-          <p className="choro-label">Top 5</p>
+          <p className="choro-label">{t.top5}</p>
           <ol className="top5">
             {[...rows]
               .sort((a, b) => (b[metric] ?? 0) - (a[metric] ?? 0))
               .slice(0, 5)
               .map((r) => (
                 <li key={r.pcode} onMouseEnter={() => setHover(r)}>
-                  <Link href={`/counties/${r.slug}`}>{r.name}</Link>
-                  <b>{(r[metric] ?? 0).toLocaleString('en-US')}</b>
+                  <Link href={href(r.slug)}>{name(r.name)}</Link>
+                  <b>{formatCount(r[metric] ?? 0, lang)}</b>
                 </li>
               ))}
           </ol>
@@ -147,35 +169,35 @@ export default function CountyExplorer({ rows, provinces, viewBox }: { rows: Cou
       <div className="table-tools">
         <label className="search">
           <Search size={15} />
-          <input value={q} onChange={(e) => setQ(e.target.value)} placeholder="Find a county or city" aria-label="Find a county or city" />
+          <input value={q} onChange={(e) => setQ(e.target.value)} placeholder={t.search} aria-label={t.search} />
         </label>
-        <span className="muted small">{shown.length} of {rows.length}</span>
+        <span className="muted small">{t.countOf(shown.length, rows.length)}</span>
       </div>
       <div className="table-wrap">
         <table className="data-table">
           <thead>
             <tr>
-              {th('name', 'County / city')}
-              {th('province', 'Province')}
-              {th('pop', 'Population', true)}
-              {th('density', 'Per km²', true)}
-              {th('incidents', 'Abuses', true)}
-              {th('detention', 'Detention', true)}
-              {th('markets', 'Markets', true)}
+              {th('name', t.colCounty)}
+              {th('province', t.colProvince)}
+              {th('pop', t.colPop, true)}
+              {th('density', t.colPerKm, true)}
+              {th('incidents', t.colAbuses, true)}
+              {th('detention', t.colDetention, true)}
+              {th('markets', t.colMarkets, true)}
             </tr>
           </thead>
           <tbody>
             {shown.map((r) => (
               <tr key={r.pcode} onMouseEnter={() => setHover(r)}>
                 <td>
-                  <Link href={`/counties/${r.slug}`}>{r.name}</Link>
+                  <Link href={href(r.slug)}>{name(r.name)}</Link>
                 </td>
-                <td className="muted">{r.province}</td>
-                <td className="num">{r.pop?.toLocaleString('en-US') ?? '—'}</td>
-                {bar('density', r.density, '#2563eb')}
-                {bar('incidents', r.incidents, '#dc2626')}
-                {bar('detention', r.detention, '#ea580c')}
-                {bar('markets', r.markets, '#059669')}
+                <td className="muted">{provinceName(r.province, lang)}</td>
+                <td className="num">{r.pop == null ? '—' : formatCount(r.pop, lang)}</td>
+                {bar('density', r.density, COLOR.density)}
+                {bar('incidents', r.incidents, COLOR.incidents)}
+                {bar('detention', r.detention, COLOR.detention)}
+                {bar('markets', r.markets, COLOR.markets)}
               </tr>
             ))}
           </tbody>
