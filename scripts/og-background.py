@@ -4,21 +4,21 @@
 """Builds public/img/pages/og-background.jpg, the full-bleed photo strip behind every share card (src/site/og.tsx).
 
 Three photos side by side, blended at the seams:
-  left   people on a Pyongyang street  (Matt Paish, CC BY 2.0, Wikimedia Commons)
+  left   a street in Wonsan, people far off (Mario Micklisch, CC BY 2.0, Wikimedia Commons)
   middle Panmunjom, the border in the DMZ (Wikimedia Commons, see media.json article:how-to-help-north-koreans)
   right  the peninsula at night        (NASA Black Marble 2016, public domain)
-The people panel is blurred so no one is identifiable. The two left panels are tinted navy and darkened so the card's text stays readable on top of them.
+The street shot is wide so no one is identifiable. The two left panels are tinted navy and darkened so the card's text stays readable on top of them.
 
     uv run scripts/og-background.py
 """
 import tempfile
 import urllib.request
 
-from PIL import Image, ImageEnhance, ImageFilter, ImageOps
+from PIL import Image, ImageEnhance, ImageOps
 
 W, H = 1200, 630
-# The street photo is downloaded to a temp file, never saved in public/: only the blurred version is published.
-STREET = "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/People-street-north-korea-walk.jpg/1920px-People-street-north-korea-walk.jpg"
+# The street photo is downloaded to a temp file; only the finished composite is saved in public/.
+STREET = "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Wonsan-street-north-korea-september-2015.jpg/1920px-Wonsan-street-north-korea-september-2015.jpg"
 NAVY = (11, 17, 32)
 
 
@@ -40,13 +40,13 @@ def tint(im, strength=0.55, light=0.75):
     return ImageEnhance.Brightness(out).enhance(light)
 
 
-# Blurred on purpose: these are real people inside North Korea, and this site must never make anyone there
-# identifiable. At this radius they read as a crowd, not as faces.
 street = tempfile.NamedTemporaryFile(suffix=".jpg", delete=False).name
 req = urllib.request.Request(STREET, headers={"User-Agent": "free-north-korea og builder (+https://github.com/Ahmet-Dedeler/free-north-korea)"})
 with urllib.request.urlopen(req) as r, open(street, "wb") as f:
     f.write(r.read())
-people = tint(cover(street, 460, H, (0.78, 0.45)).filter(ImageFilter.GaussianBlur(9)), 0.45, 0.95)
+# A wide shot on purpose: these are real people inside North Korea, and this site must never make anyone there
+# identifiable. Here they are small figures on the sidewalk, sharp but too far away to recognise.
+people = tint(cover(street, 460, H, (0.8, 0.62)), 0.4, 0.9)
 border = tint(cover("public/img/articles/how-to-help-north-koreans.jpg", 460, H, (0.5, 0.55)), 0.5, 0.8)
 night = cover("public/img/pages/korea-at-night.jpg", 460, H, (0.62, 0.6))
 

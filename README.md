@@ -134,7 +134,7 @@ Japanese.
 ## Credits
 
 Missile data © James Martin Center for Nonproliferation Studies / NTI, via nagix/nk-missile-tests. Basemap by
-[OpenFreeMap](https://openfreemap.org) / OpenStreetMap contributors. Night imagery by NASA Earth Observatory. Share card photos: a street in North Korea by Matt Paish (CC BY 2.0, blurred so no one is identifiable) and Panmunjom via Wikimedia Commons. Chart
+[OpenFreeMap](https://openfreemap.org) / OpenStreetMap contributors. Night imagery by NASA Earth Observatory. Share card photos: a street in Wonsan by Mario Micklisch (CC BY 2.0, a wide shot so no one is identifiable) and Panmunjom via Wikimedia Commons. Chart
 data from the sources named on each chart. Map coordinates from Wikipedia unless marked approximate.
 
 Code is [Apache 2.0](LICENSE). Each dataset keeps its original license.

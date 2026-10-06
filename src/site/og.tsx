@@ -5,7 +5,7 @@ import { ImageResponse } from 'next/og';
 export const OG_SIZE = { width: 1200, height: 630 };
 export const OG_CONTENT_TYPE = 'image/png';
 
-// Full-bleed photo strip behind every card: people on a Pyongyang street (blurred so no one is identifiable),
+// Full-bleed photo strip behind every card: a street in Wonsan (a wide shot, so no one is identifiable),
 // Panmunjom on the border, and the peninsula at night (lit South, dark North). Built by scripts/og-background.py;
 // inlined because the card renders at build time with no server to fetch from.
 const BG = `data:image/jpeg;base64,${readFileSync(join(process.cwd(), 'public/img/pages/og-background.jpg')).toString('base64')}`;
