@@ -1,0 +1,378 @@
+{
+  "width": 1200,
+  "height": 1500,
+  "palette": {
+    "name": "atlas",
+    "bg": "#05070c",
+    "ink": "#f2f2f2",
+    "muted": "#9aa3b5"
+  },
+  "type": {
+    "preset": "impact",
+    "display": {
+      "family": "Anton"
+    }
+  },
+  "background": {
+    "color": "#05070c",
+    "grain": 0.06
+  },
+  "title": {
+    "box": {
+      "x": 60,
+      "y": 60,
+      "w": 1080,
+      "h": 0
+    },
+    "align": "middle",
+    "lines": [
+      {
+        "text": "ONE PENINSULA, TWO FATES",
+        "role": "kicker",
+        "size": 26,
+        "tracking": 0.3,
+        "fill": "#9aa3b5",
+        "gap": 6
+      },
+      {
+        "runs": [
+          {
+            "text": "26×",
+            "fill": "#4ea3ff"
+          },
+          {
+            "text": " RICHER",
+            "fill": "#f2f2f2"
+          }
+        ],
+        "role": "display",
+        "size": 140
+      }
+    ],
+    "dek": "In 1940 the North was the richer half. By 2022 the average South Korean produced **26 times** as much as the average North Korean.",
+    "dekWidth": 760,
+    "dekSize": 24,
+    "dekColor": "#d6dae3"
+  },
+  "layers": [
+    {
+      "type": "image",
+      "src": "commons:Korean Peninsula at night 20240124 132602 GMT Iss-070e080670.jpg",
+      "box": {
+        "x": 0,
+        "y": 330,
+        "w": 1200,
+        "h": 1060
+      },
+      "fit": "cover",
+      "fade": {
+        "top": 0.3,
+        "bottom": 0.3
+      },
+      "opacity": 0.8
+    },
+    {
+      "type": "svg",
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 1200,
+        "h": 1500
+      },
+      "markup": "\n    <defs><filter id=\"glow\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\"><feGaussianBlur stdDeviation=\"9\"/></filter></defs>\n    <line x1=\"300\" x2=\"900\" y1=\"1290\" y2=\"1290\" stroke=\"#ffffff\" stroke-opacity=\"0.12\" stroke-width=\"1.5\"/><line x1=\"300\" x2=\"900\" y1=\"1126.3636363636365\" y2=\"1126.3636363636365\" stroke=\"#ffffff\" stroke-opacity=\"0.12\" stroke-width=\"1.5\"/><line x1=\"300\" x2=\"900\" y1=\"962.7272727272727\" y2=\"962.7272727272727\" stroke=\"#ffffff\" stroke-opacity=\"0.12\" stroke-width=\"1.5\"/><line x1=\"300\" x2=\"900\" y1=\"799.0909090909091\" y2=\"799.0909090909091\" stroke=\"#ffffff\" stroke-opacity=\"0.12\" stroke-width=\"1.5\"/><line x1=\"300\" x2=\"900\" y1=\"635.4545454545455\" y2=\"635.4545454545455\" stroke=\"#ffffff\" stroke-opacity=\"0.12\" stroke-width=\"1.5\"/>\n    <line x1=\"300\" x2=\"300\" y1=\"545\" y2=\"1290\" stroke=\"#ffffff\" stroke-opacity=\"0.35\" stroke-width=\"2\"/>\n    <line x1=\"900\" x2=\"900\" y1=\"545\" y2=\"1290\" stroke=\"#ffffff\" stroke-opacity=\"0.35\" stroke-width=\"2\"/>\n    <line x1=\"300\" y1=\"1257.6818181818182\" x2=\"900\" y2=\"613.8381818181819\" stroke=\"#4ea3ff\" stroke-width=\"22\" stroke-opacity=\"0.55\" filter=\"url(#glow)\"/>\n    <line x1=\"300\" y1=\"1257.6818181818182\" x2=\"900\" y2=\"613.8381818181819\" stroke=\"#7fbcff\" stroke-width=\"9\" stroke-linecap=\"round\"/>\n    <line x1=\"300\" y1=\"1247.0618181818181\" x2=\"900\" y2=\"1264.3254545454545\" stroke=\"#ff4a3d\" stroke-width=\"22\" stroke-opacity=\"0.5\" filter=\"url(#glow)\"/>\n    <line x1=\"300\" y1=\"1247.0618181818181\" x2=\"900\" y2=\"1264.3254545454545\" stroke=\"#ff4a3d\" stroke-width=\"9\" stroke-linecap=\"round\"/>\n    <circle cx=\"300\" cy=\"1257.6818181818182\" r=\"13\" fill=\"#7fbcff\" stroke=\"#05070c\" stroke-width=\"4\"/><circle cx=\"900\" cy=\"613.8381818181819\" r=\"13\" fill=\"#7fbcff\" stroke=\"#05070c\" stroke-width=\"4\"/><circle cx=\"300\" cy=\"1247.0618181818181\" r=\"13\" fill=\"#ff4a3d\" stroke=\"#05070c\" stroke-width=\"4\"/><circle cx=\"900\" cy=\"1264.3254545454545\" r=\"13\" fill=\"#ff4a3d\" stroke=\"#05070c\" stroke-width=\"4\"/>\n    <path d=\"M860,633.8381818181819 h-14 V1244.3254545454545 h14\" fill=\"none\" stroke=\"#f2f2f2\" stroke-width=\"3\"/>"
+    },
+    {
+      "type": "text",
+      "box": {
+        "x": 100,
+        "y": 452,
+        "w": 400,
+        "h": 80
+      },
+      "align": "middle",
+      "text": "1940",
+      "style": {
+        "family": "Anton",
+        "size": 64,
+        "fill": "#f2f2f2"
+      }
+    },
+    {
+      "type": "text",
+      "box": {
+        "x": 700,
+        "y": 452,
+        "w": 400,
+        "h": 80
+      },
+      "align": "middle",
+      "text": "2022",
+      "style": {
+        "family": "Anton",
+        "size": 64,
+        "fill": "#f2f2f2"
+      }
+    },
+    {
+      "type": "text",
+      "box": {
+        "x": -114,
+        "y": 1118.3636363636365,
+        "w": 400,
+        "h": 80
+      },
+      "align": "end",
+      "text": "$10K",
+      "style": {
+        "family": "Barlow Condensed",
+        "size": 18,
+        "fill": "#7f889b"
+      }
+    },
+    {
+      "type": "text",
+      "box": {
+        "x": -114,
+        "y": 954.7272727272727,
+        "w": 400,
+        "h": 80
+      },
+      "align": "end",
+      "text": "$20K",
+      "style": {
+        "family": "Barlow Condensed",
+        "size": 18,
+        "fill": "#7f889b"
+      }
+    },
+    {
+      "type": "text",
+      "box": {
+        "x": -114,
+        "y": 791.0909090909091,
+        "w": 400,
+        "h": 80
+      },
+      "align": "end",
+      "text": "$30K",
+      "style": {
+        "family": "Barlow Condensed",
+        "size": 18,
+        "fill": "#7f889b"
+      }
+    },
+    {
+      "type": "text",
+      "box": {
+        "x": -114,
+        "y": 627.4545454545455,
+        "w": 400,
+        "h": 80
+      },
+      "align": "end",
+      "text": "$40K",
+      "style": {
+        "family": "Barlow Condensed",
+        "size": 18,
+        "fill": "#7f889b"
+      }
+    },
+    {
+      "type": "text",
+      "box": {
+        "x": -132,
+        "y": 1165.0618181818181,
+        "w": 400,
+        "h": 80
+      },
+      "align": "end",
+      "text": "$2,624",
+      "style": {
+        "family": "Anton",
+        "size": 44,
+        "fill": "#ff4a3d"
+      }
+    },
+    {
+      "type": "text",
+      "box": {
+        "x": -132,
+        "y": 1221.0618181818181,
+        "w": 400,
+        "h": 80
+      },
+      "align": "end",
+      "text": "NORTH KOREA",
+      "style": {
+        "family": "Barlow Condensed",
+        "weight": 700,
+        "size": 22,
+        "tracking": 0.12,
+        "fill": "#d6dae3"
+      }
+    },
+    {
+      "type": "text",
+      "box": {
+        "x": -132,
+        "y": 1269.6818181818182,
+        "w": 400,
+        "h": 80
+      },
+      "align": "end",
+      "text": "$1,975",
+      "style": {
+        "family": "Anton",
+        "size": 44,
+        "fill": "#7fbcff"
+      }
+    },
+    {
+      "type": "text",
+      "box": {
+        "x": -132,
+        "y": 1325.6818181818182,
+        "w": 400,
+        "h": 80
+      },
+      "align": "end",
+      "text": "SOUTH KOREA",
+      "style": {
+        "family": "Barlow Condensed",
+        "weight": 700,
+        "size": 22,
+        "tracking": 0.12,
+        "fill": "#d6dae3"
+      }
+    },
+    {
+      "type": "text",
+      "box": {
+        "x": 932,
+        "y": 583.8381818181819,
+        "w": 400,
+        "h": 80
+      },
+      "align": "start",
+      "text": "$41,321",
+      "style": {
+        "family": "Anton",
+        "size": 44,
+        "fill": "#7fbcff"
+      }
+    },
+    {
+      "type": "text",
+      "box": {
+        "x": 932,
+        "y": 639.8381818181819,
+        "w": 400,
+        "h": 80
+      },
+      "align": "start",
+      "text": "SOUTH KOREA",
+      "style": {
+        "family": "Barlow Condensed",
+        "weight": 700,
+        "size": 22,
+        "tracking": 0.12,
+        "fill": "#d6dae3"
+      }
+    },
+    {
+      "type": "text",
+      "box": {
+        "x": 932,
+        "y": 1234.3254545454545,
+        "w": 400,
+        "h": 80
+      },
+      "align": "start",
+      "text": "$1,569",
+      "style": {
+        "family": "Anton",
+        "size": 44,
+        "fill": "#ff4a3d"
+      }
+    },
+    {
+      "type": "text",
+      "box": {
+        "x": 932,
+        "y": 1290.3254545454545,
+        "w": 400,
+        "h": 80
+      },
+      "align": "start",
+      "text": "NORTH KOREA",
+      "style": {
+        "family": "Barlow Condensed",
+        "weight": 700,
+        "size": 22,
+        "tracking": 0.12,
+        "fill": "#d6dae3"
+      }
+    },
+    {
+      "type": "text",
+      "box": {
+        "x": 428,
+        "y": 899.0818181818181,
+        "w": 400,
+        "h": 80
+      },
+      "align": "end",
+      "text": "26×",
+      "style": {
+        "family": "Anton",
+        "size": 84,
+        "fill": "#f2f2f2"
+      }
+    },
+    {
+      "type": "text",
+      "box": {
+        "x": 428,
+        "y": 995.0818181818181,
+        "w": 400,
+        "h": 80
+      },
+      "align": "end",
+      "text": "the gap in 2022",
+      "style": {
+        "family": "Barlow Condensed",
+        "size": 22,
+        "weight": 600,
+        "fill": "#d6dae3"
+      }
+    },
+    {
+      "type": "annotation",
+      "box": {
+        "x": 420,
+        "y": 1110,
+        "w": 360,
+        "h": 70
+      },
+      "text": "North Korea is **poorer now** than it was in 1940",
+      "to": [
+        760,
+        1248
+      ],
+      "bend": 0.3,
+      "style": {
+        "size": 21,
+        "italic": true,
+        "fill": "#f2f2f2"
+      },
+      "arrowColor": "#ff4a3d"
+    }
+  ],
+  "footer": {
+    "source": "Bolt and van Zanden – Maddison Project Database 2023, via Our World in Data. GDP per person in international dollars at 2011 prices. North Korea figures are estimates.",
+    "note": "Background: the Korean Peninsula at night from the ISS, January 2024, NASA (public domain).",
+    "brand": "freenorthkorea",
+    "color": "#8a93a6",
+    "brandColor": "#4ea3ff"
+  }
+}

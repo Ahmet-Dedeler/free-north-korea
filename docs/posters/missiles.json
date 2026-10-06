@@ -1,0 +1,480 @@
+{
+  "palette": {
+    "name": "electric",
+    "bg": "#0a0c12",
+    "ink": "#f4f1ea",
+    "muted": "#9aa0ad",
+    "rule": "#2a2f3a"
+  },
+  "type": {
+    "preset": "impact",
+    "display": {
+      "family": "Anton"
+    }
+  },
+  "background": {
+    "gradient": [
+      "#06080d",
+      "#0d111a",
+      "#151a26"
+    ],
+    "grain": 0.07
+  },
+  "title": {
+    "box": {
+      "x": 64,
+      "y": 70,
+      "w": 620,
+      "h": 0
+    },
+    "lines": [
+      {
+        "text": "NORTH KOREA",
+        "role": "kicker",
+        "size": 28,
+        "fill": "#ff5a3c",
+        "tracking": 0.32,
+        "gap": 8
+      },
+      {
+        "text": "MISSILE",
+        "role": "display",
+        "size": 150,
+        "fill": "#f4f1ea",
+        "gap": 0
+      },
+      {
+        "text": "SURGE",
+        "role": "display",
+        "size": 150,
+        "fill": "#ff5a3c",
+        "effect": {
+          "type": "shadow",
+          "color": "#ff2a00"
+        },
+        "gap": 10
+      }
+    ],
+    "dek": "Every missile fired from **1984 to 2026**. **326 of 357** were launched after **Kim Jong Un** took power in December 2011.",
+    "dekWidth": 520,
+    "dekSize": 23,
+    "dekColor": "#d9dbe2",
+    "dekRule": "#ff5a3c"
+  },
+  "layers": [
+    {
+      "type": "image",
+      "src": "commons:Korean Peninsula at night 20240124 132602 GMT Iss-070e080670.jpg",
+      "box": {
+        "x": 480,
+        "y": -40,
+        "w": 800,
+        "h": 860
+      },
+      "fit": "cover",
+      "fade": {
+        "left": 0.45,
+        "bottom": 0.6
+      }
+    },
+    {
+      "type": "shape",
+      "shape": "rect",
+      "box": {
+        "x": 756,
+        "y": 560,
+        "w": 306,
+        "h": 752
+      },
+      "fill": "rgba(255,90,60,0.07)"
+    },
+    {
+      "type": "shape",
+      "shape": "line",
+      "box": {
+        "x": 756,
+        "y": 560,
+        "w": 0,
+        "h": 752
+      },
+      "stroke": "rgba(255,90,60,0.6)",
+      "strokeWidth": 2,
+      "dash": "6 6"
+    },
+    {
+      "type": "text",
+      "box": {
+        "x": 768,
+        "y": 572,
+        "w": 260,
+        "h": 60
+      },
+      "text": "**KIM JONG UN ERA** →",
+      "style": {
+        "size": 20,
+        "fill": "#ff5a3c",
+        "tracking": 0.12,
+        "weight": 700
+      }
+    },
+    {
+      "type": "text",
+      "box": {
+        "x": 190,
+        "y": 572,
+        "w": 520,
+        "h": 60
+      },
+      "text": "← **KIM IL SUNG, KIM JONG IL**",
+      "style": {
+        "size": 20,
+        "fill": "#9aa0ad",
+        "tracking": 0.12,
+        "weight": 700
+      }
+    },
+    {
+      "type": "legend",
+      "box": {
+        "x": 64,
+        "y": 512,
+        "w": 1000,
+        "h": 30
+      },
+      "direction": "row",
+      "swatch": "square",
+      "size": 19,
+      "items": [
+        {
+          "label": "Short-range",
+          "color": "#ff5a3c"
+        },
+        {
+          "label": "Medium / hypersonic",
+          "color": "#ffb02e"
+        },
+        {
+          "label": "ICBM",
+          "color": "#fff1c2"
+        },
+        {
+          "label": "Sub-launched, satellite, unknown",
+          "color": "#5b6478"
+        }
+      ]
+    },
+    {
+      "type": "stacked-columns",
+      "box": {
+        "x": 40,
+        "y": 520,
+        "w": 1130,
+        "h": 840
+      },
+      "categories": [
+        "1984",
+        "1985",
+        "1986",
+        "1987",
+        "1988",
+        "1989",
+        "1990",
+        "1991",
+        "1992",
+        "1993",
+        "1994",
+        "1995",
+        "1996",
+        "1997",
+        "1998",
+        "1999",
+        "2000",
+        "2001",
+        "2002",
+        "2003",
+        "2004",
+        "2005",
+        "2006",
+        "2007",
+        "2008",
+        "2009",
+        "2010",
+        "2011",
+        "2012",
+        "2013",
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "labelEvery": 4,
+      "max": 70,
+      "ticks": [
+        20,
+        40,
+        60
+      ],
+      "tickSuffix": "missiles",
+      "seriesLabels": false,
+      "tickColor": "#9aa0ad",
+      "barGap": 0.18,
+      "radius": 3,
+      "series": [
+        {
+          "label": "Short-range",
+          "color": "#ff5a3c",
+          "values": [
+            6,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            5,
+            0,
+            0,
+            0,
+            6,
+            17,
+            12,
+            4,
+            4,
+            0,
+            25,
+            9,
+            4,
+            21,
+            15,
+            34,
+            3,
+            32
+          ]
+        },
+        {
+          "label": "Medium / hypersonic",
+          "color": "#ffb02e",
+          "values": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            4,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            16,
+            13,
+            0,
+            0,
+            0,
+            1,
+            4,
+            0,
+            2,
+            1,
+            2
+          ]
+        },
+        {
+          "label": "ICBM",
+          "color": "#fff1c2",
+          "values": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            3,
+            0,
+            0,
+            0,
+            0,
+            3,
+            5,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "label": "Sub-launched, satellite, other",
+          "color": "#5b6478",
+          "values": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            2,
+            0,
+            0,
+            3,
+            4,
+            1,
+            0,
+            2,
+            0,
+            1,
+            41,
+            13,
+            4,
+            7,
+            9
+          ]
+        }
+      ]
+    },
+    {
+      "type": "annotation",
+      "box": {
+        "x": 560,
+        "y": 690,
+        "w": 270,
+        "h": 80
+      },
+      "text": "**2022: 69 missiles**, the most in any year. 41 were sub-launched, satellite or unidentified.",
+      "to": [
+        952,
+        712
+      ],
+      "bend": 0,
+      "style": {
+        "size": 19,
+        "fill": "#f4f1ea",
+        "italic": true
+      },
+      "arrowColor": "#ff5a3c"
+    },
+    {
+      "type": "annotation",
+      "box": {
+        "x": 300,
+        "y": 1010,
+        "w": 320,
+        "h": 70
+      },
+      "text": "1994–2011, all of Kim Jong Il’s rule: **16 missiles**",
+      "to": [
+        520,
+        1310
+      ],
+      "bend": 0.25,
+      "style": {
+        "size": 18,
+        "fill": "#c8ccd6",
+        "italic": true
+      },
+      "arrowColor": "#9aa0ad"
+    }
+  ],
+  "footer": {
+    "source": "CNS North Korea Missile Test Database, via nagix/nk-missile-tests. Each missile counts once, so a salvo of four is four. Medium range includes intermediate-range and hypersonic glide missiles; \"other\" is submarine-launched missiles, satellite launches and unknown types. 2026 runs to 2026-09-20.",
+    "note": "Photo: the Korean Peninsula at night from the ISS, NASA (public domain). The dark gap is North Korea.",
+    "brand": "freenorthkorea",
+    "color": "#8a90a0",
+    "brandColor": "#ff5a3c"
+  }
+}

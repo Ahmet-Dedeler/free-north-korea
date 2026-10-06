@@ -1,0 +1,250 @@
+{
+  "palette": {
+    "name": "civic",
+    "bg": "#ece6da",
+    "ink": "#1b2a2a",
+    "muted": "#6b7470"
+  },
+  "type": {
+    "preset": "modern",
+    "display": {
+      "family": "Archivo Black"
+    }
+  },
+  "background": {
+    "color": "#ece6da",
+    "grain": 0.07
+  },
+  "title": {
+    "box": {
+      "x": 60,
+      "y": 64,
+      "w": 1080,
+      "h": 0
+    },
+    "lines": [
+      {
+        "runs": [
+          {
+            "text": "−99%",
+            "fill": "#0f8a7e"
+          }
+        ],
+        "role": "display",
+        "size": 130,
+        "gap": 0
+      },
+      {
+        "text": "THE AID THAT DRIED UP",
+        "role": "display",
+        "size": 54,
+        "fill": "#1b2a2a",
+        "gap": 10
+      }
+    ],
+    "dek": "Humanitarian funding for North Korea reported to the UN. **$361M** in 2002, **$2.4M** in 2025. Since 2020 the border has stayed shut to almost every aid worker.",
+    "dekWidth": 620,
+    "dekSize": 22,
+    "dekColor": "#3a4644"
+  },
+  "layers": [
+    {
+      "type": "radial-bars",
+      "box": {
+        "x": 0,
+        "y": 330,
+        "w": 1200,
+        "h": 1080
+      },
+      "cx": 560,
+      "cy": 880,
+      "inner": 0.24,
+      "center": "**27 years** of aid, 2000 to 2026",
+      "startAngle": 0,
+      "endAngle": 340,
+      "sort": "none",
+      "scale": "sqrt",
+      "format": {
+        "prefix": "$",
+        "suffix": "M",
+        "compact": false,
+        "decimals": 0
+      },
+      "categories": {
+        "hi": "#0f8a7e",
+        "lo": "#c2493a"
+      },
+      "items": [
+        {
+          "label": "2000",
+          "value": 224.15,
+          "category": "hi",
+          "display": "$224M"
+        },
+        {
+          "label": "2001",
+          "value": 278.28,
+          "category": "hi",
+          "display": "$278M"
+        },
+        {
+          "label": "2002",
+          "value": 360.84,
+          "category": "hi",
+          "display": "$361M"
+        },
+        {
+          "label": "2003",
+          "value": 182.89,
+          "category": "hi",
+          "display": "$183M"
+        },
+        {
+          "label": "2004",
+          "value": 301.78,
+          "category": "hi",
+          "display": "$302M"
+        },
+        {
+          "label": "2005",
+          "value": 46.17,
+          "category": "hi",
+          "display": "$46M"
+        },
+        {
+          "label": "2006",
+          "value": 40.04,
+          "category": "hi",
+          "display": "$40M"
+        },
+        {
+          "label": "2007",
+          "value": 103.06,
+          "category": "hi",
+          "display": "$103M"
+        },
+        {
+          "label": "2008",
+          "value": 56.7,
+          "category": "hi",
+          "display": "$57M"
+        },
+        {
+          "label": "2009",
+          "value": 61.33,
+          "category": "hi",
+          "display": "$61M"
+        },
+        {
+          "label": "2010",
+          "value": 17.59,
+          "category": "hi",
+          "display": "$18M"
+        },
+        {
+          "label": "2011",
+          "value": 48.52,
+          "category": "hi",
+          "display": "$49M"
+        },
+        {
+          "label": "2012",
+          "value": 115.33,
+          "category": "hi",
+          "display": "$115M"
+        },
+        {
+          "label": "2013",
+          "value": 62.8,
+          "category": "hi",
+          "display": "$63M"
+        },
+        {
+          "label": "2014",
+          "value": 33.23,
+          "category": "hi",
+          "display": "$33M"
+        },
+        {
+          "label": "2015",
+          "value": 35.48,
+          "category": "hi",
+          "display": "$35M"
+        },
+        {
+          "label": "2016",
+          "value": 43.08,
+          "category": "hi",
+          "display": "$43M"
+        },
+        {
+          "label": "2017",
+          "value": 39.2,
+          "category": "hi",
+          "display": "$39M"
+        },
+        {
+          "label": "2018",
+          "value": 38.08,
+          "category": "hi",
+          "display": "$38M"
+        },
+        {
+          "label": "2019",
+          "value": 39.73,
+          "category": "hi",
+          "display": "$40M"
+        },
+        {
+          "label": "2020",
+          "value": 37.59,
+          "category": "hi",
+          "display": "$38M"
+        },
+        {
+          "label": "2021",
+          "value": 13.79,
+          "category": "lo",
+          "display": "$14M"
+        },
+        {
+          "label": "2022",
+          "value": 2.32,
+          "category": "lo",
+          "display": "$2.3M"
+        },
+        {
+          "label": "2023",
+          "value": 1.5,
+          "category": "lo",
+          "display": "$1.5M"
+        },
+        {
+          "label": "2024",
+          "value": 2.82,
+          "category": "lo",
+          "display": "$2.8M"
+        },
+        {
+          "label": "2025",
+          "value": 2.38,
+          "category": "lo",
+          "display": "$2.4M"
+        },
+        {
+          "label": "2026*",
+          "value": 2.14,
+          "category": "lo",
+          "display": "$2.1M"
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "source": "UN OCHA Financial Tracking Service, CC BY 4.0. Money reported as received, by the year it was meant for. *2026 is the year so far.",
+    "note": "Bar length uses a square-root scale so the small recent years stay visible.",
+    "brand": "freenorthkorea",
+    "color": "#6b7470",
+    "brandColor": "#0f8a7e"
+  }
+}
