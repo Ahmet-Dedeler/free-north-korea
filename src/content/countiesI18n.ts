@@ -180,6 +180,7 @@ type Text = {
   menRest: string;
   campsHeading: string;
   placesHeading: string;
+  locationAria: (name: string) => string;
   elsewhere: (province: string) => string;
   sourcesHeading: string;
 };
@@ -251,6 +252,7 @@ export const COUNTIES_TEXT: Record<Lang, Text> = {
     menRest: ' men',
     campsHeading: 'Prison camps here',
     placesHeading: 'Key sites here',
+    locationAria: (name) => `Location of ${name} in North Korea`,
     elsewhere: (province) => `Elsewhere in ${province}`,
     sourcesHeading: 'Sources',
   },
@@ -320,6 +322,7 @@ export const COUNTIES_TEXT: Record<Lang, Text> = {
     menRest: '명 (남성)',
     campsHeading: '이 지역의 수용소',
     placesHeading: '이 지역의 주요 장소',
+    locationAria: (name) => `북한에서 ${name}의 위치`,
     elsewhere: (province) => `${province}의 다른 시·군`,
     sourcesHeading: '출처',
   },
@@ -389,6 +392,7 @@ export const COUNTIES_TEXT: Record<Lang, Text> = {
     menRest: '人（男性）',
     campsHeading: 'ここにある収容所',
     placesHeading: 'ここにある主な地点',
+    locationAria: (name) => `北朝鮮における${name}の位置`,
     elsewhere: (province) => `${province}の他の市・郡`,
     sourcesHeading: '出典',
   },
@@ -457,6 +461,7 @@ export const COUNTIES_TEXT: Record<Lang, Text> = {
     menRest: '人（男性）',
     campsHeading: '当地的收容所',
     placesHeading: '当地的主要地点',
+    locationAria: (name) => `${name}在朝鲜的位置`,
     elsewhere: (province) => `${province}的其他市、郡`,
     sourcesHeading: '来源',
   },

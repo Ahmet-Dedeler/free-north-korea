@@ -116,7 +116,7 @@ export default async function CountyDossier({ lang, slug }: { lang: Lang; slug: 
             <StatTile icon={Store} value={county.markets} label={t.officialMarkets} tone={county.markets ? 'ok' : undefined} />
           </div>
         </div>
-        <Locator county={county.pcode} label={county.name} />
+        <Locator county={county.pcode} label={county.name} ariaLabel={lang === 'en' ? undefined : t.locationAria(county.name)} />
       </header>
 
       <p className="dx-actions">
@@ -175,9 +175,9 @@ export default async function CountyDossier({ lang, slug }: { lang: Lang; slug: 
       {placesInCounty.length > 0 && (
         <>
           <h2>{t.placesHeading}</h2>
-          <ul className="place-cards" lang={nameLang}>
+          <ul className="place-cards">
             {placesInCounty.map((place) => (
-              <PlaceCard key={place.id} place={place} />
+              <PlaceCard key={place.id} place={place} lang={lang} />
             ))}
           </ul>
         </>

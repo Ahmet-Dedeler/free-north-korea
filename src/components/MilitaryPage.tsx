@@ -121,7 +121,7 @@ export default function MilitaryPage({ lang }: { lang: Lang }) {
         </div>
         <ul className="place-cards">
           {nuclearSites.map((p) => (
-            <PlaceCard key={p.id} place={p} />
+            <PlaceCard key={p.id} place={p} lang={lang} />
           ))}
         </ul>
       </section>
