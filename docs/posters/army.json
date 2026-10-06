@@ -1,0 +1,152 @@
+{
+  "palette": {
+    "name": "olive",
+    "bg": "#e9e4d4",
+    "ink": "#1f2417",
+    "muted": "#5f6650",
+    "accent": "#c4271c"
+  },
+  "type": {
+    "preset": "impact",
+    "display": {
+      "family": "Anton"
+    }
+  },
+  "background": {
+    "color": "#e9e4d4",
+    "grain": 0.08
+  },
+  "title": {
+    "box": {
+      "x": 60,
+      "y": 70,
+      "w": 620,
+      "h": 0
+    },
+    "lines": [
+      {
+        "text": "A COUNTRY IN UNIFORM",
+        "role": "kicker",
+        "size": 26,
+        "tracking": 0.22,
+        "fill": "#c4271c",
+        "gap": 8
+      },
+      {
+        "runs": [
+          {
+            "text": "1 IN 18",
+            "fill": "#c4271c"
+          }
+        ],
+        "role": "display",
+        "size": 170,
+        "gap": 0
+      },
+      {
+        "text": "NORTH KOREANS IS A SOLDIER",
+        "role": "display",
+        "size": 46,
+        "fill": "#1f2417"
+      }
+    ],
+    "dek": "**1.47 million** people in the armed forces out of 26 million, one of the highest shares on Earth. South Korea, with twice the people, has **569,000**.",
+    "dekWidth": 560,
+    "dekSize": 23,
+    "dekColor": "#2f3524"
+  },
+  "layers": [
+    {
+      "type": "image",
+      "src": "cutout:./img/DMZ___North_Korean_Soldiers_marching_along_the_defense_line_PS.jpg",
+      "box": {
+        "x": 660,
+        "y": 20,
+        "w": 540,
+        "h": 740
+      },
+      "fit": "contain",
+      "filter": "grayscale",
+      "shadow": true
+    },
+    {
+      "type": "text",
+      "box": {
+        "x": 60,
+        "y": 450,
+        "w": 640,
+        "h": 40
+      },
+      "text": "**NORTH KOREA**  1 soldier for every 18 people",
+      "style": {
+        "size": 28,
+        "fill": "#1f2417"
+      }
+    },
+    {
+      "type": "pictogram",
+      "box": {
+        "x": 60,
+        "y": 500,
+        "w": 648,
+        "h": 150
+      },
+      "icon": "icon:ph:person-fill",
+      "shape": "icon",
+      "total": 18,
+      "columns": 9,
+      "showLabels": false,
+      "parts": [
+        {
+          "label": "Soldier",
+          "value": 1,
+          "color": "#c4271c"
+        }
+      ],
+      "rest": "#b7b39f"
+    },
+    {
+      "type": "text",
+      "box": {
+        "x": 60,
+        "y": 760,
+        "w": 1080,
+        "h": 40
+      },
+      "text": "**SOUTH KOREA**  1 soldier for every 91 people",
+      "style": {
+        "size": 28,
+        "fill": "#1f2417"
+      }
+    },
+    {
+      "type": "pictogram",
+      "box": {
+        "x": 60,
+        "y": 810,
+        "w": 1080,
+        "h": 520
+      },
+      "icon": "icon:ph:person-fill",
+      "shape": "icon",
+      "total": 91,
+      "columns": 15,
+      "showLabels": false,
+      "parts": [
+        {
+          "label": "Soldier",
+          "value": 1,
+          "color": "#2456a6"
+        }
+      ],
+      "rest": "#b7b39f"
+    }
+  ],
+  "footer": {
+    "source": "The Military Balance - International Institute for Strategic Studies, via World Bank (2026), via Our World in Data; population from UN WPP via Our World in Data. Active personnel, 2020 (latest year in the series).",
+    "note": "Photo: North Korean soldiers at Panmunjom, Wikimedia Commons (CC BY-SA 3.0).",
+    "brand": "freenorthkorea",
+    "color": "#5f6650",
+    "brandColor": "#c4271c"
+  }
+}

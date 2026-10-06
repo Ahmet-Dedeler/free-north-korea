@@ -1,0 +1,152 @@
+{
+  "palette": {
+    "name": "atlas",
+    "bg": "#0e0e0f",
+    "ink": "#efece6",
+    "muted": "#9b968c",
+    "accent": "#e23b2e"
+  },
+  "type": {
+    "preset": "classic",
+    "display": {
+      "family": "DM Serif Display"
+    }
+  },
+  "background": {
+    "gradient": [
+      "#0b0b0c",
+      "#17161a"
+    ],
+    "grain": 0.08
+  },
+  "title": {
+    "box": {
+      "x": 64,
+      "y": 70,
+      "w": 600,
+      "h": 0
+    },
+    "lines": [
+      {
+        "text": "NORTH KOREA’S PRISON CAMPS",
+        "role": "kicker",
+        "size": 24,
+        "tracking": 0.24,
+        "fill": "#e23b2e",
+        "gap": 10
+      },
+      {
+        "text": "Up to 120,000",
+        "role": "display",
+        "size": 92,
+        "fill": "#efece6",
+        "gap": 0
+      },
+      {
+        "text": "people held",
+        "role": "display",
+        "size": 64,
+        "fill": "#efece6",
+        "italic": true
+      }
+    ],
+    "dek": "In 2014 a UN Commission of Inquiry estimated **80,000 to 120,000** people were held in political prison camps (kwanliso), often whole families, and called what happens there **crimes against humanity**.",
+    "dekWidth": 540,
+    "dekSize": 22,
+    "dekColor": "#cfcac0",
+    "dekRule": "#e23b2e"
+  },
+  "layers": [
+    {
+      "type": "image",
+      "src": "./img/Shin_Dong_Hyuk.jpg",
+      "box": {
+        "x": 560,
+        "y": 0,
+        "w": 640,
+        "h": 700
+      },
+      "fit": "cover",
+      "focus": "center",
+      "filter": "grayscale",
+      "fade": {
+        "left": 0.45,
+        "bottom": 0.4
+      }
+    },
+    {
+      "type": "annotation",
+      "box": {
+        "x": 900,
+        "y": 600,
+        "w": 250,
+        "h": 60
+      },
+      "text": "Shin Dong-hyuk, who says he was born in Camp 14, at the UN in Geneva",
+      "style": {
+        "size": 16,
+        "italic": true,
+        "fill": "#cfcac0"
+      }
+    },
+    {
+      "type": "legend",
+      "box": {
+        "x": 70,
+        "y": 720,
+        "w": 1060,
+        "h": 30
+      },
+      "direction": "row",
+      "swatch": "circle",
+      "size": 19,
+      "items": [
+        {
+          "label": "Low estimate: 80,000",
+          "color": "#e23b2e"
+        },
+        {
+          "label": "Up to 40,000 more",
+          "color": "#6b2a24"
+        },
+        {
+          "label": "Each figure = 1,000 people",
+          "color": "#efece6"
+        }
+      ]
+    },
+    {
+      "type": "pictogram",
+      "box": {
+        "x": 70,
+        "y": 780,
+        "w": 1060,
+        "h": 560
+      },
+      "icon": "icon:ph:person-fill",
+      "shape": "icon",
+      "total": 120,
+      "columns": 15,
+      "showLabels": false,
+      "parts": [
+        {
+          "label": "Low estimate",
+          "value": 80,
+          "color": "#e23b2e"
+        },
+        {
+          "label": "Upper range",
+          "value": 40,
+          "color": "#6b2a24"
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "source": "UN Commission of Inquiry on Human Rights in the DPRK, report A/HRC/25/63 (2014). There is no newer precise count; some camps have since closed and others expanded.",
+    "note": "Photo: Shin Dong-hyuk, U.S. Mission Geneva (public domain), via Wikimedia Commons. Shin revised parts of his account in 2015.",
+    "brand": "freenorthkorea",
+    "color": "#8f8a80",
+    "brandColor": "#e23b2e"
+  }
+}

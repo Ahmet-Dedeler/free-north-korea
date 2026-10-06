@@ -1,0 +1,331 @@
+{
+  "palette": {
+    "name": "poster",
+    "bg": "#efe4cc",
+    "ink": "#2a0d08",
+    "muted": "#7a5a4a",
+    "accent": "#d7261e"
+  },
+  "type": {
+    "preset": "impact",
+    "display": {
+      "family": "Anton"
+    }
+  },
+  "background": {
+    "gradient": [
+      "#f3e9d2",
+      "#e6d5b2"
+    ],
+    "grain": 0.09
+  },
+  "title": {
+    "box": {
+      "x": 60,
+      "y": 60,
+      "w": 620,
+      "h": 0
+    },
+    "lines": [
+      {
+        "text": "WHO FIRED",
+        "role": "display",
+        "size": 92,
+        "fill": "#2a0d08",
+        "gap": 0
+      },
+      {
+        "text": "NORTH KOREA'S",
+        "role": "display",
+        "size": 58,
+        "fill": "#2a0d08",
+        "gap": 4
+      },
+      {
+        "text": "MISSILES?",
+        "role": "display",
+        "size": 128,
+        "fill": "#d7261e",
+        "effect": {
+          "type": "extrude",
+          "color": "#7a120c",
+          "depth": 6
+        }
+      }
+    ],
+    "dek": "Missiles launched under each leader since the first ballistic missile tests in 1984. **Circle area = missiles fired.** Kim Jong Un has launched **11 times** as many as his father and grandfather combined.",
+    "dekWidth": 540,
+    "dekSize": 22,
+    "dekColor": "#3a1c14"
+  },
+  "layers": [
+    {
+      "type": "svg",
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 1200,
+        "h": 1500
+      },
+      "markup": "<path d=\"M760,930L1660,930L1652.3003752364293,1047.4735729980464Z\" fill=\"#d7261e\" fill-opacity=\"0.07\"/><path d=\"M760,930L1629.3332436601613,1162.9371405922686L1591.4915792601582,1274.4150891285808Z\" fill=\"#d7261e\" fill-opacity=\"0.07\"/><path d=\"M760,930L1539.4228634059948,1380L1474.0180062621116,1477.8852861078485Z\" fill=\"#d7261e\" fill-opacity=\"0.07\"/><path d=\"M760,930L1396.396103067893,1566.3961030678927L1307.8852861078485,1644.0180062621116Z\" fill=\"#d7261e\" fill-opacity=\"0.07\"/><path d=\"M760,930L1210,1709.4228634059946L1104.4150891285808,1761.4915792601582Z\" fill=\"#d7261e\" fill-opacity=\"0.07\"/><path d=\"M760,930L992.9371405922686,1799.3332436601613L877.4735729980465,1822.3003752364293Z\" fill=\"#d7261e\" fill-opacity=\"0.07\"/><path d=\"M760,930L760,1830L642.5264270019537,1822.3003752364293Z\" fill=\"#d7261e\" fill-opacity=\"0.07\"/><path d=\"M760,930L527.0628594077313,1799.3332436601613L415.58491087141925,1761.4915792601582Z\" fill=\"#d7261e\" fill-opacity=\"0.07\"/><path d=\"M760,930L310.0000000000002,1709.4228634059948L212.11471389215137,1644.0180062621116Z\" fill=\"#d7261e\" fill-opacity=\"0.07\"/><path d=\"M760,930L123.60389693210732,1566.396103067893L45.981993737888274,1477.8852861078485Z\" fill=\"#d7261e\" fill-opacity=\"0.07\"/><path d=\"M760,930L-19.422863405994804,1380L-71.49157926015812,1274.4150891285808Z\" fill=\"#d7261e\" fill-opacity=\"0.07\"/><path d=\"M760,930L-109.33324366016143,1162.9371405922689L-132.30037523642932,1047.4735729980464Z\" fill=\"#d7261e\" fill-opacity=\"0.07\"/><path d=\"M760,930L-140,930.0000000000001L-132.30037523642943,812.5264270019538Z\" fill=\"#d7261e\" fill-opacity=\"0.07\"/><path d=\"M760,930L-109.33324366016154,697.0628594077317L-71.49157926015823,585.5849108714197Z\" fill=\"#d7261e\" fill-opacity=\"0.07\"/><path d=\"M760,930L-19.42286340599469,479.9999999999999L45.98199373788839,382.11471389215137Z\" fill=\"#d7261e\" fill-opacity=\"0.07\"/><path d=\"M760,930L123.60389693210709,293.6038969321073L212.11471389215126,215.9819937378885Z\" fill=\"#d7261e\" fill-opacity=\"0.07\"/><path d=\"M760,930L309.9999999999996,150.5771365940053L415.5849108714194,98.50842073984188Z\" fill=\"#d7261e\" fill-opacity=\"0.07\"/><path d=\"M760,930L527.0628594077314,60.66675633983857L642.5264270019535,37.69962476357068Z\" fill=\"#d7261e\" fill-opacity=\"0.07\"/><path d=\"M760,930L759.9999999999999,30L877.473572998047,37.69962476357068Z\" fill=\"#d7261e\" fill-opacity=\"0.07\"/><path d=\"M760,930L992.937140592269,60.66675633983857L1104.415089128581,98.508420739842Z\" fill=\"#d7261e\" fill-opacity=\"0.07\"/><path d=\"M760,930L1210,150.5771365940053L1307.8852861078485,215.9819937378884Z\" fill=\"#d7261e\" fill-opacity=\"0.07\"/><path d=\"M760,930L1396.3961030678925,293.6038969321071L1474.0180062621116,382.11471389215126Z\" fill=\"#d7261e\" fill-opacity=\"0.07\"/><path d=\"M760,930L1539.4228634059946,479.9999999999996L1591.4915792601582,585.5849108714194Z\" fill=\"#d7261e\" fill-opacity=\"0.07\"/><path d=\"M760,930L1629.3332436601613,697.0628594077314L1652.3003752364293,812.5264270019535Z\" fill=\"#d7261e\" fill-opacity=\"0.07\"/>"
+    },
+    {
+      "type": "shape",
+      "shape": "circle",
+      "box": {
+        "x": 390,
+        "y": 560,
+        "w": 740,
+        "h": 740
+      },
+      "fill": "#d7261e"
+    },
+    {
+      "type": "image",
+      "src": "../../public/img/people/kim-jong-un.jpg",
+      "shape": "circle",
+      "box": {
+        "x": 400,
+        "y": 570,
+        "w": 720,
+        "h": 720
+      },
+      "fit": "cover",
+      "focus": "top",
+      "filter": "duotone",
+      "duotone": [
+        "#2a0d08",
+        "#f6d2b0"
+      ]
+    },
+    {
+      "type": "shape",
+      "shape": "rect",
+      "box": {
+        "x": 610,
+        "y": 1220,
+        "w": 300,
+        "h": 150
+      },
+      "fill": "#2a0d08",
+      "radius": 8
+    },
+    {
+      "type": "stat",
+      "box": {
+        "x": 610,
+        "y": 1238,
+        "w": 300,
+        "h": 90
+      },
+      "value": "326",
+      "color": "#ffffff",
+      "size": 78,
+      "align": "middle"
+    },
+    {
+      "type": "text",
+      "box": {
+        "x": 610,
+        "y": 1334,
+        "w": 300,
+        "h": 60
+      },
+      "text": "MISSILES FIRED",
+      "style": {
+        "size": 18,
+        "fill": "#f6d2b0",
+        "tracking": 0.2,
+        "weight": 700
+      },
+      "align": "middle"
+    },
+    {
+      "type": "text",
+      "box": {
+        "x": 560,
+        "y": 1382,
+        "w": 400,
+        "h": 60
+      },
+      "text": "**KIM JONG UN**  2012–2026",
+      "style": {
+        "size": 26,
+        "fill": "#2a0d08"
+      },
+      "align": "middle"
+    },
+    {
+      "type": "shape",
+      "shape": "circle",
+      "box": {
+        "x": 82.77830496519078,
+        "y": 1062.7783049651907,
+        "w": 174.44339006961843,
+        "h": 174.44339006961843
+      },
+      "fill": "#d7261e"
+    },
+    {
+      "type": "image",
+      "src": "../../public/img/people/kim-il-sung.jpg",
+      "shape": "circle",
+      "box": {
+        "x": 92.77830496519078,
+        "y": 1072.7783049651907,
+        "w": 154.44339006961843,
+        "h": 154.44339006961843
+      },
+      "fit": "cover",
+      "focus": "top",
+      "filter": "duotone",
+      "duotone": [
+        "#2a0d08",
+        "#f6d2b0"
+      ]
+    },
+    {
+      "type": "text",
+      "box": {
+        "x": 273.2216950348092,
+        "y": 1098,
+        "w": 240,
+        "h": 60
+      },
+      "text": "15",
+      "style": {
+        "family": "Anton",
+        "size": 64,
+        "fill": "#d7261e"
+      },
+      "align": "start"
+    },
+    {
+      "type": "text",
+      "box": {
+        "x": 273.2216950348092,
+        "y": 1172,
+        "w": 260,
+        "h": 60
+      },
+      "text": "**KIM IL SUNG**",
+      "style": {
+        "size": 22,
+        "fill": "#2a0d08"
+      },
+      "align": "start"
+    },
+    {
+      "type": "text",
+      "box": {
+        "x": 273.2216950348092,
+        "y": 1200,
+        "w": 260,
+        "h": 60
+      },
+      "text": "1984–1994",
+      "style": {
+        "size": 20,
+        "fill": "#6b4a3a"
+      },
+      "align": "start"
+    },
+    {
+      "type": "shape",
+      "shape": "circle",
+      "box": {
+        "x": 80.24577631047357,
+        "y": 750.2457763104736,
+        "w": 179.50844737905285,
+        "h": 179.50844737905285
+      },
+      "fill": "#d7261e"
+    },
+    {
+      "type": "image",
+      "src": "../../public/img/people/kim-jong-il.jpg",
+      "shape": "circle",
+      "box": {
+        "x": 90.24577631047357,
+        "y": 760.2457763104736,
+        "w": 159.50844737905285,
+        "h": 159.50844737905285
+      },
+      "fit": "cover",
+      "focus": "top",
+      "filter": "duotone",
+      "duotone": [
+        "#2a0d08",
+        "#f6d2b0"
+      ]
+    },
+    {
+      "type": "text",
+      "box": {
+        "x": 275.75422368952644,
+        "y": 788,
+        "w": 240,
+        "h": 60
+      },
+      "text": "16",
+      "style": {
+        "family": "Anton",
+        "size": 64,
+        "fill": "#d7261e"
+      },
+      "align": "start"
+    },
+    {
+      "type": "text",
+      "box": {
+        "x": 275.75422368952644,
+        "y": 862,
+        "w": 260,
+        "h": 60
+      },
+      "text": "**KIM JONG IL**",
+      "style": {
+        "size": 22,
+        "fill": "#2a0d08"
+      },
+      "align": "start"
+    },
+    {
+      "type": "text",
+      "box": {
+        "x": 275.75422368952644,
+        "y": 890,
+        "w": 260,
+        "h": 60
+      },
+      "text": "1994–2011",
+      "style": {
+        "size": 20,
+        "fill": "#6b4a3a"
+      },
+      "align": "start"
+    },
+    {
+      "type": "annotation",
+      "box": {
+        "x": 70,
+        "y": 1300,
+        "w": 330,
+        "h": 60
+      },
+      "text": "Same scale. Area, not width, is the count.",
+      "style": {
+        "size": 18,
+        "italic": true,
+        "fill": "#6b4a3a"
+      }
+    }
+  ],
+  "footer": {
+    "source": "CNS North Korea Missile Test Database, via nagix/nk-missile-tests. Each missile counts once. 2026 runs to 2026-09-20.",
+    "note": "Photos: Jesse Charlie (CC0); Vladimir Smirnov / TASS (CC BY 4.0), via Wikimedia Commons.",
+    "brand": "freenorthkorea",
+    "color": "#6b4a3a",
+    "brandColor": "#d7261e"
+  }
+}

@@ -201,3 +201,189 @@ const write = (name, spec) => fs.writeFileSync(new URL(`./${name}.json`, import.
     footer: { source: `${s.source.name}, CC BY 4.0. Money reported as received, by the year it was meant for. *2026 is the year so far.`, note: 'Bar length uses a square-root scale so the small recent years stay visible.', brand, color: '#6b7470', brandColor: '#0f8a7e' },
   });
 }
+
+// ---------------------------------------------------------------------------
+// Photo-led set. Every photo is freely licensed (credits in each footer) or the
+// site's own people photos (licenses in data/entities/people.json).
+const PEOPLE = '../../public/img/people/';
+
+// 5. Missiles by ruler, faces in circles. Circle AREA = missiles fired (r ∝ √n).
+{
+  const s = get('missile-launches');
+  const tot = (y) => ['short', 'medium', 'icbm', 'other'].reduce((t, k) => t + at(s.entities[k], y), 0);
+  const sum = (a, b) => range(a, b).reduce((t, y) => t + tot(y), 0);
+  const il = sum(1984, 1994), jongIl = sum(1995, 2011), un = sum(2012, 2026);
+  const R = 360, r = (n) => R * Math.sqrt(n / un);
+  const big = { cx: 760, cy: 930 };
+  const small = [
+    { name: 'KIM IL SUNG', years: '1984–1994', n: il, img: 'kim-il-sung', cx: 170, cy: 1150 },
+    { name: 'KIM JONG IL', years: '1994–2011', n: jongIl, img: 'kim-jong-il', cx: 170, cy: 840 },
+  ];
+  const disc = (cx, cy, rr, img) => [
+    { type: 'shape', shape: 'circle', box: { x: cx - rr - 10, y: cy - rr - 10, w: 2 * rr + 20, h: 2 * rr + 20 }, fill: '#d7261e' },
+    { type: 'image', src: `${PEOPLE}${img}.jpg`, shape: 'circle', box: { x: cx - rr, y: cy - rr, w: 2 * rr, h: 2 * rr }, fit: 'cover', focus: 'top',
+      filter: 'duotone', duotone: ['#2a0d08', '#f6d2b0'] },
+  ];
+  const T = (x, y, w, txt, style, align = 'start') => ({ type: 'text', box: { x, y, w, h: 60 }, text: txt, style, align });
+  write('kims', {
+    palette: { name: 'poster', bg: '#efe4cc', ink: '#2a0d08', muted: '#7a5a4a', accent: '#d7261e' },
+    type: { preset: 'impact', display: { family: 'Anton' } },
+    background: { gradient: ['#f3e9d2', '#e6d5b2'], grain: 0.09 },
+    title: {
+      box: { x: 60, y: 60, w: 620, h: 0 },
+      lines: [
+        { text: 'WHO FIRED', role: 'display', size: 92, fill: '#2a0d08', gap: 0 },
+        { text: "NORTH KOREA'S", role: 'display', size: 58, fill: '#2a0d08', gap: 4 },
+        { text: 'MISSILES?', role: 'display', size: 128, fill: '#d7261e', effect: { type: 'extrude', color: '#7a120c', depth: 6 } },
+      ],
+      dek: `Missiles launched under each leader since the first ballistic missile tests in 1984. **Circle area = missiles fired.** Kim Jong Un has launched **${Math.round(un / (il + jongIl))} times** as many as his father and grandfather combined.`,
+      dekWidth: 540, dekSize: 22, dekColor: '#3a1c14',
+    },
+    layers: [
+      // Sunburst behind the big circle, propaganda-poster style.
+      { type: 'svg', box: { x: 0, y: 0, w: 1200, h: 1500 }, markup:
+        Array.from({ length: 24 }, (_, i) => { const a0 = (i * 15 * Math.PI) / 180, a1 = ((i * 15 + 7.5) * Math.PI) / 180, L = 900;
+          return `<path d="M${big.cx},${big.cy}L${big.cx + L * Math.cos(a0)},${big.cy + L * Math.sin(a0)}L${big.cx + L * Math.cos(a1)},${big.cy + L * Math.sin(a1)}Z" fill="#d7261e" fill-opacity="0.07"/>`; }).join('') },
+      ...disc(big.cx, big.cy, R, 'kim-jong-un'),
+      { type: 'shape', shape: 'rect', box: { x: big.cx - 150, y: big.cy + R - 70, w: 300, h: 150 }, fill: '#2a0d08', radius: 8 },
+      { type: 'stat', box: { x: big.cx - 150, y: big.cy + R - 52, w: 300, h: 90 }, value: String(un), color: '#ffffff', size: 78, align: 'middle' },
+      T(big.cx - 150, big.cy + R + 44, 300, 'MISSILES FIRED', { size: 18, fill: '#f6d2b0', tracking: 0.2, weight: 700 }, 'middle'),
+      T(big.cx - 200, big.cy + R + 92, 400, '**KIM JONG UN**  2012–2026', { size: 26, fill: '#2a0d08' }, 'middle'),
+      ...small.flatMap((k) => [
+        ...disc(k.cx, k.cy, r(k.n), k.img),
+        T(k.cx + r(k.n) + 26, k.cy - 52, 240, String(k.n), { family: 'Anton', size: 64, fill: '#d7261e' }),
+        T(k.cx + r(k.n) + 26, k.cy + 22, 260, `**${k.name}**`, { size: 22, fill: '#2a0d08' }),
+        T(k.cx + r(k.n) + 26, k.cy + 50, 260, k.years, { size: 20, fill: '#6b4a3a' }),
+      ]),
+      { type: 'annotation', box: { x: 70, y: 1300, w: 330, h: 60 }, text: 'Same scale. Area, not width, is the count.', style: { size: 18, italic: true, fill: '#6b4a3a' } },
+    ],
+    footer: {
+      source: `${s.source.name}. Each missile counts once. 2026 runs to 2026-09-20.`,
+      note: 'Photos: Jesse Charlie (CC0); Vladimir Smirnov / TASS (CC BY 4.0), via Wikimedia Commons.',
+      brand, color: '#6b4a3a', brandColor: '#d7261e',
+    },
+  });
+}
+
+// 6. Rice price vs the dollar: the won collapsing, over a rice close-up.
+{
+  const s = get('rice-price'), fx = get('won-per-dollar');
+  const monthly = (pts) => {
+    const by = {};
+    for (const [d, v] of pts) (by[d.slice(0, 7)] ||= []).push(v);
+    const out = [];
+    for (let y = 2013; y <= 2026; y++) for (let m = 1; m <= 12; m++) {
+      const k = `${y}-${String(m).padStart(2, '0')}`;
+      if (k > pts.at(-1)[0].slice(0, 7)) break;
+      out.push([k, by[k] ? by[k].reduce((a, b) => a + b, 0) / by[k].length : null]);
+    }
+    // Months with no survey: straight line between the neighbours.
+    out.forEach((p, i) => { if (p[1] == null) { let a = i - 1, b = i + 1; while (out[b][1] == null) b++; p[1] = out[a][1] + ((out[b][1] - out[a][1]) * (i - a)) / (b - a); } });
+    return out;
+  };
+  const rice = monthly(s.entities.pyongyang);
+  const last = s.entities.pyongyang.at(-1), first = s.entities.pyongyang.find(([d]) => d.startsWith('2024-01'));
+  const fxLast = fx.entities.pyongyang.at(-1), fxFirst = fx.entities.pyongyang.find(([d]) => d.startsWith('2024-01'));
+  const riceX = last[1] / first[1], fxX = fxLast[1] / fxFirst[1];
+  const usd = (v, r) => (v / r).toFixed(2);
+  write('rice', {
+    palette: { name: 'money', bg: '#15110b', ink: '#f5eedc', muted: '#b9ac8f', accent: '#ffcf3f' },
+    type: { preset: 'impact', display: { family: 'Anton' } },
+    background: { color: '#15110b', grain: 0.07 },
+    title: {
+      box: { x: 60, y: 70, w: 700, h: 0 }, shadow: true,
+      lines: [
+        { text: 'A KILO OF RICE IN PYONGYANG', role: 'kicker', size: 26, tracking: 0.22, fill: '#ffcf3f', gap: 8 },
+        { runs: [{ text: `${Math.round(riceX)}×`, fill: '#ffcf3f' }, { text: ' THE PRICE', fill: '#ffffff' }], role: 'display', size: 120, gap: 4 },
+        { text: 'IN UNDER THREE YEARS', role: 'display', size: 60, fill: '#ffffff' },
+      ],
+      dek: `**${first[1].toLocaleString('en')} won** in January 2024, **${last[1].toLocaleString('en')} won** on ${last[0]}. The rice did not get dearer: **the won did.** A dollar went from ${fxFirst[1].toLocaleString('en')} to ${fxLast[1].toLocaleString('en')} won, so in dollars the kilo still costs about **$${usd(last[1], fxLast[1])}**.`,
+      dekWidth: 600, dekSize: 22, dekColor: '#f5eedc', dekPanel: 'rgba(15,10,4,0.55)',
+    },
+    layers: [
+      { type: 'image', src: './img/Mushqbudji_rice_grains_close_up.jpg', box: { x: 0, y: 0, w: 1200, h: 900 }, fit: 'cover',
+        filter: 'duotone', duotone: ['#2b1d08', '#f3e2b4'], fade: { bottom: 0.55 }, opacity: 0.85 },
+      { type: 'area-time', box: { x: 40, y: 620, w: 1110, h: 740 }, x: rice.map(([k]) => (k.endsWith('-01') ? k.slice(0, 4) : k === rice.at(-1)[0] ? 'SEP 2026' : k)),
+        labelEvery: 24, outline: true, glow: true, ticks: [10000, 20000, 30000, 40000], format: { suffix: ' won' }, endValues: true,
+        series: [{ label: 'Won per kg', values: rice.map(([, v]) => Math.round(v)), color: '#ffcf3f' }],
+        notes: [{ at: '2020', y: 15000, text: '2020–2023: border shut for Covid. Prices stayed near 5,000 won.', width: 300, color: '#f5eedc' }] },
+      { type: 'stat', box: { x: 360, y: 740, w: 440, h: 120 }, value: `${fxX.toFixed(1)}×`, label: 'won per dollar, Jan 2024 to Sep 2026', color: '#ffcf3f', size: 72, align: 'end' },
+    ],
+    footer: {
+      source: `${s.source.name}, Pyongyang. Monthly average of the surveys; months without one are interpolated. Data to ${last[0]}. Hyesan and Sinuiju move the same way.`,
+      note: 'Photo: rice grains, Wikimedia Commons (CC0).',
+      brand, color: '#a89b80', brandColor: '#ffcf3f',
+    },
+  });
+}
+
+// 7. Political prisoners: 80,000 to 120,000 (UN COI 2014), one figure per 1,000 people.
+write('camps', {
+  palette: { name: 'atlas', bg: '#0e0e0f', ink: '#efece6', muted: '#9b968c', accent: '#e23b2e' },
+  type: { preset: 'classic', display: { family: 'DM Serif Display' } },
+  background: { gradient: ['#0b0b0c', '#17161a'], grain: 0.08 },
+  title: {
+    box: { x: 64, y: 70, w: 600, h: 0 },
+    lines: [
+      { text: 'NORTH KOREA’S PRISON CAMPS', role: 'kicker', size: 24, tracking: 0.24, fill: '#e23b2e', gap: 10 },
+      { text: 'Up to 120,000', role: 'display', size: 92, fill: '#efece6', gap: 0 },
+      { text: 'people held', role: 'display', size: 64, fill: '#efece6', italic: true },
+    ],
+    dek: 'In 2014 a UN Commission of Inquiry estimated **80,000 to 120,000** people were held in political prison camps (kwanliso), often whole families, and called what happens there **crimes against humanity**.',
+    dekWidth: 540, dekSize: 22, dekColor: '#cfcac0', dekRule: '#e23b2e',
+  },
+  layers: [
+    { type: 'image', src: './img/Shin_Dong_Hyuk.jpg', box: { x: 560, y: 0, w: 640, h: 700 }, fit: 'cover', focus: 'center',
+      filter: 'grayscale', fade: { left: 0.45, bottom: 0.4 } },
+    { type: 'annotation', box: { x: 900, y: 600, w: 250, h: 60 }, text: 'Shin Dong-hyuk, who says he was born in Camp 14, at the UN in Geneva',
+      style: { size: 16, italic: true, fill: '#cfcac0' } },
+    { type: 'legend', box: { x: 70, y: 720, w: 1060, h: 30 }, direction: 'row', swatch: 'circle', size: 19,
+      items: [{ label: 'Low estimate: 80,000', color: '#e23b2e' }, { label: 'Up to 40,000 more', color: '#6b2a24' }, { label: 'Each figure = 1,000 people', color: '#efece6' }] },
+    { type: 'pictogram', box: { x: 70, y: 780, w: 1060, h: 560 }, icon: 'icon:ph:person-fill', shape: 'icon', total: 120, columns: 15,
+      showLabels: false, parts: [{ label: 'Low estimate', value: 80, color: '#e23b2e' }, { label: 'Upper range', value: 40, color: '#6b2a24' }] },
+  ],
+  footer: {
+    source: 'UN Commission of Inquiry on Human Rights in the DPRK, report A/HRC/25/63 (2014). There is no newer precise count; some camps have since closed and others expanded.',
+    note: 'Photo: Shin Dong-hyuk, U.S. Mission Geneva (public domain), via Wikimedia Commons. Shin revised parts of his account in 2015.',
+    brand, color: '#8f8a80', brandColor: '#e23b2e',
+  },
+});
+
+// 8. Soldiers per person: North vs South, with the Panmunjom guards cut out.
+{
+  const a = get('armed-forces'), p = get('population');
+  const ratio = (k) => at(p.entities[k], 2020) / at(a.entities[k], 2020);
+  const nk = Math.round(ratio('PRK')), sk = Math.round(ratio('KOR'));
+  const COLS = 18;
+  const row = (y, rows) => ({ x: 60, y, w: 1080, h: rows * 64 });
+  write('army', {
+    palette: { name: 'olive', bg: '#e9e4d4', ink: '#1f2417', muted: '#5f6650', accent: '#c4271c' },
+    type: { preset: 'impact', display: { family: 'Anton' } },
+    background: { color: '#e9e4d4', grain: 0.08 },
+    title: {
+      box: { x: 60, y: 70, w: 620, h: 0 },
+      lines: [
+        { text: 'A COUNTRY IN UNIFORM', role: 'kicker', size: 26, tracking: 0.22, fill: '#c4271c', gap: 8 },
+        { runs: [{ text: `1 IN ${nk}`, fill: '#c4271c' }], role: 'display', size: 170, gap: 0 },
+        { text: 'NORTH KOREANS IS A SOLDIER', role: 'display', size: 46, fill: '#1f2417' },
+      ],
+      dek: `**${(at(a.entities.PRK, 2020) / 1e6).toFixed(2)} million** people in the armed forces out of 26 million, one of the highest shares on Earth. South Korea, with twice the people, has **${(at(a.entities.KOR, 2020) / 1e3).toFixed(0)},000**.`,
+      dekWidth: 560, dekSize: 23, dekColor: '#2f3524',
+    },
+    layers: [
+      { type: 'image', src: 'cutout:./img/DMZ___North_Korean_Soldiers_marching_along_the_defense_line_PS.jpg', box: { x: 660, y: 20, w: 540, h: 740 },
+        fit: 'contain', filter: 'grayscale', shadow: true },
+      { type: 'text', box: { x: 60, y: 450, w: 640, h: 40 }, text: `**NORTH KOREA**  1 soldier for every ${nk} people`, style: { size: 28, fill: '#1f2417' } },
+      { type: 'pictogram', box: { x: 60, y: 500, w: 648, h: 150 }, icon: 'icon:ph:person-fill', shape: 'icon', total: nk, columns: 9, showLabels: false,
+        parts: [{ label: 'Soldier', value: 1, color: '#c4271c' }], rest: '#b7b39f' },
+      { type: 'text', box: { x: 60, y: 760, w: 1080, h: 40 }, text: `**SOUTH KOREA**  1 soldier for every ${sk} people`, style: { size: 28, fill: '#1f2417' } },
+      { type: 'pictogram', box: { x: 60, y: 810, w: 1080, h: 520 }, icon: 'icon:ph:person-fill', shape: 'icon', total: sk, columns: 15, showLabels: false,
+        parts: [{ label: 'Soldier', value: 1, color: '#2456a6' }], rest: '#b7b39f' },
+    ],
+    footer: {
+      source: `${a.source.name}; population from UN WPP via Our World in Data. Active personnel, 2020 (latest year in the series).`,
+      note: 'Photo: North Korean soldiers at Panmunjom, Wikimedia Commons (CC BY-SA 3.0).',
+      brand, color: '#5f6650', brandColor: '#c4271c',
+    },
+  });
+}
