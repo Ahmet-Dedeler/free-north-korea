@@ -1,13 +1,13 @@
 import Link from 'next/link';
 import { age, isDead } from '@/entities';
 import { LEADER, buildFamilyTree, type TreeEdge } from '@/entities/familyTree';
-import { KIM_FAMILY_NOW } from '@/content/kimFamilyNow';
+import { KIM_FAMILY_TEXT, kimFamilyNowText, withLang } from '@/content/kimFamilyI18n';
+import type { Lang } from '@/site/seo';
 import Avatar from './Avatar';
 import FamilyTreeFocus from './FamilyTreeFocus';
 
 const CARD_H = 224;
 const ROW = 278; // card height + room for the connector lines
-const ROW_LABELS = ['His father’s generation', 'Kim Jong Un and his siblings', 'The next generation'];
 
 /** Line geometry: x in column units (100 per column, scaled to the container by the SVG), y in pixels. */
 function path(e: TreeEdge) {
@@ -23,8 +23,12 @@ function path(e: TreeEdge) {
 /**
  * The Kim family as it stands today, as a connected tree that always fits its container (columns are percentages,
  * lines are a stretched SVG). Server-rendered; on phones it turns into a list grouped by generation.
+ *
+ * `buildFamilyTree()` still returns English relation strings ("Sister", "Father's partner"). This component maps
+ * them. `lang` defaults to English.
  */
-export default function FamilyTree() {
+export default function FamilyTree({ lang = 'en' }: { lang?: Lang }) {
+  const t = KIM_FAMILY_TEXT[lang];
   const tree = buildFamilyTree();
   const height = (tree.rows - 1) * ROW + CARD_H;
   const nodes = [...tree.nodes].sort((a, b) => a.row - b.row || a.col - b.col);
@@ -40,30 +44,30 @@ export default function FamilyTree() {
           const p = n.person;
           const dead = isDead(p);
           const a = age(p);
-          const now = KIM_FAMILY_NOW[p.id];
+          const now = kimFamilyNowText(lang, p.id);
           return [
             (i === 0 || nodes[i - 1].row !== n.row) && (
               <h3 key={`row-${n.row}`} className="ftree-rowlabel">
-                {ROW_LABELS[n.row]}
+                {t.rows[n.row as 0 | 1 | 2]}
               </h3>
             ),
             <Link
               key={p.id}
               id={`ft-${p.id}`}
-              href={`/people/${p.id}`}
+              href={withLang(lang, `/people/${p.id}`)}
               className={`ftree-card ${dead ? 'is-dead' : ''} ${p.id === LEADER ? 'is-leader' : ''}`}
               style={{ ['--col' as string]: n.col, top: n.row * ROW, height: CARD_H }}
               data-node={p.id}
               data-related={n.related.join(' ')}
             >
-              <span className="ftree-rel">{n.relation}</span>
+              <span className="ftree-rel">{t.relations[n.relation] ?? n.relation}</span>
               <Avatar person={p} size={52} />
-              <b>{p.name_en}</b>
+              <b lang="en">{p.name_en}</b>
               <span className="ftree-age">
-                {dead ? `${p.born?.date?.slice(0, 4) ?? '?'}–${p.died?.date?.slice(0, 4) ?? '?'}` : a !== null ? `${a} years old` : 'Age unknown'}
-                </span>
-              {p.sanctions.length > 0 && <span className="ftree-sanction">Sanctioned</span>}
-              {now && <span className="ftree-now">{now.text}</span>}
+                {dead ? `${p.born?.date?.slice(0, 4) ?? '?'}\u2013${p.died?.date?.slice(0, 4) ?? '?'}` : a !== null ? t.yearsOld(a) : t.ageUnknown}
+              </span>
+              {p.sanctions.length > 0 && <span className="ftree-sanction">{t.sanctioned}</span>}
+              {now && <span className="ftree-now">{now}</span>}
             </Link>,
           ];
         })}
