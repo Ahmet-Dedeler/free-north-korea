@@ -5,7 +5,7 @@ import { getAllCampSlugs, getCampBySlug } from '@/content/camps';
 import { campLanguages, campMetaDescription, campMetaTitle } from '@/content/campsI18n';
 import { pageMeta } from '@/site/seo';
 
-const lang = 'en' as const;
+const lang = 'ja' as const;
 type Params = { params: Promise<{ slug: string }> };
 
 export const dynamicParams = false;
