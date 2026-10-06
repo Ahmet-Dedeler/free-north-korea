@@ -164,9 +164,9 @@ export default async function CountyDossier({ lang, slug }: { lang: Lang; slug: 
       {campsInCounty.length > 0 && (
         <>
           <h2>{t.campsHeading}</h2>
-          <ul className="place-cards" lang={nameLang}>
+          <ul className="place-cards">
             {campsInCounty.map((camp) => (
-              <CampCard key={camp.id} camp={camp} />
+              <CampCard key={camp.id} camp={camp} lang={lang} />
             ))}
           </ul>
         </>

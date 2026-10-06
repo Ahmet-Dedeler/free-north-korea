@@ -478,13 +478,13 @@ export function HelpMenu({ lang = 'en', base = '' }: { lang?: Lang; base?: strin
 
 /* ---------- prison camps ---------- */
 
-export function CampGrid({ slugs }: { slugs: string[] }) {
+export function CampGrid({ slugs, lang = 'en' }: { slugs: string[]; lang?: Lang }) {
   const all = getAllCamps();
   return (
-    <ul className="place-cards wide-block" lang="en">
+    <ul className="place-cards wide-block">
       {slugs.map((s) => {
         const c = all.find((x) => x.slug === s);
-        return c ? <CampCard key={s} camp={c} /> : null;
+        return c ? <CampCard key={s} camp={c} lang={lang} /> : null;
       })}
     </ul>
   );

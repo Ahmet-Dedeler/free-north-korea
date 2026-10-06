@@ -71,7 +71,7 @@ const article: Article = {
         이 수용소들은 모두 대략적인 위치와 함께 <Link href="/map">인텔 지도</Link>에 있다. 상태는 위성 분석과 탈북민 증언을 바탕으로 해서, 현실보다
         몇 달에서 몇 년 늦을 수 있다 (이 점은 기억해 두자). 아래 카드는 영어다.
       </p>
-      <CampGrid slugs={['kwanliso-14', 'kwanliso-15', 'kwanliso-16', 'kwanliso-18', 'kwanliso-22', 'kwanliso-25', 'kyohwaso-1-kaechon', 'kyohwaso-12-chongori']} />
+      <CampGrid lang="ko" slugs={['kwanliso-14', 'kwanliso-15', 'kwanliso-16', 'kwanliso-18', 'kwanliso-22', 'kwanliso-25', 'kyohwaso-1-kaechon', 'kyohwaso-12-chongori']} />
       <p>
         추적 중인 시설 {getAllCamps().length}곳 전체는 <Link href="/camps">수용소 페이지</Link>(영어)에 있다.
       </p>

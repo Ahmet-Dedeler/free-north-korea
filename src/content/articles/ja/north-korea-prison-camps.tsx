@@ -65,7 +65,7 @@ const article: Article = {
       <p>
         これらはすべておおよその位置とともに<Link href="/map">インテルマップ</Link>に載っている。状況は衛星分析と脱北者の証言にもとづくので、現実より数か月から数年遅れることがある（そこは覚えておいてほしい）。下のカードは英語だ。
       </p>
-      <CampGrid slugs={['kwanliso-14', 'kwanliso-15', 'kwanliso-16', 'kwanliso-18', 'kwanliso-22', 'kwanliso-25', 'kyohwaso-1-kaechon', 'kyohwaso-12-chongori']} />
+      <CampGrid lang="ja" slugs={['kwanliso-14', 'kwanliso-15', 'kwanliso-16', 'kwanliso-18', 'kwanliso-22', 'kwanliso-25', 'kyohwaso-1-kaechon', 'kyohwaso-12-chongori']} />
       <p>
         追跡中の{getAllCamps().length}施設すべては<Link href="/camps">収容所ページ</Link>（英語）にある。
       </p>
