@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import type { Feature } from 'geojson';
 import AsOf, { isStale } from '@/components/AsOf';
+import { baseSlug, campSlug } from '@/content/mapSlugs';
 import { LAYERS, MANIFEST, type LayerId } from './config';
 import type { Data, Selection } from './types';
 
@@ -216,12 +217,12 @@ function PointDetail({ layer, f }: { layer: LayerId; f: Feature }) {
       </p>
       {layer === 'camps' && (
         <p>
-          <Link href={`/camps/${String(p.id)}`}>View full camp dossier →</Link>
+          <Link href={`/camps/${campSlug(String(p.id))}`}>View full camp dossier →</Link>
         </p>
       )}
       {(layer === 'sites' || layer === 'missile-bases') && (
         <p>
-          <Link href={`/places/${String(p.id)}`}>View full site details →</Link>
+          <Link href={`/places/${baseSlug(String(p.id))}`}>View full site details →</Link>
         </p>
       )}
       {p.more && (

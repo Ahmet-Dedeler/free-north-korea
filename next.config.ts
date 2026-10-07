@@ -1,4 +1,5 @@
 import type { NextConfig } from 'next';
+import { BASE_SLUGS } from './src/content/mapSlugs';
 
 const config: NextConfig = {
   reactStrictMode: true,
@@ -8,7 +9,11 @@ const config: NextConfig = {
   turbopack: { root: process.cwd() },
   // the atlas grew into the intel map
   async redirects() {
-    return [{ source: '/atlas', destination: '/map', permanent: true }];
+    // the map used to link missile bases by their map id (/places/base-6)
+    const bases = Object.entries(BASE_SLUGS).flatMap(([id, slug]) =>
+      ['', '/ko', '/ja', '/zh'].map((pre) => ({ source: `${pre}/places/${id}`, destination: `${pre}/places/${slug}`, permanent: true })),
+    );
+    return [{ source: '/atlas', destination: '/map', permanent: true }, ...bases];
   },
 };
 

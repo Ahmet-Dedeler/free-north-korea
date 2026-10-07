@@ -8,6 +8,7 @@
 //     counted per county, never pinned, so they can't be used to find and destroy evidence.
 //   - No free-text incident narratives (they can contain surnames); only counts by right violated.
 import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { baseName } from '../src/content/mapSlugs.ts';
 import { PLACES, ESCAPE_ROUTE } from '../src/content/places.ts';
 
 type Any = Record<string, any>;
@@ -201,7 +202,7 @@ const marketFeatures = markets.map((m) => point(m.lon, m.lat, { id: `mkt-${m.id}
 
 // ---------- missile bases + curated sites ----------
 const bases = read('data/raw/missile-bases/bases.json').bases as Any[];
-const baseFeatures = bases.map((b, i) => point(b.lon, b.lat, { id: `base-${i}`, name: b.name, published: b.published, summary: b.summary, url: b.url }));
+const baseFeatures = bases.map((b, i) => point(b.lon, b.lat, { id: `base-${i}`, name: baseName(b.url, b.name), published: b.published, summary: b.summary, url: b.url }));
 const siteFeatures = PLACES.filter((p) => p.category !== 'camp').map((p) =>
   point(p.lon, p.lat, { id: p.id, name: p.name, category: p.category, status: p.status ?? null, note: p.note, approx: Boolean(p.approx), source: p.source ? JSON.stringify(p.source) : null, more: p.more ?? null }),
 );
