@@ -34,14 +34,26 @@ const PAL: Record<Theme, { halo: string; label: string; ring: string; line: stri
 };
 const POINT_LAYERS = LAYERS.filter((l) => l.id !== 'escape-route');
 
-/** Step expression colouring counties by one numeric property. */
+/**
+ * Step expression colouring counties by one numeric property.
+ * `step` paints everything below its first threshold with the default colour, so that default
+ * has to be the first data colour. Exact zero stays transparent on its own, or a county with
+ * a few incidents (or a low density) would look empty.
+ */
 function shadeExpr(shade: Shade): ExpressionSpecification | string {
   const def = SHADES.find((s) => s.id === shade);
   if (!def?.stops) return 'rgba(0,0,0,0)';
   const prop: ExpressionSpecification = ['coalesce', ['get', shade], 0];
-  const expr: unknown[] = ['step', prop, SHADE_COLORS[0]];
-  def.stops.slice(1).forEach((s, i) => expr.push(s, SHADE_COLORS[i + 1]));
-  return expr as ExpressionSpecification;
+  const step: unknown[] = ['step', prop, SHADE_COLORS[1]];
+  def.stops.slice(1).forEach((s, i) => step.push(s, SHADE_COLORS[i + 1]));
+  return ['case', ['<=', prop, 0], SHADE_COLORS[0], step] as unknown as ExpressionSpecification;
+}
+
+/** Feature-state ids must match the GeoJSON property's type. Market ids are numbers; the URL keeps them as strings. */
+function featureStateId(selected: Selection, data: Data): string | number | null {
+  if (selected.kind === 'county') return selected.id;
+  const raw = data[selected.layer].features.find((x) => String(x.properties?.id) === selected.id)?.properties?.id;
+  return typeof raw === 'number' || typeof raw === 'string' ? raw : null;
 }
 
 /** Counties fade as you zoom in, so the basemap (roads, towns) shows through around the points. */
@@ -242,8 +254,11 @@ export default function IntelMap({ data, visible, shade, selected, theme, onSele
     prevSel.current = null;
     if (!selected) return;
     const source = selected.kind === 'county' ? 'counties' : selected.layer;
-    prevSel.current = { source, id: selected.id };
-    map.setFeatureState(prevSel.current, { selected: true });
+    const id = featureStateId(selected, data);
+    if (id !== null) {
+      prevSel.current = { source, id };
+      map.setFeatureState(prevSel.current, { selected: true });
+    }
     if (!fly) return;
     const wide = window.innerWidth > 800;
     const padding = wide ? { top: 40, bottom: 40, left: 40, right: 420 } : { top: 30, bottom: Math.round(window.innerHeight * 0.35), left: 20, right: 20 };

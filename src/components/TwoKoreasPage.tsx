@@ -21,11 +21,18 @@ function numbers(lang: Lang) {
   const nf = (v: number | undefined, digits = 1) =>
     v === undefined ? '?' : new Intl.NumberFormat(LOCALE[lang], { maximumFractionDigits: digits, minimumFractionDigits: 0 }).format(v);
   const L = (id: string, e: string) => latest(id, e)!;
+  // Latest year both series actually have, so a labelled comparison is never 2024 against 2025.
+  const paired = (id: string) => {
+    const p = L(id, 'PRK');
+    const k = L(id, 'KOR');
+    const year = Math.min(Number(p.t), Number(k.t));
+    return { p: { t: year, v: valueAt(id, 'PRK', year) ?? p.v }, k: { t: year, v: valueAt(id, 'KOR', year) ?? k.v } };
+  };
   const le = { p: L('life-expectancy', 'PRK'), k: L('life-expectancy', 'KOR') };
   const gdp = { p: L('gdp-per-capita', 'PRK'), k: L('gdp-per-capita', 'KOR') };
   const cm = { p: L('child-mortality', 'PRK'), k: L('child-mortality', 'KOR') };
-  const en = { p: L('energy-per-person', 'PRK'), k: L('energy-per-person', 'KOR') };
-  const el = { p: L('electricity-per-person', 'PRK'), k: L('electricity-per-person', 'KOR') };
+  const en = paired('energy-per-person');
+  const el = paired('electricity-per-person');
   const dem = L('democracy', 'PRK');
   const hm = { p: L('height-men', 'PRK'), k: L('height-men', 'KOR') };
   const hw = { p: L('height-women', 'PRK'), k: L('height-women', 'KOR') };

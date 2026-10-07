@@ -42,7 +42,7 @@ export const SHADES: { id: Shade; label: string; hint: string; unit?: string; st
   { id: 'none', label: 'Nothing', hint: 'Plain map' },
 ];
 
-/** First bucket (zero / lowest) is transparent so empty counties don't read as data. */
+/** First swatch is only for zero, so an empty county stays blank. Any positive value takes a colour. */
 export const SHADE_COLORS = ['rgba(0,0,0,0)', '#fdd49e', '#fc8d59', '#e34a33', '#b30000', '#7f0000'];
 
 export const MANIFEST = manifest as {

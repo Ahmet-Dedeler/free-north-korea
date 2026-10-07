@@ -11,14 +11,21 @@ const orgById = new Map(ENTITY_ORGS.map((o) => [o.id, o]));
 export const person = (id: string) => byId.get(id);
 export const entityOrg = (id: string) => orgById.get(id);
 
+/** A year alone is the middle of that year. A year and month is the 1st. A full date is that day. All UTC. */
+function utcDate(d: string): Date {
+  if (/^\d{4}$/.test(d)) return new Date(`${d}-07-01T00:00:00Z`);
+  if (/^\d{4}-\d{2}$/.test(d)) return new Date(`${d}-01T00:00:00Z`);
+  return new Date(`${d}T00:00:00Z`);
+}
+
 /** Age today, or age at death. Null when the birth date is unknown. */
 export function age(p: Person, today = new Date()): number | null {
   const b = p.born?.date;
   if (!b || !/^\d{4}/.test(b)) return null;
-  const end = p.died?.date && /^\d{4}/.test(p.died.date) ? new Date(p.died.date) : today;
-  const born = new Date(b.length === 4 ? `${b}-07-01` : b);
+  const end = p.died?.date && /^\d{4}/.test(p.died.date) ? utcDate(p.died.date) : today;
+  const born = utcDate(b);
   let a = end.getUTCFullYear() - born.getUTCFullYear();
-  if (b.length > 4 && (end.getUTCMonth() < born.getUTCMonth() || (end.getUTCMonth() === born.getUTCMonth() && end.getUTCDate() < born.getUTCDate()))) a--;
+  if (end.getUTCMonth() < born.getUTCMonth() || (end.getUTCMonth() === born.getUTCMonth() && end.getUTCDate() < born.getUTCDate())) a--;
   return a;
 }
 

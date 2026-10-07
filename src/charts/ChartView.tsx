@@ -131,8 +131,20 @@ export default function ChartView(p: ChartProps) {
   const endVal = (v: number) =>
     (Math.abs(v) >= 10000 ? fmt.axis(v) : new Intl.NumberFormat(p.locale, { maximumFractionDigits: Math.abs(v) < 1 ? 2 : Math.abs(v) < 100 ? 1 : 0 }).format(v)) + (p.unit === '%' ? '%' : '');
   const lastOf = (l: (typeof lines)[number]) => l.pts[l.pts.length - 1];
-  const gapLines = p.gap && endLabels ? [lines.find((l) => l.key === p.gap!.hi), lines.find((l) => l.key === p.gap!.lo)] : [];
-  const showGap = gapLines.length === 2 && gapLines.every((l) => l && l.pts.length);
+  // The bracket compares the latest year both lines have. Each line's own last point can be a different year.
+  const gapPair = (() => {
+    if (!p.gap || !endLabels) return null;
+    const hi = lines.find((l) => l.key === p.gap!.hi);
+    const lo = lines.find((l) => l.key === p.gap!.lo);
+    if (!hi?.pts.length || !lo?.pts.length) return null;
+    const loAt = new Map(lo.pts.map((q) => [q[0], q]));
+    for (let i = hi.pts.length - 1; i >= 0; i--) {
+      const b = loAt.get(hi.pts[i][0]);
+      if (b) return { hi, lo, a: hi.pts[i], b };
+    }
+    return null;
+  })();
+  const showGap = gapPair !== null;
   const gutter = showGap ? 16 : 0;
   const longest = Math.max(...lines.map((l) => textW(l.label) + (l.pts.length ? textW(endVal(lastOf(l)[1])) * 0.95 : 0)), 30);
   const right = endLabels ? Math.min(240, longest + 50 + gutter) : 12;
@@ -213,16 +225,16 @@ export default function ChartView(p: ChartProps) {
         return [{ n, l, px, py, lines: out, ly, up, anchor, lh }];
       });
 
-  /* gap callout: a bracket in the gutter between two lines' latest values, with the ratio or difference */
+  /* gap callout: a bracket in the gutter between the two lines at the last year they share */
   let gap: { x: number; y1: number; y2: number; my: number; text: string; px: number } | null = null;
-  if (showGap) {
-    const [hi, lo] = gapLines as (typeof lines)[number][];
-    const a = lastOf(hi);
-    const b = lastOf(lo);
+  if (gapPair) {
+    const { hi, lo, a, b } = gapPair;
     const y1 = Math.min(sy(a[1]), sy(b[1]));
     const y2 = Math.max(sy(a[1]), sy(b[1]));
     const r = a[1] / b[1];
-    const text = p.gap!.mode === 'ratio' ? `${fmt.full(r >= 10 ? Math.round(r) : Math.round(r * 10) / 10)}×` : `+${fmt.full(Math.round((a[1] - b[1]) * 10) / 10)}`;
+    const endsDiffer = a[0] !== lastOf(hi)[0] || b[0] !== lastOf(lo)[0];
+    const when = endsDiffer ? ` (${String(a[2]).slice(0, 4)})` : '';
+    const text = (p.gap!.mode === 'ratio' ? `${fmt.full(r >= 10 ? Math.round(r) : Math.round(r * 10) / 10)}×` : `+${fmt.full(Math.round((a[1] - b[1]) * 10) / 10)}`) + when;
     if (y2 - y1 >= 22) {
       const others = labels.filter((o) => o.l !== hi && o.l !== lo).map((o) => o.py);
       // put the pill near the middle, but clear of the other lines' end points

@@ -133,7 +133,7 @@ export default function MapExplorer() {
                 {shadeDef.stops.map((s, i) => (
                   <span key={s}>
                     <i style={{ background: SHADE_COLORS[i] }} />
-                    {s >= 1000 ? `${s / 1000}k` : s}
+                    {i === 1 && s > 1 ? '>0' : s >= 1000 ? `${s / 1000}k` : s}
                     {i === shadeDef.stops!.length - 1 ? '+' : ''}
                   </span>
                 ))}
