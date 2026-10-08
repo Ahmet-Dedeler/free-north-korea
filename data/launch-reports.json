@@ -1,0 +1,2275 @@
+{
+ "fetched": "2026-10-08T17:05:27Z",
+ "source": {
+  "name": "北朝鮮のミサイル等関連情報 (Ministry of Defense of Japan)",
+  "publisher": "Ministry of Defense of Japan (防衛省)",
+  "url": "https://www.mod.go.jp/j/press/news/index.html"
+ },
+ "reports": [
+  {
+   "id": "2026-10-03d",
+   "published": "2026-10-03",
+   "timesJst": [
+    "06:36"
+   ],
+   "launchJst": "2026-10-03T06:36:00+09:00",
+   "launchUtc": "2026-10-02T21:36:00Z",
+   "precision": "minute",
+   "count": 1,
+   "countNote": "at least",
+   "weapon": "ballistic",
+   "rangeKm": [
+    680
+   ],
+   "rangeBound": null,
+   "apogeeKm": [
+    90
+   ],
+   "apogeeBound": null,
+   "flightMinutes": null,
+   "landing": "sea-of-japan",
+   "eez": "outside",
+   "areaJa": "北朝鮮東岸付近",
+   "landingJa": "日本海の我が国の排他的経済水域(EEZ)外",
+   "directionJa": "北東",
+   "textJa": "北朝鮮は本日６時３６分頃、北朝鮮東岸付近から、少なくとも１発の弾道ミサイルを、北東方向に向けて発射しました。詳細については現在日米韓で緊密に連携して分析中ですが、発射された弾道ミサイルは、最高高度約９０ｋｍ程度で、約６８０ｋｍ程度飛翔し、落下したのは日本海の我が国の排他的経済水域（ＥＥＺ）外であると推定しています。",
+   "url": "https://www.mod.go.jp/j/press/news/2026/10/03d.pdf",
+   "htmlUrl": "https://www.mod.go.jp/j/press/news/2026/10/03d.html",
+   "fetched": "2026-10-08"
+  },
+  {
+   "id": "2026-09-20i",
+   "published": "2026-09-20",
+   "timesJst": [
+    "17:54"
+   ],
+   "launchJst": "2026-09-20T17:54:00+09:00",
+   "launchUtc": "2026-09-20T08:54:00Z",
+   "precision": "minute",
+   "count": 1,
+   "countNote": "at least",
+   "weapon": "ballistic",
+   "rangeKm": [
+    590
+   ],
+   "rangeBound": null,
+   "apogeeKm": [
+    70
+   ],
+   "apogeeBound": null,
+   "flightMinutes": null,
+   "landing": "sea-of-japan",
+   "eez": "outside",
+   "areaJa": "北朝鮮東岸付近",
+   "landingJa": "日本海の我が国の排他的経済水域(EEZ)外",
+   "directionJa": "北東",
+   "textJa": "北朝鮮は本日１７時５４分頃、北朝鮮東岸付近から、少なくとも１発の弾道ミサイルを、北東方向に向けて発射しました。詳細については現在日米韓で緊密に連携して分析中ですが、発射された弾道ミサイルは最高高度約７０ｋｍ程度で、約５９０ｋｍ程度飛翔し、落下したのは日本海の我が国の排他的経済水域（ＥＥＺ）外であると推定しています。",
+   "url": "https://www.mod.go.jp/j/press/news/2026/09/20i.pdf",
+   "htmlUrl": "https://www.mod.go.jp/j/press/news/2026/09/20i.html",
+   "fetched": "2026-10-08"
+  },
+  {
+   "id": "2026-09-20e",
+   "published": "2026-09-20",
+   "timesJst": [
+    "15:00"
+   ],
+   "launchJst": "2026-09-20T15:00:00+09:00",
+   "launchUtc": "2026-09-20T06:00:00Z",
+   "precision": "minute",
+   "count": 1,
+   "countNote": "at least",
+   "weapon": "ballistic",
+   "rangeKm": [
+    440
+   ],
+   "rangeBound": null,
+   "apogeeKm": [
+    60
+   ],
+   "apogeeBound": null,
+   "flightMinutes": null,
+   "landing": "sea-of-japan",
+   "eez": "outside",
+   "areaJa": "北朝鮮東岸付近",
+   "landingJa": "日本海の我が国の排他的経済水域(EEZ)外",
+   "directionJa": "北東",
+   "textJa": "北朝鮮は本日１５時００分頃、北朝鮮東岸付近から、少なくとも１発の弾道ミサイルを、北東方向に向けて発射しました。詳細については現在日米韓で緊密に連携して分析中ですが、発射された弾道ミサイルは、最高高度約６０ｋｍ程度で、約４４０ｋｍ程度飛翔し、落下したのは日本海の我が国の排他的経済水域（ＥＥＺ）外であると推定しています。",
+   "url": "https://www.mod.go.jp/j/press/news/2026/09/20e.pdf",
+   "htmlUrl": "https://www.mod.go.jp/j/press/news/2026/09/20e.html",
+   "fetched": "2026-10-08"
+  },
+  {
+   "id": "2026-08-20d",
+   "published": "2026-08-20",
+   "timesJst": [
+    "17:04"
+   ],
+   "launchJst": "2026-08-20T17:04:00+09:00",
+   "launchUtc": "2026-08-20T08:04:00Z",
+   "precision": "minute",
+   "count": null,
+   "countNote": "multiple",
+   "weapon": "ballistic",
+   "rangeKm": [
+    320
+   ],
+   "rangeBound": null,
+   "apogeeKm": [
+    90
+   ],
+   "apogeeBound": null,
+   "flightMinutes": null,
+   "landing": "near-east-coast",
+   "eez": "outside",
+   "areaJa": "北朝鮮内陸部",
+   "landingJa": "朝鮮半島東岸付近の我が国の排他的経済水域(EEZ)外",
+   "directionJa": "北東",
+   "textJa": "北朝鮮は本日１７時４分頃、北朝鮮内陸部から、複数発の弾道ミサイルを、北東方向に向けて発射しました。詳細については現在日米韓で緊密に連携して分析中ですが、発射された弾道ミサイルは、最高高度約９０ｋｍ程度で、約３２０ｋｍ程度飛翔し、落下したのは朝鮮半島東岸付近の我が国の排他的経済水域（ＥＥＺ）外であると推定しています。",
+   "url": "https://www.mod.go.jp/j/press/news/2026/08/20d.pdf",
+   "htmlUrl": "https://www.mod.go.jp/j/press/news/2026/08/20d.html",
+   "fetched": "2026-10-08"
+  },
+  {
+   "id": "2026-08-12d",
+   "published": "2026-08-12",
+   "timesJst": [
+    "05:59"
+   ],
+   "launchJst": "2026-08-12T05:59:00+09:00",
+   "launchUtc": "2026-08-11T20:59:00Z",
+   "precision": "minute",
+   "count": 1,
+   "countNote": "at least",
+   "weapon": "ballistic",
+   "rangeKm": [
+    690
+   ],
+   "rangeBound": null,
+   "apogeeKm": [
+    90
+   ],
+   "apogeeBound": null,
+   "flightMinutes": null,
+   "landing": "sea-of-japan",
+   "eez": "outside",
+   "areaJa": "北朝鮮東岸付近",
+   "landingJa": "日本海の我が国の排他的経済水域(EEZ)外",
+   "directionJa": "東",
+   "textJa": "北朝鮮は本日５時５９分頃、北朝鮮東岸付近から、少なくとも１発の弾道ミサイルを、東方向に向けて発射しました。詳細については現在日米韓で緊密に連携して分析中ですが、発射された弾道ミサイルは、最高高度約９０ｋｍ程度で、約６９０ｋｍ程度飛翔し、落下したのは日本海の我が国の排他的経済水域（ＥＥＺ）外であると推定しています。",
+   "url": "https://www.mod.go.jp/j/press/news/2026/08/12d.pdf",
+   "htmlUrl": "https://www.mod.go.jp/j/press/news/2026/08/12d.html",
+   "fetched": "2026-10-08"
+  },
+  {
+   "id": "2026-08-06c",
+   "published": "2026-08-06",
+   "timesJst": [
+    "17:02"
+   ],
+   "launchJst": "2026-08-06T17:02:00+09:00",
+   "launchUtc": "2026-08-06T08:02:00Z",
+   "precision": "minute",
+   "count": 1,
+   "countNote": "at least",
+   "weapon": "ballistic",
+   "rangeKm": [],
+   "rangeBound": null,
+   "apogeeKm": [],
+   "apogeeBound": null,
+   "flightMinutes": null,
+   "landing": "near-east-coast",
+   "eez": "none-seen",
+   "areaJa": "北朝鮮",
+   "landingJa": "朝鮮半島東岸付近",
+   "directionJa": null,
+   "textJa": "本日１７時２分頃、北朝鮮から少なくとも１発の弾道ミサイルが発射されました。現在、日米韓で緊密に連携し、その詳細を分析中ですが、発射された弾道ミサイルは朝鮮半島東岸付近に落下したと推定され、我が国の領域や排他的経済水域（ＥＥＺ）への飛来は確認されておらず、現時点において、付近を航行する航空機や船舶の被害報告等の情報は確認されていません。",
+   "url": "https://www.mod.go.jp/j/press/news/2026/08/06c.pdf",
+   "htmlUrl": "https://www.mod.go.jp/j/press/news/2026/08/06c.html",
+   "fetched": "2026-10-08"
+  },
+  {
+   "id": "2026-04-19b",
+   "published": "2026-04-19",
+   "timesJst": [
+    "06"
+   ],
+   "launchJst": "2026-04-19T06:00:00+09:00",
+   "launchUtc": "2026-04-18T21:00:00Z",
+   "precision": "hour",
+   "count": null,
+   "countNote": "multiple",
+   "weapon": "ballistic",
+   "rangeKm": [],
+   "rangeBound": null,
+   "apogeeKm": [],
+   "apogeeBound": null,
+   "flightMinutes": null,
+   "landing": "near-east-coast",
+   "eez": "none-seen",
+   "areaJa": "北朝鮮東岸付近",
+   "landingJa": "朝鮮半島東岸付近",
+   "directionJa": null,
+   "textJa": "本日６時台、北朝鮮東岸付近から北朝鮮が複数の弾道ミサイルを発射しました。その詳細については、現在、日米韓で緊密に連携し分析中ですが、発射された弾道ミサイルは朝鮮半島東岸付近に落下したと推定され、我が国の領域や排他的経済水域（ＥＥＺ）への飛来は確認されておらず、現時点において、付近を航行する航空機や船舶の被害報告等の情報は確認されていません。",
+   "url": "https://www.mod.go.jp/j/press/news/2026/04/19b.pdf",
+   "htmlUrl": "https://www.mod.go.jp/j/press/news/2026/04/19b.html",
+   "fetched": "2026-10-08"
+  },
+  {
+   "id": "2026-04-08b",
+   "published": "2026-04-08",
+   "timesJst": [
+    "14:23"
+   ],
+   "launchJst": "2026-04-08T14:23:00+09:00",
+   "launchUtc": "2026-04-08T05:23:00Z",
+   "precision": "minute",
+   "count": 1,
+   "countNote": "at least",
+   "weapon": "ballistic",
+   "rangeKm": [
+    700
+   ],
+   "rangeBound": "over",
+   "apogeeKm": [
+    60
+   ],
+   "apogeeBound": null,
+   "flightMinutes": null,
+   "landing": "sea-of-japan",
+   "eez": "outside",
+   "areaJa": "北朝鮮東岸付近",
+   "landingJa": "日本海の我が国の排他的経済水域(EEZ)外",
+   "directionJa": "東",
+   "textJa": "北朝鮮は本日１４時２３分頃、北朝鮮東岸付近から、少なくとも１発の弾道ミサイルを、東方向に向けて発射しました。詳細については現在日米韓で緊密に連携して分析中ですが、発射された弾道ミサイルは、最高高度約６０ｋｍ程度で、約７００ｋｍを超えて飛翔し、落下したのは日本海の我が国の排他的経済水域（ＥＥＺ）外であると推定しています。また、当該弾道ミサイルは変則軌道で飛翔した可能性があり、引き続き分析中です。",
+   "url": "https://www.mod.go.jp/j/press/news/2026/04/08b.pdf",
+   "htmlUrl": "https://www.mod.go.jp/j/press/news/2026/04/08b.html",
+   "fetched": "2026-10-08"
+  },
+  {
+   "id": "2026-03-14c",
+   "published": "2026-03-14",
+   "timesJst": [
+    "13:24"
+   ],
+   "launchJst": "2026-03-14T13:24:00+09:00",
+   "launchUtc": "2026-03-14T04:24:00Z",
+   "precision": "minute",
+   "count": null,
+   "countNote": "multiple",
+   "weapon": "ballistic",
+   "rangeKm": [
+    340
+   ],
+   "rangeBound": null,
+   "apogeeKm": [
+    80
+   ],
+   "apogeeBound": null,
+   "flightMinutes": null,
+   "landing": "near-east-coast",
+   "eez": "outside",
+   "areaJa": "北朝鮮西岸付近",
+   "landingJa": "朝鮮半島東岸付近の我が国の排他的経済水域(EEZ)外",
+   "directionJa": "北東",
+   "textJa": "北朝鮮は本日１３時２４分頃、北朝鮮西岸付近から、複数発の弾道ミサイルを、北東方向に向けて発射しました。詳細については現在日米韓で緊密に連携して分析中ですが、発射された弾道ミサイルは、最高高度約８０ｋｍ程度で、約３４０ｋｍ程度飛翔し、落下したのは朝鮮半島東岸付近の我が国の排他的経済水域（ＥＥＺ）外であると推定しています。",
+   "url": "https://www.mod.go.jp/j/press/news/2026/03/14c.pdf",
+   "htmlUrl": "https://www.mod.go.jp/j/press/news/2026/03/14c.html",
+   "fetched": "2026-10-08"
+  },
+  {
+   "id": "2026-01-27c",
+   "published": "2026-01-27",
+   "timesJst": [
+    "15:54",
+    "16:02"
+   ],
+   "launchJst": "2026-01-27T15:54:00+09:00",
+   "launchUtc": "2026-01-27T06:54:00Z",
+   "precision": "minute",
+   "count": 2,
+   "countNote": "exact",
+   "weapon": "ballistic",
+   "rangeKm": [
+    350,
+    340
+   ],
+   "rangeBound": null,
+   "apogeeKm": [
+    80,
+    70
+   ],
+   "apogeeBound": null,
+   "flightMinutes": null,
+   "landing": "near-east-coast",
+   "eez": "outside",
+   "areaJa": "北朝鮮西岸付近",
+   "landingJa": "北朝鮮東岸付近であり、いずれも我が国の排他的経済水域(EEZ)外",
+   "directionJa": "東",
+   "textJa": "北朝鮮は本日、北朝鮮西岸付近から、２発の弾道ミサイルを、東方向に向けて発射しました。詳細については現在日米韓で緊密に連携して分析中ですが、落下したのは北朝鮮東岸付近であり、いずれも我が国の排他的経済水域（ＥＥＺ）外であると推定しています。①１５時５４分頃発射し、最高高度約８０ｋｍ程度で、約３５０ｋｍ程度飛翔。②１６時２分頃発射し、最高高度約７０ｋｍ程度で、約３４０ｋｍ程度飛翔。",
+   "url": "https://www.mod.go.jp/j/press/news/2026/01/27c.pdf",
+   "htmlUrl": "https://www.mod.go.jp/j/press/news/2026/01/27c.html",
+   "fetched": "2026-10-08"
+  },
+  {
+   "id": "2026-01-04c",
+   "published": "2026-01-04",
+   "timesJst": [
+    "07:54",
+    "08:05"
+   ],
+   "launchJst": "2026-01-04T07:54:00+09:00",
+   "launchUtc": "2026-01-03T22:54:00Z",
+   "precision": "minute",
+   "count": 2,
+   "countNote": "at least",
+   "weapon": "ballistic",
+   "rangeKm": [
+    900,
+    950
+   ],
+   "rangeBound": null,
+   "apogeeKm": [
+    50,
+    50
+   ],
+   "apogeeBound": null,
+   "flightMinutes": null,
+   "landing": "sea-of-japan",
+   "eez": "outside",
+   "areaJa": "北朝鮮西岸付近",
+   "landingJa": "日本海の我が国排他的経済水域(EEZ)外",
+   "directionJa": "東",
+   "textJa": "北朝鮮は本日７時台から８時台にかけて、北朝鮮西岸付近から、少なくとも２発の弾道ミサイルを、東方向に向けて発射しました。詳細については現在日米韓で緊密に連携して分析中ですが、落下したのは日本海の我が国排他的経済水域（ＥＥＺ）外であると推定しています。また、いずれの弾道ミサイルも変則軌道で飛翔した可能性があり、引き続き分析中です。①７時５４分頃発射し、最高高度約５０ｋｍ程度で、約９００ｋｍ程度飛翔。②８時５分頃発射し、最高高度約５０ｋｍ程度で、約９５０ｋｍ程度飛翔。",
+   "url": "https://www.mod.go.jp/j/press/news/2026/01/04c.pdf",
+   "htmlUrl": "https://www.mod.go.jp/j/press/news/2026/01/04c.html",
+   "fetched": "2026-10-08"
+  },
+  {
+   "id": "2025-11-07g",
+   "published": "2025-11-07",
+   "timesJst": [
+    "12:34"
+   ],
+   "launchJst": "2025-11-07T12:34:00+09:00",
+   "launchUtc": "2025-11-07T03:34:00Z",
+   "precision": "minute",
+   "count": 1,
+   "countNote": "exact",
+   "weapon": "ballistic",
+   "rangeKm": [
+    450
+   ],
+   "rangeBound": "over",
+   "apogeeKm": [
+    50
+   ],
+   "apogeeBound": null,
+   "flightMinutes": null,
+   "landing": null,
+   "eez": "outside",
+   "areaJa": "北朝鮮西岸",
+   "landingJa": "朝鮮半島東の我が国の排他的経済水域(EEZ)外",
+   "directionJa": "東",
+   "textJa": "北朝鮮は本日１２時３４分頃、北朝鮮西岸から、１発の弾道ミサイルを、東方向に向けて発射しました。詳細については現在日米韓で緊密に連携して分析中ですが、発射された弾道ミサイルは、最高高度約５０ｋｍ程度で、約４５０ｋｍを超えて飛翔し、落下したのは朝鮮半島東の我が国の排他的経済水域（ＥＥＺ）外であると推定しています。",
+   "url": "https://www.mod.go.jp/j/press/news/2025/11/07g.pdf",
+   "htmlUrl": "https://www.mod.go.jp/j/press/news/2025/11/07g.html",
+   "fetched": "2026-10-08"
+  },
+  {
+   "id": "2025-05-08c",
+   "published": "2025-05-08",
+   "timesJst": [
+    "08",
+    "09:20"
+   ],
+   "launchJst": "2025-05-08T08:00:00+09:00",
+   "launchUtc": "2025-05-07T23:00:00Z",
+   "precision": "hour",
+   "count": null,
+   "countNote": "multiple",
+   "weapon": "ballistic",
+   "rangeKm": [
+    800
+   ],
+   "rangeBound": null,
+   "apogeeKm": [
+    100
+   ],
+   "apogeeBound": null,
+   "flightMinutes": null,
+   "landing": "sea-of-japan",
+   "eez": "outside",
+   "areaJa": "北朝鮮東岸付近",
+   "landingJa": "朝鮮半島東の日本海であり、我が国の排他的経済水域(EEZ)外",
+   "directionJa": "北東",
+   "textJa": "北朝鮮は本日８時台から９時台にかけて、北朝鮮東岸付近から、複数発の弾道ミサイルを、北東方向に向けて発射しました。詳細については現在日米韓で緊密に連携して分析中ですが、発射された弾道ミサイルのうち１発は、本日９時２０分頃発射され、最高高度約１００ｋｍ程度で、約８００ｋｍ程度飛翔し、落下したのは朝鮮半島東の日本海であり、我が国の排他的経済水域（ＥＥＺ）外であると推定しています。また、当該弾道ミサイルは変則軌道で飛翔した可能性があり、引き続き分析中です。",
+   "url": "https://www.mod.go.jp/j/press/news/2025/05/08c.pdf",
+   "htmlUrl": "https://www.mod.go.jp/j/press/news/2025/05/08c.html",
+   "fetched": "2026-10-08"
+  },
+  {
+   "id": "2025-01-06c",
+   "published": "2025-01-06",
+   "timesJst": [
+    "12:01"
+   ],
+   "launchJst": "2025-01-06T12:01:00+09:00",
+   "launchUtc": "2025-01-06T03:01:00Z",
+   "precision": "minute",
+   "count": 1,
+   "countNote": "at least",
+   "weapon": "ballistic",
+   "rangeKm": [
+    1100
+   ],
+   "rangeBound": null,
+   "apogeeKm": [
+    100
+   ],
+   "apogeeBound": null,
+   "flightMinutes": null,
+   "landing": "sea-of-japan",
+   "eez": "outside",
+   "areaJa": "北朝鮮内陸部",
+   "landingJa": "朝鮮半島東の日本海であり、我が国の排他的経済水域(EEZ)外",
+   "directionJa": "北東",
+   "textJa": "北朝鮮は本日１２時１分頃、北朝鮮内陸部から、少なくとも１発の弾道ミサイルを、北東方向に向けて発射しました。詳細については現在日米韓で緊密に連携して分析中ですが、発射された弾道ミサイルは、最高高度約１００ｋｍ程度で、約１１００ｋｍ程度飛翔し、落下したのは朝鮮半島東の日本海であり、我が国の排他的経済水域（ＥＥＺ）外であると推定しています。",
+   "url": "https://www.mod.go.jp/j/press/news/2025/01/06c.pdf",
+   "htmlUrl": "https://www.mod.go.jp/j/press/news/2025/01/06c.html",
+   "fetched": "2026-10-08"
+  },
+  {
+   "id": "2024-11-05e",
+   "published": "2024-11-05",
+   "timesJst": [
+    "07:30"
+   ],
+   "launchJst": "2024-11-05T07:30:00+09:00",
+   "launchUtc": "2024-11-04T22:30:00Z",
+   "precision": "minute",
+   "count": null,
+   "countNote": "multiple",
+   "weapon": "ballistic",
+   "rangeKm": [
+    400
+   ],
+   "rangeBound": null,
+   "apogeeKm": [
+    100
+   ],
+   "apogeeBound": null,
+   "flightMinutes": null,
+   "landing": "sea-of-japan",
+   "eez": "outside",
+   "areaJa": "北朝鮮西岸付近",
+   "landingJa": "いずれも朝鮮半島東岸付近の日本海であり、我が国の排他的経済水域(EEZ)外",
+   "directionJa": "北東",
+   "textJa": "北朝鮮は本日７時３０分から３９分頃にかけて、北朝鮮西岸付近から、複数発の弾道ミサイルを、北東方向に向けて発射しました。詳細については現在日米韓で緊密に連携して分析中ですが、落下したのはいずれも朝鮮半島東岸付近の日本海であり、我が国の排他的経済水域（ＥＥＺ）外であると推定しています。発射された弾道ミサイルのうち少なくとも７発は、最高高度約１００ｋｍ程度で、約４００ｋｍ程度飛翔したものと推定しています。",
+   "url": "https://www.mod.go.jp/j/press/news/2024/11/05e.pdf",
+   "htmlUrl": "https://www.mod.go.jp/j/press/news/2024/11/05e.html",
+   "fetched": "2026-10-08"
+  },
+  {
+   "id": "2024-10-31f",
+   "published": "2024-10-31",
+   "timesJst": [
+    "07:11"
+   ],
+   "launchJst": "2024-10-31T07:11:00+09:00",
+   "launchUtc": "2024-10-30T22:11:00Z",
+   "precision": "minute",
+   "count": 1,
+   "countNote": "at least",
+   "weapon": "icbm-class",
+   "rangeKm": [
+    1000
+   ],
+   "rangeBound": null,
+   "apogeeKm": [],
+   "apogeeBound": null,
+   "flightMinutes": 86,
+   "landing": "sea-of-japan",
+   "eez": "outside",
+   "areaJa": "平壌近郊",
+   "landingJa": "北海道の奥尻島の西方約200kmの日本海(我が国の排他的経済水域(EEZ)外)",
+   "directionJa": "北東",
+   "textJa": "北朝鮮は本日７時１１分頃、平壌近郊から、少なくとも１発のＩＣＢＭ級弾道ミサイルを、北東方向に向けて発射しました。詳細については現在日米韓で緊密に連携して分析中ですが、発射された弾道ミサイルは、過去最長の約８６分飛翔し８時３７分頃、北海道の奥尻島の西方約２００ｋｍの日本海（我が国の排他的経済水域（ＥＥＺ）外）に落下したものと推定されます。飛翔距離は約１,０００ｋｍ、また最高高度は過去最高で約７，０００ｋｍを超えると推定されます。",
+   "url": "https://www.mod.go.jp/j/press/news/2024/10/31f.pdf",
+   "htmlUrl": "https://www.mod.go.jp/j/press/news/2024/10/31f.html",
+   "fetched": "2026-10-08"
+  },
+  {
+   "id": "2024-10-31b",
+   "published": "2024-10-31",
+   "timesJst": [
+    "07:11"
+   ],
+   "launchJst": "2024-10-31T07:11:00+09:00",
+   "launchUtc": "2024-10-30T22:11:00Z",
+   "precision": "minute",
+   "count": 1,
+   "countNote": "at least",
+   "weapon": "ballistic",
+   "rangeKm": [],
+   "rangeBound": null,
+   "apogeeKm": [],
+   "apogeeBound": null,
+   "flightMinutes": null,
+   "landing": "sea-of-japan",
+   "eez": "outside",
+   "areaJa": "北朝鮮内陸部",
+   "landingJa": null,
+   "directionJa": "北東",
+   "textJa": "北朝鮮は本日７時１１分頃、北朝鮮内陸部から、少なくとも１発の弾道ミサイルを、北東方向に向けて発射しました。発射された弾道ミサイルは現在飛翔中であるため、今後変わり得るものの、現時点においては、北海道奥尻島の西方約３００㎞の我が国の排他的経済水域（ＥＥＺ）外の日本海に、８時３６分頃落下すると推定しております。",
+   "url": "https://www.mod.go.jp/j/press/news/2024/10/31b.pdf",
+   "htmlUrl": "https://www.mod.go.jp/j/press/news/2024/10/31b.html",
+   "fetched": "2026-10-08"
+  },
+  {
+   "id": "2024-09-18b",
+   "published": "2024-09-18",
+   "timesJst": [
+    "06:53",
+    "07:23"
+   ],
+   "launchJst": "2024-09-18T06:53:00+09:00",
+   "launchUtc": "2024-09-17T21:53:00Z",
+   "precision": "minute",
+   "count": null,
+   "countNote": "multiple",
+   "weapon": "ballistic",
+   "rangeKm": [],
+   "rangeBound": null,
+   "apogeeKm": [],
+   "apogeeBound": null,
+   "flightMinutes": null,
+   "landing": null,
+   "eez": "none-seen",
+   "areaJa": "北朝鮮内陸部",
+   "landingJa": "北朝鮮内陸部東岸付近",
+   "directionJa": null,
+   "textJa": "本日６時５３分頃及び７時２３分頃、北朝鮮内陸部から発射された北朝鮮による複数発の弾道ミサイル発射事案については、現在、日米韓で緊密に連携し、その詳細を分析中ですが、発射された弾道ミサイルは、北朝鮮内陸部東岸付近に落下したと推定され、我が国の領域や排他的経済水域（ＥＥＺ）への飛来は確認されておらず、現時点において、付近を航行する航空機や船舶の被害報告等の情報は確認されていません。",
+   "url": "https://www.mod.go.jp/j/press/news/2024/09/18b.pdf",
+   "htmlUrl": "https://www.mod.go.jp/j/press/news/2024/09/18b.html",
+   "fetched": "2026-10-08"
+  },
+  {
+   "id": "2024-09-12b",
+   "published": "2024-09-12",
+   "timesJst": [
+    "07:10"
+   ],
+   "launchJst": "2024-09-12T07:10:00+09:00",
+   "launchUtc": "2024-09-11T22:10:00Z",
+   "precision": "minute",
+   "count": null,
+   "countNote": "multiple",
+   "weapon": "ballistic",
+   "rangeKm": [
+    350
+   ],
+   "rangeBound": "over",
+   "apogeeKm": [
+    100
+   ],
+   "apogeeBound": null,
+   "flightMinutes": null,
+   "landing": "sea-of-japan",
+   "eez": "outside",
+   "areaJa": "北朝鮮西岸付近",
+   "landingJa": "いずれも朝鮮半島東の日本海であり、我が国の排他的経済水域(EEZ)外",
+   "directionJa": "北東",
+   "textJa": "北朝鮮は本日７時１０分から１４分頃にかけて、北朝鮮西岸付近から、複数発の弾道ミサイルを、北東方向に向けて発射しました。詳細については現在日米韓で緊密に連携して分析中ですが、落下したのはいずれも朝鮮半島東の日本海であり、我が国の排他的経済水域（ＥＥＺ）外であると推定しています。発射された弾道ミサイルのうち少なくとも２発は、最高高度約１００ｋｍ程度で、約３５０ｋｍを超えて飛翔したものと推定しています。",
+   "url": "https://www.mod.go.jp/j/press/news/2024/09/12b.pdf",
+   "htmlUrl": "https://www.mod.go.jp/j/press/news/2024/09/12b.html",
+   "fetched": "2026-10-08"
+  },
+  {
+   "id": "2024-06-26b",
+   "published": "2024-06-26",
+   "timesJst": [
+    "05:28"
+   ],
+   "launchJst": "2024-06-26T05:28:00+09:00",
+   "launchUtc": "2024-06-25T20:28:00Z",
+   "precision": "minute",
+   "count": 1,
+   "countNote": "at least",
+   "weapon": "ballistic",
+   "rangeKm": [],
+   "rangeBound": null,
+   "apogeeKm": [
+    100
+   ],
+   "apogeeBound": null,
+   "flightMinutes": null,
+   "landing": "sea-of-japan",
+   "eez": "outside",
+   "areaJa": "北朝鮮内陸部",
+   "landingJa": "朝鮮半島東の日本海であり、我が国の排他的経済水域(EEZ)外",
+   "directionJa": "東",
+   "textJa": "北朝鮮は本日５時２８分頃、北朝鮮内陸部から、少なくとも１発の弾道ミサイルを、東方向に向けて発射しました。詳細については現在日米韓で緊密に連携して分析中ですが、発射された弾道ミサイルは、最高高度約１００ｋｍ程度で、約２００ｋｍ以上飛翔し、落下したのは朝鮮半島東の日本海であり、我が国の排他的経済水域（ＥＥＺ）外であると推定しています。",
+   "url": "https://www.mod.go.jp/j/press/news/2024/06/26b.pdf",
+   "htmlUrl": "https://www.mod.go.jp/j/press/news/2024/06/26b.html",
+   "fetched": "2026-10-08"
+  },
+  {
+   "id": "2024-05-30b",
+   "published": "2024-05-30",
+   "timesJst": [
+    "06:13"
+   ],
+   "launchJst": "2024-05-30T06:13:00+09:00",
+   "launchUtc": "2024-05-29T21:13:00Z",
+   "precision": "minute",
+   "count": null,
+   "countNote": "multiple",
+   "weapon": "ballistic",
+   "rangeKm": [],
+   "rangeBound": null,
+   "apogeeKm": [
+    100
+   ],
+   "apogeeBound": null,
+   "flightMinutes": null,
+   "landing": "near-east-coast",
+   "eez": "outside",
+   "areaJa": "北朝鮮内陸部",
+   "landingJa": "いずれも朝鮮半島東岸付近の我が国の排他的経済水域(EEZ)外",
+   "directionJa": "北東",
+   "textJa": "北朝鮮は本日６時１３分頃、北朝鮮内陸部から、複数発の弾道ミサイルを、北東方向に向けて発射しました。詳細については現在日米韓で緊密に連携して分析中ですが、落下したのはいずれも朝鮮半島東岸付近の我が国の排他的経済水域（ＥＥＺ）外であると推定しています。発射された弾道ミサイルのうち少なくとも１発は、最高高度約１００ｋｍ程度で、約３５０ｋｍ以上飛翔したものと推定しています。",
+   "url": "https://www.mod.go.jp/j/press/news/2024/05/30b.pdf",
+   "htmlUrl": "https://www.mod.go.jp/j/press/news/2024/05/30b.html",
+   "fetched": "2026-10-08"
+  },
+  {
+   "id": "2024-05-28a",
+   "published": "2024-05-28",
+   "timesJst": [
+    "22:43"
+   ],
+   "launchJst": "2024-05-27T22:43:00+09:00",
+   "launchUtc": "2024-05-27T13:43:00Z",
+   "precision": "minute",
+   "count": null,
+   "countNote": null,
+   "weapon": "satellite",
+   "rangeKm": [],
+   "rangeBound": null,
+   "apogeeKm": [],
+   "apogeeBound": null,
+   "flightMinutes": null,
+   "landing": "yellow-sea",
+   "eez": null,
+   "areaJa": "北朝鮮北西部沿岸地域の東倉里(トンチャンリ)地区",
+   "landingJa": null,
+   "directionJa": "南",
+   "textJa": "日米韓の緊密な情報共有によれば、北朝鮮は２７日２２時４３分頃、北朝鮮北西部沿岸地域の東倉里（トンチャンリ）地区から、南方向に向けて、衛星打ち上げを目的とする弾道ミサイル技術を使用した発射を強行しましたが、発射から数分後に、黄海上空で消失し、宇宙空間への何らかの物体の投入はされていないものと推定しています。失敗の可能性を含めて、詳細については、日米韓において、現在分析中です。",
+   "url": "https://www.mod.go.jp/j/press/news/2024/05/28a.pdf",
+   "htmlUrl": "https://www.mod.go.jp/j/press/news/2024/05/28a.html",
+   "fetched": "2026-10-08"
+  },
+  {
+   "id": "2024-04-22c",
+   "published": "2024-04-22",
+   "timesJst": [
+    "15:00"
+   ],
+   "launchJst": "2024-04-22T15:00:00+09:00",
+   "launchUtc": "2024-04-22T06:00:00Z",
+   "precision": "minute",
+   "count": 1,
+   "countNote": "at least",
+   "weapon": "ballistic",
+   "rangeKm": [],
+   "rangeBound": null,
+   "apogeeKm": [
+    50
+   ],
+   "apogeeBound": null,
+   "flightMinutes": null,
+   "landing": "near-east-coast",
+   "eez": "outside",
+   "areaJa": "北朝鮮内陸部",
+   "landingJa": "朝鮮半島東岸付近の我が国の排他的経済水域(EEZ)外",
+   "directionJa": "北東",
+   "textJa": "北朝鮮は本日１５時００分頃、北朝鮮内陸部から、少なくとも１発の弾道ミサイルを、北東方向に向けて発射しました。詳細については現在分析中ですが、発射された弾道ミサイルは最高高度約５０ｋｍ程度で、約２５０ｋｍ以上飛翔し、落下したのは、朝鮮半島東岸付近の我が国の排他的経済水域（ＥＥＺ）外であると推定しています。",
+   "url": "https://www.mod.go.jp/j/press/news/2024/04/22c.pdf",
+   "htmlUrl": "https://www.mod.go.jp/j/press/news/2024/04/22c.html",
+   "fetched": "2026-10-08"
+  },
+  {
+   "id": "2024-04-02b",
+   "published": "2024-04-02",
+   "timesJst": [
+    "06:52"
+   ],
+   "launchJst": "2024-04-02T06:52:00+09:00",
+   "launchUtc": "2024-04-01T21:52:00Z",
+   "precision": "minute",
+   "count": 1,
+   "countNote": "at least",
+   "weapon": "ballistic",
+   "rangeKm": [],
+   "rangeBound": null,
+   "apogeeKm": [
+    100
+   ],
+   "apogeeBound": null,
+   "flightMinutes": null,
+   "landing": "sea-of-japan",
+   "eez": "outside",
+   "areaJa": "北朝鮮西岸",
+   "landingJa": "朝鮮半島東の日本海であり、我が国の排他的経済水域(EEZ)外",
+   "directionJa": "北東",
+   "textJa": "北朝鮮は本日６時５２分頃、北朝鮮西岸から、少なくとも１発の弾道ミサイルを、北東方向に向けて発射しました。詳細については現在分析中ですが、発射された弾道ミサイルは、最高高度約１００ｋｍ程度で、約６５０ｋｍ以上飛翔し、落下したのは朝鮮半島東の日本海であり、我が国の排他的経済水域（ＥＥＺ）外であると推定しています。",
+   "url": "https://www.mod.go.jp/j/press/news/2024/04/02b.pdf",
+   "htmlUrl": "https://www.mod.go.jp/j/press/news/2024/04/02b.html",
+   "fetched": "2026-10-08"
+  },
+  {
+   "id": "2024-03-18b",
+   "published": "2024-03-18",
+   "timesJst": [
+    "07:44",
+    "07:44",
+    "08:21"
+   ],
+   "launchJst": "2024-03-18T07:44:00+09:00",
+   "launchUtc": "2024-03-17T22:44:00Z",
+   "precision": "minute",
+   "count": 3,
+   "countNote": "exact",
+   "weapon": "ballistic",
+   "rangeKm": [
+    350,
+    350,
+    350
+   ],
+   "rangeBound": null,
+   "apogeeKm": [
+    50,
+    50,
+    50
+   ],
+   "apogeeBound": null,
+   "flightMinutes": null,
+   "landing": "near-east-coast",
+   "eez": "outside",
+   "areaJa": "北朝鮮西岸付近",
+   "landingJa": "いずれも朝鮮半島東岸付近の我が国の排他的経済水域(EEZ)外",
+   "directionJa": "北東",
+   "textJa": "北朝鮮は本日７時台から８時台、北朝鮮西岸付近から、３発の弾道ミサイルを、北東方向に向けて発射しました。詳細については現在分析中ですが、落下したのはいずれも朝鮮半島東岸付近の我が国の排他的経済水域（ＥＥＺ）外であると推定しています。①７時４４分頃発射し、最高高度約５０ｋｍ程度で、約３５０ｋｍ程度飛翔。②７時４４分頃発射し、最高高度約５０ｋｍ程度で、約３５０ｋｍ程度飛翔。③８時２１分頃発射し、最高高度約５０ｋｍ程度で、約３５０ｋｍ程度飛翔。",
+   "url": "https://www.mod.go.jp/j/press/news/2024/03/18b.pdf",
+   "htmlUrl": "https://www.mod.go.jp/j/press/news/2024/03/18b.html",
+   "fetched": "2026-10-08"
+  },
+  {
+   "id": "2024-01-14b",
+   "published": "2024-01-14",
+   "timesJst": [
+    "14:53"
+   ],
+   "launchJst": "2024-01-14T14:53:00+09:00",
+   "launchUtc": "2024-01-14T05:53:00Z",
+   "precision": "minute",
+   "count": 1,
+   "countNote": "exact",
+   "weapon": "ballistic",
+   "rangeKm": [
+    500
+   ],
+   "rangeBound": "at least",
+   "apogeeKm": [
+    50
+   ],
+   "apogeeBound": "at least",
+   "flightMinutes": null,
+   "landing": "sea-of-japan",
+   "eez": "outside",
+   "areaJa": "北朝鮮内陸部",
+   "landingJa": "朝鮮半島東岸付近の日本海であり、我が国の排他的経済水域(EEZ)外",
+   "directionJa": "北東",
+   "textJa": "北朝鮮は本日１４時５３分頃、北朝鮮内陸部から、１発の弾道ミサイルを、北東方向に向けて発射しました。詳細については現在分析中ですが、発射された弾道ミサイルは、最高高度約５０ｋｍ程度以上で、少なくとも約５００ｋｍ程度飛翔し、落下したのは朝鮮半島東岸付近の日本海であり、我が国の排他的経済水域（ＥＥＺ）外であると推定しています。",
+   "url": "https://www.mod.go.jp/j/press/news/2024/01/14b.pdf",
+   "htmlUrl": "https://www.mod.go.jp/j/press/news/2024/01/14b.html",
+   "fetched": "2026-10-08"
+  },
+  {
+   "id": "2023-12-18d",
+   "published": "2023-12-18",
+   "timesJst": [
+    "08:24"
+   ],
+   "launchJst": "2023-12-18T08:24:00+09:00",
+   "launchUtc": "2023-12-17T23:24:00Z",
+   "precision": "minute",
+   "count": 1,
+   "countNote": "exact",
+   "weapon": "icbm-class",
+   "rangeKm": [
+    1000
+   ],
+   "rangeBound": null,
+   "apogeeKm": [
+    6000
+   ],
+   "apogeeBound": "over",
+   "flightMinutes": 73,
+   "landing": "sea-of-japan",
+   "eez": "outside",
+   "areaJa": "平壌近郊",
+   "landingJa": "北海道の奥尻島の北西約250kmの日本海(我が国の排他的経済水域(EEZ)外)",
+   "directionJa": "北東",
+   "textJa": "北朝鮮は本日８時２４分頃、平壌近郊から、１発のＩＣＢＭ級弾道ミサイルを、北東方向に向けて発射しました。詳細については現在分析中ですが、発射された弾道ミサイルは約７３分飛翔し９時３７分頃、北海道の奥尻島の北西約２５０ｋｍの日本海（我が国の排他的経済水域（ＥＥＺ）外）に落下したものと推定されます。飛翔距離は約１，０００ｋｍ、また最高高度は約６，０００ｋｍを超えると推定されます。",
+   "url": "https://www.mod.go.jp/j/press/news/2023/12/18d.pdf",
+   "htmlUrl": "https://www.mod.go.jp/j/press/news/2023/12/18d.html",
+   "fetched": "2026-10-08"
+  },
+  {
+   "id": "2023-12-18c",
+   "published": "2023-12-18",
+   "timesJst": [
+    "08:24"
+   ],
+   "launchJst": "2023-12-18T08:24:00+09:00",
+   "launchUtc": "2023-12-17T23:24:00Z",
+   "precision": "minute",
+   "count": 1,
+   "countNote": "at least",
+   "weapon": "ballistic",
+   "rangeKm": [],
+   "rangeBound": null,
+   "apogeeKm": [],
+   "apogeeBound": null,
+   "flightMinutes": null,
+   "landing": "sea-of-japan",
+   "eez": "outside",
+   "areaJa": "北朝鮮内陸部",
+   "landingJa": null,
+   "directionJa": "北東",
+   "textJa": "北朝鮮は本日８時２４分頃、北朝鮮内陸部から、少なくとも１発の弾道ミサイルを、北東方向に向けて発射しました。発射された弾道ミサイルは現在飛翔中であるため、今後変わり得るものの、現時点においては、北海道奥尻島の西方約２５０㎞の我が国の排他的経済水域（ＥＥＺ）外の日本海に、９時３７分頃落下すると推定しております。",
+   "url": "https://www.mod.go.jp/j/press/news/2023/12/18c.pdf",
+   "htmlUrl": "https://www.mod.go.jp/j/press/news/2023/12/18c.html",
+   "fetched": "2026-10-08"
+  },
+  {
+   "id": "2023-12-18a",
+   "published": "2023-12-18",
+   "timesJst": [
+    "22:37"
+   ],
+   "launchJst": "2023-12-17T22:37:00+09:00",
+   "launchUtc": "2023-12-17T13:37:00Z",
+   "precision": "minute",
+   "count": 1,
+   "countNote": "exact",
+   "weapon": "ballistic",
+   "rangeKm": [
+    400
+   ],
+   "rangeBound": null,
+   "apogeeKm": [
+    50
+   ],
+   "apogeeBound": null,
+   "flightMinutes": null,
+   "landing": "sea-of-japan",
+   "eez": "outside",
+   "areaJa": "北朝鮮西岸付近",
+   "landingJa": "朝鮮半島東側の日本海の我が国の排他的経済水域(EEZ)外",
+   "directionJa": "東",
+   "textJa": "北朝鮮は１２月１７日２２時３７分頃、北朝鮮西岸付近から、１発の弾道ミサイルを、東方向に向けて発射しました。詳細については現在分析中ですが、発射された弾道ミサイルは、最高高度約５０ｋｍ程度で、約４００ｋｍ程度飛翔し、落下したのは朝鮮半島東側の日本海の我が国の排他的経済水域（ＥＥＺ）外であると推定しています。",
+   "url": "https://www.mod.go.jp/j/press/news/2023/12/18a.pdf",
+   "htmlUrl": "https://www.mod.go.jp/j/press/news/2023/12/18a.html",
+   "fetched": "2026-10-08"
+  },
+  {
+   "id": "2023-11-22b",
+   "published": "2023-11-22",
+   "timesJst": [
+    "22:43"
+   ],
+   "launchJst": "2023-11-21T22:43:00+09:00",
+   "launchUtc": "2023-11-21T13:43:00Z",
+   "precision": "minute",
+   "count": 1,
+   "countNote": "exact",
+   "weapon": "satellite",
+   "rangeKm": [],
+   "rangeBound": null,
+   "apogeeKm": [],
+   "apogeeBound": null,
+   "flightMinutes": null,
+   "landing": null,
+   "eez": "outside",
+   "areaJa": "北朝鮮北西部沿岸地域の東倉里(トンチャンリ)地区",
+   "landingJa": "我が国EEZ外である予告落下区域内",
+   "directionJa": null,
+   "textJa": "北朝鮮は昨日２２時４３分頃、北朝鮮北西部沿岸地域の東倉里（トンチャンリ）地区から、衛星打ち上げを目的とする弾道ミサイル技術を使用した発射を強行しました。発射された１発は複数に分離し、・１つ目は、２２時５０分頃、朝鮮半島の西約３５０ｋｍの東シナ海上の予告落下区域外に落下、・２つ目は、２２時５５分頃、沖縄本島と宮古島との間の上空を通過し、２２時５７分頃、沖ノ鳥島の南西約１２００ｋｍの太平洋上、我が国ＥＥＺ外である予告落下区域内に落下したものと推定されます。これ以上の詳細については現在分析中ですが、現時点では地球周回軌道への衛星の投入は確認されていません。",
+   "url": "https://www.mod.go.jp/j/press/news/2023/11/22b.pdf",
+   "htmlUrl": "https://www.mod.go.jp/j/press/news/2023/11/22b.html",
+   "fetched": "2026-10-08"
+  },
+  {
+   "id": "2023-09-13b",
+   "published": "2023-09-13",
+   "timesJst": [
+    "11:41",
+    "11:51"
+   ],
+   "launchJst": "2023-09-13T11:41:00+09:00",
+   "launchUtc": "2023-09-13T02:41:00Z",
+   "precision": "minute",
+   "count": 2,
+   "countNote": "exact",
+   "weapon": "ballistic",
+   "rangeKm": [
+    350,
+    650
+   ],
+   "rangeBound": null,
+   "apogeeKm": [
+    50,
+    50
+   ],
+   "apogeeBound": null,
+   "flightMinutes": null,
+   "landing": "sea-of-japan",
+   "eez": "outside",
+   "areaJa": "北朝鮮西岸付近",
+   "landingJa": "いずれも朝鮮半島東側の日本海であり、我が国の排他的経済水域(EEZ)外",
+   "directionJa": "東",
+   "textJa": "北朝鮮は本日１１時台、北朝鮮西岸付近から、２発の弾道ミサイルを、東方向に向けて発射しました。詳細については現在分析中ですが、落下したのはいずれも朝鮮半島東側の日本海であり、我が国の排他的経済水域（ＥＥＺ）外であると推定されます。①１１時４１分頃発射し、最高高度約５０ｋｍ程度で、通常の弾道軌道だとすれば約３５０ｋｍ程度飛翔。②１１時５１分頃発射し、最高高度約５０ｋｍ程度で、約６５０ｋｍ程度飛翔。また、当該弾道ミサイルは変則軌道で飛翔した可能性があり、引き続き分析中です。",
+   "url": "https://www.mod.go.jp/j/press/news/2023/09/13b.pdf",
+   "htmlUrl": "https://www.mod.go.jp/j/press/news/2023/09/13b.html",
+   "fetched": "2026-10-08"
+  },
+  {
+   "id": "2023-08-31b",
+   "published": "2023-08-31",
+   "timesJst": [
+    "23:38",
+    "23:46"
+   ],
+   "launchJst": "2023-08-30T23:38:00+09:00",
+   "launchUtc": "2023-08-30T14:38:00Z",
+   "precision": "minute",
+   "count": 2,
+   "countNote": "exact",
+   "weapon": "ballistic",
+   "rangeKm": [
+    350,
+    400
+   ],
+   "rangeBound": null,
+   "apogeeKm": [
+    50,
+    50
+   ],
+   "apogeeBound": null,
+   "flightMinutes": null,
+   "landing": "near-east-coast",
+   "eez": "outside",
+   "areaJa": "北朝鮮西岸付近",
+   "landingJa": "いずれも朝鮮半島東岸付近であり、我が国の排他的経済水域(EEZ)外",
+   "directionJa": "北東",
+   "textJa": "北朝鮮は８月３０日２３時台、北朝鮮西岸付近から、２発の弾道ミサイルを、北東方向に向けて発射しました。詳細については現在分析中ですが、落下したのはいずれも朝鮮半島東岸付近であり、我が国の排他的経済水域（ＥＥＺ）外であると推定されます。①２３時３８分頃発射し、最高高度約５０ｋｍ程度で、約３５０ｋｍ程度飛翔。②２３時４６分頃発射し、最高高度約５０ｋｍ程度で、約４００ｋｍ程度飛翔。",
+   "url": "https://www.mod.go.jp/j/press/news/2023/08/31b.pdf",
+   "htmlUrl": "https://www.mod.go.jp/j/press/news/2023/08/31b.html",
+   "fetched": "2026-10-08"
+  },
+  {
+   "id": "2023-08-24b",
+   "published": "2023-08-24",
+   "timesJst": [
+    "03:51"
+   ],
+   "launchJst": "2023-08-24T03:51:00+09:00",
+   "launchUtc": "2023-08-23T18:51:00Z",
+   "precision": "minute",
+   "count": 1,
+   "countNote": "exact",
+   "weapon": "satellite",
+   "rangeKm": [],
+   "rangeBound": null,
+   "apogeeKm": [],
+   "apogeeBound": null,
+   "flightMinutes": null,
+   "landing": null,
+   "eez": "outside",
+   "areaJa": "北朝鮮北西部沿岸地域の東倉里(トンチャンリ)地区",
+   "landingJa": "我が国EEZ外である予告落下区域外",
+   "directionJa": null,
+   "textJa": "北朝鮮は本日３時５１分頃、北朝鮮北西部沿岸地域の東倉里（トンチャンリ）地区から、弾道ミサイル技術を使用した発射を強行しました。発射された１発は複数に分離し、・１つは、３時５８分頃、朝鮮半島の西約３００ｋｍの黄海上の予告落下区域外に落下、・もう１つは、３時５９分頃、朝鮮半島の南西約３５０ｋｍの東シナ海上の予告落下区域外に落下、・もう１つは、４時００分頃、沖縄本島と宮古島との間の上空を通過し、４時５分頃、フィリピンの東約６００ｋｍの太平洋上、我が国ＥＥＺ外である予告落下区域外に落下したものと推定されます。詳細については現在分析中ですが、現時点までに得られている情報を総合的に勘案すると、北朝鮮は、今回の発射により衛星の打ち上げを試みましたが、地球周回軌道への衛星の投入は確認されておらず、衛星打ち上げに失敗したとみられます。",
+   "url": "https://www.mod.go.jp/j/press/news/2023/08/24b.pdf",
+   "htmlUrl": "https://www.mod.go.jp/j/press/news/2023/08/24b.html",
+   "fetched": "2026-10-08"
+  },
+  {
+   "id": "2023-07-25a",
+   "published": "2023-07-25",
+   "timesJst": [
+    "23:54",
+    "23:59"
+   ],
+   "launchJst": "2023-07-24T23:54:00+09:00",
+   "launchUtc": "2023-07-24T14:54:00Z",
+   "precision": "minute",
+   "count": 2,
+   "countNote": "exact",
+   "weapon": "ballistic",
+   "rangeKm": [
+    350,
+    400
+   ],
+   "rangeBound": null,
+   "apogeeKm": [
+    100,
+    100
+   ],
+   "apogeeBound": null,
+   "flightMinutes": null,
+   "landing": "sea-of-japan",
+   "eez": "outside",
+   "areaJa": "北朝鮮内陸部",
+   "landingJa": "いずれも朝鮮半島東側の日本海であり、我が国の排他的経済水域(EEZ)外",
+   "directionJa": "東",
+   "textJa": "北朝鮮は７月２４日２３時台、北朝鮮内陸部から、２発の弾道ミサイルを、東方向に向けて発射しました。詳細については現在分析中ですが、落下したのはいずれも朝鮮半島東側の日本海であり、我が国の排他的経済水域（ＥＥＺ）外であると推定されます。①２３時５４分頃発射し、最高高度約１００ｋｍ程度で、約３５０ｋｍ程度飛翔。②２３時５９分頃発射し、最高高度約１００ｋｍ程度で、約４００ｋｍ程度飛翔。",
+   "url": "https://www.mod.go.jp/j/press/news/2023/07/25a.pdf",
+   "htmlUrl": "https://www.mod.go.jp/j/press/news/2023/07/25a.html",
+   "fetched": "2026-10-08"
+  },
+  {
+   "id": "2023-07-19b",
+   "published": "2023-07-19",
+   "timesJst": [
+    "03:29",
+    "03:45"
+   ],
+   "launchJst": "2023-07-19T03:29:00+09:00",
+   "launchUtc": "2023-07-18T18:29:00Z",
+   "precision": "minute",
+   "count": 2,
+   "countNote": "exact",
+   "weapon": "ballistic",
+   "rangeKm": [
+    550,
+    600
+   ],
+   "rangeBound": null,
+   "apogeeKm": [
+    50,
+    50
+   ],
+   "apogeeBound": null,
+   "flightMinutes": null,
+   "landing": null,
+   "eez": "outside",
+   "areaJa": "北朝鮮西岸付近",
+   "landingJa": "いずれも朝鮮半島東の我が国の排他的経済水域(EEZ)外であり、飛翔距離等については以下のとおり",
+   "directionJa": "東",
+   "textJa": "北朝鮮は本日３時台、北朝鮮西岸付近から、２発の弾道ミサイルを、東方向に向けて発射しました。詳細については現在分析中ですが、落下したのはいずれも朝鮮半島東の我が国の排他的経済水域（ＥＥＺ）外であり、飛翔距離等については以下のとおりと推定しています。また、当該弾道ミサイルは変則軌道で飛翔した可能性があり、引き続き分析中です。①３時２９分頃発射し、最高高度約５０ｋｍ程度で、約５５０ｋｍ程度飛翔。②３時４５分頃発射し、最高高度約５０ｋｍ程度で、約６００ｋｍ程度飛翔。",
+   "url": "https://www.mod.go.jp/j/press/news/2023/07/19b.pdf",
+   "htmlUrl": "https://www.mod.go.jp/j/press/news/2023/07/19b.html",
+   "fetched": "2026-10-08"
+  },
+  {
+   "id": "2023-07-12c",
+   "published": "2023-07-12",
+   "timesJst": [
+    "09:59"
+   ],
+   "launchJst": "2023-07-12T09:59:00+09:00",
+   "launchUtc": "2023-07-12T00:59:00Z",
+   "precision": "minute",
+   "count": 1,
+   "countNote": "exact",
+   "weapon": "icbm-class",
+   "rangeKm": [
+    1000
+   ],
+   "rangeBound": null,
+   "apogeeKm": [
+    6000
+   ],
+   "apogeeBound": "over",
+   "flightMinutes": 74,
+   "landing": "sea-of-japan",
+   "eez": "outside",
+   "areaJa": "平壌近郊",
+   "landingJa": "北海道の奥尻島の西方約250kmの日本海(我が国の排他的経済水域(EEZ)外)",
+   "directionJa": "東",
+   "textJa": "北朝鮮は本日９時５９分頃、平壌近郊から、１発のＩＣＢＭ級弾道ミサイルを、東方向に向けて発射しました。詳細については現在分析中ですが、発射された弾道ミサイルは約７４分飛翔し１１時１３分頃、北海道の奥尻島の西方約２５０ｋｍの日本海（我が国の排他的経済水域（ＥＥＺ）外）に落下したものと推定されます。飛翔距離は約１，０００ｋｍ、また最高高度は約６，０００ｋｍを超えると推定されます。",
+   "url": "https://www.mod.go.jp/j/press/news/2023/07/12c.pdf",
+   "htmlUrl": "https://www.mod.go.jp/j/press/news/2023/07/12c.html",
+   "fetched": "2026-10-08"
+  },
+  {
+   "id": "2023-07-12b",
+   "published": "2023-07-12",
+   "timesJst": [
+    "09:59"
+   ],
+   "launchJst": "2023-07-12T09:59:00+09:00",
+   "launchUtc": "2023-07-12T00:59:00Z",
+   "precision": "minute",
+   "count": 1,
+   "countNote": "at least",
+   "weapon": "ballistic",
+   "rangeKm": [],
+   "rangeBound": null,
+   "apogeeKm": [],
+   "apogeeBound": null,
+   "flightMinutes": null,
+   "landing": "sea-of-japan",
+   "eez": "outside",
+   "areaJa": "北朝鮮内陸部",
+   "landingJa": null,
+   "directionJa": "東",
+   "textJa": "北朝鮮は本日９時５９分頃、北朝鮮内陸部から、少なくとも１発の弾道ミサイルを、東方向に向けて発射しました。発射された弾道ミサイルは現在飛翔中であるため、今後変わり得るものの、現時点においては、朝鮮半島の東方約５５０㎞の我が国の排他的経済水域（ＥＥＺ）外の日本海に、１１時１３分頃落下すると推定しております。",
+   "url": "https://www.mod.go.jp/j/press/news/2023/07/12b.pdf",
+   "htmlUrl": "https://www.mod.go.jp/j/press/news/2023/07/12b.html",
+   "fetched": "2026-10-08"
+  },
+  {
+   "id": "2023-06-15g",
+   "published": "2023-06-15",
+   "timesJst": [
+    "19:24",
+    "19:36"
+   ],
+   "launchJst": "2023-06-15T19:24:00+09:00",
+   "launchUtc": "2023-06-15T10:24:00Z",
+   "precision": "minute",
+   "count": 2,
+   "countNote": "at least",
+   "weapon": "ballistic",
+   "rangeKm": [
+    850,
+    900
+   ],
+   "rangeBound": null,
+   "apogeeKm": [
+    50,
+    50
+   ],
+   "apogeeBound": null,
+   "flightMinutes": 11,
+   "landing": "sea-of-japan",
+   "eez": "inside",
+   "areaJa": "北朝鮮西岸付近",
+   "landingJa": "石川へぐらじま県の舳倉島の北北西約250kmの日本海(我が国の排他的経済水域(EEZ)内)",
+   "directionJa": "東",
+   "textJa": "北朝鮮は本日１９時台、北朝鮮西岸付近から、少なくとも２発の弾道ミサイルを、東方向に向けて発射しました。当該弾道ミサイルは変則軌道で飛翔した可能性があり、引き続き分析中です。①１９時２４分頃発射し、約１１分飛翔し、１９時３５分頃、石川へぐらじま県の舳倉島の北北西約２５０ｋｍの日本海（我が国の排他的経済水域（EEZ）内）に落下したものと推定。飛翔距離は約８５０ｋｍ、また最高高度は約５０ｋｍ程度と推定されます。②１９時３６分頃発射し、約１１分飛翔し、１９時４７分頃、石川県の舳倉島の北北西約２５０ｋｍの日本海（我が国の排他的経済水域（EEZ）内）に落下したものと推定。飛翔距離は約９００ｋｍ、また最高高度は約５０ｋｍ程度と推定されます。",
+   "url": "https://www.mod.go.jp/j/press/news/2023/06/15g.pdf",
+   "htmlUrl": "https://www.mod.go.jp/j/press/news/2023/06/15g.html",
+   "fetched": "2026-10-08"
+  },
+  {
+   "id": "2023-05-31c",
+   "published": "2023-05-31",
+   "timesJst": [
+    "06:28"
+   ],
+   "launchJst": "2023-05-31T06:28:00+09:00",
+   "launchUtc": "2023-05-30T21:28:00Z",
+   "precision": "minute",
+   "count": 1,
+   "countNote": "exact",
+   "weapon": "possible-ballistic",
+   "rangeKm": [],
+   "rangeBound": null,
+   "apogeeKm": [],
+   "apogeeBound": null,
+   "flightMinutes": null,
+   "landing": "yellow-sea",
+   "eez": null,
+   "areaJa": "北朝鮮西岸の東倉里(トンチャンリ)付近",
+   "landingJa": null,
+   "directionJa": "南",
+   "textJa": "北朝鮮は本日６時２８分頃、北朝鮮西岸の東倉里（トンチャンリ）付近から、１発の弾道ミサイルの可能性があるものを、南方向に向けて発射しましたが、６時３５分頃、黄海上空で消失したものと推定しています。また、この発射は、北朝鮮が予告した期間内で、予告した方向に発射したものですが、黄海上空で消失し、宇宙空間への何らかの物体の投入はされていないものと推定しています。詳細については現在分析中です。",
+   "url": "https://www.mod.go.jp/j/press/news/2023/05/31c.pdf",
+   "htmlUrl": "https://www.mod.go.jp/j/press/news/2023/05/31c.html",
+   "fetched": "2026-10-08"
+  },
+  {
+   "id": "2023-04-13d",
+   "published": "2023-04-13",
+   "timesJst": [
+    "07:22"
+   ],
+   "launchJst": "2023-04-13T07:22:00+09:00",
+   "launchUtc": "2023-04-12T22:22:00Z",
+   "precision": "minute",
+   "count": 1,
+   "countNote": "at least",
+   "weapon": "icbm-class",
+   "rangeKm": [],
+   "rangeBound": null,
+   "apogeeKm": [],
+   "apogeeBound": null,
+   "flightMinutes": null,
+   "landing": null,
+   "eez": null,
+   "areaJa": "北朝鮮内陸部",
+   "landingJa": null,
+   "directionJa": "東",
+   "textJa": "北朝鮮は本日７時２２分頃、北朝鮮内陸部から、少なくとも１発のＩＣＢＭ級弾道ミサイルの可能性がある弾道ミサイルを、高い角度で東方向に向けて発射したとみられます。発射された弾道ミサイルは我が国領域内へは落下していないことを確認しました。我が国ＥＥＺへの飛来も確認されておりません。これ以上の詳細は現在分析中です。",
+   "url": "https://www.mod.go.jp/j/press/news/2023/04/13d.pdf",
+   "htmlUrl": "https://www.mod.go.jp/j/press/news/2023/04/13d.html",
+   "fetched": "2026-10-08"
+  },
+  {
+   "id": "2023-03-27b",
+   "published": "2023-03-27",
+   "timesJst": [
+    "07:47",
+    "07:57"
+   ],
+   "launchJst": "2023-03-27T07:47:00+09:00",
+   "launchUtc": "2023-03-26T22:47:00Z",
+   "precision": "minute",
+   "count": 2,
+   "countNote": "exact",
+   "weapon": "ballistic",
+   "rangeKm": [
+    350,
+    350
+   ],
+   "rangeBound": null,
+   "apogeeKm": [
+    50,
+    50
+   ],
+   "apogeeBound": null,
+   "flightMinutes": null,
+   "landing": "near-east-coast",
+   "eez": "outside",
+   "areaJa": "北朝鮮西岸付近",
+   "landingJa": "いずれも朝鮮半島東岸付近の我が国の排他的経済水域(EEZ)外",
+   "directionJa": "北東",
+   "textJa": "北朝鮮は本日７時台、北朝鮮西岸付近から、２発の弾道ミサイルを、北東方向に向けて発射しました。詳細については現在分析中ですが、落下したのはいずれも朝鮮半島東岸付近の我が国の排他的経済水域（ＥＥＺ）外であると推定されます。また、当該弾道ミサイルは変則軌道で飛翔した可能性があり、引き続き分析中です。①７時４７分頃発射し、最高高度約５０ｋｍ程度で、約３５０ｋｍ程度飛翔。②７時５７分頃発射し、最高高度約５０ｋｍ程度で、約３５０ｋｍ程度飛翔。",
+   "url": "https://www.mod.go.jp/j/press/news/2023/03/27b.pdf",
+   "htmlUrl": "https://www.mod.go.jp/j/press/news/2023/03/27b.html",
+   "fetched": "2026-10-08"
+  },
+  {
+   "id": "2023-03-16d",
+   "published": "2023-03-16",
+   "timesJst": [
+    "07:09"
+   ],
+   "launchJst": "2023-03-16T07:09:00+09:00",
+   "launchUtc": "2023-03-15T22:09:00Z",
+   "precision": "minute",
+   "count": 1,
+   "countNote": "exact",
+   "weapon": "icbm-class",
+   "rangeKm": [
+    1000
+   ],
+   "rangeBound": null,
+   "apogeeKm": [
+    6000
+   ],
+   "apogeeBound": "over",
+   "flightMinutes": 70,
+   "landing": "sea-of-japan",
+   "eez": "outside",
+   "areaJa": "平壌近郊",
+   "landingJa": "北海道の渡島大島の西方約200kmの日本海(我が国の排他的経済水域(EEZ)外)",
+   "directionJa": "東",
+   "textJa": "北朝鮮は本日７時９分頃、平壌近郊から、１発のＩＣＢＭ級弾道ミサイルを、東方向に向けて発射しました。詳細については現在分析中ですが、発射された弾道ミサイルは約７０分飛翔し、８時１９分頃、北海道の渡島大島の西方約２００ｋｍの日本海（我が国の排他的経済水域（ＥＥＺ）外）に落下したものと推定されます。飛翔距離は約１，０００ｋｍ、また最高高度は約６，０００ｋｍを超えると推定されます。",
+   "url": "https://www.mod.go.jp/j/press/news/2023/03/16d.pdf",
+   "htmlUrl": "https://www.mod.go.jp/j/press/news/2023/03/16d.html",
+   "fetched": "2026-10-08"
+  },
+  {
+   "id": "2023-03-16c",
+   "published": "2023-03-16",
+   "timesJst": [
+    "07:09"
+   ],
+   "launchJst": "2023-03-16T07:09:00+09:00",
+   "launchUtc": "2023-03-15T22:09:00Z",
+   "precision": "minute",
+   "count": 1,
+   "countNote": "exact",
+   "weapon": "ballistic",
+   "rangeKm": [],
+   "rangeBound": null,
+   "apogeeKm": [],
+   "apogeeBound": null,
+   "flightMinutes": null,
+   "landing": "sea-of-japan",
+   "eez": "outside",
+   "areaJa": "北朝鮮西岸",
+   "landingJa": null,
+   "directionJa": "東",
+   "textJa": "北朝鮮は本日７時９分頃、北朝鮮西岸から、１発の弾道ミサイルを、東方向に向けて発射しました。発射された弾道ミサイルは現在飛翔中であるため、今後変わり得るものの、現時点においては、朝鮮半島の東約５５０㎞の我が国の排他的経済水域（ＥＥＺ）外の日本海に、８時１８分頃落下すると推定しております。",
+   "url": "https://www.mod.go.jp/j/press/news/2023/03/16c.pdf",
+   "htmlUrl": "https://www.mod.go.jp/j/press/news/2023/03/16c.html",
+   "fetched": "2026-10-08"
+  },
+  {
+   "id": "2023-02-20b",
+   "published": "2023-02-20",
+   "timesJst": [
+    "06:59",
+    "07:10"
+   ],
+   "launchJst": "2023-02-20T06:59:00+09:00",
+   "launchUtc": "2023-02-19T21:59:00Z",
+   "precision": "minute",
+   "count": 2,
+   "countNote": "exact",
+   "weapon": "ballistic",
+   "rangeKm": [
+    400,
+    350
+   ],
+   "rangeBound": null,
+   "apogeeKm": [
+    100,
+    50
+   ],
+   "apogeeBound": null,
+   "flightMinutes": null,
+   "landing": "sea-of-japan",
+   "eez": "outside",
+   "areaJa": "北朝鮮西岸付近",
+   "landingJa": "いずれも朝鮮半島東側の日本海であり、我が国の排他的経済水域(EEZ)外",
+   "directionJa": "東",
+   "textJa": "北朝鮮は本日７時頃、北朝鮮西岸付近から、２発の弾道ミサイルを、東方向に向けて発射しました。詳細については現在分析中ですが、落下したのはいずれも朝鮮半島東側の日本海であり、我が国の排他的経済水域（ＥＥＺ）外であると推定されます。①６時５９分頃発射し、最高高度約１００ｋｍ程度で、約４００ｋｍ程度飛翔。②７時１０分頃発射し、最高高度約５０ｋｍ程度で、約３５０ｋｍ程度飛翔。",
+   "url": "https://www.mod.go.jp/j/press/news/2023/02/20b.pdf",
+   "htmlUrl": "https://www.mod.go.jp/j/press/news/2023/02/20b.html",
+   "fetched": "2026-10-08"
+  },
+  {
+   "id": "2023-02-18c",
+   "published": "2023-02-18",
+   "timesJst": [
+    "17:21"
+   ],
+   "launchJst": "2023-02-18T17:21:00+09:00",
+   "launchUtc": "2023-02-18T08:21:00Z",
+   "precision": "minute",
+   "count": 1,
+   "countNote": "exact",
+   "weapon": "icbm-class",
+   "rangeKm": [
+    900
+   ],
+   "rangeBound": null,
+   "apogeeKm": [
+    5700
+   ],
+   "apogeeBound": null,
+   "flightMinutes": 66,
+   "landing": "sea-of-japan",
+   "eez": "inside",
+   "areaJa": "平壌近郊",
+   "landingJa": "北海道の渡島大島の西方約200kmの日本海(我が国の排他的経済水域(EEZ)内)",
+   "directionJa": "東",
+   "textJa": "北朝鮮は本日１７時２１分頃、平壌近郊から、１発のＩＣＢＭ級弾道ミサイルを、東方向に向けて発射しました。詳細については現在分析中ですが、発射された弾道ミサイルは約６６分飛翔し、１８時２７分頃、北海道の渡島大島の西方約２００ｋｍの日本海（我が国の排他的経済水域（ＥＥＺ）内）に落下したものと推定されます。飛翔距離は約９００ｋｍ、また最高高度は約５，７００ｋｍ程度と推定されます。",
+   "url": "https://www.mod.go.jp/j/press/news/2023/02/18c.pdf",
+   "htmlUrl": "https://www.mod.go.jp/j/press/news/2023/02/18c.html",
+   "fetched": "2026-10-08"
+  },
+  {
+   "id": "2022-12-31b",
+   "published": "2022-12-31",
+   "timesJst": [
+    "08:01",
+    "08:14",
+    "08:15"
+   ],
+   "launchJst": "2022-12-31T08:01:00+09:00",
+   "launchUtc": "2022-12-30T23:01:00Z",
+   "precision": "minute",
+   "count": 3,
+   "countNote": "exact",
+   "weapon": "ballistic",
+   "rangeKm": [
+    350,
+    350,
+    350
+   ],
+   "rangeBound": null,
+   "apogeeKm": [
+    100,
+    100,
+    100
+   ],
+   "apogeeBound": null,
+   "flightMinutes": null,
+   "landing": "near-east-coast",
+   "eez": "outside",
+   "areaJa": "平壌近郊",
+   "landingJa": "いずれも朝鮮半島東岸付近であり、我が国の排他的経済水域(EEZ)外",
+   "directionJa": "北東",
+   "textJa": "北朝鮮は本日８時台、平壌近郊から、３発の弾道ミサイルを、北東方向に向けて発射しました。詳細については現在分析中ですが、落下したのはいずれも朝鮮半島東岸付近であり、我が国の排他的経済水域（ＥＥＺ）外であると推定されます。①８時０１分頃、平壌近郊から北東方向に向けて発射し、最高高度約１００ｋｍ程度で、約３５０ｋｍ程度飛翔。②８時１４分頃、平壌近郊から北東方向に向けて発射し、最高高度約１００ｋｍ程度で、約３５０ｋｍ程度飛翔。③８時１５分頃、平壌近郊から北東方向に向けて発射し、最高高度約１００ｋｍ程度で、約３５０ｋｍ程度飛翔。",
+   "url": "https://www.mod.go.jp/j/press/news/2022/12/31b.pdf",
+   "htmlUrl": "https://www.mod.go.jp/j/press/news/2022/12/31b.html",
+   "fetched": "2026-10-08"
+  },
+  {
+   "id": "2022-12-23c",
+   "published": "2022-12-23",
+   "timesJst": [
+    "16:31"
+   ],
+   "launchJst": "2022-12-23T16:31:00+09:00",
+   "launchUtc": "2022-12-23T07:31:00Z",
+   "precision": "minute",
+   "count": 1,
+   "countNote": "at least",
+   "weapon": "ballistic",
+   "rangeKm": [
+    300
+   ],
+   "rangeBound": null,
+   "apogeeKm": [
+    50
+   ],
+   "apogeeBound": null,
+   "flightMinutes": null,
+   "landing": "sea-of-japan",
+   "eez": "outside",
+   "areaJa": "平壌近郊",
+   "landingJa": "朝鮮半島東側の日本海で、我が国の排他的経済水域(EEZ)外",
+   "directionJa": "東",
+   "textJa": "北朝鮮は本日１６時３１分頃、平壌近郊から、少なくとも１発の弾道ミサイルを、東方向に向けて発射しました。詳細については現在分析中ですが、最高高度約５０ｋｍ程度で、約３００ｋｍ程度飛翔し、落下したのは朝鮮半島東側の日本海で、我が国の排他的経済水域（ＥＥＺ）外と推定されます。また、当該弾道ミサイルは変則軌道で飛翔した可能性があり、引き続き分析中です。",
+   "url": "https://www.mod.go.jp/j/press/news/2022/12/23c.pdf",
+   "htmlUrl": "https://www.mod.go.jp/j/press/news/2022/12/23c.html",
+   "fetched": "2026-10-08"
+  },
+  {
+   "id": "2022-12-18b",
+   "published": "2022-12-18",
+   "timesJst": [
+    "11:11",
+    "11:52"
+   ],
+   "launchJst": "2022-12-18T11:11:00+09:00",
+   "launchUtc": "2022-12-18T02:11:00Z",
+   "precision": "minute",
+   "count": 2,
+   "countNote": "exact",
+   "weapon": "ballistic",
+   "rangeKm": [
+    500,
+    500
+   ],
+   "rangeBound": null,
+   "apogeeKm": [
+    550,
+    550
+   ],
+   "apogeeBound": null,
+   "flightMinutes": null,
+   "landing": "sea-of-japan",
+   "eez": "outside",
+   "areaJa": "北朝鮮西岸付近",
+   "landingJa": "いずれも朝鮮半島東側の日本海で、我が国の排他的経済水域(EEZ)外であり、飛翔距離等については以下のとおり",
+   "directionJa": "東",
+   "textJa": "北朝鮮は、本日１１時台、２発の弾道ミサイルを発射しました。詳細については現在分析中ですが、落下したのはいずれも朝鮮半島東側の日本海で、我が国の排他的経済水域（ＥＥＺ）外であり、飛翔距離等については以下のとおりと推定しています。①１１時１１分頃、北朝鮮西岸付近から東方向に向けて発射し、最高高度約５５０ｋｍ程度で、約５００ｋｍ程度飛翔。②１１時５２分頃、北朝鮮西岸付近から東方向に向けて発射し、最高高度約５５０ｋｍ程度で、約５００ｋｍ程度飛翔。",
+   "url": "https://www.mod.go.jp/j/press/news/2022/12/18b.pdf",
+   "htmlUrl": "https://www.mod.go.jp/j/press/news/2022/12/18b.html",
+   "fetched": "2026-10-08"
+  },
+  {
+   "id": "2022-11-18c",
+   "published": "2022-11-18",
+   "timesJst": [
+    "10:14"
+   ],
+   "launchJst": "2022-11-18T10:14:00+09:00",
+   "launchUtc": "2022-11-18T01:14:00Z",
+   "precision": "minute",
+   "count": 1,
+   "countNote": "exact",
+   "weapon": "icbm-class",
+   "rangeKm": [
+    1000
+   ],
+   "rangeBound": null,
+   "apogeeKm": [
+    6000
+   ],
+   "apogeeBound": null,
+   "flightMinutes": 69,
+   "landing": "sea-of-japan",
+   "eez": "inside",
+   "areaJa": "平壌近郊",
+   "landingJa": "北海道の渡島大島の西方約200kmの日本海(我が国の排他的経済水域(EEZ)内)",
+   "directionJa": "東",
+   "textJa": "北朝鮮は本日１０時１４分頃、平壌近郊から、１発のＩＣＢＭ級弾道ミサイルを、東方向に向けて発射しました。詳細については現在分析中ですが、発射された弾道ミサイルは約６９分飛翔し、１１時２３分頃、北海道の渡島大島の西方約２００ｋｍの日本海（我が国の排他的経済水域（ＥＥＺ）内）に落下したものと推定されます。飛翔距離は約１，０００ｋｍ、また最高高度は約６，０００ｋｍ程度と推定されます。",
+   "url": "https://www.mod.go.jp/j/press/news/2022/11/18c.pdf",
+   "htmlUrl": "https://www.mod.go.jp/j/press/news/2022/11/18c.html",
+   "fetched": "2026-10-08"
+  },
+  {
+   "id": "2022-11-18b",
+   "published": "2022-11-18",
+   "timesJst": [
+    "10:14"
+   ],
+   "launchJst": "2022-11-18T10:14:00+09:00",
+   "launchUtc": "2022-11-18T01:14:00Z",
+   "precision": "minute",
+   "count": 1,
+   "countNote": "exact",
+   "weapon": "icbm-class",
+   "rangeKm": [],
+   "rangeBound": null,
+   "apogeeKm": [],
+   "apogeeBound": null,
+   "flightMinutes": null,
+   "landing": "sea-of-japan",
+   "eez": "inside",
+   "areaJa": "朝鮮半島西岸付近",
+   "landingJa": null,
+   "directionJa": "東",
+   "textJa": "北朝鮮は本日１０時１４分頃、朝鮮半島西岸付近から、１発のＩＣＢＭ級弾道ミサイルを、東方向に向けて発射しました。詳細については現在分析中ですが、発射された弾道ミサイルは現在飛翔中ですが、我が国の排他的経済水域（ＥＥＺ）内の日本海に落下する可能性があります。",
+   "url": "https://www.mod.go.jp/j/press/news/2022/11/18b.pdf",
+   "htmlUrl": "https://www.mod.go.jp/j/press/news/2022/11/18b.html",
+   "fetched": "2026-10-08"
+  },
+  {
+   "id": "2022-11-17c",
+   "published": "2022-11-17",
+   "timesJst": [
+    "10:47"
+   ],
+   "launchJst": "2022-11-17T10:47:00+09:00",
+   "launchUtc": "2022-11-17T01:47:00Z",
+   "precision": "minute",
+   "count": 1,
+   "countNote": "exact",
+   "weapon": "ballistic",
+   "rangeKm": [],
+   "rangeBound": null,
+   "apogeeKm": [],
+   "apogeeBound": null,
+   "flightMinutes": null,
+   "landing": "near-east-coast",
+   "eez": null,
+   "areaJa": "北朝鮮東岸付近",
+   "landingJa": "朝鮮半島東岸付近",
+   "directionJa": "北東",
+   "textJa": "北朝鮮は本日１０時４７分頃、北朝鮮東岸付近から、１発の弾道ミサイルを、北東方向に向けて発射しました。詳細については現在分析中ですが、落下したのは朝鮮半島東岸付近と推定されます。",
+   "url": "https://www.mod.go.jp/j/press/news/2022/11/17c.pdf",
+   "htmlUrl": "https://www.mod.go.jp/j/press/news/2022/11/17c.html",
+   "fetched": "2026-10-08"
+  },
+  {
+   "id": "2022-11-09c",
+   "published": "2022-11-09",
+   "timesJst": [
+    "15:31"
+   ],
+   "launchJst": "2022-11-09T15:31:00+09:00",
+   "launchUtc": "2022-11-09T06:31:00Z",
+   "precision": "minute",
+   "count": 1,
+   "countNote": "exact",
+   "weapon": "ballistic",
+   "rangeKm": [
+    250
+   ],
+   "rangeBound": null,
+   "apogeeKm": [
+    50
+   ],
+   "apogeeBound": null,
+   "flightMinutes": null,
+   "landing": "near-east-coast",
+   "eez": "outside",
+   "areaJa": "北朝鮮西岸付近",
+   "landingJa": "朝鮮半島東岸付近の我が国の排他的経済水域(EEZ)外",
+   "directionJa": "東",
+   "textJa": "北朝鮮は、本日１５時３１分頃、北朝鮮西岸付近から、１発の弾道ミサイルを、東方向に向けて発射しました。詳細については現在分析中ですが、最高高度約５０ｋｍ以下の極めて低い高度で、約２５０ｋｍ程度飛翔し、落下したのは朝鮮半島東岸付近の我が国の排他的経済水域（ＥＥＺ）外であると推定しています。",
+   "url": "https://www.mod.go.jp/j/press/news/2022/11/09c.pdf",
+   "htmlUrl": "https://www.mod.go.jp/j/press/news/2022/11/09c.html",
+   "fetched": "2026-10-08"
+  },
+  {
+   "id": "2022-11-03d",
+   "published": "2022-11-03",
+   "timesJst": [
+    "21:34",
+    "21:39",
+    "21:42"
+   ],
+   "launchJst": "2022-11-03T21:34:00+09:00",
+   "launchUtc": "2022-11-03T12:34:00Z",
+   "precision": "minute",
+   "count": 3,
+   "countNote": "exact",
+   "weapon": "ballistic",
+   "rangeKm": [
+    500,
+    500,
+    500
+   ],
+   "rangeBound": null,
+   "apogeeKm": [
+    150,
+    150,
+    150
+   ],
+   "apogeeBound": null,
+   "flightMinutes": null,
+   "landing": "sea-of-japan",
+   "eez": "outside",
+   "areaJa": "北朝鮮内陸部",
+   "landingJa": "いずれも朝鮮半島東側の日本海の我が国の排他的経済水域(EEZ)外であり、飛翔距離等については以下のとおり",
+   "directionJa": "東",
+   "textJa": "北朝鮮は本日２１時台、北朝鮮内陸部から、３発の弾道ミサイルを東方向に向けて発射しました。詳細については現在分析中ですが、落下したのはいずれも朝鮮半島東側の日本海の我が国の排他的経済水域（ＥＥＺ）外であり、飛翔距離等については以下のとおりと推定しています。①２１時３４分頃発射し、最高高度約１５０ｋｍ程度で、約５００ｋｍ程度飛翔。②２１時３９分頃発射し、最高高度約１５０ｋｍ程度で、約５００ｋｍ程度飛翔。③２１時４２分頃発射し、最高高度約１５０ｋｍ程度で、約５００ｋｍ程度飛翔。",
+   "url": "https://www.mod.go.jp/j/press/news/2022/11/03d.pdf",
+   "htmlUrl": "https://www.mod.go.jp/j/press/news/2022/11/03d.html",
+   "fetched": "2026-10-08"
+  },
+  {
+   "id": "2022-11-03b",
+   "published": "2022-11-03",
+   "timesJst": [
+    "07:39",
+    "08:39",
+    "08:48"
+   ],
+   "launchJst": "2022-11-03T07:39:00+09:00",
+   "launchUtc": "2022-11-02T22:39:00Z",
+   "precision": "minute",
+   "count": 3,
+   "countNote": "at least",
+   "weapon": "icbm-class",
+   "rangeKm": [
+    750,
+    350,
+    350
+   ],
+   "rangeBound": null,
+   "apogeeKm": [
+    2000,
+    50,
+    50
+   ],
+   "apogeeBound": null,
+   "flightMinutes": null,
+   "landing": null,
+   "eez": "outside",
+   "areaJa": "北朝鮮西岸付近",
+   "landingJa": "いずれも我が国の排他的経済水域(EEZ)外であり、飛翔距離等については以下の通り",
+   "directionJa": "東",
+   "textJa": "北朝鮮は本日７時台から８時台にかけ、ＩＣＢＭ級の可能性があるものも含め、少なくとも３発の弾道ミサイルを、東方向に向けて発射しました。詳細については現在分析中ですが、落下したのはいずれも我が国の排他的経済水域（ＥＥＺ）外であり、飛翔距離等については以下の通りと推定しています。①７時３９分頃、北朝鮮西岸付近から発射し、最高高度約２，０００ｋｍ程度で、約７５０ｋｍ程度飛翔し、朝鮮半島東側の日本海に落下。当該ミサイルはＩＣＢＭ級の可能性があります。②８時３９分頃、北朝鮮内陸部から発射し、最高高度約５０ｋｍ程度で、約３５０ｋｍ程度飛翔し、朝鮮半島東岸付近に落下。③８時４８分頃、北朝鮮内陸部から発射し、最高高度約５０ｋｍ程度で、約３５０ｋｍ程度飛翔し、朝鮮半島東岸付近に落下。なお、日本列島を超えて飛翔する可能性があると探知したものについては、その後、当該情報を確認したところ、探知したものは日本列島を超えず、日本海上空にてレーダーから消失したことが確認されました。",
+   "url": "https://www.mod.go.jp/j/press/news/2022/11/03b.pdf",
+   "htmlUrl": "https://www.mod.go.jp/j/press/news/2022/11/03b.html",
+   "fetched": "2026-10-08"
+  },
+  {
+   "id": "2022-11-02e",
+   "published": "2022-11-02",
+   "timesJst": [
+    "16"
+   ],
+   "launchJst": "2022-11-02T16:00:00+09:00",
+   "launchUtc": "2022-11-02T07:00:00Z",
+   "precision": "hour",
+   "count": 1,
+   "countNote": "at least",
+   "weapon": "possible-ballistic",
+   "rangeKm": [],
+   "rangeBound": null,
+   "apogeeKm": [
+    50
+   ],
+   "apogeeBound": null,
+   "flightMinutes": null,
+   "landing": null,
+   "eez": "outside",
+   "areaJa": "北朝鮮東岸付近",
+   "landingJa": "我が国の排他的経済水域(EEZ)外",
+   "directionJa": "東",
+   "textJa": "北朝鮮は本日１６時台、北朝鮮東岸付近から、少なくとも１発の弾道ミサイルの可能性があるものを東方向に向けて発射しました。詳細については現在分析中ですが、最高高度約５０ｋｍ以下の極めて低い高度で短距離を飛翔し、落下したのは我が国の排他的経済水域（ＥＥＺ）外と推定されます。",
+   "url": "https://www.mod.go.jp/j/press/news/2022/11/02e.pdf",
+   "htmlUrl": "https://www.mod.go.jp/j/press/news/2022/11/02e.html",
+   "fetched": "2026-10-08"
+  },
+  {
+   "id": "2022-11-02c",
+   "published": "2022-11-02",
+   "timesJst": [
+    "08:50"
+   ],
+   "launchJst": "2022-11-02T08:50:00+09:00",
+   "launchUtc": "2022-11-01T23:50:00Z",
+   "precision": "minute",
+   "count": 2,
+   "countNote": "at least",
+   "weapon": "ballistic",
+   "rangeKm": [
+    150,
+    200
+   ],
+   "rangeBound": null,
+   "apogeeKm": [
+    150,
+    100
+   ],
+   "apogeeBound": null,
+   "flightMinutes": null,
+   "landing": "near-east-coast",
+   "eez": "outside",
+   "areaJa": "北朝鮮東岸付近",
+   "landingJa": "いずれも朝鮮半島東岸付近であり、我が国の排他的経済水域(EEZ)外",
+   "directionJa": "南東",
+   "textJa": "北朝鮮は本日８時５０分頃、北朝鮮東岸付近から、少なくとも２発の弾道ミサイルを、東及び南東方向に向けて発射しました。詳細については現在分析中ですが、落下したのはいずれも朝鮮半島東岸付近であり、我が国の排他的経済水域（ＥＥＺ）外と推定されます。また、当該弾道ミサイルは変則軌道で飛翔した可能性があり、飛翔距離等については以下のとおりと推定されますが、引き続き分析中です。①北朝鮮東岸付近から東方向に向けて発射し、最高高度約１５０ｋｍ程度で、約１５０ｋｍ程度飛翔。②北朝鮮東岸付近から南東方向に向けて発射し、最高高度約１００ｋｍ程度で、約２００ｋｍ程度飛翔。",
+   "url": "https://www.mod.go.jp/j/press/news/2022/11/02c.pdf",
+   "htmlUrl": "https://www.mod.go.jp/j/press/news/2022/11/02c.html",
+   "fetched": "2026-10-08"
+  },
+  {
+   "id": "2022-10-28c",
+   "published": "2022-10-28",
+   "timesJst": [],
+   "launchJst": "2022-10-28T00:00:00+09:00",
+   "launchUtc": "2022-10-27T15:00:00Z",
+   "precision": "day",
+   "count": 2,
+   "countNote": "exact",
+   "weapon": "other",
+   "rangeKm": [],
+   "rangeBound": null,
+   "apogeeKm": [],
+   "apogeeBound": null,
+   "flightMinutes": null,
+   "landing": null,
+   "eez": null,
+   "areaJa": null,
+   "landingJa": null,
+   "directionJa": null,
+   "textJa": "現時点で得られた情報を総合的に勘案すると、本日昼頃、北朝鮮はミサイルを２発発射しました。当該ミサイルの弾種等については、引き続き情報収集・分析を行っているところです。",
+   "url": "https://www.mod.go.jp/j/press/news/2022/10/28c.pdf",
+   "htmlUrl": "https://www.mod.go.jp/j/press/news/2022/10/28c.html",
+   "fetched": "2026-10-08"
+  },
+  {
+   "id": "2022-10-14b",
+   "published": "2022-10-14",
+   "timesJst": [
+    "01:47"
+   ],
+   "launchJst": "2022-10-14T01:47:00+09:00",
+   "launchUtc": "2022-10-13T16:47:00Z",
+   "precision": "minute",
+   "count": 1,
+   "countNote": "at least",
+   "weapon": "ballistic",
+   "rangeKm": [
+    650
+   ],
+   "rangeBound": null,
+   "apogeeKm": [
+    50
+   ],
+   "apogeeBound": null,
+   "flightMinutes": null,
+   "landing": "sea-of-japan",
+   "eez": "outside",
+   "areaJa": "北朝鮮平壌近郊",
+   "landingJa": "朝鮮半島東側の日本海の、我が国の排他的経済水域(EEZ)外",
+   "directionJa": "東",
+   "textJa": "北朝鮮は本日１時４７分頃、北朝鮮平壌近郊から、少なくとも１発の弾道ミサイルを、東方向に向けて発射しました。詳細については現在分析中ですが、最高高度約５０ｋｍ程度で、約６５０ｋｍ程度飛翔し、落下したのは朝鮮半島東側の日本海の、我が国の排他的経済水域（ＥＥＺ）外と推定されます。また、当該弾道ミサイルは変則軌道で飛翔した可能性があり、引き続き分析中です。",
+   "url": "https://www.mod.go.jp/j/press/news/2022/10/14b.pdf",
+   "htmlUrl": "https://www.mod.go.jp/j/press/news/2022/10/14b.html",
+   "fetched": "2026-10-08"
+  },
+  {
+   "id": "2022-10-09b",
+   "published": "2022-10-09",
+   "timesJst": [
+    "01:47",
+    "01:53"
+   ],
+   "launchJst": "2022-10-09T01:47:00+09:00",
+   "launchUtc": "2022-10-08T16:47:00Z",
+   "precision": "minute",
+   "count": 2,
+   "countNote": "exact",
+   "weapon": "ballistic",
+   "rangeKm": [
+    350,
+    350
+   ],
+   "rangeBound": null,
+   "apogeeKm": [
+    100,
+    100
+   ],
+   "apogeeBound": null,
+   "flightMinutes": null,
+   "landing": "sea-of-japan",
+   "eez": "outside",
+   "areaJa": "北朝鮮東岸付近",
+   "landingJa": "朝鮮半島東側の日本海であり、いずれも我が国の排他的経済水域(EEZ)外",
+   "directionJa": "東",
+   "textJa": "北朝鮮は本日１時台、北朝鮮東岸付近から、２発の弾道ミサイルを、東方向に向けて発射しました。詳細については現在分析中ですが、落下したのは朝鮮半島東側の日本海であり、いずれも我が国の排他的経済水域（ＥＥＺ）外と推定されます。飛翔距離等については以下のとおりと推定され、また、発射場所が海上である可能性も含め、引き続き分析中です。①１時４７分頃、北朝鮮東岸付近から東方向に向けて発射し、最高高度約１００ｋｍ程度で、約３５０ｋｍ程度飛翔。②１時５３分頃、北朝鮮東岸付近から東方向に向けて発射し、最高高度約１００ｋｍ程度で、約３５０ｋｍ程度飛翔。",
+   "url": "https://www.mod.go.jp/j/press/news/2022/10/09b.pdf",
+   "htmlUrl": "https://www.mod.go.jp/j/press/news/2022/10/09b.html",
+   "fetched": "2026-10-08"
+  },
+  {
+   "id": "2022-10-06b",
+   "published": "2022-10-06",
+   "timesJst": [
+    "06:00",
+    "06:15"
+   ],
+   "launchJst": "2022-10-06T06:00:00+09:00",
+   "launchUtc": "2022-10-05T21:00:00Z",
+   "precision": "minute",
+   "count": 2,
+   "countNote": "exact",
+   "weapon": "ballistic",
+   "rangeKm": [
+    350,
+    800
+   ],
+   "rangeBound": null,
+   "apogeeKm": [
+    100,
+    50
+   ],
+   "apogeeBound": null,
+   "flightMinutes": null,
+   "landing": "sea-of-japan",
+   "eez": "outside",
+   "areaJa": "北朝鮮内陸部",
+   "landingJa": "北朝鮮東岸付近及び日本海であり、いずれも我が国の排他的経済水域(EEZ)外",
+   "directionJa": "東",
+   "textJa": "北朝鮮は本日６時台、北朝鮮内陸部から、２発の弾道ミサイルを、東方向に向けて発射しました。詳細については現在分析中ですが、落下したのは北朝鮮東岸付近及び日本海であり、いずれも我が国の排他的経済水域（ＥＥＺ）外と推定されます。飛翔距離等については以下のとおりと推定されますが、引き続き分析中です。①６時００分頃、北朝鮮内陸部から東方向に向けて発射し、最高高度約１００ｋｍ程度で、約３５０ｋｍ程度飛翔。②６時１５分頃、北朝鮮内陸部から東方向に向けて発射し、最高高度約５０ｋｍ程度で、約８００ｋｍ程度飛翔。また、当該弾道ミサイルは変則軌道で飛翔した可能性があります。",
+   "url": "https://www.mod.go.jp/j/press/news/2022/10/06b.pdf",
+   "htmlUrl": "https://www.mod.go.jp/j/press/news/2022/10/06b.html",
+   "fetched": "2026-10-08"
+  },
+  {
+   "id": "2022-10-04b",
+   "published": "2022-10-04",
+   "timesJst": [
+    "07:22"
+   ],
+   "launchJst": "2022-10-04T07:22:00+09:00",
+   "launchUtc": "2022-10-03T22:22:00Z",
+   "precision": "minute",
+   "count": 1,
+   "countNote": "exact",
+   "weapon": "ballistic",
+   "rangeKm": [
+    4600
+   ],
+   "rangeBound": null,
+   "apogeeKm": [
+    1000
+   ],
+   "apogeeBound": null,
+   "flightMinutes": null,
+   "landing": null,
+   "eez": "outside",
+   "areaJa": "北朝鮮内陸部",
+   "landingJa": "日本の東約3,200kmの我が国排他的経済水域(EEZ)外",
+   "directionJa": "東",
+   "textJa": "北朝鮮は本日７時２２分頃、北朝鮮内陸部から、１発の弾道ミサイルを、東方向に向けて発射しました。詳細については現在分析中ですが、当該弾道ミサイルは、最高高度約１，０００ｋｍ程度で、約４，６００ｋｍ程度飛翔し、７時２８分頃から７時２９分頃にかけて、青森県上空を通過した後、７時４４分頃、日本の東約３，２００ｋｍの我が国排他的経済水域（ＥＥＺ）外に落下したものと推定されます。",
+   "url": "https://www.mod.go.jp/j/press/news/2022/10/04b.pdf",
+   "htmlUrl": "https://www.mod.go.jp/j/press/news/2022/10/04b.html",
+   "fetched": "2026-10-08"
+  },
+  {
+   "id": "2022-10-01b",
+   "published": "2022-10-01",
+   "timesJst": [
+    "06:42",
+    "06:58"
+   ],
+   "launchJst": "2022-10-01T06:42:00+09:00",
+   "launchUtc": "2022-09-30T21:42:00Z",
+   "precision": "minute",
+   "count": 2,
+   "countNote": "exact",
+   "weapon": "ballistic",
+   "rangeKm": [
+    400,
+    350
+   ],
+   "rangeBound": null,
+   "apogeeKm": [
+    50,
+    50
+   ],
+   "apogeeBound": null,
+   "flightMinutes": null,
+   "landing": "near-east-coast",
+   "eez": "outside",
+   "areaJa": "北朝鮮西岸付近",
+   "landingJa": "北朝鮮東岸付近であり、我が国の排他的経済水域(EEZ)外",
+   "directionJa": "東",
+   "textJa": "北朝鮮は本日６時台、北朝鮮西岸付近から、２発の弾道ミサイルを、東方向に向けて発射しました。詳細については現在分析中ですが、いずれも落下したのは北朝鮮東岸付近であり、我が国の排他的経済水域（ＥＥＺ）外と推定されます。また、当該弾道ミサイルは変則軌道で飛翔した可能性があり、飛翔距離等については以下のとおりと推定されますが、引き続き分析中です。①６時４２分頃、北朝鮮西岸付近から東方向に向けて発射し、最高高度約５０ｋｍ程度の低い高度で、約４００ｋｍ程度飛翔。②６時５８分頃、北朝鮮西岸付近から東方向に向けて発射し、最高高度約５０ｋｍ程度の低い高度で、約３５０ｋｍ程度飛翔。",
+   "url": "https://www.mod.go.jp/j/press/news/2022/10/01b.pdf",
+   "htmlUrl": "https://www.mod.go.jp/j/press/news/2022/10/01b.html",
+   "fetched": "2026-10-08"
+  },
+  {
+   "id": "2022-09-29d",
+   "published": "2022-09-29",
+   "timesJst": [
+    "20:47",
+    "20:53"
+   ],
+   "launchJst": "2022-09-29T20:47:00+09:00",
+   "launchUtc": "2022-09-29T11:47:00Z",
+   "precision": "minute",
+   "count": 2,
+   "countNote": "exact",
+   "weapon": "ballistic",
+   "rangeKm": [
+    300,
+    300
+   ],
+   "rangeBound": null,
+   "apogeeKm": [
+    50,
+    50
+   ],
+   "apogeeBound": null,
+   "flightMinutes": null,
+   "landing": "near-east-coast",
+   "eez": "outside",
+   "areaJa": "北朝鮮西岸付近",
+   "landingJa": "北朝鮮東岸付近であり、我が国の排他的経済水域(EEZ)外",
+   "directionJa": "東",
+   "textJa": "北朝鮮は本日２０時台、北朝鮮西岸付近から、２発の弾道ミサイルを、東方向に向けて発射しました。詳細については現在分析中ですが、いずれも落下したのは北朝鮮東岸付近であり、我が国の排他的経済水域（ＥＥＺ）外と推定されます。①２０時４７分頃、北朝鮮西岸付近から東方向に向けて発射し、最高高度約５０ｋｍ程度で、約３００ｋｍ程度飛翔。②２０時５３分頃、北朝鮮西岸付近から東方向に向けて発射し、最高高度約５０ｋｍ程度で、約３００ｋｍ程度飛翔。",
+   "url": "https://www.mod.go.jp/j/press/news/2022/09/29d.pdf",
+   "htmlUrl": "https://www.mod.go.jp/j/press/news/2022/09/29d.html",
+   "fetched": "2026-10-08"
+  },
+  {
+   "id": "2022-09-28c",
+   "published": "2022-09-28",
+   "timesJst": [
+    "18:10",
+    "18:17"
+   ],
+   "launchJst": "2022-09-28T18:10:00+09:00",
+   "launchUtc": "2022-09-28T09:10:00Z",
+   "precision": "minute",
+   "count": 2,
+   "countNote": "exact",
+   "weapon": "ballistic",
+   "rangeKm": [
+    350,
+    300
+   ],
+   "rangeBound": null,
+   "apogeeKm": [
+    50,
+    50
+   ],
+   "apogeeBound": null,
+   "flightMinutes": null,
+   "landing": "sea-of-japan",
+   "eez": "outside",
+   "areaJa": "北朝鮮西岸付近",
+   "landingJa": "北朝鮮東岸に近い日本海であり、我が国の排他的経済水域(EEZ)外",
+   "directionJa": "東",
+   "textJa": "北朝鮮は本日１８時台、北朝鮮西岸付近から、２発の弾道ミサイルを、東方向に向けて発射しました。詳細については現在分析中ですが、いずれも落下したのは北朝鮮東岸に近い日本海であり、我が国の排他的経済水域（ＥＥＺ）外と推定されます。また、当該弾道ミサイルはいずれも変則軌道で飛翔した可能性があり、飛翔距離等については以下のとおりと推定されますが、引き続き分析中です。①１８時１０分頃、北朝鮮西岸付近から東方向に向けて発射し、最高高度約５０ｋｍ程度の低い高度で、約３５０ｋｍ程度飛翔。②１８時１７分頃、北朝鮮西岸付近から東方向に向けて発射し、最高高度約５０ｋｍ程度の低い高度で、約３００ｋｍ程度飛翔。",
+   "url": "https://www.mod.go.jp/j/press/news/2022/09/28c.pdf",
+   "htmlUrl": "https://www.mod.go.jp/j/press/news/2022/09/28c.html",
+   "fetched": "2026-10-08"
+  },
+  {
+   "id": "2022-06-05b",
+   "published": "2022-06-05",
+   "timesJst": [
+    "09:06",
+    "09:10",
+    "09:15",
+    "09:24",
+    "09:30",
+    "09:41"
+   ],
+   "launchJst": "2022-06-05T09:06:00+09:00",
+   "launchUtc": "2022-06-05T00:06:00Z",
+   "precision": "minute",
+   "count": null,
+   "countNote": "multiple",
+   "weapon": "ballistic",
+   "rangeKm": [
+    350,
+    300,
+    400,
+    350,
+    400,
+    300
+   ],
+   "rangeBound": null,
+   "apogeeKm": [
+    50,
+    50,
+    50,
+    100,
+    50,
+    100
+   ],
+   "apogeeBound": null,
+   "flightMinutes": null,
+   "landing": "sea-of-japan",
+   "eez": "outside",
+   "areaJa": "北朝鮮西岸付近",
+   "landingJa": "北朝鮮東側の沿岸付近及び日本海であり、我が国の排他的経済水域(EEZ)外で、飛翔距離等については以下のとおり",
+   "directionJa": "東",
+   "textJa": "詳細については現在分析中ですが、北朝鮮は本日９時台、複数の地点から、弾道ミサイルを少なくとも６発発射しました。いずれも落下したのは北朝鮮東側の沿岸付近及び日本海であり、我が国の排他的経済水域（ＥＥＺ）外で、飛翔距離等については以下のとおりと推定されます。①９時６分頃、北朝鮮西岸付近から東方向に向けて発射し、最高高度約５０ｋｍ程度で、約３５０ｋｍ程度飛翔。②９時１０分頃、北朝鮮東岸付近から東方向に向けて発射し、最高高度約５０ｋｍ程度で、約３００ｋｍ程度飛翔。③９時１５分頃、北朝鮮西岸付近から東方向に向けて発射し、最高高度約５０ｋｍ程度で、約４００ｋｍ程度飛翔。④９時２４分頃、北朝鮮内陸部付近から東方向に向けて発射し、最高高度約１００ｋｍ程度で、約３５０ｋｍ程度飛翔。⑤９時３０分頃、北朝鮮西岸付近から東方向に向けて発射し、最高高度約５０ｋｍ程度で、約４００ｋｍ程度飛翔。⑥９時４１分頃、北朝鮮内陸部付近から東方向に向けて発射し、最高高度約１００ｋｍ程度で、約３００ｋｍ程度飛翔。",
+   "url": "https://www.mod.go.jp/j/press/news/2022/06/05b.pdf",
+   "htmlUrl": "https://www.mod.go.jp/j/press/news/2022/06/05b.html",
+   "fetched": "2026-10-08"
+  },
+  {
+   "id": "2022-05-25c",
+   "published": "2022-05-25",
+   "timesJst": [
+    "05:59"
+   ],
+   "launchJst": "2022-05-25T05:59:00+09:00",
+   "launchUtc": "2022-05-24T20:59:00Z",
+   "precision": "minute",
+   "count": 1,
+   "countNote": "exact",
+   "weapon": "ballistic",
+   "rangeKm": [
+    300
+   ],
+   "rangeBound": null,
+   "apogeeKm": [
+    550
+   ],
+   "apogeeBound": null,
+   "flightMinutes": null,
+   "landing": "sea-of-japan",
+   "eez": "outside",
+   "areaJa": "北朝鮮西岸付近",
+   "landingJa": "北朝鮮東岸の日本海であり、我が国の排他的経済水域(EEZ)外",
+   "directionJa": "東",
+   "textJa": "北朝鮮は、本日５時５９分頃、北朝鮮西岸付近から、１発の弾道ミサイルを、東方向に向けて発射しました。詳細については現在分析中ですが、最高高度約５５０ｋｍ程度で、約３００ｋｍ程度飛翔し、落下したのは、北朝鮮東岸の日本海であり、我が国の排他的経済水域（ＥＥＺ）外と推定されます。",
+   "url": "https://www.mod.go.jp/j/press/news/2022/05/25c.pdf",
+   "htmlUrl": "https://www.mod.go.jp/j/press/news/2022/05/25c.html",
+   "fetched": "2026-10-08"
+  },
+  {
+   "id": "2021-10-19d",
+   "published": "2021-10-19",
+   "timesJst": [
+    "10:15"
+   ],
+   "launchJst": "2021-10-19T10:15:00+09:00",
+   "launchUtc": "2021-10-19T01:15:00Z",
+   "precision": "minute",
+   "count": 2,
+   "countNote": "exact",
+   "weapon": "ballistic",
+   "rangeKm": [
+    600
+   ],
+   "rangeBound": null,
+   "apogeeKm": [
+    50
+   ],
+   "apogeeBound": null,
+   "flightMinutes": null,
+   "landing": null,
+   "eez": "outside",
+   "areaJa": "朝鮮半島東部の新浦付近",
+   "landingJa": "我が国の排他的経済水域(EEZ)外",
+   "directionJa": "東",
+   "textJa": "北朝鮮は、本日１０時１５分頃、朝鮮半島東部の新浦付近から、２発の弾道ミサイルを東方向に発射した模様です。発射された弾道ミサイルのうち１発は、最高高度約５０ｋｍ程度を変則軌道で約６００ｋｍ程度飛翔し、朝鮮半島東側の日本海に落下したものと推定されます。なお、当該ミサイルが落下したのは、我が国の排他的経済水域（ＥＥＺ）外と推定されます。また、当該弾道ミサイルは潜水艦発射型弾道ミサイル（ＳＬＢＭ）の可能性があります。もう１発の飛翔距離等については、引き続き分析中です。",
+   "url": "https://www.mod.go.jp/j/press/news/2021/10/19d.pdf",
+   "htmlUrl": "https://www.mod.go.jp/j/press/news/2021/10/19d.html",
+   "fetched": "2026-10-08"
+  },
+  {
+   "id": "2021-09-28b",
+   "published": "2021-09-28",
+   "timesJst": [
+    "06:38"
+   ],
+   "launchJst": "2021-09-28T06:38:00+09:00",
+   "launchUtc": "2021-09-27T21:38:00Z",
+   "precision": "minute",
+   "count": 1,
+   "countNote": "exact",
+   "weapon": "possible-ballistic",
+   "rangeKm": [],
+   "rangeBound": null,
+   "apogeeKm": [],
+   "apogeeBound": null,
+   "flightMinutes": null,
+   "landing": null,
+   "eez": null,
+   "areaJa": "北朝鮮の内陸部",
+   "landingJa": null,
+   "directionJa": "東",
+   "textJa": "北朝鮮は、本日６時３８分頃、北朝鮮の内陸部から、１発の弾道ミサイルの可能性があるものを東方向に発射しました。詳細については現在分析中です。",
+   "url": "https://www.mod.go.jp/j/press/news/2021/09/28b.pdf",
+   "htmlUrl": "https://www.mod.go.jp/j/press/news/2021/09/28b.html",
+   "fetched": "2026-10-08"
+  },
+  {
+   "id": "2021-09-15b",
+   "published": "2021-09-15",
+   "timesJst": [
+    "12:32",
+    "12:37"
+   ],
+   "launchJst": "2021-09-15T12:32:00+09:00",
+   "launchUtc": "2021-09-15T03:32:00Z",
+   "precision": "minute",
+   "count": 2,
+   "countNote": "exact",
+   "weapon": "ballistic",
+   "rangeKm": [
+    750
+   ],
+   "rangeBound": null,
+   "apogeeKm": [
+    50
+   ],
+   "apogeeBound": null,
+   "flightMinutes": null,
+   "landing": null,
+   "eez": "inside",
+   "areaJa": "北朝鮮内陸部",
+   "landingJa": "我が国の排他的経済水域(EEZ)内",
+   "directionJa": "東",
+   "textJa": "北朝鮮は、本日１２時３２分頃及び１２時３７分頃、北朝鮮内陸部から、２発の弾道ミサイルを東方向に発射しました。発射された弾道ミサイルは、従来から北朝鮮が保有しているスカッドの軌道よりも低い高度（最高高度約５０ｋｍ程度）を、変則軌道で約７５０ｋｍ程度飛翔し、日本海上に落下したものと推定されます。落下したのは、我が国の排他的経済水域（ＥＥＺ）内と推定されます。",
+   "url": "https://www.mod.go.jp/j/press/news/2021/09/15b.pdf",
+   "htmlUrl": "https://www.mod.go.jp/j/press/news/2021/09/15b.html",
+   "fetched": "2026-10-08"
+  },
+  {
+   "id": "2021-03-25c",
+   "published": "2021-03-25",
+   "timesJst": [
+    "07:04",
+    "07:23"
+   ],
+   "launchJst": "2021-03-25T07:04:00+09:00",
+   "launchUtc": "2021-03-24T22:04:00Z",
+   "precision": "minute",
+   "count": 2,
+   "countNote": "total",
+   "weapon": "ballistic",
+   "rangeKm": [
+    450
+   ],
+   "rangeBound": null,
+   "apogeeKm": [],
+   "apogeeBound": null,
+   "flightMinutes": null,
+   "landing": null,
+   "eez": "outside",
+   "areaJa": "北朝鮮の東岸の宣徳(ソンドク)付近",
+   "landingJa": "我が国の排他的経済水域(EEZ)外",
+   "directionJa": "東",
+   "textJa": "北朝鮮は、本日７時４分頃及び７時２３分頃、北朝鮮の東岸の宣徳（ソンドク）付近から、合計２発の弾道ミサイルを東方向に発射した模様です。従来から北朝鮮が保有しているスカッドの軌道よりも低い高度を、いずれも約４５０ｋｍ飛翔したものと推定されます。なお、落下したのは、我が国の排他的経済水域（ＥＥＺ）外と推定されます。",
+   "url": "https://www.mod.go.jp/j/press/news/2021/03/25c.pdf",
+   "htmlUrl": "https://www.mod.go.jp/j/press/news/2021/03/25c.html",
+   "fetched": "2026-10-08"
+  },
+  {
+   "id": "2020-03-29b",
+   "published": "2020-03-29",
+   "timesJst": [
+    "06:10"
+   ],
+   "launchJst": "2020-03-29T06:10:00+09:00",
+   "launchUtc": "2020-03-28T21:10:00Z",
+   "precision": "minute",
+   "count": 2,
+   "countNote": "exact",
+   "weapon": "ballistic",
+   "rangeKm": [
+    250
+   ],
+   "rangeBound": null,
+   "apogeeKm": [],
+   "apogeeBound": null,
+   "flightMinutes": null,
+   "landing": null,
+   "eez": null,
+   "areaJa": null,
+   "landingJa": "北朝鮮の東北部の沿岸付近",
+   "directionJa": "北東",
+   "textJa": "本日６時１０分頃、北朝鮮の東岸より、２発の弾道ミサイルとみられるものが北東方向に向けて発射され、６時１３分頃、北朝鮮の東北部の沿岸付近に落下したものと推定されます。従来から北朝鮮が保有しているスカッドの軌道よりも低い高度を、最大約２５０ｋｍ程度飛翔したものと推定されますが、詳細は分析中です。なお、我が国の排他的経済水域（ＥＥＺ）外に落下したものと推定されます。",
+   "url": "https://www.mod.go.jp/j/press/news/2020/03/29b.pdf",
+   "htmlUrl": "https://www.mod.go.jp/j/press/news/2020/03/29b.html",
+   "fetched": "2026-10-08"
+  },
+  {
+   "id": "2020-03-21b",
+   "published": "2020-03-21",
+   "timesJst": [
+    "06:45",
+    "06:50"
+   ],
+   "launchJst": "2020-03-21T06:45:00+09:00",
+   "launchUtc": "2020-03-20T21:45:00Z",
+   "precision": "minute",
+   "count": 2,
+   "countNote": "at least",
+   "weapon": "ballistic",
+   "rangeKm": [],
+   "rangeBound": null,
+   "apogeeKm": [],
+   "apogeeBound": null,
+   "flightMinutes": null,
+   "landing": null,
+   "eez": null,
+   "areaJa": null,
+   "landingJa": "北朝鮮の東北部の沿岸付近",
+   "directionJa": "東",
+   "textJa": "本日６時４５分頃から６時５０分頃、北朝鮮西岸の平安北道より、少なくとも２発の短距離弾道ミサイルが東方向に向けて発射され、６時５０分頃から６時５５分頃、北朝鮮の東北部の沿岸付近に落下したものと推定されます。従来から北朝鮮が保有しているスカッドの軌道よりも低い高度を、約３００～４００ｋｍ程度飛翔したものと推定されますが、詳細は分析中です。なお、我が国の排他的経済水域（ＥＥＺ）外に落下したものと推定されます。",
+   "url": "https://www.mod.go.jp/j/press/news/2020/03/21b.pdf",
+   "htmlUrl": "https://www.mod.go.jp/j/press/news/2020/03/21b.html",
+   "fetched": "2026-10-08"
+  },
+  {
+   "id": "2020-03-09c",
+   "published": "2020-03-09",
+   "timesJst": [
+    "07:34",
+    "07:35"
+   ],
+   "launchJst": "2020-03-09T07:34:00+09:00",
+   "launchUtc": "2020-03-08T22:34:00Z",
+   "precision": "minute",
+   "count": null,
+   "countNote": "multiple",
+   "weapon": "ballistic",
+   "rangeKm": [],
+   "rangeBound": null,
+   "apogeeKm": [],
+   "apogeeBound": null,
+   "flightMinutes": null,
+   "landing": "sea-of-japan",
+   "eez": null,
+   "areaJa": null,
+   "landingJa": "日本海上",
+   "directionJa": "北東",
+   "textJa": "本日７時３４分から７時３５分頃、北朝鮮の東岸より、複数発の弾道ミサイルとみられるものが北東方向に向けて発射された模様です。発射されたものは、約１００～２００ｋｍ飛翔し、７時３６分から７時３９分頃、日本海上に落下したものと推定されます。なお、我が国の排他的経済水域（ＥＥＺ）外に落下したものと推定されますが、詳細は分析中です。",
+   "url": "https://www.mod.go.jp/j/press/news/2020/03/09c.pdf",
+   "htmlUrl": "https://www.mod.go.jp/j/press/news/2020/03/09c.html",
+   "fetched": "2026-10-08"
+  }
+ ]
+}

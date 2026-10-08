@@ -1,7 +1,9 @@
 import Link from 'next/link';
 import type { LucideIcon } from 'lucide-react';
 import { Atom, Banknote, Bitcoin, Bomb, Crosshair, Factory, Fuel, Laptop, MapPin, Plane, Radiation, Rocket, Ship, Shield, Swords, Users, Wheat } from 'lucide-react';
+import EventFeed from '@/components/EventFeed';
 import PlaceCard from '@/components/PlaceCard';
+import SeismicBlock from '@/components/SeismicBlock';
 import { SourceCards, StatTile } from '@/components/Visual';
 import { CITY_POINTS, MILITARY_SOURCE_URLS, MILITARY_TEXT, MISSILE_SPECS, NUKE_TEST_DATES, type MissileClassId } from '@/content/military';
 import { getPlaceBySlug } from '@/content/places-data';
@@ -119,6 +121,7 @@ export default function MilitaryPage({ lang }: { lang: Lang }) {
             ))}
           </ol>
         </div>
+        <SeismicBlock lang={lang} />
         <ul className="place-cards">
           {nuclearSites.map((p) => (
             <PlaceCard key={p.id} place={p} lang={lang} />
@@ -221,6 +224,7 @@ export default function MilitaryPage({ lang }: { lang: Lang }) {
             ))}
           </p>
         </div>
+        <EventFeed lang={lang} limit={5} />
       </section>
 
       <section className="mil-section">
