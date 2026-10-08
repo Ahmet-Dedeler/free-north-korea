@@ -51,6 +51,11 @@ before adding any page or article.
   `src/content/eventsI18n.ts`. Shown by `components/SeismicBlock.tsx` (/military), `components/LaunchReports.tsx`
   (/missiles/list: MOD launches newer than the CNS dataset, flagged "not yet in the database") and the reusable
   `components/EventFeed.tsx`. Labels and numbers are the agency's own (USGS `type`, MOD estimates); never relabel.
+- Camp Watch: our own dated Sentinel-2 images of the camps and nuclear/missile sites in `places.ts`.
+  `components/SatWatch.tsx` (latest image, month strip, before/after slider, scale bar, Copernicus credit) sits on
+  camp and place dossiers; `LatestImagery` from the same file is the "newest images" strip for a hub page. Text in
+  `content/satWatch.ts`, chip sizes in `content/satWatchSites.ts`. Only show what the pixels show: change scores
+  (`docs/watch/sentinel-changes.md`) are for humans and never go on the site.
 - Content pages are visual, not text walls. Reuse the building blocks before writing paragraphs:
   `components/Visual.tsx` (StatTile, icon chips, SourceCards), `AsOf` (date a number is from), `SatView` (Esri satellite
   tiles, no map lib), `Locator` (server SVG of NK from `site/geo.ts`), `HoverLinks` (OrgLink/PlaceLink hover previews,
@@ -123,6 +128,10 @@ exist.
    of the last three days because the RSS lags. `--backfill` probes launch days from the CNS dataset (PDFs exist from
    2020 on). Both files are rewritten only when something changed or their date is a week old.
 9. `scripts/fetch-media.ts`: book covers, film posters, org logos → `public/img/`, credits in `src/content/media.json`.
+10. `uv run scripts/sentinel/build.py [id ...]` → `public/img/sentinel/<id>/<date>.jpg`, `data/sentinel.json`,
+   `docs/watch/sentinel-changes.md`. Sentinel-2 L2A from Element84 Earth Search (no key), windowed COG reads only,
+   cloud judged from the SCL band inside each chip. Incremental (`data/sentinel/scl-cache.json`); a failed site keeps
+   its images. Targets come from `node scripts/sentinel/targets.ts`.
 
 Run order after a scrape: `node scripts/build-layers.ts && node scripts/build-entities.ts`.
 
