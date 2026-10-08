@@ -78,6 +78,10 @@ export default function SanctionsPage({ lang }: { lang: Lang }) {
     url: absolute(SANCTIONS_PATHS[lang]),
     dateModified: fetched,
     isBasedOn: [SANCTION_SOURCES[0].url, SANCTION_SOURCES[2].url],
+    creator: [
+      { '@type': 'Organization', name: 'UN Security Council 1718 Committee', url: SANCTION_SOURCES[0].url },
+      { '@type': 'Organization', name: 'US Treasury OFAC', url: SANCTION_SOURCES[2].url },
+    ],
   };
 
   return (

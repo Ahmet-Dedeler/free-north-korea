@@ -135,6 +135,17 @@ function datasetDescription(s: Series, lang: Lang) {
   return `${title}: ${text?.sub ?? s.title} ${CHART_UI[lang].source}: ${s.source.name}.`;
 }
 
+const LICENSE_URL: Record<string, string> = {
+  'CC BY 4.0': 'https://creativecommons.org/licenses/by/4.0/',
+  MIT: 'https://opensource.org/license/mit',
+};
+
+/** creator + license for Dataset JSON-LD, from the series' upstream source. License is left out when the source has none. */
+function datasetCredits(s: Series) {
+  const license = s.source.license && s.source.license !== 'None' ? (LICENSE_URL[s.source.license] ?? s.source.license) : undefined;
+  return { creator: { '@type': 'Organization', name: s.source.name, url: s.source.url }, license };
+}
+
 export function DataHub({ lang }: { lang: Lang }) {
   const t = DATA_TEXT[lang];
   const nf = new Intl.NumberFormat(LOCALE[lang]);
@@ -151,7 +162,7 @@ export function DataHub({ lang }: { lang: Lang }) {
       name: SERIES_TEXT[s.id]?.[lang]?.title ?? s.title,
       description: datasetDescription(s, lang),
       url: absolute(dataPath(lang, s.id)),
-      license: s.source.license,
+      ...datasetCredits(s),
     })),
   };
   return (
@@ -254,7 +265,7 @@ export function SeriesPage({ lang, id }: { lang: Lang; id: string }) {
     dateModified: s.fetched,
     temporalCoverage: `${String(all.reduce((m, [x]) => (toX(x) < toX(m) ? x : m), all[0][0]))}/${String(all.reduce((m, [x]) => (toX(x) > toX(m) ? x : m), all[0][0]))}`,
     isBasedOn: s.source.url,
-    license: s.source.license,
+    ...datasetCredits(s),
     distribution: [{ '@type': 'DataDownload', encodingFormat: 'text/csv', contentUrl: `${RAW}/${id}.csv` }],
   };
   return (

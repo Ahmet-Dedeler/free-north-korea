@@ -53,6 +53,8 @@ export default function MissileListPage({ lang }: { lang: Lang }) {
     url: absolute(MISSILE_LIST_PATHS[lang]),
     temporalCoverage: `${tests.at(-1)!.date}/${latest.date}`,
     creator: { '@type': 'Organization', name: CREATOR },
+    // Same terms as the missile-launches series: the machine-readable copy we build from is MIT (nagix/nk-missile-tests).
+    license: 'https://opensource.org/license/mit',
     isBasedOn: CNS_URL,
   };
 
