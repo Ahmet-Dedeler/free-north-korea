@@ -66,7 +66,7 @@ async function check(w) {
   if (w.type === 'count') {
     let v = JSON.parse(text);
     for (const k of w.path.split('.').filter(Boolean)) v = v?.[k];
-    const n = Array.isArray(v) ? v.length : typeof v === 'number' ? v : null;
+    const n = Array.isArray(v) ? v.length : v !== '' && v !== null && Number.isFinite(Number(v)) ? Number(v) : null;
     return { status: res.status, fingerprint: n === null ? null : String(n), detail: `${n} records${moved}` };
   }
   return { status: res.status, fingerprint: sha(text), detail: `${text.length.toLocaleString('en-US')} bytes${moved}` };
@@ -76,13 +76,17 @@ let changed = 0;
 for (const src of registry) {
   if (only && src.id !== only) continue;
   if (!src.watch) continue;
-  let r;
-  try {
-    r = await check(src.watch);
-  } catch (e) {
-    r = { status: 0, fingerprint: null, detail: `error: ${e.message}` };
-  }
+  const attempt = () => check(src.watch).catch((e) => ({ status: 0, fingerprint: null, detail: `error: ${e.message}` }));
+  let r = await attempt();
+  // One retry after a pause: overloaded APIs (Overpass 504) and flaky DNS often pass the second time.
+  if (!r.fingerprint) r = (await new Promise((ok) => setTimeout(ok, 5000)), await attempt());
   const prev = state[src.id];
+  // Some sites block datacenter IPs for a week (403 on the GitHub runner while they load fine from home). A source
+  // is only called broken after two failed weeks in a row; the first miss keeps last week's fingerprint.
+  const failStreak = r.fingerprint ? 0 : (prev?.failStreak ?? 0) + 1;
+  if (!r.fingerprint && prev?.fingerprint && failStreak < 2) {
+    r = { ...r, fingerprint: prev.fingerprint, detail: `${r.detail} (first miss, rechecked next week)`, upstreamDate: prev.upstreamDate };
+  }
   const kind = !prev ? 'first-check' : prev.fingerprint !== r.fingerprint ? (r.fingerprint ? (prev.fingerprint ? 'changed' : 'recovered') : 'broken') : null;
   state[src.id] = {
     checkedAt: now,
@@ -92,6 +96,7 @@ for (const src of registry) {
     upstreamDate: r.upstreamDate ?? prev?.upstreamDate ?? null,
     changedAt: kind && kind !== 'first-check' ? now : (prev?.changedAt ?? null),
     ok: Boolean(r.fingerprint),
+    ...(failStreak ? { failStreak } : {}),
   };
   if (kind && kind !== 'first-check') {
     changes.unshift({ id: src.id, at: now, kind, detail: r.detail });

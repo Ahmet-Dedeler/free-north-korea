@@ -1429,8 +1429,9 @@
   "build_idea": "Pull all OSM military=* and aeroway=runway polygons to render high-contrast runway outlines and base perimeters on our dark/positron basemaps.",
   "usedBy": [],
   "watch": {
-   "type": "content",
-   "url": "https://overpass-api.de/api/interpreter?data=[out:json];area[\"ISO3166-1\"=\"KP\"][admin_level=2]->.a;(node[\"military\"](area.a);way[\"military\"](area.a);relation[\"military\"](area.a););out%20body;>;out%20skel%20qt;"
+   "type": "count",
+   "url": "https://overpass-api.de/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A90%5D%3Barea%5B%22ISO3166-1%22%3D%22KP%22%5D%5Badmin_level%3D2%5D-%3E.a%3Bnwr%5B%22military%22%5D(area.a)%3Bout%20count%3B",
+   "path": "elements.0.tags.total"
   }
  },
  {
@@ -3249,8 +3250,9 @@
   "build_idea": "Provides bilingual Hangul/English names and live relation IDs that match our MapLibre base map perfectly without projection or alignment shifts.",
   "usedBy": [],
   "watch": {
-   "type": "content",
-   "url": "https://overpass-api.de/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A25%5D%3Barea%5B%22ISO3166-1%22%3D%22KP%22%5D-%3E.a%3Brel(area.a)%5B%22boundary%22%3D%22administrative%22%5D%5B%22admin_level%22%3D%226%22%5D%3Bout+count%3B"
+   "type": "count",
+   "url": "https://overpass-api.de/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A90%5D%3Barea%5B%22ISO3166-1%22%3D%22KP%22%5D%5Badmin_level%3D2%5D-%3E.a%3Brel(area.a)%5B%22boundary%22%3D%22administrative%22%5D%5B%22admin_level%22%3D%226%22%5D%3Bout%20count%3B",
+   "path": "elements.0.tags.total"
   }
  },
  {

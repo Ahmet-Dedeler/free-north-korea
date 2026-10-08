@@ -1,11 +1,11 @@
 {
  "_doc": "Built by scripts/build-series.ts. Do not edit by hand; hand-checked numbers go in data/series/curated/.",
- "built": "2026-10-05",
+ "built": "2026-10-08",
  "sources": {
   "owid": "2026-10-05",
   "dailynk": "2026-10-05",
   "government": "2026-10-05",
-  "local": "2026-10-05"
+  "local": "2026-10-08"
  },
  "series": [
   {
@@ -23818,7 +23818,7 @@
      ],
      [
       2026,
-      9
+      10
      ]
     ]
    },
@@ -23827,9 +23827,9 @@
     "url": "https://github.com/nagix/nk-missile-tests",
     "license": "MIT"
    },
-   "fetched": "2026-10-05",
-   "updated": "2026-09-20",
-   "note": "Each missile counts once, so a salvo of four is four. Medium range includes intermediate-range and hypersonic glide missiles; \"other\" is submarine-launched missiles, satellite launches and unknown types. 2026 runs to 2026-09-20."
+   "fetched": "2026-10-08",
+   "updated": "2026-10-02",
+   "note": "Each missile counts once, so a salvo of four is four. Medium range includes intermediate-range and hypersonic glide missiles; \"other\" is submarine-launched missiles, satellite launches and unknown types. 2026 runs to 2026-10-02."
   },
   {
    "id": "mobile-phones",

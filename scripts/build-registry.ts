@@ -26,6 +26,18 @@ const USED_BY: Record<string, string[]> = {
   'un-sc-1718-sanctions-list': ['/people'],
 };
 
+/** Watch specs chosen by hand. Overpass: count elements instead of hashing the response (its `osm3s.timestamp`
+ * changes on every call, and the full military query times out on the busy public server). */
+const overpass = (q: string) => ({
+  type: 'count',
+  url: 'https://overpass-api.de/api/interpreter?data=' + encodeURIComponent(`[out:json][timeout:90];area["ISO3166-1"="KP"][admin_level=2]->.a;${q}out count;`),
+  path: 'elements.0.tags.total',
+});
+const WATCH: Record<string, Any> = {
+  'openstreetmap-dprk-military': overpass('nwr["military"](area.a);'),
+  'openstreetmap-overpass-dprk': overpass('rel(area.a)["boundary"="administrative"]["admin_level"="6"];'),
+};
+
 /** Pick a cheap way to notice changes: GitHub commits, file hash for data files, cache headers for pages. */
 function watchFor(s: Any) {
   const gh = String(s.url ?? '').match(/github\.com\/([^/]+\/[^/#?]+)/) ?? String(s.endpoint ?? '').match(/raw\.githubusercontent\.com\/([^/]+\/[^/]+)/);
@@ -58,7 +70,7 @@ for (const f of readdirSync('docs/research').filter((f) => f.endsWith('.json') &
       research: { last_updated: s.last_updated, maintenance: s.maintenance, cadence: s.update_cadence, value: s.value, checked: '2026-10-01' },
       build_idea: s.build_idea,
       usedBy: USED_BY[s.id] ?? [],
-      watch: watchFor(s),
+      watch: WATCH[s.id] ?? watchFor(s),
     });
   }
 }

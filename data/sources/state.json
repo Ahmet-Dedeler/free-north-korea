@@ -144,13 +144,13 @@
     "ok": true
   },
   "nkpd": {
-    "checkedAt": "2026-10-05T14:36:15.582Z",
-    "status": 0,
-    "fingerprint": null,
-    "detail": "error: fetch failed",
+    "checkedAt": "2026-10-08T16:14:57.005Z",
+    "status": 200,
+    "fingerprint": "9f1f9dce319c4700",
+    "detail": "reachable, no change signal",
     "upstreamDate": null,
-    "changedAt": "2026-10-05T14:36:15.582Z",
-    "ok": false
+    "changedAt": "2026-10-08T16:14:57.005Z",
+    "ok": true
   },
   "hrnk-satellite-camp-reports": {
     "checkedAt": "2026-10-05T14:36:15.582Z",
@@ -243,13 +243,13 @@
     "ok": true
   },
   "rusi-dprk-reports-database": {
-    "checkedAt": "2026-10-05T14:36:15.582Z",
-    "status": 403,
-    "fingerprint": null,
-    "detail": "HTTP 403",
+    "checkedAt": "2026-10-08T16:14:58.065Z",
+    "status": 200,
+    "fingerprint": "0dac2ea85b9236e9",
+    "detail": "44,382 bytes",
     "upstreamDate": null,
-    "changedAt": "2026-10-05T14:36:15.582Z",
-    "ok": false
+    "changedAt": "2026-10-08T16:14:58.065Z",
+    "ok": true
   },
   "msmt-sanctions-monitoring-reports": {
     "checkedAt": "2026-10-05T14:36:15.582Z",
@@ -495,13 +495,14 @@
     "ok": false
   },
   "openstreetmap-dprk-military": {
-    "checkedAt": "2026-10-05T14:36:15.582Z",
+    "checkedAt": "2026-10-08T16:16:45.092Z",
     "status": 504,
     "fingerprint": null,
     "detail": "HTTP 504",
     "upstreamDate": null,
     "changedAt": "2026-10-05T14:36:15.582Z",
-    "ok": false
+    "ok": false,
+    "failStreak": 2
   },
   "justin-meyers-dprk-boundaries": {
     "checkedAt": "2026-10-05T14:36:15.582Z",
@@ -1080,13 +1081,13 @@
     "ok": true
   },
   "frontelligence-dprk-russia-rail": {
-    "checkedAt": "2026-10-05T14:36:15.582Z",
-    "status": 403,
-    "fingerprint": null,
-    "detail": "HTTP 403",
+    "checkedAt": "2026-10-08T16:14:57.812Z",
+    "status": 200,
+    "fingerprint": "up:https://frontelligence.substack.com/",
+    "detail": "reachable, no change signal",
     "upstreamDate": null,
-    "changedAt": "2026-10-05T14:36:15.582Z",
-    "ok": false
+    "changedAt": "2026-10-08T16:14:57.812Z",
+    "ok": true
   },
   "csis-beyond-parallel-balloons": {
     "checkedAt": "2026-10-05T14:36:15.582Z",
@@ -1125,12 +1126,12 @@
     "ok": true
   },
   "openstreetmap-overpass-dprk": {
-    "checkedAt": "2026-10-05T14:36:15.582Z",
+    "checkedAt": "2026-10-08T16:17:07.845Z",
     "status": 200,
-    "fingerprint": "0298e06a2af555c0",
-    "detail": "484 bytes",
+    "fingerprint": "196",
+    "detail": "196 records",
     "upstreamDate": null,
-    "changedAt": "2026-10-05T14:36:15.582Z",
+    "changedAt": "2026-10-08T16:17:07.845Z",
     "ok": true
   },
   "geofabrik-osm-north-korea": {
