@@ -1,5 +1,63 @@
 [
  {
+  "id": "un-sc-1718-sanctions-list",
+  "name": "UN Security Council Consolidated Sanctions List (1718 Committee)",
+  "publisher": "United Nations Security Council",
+  "url": "https://www.un.org/securitycouncil/sanctions/1718/materials",
+  "track": "economy",
+  "language": "en",
+  "category": "sanctions",
+  "description": "Official machine-readable XML feed of all individuals and corporate entities designated by the UN Security Council 1718 Sanctions Committee on North Korea for asset freezes and travel bans.",
+  "format": "xml",
+  "access": "download",
+  "has_geo": false,
+  "research": {
+   "last_updated": "2024-03-07",
+   "maintenance": "stale",
+   "cadence": "frozen since Russian veto in April 2024 (no new designations added)",
+   "value": 5,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Ingest directly into our sanctions explorer to show UN-designated entities, their aliases, and their historical connection to illicit procurement networks.",
+  "usedBy": [
+   "/people",
+   "/sanctions"
+  ],
+  "watch": {
+   "type": "content",
+   "url": "https://scsanctions.un.org/resources/xml/en/consolidated.xml"
+  }
+ },
+ {
+  "id": "us-ofac-sdn-dprk",
+  "name": "US OFAC Specially Designated Nationals (SDN) DPRK Entries",
+  "publisher": "US Department of the Treasury (OFAC)",
+  "url": "https://ofac.treasury.gov/specially-designated-nationals-and-blocked-persons-list-sdn-human-readable-lists",
+  "track": "economy",
+  "language": "en",
+  "category": "sanctions",
+  "description": "United States unilateral sanctions database containing hundreds of North Korean regime officials, military front companies, banks, cyber threat actors (Lazarus), and designated vessels.",
+  "format": "xml",
+  "access": "download",
+  "has_geo": false,
+  "research": {
+   "last_updated": "2026-09-24",
+   "maintenance": "active",
+   "cadence": "real-time as designations are declared (multiple times monthly)",
+   "value": 5,
+   "checked": "2026-10-01"
+  },
+  "build_idea": "Extract all 105 named vessels (with IMO/MMSI numbers) and digital currency wallet addresses to drive our vessel tracking and cyber theft explorer.",
+  "usedBy": [
+   "/people",
+   "/sanctions"
+  ],
+  "watch": {
+   "type": "content",
+   "url": "https://www.treasury.gov/ofac/downloads/sdn.xml"
+  }
+ },
+ {
   "id": "nkdb-visual-atlas-locations",
   "name": "NKDB Visual Atlas: Geolocated Detention & Incident Map Dataset",
   "publisher": "Database Center for North Korean Human Rights (NKDB)",
@@ -137,62 +195,6 @@
   "watch": {
    "type": "headers",
    "url": "https://beyondparallel.csis.org/markets-private-economy-capitalism-north-korea/"
-  }
- },
- {
-  "id": "un-sc-1718-sanctions-list",
-  "name": "UN Security Council Consolidated Sanctions List (1718 Committee)",
-  "publisher": "United Nations Security Council",
-  "url": "https://www.un.org/securitycouncil/sanctions/1718/materials",
-  "track": "economy",
-  "language": "en",
-  "category": "sanctions",
-  "description": "Official machine-readable XML feed of all individuals and corporate entities designated by the UN Security Council 1718 Sanctions Committee on North Korea for asset freezes and travel bans.",
-  "format": "xml",
-  "access": "download",
-  "has_geo": false,
-  "research": {
-   "last_updated": "2024-03-07",
-   "maintenance": "stale",
-   "cadence": "frozen since Russian veto in April 2024 (no new designations added)",
-   "value": 5,
-   "checked": "2026-10-01"
-  },
-  "build_idea": "Ingest directly into our sanctions explorer to show UN-designated entities, their aliases, and their historical connection to illicit procurement networks.",
-  "usedBy": [
-   "/people"
-  ],
-  "watch": {
-   "type": "content",
-   "url": "https://scsanctions.un.org/resources/xml/en/consolidated.xml"
-  }
- },
- {
-  "id": "us-ofac-sdn-dprk",
-  "name": "US OFAC Specially Designated Nationals (SDN) DPRK Entries",
-  "publisher": "US Department of the Treasury (OFAC)",
-  "url": "https://ofac.treasury.gov/specially-designated-nationals-and-blocked-persons-list-sdn-human-readable-lists",
-  "track": "economy",
-  "language": "en",
-  "category": "sanctions",
-  "description": "United States unilateral sanctions database containing hundreds of North Korean regime officials, military front companies, banks, cyber threat actors (Lazarus), and designated vessels.",
-  "format": "xml",
-  "access": "download",
-  "has_geo": false,
-  "research": {
-   "last_updated": "2026-09-24",
-   "maintenance": "active",
-   "cadence": "real-time as designations are declared (multiple times monthly)",
-   "value": 5,
-   "checked": "2026-10-01"
-  },
-  "build_idea": "Extract all 105 named vessels (with IMO/MMSI numbers) and digital currency wallet addresses to drive our vessel tracking and cyber theft explorer.",
-  "usedBy": [
-   "/people"
-  ],
-  "watch": {
-   "type": "content",
-   "url": "https://www.treasury.gov/ofac/downloads/sdn.xml"
   }
  },
  {
@@ -362,6 +364,69 @@
    "type": "headers",
    "url": "https://wiki.earthdata.nasa.gov/display/GIBS/GIBS+API+for+Developers"
   }
+ },
+ {
+  "id": "uk-fcdo-sanctions-list",
+  "name": "UK Sanctions List (FCDO), DPRK regime",
+  "publisher": "Foreign, Commonwealth & Development Office (FCDO)",
+  "url": "https://www.gov.uk/government/publications/the-uk-sanctions-list",
+  "track": "economy",
+  "language": "en",
+  "category": "sanctions",
+  "description": "The only UK sanctions list since OFSI's Consolidated List closed in January 2026. /sanctions reads the XML and keeps designations under The Democratic People's Republic of Korea (Sanctions) (EU Exit) Regulations 2019 (scripts/sanctions/national.ts).",
+  "format": "xml",
+  "access": "download",
+  "has_geo": false,
+  "usedBy": [
+   "/sanctions"
+  ],
+  "watch": {
+   "type": "headers",
+   "url": "https://sanctionslist.fcdo.gov.uk/docs/UK-Sanctions-List.xml"
+  },
+  "manual": true
+ },
+ {
+  "id": "eu-fsf-dprk-sanctions",
+  "name": "EU consolidated financial sanctions list (FSF), PRK programme",
+  "publisher": "European Commission (DG FISMA)",
+  "url": "https://data.europa.eu/data/datasets/consolidated-list-of-persons-groups-and-entities-subject-to-eu-financial-sanctions",
+  "track": "economy",
+  "language": "en",
+  "category": "sanctions",
+  "description": "Everyone under an EU asset freeze, as XML from the Financial Sanctions Files. /sanctions keeps entries under Council Regulation (EU) 2017/1509 (programme PRK).",
+  "format": "xml",
+  "access": "download",
+  "has_geo": false,
+  "usedBy": [
+   "/sanctions"
+  ],
+  "watch": {
+   "type": "headers",
+   "url": "https://webgate.ec.europa.eu/fsd/fsf/public/files/xmlFullSanctionsList_1_1/content?token=dG9rZW4tMjAxNw"
+  },
+  "manual": true
+ },
+ {
+  "id": "japan-mof-meti-sanctions",
+  "name": "Japan Ministry of Finance asset-freeze list (経済制裁措置及び対象者リスト), North Korea",
+  "publisher": "Ministry of Finance, Japan (財務省)",
+  "url": "https://www.mof.go.jp/policy/international_policy/gaitame_kawase/gaitame/economic_sanctions/list.html",
+  "track": "economy",
+  "language": "ja",
+  "category": "sanctions",
+  "description": "MOF's list of everyone under a Japanese asset freeze, published as one CSV that is renamed with each update (shisantouketsuYYYYMMDD.csv). /sanctions reads the current file name from this page and keeps the North Korea categories 13 to 17. The watch is on the page, which changes whenever a new file is posted.",
+  "format": "csv",
+  "access": "download",
+  "has_geo": false,
+  "usedBy": [
+   "/sanctions"
+  ],
+  "watch": {
+   "type": "headers",
+   "url": "https://www.mof.go.jp/policy/international_policy/gaitame_kawase/gaitame/economic_sanctions/list.html"
+  },
+  "manual": true
  },
  {
   "id": "nk-missile-tests",
@@ -2290,84 +2355,6 @@
   "watch": {
    "type": "headers",
    "url": "https://www.bok.or.kr"
-  }
- },
- {
-  "id": "uk-fcdo-sanctions-list",
-  "name": "UK Sanctions List (FCDO DPRK Regime)",
-  "publisher": "Foreign, Commonwealth & Development Office (FCDO)",
-  "url": "https://www.gov.uk/government/publications/the-uk-sanctions-list",
-  "track": "economy",
-  "language": "en",
-  "category": "sanctions",
-  "description": "Official UK consolidated sanctions list covering individuals, entities, and ships designated under The Democratic People's Republic of Korea (Sanctions) (EU Exit) Regulations 2019.",
-  "format": "csv",
-  "access": "download",
-  "has_geo": false,
-  "research": {
-   "last_updated": "2026-10-01",
-   "maintenance": "active",
-   "cadence": "daily",
-   "value": 4,
-   "checked": "2026-10-01"
-  },
-  "build_idea": "Cross-reference UK designations against UN and OFAC lists to highlight unilateral sanctions divergences and British enforcement targets.",
-  "usedBy": [],
-  "watch": {
-   "type": "content",
-   "url": "https://sanctionslist.fcdo.gov.uk/docs/UK-Sanctions-List.csv"
-  }
- },
- {
-  "id": "eu-fsf-dprk-sanctions",
-  "name": "EU Consolidated Financial Sanctions List (DPRK Regime)",
-  "publisher": "European External Action Service (EEAS) / DG FISMA",
-  "url": "https://data.europa.eu/data/datasets/consolidated-list-of-persons-groups-and-entities-subject-to-eu-financial-sanctions",
-  "track": "economy",
-  "language": "en",
-  "category": "sanctions",
-  "description": "European Union sanctions database listing all individuals, military entities, and trade enterprises subject to asset freezes and autonomous EU restrictive measures against North Korea.",
-  "format": "json-api",
-  "access": "download",
-  "has_geo": false,
-  "research": {
-   "last_updated": "2026-10-01",
-   "maintenance": "active",
-   "cadence": "daily",
-   "value": 4,
-   "checked": "2026-10-01"
-  },
-  "build_idea": "Harmonize EU autonomous designations with US OFAC and UN lists into our consolidated search engine.",
-  "usedBy": [],
-  "watch": {
-   "type": "headers",
-   "url": "https://data.europa.eu/data/datasets/consolidated-list-of-persons-groups-and-entities-subject-to-eu-financial-sanctions"
-  }
- },
- {
-  "id": "japan-mof-meti-sanctions",
-  "name": "Japan MOF & METI Sanctions Lists (北朝鮮に対する制裁措置)",
-  "publisher": "Japan Ministry of Finance & Ministry of Economy, Trade and Industry (METI)",
-  "url": "https://www.mofa.go.jp/mofaj/gaiko/korea/k_seisai.html",
-  "track": "economy",
-  "language": "ja",
-  "category": "sanctions",
-  "description": "Japan's autonomous economic sanctions list and METI End-User List designating North Korean financial entities, weapons procurement fronts, and Chongryon-affiliated entities.",
-  "format": "json-api",
-  "access": "download",
-  "has_geo": false,
-  "research": {
-   "last_updated": "2026-10-01",
-   "maintenance": "active",
-   "cadence": "daily / as gazetted",
-   "value": 4,
-   "checked": "2026-10-01"
-  },
-  "build_idea": "Highlight Japan-specific designations involving maritime shipping bans and illicit financial remittance channels linked to Chongryon.",
-  "usedBy": [],
-  "watch": {
-   "type": "content",
-   "url": "https://data.opensanctions.org/datasets/latest/jp_mof_sanctions/targets.nested.json"
   }
  },
  {

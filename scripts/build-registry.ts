@@ -22,8 +22,8 @@ const USED_BY: Record<string, string[]> = {
   'hdx-ocha-cod-ab-prk': ['/map'],
   'hdx-ocha-cod-ps-prk': ['/map'],
   'nasa-gibs-black-marble-wmts': ['/map'],
-  'us-ofac-sdn-dprk': ['/people'],
-  'un-sc-1718-sanctions-list': ['/people'],
+  'us-ofac-sdn-dprk': ['/people', '/sanctions'],
+  'un-sc-1718-sanctions-list': ['/people', '/sanctions'],
 };
 
 /** Watch specs chosen by hand. Overpass: count elements instead of hashing the response (its `osm3s.timestamp`

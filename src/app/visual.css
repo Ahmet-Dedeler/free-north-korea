@@ -3249,6 +3249,168 @@
   color: var(--ink-3);
   font-size: 12px;
 }
+/* /sanctions: five lists side by side, overlap bars, list tags, filterable table */
+.sanc-table td.num {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  color: var(--ink);
+}
+.sanc .index-section > h3 {
+  margin: 28px 0 8px;
+}
+.sanc-lists td:first-child small a {
+  color: var(--ink-3);
+}
+.sanc-table td small.warn-text {
+  color: var(--warn);
+}
+.sanc-notes {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0 0;
+  display: grid;
+  gap: 6px;
+  font-size: 13.5px;
+  color: var(--ink-2);
+}
+.sanc-notes b {
+  color: var(--ink);
+  margin-right: 4px;
+}
+.sanc-cover-title {
+  margin: 0 0 12px;
+  font-size: 15px;
+}
+.sanc-cover {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 10px;
+}
+.sanc-cover li {
+  display: grid;
+  grid-template-columns: 130px 1fr 190px;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+}
+.sanc-cover-bar {
+  display: flex;
+  height: 14px;
+  border-radius: 7px;
+  overflow: hidden;
+  background: var(--bar-on);
+}
+.sanc-cover-yes {
+  background: var(--accent);
+}
+.sanc-cover-maybe {
+  background: repeating-linear-gradient(135deg, color-mix(in srgb, var(--accent) 45%, transparent) 0 3px, transparent 3px 6px);
+}
+.key i.sanc-cover-yes,
+.key i.sanc-cover-maybe {
+  border-radius: 3px;
+}
+.sanc-cover-num small {
+  display: block;
+  color: var(--ink-3);
+  font-size: 12px;
+}
+@media (max-width: 640px) {
+  .sanc-cover li {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+}
+.sanc-methods {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 6px 18px;
+  font-size: 13.5px;
+  color: var(--ink-2);
+}
+.sanc-methods b {
+  display: inline-block;
+  min-width: 34px;
+  color: var(--ink);
+  font-variant-numeric: tabular-nums;
+}
+.ltags {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+.ltag {
+  display: inline-block;
+  padding: 1px 7px;
+  border: 1px solid var(--line-strong);
+  border-radius: 6px;
+  font-size: 11.5px;
+  font-weight: 600;
+  line-height: 1.6;
+  color: var(--ink);
+  background: var(--panel);
+  text-decoration: none;
+  white-space: nowrap;
+}
+a.ltag:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.ltag.maybe {
+  border-style: dashed;
+  color: var(--ink-3);
+  font-weight: 500;
+}
+.xf-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 12px 0 6px;
+}
+.xf-chips input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+.xf-chips label {
+  display: inline-block;
+  padding: 5px 12px;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  background: var(--panel);
+  font-size: 13px;
+  cursor: pointer;
+}
+.xf-chips label small {
+  color: var(--ink-3);
+  margin-left: 3px;
+}
+.xf-chips input:focus-visible + label {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+.xf-chips input:checked + label {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--ink-inverse);
+}
+.xf-chips input:checked + label small {
+  color: inherit;
+  opacity: 0.75;
+}
+.xf:has(#xf-US:checked) .xf-table tbody tr:not(.on-US),
+.xf:has(#xf-UK:checked) .xf-table tbody tr:not(.on-UK),
+.xf:has(#xf-EU:checked) .xf-table tbody tr:not(.on-EU),
+.xf:has(#xf-JP:checked) .xf-table tbody tr:not(.on-JP),
+.xf:has(#xf-multi:checked) .xf-table tbody tr:not(.multi),
+.xf:has(#xf-solo:checked) .xf-table tbody tr:not(.solo) {
+  display: none;
+}
 .sanc-profile {
   margin-left: 6px;
   font-size: 11px;
