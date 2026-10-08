@@ -38,7 +38,7 @@ jobs:
       # New missile tests from nagix/nk-missile-tests (behind /missiles and the missile-launches chart).
       - run: node scripts/sync-missiles.mjs || echo "missile sync skipped"
       # pdftotext reads the Ministry of Unification defector PDF. A failed source keeps its previous series.
-      - run: sudo apt-get install -y -qq --no-install-recommends poppler-utils > /dev/null
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq --no-install-recommends poppler-utils > /dev/null
       - run: node scripts/build-series.ts || echo "series refresh skipped"
       # Camp Watch: new Sentinel-2 images of camps and nuclear/missile sites. A failed site keeps its images.
       - uses: astral-sh/setup-uv@v6

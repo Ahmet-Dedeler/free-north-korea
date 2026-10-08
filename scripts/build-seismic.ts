@@ -64,8 +64,19 @@ function km(lat1: number, lon1: number, lat2: number, lon2: number) {
   return 6371 * 2 * Math.asin(Math.sqrt(a));
 }
 
-const res = await fetch(QUERY_URL, { headers: { 'user-agent': UA }, signal: AbortSignal.timeout(60_000) });
-if (!res.ok) throw new Error(`USGS: HTTP ${res.status}`);
+/** USGS's query service has short outages (500/502); try three times, a minute apart, before giving up. */
+async function fetchUsgs(tries = 3): Promise<Response> {
+  for (let i = 1; ; i++) {
+    const res = await fetch(QUERY_URL, { headers: { 'user-agent': UA }, signal: AbortSignal.timeout(60_000) }).catch((e: Error) => e);
+    if (res instanceof Response && res.ok) return res;
+    const why = res instanceof Response ? `HTTP ${res.status}` : res.message;
+    if (i >= tries) throw new Error(`USGS: ${why}`);
+    console.warn(`USGS: ${why}, retrying in 60 s`);
+    await new Promise((ok) => setTimeout(ok, 60_000));
+  }
+}
+
+const res = await fetchUsgs();
 const geo = (await res.json()) as { features: UsgsFeature[]; metadata: { count: number; status: number } };
 if (!Array.isArray(geo.features)) throw new Error('USGS: no features array');
 

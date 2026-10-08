@@ -30,7 +30,7 @@ jobs:
         with:
           node-version: 22
       - run: node scripts/build-seismic.ts || echo "seismic refresh skipped"
-      - run: sudo apt-get install -y -qq --no-install-recommends poppler-utils > /dev/null
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq --no-install-recommends poppler-utils > /dev/null
       - run: node scripts/build-launch-reports.ts || echo "launch reports refresh skipped"
       # Kim Watch, once a day (the first run after midnight UTC): KCNA's activity list only, no site search.
       # KCNA is HTTP-only and slow; a failed run keeps the previous data.
