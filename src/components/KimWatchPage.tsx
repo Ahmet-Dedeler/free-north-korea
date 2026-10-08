@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { CalendarClock, CalendarRange, Mail, Newspaper, ShieldAlert } from 'lucide-react';
 import AsOf, { formatAsOf } from '@/components/AsOf';
 import { Ext } from '@/components/Ext';
+import LiveDays from '@/components/LiveDays';
 import PersonLink from '@/components/PersonLink';
 import { SourceCards, StatTile } from '@/components/Visual';
 import {
@@ -218,9 +219,11 @@ export default function KimWatchPage({ lang }: { lang: Lang }) {
       {lastAppearance && since !== null && (
         <section className="kw-hero">
           <div className="kw-hero-num">
-            <b className="display">{since}</b>
+            <b className="display">
+              <LiveDays from={lastAppearance.date} initial={since} />
+            </b>
             <span>
-              {t.lastSeenBlock.unit(since)} <em>{t.daysSince}</em>
+              <LiveDays from={lastAppearance.date} initial={since} show="unit" one={t.lastSeenBlock.unit(1)} many={t.lastSeenBlock.unit(2)} /> <em>{t.daysSince}</em>
             </span>
           </div>
           <div className="kw-hero-last">
@@ -231,7 +234,7 @@ export default function KimWatchPage({ lang }: { lang: Lang }) {
                 <Headline r={lastRecord} lang={lang} />
               </p>
             )}
-            <p className="muted small">{t.counted(fmt(today))}</p>
+            <p className="muted small">{t.counted(fmt(fetched))}</p>
           </div>
         </section>
       )}

@@ -249,10 +249,7 @@ export interface SanctionsText {
   unEntitiesTitle: string;
   unHint: string;
   col: { name: string; role: string; listed: string; ref: string; why: string };
-  usTitle: string;
-  usHint: string;
   kinds: Record<OfacKind, string>;
-  usLookup: string;
   sources: string;
   listsTitle: string;
   listsHint: string;
@@ -318,10 +315,7 @@ export const SANCTIONS_TEXT: Record<Lang, SanctionsText> = {
     unEntitiesTitle: 'UN list: companies and agencies',
     unHint: 'Asset freeze, and a travel ban for people. Reasons are the UN’s own wording.',
     col: { name: 'Name', role: 'Role', listed: 'Listed', ref: 'UN ref', why: 'Why' },
-    usTitle: 'US Treasury list (OFAC)',
-    usHint: 'Everyone on the Specially Designated Nationals list under a North Korea program, plus non-proliferation listings that OFAC marks as covered by its North Korea Sanctions Regulations. Americans may not deal with them, and foreign banks that do risk losing access to the US dollar system.',
     kinds: { individual: 'People', entity: 'Companies and agencies', vessel: 'Ships', aircraft: 'Aircraft' },
-    usLookup: 'Each name links to its OFAC record.',
     sources: 'Sources',
     listsTitle: 'Five official lists',
     listsHint: 'Entries under each list’s North Korea measures, counted from the official files. Each government keeps its own list, so the same person can appear on several.',
@@ -404,10 +398,7 @@ export const SANCTIONS_TEXT: Record<Lang, SanctionsText> = {
     unEntitiesTitle: '유엔 명단: 기관·기업',
     unHint: '자산 동결 대상이며, 개인은 여행 금지 대상이기도 합니다. 사유는 유엔의 원문입니다.',
     col: { name: '이름', role: '직책', listed: '지정일', ref: '유엔 번호', why: '사유' },
-    usTitle: '미국 재무부 명단 (OFAC)',
-    usHint: '북한 관련 프로그램으로 특별지정제재대상(SDN)에 오른 모든 대상과, 비확산 프로그램 대상 중 OFAC가 북한 제재 규정 적용 대상으로 표시한 항목입니다. 미국인은 이들과 거래할 수 없고, 거래하는 외국 은행은 달러 결제망에서 배제될 위험이 있습니다.',
     kinds: { individual: '개인', entity: '기관·기업', vessel: '선박', aircraft: '항공기' },
-    usLookup: '이름을 누르면 OFAC 원문 기록으로 이동합니다.',
     sources: '출처',
     listsTitle: '공식 명단 다섯 개',
     listsHint: '각 명단의 대북 제재 조치에 오른 항목 수를 공식 파일에서 셌습니다. 정부마다 명단을 따로 관리하기 때문에 같은 사람이 여러 명단에 오를 수 있습니다.',
@@ -490,10 +481,7 @@ export const SANCTIONS_TEXT: Record<Lang, SanctionsText> = {
     unEntitiesTitle: '国連リスト：団体・企業',
     unHint: '資産凍結の対象で、個人は渡航禁止の対象でもあります。理由は国連の原文です。',
     col: { name: '名前', role: '役職', listed: '指定日', ref: '国連番号', why: '理由' },
-    usTitle: '米国財務省リスト（OFAC）',
-    usHint: '北朝鮮関連プログラムで特別指定国民（SDN）リストに載っているすべての対象と、不拡散プログラムの対象のうちOFACが北朝鮮制裁規則の適用対象と明記したものです。米国人は取引を禁じられ、取引した外国の銀行はドル決済網から締め出されるおそれがあります。',
     kinds: { individual: '個人', entity: '団体・企業', vessel: '船舶', aircraft: '航空機' },
-    usLookup: '名前をクリックするとOFACの記録が開きます。',
     sources: '出典',
     listsTitle: '5つの公式リスト',
     listsHint: '各リストの北朝鮮関連措置の対象数を、公式ファイルから数えました。政府ごとにリストを作っているため、同じ人物が複数のリストに載ることがあります。',
@@ -576,10 +564,7 @@ export const SANCTIONS_TEXT: Record<Lang, SanctionsText> = {
     unEntitiesTitle: '联合国名单：公司和机构',
     unHint: '冻结资产，个人还受旅行禁令限制。理由为联合国原文。',
     col: { name: '名称', role: '职务', listed: '列名日期', ref: '联合国编号', why: '理由' },
-    usTitle: '美国财政部名单（OFAC）',
-    usHint: '在朝鲜相关项目下列入特别指定国民（SDN）名单的所有对象，以及OFAC注明适用《朝鲜制裁条例》的防扩散项目对象。美国人不得与其交易，与其往来的外国银行可能被切断美元结算渠道。',
     kinds: { individual: '个人', entity: '公司和机构', vessel: '船只', aircraft: '飞机' },
-    usLookup: '点击名称可查看OFAC原始记录。',
     sources: '来源',
     listsTitle: '五份官方名单',
     listsHint: '按官方文件统计各名单中朝鲜相关措施下的条目数。每个政府各自维护名单，所以同一个人可能出现在几份名单上。',

@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Building2, CalendarOff, CircleQuestionMark, Flag, Landmark, Plane, Ship, User, Users } from 'lucide-react';
+import { Building2, CalendarOff, CircleQuestionMark, Flag, Landmark, Users } from 'lucide-react';
 import AsOf, { formatAsOf } from '@/components/AsOf';
 import Avatar from '@/components/Avatar';
 import { Ext } from '@/components/Ext';
@@ -16,7 +16,6 @@ import {
   SANCTIONS_TEXT,
   SANCTION_SOURCES,
   type ListKey,
-  type OfacKind,
   type Target,
   type UnEntry,
 } from '@/content/sanctions';
@@ -25,8 +24,6 @@ import { REVIEWED } from '@/site/config';
 import { LANG_TAG, absolute, jsonLd, type Lang } from '@/site/seo';
 
 const LOCALE: Record<Lang, string> = { en: 'en-GB', ko: 'ko-KR', ja: 'ja-JP', zh: 'zh-CN' };
-const KIND_ICON: Record<OfacKind, typeof User> = { individual: User, entity: Building2, vessel: Ship, aircraft: Plane };
-const KINDS: OfacKind[] = ['individual', 'entity', 'vessel', 'aircraft'];
 
 // Which list entries belong to someone we have a profile for ("UN KPi.043" → jo-yong-won).
 const profileOf = new Map<string, string>();
@@ -401,47 +398,6 @@ export default function SanctionsPage({ lang }: { lang: Lang }) {
         <UnTable rows={un.entities} people={false} t={t} lang={lang} />
       </section>
 
-      <section className="index-section">
-        <h2>
-          {t.usTitle} <small>{ofac.length}</small>
-        </h2>
-        <p className="muted">
-          {t.usHint} {t.usLookup}
-        </p>
-        <div className="tiles">
-          {KINDS.map((k) => (
-            <StatTile key={k} icon={KIND_ICON[k]} value={ofac.filter((e) => e.kind === k).length} label={t.kinds[k]} />
-          ))}
-        </div>
-        {KINDS.map((k) => {
-          const rows = ofac.filter((e) => e.kind === k);
-          const Icon = KIND_ICON[k];
-          return (
-            <details key={k} className="sanc-details">
-              <summary>
-                <Icon size={16} aria-hidden="true" /> {t.kinds[k]} <small>{rows.length}</small>
-              </summary>
-              <ul className="sanc-names" lang="en">
-                {rows.map((e) => {
-                  const pid = profileOf.get(`OFAC ${e.id}`);
-                  return (
-                    <li key={e.id}>
-                      <Ext href={`https://sanctionssearch.ofac.treas.gov/Details.aspx?id=${e.id}`}>{e.name}</Ext>
-                      {pid && (
-                        <Link href={`/people/${pid}`} className="sanc-profile">
-                          profile
-                        </Link>
-                      )}
-                      {e.title && <small>{e.title}</small>}
-                    </li>
-                  );
-                })}
-              </ul>
-            </details>
-          );
-        })}
-      </section>
-
       <section className="index-section xf" id="beyond-un">
         <h2>
           {t.tableTitle} <small>{beyond.length}</small>
@@ -473,7 +429,19 @@ export default function SanctionsPage({ lang }: { lang: Lang }) {
                 const cls = [...Object.keys(x.on).map((k) => `on-${k}`), Object.keys(x.on).length > 1 ? 'multi' : '', isSolo(x) ? 'solo' : ''].filter(Boolean).join(' ');
                 return (
                   <tr key={Object.entries(x.on).map(([k, ids]) => `${k}${ids.join()}`).join()} className={cls}>
-                    <td>{x.name}</td>
+                    <td>
+                      {x.name}
+                      {(() => {
+                        const pid = (x.on.US ?? []).map((id) => profileOf.get(`OFAC ${id}`)).find(Boolean);
+                        return (
+                          pid && (
+                            <Link href={`/people/${pid}`} className="sanc-profile">
+                              profile
+                            </Link>
+                          )
+                        );
+                      })()}
+                    </td>
                     <td>
                       <ListTags target={x} lang={lang} t={t} />
                     </td>

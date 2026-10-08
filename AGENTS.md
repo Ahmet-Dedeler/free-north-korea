@@ -51,6 +51,13 @@ before adding any page or article.
   `src/content/eventsI18n.ts`. Shown by `components/SeismicBlock.tsx` (/military), `components/LaunchReports.tsx`
   (/missiles/list: MOD launches newer than the CNS dataset, flagged "not yet in the database") and the reusable
   `components/EventFeed.tsx`. Labels and numbers are the agency's own (USGS `type`, MOD estimates); never relabel.
+- `/kim-watch`: Kim Jong Un's public appearances as KCNA reports them (`scripts/build-kimwatch.ts` → `data/kimwatch.json`,
+  text in `content/kimWatch.ts`). Regime-reported, so always labelled as KCNA's claim. KCNA's listings only reach back 12
+  months, so the job must keep running or old reports are lost. kcna.kp is blocked in South Korea: never link it from
+  `/ko`. "Days since" is recounted in the browser by `components/LiveDays.tsx`.
+- `/watch`: the hub for what we measure or count on a schedule, sorted by how a number is known (measured, counted,
+  reported by the regime). `components/WatchPage.tsx` only reuses the feature blocks (EventFeed, LatestImagery,
+  sanctions counts, KimLastSeen); text in `content/watch.ts`. Prefer measured and counted data over regime claims.
 - Camp Watch: our own dated Sentinel-2 images of the camps and nuclear/missile sites in `places.ts`.
   `components/SatWatch.tsx` (latest image, month strip, before/after slider, scale bar, Copernicus credit) sits on
   camp and place dossiers; `LatestImagery` from the same file is the "newest images" strip for a hub page. Text in

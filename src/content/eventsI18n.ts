@@ -110,7 +110,7 @@ export const EVENT_TEXT: Record<Lang, EventText> = {
     seismic: {
       title: 'What the seismometers recorded',
       body: (tests) =>
-        `Seismometers around the world pick up every nuclear test. The US Geological Survey (USGS) lists ${tests} events at Punggye-ri as "nuclear explosion", including the first three tests in 2006, 2009 and 2013. The labels below are USGS's own; the distance from the test site is worked out from its coordinates.`,
+        `Seismometers around the world pick up every nuclear test. The US Geological Survey (USGS) lists ${tests} events at Punggye-ri as "nuclear explosion", including the first three tests in 2006, 2009 and 2013. The labels below are USGS's own; the distance from the test site is worked out from its coordinates. Magnitude is logarithmic: each step of 1 means about 32 times more energy, so the 6.3 test in 2017 released roughly 1,000 times the energy of the 4.3 test in 2006, though its bar is only half again as long.`,
       nearTitle: (n, km) => `${n} events within ${km} km of the Punggye-ri test site`,
       columns: { date: 'Date (UTC)', label: 'USGS label', magnitude: 'Magnitude', distance: 'From the test site', place: 'Place (as USGS writes it)', link: 'USGS page' },
       fromSite: (km) => `${km} from Punggye-ri`,
@@ -163,7 +163,7 @@ export const EVENT_TEXT: Record<Lang, EventText> = {
     seismic: {
       title: '지진계에 기록된 것',
       body: (tests) =>
-        `세계 곳곳의 지진계는 핵실험을 빠짐없이 잡아냅니다. 미국 지질조사국(USGS)은 풍계리에서 일어난 ${tests}건을 "핵폭발"(nuclear explosion)로 분류하며, 2006년, 2009년, 2013년의 첫 세 차례 실험도 여기에 포함됩니다. 아래 분류는 USGS의 것이고, 실험장과의 거리는 USGS 좌표로 계산했습니다.`,
+        `세계 곳곳의 지진계는 핵실험을 빠짐없이 잡아냅니다. 미국 지질조사국(USGS)은 풍계리에서 일어난 ${tests}건을 "핵폭발"(nuclear explosion)로 분류하며, 2006년, 2009년, 2013년의 첫 세 차례 실험도 여기에 포함됩니다. 아래 분류는 USGS의 것이고, 실험장과의 거리는 USGS 좌표로 계산했습니다. 규모는 로그 척도입니다. 1 오를 때마다 에너지는 약 32배가 되므로, 2017년 규모 6.3 실험은 2006년 규모 4.3 실험보다 약 1,000배의 에너지를 냈습니다. 막대 길이는 1.5배 정도만 차이 납니다.`,
       nearTitle: (n, km) => `풍계리 핵실험장 반경 ${km}km 안의 ${n}건`,
       columns: { date: '날짜(UTC)', label: 'USGS 분류', magnitude: '규모', distance: '실험장과의 거리', place: '위치(USGS 표기)', link: 'USGS 페이지' },
       fromSite: (km) => `풍계리에서 ${km}`,
@@ -215,7 +215,7 @@ export const EVENT_TEXT: Record<Lang, EventText> = {
     seismic: {
       title: '地震計が記録したもの',
       body: (tests) =>
-        `世界中の地震計は核実験を必ずとらえます。米国地質調査所（USGS）は豊渓里（プンゲリ）の${tests}件を「核爆発」（nuclear explosion）に分類しており、2006年、2009年、2013年の最初の3回も含まれます。下の分類はUSGSのもので、実験場からの距離はUSGSの座標から計算しました。`,
+        `世界中の地震計は核実験を必ずとらえます。米国地質調査所（USGS）は豊渓里（プンゲリ）の${tests}件を「核爆発」（nuclear explosion）に分類しており、2006年、2009年、2013年の最初の3回も含まれます。下の分類はUSGSのもので、実験場からの距離はUSGSの座標から計算しました。マグニチュードは対数の尺度です。1上がるごとにエネルギーは約32倍になるため、2017年のM6.3の実験は2006年のM4.3の実験の約1,000倍のエネルギーを出しました。棒の長さは1.5倍ほどしか違いません。`,
       nearTitle: (n, km) => `豊渓里核実験場から${km}km以内の${n}件`,
       columns: { date: '日付（UTC）', label: 'USGSの分類', magnitude: 'マグニチュード', distance: '実験場からの距離', place: '場所（USGSの表記）', link: 'USGSのページ' },
       fromSite: (km) => `豊渓里から${km}`,
@@ -267,7 +267,7 @@ export const EVENT_TEXT: Record<Lang, EventText> = {
     seismic: {
       title: '地震仪记录到的事件',
       body: (tests) =>
-        `世界各地的地震仪都能捕捉到核试验。美国地质调查局（USGS）把丰溪里的 ${tests} 次事件列为"核爆炸"（nuclear explosion），其中包括 2006 年、2009 年和 2013 年的前三次试验。下面的分类是 USGS 自己的，与试验场的距离根据 USGS 的坐标计算。`,
+        `世界各地的地震仪都能捕捉到核试验。美国地质调查局（USGS）把丰溪里的 ${tests} 次事件列为"核爆炸"（nuclear explosion），其中包括 2006 年、2009 年和 2013 年的前三次试验。下面的分类是 USGS 自己的，与试验场的距离根据 USGS 的坐标计算。震级是对数尺度：每高 1 级，能量约大 32 倍，所以 2017 年 6.3 级的试验释放的能量约为 2006 年 4.3 级试验的 1,000 倍，而条形只长了约一半。`,
       nearTitle: (n, km) => `丰溪里核试验场 ${km} 公里内的 ${n} 次事件`,
       columns: { date: '日期（UTC）', label: 'USGS 分类', magnitude: '震级', distance: '距试验场', place: '地点（USGS 原文）', link: 'USGS 页面' },
       fromSite: (km) => `距丰溪里 ${km}`,
