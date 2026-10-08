@@ -8,7 +8,7 @@ import { chartProps, getSeries, LOCALE, SERIES, SERIES_BUILT, toX, type Series }
 import ChartView from '@/charts/ChartView';
 import { defaultsFor } from '@/charts/defaults';
 import { DATA_TEXT } from '@/content/dataPage';
-import { ENTITY_LABEL, SERIES_TEXT, TOPICS, UNIT_LABEL, dataPath } from '@/content/series';
+import { CHART_UI, ENTITY_LABEL, SERIES_TEXT, TOPICS, UNIT_LABEL, dataPath } from '@/content/series';
 import { TWO_KOREAS_PATHS } from '@/content/twoKoreas';
 import { REPO_URL } from '@/site/config';
 import { LANG_TAG, absolute, jsonLd, type Lang } from '@/site/seo';
@@ -125,6 +125,16 @@ function Latest({ s, lang }: { s: Series; lang: Lang }) {
   );
 }
 
+/**
+ * Schema.org Dataset description: the one-line explanation plus title and source, so it always clears
+ * Google's 50-character minimum (short CJK lines alone don't). Shared by the /data hub and series pages.
+ */
+function datasetDescription(s: Series, lang: Lang) {
+  const text = SERIES_TEXT[s.id]?.[lang];
+  const title = text?.title ?? s.title;
+  return `${title}: ${text?.sub ?? s.title} ${CHART_UI[lang].source}: ${s.source.name}.`;
+}
+
 export function DataHub({ lang }: { lang: Lang }) {
   const t = DATA_TEXT[lang];
   const nf = new Intl.NumberFormat(LOCALE[lang]);
@@ -136,7 +146,13 @@ export function DataHub({ lang }: { lang: Lang }) {
     inLanguage: LANG_TAG[lang],
     url: absolute(dataPath(lang)),
     dateModified: SERIES_BUILT,
-    dataset: SERIES.map((s) => ({ '@type': 'Dataset', name: SERIES_TEXT[s.id]?.[lang]?.title ?? s.title, url: absolute(dataPath(lang, s.id)) })),
+    dataset: SERIES.map((s) => ({
+      '@type': 'Dataset',
+      name: SERIES_TEXT[s.id]?.[lang]?.title ?? s.title,
+      description: datasetDescription(s, lang),
+      url: absolute(dataPath(lang, s.id)),
+      license: s.source.license,
+    })),
   };
   return (
     <div className="data-hub">
@@ -232,7 +248,7 @@ export function SeriesPage({ lang, id }: { lang: Lang; id: string }) {
     '@context': 'https://schema.org',
     '@type': 'Dataset',
     name: title,
-    description: text?.sub ?? s.title,
+    description: datasetDescription(s, lang),
     inLanguage: LANG_TAG[lang],
     url,
     dateModified: s.fetched,
