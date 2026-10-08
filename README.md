@@ -10,7 +10,7 @@ the history, and the groups you can actually help.
 [![Live site](https://img.shields.io/badge/live-liberatenorthkorea.org-dc2626?style=flat-square)](https://liberatenorthkorea.org)
 [![Data refresh](https://img.shields.io/github/actions/workflow/status/Ahmet-Dedeler/free-north-korea/check-sources.yml?label=weekly%20data%20refresh&style=flat-square)](.github/workflows/check-sources.yml)
 [![License](https://img.shields.io/badge/license-Apache%202.0-0f172a?style=flat-square)](LICENSE)
-![Languages](https://img.shields.io/badge/languages-English%20·%20한국어%20·%20日本語-2563eb?style=flat-square)
+![Languages](https://img.shields.io/badge/languages-English%20·%20한국어%20·%20日本語%20·%20中文-2563eb?style=flat-square)
 ![No cookies](https://img.shields.io/badge/cookies-none-16a34a?style=flat-square)
 
 **[Open the site](https://liberatenorthkorea.org)** ·
@@ -112,6 +112,7 @@ npm install
 npm run dev      # http://localhost:3000
 npm run build    # static pages + sitemap.xml
 npm run lint     # oxlint + tsc + translation check
+npm run check:schema  # JSON-LD vs Google's required fields (after build)
 ```
 
 Refresh the chart datasets with `node scripts/build-series.ts` (needs `pdftotext` from poppler for the defector PDF).
@@ -123,8 +124,8 @@ because some readers may be at risk.
 ## Contribute
 
 Facts live in `src/content/` and `data/`, so most fixes are a one-line edit: a wrong number, a new organization, a
-coordinate, a better source. Every fact needs a source, and everything a reader sees ships in English, Korean and
-Japanese.
+coordinate, a better source. Every fact needs a source, and everything a reader sees ships in English, Korean,
+Japanese and Chinese.
 
 - [CONTRIBUTING.md](CONTRIBUTING.md): workflow and the safety rules (no one inside North Korea or any witness can
   ever be identifiable from this site).

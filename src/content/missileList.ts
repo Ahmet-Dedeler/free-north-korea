@@ -220,6 +220,6 @@ export const MISSILE_LIST_TEXT: Record<Lang, MissileListText> = {
     empty: '无',
     datasetName: (min, max) => `朝鲜导弹试射，${min}–${max}`,
     datasetDescription: (count) =>
-      `已知的全部朝鲜弹道导弹和航天发射试验：${count}次，含日期、导弹、发射场、飞行距离、远地点和结果。`,
+      `已知的全部朝鲜弹道导弹和航天发射试验：${count}次，每次试验都列出日期、导弹型号、发射场、飞行距离、远地点高度和结果，数据来自詹姆斯·马丁防扩散研究中心（CNS）。`,
   },
 };

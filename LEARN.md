@@ -56,14 +56,15 @@ All verified facts live in typed structures under `src/content/` and `data/`.
 
 ## 4. Multilingual Architecture & Internationalization (i18n)
 
-The site is served simultaneously in three languages:
+The site is served simultaneously in four languages:
 - **English:** `/`
 - **Korean:** `/ko/`
 - **Japanese:** `/ja/`
+- **Simplified Chinese:** `/zh/`
 
 ### How It Works:
 1. **Shared Layout & Components:** Pages share visual components that accept a `lang` property and read from typed translation records (`src/content/translations/`).
-2. **Automated Linting:** `scripts/check-translations.mjs` checks every article slug in CI. A build fails if an English article lacks corresponding Korean or Japanese entries.
+2. **Automated Linting:** `scripts/check-translations.mjs` checks every article slug in CI. A build fails if an English article lacks corresponding Korean, Japanese or Chinese entries.
 3. **Hreflang & Canonical Links:** `src/site/seo.ts` dynamically generates alternating language tags for search engines, ensuring search parity worldwide.
 
 ---

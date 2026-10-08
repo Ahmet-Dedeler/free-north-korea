@@ -153,8 +153,15 @@ Run order after a scrape: `node scripts/build-layers.ts && node scripts/build-en
 - `upstream/` is a reference clone and is gitignored. Don't edit it.
 - Headless screenshots: the desktop app's browser pane can't capture while hidden, so use playwright-core with
   `channel: 'chrome'` plus `--use-angle=swiftshader`, and wait around 10 seconds for the tiles to load.
-- Before you finish: `npm run lint` (oxlint, tsc, translation check) and `npm run build` must pass.
-- When the work is done and lint + build pass, commit and push to `main` yourself. Don't ask first.
+- Structured data (JSON-LD): every block must pass Google's required fields, or Search Console emails errors weeks
+  later (it did in Oct 2026: 25 `Dataset` items on `/data` with no `description`). Rules that bit us: every `Dataset`
+  needs `name` plus a `description` of 50 to 5000 characters in every language (short CJK lines fall under 50, so pad
+  them with title and source), plus `creator` and `license` where the source has one. Nested items count: a
+  `DataCatalog`'s `dataset` entries are checked like standalone pages. Never add a license the source doesn't grant.
+  `npm run check:schema` (after `npm run build`) checks every built page; it must exit 0. For new schema types, add a
+  rule to `scripts/check-structured-data.mjs` and test one page in https://search.google.com/test/rich-results.
+- Before you finish: `npm run lint` (oxlint, tsc, translation check), `npm run build` and `npm run check:schema` must pass.
+- When the work is done and lint + build + check:schema pass, commit and push to `main` yourself. Don't ask first.
 
 <!-- BEGIN:nextjs-agent-rules -->
 

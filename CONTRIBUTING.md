@@ -20,14 +20,14 @@ Because North Korean defectors, families, and networks face extreme risks, the f
   - `src/content/library.ts`: Books, memoirs, documentaries, and research papers.
   - `src/content/places.ts`: Geocoded points of interest and escape route landmarks.
   - `src/content/articles/*.tsx`: Explainer articles for `/learn`.
-- **Translations:** `src/content/translations/` (`ko.ts` for Korean, `ja.ts` for Japanese).
+- **Translations:** `src/content/translations/` (`ko.ts` for Korean, `ja.ts` for Japanese, `zh.ts` for Chinese).
 - **Map:** `src/map/` (MapLibre GL implementation, layer styles, deep links).
 - **Missile explorer:** `src/missiles/` (CNS missile launch database visualization).
 - **Sanctions:** `data/sanctions.json` (built weekly from official UN 1718 and US OFAC lists; do not edit by hand).
 
 ## Multilingual requirements
 
-Content visible to readers is published in English, Korean (`/ko`), and Japanese (`/ja`).
+Content visible to readers is published in English, Korean (`/ko`), Japanese (`/ja`) and Simplified Chinese (`/zh`).
 
 - When adding or editing an article in `/learn`, matching entries must be updated in `src/content/translations/ko.ts` and `src/content/translations/ja.ts`.
 - Proper names should match established local usage (for example, 국민통일방송 or 自由アジア放送).

@@ -9,7 +9,8 @@
     "prebuild": "node scripts/copy-maplibre-worker.mjs",
     "build": "next build",
     "start": "next start",
-    "lint": "oxlint && tsc --noEmit && node scripts/check-translations.mjs"
+    "lint": "oxlint && tsc --noEmit && node scripts/check-translations.mjs",
+    "check:schema": "node scripts/check-structured-data.mjs"
   },
   "dependencies": {
     "lucide-react": "^1.50.0",
