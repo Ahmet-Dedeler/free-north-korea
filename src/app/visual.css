@@ -3429,3 +3429,398 @@
     gap: 14px;
   }
 }
+
+/* ---------- /kim-watch (Kim Jong Un's appearances as KCNA reported them) ---------- */
+/* activity colours: the --s slots from charts.css plus accent and grey, never the country colours */
+.kw-k-military {
+  background: var(--s4);
+}
+.kw-k-economy {
+  background: var(--s3);
+}
+.kw-k-party {
+  background: var(--s2);
+}
+.kw-k-diplomacy {
+  background: var(--s1);
+}
+.kw-k-commemoration {
+  background: var(--ink-3);
+}
+.kw-k-public {
+  background: var(--accent);
+}
+.kw-source {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  margin: 18px 0 6px;
+  padding: 14px 16px;
+  border: 1px solid var(--warn);
+  border-left-width: 5px;
+  border-radius: 12px;
+  background: var(--panel);
+}
+.kw-source svg {
+  flex: none;
+  margin-top: 2px;
+  color: var(--warn);
+}
+.kw-source p {
+  margin: 4px 0 0;
+  color: var(--ink-2);
+  max-width: 760px;
+  line-height: 1.55;
+}
+.kw-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr);
+  gap: 18px 32px;
+  align-items: center;
+  margin-top: 20px;
+  padding: 22px 26px;
+  border-radius: 16px;
+  background: var(--poster);
+  color: #f8fafc;
+}
+.kw-hero-num {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+}
+.kw-hero-num b {
+  font-size: clamp(72px, 14vw, 132px);
+  line-height: 0.9;
+  color: var(--e-prk);
+  font-weight: 400;
+}
+.kw-hero-num span {
+  font-size: 20px;
+  font-weight: 700;
+}
+.kw-hero-num em {
+  display: block;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #cbd5e1;
+  max-width: 220px;
+}
+.kw-hero-last small {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 11.5px;
+  color: #94a3b8;
+}
+.kw-hero-last > b {
+  font-size: 22px;
+}
+.kw-hero-last p {
+  margin: 6px 0 0;
+  color: #e2e8f0;
+}
+.kw-hero-last a {
+  color: #f8fafc;
+}
+.kw-hero-last .muted {
+  color: #94a3b8;
+}
+/* year calendar */
+.kw-cal-wrap {
+  overflow-x: auto;
+  padding-bottom: 4px;
+}
+.kw-cal-months,
+.kw-cal {
+  display: grid;
+  grid-template-columns: repeat(53, 12px);
+  gap: 2px;
+  min-width: max-content;
+}
+.kw-cal-months span {
+  font-size: 10.5px;
+  color: var(--ink-3);
+  white-space: nowrap;
+  height: 15px;
+}
+.kw-cal {
+  grid-template-rows: repeat(7, 12px);
+  grid-auto-flow: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.kw-cal li {
+  border-radius: 2px;
+}
+.kw-cal li.kw-cal-none {
+  background: var(--bar-on);
+  outline: 1px solid var(--line);
+  outline-offset: -1px;
+}
+/* monthly bars reuse .year-bars; a few more labels fit when they are small */
+.kw-bars small {
+  font-size: 10.5px;
+  white-space: nowrap;
+}
+.kw-bars-small {
+  height: 70px;
+  margin-top: 10px;
+}
+.kw-bar-daughter {
+  background: var(--danger);
+}
+.kw-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 0 32px;
+}
+.kw-hbars {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0 0;
+  display: grid;
+  gap: 6px;
+}
+.kw-hbars li {
+  display: grid;
+  grid-template-columns: minmax(110px, 40%) 1fr auto;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+}
+.kw-hb-label {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.kw-hb-track {
+  height: 12px;
+  border-radius: 6px;
+  background: var(--bar-on);
+  overflow: hidden;
+}
+.kw-hb-track i {
+  display: block;
+  height: 100%;
+  border-radius: 6px;
+}
+.kw-hb-value {
+  font-size: 12.5px;
+  color: var(--ink-2);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.kw-bar-place {
+  background: var(--accent);
+}
+.kw-bar-none {
+  background: var(--ink-3);
+}
+.kw-bar-person {
+  background: var(--s2);
+}
+.kw-daughter {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+.kw-daughter p {
+  margin: 0 0 8px;
+  max-width: 680px;
+}
+.kw-daughter-num {
+  flex: none;
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+.kw-daughter-num b {
+  font-size: 64px;
+  line-height: 1;
+  color: var(--danger);
+  font-weight: 400;
+}
+.kw-daughter-num span {
+  color: var(--ink-2);
+}
+/* timeline */
+.kw-timeline details {
+  border-top: 1px solid var(--line);
+}
+.kw-timeline summary {
+  cursor: pointer;
+  padding: 10px 0;
+  font-weight: 700;
+  font-size: 15px;
+}
+.kw-timeline summary small {
+  font-weight: 400;
+  color: var(--ink-3);
+  margin-left: 6px;
+}
+.kw-timeline ol {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 14px;
+}
+.kw-day {
+  display: grid;
+  grid-template-columns: 110px minmax(0, 1fr);
+  gap: 12px;
+  padding: 9px 0;
+  border-bottom: 1px dashed var(--line);
+}
+.kw-day:last-child {
+  border-bottom: 0;
+}
+.kw-day-date {
+  font-size: 13px;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  padding-left: 9px;
+  border-left: 4px solid var(--ink-3);
+  height: fit-content;
+}
+.kw-kb-military {
+  border-left-color: var(--s4);
+}
+.kw-kb-economy {
+  border-left-color: var(--s3);
+}
+.kw-kb-party {
+  border-left-color: var(--s2);
+}
+.kw-kb-diplomacy {
+  border-left-color: var(--s1);
+}
+.kw-kb-commemoration {
+  border-left-color: var(--ink-3);
+}
+.kw-kb-public {
+  border-left-color: var(--accent);
+}
+.kw-reports {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 3px;
+  font-size: 14px;
+}
+.kw-day-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px 8px;
+  align-items: center;
+  margin: 6px 0 0;
+  font-size: 12.5px;
+  color: var(--ink-2);
+}
+.kw-chip {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 1px 7px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  font-size: 11.5px;
+  color: var(--ink-2);
+  white-space: nowrap;
+}
+.kw-day-meta .kw-chip {
+  margin-left: 0;
+}
+.kw-chip-daughter {
+  border-color: var(--danger);
+  color: var(--danger);
+}
+.kw-with {
+  min-width: 0;
+}
+.kw-msgs {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 0;
+  display: grid;
+  gap: 6px;
+  font-size: 13.5px;
+}
+.kw-msgs small {
+  color: var(--ink-3);
+  font-variant-numeric: tabular-nums;
+}
+.kw-msg-table td:not(:first-child),
+.kw-msg-table th:not(:first-child) {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+/* reusable "days since last seen" block (KimLastSeen) */
+.kw-lastseen {
+  margin: 18px 0;
+}
+.kw-lastseen a {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 16px;
+  border: 1px solid var(--line);
+  border-left: 5px solid var(--e-prk);
+  border-radius: 12px;
+  background: var(--panel);
+  color: var(--ink);
+  text-decoration: none;
+}
+.kw-lastseen a:hover {
+  background: var(--hover);
+}
+.kw-ls-icon {
+  flex: none;
+  color: var(--ink-3);
+}
+.kw-ls-count {
+  flex: none;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.kw-ls-count b {
+  font-size: 38px;
+  line-height: 1;
+  font-weight: 400;
+  color: var(--e-prk);
+}
+.kw-ls-text {
+  font-size: 14px;
+  color: var(--ink-2);
+  min-width: 0;
+}
+.kw-ls-text small {
+  display: block;
+  margin-top: 2px;
+  color: var(--accent);
+}
+@media (max-width: 700px) {
+  .kw-hero {
+    grid-template-columns: minmax(0, 1fr);
+    padding: 18px;
+  }
+  .kw-day {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 4px;
+  }
+  .kw-daughter {
+    flex-direction: column;
+    gap: 6px;
+  }
+  .kw-hbars li {
+    grid-template-columns: minmax(90px, 42%) 1fr auto;
+  }
+  .kw-ls-icon {
+    display: none;
+  }
+}
+@media (max-width: 520px) {
+  /* thirteen month labels do not fit on a phone: keep every other one */
+  .kw-bars li:nth-child(even) small {
+    display: none;
+  }
+}
