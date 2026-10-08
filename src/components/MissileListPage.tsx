@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { CalendarDays, CheckCircle2, Map, Rocket, Target } from 'lucide-react';
 import AsOf from '@/components/AsOf';
 import { Ext } from '@/components/Ext';
+import LaunchReports from '@/components/LaunchReports';
 import { StatTile } from '@/components/Visual';
 import { MISSILE_LIST_LOCALE, MISSILE_LIST_PATHS, MISSILE_LIST_TEXT, MISSILE_TYPE_IDS } from '@/content/missileList';
 import { buildDataset } from '@/missiles/data';
@@ -97,6 +98,8 @@ export default function MissileListPage({ lang }: { lang: Lang }) {
           <Map size={15} /> {text.openMap}
         </Link>
       </p>
+
+      <LaunchReports lang={lang} />
 
       <nav className="mlist-years" aria-label={text.jumpToYear}>
         {years.map((year) => (

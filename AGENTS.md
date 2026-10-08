@@ -46,6 +46,11 @@ before adding any page or article.
   `components/Reveal.tsx` adds the grow-in. Country colours are only for countries; other series use the `--s1..4` slots.
 - `/sanctions`: everyone on the UN 1718 list and the US Treasury (OFAC) North Korea programs. One component
   (`components/SanctionsPage.tsx`) renders every language route.
+- Event wire (measured events within hours): `src/content/events.ts` reads `data/seismic.json` (USGS catalog, box
+  around North Korea) and `data/launch-reports.json` (Japan Ministry of Defense launch PDFs); text in
+  `src/content/eventsI18n.ts`. Shown by `components/SeismicBlock.tsx` (/military), `components/LaunchReports.tsx`
+  (/missiles/list: MOD launches newer than the CNS dataset, flagged "not yet in the database") and the reusable
+  `components/EventFeed.tsx`. Labels and numbers are the agency's own (USGS `type`, MOD estimates); never relabel.
 - Content pages are visual, not text walls. Reuse the building blocks before writing paragraphs:
   `components/Visual.tsx` (StatTile, icon chips, SourceCards), `AsOf` (date a number is from), `SatView` (Esri satellite
   tiles, no map lib), `Locator` (server SVG of NK from `site/geo.ts`), `HoverLinks` (OrgLink/PlaceLink hover previews,
@@ -112,7 +117,12 @@ exist.
    sanctions data). Each group has a `maxAgeDays`, so the weekly Action only refetches what is due; a failing source
    keeps its previous series. Hand-checked numbers (a year the official file doesn't have yet) go in
    `data/series/curated/` with the URL they came from. Research behind it: `docs/research/charts/`.
-8. `scripts/fetch-media.ts`: book covers, film posters, org logos → `public/img/`, credits in `src/content/media.json`.
+8. `scripts/build-seismic.ts` + `scripts/build-launch-reports.ts` (`.github/workflows/event-wire.yml`, every 3 hours)
+   → `data/seismic.json`, `data/launch-reports.json`. MOD's HTML pages and year indexes sit behind a Cloudflare
+   check; the script reads `/j/rss/news.xml`, `/j/press/news/index.html` and the 続報 PDFs, and also tries the PDF names
+   of the last three days because the RSS lags. `--backfill` probes launch days from the CNS dataset (PDFs exist from
+   2020 on). Both files are rewritten only when something changed or their date is a week old.
+9. `scripts/fetch-media.ts`: book covers, film posters, org logos → `public/img/`, credits in `src/content/media.json`.
 
 Run order after a scrape: `node scripts/build-layers.ts && node scripts/build-entities.ts`.
 

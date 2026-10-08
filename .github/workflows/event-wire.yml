@@ -1,0 +1,41 @@
+# Event wire: physically measured events on the site within hours.
+# - scripts/build-seismic.ts: USGS catalog events in a box around North Korea -> data/seismic.json
+# - scripts/build-launch-reports.ts: Japan Ministry of Defense launch reports (PDFs) -> data/launch-reports.json
+# Plain Node with no npm install; pdftotext (poppler) reads the MOD PDFs. A failed source keeps its previous file.
+# Each script only rewrites its file when something changed (or its date is a week old), so most runs commit
+# nothing. A commit redeploys the site, which puts the new event on /military, /missiles/list and every EventFeed.
+# Shares the data-refresh concurrency group with check-sources.yml so the two never push at the same time.
+name: Event wire
+
+on:
+  schedule:
+    - cron: '23 */3 * * *' # every 3 hours
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: data-refresh
+  cancel-in-progress: false
+
+jobs:
+  wire:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node scripts/build-seismic.ts || echo "seismic refresh skipped"
+      - run: sudo apt-get install -y -qq --no-install-recommends poppler-utils > /dev/null
+      - run: node scripts/build-launch-reports.ts || echo "launch reports refresh skipped"
+      - name: Commit if anything changed
+        run: |
+          git config user.name "event-wire"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/seismic.json data/launch-reports.json
+          git diff --cached --quiet && exit 0
+          git commit -m "Event wire: $(date -u +'%F %H:%M') UTC"
+          git pull --rebase origin main && git push

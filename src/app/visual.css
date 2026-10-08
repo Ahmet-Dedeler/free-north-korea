@@ -3591,3 +3591,220 @@ a.ltag:hover {
     gap: 14px;
   }
 }
+
+/* ---------- event wire: seismic block (/military), MOD launch reports (/missiles/list), EventFeed ---------- */
+.seis {
+  margin: 28px 0 8px;
+}
+.seis h3 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 20px;
+  margin: 0 0 6px;
+}
+.seis h4 {
+  margin: 18px 0 8px;
+  font-size: 14px;
+  color: var(--ink-2);
+}
+.seis-rows {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 4px;
+  max-width: 900px;
+}
+.seis-rows li {
+  --c: var(--ink-3);
+  display: grid;
+  grid-template-columns: 112px 128px minmax(80px, 1fr) 70px 150px 44px;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
+}
+.seis-rows li:hover {
+  background: var(--hover);
+}
+.seis-rows li.danger {
+  --c: var(--danger);
+}
+.seis-rows li.warn {
+  --c: var(--warn);
+}
+.seis-date {
+  color: var(--ink-2);
+}
+.seis-label {
+  justify-self: start;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--ink-2);
+  background: var(--hover);
+}
+.seis-label.danger {
+  color: var(--danger);
+  background: color-mix(in srgb, var(--danger) 12%, transparent);
+}
+.seis-label.warn {
+  color: var(--warn);
+  background: color-mix(in srgb, var(--warn) 12%, transparent);
+}
+.seis-bar {
+  height: 10px;
+  border-radius: 5px;
+  background: var(--line);
+  overflow: hidden;
+}
+.seis-bar i {
+  display: block;
+  height: 100%;
+  border-radius: 5px;
+  background: var(--c);
+}
+.seis-mag b {
+  font-size: 15px;
+}
+.seis-mag small,
+.seis-km {
+  color: var(--ink-2);
+  font-size: 12px;
+}
+.seis-link {
+  font-size: 12px;
+}
+.seis-all {
+  margin-top: 14px;
+  max-width: 900px;
+}
+.seis-all summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--accent);
+}
+.seis-foot,
+.mod-foot {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 10px;
+  margin: 12px 0 0;
+}
+@media (max-width: 700px) {
+  .seis-rows li {
+    grid-template-columns: 1fr auto;
+    row-gap: 4px;
+  }
+  .seis-bar {
+    grid-column: 1 / -1;
+    order: 5;
+  }
+  .seis-km {
+    order: 6;
+  }
+  .seis-link {
+    order: 7;
+    justify-self: end;
+  }
+}
+
+.mod-wire {
+  margin: 22px 0;
+}
+.page .mod-wire h2 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 20px;
+  text-transform: none;
+  letter-spacing: 0;
+  color: var(--ink);
+}
+.mod-wire > p {
+  max-width: 760px;
+  color: var(--ink-body);
+}
+.mod-table td small {
+  display: block;
+  color: var(--ink-2);
+  font-size: 12px;
+}
+.mod-table th {
+  background: var(--panel);
+}
+.mod-table tr.mod-fresh td {
+  background: color-mix(in srgb, var(--warn) 8%, transparent);
+}
+.mod-badge {
+  display: block;
+  width: fit-content;
+  margin-bottom: 4px;
+  padding: 1px 7px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--warn);
+  background: color-mix(in srgb, var(--warn) 14%, transparent);
+}
+
+.event-feed {
+  margin-top: 22px;
+  max-width: 760px;
+}
+.event-feed h3 {
+  font-size: 18px;
+  margin: 0 0 10px;
+}
+.event-feed ol {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0 14px;
+  border-left: 2px solid var(--line-strong);
+}
+.event-feed li {
+  display: flex;
+  gap: 10px;
+  padding: 8px 0;
+}
+.ef-icon {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  margin-left: -15px;
+  border-radius: 50%;
+  border: 2px solid var(--bg);
+  color: var(--ink-inverse);
+  background: var(--accent);
+}
+.ef-icon.seismic {
+  background: var(--warn);
+}
+.ef-icon.launch {
+  background: var(--danger);
+}
+.event-feed li > div {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  min-width: 0;
+}
+.event-feed time {
+  font-size: 12px;
+  color: var(--ink-2);
+  font-variant-numeric: tabular-nums;
+}
+.event-feed b {
+  font-size: 14.5px;
+}
+.event-feed small {
+  font-size: 12px;
+  color: var(--ink-2);
+}
