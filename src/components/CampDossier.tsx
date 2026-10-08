@@ -3,6 +3,7 @@ import type { LucideIcon } from 'lucide-react';
 import { Activity, Ban, BookOpen, Building2, Gavel, Landmark, Lock, MapPin, Pickaxe, ShieldAlert, Skull, Tag, Users } from 'lucide-react';
 import Locator from '@/components/Locator';
 import SatView from '@/components/SatView';
+import SatWatch from '@/components/SatWatch';
 import { ChipRow, COI_CRIMES, EvidenceMeter, KYOHWASO_OFFENCES, SourceCards, StatTile, iconFor } from '@/components/Visual';
 import type { Camp } from '@/content/camps';
 import { getAllCamps } from '@/content/camps';
@@ -145,6 +146,8 @@ export default function CampDossier({ lang, camp }: { lang: Lang; camp: Camp }) 
           <BookOpen size={15} /> {t.howCamps}
         </Link>
       </p>
+
+      <SatWatch id={camp.slug} lang={lang} name={camp.name} />
 
       <div className="dx-grid">
         {facts.prisoners && facts.prisoners.length > 0 && (

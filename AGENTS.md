@@ -46,6 +46,11 @@ before adding any page or article.
   `components/Reveal.tsx` adds the grow-in. Country colours are only for countries; other series use the `--s1..4` slots.
 - `/sanctions`: everyone on the UN 1718 list and the US Treasury (OFAC) North Korea programs. One component
   (`components/SanctionsPage.tsx`) renders every language route.
+- Camp Watch: our own dated Sentinel-2 images of the camps and nuclear/missile sites in `places.ts`.
+  `components/SatWatch.tsx` (latest image, month strip, before/after slider, scale bar, Copernicus credit) sits on
+  camp and place dossiers; `LatestImagery` from the same file is the "newest images" strip for a hub page. Text in
+  `content/satWatch.ts`, chip sizes in `content/satWatchSites.ts`. Only show what the pixels show: change scores
+  (`docs/watch/sentinel-changes.md`) are for humans and never go on the site.
 - Content pages are visual, not text walls. Reuse the building blocks before writing paragraphs:
   `components/Visual.tsx` (StatTile, icon chips, SourceCards), `AsOf` (date a number is from), `SatView` (Esri satellite
   tiles, no map lib), `Locator` (server SVG of NK from `site/geo.ts`), `HoverLinks` (OrgLink/PlaceLink hover previews,
@@ -113,6 +118,10 @@ exist.
    keeps its previous series. Hand-checked numbers (a year the official file doesn't have yet) go in
    `data/series/curated/` with the URL they came from. Research behind it: `docs/research/charts/`.
 8. `scripts/fetch-media.ts`: book covers, film posters, org logos → `public/img/`, credits in `src/content/media.json`.
+9. `uv run scripts/sentinel/build.py [id ...]` → `public/img/sentinel/<id>/<date>.jpg`, `data/sentinel.json`,
+   `docs/watch/sentinel-changes.md`. Sentinel-2 L2A from Element84 Earth Search (no key), windowed COG reads only,
+   cloud judged from the SCL band inside each chip. Incremental (`data/sentinel/scl-cache.json`); a failed site keeps
+   its images. Targets come from `node scripts/sentinel/targets.ts`.
 
 Run order after a scrape: `node scripts/build-layers.ts && node scripts/build-entities.ts`.
 
