@@ -10,7 +10,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "oxlint && tsc --noEmit && node scripts/check-translations.mjs",
-    "check:schema": "node scripts/check-structured-data.mjs"
+    "check:schema": "node scripts/check-structured-data.mjs",
+    "check:schema:prod": "node scripts/check-structured-data.mjs --sitemap https://liberatenorthkorea.org/sitemap.xml"
   },
   "dependencies": {
     "lucide-react": "^1.50.0",

@@ -158,7 +158,8 @@ Run order after a scrape: `node scripts/build-layers.ts && node scripts/build-en
   needs `name` plus a `description` of 50 to 5000 characters in every language (short CJK lines fall under 50, so pad
   them with title and source), plus `creator` and `license` where the source has one. Nested items count: a
   `DataCatalog`'s `dataset` entries are checked like standalone pages. Never add a license the source doesn't grant.
-  `npm run check:schema` (after `npm run build`) checks every built page; it must exit 0. For new schema types, add a
+  `npm run check:schema` (after `npm run build`) checks every built page; it must exit 0. `npm run check:schema:prod`
+  samples production after a deploy. The checker is shared with `water-brands-website`; keep the two copies in sync. For new schema types, add a
   rule to `scripts/check-structured-data.mjs` and test one page in https://search.google.com/test/rich-results.
 - Before you finish: `npm run lint` (oxlint, tsc, translation check), `npm run build` and `npm run check:schema` must pass.
 - When the work is done and lint + build + check:schema pass, commit and push to `main` yourself. Don't ask first.

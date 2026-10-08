@@ -5,9 +5,12 @@
  *
  * Usage:
  *   node scripts/check-structured-data.mjs [dir|file.html|url ...]
+ *   node scripts/check-structured-data.mjs --sitemap http://localhost:3000/sitemap.xml [--per-template 3]
  *
  * With no arguments it scans every .html file under .next/server/app (run `npm run build` first).
  * Directories are scanned recursively; URLs are fetched with a browser User-Agent.
+ * --sitemap samples a few URLs per page template (first path segment, e.g. /water/*) from a sitemap and fetches them
+ * from the sitemap's own origin, so it also covers pages rendered on demand. Works on `next start` or production.
  * Exits 1 on any error. Warnings (Google's "non-critical" issues) are printed but don't fail.
  *
  * Rules follow https://developers.google.com/search/docs/appearance/structured-data/search-gallery.
@@ -107,7 +110,31 @@ async function load(target) {
   return htmlFiles(target).map((f) => [f, readFileSync(f, 'utf8')]);
 }
 
-const targets = process.argv.slice(2);
+/** Up to `per` URLs for each template in a sitemap, with the origin swapped to the sitemap's (sitemaps list prod URLs). */
+async function sample(sitemap, per) {
+  const res = await fetch(sitemap, { headers: { 'user-agent': UA } });
+  if (!res.ok) throw new Error(`${sitemap}: HTTP ${res.status}`);
+  const origin = new URL(sitemap).origin;
+  const byTemplate = new Map();
+  for (const [, loc] of (await res.text()).matchAll(/<loc>\s*([^<\s]+)\s*<\/loc>/g)) {
+    const u = new URL(loc);
+    const parts = u.pathname.split('/').filter(Boolean);
+    const template = parts.length > 1 ? `/${parts.slice(0, -1).join('/')}/*` : u.pathname;
+    const urls = byTemplate.get(template) ?? [];
+    if (urls.length < per) urls.push(origin + u.pathname + u.search);
+    byTemplate.set(template, urls);
+  }
+  return [...byTemplate.values()].flat();
+}
+
+const args = process.argv.slice(2);
+const flag = (name) => {
+  const i = args.indexOf(name);
+  return i === -1 ? undefined : args.splice(i, 2)[1];
+};
+const sitemap = flag('--sitemap');
+const per = Number(flag('--per-template') ?? 3);
+const targets = [...args, ...(sitemap ? await sample(sitemap, per) : [])];
 if (!targets.length) targets.push('.next/server/app');
 
 const issues = { error: new Map(), warning: new Map() };
@@ -119,7 +146,14 @@ const note = (kind, issue, page) => {
 
 let pages = 0, blocks = 0;
 for (const target of targets) {
-  for (const [page, html] of await load(target)) {
+  let loaded;
+  try {
+    loaded = await load(target);
+  } catch (err) {
+    note('error', `Could not load page (${err.message.split(': ').pop()})`, target);
+    continue;
+  }
+  for (const [page, html] of loaded) {
     pages++;
     for (const [, raw] of html.matchAll(/<script[^>]*type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/g)) {
       blocks++;
