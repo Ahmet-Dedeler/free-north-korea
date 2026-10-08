@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import Avatar from '@/components/Avatar';
 import { Ext } from '@/components/Ext';
+import KimLastSeen from '@/components/KimLastSeen';
 import PersonLink from '@/components/PersonLink';
 import {
   PEOPLE_PATHS,
@@ -113,6 +114,8 @@ export default function PersonDossier({ lang, id }: { lang: Lang; id: string }) 
           </p>
         </div>
       </header>
+
+      {p.id === 'kim-jong-un' && <KimLastSeen lang={lang} />}
 
       <section className="facts">
         <div>

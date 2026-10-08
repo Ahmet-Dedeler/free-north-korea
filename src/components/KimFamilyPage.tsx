@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { Crown, HeartPulse, Users, ShieldAlert } from 'lucide-react';
 import FamilyTree from '@/components/FamilyTree';
+import KimLastSeen from '@/components/KimLastSeen';
 import { SourceCards, StatTile } from '@/components/Visual';
 import { KIM_FAMILY_NOW } from '@/content/kimFamilyNow';
 import { KIM_FAMILY_PATHS, KIM_FAMILY_TEXT, withLang } from '@/content/kimFamilyI18n';
@@ -49,6 +50,8 @@ export default function KimFamilyPage({ lang }: { lang: Lang }) {
         {heir && <StatTile icon={Users} value={<span lang="en">{heir.name_en}</span>} label={t.successorLabel} note={t.successorNote(age(heir))} tone="warn" />}
         <StatTile icon={ShieldAlert} value={`${living.length}`} label={t.livingLabel} note={t.livingNote(sanctioned.length)} />
       </div>
+
+      <KimLastSeen lang={lang} />
 
       <FamilyTree lang={lang} />
 

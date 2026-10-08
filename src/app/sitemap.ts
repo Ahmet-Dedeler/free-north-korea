@@ -12,6 +12,7 @@ import { ACT_PATHS } from '@/content/act';
 import { CAMPS_PATHS, campLanguages } from '@/content/campsI18n';
 import { COUNTIES_PATHS, countyLanguages } from '@/content/countiesI18n';
 import { KIM_FAMILY_PATHS } from '@/content/kimFamilyI18n';
+import { KIM_WATCH, KIM_WATCH_PATHS } from '@/content/kimWatch';
 import { LIBRARY_PATHS } from '@/content/libraryI18n';
 import { MILITARY_PATHS } from '@/content/military';
 import { MISSILE_LIST_PATHS } from '@/content/missileList';
@@ -63,6 +64,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...translated.flatMap((langs) =>
       Object.values(langs).map((p) => ({ url: absolute(p ?? ''), lastModified: REVIEWED, priority: 0.8, alternates: alternates(langs) })),
     ),
+    ...Object.values(KIM_WATCH_PATHS).map((p) => ({ url: absolute(p), lastModified: KIM_WATCH.fetched, priority: 0.8, alternates: alternates(KIM_WATCH_PATHS) })),
     ...Object.values(SANCTIONS_PATHS).map((p) => ({ url: absolute(p), lastModified: SANCTIONS.fetched, priority: 0.8, alternates: alternates(SANCTIONS_PATHS) })),
     ...Object.values(TWO_KOREAS_PATHS).map((p) => ({ url: absolute(p), lastModified: SERIES_BUILT, priority: 0.9, alternates: alternates(TWO_KOREAS_PATHS) })),
     ...Object.values(DATA_PATHS).map((p) => ({ url: absolute(p), lastModified: SERIES_BUILT, priority: 0.8, alternates: alternates(DATA_PATHS) })),
