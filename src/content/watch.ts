@@ -31,6 +31,8 @@ interface WatchText {
   scheduleTitle: string;
   schedule: [string, string][];
   scheduleNote: string;
+  /** The short block on the home pages. */
+  teaser: { title: string; intro: string; more: string };
 }
 
 export const WATCH_TEXT: Record<Lang, WatchText> = {
@@ -66,6 +68,11 @@ export const WATCH_TEXT: Record<Lang, WatchText> = {
       ['Every week', 'Satellite images (Sentinel-2), sanctions lists, missile test database, and a check that every other source still loads'],
     ],
     scheduleNote: 'Every script and every downloaded file is public on GitHub.',
+    teaser: {
+      title: 'Watched from outside, updated on its own',
+      intro: 'Missile launches tracked by radar, seismic readings, our own satellite images of the camps, and five official sanctions lists. Scripts check them every few hours.',
+      more: 'Everything we measure',
+    },
   },
   ko: {
     metaTitle: '북한 워치: 위성, 지진계, 공식 명단이 보여주는 것',
@@ -99,6 +106,11 @@ export const WATCH_TEXT: Record<Lang, WatchText> = {
       ['매주', '위성 영상(센티넬-2), 제재 명단, 미사일 시험 데이터베이스, 그 밖의 모든 출처가 여전히 열리는지 확인'],
     ],
     scheduleNote: '모든 스크립트와 내려받은 파일은 GitHub에 공개되어 있습니다.',
+    teaser: {
+      title: '밖에서 지켜보고, 스스로 갱신합니다',
+      intro: '레이더로 추적한 미사일 발사, 지진 관측, 수용소를 직접 찍은 위성 영상, 다섯 개의 공식 제재 명단. 스크립트가 몇 시간마다 확인합니다.',
+      more: '측정하는 모든 것 보기',
+    },
   },
   ja: {
     metaTitle: '北朝鮮ウォッチ：衛星、地震計、公式リストが示すもの',
@@ -132,6 +144,11 @@ export const WATCH_TEXT: Record<Lang, WatchText> = {
       ['毎週', '衛星画像（センチネル2）、制裁リスト、ミサイル発射データベース、ほかのすべての出典が開けるかの確認'],
     ],
     scheduleNote: 'すべてのスクリプトとダウンロードしたファイルはGitHubで公開しています。',
+    teaser: {
+      title: '外から見張り、自動で更新',
+      intro: 'レーダーで追跡したミサイル発射、地震観測、収容所を独自に撮った衛星画像、5つの公式制裁リスト。スクリプトが数時間ごとに確認します。',
+      more: '測定しているものすべて',
+    },
   },
   zh: {
     metaTitle: '朝鲜观察：卫星、地震仪和官方名单显示了什么',
@@ -165,5 +182,10 @@ export const WATCH_TEXT: Record<Lang, WatchText> = {
       ['每周', '卫星影像（哨兵二号）、制裁名单、导弹试射数据库，并检查其他所有来源是否仍能打开'],
     ],
     scheduleNote: '所有脚本和下载的文件都在 GitHub 上公开。',
+    teaser: {
+      title: '从外部观察，自动更新',
+      intro: '雷达追踪的导弹发射、地震观测、我们自己拍摄的收容所卫星影像，以及五份官方制裁名单。脚本每几个小时检查一次。',
+      more: '查看我们测量的一切',
+    },
   },
 };

@@ -3,7 +3,7 @@
   --panel: #ffffff;
   --ink: #0f172a;
   --ink-2: #475569;
-  --ink-3: #94a3b8;
+  --ink-3: #607085; /* 4.6:1 or better on --bg, --panel and --hover (WCAG AA for small text) */
   --line: #e2e8f0;
   --hover: #f1f5f9;
   --accent: #2563eb;
@@ -36,7 +36,7 @@
     --panel: #111827;
     --ink: #f1f5f9;
     --ink-2: #a3b1c6;
-    --ink-3: #64748b;
+    --ink-3: #8b98ab; /* 5:1 or better on the dark backgrounds */
     --line: #1f2a3c;
     --hover: #1a2436;
     --accent: #60a5fa;
@@ -60,7 +60,7 @@
   --panel: #111827;
   --ink: #f1f5f9;
   --ink-2: #a3b1c6;
-  --ink-3: #64748b;
+  --ink-3: #8b98ab;
   --line: #1f2a3c;
   --hover: #1a2436;
   --accent: #60a5fa;

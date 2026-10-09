@@ -3,18 +3,45 @@
 import Link from 'next/link';
 import type { ReactNode } from 'react';
 import { usePathname } from 'next/navigation';
+import { useEffect, useState } from 'react';
+import { CHROME_TEXT, LANG_NAMES, basePath, langOf, localize } from '@/content/chrome';
+import type { Lang } from '@/site/seo';
 import { REPO_URL, REVIEWED } from '../site/config';
 import { Ext } from './Ext';
 
-const NAV = [
-  { href: '/map', label: 'Map' },
-  { href: '/military', label: 'Military' },
-  { href: '/missiles', label: 'Missile tests' },
-  { href: '/people', label: 'People' },
-  { href: '/organizations', label: 'Organizations' },
-  { href: '/library', label: 'Library' },
-  { href: '/learn', label: 'Learn' },
-];
+const LANGS: Lang[] = ['en', 'ko', 'ja', 'zh'];
+const HREFLANG: Record<string, Lang> = { en: 'en', ko: 'ko', ja: 'ja', 'zh-hans': 'zh' };
+
+/**
+ * Where the language switcher sends you: the same page in each language. The server render guesses from the URL
+ * pattern (localize); after load, the page's own hreflang links win, because they list exactly the versions that
+ * exist. A language the page lacks falls back to that language's home page.
+ */
+function useSwitchTargets(path: string): Record<Lang, string> {
+  // A page with no version in a language (the /map and /missiles apps) sends that language to its home page.
+  const guess = () =>
+    Object.fromEntries(
+      LANGS.map((l) => {
+        const base = basePath(path);
+        const there = localize(l, base);
+        return [l, l !== 'en' && there === base ? `/${l}` : there];
+      }),
+    ) as Record<Lang, string>;
+  const [targets, setTargets] = useState(guess);
+  useEffect(() => {
+    const found: Partial<Record<Lang, string>> = {};
+    for (const el of document.querySelectorAll<HTMLLinkElement>('link[rel="alternate"][hreflang]')) {
+      const l = HREFLANG[(el.getAttribute('hreflang') ?? '').toLowerCase()];
+      if (l) found[l] = new URL(el.href).pathname;
+    }
+    // Only trust the tags if they describe this page (after a client-side navigation the head can lag a moment).
+    const current = langOf(path);
+    if (found[current] !== path) return setTargets(guess());
+    setTargets(Object.fromEntries(LANGS.map((l) => [l, found[l] ?? (l === 'en' ? '/' : `/${l}`)])) as Record<Lang, string>);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [path]);
+  return targets;
+}
 
 /**
  * Site chrome: top bar on every page, footer on content pages.
@@ -25,13 +52,17 @@ const APP_PAGES = ['/map', '/missiles'];
 
 export default function SiteChrome({ children }: { children: ReactNode }) {
   const path = usePathname() ?? '/';
-  const translated = ['/ko', '/ja', '/zh'].some((p) => path === p || path.startsWith(p + '/'));
+  const lang = langOf(path);
+  const t = CHROME_TEXT[lang];
+  const to = (href: string) => localize(lang, href);
+  const switchTo = useSwitchTargets(path);
   const app = APP_PAGES.includes(path);
-  const active = (href: string) => path === href || path.startsWith(href + '/');
+  const base = basePath(path);
+  const active = (href: string) => base === href || base.startsWith(href + '/');
   return (
     <div className={app ? 'shell shell-app' : 'shell'}>
       <header className="topbar">
-        <Link href="/" className="logo" aria-label="Free North Korea, home">
+        <Link href={to('/')} className="logo" aria-label={t.home}>
           <svg viewBox="0 0 24 24" aria-hidden>
             <circle cx="12" cy="12" r="10" />
             <path d="M12 6.2l1.6 3.9 4.2.3-3.2 2.7 1 4.1L12 15l-3.6 2.2 1-4.1-3.2-2.7 4.2-.3z" />
@@ -39,32 +70,29 @@ export default function SiteChrome({ children }: { children: ReactNode }) {
           <span>Free North Korea</span>
         </Link>
         <nav className="nav" aria-label="Main">
-          {NAV.map((n) => (
-            <a key={n.href} href={n.href} className={active(n.href) ? 'on' : ''} aria-current={active(n.href) ? 'page' : undefined}>
+          {t.nav.map((n) => (
+            <a key={n.href} href={to(n.href)} className={active(n.href) ? 'on' : ''} aria-current={active(n.href) ? 'page' : undefined}>
               {n.label}
             </a>
           ))}
         </nav>
         <div className="topbar-end">
-          <div style={{ display: 'inline-flex', gap: '6px', alignItems: 'center', marginRight: '10px', fontSize: '12px' }}>
-            <Link href="/" className={!translated ? 'muted on' : 'muted'} style={{ fontWeight: !translated ? 600 : 'normal' }}>
-              EN
-            </Link>
-            <span className="muted" style={{ opacity: 0.4 }}>/</span>
-            <Link href="/ko" className={path.startsWith('/ko') ? 'muted on' : 'muted'} style={{ fontWeight: path.startsWith('/ko') ? 600 : 'normal' }}>
-              한국어
-            </Link>
-            <span className="muted" style={{ opacity: 0.4 }}>/</span>
-            <Link href="/ja" className={path.startsWith('/ja') ? 'muted on' : 'muted'} style={{ fontWeight: path.startsWith('/ja') ? 600 : 'normal' }}>
-              日本語
-            </Link>
-            <span className="muted" style={{ opacity: 0.4 }}>/</span>
-            <Link href="/zh" className={path.startsWith('/zh') ? 'muted on' : 'muted'} style={{ fontWeight: path.startsWith('/zh') ? 600 : 'normal' }}>
-              中文
-            </Link>
-          </div>
-          <Link href="/act" className={`cta ${active('/act') ? 'on' : ''}`}>
-            Take action
+          <nav className="lang-switch" aria-label={t.langs}>
+            {LANGS.map((l, k) => (
+              <span key={l}>
+                {k > 0 && (
+                  <span className="muted" aria-hidden="true">
+                    /
+                  </span>
+                )}
+                <Link href={switchTo[l]} hrefLang={l === 'zh' ? 'zh-Hans' : l} lang={l === 'zh' ? 'zh-Hans' : l} className={l === lang ? 'muted on' : 'muted'} aria-current={l === lang ? 'true' : undefined}>
+                  {LANG_NAMES[l]}
+                </Link>
+              </span>
+            ))}
+          </nav>
+          <Link href={to('/act')} className={`cta ${active('/act') ? 'on' : ''}`}>
+            {t.cta}
           </Link>
         </div>
       </header>
@@ -76,47 +104,47 @@ export default function SiteChrome({ children }: { children: ReactNode }) {
           <div className="footer-inner">
             <div>
               <b>Free North Korea</b>
-              <p>
-                An open-source hub for understanding North Korea and helping the 26 million people living under its regime. No ads, no
-                cookies, no affiliation with any government. Page views are counted anonymously.
-              </p>
+              <p>{t.about}</p>
               <div style={{ marginTop: '0.8rem', fontSize: '0.88rem' }}>
-                <Link href="/ko">한국어 (Korean)</Link> · <Link href="/ja">日本語 (Japanese)</Link> · <Link href="/zh">中文 (Chinese)</Link>
+                {LANGS.filter((l) => l !== lang).map((l, k) => (
+                  <span key={l}>
+                    {k > 0 && ' · '}
+                    <Link href={switchTo[l]} hrefLang={l === 'zh' ? 'zh-Hans' : l} lang={l === 'zh' ? 'zh-Hans' : l}>
+                      {LANG_NAMES[l] === 'EN' ? 'English' : LANG_NAMES[l]}
+                    </Link>
+                  </span>
+                ))}
               </div>
             </div>
             <div>
-              <b>Explore</b>
-              <Link href="/map">Intel map</Link>
-              <Link href="/camps">Prison camps</Link>
-              <Link href="/places">Key strategic sites</Link>
-              <Link href="/counties">179 counties</Link>
-              <Link href="/missiles">Missile tests</Link>
-              <Link href="/missiles/list">Missile test list</Link>
-              <Link href="/sanctions">Sanctions</Link>
-              <Link href="/watch">Watch: what can be seen</Link>
-              <Link href="/kim-watch">Kim Watch</Link>
-              <Link href="/north-korea-vs-south-korea">North vs South Korea</Link>
-              <Link href="/data">Charts and data</Link>
-              <Link href="/library">Library</Link>
+              <b>{t.explore}</b>
+              {t.explore_links.map(([href, label]) => (
+                <Link key={href} href={to(href)}>
+                  {label}
+                </Link>
+              ))}
             </div>
             <div>
-              <b>Help</b>
-              <Link href="/act">Take action</Link>
-              <Link href="/organizations">Organizations</Link>
-              <Link href="/learn/how-to-help-north-koreans">How to help</Link>
-              <Ext href={REPO_URL}>Contribute on GitHub</Ext>
+              <b>{t.help}</b>
+              {t.help_links.map(([href, label]) => (
+                <Link key={href} href={to(href)}>
+                  {label}
+                </Link>
+              ))}
+              <Ext href={REPO_URL}>{t.contribute}</Ext>
             </div>
             <div>
-              <b>Read</b>
-              <Link href="/learn/how-can-north-korea-be-freed">How can North Korea be freed?</Link>
-              <Link href="/learn/is-it-possible-to-free-north-korea">Is it possible?</Link>
-              <Link href="/learn/north-korea-prison-camps">Prison camps</Link>
-              <Link href="/learn/how-north-koreans-escape">How people escape</Link>
+              <b>{t.read}</b>
+              {t.read_links.map(([href, label]) => (
+                <Link key={href} href={to(href)}>
+                  {label}
+                </Link>
+              ))}
             </div>
           </div>
           <p className="footer-note">
-            Facts last reviewed {REVIEWED}. Found something wrong or out of date?{' '}
-            <Ext href={`${REPO_URL}/issues/new`}>Open an issue</Ext>. Code: Apache 2.0.
+            {t.reviewed(REVIEWED)} {t.issue[0]} <Ext href={`${REPO_URL}/issues/new`}>{t.issue[1]}</Ext>
+            {t.issue[2]}
           </p>
         </footer>
       )}

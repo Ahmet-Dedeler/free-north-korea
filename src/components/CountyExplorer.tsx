@@ -98,7 +98,7 @@ export default function CountyExplorer({
     <>
       <div className="choro">
         <div className="choro-map">
-          <svg viewBox={viewBox} role="img" aria-label={t.mapAria(m.label)} onMouseLeave={() => setHover(null)}>
+          <svg viewBox={viewBox} role="group" aria-label={t.mapAria(m.label)} onMouseLeave={() => setHover(null)}>
             {rows.map((r) => {
               const fill = scale(r[metric] ?? 0, max);
               return (

@@ -5,6 +5,7 @@ import Avatar from '@/components/Avatar';
 import { Ext } from '@/components/Ext';
 import Locator from '@/components/Locator';
 import { StatTile } from '@/components/Visual';
+import WatchTeaser from '@/components/WatchTeaser';
 import { ARTICLES } from '@/content/articles';
 import { getAllCamps } from '@/content/camps';
 import { SHELVES } from '@/content/library';
@@ -153,6 +154,8 @@ export default function Home() {
         <StatTile icon={Footprints} value={arrivals.total} label={`escapees reached South Korea in ${arrivals.year}`} note="Unification Ministry" tone="ok" />
         <StatTile icon={Radiation} value="~60" label="assembled nuclear warheads" note="SIPRI, Jan 2026" tone="warn" />
       </div>
+
+      <WatchTeaser lang="en" />
 
       <section className="band">
         <h2>Do something in the next 10 minutes</h2>

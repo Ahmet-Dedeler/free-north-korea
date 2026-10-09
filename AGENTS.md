@@ -70,7 +70,10 @@ before adding any page or article.
   marks from `simple-icons`. Their CSS lives in `src/app/visual.css`. Images go through `src/content/media.ts` (lookups
   into media.json) and are downloaded by `scripts/fetch-media.ts`, never hotlinked (satellite tiles are the exception).
 - `src/components/SiteChrome.tsx`: top bar + footer. `/map` and `/missiles` are full-screen "app" pages (no footer).
-  The top nav is full; link new pages from the footer and from related pages instead of adding a nav item.
+  The top nav is full (Watch was the last addition); link new pages from the footer and from related pages instead of
+  adding a nav item. Header and footer text live in `content/chrome.ts` in every language; `localize()` points their
+  links at the reader's language, and the language switcher goes to the same page via the page's hreflang links.
+- Accessibility: small grey text uses `--ink-3`, tuned to pass WCAG AA (4.5:1) in both themes; don't lighten it.
 
 ## Languages (non-negotiable)
 

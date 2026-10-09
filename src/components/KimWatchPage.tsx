@@ -87,15 +87,16 @@ function YearCalendar({ days, today, lang }: { days: AppearanceDay[]; today: str
           <span key={w}>{months.get(w) ?? ''}</span>
         ))}
       </div>
-      <ol className="kw-cal" role="img" aria-label={t.calendarHint}>
+      {/* One picture for screen readers (the label); the squares themselves are decoration with hover titles. */}
+      <div className="kw-cal" role="img" aria-label={t.calendarHint}>
         {cells.map((c) => (
-          <li
+          <span
             key={c.date}
             className={c.future ? 'kw-cal-future' : c.day ? `kw-k-${c.day.kind}` : 'kw-cal-none'}
             title={`${formatAsOf(c.date, LOCALE[lang])}: ${c.day ? `${KIND_LABEL[c.day.kind][lang]} (${c.day.reports.length})` : t.calendarNone}`}
           />
         ))}
-      </ol>
+      </div>
     </div>
   );
 }
@@ -398,7 +399,9 @@ export default function KimWatchPage({ lang }: { lang: Lang }) {
             <table className="sanc-table kw-msg-table">
               <thead>
                 <tr>
-                  <th />
+                  <th>
+                    <span className="sr-only">{t.month}</span>
+                  </th>
                   <th>{t.received}</th>
                   <th>{t.sent}</th>
                 </tr>

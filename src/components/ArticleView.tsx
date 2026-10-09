@@ -157,13 +157,13 @@ export default function ArticleView({ a, others }: { a: Article; others: Article
           </>
         )}
 
-        <aside className="act-box">
+        <div className="act-box" role="note">
           <b>{t.actTitle}</b>
           <p>{t.actText}</p>
           <Link className="btn primary" href="/act">
             {t.actBtn}
           </Link>
-        </aside>
+        </div>
 
         <h2>{t.sources}</h2>
         <SourceCards sources={a.sources.map((s) => ({ name: s.label, url: s.url }))} />

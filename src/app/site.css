@@ -2,9 +2,24 @@
 
 :root {
   --bar-h: 52px;
-  --danger: #dc2626;
-  --ok: #16a34a;
-  --warn: #d97706;
+  /* status colours, mostly used as small text: dark enough for WCAG AA (4.5:1) on white and on their own tints */
+  --danger: #b91c1c;
+  --ok: #166534;
+  --warn: #92400e;
+  /* buttons and badges with white text on red: the same in both themes (4.8:1) */
+  --danger-fill: #dc2626;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --danger: #f87171;
+    --ok: #4ade80;
+    --warn: #fbbf24;
+  }
+}
+:root[data-theme='dark'] {
+  --danger: #f87171;
+  --ok: #4ade80;
+  --warn: #fbbf24;
 }
 
 html,
@@ -64,7 +79,7 @@ body {
   height: 22px;
 }
 .logo circle {
-  fill: var(--danger);
+  fill: var(--danger-fill);
 }
 .logo path {
   fill: #fff;
@@ -105,7 +120,7 @@ body {
 .cta {
   padding: 6px 12px;
   border-radius: 8px;
-  background: var(--danger);
+  background: var(--danger-fill);
   color: #fff;
   font-weight: 600;
   font-size: 13.5px;
@@ -248,7 +263,7 @@ body {
   background: var(--hover);
 }
 .btn.primary {
-  background: var(--danger);
+  background: var(--danger-fill);
   border-color: var(--danger);
   color: #fff;
 }
@@ -473,7 +488,7 @@ a.card:hover {
   padding: 0;
   border: 0;
   background: color-mix(in srgb, var(--cat) 14%, var(--panel));
-  color: var(--cat);
+  color: color-mix(in srgb, var(--cat) 55%, var(--ink)); /* readable text from a category colour */
   font-weight: 800;
   font-size: 15px;
   letter-spacing: -0.02em;
@@ -514,7 +529,7 @@ a.card:hover {
   padding: 2px 9px;
   border-radius: 999px;
   font-weight: 600;
-  color: var(--cat);
+  color: color-mix(in srgb, var(--cat) 55%, var(--ink)); /* readable text from a category colour */
   background: color-mix(in srgb, var(--cat) 12%, transparent);
 }
 .status {
@@ -1221,7 +1236,7 @@ a.card:hover {
   background: var(--line-strong);
 }
 .timeline-list li.current::before {
-  background: var(--danger);
+  background: var(--danger-fill);
 }
 .when {
   color: var(--ink-3);
@@ -1799,4 +1814,34 @@ ul.bars b {
     width: auto;
     height: auto !important;
   }
+}
+
+/* language switcher in the top bar: EN / 한국어 / 日本語 / 中文, each linking to this page in that language */
+.lang-switch {
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+  margin-right: 10px;
+  font-size: 12px;
+}
+.lang-switch > span {
+  display: inline-flex;
+  gap: 6px;
+}
+.lang-switch .muted[aria-hidden] {
+  opacity: 0.4;
+}
+.lang-switch a.on {
+  font-weight: 600;
+}
+
+/* missile list outcome column: theme tokens instead of the map's fixed colours, so the text keeps its contrast */
+.out-success {
+  color: var(--ok);
+}
+.out-failure {
+  color: var(--danger);
+}
+.out-unknown {
+  color: var(--ink-3);
 }

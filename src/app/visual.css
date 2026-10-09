@@ -237,12 +237,12 @@
   stroke-width: 1.2;
 }
 .locator .pin circle {
-  fill: var(--danger);
+  fill: var(--danger-fill);
   stroke: var(--panel);
   stroke-width: 2.5;
 }
 .locator .pin .pin-pulse {
-  fill: var(--danger);
+  fill: var(--danger-fill);
   stroke: none;
   opacity: 0.25;
   transform-box: fill-box;
@@ -421,7 +421,7 @@
   border-radius: 999px;
   font-size: 12.5px;
   font-weight: 700;
-  color: var(--tag, var(--accent));
+  color: color-mix(in srgb, var(--tag, var(--accent)) 55%, var(--ink)); /* readable text from a category colour */
   background: color-mix(in srgb, var(--tag, var(--accent)) 12%, transparent);
 }
 .kind-tag.kwanliso {
@@ -623,7 +623,7 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.04em;
-  color: var(--cat, var(--accent));
+  color: color-mix(in srgb, var(--cat, var(--accent)) 55%, var(--ink)); /* readable text from a category colour */
 }
 .cat-dot {
   display: inline-block;
@@ -702,7 +702,7 @@
   transform: translateY(-1px);
 }
 .cat-tiles svg {
-  color: var(--cat);
+  color: color-mix(in srgb, var(--cat) 55%, var(--ink)); /* readable text from a category colour */
   margin-bottom: 6px;
 }
 .cat-tiles b {
@@ -1027,7 +1027,7 @@
   width: 100%;
   min-height: 2px;
   border-radius: 5px 5px 2px 2px;
-  background: var(--danger);
+  background: var(--danger-fill);
   opacity: 0.8;
   transition: opacity 0.15s;
 }
@@ -1134,7 +1134,7 @@
 }
 .stockpile i.on {
   border: 0;
-  background: var(--danger);
+  background: var(--danger-fill);
 }
 .stockpile div i {
   animation: pop 0.4s backwards;
@@ -1263,7 +1263,7 @@
   font-weight: 600;
 }
 .range-name svg {
-  color: var(--c);
+  color: color-mix(in srgb, var(--c) 55%, var(--ink)); /* readable text from a category colour */
 }
 .range-track {
   position: relative;
@@ -1291,7 +1291,7 @@
   font-style: normal;
   font-size: 12px;
   font-weight: 700;
-  color: var(--c);
+  color: color-mix(in srgb, var(--c) 55%, var(--ink)); /* readable text from a category colour */
   white-space: nowrap;
 }
 .range-row:has(.open) em {
@@ -1347,7 +1347,7 @@
   height: 38px;
   margin-bottom: 6px;
   border-radius: 10px;
-  color: var(--c);
+  color: color-mix(in srgb, var(--c) 55%, var(--ink)); /* readable text from a category colour */
   background: color-mix(in srgb, var(--c) 12%, transparent);
 }
 .missile-cards strong {
@@ -1356,7 +1356,7 @@
 .mc-range {
   font-size: 13px;
   font-weight: 700;
-  color: var(--c);
+  color: color-mix(in srgb, var(--c) 55%, var(--ink)); /* readable text from a category colour */
 }
 .mc-names {
   display: flex;
@@ -2804,7 +2804,7 @@
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: var(--danger);
+  background: var(--danger-fill);
   opacity: 0.85;
 }
 .explore-tile:hover .mil-preview i {
@@ -2976,7 +2976,7 @@
   background: #f97316;
 }
 .maint-bg-dead {
-  background: var(--danger);
+  background: var(--danger-fill);
 }
 .maint-bg-unknown {
   background: var(--line-strong);
@@ -3168,7 +3168,7 @@
   color: var(--ink-2);
 }
 .sb-people {
-  background: var(--danger);
+  background: var(--danger-fill);
 }
 .sb-entities {
   background: var(--warn);
@@ -3491,7 +3491,7 @@ a.ltag:hover {
   background: var(--accent);
 }
 .events li.danger::before {
-  background: var(--danger);
+  background: var(--danger-fill);
 }
 .events li.warn::before {
   background: var(--warn);
@@ -3574,7 +3574,7 @@ a.ltag:hover {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: var(--danger);
+  background: var(--danger-fill);
 }
 .border-map figcaption {
   grid-column: 1 / -1;
@@ -3788,7 +3788,7 @@ a.ltag:hover {
   background: var(--warn);
 }
 .ef-icon.launch {
-  background: var(--danger);
+  background: var(--danger-fill);
 }
 .event-feed li > div {
   display: flex;
@@ -3930,10 +3930,10 @@ a.ltag:hover {
   padding: 0;
   margin: 0;
 }
-.kw-cal li {
+.kw-cal > span {
   border-radius: 2px;
 }
-.kw-cal li.kw-cal-none {
+.kw-cal > span.kw-cal-none {
   background: var(--bar-on);
   outline: 1px solid var(--line);
   outline-offset: -1px;
@@ -3948,7 +3948,7 @@ a.ltag:hover {
   margin-top: 10px;
 }
 .kw-bar-daughter {
-  background: var(--danger);
+  background: var(--danger-fill);
 }
 .kw-grid {
   display: grid;

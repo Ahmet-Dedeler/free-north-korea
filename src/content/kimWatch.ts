@@ -223,6 +223,8 @@ export interface KimWatchText {
   withLabel: string;
   messagesTitle: string;
   messagesHint: string;
+  /** Header of the month column in the letters table (screen readers only). */
+  month: string;
   received: string;
   sent: string;
   latestMessages: string;
@@ -302,6 +304,7 @@ export const KIM_WATCH_TEXT: Record<Lang, KimWatchText> = {
     withLabel: 'With',
     messagesTitle: 'Letters, greetings and flower baskets',
     messagesHint: 'KCNA reports these separately. Receiving a letter or sending a message is not a public appearance, so none of these count above.',
+    month: 'Month',
     received: 'Received',
     sent: 'Sent',
     latestMessages: 'Latest',
@@ -376,6 +379,7 @@ export const KIM_WATCH_TEXT: Record<Lang, KimWatchText> = {
     withLabel: '동행·참석',
     messagesTitle: '편지, 축전, 꽃바구니',
     messagesHint: '조선중앙통신은 이것들을 따로 보도합니다. 편지를 받거나 축전을 보내는 것은 공개 활동이 아니므로 위의 숫자에 넣지 않았습니다.',
+    month: '월',
     received: '받음',
     sent: '보냄',
     latestMessages: '최근',
@@ -451,6 +455,7 @@ export const KIM_WATCH_TEXT: Record<Lang, KimWatchText> = {
     withLabel: '同行・出席',
     messagesTitle: '手紙、祝電、花かご',
     messagesHint: '朝鮮中央通信はこれらを別に報じます。手紙を受け取ったり祝電を送ったりするのは公開活動ではないため、上の数字には含めていません。',
+    month: '月',
     received: '受け取り',
     sent: '送付',
     latestMessages: '最近のもの',
@@ -526,6 +531,7 @@ export const KIM_WATCH_TEXT: Record<Lang, KimWatchText> = {
     withLabel: '陪同或出席',
     messagesTitle: '信件、贺电和花篮',
     messagesHint: '朝中社单独报道这些内容。收到信件或发出贺电不是公开活动，因此都没有计入上面的数字。',
+    month: '月份',
     received: '收到',
     sent: '发出',
     latestMessages: '最近',

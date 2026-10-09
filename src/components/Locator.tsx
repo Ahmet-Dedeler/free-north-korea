@@ -39,7 +39,12 @@ export default function Locator({
   const province = c ? provinces.find((p) => p.pcode === c.pcode.slice(0, 4)) : undefined;
   return (
     <figure className="locator">
-      <svg viewBox={`0 0 ${VIEW_W} ${VIEW_H}`} role="img" aria-label={ariaLabel ?? (label ? `Location of ${label} in North Korea` : 'Map of North Korea')}>
+      {/* A plain picture is role="img"; with linked pins it is a group, so screen readers can reach each link. */}
+      <svg
+        viewBox={`0 0 ${VIEW_W} ${VIEW_H}`}
+        role={pins?.some((p) => p.href) ? 'group' : 'img'}
+        aria-label={ariaLabel ?? (label ? `Location of ${label} in North Korea` : 'Map of North Korea')}
+      >
         {provinces.map((p) => (
           <path key={p.pcode} d={p.d} className={p.pcode === province?.pcode ? 'prov on' : 'prov'}>
             <title>{p.name}</title>
@@ -58,7 +63,7 @@ export default function Locator({
             </circle>
           );
           return p.href ? (
-            <a key={p.title} href={p.href} className="pin-link">
+            <a key={p.title} href={p.href} className="pin-link" aria-label={p.title}>
               {dot}
             </a>
           ) : (

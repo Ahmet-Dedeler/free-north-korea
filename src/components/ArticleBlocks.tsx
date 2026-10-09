@@ -67,14 +67,14 @@ const TLDR: Record<Lang, string> = { en: 'tldr:', ko: '세 줄 요약', ja: '3�
 /** The short version, at the end of an article (never the top). */
 export function Tldr({ lang = 'en', items }: { lang?: Lang; items: ReactNode[] }) {
   return (
-    <aside className="tldr">
+    <div className="tldr" role="note">
       <b>{TLDR[lang]}</b>
       <ul>
         {items.map((it, i) => (
           <li key={i}>{it}</li>
         ))}
       </ul>
-    </aside>
+    </div>
   );
 }
 

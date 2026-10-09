@@ -6,7 +6,7 @@ import LaunchReports from '@/components/LaunchReports';
 import { StatTile } from '@/components/Visual';
 import { MISSILE_LIST_LOCALE, MISSILE_LIST_PATHS, MISSILE_LIST_TEXT, MISSILE_TYPE_IDS } from '@/content/missileList';
 import { buildDataset } from '@/missiles/data';
-import { OUTCOME_COLOR, TYPE_COLOR } from '@/missiles/meta';
+import { TYPE_COLOR } from '@/missiles/meta';
 import { LANG_TAG, absolute, jsonLd, type Lang } from '@/site/seo';
 import testsRaw from '../../public/data/test.en.json';
 import missilesRaw from '../../public/data/missile.en.json';
@@ -156,7 +156,7 @@ export default function MissileListPage({ lang }: { lang: Lang }) {
                       <td className="nowrap">{formatKm(row.distanceKm, lang, text.empty)}</td>
                       <td className="nowrap">{formatKm(row.apogeeKm, lang, text.empty)}</td>
                       <td>{row.landingRegion ? <span lang="en">{row.landingRegion}</span> : text.empty}</td>
-                      <td className="nowrap" style={{ color: OUTCOME_COLOR[row.outcome] }}>
+                      <td className={`nowrap out-${row.outcome}`}>
                         {text.outcomes[row.outcome]}
                       </td>
                     </tr>
