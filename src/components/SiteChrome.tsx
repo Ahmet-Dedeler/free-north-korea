@@ -8,7 +8,7 @@ import { Check, ChevronDown, Globe, Menu, X } from 'lucide-react';
 import { CHROME_TEXT, LANG_NAMES, basePath, langOf, localize } from '@/content/chrome';
 import type { Lang } from '@/site/seo';
 import { REPO_URL, REVIEWED } from '../site/config';
-import { BRAND_BLUE, LOGO_BIRD } from '../site/brand';
+import { BRAND_BLUE, LOGO_STAR } from '../site/brand';
 import { Ext } from './Ext';
 
 const LANGS: Lang[] = ['en', 'ko', 'ja', 'zh'];
@@ -102,7 +102,7 @@ export default function SiteChrome({ children }: { children: ReactNode }) {
         <Link href={to('/')} className="logo" aria-label={t.home}>
           <svg viewBox="0 0 24 24" aria-hidden>
             <circle cx="12" cy="12" r="10" fill={BRAND_BLUE} />
-            <path d={LOGO_BIRD} fill="#fff" />
+            <path d={LOGO_STAR} fill="#fff" />
           </svg>
           <span>Free North Korea</span>
         </Link>

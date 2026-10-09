@@ -76,10 +76,10 @@ before adding any page or article.
   links. Below 1080px the nav moves behind a hamburger button into a panel under the bar; below 560px Take action moves
   into that panel too. Check the header at 375px wide after touching it: most visitors from social media are on phones.
   Nav items with no version in the reader's language get a small "EN" tag.
-- Logo (`src/site/brand.ts`, copied in `public/favicon.svg`): a white bird rising on a blue disc. Blue stands for freedom.
-  It used to be a white star on a red disc, which is the emblem on North Korea's own flag, so at a glance the site
-  looked pro-regime. Don't bring back red stars, red-and-white discs or other regime symbols in branding. Red stays
-  only where it means danger (camps, the Take action button, North Korea's colour in charts).
+- Logo (`src/site/brand.ts`, copied in `public/favicon.svg`): a white star on a blue disc. Blue stands for freedom.
+  It used to be the same star on a red disc, which is the emblem on North Korea's own flag, so at a glance the site
+  looked pro-regime. Keep the logo blue: no red stars, red discs or other regime colours in branding. Red stays only
+  where it means danger (camps, the Take action button, North Korea's colour in charts).
 - Who is behind it: `/about` (`components/AboutPage.tsx`, text in `content/about.ts`). The site speaks as a group
   ("we"): volunteers and contributors, no company, government or NGO, no money taken. The /learn explainers carry one
   byline, `AUTHOR_NAME` in `site/config.ts` (also the Article JSON-LD author), and may say "I". No faces, photos or
