@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { SITE_NAME, SITE_URL } from './config';
+import { mdPath } from './agents';
 
 /** Languages the site is published in. English lives at the root, the others under /ko, /ja and /zh. */
 export type Lang = 'en' | 'ko' | 'ja' | 'zh';
@@ -45,6 +46,8 @@ export function pageMeta({
     description,
     alternates: {
       canonical: path,
+      // the Markdown version, for agents (see site/agents.ts)
+      types: { 'text/markdown': mdPath(path) },
       ...(languages && { languages: { ...hreflang(languages), 'x-default': languages.en ?? path } }),
     },
     // setting openGraph here replaces the root one, so the share card has to be named again

@@ -74,6 +74,12 @@ before adding any page or article.
   adding a nav item. Header and footer text live in `content/chrome.ts` in every language; `localize()` points their
   links at the reader's language, and the language switcher goes to the same page via the page's hreflang links.
 - Accessibility: small grey text uses `--ink-3`, tuned to pass WCAG AA (4.5:1) in both themes; don't lighten it.
+- Agents and LLM tools (`src/site/agents.ts` explains it all): robots.txt has a Content-Signal line (search, ai-input
+  and ai-train all `yes`), every page has a Markdown version (`/x.md`, or `/x` with `Accept: text/markdown`, rewritten in
+  `next.config.ts` to `app/md/[[...path]]`, which converts the built HTML with `site/markdown.ts`), `/llms.txt` and
+  `/llms-full.txt`, `/.well-known/api-catalog` + `/openapi.json` for the people API, and `Link` headers on every
+  response. New top-level pages go in the `PAGES` list of `app/llms.txt/route.ts`. Keep `openapi.json` in step with
+  `Person`. Check with `curl -X POST https://isitagentready.com/api/scan -d '{"url":"https://liberatenorthkorea.org"}'`.
 
 ## Languages (non-negotiable)
 

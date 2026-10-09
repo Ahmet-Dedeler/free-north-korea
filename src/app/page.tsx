@@ -18,12 +18,13 @@ import testsRaw from '../../public/data/test.en.json';
 import { REPO_URL, SITE_NAME, SITE_URL } from '@/site/config';
 import { jsonLd } from '@/site/seo';
 import { HUB_PATHS } from '@/content/translations';
+import { mdPath } from '@/site/agents';
 import { latest } from '@/charts/data';
 
 const HUB_PATHS_WITH_DEFAULT = { ...HUB_PATHS, 'x-default': '/' };
 
 // the root layout supplies title and description; this adds the canonical URL and the translated hubs
-export const metadata = { alternates: { canonical: '/', languages: HUB_PATHS_WITH_DEFAULT } };
+export const metadata = { alternates: { canonical: '/', languages: HUB_PATHS_WITH_DEFAULT, types: { 'text/markdown': mdPath('/') } } };
 
 const TESTS = (testsRaw as unknown as { timeBins: { data: { date: string }[] }[] }).timeBins.flatMap((b) => b.data);
 

@@ -15,6 +15,27 @@ const config: NextConfig = {
     );
     return [{ source: '/atlas', destination: '/map', permanent: true }, ...bases];
   },
+  // Markdown for agents (src/site/agents.ts): `/x.md`, or `/x` asked for with `Accept: text/markdown`
+  async rewrites() {
+    const wantsMarkdown = [{ type: 'header' as const, key: 'accept', value: '(.*)text/markdown(.*)' }];
+    return {
+      beforeFiles: [
+        { source: '/:path(.+)\\.md', destination: '/md/:path' },
+        { source: '/', has: wantsMarkdown, destination: '/md/index' },
+        // pages only: no files (anything with a dot), API, build assets or the Markdown route itself
+        { source: '/:path((?!api/|_next/|md/|\\.well-known/)[^.]+)', has: wantsMarkdown, destination: '/md/:path' },
+      ],
+    };
+  },
+  // point agents at the reading list and the API catalog from every response (RFC 8288)
+  async headers() {
+    return [
+      {
+        source: '/:path*',
+        headers: [{ key: 'Link', value: '</llms.txt>; rel="describedby"; type="text/plain", </.well-known/api-catalog>; rel="api-catalog"' }],
+      },
+    ];
+  },
 };
 
 export default config;

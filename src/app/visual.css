@@ -2569,6 +2569,8 @@
 .home-stats {
   margin-top: 28px;
   margin-bottom: 8px;
+  /* auto-fit, not auto-fill: four tiles stretch across the row instead of leaving empty columns */
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 .quick-acts {
   display: grid;
@@ -2726,7 +2728,8 @@
   align-items: flex-end;
   gap: 2px;
   width: 100%;
-  height: 100%;
+  /* a fixed height: inside the centred preview grid, 100% resolved to the content height and every bar came out 0px */
+  height: 110px;
 }
 .spark i {
   flex: 1;
@@ -4542,4 +4545,33 @@ a.ltag:hover {
 .wh .tile .asof {
   /* the date line under each list count must wrap on phones */
   white-space: normal;
+}
+
+/* Card grids with no empty slot. On wide screens the grid has six columns and a card spans two (three per row); when
+   the last row would have two cards, they take half the row each. In the two-column range, a last card that would sit
+   alone takes the full row. Used by the home Explore tiles and the article lists with a lead card. */
+@media (min-width: 1000px) {
+  .explore,
+  .art-cards.with-lead {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .explore > li,
+  .art-cards.with-lead > li {
+    grid-column: span 2;
+  }
+  .art-cards.with-lead > li:first-child {
+    grid-column: 1 / -1;
+  }
+  .explore > li:nth-last-child(2):nth-child(3n + 1),
+  .explore > li:last-child:nth-child(3n + 2),
+  .art-cards.with-lead > li:nth-last-child(2):nth-child(3n + 2),
+  .art-cards.with-lead > li:last-child:nth-child(3n) {
+    grid-column: span 3;
+  }
+}
+@media (min-width: 680px) and (max-width: 999px) {
+  .explore > li:last-child:nth-child(odd),
+  .art-cards.with-lead > li:last-child:nth-child(even) {
+    grid-column: 1 / -1;
+  }
 }

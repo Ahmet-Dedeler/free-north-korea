@@ -139,7 +139,7 @@ export const ACT_TEXT: Record<Lang, ActText> = {
       },
       {
         who: 'Korean speakers',
-        what: 'Translation is a bottleneck for documentation groups, and we want Korean versions of these pages.',
+        what: 'Translation is a bottleneck for documentation groups. This site is in English, Korean, Japanese and Chinese; check our translations and fix what reads wrong.',
       },
       {
         who: 'Writers & creators',
@@ -162,8 +162,8 @@ export const ACT_TEXT: Record<Lang, ActText> = {
         text: 'It puts them in danger.',
       },
       {
-        title: 'Give to aid that goes through the regime',
-        text: 'without independent monitoring.',
+        title: 'Give to aid that goes through the regime unmonitored.',
+        text: 'Without independent monitoring there is no way to know who ends up with it.',
       },
       {
         title: 'Share unverified viral stories.',
@@ -257,7 +257,7 @@ export const ACT_TEXT: Record<Lang, ActText> = {
       },
       {
         who: '한국어를 하는 사람',
-        what: '번역은 기록 단체들의 병목입니다. 우리는 이 페이지들의 한국어판을 원합니다.',
+        what: '번역은 기록 단체들의 병목입니다. 이 사이트는 영어, 한국어, 일본어, 중국어로 나옵니다. 번역을 읽어 보고 어색한 곳을 고쳐 주세요.',
       },
       {
         who: '글을 쓰고 만드는 사람',
@@ -280,8 +280,8 @@ export const ACT_TEXT: Record<Lang, ActText> = {
         text: '그 사람들을 위험에 빠뜨립니다.',
       },
       {
-        title: '정권을 통해 들어가는 지원에 돈을 내는 것,',
-        text: '독립적인 감시가 없을 때입니다.',
+        title: '독립적인 감시 없이 정권을 거쳐 들어가는 지원에 돈을 내는 것.',
+        text: '감시가 없으면 결국 누구 손에 들어가는지 알 방법이 없습니다.',
       },
       {
         title: '확인되지 않고 퍼진 이야기를 공유하는 것.',
@@ -375,7 +375,7 @@ export const ACT_TEXT: Record<Lang, ActText> = {
       },
       {
         who: '韓国語ができる人',
-        what: '翻訳は記録団体のボトルネックです。私たちは、これらのページの韓国語版を望んでいます。',
+        what: '翻訳は記録団体のボトルネックです。このサイトは英語、韓国語、日本語、中国語で公開しています。翻訳を読んで、不自然なところを直してください。',
       },
       {
         who: '書き手と作り手',
@@ -398,8 +398,8 @@ export const ACT_TEXT: Record<Lang, ActText> = {
         text: 'その人たちを危険にさらします。',
       },
       {
-        title: '体制を通る支援に出すこと、',
-        text: '独立した監視がないままです。',
+        title: '独立した監視のないまま、体制を通る支援にお金を出すこと。',
+        text: '監視がなければ、最後に誰の手に渡るのか確かめようがありません。',
       },
       {
         title: '未確認のまま広がった話をシェアすること。',
@@ -490,7 +490,7 @@ export const ACT_TEXT: Record<Lang, ActText> = {
       },
       {
         who: '会韩语的人',
-        what: '翻译是记录机构的瓶颈。我们也希望这些页面有韩文版。',
+        what: '翻译是记录机构的瓶颈。本站有英文、韩文、日文和中文版。请读一读译文，把不通顺的地方改掉。',
       },
       {
         who: '写作者和创作者',
@@ -513,8 +513,8 @@ export const ACT_TEXT: Record<Lang, ActText> = {
         text: '这会让他们陷入危险。',
       },
       {
-        title: '向经过政权的援助捐钱，',
-        text: '在没有独立监督的情况下。',
+        title: '向没有独立监督、经过政权的援助捐钱。',
+        text: '没有监督，就无法知道东西最后到了谁手里。',
       },
       {
         title: '转发未经核实的热传故事。',
