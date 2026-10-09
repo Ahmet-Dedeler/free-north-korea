@@ -2723,15 +2723,16 @@
 .explore-tile:hover .face-stack .avatar:nth-child(5) {
   transition-delay: 0.16s;
 }
-.spark {
+/* missile tests per year on the home Explore tile ("spark" alone collides with the /data sparklines in charts.css,
+   which made this a 46px block and every bar 0px tall) */
+.tests-spark {
   display: flex;
   align-items: flex-end;
   gap: 2px;
   width: 100%;
-  /* a fixed height: inside the centred preview grid, 100% resolved to the content height and every bar came out 0px */
   height: 110px;
 }
-.spark i {
+.tests-spark i {
   flex: 1;
   border-radius: 2px 2px 0 0;
   background: linear-gradient(to top, #e11d48, #f59e0b);
@@ -2739,7 +2740,7 @@
   transform-origin: bottom;
   transition: transform 0.3s;
 }
-.explore-tile:hover .spark i {
+.explore-tile:hover .tests-spark i {
   transform: scaleY(1.08);
   opacity: 1;
 }
@@ -4569,9 +4570,60 @@ a.ltag:hover {
     grid-column: span 3;
   }
 }
-@media (min-width: 680px) and (max-width: 999px) {
+@media (min-width: 650px) and (max-width: 999px) {
   .explore > li:last-child:nth-child(odd),
   .art-cards.with-lead > li:last-child:nth-child(even) {
     grid-column: 1 / -1;
   }
+}
+
+/* ---------- /about ---------- */
+.about-tiles {
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+}
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+  gap: 28px;
+  margin-top: 40px;
+}
+.about-grid h2,
+.about .band h2 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.2rem;
+}
+.about-grid p {
+  color: var(--ink-2);
+  line-height: 1.6;
+}
+.about-data {
+  list-style: none;
+  padding: 0;
+  margin: 18px 0 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+  gap: 10px;
+}
+.about-data li {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--panel);
+  line-height: 1.5;
+}
+.about-data svg {
+  flex: none;
+  margin-top: 2px;
+  color: var(--accent);
+}
+.about-leftout {
+  margin-top: 16px;
+  padding-left: 14px;
+  border-left: 3px solid var(--line-strong);
+  color: var(--ink-2);
 }

@@ -54,7 +54,7 @@ function TestsPreview() {
   const counts = years.map((y) => TESTS.filter((t) => t.date.startsWith(String(y))).length);
   const max = Math.max(...counts, 1);
   return (
-    <span className="spark">
+    <span className="tests-spark">
       {counts.map((n, i) => (
         <i key={years[i]} style={{ height: `${Math.max(2, (n / max) * 100)}%` }} />
       ))}
@@ -151,7 +151,7 @@ export default function Home() {
 
       <div className="tiles home-stats">
         <StatTile icon={Users} value="26M" label="people living under the Kim regime" note="UN estimate" />
-        <StatTile icon={Shield} value="80–120k" label="held in political prison camps" note="UN Commission of Inquiry, 2014" tone="danger" />
+        <StatTile icon={Shield} value="80–120k" label="held in political prison camps" note="UN inquiry, 2014. Still the most-cited estimate" tone="danger" />
         <StatTile icon={Footprints} value={arrivals.total} label={`escapees reached South Korea in ${arrivals.year}`} note="Unification Ministry" tone="ok" />
         <StatTile icon={Radiation} value="~60" label="assembled nuclear warheads" note="SIPRI, Jan 2026" tone="warn" />
       </div>

@@ -8,16 +8,18 @@ import { articleLanguages } from '@/content/translations';
 import ArticleArt, { artCredit } from './ArticleArt';
 import ArticleCards from './ArticleCards';
 import { SourceCards } from './Visual';
-import { SITE_NAME, SITE_URL } from '@/site/config';
+import { AUTHOR_NAME, SITE_NAME, SITE_URL } from '@/site/config';
+import { ABOUT_PATHS } from '@/content/about';
 import { LANG_TAG, absolute, jsonLd, type Lang } from '@/site/seo';
 
 const UI: Record<
   Lang,
-  { learn: string; learnHref: string; minRead: (n: number) => string; updated: string; faq: string; actTitle: string; actText: string; actBtn: string; sources: string; more: string; locale: string }
+  { learn: string; learnHref: string; by: (name: string) => string; minRead: (n: number) => string; updated: string; faq: string; actTitle: string; actText: string; actBtn: string; sources: string; more: string; locale: string }
 > = {
   en: {
     learn: 'Learn',
     learnHref: '/learn',
+    by: (n) => `By ${n}`,
     minRead: (n) => `${n} min read`,
     updated: 'Updated',
     faq: 'Quick answers',
@@ -30,7 +32,8 @@ const UI: Record<
   },
   ko: {
     learn: '해설',
-    learnHref: '/ko',
+    learnHref: '/ko/learn',
+    by: (n) => `글: ${n}`,
     minRead: (n) => `${n}분 분량`,
     updated: '업데이트',
     faq: '짧은 답',
@@ -43,7 +46,8 @@ const UI: Record<
   },
   ja: {
     learn: '解説',
-    learnHref: '/ja',
+    learnHref: '/ja/learn',
+    by: (n) => `文：${n}`,
     minRead: (n) => `${n}分で読める`,
     updated: '更新',
     faq: '短い答え',
@@ -56,7 +60,8 @@ const UI: Record<
   },
   zh: {
     learn: '解读',
-    learnHref: '/zh',
+    learnHref: '/zh/learn',
+    by: (n) => `作者：${n}`,
     minRead: (n) => `约${n}分钟读完`,
     updated: '更新于',
     faq: '简短回答',
@@ -89,7 +94,7 @@ export default function ArticleView({ a, others }: { a: Article; others: Article
       inLanguage: LANG_TAG[lang],
       dateModified: a.updated,
       mainEntityOfPage: url,
-      author: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
+      author: { '@type': 'Person', name: AUTHOR_NAME, url: absolute(ABOUT_PATHS[lang]) },
       publisher: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
     },
     {
@@ -121,7 +126,7 @@ export default function ArticleView({ a, others }: { a: Article; others: Article
         <ArticleArt a={a} height={420} />
         <div className="art-hero-text">
           <p className="eyebrow">
-            <Link href={t.learnHref}>{t.learn}</Link> · {t.minRead(a.minutes)} · {t.updated} {updated}
+            <Link href={t.learnHref}>{t.learn}</Link> · <Link href={ABOUT_PATHS[lang]}>{t.by(AUTHOR_NAME)}</Link> · {t.minRead(a.minutes)} · {t.updated} {updated}
           </p>
           <h1>{a.h1}</h1>
           {otherLangs.length > 0 && (

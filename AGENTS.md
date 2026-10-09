@@ -72,7 +72,21 @@ before adding any page or article.
 - `src/components/SiteChrome.tsx`: top bar + footer. `/map` and `/missiles` are full-screen "app" pages (no footer).
   The top nav is full (Watch was the last addition); link new pages from the footer and from related pages instead of
   adding a nav item. Header and footer text live in `content/chrome.ts` in every language; `localize()` points their
-  links at the reader's language, and the language switcher goes to the same page via the page's hreflang links.
+  links at the reader's language, and the language menu (globe button) goes to the same page via the page's hreflang
+  links. Below 1080px the nav moves behind a hamburger button into a panel under the bar; below 560px Take action moves
+  into that panel too. Check the header at 375px wide after touching it: most visitors from social media are on phones.
+  Nav items with no version in the reader's language get a small "EN" tag.
+- Logo (`src/site/brand.ts`, copied in `public/favicon.svg`): a white bird rising on a blue disc. Blue stands for freedom.
+  It used to be a white star on a red disc, which is the emblem on North Korea's own flag, so at a glance the site
+  looked pro-regime. Don't bring back red stars, red-and-white discs or other regime symbols in branding. Red stays
+  only where it means danger (camps, the Take action button, North Korea's colour in charts).
+- Who is behind it: `/about` (`components/AboutPage.tsx`, text in `content/about.ts`). The site speaks as a group
+  ("we"): volunteers and contributors, no company, government or NGO, no money taken. The /learn explainers carry one
+  byline, `AUTHOR_NAME` in `site/config.ts` (also the Article JSON-LD author), and may say "I". No faces, photos or
+  personal bios of the people behind the site: it is about the people of North Korea, and North Korean state hackers
+  target people who work on North Korea. Free North Korea (liberatenorthkorea.org) is not Liberty in North Korea
+  (libertyinnorthkorea.org); keep that clear wherever the two could be confused.
+- `/learn` and `/ko/learn`, `/ja/learn`, `/zh/learn` list each language's articles (`components/LearnIndex.tsx`).
 - Accessibility: small grey text uses `--ink-3`, tuned to pass WCAG AA (4.5:1) in both themes; don't lighten it.
 - Agents and LLM tools (`src/site/agents.ts` explains it all): robots.txt has a Content-Signal line (search, ai-input
   and ai-train all `yes`), every page has a Markdown version (`/x.md`, or `/x` with `Accept: text/markdown`, rewritten in

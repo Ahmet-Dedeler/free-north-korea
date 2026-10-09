@@ -6,10 +6,10 @@ import type { Lang } from '@/site/seo';
 
 /**
  * First path segments that exist under /ko, /ja and /zh. Everything else (the /map and /missiles apps) only exists
- * in English. /learn has no translated index page; its translated hub is the language's home page.
+ * in English.
  */
 const TRANSLATED = new Set([
-  'act', 'camps', 'counties', 'data', 'kim-family-tree', 'kim-watch', 'library', 'military', 'north-korea-vs-south-korea',
+  'about', 'act', 'camps', 'counties', 'data', 'kim-family-tree', 'kim-watch', 'library', 'military', 'north-korea-vs-south-korea',
   'organizations', 'people', 'places', 'sanctions', 'sources', 'watch',
 ]);
 
@@ -33,7 +33,7 @@ export function basePath(path: string): string {
  */
 export function localize(lang: Lang, path: string): string {
   if (lang === 'en') return path;
-  if (path === '/' || path === '/learn') return `/${lang}`;
+  if (path === '/') return `/${lang}`;
   if (path === '/missiles/list') return `/${lang}/missiles/list`;
   const first = path.split(/[/?#]/)[1] ?? '';
   return TRANSLATED.has(first) || first === 'learn' ? `/${lang}${path}` : path;
@@ -44,6 +44,8 @@ interface ChromeText {
   nav: { href: string; label: string }[];
   cta: string;
   langs: string;
+  menu: string;
+  closeMenu: string;
   about: string;
   explore: string;
   explore_links: [string, string][];
@@ -79,6 +81,8 @@ export const CHROME_TEXT: Record<Lang, ChromeText> = {
     ],
     cta: 'Take action',
     langs: 'Language',
+    menu: 'Menu',
+    closeMenu: 'Close menu',
     about:
       'An open-source hub for understanding North Korea and helping the 26 million people living under its regime. No ads, no cookies, no affiliation with any government. Page views are counted anonymously.',
     explore: 'Explore',
@@ -101,6 +105,7 @@ export const CHROME_TEXT: Record<Lang, ChromeText> = {
       ['/act', 'Take action'],
       ['/organizations', 'Organizations'],
       [LEARN.help, 'How to help'],
+      ['/about', 'About this site'],
     ],
     contribute: 'Contribute on GitHub',
     read: 'Read',
@@ -127,6 +132,8 @@ export const CHROME_TEXT: Record<Lang, ChromeText> = {
     ],
     cta: '행동하기',
     langs: '언어',
+    menu: '메뉴',
+    closeMenu: '메뉴 닫기',
     about:
       '북한을 이해하고 그 체제 아래 사는 2,600만 명을 돕기 위한 오픈소스 허브입니다. 광고도 쿠키도 없고, 어느 정부와도 관계가 없습니다. 페이지 조회수는 익명으로만 집계합니다.',
     explore: '둘러보기',
@@ -149,6 +156,7 @@ export const CHROME_TEXT: Record<Lang, ChromeText> = {
       ['/act', '행동하기'],
       ['/organizations', '단체'],
       [LEARN.help, '도울 수 있는 방법'],
+      ['/about', '이 사이트에 대해'],
     ],
     contribute: 'GitHub에서 참여하기',
     read: '읽기',
@@ -175,6 +183,8 @@ export const CHROME_TEXT: Record<Lang, ChromeText> = {
     ],
     cta: '行動する',
     langs: '言語',
+    menu: 'メニュー',
+    closeMenu: 'メニューを閉じる',
     about:
       '北朝鮮を理解し、その体制の下で暮らす2,600万人を助けるためのオープンソースのハブです。広告もクッキーもなく、どの政府とも関係はありません。ページの閲覧数は匿名でのみ数えています。',
     explore: '見る',
@@ -197,6 +207,7 @@ export const CHROME_TEXT: Record<Lang, ChromeText> = {
       ['/act', '行動する'],
       ['/organizations', '団体'],
       [LEARN.help, '支援の方法'],
+      ['/about', 'このサイトについて'],
     ],
     contribute: 'GitHubで参加する',
     read: '読む',
@@ -223,6 +234,8 @@ export const CHROME_TEXT: Record<Lang, ChromeText> = {
     ],
     cta: '采取行动',
     langs: '语言',
+    menu: '菜单',
+    closeMenu: '关闭菜单',
     about: '一个开源平台，帮助人们了解朝鲜，并帮助生活在其政权下的 2,600 万人。没有广告，没有 cookie，与任何政府无关。页面浏览量只做匿名统计。',
     explore: '浏览',
     explore_links: [
@@ -244,6 +257,7 @@ export const CHROME_TEXT: Record<Lang, ChromeText> = {
       ['/act', '采取行动'],
       ['/organizations', '组织'],
       [LEARN.help, '如何帮助'],
+      ['/about', '关于本站'],
     ],
     contribute: '在 GitHub 上参与',
     read: '阅读',

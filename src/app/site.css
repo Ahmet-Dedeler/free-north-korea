@@ -78,24 +78,16 @@ body {
   width: 22px;
   height: 22px;
 }
-.logo circle {
-  fill: var(--danger-fill);
-}
-.logo path {
-  fill: #fff;
-}
 .nav {
   display: flex;
   gap: 2px;
-  overflow-x: auto;
-  scrollbar-width: none;
   flex: 1;
   min-width: 0;
 }
-.nav::-webkit-scrollbar {
-  display: none;
-}
 .nav a {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
   padding: 6px 10px;
   border-radius: 8px;
   color: var(--ink-2);
@@ -111,6 +103,21 @@ body {
   color: var(--ink);
   background: var(--hover);
   font-weight: 600;
+}
+/* "EN" after a nav item that only exists in English (shown on the Korean, Japanese and Chinese pages) */
+.nav-en {
+  font-size: 9.5px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--ink-3);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 0 3px;
+  line-height: 1.4;
+}
+/* the Take action link inside the nav only shows in the phone menu; the bar has its own button */
+.nav .nav-cta {
+  display: none;
 }
 .topbar-end {
   display: flex;
@@ -966,9 +973,6 @@ a.card:hover {
   .shell-app {
     height: auto;
   }
-  .logo span {
-    display: none;
-  }
   .topbar {
     gap: 10px;
     padding: 0 12px;
@@ -1816,23 +1820,139 @@ ul.bars b {
   }
 }
 
-/* language switcher in the top bar: EN / 한국어 / 日本語 / 中文, each linking to this page in that language */
-.lang-switch {
+/* language menu in the top bar: a globe button that opens the four languages, each linking to this page in it */
+.lang-menu {
+  position: relative;
+}
+.lang-btn,
+.menu-btn {
   display: inline-flex;
-  gap: 6px;
   align-items: center;
-  margin-right: 10px;
-  font-size: 12px;
+  gap: 5px;
+  height: 34px;
+  padding: 0 9px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  color: var(--ink-2);
+  font: inherit;
+  font-size: 13px;
+  cursor: pointer;
 }
-.lang-switch > span {
-  display: inline-flex;
-  gap: 6px;
+.lang-btn:hover,
+.menu-btn:hover,
+.lang-btn[aria-expanded='true'] {
+  background: var(--hover);
+  color: var(--ink);
 }
-.lang-switch .muted[aria-hidden] {
-  opacity: 0.4;
+.lang-list {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 6px);
+  z-index: 30;
+  min-width: 150px;
+  margin: 0;
+  padding: 6px;
+  list-style: none;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
 }
-.lang-switch a.on {
+.lang-list[hidden] {
+  display: none;
+}
+.lang-list a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 10px;
+  border-radius: 6px;
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 14px;
+}
+.lang-list a:hover {
+  background: var(--hover);
+}
+.lang-list a[aria-current] {
   font-weight: 600;
+}
+.menu-btn {
+  display: none;
+  width: 38px;
+  justify-content: center;
+  padding: 0;
+}
+
+/* Below 1080px the nav doesn't fit in the bar: it becomes a panel under the bar, opened by the menu button. */
+@media (max-width: 1080px) {
+  .menu-btn {
+    display: inline-flex;
+  }
+  .topbar {
+    justify-content: space-between;
+  }
+  .nav {
+    display: none;
+    position: absolute;
+    top: var(--bar-h);
+    left: 0;
+    right: 0;
+    flex: none;
+    flex-direction: column;
+    gap: 2px;
+    max-height: calc(100dvh - var(--bar-h));
+    overflow-y: auto;
+    padding: 10px 12px 16px;
+    background: var(--panel);
+    border-bottom: 1px solid var(--line);
+    box-shadow: var(--shadow);
+  }
+  .menu-open .nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .nav a {
+    min-height: 44px;
+    padding: 10px 12px;
+    font-size: 15px;
+  }
+}
+/* On a phone the bar keeps the logo, language and menu buttons; Take action moves to the top of the menu. */
+@media (max-width: 560px) {
+  .bar-cta {
+    display: none;
+  }
+  .menu-open .nav {
+    grid-template-columns: 1fr;
+  }
+  .nav .nav-cta {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 6px;
+    order: -1;
+    color: #fff;
+    background: var(--danger-fill);
+    font-weight: 600;
+  }
+  .nav .nav-cta:hover {
+    color: #fff;
+    background: var(--danger-fill);
+    filter: brightness(0.92);
+  }
+}
+
+/* footer: the other languages, as a wrapping row (no separators to strand at the start of a line) */
+.footer-langs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 14px;
+  margin: 0.8rem 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.88rem;
 }
 
 /* missile list outcome column: theme tokens instead of the map's fixed colours, so the text keeps its contrast */

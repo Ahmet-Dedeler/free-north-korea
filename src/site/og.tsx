@@ -1,6 +1,7 @@
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { ImageResponse } from 'next/og';
+import { BRAND_BLUE, LOGO_BIRD } from './brand';
 
 export const OG_SIZE = { width: 1200, height: 630 };
 export const OG_CONTENT_TYPE = 'image/png';
@@ -70,8 +71,8 @@ export function ogCard({ kicker, title, sub, stats }: { kicker?: string; title: 
         <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between', width: '100%', height: '100%', padding: '44px 52px 46px', textShadow: '0 2px 18px rgba(5,8,16,0.9)' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: 16, fontSize: 36, fontWeight: 700 }}>
             <svg width="48" height="48" viewBox="0 0 24 24">
-              <circle cx="12" cy="12" r="10" fill="#dc2626" />
-              <path d="M12 6.2l1.6 3.9 4.2.3-3.2 2.7 1 4.1L12 15l-3.6 2.2 1-4.1-3.2-2.7 4.2-.3z" fill="#ffffff" />
+              <circle cx="12" cy="12" r="10" fill={BRAND_BLUE} />
+              <path d={LOGO_BIRD} fill="#ffffff" />
             </svg>
             Free North Korea
           </div>

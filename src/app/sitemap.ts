@@ -9,6 +9,7 @@ import { SERIES, SERIES_BUILT } from '@/charts/data';
 import { DATA_PATHS, dataPath } from '@/content/series';
 import { TWO_KOREAS_PATHS } from '@/content/twoKoreas';
 import { ACT_PATHS } from '@/content/act';
+import { ABOUT_PATHS, LEARN_PATHS } from '@/content/about';
 import { CAMPS_PATHS, campLanguages } from '@/content/campsI18n';
 import { COUNTIES_PATHS, countyLanguages } from '@/content/countiesI18n';
 import { KIM_FAMILY_PATHS } from '@/content/kimFamilyI18n';
@@ -39,9 +40,11 @@ const alternates = (langs: Languages): Entry['alternates'] => ({
 
 export default function sitemap(): MetadataRoute.Sitemap {
   // Still English-only. Translated pages are listed with their alternates below.
-  const pages = ['/map', '/missiles', '/learn'];
+  const pages = ['/map', '/missiles'];
 
   const translated: Languages[] = [
+    LEARN_PATHS,
+    ABOUT_PATHS,
     ACT_PATHS,
     MILITARY_PATHS,
     MISSILE_LIST_PATHS,
