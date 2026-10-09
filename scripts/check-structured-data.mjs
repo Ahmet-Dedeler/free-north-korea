@@ -37,6 +37,9 @@ const RULES = {
     else if (String(n.description).length > 5000) e.push('Dataset: "description" longer than 5000 characters');
     if (!has(n.creator)) w.push('Dataset: missing "creator"');
     if (!has(n.license)) w.push('Dataset: missing "license"');
+    // Google accepts a URL or a CreativeWork; a bare name like "public" is "Invalid object type for field license".
+    else if (list(n.license).some((l) => (typeof l === 'string' ? !/^https?:\/\//.test(l) : !has(l?.url) && !has(l?.name))))
+      e.push('Dataset: "license" must be a URL or CreativeWork');
     return [e, w];
   },
   Product(n) {
@@ -84,6 +87,11 @@ const RULES = {
 function check(node, out) {
   if (Array.isArray(node)) return node.forEach((x) => check(x, out));
   if (!node || typeof node !== 'object') return;
+  // A DataCatalog is part of Google's Dataset feature; hold its description to the same 50 to 5000 characters.
+  if (types(node).includes('DataCatalog')) {
+    const len = String(node.description ?? '').length;
+    if (len < 50 || len > 5000) out.errors.push('DataCatalog: "description" must be 50 to 5000 characters');
+  }
   for (const t of types(node)) {
     const rule = RULES[t];
     if (!rule) continue;

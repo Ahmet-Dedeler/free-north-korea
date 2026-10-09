@@ -135,14 +135,20 @@ function datasetDescription(s: Series, lang: Lang) {
   return `${title}: ${text?.sub ?? s.title} ${CHART_UI[lang].source}: ${s.source.name}.`;
 }
 
+/**
+ * License names (as shown on the page) to the license's own URL. Google wants a URL or CreativeWork in `license`,
+ * not a bare name ("Invalid object type for field license"). `public` (UN lists) has no license document, so it
+ * stays off the JSON-LD; never invent one the source doesn't grant.
+ */
 const LICENSE_URL: Record<string, string> = {
   'CC BY 4.0': 'https://creativecommons.org/licenses/by/4.0/',
   MIT: 'https://opensource.org/license/mit',
+  'KOGL Type 1 (public)': 'https://www.kogl.or.kr/info/licenseType1.do',
 };
 
-/** creator + license for Dataset JSON-LD, from the series' upstream source. License is left out when the source has none. */
+/** creator + license for Dataset JSON-LD, from the series' upstream source. License is left out when it has no URL. */
 function datasetCredits(s: Series) {
-  const license = s.source.license && s.source.license !== 'None' ? (LICENSE_URL[s.source.license] ?? s.source.license) : undefined;
+  const license = s.source.license ? LICENSE_URL[s.source.license] : undefined;
   return { creator: { '@type': 'Organization', name: s.source.name, url: s.source.url }, license };
 }
 
