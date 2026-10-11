@@ -66,5 +66,5 @@ npm run check:schema
 1. **Pick or open an issue:** Browse [open issues](https://github.com/Ahmet-Dedeler/free-north-korea/issues) to find something to work on. If proposing a new feature or substantial data addition, open an issue first.
 2. **Create a branch:** Work on a descriptive branch (`git checkout -b feature/add-rescue-org`).
 3. **Verify locally:** Ensure `npm run lint`, `npm run build` and then `npm run check:schema` pass without errors.
-4. **Update the docs:** If your change adds or changes something the README, LEARN.md, AGENTS.md or the site's own text describes (a feature, a count, a data source), update them in the same PR.
+4. **Update the docs:** If your change adds or changes something the README, LEARN.md, CONTRIBUTING.md, AGENTS.md, `docs/**/*.md` or the site's own text describes (a feature, a count, a data source), update them in the same PR.
 5. **Submit a Pull Request:** Open a PR against `main` explaining what was changed and citing your sources.

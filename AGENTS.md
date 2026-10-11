@@ -197,7 +197,8 @@ Run order after a scrape: `node scripts/build-layers.ts && node scripts/build-en
 - MapLibre: import as `import * as maplibregl`. Map components are loaded with `next/dynamic` and `ssr: false`
   (MapLibre touches `window` at import). The worker is copied to `public/maplibre/` by
   `scripts/copy-maplibre-worker.mjs` (runs on predev/prebuild) and set with `setWorkerUrl`.
-- Basemap: OpenFreeMap `positron` / `dark` (free, no key). Labels switched to `name:en` on `style.load`; our layers are
+- Basemap: OpenFreeMap `positron` / `dark` (free, no key). Labels switched to the reader's language on `style.load`
+  (`LABEL_FIELDS` in `content/mapI18n.ts`; the two Koreas' country labels use `COUNTRY_NAMES`, not OSM's official names); our layers are
   re-added on every `style.load` because `setStyle` drops them.
 - Theme: follows device preference (`prefers-color-scheme`). `src/theme.ts` (context provider). The inline script in
   `src/app/layout.tsx` sets `<html data-theme>` before paint so server and client match and avoid flashes. CSS colours are
