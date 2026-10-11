@@ -60,8 +60,9 @@ const article: Article = {
             tone: 'ok',
             children: (
               <p>
-                China joined the 1951 Refugee Convention and its 1967 Protocol in 1982. Their core rule, non-refoulement, says no one may be
-                sent back to a country where they risk torture. UN experts say that is exactly what returnees face.
+                China joined the 1951 Refugee Convention and its 1967 Protocol in 1982, which bar sending refugees back to persecution. It is
+                also a party to the Convention Against Torture, which bars sending anyone to a country where they risk torture. UN experts say
+                that is exactly what returnees face.
               </p>
             ),
           },
@@ -86,7 +87,7 @@ const article: Article = {
             tone: 'danger',
           },
           { date: '2024', title: 'Workers and families', text: '108 overseas workers in January, 60 people from Jilin and Liaoning in April.' },
-          { date: '2024–25', title: 'Trafficked women', text: '212 trafficked women held in Kunming, Yunnan, and 20 of 22 women held in Inner Mongolia are sent back.' },
+          { date: '2024–25', title: 'Trafficked women', text: '212 trafficked women held in Kunming and other Chinese cities (2024), and 20 of 22 women held in Inner Mongolia, are sent back.' },
           { date: 'Oct 2025', title: 'At least 1,076', text: 'Human Rights Watch counts at least 406 returns since 2024 and 1,076 since 2020.', tone: 'danger' },
         ]}
       />
@@ -150,7 +151,7 @@ const article: Article = {
   faq: [
     {
       q: 'Why does China send North Korean defectors back?',
-      a: 'China says North Koreans who cross the border are illegal economic migrants, not refugees, and returns them under a 1986 border protocol with North Korea. The UN and rights groups say this breaks the rule of non-refoulement in the Refugee Convention, which China joined in 1982.',
+      a: 'China says North Koreans who cross the border are illegal economic migrants, not refugees, and returns them under a 1986 border protocol with North Korea. The UN and rights groups say this breaks the rule of non-refoulement in the Refugee Convention, which China joined in 1982, and in the Convention Against Torture.',
     },
     {
       q: 'How many North Koreans has China sent back?',
@@ -162,7 +163,7 @@ const article: Article = {
     },
     {
       q: 'Is it legal for China to return North Koreans?',
-      a: 'The UN says no. China is a party to the 1951 Refugee Convention and its 1967 Protocol, which forbid sending anyone back to a country where they face persecution or torture. China rejects this, calling the returnees economic migrants.',
+      a: 'The UN says no. China is a party to the 1951 Refugee Convention and its 1967 Protocol, which forbid sending refugees back to persecution, and to the Convention Against Torture, which forbids sending anyone to a country where they risk torture. China rejects this, calling the returnees economic migrants.',
     },
   ],
   sources: [
