@@ -50,7 +50,7 @@ const article: Article = {
         checks on buses and trains and phone tracking make just moving around really hard now.
       </p>
       <p>
-        If they're caught, they're sent back. In October 2023 China sent back an estimated 500-600 people in one operation. Back home
+        If they're caught, they're sent back (<Link href="/learn/china-forced-repatriation-north-koreans">why China does this</Link>). In October 2023 China sent back an estimated 500-600 people in one operation. Back home
         they're interrogated, and anyone who had contact with South Koreans or Christians can end up in a{' '}
         <Link href="/learn/north-korea-prison-camps">prison camp</Link>.
       </p>

@@ -52,7 +52,7 @@ const article: Article = {
         것 자체가 정말 어렵다.
       </p>
       <p>
-        잡히면 돌려보내진다. 2023년 10월 중국은 한 번의 작전으로 약 500~600명을 송환했다. 북한으로 돌아가면 심문을 받고, 남한 사람이나 기독교인과
+        잡히면 돌려보내진다(<Link href="/ko/learn/china-forced-repatriation-north-koreans">중국이 왜 그러는지</Link>). 2023년 10월 중국은 한 번의 작전으로 약 500~600명을 송환했다. 북한으로 돌아가면 심문을 받고, 남한 사람이나 기독교인과
         접촉했던 사람은 <Link href="/ko/learn/north-korea-prison-camps">수용소</Link>로 갈 수 있다.
       </p>
 
