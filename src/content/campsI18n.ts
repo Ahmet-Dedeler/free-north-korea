@@ -22,9 +22,10 @@ export const campLanguages = (slug: string) => ({
 
 const PREFIXED = [/^\/camps(?=\/|$)/, /^\/counties(?=\/|$)/, /^\/places(?=\/|$)/, /^\/people(?=\/|$)/, /^\/learn(?=\/|$)/, /^\/sanctions(?=\/|$)/];
 
-/** Prefix the pages in this translation set. /map and /missiles stay where they are. */
+/** Prefix the pages in this translation set (and /map). /missiles stays where it is. */
 export function hrefFor(lang: Lang, path: string): string {
-  if (lang === 'en' || path.startsWith('/map') || path.startsWith('/missiles')) return path;
+  if (lang === 'en' || path.startsWith('/missiles')) return path;
+  if (path.startsWith('/map')) return `/${lang}${path}`;
   if (path === '/') return `/${lang}`;
   const base = path.split(/[?#]/)[0];
   if (!PREFIXED.some((re) => re.test(base))) return path;

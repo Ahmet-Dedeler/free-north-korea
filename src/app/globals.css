@@ -401,6 +401,20 @@ a {
   width: 1px;
   background: var(--line);
 }
+.legend-toggle {
+  display: none;
+  font: inherit;
+  font-weight: 600;
+  color: var(--ink);
+}
+@media (max-width: 560px) {
+  .legend-toggle {
+    display: inline;
+  }
+  .legend:not(.open) > span {
+    display: none;
+  }
+}
 
 .map-tip .maplibregl-popup-content {
   padding: 7px 10px;

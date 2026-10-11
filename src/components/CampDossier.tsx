@@ -134,7 +134,7 @@ export default function CampDossier({ lang, camp }: { lang: Lang; camp: Camp }) 
 
       <SatView lat={camp.lat} lon={camp.lon} zoom={kwanliso ? 13 : 15} label={camp.name} height={420} />
       <p className="dx-actions">
-        <Link href={`/map#camps=${camp.id}`} className="btn">
+        <Link href={hrefFor(lang, `/map#camps=${camp.id}`)} className="btn">
           <MapPin size={15} /> {t.openOnMap}
         </Link>
         {county && (

@@ -23,19 +23,22 @@ Because North Korean defectors, families, and networks face extreme risks, the f
 - **Translations:** `src/content/translations/` (`ko.ts` for Korean, `ja.ts` for Japanese, `zh.ts` for Chinese).
 - **Map:** `src/map/` (MapLibre GL implementation, layer styles, deep links).
 - **Missile explorer:** `src/missiles/` (CNS missile launch database visualization).
-- **Sanctions:** `data/sanctions.json` (built weekly from official UN 1718 and US OFAC lists; do not edit by hand).
+- **Sanctions:** `data/sanctions.json` (built weekly from the official UN 1718, US OFAC, UK, EU and Japan lists; do not edit by hand).
+- **Charts and data:** `data/series/` (built weekly by `scripts/build-series.ts`; hand-checked numbers go in `data/series/curated/` with their source URL).
 
 ## Multilingual requirements
 
 Content visible to readers is published in English, Korean (`/ko`), Japanese (`/ja`) and Simplified Chinese (`/zh`).
 
-- When adding or editing an article in `/learn`, matching entries must be updated in `src/content/translations/ko.ts` and `src/content/translations/ja.ts`.
+- A new `/learn` article needs a file with the same slug in `src/content/articles/ko/`, `ja/` and `zh/` (listed in each folder's `index.ts`). When you change facts in an English article, change every translation too.
+- A new page is one shared component that takes `lang`, with its text in a `Record<Lang, …>` in `src/content/`, and four thin routes (`/x`, `/ko/x`, `/ja/x`, `/zh/x`). `/sanctions` is the model.
+- Chinese uses mainland terms (朝鲜 / 韩国).
 - Proper names should match established local usage (for example, 국민통일방송 or 自由アジア放送).
-- Running `npm run lint` will verify translation parity across all three languages.
+- `npm run lint` fails if an English article is missing its Korean, Japanese or Chinese version.
 
 ## Development setup
 
-Requirements: Node.js 20+ and npm.
+Requirements: Node.js 22.18+ (the build scripts run `.ts` files with plain `node`) and npm.
 
 ```bash
 # Clone the repository
@@ -53,11 +56,15 @@ npm run lint
 
 # Build static output
 npm run build
+
+# Check structured data (JSON-LD) on every built page
+npm run check:schema
 ```
 
 ## How to contribute
 
-1. **Pick or open an issue:** Browse [open issues](https://github.com/Ahmet-Dedeler/free-north-korea/issues) to find tasks marked `good first issue` or `help wanted`. If proposing a new feature or substantial data addition, open an issue first.
+1. **Pick or open an issue:** Browse [open issues](https://github.com/Ahmet-Dedeler/free-north-korea/issues) to find something to work on. If proposing a new feature or substantial data addition, open an issue first.
 2. **Create a branch:** Work on a descriptive branch (`git checkout -b feature/add-rescue-org`).
-3. **Verify locally:** Ensure `npm run lint` and `npm run build` pass without errors.
-4. **Submit a Pull Request:** Open a PR against `main` explaining what was changed and citing your sources.
+3. **Verify locally:** Ensure `npm run lint`, `npm run build` and then `npm run check:schema` pass without errors.
+4. **Update the docs:** If your change adds or changes something the README, LEARN.md, AGENTS.md or the site's own text describes (a feature, a count, a data source), update them in the same PR.
+5. **Submit a Pull Request:** Open a PR against `main` explaining what was changed and citing your sources.

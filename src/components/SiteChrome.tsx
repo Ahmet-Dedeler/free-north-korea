@@ -20,7 +20,7 @@ const HREFLANG: Record<string, Lang> = { en: 'en', ko: 'ko', ja: 'ja', 'zh-hans'
  * exist. A language the page lacks falls back to that language's home page.
  */
 function useSwitchTargets(path: string): Record<Lang, string> {
-  // A page with no version in a language (the /map and /missiles apps) sends that language to its home page.
+  // A page with no version in a language (the /missiles app) sends that language to its home page.
   const guess = () =>
     Object.fromEntries(
       LANGS.map((l) => {
@@ -83,10 +83,10 @@ export default function SiteChrome({ children }: { children: ReactNode }) {
   const t = CHROME_TEXT[lang];
   const to = (href: string) => localize(lang, href);
   const switchTo = useSwitchTargets(path);
-  const app = APP_PAGES.includes(path);
+  const app = APP_PAGES.includes(basePath(path));
   const base = basePath(path);
   const active = (href: string) => base === href || base.startsWith(href + '/');
-  // a nav page with no version in the reader's language (the /map and /missiles apps) gets a small "EN" tag
+  // a nav page with no version in the reader's language (the /missiles app) gets a small "EN" tag
   const englishOnly = (href: string) => lang !== 'en' && to(href) === href;
 
   const [menuOpen, setMenuOpen] = useState(false);

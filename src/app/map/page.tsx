@@ -1,11 +1,15 @@
 import MapExplorer from '@/map/Explorer';
+import { MAP_PATHS, MAP_TEXT } from '@/content/mapI18n';
 import { pageMeta } from '@/site/seo';
 
+const t = MAP_TEXT.en;
+
 export const metadata = pageMeta({
-  title: 'North Korea Map: Prison Camps, Detention Sites, Missile Bases',
-  description:
-    'Interactive intel map of North Korea: political prison camps, 190+ detention and secret police facilities, missile bases, markets, population and 3,600 documented human rights abuses by county.',
-  path: '/map',
+  title: t.metaTitle,
+  description: t.metaDescription,
+  path: MAP_PATHS.en,
+  lang: 'en',
+  languages: MAP_PATHS,
 });
 
 export default function Page() {

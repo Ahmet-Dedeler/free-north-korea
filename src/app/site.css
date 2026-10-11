@@ -46,6 +46,10 @@ body {
 .shell-app {
   height: 100dvh;
 }
+/* /ko, /ja and /zh wrap pages in <div lang>; let the app grid stay a direct flex child of the shell */
+.shell-app > [lang] {
+  display: contents;
+}
 .shell-app .app {
   flex: 1;
   min-height: 0;
@@ -980,7 +984,10 @@ a.card:hover {
   .page {
     padding-top: 28px;
   }
+  /* the county/point panel is a bottom sheet on phones (.detail in globals.css); undo the desktop top-anchoring */
   .place-detail {
+    top: auto;
+    bottom: 0;
     max-height: 45vh;
   }
 }

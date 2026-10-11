@@ -5,6 +5,9 @@ import * as maplibregl from 'maplibre-gl';
 import type { ExpressionSpecification, GeoJSONSource, LngLatBoundsLike } from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import type { Theme } from '../theme';
+import type { Lang } from '@/site/seo';
+import { provinceName } from '@/content/countiesI18n';
+import { LABEL_FIELDS, MAP_TEXT } from '@/content/mapI18n';
 import { MAPLIBRE_WORKER_URL, STYLE_URL } from '../map/maplibre';
 import { LAYERS, NIGHT_LIGHTS, SHADES, SHADE_COLORS, type LayerId, type Shade } from './config';
 import type { Data, Selection } from './types';
@@ -17,6 +20,7 @@ interface Props {
   shade: Shade;
   selected: Selection | null;
   theme: Theme;
+  lang: Lang;
   onSelect: (s: Selection | null) => void;
 }
 
@@ -62,7 +66,7 @@ function fillOpacity(shade: Shade): ExpressionSpecification | number {
   return ['interpolate', ['linear'], ['zoom'], 6, ['case', ['boolean', ['feature-state', 'selected'], false], 0.8, 0.62], 9.5, ['case', ['boolean', ['feature-state', 'selected'], false], 0.35, 0.22]];
 }
 
-export default function IntelMap({ data, visible, shade, selected, theme, onSelect }: Props) {
+export default function IntelMap({ data, visible, shade, selected, theme, lang, onSelect }: Props) {
   const box = useRef<HTMLDivElement>(null);
   const mapRef = useRef<maplibregl.Map | null>(null);
   const latest = useRef({ data, visible, shade, selected, theme, onSelect });
@@ -87,7 +91,7 @@ export default function IntelMap({ data, visible, shade, selected, theme, onSele
     map.on('style.load', () => {
       for (const layer of map.getStyle().layers) {
         if (layer.type !== 'symbol' || !map.getLayoutProperty(layer.id, 'text-field')) continue;
-        map.setLayoutProperty(layer.id, 'text-field', ['coalesce', ['get', 'name:en'], ['get', 'name_en'], ['get', 'name:latin'], ['get', 'name']]);
+        map.setLayoutProperty(layer.id, 'text-field', ['coalesce', ...LABEL_FIELDS[lang].map((k) => ['get', k])] as ExpressionSpecification);
       }
       setup();
     });
@@ -204,11 +208,11 @@ export default function IntelMap({ data, visible, shade, selected, theme, onSele
       if (!f) return void tip.remove();
       const p = f.properties;
       const { shade } = latest.current;
-      const fmt = SHADES.find((s) => s.id === shade)?.tip;
+      const fmt = MAP_TEXT[lang].tips[shade];
       const extra = !hits.length && fmt && p[shade] !== undefined ? ` · ${fmt(Number(p[shade]))}` : '';
       tip
         .setLngLat(e.lngLat)
-        .setHTML(`<b>${String(p.name).replace(/</g, '&lt;')}</b>${hits.length ? '' : `<span>${String(p.province ?? '')}${extra}</span>`}`)
+        .setHTML(`<b>${String(p.name).replace(/</g, '&lt;')}</b>${hits.length ? '' : `<span>${provinceName(String(p.province ?? ''), lang)}${extra}</span>`}`)
         .addTo(map);
     });
     map.on('mouseout', () => tip.remove());
@@ -261,7 +265,9 @@ export default function IntelMap({ data, visible, shade, selected, theme, onSele
     }
     if (!fly) return;
     const wide = window.innerWidth > 800;
-    const padding = wide ? { top: 40, bottom: 40, left: 40, right: 420 } : { top: 30, bottom: Math.round(window.innerHeight * 0.35), left: 20, right: 20 };
+    // phones: the panel is a bottom sheet up to 45vh tall, so keep the selection in the part of the map above it
+    const hidden = map.getContainer().getBoundingClientRect().bottom - window.innerHeight * 0.55;
+    const padding = wide ? { top: 40, bottom: 40, left: 40, right: 420 } : { top: 30, bottom: Math.max(30, Math.round(hidden) + 20), left: 20, right: 20 };
     if (selected.kind === 'county') {
       const f = data.counties.features.find((x) => x.properties?.pcode === selected.id);
       if (!f) return;

@@ -63,7 +63,7 @@ const article: Article = {
 
       <h2>已知的收容所</h2>
       <p>
-        这些收容所都标在<Link href="/map">情报地图</Link>上，位置是大致的。它们的状态来自卫星分析和脱北者证词，所以会比实际情况晚几个月甚至几年（请记住这一点）。
+        这些收容所都标在<Link href="/zh/map">情报地图</Link>上，位置是大致的。它们的状态来自卫星分析和脱北者证词，所以会比实际情况晚几个月甚至几年（请记住这一点）。
       </p>
       <CampGrid lang="zh" slugs={['kwanliso-14', 'kwanliso-15', 'kwanliso-16', 'kwanliso-18', 'kwanliso-22', 'kwanliso-25', 'kyohwaso-1-kaechon', 'kyohwaso-12-chongori']} />
       <p>

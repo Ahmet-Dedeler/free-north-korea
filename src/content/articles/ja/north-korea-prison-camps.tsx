@@ -63,7 +63,7 @@ const article: Article = {
 
       <h2>わかっている収容所</h2>
       <p>
-        これらはすべておおよその位置とともに<Link href="/map">インテルマップ</Link>に載っている。状況は衛星分析と脱北者の証言にもとづくので、現実より数か月から数年遅れることがある（そこは覚えておいてほしい）。下のカードは英語だ。
+        これらはすべておおよその位置とともに<Link href="/ja/map">インテルマップ</Link>に載っている。状況は衛星分析と脱北者の証言にもとづくので、現実より数か月から数年遅れることがある（そこは覚えておいてほしい）。下のカードは英語だ。
       </p>
       <CampGrid lang="ja" slugs={['kwanliso-14', 'kwanliso-15', 'kwanliso-16', 'kwanliso-18', 'kwanliso-22', 'kwanliso-25', 'kyohwaso-1-kaechon', 'kyohwaso-12-chongori']} />
       <p>

@@ -37,7 +37,7 @@ export default function ChineseHubPage() {
       <p className="lede">{ZH_HUB.lede}</p>
 
       <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap', margin: '2rem 0' }}>
-        <Link href="/map" className="chip on">
+        <Link href="/zh/map" className="chip on">
           打开交互式情报地图 →
         </Link>
         <Link href="/zh/camps" className="chip">

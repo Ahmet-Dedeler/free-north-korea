@@ -11,14 +11,14 @@ import { SOURCE_DESCRIPTIONS, SOURCES_TEXT } from '@/content/sourcesI18n';
 import type { Lang } from '@/site/seo';
 
 const TRACK_ICON: Record<string, LucideIcon> = { camps: Lock, population: Users, military: Rocket, economy: Coins, korean_japanese: Languages };
-const BARE = ['/map', '/missiles'];
+const BARE = ['/missiles'];
 
 type Src = (typeof registry)[number] & { research?: { last_updated?: string | null; maintenance?: string; value?: number }; description?: string; format?: string; language?: string; publisher?: string; usedBy?: string[] };
 type St = { status: number; ok: boolean; detail: string; checkedAt: string; changedAt: string | null; upstreamDate: string | null };
 type Change = { id: string; at: string; kind: string; detail: string };
 const ST = state as Record<string, St>;
 
-/** Language prefix for internal links. /map and /missiles stay where they are. */
+/** Language prefix for internal links. /missiles stays where it is. */
 function localPath(lang: Lang, path: string): string {
   if (lang === 'en' || BARE.some((b) => path === b || path.startsWith(`${b}/`))) return path;
   if (path === '/') return `/${lang}`;

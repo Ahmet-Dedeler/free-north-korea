@@ -63,11 +63,11 @@ const STEP_ICONS: Record<ActStepIcon, LucideIcon> = {
 const SKILL_ICONS: LucideIcon[] = [Code, Satellite, Languages, PenLine, GraduationCap, Scale];
 const DONT_ICONS: LucideIcon[] = [Plane, HandCoins, MessageCircleWarning];
 
-/** Home is '' | '/ko' | '/ja' | '/zh'. The map and the missile explorer stay on the English URL. */
+/** Home is '' | '/ko' | '/ja' | '/zh'. The missile explorer stays on the English URL. */
 function localizeHref(lang: Lang, href: string) {
   if (/^https?:\/\//.test(href)) return href;
   const path = href.split(/[?#]/)[0];
-  if (path === '/map' || path === '/missiles') return href;
+  if (path === '/missiles') return href;
   if (href === '/') return ROOT[lang] || '/';
   return `${ROOT[lang]}${href}`;
 }

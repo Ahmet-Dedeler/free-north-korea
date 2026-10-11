@@ -48,6 +48,9 @@ export default function Timeline({ tests, minYear, maxYear, range, colorBy, onCh
   const hoverTotal = hover !== null ? Object.values(bins.get(hover)!).reduce((a, c) => a + c, 0) : 0;
   const label = isAll ? `All years · ${minYear}–${maxYear}` : range[0] === range[1] ? `${range[0]}` : `${range[0]}–${range[1]}`;
 
+  // first and last year, plus every fifth year that isn't right next to them ("'84" and "'85" overlap on a phone)
+  const labelled = (y: number) => y === minYear || y === maxYear || (y % 5 === 0 && y - minYear >= 3 && maxYear - y >= 3);
+
   return (
     <div className="timeline">
       <div className="timeline-head">
@@ -92,7 +95,7 @@ export default function Timeline({ tests, minYear, maxYear, range, colorBy, onCh
                   b[g.id] ? <div key={g.id} style={{ height: `${(b[g.id] / max) * 100}%`, background: g.color }} /> : null,
                 )}
               </div>
-              <span className="year">{y % 5 === 0 || y === maxYear || y === minYear ? `'${String(y).slice(2)}` : ''}</span>
+              <span className="year">{labelled(y) ? `'${String(y).slice(2)}` : ''}</span>
             </div>
           );
         })}

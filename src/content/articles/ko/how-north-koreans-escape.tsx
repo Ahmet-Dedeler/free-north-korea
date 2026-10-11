@@ -36,7 +36,7 @@ const article: Article = {
       <p>
         거의 모두가 두만강이나 압록강을 건너 중국으로 나간다. 주로 건너는 곳은 <PlaceLink slug="hyesan">혜산</PlaceLink>,{' '}
         <PlaceLink slug="musan">무산</PlaceLink>, <PlaceLink slug="hoeryong">회령</PlaceLink> 같은 국경 도시 근처다 (
-        <Link href="/map">인텔 지도</Link>에도 있다).
+        <Link href="/ko/map">인텔 지도</Link>에도 있다).
       </p>
       <BorderMap lang="ko" />
       <p>

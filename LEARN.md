@@ -30,7 +30,7 @@ Rather than relying on proprietary tile providers that require API keys and enfo
 
 ### Custom Layers & Data
 - Administrative boundaries (provinces, counties) and facilities (camps, missile bases, nuclear sites) are stored in GeoJSON format under `public/layers/`.
-- County shading and status badges are rendered dynamically on top of the vector basemap.
+- Counties can be shaded by documented abuses, population, density, detention sites, markets or NASA night lights, drawn on top of the vector basemap. Deep links such as `/map#county=KP0205` or `/map#camps=camp-3` open a county or point directly.
 - High-resolution satellite snapshots (`src/components/SatView.tsx`) render directly via tile coordinates without requiring full GIS map instances.
 
 ---
@@ -45,11 +45,21 @@ All verified facts live in typed structures under `src/content/` and `data/`.
 - Trajectories, launch sites, apogees, and outcomes are mapped dynamically using spherical geometry approximations.
 
 ### Sanctions Pipeline
-- `scripts/build-sanctions.ts` fetches and validates official data feeds from the United Nations 1718 Sanctions Committee and the US Treasury OFAC DPRK sanctions lists.
-- Built output is validated to prevent truncation and committed to `data/sanctions.json`.
+- `scripts/build-sanctions.ts` downloads the official lists: the United Nations 1718 Sanctions Committee entries, the US Treasury OFAC DPRK programs, and the UK, EU and Japan lists. `scripts/sanctions/match.ts` then works out which entries on different lists are the same target.
+- The script refuses to write if the UN or US list looks truncated; a national list that fails keeps its previous copy. Output goes to `data/sanctions.json` with the download date, and a weekly GitHub Action reruns it.
+
+### Scheduled Data Jobs
+Two GitHub Actions keep the site current without a backend. Each job commits only when its data changed, and every
+file carries the date it was fetched so the page can show how old it is.
+- **Every 3 hours** (`event-wire.yml`): USGS earthquake readings around North Korea (`data/seismic.json`), Japan
+  Ministry of Defense missile launch reports (`data/launch-reports.json`) and KCNA's reports of Kim Jong Un's public
+  appearances (`data/kimwatch.json`, always labelled as the regime's claim).
+- **Weekly** (`check-sources.yml`): every cited source checked for changes or dead links (`/sources`), the sanctions
+  lists, new missile tests, the chart datasets (`data/series/`), Sentinel-2 satellite images of the camps and
+  nuclear/missile sites (`public/img/sentinel/`), and a full Kim Watch refresh.
 
 ### Ethical Data Handling
-- **Differential privacy / aggregation:** Individual survivor narratives or burial sites are strictly aggregated to county-level statistics to protect living defectors and family members remaining in the DPRK.
+- **Aggregation:** Victims' homes and exact execution or burial sites are never pinned. They only count toward their county's total, and incident narratives (which contain surnames) are left out, to protect defectors and the families still in North Korea.
 - **Verification:** Every data point requires verification against published records, satellite imagery, or documentation before inclusion.
 
 ---
@@ -64,7 +74,7 @@ The site is served simultaneously in four languages:
 
 ### How It Works:
 1. **Shared Layout & Components:** Pages share visual components that accept a `lang` property and read from typed translation records (`src/content/translations/`).
-2. **Automated Linting:** `scripts/check-translations.mjs` checks every article slug in CI. A build fails if an English article lacks corresponding Korean, Japanese or Chinese entries.
+2. **Automated Linting:** `scripts/check-translations.mjs` runs as part of `npm run lint` and fails if an English article lacks its Korean, Japanese or Chinese file.
 3. **Hreflang & Canonical Links:** `src/site/seo.ts` dynamically generates alternating language tags for search engines, ensuring search parity worldwide.
 
 ---

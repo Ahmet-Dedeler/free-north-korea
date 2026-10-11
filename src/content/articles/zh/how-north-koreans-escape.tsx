@@ -35,7 +35,7 @@ const article: Article = {
       <p>
         几乎所有人都经中国离开，渡过图们江或鸭绿江。常见的越境地段在<PlaceLink slug="hyesan">惠山</PlaceLink>、
         <PlaceLink slug="musan">茂山</PlaceLink>和<PlaceLink slug="hoeryong">会宁</PlaceLink>这些边境城镇附近（也标在
-        <Link href="/map">情报地图</Link>上）。
+        <Link href="/zh/map">情报地图</Link>上）。
       </p>
       <BorderMap lang="zh" />
       <p>

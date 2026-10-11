@@ -37,7 +37,7 @@ export default function KoreanHubPage() {
       <p className="lede">{KO_HUB.lede}</p>
 
       <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap', margin: '2rem 0' }}>
-        <Link href="/map" className="chip on">
+        <Link href="/ko/map" className="chip on">
           대화형 인텔 지도 열기 (지도 보기) →
         </Link>
         <Link href="/ko/camps" className="chip">

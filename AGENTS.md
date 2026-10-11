@@ -21,8 +21,11 @@ before adding any page or article.
   - `orgs.ts` (directory, with `status`), `library.ts`, `places.ts` (atlas points + escape route).
   - `sanctions.ts`: text for /sanctions in every language plus the UN resolution timeline. The lists themselves
     are `data/sanctions.json` (built, never hand-edited).
-- `src/map/`: the intel map (`/map`): `config.ts` (layers, county shading), `IntelMap.tsx` (MapLibre), `Explorer.tsx`
-  (sidebar, search), `Detail.tsx` (county and point panels). Deep links: `/map#county=KP0205`, `/map#camps=camp-3`.
+- `src/map/`: the intel map (`/map`, `/ko/map`, `/ja/map`, `/zh/map`): `config.ts` (layers, county shading), `IntelMap.tsx`
+  (MapLibre; basemap labels in the reader's language where OSM has them), `Explorer.tsx` (sidebar, search), `Detail.tsx`
+  (county and point panels; on phones a bottom sheet). Every word of UI is in `content/mapI18n.ts`; the GeoJSON's own text
+  (point names, NKDB types, notes) stays English with `lang="en"`, and each point links to its translated dossier.
+  Deep links: `/map#county=KP0205`, `/map#camps=camp-3` (same hashes under `/ko/map` etc.).
 - `src/entities/` + `src/app/people/`: people graph, profiles, hover cards (`PersonLink`), JSON at `/api/people`.
   `/kim-family-tree` shows the family as it is now (Kim Jong Un's living relatives; the dead only where they connect
   living people), laid out by `src/entities/familyTree.ts` and sized to fit the page. The one-line "now" status per
@@ -44,7 +47,8 @@ before adding any page or article.
   written callouts on charts (`notes`), the gap between the two Koreas shaded (`gap`), hatched stacks. Poster pictures
   that aren't line charts live in `src/charts/Infographics.tsx` (tale of the tape, year stripes, people to scale);
   `components/Reveal.tsx` adds the grow-in. Country colours are only for countries; other series use the `--s1..4` slots.
-- `/sanctions`: everyone on the UN 1718 list and the US Treasury (OFAC) North Korea programs. One component
+- `/sanctions`: everyone on the UN 1718 list and the US Treasury (OFAC) North Korea programs, plus the UK, EU and
+  Japan lists, with entries matched across lists (`targets`). One component
   (`components/SanctionsPage.tsx`) renders every language route.
 - Event wire (measured events within hours): `src/content/events.ts` reads `data/seismic.json` (USGS catalog, box
   around North Korea) and `data/launch-reports.json` (Japan Ministry of Defense launch PDFs); text in
@@ -69,7 +73,7 @@ before adding any page or article.
   like PersonLink), `ArticleBlocks` (in-article visuals), `CampCard`/`PlaceCard`. Icons come from `lucide-react`, brand
   marks from `simple-icons`. Their CSS lives in `src/app/visual.css`. Images go through `src/content/media.ts` (lookups
   into media.json) and are downloaded by `scripts/fetch-media.ts`, never hotlinked (satellite tiles are the exception).
-- `src/components/SiteChrome.tsx`: top bar + footer. `/map` and `/missiles` are full-screen "app" pages (no footer).
+- `src/components/SiteChrome.tsx`: top bar + footer. `/map` (in every language) and `/missiles` are full-screen "app" pages (no footer).
   The top nav is full (Watch was the last addition); link new pages from the footer and from related pages instead of
   adding a nav item. Header and footer text live in `content/chrome.ts` in every language; `localize()` points their
   links at the reader's language, and the language menu (globe button) goes to the same page via the page's hreflang
@@ -106,8 +110,8 @@ exist.
   when it is written for that audience (the Japanese abductees piece).
 - **Pages.** Build new pages the way `/sanctions` is built: one shared component that takes `lang`, text in a
   `Record<Lang, …>` in `src/content/`, and thin routes (`/x`, `/ko/x`, `/ja/x`, `/zh/x`). Don't fork the JSX per language.
-  Older pages (`/act`, `/organizations`, `/military`, `/camps`, `/people`, `/library` and the rest) are still English
-  only. When you touch one in a meaningful way, move it to this pattern and translate it.
+  Every page is translated except the missile explorer (`/missiles`; its table `/missiles/list` is translated). When you
+  touch it in a meaningful way, move it to this pattern and translate it.
 - **hreflang.** Every translated route passes `lang` and `languages` to `pageMeta()`, listing all versions including
   itself, and gets the same `alternates` in `sitemap.ts`. All versions must list the same set.
 - **Translate, don't summarize.** Same facts, same numbers, same sources as the English. Proper names follow local
@@ -141,7 +145,8 @@ exist.
    licenses, sanctions from the live OFAC SDN and UN 1718 lists, and drops any claim whose source page doesn't load
    and contain the claim's numbers/words. Hand-checked claims go in `data/entities/curated.json`.
 5. `scripts/build-sanctions.ts` → `data/sanctions.json`: the full UN 1718 list and every OFAC entry under a DPRK
-   program, straight from the official files, with the download date in `fetched`. Refuses to write if a list looks
+   program, plus the UK, EU and Japan lists (`scripts/sanctions/national.ts`; a failing national list keeps its last
+   copy), straight from the official files, with the download date in `fetched`. Refuses to write if a list looks
    truncated. Also runs in the weekly Action.
 6. `scripts/build-registry.ts` + `scripts/check-sources.mjs` (weekly GitHub Action): every source watched for
    changes/moves/deaths → `data/sources/{registry,state,changes}.json`, shown on `/sources`.
@@ -210,6 +215,11 @@ Run order after a scrape: `node scripts/build-layers.ts && node scripts/build-en
   `npm run check:schema` (after `npm run build`) checks every built page; it must exit 0. `npm run check:schema:prod`
   samples production after a deploy. The checker is shared with `water-brands-website`; keep the two copies in sync. For new schema types, add a
   rule to `scripts/check-structured-data.mjs` and test one page in https://search.google.com/test/rich-results.
+- Keep the docs in step with the work. Any change that adds, removes or changes something (a page, a feature, a data
+  source, a count, a workflow, a rule) also updates every place that describes it, in the same commit: this file,
+  `README.md` (feature list, the numbers table, credits), `LEARN.md`, `CONTRIBUTING.md`, `docs/**/*.md`, and the site's
+  own text (`/about`, the hub pages, `llms.txt`, the four languages). Numbers in the docs come from the data, not from
+  memory: recount them when you touch the thing they count. If you find a doc that is already out of date, fix it too.
 - Before you finish: `npm run lint` (oxlint, tsc, translation check), `npm run build` and `npm run check:schema` must pass.
 - When the work is done and lint + build + check:schema pass, commit and push to `main` yourself. Don't ask first.
 

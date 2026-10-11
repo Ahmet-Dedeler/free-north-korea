@@ -6,9 +6,14 @@ import AsOf, { isStale } from '@/components/AsOf';
 import { baseSlug, campSlug } from '@/content/mapSlugs';
 import { LAYERS, MANIFEST, type LayerId } from './config';
 import type { Data, Selection } from './types';
+import type { Lang } from '@/site/seo';
+import { localize } from '@/content/chrome';
+import { NUM_LOCALE, decadeShort, provinceName, rightsLabel } from '@/content/countiesI18n';
+import { MAP_TEXT, type MapText } from '@/content/mapI18n';
 
 type P = Record<string, any>;
-const n = (v: unknown) => (typeof v === 'number' ? v.toLocaleString('en-US') : '—');
+/** Number formatter for the reader's language. */
+const num = (lang: Lang) => (v: unknown) => (typeof v === 'number' ? v.toLocaleString(NUM_LOCALE[lang]) : '—');
 const pct = (a?: number | null, b?: number | null) => (a && b ? `${Math.round((a / b) * 100)}%` : '—');
 const parse = <T,>(s: unknown, fallback: T): T => {
   try {
@@ -18,11 +23,11 @@ const parse = <T,>(s: unknown, fallback: T): T => {
   }
 };
 
-function Sources({ list }: { list: { name: string; url: string }[] }) {
+function Sources({ list, tx }: { list: { name: string; url: string }[]; tx: MapText }) {
   if (!list.length) return null;
   return (
     <p className="d-sources">
-      Source{list.length > 1 ? 's' : ''}:{' '}
+      {list.length > 1 ? tx.sources : tx.source}:{' '}
       {list.map((s, i) => (
         <span key={s.url + i}>
           {i > 0 && ' · '}
@@ -36,13 +41,13 @@ function Sources({ list }: { list: { name: string; url: string }[] }) {
 }
 
 /** Horizontal bar list, used for "abuses by right violated". */
-function Bars({ rows, color }: { rows: [string, number][]; color: string }) {
+function Bars({ rows, color, lang }: { rows: [string, number][]; color: string; lang: Lang }) {
   const max = Math.max(...rows.map((r) => r[1]), 1);
   return (
     <ul className="bars">
       {rows.map(([label, v]) => (
         <li key={label}>
-          <span className="bars-label">{label.replace(/^Rights? (to|of) (the )?/i, '').replace(/^./, (c) => c.toUpperCase())}</span>
+          <span className="bars-label">{rightsLabel(label, lang)}</span>
           <span className="bars-track">
             <i style={{ width: `${(v / max) * 100}%`, background: color }} />
           </span>
@@ -53,8 +58,10 @@ function Bars({ rows, color }: { rows: [string, number][]; color: string }) {
   );
 }
 
-function CountyDetail({ f, data, onSelect }: { f: Feature; data: Data; onSelect: (s: Selection) => void }) {
+function CountyDetail({ f, data, lang, onSelect }: { f: Feature; data: Data; lang: Lang; onSelect: (s: Selection) => void }) {
   const p = f.properties as P;
+  const tx = MAP_TEXT[lang];
+  const n = num(lang);
   const rights = parse<[string, number][]>(p.rights, []);
   const decades = parse<Record<string, number>>(p.decades, {});
   const inside = (layer: LayerId) => data[layer].features.filter((x) => x.properties?.county === p.pcode);
@@ -64,23 +71,25 @@ function CountyDetail({ f, data, onSelect }: { f: Feature; data: Data; onSelect:
   const decadeRows = Object.entries(decades).filter(([k]) => !/verification/i.test(k));
   return (
     <>
-      <p className="d-kicker">County · {p.province}</p>
+      <p className="d-kicker">
+        {tx.county} · {provinceName(p.province, lang)}
+      </p>
       <h2>{p.name}</h2>
       <p style={{ margin: '0.2rem 0 0.8rem', fontSize: '0.9rem' }}>
-        <Link href={`/counties/${String(p.pcode).toLowerCase()}`}>View full county dossier →</Link>
+        <Link href={localize(lang, `/counties/${String(p.pcode).toLowerCase()}`)}>{tx.countyDossier}</Link>
       </p>
       <div className="d-stats">
         <div>
           <b>{n(p.pop)}</b>
-          <span>people (2008)</span>
+          <span>{tx.peopleYear}</span>
         </div>
         <div>
           <b>{n(p.density)}</b>
-          <span>per km²</span>
+          <span>{tx.perKm2}</span>
         </div>
         <div>
           <b>{pct(p.urban, p.pop)}</b>
-          <span>urban</span>
+          <span>{tx.urban}</span>
         </div>
         <div>
           <b>{n(p.area)}</b>
@@ -89,18 +98,18 @@ function CountyDetail({ f, data, onSelect }: { f: Feature; data: Data; onSelect:
       </div>
 
       <p className="d-asof">
-        <AsOf date="2008" label="Population from the census of" />
+        <AsOf date="2008" label={tx.censusLabel} lang={lang} />
       </p>
 
       <h3>
-        Documented abuses <small>{n(p.incidents)} recorded by NKDB</small>
+        {tx.abuses} <small>{tx.recordedBy(n(p.incidents))}</small>
       </h3>
-      {rights.length ? <Bars rows={rights.slice(0, 6)} color="#dc2626" /> : <p className="muted">No abuses recorded here yet. That usually means nobody from here has testified, not that nothing happened.</p>}
+      {rights.length ? <Bars rows={rights.slice(0, 6)} color="#dc2626" lang={lang} /> : <p className="muted">{tx.noAbuses}</p>}
       {decadeRows.length > 0 && (
         <p className="d-decades">
           {decadeRows.map(([k, v]) => (
             <span key={k}>
-              {k.replace('The ', '')} <b>{v}</b>
+              {lang === 'en' ? k.replace('The ', '') : decadeShort(k, lang)} <b>{v}</b>
             </span>
           ))}
         </p>
@@ -111,9 +120,9 @@ function CountyDetail({ f, data, onSelect }: { f: Feature; data: Data; onSelect:
         return (
           <div key={layer}>
             <h3>
-              {def.label} <small>{items.length}</small>
+              {tx.layers[layer].label} <small>{items.length}</small>
             </h3>
-            <ul className="d-list">
+            <ul className="d-list" lang={lang === 'en' ? undefined : 'en'}>
               {items.slice(0, 12).map((it) => (
                 <li key={String(it.properties?.id)}>
                   <button onClick={() => onSelect({ kind: 'point', layer, id: String(it.properties?.id) })}>
@@ -123,29 +132,38 @@ function CountyDetail({ f, data, onSelect }: { f: Feature; data: Data; onSelect:
                   </button>
                 </li>
               ))}
-              {items.length > 12 && <li className="muted">+{items.length - 12} more</li>}
+              {items.length > 12 && (
+                <li className="muted" lang={lang}>
+                  {tx.more(items.length - 12)}
+                </li>
+              )}
             </ul>
           </div>
         );
       })}
       <Sources
         list={[
-          { name: 'UN OCHA boundaries', url: 'https://data.humdata.org/dataset/cod-ab-prk' },
-          { name: '2008 census', url: 'https://data.humdata.org/dataset/cod-ps-prk' },
-          { name: 'NKDB Visual Atlas', url: 'https://www.visualatlas.org/en/density' },
+          { name: tx.ochaSource, url: 'https://data.humdata.org/dataset/cod-ab-prk' },
+          { name: tx.censusSource, url: 'https://data.humdata.org/dataset/cod-ps-prk' },
+          { name: tx.nkdbSource, url: 'https://www.visualatlas.org/en/density' },
         ]}
+        tx={tx}
       />
     </>
   );
 }
 
-function PointDetail({ layer, f }: { layer: LayerId; f: Feature }) {
+function PointDetail({ layer, f, lang }: { layer: LayerId; f: Feature; lang: Lang }) {
   const p = f.properties as P;
+  const tx = MAP_TEXT[lang];
+  const n = num(lang);
+  // the point's own text (name, NKDB type, note) is published in English; the dossier it links to is translated
+  const en = lang === 'en' ? undefined : 'en';
   const def = LAYERS.find((l) => l.id === layer)!;
   const [lon, lat] = (f.geometry as { coordinates: number[] }).coordinates;
   const sources = parse<{ name: string; url: string }[]>(p.sources, []);
   const extra: { name: string; url: string }[] = [];
-  if (p.url) extra.push({ name: layer === 'missile-bases' ? 'CSIS report' : 'Source', url: p.url });
+  if (p.url) extra.push({ name: layer === 'missile-bases' ? tx.csisReport : tx.source, url: p.url });
   const src = parse<{ label: string; url: string } | null>(p.source, null);
   if (src) extra.push({ name: src.label, url: src.url });
   // when the whole layer comes from an old survey (markets: 2018), say so on every point
@@ -154,88 +172,92 @@ function PointDetail({ layer, f }: { layer: LayerId; f: Feature }) {
   return (
     <>
       <p className="d-kicker" style={{ color: def.color }}>
-        {p.kind ?? p.type ?? def.label}
+        {p.kind ?? p.type ? <span lang={en}>{p.kind ?? p.type}</span> : tx.layers[layer].label}
       </p>
-      <h2>{p.name}</h2>
-      {p.status && <p className="place-status">{p.status}</p>}
+      <h2 lang={en}>{p.name}</h2>
+      {p.status && (
+        <p className="place-status" lang={en}>
+          {p.status}
+        </p>
+      )}
 
       {(p.prisoners || p.incidents || p.stalls || p.agency) && (
         <div className="d-stats">
           {p.prisoners ? (
             <div>
               <b>~{n(p.prisoners)}</b>
-              <span>prisoners (HRNK est.)</span>
+              <span>{tx.prisoners}</span>
             </div>
           ) : null}
           {p.incidents ? (
             <div>
               <b>{n(p.incidents)}</b>
-              <span>abuses recorded here</span>
+              <span>{tx.abusesHere}</span>
             </div>
           ) : null}
           {p.stalls ? (
             <div>
               <b>{n(p.stalls)}</b>
-              <span>stalls</span>
+              <span>{tx.stalls}</span>
             </div>
           ) : null}
           {p.area_m2 ? (
             <div>
               <b>{n(p.area_m2)}</b>
-              <span>m² market area</span>
+              <span>{tx.marketArea}</span>
             </div>
           ) : null}
           {p.revenue_usd ? (
             <div>
               <b>${n(Math.round(p.revenue_usd))}</b>
-              <span>est. yearly stall fees</span>
+              <span>{tx.stallFees}</span>
             </div>
           ) : null}
         </div>
       )}
       {p.agency && (
         <p>
-          <b>Run by:</b> {p.agency}
+          <b>{tx.runBy}</b> <span lang={en}>{p.agency}</span>
         </p>
       )}
       {p.province && (
         <p className="muted">
-          {p.province}
-          {layer === 'markets' && p.km_to_border ? ` · ${n(p.km_to_border)} km from the Chinese border` : ''}
+          {provinceName(p.province, lang)}
+          {layer === 'markets' && p.km_to_border ? ` · ${tx.kmFromBorder(n(p.km_to_border))}` : ''}
         </p>
       )}
-      {(p.note || p.summary) && <p>{p.note ?? p.summary}</p>}
+      {(p.note || p.summary) && <p lang={en}>{p.note ?? p.summary}</p>}
       {layerDate && isStale(layerDate) && (
         <p className="d-asof">
-          <AsOf date={layerDate.slice(0, 7)} />
+          <AsOf date={layerDate.slice(0, 7)} lang={lang} />
         </p>
       )}
-      {p.published && <p className="muted">Report published {p.published}</p>}
+      {p.published && <p className="muted">{tx.published(p.published)}</p>}
       <p className="place-meta">
-        {lat.toFixed(4)}°N, {lon.toFixed(4)}°E{p.approx ? ' (approximate)' : ''}
-        {layer === 'detention' && p.confirmed === false ? ' · location unconfirmed' : ''}
+        {lat.toFixed(4)}°N, {lon.toFixed(4)}°E{p.approx ? tx.approx : ''}
+        {layer === 'detention' && p.confirmed === false ? tx.unconfirmed : ''}
       </p>
       {layer === 'camps' && (
         <p>
-          <Link href={`/camps/${campSlug(String(p.id))}`}>View full camp dossier →</Link>
+          <Link href={localize(lang, `/camps/${campSlug(String(p.id))}`)}>{tx.campDossier}</Link>
         </p>
       )}
       {(layer === 'sites' || layer === 'missile-bases') && (
         <p>
-          <Link href={`/places/${baseSlug(String(p.id))}`}>View full site details →</Link>
+          <Link href={localize(lang, `/places/${baseSlug(String(p.id))}`)}>{tx.siteDossier}</Link>
         </p>
       )}
       {p.more && (
         <p>
-          <Link href={p.more}>Read more →</Link>
+          <Link href={localize(lang, p.more)}>{tx.readMore}</Link>
         </p>
       )}
-      <Sources list={[...sources, ...extra]} />
+      <Sources list={[...sources, ...extra]} tx={tx} />
     </>
   );
 }
 
-export default function Detail({ sel, data, onSelect, onClose }: { sel: Selection; data: Data; onSelect: (s: Selection) => void; onClose: () => void }) {
+export default function Detail({ sel, data, lang, onSelect, onClose }: { sel: Selection; data: Data; lang: Lang; onSelect: (s: Selection) => void; onClose: () => void }) {
   const f =
     sel.kind === 'county'
       ? data.counties.features.find((x) => x.properties?.pcode === sel.id)
@@ -243,10 +265,10 @@ export default function Detail({ sel, data, onSelect, onClose }: { sel: Selectio
   if (!f) return null;
   return (
     <aside className="detail place-detail intel-detail">
-      <button className="modal-close" onClick={onClose} aria-label="Close">
+      <button className="modal-close" onClick={onClose} aria-label={MAP_TEXT[lang].close}>
         ✕
       </button>
-      {sel.kind === 'county' ? <CountyDetail f={f} data={data} onSelect={onSelect} /> : <PointDetail layer={sel.layer} f={f} />}
+      {sel.kind === 'county' ? <CountyDetail f={f} data={data} lang={lang} onSelect={onSelect} /> : <PointDetail layer={sel.layer} f={f} lang={lang} />}
     </aside>
   );
 }

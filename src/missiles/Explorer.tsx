@@ -70,6 +70,7 @@ function Explorer({ data }: { data: Dataset }) {
     query: '',
   });
   const [colorBy, setColorBy] = useState<ColorBy>('type');
+  const [keyOpen, setKeyOpen] = useState(false);
   const [selectedId, setSelectedId] = useState<string | null>(readHash);
   const [showAbout, setShowAbout] = useState(false);
   const { theme } = useTheme();
@@ -294,7 +295,11 @@ function Explorer({ data }: { data: Dataset }) {
       <main className="stage">
         <MapView theme={theme} tests={visible} facilities={data.facilities} selected={selected} colorBy={colorBy} onSelect={select} />
 
-        <div className="legend">
+        <div className={keyOpen ? 'legend open' : 'legend'}>
+          {/* phones: the key is folded behind this button so it doesn't cover the map */}
+          <button className="legend-toggle" onClick={() => setKeyOpen((o) => !o)} aria-expanded={keyOpen}>
+            {keyOpen ? 'Hide key' : 'Key'}
+          </button>
           {colorBy === 'type' ? (
             presentTypes
               .filter((t) => filters.types.has(t.id))

@@ -12,6 +12,7 @@ import { ACT_PATHS } from '@/content/act';
 import { ABOUT_PATHS, LEARN_PATHS } from '@/content/about';
 import { CAMPS_PATHS, campLanguages } from '@/content/campsI18n';
 import { COUNTIES_PATHS, countyLanguages } from '@/content/countiesI18n';
+import { MAP_PATHS } from '@/content/mapI18n';
 import { KIM_FAMILY_PATHS } from '@/content/kimFamilyI18n';
 import { KIM_WATCH, KIM_WATCH_PATHS } from '@/content/kimWatch';
 import { WATCH_PATHS } from '@/content/watch';
@@ -40,7 +41,7 @@ const alternates = (langs: Languages): Entry['alternates'] => ({
 
 export default function sitemap(): MetadataRoute.Sitemap {
   // Still English-only. Translated pages are listed with their alternates below.
-  const pages = ['/map', '/missiles'];
+  const pages = ['/missiles'];
 
   const translated: Languages[] = [
     LEARN_PATHS,
@@ -56,6 +57,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     CAMPS_PATHS,
     PLACES_PATHS,
     COUNTIES_PATHS,
+    MAP_PATHS,
   ];
 
   const camps = getAllCamps();

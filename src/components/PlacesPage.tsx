@@ -52,7 +52,7 @@ export default function PlacesPage({ lang }: { lang: Lang }) {
             })}
           </ul>
           <p className="dx-actions">
-            <Link href="/map#sites=yongbyon" className="btn primary">
+            <Link href={placeHref(lang, '/map#sites=yongbyon')} className="btn primary">
               <MapPin size={15} /> {t.openMap}
             </Link>
           </p>

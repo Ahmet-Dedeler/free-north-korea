@@ -37,7 +37,7 @@ export default function JapaneseHubPage() {
       <p className="lede">{JA_HUB.lede}</p>
 
       <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap', margin: '2rem 0' }}>
-        <Link href="/map" className="chip on">
+        <Link href="/ja/map" className="chip on">
           インタラクティブ軍事・人権地図を開く →
         </Link>
         <Link href="/ja/camps" className="chip">

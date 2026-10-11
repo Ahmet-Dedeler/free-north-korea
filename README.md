@@ -29,7 +29,7 @@ be freed" gave you close to nothing. So this puts it all in one place, open sour
 
 | | | | | |
 |:-:|:-:|:-:|:-:|:-:|
-| **179** counties mapped | **24** political prison camps & prisons | **357** missile tests since 1984 | **25** open datasets | **159** sources watched weekly |
+| **179** counties mapped | **24** political prison camps & prisons | **358** missile tests since 1984 | **25** open datasets | **159** sources watched weekly |
 
 ## What's inside
 
@@ -80,13 +80,26 @@ be freed" gave you close to nothing. So this puts it all in one place, open sour
     <td width="50%" valign="top">
       <a href="https://liberatenorthkorea.org/sanctions"><img src="docs/readme/sanctions.jpg" alt="Sanctions"></a>
       <h3>🚫 Sanctions</h3>
-      Everyone on the UN 1718 list and the US Treasury lists, downloaded fresh every week from the official files.
+      Everyone on the UN 1718 list, the US Treasury lists and the UK, EU and Japan lists, matched across lists and
+      downloaded fresh every week from the official files.
     </td>
     <td width="50%" valign="top">
       <a href="https://liberatenorthkorea.org"><img src="docs/readme/home.jpg" alt="Home"></a>
       <h3>🙋 Learn & act</h3>
-      Sourced explainers on the questions people actually search for, a directory of 30+ groups doing rescue,
+      Sourced explainers on the questions people actually search for, a directory of 26 groups doing rescue,
       information and resettlement work, and things you can do in 10 minutes.
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>📡 Watch</h3>
+      What we measure on a schedule: earthquakes in and around North Korea (USGS), missile launches as Japan's defense
+      ministry reports them within hours, and Sentinel-2 satellite images of the prison camps and nuclear and missile sites, month by month.
+    </td>
+    <td width="50%" valign="top">
+      <h3>👁 Kim Watch</h3>
+      Every public appearance of Kim Jong Un as KCNA reports it, with a live "days since last seen" counter. Always
+      labelled as the regime's own claim.
     </td>
   </tr>
 </table>

@@ -22,9 +22,8 @@ export function countyLanguages(slug: string): Record<Lang, string> {
   };
 }
 
-/** Prefix a content path for `lang`. The intel map stays at /map. */
+/** Prefix a content path for `lang`. */
 export function sitePath(lang: Lang, path: string) {
-  if (path === '/map' || path.startsWith('/map#') || path.startsWith('/map?')) return path;
   if (lang === 'en') return path;
   if (path === '/') return `/${lang}`;
   return `/${lang}${path.startsWith('/') ? path : `/${path}`}`;

@@ -18,10 +18,10 @@ export function placeLanguages(slug: string): Languages {
   };
 }
 
-/** Prefix a site path. /map and the missile explorer stay unprefixed; /missiles/list does not. */
+/** Prefix a site path. The missile explorer stays unprefixed; /missiles/list and /map do not. */
 export function placeHref(lang: Lang, path: string): string {
   if (lang === 'en') return path;
-  if (path === '/missiles' || path.startsWith('/missiles#') || path.startsWith('/map')) return path;
+  if (path === '/missiles' || path.startsWith('/missiles#')) return path;
   return `/${lang}${path}`;
 }
 

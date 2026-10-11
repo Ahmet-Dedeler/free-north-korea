@@ -1,0 +1,358 @@
+/**
+ * Text for the intel map (/map, /ko/map, /ja/map, /zh/map) in every language. The map data itself (county names,
+ * point names, NKDB facility types, CSIS notes) comes from the GeoJSON in English and is shown as published, marked
+ * lang="en"; the dossier each point links to has the translated write-up. Province names and rights labels reuse the
+ * tables in countiesI18n.ts.
+ */
+import type { Lang } from '@/site/seo';
+import type { LayerDef, LayerId, Shade } from '@/map/config';
+import { NUM_LOCALE } from './countiesI18n';
+
+export const MAP_PATHS = { en: '/map', ko: '/ko/map', ja: '/ja/map', zh: '/zh/map' } as const satisfies Record<Lang, string>;
+
+type Group = LayerDef['group'];
+
+export interface MapText {
+  metaTitle: string;
+  metaDescription: string;
+  h1: string;
+  lede: (incidents: string) => string;
+  search: string;
+  countySub: (province: string) => string;
+  shadeBy: string;
+  groups: Record<Group, string>;
+  layers: Record<LayerId, { label: string; hint: string }>;
+  shades: Record<Shade, { label: string; hint: string }>;
+  /** Hover text for a county's value under the current shading. */
+  tips: Partial<Record<Shade, (v: number) => string>>;
+  mayBeOutdated: string;
+  note: (homesWithheld: number, built: string) => string;
+  sourcesLink: string;
+  close: string;
+  // county panel
+  county: string;
+  countyDossier: string;
+  peopleYear: string;
+  perKm2: string;
+  urban: string;
+  censusLabel: string;
+  abuses: string;
+  recordedBy: (n: string) => string;
+  noAbuses: string;
+  more: (n: number) => string;
+  ochaSource: string;
+  censusSource: string;
+  nkdbSource: string;
+  source: string;
+  sources: string;
+  // point panel
+  prisoners: string;
+  abusesHere: string;
+  stalls: string;
+  marketArea: string;
+  stallFees: string;
+  runBy: string;
+  kmFromBorder: (km: string) => string;
+  published: (date: string) => string;
+  approx: string;
+  unconfirmed: string;
+  campDossier: string;
+  siteDossier: string;
+  readMore: string;
+  csisReport: string;
+}
+
+export const MAP_TEXT: Record<Lang, MapText> = {
+  en: {
+    metaTitle: 'North Korea Map: Prison Camps, Detention Sites, Missile Bases',
+    metaDescription:
+      'Interactive intel map of North Korea: political prison camps, 190+ detention and secret police facilities, missile bases, markets, population and 3,600 documented human rights abuses by county.',
+    h1: 'North Korea intel map',
+    lede: (n) => `Camps, prisons, secret police offices, missile bases, markets and ${n} documented abuses, on one map. Click any county or point.`,
+    search: 'Search a county, camp, base, market…',
+    countySub: (p) => `County · ${p}`,
+    shadeBy: 'Shade counties by',
+    groups: { 'Human rights': 'Human rights', Military: 'Military', Economy: 'Economy', Escape: 'Escape' },
+    layers: {
+      camps: { label: 'Prison camps', hint: 'Political prison camps (kwanliso) and long-term prisons (kyohwaso)' },
+      detention: { label: 'Detention & security offices', hint: 'Holding centres, interrogation, labour training camps, secret police offices' },
+      'china-detention': { label: 'Chinese detention (repatriation)', hint: 'Where China holds escapees before sending them back' },
+      'missile-bases': { label: 'Missile operating bases', hint: 'Undeclared bases found by CSIS from satellite imagery' },
+      sites: { label: 'Nuclear, launch & key sites', hint: 'Yongbyon, Punggye-ri, Sohae, Pyongyang landmarks, border crossings' },
+      markets: { label: 'Markets (jangmadang)', hint: 'Official markets, sized by number of stalls (CSIS, 2018)' },
+      'escape-route': { label: 'Escape route', hint: 'The usual 3,000-mile route through China to Southeast Asia' },
+    },
+    shades: {
+      incidents: { label: 'Documented abuses', hint: 'Human rights violations recorded by NKDB, per county' },
+      density: { label: 'Population density', hint: 'People per km² (2008 census)' },
+      population: { label: 'Population', hint: 'People per county (2008 census)' },
+      detention: { label: 'Detention facilities', hint: 'Known detention and security facilities per county' },
+      markets: { label: 'Markets', hint: 'Official markets per county' },
+      lights: { label: 'Night lights (NASA)', hint: 'Black Marble satellite composite, 2016. Electricity is a rough proxy for wealth.' },
+      none: { label: 'Nothing', hint: 'Plain map' },
+    },
+    tips: {
+      incidents: (v) => `${fmt(v, 'en')} ${v === 1 ? 'documented abuse' : 'documented abuses'}`,
+      density: (v) => `${fmt(Math.round(v), 'en')} people per km²`,
+      population: (v) => `${fmt(v, 'en')} ${v === 1 ? 'person' : 'people'}`,
+      detention: (v) => `${fmt(v, 'en')} ${v === 1 ? 'detention facility' : 'detention facilities'}`,
+      markets: (v) => `${fmt(v, 'en')} ${v === 1 ? 'market' : 'markets'}`,
+    },
+    mayBeOutdated: 'may be outdated',
+    note: (h, built) =>
+      `To protect people still inside, we never pin victims’ homes (${h} withheld) or execution and burial sites. Those only count toward their county. Data rebuilt ${built}.`,
+    sourcesLink: 'All sources and when they last changed →',
+    close: 'Close',
+    county: 'County',
+    countyDossier: 'View full county dossier →',
+    peopleYear: 'people (2008)',
+    perKm2: 'per km²',
+    urban: 'urban',
+    censusLabel: 'Population from the census of',
+    abuses: 'Documented abuses',
+    recordedBy: (n) => `${n} recorded by NKDB`,
+    noAbuses: 'No abuses recorded here yet. That usually means nobody from here has testified, not that nothing happened.',
+    more: (n) => `+${n} more`,
+    ochaSource: 'UN OCHA boundaries',
+    censusSource: '2008 census',
+    nkdbSource: 'NKDB Visual Atlas',
+    source: 'Source',
+    sources: 'Sources',
+    prisoners: 'prisoners (HRNK est.)',
+    abusesHere: 'abuses recorded here',
+    stalls: 'stalls',
+    marketArea: 'm² market area',
+    stallFees: 'est. yearly stall fees',
+    runBy: 'Run by:',
+    kmFromBorder: (km) => `${km} km from the Chinese border`,
+    published: (d) => `Report published ${d}`,
+    approx: ' (approximate)',
+    unconfirmed: ' · location unconfirmed',
+    campDossier: 'View full camp dossier →',
+    siteDossier: 'View full site details →',
+    readMore: 'Read more →',
+    csisReport: 'CSIS report',
+  },
+  ko: {
+    metaTitle: '북한 지도: 정치범수용소, 구금 시설, 미사일 기지',
+    metaDescription:
+      '북한 인터랙티브 정보 지도입니다. 정치범수용소, 190곳이 넘는 구금·보위 시설, 미사일 기지, 시장, 인구, 그리고 시·군별로 기록된 인권 침해 3,600건을 보여 줍니다.',
+    h1: '북한 정보 지도',
+    lede: (n) => `수용소, 교화소, 보위부 사무소, 미사일 기지, 시장, 그리고 기록된 인권 침해 ${n}건을 한 지도에 담았습니다. 시·군이나 지점을 누르세요.`,
+    search: '시·군, 수용소, 기지, 시장 찾기…',
+    countySub: (p) => `시·군 · ${p}`,
+    shadeBy: '시·군 색 기준',
+    groups: { 'Human rights': '인권', Military: '군사', Economy: '경제', Escape: '탈북' },
+    layers: {
+      camps: { label: '정치범수용소·교화소', hint: '정치범수용소(관리소)와 장기 수감 교화소' },
+      detention: { label: '구금·보위 시설', hint: '집결소, 조사 시설, 노동단련대, 보위부 사무소' },
+      'china-detention': { label: '중국 구금 시설 (강제 북송)', hint: '중국이 탈북민을 돌려보내기 전에 가두는 곳' },
+      'missile-bases': { label: '미사일 운용 기지', hint: 'CSIS가 위성 사진으로 찾아낸 미신고 기지' },
+      sites: { label: '핵·발사장·주요 장소', hint: '영변, 풍계리, 서해, 평양의 상징물, 국경 통로' },
+      markets: { label: '시장 (장마당)', hint: '공식 시장, 매대 수에 따라 크기 표시 (CSIS, 2018년)' },
+      'escape-route': { label: '탈북 경로', hint: '중국을 거쳐 동남아시아로 가는 보통의 3,000마일 길' },
+    },
+    shades: {
+      incidents: { label: '기록된 인권 침해', hint: 'NKDB가 기록한 시·군별 인권 침해' },
+      density: { label: '인구 밀도', hint: 'km²당 인구 (2008년 총조사)' },
+      population: { label: '인구', hint: '시·군별 인구 (2008년 총조사)' },
+      detention: { label: '구금 시설', hint: '시·군별로 알려진 구금·보위 시설' },
+      markets: { label: '시장', hint: '시·군별 공식 시장' },
+      lights: { label: '야간 불빛 (NASA)', hint: '블랙 마블 위성 합성 영상, 2016년. 전기는 부의 대략적인 지표입니다.' },
+      none: { label: '없음', hint: '기본 지도' },
+    },
+    tips: {
+      incidents: (v) => `침해 ${fmt(v, 'ko')}건`,
+      density: (v) => `km²당 ${fmt(Math.round(v), 'ko')}명`,
+      population: (v) => `${fmt(v, 'ko')}명`,
+      detention: (v) => `구금 시설 ${fmt(v, 'ko')}곳`,
+      markets: (v) => `시장 ${fmt(v, 'ko')}곳`,
+    },
+    mayBeOutdated: '최신 정보가 아닐 수 있음',
+    note: (h, built) =>
+      `아직 북한에 있는 사람들을 보호하기 위해 피해자의 집(${h}곳 비공개)과 처형·매장 장소는 지도에 찍지 않습니다. 이런 곳은 해당 시·군의 집계에만 들어갑니다. 데이터 갱신: ${built}.`,
+    sourcesLink: '모든 출처와 마지막 변경일 →',
+    close: '닫기',
+    county: '시·군',
+    countyDossier: '시·군 상세 페이지 보기 →',
+    peopleYear: '인구 (2008년)',
+    perKm2: 'km²당',
+    urban: '도시 거주',
+    censusLabel: '인구 총조사 연도',
+    abuses: '기록된 인권 침해',
+    recordedBy: (n) => `NKDB 기록 ${n}건`,
+    noAbuses: '아직 기록된 침해가 없습니다. 보통 이곳 출신 증언자가 없다는 뜻이며, 아무 일도 없었다는 뜻이 아닙니다.',
+    more: (n) => `외 ${n}곳`,
+    ochaSource: '유엔 OCHA 경계',
+    censusSource: '2008년 인구 총조사',
+    nkdbSource: 'NKDB 비주얼 아틀라스',
+    source: '출처',
+    sources: '출처',
+    prisoners: '수감자 (HRNK 추정)',
+    abusesHere: '이곳에서 기록된 침해',
+    stalls: '매대',
+    marketArea: 'm² 시장 면적',
+    stallFees: '연간 매대 사용료 추정',
+    runBy: '운영 기관:',
+    kmFromBorder: (km) => `중국 국경에서 ${km}km`,
+    published: (d) => `보고서 발행: ${d}`,
+    approx: ' (대략적 위치)',
+    unconfirmed: ' · 위치 미확인',
+    campDossier: '수용소 상세 페이지 보기 →',
+    siteDossier: '장소 상세 페이지 보기 →',
+    readMore: '더 읽기 →',
+    csisReport: 'CSIS 보고서',
+  },
+  ja: {
+    metaTitle: '北朝鮮地図：政治犯収容所、拘束施設、ミサイル基地',
+    metaDescription:
+      '北朝鮮のインタラクティブな情報マップです。政治犯収容所、190を超える拘束・保衛施設、ミサイル基地、市場、人口、そして市・郡ごとに記録された3,600件の人権侵害を示します。',
+    h1: '北朝鮮 情報マップ',
+    lede: (n) => `収容所、刑務所、保衛部の事務所、ミサイル基地、市場、そして記録された${n}件の人権侵害を一つの地図に。市・郡や地点をクリックしてください。`,
+    search: '市・郡、収容所、基地、市場を検索…',
+    countySub: (p) => `市・郡 · ${p}`,
+    shadeBy: '市・郡の色分け',
+    groups: { 'Human rights': '人権', Military: '軍事', Economy: '経済', Escape: '脱出' },
+    layers: {
+      camps: { label: '政治犯収容所・刑務所', hint: '政治犯収容所（管理所）と長期刑務所（教化所）' },
+      detention: { label: '拘束・保衛施設', hint: '集結所、取調べ施設、労働鍛錬隊、保衛部の事務所' },
+      'china-detention': { label: '中国の拘束施設（強制送還）', hint: '中国が脱北者を送り返す前に拘束する場所' },
+      'missile-bases': { label: 'ミサイル運用基地', hint: 'CSISが衛星画像から見つけた未申告の基地' },
+      sites: { label: '核・発射場・主要地点', hint: '寧辺、豊渓里、西海、平壌の象徴、国境の通過点' },
+      markets: { label: '市場（チャンマダン）', hint: '公式市場、売り台の数で大きさを表示（CSIS、2018年）' },
+      'escape-route': { label: '脱出ルート', hint: '中国を通って東南アジアへ向かう、ふつうの3,000マイルの道' },
+    },
+    shades: {
+      incidents: { label: '記録された人権侵害', hint: 'NKDBが記録した市・郡ごとの人権侵害' },
+      density: { label: '人口密度', hint: '1km²あたりの人口（2008年国勢調査）' },
+      population: { label: '人口', hint: '市・郡ごとの人口（2008年国勢調査）' },
+      detention: { label: '拘束施設', hint: '市・郡ごとに知られている拘束・保衛施設' },
+      markets: { label: '市場', hint: '市・郡ごとの公式市場' },
+      lights: { label: '夜間の光（NASA）', hint: 'ブラックマーブル衛星合成画像、2016年。電気は豊かさのおおまかな目安です。' },
+      none: { label: 'なし', hint: '基本の地図' },
+    },
+    tips: {
+      incidents: (v) => `人権侵害 ${fmt(v, 'ja')}件`,
+      density: (v) => `1km²あたり${fmt(Math.round(v), 'ja')}人`,
+      population: (v) => `${fmt(v, 'ja')}人`,
+      detention: (v) => `拘束施設 ${fmt(v, 'ja')}か所`,
+      markets: (v) => `市場 ${fmt(v, 'ja')}か所`,
+    },
+    mayBeOutdated: '古い可能性があります',
+    note: (h, built) =>
+      `まだ北朝鮮にいる人々を守るため、被害者の自宅（${h}か所を非公開）や処刑・埋葬の場所は地図に載せません。それらは市・郡の件数にだけ数えます。データ更新：${built}。`,
+    sourcesLink: 'すべての出典と最終更新日 →',
+    close: '閉じる',
+    county: '市・郡',
+    countyDossier: '市・郡の詳細ページへ →',
+    peopleYear: '人口（2008年）',
+    perKm2: '1km²あたり',
+    urban: '都市部',
+    censusLabel: '国勢調査の年',
+    abuses: '記録された人権侵害',
+    recordedBy: (n) => `NKDBの記録 ${n}件`,
+    noAbuses: 'まだ記録はありません。ふつうは、ここから証言した人がいないという意味で、何も起きなかったという意味ではありません。',
+    more: (n) => `ほか${n}か所`,
+    ochaSource: '国連OCHAの境界',
+    censusSource: '2008年国勢調査',
+    nkdbSource: 'NKDBビジュアルアトラス',
+    source: '出典',
+    sources: '出典',
+    prisoners: '収容者（HRNK推定）',
+    abusesHere: 'ここで記録された人権侵害',
+    stalls: '売り台',
+    marketArea: 'm² 市場面積',
+    stallFees: '年間の売り台使用料（推定）',
+    runBy: '運営：',
+    kmFromBorder: (km) => `中国国境から${km}km`,
+    published: (d) => `報告書の公表：${d}`,
+    approx: '（おおよその位置）',
+    unconfirmed: ' · 位置は未確認',
+    campDossier: '収容所の詳細ページへ →',
+    siteDossier: '地点の詳細ページへ →',
+    readMore: '続きを読む →',
+    csisReport: 'CSIS報告書',
+  },
+  zh: {
+    metaTitle: '朝鲜地图：政治犯集中营、拘押设施、导弹基地',
+    metaDescription:
+      '朝鲜互动情报地图：政治犯集中营、190多处拘押和保卫部门设施、导弹基地、市场、人口，以及按市郡统计的3,600起有记录的人权侵害。',
+    h1: '朝鲜情报地图',
+    lede: (n) => `集中营、监狱、保卫部办公室、导弹基地、市场，以及${n}起有记录的人权侵害，都在一张地图上。点击任何市郡或地点。`,
+    search: '搜索市郡、集中营、基地、市场…',
+    countySub: (p) => `市郡 · ${p}`,
+    shadeBy: '市郡着色依据',
+    groups: { 'Human rights': '人权', Military: '军事', Economy: '经济', Escape: '脱北' },
+    layers: {
+      camps: { label: '集中营与监狱', hint: '政治犯集中营（管理所）和长期监狱（教化所）' },
+      detention: { label: '拘押与保卫设施', hint: '集结所、审讯设施、劳动锻炼队、保卫部办公室' },
+      'china-detention': { label: '中国拘押设施（遣返）', hint: '中国在遣返脱北者之前关押他们的地方' },
+      'missile-bases': { label: '导弹作战基地', hint: 'CSIS 通过卫星图像发现的未申报基地' },
+      sites: { label: '核设施、发射场与要地', hint: '宁边、丰溪里、西海、平壤地标、边境口岸' },
+      markets: { label: '市场（场市）', hint: '官方市场，按摊位数量显示大小（CSIS，2018年）' },
+      'escape-route': { label: '脱北路线', hint: '经中国前往东南亚的通常3,000英里路线' },
+    },
+    shades: {
+      incidents: { label: '有记录的人权侵害', hint: 'NKDB 按市郡记录的人权侵害' },
+      density: { label: '人口密度', hint: '每平方公里人口（2008年人口普查）' },
+      population: { label: '人口', hint: '各市郡人口（2008年人口普查）' },
+      detention: { label: '拘押设施', hint: '各市郡已知的拘押和保卫设施' },
+      markets: { label: '市场', hint: '各市郡的官方市场' },
+      lights: { label: '夜间灯光（NASA）', hint: '黑色大理石卫星合成图，2016年。电力是财富的粗略指标。' },
+      none: { label: '无', hint: '基础地图' },
+    },
+    tips: {
+      incidents: (v) => `人权侵害${fmt(v, 'zh')}起`,
+      density: (v) => `每平方公里${fmt(Math.round(v), 'zh')}人`,
+      population: (v) => `${fmt(v, 'zh')}人`,
+      detention: (v) => `拘押设施${fmt(v, 'zh')}处`,
+      markets: (v) => `市场${fmt(v, 'zh')}处`,
+    },
+    mayBeOutdated: '可能已过时',
+    note: (h, built) =>
+      `为保护仍在朝鲜境内的人，我们从不标出受害者的住所（已隐去${h}处）或处决和埋葬地点，这些只计入所在市郡的总数。数据更新于${built}。`,
+    sourcesLink: '所有来源及最近变更日期 →',
+    close: '关闭',
+    county: '市郡',
+    countyDossier: '查看市郡详情 →',
+    peopleYear: '人口（2008年）',
+    perKm2: '每平方公里',
+    urban: '城镇人口',
+    censusLabel: '人口普查年份',
+    abuses: '有记录的人权侵害',
+    recordedBy: (n) => `NKDB 记录${n}起`,
+    noAbuses: '这里还没有记录。通常意味着没有来自这里的证人作证，而不是什么都没发生。',
+    more: (n) => `另有${n}处`,
+    ochaSource: '联合国 OCHA 边界',
+    censusSource: '2008年人口普查',
+    nkdbSource: 'NKDB 视觉地图集',
+    source: '来源',
+    sources: '来源',
+    prisoners: '囚犯（HRNK 估计）',
+    abusesHere: '此处记录的侵害',
+    stalls: '摊位',
+    marketArea: '平方米市场面积',
+    stallFees: '估计每年摊位费',
+    runBy: '管理机构：',
+    kmFromBorder: (km) => `距中国边境${km}公里`,
+    published: (d) => `报告发布于${d}`,
+    approx: '（大致位置）',
+    unconfirmed: ' · 位置未确认',
+    campDossier: '查看集中营详情 →',
+    siteDossier: '查看地点详情 →',
+    readMore: '阅读更多 →',
+    csisReport: 'CSIS 报告',
+  },
+};
+
+function fmt(n: number, lang: Lang) {
+  return n.toLocaleString(NUM_LOCALE[lang]);
+}
+
+/** Basemap label field per language: the local name where OpenStreetMap has one, else English, else the original. */
+export const LABEL_FIELDS: Record<Lang, string[]> = {
+  en: ['name:en', 'name_en', 'name:latin', 'name'],
+  ko: ['name:ko', 'name', 'name:en'],
+  ja: ['name:ja', 'name:en', 'name_en', 'name:latin', 'name'],
+  zh: ['name:zh-Hans', 'name:zh', 'name:en', 'name_en', 'name:latin', 'name'],
+};

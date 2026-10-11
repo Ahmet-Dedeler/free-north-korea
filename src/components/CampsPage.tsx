@@ -36,7 +36,7 @@ export default function CampsPage({ lang }: { lang: Lang }) {
             <StatTile icon={Lock} value={kyohwaso.length} label={t.statKyohwaso} />
           </div>
           <p className="dx-actions">
-            <Link href="/map#camps=camp-0" className="btn primary">
+            <Link href={hrefFor(lang, '/map#camps=camp-0')} className="btn primary">
               <MapPin size={15} /> {t.openMap}
             </Link>
             <Link href={hrefFor(lang, '/learn/north-korea-prison-camps')} className="btn">

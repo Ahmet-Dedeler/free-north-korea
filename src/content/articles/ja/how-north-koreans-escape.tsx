@@ -34,7 +34,7 @@ const article: Article = {
       <h2 id="border">ステップ1：国境を越える</h2>
       <p>
         ほぼ全員が豆満江か鴨緑江を渡って中国へ出る。よく渡る場所は<PlaceLink slug="hyesan">恵山</PlaceLink>、<PlaceLink slug="musan">茂山</PlaceLink>、
-        <PlaceLink slug="hoeryong">会寧</PlaceLink>のような国境の町の近くだ（<Link href="/map">インテルマップ</Link>にも載っている）。
+        <PlaceLink slug="hoeryong">会寧</PlaceLink>のような国境の町の近くだ（<Link href="/ja/map">インテルマップ</Link>にも載っている）。
       </p>
       <BorderMap lang="ja" />
       <p>

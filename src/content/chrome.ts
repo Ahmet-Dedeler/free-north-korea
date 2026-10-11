@@ -5,11 +5,10 @@
 import type { Lang } from '@/site/seo';
 
 /**
- * First path segments that exist under /ko, /ja and /zh. Everything else (the /map and /missiles apps) only exists
- * in English.
+ * First path segments that exist under /ko, /ja and /zh. Everything else (the /missiles app) only exists in English.
  */
 const TRANSLATED = new Set([
-  'about', 'act', 'camps', 'counties', 'data', 'kim-family-tree', 'kim-watch', 'library', 'military', 'north-korea-vs-south-korea',
+  'about', 'act', 'camps', 'map', 'counties', 'data', 'kim-family-tree', 'kim-watch', 'library', 'military', 'north-korea-vs-south-korea',
   'organizations', 'people', 'places', 'sanctions', 'sources', 'watch',
 ]);
 
@@ -138,7 +137,7 @@ export const CHROME_TEXT: Record<Lang, ChromeText> = {
       '북한을 이해하고 그 체제 아래 사는 2,600만 명을 돕기 위한 오픈소스 허브입니다. 광고도 쿠키도 없고, 어느 정부와도 관계가 없습니다. 페이지 조회수는 익명으로만 집계합니다.',
     explore: '둘러보기',
     explore_links: [
-      ['/map', '정보 지도 (영어)'],
+      ['/map', '정보 지도'],
       ['/watch', '워치: 밖에서 볼 수 있는 것'],
       ['/camps', '정치범수용소'],
       ['/places', '주요 전략 시설'],
@@ -189,7 +188,7 @@ export const CHROME_TEXT: Record<Lang, ChromeText> = {
       '北朝鮮を理解し、その体制の下で暮らす2,600万人を助けるためのオープンソースのハブです。広告もクッキーもなく、どの政府とも関係はありません。ページの閲覧数は匿名でのみ数えています。',
     explore: '見る',
     explore_links: [
-      ['/map', '情報マップ（英語）'],
+      ['/map', '情報マップ'],
       ['/watch', 'ウォッチ：外から見えるもの'],
       ['/camps', '政治犯収容所'],
       ['/places', '主要な戦略施設'],
@@ -239,7 +238,7 @@ export const CHROME_TEXT: Record<Lang, ChromeText> = {
     about: '一个开源平台，帮助人们了解朝鲜，并帮助生活在其政权下的 2,600 万人。没有广告，没有 cookie，与任何政府无关。页面浏览量只做匿名统计。',
     explore: '浏览',
     explore_links: [
-      ['/map', '情报地图（英文）'],
+      ['/map', '情报地图'],
       ['/watch', '观察：从外面能看到什么'],
       ['/camps', '政治犯收容所'],
       ['/places', '主要战略设施'],
