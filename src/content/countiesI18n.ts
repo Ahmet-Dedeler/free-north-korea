@@ -53,8 +53,10 @@ export const PROVINCE_NAME: Record<string, Record<Lang, string>> = {
   'South Pyongan': { en: 'South Pyongan', ko: '평안남도', ja: '平安南道', zh: '平安南道' },
 };
 
+/** Also takes the map layers' spellings ("North Hamgyong Province", "Chagang Province", "Pyongyang City"). */
 export function provinceName(name: string, lang: Lang) {
-  return PROVINCE_NAME[name]?.[lang] ?? name;
+  const key = name.replace(/ (Province|City)$/, '').replace(/^Chagang$/, 'Jagang');
+  return PROVINCE_NAME[key]?.[lang] ?? name;
 }
 
 /**

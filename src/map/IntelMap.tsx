@@ -7,7 +7,7 @@ import 'maplibre-gl/dist/maplibre-gl.css';
 import type { Theme } from '../theme';
 import type { Lang } from '@/site/seo';
 import { provinceName } from '@/content/countiesI18n';
-import { LABEL_FIELDS, MAP_TEXT } from '@/content/mapI18n';
+import { COUNTRY_NAMES, LABEL_FIELDS, MAP_TEXT } from '@/content/mapI18n';
 import { MAPLIBRE_WORKER_URL, STYLE_URL } from '../map/maplibre';
 import { LAYERS, NIGHT_LIGHTS, SHADES, SHADE_COLORS, type LayerId, type Shade } from './config';
 import type { Data, Selection } from './types';
@@ -60,6 +60,17 @@ function featureStateId(selected: Selection, data: Data): string | number | null
   return typeof raw === 'number' || typeof raw === 'string' ? raw : null;
 }
 
+/**
+ * Basemap label in the reader's language. OSM's local-language country names for the two Koreas are their official
+ * names (조선민주주의인민공화국, 大韓民國…), so the country labels use the names the rest of the site uses.
+ */
+function labelExpr(lang: Lang): ExpressionSpecification {
+  const name = ['coalesce', ...LABEL_FIELDS[lang].map((k) => ['get', k])];
+  const kp = COUNTRY_NAMES[lang];
+  if (!kp) return name as ExpressionSpecification;
+  return ['match', ['get', 'iso_a2'], 'KP', kp.north, 'KR', kp.south, name] as unknown as ExpressionSpecification;
+}
+
 /** Counties fade as you zoom in, so the basemap (roads, towns) shows through around the points. */
 function fillOpacity(shade: Shade): ExpressionSpecification | number {
   if (shade === 'none' || shade === 'lights') return 0;
@@ -91,7 +102,7 @@ export default function IntelMap({ data, visible, shade, selected, theme, lang, 
     map.on('style.load', () => {
       for (const layer of map.getStyle().layers) {
         if (layer.type !== 'symbol' || !map.getLayoutProperty(layer.id, 'text-field')) continue;
-        map.setLayoutProperty(layer.id, 'text-field', ['coalesce', ...LABEL_FIELDS[lang].map((k) => ['get', k])] as ExpressionSpecification);
+        map.setLayoutProperty(layer.id, 'text-field', labelExpr(lang));
       }
       setup();
     });

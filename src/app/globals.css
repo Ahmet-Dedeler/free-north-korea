@@ -723,6 +723,10 @@ a {
   .legend-sep {
     display: none;
   }
+  /* the bottom sheet covers the zoom buttons; pinch to zoom instead */
+  .stage:has(.detail) .maplibregl-ctrl-bottom-right {
+    display: none;
+  }
 }
 
 .profile .site-dot {

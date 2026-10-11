@@ -1017,6 +1017,12 @@ export const CAMPS_TEXT: Record<Lang, Chrome> = {
   },
 };
 
+/** Translated status and note of a camp by its dossier slug, for the intel map's point panel. */
+export function campCopy(lang: Exclude<Lang, 'en'>, slug: string): { status: string; note: string } | null {
+  const row = CAMP_COPY[slug];
+  return row ? { status: row.status[lang], note: row.note[lang] } : null;
+}
+
 export function campFields(lang: Lang, camp: Camp): CampFields {
   if (lang === 'en') return englishFields(camp);
   const t = CAMPS_TEXT[lang];

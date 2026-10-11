@@ -349,6 +349,13 @@ function fmt(n: number, lang: Lang) {
   return n.toLocaleString(NUM_LOCALE[lang]);
 }
 
+/** Country labels for the two Koreas on the basemap, in the site's own terms (English uses OSM's name:en). */
+export const COUNTRY_NAMES: Partial<Record<Lang, { north: string; south: string }>> = {
+  ko: { north: '북한', south: '한국' },
+  ja: { north: '北朝鮮', south: '韓国' },
+  zh: { north: '朝鲜', south: '韩国' },
+};
+
 /** Basemap label field per language: the local name where OpenStreetMap has one, else English, else the original. */
 export const LABEL_FIELDS: Record<Lang, string[]> = {
   en: ['name:en', 'name_en', 'name:latin', 'name'],

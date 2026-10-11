@@ -10,6 +10,8 @@ import type { Lang } from '@/site/seo';
 import { localize } from '@/content/chrome';
 import { NUM_LOCALE, decadeShort, provinceName, rightsLabel } from '@/content/countiesI18n';
 import { MAP_TEXT, type MapText } from '@/content/mapI18n';
+import { CAMPS_TEXT, campCopy } from '@/content/campsI18n';
+import { PLACE_COPY } from '@/content/placesI18n';
 
 type P = Record<string, any>;
 /** Number formatter for the reader's language. */
@@ -157,8 +159,21 @@ function PointDetail({ layer, f, lang }: { layer: LayerId; f: Feature; lang: Lan
   const p = f.properties as P;
   const tx = MAP_TEXT[lang];
   const n = num(lang);
-  // the point's own text (name, NKDB type, note) is published in English; the dossier it links to is translated
+  // Camps, nuclear/missile sites and missile bases have translated status and notes (the same copy as their
+  // dossiers); everything else (names, NKDB facility types, market data) is published in English only.
+  const copy =
+    lang === 'en'
+      ? null
+      : layer === 'camps'
+        ? campCopy(lang, campSlug(String(p.id)))
+        : layer === 'sites' || layer === 'missile-bases'
+          ? (PLACE_COPY[lang][String(p.id)] ?? null)
+          : null;
+  const kind =
+    lang !== 'en' && layer === 'camps' && p.kind ? (/kwanliso/i.test(p.kind) ? CAMPS_TEXT[lang].kindKwanliso : CAMPS_TEXT[lang].kindKyohwaso) : null;
   const en = lang === 'en' ? undefined : 'en';
+  const status = p.status ? (copy?.status ?? p.status) : undefined;
+  const note = copy?.note ?? p.note ?? p.summary;
   const def = LAYERS.find((l) => l.id === layer)!;
   const [lon, lat] = (f.geometry as { coordinates: number[] }).coordinates;
   const sources = parse<{ name: string; url: string }[]>(p.sources, []);
@@ -172,12 +187,12 @@ function PointDetail({ layer, f, lang }: { layer: LayerId; f: Feature; lang: Lan
   return (
     <>
       <p className="d-kicker" style={{ color: def.color }}>
-        {p.kind ?? p.type ? <span lang={en}>{p.kind ?? p.type}</span> : tx.layers[layer].label}
+        {kind ?? (p.kind ?? p.type ? <span lang={en}>{p.kind ?? p.type}</span> : tx.layers[layer].label)}
       </p>
       <h2 lang={en}>{p.name}</h2>
-      {p.status && (
-        <p className="place-status" lang={en}>
-          {p.status}
+      {status && (
+        <p className="place-status" lang={copy?.status ? undefined : en}>
+          {status}
         </p>
       )}
 
@@ -226,7 +241,7 @@ function PointDetail({ layer, f, lang }: { layer: LayerId; f: Feature; lang: Lan
           {layer === 'markets' && p.km_to_border ? ` · ${tx.kmFromBorder(n(p.km_to_border))}` : ''}
         </p>
       )}
-      {(p.note || p.summary) && <p lang={en}>{p.note ?? p.summary}</p>}
+      {note && <p lang={copy?.note ? undefined : en}>{note}</p>}
       {layerDate && isStale(layerDate) && (
         <p className="d-asof">
           <AsOf date={layerDate.slice(0, 7)} lang={lang} />
