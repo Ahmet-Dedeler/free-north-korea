@@ -35,7 +35,8 @@ before adding any page or article.
   depth goes in the click panel rather than in more toggles. Colour rule: points carry the colour (one hue per layer,
   `LAYERS` in `config.ts`); county shading is a neutral slate ramp per theme (`SHADE_RAMP`), never the hues of the dots;
   chrome (chips, Latest, panels) stays neutral, with the accent only for the chosen option and the main action. The
-  sidebar shows, rather than tells: layers are chips whose mark is the map's own marker (the chip is the legend)
+  sidebar shows, rather than tells: layers are chips whose mark is the map's own marker with the layer's icon inside (`LAYER_ICON` in `Explorer.tsx`; the
+  chip is the legend)
   with a count (an outdated layer shows its year), sources sit in the tooltip and on `/sources`. Every word of UI is in `content/mapI18n.ts`; the GeoJSON's own text
   (point names, NKDB types, notes) stays English with `lang="en"`, and each point links to its translated dossier.
   Deep links: `/map#county=KP0205`, `/map#camps=camp-3`, `&b=sat` for the satellite basemap (same hashes under
@@ -97,7 +98,8 @@ before adding any page or article.
   harvest; say so wherever it appears. Run it every couple of weeks in the growing season. On `/map` the "Crop health"
   overlay shades provinces by one 16-day composite against its 10-year base (brown below, green above, ±15%), with
   the time pill in 16-day steps (deep link `#d=2026-08-13`) and the province's line in the county panel. Night lights
-  and crop health both fill the land, so switching one on switches the other off.
+  and crop health both fill the land, so switching one on switches the other off. County shading is hidden under crop health
+  (two scales in one colour) and dimmed under the radar dots (`fillOpacity()` in `IntelMap.tsx`).
 - `data/archive/`: our permanent record of data a source only serves for a while (GFW now; more to come). Append
   and update in place through `scripts/archive.ts`, never delete. One cleaned record per line,
   `<source>/<kind>/<partition>.jsonl`, sorted; each source documented in `data/archive/README.md` with its license.

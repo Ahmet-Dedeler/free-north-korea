@@ -93,8 +93,9 @@ function labelExpr(lang: Lang): ExpressionSpecification {
  */
 function fillOpacity(shade: Shade, base: Basemap, overlays: Set<Overlay>): ExpressionSpecification | number {
   if (shade === 'none') return 0;
-  // with the radar dots on, the county shading steps back so the two scales don't compete
-  const k = overlays.has('radar') ? 0.4 : 1;
+  // Crop health paints whole provinces with its own diverging scale, so county shading under it would mix two scales
+  // in one colour: it goes. Radar dots sit on the sea, so the shading only steps back.
+  const k = overlays.has('crops') ? 0 : overlays.has('radar') ? 0.4 : 1;
   const [lo, hi, loSel, hiSel] = (base === 'satellite' ? [0.45, 0.08, 0.6, 0.12] : [0.62, 0.22, 0.8, 0.35]).map((v) => v * k);
   return ['interpolate', ['linear'], ['zoom'], 6, ['case', ['boolean', ['feature-state', 'selected'], false], loSel, lo], 9.5, ['case', ['boolean', ['feature-state', 'selected'], false], hiSel, hi]];
 }
