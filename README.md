@@ -40,7 +40,8 @@ be freed" gave you close to nothing. So this puts it all in one place, open sour
       <h3>🗺 Intel map</h3>
       Prison camps, detention centres, nuclear and missile sites, 421 markets, North Korean ports, the escape route
       through China, and human rights abuses counted per county, on a map or satellite basemap. Layers seen from
-      space: night lights per county for every year since 2013, and ships satellite radar saw that sent no signal.
+      space: night lights per county for every year since 2013, crop health per province every 16 days, and ships
+      satellite radar saw that sent no signal.
       Click a camp or weapons site to scrub through two years of our own satellite images. Every point has a source.
     </td>
     <td width="50%" valign="top">

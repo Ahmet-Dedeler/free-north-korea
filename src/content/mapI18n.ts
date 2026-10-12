@@ -114,6 +114,14 @@ export interface MapText {
   timeLabel: string;
   /** Key line in the time pill while night lights are on. */
   lightsScale: string;
+  // crop health (16-day greenness of cropland per province, against the 10 years before)
+  cropTip: (date: string, anomaly: number | null) => string;
+  cropTimeLabel: string;
+  cropScale: (from: number, to: number) => string;
+  cropTitle: string;
+  cropSparkAria: (province: string, from: number, to: number) => string;
+  cropAt: (day: string, anomaly: number | null, province: string, from: number, to: number) => string;
+  cropNote: string;
   timePlay: string;
   timePause: string;
   lightsTitle: string;
@@ -208,6 +216,7 @@ export const MAP_TEXT: Record<Lang, MapText> = {
     overlaysTitle: 'Seen from space',
     overlays: {
       lights: { label: 'Night lights', sub: 'EOG VIIRS', hint: 'Share of each county lit at night, one year at a time, 2013 to 2025 (annual VIIRS composites, Earth Observation Group). Electricity is a rough proxy for wealth.' },
+      crops: { label: 'Crop health', sub: 'NASA MODIS', hint: 'How green each province’s fields are this season, every 16 days, against the same days of the 10 years before. Greenness is not harvest.' },
       radar: { label: 'Ships seen by radar', sub: `GFW · ${radarMonth('en-GB')}`, hint: 'Ships satellite radar saw that sent no AIS signal, per 10 km square, last whole month. Most are fishing boats.' },
     },
     photoSentinel: 'Sentinel-2',
@@ -236,6 +245,13 @@ export const MAP_TEXT: Record<Lang, MapText> = {
     lightsTip: (y, s) => (s == null ? `${y}: no clear data` : `${y}: ${(s * 100).toFixed(s < 0.01 ? 2 : 1)}% lit at night`),
     timeLabel: 'Year',
     lightsScale: 'Share of each county lit at night',
+    cropTip: (d, a) => `crops ${(a == null ? '—' : `${a > 0 ? '+' : ''}${a.toFixed(1)}%`)} vs 10-year average (${d})`,
+    cropTimeLabel: '16-day period',
+    cropScale: (a, b) => `vs ${a}-${b}`,
+    cropTitle: 'Crop health',
+    cropSparkAria: (p, a, b) => `Greenness of cropland in ${p} this season against the ${a}-${b} average`,
+    cropAt: (day, a, p, f, t) => `${day}: ${p}’s fields ${(a == null ? '—' : `${a > 0 ? '+' : ''}${a.toFixed(1)}%`)} against ${f}-${t}`,
+    cropNote: 'Province-wide, from NASA MODIS at 250 m. Greenness is not harvest: a late dip can mean an early harvest.',
     timePlay: 'Play the years',
     timePause: 'Pause',
     lightsTitle: 'Night lights',
@@ -328,6 +344,7 @@ export const MAP_TEXT: Record<Lang, MapText> = {
     overlaysTitle: '우주에서 본 모습',
     overlays: {
       lights: { label: '야간 불빛', sub: 'EOG VIIRS', hint: '시·군 면적 중 밤에 불이 켜진 비율, 연도별 2013~2025년 (VIIRS 연간 합성, Earth Observation Group). 전기는 부의 대략적인 지표입니다.' },
+      crops: { label: '작황', sub: 'NASA MODIS', hint: '올해 16일마다 본 도별 들판의 녹색 정도를 직전 10년의 같은 시기와 비교. 녹색 정도는 수확량이 아닙니다.' },
       radar: { label: '레이더에 잡힌 선박', sub: `GFW · ${radarMonth('ko-KR')}`, hint: '위성 레이더에 잡혔지만 AIS 신호를 보내지 않은 선박, 10km 칸별, 지난달 기준. 대부분 어선입니다.' },
     },
     photoSentinel: '센티넬-2',
@@ -356,6 +373,13 @@ export const MAP_TEXT: Record<Lang, MapText> = {
     lightsTip: (y, s) => (s == null ? `${y}년: 맑은 자료 없음` : `${y}년: 면적의 ${(s * 100).toFixed(s < 0.01 ? 2 : 1)}%가 밤에 밝음`),
     timeLabel: '연도',
     lightsScale: '시·군 면적 중 밤에 불이 켜진 비율',
+    cropTip: (d, a) => `작황 ${(a == null ? '—' : `${a > 0 ? '+' : ''}${a.toFixed(1)}%`)} (10년 평균 대비, ${d})`,
+    cropTimeLabel: '16일 기간',
+    cropScale: (a, b) => `${a}~${b}년 대비`,
+    cropTitle: '작황',
+    cropSparkAria: (p, a, b) => `올해 ${p} 농경지의 녹색 정도와 ${a}~${b}년 평균`,
+    cropAt: (day, a, p, f, t) => `${day}: ${p} 들판 ${(a == null ? '—' : `${a > 0 ? '+' : ''}${a.toFixed(1)}%`)} (${f}~${t}년 대비)`,
+    cropNote: '도 단위, 250m 해상도의 NASA MODIS 기준. 녹색 정도는 수확량이 아닙니다. 늦은 시기의 하락은 이른 수확일 수 있습니다.',
     timePlay: '연도 재생',
     timePause: '일시 정지',
     lightsTitle: '야간 불빛',
@@ -448,6 +472,7 @@ export const MAP_TEXT: Record<Lang, MapText> = {
     overlaysTitle: '宇宙から見た様子',
     overlays: {
       lights: { label: '夜間の光', sub: 'EOG VIIRS', hint: '郡ごとの面積のうち夜に明るい割合、年ごと、2013〜2025年（VIIRS年間合成、Earth Observation Group）。電気は豊かさのおおまかな目安です。' },
+      crops: { label: '作物の生育', sub: 'NASA MODIS', hint: '今シーズン16日ごとに見た道ごとの畑の緑の濃さを、直前10年の同じ時期と比較。緑の濃さは収穫量ではありません。' },
       radar: { label: 'レーダーが捉えた船', sub: `GFW・${radarMonth('ja-JP')}`, hint: '衛星レーダーが捉えたのにAIS信号を送っていなかった船、10km四方ごと、直近の1か月。大半は漁船です。' },
     },
     photoSentinel: 'センチネル2',
@@ -476,6 +501,13 @@ export const MAP_TEXT: Record<Lang, MapText> = {
     lightsTip: (y, s) => (s == null ? `${y}年：晴れた日のデータなし` : `${y}年：面積の${(s * 100).toFixed(s < 0.01 ? 2 : 1)}%が夜に明るい`),
     timeLabel: '年',
     lightsScale: '郡の面積のうち夜に明るい割合',
+    cropTip: (d, a) => `作物 ${(a == null ? '—' : `${a > 0 ? '+' : ''}${a.toFixed(1)}%`)}（10年平均比、${d}）`,
+    cropTimeLabel: '16日間',
+    cropScale: (a, b) => `${a}〜${b}年比`,
+    cropTitle: '作物の生育',
+    cropSparkAria: (p, a, b) => `今シーズンの${p}の農地の緑の濃さと${a}〜${b}年の平均`,
+    cropAt: (day, a, p, f, t) => `${day}：${p}の畑 ${(a == null ? '—' : `${a > 0 ? '+' : ''}${a.toFixed(1)}%`)}（${f}〜${t}年比）`,
+    cropNote: '道全体、250mのNASA MODISによる。緑の濃さは収穫量ではありません。遅い時期の低下は早い収穫のこともあります。',
     timePlay: '年を再生',
     timePause: '一時停止',
     lightsTitle: '夜間の光',
@@ -568,6 +600,7 @@ export const MAP_TEXT: Record<Lang, MapText> = {
     overlaysTitle: '从太空看',
     overlays: {
       lights: { label: '夜间灯光', sub: 'EOG VIIRS', hint: '各郡夜间有灯光的面积比例，逐年显示，2013至2025年（VIIRS年度合成，Earth Observation Group）。电力是财富的粗略指标。' },
+      crops: { label: '作物长势', sub: 'NASA MODIS', hint: '本季每16天各道农田的绿度，与此前10年同期相比。绿度不等于收成。' },
       radar: { label: '雷达发现的船舶', sub: `GFW · ${radarMonth('zh-CN')}`, hint: '卫星雷达发现但没有发送AIS信号的船舶，每10公里方格，最近一个完整月份。大多是渔船。' },
     },
     photoSentinel: '哨兵2号',
@@ -596,6 +629,13 @@ export const MAP_TEXT: Record<Lang, MapText> = {
     lightsTip: (y, s) => (s == null ? `${y}年：无晴空数据` : `${y}年：${(s * 100).toFixed(s < 0.01 ? 2 : 1)}%的面积夜间有灯光`),
     timeLabel: '年份',
     lightsScale: '各郡夜间有灯光的面积比例',
+    cropTip: (d, a) => `作物 ${(a == null ? '—' : `${a > 0 ? '+' : ''}${a.toFixed(1)}%`)}（较10年平均，${d}）`,
+    cropTimeLabel: '16天时段',
+    cropScale: (a, b) => `较${a}至${b}年`,
+    cropTitle: '作物长势',
+    cropSparkAria: (p, a, b) => `本季${p}农田绿度与${a}至${b}年平均`,
+    cropAt: (day, a, p, f, t) => `${day}：${p}农田 ${(a == null ? '—' : `${a > 0 ? '+' : ''}${a.toFixed(1)}%`)}（较${f}至${t}年）`,
+    cropNote: '按道计算，来自250米分辨率的NASA MODIS。绿度不等于收成：后期下降可能意味着提早收割。',
     timePlay: '播放各年',
     timePause: '暂停',
     lightsTitle: '夜间灯光',

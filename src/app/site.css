@@ -2431,6 +2431,23 @@ a.card:hover {
   stroke: var(--line-strong);
   stroke-dasharray: 2 3;
 }
+.d-spark-base {
+  fill: none;
+  stroke: var(--ink-3);
+  stroke-width: 1.5;
+  stroke-dasharray: 3 3;
+}
+.d-spark-crop {
+  fill: none;
+  stroke: #1b7837;
+  stroke-width: 2;
+  stroke-linejoin: round;
+}
+.d-spark-crop-dot {
+  fill: #1b7837;
+  stroke: var(--panel);
+  stroke-width: 2;
+}
 .d-spark-ends {
   display: flex;
   justify-content: space-between;

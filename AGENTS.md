@@ -91,7 +91,10 @@ before adding any page or article.
   mask, per province and nationally, since 2001) writes `public/layers/crops.json` and `data/archive/ee/crops`. Shown
   on `/data/crop-greenness` (May-September mean each year) and `/data/crop-greenness-season` (this season against the
   10 years before it, not the whole record: springs since 2021 are greener than any before). Greenness is not
-  harvest; say so wherever it appears. Run it every couple of weeks in the growing season.
+  harvest; say so wherever it appears. Run it every couple of weeks in the growing season. On `/map` the "Crop health"
+  overlay shades provinces by one 16-day composite against its 10-year base (brown below, green above, ±15%), with
+  the time pill in 16-day steps (deep link `#d=2026-08-13`) and the province's line in the county panel. Night lights
+  and crop health both fill the land, so switching one on switches the other off.
 - `data/archive/`: our permanent record of data a source only serves for a while (GFW now; more to come). Append
   and update in place through `scripts/archive.ts`, never delete. One cleaned record per line,
   `<source>/<kind>/<partition>.jsonl`, sorted; each source documented in `data/archive/README.md` with its license.
@@ -109,7 +112,8 @@ before adding any page or article.
 - `/watch`: the hub for what we measure or count on a schedule, sorted by how a number is known (measured, counted,
   reported by the regime). `components/WatchPage.tsx` only reuses the feature blocks (EventFeed, LatestImagery,
   sanctions counts, KimLastSeen); text in `content/watch.ts`. Prefer measured and counted data over regime claims.
-- Camp Watch: our own dated Sentinel-2 images of the camps and nuclear/missile sites in `places.ts`.
+- Camp Watch: our own dated Sentinel-2 images of the camps and nuclear/missile sites in `places.ts`, published at
+  Sentinel-2's native 10 m per pixel (512 px for 5.12 km chips, 768 px for 7.68 km ones; `OUT_PX` in `satWatchSites.ts`).
   `components/SatWatch.tsx` (latest image, month strip, before/after slider, scale bar, Copernicus credit) sits on
   camp and place dossiers; `LatestImagery` from the same file is the "newest images" strip for a hub page. Text in
   `content/satWatch.ts`, chip sizes in `content/satWatchSites.ts`. Only show what the pixels show: change scores

@@ -21,6 +21,7 @@ export default function TimePill({
   playLabel,
   pauseLabel,
   head,
+  format = String,
 }: {
   steps: number[];
   value: number;
@@ -35,6 +36,8 @@ export default function TimePill({
     onClose: () => void;
     closeLabel: string;
   };
+  /** How a step is written: years as they are; 16-day composites as a date ("13 Aug"). */
+  format?: (v: number) => string;
 }) {
   const [playing, setPlaying] = useState(false);
   const at = Math.max(0, steps.indexOf(value));
@@ -73,7 +76,7 @@ export default function TimePill({
         >
           {playing ? <Pause size={16} aria-hidden="true" /> : <Play size={16} aria-hidden="true" />}
         </button>
-        <b className="tp-label">{value}</b>
+        <b className="tp-label">{format(value)}</b>
         <div className="tp-scrub">
           <div className="tp-ticks" aria-hidden="true">
             {steps.map((s, i) => (
@@ -81,8 +84,8 @@ export default function TimePill({
             ))}
           </div>
           <div className="tp-ends" aria-hidden="true">
-            <span>{steps[0]}</span>
-            <span>{steps.at(-1)}</span>
+            <span>{format(steps[0])}</span>
+            <span>{format(steps.at(-1)!)}</span>
           </div>
           <input
             type="range"
@@ -90,7 +93,7 @@ export default function TimePill({
             max={steps.length - 1}
             value={at}
             aria-label={label}
-            aria-valuetext={String(value)}
+            aria-valuetext={format(value)}
             onChange={(e) => {
               setPlaying(false);
               onChange(steps[Number(e.target.value)]);

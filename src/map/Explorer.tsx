@@ -6,7 +6,7 @@ import Link from 'next/link';
 import { Anchor, CircleOff, Fence, Grid3x3, Lock, LockKeyhole, Radiation, Rocket, Route, Search, Store, TriangleAlert, Users, type LucideIcon } from 'lucide-react';
 import { useTheme } from '../theme';
 import { formatAsOf, isStale } from '@/components/AsOf';
-import { LAYERS, LIGHTS_STOPS, MANIFEST, OVERLAYS, SHADES, SHADE_COLORS, type LayerId, type Overlay, type Shade } from './config';
+import { CROP_STOPS, LAYERS, LIGHTS_STOPS, MANIFEST, SHADES, SHADE_COLORS, type LayerId, type Overlay, type Shade } from './config';
 import Detail from './Detail';
 import type { Lang } from '@/site/seo';
 import { localize } from '@/content/chrome';
@@ -47,6 +47,7 @@ function readHash(): Selection | null {
 }
 
 const BASE_KEY = 'map-basemap';
+const LOCALE_OF: Record<Lang, string> = { en: 'en-GB', ko: 'ko-KR', ja: 'ja-JP', zh: 'zh-CN' };
 
 /** The night-lights colour scale as a bar, from the same stops the map paints with (sqrt spacing, like the map). */
 function LightsKey() {
@@ -58,6 +59,22 @@ function LightsKey() {
       <span>
         <span>0%</span>
         <span>{Math.round(top * 100)}%+</span>
+      </span>
+    </span>
+  );
+}
+
+/** The crop-health colour scale as a bar, brown (below the 10-year base) to green (above), from CROP_STOPS. */
+function CropsKey() {
+  const lo = CROP_STOPS[0][0];
+  const hi = CROP_STOPS.at(-1)![0];
+  const stops = CROP_STOPS.map(([t, c]) => `${c} ${Math.round(((t - lo) / (hi - lo)) * 100)}%`).join(', ');
+  return (
+    <span className="tp-key" aria-hidden="true">
+      <i style={{ background: `linear-gradient(90deg, ${stops})` }} />
+      <span>
+        <span>{lo}%</span>
+        <span>+{hi}%</span>
       </span>
     </span>
   );
@@ -77,6 +94,8 @@ export default function MapExplorer({ lang = 'en', sat = {}, latest }: { lang?: 
   const [overlays, setOverlays] = useState<Set<Overlay>>(() => new Set());
   // year for time-axis overlays; null until the data says which years exist (then the latest, or #…&y=2019)
   const [year, setYear] = useState<number | null>(null);
+  // which 16-day composite of this season crop health shows (the latest by default, or #…&d=2026-08-13)
+  const [cropStep, setCropStep] = useState(0);
   const touched = useRef(false);
 
   useEffect(() => {
@@ -87,6 +106,11 @@ export default function MapExplorer({ lang = 'en', sat = {}, latest }: { lang?: 
       setYear(years.includes(y) ? y : years.at(-1)!);
       // a shared link with a year opens the night lights at that year
       if (years.includes(y)) setOverlays((v) => new Set([...v, 'lights']));
+      const dates = d.crops.provinces.KP?.season.map((s) => s.date) ?? [];
+      const at = dates.indexOf(new URLSearchParams(location.hash.slice(1)).get('d') ?? '');
+      setCropStep(at >= 0 ? at : Math.max(0, dates.length - 1));
+      // and one with a 16-day composite opens crop health there
+      if (at >= 0) setOverlays((v) => new Set([...v, 'crops']));
     });
     // the reader's last basemap is a per-browser convenience; private windows may refuse storage
     try {
@@ -116,9 +140,11 @@ export default function MapExplorer({ lang = 'en', sat = {}, latest }: { lang?: 
     const h = new URLSearchParams();
     if (sel) h.set(sel.kind === 'county' ? 'county' : sel.layer, sel.id);
     if (overlays.has('lights') && year && year !== latestYear) h.set('y', String(year));
+    const cropDates = data?.crops.provinces.KP?.season.map((s) => s.date) ?? [];
+    if (overlays.has('crops') && cropStep !== cropDates.length - 1 && cropDates[cropStep]) h.set('d', cropDates[cropStep]);
     const s = h.toString();
     history.replaceState(null, '', s ? `#${s}` : location.pathname);
-  }, [sel, overlays, year, latestYear]);
+  }, [sel, overlays, year, latestYear, cropStep, data]);
 
   const toggle = (id: LayerId) =>
     setVisible((v) => {
@@ -158,15 +184,28 @@ export default function MapExplorer({ lang = 'en', sat = {}, latest }: { lang?: 
     setOverlays((v) => {
       const n = new Set(v);
       if (n.has(o)) n.delete(o);
-      else n.add(o);
+      else {
+        n.add(o);
+        // night lights and crop health both fill the land and share the one time pill: one at a time
+        if (o === 'lights') n.delete('crops');
+        if (o === 'crops') n.delete('lights');
+      }
       return n;
     });
   };
+  const pickCrop = useCallback((i: number) => {
+    touched.current = true;
+    setCropStep(i);
+  }, []);
   const pickYear = useCallback((y: number) => {
     touched.current = true;
     setYear(y);
   }, []);
-  const timeOn = !!data && year !== null && OVERLAYS.some((o) => o.time && overlays.has(o.id));
+  const timeOn = !!data && year !== null && overlays.has('lights');
+  const cropDates = data?.crops.provinces.KP?.season.map((s) => s.date) ?? [];
+  const cropsOn = !!data && overlays.has('crops') && cropDates.length > 0;
+  const dayLabel = (i: number) =>
+    cropDates[i] ? new Date(`${cropDates[i]}T00:00:00Z`).toLocaleDateString(LOCALE_OF[lang], { timeZone: 'UTC', day: 'numeric', month: 'short' }) : '';
 
   const shadeDef = SHADES.find((s) => s.id === shade)!;
   const t = MANIFEST.totals;
@@ -295,7 +334,7 @@ export default function MapExplorer({ lang = 'en', sat = {}, latest }: { lang?: 
 
       <main className="stage">
         {data && year !== null ? (
-          <IntelMap data={data} visible={visible} shade={shade} base={base} overlays={overlays} year={year} selected={sel} focus={focus} theme={theme} lang={lang} onSelect={select} />
+          <IntelMap data={data} visible={visible} shade={shade} base={base} overlays={overlays} year={year} cropStep={cropStep} selected={sel} focus={focus} theme={theme} lang={lang} onSelect={select} />
         ) : (
           <div className="map" />
         )}
@@ -317,6 +356,24 @@ export default function MapExplorer({ lang = 'en', sat = {}, latest }: { lang?: 
             }}
           />
         )}
+        {cropsOn && data && (
+          <TimePill
+            steps={cropDates.map((_, i) => i)}
+            value={cropStep}
+            onChange={pickCrop}
+            format={dayLabel}
+            label={tx.cropTimeLabel}
+            playLabel={tx.timePlay}
+            pauseLabel={tx.timePause}
+            head={{
+              keyNode: <CropsKey />,
+              title: tx.overlays.crops.label,
+              sub: `${tx.cropScale(data.crops.baseYears[0], data.crops.baseYears[1])} · ${data.crops.year}`,
+              onClose: () => toggleOverlay('crops'),
+              closeLabel: `${tx.close}: ${tx.overlays.crops.label}`,
+            }}
+          />
+        )}
         {data && sel && (
           <Detail
             sel={sel}
@@ -325,6 +382,7 @@ export default function MapExplorer({ lang = 'en', sat = {}, latest }: { lang?: 
             lang={lang}
             year={year ?? latestYear ?? 0}
             lights={overlays.has('lights')}
+            cropStep={cropStep}
             onSelect={select}
             onClose={() => select(null)}
             onCloseUp={(center, zoom) => {

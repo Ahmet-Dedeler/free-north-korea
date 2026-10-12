@@ -100,7 +100,40 @@ function CountyLights({ pcode, area, data, year, lang }: { pcode: string; area: 
   );
 }
 
-function CountyDetail({ f, data, lang, onSelect, year }: { f: Feature; data: Data; lang: Lang; onSelect: (s: Selection) => void; year: number }) {
+/** Crop health of the county's province this season: this year's line against the 10-year base, the step marked. */
+function CountyCrops({ pcode, data, step, lang }: { pcode: string; data: Data; step: number; lang: Lang }) {
+  const tx = MAP_TEXT[lang];
+  const C = data.crops;
+  const prov = C.provinces[pcode.slice(0, 4)];
+  if (!prov?.season.length) return null;
+  const S = prov.season;
+  const W = 260;
+  const H = 54;
+  const all = S.flatMap((s) => [s.ndvi, s.base ?? s.ndvi]);
+  const lo = Math.min(...all);
+  const hi = Math.max(...all, lo + 0.01);
+  const x = (i: number) => 4 + (i / Math.max(S.length - 1, 1)) * (W - 8);
+  const y = (v: number) => H - 4 - ((v - lo) / (hi - lo)) * (H - 12);
+  const i = Math.min(step, S.length - 1);
+  const at = S[i];
+  const day = new Date(`${at.date}T00:00:00Z`).toLocaleDateString(LOCALE[lang], { timeZone: 'UTC', day: 'numeric', month: 'short' });
+  return (
+    <>
+      <h3>
+        {tx.cropTitle} <small>{C.year}</small>
+      </h3>
+      <svg className="d-spark" viewBox={`0 0 ${W} ${H}`} role="img" aria-label={tx.cropSparkAria(provinceName(prov.name, lang), C.baseYears[0], C.baseYears[1])}>
+        <polyline points={S.flatMap((s, k) => (s.base == null ? [] : [`${x(k)},${y(s.base)}`])).join(' ')} className="d-spark-base" />
+        <polyline points={S.map((s, k) => `${x(k)},${y(s.ndvi)}`).join(' ')} className="d-spark-crop" />
+        <circle cx={x(i)} cy={y(at.ndvi)} r={3.5} className="d-spark-crop-dot" />
+      </svg>
+      <p>{tx.cropAt(day, at.anomaly, provinceName(prov.name, lang), C.baseYears[0], C.baseYears[1])}</p>
+      <p className="muted small">{tx.cropNote}</p>
+    </>
+  );
+}
+
+function CountyDetail({ f, data, lang, onSelect, year, cropStep }: { f: Feature; data: Data; lang: Lang; onSelect: (s: Selection) => void; year: number; cropStep: number }) {
   const p = f.properties as P;
   const tx = MAP_TEXT[lang];
   const n = num(lang);
@@ -158,6 +191,7 @@ function CountyDetail({ f, data, lang, onSelect, year }: { f: Feature; data: Dat
       )}
 
       <CountyLights pcode={String(p.pcode)} area={Number(p.area)} data={data} year={year} lang={lang} />
+      <CountyCrops pcode={String(p.pcode)} data={data} step={cropStep} lang={lang} />
 
       {lists.map(({ layer, items }) => {
         const def = LAYERS.find((l) => l.id === layer)!;
@@ -409,6 +443,7 @@ export default function Detail({
   sat,
   lang,
   year,
+  cropStep,
   onSelect,
   onClose,
   onCloseUp,
@@ -420,6 +455,8 @@ export default function Detail({
   /** Year the time pill shows; the county panel marks it on its night-lights line. */
   year: number;
   lights?: boolean;
+  /** 16-day composite crop health shows; the county panel marks it on its province's line. */
+  cropStep?: number;
   onSelect: (s: Selection) => void;
   onClose: () => void;
   /** Fly the map in on a spot in satellite mode (the photo's Close-up button). */
@@ -435,7 +472,7 @@ export default function Detail({
       <button className="modal-close" onClick={onClose} aria-label={MAP_TEXT[lang].close}>
         ✕
       </button>
-      {sel.kind === 'county' ? <CountyDetail f={f} data={data} lang={lang} onSelect={onSelect} year={year} /> : <PointDetail layer={sel.layer} f={f} lang={lang} sat={sat} onCloseUp={onCloseUp} />}
+      {sel.kind === 'county' ? <CountyDetail f={f} data={data} lang={lang} onSelect={onSelect} year={year} cropStep={cropStep ?? 0} /> : <PointDetail layer={sel.layer} f={f} lang={lang} sat={sat} onCloseUp={onCloseUp} />}
     </aside>
   );
 }

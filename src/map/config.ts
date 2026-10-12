@@ -53,12 +53,14 @@ export const MANIFEST = manifest as {
  * They live in the Layers menu by the basemap switch (BasemapSwitch.tsx), not in the sidebar, so the sidebar stays
  * about places. New time series (yearly night lights, radar ship density, crop health) belong here too.
  */
-export type Overlay = 'lights' | 'radar';
+export type Overlay = 'lights' | 'crops' | 'radar';
 
 /** `time`: the overlay has a time axis, so the shared time pill (TimePill.tsx) shows while it's on. */
-export const OVERLAYS: { id: Overlay; thumb: string; time?: 'year' }[] = [
+export const OVERLAYS: { id: Overlay; thumb: string; time?: 'year' | '16-day' }[] = [
   // yearly night lights per county (public/layers/lights-years.json); the thumb is this layer itself, 2025, points hidden
   { id: 'lights', thumb: '/img/map/thumb-lights.png', time: 'year' },
+  // crop greenness per province this season against the 10 years before (public/layers/crops.json), every 16 days
+  { id: 'crops', thumb: '/img/map/thumb-crops.png', time: '16-day' },
   // vessels satellite radar saw in North Korea's waters that sent no AIS, per 0.1° square, latest whole month
   { id: 'radar', thumb: '/img/map/thumb-radar.png' },
 ];
@@ -77,6 +79,18 @@ export const RADAR_LEGEND = [1, 20, 200];
  * night photos, instead of reading as "more" the way a dark colour does on a light map. The scale is steep at the
  * bottom: outside the cities most counties have only a few percent lit. The legend in the time pill reads the same stops.
  */
+/**
+ * Crop health: provinces shaded by how green their cropland is against the same 16 days of the 10 years before,
+ * in %. Diverging, brown below and green above, flat around zero; ±15% is about as far as a province goes.
+ */
+export const CROP_STOPS: [number, string][] = [
+  [-15, '#8c510a'],
+  [-7, '#d8b365'],
+  [0, '#f1ece0'],
+  [7, '#8fc98a'],
+  [15, '#1b7837'],
+];
+
 export const LIGHTS_STOPS: [number, string][] = [
   // 2025: half the counties are under 4.6% lit and a quarter under 2.4%, so those stay dark; the glow is for cities
   [0, '#07080c'],

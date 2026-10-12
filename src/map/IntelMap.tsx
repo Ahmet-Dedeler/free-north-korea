@@ -9,7 +9,7 @@ import type { Lang } from '@/site/seo';
 import { provinceName } from '@/content/countiesI18n';
 import { COUNTRY_NAMES, LABEL_FIELDS, MAP_TEXT } from '@/content/mapI18n';
 import { MAPLIBRE_WORKER_URL, STYLE_URL } from '../map/maplibre';
-import { LAYERS, LIGHTS_STOPS, OVERLAYS, RADAR_COLOR, SHADES, SHADE_COLORS, type LayerId, type Overlay, type Shade } from './config';
+import { CROP_STOPS, LAYERS, LIGHTS_STOPS, OVERLAYS, RADAR_COLOR, SHADES, SHADE_COLORS, type LayerId, type Overlay, type Shade } from './config';
 import type { FeatureCollection } from 'geojson';
 import type { Basemap, Data, Focus, Selection } from './types';
 
@@ -23,6 +23,8 @@ interface Props {
   overlays: Set<Overlay>;
   /** Year shown by time-axis overlays (night lights). */
   year: number;
+  /** Which 16-day composite of this season crop health shows (index into crops.provinces[*].season). */
+  cropStep: number;
   selected: Selection | null;
   /** A spot to fly to without selecting a feature (a quake from Latest, a satellite close-up). */
   focus: Focus | null;
@@ -105,6 +107,12 @@ function foreignVisits(flags: unknown): number {
   }
 }
 
+/** Province colour for one 16-day composite of crop health; a province with no clear view then stays see-through. */
+function cropsExpr(step: number): ExpressionSpecification {
+  const v: ExpressionSpecification = ['get', `crop${step}`];
+  return ['case', ['==', v, null], 'rgba(0,0,0,0)', ['interpolate', ['linear'], v, ...CROP_STOPS.flat()]] as unknown as ExpressionSpecification;
+}
+
 /** County colour for one year of night lights; a county with no clean data that year stays see-through. */
 function lightsExpr(year: number): ExpressionSpecification {
   const v: ExpressionSpecification = ['get', `lit${year}`];
@@ -131,13 +139,13 @@ function countyLine(base: Basemap, pal: (typeof PAL)[Theme]): ExpressionSpecific
   return ['case', ['boolean', ['feature-state', 'selected'], false], base === 'satellite' ? '#facc15' : pal.ring, base === 'satellite' ? SAT_LINE : pal.line];
 }
 
-export default function IntelMap({ data, visible, shade, base, overlays, year, selected, focus, theme: deviceTheme, lang, onSelect }: Props) {
+export default function IntelMap({ data, visible, shade, base, overlays, year, cropStep, selected, focus, theme: deviceTheme, lang, onSelect }: Props) {
   // Night lights need a night map: dark around the counties, so unlit reads as dark and lit as glow.
   const theme: Theme = overlays.has('lights') ? 'dark' : deviceTheme;
   const box = useRef<HTMLDivElement>(null);
   const mapRef = useRef<maplibregl.Map | null>(null);
-  const latest = useRef({ data, visible, shade, base, overlays, year, selected, theme, onSelect });
-  latest.current = { data, visible, shade, base, overlays, year, selected, theme, onSelect };
+  const latest = useRef({ data, visible, shade, base, overlays, year, cropStep, selected, theme, onSelect });
+  latest.current = { data, visible, shade, base, overlays, year, cropStep, selected, theme, onSelect };
   const prevSel = useRef<{ source: string; id: string | number } | null>(null);
 
   useEffect(() => {
@@ -208,6 +216,12 @@ export default function IntelMap({ data, visible, shade, base, overlays, year, s
       // Night lights: a county fill on the counties source, one year at a time (`lit<year>`, merged in by loadData)
       map.addLayer(
         { id: 'lights', type: 'fill', source: 'counties', paint: { 'fill-color': lightsExpr(latest.current.year), 'fill-opacity': 0.94 }, layout: { visibility: overlays.has('lights') ? 'visible' : 'none' } },
+        'county-line',
+      );
+      // Crop health: a province fill (its cropland only is measured, but the province is the unit), one 16-day
+      // composite at a time (`crop<i>`, merged in by loadData)
+      map.addLayer(
+        { id: 'crops', type: 'fill', source: 'provinces', paint: { 'fill-color': cropsExpr(latest.current.cropStep), 'fill-opacity': 0.82 }, layout: { visibility: overlays.has('crops') ? 'visible' : 'none' } },
         'county-line',
       );
       // Radar: vessels that sent no AIS per 0.1° square (public/layers/radar.geojson, scripts/build-ships.ts), drawn
@@ -305,7 +319,7 @@ export default function IntelMap({ data, visible, shade, base, overlays, year, s
       const f = hits[0] ?? c;
       if (!f) return void tip.remove();
       const p = f.properties;
-      const { shade, overlays, year } = latest.current;
+      const { shade, overlays, year, cropStep, data } = latest.current;
       const fmt = MAP_TEXT[lang].tips[shade];
       // with night lights on, the county tip gives that year's lit share instead of the shading value
       const lit = p[`lit${year}`];
@@ -313,7 +327,13 @@ export default function IntelMap({ data, visible, shade, base, overlays, year, s
         ? ''
         : overlays.has('lights')
           ? ` · ${MAP_TEXT[lang].lightsTip(year, typeof lit === 'number' ? lit : null)}`
-          : fmt && p[shade] !== undefined
+          : overlays.has('crops')
+            ? (() => {
+                // a county's tip gives its province's crop greenness (the unit crop health is measured in)
+                const s = data.crops.provinces[String(p.pcode ?? '').slice(0, 4)]?.season[cropStep];
+                return s ? ` · ${MAP_TEXT[lang].cropTip(s.date, s.anomaly)}` : '';
+              })()
+            : fmt && p[shade] !== undefined
             ? ` · ${fmt(Number(p[shade]))}`
             : '';
       const esc = (v: unknown) => String(v).replace(/</g, '&lt;');
@@ -368,6 +388,10 @@ export default function IntelMap({ data, visible, shade, base, overlays, year, s
     const map = mapRef.current;
     if (map?.getLayer('lights')) map.setPaintProperty('lights', 'fill-color', lightsExpr(year));
   }, [year]);
+  useEffect(() => {
+    const map = mapRef.current;
+    if (map?.getLayer('crops')) map.setPaintProperty('crops', 'fill-color', cropsExpr(cropStep));
+  }, [cropStep]);
 
   // --- selection ---
   function applySelection(fly: boolean) {
