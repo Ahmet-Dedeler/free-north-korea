@@ -30,7 +30,7 @@ page says so. Most of North Korea outside its cities is near the sensor's noise 
 yearly values per county and not monthly ones (docs/research/peer-data-plan.md).
 
 Auth: a service-account key in EE_SERVICE_ACCOUNT_KEY (JSON, for GitHub Actions) or, locally, the gcloud login of
-the account in EE_ACCOUNT (default ahmetdedelerr@gmail.com). Project: EE_PROJECT (default earth-thing-free). Annual
+the account in EE_ACCOUNT (default ahmetdedelerr@gmail.com). Project: EE_PROJECT (default for-cli21221; the second project, earth-thing-free, is in EE_PROJECT_2). Annual
 composites come out once a year, so this runs by hand when EOG publishes a new year, not weekly.
 """
 
@@ -47,7 +47,7 @@ ROOT = Path(__file__).resolve().parents[2]
 COUNTIES = ROOT / "public/layers/counties.geojson"
 OUT = ROOT / "public/layers/lights-years.json"
 ARCHIVE = ROOT / "data/archive/ee/night-lights/annual.jsonl"
-PROJECT = os.environ.get("EE_PROJECT", "earth-thing-free")
+PROJECT = os.environ.get("EE_PROJECT", "for-cli21221")
 # VIIRS day/night band pixels are 15 arc-seconds, about 463 m at the equator.
 SCALE = 463.83
 SOURCES = [("NOAA/VIIRS/DNB/ANNUAL_V21", range(2013, 2022)), ("NOAA/VIIRS/DNB/ANNUAL_V22", range(2022, 2100))]
