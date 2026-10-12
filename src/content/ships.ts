@@ -19,10 +19,41 @@ export interface Ship {
   imo: string;
   lists: ListKey[];
   un?: string;
-  ais: { name: string; flag: string | null; mmsi: string; first: string; last: string }[];
+  ais: {
+    name: string;
+    flag: string | null;
+    mmsi: string;
+    first: string;
+    last: string;
+  }[];
   lastSeen: string | null;
   visits: ShipVisit[];
+  /** Every port call in the archive (since 2012), and how many were outside North Korea. */
+  history: { visits: number; foreign: number; since: string | null };
   radarMonths: string[];
+}
+export interface NkPort {
+  /** Anchorage name; with `near`, the nearest named port; "" when there is none within 40 km. */
+  port: string;
+  near: boolean;
+  portId: string;
+  lat: number;
+  lon: number;
+  visits: number;
+  vessels: number;
+  flags: Record<string, number>;
+}
+export interface ForeignCaller {
+  name: string;
+  mmsi: string;
+  flag: string | null;
+  vtype: string;
+  first: string;
+  last: string;
+  visits: number;
+  /** "NAMPO", "~NAMPO" (an anchorage near Nampo) or "@39.9,124.3" (no named port within 40 km) → visits. */
+  ports: Record<string, number>;
+  listedImo?: string;
 }
 export interface RadarMonth {
   month: string;
@@ -42,20 +73,63 @@ export const SHIPS = raw as unknown as {
   resolved: number;
   ships: Ship[];
   radar: RadarMonth[];
+  radarYears: {
+    year: string;
+    detections: number;
+    matched: number;
+    passes: number;
+    months: number;
+  }[];
+  ports: {
+    visits: number;
+    vessels: number;
+    foreignVisits: number;
+    list: NkPort[];
+    foreign: ForeignCaller[];
+  };
 };
 
-export const SHIPS_PATHS = { en: '/sanctions/ships', ko: '/ko/sanctions/ships', ja: '/ja/sanctions/ships', zh: '/zh/sanctions/ships' } as const;
+export const SHIPS_PATHS = {
+  en: '/sanctions/ships',
+  ko: '/ko/sanctions/ships',
+  ja: '/ja/sanctions/ships',
+  zh: '/zh/sanctions/ships',
+} as const;
 export const SHIPS_DATA_URL = 'https://github.com/Ahmet-Dedeler/free-north-korea/blob/main/data/ships.json';
 export const SHIPS_RAW_URL = 'https://raw.githubusercontent.com/Ahmet-Dedeler/free-north-korea/main/data/ships.json';
 export const GFW_URL = 'https://globalfishingwatch.org/';
 
 export const SHIP_SOURCES = [
-  { name: 'Global Fishing Watch: APIs (vessel identity, port visits, SAR vessel detections)', url: 'https://globalfishingwatch.org/our-apis/', note: 'CC BY-NC 4.0' },
-  { name: 'Global Fishing Watch: API license and rate limits', url: 'https://globalfishingwatch.org/our-apis/documentation/docs/license-rate-limits.md', note: 'Terms' },
-  { name: 'Park et al., "Illuminating dark fishing fleets in North Korea", Science Advances (2020)', url: 'https://doi.org/10.1126/sciadv.abb1197', note: 'Peer-reviewed' },
-  { name: 'Paolo et al., "Satellite mapping reveals extensive industrial activity at sea", Nature (2024)', url: 'https://doi.org/10.1038/s41586-023-06825-8', note: 'How the radar detections are made' },
-  { name: 'Microsoft Planetary Computer: Sentinel-1 catalog (passes per month)', url: 'https://planetarycomputer.microsoft.com/dataset/sentinel-1-rtc', note: 'Copernicus data' },
-  { name: 'Ship data built by this site (JSON)', url: SHIPS_DATA_URL, note: 'GitHub' },
+  {
+    name: 'Global Fishing Watch: APIs (vessel identity, port visits, SAR vessel detections)',
+    url: 'https://globalfishingwatch.org/our-apis/',
+    note: 'CC BY-NC 4.0',
+  },
+  {
+    name: 'Global Fishing Watch: API license and rate limits',
+    url: 'https://globalfishingwatch.org/our-apis/documentation/docs/license-rate-limits.md',
+    note: 'Terms',
+  },
+  {
+    name: 'Park et al., "Illuminating dark fishing fleets in North Korea", Science Advances (2020)',
+    url: 'https://doi.org/10.1126/sciadv.abb1197',
+    note: 'Peer-reviewed',
+  },
+  {
+    name: 'Paolo et al., "Satellite mapping reveals extensive industrial activity at sea", Nature (2024)',
+    url: 'https://doi.org/10.1038/s41586-023-06825-8',
+    note: 'How the radar detections are made',
+  },
+  {
+    name: 'Microsoft Planetary Computer: Sentinel-1 catalog (passes per month)',
+    url: 'https://planetarycomputer.microsoft.com/dataset/sentinel-1-rtc',
+    note: 'Copernicus data',
+  },
+  {
+    name: 'Ship data built by this site (JSON)',
+    url: SHIPS_DATA_URL,
+    note: 'GitHub',
+  },
 ];
 
 export interface ShipsText {
@@ -67,11 +141,33 @@ export interface ShipsText {
   lede: (listed: number) => string;
   readTitle: string;
   read: string[];
-  tiles: { listed: string; broadcasting: string; abroad: string; radar: string; dark: string };
-  tileNote: { listed: string; broadcasting: string; abroad: string; radar: string; dark: (month: string) => string };
+  tiles: {
+    listed: string;
+    broadcasting: string;
+    abroad: string;
+    radar: string;
+    dark: string;
+  };
+  tileNote: {
+    listed: string;
+    broadcasting: string;
+    abroad: string;
+    radar: string;
+    dark: (month: string) => string;
+  };
   abroadTitle: string;
   abroadHint: string;
-  col: { ship: string; lists: string; as: string; port: string; dates: string; imo: string; lastSeen: string; visits: string; radar: string };
+  col: {
+    ship: string;
+    lists: string;
+    as: string;
+    port: string;
+    dates: string;
+    imo: string;
+    lastSeen: string;
+    visits: string;
+    radar: string;
+  };
   abroadNone: string;
   radarTitle: string;
   radarHint: string;
@@ -94,6 +190,25 @@ export interface ShipsText {
   asOf: string;
   unknownPort: string;
   attribution: string;
+  portsTitle: string;
+  portsHint: string;
+  portsTiles: { visits: string; vessels: string; foreign: string };
+  foreignTitle: string;
+  foreignHint: string;
+  busiestTitle: string;
+  near: (port: string) => string;
+  col2: {
+    vessel: string;
+    flag: string;
+    type: string;
+    ports: string;
+    history: string;
+  };
+  vtype: Record<string, string>;
+  historyTitle: string;
+  historyHint: string;
+  perDay: string;
+  sinceShort: (year: string) => string;
   back: string;
   dataLink: string;
   sources: string;
@@ -130,8 +245,19 @@ const EN: ShipsText = {
     dark: (m) => `in ${m}`,
   },
   abroadTitle: 'Port calls outside North Korea',
-  abroadHint: 'Last 12 months, one row per ship and the name it used, newest first. "Other name" marks a broadcast name that differs from the listed one: a rename, or another vessel using the same IMO number.',
-  col: { ship: 'Listed ship', lists: 'Lists', as: 'Broadcast as', port: 'Port', dates: 'Dates', imo: 'IMO', lastSeen: 'Last AIS signal', visits: 'Port calls', radar: 'Seen by radar' },
+  abroadHint:
+    'Last 12 months, one row per ship and the name it used, newest first. "Other name" marks a broadcast name that differs from the listed one: a rename, or another vessel using the same IMO number.',
+  col: {
+    ship: 'Listed ship',
+    lists: 'Lists',
+    as: 'Broadcast as',
+    port: 'Port',
+    dates: 'Dates',
+    imo: 'IMO',
+    lastSeen: 'Last AIS signal',
+    visits: 'Port calls',
+    radar: 'Seen by radar',
+  },
   abroadNone: 'No port calls outside North Korea in the last 12 months.',
   radarTitle: 'Satellite radar in North Korea’s waters',
   radarHint:
@@ -158,6 +284,38 @@ const EN: ShipsText = {
   asOf: 'Data to',
   unknownPort: 'anchorage',
   attribution: 'Powered by Global Fishing Watch',
+  portsTitle: 'Who calls at North Korean ports',
+  portsHint:
+    'Every vessel Global Fishing Watch saw stop at a North Korean anchorage in the last 12 months, at confidence 3 or 4. Fishing-gear buoys and placeholder MMSI numbers are left out. Most ships near North Korea send no AIS at all, so these are the ones that did, not all traffic.',
+  portsTiles: {
+    visits: 'port visits',
+    vessels: 'vessels',
+    foreign: 'visits by foreign-flagged vessels',
+  },
+  foreignTitle: 'Foreign-flagged vessels',
+  foreignHint: 'Newest first, with the name and flag each one broadcast.',
+  busiestTitle: 'Busiest anchorages',
+  near: (p) => `near ${p}`,
+  col2: {
+    vessel: 'Vessel',
+    flag: 'Flag',
+    type: 'Type',
+    ports: 'Where',
+    history: 'Port calls since 2012',
+  },
+  vtype: {
+    cargo: 'cargo',
+    fishing: 'fishing',
+    tanker: 'tanker',
+    carrier: 'carrier',
+    other: 'other',
+    na: 'unknown',
+  },
+  historyTitle: 'Radar since 2017',
+  historyHint:
+    'Vessels detected in North Korea’s waters per day with a radar pass, by year. Detections fell to about a quarter in 2020 to 2022, the years North Korea kept its border closed over Covid-19.',
+  perDay: 'per radar day',
+  sinceShort: (y) => `since ${y}`,
   back: 'All North Korea sanctions lists',
   dataLink: 'Download the data (JSON)',
   sources: 'Sources',
@@ -194,8 +352,19 @@ const KO: ShipsText = {
     dark: (m) => `${m} 기준`,
   },
   abroadTitle: '북한 밖 항구 입항',
-  abroadHint: '최근 12개월, 선박과 사용한 이름별로 한 줄, 최신순. "다른 이름"은 송신 이름이 명단의 이름과 다르다는 표시입니다. 개명했거나, 다른 선박이 같은 IMO 번호를 쓰는 경우입니다.',
-  col: { ship: '제재 선박', lists: '명단', as: '송신 이름', port: '항구', dates: '날짜', imo: 'IMO', lastSeen: '마지막 AIS 신호', visits: '입항', radar: '레이더 포착' },
+  abroadHint:
+    '최근 12개월, 선박과 사용한 이름별로 한 줄, 최신순. "다른 이름"은 송신 이름이 명단의 이름과 다르다는 표시입니다. 개명했거나, 다른 선박이 같은 IMO 번호를 쓰는 경우입니다.',
+  col: {
+    ship: '제재 선박',
+    lists: '명단',
+    as: '송신 이름',
+    port: '항구',
+    dates: '날짜',
+    imo: 'IMO',
+    lastSeen: '마지막 AIS 신호',
+    visits: '입항',
+    radar: '레이더 포착',
+  },
   abroadNone: '최근 12개월 동안 북한 밖 항구 입항 기록이 없습니다.',
   radarTitle: '북한 수역의 위성 레이더',
   radarHint:
@@ -222,6 +391,37 @@ const KO: ShipsText = {
   asOf: '데이터 기준',
   unknownPort: '정박지',
   attribution: 'Powered by Global Fishing Watch',
+  portsTitle: '북한 항구에 들어오는 선박',
+  portsHint:
+    'Global Fishing Watch가 최근 12개월 동안 북한 정박지에 머문 것으로 본 모든 선박입니다(신뢰도 3 또는 4). 어구 부표와 임시 MMSI 번호는 뺐습니다. 북한 근처 선박 대부분은 AIS를 아예 보내지 않으므로, 이는 전체 통항이 아니라 신호를 보낸 선박입니다.',
+  portsTiles: {
+    visits: '입항',
+    vessels: '선박',
+    foreign: '외국 국적 선박의 입항',
+  },
+  foreignTitle: '외국 국적 선박',
+  foreignHint: '최신순, 각 선박이 송신한 이름과 국적.',
+  busiestTitle: '가장 붐비는 정박지',
+  near: (p) => `${p} 인근`,
+  col2: {
+    vessel: '선박',
+    flag: '국적',
+    type: '종류',
+    ports: '위치',
+    history: '2012년 이후 입항',
+  },
+  vtype: {
+    cargo: '화물선',
+    fishing: '어선',
+    tanker: '유조선',
+    carrier: '운반선',
+    other: '기타',
+    na: '미상',
+  },
+  historyTitle: '2017년 이후 레이더',
+  historyHint: '북한 수역에서 레이더가 지나간 날 하루 평균 탐지된 선박 수, 연도별. 북한이 코로나19로 국경을 닫았던 2020~2022년에는 탐지가 약 4분의 1로 줄었습니다.',
+  perDay: '레이더 통과일 평균',
+  sinceShort: (y) => `${y}년 이후`,
   back: '대북 제재 명단 전체',
   dataLink: '데이터 내려받기 (JSON)',
   sources: '출처',
@@ -259,7 +459,17 @@ const JA: ShipsText = {
   },
   abroadTitle: '北朝鮮国外への寄港',
   abroadHint: '直近12か月、船と使われた船名ごとに1行、新しい順。「別名」は発信名がリストの船名と違うことを示します。改名したか、別の船が同じIMO番号を使っている場合です。',
-  col: { ship: '制裁船舶', lists: 'リスト', as: '発信名', port: '港', dates: '日付', imo: 'IMO', lastSeen: '最後のAIS信号', visits: '寄港', radar: 'レーダー捕捉' },
+  col: {
+    ship: '制裁船舶',
+    lists: 'リスト',
+    as: '発信名',
+    port: '港',
+    dates: '日付',
+    imo: 'IMO',
+    lastSeen: '最後のAIS信号',
+    visits: '寄港',
+    radar: 'レーダー捕捉',
+  },
   abroadNone: '直近12か月、北朝鮮国外への寄港記録はありません。',
   radarTitle: '北朝鮮の水域の衛星レーダー',
   radarHint:
@@ -286,6 +496,33 @@ const JA: ShipsText = {
   asOf: 'データ時点',
   unknownPort: '錨地',
   attribution: 'Powered by Global Fishing Watch',
+  portsTitle: '北朝鮮の港に入る船',
+  portsHint:
+    'Global Fishing Watchが直近12か月に北朝鮮の錨地に停泊したと判断したすべての船です（信頼度3または4）。漁具のブイと仮のMMSI番号は除いています。北朝鮮近くの船の多くはAISをまったく送らないため、これは全体の交通量ではなく、信号を送った船です。',
+  portsTiles: { visits: '寄港', vessels: '隻', foreign: '外国籍船の寄港' },
+  foreignTitle: '外国籍の船',
+  foreignHint: '新しい順。各船が発信した船名と旗国。',
+  busiestTitle: '寄港の多い錨地',
+  near: (p) => `${p}付近`,
+  col2: {
+    vessel: '船',
+    flag: '旗国',
+    type: '種類',
+    ports: '場所',
+    history: '2012年以降の寄港',
+  },
+  vtype: {
+    cargo: '貨物船',
+    fishing: '漁船',
+    tanker: 'タンカー',
+    carrier: '運搬船',
+    other: 'その他',
+    na: '不明',
+  },
+  historyTitle: '2017年以降のレーダー',
+  historyHint: '北朝鮮の水域で、レーダーが通過した日1日あたりに検出された船の数、年別。北朝鮮が新型コロナで国境を閉じていた2020〜2022年には、検出が約4分の1に減りました。',
+  perDay: 'レーダー通過日あたり',
+  sinceShort: (y) => `${y}年以降`,
   back: '対北朝鮮制裁リストの全体',
   dataLink: 'データをダウンロード（JSON）',
   sources: '出典',
@@ -323,11 +560,20 @@ const ZH: ShipsText = {
   },
   abroadTitle: '在朝鲜以外的港口停靠',
   abroadHint: '最近12个月，每艘船及其所用名称一行，按时间倒序。“其他名称”表示发送的船名与名单上的不同：可能是改名，也可能是另一艘船在使用同一个IMO编号。',
-  col: { ship: '受制裁船舶', lists: '名单', as: '发送名称', port: '港口', dates: '日期', imo: 'IMO', lastSeen: '最后AIS信号', visits: '停靠', radar: '雷达发现' },
+  col: {
+    ship: '受制裁船舶',
+    lists: '名单',
+    as: '发送名称',
+    port: '港口',
+    dates: '日期',
+    imo: 'IMO',
+    lastSeen: '最后AIS信号',
+    visits: '停靠',
+    radar: '雷达发现',
+  },
   abroadNone: '最近12个月没有在朝鲜以外港口停靠的记录。',
   radarTitle: '朝鲜水域的卫星雷达',
-  radarHint:
-    'Sentinel-1雷达能穿透云层、在夜间看到船舶。Global Fishing Watch在每幅图像中找出船舶，并核对当时哪些船在发送AIS信号。以下为朝鲜专属经济区内的月度数字。',
+  radarHint: 'Sentinel-1雷达能穿透云层、在夜间看到船舶。Global Fishing Watch在每幅图像中找出船舶，并核对当时哪些船在发送AIS信号。以下为朝鲜专属经济区内的月度数字。',
   key: { dark: '无AIS', matched: '发送AIS' },
   partial: '本月至今',
   passes: '雷达过境天数',
@@ -350,9 +596,45 @@ const ZH: ShipsText = {
   asOf: '数据截至',
   unknownPort: '锚地',
   attribution: 'Powered by Global Fishing Watch',
+  portsTitle: '哪些船停靠朝鲜港口',
+  portsHint:
+    'Global Fishing Watch在最近12个月内观测到在朝鲜锚地停靠的所有船舶（可信度3或4）。已剔除渔具浮标和占位MMSI编号。朝鲜附近的大多数船根本不发送AIS信号，因此这里只是发送了信号的船，不是全部船舶往来。',
+  portsTiles: {
+    visits: '次停靠',
+    vessels: '艘船',
+    foreign: '外国船旗船舶停靠',
+  },
+  foreignTitle: '外国船旗船舶',
+  foreignHint: '按时间倒序，附各船发送的船名和船旗。',
+  busiestTitle: '最繁忙的锚地',
+  near: (p) => `${p}附近`,
+  col2: {
+    vessel: '船舶',
+    flag: '船旗',
+    type: '类型',
+    ports: '地点',
+    history: '2012年以来停靠',
+  },
+  vtype: {
+    cargo: '货船',
+    fishing: '渔船',
+    tanker: '油轮',
+    carrier: '运输船',
+    other: '其他',
+    na: '未知',
+  },
+  historyTitle: '2017年以来的雷达',
+  historyHint: '朝鲜水域内每个雷达过境日平均探测到的船舶数，按年份。2020至2022年朝鲜因新冠疫情关闭边境期间，探测数降到约四分之一。',
+  perDay: '每个雷达过境日',
+  sinceShort: (y) => `${y}年以来`,
   back: '全部对朝制裁名单',
   dataLink: '下载数据（JSON）',
   sources: '来源',
 };
 
-export const SHIPS_TEXT: Record<Lang, ShipsText> = { en: EN, ko: KO, ja: JA, zh: ZH };
+export const SHIPS_TEXT: Record<Lang, ShipsText> = {
+  en: EN,
+  ko: KO,
+  ja: JA,
+  zh: ZH,
+};

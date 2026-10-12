@@ -51,12 +51,19 @@ before adding any page or article.
   Japan lists, with entries matched across lists (`targets`). One component
   (`components/SanctionsPage.tsx`) renders every language route.
 - `/sanctions/ships`: every listed ship with an IMO number as Global Fishing Watch sees it (identities broadcast
-  under that IMO, foreign port calls, months seen by radar in North Korea's EEZ) plus monthly Sentinel-1 radar counts
-  with the share that sent no AIS. `scripts/build-ships.ts` → `data/ships.json` (weekly), text in `content/ships.ts`,
-  `components/ShipsPage.tsx`. AIS is self-reported: always show the name and flag a ship broadcast, call a match a
-  lead, and never publish single radar detections. GFW terms: non-commercial, "Powered by Global Fishing Watch" on
-  every page and file using the data, one account only (no extra accounts to raise quota). APIs, keys and limits:
+  under that IMO, port calls since 2012, months seen by radar in North Korea's EEZ), who calls at North Korean
+  ports (last 12 months, foreign flags listed), and Sentinel-1 radar counts with the share sending no AIS, monthly
+  and by year since 2017. `scripts/build-ships.ts` archives everything it fetches in `data/archive/gfw`, then
+  builds `data/ships.json` from the archive (weekly), text in `content/ships.ts`, `components/ShipsPage.tsx`. AIS is
+  self-reported: always show the name and flag a ship broadcast, call a match a lead, and never publish single
+  radar detections or the fine radar grid. GFW terms: non-commercial, "Powered by Global Fishing Watch" on every page
+  and file using the data, one account only (no extra accounts to raise quota). APIs, keys and limits:
   `docs/research/data-apis.md`.
+- `data/archive/`: our permanent record of data a source only serves for a while (GFW now; more to come). Append
+  and update in place through `scripts/archive.ts`, never delete. One cleaned record per line,
+  `<source>/<kind>/<partition>.jsonl`, sorted; each source documented in `data/archive/README.md` with its license.
+  Never import it from `src/` (`npm run lint` checks); write a summary into `data/` for pages. Store our computed
+  numbers, never imagery or raw API dumps.
 - Event wire (measured events within hours): `src/content/events.ts` reads `data/seismic.json` (USGS catalog, box
   around North Korea) and `data/launch-reports.json` (Japan Ministry of Defense launch PDFs); text in
   `src/content/eventsI18n.ts`. Shown by `components/SeismicBlock.tsx` (/military), `components/LaunchReports.tsx`

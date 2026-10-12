@@ -9,7 +9,12 @@ import { SITE_NAME, SITE_URL } from '@/site/config';
 import { countryName } from '@/site/countries';
 import { LANG_TAG, absolute, jsonLd, type Lang } from '@/site/seo';
 
-const LOCALE: Record<Lang, string> = { en: 'en-GB', ko: 'ko-KR', ja: 'ja-JP', zh: 'zh-CN' };
+const LOCALE: Record<Lang, string> = {
+  en: 'en-GB',
+  ko: 'ko-KR',
+  ja: 'ja-JP',
+  zh: 'zh-CN',
+};
 
 /** "2026-09-21" + "2026-09-24" → "21 Sept 2026 – 24 Sept 2026", or one date when the visit started and ended the same day. */
 function span(a: string, b: string, locale: string) {
@@ -26,13 +31,29 @@ export default function ShipsPage({ lang }: { lang: Lang }) {
   const broadcasting = ships.filter((s) => s.lastSeen && s.lastSeen >= win.from);
   // Port calls abroad, one row per listed ship and the identity it broadcast (a ship sitting at the same anchorage
   // for weeks makes dozens of visits; the row keeps the count and the span).
-  type Group = { s: Ship; as: string; flag: string | null; first: string; last: string; n: number; ports: Map<string, { port: string; country: string; n: number }> };
+  type Group = {
+    s: Ship;
+    as: string;
+    flag: string | null;
+    first: string;
+    last: string;
+    n: number;
+    ports: Map<string, { port: string; country: string; n: number }>;
+  };
   const groups = new Map<string, Group>();
   for (const s of ships)
     for (const v of s.visits) {
       if (!v.country || v.country === 'PRK') continue;
       const k = `${s.imo}|${v.as}|${v.flag}`;
-      const g = groups.get(k) ?? { s, as: v.as, flag: v.flag, first: v.start, last: v.end, n: 0, ports: new Map() };
+      const g = groups.get(k) ?? {
+        s,
+        as: v.as,
+        flag: v.flag,
+        first: v.start,
+        last: v.end,
+        n: 0,
+        ports: new Map(),
+      };
       g.n++;
       if (v.start < g.first) g.first = v.start;
       if (v.end > g.last) g.last = v.end;
@@ -54,7 +75,23 @@ export default function ShipsPage({ lang }: { lang: Lang }) {
   const last = whole.at(-1);
   const darkShare = last && last.detections ? Math.round(((last.detections - last.matched) / last.detections) * 1000) / 10 : null;
   const maxDet = Math.max(...radar.map((m) => m.detections), 1);
-  const monthLabel = (m: string) => new Date(`${m}-01T00:00:00Z`).toLocaleDateString(locale, { timeZone: 'UTC', month: 'short' });
+  const monthLabel = (m: string) =>
+    new Date(`${m}-01T00:00:00Z`).toLocaleDateString(locale, {
+      timeZone: 'UTC',
+      month: 'short',
+    });
+
+  const { ports, radarYears } = SHIPS;
+  const portName = (key: string) => {
+    if (key.startsWith('~')) return t.near(key.slice(1));
+    if (key.startsWith('@')) {
+      const [lat, lon] = key.slice(1).split(',');
+      return `${lat}°N ${lon}°E`;
+    }
+    return key || t.unknownPort;
+  };
+  const maxYear = Math.max(...radarYears.map((y) => y.detections / Math.max(y.passes, 1)), 1);
+  const vtype = (v: string) => t.vtype[v.toLowerCase()] ?? t.vtype.other;
 
   const flags = new Map<string, number>();
   for (const m of radar) for (const [f, n] of Object.entries(m.flags)) flags.set(f, (flags.get(f) ?? 0) + n);
@@ -73,8 +110,16 @@ export default function ShipsPage({ lang }: { lang: Lang }) {
     creator: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
     // GFW data is CC BY-NC 4.0, and anything built from it carries the same terms
     license: 'https://creativecommons.org/licenses/by-nc/4.0/',
-    isBasedOn: { '@type': 'CreativeWork', name: 'Global Fishing Watch APIs', url: 'https://globalfishingwatch.org/our-apis/' },
-    distribution: { '@type': 'DataDownload', encodingFormat: 'application/json', contentUrl: SHIPS_RAW_URL },
+    isBasedOn: {
+      '@type': 'CreativeWork',
+      name: 'Global Fishing Watch APIs',
+      url: 'https://globalfishingwatch.org/our-apis/',
+    },
+    distribution: {
+      '@type': 'DataDownload',
+      encodingFormat: 'application/json',
+      contentUrl: SHIPS_RAW_URL,
+    },
   };
 
   const listTags = (s: Ship) => (
@@ -105,9 +150,7 @@ export default function ShipsPage({ lang }: { lang: Lang }) {
         <StatTile icon={RadioTower} value={broadcasting.length} label={t.tiles.broadcasting} note={t.tileNote.broadcasting} tone="warn" />
         <StatTile icon={Anchor} value={abroadShips.size} label={t.tiles.abroad} note={t.tileNote.abroad} tone="danger" />
         <StatTile icon={Radar} value={seenByRadar.length} label={t.tiles.radar} note={t.tileNote.radar} />
-        {darkShare !== null && last && (
-          <StatTile icon={WifiOff} value={`${darkShare}%`} label={t.tiles.dark} note={t.tileNote.dark(formatAsOf(last.month, locale))} />
-        )}
+        {darkShare !== null && last && <StatTile icon={WifiOff} value={`${darkShare}%`} label={t.tiles.dark} note={t.tileNote.dark(formatAsOf(last.month, locale))} />}
       </div>
 
       <div className="kw-source" role="note">
@@ -175,6 +218,73 @@ export default function ShipsPage({ lang }: { lang: Lang }) {
       </section>
 
       <section className="index-section">
+        <h2>{t.portsTitle}</h2>
+        <p className="muted">{t.portsHint}</p>
+        <div className="tiles">
+          <StatTile icon={Anchor} value={ports.visits} label={t.portsTiles.visits} />
+          <StatTile icon={ShipIcon} value={ports.vessels} label={t.portsTiles.vessels} />
+          <StatTile icon={Anchor} value={ports.foreignVisits} label={t.portsTiles.foreign} tone="warn" />
+        </div>
+        <h3>{t.busiestTitle}</h3>
+        <ul className="ship-flags">
+          {ports.list.slice(0, 8).map((p) => (
+            <li key={p.portId}>
+              <span lang="en">{p.port ? (p.near ? t.near(p.port) : p.port) : `${p.lat.toFixed(1)}°N ${p.lon.toFixed(1)}°E`}</span>
+              <i
+                style={{
+                  width: `${(p.visits / (ports.list[0]?.visits || 1)) * 100}%`,
+                }}
+              />
+              <b>{p.visits}</b>
+            </li>
+          ))}
+        </ul>
+        <h3>
+          {t.foreignTitle} <small>{ports.foreign.length}</small>
+        </h3>
+        <p className="muted">{t.foreignHint}</p>
+        <div className="table-wrap">
+          <table className="sanc-table">
+            <thead>
+              <tr>
+                <th>{t.col2.vessel}</th>
+                <th>{t.col2.flag}</th>
+                <th>{t.col2.ports}</th>
+                <th>{t.col.dates}</th>
+              </tr>
+            </thead>
+            <tbody>
+              {ports.foreign.map((f) => (
+                <tr key={`${f.mmsi}-${f.name}-${f.flag}`}>
+                  <td>
+                    <b lang="en">{f.name || '?'}</b>
+                    <small>
+                      {vtype(f.vtype)} · MMSI {f.mmsi}
+                    </small>
+                  </td>
+                  <td>{flagName(f.flag)}</td>
+                  <td>
+                    {Object.entries(f.ports)
+                      .sort((a, b) => b[1] - a[1])
+                      .map(([k, n]) => (
+                        <span key={k} className="ship-port">
+                          <span lang="en">{portName(k)}</span>
+                          {n > 1 && <em> ×{n}</em>}
+                        </span>
+                      ))}
+                  </td>
+                  <td className="nowrap">
+                    {span(f.first, f.last, locale)}
+                    <small>{t.visitsN(f.visits)}</small>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section className="index-section">
         <h2>{t.radarTitle}</h2>
         <p className="muted">{t.radarHint}</p>
         <div className="panel">
@@ -183,7 +293,11 @@ export default function ShipsPage({ lang }: { lang: Lang }) {
               const h = (m.detections / maxDet) * 86;
               const partial = m.month >= thisMonth;
               return (
-                <li key={m.month} title={`${formatAsOf(m.month, locale)}: ${t.detectionsIn(m.detections, m.passes)}${partial ? ` (${t.partial})` : ''}`} className={partial ? 'partial' : ''}>
+                <li
+                  key={m.month}
+                  title={`${formatAsOf(m.month, locale)}: ${t.detectionsIn(m.detections, m.passes)}${partial ? ` (${t.partial})` : ''}`}
+                  className={partial ? 'partial' : ''}
+                >
                   <span className="yb-stack" style={{ height: `${h}%` }}>
                     {m.matched > 0 && <i style={{ flex: m.matched }} className="sh-lit" />}
                     <i style={{ flex: m.detections - m.matched }} className="sh-dark" />
@@ -211,6 +325,31 @@ export default function ShipsPage({ lang }: { lang: Lang }) {
           {t.caveat.map((p) => (
             <p key={p}>{p}</p>
           ))}
+        </div>
+      </section>
+      <section className="index-section">
+        <h2>{t.historyTitle}</h2>
+        <p className="muted">{t.historyHint}</p>
+        <div className="panel">
+          <ol className="year-bars sanc-bars">
+            {radarYears.map((y) => {
+              const perDay = y.detections / Math.max(y.passes, 1);
+              const h = (perDay / maxYear) * 86;
+              const dark = y.detections ? Math.round(((y.detections - y.matched) / y.detections) * 1000) / 10 : 0;
+              return (
+                <li key={y.year} title={`${y.year}: ${Math.round(perDay)} ${t.perDay} · ${dark}% ${t.key.dark}`} className={y.months < 12 ? 'partial' : ''}>
+                  <span className="yb-stack" style={{ height: `${h}%` }}>
+                    <i style={{ flex: 1 }} className="sh-dark" />
+                  </span>
+                  <em style={{ '--h': `${h}%` } as React.CSSProperties}>{Math.round(perDay)}</em>
+                  <small>{y.year}</small>
+                </li>
+              );
+            })}
+          </ol>
+          <p className="muted small">
+            {t.perDay}. {radarYears.map((y) => `${y.year}: ${y.detections ? Math.round(((y.detections - y.matched) / y.detections) * 1000) / 10 : 0}% ${t.key.dark}`).join(' · ')}
+          </p>
         </div>
       </section>
 
@@ -256,7 +395,7 @@ export default function ShipsPage({ lang }: { lang: Lang }) {
               <tr>
                 <th>{t.col.ship}</th>
                 <th>{t.col.lastSeen}</th>
-                <th>{t.col.visits}</th>
+                <th>{t.col2.history}</th>
                 <th>{t.col.radar}</th>
                 <th>{t.col.lists}</th>
               </tr>
@@ -264,7 +403,6 @@ export default function ShipsPage({ lang }: { lang: Lang }) {
             <tbody>
               {ships.map((s) => {
                 const latest = s.ais[0];
-                const foreign = s.visits.filter((v) => v.country && v.country !== 'PRK').length;
                 return (
                   <tr key={shipKey(s)}>
                     <td lang="en">
@@ -283,7 +421,10 @@ export default function ShipsPage({ lang }: { lang: Lang }) {
                         <span className="muted">{t.noAis}</span>
                       )}
                     </td>
-                    <td className="nowrap">{s.visits.length ? `${s.visits.length}${foreign ? ` (${foreign} ${t.abroadShort})` : ''}` : '—'}</td>
+                    <td className="nowrap">
+                      {s.history.visits ? `${s.history.visits}${s.history.foreign ? ` (${s.history.foreign} ${t.abroadShort})` : ''}` : '—'}
+                      {s.history.since && <small>{t.sinceShort(s.history.since.slice(0, 4))}</small>}
+                    </td>
                     <td className="nowrap">{s.radarMonths.length ? s.radarMonths.map((m) => monthLabel(m)).join(', ') : '—'}</td>
                     <td>{listTags(s)}</td>
                   </tr>
@@ -295,8 +436,7 @@ export default function ShipsPage({ lang }: { lang: Lang }) {
       </section>
 
       <p>
-        <Link href={SANCTIONS_PATHS[lang]}>← {t.back}</Link> · <Ext href={SHIPS_DATA_URL}>{t.dataLink}</Ext> ·{' '}
-        <Ext href={GFW_URL}>{t.attribution}</Ext>
+        <Link href={SANCTIONS_PATHS[lang]}>← {t.back}</Link> · <Ext href={SHIPS_DATA_URL}>{t.dataLink}</Ext> · <Ext href={GFW_URL}>{t.attribution}</Ext>
       </p>
 
       <h2>{t.sources}</h2>

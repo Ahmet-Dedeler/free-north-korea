@@ -36,11 +36,22 @@ review with test calls and quoted license clauses is in `peer-api-review.md`.
 
 ## Built so far
 
-- `/sanctions/ships` (`scripts/build-ships.ts` → `data/ships.json`, weekly), about 250 GFW requests per run. Shows:
-  - listed ships and the identities they broadcast
-  - their foreign port calls
-  - listed ships seen by radar in North Korea's EEZ
-  - monthly radar counts with the share that sent no AIS
+- `data/archive/gfw` (see `data/archive/README.md`): everything `scripts/build-ships.ts` fetches, kept for good.
+  The first backfill (2026-10-12) took about 8 minutes and about 400 requests:
+  - 310 identity records
+  - 35,594 port visits since 2012
+  - 118 radar months since 2017
+
+  It came to 20 MB. A weekly run refreshes the last 120 days of visits and the last 3 months of radar.
+- `/sanctions/ships`, built from the archive. Shows:
+  - listed ships, the identities they broadcast, and port calls since 2012
+  - who calls at North Korean ports (last 12 months, foreign flags listed)
+  - radar counts per month and per year since 2017, with the share that sent no AIS
+- Findings worth a follow-up:
+  - Radar detections per pass day in North Korea's waters fell from 344 (2019) to 81-88 (2020-2022), then
+    rose to 208 (2026).
+  - Russian cargo ships GEFEST and ORION called near Nampo in April-May 2026.
+  - PUK DAE BONG (UN "Hua Fu") has 278 foreign port calls since 2012.
 
 ## Ideas checked and parked
 
