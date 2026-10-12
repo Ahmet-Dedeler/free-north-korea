@@ -1,5 +1,6 @@
 // Series counted from data this repo already keeps fresh: the missile test list (public/data, from
-// nagix/nk-missile-tests) and the UN 1718 sanctions list (data/sanctions.json, rebuilt weekly).
+// nagix/nk-missile-tests), the UN 1718 sanctions list (data/sanctions.json, rebuilt weekly) and our yearly night
+// lights per county (public/layers/lights-years.json, scripts/ee/night_lights.py).
 import { readFileSync } from 'node:fs';
 import { today, type Point, type Series, type SeriesSource } from './lib.ts';
 
@@ -56,10 +57,30 @@ function sanctions(): Series {
   };
 }
 
+function nightLights(): Series {
+  const l = read<{ built: string; years: number[]; source: { name: string; url: string; license: string; seam: number }; KP: { sum: number[]; pyongyangShare: (number | null)[] } }>(
+    'public/layers/lights-years.json',
+  );
+  const pyong = l.years.map((y, i) => [y, Math.round(l.KP.sum[i] * (l.KP.pyongyangShare[i] ?? 0))] as Point);
+  const rest = l.years.map((y, i) => [y, Math.round(l.KP.sum[i] - pyong[i][1])] as Point);
+  return {
+    id: 'night-lights',
+    title: 'North Korea at night: total light seen from space',
+    unit: 'sum of lights',
+    frequency: 'annual',
+    entities: { pyongyang: pyong, 'rest-of-country': rest },
+    source: { name: `${l.source.name}, summed per county in Google Earth Engine`, url: l.source.url, license: l.source.license },
+    fetched: l.built,
+    note:
+      `Sum of each year's average radiance (nW/cm²/sr) over every VIIRS pixel in North Korea, after EOG masks background noise, fires and other short-lived light. Pyongyang is the Pyongyang province of the UN OCHA boundaries. ` +
+      `The product changed version in ${l.source.seam}. From 2022 to 2025 North Korea's total rose 130%, while in the same data Seoul rose 3%, rural Gangwon (South Korea) 7% and Dandong (China) 28%, so the rise is not a change in processing.`,
+  };
+}
+
 export const local: SeriesSource = {
   name: 'local',
   maxAgeDays: 0, // cheap, always rebuilt
   async build() {
-    return [missiles(), sanctions()];
+    return [missiles(), sanctions(), nightLights()];
   },
 };

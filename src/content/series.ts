@@ -25,6 +25,7 @@ export const ENTITY_LABEL: Record<string, T> = {
   other: { en: 'Other', ko: '기타', ja: 'その他', zh: '其他' },
   people: { en: 'People', ko: '개인', ja: '個人', zh: '个人' },
   entities: { en: 'Organisations', ko: '기관', ja: '団体', zh: '机构' },
+  'rest-of-country': { en: 'Rest of the country', ko: '그 밖의 지역', ja: 'その他の地域', zh: '其他地区' },
 };
 
 /** Title and one plain sentence per series. Keys are series ids. */
@@ -173,6 +174,15 @@ export const SERIES_TEXT: Record<string, Record<Lang, { title: string; sub: stri
     ja: { title: '年ごとのミサイル発射', sub: 'ミサイル1発を1回と数える。4発同時なら4。' },
     zh: { title: '每年发射的导弹', sub: '每枚导弹计一次，齐射四枚就算四次。' },
   },
+  'night-lights': {
+    en: {
+      title: 'North Korea at night',
+      sub: 'Total light seen from space each year. It doubled from 2022 to 2025, while Seoul and rural South Korea stayed level in the same data.',
+    },
+    ko: { title: '밤의 북한', sub: '해마다 우주에서 본 불빛의 총량. 2022~2025년에 두 배가 되었고, 같은 자료에서 서울과 한국 농촌은 거의 그대로였다.' },
+    ja: { title: '夜の北朝鮮', sub: '毎年宇宙から見た光の総量。2022〜2025年に2倍になった。同じデータでソウルと韓国の農村はほぼ横ばいだった。' },
+    zh: { title: '夜晚的朝鲜', sub: '每年从太空看到的灯光总量。2022至2025年翻了一番，而同一数据中首尔和韩国农村基本持平。' },
+  },
   'un-sanctions-listings': {
     en: { title: 'New names on the UN sanctions list', sub: 'People and organisations added to the UN Security Council’s North Korea list each year.' },
     ko: { title: '유엔 제재 명단 신규 지정', sub: '해마다 유엔 안보리 대북 제재 명단에 오른 개인과 기관.' },
@@ -288,7 +298,7 @@ export const TOPICS: { id: string; title: T; series: string[] }[] = [
   {
     id: 'economy',
     title: { en: 'Money and energy', ko: '경제와 에너지', ja: '経済とエネルギー', zh: '经济与能源' },
-    series: ['gdp-per-capita', 'electricity-per-person', 'energy-per-person', 'electricity-access', 'co2-per-person', 'mobile-phones'],
+    series: ['gdp-per-capita', 'night-lights', 'electricity-per-person', 'energy-per-person', 'electricity-access', 'co2-per-person', 'mobile-phones'],
   },
   {
     id: 'people',
@@ -315,6 +325,7 @@ export const UNIT_LABEL: Record<string, T> = {
   'per 100 people': { en: 'per 100 people', ko: '100명당', ja: '100人あたり', zh: '每百人' },
   'births per woman': { en: 'births per woman', ko: '여성 1명당 출생아 수', ja: '女性1人あたりの出生数', zh: '每名妇女生育数' },
   people: { en: 'people', ko: '명', ja: '人', zh: '人' },
+  'sum of lights': { en: 'sum of lights', ko: '불빛 합계', ja: '光の合計', zh: '灯光总量' },
   kcal: { en: 'kcal', ko: 'kcal', ja: 'kcal', zh: '千卡' },
   'tonnes per hectare': { en: 'tonnes per hectare', ko: '헥타르당 톤', ja: 'ヘクタールあたりトン', zh: '吨/公顷' },
   tonnes: { en: 'tonnes', ko: '톤', ja: 'トン', zh: '吨' },

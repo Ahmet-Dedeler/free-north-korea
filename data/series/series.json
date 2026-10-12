@@ -1,11 +1,11 @@
 {
  "_doc": "Built by scripts/build-series.ts. Do not edit by hand; hand-checked numbers go in data/series/curated/.",
- "built": "2026-10-08",
+ "built": "2026-10-12",
  "sources": {
   "owid": "2026-10-05",
   "dailynk": "2026-10-05",
   "government": "2026-10-05",
-  "local": "2026-10-08"
+  "local": "2026-10-12"
  },
  "series": [
   {
@@ -23827,7 +23827,7 @@
     "url": "https://github.com/nagix/nk-missile-tests",
     "license": "MIT"
    },
-   "fetched": "2026-10-08",
+   "fetched": "2026-10-12",
    "updated": "2026-10-02",
    "note": "Each missile counts once, so a salvo of four is four. Medium range includes intermediate-range and hypersonic glide missiles; \"other\" is submarine-launched missiles, satellite launches and unknown types. 2026 runs to 2026-10-02."
   },
@@ -24715,6 +24715,129 @@
    },
    "fetched": "2026-10-05",
    "updated": "2026-07-27"
+  },
+  {
+   "id": "night-lights",
+   "title": "North Korea at night: total light seen from space",
+   "unit": "sum of lights",
+   "frequency": "annual",
+   "entities": {
+    "pyongyang": [
+     [
+      2013,
+      4341
+     ],
+     [
+      2014,
+      3509
+     ],
+     [
+      2015,
+      3077
+     ],
+     [
+      2016,
+      3464
+     ],
+     [
+      2017,
+      4372
+     ],
+     [
+      2018,
+      4583
+     ],
+     [
+      2019,
+      4305
+     ],
+     [
+      2020,
+      4977
+     ],
+     [
+      2021,
+      6428
+     ],
+     [
+      2022,
+      6777
+     ],
+     [
+      2023,
+      9859
+     ],
+     [
+      2024,
+      13298
+     ],
+     [
+      2025,
+      14954
+     ]
+    ],
+    "rest-of-country": [
+     [
+      2013,
+      10619
+     ],
+     [
+      2014,
+      7710
+     ],
+     [
+      2015,
+      6067
+     ],
+     [
+      2016,
+      6816
+     ],
+     [
+      2017,
+      10699
+     ],
+     [
+      2018,
+      9271
+     ],
+     [
+      2019,
+      10648
+     ],
+     [
+      2020,
+      12535
+     ],
+     [
+      2021,
+      15905
+     ],
+     [
+      2022,
+      16464
+     ],
+     [
+      2023,
+      22382
+     ],
+     [
+      2024,
+      28284
+     ],
+     [
+      2025,
+      38414
+     ]
+    ]
+   },
+   "source": {
+    "name": "Annual VIIRS Night-time Lights (VNL V2.1 2013-2021, V2.2 from 2022), Earth Observation Group, Payne Institute, Colorado School of Mines, summed per county in Google Earth Engine",
+    "url": "https://eogdata.mines.edu/products/vnl/",
+    "license": "CC BY 4.0"
+   },
+   "fetched": "2026-10-12",
+   "note": "Sum of each year's average radiance (nW/cm²/sr) over every VIIRS pixel in North Korea, after EOG masks background noise, fires and other short-lived light. Pyongyang is the Pyongyang province of the UN OCHA boundaries. The product changed version in 2022. From 2022 to 2025 North Korea's total rose 130%, while in the same data Seoul rose 3%, rural Gangwon (South Korea) 7% and Dandong (China) 28%, so the rise is not a change in processing."
   },
   {
    "id": "nuclear-warheads",
@@ -32558,7 +32681,7 @@
     "url": "https://www.un.org/securitycouncil/sanctions/1718",
     "license": "public"
    },
-   "fetched": "2026-10-05",
+   "fetched": "2026-10-12",
    "note": "By the date each name was added. Russia and China have blocked new listings since 2018."
   },
   {

@@ -30,6 +30,7 @@ export const DEFAULTS: Record<string, ChartOptions> = {
   'humanitarian-aid': { kind: 'bar' },
   'missile-launches': { kind: 'stacked', from: 1984 },
   'un-sanctions-listings': { kind: 'stacked' },
+  'night-lights': { kind: 'stacked' },
 };
 
 export const defaultsFor = (id: string): ChartOptions => DEFAULTS[id] ?? {};
