@@ -633,5 +633,40 @@
     "src": "/img/pages/og-background.jpg",
     "credit": "Share card background: a street in Wonsan by Mario Micklisch (CC BY 2.0), Panmunjom via Wikimedia Commons, NASA Black Marble 2016 (public domain)",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wonsan-street-north-korea-september-2015.jpg"
+  },
+  "host:gur.gov.ua": {
+    "src": "/img/hosts/gur-gov-ua.png",
+    "credit": "Icon from gur.gov.ua",
+    "sourceUrl": "https://gur.gov.ua"
+  },
+  "article:china-forced-repatriation-north-koreans": {
+    "src": "/img/articles/china-forced-repatriation-north-koreans.jpg",
+    "credit": "Photo via Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dandong,_Liaoning_Province.jpg"
+  },
+  "article:north-korea-songbun-caste-system": {
+    "src": "/img/articles/north-korea-songbun-caste-system.jpg",
+    "credit": "Photo via Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:North_Korean_farmers_(2009).jpg"
+  },
+  "org:zachxbt": {
+    "src": "/img/orgs/zachxbt.png",
+    "credit": "Logo from t.me",
+    "sourceUrl": "https://t.me"
+  },
+  "org:tayvano": {
+    "src": "/img/orgs/tayvano.png",
+    "credit": "Logo from github.com",
+    "sourceUrl": "https://github.com"
+  },
+  "org:seal": {
+    "src": "/img/orgs/seal.png",
+    "credit": "Logo from securityalliance.org",
+    "sourceUrl": "https://securityalliance.org"
+  },
+  "org:lazarus-bounty": {
+    "src": "/img/orgs/lazarus-bounty.png",
+    "credit": "Logo from www.lazarusbounty.com",
+    "sourceUrl": "https://www.lazarusbounty.com"
   }
 }

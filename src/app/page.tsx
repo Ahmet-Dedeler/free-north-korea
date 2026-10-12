@@ -5,6 +5,7 @@ import Avatar from '@/components/Avatar';
 import { Ext } from '@/components/Ext';
 import { GithubIcon } from '@/components/SocialIcon';
 import Locator from '@/components/Locator';
+import PinTips from '@/components/PinTips';
 import { StatTile } from '@/components/Visual';
 import WatchTeaser from '@/components/WatchTeaser';
 import { ARTICLES } from '@/content/articles';
@@ -13,7 +14,7 @@ import { SHELVES } from '@/content/library';
 import { cover, orgLogo } from '@/content/media';
 import { ORGS } from '@/content/orgs';
 import { getAllPlaces } from '@/content/places-data';
-import { PLACE_COLOR } from '@/content/places';
+import { PLACE_CATEGORIES, PLACE_COLOR } from '@/content/places';
 import { person } from '@/entities';
 import testsRaw from '../../public/data/test.en.json';
 import { REPO_URL, SITE_NAME, SITE_URL } from '@/site/config';
@@ -29,13 +30,20 @@ export const metadata = { alternates: { canonical: '/', languages: HUB_PATHS_WIT
 
 const TESTS = (testsRaw as unknown as { timeBins: { data: { date: string }[] }[] }).timeBins.flatMap((b) => b.data);
 
-/** Tiny previews for the Explore tiles, so each one shows what is behind it. */
+/**
+ * The hero map: every camp and key site as a dot. Hovering a dot names it, clicking it opens that point on /map;
+ * clicking anywhere else opens /map.
+ */
 function MapPreview() {
+  const cat = Object.fromEntries(PLACE_CATEGORIES.map((c) => [c.id, c.label]));
   const pins = [
-    ...getAllCamps().map((c) => ({ lat: c.lat, lon: c.lon, title: c.name, color: '#dc2626', r: 7 })),
-    ...getAllPlaces().map((p) => ({ lat: p.lat, lon: p.lon, title: p.name, color: PLACE_COLOR[p.category], r: 6 })),
+    ...getAllCamps().map((c) => ({ lat: c.lat, lon: c.lon, title: c.name, color: '#dc2626', r: 7, href: `/map#camps=${c.id}`, tip: `${c.name}|${c.kind}` })),
+    ...getAllPlaces().map((p) => {
+      const layer = p.id.startsWith('base-') ? 'missile-bases' : 'sites';
+      return { lat: p.lat, lon: p.lon, title: p.name, color: PLACE_COLOR[p.category], r: 6, href: `/map#${layer}=${p.id}`, tip: `${p.name}|${cat[p.category]}${p.status ? ` · ${p.status}` : ''}` };
+    }),
   ];
-  return <Locator pins={pins} label="camps and key sites" />;
+  return <Locator pins={pins} label="camps and key sites" ariaLabel="Map of North Korea's prison camps and key sites" />;
 }
 
 function PeoplePreview() {
@@ -142,12 +150,16 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        <Link href="/map" className="home-map" aria-label="Open the intel map">
-          <MapPreview />
-          <span className="home-map-cta">
+        <div className="home-map">
+          {/* the whole picture opens the map; the dots sit above this link and open their own point */}
+          <Link href="/map" className="home-map-bg" aria-label="Open the intel map" />
+          <PinTips>
+            <MapPreview />
+          </PinTips>
+          <Link href="/map" className="home-map-cta">
             <Map size={15} /> Open the intel map
-          </span>
-        </Link>
+          </Link>
+        </div>
       </section>
 
       <div className="tiles home-stats">

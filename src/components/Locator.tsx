@@ -9,6 +9,8 @@ export interface Pin {
   /** CSS colour for the dot (defaults to muted grey). */
   color?: string;
   r?: number;
+  /** Hover card text, "name|kind" (shown by PinTips around the map); without it the native <title> shows. */
+  tip?: string;
 }
 
 /**
@@ -59,11 +61,11 @@ export default function Locator({
           const [x, y] = project(p.lon, p.lat);
           const dot = (
             <circle cx={x} cy={y} r={p.r ?? 5} className={p.color ? 'pin-dot' : 'pin-other'} style={p.color ? { fill: p.color } : undefined}>
-              <title>{p.title}</title>
+              {!p.tip && <title>{p.title}</title>}
             </circle>
           );
           return p.href ? (
-            <a key={p.title} href={p.href} className="pin-link" aria-label={p.title}>
+            <a key={p.title} href={p.href} className="pin-link" aria-label={p.tip ? p.tip.replace('|', ', ') : p.title} data-tip={p.tip}>
               {dot}
             </a>
           ) : (
