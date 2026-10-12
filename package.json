@@ -9,7 +9,7 @@
     "prebuild": "node scripts/copy-maplibre-worker.mjs",
     "build": "next build",
     "start": "next start",
-    "lint": "oxlint && tsc --noEmit && node scripts/check-translations.mjs && node scripts/check-archive-imports.mjs",
+    "lint": "oxlint && tsc --noEmit && node scripts/check-translations.mjs && node scripts/check-series-notes.ts && node scripts/check-archive-imports.mjs",
     "check:schema": "node scripts/check-structured-data.mjs",
     "check:schema:prod": "node scripts/check-structured-data.mjs --sitemap https://liberatenorthkorea.org/sitemap.xml"
   },

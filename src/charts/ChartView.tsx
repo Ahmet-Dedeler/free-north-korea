@@ -676,10 +676,11 @@ export default function ChartView(p: ChartProps) {
       <footer className="chart-foot">
         <p className="chart-source">
           <b>{p.ui.source}:</b>{' '}
-          <a href={p.source.url} target="_blank" rel="noopener noreferrer">
+          {/* source names and licenses are proper names and stay in English */}
+          <a href={p.source.url} target="_blank" rel="noopener noreferrer" lang={p.lang === 'en' ? undefined : 'en'}>
             {p.source.name}
           </a>
-          {p.source.license && <span> ({p.source.license})</span>}
+          {p.source.license && <span lang={p.lang === 'en' ? undefined : 'en'}> ({p.source.license})</span>}
           <span className="sep"> · </span>
           {p.ui.fetched} {p.fetched}
           {p.updated && (
@@ -690,8 +691,7 @@ export default function ChartView(p: ChartProps) {
         </p>
         {!p.compact && p.note && (
           <p className="chart-note">
-            {/* series notes are written in English only (data/series/series.json) */}
-            <b>{p.ui.note}:</b> <span lang={p.lang === 'en' ? undefined : 'en'}>{p.note}</span>
+            <b>{p.ui.note}:</b> <span lang={p.noteEn ? 'en' : undefined}>{p.note}</span>
           </p>
         )}
         {!p.compact && p.pointSources && p.pointSources.length > 0 && (

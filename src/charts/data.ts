@@ -3,7 +3,7 @@
  * what a chart shows, so the browser only receives those points.
  */
 import raw from '../../data/series/series.json';
-import { CHART_UI, ENTITY_LABEL, SERIES_TEXT, UNIT_LABEL, dataPath } from '@/content/series';
+import { CHART_UI, ENTITY_LABEL, SERIES_TEXT, UNIT_LABEL, dataPath, seriesNote } from '@/content/series';
 import type { Lang } from '@/site/seo';
 
 export type Point = [t: number | string, v: number];
@@ -77,6 +77,8 @@ export type ChartProps = {
   fetched: string;
   updated?: string;
   note?: string;
+  /** True when `note` is the English text from series.json because no translation matches it. */
+  noteEn: boolean;
   pointSources?: { t: string; url: string; note?: string }[];
   permalink: string;
   ui: Record<string, string>;
@@ -105,6 +107,7 @@ export function chartProps(id: string, lang: Lang, o: ChartOptions = {}): ChartP
   const text = SERIES_TEXT[id]?.[lang];
   const keys = (o.entities ?? Object.keys(s.entities)).filter((k) => s.entities[k]?.length);
   const countries = keys.every((k) => k in COLOR);
+  const note = seriesNote(id, lang, s.note);
   return {
     id,
     lang,
@@ -132,7 +135,8 @@ export function chartProps(id: string, lang: Lang, o: ChartOptions = {}): ChartP
     source: s.source,
     fetched: s.fetched,
     updated: s.updated,
-    note: s.note,
+    note: note ?? s.note,
+    noteEn: !note && !!s.note && lang !== 'en',
     pointSources: s.pointSources?.map((p) => ({ ...p, t: String(p.t) })),
     permalink: dataPath(lang, id),
     ui: CHART_UI[lang],

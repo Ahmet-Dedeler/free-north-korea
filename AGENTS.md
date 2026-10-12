@@ -44,8 +44,11 @@ before adding any page or article.
   `data/series/csv/`, so the data is usable straight from GitHub). `src/charts/data.ts` reads it and `chartProps()`
   trims a series to what one chart shows; `src/charts/ChartView.tsx` is the one chart frame (hover, legend toggles,
   table tab, linear/log, CSV, copy link, share). Titles, units and entity names in every language live in
-  `src/content/series.ts`. Entity colours are fixed (North Korea red, South Korea blue, China green, world grey
-  dashed) and were checked for colour blindness; don't add Japan next to South Korea (the pair fails in dark mode).
+  `src/content/series.ts`, and so do the chart notes: the build scripts write each series' `note` in English, and
+  `SERIES_TEXT` holds it as a template (`{year}` for parts the build fills in) with its translations. When you change a
+  note in `scripts/series/`, update the template and translations; `npm run lint` fails until they match
+  (`scripts/check-series-notes.ts`), and until then pages show the English note.
+  Entity colours are fixed (North Korea red, South Korea blue, China green, world grey dashed) and were checked for colour blindness; don't add Japan next to South Korea (the pair fails in dark mode).
   Pages: `/north-korea-vs-south-korea` (`components/TwoKoreasPage.tsx`, text in `content/twoKoreas.ts`, numbers in
   the text come from the data), `/data` and `/data/<id>` (`components/DataPage.tsx`).
   Visual style is Visual Capitalist, not dashboard: Anton display type (`.display`, `--display`), vivid entity colours,

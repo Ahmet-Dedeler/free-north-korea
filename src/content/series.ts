@@ -28,8 +28,14 @@ export const ENTITY_LABEL: Record<string, T> = {
   'rest-of-country': { en: 'Rest of the country', ko: '그 밖의 지역', ja: 'その他の地域', zh: '其他地区' },
 };
 
-/** Title and one plain sentence per series. Keys are series ids. */
-export const SERIES_TEXT: Record<string, Record<Lang, { title: string; sub: string }>> = {
+/**
+ * Title and one plain sentence per series. Keys are series ids.
+ * `note` translates the series' note from series.json, which the build scripts (scripts/series/*.ts) write in English.
+ * The English `note` is that text as a template: `{name}` stands for a part the build fills in (a year, a date), and
+ * each translation repeats the same `{name}`s. If the built note stops matching the English template, pages show the
+ * English note instead (see `seriesNote`) and `npm run lint` fails until the template and translations are updated.
+ */
+export const SERIES_TEXT: Record<string, Record<Lang, { title: string; sub: string; note?: string }>> = {
   'life-expectancy': {
     en: { title: 'Life expectancy', sub: 'How many years a baby born that year would live on average.' },
     ko: { title: '기대수명', sub: '그해 태어난 아기가 평균적으로 살 것으로 예상되는 햇수.' },
@@ -145,51 +151,74 @@ export const SERIES_TEXT: Record<string, Record<Lang, { title: string; sub: stri
     zh: { title: '核弹头', sub: '估计朝鲜储存的核弹头数量。外界没有人知道确切数字。' },
   },
   'won-per-dollar': {
-    en: { title: 'Price of one US dollar in North Korean markets', sub: 'Market exchange rate in won, not the official rate. Surveyed about every two weeks.' },
-    ko: { title: '북한 시장의 달러 환율', sub: '공식 환율이 아닌 시장 환율(원). 약 2주마다 조사.' },
-    ja: { title: '北朝鮮の市場での1ドルの値段', sub: '公式レートではなく市場の為替レート（ウォン）。約2週間ごとに調査。' },
-    zh: { title: '朝鲜市场上一美元的价格', sub: '以朝鲜圆计的市场汇率，不是官方汇率。大约每两周调查一次。' },
+    en: { title: 'Price of one US dollar in North Korean markets', sub: 'Market exchange rate in won, not the official rate. Surveyed about every two weeks.', note: 'Prices before the November 2009 currency reform were in old won; we divided them by 100 so the line is continuous.' },
+    ko: { title: '북한 시장의 달러 환율', sub: '공식 환율이 아닌 시장 환율(원). 약 2주마다 조사.', note: '2009년 11월 화폐개혁 이전 가격은 구 원화 기준이어서, 선이 이어지도록 100으로 나누었다.' },
+    ja: { title: '北朝鮮の市場での1ドルの値段', sub: '公式レートではなく市場の為替レート（ウォン）。約2週間ごとに調査。', note: '2009年11月の通貨改革より前の価格は旧ウォン建てなので、線がつながるよう100で割った。' },
+    zh: { title: '朝鲜市场上一美元的价格', sub: '以朝鲜圆计的市场汇率，不是官方汇率。大约每两周调查一次。', note: '2009年11月货币改革之前的价格以旧朝鲜圆计，我们将其除以100，使曲线保持连续。' },
   },
   'rice-price': {
-    en: { title: 'Price of rice in North Korean markets', sub: 'Won per kilogram of rice. Surveyed about every two weeks.' },
-    ko: { title: '북한 시장의 쌀값', sub: '쌀 1kg당 가격(원). 약 2주마다 조사.' },
-    ja: { title: '北朝鮮の市場での米の値段', sub: '米1kgあたりの価格（ウォン）。約2週間ごとに調査。' },
-    zh: { title: '朝鲜市场上的大米价格', sub: '每公斤大米的价格（朝鲜圆）。大约每两周调查一次。' },
+    en: { title: 'Price of rice in North Korean markets', sub: 'Won per kilogram of rice. Surveyed about every two weeks.', note: 'Prices before the November 2009 currency reform were in old won; we divided them by 100 so the line is continuous.' },
+    ko: { title: '북한 시장의 쌀값', sub: '쌀 1kg당 가격(원). 약 2주마다 조사.', note: '2009년 11월 화폐개혁 이전 가격은 구 원화 기준이어서, 선이 이어지도록 100으로 나누었다.' },
+    ja: { title: '北朝鮮の市場での米の値段', sub: '米1kgあたりの価格（ウォン）。約2週間ごとに調査。', note: '2009年11月の通貨改革より前の価格は旧ウォン建てなので、線がつながるよう100で割った。' },
+    zh: { title: '朝鲜市场上的大米价格', sub: '每公斤大米的价格（朝鲜圆）。大约每两周调查一次。', note: '2009年11月货币改革之前的价格以旧朝鲜圆计，我们将其除以100，使曲线保持连续。' },
   },
   'defector-arrivals': {
-    en: { title: 'North Koreans reaching South Korea', sub: 'People who escaped and arrived in South Korea each year, by sex.' },
-    ko: { title: '한국에 입국한 북한이탈주민', sub: '해마다 한국에 도착한 탈북민 수, 성별.' },
-    ja: { title: '韓国にたどり着いた脱北者', sub: '毎年韓国に到着した脱北者の数（男女別）。' },
-    zh: { title: '抵达韩国的朝鲜人', sub: '每年逃出并抵达韩国的人数，按性别分列。' },
+    en: { title: 'North Koreans reaching South Korea', sub: 'People who escaped and arrived in South Korea each year, by sex.', note: 'Counted when people reach South Korea, which can be years after they left North Korea. 2002 onward; earlier years are only published as multi-year totals.' },
+    ko: { title: '한국에 입국한 북한이탈주민', sub: '해마다 한국에 도착한 탈북민 수, 성별.', note: '한국에 도착한 때를 기준으로 센다. 북한을 떠난 지 몇 년 뒤일 수도 있다. 2002년부터이며, 그 이전 연도는 여러 해를 합친 수치로만 공개되어 있다.' },
+    ja: { title: '韓国にたどり着いた脱北者', sub: '毎年韓国に到着した脱北者の数（男女別）。', note: '韓国に到着した時点で数える。北朝鮮を出てから何年も後のこともある。2002年以降。それ以前の年は複数年の合計しか公表されていない。' },
+    zh: { title: '抵达韩国的朝鲜人', sub: '每年逃出并抵达韩国的人数，按性别分列。', note: '按抵达韩国的时间统计，可能是离开朝鲜数年之后。数据从2002年开始；更早的年份只公布了多年合计数。' },
   },
   'humanitarian-aid': {
-    en: { title: 'Humanitarian funding for North Korea', sub: 'Aid money reported to the UN each year, in millions of US dollars.' },
-    ko: { title: '대북 인도적 지원 자금', sub: '해마다 유엔에 보고된 지원 자금(백만 달러).' },
-    ja: { title: '北朝鮮への人道支援資金', sub: '毎年国連に報告された支援資金（百万ドル）。' },
-    zh: { title: '对朝人道主义援助资金', sub: '每年向联合国报告的援助资金，单位为百万美元。' },
+    en: { title: 'Humanitarian funding for North Korea', sub: 'Aid money reported to the UN each year, in millions of US dollars.', note: 'Money reported to the UN as received for humanitarian work in North Korea, by the year it was meant for. {year} is the year so far.' },
+    ko: { title: '대북 인도적 지원 자금', sub: '해마다 유엔에 보고된 지원 자금(백만 달러).', note: '북한에서의 인도적 활동을 위해 받은 것으로 유엔에 보고된 자금. 그 돈이 쓰일 연도별로 집계. {year}년은 올해 지금까지의 수치.' },
+    ja: { title: '北朝鮮への人道支援資金', sub: '毎年国連に報告された支援資金（百万ドル）。', note: '北朝鮮での人道支援活動のために受け取ったと国連に報告された資金を、充てられた年ごとに集計。{year}年は年初から現在までの数字。' },
+    zh: { title: '对朝人道主义援助资金', sub: '每年向联合国报告的援助资金，单位为百万美元。', note: '向联合国报告的、为在朝鲜开展人道主义工作而收到的资金，按资金所属年份统计。{year}年为年初至今的数字。' },
   },
   'missile-launches': {
-    en: { title: 'Missiles launched each year', sub: 'Every missile counts once, so a salvo of four is four.' },
-    ko: { title: '연도별 미사일 발사', sub: '미사일 한 발을 한 번으로 센다. 네 발을 한꺼번에 쏘면 4.' },
-    ja: { title: '年ごとのミサイル発射', sub: 'ミサイル1発を1回と数える。4発同時なら4。' },
-    zh: { title: '每年发射的导弹', sub: '每枚导弹计一次，齐射四枚就算四次。' },
+    en: { title: 'Missiles launched each year', sub: 'Every missile counts once, so a salvo of four is four.', note: 'Each missile counts once, so a salvo of four is four. Medium range includes intermediate-range and hypersonic glide missiles; "other" is submarine-launched missiles, satellite launches and unknown types. {year} runs to {date}.' },
+    ko: { title: '연도별 미사일 발사', sub: '미사일 한 발을 한 번으로 센다. 네 발을 한꺼번에 쏘면 4.', note: '미사일 한 발을 한 번으로 센다. 네 발을 한꺼번에 쏘면 4. 준중거리에는 중거리 미사일과 극초음속 활공 미사일이 포함된다. ‘기타’는 잠수함발사 미사일, 위성 발사, 종류 미상이다. {year}년은 {date}까지.' },
+    ja: { title: '年ごとのミサイル発射', sub: 'ミサイル1発を1回と数える。4発同時なら4。', note: 'ミサイル1発を1回と数える。4発同時なら4。準中距離には中距離ミサイルと極超音速滑空ミサイルを含む。「その他」は潜水艦発射ミサイル、衛星打ち上げ、種類不明のもの。{year}年は{date}まで。' },
+    zh: { title: '每年发射的导弹', sub: '每枚导弹计一次，齐射四枚就算四次。', note: '每枚导弹计一次，齐射四枚就算四次。中程包括中远程导弹和高超音速滑翔导弹；“其他”指潜射导弹、卫星发射和类型不明的导弹。{year}年的数据截至{date}。' },
   },
   'night-lights': {
     en: {
       title: 'North Korea at night',
       sub: 'Total light seen from space each year. It doubled from 2022 to 2025, while Seoul and rural South Korea stayed level in the same data.',
+      note: "Sum of each year's average radiance (nW/cm²/sr) over every VIIRS pixel in North Korea, after EOG masks background noise, fires and other short-lived light. Pyongyang is the Pyongyang province of the UN OCHA boundaries. The product changed version in {seam}. From 2022 to 2025 North Korea's total rose 130%, while in the same data Seoul rose 3%, rural Gangwon (South Korea) 7% and Dandong (China) 28%, so the rise is not a change in processing.",
     },
-    ko: { title: '밤의 북한', sub: '해마다 우주에서 본 불빛의 총량. 2022~2025년에 두 배가 되었고, 같은 자료에서 서울과 한국 농촌은 거의 그대로였다.' },
-    ja: { title: '夜の北朝鮮', sub: '毎年宇宙から見た光の総量。2022〜2025年に2倍になった。同じデータでソウルと韓国の農村はほぼ横ばいだった。' },
-    zh: { title: '夜晚的朝鲜', sub: '每年从太空看到的灯光总量。2022至2025年翻了一番，而同一数据中首尔和韩国农村基本持平。' },
+    ko: { title: '밤의 북한', sub: '해마다 우주에서 본 불빛의 총량. 2022~2025년에 두 배가 되었고, 같은 자료에서 서울과 한국 농촌은 거의 그대로였다.', note: 'EOG가 배경 잡음, 화재, 그 밖의 일시적인 빛을 걸러낸 뒤, 북한 안의 모든 VIIRS 픽셀에서 그해 평균 복사휘도(nW/cm²/sr)를 더한 값. 평양은 UN OCHA 경계의 평양시(도급 행정구역)이다. {seam}년에 자료 버전이 바뀌었다. 2022~2025년 북한 전체는 130% 늘었지만, 같은 자료에서 서울은 3%, 강원도(한국) 농촌은 7%, 단둥(중국)은 28% 늘었으므로 이 증가는 처리 방식이 바뀐 탓이 아니다.' },
+    ja: { title: '夜の北朝鮮', sub: '毎年宇宙から見た光の総量。2022〜2025年に2倍になった。同じデータでソウルと韓国の農村はほぼ横ばいだった。', note: 'EOGが背景ノイズ、火災、その他の一時的な光を取り除いた後、北朝鮮内のすべてのVIIRSピクセルについてその年の平均放射輝度（nW/cm²/sr）を合計した値。平壌はUN OCHAの境界による平壌市（道レベルの行政区域）。{seam}年にデータのバージョンが変わった。2022〜2025年に北朝鮮全体は130%増えたが、同じデータでソウルは3%、江原道（韓国）の農村部は7%、丹東（中国）は28%の増加にとどまったので、この増加は処理方法の変化によるものではない。' },
+    zh: { title: '夜晚的朝鲜', sub: '每年从太空看到的灯光总量。2022至2025年翻了一番，而同一数据中首尔和韩国农村基本持平。', note: '在EOG去除背景噪声、火灾和其他短暂光源之后，朝鲜境内每个VIIRS像素当年平均辐亮度（nW/cm²/sr）的总和。平壤指UN OCHA边界中的平壤市（省级行政区）。数据产品在{seam}年更换了版本。2022至2025年，朝鲜总量增长130%，而同一数据中首尔增长3%，韩国江原道农村增长7%，中国丹东增长28%，因此这一增长并非处理方法变化所致。' },
   },
   'un-sanctions-listings': {
-    en: { title: 'New names on the UN sanctions list', sub: 'People and organisations added to the UN Security Council’s North Korea list each year.' },
-    ko: { title: '유엔 제재 명단 신규 지정', sub: '해마다 유엔 안보리 대북 제재 명단에 오른 개인과 기관.' },
-    ja: { title: '国連制裁リストへの新規指定', sub: '毎年、国連安保理の北朝鮮制裁リストに加えられた個人と団体。' },
-    zh: { title: '联合国制裁名单新增名称', sub: '每年新增到联合国安理会朝鲜制裁名单上的个人和机构。' },
+    en: { title: 'New names on the UN sanctions list', sub: 'People and organisations added to the UN Security Council’s North Korea list each year.', note: 'By the date each name was added. Russia and China have blocked new listings since 2018.' },
+    ko: { title: '유엔 제재 명단 신규 지정', sub: '해마다 유엔 안보리 대북 제재 명단에 오른 개인과 기관.', note: '각 이름이 추가된 날짜 기준. 2018년 이후 러시아와 중국이 신규 지정을 막고 있다.' },
+    ja: { title: '国連制裁リストへの新規指定', sub: '毎年、国連安保理の北朝鮮制裁リストに加えられた個人と団体。', note: '各名前が加えられた日付で集計。2018年以降、ロシアと中国が新たな指定を阻んでいる。' },
+    zh: { title: '联合国制裁名单新增名称', sub: '每年新增到联合国安理会朝鲜制裁名单上的个人和机构。', note: '按每个名称被列入的日期统计。自2018年以来，俄罗斯和中国一直阻止新增列名。' },
   },
 };
+
+/** Escapes a string for use inside a RegExp. */
+const reEscape = (x: string) => x.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
+/**
+ * The series note in the reader's language: matches the built English note against the English template in
+ * SERIES_TEXT, then fills the translation with the same values. Undefined when there is no translation or the
+ * built note no longer matches the template (the page then shows the English note).
+ */
+export function seriesNote(id: string, lang: Lang, note: string | undefined): string | undefined {
+  const text = SERIES_TEXT[id];
+  const tpl = text?.en.note;
+  const tr = text?.[lang].note;
+  if (!note || !tpl || !tr) return undefined;
+  const names: string[] = [];
+  const re = new RegExp(
+    '^' + tpl.split(/(\{\w+\})/).map((part) => (/^\{\w+\}$/.test(part) ? (names.push(part.slice(1, -1)), '(.+?)') : reEscape(part))).join('') + '$',
+  );
+  const m = note.match(re);
+  if (!m) return undefined;
+  return tr.replace(/\{(\w+)\}/g, (all, name: string) => (names.includes(name) ? m[names.indexOf(name) + 1] : all));
+}
 
 /** Labels for the chart frame. */
 export const CHART_UI: Record<Lang, Record<string, string>> = {

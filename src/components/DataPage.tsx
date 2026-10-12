@@ -1,6 +1,6 @@
 /**
  * /data (chart and dataset hub) and /data/<id> (one chart with its table, source and citation), shared by the
- * English, Korean and Japanese routes. Server components; only ChartView runs in the browser.
+ * English, Korean, Japanese and Chinese routes. Server components; only ChartView runs in the browser.
  */
 import { ArrowRight, CalendarClock, Database, Download, RefreshCw } from 'lucide-react';
 import Link from 'next/link';
@@ -221,7 +221,7 @@ export function DataHub({ lang }: { lang: Lang }) {
                     <Latest s={s} lang={lang} />
                   </Link>
                   <div className="series-foot">
-                    <span className="series-src">{s.source.name.replace(/, via Our World in Data$/, '')}</span>
+                    <span className="series-src" lang={lang === 'en' ? undefined : 'en'}>{s.source.name.replace(/, via Our World in Data$/, '')}</span>
                     <a className="chip-btn" href={`${RAW}/${id}.csv`} download>
                       <Download size={13} aria-hidden="true" /> {t.csv}
                     </a>
@@ -295,7 +295,7 @@ export function SeriesPage({ lang, id }: { lang: Lang; id: string }) {
           <dt>{t.latestLabel}</dt>
           <dd>{latestLine(s, lang)}</dd>
           <dt>{t.licenseTitle}</dt>
-          <dd>{s.source.license ?? '—'}</dd>
+          <dd lang={lang === 'en' ? undefined : 'en'}>{s.source.license ?? '—'}</dd>
           <dt>{t.citeTitle}</dt>
           <dd className="cite">{t.cite(title, url, s.source.name, year)}</dd>
         </dl>
