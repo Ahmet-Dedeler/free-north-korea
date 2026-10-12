@@ -19,7 +19,8 @@ export function dayLabel(lang: Lang, date: string) {
 /** "2026-10" as a short month label for the month strip. */
 export function monthLabel(lang: Lang, month: string) {
   const [y, m] = month.split('-').map(Number);
-  if (lang === 'en') return `${MONTHS_EN[m - 1]} ${String(y).slice(2)}`;
+  // "Nov ’24", not "Nov 24", which reads as the 24th of November
+  if (lang === 'en') return `${MONTHS_EN[m - 1]} ’${String(y).slice(2)}`;
   if (lang === 'ko') return `${String(y).slice(2)}.${m}월`;
   return `${String(y).slice(2)}年${m}月`;
 }
