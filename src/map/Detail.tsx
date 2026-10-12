@@ -150,8 +150,10 @@ function CountyDetail({ f, data, lang, onSelect, year, cropStep }: { f: Feature;
         {tx.county} · {provinceName(p.province, lang)}
       </p>
       <h2>{p.name}</h2>
-      <p style={{ margin: '0.2rem 0 0.8rem', fontSize: '0.9rem' }}>
-        <Link href={localize(lang, `/counties/${countySlug(String(p.name), String(p.province))}`)}>{tx.countyDossier}</Link>
+      <p className="d-links">
+        <Link className="primary" href={localize(lang, `/counties/${countySlug(String(p.name), String(p.province))}`)}>
+          {tx.countyDossier}
+        </Link>
       </p>
       <div className="d-stats">
         <div>
@@ -300,11 +302,42 @@ function PortDetail({ f, lang, photo }: { f: Feature; lang: Lang; photo: React.R
       <p className="place-meta">
         {lat.toFixed(4)}°N, {lon.toFixed(4)}°E
       </p>
-      <p>
+      <p className="d-links">
         {/* not SHIPS_PATHS: content/ships.ts imports the whole ships file, too big for the map bundle */}
-        <Link href={`${localize(lang, '/sanctions/ships')}#ports`}>{tx.portLink}</Link>
+        <Link className="primary" href={`${localize(lang, '/sanctions/ships')}#ports`}>
+          {tx.portLink}
+        </Link>
       </p>
       <Sources list={[{ name: 'Powered by Global Fishing Watch', url: 'https://globalfishingwatch.org/' }]} tx={tx} />
+    </>
+  );
+}
+
+/**
+ * HRNK's camp notes carry "Type of prisoners: … Type of Labor: …" run straight into the prose (sometimes after an
+ * intro, sometimes after a stray prisoner-count fragment like "500" from their table). Split those two off into a
+ * small fact list (HRNK's own labels, in English like the note). The labour value ends where one of HRNK's sentence
+ * openers starts; a plain "lowercase then capital" test would cut "Clothing and Shoe factory" in half.
+ */
+const HRNK_NOTE = /^(.*?)\s*(?:(?:to\s+)?[\d,]+\s+)?Type of prisoners:\s*(.+?)\s+Type of Labor:\s*(.+?)(?:\s+(?=(?:This|It|There|Detailed|A|Kyo-hwa-so)\s)(.*))?$/s;
+function HrnkNote({ note, lang }: { note: string; lang?: string }) {
+  const m = HRNK_NOTE.exec(note);
+  if (!m) return <p lang={lang}>{note}</p>;
+  const [, intro, prisoners, labor, rest] = m;
+  return (
+    <>
+      {intro && <p lang={lang}>{intro}</p>}
+      <dl className="d-facts" lang={lang}>
+        <div>
+          <dt>Type of prisoners</dt>
+          <dd>{prisoners}</dd>
+        </div>
+        <div>
+          <dt>Type of labor</dt>
+          <dd>{labor}</dd>
+        </div>
+      </dl>
+      {rest && <p lang={lang}>{rest}</p>}
     </>
   );
 }
@@ -406,7 +439,7 @@ function PointDetail({ layer, f, lang, sat, onCloseUp }: { layer: LayerId; f: Fe
           {layer === 'markets' && p.km_to_border ? ` · ${tx.kmFromBorder(n(p.km_to_border))}` : ''}
         </p>
       )}
-      {note && <p lang={copy?.note ? undefined : en}>{note}</p>}
+      {note && (copy?.note ? <p>{note}</p> : <HrnkNote note={String(note)} lang={en} />)}
       {layerDate && isStale(layerDate) && (
         <p className="d-asof">
           <AsOf date={layerDate.slice(0, 7)} lang={lang} />
@@ -417,19 +450,20 @@ function PointDetail({ layer, f, lang, sat, onCloseUp }: { layer: LayerId; f: Fe
         {lat.toFixed(4)}°N, {lon.toFixed(4)}°E{p.approx ? tx.approx : ''}
         {layer === 'detention' && p.confirmed === false ? tx.unconfirmed : ''}
       </p>
-      {layer === 'camps' && (
-        <p>
-          <Link href={localize(lang, `/camps/${campSlug(String(p.id))}`)}>{tx.campDossier}</Link>
-        </p>
-      )}
-      {(layer === 'sites' || layer === 'missile-bases') && (
-        <p>
-          <Link href={localize(lang, `/places/${baseSlug(String(p.id))}`)}>{tx.siteDossier}</Link>
-        </p>
-      )}
-      {p.more && (
-        <p>
-          <Link href={localize(lang, p.more)}>{tx.readMore}</Link>
+      {(layer === 'camps' || layer === 'sites' || layer === 'missile-bases' || p.more) && (
+        // the dossier is the main way on, so it gets the filled button; "Read more" sits beside it
+        <p className="d-links">
+          {layer === 'camps' && (
+            <Link className="primary" href={localize(lang, `/camps/${campSlug(String(p.id))}`)}>
+              {tx.campDossier}
+            </Link>
+          )}
+          {(layer === 'sites' || layer === 'missile-bases') && (
+            <Link className="primary" href={localize(lang, `/places/${baseSlug(String(p.id))}`)}>
+              {tx.siteDossier}
+            </Link>
+          )}
+          {p.more && <Link href={localize(lang, p.more)}>{tx.readMore}</Link>}
         </p>
       )}
       <Sources list={[...sources, ...extra]} tx={tx} />

@@ -16,16 +16,21 @@ export interface LayerDef {
   size: [number, number];
 }
 
+/**
+ * Point colours are one family (Tailwind's 600/700 steps), one hue per layer and no two alike: human rights in the
+ * warm hues, military in violet and blue, economy in greens. The escape route is the brand blue (freedom). The county
+ * shading underneath stays neutral (SHADE_RAMP) so no dot ever sits on a fill of its own colour.
+ */
 export const LAYERS: LayerDef[] = [
   { id: 'camps', group: 'Human rights', color: '#dc2626', on: true, size: [6, 11] },
-  { id: 'detention', group: 'Human rights', color: '#f97316', on: true, size: [3.5, 7] },
-  { id: 'china-detention', group: 'Human rights', color: '#be185d', on: false, size: [5, 8] },
+  { id: 'detention', group: 'Human rights', color: '#ea580c', on: true, size: [3.5, 7] },
+  { id: 'china-detention', group: 'Human rights', color: '#db2777', on: false, size: [5, 8] },
   { id: 'missile-bases', group: 'Military', color: '#7c3aed', on: true, size: [6, 10] },
-  { id: 'sites', group: 'Military', color: '#0ea5e9', on: true, size: [5, 9] },
+  { id: 'sites', group: 'Military', color: '#0284c7', on: true, size: [5, 9] },
   { id: 'markets', group: 'Economy', color: '#16a34a', on: false, size: [2.5, 9] },
   // North Korean anchorages where Global Fishing Watch saw ships stop (scripts/build-ships.ts), sized by visits
   { id: 'ports', group: 'Economy', color: '#0f766e', on: true, size: [5, 9] },
-  { id: 'escape-route', group: 'Escape', color: '#22c55e', on: false, size: [4, 6] },
+  { id: 'escape-route', group: 'Escape', color: '#2563eb', on: false, size: [4, 6] },
 ];
 
 export type Shade = 'none' | 'incidents' | 'density' | 'population' | 'markets' | 'detention';
@@ -39,8 +44,16 @@ export const SHADES: { id: Shade; stops?: number[] }[] = [
   { id: 'none' },
 ];
 
-/** First swatch is only for zero, so an empty county stays blank. Any positive value takes a colour. */
-export const SHADE_COLORS = ['rgba(0,0,0,0)', '#fdd49e', '#fc8d59', '#e34a33', '#b30000', '#7f0000'];
+/**
+ * County shading: one neutral slate ramp, darker = more on the light map and lighter = more on the dark one. The
+ * points carry the colour; the shading is context under them, like Google Maps' grey land under coloured places.
+ * (It used to be yellow to dark red, the same hues as the camp and detention dots, which then vanished into it.)
+ * First swatch is only for zero, so an empty county stays blank. Any positive value takes a colour.
+ */
+export const SHADE_RAMP: Record<'light' | 'dark', string[]> = {
+  light: ['rgba(0,0,0,0)', '#e2e8f0', '#cbd5e1', '#94a3b8', '#64748b', '#334155'],
+  dark: ['rgba(0,0,0,0)', '#1e293b', '#334155', '#475569', '#64748b', '#94a3b8'],
+};
 
 export const MANIFEST = manifest as {
   built: string;

@@ -3,10 +3,10 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import dynamic from 'next/dynamic';
 import Link from 'next/link';
-import { Anchor, CircleOff, Fence, Grid3x3, Lock, LockKeyhole, Radiation, Rocket, Route, Search, Store, TriangleAlert, Users, type LucideIcon } from 'lucide-react';
+import { Clock, Search } from 'lucide-react';
 import { useTheme } from '../theme';
 import { formatAsOf, isStale } from '@/components/AsOf';
-import { CROP_STOPS, LAYERS, LIGHTS_STOPS, MANIFEST, SHADES, SHADE_COLORS, type LayerId, type Overlay, type Shade } from './config';
+import { CROP_STOPS, LAYERS, LIGHTS_STOPS, MANIFEST, SHADES, SHADE_RAMP, type LayerId, type Overlay, type Shade } from './config';
 import Detail from './Detail';
 import type { Lang } from '@/site/seo';
 import { localize } from '@/content/chrome';
@@ -20,19 +20,6 @@ import Latest from './Latest';
 import type { MapLatest } from '@/content/mapLatest';
 
 const IntelMap = dynamic(() => import('./IntelMap'), { ssr: false, loading: () => <div className="map" /> });
-
-/** One icon per layer and per county shading, so the sidebar reads at a glance, like Google Maps' category chips. */
-const LAYER_ICON: Record<LayerId, LucideIcon> = {
-  camps: Fence,
-  detention: LockKeyhole,
-  'china-detention': Lock,
-  'missile-bases': Rocket,
-  sites: Radiation,
-  markets: Store,
-  ports: Anchor,
-  'escape-route': Route,
-};
-const SHADE_ICON: Record<Shade, LucideIcon> = { incidents: TriangleAlert, density: Grid3x3, population: Users, detention: LockKeyhole, markets: Store, none: CircleOff };
 
 /** URL hash: #county=KP0101 or #camps=camp-3 (layer=id). Read after hydration. */
 function readHash(): Selection | null {
@@ -252,7 +239,6 @@ export default function MapExplorer({ lang = 'en', sat = {}, latest }: { lang?: 
             <div className="lchips">
               {LAYERS.map((l) => {
                 const m = MANIFEST.layers[l.id];
-                const Icon = LAYER_ICON[l.id];
                 const updated = m?.sources[0]?.updated;
                 const stale = !!updated && isStale(updated);
                 const tip = [
@@ -273,13 +259,21 @@ export default function MapExplorer({ lang = 'en', sat = {}, latest }: { lang?: 
                     title={tip}
                     onClick={() => toggle(l.id)}
                   >
-                    <span className="lchip-icon" aria-hidden="true">
-                      <Icon size={14} />
-                    </span>
+                    {/* the chip is the legend: the same marker the map draws (a dashed line for the route) */}
+                    <span className={`lchip-mark ${l.id === 'escape-route' ? 'line' : ''}`} aria-hidden="true" />
                     <span className="lchip-name">{tx.layers[l.id].short}</span>
                     {m && (
                       // an outdated layer shows the year its data is from instead of the count (the count is in the tooltip)
-                      <small className={stale ? 'stale' : ''}>{stale && updated ? updated.slice(0, 4) : m.count}</small>
+                      <small className={stale ? 'stale' : ''}>
+                        {stale && updated ? (
+                          <>
+                            <Clock size={10} aria-hidden="true" />
+                            {updated.slice(0, 4)}
+                          </>
+                        ) : (
+                          m.count
+                        )}
+                      </small>
                     )}
                   </button>
                 );
@@ -303,10 +297,8 @@ export default function MapExplorer({ lang = 'en', sat = {}, latest }: { lang?: 
             <h3>{tx.shadeBy}</h3>
             <div className="chips">
               {SHADES.map((s) => {
-                const Icon = SHADE_ICON[s.id];
                 return (
                   <button key={s.id} type="button" className={`chip ${shade === s.id ? 'on' : ''}`} aria-pressed={shade === s.id} title={tx.shades[s.id].hint} onClick={() => setShade(s.id)}>
-                    <Icon size={13} aria-hidden="true" />
                     {tx.shades[s.id].label}
                   </button>
                 );
@@ -316,7 +308,8 @@ export default function MapExplorer({ lang = 'en', sat = {}, latest }: { lang?: 
               <div className="ramp" title={tx.shades[shade].hint}>
                 {shadeDef.stops.map((s, i) => (
                   <span key={s}>
-                    <i style={{ background: SHADE_COLORS[i] }} />
+                    {/* both themes' swatches, picked in CSS by data-theme: the server doesn't know the reader's theme */}
+                    <i style={{ '--l': SHADE_RAMP.light[i], '--d': SHADE_RAMP.dark[i] } as React.CSSProperties} />
                     {i === 1 && s > 1 ? '>0' : s >= 1000 ? `${s / 1000}k` : s}
                     {i === shadeDef.stops!.length - 1 ? '+' : ''}
                   </span>

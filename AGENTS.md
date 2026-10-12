@@ -32,7 +32,10 @@ before adding any page or article.
   the event wire within 120 days and the newest Camp Watch images as thumbnails, built on the server by
   `content/mapLatest.ts`; quakes fly the map to a pulsing marker, launches link to `/missiles/list`). The map should feel like Google Maps, not a GIS tool: the sidebar is
   for places and county shading; whole-country measurements (night lights, radar, crops) go in the Layers menu, and
-  depth goes in the click panel rather than in more toggles. The sidebar shows, rather than tells: layers are icon chips
+  depth goes in the click panel rather than in more toggles. Colour rule: points carry the colour (one hue per layer,
+  `LAYERS` in `config.ts`); county shading is a neutral slate ramp per theme (`SHADE_RAMP`), never the hues of the dots;
+  chrome (chips, Latest, panels) stays neutral, with the accent only for the chosen option and the main action. The
+  sidebar shows, rather than tells: layers are chips whose mark is the map's own marker (the chip is the legend)
   with a count (an outdated layer shows its year), sources sit in the tooltip and on `/sources`. Every word of UI is in `content/mapI18n.ts`; the GeoJSON's own text
   (point names, NKDB types, notes) stays English with `lang="en"`, and each point links to its translated dossier.
   Deep links: `/map#county=KP0205`, `/map#camps=camp-3`, `&b=sat` for the satellite basemap (same hashes under

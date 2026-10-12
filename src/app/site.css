@@ -1339,7 +1339,7 @@ a.card:hover {
   align-items: center;
   gap: 8px;
   min-width: 0;
-  padding: 5px 10px 5px 5px;
+  padding: 7px 11px 7px 9px;
   border: 1px solid var(--line);
   border-radius: 999px;
   background: none;
@@ -1352,15 +1352,24 @@ a.card:hover {
 .lchip:hover {
   border-color: var(--line-strong);
 }
-.lchip-icon {
+.lchip-mark {
   flex: none;
-  display: grid;
-  place-items: center;
-  width: 24px;
-  height: 24px;
+  width: 12px;
+  height: 12px;
+  margin: 0 2px 0 4px;
   border-radius: 50%;
-  background: var(--hover);
-  color: var(--ink-3);
+  background: var(--ink-3);
+  box-shadow: 0 0 0 2px var(--panel), 0 0 0 3px var(--line-strong);
+  opacity: 0.45;
+  transition: background 0.12s, opacity 0.12s;
+}
+.lchip-mark.line {
+  width: 16px;
+  height: 3px;
+  margin: 0 0 0 2px;
+  border-radius: 2px;
+  background: repeating-linear-gradient(90deg, var(--ink-3) 0 5px, transparent 5px 8px);
+  box-shadow: none;
 }
 .lchip-name {
   flex: 1;
@@ -1376,23 +1385,38 @@ a.card:hover {
   font-weight: 500;
   font-variant-numeric: tabular-nums;
 }
+/* an outdated layer shows its year with a clock, in the same grey as a count, so it never reads as one */
 .lchip small.stale {
-  color: #b45309;
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
 }
-:root[data-theme='dark'] .lchip small.stale {
-  color: #fbbf24;
-}
+/* on: white chip, firm border, the layer's colour only in the icon disc (Google Maps' category chips). A tinted
+   background per layer turned the sidebar into a rainbow. */
 .lchip.on {
-  border-color: color-mix(in srgb, var(--c) 45%, var(--line));
-  background: color-mix(in srgb, var(--c) 9%, transparent);
+  border-color: var(--line-strong);
+  background: var(--panel);
   color: var(--ink);
+  box-shadow: 0 1px 2px rgb(15 23 42 / 0.06);
 }
-.lchip.on .lchip-icon {
+.lchip.on .lchip-mark {
   background: var(--c);
-  color: #fff;
+  box-shadow: 0 0 0 2px var(--panel), 0 0 0 3px color-mix(in srgb, var(--c) 35%, transparent);
+  opacity: 1;
+}
+.lchip.on .lchip-mark.line {
+  background: repeating-linear-gradient(90deg, var(--c) 0 5px, transparent 5px 8px);
+  box-shadow: none;
 }
 .chip svg {
   flex: none;
+}
+/* single-choice chips (county shading): the chosen one in the accent, like a selected filter */
+.layer-group .chip.on {
+  border-color: var(--sel-ring);
+  background: var(--sel-bg);
+  color: var(--accent);
+  font-weight: 600;
 }
 .latest .lt-text b {
   line-height: 1.3;
@@ -1446,19 +1470,10 @@ a.card:hover {
   height: 30px;
   border-radius: 8px;
 }
-.lt-icon.launch {
-  background: rgb(220 38 38 / 0.12);
-  color: #dc2626;
-}
-.lt-icon.seismic {
-  background: rgb(217 119 6 / 0.14);
-  color: #b45309;
-}
-:root[data-theme='dark'] .lt-icon.launch {
-  color: #f87171;
-}
-:root[data-theme='dark'] .lt-icon.seismic {
-  color: #fbbf24;
+/* neutral tiles: the event's newness is the one signal (the red dot), not a colour per kind */
+.lt-icon {
+  background: var(--hover);
+  color: var(--ink-2);
 }
 .lt-fresh {
   position: absolute;
@@ -1610,6 +1625,10 @@ a.card:hover {
 }
 .ramp i {
   height: 8px;
+  background: var(--l);
+}
+:root[data-theme='dark'] .ramp i {
+  background: var(--d);
 }
 .layer-row {
   display: flex;
@@ -2391,7 +2410,8 @@ a.card:hover {
 }
 .tp-ticks i.on {
   height: 20px;
-  background: #e0a526;
+  /* neutral like the play button: the overlay's own colours are in its key, not in the scrubber */
+  background: var(--ink);
 }
 .tp-ends {
   display: flex;
@@ -2456,6 +2476,15 @@ a.card:hover {
   color: var(--ink-3);
 }
 
+@media (min-width: 801px) {
+  .stage:has(.detail) .maplibregl-ctrl-bottom-right {
+    right: 392px;
+  }
+  .stage:has(.detail) .tp {
+    left: calc((100% - 392px) / 2 + 40px);
+    width: min(520px, calc(100% - 392px - 200px));
+  }
+}
 @media (max-width: 800px) {
   .pp-img,
   .pp-esri {
@@ -2619,6 +2648,51 @@ ul.bars b {
   color: var(--ink-3);
   font-size: 11.5px;
   white-space: nowrap;
+}
+.d-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 14px 0 4px;
+}
+.d-links a {
+  display: inline-flex;
+  align-items: center;
+  padding: 7px 14px;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  color: var(--ink);
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.12s;
+}
+.d-links a:hover {
+  background: var(--hover);
+}
+.d-links a.primary {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: var(--ink-inverse);
+}
+.d-links a.primary:hover {
+  background: color-mix(in srgb, var(--accent) 88%, var(--ink));
+}
+.d-facts {
+  display: grid;
+  gap: 6px;
+  margin: 10px 0;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: var(--hover);
+  font-size: 13px;
+}
+.d-facts dt {
+  color: var(--ink-3);
+  font-size: 11.5px;
+}
+.d-facts dd {
+  margin: 0;
 }
 .d-sources {
   margin-top: 18px;

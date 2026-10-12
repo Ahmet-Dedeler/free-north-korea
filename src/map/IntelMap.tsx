@@ -9,7 +9,7 @@ import type { Lang } from '@/site/seo';
 import { provinceName } from '@/content/countiesI18n';
 import { COUNTRY_NAMES, LABEL_FIELDS, MAP_TEXT } from '@/content/mapI18n';
 import { MAPLIBRE_WORKER_URL, STYLE_URL } from '../map/maplibre';
-import { CROP_STOPS, LAYERS, LIGHTS_STOPS, OVERLAYS, RADAR_COLOR, SHADES, SHADE_COLORS, type LayerId, type Overlay, type Shade } from './config';
+import { CROP_STOPS, LAYERS, LIGHTS_STOPS, OVERLAYS, RADAR_COLOR, SHADES, SHADE_RAMP, type LayerId, type Overlay, type Shade } from './config';
 import type { FeatureCollection } from 'geojson';
 import type { Basemap, Data, Focus, Selection } from './types';
 
@@ -51,6 +51,7 @@ const SAT_LINE = '#f8fafc';
 const SATELLITE = 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}';
 const SAT_CREDIT = 'Imagery: Esri, Maxar, Earthstar Geographics';
 const POINT_LAYERS = LAYERS.filter((l) => l.id !== 'escape-route');
+const ROUTE_COLOR = LAYERS.find((l) => l.id === 'escape-route')!.color;
 
 /**
  * Step expression colouring counties by one numeric property.
@@ -58,7 +59,8 @@ const POINT_LAYERS = LAYERS.filter((l) => l.id !== 'escape-route');
  * has to be the first data colour. Exact zero stays transparent on its own, or a county with
  * a few incidents (or a low density) would look empty.
  */
-function shadeExpr(shade: Shade): ExpressionSpecification | string {
+function shadeExpr(shade: Shade, theme: Theme): ExpressionSpecification | string {
+  const SHADE_COLORS = SHADE_RAMP[theme];
   const def = SHADES.find((s) => s.id === shade);
   if (!def?.stops) return 'rgba(0,0,0,0)';
   const prop: ExpressionSpecification = ['coalesce', ['get', shade], 0];
@@ -189,7 +191,7 @@ export default function IntelMap({ data, visible, shade, base, overlays, year, c
           type: 'fill',
           source: 'counties',
           paint: {
-            'fill-color': shadeExpr(shade) as ExpressionSpecification,
+            'fill-color': shadeExpr(shade, theme) as ExpressionSpecification,
             'fill-opacity': fillOpacity(shade, base, overlays),
           },
         },
@@ -252,7 +254,7 @@ export default function IntelMap({ data, visible, shade, base, overlays, year, c
         source: 'escape-route',
         filter: ['==', ['geometry-type'], 'LineString'],
         layout: { visibility: routeVis, 'line-cap': 'round' },
-        paint: { 'line-color': '#22c55e', 'line-width': 3, 'line-dasharray': [2, 1.5], 'line-opacity': ['case', ['==', ['get', 'kind'], 'air'], 0.45, 0.95] },
+        paint: { 'line-color': ROUTE_COLOR, 'line-width': 3, 'line-dasharray': [2, 1.5], 'line-opacity': ['case', ['==', ['get', 'kind'], 'air'], 0.45, 0.95] },
       });
       map.addLayer({
         id: 'escape-route-label',
@@ -260,7 +262,7 @@ export default function IntelMap({ data, visible, shade, base, overlays, year, c
         source: 'escape-route',
         filter: ['==', ['geometry-type'], 'Point'],
         layout: { visibility: routeVis, 'text-field': ['get', 'name'], 'text-size': 12, 'text-anchor': 'left', 'text-offset': [0.8, 0], 'text-font': ['Noto Sans Regular'] },
-        paint: { 'text-color': '#16a34a', 'text-halo-color': pal.halo, 'text-halo-width': 1.5 },
+        paint: { 'text-color': ROUTE_COLOR, 'text-halo-color': pal.halo, 'text-halo-width': 1.5 },
       });
 
       for (const l of POINT_LAYERS) {
@@ -271,7 +273,8 @@ export default function IntelMap({ data, visible, shade, base, overlays, year, c
           l.id === 'markets'
             ? ['interpolate', ['linear'], ['zoom'], 6, ['+', 1.5, ['/', ['sqrt', ['coalesce', ['get', 'stalls'], 50]], 9]], 11, ['+', 4, ['/', ['sqrt', ['coalesce', ['get', 'stalls'], 50]], 3]]]
             : l.id === 'ports'
-              ? ['interpolate', ['linear'], ['zoom'], 6, ['+', 4, ['/', ['sqrt', ['get', 'visits']], 2.2]], 10, ['+', 7, ['/', ['sqrt', ['get', 'visits']], 1.4]]]
+              ? // capped: Nampo has 20x the visits of the next port and would otherwise cover the coast at country zoom
+                ['interpolate', ['linear'], ['zoom'], 6, ['min', 9, ['+', 4, ['/', ['sqrt', ['get', 'visits']], 4]]], 10, ['min', 15, ['+', 7, ['/', ['sqrt', ['get', 'visits']], 2.5]]]]
               : ['interpolate', ['linear'], ['zoom'], 6, ['case', ['boolean', ['feature-state', 'selected'], false], l.size[0] + 4, l.size[0]], 10, ['case', ['boolean', ['feature-state', 'selected'], false], l.size[1] + 4, l.size[1]]];
         map.addLayer({
           id: `${l.id}-dot`,
@@ -281,7 +284,7 @@ export default function IntelMap({ data, visible, shade, base, overlays, year, c
           paint: {
             'circle-radius': radius,
             'circle-color': l.color,
-            'circle-opacity': l.id === 'markets' || l.id === 'ports' ? 0.8 : 1,
+            'circle-opacity': l.id === 'markets' ? 0.85 : 1,
             'circle-stroke-width': ['case', ['boolean', ['feature-state', 'selected'], false], 3, 1.2],
             'circle-stroke-color': ['case', ['boolean', ['feature-state', 'selected'], false], pal.ring, pal.halo],
           },
@@ -291,8 +294,18 @@ export default function IntelMap({ data, visible, shade, base, overlays, year, c
             id: `${l.id}-label`,
             type: 'symbol',
             source: l.id,
-            minzoom: l.id === 'camps' || l.id === 'ports' ? 6.2 : 7,
-            layout: { visibility: vis, 'text-field': ['get', 'name'], 'text-size': 11.5, 'text-offset': [0, 1.1], 'text-anchor': 'top', 'text-optional': true, 'text-font': ['Noto Sans Regular'], 'text-max-width': 10 },
+            // names only once there's room for them: at country zoom they pile onto each other and the dots
+            minzoom: l.id === 'camps' ? 7 : 7.6,
+            layout: {
+              visibility: vis,
+              'text-field': ['get', 'name'],
+              'text-size': 11.5,
+              'text-variable-anchor': ['top', 'bottom', 'right', 'left'],
+              'text-radial-offset': 0.95,
+              'text-justify': 'auto',
+              'text-font': ['Noto Sans Regular'],
+              'text-max-width': 10,
+            },
             paint: { 'text-color': pal.label, 'text-halo-color': pal.halo, 'text-halo-width': 1.5 },
           });
         }
@@ -374,14 +387,14 @@ export default function IntelMap({ data, visible, shade, base, overlays, year, c
   useEffect(() => {
     const map = mapRef.current;
     if (!map?.getLayer('county-fill')) return;
-    map.setPaintProperty('county-fill', 'fill-color', shadeExpr(shade) as ExpressionSpecification);
+    map.setPaintProperty('county-fill', 'fill-color', shadeExpr(shade, theme) as ExpressionSpecification);
     map.setPaintProperty('county-fill', 'fill-opacity', fillOpacity(shade, base, overlays));
     map.setPaintProperty('county-line', 'line-color', countyLine(base, PAL[theme]));
     map.setPaintProperty('province-line', 'line-color', base === 'satellite' ? SAT_LINE : PAL[theme].line);
     map.setLayoutProperty('satellite', 'visibility', base === 'satellite' ? 'visible' : 'none');
     for (const o of OVERLAYS) if (map.getLayer(o.id)) map.setLayoutProperty(o.id, 'visibility', overlays.has(o.id) ? 'visible' : 'none');
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [shade, base, overlays]);
+  }, [shade, base, overlays, theme]);
 
   // --- year of time-axis overlays ---
   useEffect(() => {
