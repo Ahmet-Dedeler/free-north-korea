@@ -620,7 +620,8 @@ const portsGeo = {
       near: p.near,
       visits: p.visits,
       vessels: p.vessels,
-      foreign: Object.entries(p.flags).filter(([f]) => f !== 'PRK').reduce((n, [, v]) => n + v, 0),
+      // foreign = a flag other than North Korea's; ships that broadcast no flag ("unknown") are neither
+      foreign: Object.entries(p.flags).filter(([f]) => f !== 'PRK' && f !== 'unknown').reduce((n, [, v]) => n + v, 0),
       flags: JSON.stringify(p.flags),
     },
     geometry: { type: 'Point', coordinates: [p.lon, p.lat] },
