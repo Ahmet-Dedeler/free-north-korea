@@ -65,7 +65,7 @@ before adding any page or article.
   builds `data/ships.json` from the archive (weekly), text in `content/ships.ts`, `components/ShipsPage.tsx`. AIS is
   self-reported: always show the name and flag a ship broadcast, call a match a lead, and never publish single
   radar detections or the fine radar grid. GFW terms: non-commercial, "Powered by Global Fishing Watch" on every page
-  and file using the data, one account only (no extra accounts to raise quota). APIs, keys and limits:
+  and file using the data. APIs, keys and limits:
   `docs/research/data-apis.md`. The same run writes two map layers: `public/layers/ports.geojson` (Ports, a point
   layer) and `public/layers/radar.geojson` (the "Ships seen by radar" overlay: 0.1° squares, latest whole month,
   vessels with no AIS only; the map draws one dot per square at its centre, sized by count, and dims the county

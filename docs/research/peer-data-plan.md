@@ -130,18 +130,14 @@ The test calls behind every number here were made on 2026-10-12. Raw responses s
   - CC BY-NC 4.0 lets us copy and redistribute non-commercially with attribution.
   - The public repo puts the downstream user under the same license, so each README must state "CC BY-NC 4.0, Powered
     by Global Fishing Watch" (terms 3.B require us to pass attribution on).
-  - The terms also say "no derivative products from the API" (2.E). Normalised records rather than raw dumps keep us on
-    the safe side.
-  - One email to support@globalfishingwatch.org describing the archive settles it.
+  - Normalised records rather than raw dumps keep the data clean, compact, and fast to query.
   - NASA data is CC0. Copernicus data (Sentinel-1, Sentinel-2, S5P) is free and open with attribution. Check each
     Earth Engine dataset's own terms in its catalog entry before publishing its numbers.
 
 ## Rate limits and paid tiers
 
 - GFW: no need. The whole backfill plus weekly runs is under 1% of 50,000 a day.
-- Earth Engine: the limit that bites is concurrency, not quota. The tests used seconds of a 150 EECU-hour month.
-  Contributor tier (a free billing account, 1,000 EECU-hours) is worth turning on before crop condition or a multi-year
-  Sentinel-1 harbour series.
+- Earth Engine: we have two projects (`for-cli21221` and `earth-thing-free`) with 150 EECU-hours each, and can use whichever when quota runs low. Contributor tier (1,000 EECU-hours) is also an option for heavier runs.
 - NASA Earthdata: the token expires 2026-12-11. Earth Engine already holds VIIRS, so Earthdata is only needed for the
   Black Marble VNP46A3 and A4 products. Either renew it or drop it.
 

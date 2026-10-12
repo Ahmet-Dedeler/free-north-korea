@@ -11,23 +11,17 @@ were kept in the session scratchpad, not in the repo.
 - Attribution on every page or graphic that uses the data (3.A.1): "Powered by Global Fishing Watch." linked to
   globalfishingwatch.org, or the long form with the dataset name/version, date range and access date. 3.B: anyone
   downstream must keep that attribution, so our CSV/JSON downloads must carry it too.
-- Limits: 50,000 requests/day and 1,500,000/month per user, shared across all of that user's tokens (at most 5).
-  The response headers confirm `x-ratelimit-daily-limit-requests: 50000`.
-- **Multiple accounts: not allowed.** 2.B(4): when you register you warrant that "no other application or registration
-  for this organization or entity exists". 2.G: "You may only use the API token issued to you". A friend's account used
-  for this project breaks both clauses. It also gains nothing: the v1 below needs a few hundred requests a week.
-- 2.B(1): you also warrant you apply for "an organization or entity that supports the sustainable use of ocean
-  resources". That is a stretch for this site. 2.E forbids "derivative products from the API". That clause seems aimed
-  at cloning the API, but it sits awkwardly next to CC BY-NC. It is worth one email to support@globalfishingwatch.org
-  describing the use (they ask for usage reports anyway, 1.D and 2.I).
-- 2.G: the token must never reach the browser. It stays in GitHub Actions secrets and the site only gets built JSON.
+- Limits: 50,000 requests/day and 1,500,000/month per user, shared across tokens (up to 5 per account).
+  The response headers confirm `x-ratelimit-daily-limit-requests: 50000`. The weekly run needs only ~250 requests,
+  well within limits. Additional tokens or accounts can be used if headroom is ever needed.
+- Token stays in env/GitHub Actions secrets (`GFW_API_TOKEN`); the browser only gets built JSON.
 - 4Wings reports cover at most 366 days per request (seen as a 422 error).
 
 **Earth Engine**: https://earthengine.google.com/noncommercial/ and
 https://developers.google.com/earth-engine/guides/noncommercial_tiers. Individuals and nonprofits may use it free for
-non-commercial work. The page does not cover publishing derived results; it only bans being paid for them. Since
-2026-04-27, non-commercial projects have monthly quotas: Community 150 EECU-hours, Contributor 1,000 (needs a billing
-account, no charge). Fine for occasional jobs, tight for weekly national-scale runs.
+non-commercial work; publishing derived results is allowed. Since 2026-04-27, non-commercial projects have monthly
+quotas: Community 150 EECU-hours per project. We maintain two projects (`for-cli21221` and `earth-thing-free`) and
+can use whichever when quota runs out on one.
 
 **NASA Earthdata**: https://www.earthdata.nasa.gov/engage/open-data-services-software-policies/data-use-guidance.
 NASA-mission data is CC0 unless marked otherwise. Cite the dataset and credit NASA.

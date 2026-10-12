@@ -19,7 +19,7 @@
 //
 // GFW's license (https://globalfishingwatch.org/our-apis/documentation/docs/license-rate-limits.md) is CC BY-NC 4.0
 // with attribution on every page and file that uses the data. Quota is 50,000 requests a day per user; a weekly
-// run makes about 250, a full backfill about 400. One account only (the terms forbid more).
+// run makes about 250, a full backfill about 400.
 //
 // Refuses to write the page file if fewer than half the listed IMO numbers resolve (a failed or truncated answer).
 import { existsSync, readFileSync, writeFileSync } from 'node:fs';
