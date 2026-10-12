@@ -3,7 +3,8 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import dynamic from 'next/dynamic';
 import Link from 'next/link';
-import { Anchor, Clock, Fence, Lock, LockKeyhole, Radiation, Rocket, Route, Search, Store, type LucideIcon } from 'lucide-react';
+import { Clock, Search } from 'lucide-react';
+import LayerGlyph from './LayerGlyph';
 import { useTheme } from '../theme';
 import { formatAsOf, isStale } from '@/components/AsOf';
 import { CROP_STOPS, LAYERS, LIGHTS_STOPS, MANIFEST, SHADES, SHADE_RAMP, type LayerId, type Overlay, type Shade } from './config';
@@ -19,17 +20,6 @@ import TimePill from './TimePill';
 import Latest from './Latest';
 import type { MapLatest } from '@/content/mapLatest';
 
-/** One icon per layer, drawn inside the chip's marker disc (Ahmet: show with icons, not text). */
-const LAYER_ICON: Record<LayerId, LucideIcon> = {
-  camps: Fence,
-  detention: LockKeyhole,
-  'china-detention': Lock,
-  'missile-bases': Rocket,
-  sites: Radiation,
-  markets: Store,
-  ports: Anchor,
-  'escape-route': Route,
-};
 
 const IntelMap = dynamic(() => import('./IntelMap'), { ssr: false, loading: () => <div className="map" /> });
 
@@ -251,7 +241,6 @@ export default function MapExplorer({ lang = 'en', sat = {}, latest }: { lang?: 
             <div className="lchips">
               {LAYERS.map((l) => {
                 const m = MANIFEST.layers[l.id];
-                const Icon = LAYER_ICON[l.id];
                 const updated = m?.sources[0]?.updated;
                 const stale = !!updated && isStale(updated);
                 const tip = [
@@ -272,10 +261,9 @@ export default function MapExplorer({ lang = 'en', sat = {}, latest }: { lang?: 
                     title={tip}
                     onClick={() => toggle(l.id)}
                   >
-                    {/* the chip is the legend: the same marker the map draws (a dashed line for the route) */}
-                    {/* the map's own marker colour, with an icon for what it is, so the chip is a legend and readable at a glance */}
+                    {/* the map's own marker colour with our glyph for what it is: the chip is the legend and reads at a glance */}
                     <span className="lchip-mark" aria-hidden="true">
-                      <Icon size={12} strokeWidth={2.4} />
+                      <LayerGlyph id={l.id} />
                     </span>
                     <span className="lchip-name">{tx.layers[l.id].short}</span>
                     {m && (

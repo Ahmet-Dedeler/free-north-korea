@@ -35,7 +35,7 @@ before adding any page or article.
   depth goes in the click panel rather than in more toggles. Colour rule: points carry the colour (one hue per layer,
   `LAYERS` in `config.ts`); county shading is a neutral slate ramp per theme (`SHADE_RAMP`), never the hues of the dots;
   chrome (chips, Latest, panels) stays neutral, with the accent only for the chosen option and the main action. The
-  sidebar shows, rather than tells: layers are chips whose mark is the map's own marker with the layer's icon inside (`LAYER_ICON` in `Explorer.tsx`; the
+  sidebar shows, rather than tells: layers are chips whose mark is the map's own marker with the layer's glyph inside (`map/LayerGlyph.tsx`: our own solid marks on one 24px grid, not a stock icon set; the
   chip is the legend)
   with a count (an outdated layer shows its year), sources sit in the tooltip and on `/sources`. Every word of UI is in `content/mapI18n.ts`; the GeoJSON's own text
   (point names, NKDB types, notes) stays English with `lang="en"`, and each point links to its translated dossier.
@@ -126,7 +126,7 @@ before adding any page or article.
 - Content pages are visual, not text walls. Reuse the building blocks before writing paragraphs:
   `components/Visual.tsx` (StatTile, icon chips, SourceCards), `AsOf` (date a number is from), `SatView` (Esri satellite
   tiles, no map lib), `Locator` (server SVG of NK from `site/geo.ts`), `HoverLinks` (OrgLink/PlaceLink hover previews,
-  like PersonLink), `ArticleBlocks` (in-article visuals), `CampCard`/`PlaceCard`. Icons come from `lucide-react`, brand
+  like PersonLink), `ArticleBlocks` (in-article visuals), `CampCard`/`PlaceCard`. Icons come from `lucide-react` (the map's layer marks are our own, `map/LayerGlyph.tsx`), brand
   marks from `simple-icons`. Their CSS lives in `src/app/visual.css`. Images go through `src/content/media.ts` (lookups
   into media.json) and are downloaded by `scripts/fetch-media.ts`, never hotlinked (satellite tiles are the exception).
 - `src/components/SiteChrome.tsx`: top bar + footer. `/map` (in every language) and `/missiles` are full-screen "app" pages (no footer).
