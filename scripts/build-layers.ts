@@ -277,6 +277,9 @@ const manifest = {
     sites: { count: siteFeatures.length, sources: [{ name: 'Curated, Wikipedia coordinates', url: 'https://github.com/Ahmet-Dedeler/free-north-korea/blob/main/src/content/places.ts', updated: null }] },
   },
 };
+// Layers other scripts own (ports and radar: scripts/build-ships.ts) keep their entries.
+const previous = JSON.parse(readFileSync('src/content/layers.json', 'utf8'));
+for (const [id, entry] of Object.entries(previous.layers ?? {})) if (!(id in manifest.layers)) (manifest.layers as Any)[id] = entry;
 writeFileSync('src/content/layers.json', JSON.stringify(manifest, null, 1) + '\n');
 console.log(
   `counties ${counties.length} (pop ${manifest.totals.population2008.toLocaleString()}), camps ${campFeatures.length}, detention ${detentionFeatures.length}, ` +

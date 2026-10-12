@@ -9,7 +9,7 @@ import type { Lang } from '@/site/seo';
 import { provinceName } from '@/content/countiesI18n';
 import { COUNTRY_NAMES, LABEL_FIELDS, MAP_TEXT } from '@/content/mapI18n';
 import { MAPLIBRE_WORKER_URL, STYLE_URL } from '../map/maplibre';
-import { LAYERS, NIGHT_LIGHTS, SHADES, SHADE_COLORS, type LayerId, type Overlay, type Shade } from './config';
+import { LAYERS, NIGHT_LIGHTS, OVERLAYS, RADAR_STOPS, SHADES, SHADE_COLORS, type LayerId, type Overlay, type Shade } from './config';
 import type { Basemap, Data, Selection } from './types';
 
 maplibregl.setWorkerUrl(MAPLIBRE_WORKER_URL);
@@ -167,6 +167,13 @@ export default function IntelMap({ data, visible, shade, base, overlays, selecte
       // labels and points, so you can still hover and click counties through them.
       map.addSource('lights', { type: 'raster', tiles: [NIGHT_LIGHTS], tileSize: 256, maxzoom: 8, attribution: 'NASA Black Marble' });
       map.addLayer({ id: 'lights', type: 'raster', source: 'lights', paint: { 'raster-opacity': 0.95 }, layout: { visibility: overlays.has('lights') ? 'visible' : 'none' } }, 'county-line');
+      // Radar: 0.1° squares of vessels that sent no AIS (public/layers/radar.geojson, scripts/build-ships.ts)
+      map.addSource('radar', { type: 'geojson', data: data.radar, attribution: 'Global Fishing Watch' });
+      const radarColor = ['step', ['get', 'dark'], RADAR_STOPS[0][1], ...RADAR_STOPS.slice(1).flat()] as unknown as ExpressionSpecification;
+      map.addLayer(
+        { id: 'radar', type: 'fill', source: 'radar', paint: { 'fill-color': radarColor, 'fill-opacity': 0.72, 'fill-outline-color': 'rgba(0,0,0,0)' }, layout: { visibility: overlays.has('radar') ? 'visible' : 'none' } },
+        'county-line',
+      );
 
       map.addSource('escape-route', { type: 'geojson', data: data['escape-route'] });
       const routeVis = visible.has('escape-route') ? 'visible' : 'none';
@@ -190,11 +197,13 @@ export default function IntelMap({ data, visible, shade, base, overlays, selecte
       for (const l of POINT_LAYERS) {
         map.addSource(l.id, { type: 'geojson', data: data[l.id], promoteId: 'id' });
         const vis = visible.has(l.id) ? 'visible' : 'none';
-        // markets scale with stall count; everything else with zoom
+        // markets scale with stall count, ports with visits; everything else with zoom
         const radius: ExpressionSpecification =
           l.id === 'markets'
             ? ['interpolate', ['linear'], ['zoom'], 6, ['+', 1.5, ['/', ['sqrt', ['coalesce', ['get', 'stalls'], 50]], 9]], 11, ['+', 4, ['/', ['sqrt', ['coalesce', ['get', 'stalls'], 50]], 3]]]
-            : ['interpolate', ['linear'], ['zoom'], 6, ['case', ['boolean', ['feature-state', 'selected'], false], l.size[0] + 4, l.size[0]], 10, ['case', ['boolean', ['feature-state', 'selected'], false], l.size[1] + 4, l.size[1]]];
+            : l.id === 'ports'
+              ? ['interpolate', ['linear'], ['zoom'], 6, ['+', 4, ['/', ['sqrt', ['get', 'visits']], 2.2]], 10, ['+', 7, ['/', ['sqrt', ['get', 'visits']], 1.4]]]
+              : ['interpolate', ['linear'], ['zoom'], 6, ['case', ['boolean', ['feature-state', 'selected'], false], l.size[0] + 4, l.size[0]], 10, ['case', ['boolean', ['feature-state', 'selected'], false], l.size[1] + 4, l.size[1]]];
         map.addLayer({
           id: `${l.id}-dot`,
           type: 'circle',
@@ -203,17 +212,17 @@ export default function IntelMap({ data, visible, shade, base, overlays, selecte
           paint: {
             'circle-radius': radius,
             'circle-color': l.color,
-            'circle-opacity': l.id === 'markets' ? 0.75 : 1,
+            'circle-opacity': l.id === 'markets' || l.id === 'ports' ? 0.8 : 1,
             'circle-stroke-width': ['case', ['boolean', ['feature-state', 'selected'], false], 3, 1.2],
             'circle-stroke-color': ['case', ['boolean', ['feature-state', 'selected'], false], pal.ring, pal.halo],
           },
         });
-        if (l.id === 'camps' || l.id === 'missile-bases' || l.id === 'sites') {
+        if (l.id === 'camps' || l.id === 'missile-bases' || l.id === 'sites' || l.id === 'ports') {
           map.addLayer({
             id: `${l.id}-label`,
             type: 'symbol',
             source: l.id,
-            minzoom: l.id === 'camps' ? 6.2 : 7,
+            minzoom: l.id === 'camps' || l.id === 'ports' ? 6.2 : 7,
             layout: { visibility: vis, 'text-field': ['get', 'name'], 'text-size': 11.5, 'text-offset': [0, 1.1], 'text-anchor': 'top', 'text-optional': true, 'text-font': ['Noto Sans Regular'], 'text-max-width': 10 },
             paint: { 'text-color': pal.label, 'text-halo-color': pal.halo, 'text-halo-width': 1.5 },
           });
@@ -244,9 +253,13 @@ export default function IntelMap({ data, visible, shade, base, overlays, selecte
       const { shade } = latest.current;
       const fmt = MAP_TEXT[lang].tips[shade];
       const extra = !hits.length && fmt && p[shade] !== undefined ? ` · ${fmt(Number(p[shade]))}` : '';
+      const esc = (v: unknown) => String(v).replace(/</g, '&lt;');
+      const tx = MAP_TEXT[lang];
+      const sub = !hits.length ? `${provinceName(String(p.province ?? ''), lang)}${extra}` : f.source === 'ports' ? tx.portTip(Number(p.visits), Number(p.foreign)) : '';
+      const name = f.source === 'ports' ? tx.portName(String(p.port), p.near === true || p.near === 'true', String(p.name)) : p.name;
       tip
         .setLngLat(e.lngLat)
-        .setHTML(`<b>${String(p.name).replace(/</g, '&lt;')}</b>${hits.length ? '' : `<span>${provinceName(String(p.province ?? ''), lang)}${extra}</span>`}`)
+        .setHTML(`<b>${esc(name)}</b>${sub ? `<span>${esc(sub)}</span>` : ''}`)
         .addTo(map);
     });
     map.on('mouseout', () => tip.remove());
@@ -283,7 +296,7 @@ export default function IntelMap({ data, visible, shade, base, overlays, selecte
     map.setPaintProperty('county-line', 'line-color', countyLine(base, PAL[theme]));
     map.setPaintProperty('province-line', 'line-color', base === 'satellite' ? SAT_LINE : PAL[theme].line);
     map.setLayoutProperty('satellite', 'visibility', base === 'satellite' ? 'visible' : 'none');
-    map.setLayoutProperty('lights', 'visibility', overlays.has('lights') ? 'visible' : 'none');
+    for (const o of OVERLAYS) if (map.getLayer(o.id)) map.setLayoutProperty(o.id, 'visibility', overlays.has(o.id) ? 'visible' : 'none');
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [shade, base, overlays]);
 

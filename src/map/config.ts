@@ -4,7 +4,7 @@
  */
 import manifest from '../content/layers.json';
 
-export type LayerId = 'camps' | 'detention' | 'china-detention' | 'missile-bases' | 'sites' | 'markets' | 'escape-route';
+export type LayerId = 'camps' | 'detention' | 'china-detention' | 'missile-bases' | 'sites' | 'markets' | 'ports' | 'escape-route';
 
 /** Labels and hints for layers and shadings, in every language, live in src/content/mapI18n.ts. */
 export interface LayerDef {
@@ -23,6 +23,8 @@ export const LAYERS: LayerDef[] = [
   { id: 'missile-bases', group: 'Military', color: '#7c3aed', on: true, size: [6, 10] },
   { id: 'sites', group: 'Military', color: '#0ea5e9', on: true, size: [5, 9] },
   { id: 'markets', group: 'Economy', color: '#16a34a', on: false, size: [2.5, 9] },
+  // North Korean anchorages where Global Fishing Watch saw ships stop (scripts/build-ships.ts), sized by visits
+  { id: 'ports', group: 'Economy', color: '#0f766e', on: true, size: [5, 9] },
   { id: 'escape-route', group: 'Escape', color: '#22c55e', on: false, size: [4, 6] },
 ];
 
@@ -51,11 +53,25 @@ export const MANIFEST = manifest as {
  * They live in the Layers menu by the basemap switch (BasemapSwitch.tsx), not in the sidebar, so the sidebar stays
  * about places. New time series (yearly night lights, radar ship density, crop health) belong here too.
  */
-export type Overlay = 'lights';
+export type Overlay = 'lights' | 'radar';
 
 export const OVERLAYS: { id: Overlay; thumb: string }[] = [
   // the NIGHT_LIGHTS tile over the Korean peninsula (zoom 5, y 12, x 27), saved so the button previews what it turns on
   { id: 'lights', thumb: '/img/map/thumb-lights.png' },
+  // vessels satellite radar saw in North Korea's waters that sent no AIS, per 0.1° square, latest whole month
+  { id: 'radar', thumb: '/img/map/thumb-radar.png' },
+];
+
+/**
+ * Radar overlay colour ramp by vessels without AIS per 0.1° square. One hue, magenta: the county shading already uses
+ * yellow to dark red, and the overlay sits on top of it, so it must not read as more of the same scale.
+ */
+export const RADAR_STOPS: [number, string][] = [
+  [1, '#f5d0fe'],
+  [5, '#e879f9'],
+  [20, '#c026d3'],
+  [50, '#86198f'],
+  [100, '#4a044e'],
 ];
 
 export const NIGHT_LIGHTS = 'https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/VIIRS_Black_Marble/default/2016-01-01/GoogleMapsCompatible_Level8/{z}/{y}/{x}.png';

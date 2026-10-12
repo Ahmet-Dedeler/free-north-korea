@@ -603,3 +603,45 @@ console.log(
 );
 console.log(`North Korean ports in the window: ${data.ports.visits} visits by ${data.ports.vessels} vessels, ${data.ports.foreignVisits} by foreign-flagged ones`);
 console.log(`radar by year: ${data.radarYears.map((y) => `${y.year} ${Math.round(y.detections / Math.max(y.passes, 1))}/day`).join(', ')}`);
+
+// ================= 3. map layers for /map =================
+// public/layers/ports.geojson: one point per North Korean anchorage with visits in the window, and
+// public/layers/radar.geojson: the 0.1° radar grid of the latest whole month, vessels that sent no AIS only. The map
+// reads them like the layers from scripts/build-layers.ts; their counts and dates go into src/content/layers.json.
+const title = (s: string) => s.toLowerCase().replace(/(^|[\s-])\S/g, (c) => c.toUpperCase());
+const portsGeo = {
+  type: 'FeatureCollection',
+  features: data.ports.list.map((p) => ({
+    type: 'Feature',
+    properties: {
+      id: p.portId,
+      name: p.port ? (p.near ? `near ${title(p.port)}` : title(p.port)) : `${p.lat.toFixed(1)}°N ${p.lon.toFixed(1)}°E`,
+      port: p.port ? title(p.port) : '',
+      near: p.near,
+      visits: p.visits,
+      vessels: p.vessels,
+      foreign: Object.entries(p.flags).filter(([f]) => f !== 'PRK').reduce((n, [, v]) => n + v, 0),
+      flags: JSON.stringify(p.flags),
+    },
+    geometry: { type: 'Point', coordinates: [p.lon, p.lat] },
+  })),
+};
+const lastWhole = allMonths.filter((m) => m.month < END.slice(0, 7)).at(-1)?.month ?? '';
+const grid = readArchive<SarCellRec>('gfw/sar-grid').filter((c) => c.month === lastWhole && c.detections > c.matched);
+// GFW gives each 0.1° cell by its south-west corner.
+const sq = (lat: number, lon: number) => [[[lon, lat], [lon + 0.1, lat], [lon + 0.1, lat + 0.1], [lon, lat + 0.1], [lon, lat]].map(([x, y]) => [Math.round(x * 10) / 10, Math.round(y * 10) / 10])];
+const radarGeo = {
+  type: 'FeatureCollection',
+  features: grid.map((c) => ({ type: 'Feature', properties: { dark: c.detections - c.matched, all: c.detections }, geometry: { type: 'Polygon', coordinates: sq(c.lat, c.lon) } })),
+};
+const writeIfChanged = (file: string, text: string) => {
+  if (!existsSync(file) || readFileSync(file, 'utf8') !== text) writeFileSync(file, text);
+};
+writeIfChanged('public/layers/ports.geojson', JSON.stringify(portsGeo));
+writeIfChanged('public/layers/radar.geojson', JSON.stringify(radarGeo));
+const MANIFEST_FILE = 'src/content/layers.json';
+const manifest = JSON.parse(readFileSync(MANIFEST_FILE, 'utf8'));
+manifest.layers.ports = { count: portsGeo.features.length, sources: [{ name: 'Global Fishing Watch port visits', url: 'https://globalfishingwatch.org/', updated: END }] };
+manifest.layers.radar = { count: radarGeo.features.length, sources: [{ name: 'Global Fishing Watch SAR vessel detections', url: 'https://globalfishingwatch.org/', updated: lastWhole }] };
+writeIfChanged(MANIFEST_FILE, JSON.stringify(manifest, null, 1) + '\n');
+console.log(`map: ${portsGeo.features.length} ports, ${radarGeo.features.length} radar cells (${lastWhole})`);

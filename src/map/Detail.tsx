@@ -14,6 +14,7 @@ import { CAMPS_TEXT, campCopy } from '@/content/campsI18n';
 import { PLACE_COPY } from '@/content/placesI18n';
 import type { MapSatSite } from '@/content/satLabels';
 import PlacePhoto from './Photo';
+import { countryName } from '@/site/countries';
 
 type P = Record<string, any>;
 /** Number formatter for the reader's language. */
@@ -157,6 +158,67 @@ function CountyDetail({ f, data, lang, onSelect }: { f: Feature; data: Data; lan
   );
 }
 
+const LOCALE: Record<Lang, string> = { en: 'en-GB', ko: 'ko-KR', ja: 'ja-JP', zh: 'zh-CN' };
+
+/** A North Korean anchorage from Global Fishing Watch port visits (scripts/build-ships.ts). */
+function PortDetail({ f, lang, photo }: { f: Feature; lang: Lang; photo: React.ReactNode }) {
+  const p = f.properties as P;
+  const tx = MAP_TEXT[lang];
+  const n = num(lang);
+  const flags = Object.entries(parse<Record<string, number>>(p.flags, {}));
+  // foreign flags first, biggest first; North Korea's own ships last, labelled as such
+  const rows = [...flags.filter(([k]) => k !== 'PRK').sort((a, b) => b[1] - a[1]), ...flags.filter(([k]) => k === 'PRK')];
+  const max = Math.max(...rows.map((r) => r[1]), 1);
+  const def = LAYERS.find((l) => l.id === 'ports')!;
+  const [lon, lat] = (f.geometry as { coordinates: number[] }).coordinates;
+  const updated = MANIFEST.layers.ports?.sources[0]?.updated;
+  return (
+    <>
+      {photo}
+      <p className="d-kicker" style={{ color: def.color }}>
+        {tx.portKicker}
+      </p>
+      <h2>{tx.portName(String(p.port ?? ''), p.near === true, String(p.name))}</h2>
+      <div className="d-stats">
+        <div>
+          <b>{n(p.visits)}</b>
+          <span>{tx.portVisits}</span>
+        </div>
+        <div>
+          <b>{n(p.vessels)}</b>
+          <span>{tx.portShips}</span>
+        </div>
+      </div>
+      {updated && (
+        <p className="d-asof">
+          <AsOf date={updated} lang={lang} />
+        </p>
+      )}
+      <h3>{tx.portFlags}</h3>
+      <ul className="bars">
+        {rows.map(([k, v]) => (
+          <li key={k}>
+            <span className="bars-label">{k === 'PRK' ? tx.portNkShips : k === 'unknown' ? tx.portNoFlag : countryName(k, LOCALE[lang])}</span>
+            <span className="bars-track">
+              <i style={{ width: `${(v / max) * 100}%`, background: k === 'PRK' ? 'var(--ink-3)' : def.color }} />
+            </span>
+            <b>{v}</b>
+          </li>
+        ))}
+      </ul>
+      <p className="muted">{tx.portNote}</p>
+      <p className="place-meta">
+        {lat.toFixed(4)}°N, {lon.toFixed(4)}°E
+      </p>
+      <p>
+        {/* not SHIPS_PATHS: content/ships.ts imports the whole ships file, too big for the map bundle */}
+        <Link href={`${localize(lang, '/sanctions/ships')}#ports`}>{tx.portLink}</Link>
+      </p>
+      <Sources list={[{ name: 'Powered by Global Fishing Watch', url: 'https://globalfishingwatch.org/' }]} tx={tx} />
+    </>
+  );
+}
+
 /** Camp Watch id of a map point: camps and missile bases use their dossier slug, places their own id. */
 const satId = (layer: LayerId, id: string) => (layer === 'camps' ? campSlug(id) : layer === 'missile-bases' ? baseSlug(id) : id);
 
@@ -191,6 +253,7 @@ function PointDetail({ layer, f, lang, sat }: { layer: LayerId; f: Feature; lang
 
   const sid = satId(layer, String(p.id));
   const photo = layer === 'escape-route' ? null : <PlacePhoto key={`${layer}/${p.id}`} siteId={sid} site={sat[sid]} name={p.name} layer={layer} lat={lat} lon={lon} approx={!!p.approx} lang={lang} />;
+  if (layer === 'ports') return <PortDetail f={f} lang={lang} photo={photo} />;
 
   return (
     <>

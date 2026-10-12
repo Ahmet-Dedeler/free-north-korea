@@ -7,6 +7,13 @@
 import type { Lang } from '@/site/seo';
 import type { LayerDef, LayerId, Overlay, Shade } from '@/map/config';
 import { NUM_LOCALE } from './countiesI18n';
+import manifest from './layers.json';
+
+/** Month the radar overlay shows (latest whole month in public/layers/radar.geojson), in the reader's language. */
+const radarMonth = (locale: string) => {
+  const m = (manifest.layers as Record<string, { sources: { updated: string | null }[] }>).radar?.sources[0]?.updated;
+  return m ? new Date(`${m}-01T00:00:00Z`).toLocaleDateString(locale, { timeZone: 'UTC', year: 'numeric', month: 'short' }) : '';
+};
 
 export const MAP_PATHS = { en: '/map', ko: '/ko/map', ja: '/ja/map', zh: '/zh/map' } as const satisfies Record<Lang, string>;
 
@@ -77,6 +84,18 @@ export interface MapText {
   photoNoClear: string;
   photoAlt: (name: string, date: string) => string;
   photoEsriAlt: (name: string) => string;
+  // ports (point layer from Global Fishing Watch port visits)
+  portKicker: string;
+  /** "Nampo" or "near Chongjin"; `fallback` is the English name the layer carries (coordinates when unnamed). */
+  portName: (port: string, near: boolean, fallback: string) => string;
+  portTip: (visits: number, foreign: number) => string;
+  portVisits: string;
+  portShips: string;
+  portFlags: string;
+  portNkShips: string;
+  portNoFlag: string;
+  portLink: string;
+  portNote: string;
 }
 
 export const MAP_TEXT: Record<Lang, MapText> = {
@@ -97,6 +116,7 @@ export const MAP_TEXT: Record<Lang, MapText> = {
       'missile-bases': { label: 'Missile operating bases', hint: 'Undeclared bases found by CSIS from satellite imagery' },
       sites: { label: 'Nuclear, launch & key sites', hint: 'Yongbyon, Punggye-ri, Sohae, Pyongyang landmarks, border crossings' },
       markets: { label: 'Markets (jangmadang)', hint: 'Official markets, sized by number of stalls (CSIS, 2018)' },
+      ports: { label: 'Ports', hint: 'North Korean anchorages where ships stopped in the last 12 months, sized by visits (Global Fishing Watch)' },
       'escape-route': { label: 'Escape route', hint: 'The usual 3,000-mile route through China to Southeast Asia' },
     },
     shades: {
@@ -155,6 +175,7 @@ export const MAP_TEXT: Record<Lang, MapText> = {
     overlaysTitle: 'Seen from space',
     overlays: {
       lights: { label: 'Night lights', sub: 'NASA · 2016', hint: 'Black Marble satellite composite, 2016. Electricity is a rough proxy for wealth.' },
+      radar: { label: 'Ships seen by radar', sub: `GFW · ${radarMonth('en-GB')}`, hint: 'Ships satellite radar saw that sent no AIS signal, per 10 km square, last whole month. Most are fishing boats.' },
     },
     photoSentinel: 'Sentinel-2',
     photoLatest: 'Latest',
@@ -164,6 +185,16 @@ export const MAP_TEXT: Record<Lang, MapText> = {
     photoNoClear: 'no clear image',
     photoAlt: (name, date) => `Sentinel-2 satellite image of ${name}, captured ${date}`,
     photoEsriAlt: (name) => `Satellite view of ${name}`,
+    portKicker: 'North Korean port',
+    portName: (port, near, fallback) => (port ? (near ? `near ${port}` : port) : fallback),
+    portTip: (v, f) => `${v.toLocaleString('en')} visits${f ? `, ${f} by foreign-flagged ships` : ''}`,
+    portVisits: 'visits, last 12 months',
+    portShips: 'vessels',
+    portFlags: 'Flags the ships broadcast',
+    portNkShips: 'North Korean ships',
+    portNoFlag: 'no flag broadcast',
+    portLink: 'Who calls at North Korean ports',
+    portNote: 'Only ships broadcasting AIS. Most ships near North Korea send none, so this is a floor, not all traffic.',
   },
   ko: {
     metaTitle: '북한 지도: 정치범수용소, 구금 시설, 미사일 기지',
@@ -182,6 +213,7 @@ export const MAP_TEXT: Record<Lang, MapText> = {
       'missile-bases': { label: '미사일 운용 기지', hint: 'CSIS가 위성 사진으로 찾아낸 미신고 기지' },
       sites: { label: '핵·발사장·주요 장소', hint: '영변, 풍계리, 서해, 평양의 상징물, 국경 통로' },
       markets: { label: '시장 (장마당)', hint: '공식 시장, 매대 수에 따라 크기 표시 (CSIS, 2018년)' },
+      ports: { label: '항구', hint: '최근 12개월 동안 선박이 머문 북한 정박지, 입항 수에 따라 크기 표시 (Global Fishing Watch)' },
       'escape-route': { label: '탈북 경로', hint: '중국을 거쳐 동남아시아로 가는 보통의 3,000마일 길' },
     },
     shades: {
@@ -240,6 +272,7 @@ export const MAP_TEXT: Record<Lang, MapText> = {
     overlaysTitle: '우주에서 본 모습',
     overlays: {
       lights: { label: '야간 불빛', sub: 'NASA · 2016', hint: '블랙 마블 위성 합성 영상, 2016년. 전기는 부의 대략적인 지표입니다.' },
+      radar: { label: '레이더에 잡힌 선박', sub: `GFW · ${radarMonth('ko-KR')}`, hint: '위성 레이더에 잡혔지만 AIS 신호를 보내지 않은 선박, 10km 칸별, 지난달 기준. 대부분 어선입니다.' },
     },
     photoSentinel: '센티넬-2',
     photoLatest: '최신',
@@ -249,6 +282,16 @@ export const MAP_TEXT: Record<Lang, MapText> = {
     photoNoClear: '맑은 영상 없음',
     photoAlt: (name, date) => `${name}의 센티넬-2 위성 영상, ${date} 촬영`,
     photoEsriAlt: (name) => `${name}의 위성 보기`,
+    portKicker: '북한 항구',
+    portName: (port, near, fallback) => (port ? (near ? `${port} 인근` : port) : fallback),
+    portTip: (v, f) => `입항 ${v.toLocaleString('ko')}회${f ? `, 외국 국적 ${f}회` : ''}`,
+    portVisits: '입항, 최근 12개월',
+    portShips: '선박',
+    portFlags: '선박이 송신한 국적',
+    portNkShips: '북한 선박',
+    portNoFlag: '국적 미송신',
+    portLink: '북한 항구에 들어오는 선박',
+    portNote: 'AIS를 송신한 선박만 셉니다. 북한 근처 선박 대부분은 신호를 보내지 않으므로, 이는 전체가 아니라 최소치입니다.',
   },
   ja: {
     metaTitle: '北朝鮮地図：政治犯収容所、拘束施設、ミサイル基地',
@@ -267,6 +310,7 @@ export const MAP_TEXT: Record<Lang, MapText> = {
       'missile-bases': { label: 'ミサイル運用基地', hint: 'CSISが衛星画像から見つけた未申告の基地' },
       sites: { label: '核・発射場・主要地点', hint: '寧辺、豊渓里、西海、平壌の象徴、国境の通過点' },
       markets: { label: '市場（チャンマダン）', hint: '公式市場、売り台の数で大きさを表示（CSIS、2018年）' },
+      ports: { label: '港', hint: '直近12か月に船が停泊した北朝鮮の錨地、寄港数で大きさを表示（Global Fishing Watch）' },
       'escape-route': { label: '脱出ルート', hint: '中国を通って東南アジアへ向かう、ふつうの3,000マイルの道' },
     },
     shades: {
@@ -325,6 +369,7 @@ export const MAP_TEXT: Record<Lang, MapText> = {
     overlaysTitle: '宇宙から見た様子',
     overlays: {
       lights: { label: '夜間の光', sub: 'NASA・2016年', hint: 'ブラックマーブル衛星合成画像、2016年。電気は豊かさのおおまかな目安です。' },
+      radar: { label: 'レーダーが捉えた船', sub: `GFW・${radarMonth('ja-JP')}`, hint: '衛星レーダーが捉えたのにAIS信号を送っていなかった船、10km四方ごと、直近の1か月。大半は漁船です。' },
     },
     photoSentinel: 'センチネル2',
     photoLatest: '最新',
@@ -334,6 +379,16 @@ export const MAP_TEXT: Record<Lang, MapText> = {
     photoNoClear: '晴れた画像なし',
     photoAlt: (name, date) => `${name}のセンチネル2衛星画像、${date}撮影`,
     photoEsriAlt: (name) => `${name}の衛星画像`,
+    portKicker: '北朝鮮の港',
+    portName: (port, near, fallback) => (port ? (near ? `${port}付近` : port) : fallback),
+    portTip: (v, f) => `寄港${v.toLocaleString('ja')}回${f ? `、うち外国籍船${f}回` : ''}`,
+    portVisits: '寄港、直近12か月',
+    portShips: '隻',
+    portFlags: '船が発信した旗国',
+    portNkShips: '北朝鮮の船',
+    portNoFlag: '旗国の発信なし',
+    portLink: '北朝鮮の港に入る船',
+    portNote: 'AISを発信した船だけです。北朝鮮近くの船の多くは信号を送らないため、全体ではなく最小値です。',
   },
   zh: {
     metaTitle: '朝鲜地图：政治犯集中营、拘押设施、导弹基地',
@@ -352,6 +407,7 @@ export const MAP_TEXT: Record<Lang, MapText> = {
       'missile-bases': { label: '导弹作战基地', hint: 'CSIS 通过卫星图像发现的未申报基地' },
       sites: { label: '核设施、发射场与要地', hint: '宁边、丰溪里、西海、平壤地标、边境口岸' },
       markets: { label: '市场（场市）', hint: '官方市场，按摊位数量显示大小（CSIS，2018年）' },
+      ports: { label: '港口', hint: '最近12个月有船舶停靠的朝鲜锚地，按停靠次数显示大小（Global Fishing Watch）' },
       'escape-route': { label: '脱北路线', hint: '经中国前往东南亚的通常3,000英里路线' },
     },
     shades: {
@@ -410,6 +466,7 @@ export const MAP_TEXT: Record<Lang, MapText> = {
     overlaysTitle: '从太空看',
     overlays: {
       lights: { label: '夜间灯光', sub: 'NASA · 2016年', hint: '黑色大理石卫星合成图，2016年。电力是财富的粗略指标。' },
+      radar: { label: '雷达发现的船舶', sub: `GFW · ${radarMonth('zh-CN')}`, hint: '卫星雷达发现但没有发送AIS信号的船舶，每10公里方格，最近一个完整月份。大多是渔船。' },
     },
     photoSentinel: '哨兵2号',
     photoLatest: '最新',
@@ -419,6 +476,16 @@ export const MAP_TEXT: Record<Lang, MapText> = {
     photoNoClear: '无晴空图像',
     photoAlt: (name, date) => `${name}的哨兵2号卫星图像，拍摄于${date}`,
     photoEsriAlt: (name) => `${name}的卫星图像`,
+    portKicker: '朝鲜港口',
+    portName: (port, near, fallback) => (port ? (near ? `${port}附近` : port) : fallback),
+    portTip: (v, f) => `停靠${v.toLocaleString('zh')}次${f ? `，其中外国船旗${f}次` : ''}`,
+    portVisits: '次停靠，最近12个月',
+    portShips: '艘船',
+    portFlags: '船舶发送的船旗',
+    portNkShips: '朝鲜船舶',
+    portNoFlag: '未发送船旗',
+    portLink: '哪些船停靠朝鲜港口',
+    portNote: '只统计发送AIS信号的船。朝鲜附近的大多数船不发送信号，因此这是下限，不是全部船舶往来。',
   },
 };
 

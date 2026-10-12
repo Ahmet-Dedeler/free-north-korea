@@ -86,6 +86,26 @@
      "updated": null
     }
    ]
+  },
+  "ports": {
+   "count": 8,
+   "sources": [
+    {
+     "name": "Global Fishing Watch port visits",
+     "url": "https://globalfishingwatch.org/",
+     "updated": "2026-10-12"
+    }
+   ]
+  },
+  "radar": {
+   "count": 509,
+   "sources": [
+    {
+     "name": "Global Fishing Watch SAR vessel detections",
+     "url": "https://globalfishingwatch.org/",
+     "updated": "2026-09"
+    }
+   ]
   }
  }
 }

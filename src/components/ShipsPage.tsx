@@ -217,7 +217,7 @@ export default function ShipsPage({ lang }: { lang: Lang }) {
         )}
       </section>
 
-      <section className="index-section">
+      <section className="index-section" id="ports">
         <h2>{t.portsTitle}</h2>
         <p className="muted">{t.portsHint}</p>
         <div className="tiles">
