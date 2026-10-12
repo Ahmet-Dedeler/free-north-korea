@@ -39,7 +39,8 @@ be freed" gave you close to nothing. So this puts it all in one place, open sour
       <a href="https://liberatenorthkorea.org/map"><img src="docs/readme/map.jpg" alt="Intel map"></a>
       <h3>🗺 Intel map</h3>
       Prison camps, detention centres, nuclear and missile sites, 421 markets, the escape route through China, and
-      human rights abuses counted per county. Every point has a source.
+      human rights abuses counted per county, on a map or satellite basemap. Click a camp or weapons site to scrub
+      through two years of our own satellite images. Every point has a source.
     </td>
     <td width="50%" valign="top">
       <a href="https://liberatenorthkorea.org/north-korea-vs-south-korea"><img src="docs/readme/north-vs-south.jpg" alt="North Korea vs South Korea"></a>

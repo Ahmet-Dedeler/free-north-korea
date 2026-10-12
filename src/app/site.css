@@ -1446,6 +1446,330 @@ a.card:hover {
   color: var(--ink-3);
   margin-left: 4px;
 }
+/* ---------- intel map: place photo at the top of a point panel (src/map/Photo.tsx) ---------- */
+.pp {
+  margin: -14px -18px 12px;
+}
+.pp-img,
+.pp-esri {
+  position: relative;
+  display: block;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background: #1b2330;
+  border-radius: 14px 14px 0 0;
+}
+.pp-img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.pp-esri .sat {
+  position: absolute;
+  inset: 0;
+  height: 100% !important;
+  border-radius: 0;
+}
+.pp-ring {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 26px;
+  height: 26px;
+  margin: -13px 0 0 -13px;
+  border-radius: 50%;
+  border: 2px solid rgb(255 255 255 / 0.9);
+  box-shadow: 0 0 0 1.5px rgb(220 38 38 / 0.85);
+  pointer-events: none;
+}
+.pp-cap {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  max-width: calc(100% - 60px);
+  padding: 3px 8px;
+  border-radius: 6px;
+  background: rgb(15 23 42 / 0.68);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  backdrop-filter: blur(4px);
+}
+.pp-cap b {
+  margin-left: 7px;
+  padding: 0 5px;
+  border-radius: 4px;
+  background: #fff;
+  color: #0f172a;
+  font-size: 10.5px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.pp-esri .pp-cap {
+  top: auto;
+  bottom: 10px;
+  max-width: calc(100% - 110px);
+}
+/*
+ * The 24-month strip, on the bottom of the photo: a transparent range input over a row of ticks, so it drags on
+ * touch and works with the keyboard. Hollow ticks are months with no clear image.
+ */
+.pp-scrub {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 26px 12px 6px;
+  background: linear-gradient(transparent, rgb(0 0 0 / 0.6));
+}
+.pp-scrub:has(input:focus-visible) .pp-ticks {
+  outline: 2px solid #fff;
+  outline-offset: 3px;
+  border-radius: 3px;
+}
+.pp-ticks {
+  display: grid;
+  grid-template-columns: repeat(24, 1fr);
+  gap: 3px;
+  height: 20px;
+  align-items: end;
+}
+.pp-ticks i {
+  display: block;
+  height: 8px;
+  border-radius: 2px;
+  background: rgb(255 255 255 / 0.55);
+  transition: height 0.12s, background 0.12s;
+}
+.pp-ticks i.none {
+  height: 5px;
+  background: none;
+  box-shadow: inset 0 0 0 1px rgb(255 255 255 / 0.5);
+}
+.pp-ticks i.on {
+  height: 20px;
+  background: #fff;
+}
+.pp-ticks i.none.at {
+  box-shadow: inset 0 0 0 1.5px #fff;
+}
+.pp-scrub input {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+  cursor: ew-resize;
+}
+.pp-ends {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  margin-top: 3px;
+  color: rgb(255 255 255 / 0.85);
+  font-size: 10.5px;
+  font-variant-numeric: tabular-nums;
+  text-shadow: 0 1px 2px rgb(0 0 0 / 0.6);
+}
+.intel-detail .pp-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 2px 12px;
+  margin: 7px 18px 0;
+  font-size: 12.5px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+.pp-links span {
+  color: var(--ink-3);
+  font-size: 11px;
+  font-weight: 400;
+}
+/* the close button floats on the photo */
+.intel-detail.has-photo .modal-close {
+  z-index: 2;
+  top: 10px;
+  right: 10px;
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: rgb(15 23 42 / 0.6);
+  color: #fff;
+  backdrop-filter: blur(4px);
+}
+.intel-detail.has-photo {
+  padding-top: 14px;
+}
+
+/* ---------- intel map: basemap switch and Layers menu, bottom-left (src/map/BasemapSwitch.tsx) ---------- */
+.basemap {
+  position: absolute;
+  left: 12px;
+  bottom: 12px;
+  z-index: 3;
+  display: flex;
+  align-items: flex-end;
+  gap: 6px;
+}
+.bm-tile {
+  position: relative;
+  display: block;
+  width: 68px;
+  height: 68px;
+  padding: 0;
+  overflow: hidden;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  background: var(--map-bg);
+  box-shadow: var(--shadow);
+  cursor: pointer;
+}
+.bm-tile img,
+.bm-tile svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.bm-main span {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 10px 4px 4px;
+  background: linear-gradient(transparent, rgb(0 0 0 / 0.65));
+  color: #fff;
+  font-size: 11px;
+  font-weight: 650;
+  text-align: center;
+}
+.bm-main:hover,
+.bm-main:focus-visible {
+  border-color: var(--accent);
+}
+.bm-land {
+  fill: var(--map-bg);
+}
+.bm-water {
+  fill: #bfd4ea;
+}
+.bm-road {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 3;
+}
+:root[data-theme='dark'] .bm-water {
+  fill: #1e3350;
+}
+:root[data-theme='dark'] .bm-road {
+  stroke: #343c4a;
+}
+.bm-more {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: var(--panel);
+  color: var(--ink-2);
+  box-shadow: var(--shadow);
+}
+.bm-more:hover,
+.basemap.open .bm-more {
+  color: var(--accent);
+}
+.bm-panel {
+  position: absolute;
+  left: 0;
+  bottom: calc(100% + 8px);
+  padding: 10px 12px 12px;
+  border-radius: 12px;
+  background: var(--panel);
+  box-shadow: var(--shadow);
+  animation: slide-up 0.15s ease-out;
+}
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+}
+.bm-panel p {
+  margin: 0 0 8px;
+  color: var(--ink-3);
+  font-size: 11px;
+  font-weight: 650;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.bm-row {
+  display: flex;
+  gap: 10px;
+}
+.bm-panel .bm-tile {
+  width: 76px;
+  height: auto;
+  border: 0;
+  background: none;
+  box-shadow: none;
+  overflow: visible;
+  text-align: center;
+}
+.bm-panel .bm-tile img {
+  width: 76px;
+  height: 56px;
+  border-radius: 8px;
+  outline: 2px solid transparent;
+  outline-offset: 1px;
+}
+.bm-panel .bm-tile.on img {
+  outline-color: var(--accent);
+}
+.bm-panel .bm-tile span {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+  color: var(--ink);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+.bm-panel .bm-tile.on span {
+  color: var(--accent);
+}
+.bm-panel .bm-tile small {
+  color: var(--ink-3);
+  font-size: 10.5px;
+  font-weight: 400;
+}
+@media (max-width: 800px) {
+  .pp-img,
+  .pp-esri {
+    aspect-ratio: 2 / 1;
+    border-radius: 16px 16px 0 0;
+  }
+  .bm-tile {
+    width: 56px;
+    height: 56px;
+  }
+  /* MapLibre's credits run the full width of a phone screen */
+  .basemap {
+    bottom: 34px;
+  }
+  /* the bottom sheet covers this corner */
+  .stage:has(.detail) .basemap {
+    display: none;
+  }
+}
+
 .d-kicker {
   margin: 0;
   font-size: 12px;

@@ -9,8 +9,8 @@ import type { Lang } from '@/site/seo';
 import { provinceName } from '@/content/countiesI18n';
 import { COUNTRY_NAMES, LABEL_FIELDS, MAP_TEXT } from '@/content/mapI18n';
 import { MAPLIBRE_WORKER_URL, STYLE_URL } from '../map/maplibre';
-import { LAYERS, NIGHT_LIGHTS, SHADES, SHADE_COLORS, type LayerId, type Shade } from './config';
-import type { Data, Selection } from './types';
+import { LAYERS, NIGHT_LIGHTS, SHADES, SHADE_COLORS, type LayerId, type Overlay, type Shade } from './config';
+import type { Basemap, Data, Selection } from './types';
 
 maplibregl.setWorkerUrl(MAPLIBRE_WORKER_URL);
 
@@ -18,6 +18,8 @@ interface Props {
   data: Data;
   visible: Set<LayerId>;
   shade: Shade;
+  base: Basemap;
+  overlays: Set<Overlay>;
   selected: Selection | null;
   theme: Theme;
   lang: Lang;
@@ -36,6 +38,11 @@ const PAL: Record<Theme, { halo: string; label: string; ring: string; line: stri
   light: { halo: '#ffffff', label: '#1e293b', ring: '#0f172a', line: '#475569' },
   dark: { halo: '#0b1120', label: '#e2e8f0', ring: '#f8fafc', line: '#94a3b8' },
 };
+/** On satellite imagery, borders are drawn light so they read against fields and forest in either theme. */
+const SAT_LINE = '#f8fafc';
+/** Esri World Imagery, the same tiles as SatView. Esri asks for this credit wherever the imagery is shown. */
+const SATELLITE = 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}';
+const SAT_CREDIT = 'Imagery: Esri, Maxar, Earthstar Geographics';
 const POINT_LAYERS = LAYERS.filter((l) => l.id !== 'escape-route');
 
 /**
@@ -71,17 +78,26 @@ function labelExpr(lang: Lang): ExpressionSpecification {
   return ['match', ['get', 'iso_a2'], 'KP', kp.north, 'KR', kp.south, name] as unknown as ExpressionSpecification;
 }
 
-/** Counties fade as you zoom in, so the basemap (roads, towns) shows through around the points. */
-function fillOpacity(shade: Shade): ExpressionSpecification | number {
-  if (shade === 'none' || shade === 'lights') return 0;
-  return ['interpolate', ['linear'], ['zoom'], 6, ['case', ['boolean', ['feature-state', 'selected'], false], 0.8, 0.62], 9.5, ['case', ['boolean', ['feature-state', 'selected'], false], 0.35, 0.22]];
+/**
+ * Counties fade as you zoom in, so the basemap (roads, towns) shows through around the points. On satellite imagery
+ * they start lighter and fade further: people switch to satellite to see the ground.
+ */
+function fillOpacity(shade: Shade, base: Basemap): ExpressionSpecification | number {
+  if (shade === 'none') return 0;
+  const [lo, hi, loSel, hiSel] = base === 'satellite' ? [0.45, 0.08, 0.6, 0.12] : [0.62, 0.22, 0.8, 0.35];
+  return ['interpolate', ['linear'], ['zoom'], 6, ['case', ['boolean', ['feature-state', 'selected'], false], loSel, lo], 9.5, ['case', ['boolean', ['feature-state', 'selected'], false], hiSel, hi]];
 }
 
-export default function IntelMap({ data, visible, shade, selected, theme, lang, onSelect }: Props) {
+/** County border colour: the selected county gets a ring, the rest a hairline. */
+function countyLine(base: Basemap, pal: (typeof PAL)[Theme]): ExpressionSpecification {
+  return ['case', ['boolean', ['feature-state', 'selected'], false], base === 'satellite' ? '#facc15' : pal.ring, base === 'satellite' ? SAT_LINE : pal.line];
+}
+
+export default function IntelMap({ data, visible, shade, base, overlays, selected, theme, lang, onSelect }: Props) {
   const box = useRef<HTMLDivElement>(null);
   const mapRef = useRef<maplibregl.Map | null>(null);
-  const latest = useRef({ data, visible, shade, selected, theme, onSelect });
-  latest.current = { data, visible, shade, selected, theme, onSelect };
+  const latest = useRef({ data, visible, shade, base, overlays, selected, theme, onSelect });
+  latest.current = { data, visible, shade, base, overlays, selected, theme, onSelect };
   const prevSel = useRef<{ source: string; id: string | number } | null>(null);
 
   useEffect(() => {
@@ -108,13 +124,15 @@ export default function IntelMap({ data, visible, shade, selected, theme, lang, 
     });
 
     const setup = () => {
-      const { data, visible, shade, theme } = latest.current;
+      const { data, visible, shade, base, overlays, theme } = latest.current;
       const pal = PAL[theme];
       // first basemap symbol layer: our fills/lines go under the labels, points on top of everything
       const firstLabel = map.getStyle().layers.find((l) => l.type === 'symbol')?.id;
 
-      map.addSource('lights', { type: 'raster', tiles: [NIGHT_LIGHTS], tileSize: 256, maxzoom: 8, attribution: 'NASA Black Marble' });
-      map.addLayer({ id: 'lights', type: 'raster', source: 'lights', paint: { 'raster-opacity': 0.95 }, layout: { visibility: shade === 'lights' ? 'visible' : 'none' } }, firstLabel);
+      // Satellite sits over the basemap's own fills and roads but under its labels, so place names stay (a hybrid
+      // view, like Google's). Esri serves real imagery to about zoom 18 here; beyond that MapLibre overzooms.
+      map.addSource('satellite', { type: 'raster', tiles: [SATELLITE], tileSize: 256, maxzoom: 18, attribution: SAT_CREDIT });
+      map.addLayer({ id: 'satellite', type: 'raster', source: 'satellite', layout: { visibility: base === 'satellite' ? 'visible' : 'none' } }, firstLabel);
 
       map.addSource('counties', { type: 'geojson', data: data.counties, promoteId: 'pcode' });
       map.addLayer(
@@ -124,7 +142,7 @@ export default function IntelMap({ data, visible, shade, selected, theme, lang, 
           source: 'counties',
           paint: {
             'fill-color': shadeExpr(shade) as ExpressionSpecification,
-            'fill-opacity': fillOpacity(shade),
+            'fill-opacity': fillOpacity(shade, base),
           },
         },
         firstLabel,
@@ -135,7 +153,7 @@ export default function IntelMap({ data, visible, shade, selected, theme, lang, 
           type: 'line',
           source: 'counties',
           paint: {
-            'line-color': ['case', ['boolean', ['feature-state', 'selected'], false], pal.ring, pal.line],
+            'line-color': countyLine(base, pal),
             'line-width': ['case', ['boolean', ['feature-state', 'selected'], false], 2.5, 0.4],
             'line-opacity': ['case', ['boolean', ['feature-state', 'selected'], false], 1, 0.45],
           },
@@ -143,7 +161,12 @@ export default function IntelMap({ data, visible, shade, selected, theme, lang, 
         firstLabel,
       );
       map.addSource('provinces', { type: 'geojson', data: data.provinces });
-      map.addLayer({ id: 'province-line', type: 'line', source: 'provinces', paint: { 'line-color': pal.line, 'line-width': 1.2, 'line-opacity': 0.8 } }, firstLabel);
+      map.addLayer({ id: 'province-line', type: 'line', source: 'provinces', paint: { 'line-color': base === 'satellite' ? SAT_LINE : pal.line, 'line-width': 1.2, 'line-opacity': 0.8 } }, firstLabel);
+
+      // Overlays cover the county shading (a dark raster and a choropleth don't mix) but sit under the borders,
+      // labels and points, so you can still hover and click counties through them.
+      map.addSource('lights', { type: 'raster', tiles: [NIGHT_LIGHTS], tileSize: 256, maxzoom: 8, attribution: 'NASA Black Marble' });
+      map.addLayer({ id: 'lights', type: 'raster', source: 'lights', paint: { 'raster-opacity': 0.95 }, layout: { visibility: overlays.has('lights') ? 'visible' : 'none' } }, 'county-line');
 
       map.addSource('escape-route', { type: 'geojson', data: data['escape-route'] });
       const routeVis = visible.has('escape-route') ? 'visible' : 'none';
@@ -251,14 +274,18 @@ export default function IntelMap({ data, visible, shade, selected, theme, lang, 
     routeWasOn.current = on;
   }, [visible]);
 
-  // --- county shading ---
+  // --- county shading and basemap ---
   useEffect(() => {
     const map = mapRef.current;
     if (!map?.getLayer('county-fill')) return;
     map.setPaintProperty('county-fill', 'fill-color', shadeExpr(shade) as ExpressionSpecification);
-    map.setPaintProperty('county-fill', 'fill-opacity', fillOpacity(shade));
-    map.setLayoutProperty('lights', 'visibility', shade === 'lights' ? 'visible' : 'none');
-  }, [shade]);
+    map.setPaintProperty('county-fill', 'fill-opacity', fillOpacity(shade, base));
+    map.setPaintProperty('county-line', 'line-color', countyLine(base, PAL[theme]));
+    map.setPaintProperty('province-line', 'line-color', base === 'satellite' ? SAT_LINE : PAL[theme].line);
+    map.setLayoutProperty('satellite', 'visibility', base === 'satellite' ? 'visible' : 'none');
+    map.setLayoutProperty('lights', 'visibility', overlays.has('lights') ? 'visible' : 'none');
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [shade, base, overlays]);
 
   // --- selection ---
   function applySelection(fly: boolean) {

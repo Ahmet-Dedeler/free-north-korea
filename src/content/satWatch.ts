@@ -6,6 +6,9 @@
 import { readFileSync } from 'node:fs';
 import path from 'node:path';
 import type { Lang } from '@/site/seo';
+import { dayLabel, imgSrc, monthLabel, satCredit, type MapSatSite } from './satLabels';
+
+export { dayLabel, imgSrc, monthLabel, satCredit };
 
 export interface SatImage {
   /** Capture date (UTC), YYYY-MM-DD. */
@@ -75,10 +78,22 @@ export function latestSatSites(limit = 4): SatSite[] {
     .slice(0, limit);
 }
 
+/**
+ * Every imaged site in the compact shape the intel map's place panel needs (dates only), keyed by site id.
+ * Built on the server and passed to the map as a prop, so the browser never loads data/sentinel.json.
+ */
+export function mapSatIndex(): Record<string, MapSatSite> {
+  const out: Record<string, MapSatSite> = {};
+  for (const s of manifest().sites) {
+    if (!s.latest || s.images.length === 0) continue;
+    const frames = [...s.images].sort((a, b) => a.date.localeCompare(b.date));
+    out[s.id] = { sizeM: s.sizeM, latest: s.latest, frames: frames.map((im) => ({ date: im.date, month: im.month })), path: satSitePath(s) };
+  }
+  return out;
+}
+
 /** Dossier path of a site: camps live under /camps, everything else under /places. */
 export const satSitePath = (s: Pick<SatSite, 'id' | 'category'>) => (s.category === 'camp' ? `/camps/${s.id}` : `/places/${s.id}`);
-
-export const imgSrc = (siteId: string, date: string) => `/img/sentinel/${siteId}/${date}.jpg`;
 
 /** Copernicus Browser view of the same place and day, so anyone can check the image against the source. */
 export function copernicusUrl(lat: number, lon: number, date: string) {
@@ -93,24 +108,6 @@ export function copernicusUrl(lat: number, lon: number, date: string) {
     layerId: '1_TRUE_COLOR',
   });
   return `https://browser.dataspace.copernicus.eu/?${q}`;
-}
-
-const MONTHS_EN = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-
-/** "2026-10-06" as a day in each language. Done by hand so server and browser print the same string. */
-export function dayLabel(lang: Lang, date: string) {
-  const [y, m, d] = date.split('-').map(Number);
-  if (lang === 'en') return `${d} ${MONTHS_EN[m - 1]} ${y}`;
-  if (lang === 'ko') return `${y}년 ${m}월 ${d}일`;
-  return `${y}年${m}月${d}日`;
-}
-
-/** "2026-10" as a short month label for the month strip. */
-export function monthLabel(lang: Lang, month: string) {
-  const [y, m] = month.split('-').map(Number);
-  if (lang === 'en') return `${MONTHS_EN[m - 1]} ${String(y).slice(2)}`;
-  if (lang === 'ko') return `${String(y).slice(2)}.${m}월`;
-  return `${String(y).slice(2)}年${m}月`;
 }
 
 type SatText = {
@@ -239,5 +236,3 @@ export const SAT_TEXT: Record<Lang, SatText> = {
   },
 };
 
-/** Required attribution for Copernicus Sentinel data. Kept in English in every language. */
-export const satCredit = (years: string) => `Contains modified Copernicus Sentinel data ${years}`;

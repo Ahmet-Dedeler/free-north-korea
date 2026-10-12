@@ -1,6 +1,7 @@
 import MapExplorer from '@/map/Explorer';
 import { MAP_PATHS, MAP_TEXT } from '@/content/mapI18n';
 import { pageMeta } from '@/site/seo';
+import { mapSatIndex } from '@/content/satWatch';
 
 const t = MAP_TEXT.zh;
 
@@ -13,5 +14,5 @@ export const metadata = pageMeta({
 });
 
 export default function Page() {
-  return <MapExplorer lang="zh" />;
+  return <MapExplorer lang="zh" sat={mapSatIndex()} />;
 }

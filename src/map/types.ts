@@ -4,6 +4,9 @@ import type { LayerId } from './config';
 /** Everything the intel map loads from public/layers/. */
 export type Data = Record<LayerId | 'counties' | 'provinces', FeatureCollection>;
 
+/** The ground under our layers: the calm vector map, or Esri's satellite imagery with the map's labels on top. */
+export type Basemap = 'map' | 'satellite';
+
 export type Selection = { kind: 'county'; id: string } | { kind: 'point'; layer: LayerId; id: string };
 
 export const FILES: (keyof Data)[] = ['counties', 'provinces', 'camps', 'detention', 'china-detention', 'missile-bases', 'sites', 'markets', 'escape-route'];

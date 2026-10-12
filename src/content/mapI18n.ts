@@ -5,7 +5,7 @@
  * tables in countiesI18n.ts.
  */
 import type { Lang } from '@/site/seo';
-import type { LayerDef, LayerId, Shade } from '@/map/config';
+import type { LayerDef, LayerId, Overlay, Shade } from '@/map/config';
 import { NUM_LOCALE } from './countiesI18n';
 
 export const MAP_PATHS = { en: '/map', ko: '/ko/map', ja: '/ja/map', zh: '/zh/map' } as const satisfies Record<Lang, string>;
@@ -60,6 +60,23 @@ export interface MapText {
   siteDossier: string;
   readMore: string;
   csisReport: string;
+  // basemap switch (bottom-left thumbnail, like Google Maps)
+  baseMap: string;
+  baseSat: string;
+  baseAria: string;
+  layersAria: string;
+  overlaysTitle: string;
+  /** Whole-country satellite measurements drawn over the map, in the Layers menu next to the basemap switch. */
+  overlays: Record<Overlay, { label: string; sub: string; hint: string }>;
+  // place photo at the top of a point panel
+  photoSentinel: string;
+  photoLatest: string;
+  photoEsri: string;
+  photoScrub: string;
+  photoCompare: string;
+  photoNoClear: string;
+  photoAlt: (name: string, date: string) => string;
+  photoEsriAlt: (name: string) => string;
 }
 
 export const MAP_TEXT: Record<Lang, MapText> = {
@@ -88,7 +105,6 @@ export const MAP_TEXT: Record<Lang, MapText> = {
       population: { label: 'Population', hint: 'People per county (2008 census)' },
       detention: { label: 'Detention facilities', hint: 'Known detention and security facilities per county' },
       markets: { label: 'Markets', hint: 'Official markets per county' },
-      lights: { label: 'Night lights (NASA)', hint: 'Black Marble satellite composite, 2016. Electricity is a rough proxy for wealth.' },
       none: { label: 'Nothing', hint: 'Plain map' },
     },
     tips: {
@@ -132,6 +148,22 @@ export const MAP_TEXT: Record<Lang, MapText> = {
     siteDossier: 'View full site details →',
     readMore: 'Read more →',
     csisReport: 'CSIS report',
+    baseMap: 'Map',
+    baseSat: 'Satellite',
+    baseAria: 'Switch between map and satellite view',
+    layersAria: 'More map layers',
+    overlaysTitle: 'Seen from space',
+    overlays: {
+      lights: { label: 'Night lights', sub: 'NASA · 2016', hint: 'Black Marble satellite composite, 2016. Electricity is a rough proxy for wealth.' },
+    },
+    photoSentinel: 'Sentinel-2',
+    photoLatest: 'Latest',
+    photoEsri: 'Esri satellite view · capture date not given',
+    photoScrub: 'Our own images, one per month. Slide to go back in time.',
+    photoCompare: 'Compare dates →',
+    photoNoClear: 'no clear image',
+    photoAlt: (name, date) => `Sentinel-2 satellite image of ${name}, captured ${date}`,
+    photoEsriAlt: (name) => `Satellite view of ${name}`,
   },
   ko: {
     metaTitle: '북한 지도: 정치범수용소, 구금 시설, 미사일 기지',
@@ -158,7 +190,6 @@ export const MAP_TEXT: Record<Lang, MapText> = {
       population: { label: '인구', hint: '시·군별 인구 (2008년 총조사)' },
       detention: { label: '구금 시설', hint: '시·군별로 알려진 구금·보위 시설' },
       markets: { label: '시장', hint: '시·군별 공식 시장' },
-      lights: { label: '야간 불빛 (NASA)', hint: '블랙 마블 위성 합성 영상, 2016년. 전기는 부의 대략적인 지표입니다.' },
       none: { label: '없음', hint: '기본 지도' },
     },
     tips: {
@@ -202,6 +233,22 @@ export const MAP_TEXT: Record<Lang, MapText> = {
     siteDossier: '장소 상세 페이지 보기 →',
     readMore: '더 읽기 →',
     csisReport: 'CSIS 보고서',
+    baseMap: '지도',
+    baseSat: '위성',
+    baseAria: '지도와 위성 보기 전환',
+    layersAria: '지도 레이어 더 보기',
+    overlaysTitle: '우주에서 본 모습',
+    overlays: {
+      lights: { label: '야간 불빛', sub: 'NASA · 2016', hint: '블랙 마블 위성 합성 영상, 2016년. 전기는 부의 대략적인 지표입니다.' },
+    },
+    photoSentinel: '센티넬-2',
+    photoLatest: '최신',
+    photoEsri: 'Esri 위성 보기 · 촬영일 미상',
+    photoScrub: '저희가 직접 만든 월별 영상입니다. 밀어서 지난 달을 보세요.',
+    photoCompare: '날짜 비교 →',
+    photoNoClear: '맑은 영상 없음',
+    photoAlt: (name, date) => `${name}의 센티넬-2 위성 영상, ${date} 촬영`,
+    photoEsriAlt: (name) => `${name}의 위성 보기`,
   },
   ja: {
     metaTitle: '北朝鮮地図：政治犯収容所、拘束施設、ミサイル基地',
@@ -228,7 +275,6 @@ export const MAP_TEXT: Record<Lang, MapText> = {
       population: { label: '人口', hint: '市・郡ごとの人口（2008年国勢調査）' },
       detention: { label: '拘束施設', hint: '市・郡ごとに知られている拘束・保衛施設' },
       markets: { label: '市場', hint: '市・郡ごとの公式市場' },
-      lights: { label: '夜間の光（NASA）', hint: 'ブラックマーブル衛星合成画像、2016年。電気は豊かさのおおまかな目安です。' },
       none: { label: 'なし', hint: '基本の地図' },
     },
     tips: {
@@ -272,6 +318,22 @@ export const MAP_TEXT: Record<Lang, MapText> = {
     siteDossier: '地点の詳細ページへ →',
     readMore: '続きを読む →',
     csisReport: 'CSIS報告書',
+    baseMap: '地図',
+    baseSat: '衛星',
+    baseAria: '地図と衛星表示を切り替え',
+    layersAria: 'その他の地図レイヤー',
+    overlaysTitle: '宇宙から見た様子',
+    overlays: {
+      lights: { label: '夜間の光', sub: 'NASA・2016年', hint: 'ブラックマーブル衛星合成画像、2016年。電気は豊かさのおおまかな目安です。' },
+    },
+    photoSentinel: 'センチネル2',
+    photoLatest: '最新',
+    photoEsri: 'Esri衛星画像・撮影日不明',
+    photoScrub: '私たちが作った月ごとの画像です。スライドして過去の月を見られます。',
+    photoCompare: '日付を比べる →',
+    photoNoClear: '晴れた画像なし',
+    photoAlt: (name, date) => `${name}のセンチネル2衛星画像、${date}撮影`,
+    photoEsriAlt: (name) => `${name}の衛星画像`,
   },
   zh: {
     metaTitle: '朝鲜地图：政治犯集中营、拘押设施、导弹基地',
@@ -298,7 +360,6 @@ export const MAP_TEXT: Record<Lang, MapText> = {
       population: { label: '人口', hint: '各市郡人口（2008年人口普查）' },
       detention: { label: '拘押设施', hint: '各市郡已知的拘押和保卫设施' },
       markets: { label: '市场', hint: '各市郡的官方市场' },
-      lights: { label: '夜间灯光（NASA）', hint: '黑色大理石卫星合成图，2016年。电力是财富的粗略指标。' },
       none: { label: '无', hint: '基础地图' },
     },
     tips: {
@@ -342,6 +403,22 @@ export const MAP_TEXT: Record<Lang, MapText> = {
     siteDossier: '查看地点详情 →',
     readMore: '阅读更多 →',
     csisReport: 'CSIS 报告',
+    baseMap: '地图',
+    baseSat: '卫星',
+    baseAria: '切换地图和卫星视图',
+    layersAria: '更多地图图层',
+    overlaysTitle: '从太空看',
+    overlays: {
+      lights: { label: '夜间灯光', sub: 'NASA · 2016年', hint: '黑色大理石卫星合成图，2016年。电力是财富的粗略指标。' },
+    },
+    photoSentinel: '哨兵2号',
+    photoLatest: '最新',
+    photoEsri: 'Esri卫星图像 · 拍摄日期不详',
+    photoScrub: '我们自己制作的每月图像。滑动查看过去的月份。',
+    photoCompare: '对比日期 →',
+    photoNoClear: '无晴空图像',
+    photoAlt: (name, date) => `${name}的哨兵2号卫星图像，拍摄于${date}`,
+    photoEsriAlt: (name) => `${name}的卫星图像`,
   },
 };
 

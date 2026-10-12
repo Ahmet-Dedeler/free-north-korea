@@ -12,6 +12,8 @@ import { NUM_LOCALE, decadeShort, provinceName, rightsLabel } from '@/content/co
 import { MAP_TEXT, type MapText } from '@/content/mapI18n';
 import { CAMPS_TEXT, campCopy } from '@/content/campsI18n';
 import { PLACE_COPY } from '@/content/placesI18n';
+import type { MapSatSite } from '@/content/satLabels';
+import PlacePhoto from './Photo';
 
 type P = Record<string, any>;
 /** Number formatter for the reader's language. */
@@ -155,7 +157,10 @@ function CountyDetail({ f, data, lang, onSelect }: { f: Feature; data: Data; lan
   );
 }
 
-function PointDetail({ layer, f, lang }: { layer: LayerId; f: Feature; lang: Lang }) {
+/** Camp Watch id of a map point: camps and missile bases use their dossier slug, places their own id. */
+const satId = (layer: LayerId, id: string) => (layer === 'camps' ? campSlug(id) : layer === 'missile-bases' ? baseSlug(id) : id);
+
+function PointDetail({ layer, f, lang, sat }: { layer: LayerId; f: Feature; lang: Lang; sat: Record<string, MapSatSite> }) {
   const p = f.properties as P;
   const tx = MAP_TEXT[lang];
   const n = num(lang);
@@ -184,8 +189,12 @@ function PointDetail({ layer, f, lang }: { layer: LayerId; f: Feature; lang: Lan
   // when the whole layer comes from an old survey (markets: 2018), say so on every point
   const layerDate = MANIFEST.layers[layer]?.sources[0]?.updated;
 
+  const sid = satId(layer, String(p.id));
+  const photo = layer === 'escape-route' ? null : <PlacePhoto key={`${layer}/${p.id}`} siteId={sid} site={sat[sid]} name={p.name} layer={layer} lat={lat} lon={lon} approx={!!p.approx} lang={lang} />;
+
   return (
     <>
+      {photo}
       <p className="d-kicker" style={{ color: def.color }}>
         {kind ?? (p.kind ?? p.type ? <span lang={en}>{p.kind ?? p.type}</span> : tx.layers[layer].label)}
       </p>
@@ -272,18 +281,18 @@ function PointDetail({ layer, f, lang }: { layer: LayerId; f: Feature; lang: Lan
   );
 }
 
-export default function Detail({ sel, data, lang, onSelect, onClose }: { sel: Selection; data: Data; lang: Lang; onSelect: (s: Selection) => void; onClose: () => void }) {
+export default function Detail({ sel, data, sat, lang, onSelect, onClose }: { sel: Selection; data: Data; sat: Record<string, MapSatSite>; lang: Lang; onSelect: (s: Selection) => void; onClose: () => void }) {
   const f =
     sel.kind === 'county'
       ? data.counties.features.find((x) => x.properties?.pcode === sel.id)
       : data[sel.layer].features.find((x) => String(x.properties?.id) === sel.id);
   if (!f) return null;
   return (
-    <aside className="detail place-detail intel-detail">
+    <aside className={`detail place-detail intel-detail ${sel.kind === 'point' && sel.layer !== 'escape-route' ? 'has-photo' : ''}`}>
       <button className="modal-close" onClick={onClose} aria-label={MAP_TEXT[lang].close}>
         ✕
       </button>
-      {sel.kind === 'county' ? <CountyDetail f={f} data={data} lang={lang} onSelect={onSelect} /> : <PointDetail layer={sel.layer} f={f} lang={lang} />}
+      {sel.kind === 'county' ? <CountyDetail f={f} data={data} lang={lang} onSelect={onSelect} /> : <PointDetail layer={sel.layer} f={f} lang={lang} sat={sat} />}
     </aside>
   );
 }

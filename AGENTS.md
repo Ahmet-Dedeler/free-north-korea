@@ -23,7 +23,12 @@ before adding any page or article.
     are `data/sanctions.json` (built, never hand-edited).
 - `src/map/`: the intel map (`/map`, `/ko/map`, `/ja/map`, `/zh/map`): `config.ts` (layers, county shading), `IntelMap.tsx`
   (MapLibre; basemap labels in the reader's language where OSM has them), `Explorer.tsx` (sidebar, search), `Detail.tsx`
-  (county and point panels; on phones a bottom sheet). Every word of UI is in `content/mapI18n.ts`; the GeoJSON's own text
+  (county and point panels; on phones a bottom sheet), `Photo.tsx` (the picture at the top of a point panel: our own
+  Sentinel-2 image with a 24-month scrubber for Camp Watch sites, from `mapSatIndex()` passed in by the route, else an
+  Esri aerial labelled as undated), `BasemapSwitch.tsx` (bottom-left Map/Satellite thumbnail plus a Layers menu of
+  satellite overlays, `OVERLAYS` in `config.ts`). The map should feel like Google Maps, not a GIS tool: the sidebar is
+  for places and county shading; whole-country measurements (night lights, radar, crops) go in the Layers menu, and
+  depth goes in the click panel rather than in more toggles. Every word of UI is in `content/mapI18n.ts`; the GeoJSON's own text
   (point names, NKDB types, notes) stays English with `lang="en"`, and each point links to its translated dossier.
   Deep links: `/map#county=KP0205`, `/map#camps=camp-3` (same hashes under `/ko/map` etc.).
 - `src/entities/` + `src/app/people/`: people graph, profiles, hover cards (`PersonLink`), JSON at `/api/people`.

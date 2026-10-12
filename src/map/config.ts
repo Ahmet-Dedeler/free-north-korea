@@ -26,7 +26,7 @@ export const LAYERS: LayerDef[] = [
   { id: 'escape-route', group: 'Escape', color: '#22c55e', on: false, size: [4, 6] },
 ];
 
-export type Shade = 'none' | 'incidents' | 'density' | 'population' | 'markets' | 'detention' | 'lights';
+export type Shade = 'none' | 'incidents' | 'density' | 'population' | 'markets' | 'detention';
 
 export const SHADES: { id: Shade; stops?: number[] }[] = [
   { id: 'incidents', stops: [0, 5, 20, 60, 150, 300] },
@@ -34,7 +34,6 @@ export const SHADES: { id: Shade; stops?: number[] }[] = [
   { id: 'population', stops: [0, 50_000, 100_000, 200_000, 400_000, 1_000_000] },
   { id: 'detention', stops: [0, 1, 2, 4, 8, 15] },
   { id: 'markets', stops: [0, 1, 2, 4, 8, 15] },
-  { id: 'lights' },
   { id: 'none' },
 ];
 
@@ -46,5 +45,17 @@ export const MANIFEST = manifest as {
   totals: { population2008: number; incidents: number; incidentsMapped: number; homesWithheld: number };
   layers: Record<string, { count: number; sources: { name: string; url: string; updated: string | null }[] }>;
 };
+
+/**
+ * Overlays: measurements of the whole country from satellites, drawn over everything except points and labels.
+ * They live in the Layers menu by the basemap switch (BasemapSwitch.tsx), not in the sidebar, so the sidebar stays
+ * about places. New time series (yearly night lights, radar ship density, crop health) belong here too.
+ */
+export type Overlay = 'lights';
+
+export const OVERLAYS: { id: Overlay; thumb: string }[] = [
+  // the NIGHT_LIGHTS tile over the Korean peninsula (zoom 5, y 12, x 27), saved so the button previews what it turns on
+  { id: 'lights', thumb: '/img/map/thumb-lights.png' },
+];
 
 export const NIGHT_LIGHTS = 'https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/VIIRS_Black_Marble/default/2016-01-01/GoogleMapsCompatible_Level8/{z}/{y}/{x}.png';

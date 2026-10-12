@@ -5,13 +5,15 @@ import dynamic from 'next/dynamic';
 import Link from 'next/link';
 import { useTheme } from '../theme';
 import { formatAsOf, isStale } from '@/components/AsOf';
-import { LAYERS, MANIFEST, SHADES, SHADE_COLORS, type LayerId, type Shade } from './config';
+import { LAYERS, MANIFEST, SHADES, SHADE_COLORS, type LayerId, type Overlay, type Shade } from './config';
 import Detail from './Detail';
 import type { Lang } from '@/site/seo';
 import { localize } from '@/content/chrome';
 import { NUM_LOCALE, provinceName } from '@/content/countiesI18n';
 import { MAP_TEXT } from '@/content/mapI18n';
-import { type Data, type Selection, loadData } from './types';
+import type { MapSatSite } from '@/content/satLabels';
+import { type Basemap, type Data, type Selection, loadData } from './types';
+import BasemapSwitch from './BasemapSwitch';
 
 const IntelMap = dynamic(() => import('./IntelMap'), { ssr: false, loading: () => <div className="map" /> });
 
@@ -29,7 +31,10 @@ function readHash(): Selection | null {
   return null;
 }
 
-export default function MapExplorer({ lang = 'en' }: { lang?: Lang }) {
+const BASE_KEY = 'map-basemap';
+
+/** `sat` is the Camp Watch index (dates of our Sentinel-2 images per site), built on the server by mapSatIndex(). */
+export default function MapExplorer({ lang = 'en', sat = {} }: { lang?: Lang; sat?: Record<string, MapSatSite> }) {
   const tx = MAP_TEXT[lang];
   const { theme } = useTheme();
   const [data, setData] = useState<Data | null>(null);
@@ -37,10 +42,16 @@ export default function MapExplorer({ lang = 'en' }: { lang?: Lang }) {
   const [shade, setShade] = useState<Shade>('incidents');
   const [sel, setSel] = useState<Selection | null>(null);
   const [q, setQ] = useState('');
+  const [base, setBase] = useState<Basemap>('map');
+  const [overlays, setOverlays] = useState<Set<Overlay>>(() => new Set());
   const touched = useRef(false);
 
   useEffect(() => {
     loadData().then(setData);
+    // the reader's last basemap is a per-browser convenience; private windows may refuse storage
+    try {
+      if (localStorage.getItem(BASE_KEY) === 'satellite') setBase('satellite');
+    } catch {}
     setSel(readHash());
     const on = () => setSel(readHash());
     addEventListener('hashchange', on);
@@ -83,6 +94,21 @@ export default function MapExplorer({ lang = 'en' }: { lang?: Lang }) {
     }
     return out.slice(0, 30);
   }, [data, q, tx, lang]);
+
+  const switchBase = (b: Basemap) => {
+    setBase(b);
+    try {
+      localStorage.setItem(BASE_KEY, b);
+    } catch {}
+  };
+
+  const toggleOverlay = (o: Overlay) =>
+    setOverlays((v) => {
+      const n = new Set(v);
+      if (n.has(o)) n.delete(o);
+      else n.add(o);
+      return n;
+    });
 
   const shadeDef = SHADES.find((s) => s.id === shade)!;
   const t = MANIFEST.totals;
@@ -176,8 +202,9 @@ export default function MapExplorer({ lang = 'en' }: { lang?: Lang }) {
       </section>
 
       <main className="stage">
-        {data ? <IntelMap data={data} visible={visible} shade={shade} selected={sel} theme={theme} lang={lang} onSelect={select} /> : <div className="map" />}
-        {data && sel && <Detail sel={sel} data={data} lang={lang} onSelect={select} onClose={() => select(null)} />}
+        {data ? <IntelMap data={data} visible={visible} shade={shade} base={base} overlays={overlays} selected={sel} theme={theme} lang={lang} onSelect={select} /> : <div className="map" />}
+        <BasemapSwitch base={base} onChange={switchBase} overlays={overlays} onToggle={toggleOverlay} lang={lang} />
+        {data && sel && <Detail sel={sel} data={data} sat={sat} lang={lang} onSelect={select} onClose={() => select(null)} />}
       </main>
     </div>
   );
