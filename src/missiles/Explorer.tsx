@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import { type Dataset, type MissileType, type Outcome, type Test, loadDataset } from './data';
-import { type ColorBy, OUTCOMES, OUTCOME_COLOR, TYPES, TYPE_COLOR, TYPE_LABEL, formatDate } from './meta';
+import { type ColorBy, OUTCOMES, OUTCOME_COLOR, OUTCOME_LABEL, TYPES, TYPE_COLOR, TYPE_LABEL, formatDate } from './meta';
 import dynamic from 'next/dynamic';
 import Timeline from './Timeline';
 import Detail from './Detail';
@@ -35,6 +35,9 @@ function toggle<T>(set: Set<T>, v: T, all: T[]): Set<T> {
   else next.add(v);
   return next.size === 0 ? new Set(all) : next;
 }
+
+/** "1 test", "2 tests". */
+const plural = (n: number, one: string, many: string) => (n === 1 ? one : many);
 
 function matches(t: Test, q: string) {
   if (!q) return true;
@@ -174,11 +177,11 @@ function Explorer({ data }: { data: Dataset }) {
         <div className="stats">
           <div>
             <b>{stats.total}</b>
-            <span>tests</span>
+            <span>{plural(stats.total, 'test', 'tests')}</span>
           </div>
           <div>
             <b>{stats.launchDays.size}</b>
-            <span>launch days</span>
+            <span>{plural(stats.launchDays.size, 'launch day', 'launch days')}</span>
           </div>
           <div>
             <b>{successRate === null ? '—' : `${successRate}%`}</b>
@@ -186,7 +189,7 @@ function Explorer({ data }: { data: Dataset }) {
           </div>
           <div>
             <b style={{ color: TYPE_COLOR.ICBM }}>{stats.icbm}</b>
-            <span>ICBMs</span>
+            <span>{plural(stats.icbm, 'ICBM', 'ICBMs')}</span>
           </div>
         </div>
 
@@ -266,12 +269,19 @@ function Explorer({ data }: { data: Dataset }) {
           {grouped.map((g) => (
             <li key={g.year}>
               <h3>
-                {g.year} <small>{g.tests.length} tests</small>
+                {g.year} <small>
+                  {g.tests.length} {plural(g.tests.length, 'test', 'tests')}
+                </small>
               </h3>
               <ul>
                 {g.tests.map((t) => (
                   <li key={t.id} id={`row-${t.id}`}>
-                    <button className={`row ${t.id === selectedId ? 'selected' : ''}`} onClick={() => select(t.id === selectedId ? null : t.id)}>
+                    <button
+                      className={`row ${t.id === selectedId ? 'selected' : ''}`}
+                      aria-pressed={t.id === selectedId}
+                      aria-label={`${t.missile.name}, ${formatDate(t.date)}, ${TYPE_LABEL[t.missile.type]}${t.distanceKm ? `, ${t.distanceKm.toLocaleString()} km` : ''}: ${OUTCOME_LABEL[t.outcome]}`}
+                      onClick={() => select(t.id === selectedId ? null : t.id)}
+                    >
                       <i className="dot" style={{ background: TYPE_COLOR[t.missile.type] }} />
                       <span className="row-main">
                         <span className="row-name">{t.missile.name}</span>
@@ -280,7 +290,7 @@ function Explorer({ data }: { data: Dataset }) {
                           {t.distanceKm ? ` · ${t.distanceKm.toLocaleString()} km` : ''}
                         </span>
                       </span>
-                      <span className="row-outcome" style={{ color: OUTCOME_COLOR[t.outcome] }} title={t.outcome}>
+                      <span className="row-outcome" style={{ color: OUTCOME_COLOR[t.outcome] }} title={OUTCOME_LABEL[t.outcome]} aria-hidden>
                         {OUTCOMES.find((o) => o.id === t.outcome)!.icon}
                       </span>
                     </button>

@@ -81,6 +81,8 @@ type Chrome = {
   prisoners: string;
   prisonersEstimate: string;
   prisonersUnknown: string;
+  /** The tile's value when no estimate exists (instead of a bare "?"). */
+  prisonersNone: string;
   closed: string;
   active: string;
   runBy: string;
@@ -798,7 +800,8 @@ export const CAMPS_TEXT: Record<Lang, Chrome> = {
     kindShortKyohwaso: 'Prison',
     prisoners: 'prisoners',
     prisonersEstimate: 'HRNK estimate',
-    prisonersUnknown: 'no published estimate',
+    prisonersUnknown: 'no reliable published estimate',
+    prisonersNone: 'Unknown',
     closed: 'Closed',
     active: 'Active',
     runBy: 'run by',
@@ -861,7 +864,8 @@ export const CAMPS_TEXT: Record<Lang, Chrome> = {
     kindShortKyohwaso: '교화소',
     prisoners: '수감자',
     prisonersEstimate: 'HRNK 추정',
-    prisonersUnknown: '발표된 추정치 없음',
+    prisonersUnknown: '믿을 만한 공개 추정치 없음',
+    prisonersNone: '알 수 없음',
     closed: '폐쇄',
     active: '가동',
     runBy: '운영',
@@ -922,7 +926,8 @@ export const CAMPS_TEXT: Record<Lang, Chrome> = {
     kindShortKyohwaso: '刑務所',
     prisoners: '収容者',
     prisonersEstimate: 'HRNKの推定',
-    prisonersUnknown: '公表された推定はない',
+    prisonersUnknown: '信頼できる公表推定はない',
+    prisonersNone: '不明',
     closed: '閉鎖',
     active: '稼働',
     runBy: '運営',
@@ -983,7 +988,8 @@ export const CAMPS_TEXT: Record<Lang, Chrome> = {
     kindShortKyohwaso: '监狱',
     prisoners: '在押人数',
     prisonersEstimate: 'HRNK估计',
-    prisonersUnknown: '没有公布的估计',
+    prisonersUnknown: '没有可靠的公开估计',
+    prisonersNone: '不详',
     closed: '关闭',
     active: '在营',
     runBy: '主管',

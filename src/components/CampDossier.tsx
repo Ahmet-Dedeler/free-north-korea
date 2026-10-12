@@ -114,7 +114,7 @@ export default function CampDossier({ lang, camp }: { lang: Lang; camp: Camp }) 
           <div className="tiles">
             <StatTile
               icon={Users}
-              value={camp.prisoners ? `~${camp.prisoners.toLocaleString(lang === 'en' ? undefined : LOCALE[lang])}` : '?'}
+              value={camp.prisoners ? `~${camp.prisoners.toLocaleString(lang === 'en' ? undefined : LOCALE[lang])}` : t.prisonersNone}
               label={t.prisoners}
               note={camp.prisoners ? t.prisonersEstimate : t.prisonersUnknown}
               tone="danger"
