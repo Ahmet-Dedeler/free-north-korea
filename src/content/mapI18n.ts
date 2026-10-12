@@ -95,6 +95,17 @@ export interface MapText {
   portFlags: string;
   portNkShips: string;
   portNoFlag: string;
+  // night lights (yearly, per county) and the time pill
+  lightsTip: (year: number, share: number | null) => string;
+  timeLabel: string;
+  timePlay: string;
+  timePause: string;
+  lightsTitle: string;
+  lightsSparkAria: (from: number, to: number) => string;
+  litArea: (km2: string, pct: string) => string;
+  lightsNoData: string;
+  lightsSeam: (year: number) => string;
+  lightsSource: string;
   portLink: string;
   portNote: string;
 }
@@ -175,7 +186,7 @@ export const MAP_TEXT: Record<Lang, MapText> = {
     layersAria: 'More map layers',
     overlaysTitle: 'Seen from space',
     overlays: {
-      lights: { label: 'Night lights', sub: 'NASA · 2016', hint: 'Black Marble satellite composite, 2016. Electricity is a rough proxy for wealth.' },
+      lights: { label: 'Night lights', sub: 'EOG VIIRS', hint: 'Share of each county lit at night, one year at a time, 2013 to 2025 (annual VIIRS composites, Earth Observation Group). Electricity is a rough proxy for wealth.' },
       radar: { label: 'Ships seen by radar', sub: `GFW · ${radarMonth('en-GB')}`, hint: 'Ships satellite radar saw that sent no AIS signal, per 10 km square, last whole month. Most are fishing boats.' },
     },
     photoSentinel: 'Sentinel-2',
@@ -195,6 +206,16 @@ export const MAP_TEXT: Record<Lang, MapText> = {
     portFlags: 'Flags the ships broadcast',
     portNkShips: 'North Korean ships',
     portNoFlag: 'no flag broadcast',
+    lightsTip: (y, s) => (s == null ? `${y}: no clear data` : `${y}: ${(s * 100).toFixed(s < 0.01 ? 2 : 1)}% lit at night`),
+    timeLabel: 'Year',
+    timePlay: 'Play the years',
+    timePause: 'Pause',
+    lightsTitle: 'Night lights',
+    lightsSparkAria: (a, b) => `Sum of night lights in this county, ${a} to ${b}`,
+    litArea: (km2, p) => `Lit area ${km2} km² (${p} of the county)`,
+    lightsNoData: 'No cloud-free data this year.',
+    lightsSeam: (y) => `The satellite product changed version in ${y}; the line marks the seam.`,
+    lightsSource: 'EOG annual VIIRS night lights',
     portLink: 'Who calls at North Korean ports',
     portNote: 'Only ships broadcasting AIS. Most ships near North Korea send none, so this is a floor, not all traffic.',
   },
@@ -273,7 +294,7 @@ export const MAP_TEXT: Record<Lang, MapText> = {
     layersAria: '지도 레이어 더 보기',
     overlaysTitle: '우주에서 본 모습',
     overlays: {
-      lights: { label: '야간 불빛', sub: 'NASA · 2016', hint: '블랙 마블 위성 합성 영상, 2016년. 전기는 부의 대략적인 지표입니다.' },
+      lights: { label: '야간 불빛', sub: 'EOG VIIRS', hint: '시·군 면적 중 밤에 불이 켜진 비율, 연도별 2013~2025년 (VIIRS 연간 합성, Earth Observation Group). 전기는 부의 대략적인 지표입니다.' },
       radar: { label: '레이더에 잡힌 선박', sub: `GFW · ${radarMonth('ko-KR')}`, hint: '위성 레이더에 잡혔지만 AIS 신호를 보내지 않은 선박, 10km 칸별, 지난달 기준. 대부분 어선입니다.' },
     },
     photoSentinel: '센티넬-2',
@@ -293,6 +314,16 @@ export const MAP_TEXT: Record<Lang, MapText> = {
     portFlags: '선박이 송신한 국적',
     portNkShips: '북한 선박',
     portNoFlag: '국적 미송신',
+    lightsTip: (y, s) => (s == null ? `${y}년: 맑은 자료 없음` : `${y}년: 면적의 ${(s * 100).toFixed(s < 0.01 ? 2 : 1)}%가 밤에 밝음`),
+    timeLabel: '연도',
+    timePlay: '연도 재생',
+    timePause: '일시 정지',
+    lightsTitle: '야간 불빛',
+    lightsSparkAria: (a, b) => `이 시·군의 야간 불빛 합계, ${a}~${b}년`,
+    litArea: (km2, p) => `불이 켜진 면적 ${km2}km² (시·군의 ${p})`,
+    lightsNoData: '이해에는 구름 없는 자료가 없습니다.',
+    lightsSeam: (y) => `${y}년에 위성 자료의 버전이 바뀌었습니다. 세로선이 그 경계입니다.`,
+    lightsSource: 'EOG 연간 VIIRS 야간 불빛',
     portLink: '북한 항구에 들어오는 선박',
     portNote: 'AIS를 송신한 선박만 셉니다. 북한 근처 선박 대부분은 신호를 보내지 않으므로, 이는 전체가 아니라 최소치입니다.',
   },
@@ -371,7 +402,7 @@ export const MAP_TEXT: Record<Lang, MapText> = {
     layersAria: 'その他の地図レイヤー',
     overlaysTitle: '宇宙から見た様子',
     overlays: {
-      lights: { label: '夜間の光', sub: 'NASA・2016年', hint: 'ブラックマーブル衛星合成画像、2016年。電気は豊かさのおおまかな目安です。' },
+      lights: { label: '夜間の光', sub: 'EOG VIIRS', hint: '郡ごとの面積のうち夜に明るい割合、年ごと、2013〜2025年（VIIRS年間合成、Earth Observation Group）。電気は豊かさのおおまかな目安です。' },
       radar: { label: 'レーダーが捉えた船', sub: `GFW・${radarMonth('ja-JP')}`, hint: '衛星レーダーが捉えたのにAIS信号を送っていなかった船、10km四方ごと、直近の1か月。大半は漁船です。' },
     },
     photoSentinel: 'センチネル2',
@@ -391,6 +422,16 @@ export const MAP_TEXT: Record<Lang, MapText> = {
     portFlags: '船が発信した旗国',
     portNkShips: '北朝鮮の船',
     portNoFlag: '旗国の発信なし',
+    lightsTip: (y, s) => (s == null ? `${y}年：晴れた日のデータなし` : `${y}年：面積の${(s * 100).toFixed(s < 0.01 ? 2 : 1)}%が夜に明るい`),
+    timeLabel: '年',
+    timePlay: '年を再生',
+    timePause: '一時停止',
+    lightsTitle: '夜間の光',
+    lightsSparkAria: (a, b) => `この郡の夜間の光の合計、${a}〜${b}年`,
+    litArea: (km2, p) => `明るい面積 ${km2} km²（郡の${p}）`,
+    lightsNoData: 'この年は雲のないデータがありません。',
+    lightsSeam: (y) => `${y}年に衛星データの版が変わりました。縦線がその境目です。`,
+    lightsSource: 'EOG 年間VIIRS夜間光',
     portLink: '北朝鮮の港に入る船',
     portNote: 'AISを発信した船だけです。北朝鮮近くの船の多くは信号を送らないため、全体ではなく最小値です。',
   },
@@ -469,7 +510,7 @@ export const MAP_TEXT: Record<Lang, MapText> = {
     layersAria: '更多地图图层',
     overlaysTitle: '从太空看',
     overlays: {
-      lights: { label: '夜间灯光', sub: 'NASA · 2016年', hint: '黑色大理石卫星合成图，2016年。电力是财富的粗略指标。' },
+      lights: { label: '夜间灯光', sub: 'EOG VIIRS', hint: '各郡夜间有灯光的面积比例，逐年显示，2013至2025年（VIIRS年度合成，Earth Observation Group）。电力是财富的粗略指标。' },
       radar: { label: '雷达发现的船舶', sub: `GFW · ${radarMonth('zh-CN')}`, hint: '卫星雷达发现但没有发送AIS信号的船舶，每10公里方格，最近一个完整月份。大多是渔船。' },
     },
     photoSentinel: '哨兵2号',
@@ -489,6 +530,16 @@ export const MAP_TEXT: Record<Lang, MapText> = {
     portFlags: '船舶发送的船旗',
     portNkShips: '朝鲜船舶',
     portNoFlag: '未发送船旗',
+    lightsTip: (y, s) => (s == null ? `${y}年：无晴空数据` : `${y}年：${(s * 100).toFixed(s < 0.01 ? 2 : 1)}%的面积夜间有灯光`),
+    timeLabel: '年份',
+    timePlay: '播放各年',
+    timePause: '暂停',
+    lightsTitle: '夜间灯光',
+    lightsSparkAria: (a, b) => `本郡夜间灯光总量，${a}至${b}年`,
+    litArea: (km2, p) => `有灯光的面积 ${km2} 平方公里（占本郡${p}）`,
+    lightsNoData: '这一年没有无云数据。',
+    lightsSeam: (y) => `卫星数据在${y}年更换了版本，竖线标出分界。`,
+    lightsSource: 'EOG 年度VIIRS夜间灯光',
     portLink: '哪些船停靠朝鲜港口',
     portNote: '只统计发送AIS信号的船。朝鲜附近的大多数船不发送信号，因此这是下限，不是全部船舶往来。',
   },

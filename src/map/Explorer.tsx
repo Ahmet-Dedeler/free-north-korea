@@ -5,7 +5,7 @@ import dynamic from 'next/dynamic';
 import Link from 'next/link';
 import { useTheme } from '../theme';
 import { formatAsOf, isStale } from '@/components/AsOf';
-import { LAYERS, MANIFEST, SHADES, SHADE_COLORS, type LayerId, type Overlay, type Shade } from './config';
+import { LAYERS, MANIFEST, OVERLAYS, SHADES, SHADE_COLORS, type LayerId, type Overlay, type Shade } from './config';
 import Detail from './Detail';
 import type { Lang } from '@/site/seo';
 import { localize } from '@/content/chrome';
@@ -14,6 +14,7 @@ import { MAP_TEXT } from '@/content/mapI18n';
 import type { MapSatSite } from '@/content/satLabels';
 import { type Basemap, type Data, type Selection, loadData } from './types';
 import BasemapSwitch from './BasemapSwitch';
+import TimePill from './TimePill';
 
 const IntelMap = dynamic(() => import('./IntelMap'), { ssr: false, loading: () => <div className="map" /> });
 
@@ -44,10 +45,19 @@ export default function MapExplorer({ lang = 'en', sat = {} }: { lang?: Lang; sa
   const [q, setQ] = useState('');
   const [base, setBase] = useState<Basemap>('map');
   const [overlays, setOverlays] = useState<Set<Overlay>>(() => new Set());
+  // year for time-axis overlays; null until the data says which years exist (then the latest, or #…&y=2019)
+  const [year, setYear] = useState<number | null>(null);
   const touched = useRef(false);
 
   useEffect(() => {
-    loadData().then(setData);
+    loadData().then((d) => {
+      setData(d);
+      const y = Number(new URLSearchParams(location.hash.slice(1)).get('y'));
+      const years = d.lights.years;
+      setYear(years.includes(y) ? y : years.at(-1)!);
+      // a shared link with a year opens the night lights at that year
+      if (years.includes(y)) setOverlays((v) => new Set([...v, 'lights']));
+    });
     // the reader's last basemap is a per-browser convenience; private windows may refuse storage
     try {
       if (localStorage.getItem(BASE_KEY) === 'satellite') setBase('satellite');
@@ -64,10 +74,16 @@ export default function MapExplorer({ lang = 'en', sat = {} }: { lang?: Lang; sa
     // make sure the layer of a selected point is visible
     if (s?.kind === 'point') setVisible((v) => (v.has(s.layer) ? v : new Set([...v, s.layer])));
   }, []);
+  // The hash holds the selection and, while night lights are on, the year: #county=KP0101&y=2019
+  const latestYear = data?.lights.years.at(-1);
   useEffect(() => {
     if (!touched.current) return;
-    history.replaceState(null, '', sel ? `#${sel.kind === 'county' ? 'county' : sel.layer}=${sel.id}` : location.pathname);
-  }, [sel]);
+    const h = new URLSearchParams();
+    if (sel) h.set(sel.kind === 'county' ? 'county' : sel.layer, sel.id);
+    if (overlays.has('lights') && year && year !== latestYear) h.set('y', String(year));
+    const s = h.toString();
+    history.replaceState(null, '', s ? `#${s}` : location.pathname);
+  }, [sel, overlays, year, latestYear]);
 
   const toggle = (id: LayerId) =>
     setVisible((v) => {
@@ -102,13 +118,20 @@ export default function MapExplorer({ lang = 'en', sat = {} }: { lang?: Lang; sa
     } catch {}
   };
 
-  const toggleOverlay = (o: Overlay) =>
+  const toggleOverlay = (o: Overlay) => {
+    touched.current = true;
     setOverlays((v) => {
       const n = new Set(v);
       if (n.has(o)) n.delete(o);
       else n.add(o);
       return n;
     });
+  };
+  const pickYear = useCallback((y: number) => {
+    touched.current = true;
+    setYear(y);
+  }, []);
+  const timeOn = !!data && year !== null && OVERLAYS.some((o) => o.time && overlays.has(o.id));
 
   const shadeDef = SHADES.find((s) => s.id === shade)!;
   const t = MANIFEST.totals;
@@ -202,9 +225,14 @@ export default function MapExplorer({ lang = 'en', sat = {} }: { lang?: Lang; sa
       </section>
 
       <main className="stage">
-        {data ? <IntelMap data={data} visible={visible} shade={shade} base={base} overlays={overlays} selected={sel} theme={theme} lang={lang} onSelect={select} /> : <div className="map" />}
-        <BasemapSwitch base={base} onChange={switchBase} overlays={overlays} onToggle={toggleOverlay} lang={lang} />
-        {data && sel && <Detail sel={sel} data={data} sat={sat} lang={lang} onSelect={select} onClose={() => select(null)} />}
+        {data && year !== null ? (
+          <IntelMap data={data} visible={visible} shade={shade} base={base} overlays={overlays} year={year} selected={sel} theme={theme} lang={lang} onSelect={select} />
+        ) : (
+          <div className="map" />
+        )}
+        <BasemapSwitch base={base} onChange={switchBase} overlays={overlays} onToggle={toggleOverlay} year={year} lang={lang} />
+        {timeOn && data && <TimePill steps={data.lights.years} value={year!} onChange={pickYear} label={tx.timeLabel} playLabel={tx.timePlay} pauseLabel={tx.timePause} />}
+        {data && sel && <Detail sel={sel} data={data} sat={sat} lang={lang} year={year ?? latestYear ?? 0} lights={overlays.has('lights')} onSelect={select} onClose={() => select(null)} />}
       </main>
     </div>
   );

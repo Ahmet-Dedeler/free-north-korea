@@ -63,7 +63,44 @@ function Bars({ rows, color, lang }: { rows: [string, number][]; color: string; 
   );
 }
 
-function CountyDetail({ f, data, lang, onSelect }: { f: Feature; data: Data; lang: Lang; onSelect: (s: Selection) => void }) {
+/** Night lights for one county, 2013 to the latest year: a sparkline of the sum with the shown year marked. */
+function CountyLights({ pcode, area, data, year, lang }: { pcode: string; area: number; data: Data; year: number; lang: Lang }) {
+  const tx = MAP_TEXT[lang];
+  const L = data.lights;
+  const c = L.counties[pcode];
+  if (!c) return null;
+  const n = num(lang);
+  const W = 260;
+  const H = 54;
+  const vals = c.sum.map((v) => v ?? 0);
+  const max = Math.max(...vals, 1);
+  const x = (i: number) => 4 + (i / Math.max(L.years.length - 1, 1)) * (W - 8);
+  const y = (v: number) => H - 4 - (v / max) * (H - 12);
+  const i = Math.max(0, L.years.indexOf(year));
+  const seam = L.years.indexOf(L.source.seam);
+  const lit = c.litKm2[i];
+  const share = c.litShare[i];
+  return (
+    <>
+      <h3>
+        {tx.lightsTitle} <small>{year}</small>
+      </h3>
+      <svg className="d-spark" viewBox={`0 0 ${W} ${H}`} role="img" aria-label={tx.lightsSparkAria(L.years[0], L.years.at(-1)!)}>
+        {seam > 0 && <line x1={x(seam) - (x(1) - x(0)) / 2} x2={x(seam) - (x(1) - x(0)) / 2} y1={2} y2={H - 2} className="d-spark-seam" />}
+        <polyline points={vals.map((v, k) => `${x(k)},${y(v)}`).join(' ')} className="d-spark-line" />
+        <circle cx={x(i)} cy={y(vals[i])} r={3.5} className="d-spark-dot" />
+      </svg>
+      <p className="d-spark-ends">
+        <span>{L.years[0]}</span>
+        <span>{L.years.at(-1)}</span>
+      </p>
+      <p>{lit == null ? tx.lightsNoData : tx.litArea(n(Math.round(lit)), share == null || !area ? '—' : `${(share * 100).toFixed(share < 0.01 ? 2 : 1)}%`)}</p>
+      <p className="muted small">{tx.lightsSeam(L.source.seam)}</p>
+    </>
+  );
+}
+
+function CountyDetail({ f, data, lang, onSelect, year }: { f: Feature; data: Data; lang: Lang; onSelect: (s: Selection) => void; year: number }) {
   const p = f.properties as P;
   const tx = MAP_TEXT[lang];
   const n = num(lang);
@@ -120,6 +157,8 @@ function CountyDetail({ f, data, lang, onSelect }: { f: Feature; data: Data; lan
         </p>
       )}
 
+      <CountyLights pcode={String(p.pcode)} area={Number(p.area)} data={data} year={year} lang={lang} />
+
       {lists.map(({ layer, items }) => {
         const def = LAYERS.find((l) => l.id === layer)!;
         return (
@@ -151,6 +190,7 @@ function CountyDetail({ f, data, lang, onSelect }: { f: Feature; data: Data; lan
           { name: tx.ochaSource, url: 'https://data.humdata.org/dataset/cod-ab-prk' },
           { name: tx.censusSource, url: 'https://data.humdata.org/dataset/cod-ps-prk' },
           { name: tx.nkdbSource, url: 'https://www.visualatlas.org/en/density' },
+          { name: tx.lightsSource, url: data.lights.source.url },
         ]}
         tx={tx}
       />
@@ -360,7 +400,25 @@ function PointDetail({ layer, f, lang, sat }: { layer: LayerId; f: Feature; lang
   );
 }
 
-export default function Detail({ sel, data, sat, lang, onSelect, onClose }: { sel: Selection; data: Data; sat: Record<string, MapSatSite>; lang: Lang; onSelect: (s: Selection) => void; onClose: () => void }) {
+export default function Detail({
+  sel,
+  data,
+  sat,
+  lang,
+  year,
+  onSelect,
+  onClose,
+}: {
+  sel: Selection;
+  data: Data;
+  sat: Record<string, MapSatSite>;
+  lang: Lang;
+  /** Year the time pill shows; the county panel marks it on its night-lights line. */
+  year: number;
+  lights?: boolean;
+  onSelect: (s: Selection) => void;
+  onClose: () => void;
+}) {
   const f =
     sel.kind === 'county'
       ? data.counties.features.find((x) => x.properties?.pcode === sel.id)
@@ -371,7 +429,7 @@ export default function Detail({ sel, data, sat, lang, onSelect, onClose }: { se
       <button className="modal-close" onClick={onClose} aria-label={MAP_TEXT[lang].close}>
         ✕
       </button>
-      {sel.kind === 'county' ? <CountyDetail f={f} data={data} lang={lang} onSelect={onSelect} /> : <PointDetail layer={sel.layer} f={f} lang={lang} sat={sat} />}
+      {sel.kind === 'county' ? <CountyDetail f={f} data={data} lang={lang} onSelect={onSelect} year={year} /> : <PointDetail layer={sel.layer} f={f} lang={lang} sat={sat} />}
     </aside>
   );
 }

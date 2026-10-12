@@ -26,7 +26,7 @@ function MapThumb() {
  * it on click, and a Layers button that opens satellite overlays (night lights now; radar ship density and crop
  * health later). The sidebar stays about places; whole-country measurements go here.
  */
-export default function BasemapSwitch({ base, onChange, overlays, onToggle, lang }: { base: Basemap; onChange: (b: Basemap) => void; overlays: Set<Overlay>; onToggle: (o: Overlay) => void; lang: Lang }) {
+export default function BasemapSwitch({ base, onChange, overlays, onToggle, year, lang }: { base: Basemap; onChange: (b: Basemap) => void; overlays: Set<Overlay>; onToggle: (o: Overlay) => void; year: number | null; lang: Lang }) {
   const tx = MAP_TEXT[lang];
   const [open, setOpen] = useState(false);
   const other: Basemap = base === 'map' ? 'satellite' : 'map';
@@ -58,7 +58,8 @@ export default function BasemapSwitch({ base, onChange, overlays, onToggle, lang
               )}
               <span className="bm-legend-text">
                 {tx.overlays[o.id].label}
-                <small>{tx.overlays[o.id].sub}</small>
+                {/* a time-axis overlay names the year it shows: "EOG · 2019" */}
+                <small>{o.time && year ? `${tx.overlays[o.id].sub} · ${year}` : tx.overlays[o.id].sub}</small>
               </span>
               <button type="button" onClick={() => onToggle(o.id)} aria-label={`${tx.close}: ${tx.overlays[o.id].label}`}>
                 ✕

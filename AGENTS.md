@@ -68,6 +68,12 @@ before adding any page or article.
   vessels with no AIS only; the map draws one dot per square at its centre, sized by count, and dims the county
   shading while it's on), plus their entries in `src/content/layers.json` (build-layers.ts keeps them). The port
   panel's bars are foreign flags only; "no flag broadcast" is not foreign, and North Korea's own ships get one line.
+- Night lights on `/map`: the "Night lights" overlay shades counties by the share of their area lit at night, one year
+  at a time (2013-2025), with one shared time pill (`map/TimePill.tsx`, deep link `#y=2019`) for any overlay with a
+  time axis, and a sparkline in the county panel. `uv run scripts/ee/night_lights.py` (Google Earth Engine, annual
+  VIIRS composites from EOG) writes `public/layers/lights-years.json` and `data/archive/ee/night-lights`; run it by
+  hand when EOG publishes a new year. V2.1 → V2.2 in 2022 is a seam and the panel says so. Never monthly per county:
+  outside the cities North Korea sits at the sensor's noise floor.
 - `data/archive/`: our permanent record of data a source only serves for a while (GFW now; more to come). Append
   and update in place through `scripts/archive.ts`, never delete. One cleaned record per line,
   `<source>/<kind>/<partition>.jsonl`, sorted; each source documented in `data/archive/README.md` with its license.

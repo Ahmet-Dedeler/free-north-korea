@@ -25,3 +25,11 @@ Written by `scripts/build-ships.ts` (weekly; `--backfill` refetches everything).
 
 AIS is self-reported: names, flags and even IMO numbers can be false. Port visits at North Korean anchorages
 include fishing-gear buoys and placeholder MMSI numbers; the site filters those, the archive keeps them.
+
+## ee/ (our own computations in Google Earth Engine)
+
+Numbers we computed from satellite data, never imagery. Each line names its dataset.
+
+| File | One line per | Source and license | Written by |
+|---|---|---|---|
+| `night-lights/annual.jsonl` | county (`pcode`) and year: `sum` of radiance, `litKm2`, `litShare` of the county's area; null when no cloud-free data | Annual VIIRS night-time lights V2.1 (2013-2021) and V2.2 (2022 on), Earth Observation Group, Payne Institute, Colorado School of Mines, https://eogdata.mines.edu/products/vnl/, CC BY 4.0 | `scripts/ee/night_lights.py`, by hand once a year |

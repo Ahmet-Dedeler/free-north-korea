@@ -9,7 +9,7 @@ import type { Lang } from '@/site/seo';
 import { provinceName } from '@/content/countiesI18n';
 import { COUNTRY_NAMES, LABEL_FIELDS, MAP_TEXT } from '@/content/mapI18n';
 import { MAPLIBRE_WORKER_URL, STYLE_URL } from '../map/maplibre';
-import { LAYERS, NIGHT_LIGHTS, OVERLAYS, RADAR_COLOR, SHADES, SHADE_COLORS, type LayerId, type Overlay, type Shade } from './config';
+import { LAYERS, LIGHTS_STOPS, OVERLAYS, RADAR_COLOR, SHADES, SHADE_COLORS, type LayerId, type Overlay, type Shade } from './config';
 import type { FeatureCollection } from 'geojson';
 import type { Basemap, Data, Selection } from './types';
 
@@ -21,6 +21,8 @@ interface Props {
   shade: Shade;
   base: Basemap;
   overlays: Set<Overlay>;
+  /** Year shown by time-axis overlays (night lights). */
+  year: number;
   selected: Selection | null;
   theme: Theme;
   lang: Lang;
@@ -101,6 +103,12 @@ function foreignVisits(flags: unknown): number {
   }
 }
 
+/** County colour for one year of night lights; a county with no clean data that year stays see-through. */
+function lightsExpr(year: number): ExpressionSpecification {
+  const v: ExpressionSpecification = ['get', `lit${year}`];
+  return ['case', ['==', v, null], 'rgba(0,0,0,0)', ['interpolate', ['linear'], ['sqrt', v], ...LIGHTS_STOPS.flatMap(([t, c]) => [Math.sqrt(t), c])]] as unknown as ExpressionSpecification;
+}
+
 /** One point per radar square, at its centre, carrying the square's counts. */
 function radarDots(fc: FeatureCollection): FeatureCollection {
   return {
@@ -121,11 +129,11 @@ function countyLine(base: Basemap, pal: (typeof PAL)[Theme]): ExpressionSpecific
   return ['case', ['boolean', ['feature-state', 'selected'], false], base === 'satellite' ? '#facc15' : pal.ring, base === 'satellite' ? SAT_LINE : pal.line];
 }
 
-export default function IntelMap({ data, visible, shade, base, overlays, selected, theme, lang, onSelect }: Props) {
+export default function IntelMap({ data, visible, shade, base, overlays, year, selected, theme, lang, onSelect }: Props) {
   const box = useRef<HTMLDivElement>(null);
   const mapRef = useRef<maplibregl.Map | null>(null);
-  const latest = useRef({ data, visible, shade, base, overlays, selected, theme, onSelect });
-  latest.current = { data, visible, shade, base, overlays, selected, theme, onSelect };
+  const latest = useRef({ data, visible, shade, base, overlays, year, selected, theme, onSelect });
+  latest.current = { data, visible, shade, base, overlays, year, selected, theme, onSelect };
   const prevSel = useRef<{ source: string; id: string | number } | null>(null);
 
   useEffect(() => {
@@ -193,8 +201,11 @@ export default function IntelMap({ data, visible, shade, base, overlays, selecte
 
       // Overlays cover the county shading (a dark raster and a choropleth don't mix) but sit under the borders,
       // labels and points, so you can still hover and click counties through them.
-      map.addSource('lights', { type: 'raster', tiles: [NIGHT_LIGHTS], tileSize: 256, maxzoom: 8, attribution: 'NASA Black Marble' });
-      map.addLayer({ id: 'lights', type: 'raster', source: 'lights', paint: { 'raster-opacity': 0.95 }, layout: { visibility: overlays.has('lights') ? 'visible' : 'none' } }, 'county-line');
+      // Night lights: a county fill on the counties source, one year at a time (`lit<year>`, merged in by loadData)
+      map.addLayer(
+        { id: 'lights', type: 'fill', source: 'counties', paint: { 'fill-color': lightsExpr(latest.current.year), 'fill-opacity': 0.94 }, layout: { visibility: overlays.has('lights') ? 'visible' : 'none' } },
+        'county-line',
+      );
       // Radar: vessels that sent no AIS per 0.1° square (public/layers/radar.geojson, scripts/build-ships.ts), drawn
       // as one dot per square at its centre, sized by count. Filled squares read as solid blocks spilling onto the
       // coast; dots read as "ships out here" and leave the sea and coastline visible.
@@ -290,9 +301,17 @@ export default function IntelMap({ data, visible, shade, base, overlays, selecte
       const f = hits[0] ?? c;
       if (!f) return void tip.remove();
       const p = f.properties;
-      const { shade } = latest.current;
+      const { shade, overlays, year } = latest.current;
       const fmt = MAP_TEXT[lang].tips[shade];
-      const extra = !hits.length && fmt && p[shade] !== undefined ? ` · ${fmt(Number(p[shade]))}` : '';
+      // with night lights on, the county tip gives that year's lit share instead of the shading value
+      const lit = p[`lit${year}`];
+      const extra = hits.length
+        ? ''
+        : overlays.has('lights')
+          ? ` · ${MAP_TEXT[lang].lightsTip(year, typeof lit === 'number' ? lit : null)}`
+          : fmt && p[shade] !== undefined
+            ? ` · ${fmt(Number(p[shade]))}`
+            : '';
       const esc = (v: unknown) => String(v).replace(/</g, '&lt;');
       const tx = MAP_TEXT[lang];
       const sub = !hits.length ? `${provinceName(String(p.province ?? ''), lang)}${extra}` : f.source === 'ports' ? tx.portTip(Number(p.visits), foreignVisits(p.flags)) : '';
@@ -339,6 +358,12 @@ export default function IntelMap({ data, visible, shade, base, overlays, selecte
     for (const o of OVERLAYS) if (map.getLayer(o.id)) map.setLayoutProperty(o.id, 'visibility', overlays.has(o.id) ? 'visible' : 'none');
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [shade, base, overlays]);
+
+  // --- year of time-axis overlays ---
+  useEffect(() => {
+    const map = mapRef.current;
+    if (map?.getLayer('lights')) map.setPaintProperty('lights', 'fill-color', lightsExpr(year));
+  }, [year]);
 
   // --- selection ---
   function applySelection(fly: boolean) {

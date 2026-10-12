@@ -1812,6 +1812,116 @@ a.card:hover {
   border-radius: 3px;
   background: linear-gradient(90deg, #05070d, #4a3a1c 45%, #ffd27f);
 }
+/* The time pill: one shared year control, bottom centre, while a time-axis overlay is on (TimePill.tsx) */
+.tp {
+  position: absolute;
+  left: 50%;
+  /* above the basemap switch and its legend pills, which take the bottom-left corner */
+  bottom: 96px;
+  transform: translateX(-50%);
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: min(460px, calc(100% - 120px));
+  height: 52px;
+  padding: 0 14px 0 8px;
+  border-radius: 999px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+}
+.tp-play {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border: 0;
+  border-radius: 50%;
+  background: var(--ink);
+  color: var(--ink-inverse);
+  cursor: pointer;
+}
+.tp-label {
+  flex: none;
+  font-size: 22px;
+  font-variant-numeric: tabular-nums;
+  min-width: 3ch;
+}
+.tp-scrub {
+  position: relative;
+  flex: 1;
+  height: 36px;
+}
+.tp-scrub:has(input:focus-visible) .tp-ticks {
+  outline: 2px solid var(--ink);
+  outline-offset: 3px;
+  border-radius: 3px;
+}
+.tp-ticks {
+  display: flex;
+  gap: 3px;
+  height: 20px;
+  align-items: end;
+}
+.tp-ticks i {
+  flex: 1;
+  height: 8px;
+  border-radius: 2px;
+  background: var(--line-strong);
+  transition: height 0.12s, background 0.12s;
+}
+.tp-ticks i.on {
+  height: 20px;
+  background: #d4a24c;
+}
+.tp-ends {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  color: var(--ink-3);
+  margin-top: 2px;
+}
+.tp-scrub input {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+  cursor: ew-resize;
+}
+/* night-lights sparkline in the county panel */
+.d-spark {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-top: 4px;
+}
+.d-spark-line {
+  fill: none;
+  stroke: #d4a24c;
+  stroke-width: 2;
+  stroke-linejoin: round;
+}
+.d-spark-dot {
+  fill: #d4a24c;
+  stroke: var(--panel);
+  stroke-width: 2;
+}
+.d-spark-seam {
+  stroke: var(--line-strong);
+  stroke-dasharray: 2 3;
+}
+.d-spark-ends {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  font-size: 11px;
+  color: var(--ink-3);
+}
+
 @media (max-width: 800px) {
   .pp-img,
   .pp-esri {
@@ -1827,8 +1937,22 @@ a.card:hover {
     bottom: 34px;
   }
   /* the bottom sheet covers this corner */
-  .stage:has(.detail) .basemap {
+  .stage:has(.detail) .basemap,
+  .stage:has(.detail) .tp {
     display: none;
+  }
+  /* phones: the time pill runs full width above the basemap switch */
+  .tp {
+    left: 12px;
+    right: 12px;
+    width: auto;
+    transform: none;
+    bottom: 104px;
+    height: 44px;
+  }
+  .tp-play {
+    width: 30px;
+    height: 30px;
   }
 }
 

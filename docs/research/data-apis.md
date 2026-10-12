@@ -47,6 +47,11 @@ review with test calls and quoted license clauses is in `peer-api-review.md`.
   - listed ships, the identities they broadcast, and port calls since 2012
   - who calls at North Korean ports (last 12 months, foreign flags listed)
   - radar counts per month and per year since 2017, with the share that sent no AIS
+- Yearly night lights per county, 2013-2025 (`scripts/ee/night_lights.py`, about a minute in Earth Engine, free tier):
+  - National sum of lights 14,960 (2013) → 23,241 (2022) → 53,368 (2025); lit area 3,105 → 7,002 km².
+  - Control areas in the same data are steady over 2022-2025: Seoul +3%, rural Gangwon (South Korea) +7%, Dandong
+    +28%. North Korea's rise isn't a processing change.
+  - Pyongyang is 28-34% of all the light.
 - Findings worth a follow-up:
   - Radar detections per pass day in North Korea's waters fell from 344 (2019) to 81-88 (2020-2022), then
     rose to 208 (2026).
