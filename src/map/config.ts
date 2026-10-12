@@ -63,15 +63,11 @@ export const OVERLAYS: { id: Overlay; thumb: string }[] = [
 ];
 
 /**
- * Radar overlay colour ramp by vessels without AIS per 0.1° square. One hue, magenta: the county shading already uses
- * yellow to dark red, and the overlay sits on top of it, so it must not read as more of the same scale.
+ * Radar dots: one hue, magenta, sized by vessels without AIS per 0.1° square. The county shading already uses yellow
+ * to dark red, so the overlay must not read as more of the same scale. The legend (BasemapSwitch.tsx) uses
+ * RADAR_LEGEND as its sample counts.
  */
-export const RADAR_STOPS: [number, string][] = [
-  [1, '#f5d0fe'],
-  [5, '#e879f9'],
-  [20, '#c026d3'],
-  [50, '#86198f'],
-  [100, '#4a044e'],
-];
+export const RADAR_COLOR = '#c026d3';
+export const RADAR_LEGEND = [1, 20, 200];
 
 export const NIGHT_LIGHTS = 'https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/VIIRS_Black_Marble/default/2016-01-01/GoogleMapsCompatible_Level8/{z}/{y}/{x}.png';

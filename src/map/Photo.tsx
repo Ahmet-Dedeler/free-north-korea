@@ -27,7 +27,7 @@ export default function PlacePhoto({ siteId, site, name, layer, lat, lon, approx
   const tx = MAP_TEXT[lang];
   if (!site) {
     // closer for small compounds, wider for camps and bases that span kilometres
-    const zoom = layer === 'markets' ? 17 : layer === 'detention' || layer === 'china-detention' ? 16 : layer === 'camps' ? 13 : layer === 'missile-bases' ? 14 : 15;
+    const zoom = layer === 'ports' ? 14 : layer === 'markets' ? 17 : layer === 'detention' || layer === 'china-detention' ? 16 : layer === 'camps' ? 13 : layer === 'missile-bases' ? 14 : 15;
     return (
       <figure className="pp pp-esri" role="img" aria-label={tx.photoEsriAlt(name)}>
         <SatView lat={lat} lon={lon} zoom={approx ? Math.min(zoom, 14) : zoom} label={name} approx={approx} height={190} compact />

@@ -91,6 +91,7 @@ export interface MapText {
   portTip: (visits: number, foreign: number) => string;
   portVisits: string;
   portShips: string;
+  portForeign: string;
   portFlags: string;
   portNkShips: string;
   portNoFlag: string;
@@ -190,6 +191,7 @@ export const MAP_TEXT: Record<Lang, MapText> = {
     portTip: (v, f) => `${v.toLocaleString('en')} visits${f ? `, ${f} by foreign-flagged ships` : ''}`,
     portVisits: 'visits, last 12 months',
     portShips: 'vessels',
+    portForeign: 'of them by foreign-flagged ships',
     portFlags: 'Flags the ships broadcast',
     portNkShips: 'North Korean ships',
     portNoFlag: 'no flag broadcast',
@@ -287,6 +289,7 @@ export const MAP_TEXT: Record<Lang, MapText> = {
     portTip: (v, f) => `입항 ${v.toLocaleString('ko')}회${f ? `, 외국 국적 ${f}회` : ''}`,
     portVisits: '입항, 최근 12개월',
     portShips: '선박',
+    portForeign: '그중 외국 국적 선박',
     portFlags: '선박이 송신한 국적',
     portNkShips: '북한 선박',
     portNoFlag: '국적 미송신',
@@ -384,6 +387,7 @@ export const MAP_TEXT: Record<Lang, MapText> = {
     portTip: (v, f) => `寄港${v.toLocaleString('ja')}回${f ? `、うち外国籍船${f}回` : ''}`,
     portVisits: '寄港、直近12か月',
     portShips: '隻',
+    portForeign: 'うち外国籍船',
     portFlags: '船が発信した旗国',
     portNkShips: '北朝鮮の船',
     portNoFlag: '旗国の発信なし',
@@ -481,6 +485,7 @@ export const MAP_TEXT: Record<Lang, MapText> = {
     portTip: (v, f) => `停靠${v.toLocaleString('zh')}次${f ? `，其中外国船旗${f}次` : ''}`,
     portVisits: '次停靠，最近12个月',
     portShips: '艘船',
+    portForeign: '其中外国籍船舶',
     portFlags: '船舶发送的船旗',
     portNkShips: '朝鲜船舶',
     portNoFlag: '未发送船旗',

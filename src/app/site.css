@@ -1750,6 +1750,68 @@ a.card:hover {
   font-size: 10.5px;
   font-weight: 400;
 }
+.bm-legends {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.bm-legend {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 6px 6px 10px;
+  border-radius: 10px;
+  background: var(--glass);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(6px);
+  font-size: 12px;
+}
+.bm-legend-text {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  line-height: 1.25;
+}
+.bm-legend-text small {
+  color: var(--ink-3);
+  font-size: 10.5px;
+  font-weight: 400;
+}
+.bm-legend button {
+  width: 22px;
+  height: 22px;
+  border-radius: 6px;
+  color: var(--ink-3);
+  font-size: 11px;
+}
+.bm-legend button:hover {
+  background: var(--hover);
+  color: var(--ink);
+}
+.bm-key-dots {
+  display: flex;
+  align-items: flex-end;
+  gap: 7px;
+  color: var(--ink-2);
+  font-size: 10px;
+  font-variant-numeric: tabular-nums;
+}
+.bm-key-dots span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+.bm-key-dots i {
+  border-radius: 50%;
+  opacity: 0.8;
+}
+.bm-key-glow {
+  width: 34px;
+  height: 12px;
+  border-radius: 3px;
+  background: linear-gradient(90deg, #05070d, #4a3a1c 45%, #ffd27f);
+}
 @media (max-width: 800px) {
   .pp-img,
   .pp-esri {
@@ -1790,6 +1852,24 @@ a.card:hover {
   background: var(--hover);
   display: flex;
   flex-direction: column;
+}
+.d-stats.three {
+  grid-template-columns: repeat(3, 1fr);
+}
+.d-stats div.hot b {
+  color: #0f766e;
+}
+:root[data-theme='dark'] .d-stats div.hot b {
+  color: #2dd4bf;
+}
+.port-own {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0 0;
+  padding-top: 6px;
+  border-top: 1px solid var(--line);
+  color: var(--ink-2);
+  font-size: 12.5px;
 }
 .d-stats b {
   font-size: 18px;

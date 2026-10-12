@@ -166,9 +166,12 @@ function PortDetail({ f, lang, photo }: { f: Feature; lang: Lang; photo: React.R
   const tx = MAP_TEXT[lang];
   const n = num(lang);
   const flags = Object.entries(parse<Record<string, number>>(p.flags, {}));
-  // foreign flags first, biggest first; North Korea's own ships last, labelled as such
-  const rows = [...flags.filter(([k]) => k !== 'PRK').sort((a, b) => b[1] - a[1]), ...flags.filter(([k]) => k === 'PRK')];
-  const max = Math.max(...rows.map((r) => r[1]), 1);
+  // The story is who else calls here, so the bars are foreign flags only (biggest first, unknown last), scaled among
+  // themselves; North Korea's own ships would flatten them, so they get one line underneath.
+  const foreign = flags.filter(([k]) => k !== 'PRK').sort((a, b) => (a[0] === 'unknown' ? 1 : b[0] === 'unknown' ? -1 : b[1] - a[1]));
+  const own = flags.find(([k]) => k === 'PRK')?.[1] ?? 0;
+  const foreignVisits = foreign.filter(([k]) => k !== 'unknown').reduce((t, [, v]) => t + v, 0);
+  const max = Math.max(...foreign.map((r) => r[1]), 1);
   const def = LAYERS.find((l) => l.id === 'ports')!;
   const [lon, lat] = (f.geometry as { coordinates: number[] }).coordinates;
   const updated = MANIFEST.layers.ports?.sources[0]?.updated;
@@ -179,10 +182,14 @@ function PortDetail({ f, lang, photo }: { f: Feature; lang: Lang; photo: React.R
         {tx.portKicker}
       </p>
       <h2>{tx.portName(String(p.port ?? ''), p.near === true, String(p.name))}</h2>
-      <div className="d-stats">
+      <div className="d-stats three">
         <div>
           <b>{n(p.visits)}</b>
           <span>{tx.portVisits}</span>
+        </div>
+        <div className={foreignVisits ? 'hot' : ''}>
+          <b>{n(foreignVisits)}</b>
+          <span>{tx.portForeign}</span>
         </div>
         <div>
           <b>{n(p.vessels)}</b>
@@ -194,18 +201,27 @@ function PortDetail({ f, lang, photo }: { f: Feature; lang: Lang; photo: React.R
           <AsOf date={updated} lang={lang} />
         </p>
       )}
-      <h3>{tx.portFlags}</h3>
-      <ul className="bars">
-        {rows.map(([k, v]) => (
-          <li key={k}>
-            <span className="bars-label">{k === 'PRK' ? tx.portNkShips : k === 'unknown' ? tx.portNoFlag : countryName(k, LOCALE[lang])}</span>
-            <span className="bars-track">
-              <i style={{ width: `${(v / max) * 100}%`, background: k === 'PRK' ? 'var(--ink-3)' : def.color }} />
-            </span>
-            <b>{v}</b>
-          </li>
-        ))}
-      </ul>
+      {foreign.length > 0 && (
+        <>
+          <h3>{tx.portFlags}</h3>
+          <ul className="bars">
+            {foreign.map(([k, v]) => (
+              <li key={k}>
+                <span className="bars-label">{k === 'unknown' ? tx.portNoFlag : countryName(k, LOCALE[lang])}</span>
+                <span className="bars-track">
+                  <i style={{ width: `${(v / max) * 100}%`, background: k === 'unknown' ? 'var(--ink-3)' : def.color }} />
+                </span>
+                <b>{v}</b>
+              </li>
+            ))}
+          </ul>
+        </>
+      )}
+      {own > 0 && (
+        <p className="port-own">
+          {tx.portNkShips} <b>{n(own)}</b>
+        </p>
+      )}
       <p className="muted">{tx.portNote}</p>
       <p className="place-meta">
         {lat.toFixed(4)}°N, {lon.toFixed(4)}°E

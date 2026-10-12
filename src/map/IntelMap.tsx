@@ -9,7 +9,8 @@ import type { Lang } from '@/site/seo';
 import { provinceName } from '@/content/countiesI18n';
 import { COUNTRY_NAMES, LABEL_FIELDS, MAP_TEXT } from '@/content/mapI18n';
 import { MAPLIBRE_WORKER_URL, STYLE_URL } from '../map/maplibre';
-import { LAYERS, NIGHT_LIGHTS, OVERLAYS, RADAR_STOPS, SHADES, SHADE_COLORS, type LayerId, type Overlay, type Shade } from './config';
+import { LAYERS, NIGHT_LIGHTS, OVERLAYS, RADAR_COLOR, SHADES, SHADE_COLORS, type LayerId, type Overlay, type Shade } from './config';
+import type { FeatureCollection } from 'geojson';
 import type { Basemap, Data, Selection } from './types';
 
 maplibregl.setWorkerUrl(MAPLIBRE_WORKER_URL);
@@ -82,10 +83,37 @@ function labelExpr(lang: Lang): ExpressionSpecification {
  * Counties fade as you zoom in, so the basemap (roads, towns) shows through around the points. On satellite imagery
  * they start lighter and fade further: people switch to satellite to see the ground.
  */
-function fillOpacity(shade: Shade, base: Basemap): ExpressionSpecification | number {
+function fillOpacity(shade: Shade, base: Basemap, overlays: Set<Overlay>): ExpressionSpecification | number {
   if (shade === 'none') return 0;
-  const [lo, hi, loSel, hiSel] = base === 'satellite' ? [0.45, 0.08, 0.6, 0.12] : [0.62, 0.22, 0.8, 0.35];
+  // with the radar dots on, the county shading steps back so the two scales don't compete
+  const k = overlays.has('radar') ? 0.4 : 1;
+  const [lo, hi, loSel, hiSel] = (base === 'satellite' ? [0.45, 0.08, 0.6, 0.12] : [0.62, 0.22, 0.8, 0.35]).map((v) => v * k);
   return ['interpolate', ['linear'], ['zoom'], 6, ['case', ['boolean', ['feature-state', 'selected'], false], loSel, lo], 9.5, ['case', ['boolean', ['feature-state', 'selected'], false], hiSel, hi]];
+}
+
+/** Visits by ships broadcasting a flag other than North Korea's (no flag doesn't count), as the port panel shows. */
+function foreignVisits(flags: unknown): number {
+  try {
+    const f = (typeof flags === 'string' ? JSON.parse(flags) : flags) as Record<string, number>;
+    return Object.entries(f ?? {}).reduce((t, [k, v]) => (k === 'PRK' || k === 'unknown' ? t : t + v), 0);
+  } catch {
+    return 0;
+  }
+}
+
+/** One point per radar square, at its centre, carrying the square's counts. */
+function radarDots(fc: FeatureCollection): FeatureCollection {
+  return {
+    type: 'FeatureCollection',
+    features: fc.features.flatMap((f) => {
+      if (f.geometry.type !== 'Polygon') return [];
+      const ring = f.geometry.coordinates[0];
+      const xs = ring.map((c) => c[0]);
+      const ys = ring.map((c) => c[1]);
+      const center = [(Math.min(...xs) + Math.max(...xs)) / 2, (Math.min(...ys) + Math.max(...ys)) / 2];
+      return [{ type: 'Feature' as const, properties: f.properties, geometry: { type: 'Point' as const, coordinates: center } }];
+    }),
+  };
 }
 
 /** County border colour: the selected county gets a ring, the rest a hairline. */
@@ -142,7 +170,7 @@ export default function IntelMap({ data, visible, shade, base, overlays, selecte
           source: 'counties',
           paint: {
             'fill-color': shadeExpr(shade) as ExpressionSpecification,
-            'fill-opacity': fillOpacity(shade, base),
+            'fill-opacity': fillOpacity(shade, base, overlays),
           },
         },
         firstLabel,
@@ -167,11 +195,23 @@ export default function IntelMap({ data, visible, shade, base, overlays, selecte
       // labels and points, so you can still hover and click counties through them.
       map.addSource('lights', { type: 'raster', tiles: [NIGHT_LIGHTS], tileSize: 256, maxzoom: 8, attribution: 'NASA Black Marble' });
       map.addLayer({ id: 'lights', type: 'raster', source: 'lights', paint: { 'raster-opacity': 0.95 }, layout: { visibility: overlays.has('lights') ? 'visible' : 'none' } }, 'county-line');
-      // Radar: 0.1° squares of vessels that sent no AIS (public/layers/radar.geojson, scripts/build-ships.ts)
-      map.addSource('radar', { type: 'geojson', data: data.radar, attribution: 'Global Fishing Watch' });
-      const radarColor = ['step', ['get', 'dark'], RADAR_STOPS[0][1], ...RADAR_STOPS.slice(1).flat()] as unknown as ExpressionSpecification;
+      // Radar: vessels that sent no AIS per 0.1° square (public/layers/radar.geojson, scripts/build-ships.ts), drawn
+      // as one dot per square at its centre, sized by count. Filled squares read as solid blocks spilling onto the
+      // coast; dots read as "ships out here" and leave the sea and coastline visible.
+      map.addSource('radar', { type: 'geojson', data: radarDots(data.radar), attribution: 'Global Fishing Watch' });
       map.addLayer(
-        { id: 'radar', type: 'fill', source: 'radar', paint: { 'fill-color': radarColor, 'fill-opacity': 0.72, 'fill-outline-color': 'rgba(0,0,0,0)' }, layout: { visibility: overlays.has('radar') ? 'visible' : 'none' } },
+        {
+          id: 'radar',
+          type: 'circle',
+          source: 'radar',
+          paint: {
+            'circle-radius': ['interpolate', ['exponential', 2], ['zoom'], 5, ['+', 0.8, ['*', 0.28, ['sqrt', ['get', 'dark']]]], 9, ['+', 2, ['*', 1.1, ['sqrt', ['get', 'dark']]]]],
+            'circle-color': RADAR_COLOR,
+            'circle-opacity': 0.72,
+            'circle-stroke-width': 0,
+          },
+          layout: { visibility: overlays.has('radar') ? 'visible' : 'none' },
+        },
         'county-line',
       );
 
@@ -255,7 +295,7 @@ export default function IntelMap({ data, visible, shade, base, overlays, selecte
       const extra = !hits.length && fmt && p[shade] !== undefined ? ` · ${fmt(Number(p[shade]))}` : '';
       const esc = (v: unknown) => String(v).replace(/</g, '&lt;');
       const tx = MAP_TEXT[lang];
-      const sub = !hits.length ? `${provinceName(String(p.province ?? ''), lang)}${extra}` : f.source === 'ports' ? tx.portTip(Number(p.visits), Number(p.foreign)) : '';
+      const sub = !hits.length ? `${provinceName(String(p.province ?? ''), lang)}${extra}` : f.source === 'ports' ? tx.portTip(Number(p.visits), foreignVisits(p.flags)) : '';
       const name = f.source === 'ports' ? tx.portName(String(p.port), p.near === true || p.near === 'true', String(p.name)) : p.name;
       tip
         .setLngLat(e.lngLat)
@@ -292,7 +332,7 @@ export default function IntelMap({ data, visible, shade, base, overlays, selecte
     const map = mapRef.current;
     if (!map?.getLayer('county-fill')) return;
     map.setPaintProperty('county-fill', 'fill-color', shadeExpr(shade) as ExpressionSpecification);
-    map.setPaintProperty('county-fill', 'fill-opacity', fillOpacity(shade, base));
+    map.setPaintProperty('county-fill', 'fill-opacity', fillOpacity(shade, base, overlays));
     map.setPaintProperty('county-line', 'line-color', countyLine(base, PAL[theme]));
     map.setPaintProperty('province-line', 'line-color', base === 'satellite' ? SAT_LINE : PAL[theme].line);
     map.setLayoutProperty('satellite', 'visibility', base === 'satellite' ? 'visible' : 'none');
