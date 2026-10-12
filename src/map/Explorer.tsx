@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import dynamic from 'next/dynamic';
 import Link from 'next/link';
+import { Anchor, CircleOff, Fence, Grid3x3, Lock, LockKeyhole, Radiation, Rocket, Route, Search, Store, TriangleAlert, Users, type LucideIcon } from 'lucide-react';
 import { useTheme } from '../theme';
 import { formatAsOf, isStale } from '@/components/AsOf';
 import { LAYERS, LIGHTS_STOPS, MANIFEST, OVERLAYS, SHADES, SHADE_COLORS, type LayerId, type Overlay, type Shade } from './config';
@@ -12,7 +13,7 @@ import { localize } from '@/content/chrome';
 import { NUM_LOCALE, provinceName } from '@/content/countiesI18n';
 import { MAP_TEXT } from '@/content/mapI18n';
 import type { MapSatSite } from '@/content/satLabels';
-import { type Basemap, type Data, type Selection, loadData } from './types';
+import { type Basemap, type Data, type Focus, type Selection, loadData } from './types';
 import BasemapSwitch from './BasemapSwitch';
 import TimePill from './TimePill';
 import Latest from './Latest';
@@ -20,7 +21,18 @@ import type { MapLatest } from '@/content/mapLatest';
 
 const IntelMap = dynamic(() => import('./IntelMap'), { ssr: false, loading: () => <div className="map" /> });
 
-const GROUPS = [...new Set(LAYERS.map((l) => l.group))];
+/** One icon per layer and per county shading, so the sidebar reads at a glance, like Google Maps' category chips. */
+const LAYER_ICON: Record<LayerId, LucideIcon> = {
+  camps: Fence,
+  detention: LockKeyhole,
+  'china-detention': Lock,
+  'missile-bases': Rocket,
+  sites: Radiation,
+  markets: Store,
+  ports: Anchor,
+  'escape-route': Route,
+};
+const SHADE_ICON: Record<Shade, LucideIcon> = { incidents: TriangleAlert, density: Grid3x3, population: Users, detention: LockKeyhole, markets: Store, none: CircleOff };
 
 /** URL hash: #county=KP0101 or #camps=camp-3 (layer=id). Read after hydration. */
 function readHash(): Selection | null {
@@ -80,6 +92,8 @@ export default function MapExplorer({ lang = 'en', sat = {}, latest }: { lang?: 
     try {
       if (localStorage.getItem(BASE_KEY) === 'satellite') setBase('satellite');
     } catch {}
+    // a link can ask for the satellite basemap: /map#county=KP0613&b=sat (the county pages' "Satellite view")
+    if (new URLSearchParams(location.hash.slice(1)).get('b') === 'sat') setBase('satellite');
     setSel(readHash());
     const on = () => setSel(readHash());
     addEventListener('hashchange', on);
@@ -87,7 +101,7 @@ export default function MapExplorer({ lang = 'en', sat = {}, latest }: { lang?: 
   }, []);
 
   // a spot to show without selecting anything (a quake from the Latest list); cleared by any selection
-  const [focus, setFocus] = useState<[number, number] | null>(null);
+  const [focus, setFocus] = useState<Focus | null>(null);
   const select = useCallback((s: Selection | null) => {
     setFocus(null);
     touched.current = true;
@@ -166,7 +180,10 @@ export default function MapExplorer({ lang = 'en', sat = {}, latest }: { lang?: 
         </header>
 
         <div className="filters">
-          <input type="search" placeholder={tx.search} value={q} onChange={(e) => setQ(e.target.value)} />
+          <label className="search-box">
+            <Search size={16} aria-hidden="true" />
+            <input type="search" placeholder={tx.search} aria-label={tx.search} value={q} onChange={(e) => setQ(e.target.value)} />
+          </label>
           {results.length > 0 && (
             <ul className="search-results">
               {results.map((r, i) => (
@@ -190,6 +207,47 @@ export default function MapExplorer({ lang = 'en', sat = {}, latest }: { lang?: 
         </div>
 
         <div className="layer-panel">
+          {/* what's on the map: one chip per layer, like Google Maps' category chips; details in the tooltip */}
+          <div className="layer-group">
+            <h3>{tx.onMap}</h3>
+            <div className="lchips">
+              {LAYERS.map((l) => {
+                const m = MANIFEST.layers[l.id];
+                const Icon = LAYER_ICON[l.id];
+                const updated = m?.sources[0]?.updated;
+                const stale = !!updated && isStale(updated);
+                const tip = [
+                  m ? `${tx.layers[l.id].label} (${m.count})` : tx.layers[l.id].label,
+                  tx.layers[l.id].hint,
+                  m && m.sources.map((x) => x.name.split(',')[0]).join(' + ') + (updated ? ` · ${formatAsOf(updated.slice(0, 7), lang === 'en' ? 'en-GB' : NUM_LOCALE[lang])}` : ''),
+                  stale && tx.mayBeOutdated,
+                ]
+                  .filter(Boolean)
+                  .join('\n');
+                return (
+                  <button
+                    key={l.id}
+                    type="button"
+                    className={`lchip ${visible.has(l.id) ? 'on' : ''}`}
+                    style={{ '--c': l.color } as React.CSSProperties}
+                    aria-pressed={visible.has(l.id)}
+                    title={tip}
+                    onClick={() => toggle(l.id)}
+                  >
+                    <span className="lchip-icon" aria-hidden="true">
+                      <Icon size={14} />
+                    </span>
+                    <span className="lchip-name">{tx.layers[l.id].short}</span>
+                    {m && (
+                      // an outdated layer shows the year its data is from instead of the count (the count is in the tooltip)
+                      <small className={stale ? 'stale' : ''}>{stale && updated ? updated.slice(0, 4) : m.count}</small>
+                    )}
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+
           {latest && !q && (
             <Latest
               latest={latest}
@@ -197,22 +255,26 @@ export default function MapExplorer({ lang = 'en', sat = {}, latest }: { lang?: 
               onSelect={select}
               onFocus={(p) => {
                 select(null);
-                setFocus(p);
+                setFocus({ center: p });
               }}
             />
           )}
+
           <div className="layer-group">
             <h3>{tx.shadeBy}</h3>
             <div className="chips">
-              {SHADES.map((s) => (
-                <button key={s.id} className={`chip ${shade === s.id ? 'on' : ''}`} title={tx.shades[s.id].hint} onClick={() => setShade(s.id)}>
-                  {tx.shades[s.id].label}
-                </button>
-              ))}
+              {SHADES.map((s) => {
+                const Icon = SHADE_ICON[s.id];
+                return (
+                  <button key={s.id} type="button" className={`chip ${shade === s.id ? 'on' : ''}`} aria-pressed={shade === s.id} title={tx.shades[s.id].hint} onClick={() => setShade(s.id)}>
+                    <Icon size={13} aria-hidden="true" />
+                    {tx.shades[s.id].label}
+                  </button>
+                );
+              })}
             </div>
-            <p className="layer-hint">{tx.shades[shade].hint}</p>
             {shadeDef.stops && (
-              <div className="ramp">
+              <div className="ramp" title={tx.shades[shade].hint}>
                 {shadeDef.stops.map((s, i) => (
                   <span key={s}>
                     <i style={{ background: SHADE_COLORS[i] }} />
@@ -222,33 +284,8 @@ export default function MapExplorer({ lang = 'en', sat = {}, latest }: { lang?: 
                 ))}
               </div>
             )}
+            <p className="layer-hint">{tx.shades[shade].hint}</p>
           </div>
-
-          {GROUPS.map((g) => (
-            <div key={g} className="layer-group">
-              <h3>{tx.groups[g]}</h3>
-              {LAYERS.filter((l) => l.group === g).map((l) => {
-                const m = MANIFEST.layers[l.id];
-                return (
-                  <label key={l.id} className={`layer-row ${visible.has(l.id) ? 'on' : ''}`} title={tx.layers[l.id].hint}>
-                    <input type="checkbox" checked={visible.has(l.id)} onChange={() => toggle(l.id)} />
-                    <i style={{ background: l.color }} />
-                    <span className="layer-name">
-                      {tx.layers[l.id].label}
-                      {m && (
-                        <small>
-                          {m.sources.map((s) => s.name.split(',')[0]).join(' + ')}
-                          {m.sources[0]?.updated ? ` · ${formatAsOf(m.sources[0].updated.slice(0, 7), lang === 'en' ? 'en-GB' : NUM_LOCALE[lang])}` : ''}
-                          {m.sources[0]?.updated && isStale(m.sources[0].updated) && <em className="layer-stale"> · {tx.mayBeOutdated}</em>}
-                        </small>
-                      )}
-                    </span>
-                    {m && <b>{m.count}</b>}
-                  </label>
-                );
-              })}
-            </div>
-          ))}
 
           <p className="layer-note">
             {tx.note(t.homesWithheld, MANIFEST.built)} <Link href={localize(lang, '/sources')}>{tx.sourcesLink}</Link>
@@ -280,7 +317,22 @@ export default function MapExplorer({ lang = 'en', sat = {}, latest }: { lang?: 
             }}
           />
         )}
-        {data && sel && <Detail sel={sel} data={data} sat={sat} lang={lang} year={year ?? latestYear ?? 0} lights={overlays.has('lights')} onSelect={select} onClose={() => select(null)} />}
+        {data && sel && (
+          <Detail
+            sel={sel}
+            data={data}
+            sat={sat}
+            lang={lang}
+            year={year ?? latestYear ?? 0}
+            lights={overlays.has('lights')}
+            onSelect={select}
+            onClose={() => select(null)}
+            onCloseUp={(center, zoom) => {
+              switchBase('satellite');
+              setFocus({ center, zoom, ping: false });
+            }}
+          />
+        )}
       </main>
     </div>
   );

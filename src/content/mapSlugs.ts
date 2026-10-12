@@ -62,3 +62,14 @@ export function baseName(url: string | undefined, fallback: string): string {
     : fallback.replace(/^The\s+/i, '').replace(/\s+Missile Operating Base$/i, '');
   return `${place} Missile Operating Base`;
 }
+
+/**
+ * Dossier slug of a county (`/counties/<slug>`): its name without "City", lower-case and hyphenated; the two Unsans
+ * get their province. Client-safe, so the map links straight to the page. content/counties.ts builds the pages with
+ * this same function; a county code (kp0613) is only an alias there and has no page of its own.
+ */
+export function countySlug(name: string, province: string): string {
+  const base = name.toLowerCase().replace(/\s+city$/i, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+  if (base === 'unsan') return province.toLowerCase().includes('north') ? 'unsan-north-pyongan' : 'unsan-south-pyongan';
+  return base;
+}

@@ -1,5 +1,6 @@
 import { readFileSync } from 'node:fs';
 import path from 'node:path';
+import { countySlug } from './mapSlugs';
 
 export interface County {
   pcode: string;
@@ -30,10 +31,7 @@ export function getAllCounties(): County[] {
 
   cachedCounties = raw.features.map((f: any) => {
     const p = f.properties;
-    let base = p.name.toLowerCase().replace(/\s+city$/i, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
-    if (base === 'unsan') {
-      base = p.province.toLowerCase().includes('north') ? 'unsan-north-pyongan' : 'unsan-south-pyongan';
-    }
+    const base = countySlug(p.name, p.province);
 
     const aliases: string[] = [p.pcode.toLowerCase(), p.pcode];
     const fullSlug = p.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');

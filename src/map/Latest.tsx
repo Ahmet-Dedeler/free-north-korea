@@ -38,20 +38,19 @@ export default function Latest({ latest, lang, onSelect, onFocus }: { latest: Ma
                   {fresh(e.iso) && <i className="lt-fresh" />}
                 </span>
                 <span className="lt-text">
-                  <time dateTime={e.iso}>{e.when}</time>
                   <b>{e.title}</b>
-                  <small>{e.sub}</small>
+                  <time dateTime={e.iso}>{e.when}</time>
                 </span>
               </>
             );
             return (
               <li key={e.id}>
                 {e.href ? (
-                  <Link className="lt-row" href={e.href}>
+                  <Link className="lt-row" href={e.href} title={e.sub}>
                     {body}
                   </Link>
                 ) : (
-                  <button type="button" className="lt-row" aria-label={tx.latestQuakeAria(e.title)} onClick={() => e.lngLat && onFocus(e.lngLat)}>
+                  <button type="button" className="lt-row" title={e.sub} aria-label={tx.latestQuakeAria(e.title)} onClick={() => e.lngLat && onFocus(e.lngLat)}>
                     {body}
                   </button>
                 )}

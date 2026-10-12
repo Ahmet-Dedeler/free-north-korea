@@ -28,7 +28,9 @@ export interface MapText {
   countySub: (province: string) => string;
   shadeBy: string;
   groups: Record<Group, string>;
-  layers: Record<LayerId, { label: string; hint: string }>;
+  /** `short` is the chip label in the sidebar; `label` the full name (panel kicker, tooltips). */
+  layers: Record<LayerId, { short: string; label: string; hint: string }>;
+  onMap: string;
   shades: Record<Shade, { label: string; hint: string }>;
   /** Hover text for a county's value under the current shading. */
   tips: Partial<Record<Shade, (v: number) => string>>;
@@ -86,6 +88,13 @@ export interface MapText {
   photoEsri: string;
   photoScrub: string;
   photoCompare: string;
+  photoExpand: string;
+  photoCloseUp: string;
+  photoCloseUpHint: string;
+  /** Under the full-screen viewer: why a Sentinel-2 image stays soft. */
+  photoPixel: string;
+  zoomIn: string;
+  zoomOut: string;
   photoNoClear: string;
   photoAlt: (name: string, date: string) => string;
   photoEsriAlt: (name: string) => string;
@@ -123,20 +132,21 @@ export const MAP_TEXT: Record<Lang, MapText> = {
     metaDescription:
       'Interactive intel map of North Korea: political prison camps, 190+ detention and secret police facilities, missile bases, markets, population and 3,600 documented human rights abuses by county.',
     h1: 'North Korea intel map',
-    lede: (n) => `Camps, prisons, secret police offices, missile bases, markets and ${n} documented abuses, on one map. Click any county or point.`,
+    lede: (n) => `Camps, prisons, weapons sites and ${n} documented abuses. Tap anything to look closer.`,
     search: 'Search a county, camp, base, market…',
     countySub: (p) => `County · ${p}`,
+    onMap: 'On the map',
     shadeBy: 'Shade counties by',
     groups: { 'Human rights': 'Human rights', Military: 'Military', Economy: 'Economy', Escape: 'Escape' },
     layers: {
-      camps: { label: 'Prison camps', hint: 'Political prison camps (kwanliso) and long-term prisons (kyohwaso)' },
-      detention: { label: 'Detention & security offices', hint: 'Holding centres, interrogation, labour training camps, secret police offices' },
-      'china-detention': { label: 'Chinese detention (repatriation)', hint: 'Where China holds escapees before sending them back' },
-      'missile-bases': { label: 'Missile operating bases', hint: 'Undeclared bases found by CSIS from satellite imagery' },
-      sites: { label: 'Nuclear, launch & key sites', hint: 'Yongbyon, Punggye-ri, Sohae, Pyongyang landmarks, border crossings' },
-      markets: { label: 'Markets (jangmadang)', hint: 'Official markets, sized by number of stalls (CSIS, 2018)' },
-      ports: { label: 'Ports', hint: 'North Korean anchorages where ships stopped in the last 12 months, sized by visits (Global Fishing Watch)' },
-      'escape-route': { label: 'Escape route', hint: 'The usual 3,000-mile route through China to Southeast Asia' },
+      camps: { short: 'Camps', label: 'Prison camps', hint: 'Political prison camps (kwanliso) and long-term prisons (kyohwaso)' },
+      detention: { short: 'Detention', label: 'Detention & security offices', hint: 'Holding centres, interrogation, labour training camps, secret police offices' },
+      'china-detention': { short: 'In China', label: 'Chinese detention (repatriation)', hint: 'Where China holds escapees before sending them back' },
+      'missile-bases': { short: 'Missile bases', label: 'Missile operating bases', hint: 'Undeclared bases found by CSIS from satellite imagery' },
+      sites: { short: 'Key sites', label: 'Nuclear, launch & key sites', hint: 'Yongbyon, Punggye-ri, Sohae, Pyongyang landmarks, border crossings' },
+      markets: { short: 'Markets', label: 'Markets (jangmadang)', hint: 'Official markets, sized by number of stalls (CSIS, 2018)' },
+      ports: { short: 'Ports', label: 'Ports', hint: 'North Korean anchorages where ships stopped in the last 12 months, sized by visits (Global Fishing Watch)' },
+      'escape-route': { short: 'Escape route', label: 'Escape route', hint: 'The usual 3,000-mile route through China to Southeast Asia' },
     },
     shades: {
       incidents: { label: 'Documented abuses', hint: 'Human rights violations recorded by NKDB, per county' },
@@ -204,7 +214,13 @@ export const MAP_TEXT: Record<Lang, MapText> = {
     photoLatest: 'Latest',
     photoEsri: 'Esri satellite view · capture date not given',
     photoScrub: 'Our own images, one per month. Slide to go back in time.',
-    photoCompare: 'Compare dates →',
+    photoCompare: 'Compare dates',
+    photoExpand: 'Enlarge',
+    photoCloseUp: 'Close-up',
+    photoCloseUpHint: 'Fly in on the satellite map: sharper Esri imagery, capture date not given',
+    photoPixel: 'One pixel is 10 to 15 m: fields, roads and large buildings, not people.',
+    zoomIn: 'Zoom in',
+    zoomOut: 'Zoom out',
     photoNoClear: 'no clear image',
     photoAlt: (name, date) => `Sentinel-2 satellite image of ${name}, captured ${date}`,
     photoEsriAlt: (name) => `Satellite view of ${name}`,
@@ -236,20 +252,21 @@ export const MAP_TEXT: Record<Lang, MapText> = {
     metaDescription:
       '북한 인터랙티브 정보 지도입니다. 정치범수용소, 190곳이 넘는 구금·보위 시설, 미사일 기지, 시장, 인구, 그리고 시·군별로 기록된 인권 침해 3,600건을 보여 줍니다.',
     h1: '북한 정보 지도',
-    lede: (n) => `수용소, 교화소, 보위부 사무소, 미사일 기지, 시장, 그리고 기록된 인권 침해 ${n}건을 한 지도에 담았습니다. 시·군이나 지점을 누르세요.`,
+    lede: (n) => `수용소, 교화소, 무기 시설, 기록된 인권 침해 ${n}건. 무엇이든 눌러 자세히 보세요.`,
     search: '시·군, 수용소, 기지, 시장 찾기…',
     countySub: (p) => `시·군 · ${p}`,
+    onMap: '지도에 표시',
     shadeBy: '시·군 색 기준',
     groups: { 'Human rights': '인권', Military: '군사', Economy: '경제', Escape: '탈북' },
     layers: {
-      camps: { label: '정치범수용소·교화소', hint: '정치범수용소(관리소)와 장기 수감 교화소' },
-      detention: { label: '구금·보위 시설', hint: '집결소, 조사 시설, 노동단련대, 보위부 사무소' },
-      'china-detention': { label: '중국 구금 시설 (강제 북송)', hint: '중국이 탈북민을 돌려보내기 전에 가두는 곳' },
-      'missile-bases': { label: '미사일 운용 기지', hint: 'CSIS가 위성 사진으로 찾아낸 미신고 기지' },
-      sites: { label: '핵·발사장·주요 장소', hint: '영변, 풍계리, 서해, 평양의 상징물, 국경 통로' },
-      markets: { label: '시장 (장마당)', hint: '공식 시장, 매대 수에 따라 크기 표시 (CSIS, 2018년)' },
-      ports: { label: '항구', hint: '최근 12개월 동안 선박이 머문 북한 정박지, 입항 수에 따라 크기 표시 (Global Fishing Watch)' },
-      'escape-route': { label: '탈북 경로', hint: '중국을 거쳐 동남아시아로 가는 보통의 3,000마일 길' },
+      camps: { short: '수용소', label: '정치범수용소·교화소', hint: '정치범수용소(관리소)와 장기 수감 교화소' },
+      detention: { short: '구금 시설', label: '구금·보위 시설', hint: '집결소, 조사 시설, 노동단련대, 보위부 사무소' },
+      'china-detention': { short: '중국 내 구금', label: '중국 구금 시설 (강제 북송)', hint: '중국이 탈북민을 돌려보내기 전에 가두는 곳' },
+      'missile-bases': { short: '미사일 기지', label: '미사일 운용 기지', hint: 'CSIS가 위성 사진으로 찾아낸 미신고 기지' },
+      sites: { short: '주요 시설', label: '핵·발사장·주요 장소', hint: '영변, 풍계리, 서해, 평양의 상징물, 국경 통로' },
+      markets: { short: '시장', label: '시장 (장마당)', hint: '공식 시장, 매대 수에 따라 크기 표시 (CSIS, 2018년)' },
+      ports: { short: '항구', label: '항구', hint: '최근 12개월 동안 선박이 머문 북한 정박지, 입항 수에 따라 크기 표시 (Global Fishing Watch)' },
+      'escape-route': { short: '탈북 경로', label: '탈북 경로', hint: '중국을 거쳐 동남아시아로 가는 보통의 3,000마일 길' },
     },
     shades: {
       incidents: { label: '기록된 인권 침해', hint: 'NKDB가 기록한 시·군별 인권 침해' },
@@ -317,7 +334,13 @@ export const MAP_TEXT: Record<Lang, MapText> = {
     photoLatest: '최신',
     photoEsri: 'Esri 위성 보기 · 촬영일 미상',
     photoScrub: '저희가 직접 만든 월별 영상입니다. 밀어서 지난 달을 보세요.',
-    photoCompare: '날짜 비교 →',
+    photoCompare: '날짜 비교',
+    photoExpand: '크게 보기',
+    photoCloseUp: '가까이 보기',
+    photoCloseUpHint: '위성 지도로 확대: 더 선명한 Esri 영상, 촬영일 미상',
+    photoPixel: '한 픽셀은 10~15m입니다. 밭과 도로, 큰 건물은 보이지만 사람은 보이지 않습니다.',
+    zoomIn: '확대',
+    zoomOut: '축소',
     photoNoClear: '맑은 영상 없음',
     photoAlt: (name, date) => `${name}의 센티넬-2 위성 영상, ${date} 촬영`,
     photoEsriAlt: (name) => `${name}의 위성 보기`,
@@ -349,20 +372,21 @@ export const MAP_TEXT: Record<Lang, MapText> = {
     metaDescription:
       '北朝鮮のインタラクティブな情報マップです。政治犯収容所、190を超える拘束・保衛施設、ミサイル基地、市場、人口、そして市・郡ごとに記録された3,600件の人権侵害を示します。',
     h1: '北朝鮮 情報マップ',
-    lede: (n) => `収容所、刑務所、保衛部の事務所、ミサイル基地、市場、そして記録された${n}件の人権侵害を一つの地図に。市・郡や地点をクリックしてください。`,
+    lede: (n) => `収容所、刑務所、兵器関連施設、記録された人権侵害${n}件。タップして詳しく見られます。`,
     search: '市・郡、収容所、基地、市場を検索…',
     countySub: (p) => `市・郡 · ${p}`,
+    onMap: '地図に表示',
     shadeBy: '市・郡の色分け',
     groups: { 'Human rights': '人権', Military: '軍事', Economy: '経済', Escape: '脱出' },
     layers: {
-      camps: { label: '政治犯収容所・刑務所', hint: '政治犯収容所（管理所）と長期刑務所（教化所）' },
-      detention: { label: '拘束・保衛施設', hint: '集結所、取調べ施設、労働鍛錬隊、保衛部の事務所' },
-      'china-detention': { label: '中国の拘束施設（強制送還）', hint: '中国が脱北者を送り返す前に拘束する場所' },
-      'missile-bases': { label: 'ミサイル運用基地', hint: 'CSISが衛星画像から見つけた未申告の基地' },
-      sites: { label: '核・発射場・主要地点', hint: '寧辺、豊渓里、西海、平壌の象徴、国境の通過点' },
-      markets: { label: '市場（チャンマダン）', hint: '公式市場、売り台の数で大きさを表示（CSIS、2018年）' },
-      ports: { label: '港', hint: '直近12か月に船が停泊した北朝鮮の錨地、寄港数で大きさを表示（Global Fishing Watch）' },
-      'escape-route': { label: '脱出ルート', hint: '中国を通って東南アジアへ向かう、ふつうの3,000マイルの道' },
+      camps: { short: '収容所', label: '政治犯収容所・刑務所', hint: '政治犯収容所（管理所）と長期刑務所（教化所）' },
+      detention: { short: '拘束施設', label: '拘束・保衛施設', hint: '集結所、取調べ施設、労働鍛錬隊、保衛部の事務所' },
+      'china-detention': { short: '中国の拘束', label: '中国の拘束施設（強制送還）', hint: '中国が脱北者を送り返す前に拘束する場所' },
+      'missile-bases': { short: 'ミサイル基地', label: 'ミサイル運用基地', hint: 'CSISが衛星画像から見つけた未申告の基地' },
+      sites: { short: '主要地点', label: '核・発射場・主要地点', hint: '寧辺、豊渓里、西海、平壌の象徴、国境の通過点' },
+      markets: { short: '市場', label: '市場（チャンマダン）', hint: '公式市場、売り台の数で大きさを表示（CSIS、2018年）' },
+      ports: { short: '港', label: '港', hint: '直近12か月に船が停泊した北朝鮮の錨地、寄港数で大きさを表示（Global Fishing Watch）' },
+      'escape-route': { short: '脱出ルート', label: '脱出ルート', hint: '中国を通って東南アジアへ向かう、ふつうの3,000マイルの道' },
     },
     shades: {
       incidents: { label: '記録された人権侵害', hint: 'NKDBが記録した市・郡ごとの人権侵害' },
@@ -430,7 +454,13 @@ export const MAP_TEXT: Record<Lang, MapText> = {
     photoLatest: '最新',
     photoEsri: 'Esri衛星画像・撮影日不明',
     photoScrub: '私たちが作った月ごとの画像です。スライドして過去の月を見られます。',
-    photoCompare: '日付を比べる →',
+    photoCompare: '日付を比べる',
+    photoExpand: '拡大',
+    photoCloseUp: 'クローズアップ',
+    photoCloseUpHint: '衛星地図で拡大：より鮮明なEsri画像、撮影日不明',
+    photoPixel: '1ピクセルは10〜15m。畑や道路、大きな建物は見えますが、人は見えません。',
+    zoomIn: '拡大',
+    zoomOut: '縮小',
     photoNoClear: '晴れた画像なし',
     photoAlt: (name, date) => `${name}のセンチネル2衛星画像、${date}撮影`,
     photoEsriAlt: (name) => `${name}の衛星画像`,
@@ -462,20 +492,21 @@ export const MAP_TEXT: Record<Lang, MapText> = {
     metaDescription:
       '朝鲜互动情报地图：政治犯集中营、190多处拘押和保卫部门设施、导弹基地、市场、人口，以及按市郡统计的3,600起有记录的人权侵害。',
     h1: '朝鲜情报地图',
-    lede: (n) => `集中营、监狱、保卫部办公室、导弹基地、市场，以及${n}起有记录的人权侵害，都在一张地图上。点击任何市郡或地点。`,
+    lede: (n) => `集中营、监狱、武器设施和${n}起有记录的人权侵害。点击任意位置查看详情。`,
     search: '搜索市郡、集中营、基地、市场…',
     countySub: (p) => `市郡 · ${p}`,
+    onMap: '地图显示',
     shadeBy: '市郡着色依据',
     groups: { 'Human rights': '人权', Military: '军事', Economy: '经济', Escape: '脱北' },
     layers: {
-      camps: { label: '集中营与监狱', hint: '政治犯集中营（管理所）和长期监狱（教化所）' },
-      detention: { label: '拘押与保卫设施', hint: '集结所、审讯设施、劳动锻炼队、保卫部办公室' },
-      'china-detention': { label: '中国拘押设施（遣返）', hint: '中国在遣返脱北者之前关押他们的地方' },
-      'missile-bases': { label: '导弹作战基地', hint: 'CSIS 通过卫星图像发现的未申报基地' },
-      sites: { label: '核设施、发射场与要地', hint: '宁边、丰溪里、西海、平壤地标、边境口岸' },
-      markets: { label: '市场（场市）', hint: '官方市场，按摊位数量显示大小（CSIS，2018年）' },
-      ports: { label: '港口', hint: '最近12个月有船舶停靠的朝鲜锚地，按停靠次数显示大小（Global Fishing Watch）' },
-      'escape-route': { label: '脱北路线', hint: '经中国前往东南亚的通常3,000英里路线' },
+      camps: { short: '集中营', label: '集中营与监狱', hint: '政治犯集中营（管理所）和长期监狱（教化所）' },
+      detention: { short: '拘留设施', label: '拘押与保卫设施', hint: '集结所、审讯设施、劳动锻炼队、保卫部办公室' },
+      'china-detention': { short: '中国拘留', label: '中国拘押设施（遣返）', hint: '中国在遣返脱北者之前关押他们的地方' },
+      'missile-bases': { short: '导弹基地', label: '导弹作战基地', hint: 'CSIS 通过卫星图像发现的未申报基地' },
+      sites: { short: '重要设施', label: '核设施、发射场与要地', hint: '宁边、丰溪里、西海、平壤地标、边境口岸' },
+      markets: { short: '市场', label: '市场（场市）', hint: '官方市场，按摊位数量显示大小（CSIS，2018年）' },
+      ports: { short: '港口', label: '港口', hint: '最近12个月有船舶停靠的朝鲜锚地，按停靠次数显示大小（Global Fishing Watch）' },
+      'escape-route': { short: '逃亡路线', label: '脱北路线', hint: '经中国前往东南亚的通常3,000英里路线' },
     },
     shades: {
       incidents: { label: '有记录的人权侵害', hint: 'NKDB 按市郡记录的人权侵害' },
@@ -543,7 +574,13 @@ export const MAP_TEXT: Record<Lang, MapText> = {
     photoLatest: '最新',
     photoEsri: 'Esri卫星图像 · 拍摄日期不详',
     photoScrub: '我们自己制作的每月图像。滑动查看过去的月份。',
-    photoCompare: '对比日期 →',
+    photoCompare: '对比日期',
+    photoExpand: '放大',
+    photoCloseUp: '近景',
+    photoCloseUpHint: '在卫星地图上放大：更清晰的Esri图像，拍摄日期不详',
+    photoPixel: '每个像素为10至15米：能看清农田、道路和大型建筑，但看不到人。',
+    zoomIn: '放大',
+    zoomOut: '缩小',
     photoNoClear: '无晴空图像',
     photoAlt: (name, date) => `${name}的哨兵2号卫星图像，拍摄于${date}`,
     photoEsriAlt: (name) => `${name}的卫星图像`,

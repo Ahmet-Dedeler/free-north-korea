@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import type { Feature } from 'geojson';
 import AsOf, { isStale } from '@/components/AsOf';
-import { baseSlug, campSlug } from '@/content/mapSlugs';
+import { baseSlug, campSlug, countySlug } from '@/content/mapSlugs';
 import { LAYERS, MANIFEST, type LayerId } from './config';
 import type { Data, Selection } from './types';
 import type { Lang } from '@/site/seo';
@@ -118,7 +118,7 @@ function CountyDetail({ f, data, lang, onSelect, year }: { f: Feature; data: Dat
       </p>
       <h2>{p.name}</h2>
       <p style={{ margin: '0.2rem 0 0.8rem', fontSize: '0.9rem' }}>
-        <Link href={localize(lang, `/counties/${String(p.pcode).toLowerCase()}`)}>{tx.countyDossier}</Link>
+        <Link href={localize(lang, `/counties/${countySlug(String(p.name), String(p.province))}`)}>{tx.countyDossier}</Link>
       </p>
       <div className="d-stats">
         <div>
@@ -278,7 +278,10 @@ function PortDetail({ f, lang, photo }: { f: Feature; lang: Lang; photo: React.R
 /** Camp Watch id of a map point: camps and missile bases use their dossier slug, places their own id. */
 const satId = (layer: LayerId, id: string) => (layer === 'camps' ? campSlug(id) : layer === 'missile-bases' ? baseSlug(id) : id);
 
-function PointDetail({ layer, f, lang, sat }: { layer: LayerId; f: Feature; lang: Lang; sat: Record<string, MapSatSite> }) {
+/** How far a satellite close-up flies in: camps span kilometres, a security office is one compound. */
+const CLOSE_UP_ZOOM: Partial<Record<LayerId, number>> = { camps: 14.5, 'missile-bases': 15, sites: 15.5, ports: 15.5, markets: 17.5, detention: 17.5, 'china-detention': 17.5 };
+
+function PointDetail({ layer, f, lang, sat, onCloseUp }: { layer: LayerId; f: Feature; lang: Lang; sat: Record<string, MapSatSite>; onCloseUp: (center: [number, number], zoom: number) => void }) {
   const p = f.properties as P;
   const tx = MAP_TEXT[lang];
   const n = num(lang);
@@ -308,7 +311,7 @@ function PointDetail({ layer, f, lang, sat }: { layer: LayerId; f: Feature; lang
   const layerDate = MANIFEST.layers[layer]?.sources[0]?.updated;
 
   const sid = satId(layer, String(p.id));
-  const photo = layer === 'escape-route' ? null : <PlacePhoto key={`${layer}/${p.id}`} siteId={sid} site={sat[sid]} name={p.name} layer={layer} lat={lat} lon={lon} approx={!!p.approx} lang={lang} />;
+  const photo = layer === 'escape-route' ? null : <PlacePhoto key={`${layer}/${p.id}`} siteId={sid} site={sat[sid]} name={p.name} layer={layer} lat={lat} lon={lon} approx={!!p.approx} lang={lang} onCloseUp={() => onCloseUp([lon, lat], CLOSE_UP_ZOOM[layer] ?? 16)} />;
   if (layer === 'ports') return <PortDetail f={f} lang={lang} photo={photo} />;
 
   return (
@@ -408,6 +411,7 @@ export default function Detail({
   year,
   onSelect,
   onClose,
+  onCloseUp,
 }: {
   sel: Selection;
   data: Data;
@@ -418,6 +422,8 @@ export default function Detail({
   lights?: boolean;
   onSelect: (s: Selection) => void;
   onClose: () => void;
+  /** Fly the map in on a spot in satellite mode (the photo's Close-up button). */
+  onCloseUp: (center: [number, number], zoom: number) => void;
 }) {
   const f =
     sel.kind === 'county'
@@ -429,7 +435,7 @@ export default function Detail({
       <button className="modal-close" onClick={onClose} aria-label={MAP_TEXT[lang].close}>
         ✕
       </button>
-      {sel.kind === 'county' ? <CountyDetail f={f} data={data} lang={lang} onSelect={onSelect} year={year} /> : <PointDetail layer={sel.layer} f={f} lang={lang} sat={sat} />}
+      {sel.kind === 'county' ? <CountyDetail f={f} data={data} lang={lang} onSelect={onSelect} year={year} /> : <PointDetail layer={sel.layer} f={f} lang={lang} sat={sat} onCloseUp={onCloseUp} />}
     </aside>
   );
 }

@@ -171,6 +171,14 @@ type Text = {
   densityNote: (n: number) => string;
   urban: string;
   openMap: string;
+  /** "Seen from space" panel: night lights per year (public/layers/lights-years.json) and a satellite map link. */
+  satView: string;
+  spaceHeading: string;
+  litLabel: (year: number) => string;
+  litWas: (pct: string, year: number) => string;
+  litChartAria: (from: number, to: number) => string;
+  litSeam: (year: number) => string;
+  litSource: string;
   compare: string;
   rightsHeading: string;
   rightsEmpty: string;
@@ -243,6 +251,13 @@ export const COUNTIES_TEXT: Record<Lang, Text> = {
     densityNote: (n) => `${n} people per km²`,
     urban: 'live in towns',
     openMap: 'Open on the intel map',
+    satView: 'Satellite view',
+    spaceHeading: 'Seen from space',
+    litLabel: (y) => `of the county lit at night in ${y}`,
+    litWas: (p, y) => `${p} in ${y}`,
+    litChartAria: (a, b) => `Share of the county lit at night each year, ${a} to ${b}`,
+    litSeam: (y) => `The satellite product changed version in ${y} (dashed line).`,
+    litSource: 'Annual VIIRS night lights, Earth Observation Group',
     compare: 'Compare all 179 counties',
     rightsHeading: 'Abuses by right violated',
     rightsEmpty: 'None recorded yet. In a closed country that usually means no witnesses from here have escaped, not that nothing happened.',
@@ -313,6 +328,13 @@ export const COUNTIES_TEXT: Record<Lang, Text> = {
     densityNote: (n) => `km²당 ${n}명`,
     urban: '도시 거주',
     openMap: '인텔 지도에서 열기',
+    satView: '위성으로 보기',
+    spaceHeading: '우주에서 본 모습',
+    litLabel: (y) => `${y}년 밤에 불이 켜진 면적 비율`,
+    litWas: (p, y) => `${y}년에는 ${p}`,
+    litChartAria: (a, b) => `해마다 밤에 불이 켜진 면적 비율, ${a}~${b}년`,
+    litSeam: (y) => `${y}년에 위성 자료의 버전이 바뀌었습니다 (점선).`,
+    litSource: 'VIIRS 연간 야간 불빛, Earth Observation Group',
     compare: '179개 시·군 비교',
     rightsHeading: '침해된 권리별',
     rightsEmpty: '아직 기록된 것이 없습니다. 닫힌 나라에서는 보통 여기서 탈북한 목격자가 없다는 뜻이며, 아무 일도 없었다는 뜻이 아닙니다.',
@@ -383,6 +405,13 @@ export const COUNTIES_TEXT: Record<Lang, Text> = {
     densityNote: (n) => `1km²あたり${n}人`,
     urban: '都市部に居住',
     openMap: 'インテルマップで開く',
+    satView: '衛星で見る',
+    spaceHeading: '宇宙から見た様子',
+    litLabel: (y) => `${y}年に夜に明るかった面積の割合`,
+    litWas: (p, y) => `${y}年は${p}`,
+    litChartAria: (a, b) => `夜に明るい面積の割合、${a}〜${b}年`,
+    litSeam: (y) => `${y}年に衛星データの版が変わりました（点線）。`,
+    litSource: 'VIIRS年間夜間光、Earth Observation Group',
     compare: '179の市・郡を比べる',
     rightsHeading: '侵害された権利別',
     rightsEmpty: 'まだ記録がありません。閉ざされた国では、これは普通、ここから脱出した目撃者がいないという意味であり、何も起きなかったという意味ではありません。',
@@ -452,6 +481,13 @@ export const COUNTIES_TEXT: Record<Lang, Text> = {
     densityNote: (n) => `每平方公里${n}人`,
     urban: '住在城镇',
     openMap: '在情报地图中打开',
+    satView: '卫星视图',
+    spaceHeading: '从太空看',
+    litLabel: (y) => `${y}年夜间有灯光的面积比例`,
+    litWas: (p, y) => `${y}年为${p}`,
+    litChartAria: (a, b) => `每年夜间有灯光的面积比例，${a}至${b}年`,
+    litSeam: (y) => `卫星数据在${y}年更换了版本（虚线）。`,
+    litSource: 'VIIRS年度夜间灯光，Earth Observation Group',
     compare: '比较全部179个市和郡',
     rightsHeading: '按被侵害的权利',
     rightsEmpty: '目前还没有记录。在一个封闭的国家，这通常意味着没有从这里逃出的目击者，而不是什么都没发生。',

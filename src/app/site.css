@@ -1311,6 +1311,96 @@ a.card:hover {
   overflow-y: auto;
   padding: 4px 18px 20px;
 }
+/* ---------- intel map sidebar: search with an icon, and layer chips (src/map/Explorer.tsx) ---------- */
+.search-box {
+  position: relative;
+  display: block;
+}
+.search-box svg {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  color: var(--ink-3);
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+.filters .search-box input {
+  padding: 10px 14px 10px 36px;
+  border-radius: 999px;
+}
+/* layers as chips: a coloured icon, a short name and the count; off = grey */
+.lchips {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+}
+.lchip {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  padding: 5px 10px 5px 5px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: none;
+  color: var(--ink-3);
+  font-size: 12.5px;
+  font-weight: 600;
+  text-align: left;
+  transition: background 0.12s, border-color 0.12s;
+}
+.lchip:hover {
+  border-color: var(--line-strong);
+}
+.lchip-icon {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--hover);
+  color: var(--ink-3);
+}
+.lchip-name {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.lchip small {
+  flex: none;
+  color: var(--ink-3);
+  font-size: 11px;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+}
+.lchip small.stale {
+  color: #b45309;
+}
+:root[data-theme='dark'] .lchip small.stale {
+  color: #fbbf24;
+}
+.lchip.on {
+  border-color: color-mix(in srgb, var(--c) 45%, var(--line));
+  background: color-mix(in srgb, var(--c) 9%, transparent);
+  color: var(--ink);
+}
+.lchip.on .lchip-icon {
+  background: var(--c);
+  color: #fff;
+}
+.chip svg {
+  flex: none;
+}
+.latest .lt-text b {
+  line-height: 1.3;
+}
+.latest .lt-text time {
+  margin-top: 1px;
+}
+
 /* ---------- intel map: "Latest" at the top of the sidebar (src/map/Latest.tsx) ---------- */
 /* a grid item grows to its content's min width; without this the thumbnail strip widens the page on phones */
 .app > .sidebar {
@@ -1631,6 +1721,10 @@ a.card:hover {
 .pp-esri {
   position: relative;
   display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  cursor: zoom-in;
   aspect-ratio: 16 / 10;
   overflow: hidden;
   background: #1b2330;
@@ -1766,6 +1860,189 @@ a.card:hover {
   color: var(--ink-3);
   font-size: 11px;
   font-weight: 400;
+}
+/* the Sentinel-2 image is a button that opens the full-screen viewer */
+.pp-open {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: 0;
+  cursor: zoom-in;
+}
+.pp-open img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* round "enlarge" / "close-up" badge, left of the panel's close button */
+.pp-fab {
+  position: absolute;
+  top: 10px;
+  right: 48px;
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: rgb(15 23 42 / 0.6);
+  color: #fff;
+  backdrop-filter: blur(4px);
+  pointer-events: none;
+}
+.pp-act {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 10px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--ink);
+  font-size: 12.5px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.pp-act:hover,
+.pp-act:focus-visible {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.pp-act.light {
+  border-color: rgb(255 255 255 / 0.35);
+  color: #fff;
+}
+.intel-detail .pp-links {
+  justify-content: flex-start;
+  align-items: center;
+}
+.intel-detail .pp-links > span {
+  flex-basis: 100%;
+}
+
+/* ---------- full-screen satellite viewer (src/map/SatViewer.tsx) ---------- */
+.sv {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background: #05070b;
+  color: #fff;
+  animation: sv-in 0.15s ease-out;
+}
+@keyframes sv-in {
+  from {
+    opacity: 0;
+  }
+}
+.sv-stage {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  touch-action: none;
+  cursor: zoom-in;
+}
+.sv-stage.zoomed {
+  cursor: grab;
+}
+.sv-stage.zoomed:active {
+  cursor: grabbing;
+}
+.sv-stage img {
+  width: min(100vw, calc(100vh - 150px));
+  height: min(100vw, calc(100vh - 150px));
+  object-fit: contain;
+  transform-origin: center;
+  user-select: none;
+  transition: transform 0.06s linear;
+}
+/* past 4x, show the real pixels instead of smoothing them into fake detail */
+.sv-stage img.raw {
+  image-rendering: pixelated;
+}
+.sv-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 14px;
+  background: linear-gradient(rgb(0 0 0 / 0.65), transparent);
+  pointer-events: none;
+}
+.sv-top > * {
+  pointer-events: auto;
+}
+.sv-cap {
+  font-size: 13.5px;
+  font-variant-numeric: tabular-nums;
+}
+.sv-cap strong {
+  margin-right: 6px;
+  font-size: 15px;
+}
+.sv-cap b {
+  margin-left: 7px;
+  padding: 0 5px;
+  border-radius: 4px;
+  background: #fff;
+  color: #0f172a;
+  font-size: 10.5px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.sv-btn {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgb(255 255 255 / 0.12);
+  color: #fff;
+  backdrop-filter: blur(6px);
+}
+.sv-btn:hover:not(:disabled) {
+  background: rgb(255 255 255 / 0.22);
+}
+.sv-btn:disabled {
+  opacity: 0.35;
+}
+.sv-zoom {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transform: translateY(-50%);
+}
+.sv-foot {
+  position: absolute;
+  left: 50%;
+  bottom: 14px;
+  width: min(640px, calc(100% - 28px));
+  transform: translateX(-50%);
+}
+.sv-foot .pp-scrub {
+  position: relative;
+  padding: 10px 14px 8px;
+  border-radius: 12px;
+  background: rgb(15 23 42 / 0.7);
+  backdrop-filter: blur(6px);
+}
+.sv-note {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin: 8px 2px 0;
+  color: rgb(255 255 255 / 0.7);
+  font-size: 12px;
 }
 /* the close button floats on the photo */
 .intel-detail.has-photo .modal-close {
@@ -2746,4 +3023,57 @@ ul.bars b {
 }
 .out-unknown {
   color: var(--ink-3);
+}
+
+/* ---------- county dossier: "Seen from space" (CountyDossier.tsx) ---------- */
+/* always a night background, so the glow colours read the way they do on the map's night-lights overlay */
+.panel.space-panel {
+  background: #0b0f17;
+  border-color: #1f2a3c;
+  color: #e2e8f0;
+}
+.space-panel h2 {
+  color: #f8fafc;
+}
+.space-big {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin: 4px 0 0;
+}
+.space-big b {
+  color: #ffcf5c;
+  font-family: var(--display);
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+.space-big span {
+  color: #cbd5e1;
+  font-size: 13px;
+}
+.space-was {
+  margin: 2px 0 10px;
+  color: #94a3b8;
+  font-size: 12.5px;
+}
+.space-bars {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.space-bars text {
+  fill: #94a3b8;
+  font-size: 10px;
+}
+.space-seam {
+  stroke: #475569;
+  stroke-dasharray: 3 3;
+}
+.space-panel .muted {
+  color: #94a3b8;
+}
+.space-panel a {
+  color: #93c5fd;
 }

@@ -11,7 +11,7 @@ import { COUNTRY_NAMES, LABEL_FIELDS, MAP_TEXT } from '@/content/mapI18n';
 import { MAPLIBRE_WORKER_URL, STYLE_URL } from '../map/maplibre';
 import { LAYERS, LIGHTS_STOPS, OVERLAYS, RADAR_COLOR, SHADES, SHADE_COLORS, type LayerId, type Overlay, type Shade } from './config';
 import type { FeatureCollection } from 'geojson';
-import type { Basemap, Data, Selection } from './types';
+import type { Basemap, Data, Focus, Selection } from './types';
 
 maplibregl.setWorkerUrl(MAPLIBRE_WORKER_URL);
 
@@ -24,8 +24,8 @@ interface Props {
   /** Year shown by time-axis overlays (night lights). */
   year: number;
   selected: Selection | null;
-  /** A spot to point at without selecting a feature (a quake from the Latest list). */
-  focus: [number, number] | null;
+  /** A spot to fly to without selecting a feature (a quake from Latest, a satellite close-up). */
+  focus: Focus | null;
   theme: Theme;
   lang: Lang;
   onSelect: (s: Selection | null) => void;
@@ -417,17 +417,23 @@ export default function IntelMap({ data, visible, shade, base, overlays, year, s
     (map.getSource('counties') as GeoJSONSource).setData(data.counties);
   }, [data]);
 
-  // --- focus: a pulsing ring at a spot, and fly there ---
+  // --- focus: fly to a spot (a quake gets a pulsing ring; a close-up zooms right in) ---
   const focusMarker = useRef<maplibregl.Marker | null>(null);
   useEffect(() => {
     const map = mapRef.current;
     focusMarker.current?.remove();
     focusMarker.current = null;
     if (!map || !focus) return;
-    const el = document.createElement('div');
-    el.className = 'focus-ping';
-    focusMarker.current = new maplibregl.Marker({ element: el }).setLngLat(focus).addTo(map);
-    map.flyTo({ center: focus, zoom: Math.max(map.getZoom(), 7), duration: 900 });
+    if (focus.ping !== false) {
+      const el = document.createElement('div');
+      el.className = 'focus-ping';
+      focusMarker.current = new maplibregl.Marker({ element: el }).setLngLat(focus.center).addTo(map);
+    }
+    // keep the spot clear of the panel: on the right on desktop, the bottom sheet on phones
+    const wide = window.innerWidth > 800;
+    const hidden = map.getContainer().getBoundingClientRect().bottom - window.innerHeight * 0.55;
+    const padding = wide ? { top: 40, bottom: 40, left: 40, right: 420 } : { top: 30, bottom: Math.max(30, Math.round(hidden) + 20), left: 20, right: 20 };
+    map.flyTo({ center: focus.center, zoom: focus.zoom ?? Math.max(map.getZoom(), 7), padding, duration: focus.zoom ? 1600 : 900 });
   }, [focus]);
 
   // --- theme ---

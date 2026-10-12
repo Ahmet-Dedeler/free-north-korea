@@ -34,3 +34,6 @@ export async function loadData(): Promise<Data> {
   }
   return data;
 }
+
+/** A spot to fly to without selecting anything: a quake from Latest (with a pulsing ring) or a satellite close-up. */
+export type Focus = { center: [number, number]; zoom?: number; ping?: boolean };
