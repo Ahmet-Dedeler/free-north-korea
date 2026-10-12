@@ -93,7 +93,7 @@ MAX_TILE_CLOUD = 70.0
 # Read at most this many uncached scenes per month and for the latest search (bounds runtime on cloudy months).
 MAX_READS_PER_MONTH = 6
 MAX_READS_LATEST = 12
-JPEG_QUALITY = 70
+JPEG_QUALITY = 80
 # One fixed tone curve for every image (no per-image stretch, so months stay comparable). Sentinel-2 TCI is dark over
 # forest; a gamma of 0.85 lifts shadows a little without clipping highlights.
 GAMMA = 0.85
@@ -479,7 +479,9 @@ def build_target(t: dict, prev: dict | None, cache: dict) -> dict:
         it, r, m = wanted[date]
         jpg = IMG / t["id"] / f"{date}.jpg"
         old = prev_by_date.get(date)
-        if old and old["scene"] == it["id"] and jpg.exists():
+        # reuse an image only if it is the same scene at today's published size (OUT_PX changed from 512 to 768
+        # in Oct 2026 so chips are at native 10 m; older exports get re-rendered once)
+        if old and old["scene"] == it["id"] and jpg.exists() and old.get("sizePx") == min(t["outPx"], round(t["sizeM"] / 10)):
             entry = dict(old)
         else:
             try:

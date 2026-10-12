@@ -1,5 +1,5 @@
 {
- "built": "2026-10-08",
+ "built": "2026-10-12",
  "source": "Copernicus Sentinel-2 L2A via Element84 Earth Search (https://earth-search.aws.element84.com/v1)",
  "credit": "Contains modified Copernicus Sentinel data",
  "rules": {
@@ -17,8 +17,8 @@
    "lon": 126.0621556,
    "sizeM": 7680,
    "tile": "MGRS-52SBJ",
-   "latest": "2026-10-08",
-   "checked": "2026-10-08T17:33Z",
+   "latest": "2026-10-11",
+   "checked": "2026-10-12T15:03Z",
    "images": [
     {
      "date": "2024-12-10",
@@ -27,8 +27,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       126.01596,
@@ -46,8 +46,8 @@
      "cloud": 0.0,
      "snow": 0.54,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       126.01596,
@@ -65,8 +65,8 @@
      "cloud": 1.23,
      "snow": 60.45,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       126.01596,
@@ -84,8 +84,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       126.01596,
@@ -103,8 +103,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       126.01596,
@@ -122,8 +122,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       126.01596,
@@ -141,8 +141,8 @@
      "cloud": 4.95,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       126.01596,
@@ -160,8 +160,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       126.01596,
@@ -179,8 +179,8 @@
      "cloud": 1.04,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       126.01596,
@@ -198,8 +198,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       126.01596,
@@ -217,8 +217,8 @@
      "cloud": 0.34,
      "snow": 19.79,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       126.01596,
@@ -236,8 +236,8 @@
      "cloud": 0.0,
      "snow": 10.39,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       126.01596,
@@ -255,8 +255,8 @@
      "cloud": 0.0,
      "snow": 0.03,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       126.01596,
@@ -274,8 +274,8 @@
      "cloud": 1.18,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       126.01596,
@@ -293,8 +293,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       126.01596,
@@ -312,8 +312,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       126.01596,
@@ -331,8 +331,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       126.01596,
@@ -350,8 +350,8 @@
      "cloud": 0.97,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       126.01596,
@@ -369,8 +369,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       126.01596,
@@ -382,14 +382,14 @@
      "month": "2026-09"
     },
     {
-     "date": "2026-10-01",
-     "datetime": "2026-10-01T02:36:43.671000Z",
-     "scene": "S2B_52SBJ_20261001_0_L2A",
+     "date": "2026-10-11",
+     "datetime": "2026-10-11T02:36:43.226000Z",
+     "scene": "S2B_52SBJ_20261011_0_L2A",
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       126.01596,
@@ -397,27 +397,8 @@
       126.10818,
       39.60733
      ],
-     "src": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-l2a/items/S2B_52SBJ_20261001_0_L2A",
+     "src": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-l2a/items/S2B_52SBJ_20261011_0_L2A",
      "month": "2026-10"
-    },
-    {
-     "date": "2026-10-08",
-     "datetime": "2026-10-08T02:36:56.547000Z",
-     "scene": "S2A_52SBJ_20261008_1_L2A",
-     "cloud": 0.01,
-     "snow": 0.0,
-     "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
-     "epsg": 32652,
-     "bbox": [
-      126.01596,
-      39.53596,
-      126.10818,
-      39.60733
-     ],
-     "src": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-l2a/items/S2A_52SBJ_20261008_1_L2A",
-     "month": null
     }
    ],
    "changes": [
@@ -425,88 +406,88 @@
      "from": "2024-12-10",
      "to": "2025-01-24",
      "clear": 99.5,
-     "score": 0.611,
-     "changed": 19.75,
+     "score": 0.606,
+     "changed": 19.6,
      "kind": "month"
     },
     {
      "from": "2025-01-24",
      "to": "2025-02-08",
      "clear": 38.3,
-     "score": 0.652,
-     "changed": 20.44,
+     "score": 0.647,
+     "changed": 19.94,
      "kind": "month"
     },
     {
      "from": "2025-02-08",
      "to": "2025-03-20",
      "clear": 38.3,
-     "score": 0.728,
-     "changed": 26.52,
+     "score": 0.724,
+     "changed": 26.21,
      "kind": "month"
     },
     {
      "from": "2025-03-20",
      "to": "2025-04-29",
      "clear": 100.0,
-     "score": 0.513,
-     "changed": 9.66,
+     "score": 0.509,
+     "changed": 9.36,
      "kind": "month"
     },
     {
      "from": "2025-04-29",
      "to": "2025-05-26",
      "clear": 100.0,
-     "score": 0.4,
-     "changed": 3.7,
+     "score": 0.394,
+     "changed": 3.45,
      "kind": "month"
     },
     {
      "from": "2025-05-26",
      "to": "2025-07-28",
      "clear": 95.1,
-     "score": 0.585,
-     "changed": 14.49,
+     "score": 0.578,
+     "changed": 14.26,
      "kind": "month"
     },
     {
      "from": "2025-07-28",
      "to": "2025-09-21",
      "clear": 95.1,
-     "score": 0.471,
-     "changed": 8.89,
+     "score": 0.458,
+     "changed": 8.28,
      "kind": "month"
     },
     {
      "from": "2025-09-21",
      "to": "2025-10-16",
      "clear": 99.0,
-     "score": 0.379,
-     "changed": 8.64,
+     "score": 0.358,
+     "changed": 8.33,
      "kind": "month"
     },
     {
      "from": "2025-10-16",
      "to": "2025-11-22",
      "clear": 99.0,
-     "score": 0.55,
-     "changed": 13.45,
+     "score": 0.542,
+     "changed": 13.04,
      "kind": "month"
     },
     {
      "from": "2025-11-22",
      "to": "2025-12-30",
      "clear": 79.9,
-     "score": 0.929,
-     "changed": 38.46,
+     "score": 0.928,
+     "changed": 38.49,
      "kind": "month"
     },
     {
      "from": "2025-12-30",
      "to": "2026-01-04",
      "clear": 79.2,
-     "score": 0.427,
-     "changed": 9.55,
+     "score": 0.419,
+     "changed": 9.35,
      "kind": "month"
     },
     {
@@ -514,79 +495,79 @@
      "to": "2026-02-28",
      "clear": 89.6,
      "score": 0.831,
-     "changed": 29.13,
+     "changed": 29.25,
      "kind": "month"
     },
     {
      "from": "2026-02-28",
      "to": "2026-03-20",
      "clear": 98.8,
-     "score": 0.551,
-     "changed": 11.05,
+     "score": 0.546,
+     "changed": 10.47,
      "kind": "month"
     },
     {
      "from": "2026-03-20",
      "to": "2026-04-24",
      "clear": 98.8,
-     "score": 0.508,
-     "changed": 8.89,
+     "score": 0.506,
+     "changed": 8.52,
      "kind": "month"
     },
     {
      "from": "2026-04-24",
      "to": "2026-05-31",
      "clear": 100.0,
-     "score": 0.366,
-     "changed": 3.8,
+     "score": 0.358,
+     "changed": 3.57,
      "kind": "month"
     },
     {
      "from": "2026-05-31",
      "to": "2026-06-23",
      "clear": 100.0,
-     "score": 0.302,
-     "changed": 7.01,
+     "score": 0.287,
+     "changed": 6.68,
      "kind": "month"
     },
     {
      "from": "2026-06-23",
      "to": "2026-08-27",
      "clear": 99.0,
-     "score": 0.398,
-     "changed": 8.09,
+     "score": 0.38,
+     "changed": 7.71,
      "kind": "month"
     },
     {
      "from": "2026-08-27",
      "to": "2026-09-16",
      "clear": 99.0,
-     "score": 0.311,
-     "changed": 4.55,
+     "score": 0.289,
+     "changed": 4.11,
      "kind": "month"
     },
     {
      "from": "2026-09-16",
-     "to": "2026-10-01",
+     "to": "2026-10-11",
      "clear": 100.0,
-     "score": 0.259,
-     "changed": 3.49,
+     "score": 0.358,
+     "changed": 6.64,
      "kind": "month"
     },
     {
      "from": "2024-12-10",
      "to": "2025-12-30",
      "clear": 79.9,
-     "score": 0.973,
-     "changed": 39.74,
+     "score": 0.972,
+     "changed": 39.66,
      "kind": "year"
     },
     {
      "from": "2025-01-24",
      "to": "2026-01-04",
      "clear": 89.4,
-     "score": 0.638,
-     "changed": 19.77,
+     "score": 0.631,
+     "changed": 19.43,
      "kind": "year"
     },
     {
@@ -594,47 +575,47 @@
      "to": "2026-02-28",
      "clear": 38.3,
      "score": 0.843,
-     "changed": 31.26,
+     "changed": 31.8,
      "kind": "year"
     },
     {
      "from": "2025-03-20",
      "to": "2026-03-20",
      "clear": 98.8,
-     "score": 0.247,
-     "changed": 1.41,
+     "score": 0.232,
+     "changed": 1.29,
      "kind": "year"
     },
     {
      "from": "2025-04-29",
      "to": "2026-04-24",
      "clear": 100.0,
-     "score": 0.286,
-     "changed": 1.6,
+     "score": 0.273,
+     "changed": 1.43,
      "kind": "year"
     },
     {
      "from": "2025-05-26",
      "to": "2026-05-31",
      "clear": 100.0,
-     "score": 0.291,
-     "changed": 2.83,
+     "score": 0.278,
+     "changed": 2.61,
      "kind": "year"
     },
     {
      "from": "2025-09-21",
      "to": "2026-09-16",
      "clear": 100.0,
-     "score": 0.289,
-     "changed": 5.94,
+     "score": 0.266,
+     "changed": 5.69,
      "kind": "year"
     },
     {
      "from": "2025-10-16",
-     "to": "2026-10-01",
+     "to": "2026-10-11",
      "clear": 99.0,
-     "score": 0.336,
-     "changed": 5.54,
+     "score": 0.298,
+     "changed": 4.2,
      "kind": "year"
     }
    ],
@@ -653,7 +634,7 @@
    "sizeM": 7680,
    "tile": "MGRS-52SCJ",
    "latest": "2026-10-08",
-   "checked": "2026-10-08T17:33Z",
+   "checked": "2026-10-12T15:02Z",
    "images": [
     {
      "date": "2024-11-12",
@@ -662,8 +643,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       126.8051,
@@ -681,8 +662,8 @@
      "cloud": 0.02,
      "snow": 0.21,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       126.8051,
@@ -700,8 +681,8 @@
      "cloud": 0.0,
      "snow": 0.51,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       126.8051,
@@ -719,8 +700,8 @@
      "cloud": 1.33,
      "snow": 65.06,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       126.8051,
@@ -738,8 +719,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       126.8051,
@@ -757,8 +738,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       126.8051,
@@ -776,8 +757,8 @@
      "cloud": 0.53,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       126.8051,
@@ -795,8 +776,8 @@
      "cloud": 0.0,
      "snow": 0.02,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       126.8051,
@@ -814,8 +795,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       126.8051,
@@ -833,8 +814,8 @@
      "cloud": 2.12,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       126.8051,
@@ -852,8 +833,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       126.8051,
@@ -871,8 +852,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       126.8051,
@@ -890,8 +871,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       126.8051,
@@ -909,8 +890,8 @@
      "cloud": 0.04,
      "snow": 1.11,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       126.8051,
@@ -928,8 +909,8 @@
      "cloud": 0.02,
      "snow": 18.01,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       126.8051,
@@ -947,8 +928,8 @@
      "cloud": 0.0,
      "snow": 0.19,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       126.8051,
@@ -966,8 +947,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       126.8051,
@@ -985,8 +966,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       126.8051,
@@ -1004,8 +985,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       126.8051,
@@ -1023,8 +1004,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       126.8051,
@@ -1042,8 +1023,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       126.8051,
@@ -1061,8 +1042,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       126.8051,
@@ -1080,8 +1061,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       126.8051,
@@ -1098,128 +1079,128 @@
      "from": "2024-11-12",
      "to": "2024-12-10",
      "clear": 99.8,
-     "score": 0.281,
-     "changed": 2.71,
+     "score": 0.261,
+     "changed": 2.39,
      "kind": "month"
     },
     {
      "from": "2024-12-10",
      "to": "2025-01-01",
      "clear": 99.4,
-     "score": 0.338,
-     "changed": 4.65,
+     "score": 0.325,
+     "changed": 4.49,
      "kind": "month"
     },
     {
      "from": "2025-01-01",
      "to": "2025-02-13",
      "clear": 33.6,
-     "score": 0.909,
-     "changed": 37.24,
+     "score": 0.903,
+     "changed": 36.51,
      "kind": "month"
     },
     {
      "from": "2025-02-13",
      "to": "2025-03-22",
      "clear": 33.6,
-     "score": 0.758,
-     "changed": 28.27,
+     "score": 0.749,
+     "changed": 27.96,
      "kind": "month"
     },
     {
      "from": "2025-03-22",
      "to": "2025-04-11",
      "clear": 100.0,
-     "score": 0.266,
-     "changed": 2.97,
+     "score": 0.246,
+     "changed": 2.8,
      "kind": "month"
     },
     {
      "from": "2025-04-11",
      "to": "2025-05-14",
      "clear": 99.5,
-     "score": 0.437,
-     "changed": 5.19,
+     "score": 0.429,
+     "changed": 4.55,
      "kind": "month"
     },
     {
      "from": "2025-05-14",
      "to": "2025-06-22",
      "clear": 99.5,
-     "score": 0.377,
-     "changed": 6.31,
+     "score": 0.369,
+     "changed": 5.9,
      "kind": "month"
     },
     {
      "from": "2025-06-22",
      "to": "2025-07-12",
      "clear": 100.0,
-     "score": 0.277,
-     "changed": 3.78,
+     "score": 0.26,
+     "changed": 3.48,
      "kind": "month"
     },
     {
      "from": "2025-07-12",
      "to": "2025-08-12",
      "clear": 97.9,
-     "score": 0.387,
-     "changed": 7.56,
+     "score": 0.372,
+     "changed": 7.28,
      "kind": "month"
     },
     {
      "from": "2025-08-12",
      "to": "2025-09-21",
      "clear": 97.9,
-     "score": 0.374,
-     "changed": 7.12,
+     "score": 0.356,
+     "changed": 6.78,
      "kind": "month"
     },
     {
      "from": "2025-09-21",
      "to": "2025-10-08",
      "clear": 100.0,
-     "score": 0.316,
-     "changed": 5.66,
+     "score": 0.292,
+     "changed": 5.31,
      "kind": "month"
     },
     {
      "from": "2025-10-08",
      "to": "2025-11-12",
      "clear": 100.0,
-     "score": 0.448,
-     "changed": 6.97,
+     "score": 0.44,
+     "changed": 6.43,
      "kind": "month"
     },
     {
      "from": "2025-11-12",
      "to": "2025-12-12",
      "clear": 98.8,
-     "score": 0.471,
-     "changed": 11.07,
+     "score": 0.462,
+     "changed": 10.96,
      "kind": "month"
     },
     {
      "from": "2025-12-12",
      "to": "2026-01-04",
      "clear": 81.3,
-     "score": 0.595,
-     "changed": 15.83,
+     "score": 0.586,
+     "changed": 15.34,
      "kind": "month"
     },
     {
      "from": "2026-01-04",
      "to": "2026-02-28",
      "clear": 81.9,
-     "score": 0.727,
-     "changed": 23.85,
+     "score": 0.722,
+     "changed": 23.47,
      "kind": "month"
     },
     {
      "from": "2026-02-28",
      "to": "2026-03-25",
      "clear": 99.8,
-     "score": 0.536,
-     "changed": 12.35,
+     "score": 0.53,
+     "changed": 12.16,
      "kind": "month"
     },
     {
@@ -1227,135 +1208,135 @@
      "to": "2026-04-21",
      "clear": 100.0,
      "score": 0.634,
-     "changed": 17.08,
+     "changed": 16.73,
      "kind": "month"
     },
     {
      "from": "2026-04-21",
      "to": "2026-05-09",
      "clear": 100.0,
-     "score": 0.294,
-     "changed": 0.94,
+     "score": 0.283,
+     "changed": 0.77,
      "kind": "month"
     },
     {
      "from": "2026-05-09",
      "to": "2026-06-03",
      "clear": 100.0,
-     "score": 0.266,
-     "changed": 1.42,
+     "score": 0.25,
+     "changed": 1.1,
      "kind": "month"
     },
     {
      "from": "2026-06-03",
      "to": "2026-08-07",
      "clear": 100.0,
-     "score": 0.406,
-     "changed": 9.92,
+     "score": 0.391,
+     "changed": 9.67,
      "kind": "month"
     },
     {
      "from": "2026-08-07",
      "to": "2026-09-11",
      "clear": 100.0,
-     "score": 0.28,
-     "changed": 4.44,
+     "score": 0.258,
+     "changed": 4.05,
      "kind": "month"
     },
     {
      "from": "2026-09-11",
      "to": "2026-10-08",
      "clear": 100.0,
-     "score": 0.368,
-     "changed": 7.79,
+     "score": 0.353,
+     "changed": 7.41,
      "kind": "month"
     },
     {
      "from": "2024-11-12",
      "to": "2025-11-12",
      "clear": 100.0,
-     "score": 0.396,
-     "changed": 5.65,
+     "score": 0.38,
+     "changed": 5.03,
      "kind": "year"
     },
     {
      "from": "2024-12-10",
      "to": "2025-12-12",
      "clear": 98.7,
-     "score": 0.506,
-     "changed": 11.52,
+     "score": 0.499,
+     "changed": 11.28,
      "kind": "year"
     },
     {
      "from": "2025-01-01",
      "to": "2026-01-04",
      "clear": 81.9,
-     "score": 0.718,
-     "changed": 25.07,
+     "score": 0.713,
+     "changed": 24.56,
      "kind": "year"
     },
     {
      "from": "2025-02-13",
      "to": "2026-02-28",
      "clear": 33.6,
-     "score": 0.746,
-     "changed": 28.8,
+     "score": 0.741,
+     "changed": 28.9,
      "kind": "year"
     },
     {
      "from": "2025-03-22",
      "to": "2026-03-25",
      "clear": 100.0,
-     "score": 0.533,
-     "changed": 11.82,
+     "score": 0.527,
+     "changed": 11.29,
      "kind": "year"
     },
     {
      "from": "2025-04-11",
      "to": "2026-04-21",
      "clear": 100.0,
-     "score": 0.288,
-     "changed": 2.29,
+     "score": 0.276,
+     "changed": 2.09,
      "kind": "year"
     },
     {
      "from": "2025-05-14",
      "to": "2026-05-09",
      "clear": 99.5,
-     "score": 0.357,
-     "changed": 6.94,
+     "score": 0.344,
+     "changed": 6.56,
      "kind": "year"
     },
     {
      "from": "2025-06-22",
      "to": "2026-06-03",
      "clear": 100.0,
-     "score": 0.323,
-     "changed": 5.26,
+     "score": 0.309,
+     "changed": 4.94,
      "kind": "year"
     },
     {
      "from": "2025-08-12",
      "to": "2026-08-07",
      "clear": 97.9,
-     "score": 0.329,
-     "changed": 5.45,
+     "score": 0.313,
+     "changed": 5.06,
      "kind": "year"
     },
     {
      "from": "2025-09-21",
      "to": "2026-09-11",
      "clear": 100.0,
-     "score": 0.27,
-     "changed": 4.53,
+     "score": 0.247,
+     "changed": 4.36,
      "kind": "year"
     },
     {
      "from": "2025-10-08",
      "to": "2026-10-08",
      "clear": 100.0,
-     "score": 0.268,
-     "changed": 3.42,
+     "score": 0.248,
+     "changed": 3.16,
      "kind": "year"
     }
    ],
@@ -1374,7 +1355,7 @@
    "sizeM": 7680,
    "tile": "MGRS-52TEL",
    "latest": "2026-10-08",
-   "checked": "2026-10-08T17:33Z",
+   "checked": "2026-10-12T15:04Z",
    "images": [
     {
      "date": "2024-11-02",
@@ -1383,8 +1364,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       129.22249,
@@ -1402,8 +1383,8 @@
      "cloud": 0.05,
      "snow": 0.03,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       129.22249,
@@ -1421,8 +1402,8 @@
      "cloud": 0.07,
      "snow": 17.18,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       129.22249,
@@ -1440,8 +1421,8 @@
      "cloud": 0.0,
      "snow": 0.04,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       129.22249,
@@ -1459,8 +1440,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       129.22249,
@@ -1478,8 +1459,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       129.22249,
@@ -1497,8 +1478,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       129.22249,
@@ -1516,8 +1497,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       129.22249,
@@ -1535,8 +1516,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       129.22249,
@@ -1554,8 +1535,8 @@
      "cloud": 2.12,
      "snow": 1.92,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       129.22249,
@@ -1573,8 +1554,8 @@
      "cloud": 0.01,
      "snow": 0.48,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       129.22249,
@@ -1592,8 +1573,8 @@
      "cloud": 0.0,
      "snow": 0.96,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       129.22249,
@@ -1611,8 +1592,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       129.22249,
@@ -1630,8 +1611,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       129.22249,
@@ -1649,8 +1630,8 @@
      "cloud": 0.78,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       129.22249,
@@ -1668,8 +1649,8 @@
      "cloud": 0.08,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       129.22249,
@@ -1687,8 +1668,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       129.22249,
@@ -1705,184 +1686,184 @@
      "from": "2024-11-02",
      "to": "2025-01-01",
      "clear": 99.9,
-     "score": 0.832,
-     "changed": 27.78,
+     "score": 0.825,
+     "changed": 26.98,
      "kind": "month"
     },
     {
      "from": "2025-01-01",
      "to": "2025-03-14",
      "clear": 82.7,
-     "score": 0.853,
-     "changed": 34.63,
+     "score": 0.842,
+     "changed": 33.78,
      "kind": "month"
     },
     {
      "from": "2025-03-14",
      "to": "2025-04-26",
      "clear": 82.8,
-     "score": 0.843,
-     "changed": 33.19,
+     "score": 0.83,
+     "changed": 32.41,
      "kind": "month"
     },
     {
      "from": "2025-04-26",
      "to": "2025-05-16",
      "clear": 100.0,
-     "score": 0.683,
-     "changed": 16.71,
+     "score": 0.684,
+     "changed": 16.57,
      "kind": "month"
     },
     {
      "from": "2025-05-16",
      "to": "2025-07-12",
      "clear": 100.0,
-     "score": 0.608,
-     "changed": 13.7,
+     "score": 0.587,
+     "changed": 11.61,
      "kind": "month"
     },
     {
      "from": "2025-07-12",
      "to": "2025-09-18",
      "clear": 100.0,
-     "score": 0.517,
-     "changed": 9.85,
+     "score": 0.485,
+     "changed": 7.14,
      "kind": "month"
     },
     {
      "from": "2025-09-18",
      "to": "2025-10-03",
      "clear": 100.0,
-     "score": 0.523,
-     "changed": 10.16,
+     "score": 0.48,
+     "changed": 7.79,
      "kind": "month"
     },
     {
      "from": "2025-10-03",
      "to": "2025-11-22",
      "clear": 100.0,
-     "score": 0.795,
-     "changed": 26.04,
+     "score": 0.787,
+     "changed": 24.98,
      "kind": "month"
     },
     {
      "from": "2025-11-22",
      "to": "2026-01-06",
      "clear": 96.0,
-     "score": 0.804,
-     "changed": 30.29,
+     "score": 0.795,
+     "changed": 29.69,
      "kind": "month"
     },
     {
      "from": "2026-01-06",
      "to": "2026-02-20",
      "clear": 95.7,
-     "score": 0.715,
-     "changed": 25.27,
+     "score": 0.706,
+     "changed": 24.85,
      "kind": "month"
     },
     {
      "from": "2026-02-20",
      "to": "2026-03-17",
      "clear": 98.8,
-     "score": 0.452,
-     "changed": 9.13,
+     "score": 0.439,
+     "changed": 8.43,
      "kind": "month"
     },
     {
      "from": "2026-03-17",
      "to": "2026-04-16",
      "clear": 99.0,
-     "score": 0.924,
-     "changed": 38.41,
+     "score": 0.916,
+     "changed": 37.99,
      "kind": "month"
     },
     {
      "from": "2026-04-16",
      "to": "2026-05-16",
      "clear": 100.0,
-     "score": 0.775,
-     "changed": 26.43,
+     "score": 0.766,
+     "changed": 25.61,
      "kind": "month"
     },
     {
      "from": "2026-05-16",
      "to": "2026-08-04",
      "clear": 99.2,
-     "score": 0.632,
-     "changed": 10.18,
+     "score": 0.608,
+     "changed": 8.02,
      "kind": "month"
     },
     {
      "from": "2026-08-04",
      "to": "2026-09-18",
      "clear": 99.1,
-     "score": 0.675,
-     "changed": 16.37,
+     "score": 0.656,
+     "changed": 15.0,
      "kind": "month"
     },
     {
      "from": "2026-09-18",
      "to": "2026-10-08",
      "clear": 99.9,
-     "score": 0.677,
-     "changed": 19.1,
+     "score": 0.642,
+     "changed": 16.29,
      "kind": "month"
     },
     {
      "from": "2024-11-02",
      "to": "2025-11-22",
      "clear": 100.0,
-     "score": 0.708,
-     "changed": 22.13,
+     "score": 0.698,
+     "changed": 21.33,
      "kind": "year"
     },
     {
      "from": "2025-01-01",
      "to": "2026-01-06",
      "clear": 95.9,
-     "score": 0.657,
-     "changed": 20.08,
+     "score": 0.648,
+     "changed": 19.02,
      "kind": "year"
     },
     {
      "from": "2025-03-14",
      "to": "2026-03-17",
      "clear": 82.7,
-     "score": 0.585,
-     "changed": 16.26,
+     "score": 0.576,
+     "changed": 15.69,
      "kind": "year"
     },
     {
      "from": "2025-04-26",
      "to": "2026-04-16",
      "clear": 100.0,
-     "score": 0.49,
-     "changed": 8.33,
+     "score": 0.468,
+     "changed": 7.04,
      "kind": "year"
     },
     {
      "from": "2025-05-16",
      "to": "2026-05-16",
      "clear": 100.0,
-     "score": 0.502,
-     "changed": 6.81,
+     "score": 0.474,
+     "changed": 4.95,
      "kind": "year"
     },
     {
      "from": "2025-09-18",
      "to": "2026-09-18",
      "clear": 99.9,
-     "score": 0.473,
-     "changed": 7.84,
+     "score": 0.445,
+     "changed": 6.56,
      "kind": "year"
     },
     {
      "from": "2025-10-03",
      "to": "2026-10-08",
      "clear": 100.0,
-     "score": 0.543,
-     "changed": 10.66,
+     "score": 0.506,
+     "changed": 8.03,
      "kind": "year"
     }
    ],
@@ -1900,8 +1881,8 @@
    "lon": 126.085968,
    "sizeM": 7680,
    "tile": "MGRS-52SBJ",
-   "latest": "2026-10-08",
-   "checked": "2026-10-08T17:33Z",
+   "latest": "2026-10-11",
+   "checked": "2026-10-12T15:03Z",
    "images": [
     {
      "date": "2024-12-10",
@@ -1910,8 +1891,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       126.03976,
@@ -1929,8 +1910,8 @@
      "cloud": 0.0,
      "snow": 0.22,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       126.03976,
@@ -1948,8 +1929,8 @@
      "cloud": 0.23,
      "snow": 68.32,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       126.03976,
@@ -1967,8 +1948,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       126.03976,
@@ -1986,8 +1967,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       126.03976,
@@ -2005,8 +1986,8 @@
      "cloud": 1.11,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       126.03976,
@@ -2024,8 +2005,8 @@
      "cloud": 3.47,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       126.03976,
@@ -2043,8 +2024,8 @@
      "cloud": 4.64,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       126.03976,
@@ -2062,8 +2043,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       126.03976,
@@ -2081,8 +2062,8 @@
      "cloud": 0.24,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       126.03976,
@@ -2100,8 +2081,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       126.03976,
@@ -2119,8 +2100,8 @@
      "cloud": 0.18,
      "snow": 29.92,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       126.03976,
@@ -2138,8 +2119,8 @@
      "cloud": 0.0,
      "snow": 18.21,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       126.03976,
@@ -2157,8 +2138,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       126.03976,
@@ -2176,8 +2157,8 @@
      "cloud": 0.7,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       126.03976,
@@ -2195,8 +2176,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       126.03976,
@@ -2214,8 +2195,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       126.03976,
@@ -2233,8 +2214,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       126.03976,
@@ -2252,8 +2233,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       126.03976,
@@ -2271,8 +2252,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       126.03976,
@@ -2284,14 +2265,14 @@
      "month": "2026-09"
     },
     {
-     "date": "2026-10-01",
-     "datetime": "2026-10-01T02:36:43.671000Z",
-     "scene": "S2B_52SBJ_20261001_0_L2A",
+     "date": "2026-10-11",
+     "datetime": "2026-10-11T02:36:43.226000Z",
+     "scene": "S2B_52SBJ_20261011_0_L2A",
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       126.03976,
@@ -2299,27 +2280,8 @@
       126.13194,
       39.59531
      ],
-     "src": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-l2a/items/S2B_52SBJ_20261001_0_L2A",
+     "src": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-l2a/items/S2B_52SBJ_20261011_0_L2A",
      "month": "2026-10"
-    },
-    {
-     "date": "2026-10-08",
-     "datetime": "2026-10-08T02:36:56.547000Z",
-     "scene": "S2A_52SBJ_20261008_1_L2A",
-     "cloud": 0.01,
-     "snow": 0.0,
-     "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
-     "epsg": 32652,
-     "bbox": [
-      126.03976,
-      39.52395,
-      126.13194,
-      39.59531
-     ],
-     "src": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-l2a/items/S2A_52SBJ_20261008_1_L2A",
-     "month": null
     }
    ],
    "changes": [
@@ -2327,96 +2289,96 @@
      "from": "2024-12-10",
      "to": "2025-01-24",
      "clear": 99.8,
-     "score": 0.611,
-     "changed": 19.02,
+     "score": 0.604,
+     "changed": 18.85,
      "kind": "month"
     },
     {
      "from": "2025-01-24",
      "to": "2025-02-08",
      "clear": 31.5,
-     "score": 0.707,
-     "changed": 24.99,
+     "score": 0.702,
+     "changed": 24.69,
      "kind": "month"
     },
     {
      "from": "2025-02-08",
      "to": "2025-03-20",
      "clear": 31.5,
-     "score": 0.768,
-     "changed": 29.41,
+     "score": 0.763,
+     "changed": 29.19,
      "kind": "month"
     },
     {
      "from": "2025-03-20",
      "to": "2025-04-29",
      "clear": 100.0,
-     "score": 0.512,
-     "changed": 10.18,
+     "score": 0.507,
+     "changed": 9.84,
      "kind": "month"
     },
     {
      "from": "2025-04-29",
      "to": "2025-05-26",
      "clear": 98.9,
-     "score": 0.378,
-     "changed": 3.21,
+     "score": 0.372,
+     "changed": 2.86,
      "kind": "month"
     },
     {
      "from": "2025-05-26",
      "to": "2025-06-23",
      "clear": 96.4,
-     "score": 0.354,
-     "changed": 5.68,
+     "score": 0.344,
+     "changed": 5.32,
      "kind": "month"
     },
     {
      "from": "2025-06-23",
      "to": "2025-07-28",
      "clear": 92.1,
-     "score": 0.474,
-     "changed": 10.46,
+     "score": 0.465,
+     "changed": 10.35,
      "kind": "month"
     },
     {
      "from": "2025-07-28",
      "to": "2025-09-21",
      "clear": 95.4,
-     "score": 0.511,
-     "changed": 10.25,
+     "score": 0.499,
+     "changed": 9.63,
      "kind": "month"
     },
     {
      "from": "2025-09-21",
      "to": "2025-10-16",
      "clear": 99.8,
-     "score": 0.399,
-     "changed": 8.71,
+     "score": 0.377,
+     "changed": 8.31,
      "kind": "month"
     },
     {
      "from": "2025-10-16",
      "to": "2025-11-22",
      "clear": 99.8,
-     "score": 0.506,
-     "changed": 11.03,
+     "score": 0.497,
+     "changed": 10.39,
      "kind": "month"
     },
     {
      "from": "2025-11-22",
      "to": "2025-12-30",
      "clear": 69.9,
-     "score": 0.935,
-     "changed": 39.81,
+     "score": 0.933,
+     "changed": 39.92,
      "kind": "month"
     },
     {
      "from": "2025-12-30",
      "to": "2026-01-04",
      "clear": 69.0,
-     "score": 0.386,
-     "changed": 5.98,
+     "score": 0.376,
+     "changed": 5.66,
      "kind": "month"
     },
     {
@@ -2424,135 +2386,135 @@
      "to": "2026-02-28",
      "clear": 81.8,
      "score": 0.868,
-     "changed": 32.37,
+     "changed": 32.47,
      "kind": "month"
     },
     {
      "from": "2026-02-28",
      "to": "2026-03-20",
      "clear": 99.3,
-     "score": 0.567,
-     "changed": 12.05,
+     "score": 0.563,
+     "changed": 11.36,
      "kind": "month"
     },
     {
      "from": "2026-03-20",
      "to": "2026-04-24",
      "clear": 99.3,
-     "score": 0.488,
-     "changed": 8.35,
+     "score": 0.484,
+     "changed": 7.93,
      "kind": "month"
     },
     {
      "from": "2026-04-24",
      "to": "2026-05-31",
      "clear": 100.0,
-     "score": 0.329,
-     "changed": 2.75,
+     "score": 0.322,
+     "changed": 2.54,
      "kind": "month"
     },
     {
      "from": "2026-05-31",
      "to": "2026-06-23",
      "clear": 100.0,
-     "score": 0.315,
-     "changed": 7.1,
+     "score": 0.302,
+     "changed": 6.91,
      "kind": "month"
     },
     {
      "from": "2026-06-23",
      "to": "2026-08-27",
      "clear": 100.0,
-     "score": 0.4,
-     "changed": 8.32,
+     "score": 0.38,
+     "changed": 7.74,
      "kind": "month"
     },
     {
      "from": "2026-08-27",
      "to": "2026-09-16",
      "clear": 100.0,
-     "score": 0.307,
-     "changed": 4.11,
+     "score": 0.284,
+     "changed": 3.67,
      "kind": "month"
     },
     {
      "from": "2026-09-16",
-     "to": "2026-10-01",
+     "to": "2026-10-11",
      "clear": 100.0,
-     "score": 0.281,
-     "changed": 4.35,
+     "score": 0.363,
+     "changed": 7.36,
      "kind": "month"
     },
     {
      "from": "2024-12-10",
      "to": "2025-12-30",
      "clear": 69.9,
-     "score": 1.018,
-     "changed": 44.52,
+     "score": 1.017,
+     "changed": 44.8,
      "kind": "year"
     },
     {
      "from": "2025-01-24",
      "to": "2026-01-04",
      "clear": 81.8,
-     "score": 0.673,
-     "changed": 20.75,
+     "score": 0.669,
+     "changed": 20.21,
      "kind": "year"
     },
     {
      "from": "2025-02-08",
      "to": "2026-02-28",
      "clear": 31.5,
-     "score": 0.809,
-     "changed": 28.64,
+     "score": 0.808,
+     "changed": 28.84,
      "kind": "year"
     },
     {
      "from": "2025-03-20",
      "to": "2026-03-20",
      "clear": 99.3,
-     "score": 0.3,
-     "changed": 3.27,
+     "score": 0.284,
+     "changed": 3.1,
      "kind": "year"
     },
     {
      "from": "2025-04-29",
      "to": "2026-04-24",
      "clear": 100.0,
-     "score": 0.273,
-     "changed": 1.35,
+     "score": 0.259,
+     "changed": 1.16,
      "kind": "year"
     },
     {
      "from": "2025-05-26",
      "to": "2026-05-31",
      "clear": 98.9,
-     "score": 0.274,
-     "changed": 2.44,
+     "score": 0.262,
+     "changed": 2.24,
      "kind": "year"
     },
     {
      "from": "2025-06-23",
      "to": "2026-06-23",
      "clear": 96.5,
-     "score": 0.315,
-     "changed": 5.85,
+     "score": 0.298,
+     "changed": 5.45,
      "kind": "year"
     },
     {
      "from": "2025-09-21",
      "to": "2026-09-16",
      "clear": 100.0,
-     "score": 0.291,
-     "changed": 5.24,
+     "score": 0.267,
+     "changed": 4.85,
      "kind": "year"
     },
     {
      "from": "2025-10-16",
-     "to": "2026-10-01",
+     "to": "2026-10-11",
      "clear": 99.8,
-     "score": 0.353,
-     "changed": 5.97,
+     "score": 0.307,
+     "changed": 4.33,
      "kind": "year"
     }
    ],
@@ -2571,7 +2533,7 @@
    "sizeM": 7680,
    "tile": "MGRS-52TEN",
    "latest": "2026-10-08",
-   "checked": "2026-10-08T17:33Z",
+   "checked": "2026-10-12T15:04Z",
    "images": [
     {
      "date": "2024-11-02",
@@ -2580,8 +2542,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       129.83044,
@@ -2599,8 +2561,8 @@
      "cloud": 0.01,
      "snow": 0.01,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       129.83044,
@@ -2618,8 +2580,8 @@
      "cloud": 0.0,
      "snow": 0.14,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       129.83044,
@@ -2637,8 +2599,8 @@
      "cloud": 0.02,
      "snow": 7.2,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       129.83044,
@@ -2656,8 +2618,8 @@
      "cloud": 0.78,
      "snow": 0.17,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       129.83044,
@@ -2675,8 +2637,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       129.83044,
@@ -2694,8 +2656,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       129.83044,
@@ -2713,8 +2675,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       129.83044,
@@ -2732,8 +2694,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       129.83044,
@@ -2751,8 +2713,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       129.83044,
@@ -2770,8 +2732,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       129.83044,
@@ -2789,8 +2751,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       129.83044,
@@ -2808,8 +2770,8 @@
      "cloud": 0.01,
      "snow": 35.23,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       129.83044,
@@ -2827,8 +2789,8 @@
      "cloud": 0.33,
      "snow": 29.63,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       129.83044,
@@ -2846,8 +2808,8 @@
      "cloud": 0.0,
      "snow": 0.73,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       129.83044,
@@ -2865,8 +2827,8 @@
      "cloud": 1.12,
      "snow": 61.56,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       129.83044,
@@ -2884,8 +2846,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       129.83044,
@@ -2903,8 +2865,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       129.83044,
@@ -2922,8 +2884,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       129.83044,
@@ -2941,8 +2903,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       129.83044,
@@ -2960,8 +2922,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       129.83044,
@@ -2979,8 +2941,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       129.83044,
@@ -2997,143 +2959,143 @@
      "from": "2024-11-02",
      "to": "2024-12-24",
      "clear": 100.0,
-     "score": 0.288,
-     "changed": 2.92,
+     "score": 0.271,
+     "changed": 2.62,
      "kind": "month"
     },
     {
      "from": "2024-12-24",
      "to": "2025-01-23",
      "clear": 99.8,
-     "score": 0.203,
-     "changed": 1.8,
+     "score": 0.187,
+     "changed": 1.73,
      "kind": "month"
     },
     {
      "from": "2025-01-23",
      "to": "2025-02-27",
      "clear": 92.8,
-     "score": 0.684,
-     "changed": 19.57,
+     "score": 0.683,
+     "changed": 19.02,
      "kind": "month"
     },
     {
      "from": "2025-02-27",
      "to": "2025-03-19",
      "clear": 92.4,
-     "score": 0.597,
-     "changed": 15.0,
+     "score": 0.593,
+     "changed": 14.62,
      "kind": "month"
     },
     {
      "from": "2025-03-19",
      "to": "2025-04-11",
      "clear": 99.1,
-     "score": 0.38,
-     "changed": 5.82,
+     "score": 0.37,
+     "changed": 5.42,
      "kind": "month"
     },
     {
      "from": "2025-04-11",
      "to": "2025-05-28",
      "clear": 100.0,
-     "score": 0.401,
-     "changed": 2.78,
+     "score": 0.39,
+     "changed": 2.31,
      "kind": "month"
     },
     {
      "from": "2025-05-28",
      "to": "2025-06-02",
      "clear": 100.0,
-     "score": 0.379,
-     "changed": 5.83,
+     "score": 0.372,
+     "changed": 5.65,
      "kind": "month"
     },
     {
      "from": "2025-06-02",
      "to": "2025-07-09",
      "clear": 100.0,
-     "score": 0.503,
-     "changed": 13.89,
+     "score": 0.495,
+     "changed": 13.62,
      "kind": "month"
     },
     {
      "from": "2025-07-09",
      "to": "2025-09-15",
      "clear": 100.0,
-     "score": 0.399,
-     "changed": 8.04,
+     "score": 0.384,
+     "changed": 7.45,
      "kind": "month"
     },
     {
      "from": "2025-09-15",
      "to": "2025-10-03",
      "clear": 100.0,
-     "score": 0.333,
-     "changed": 3.41,
+     "score": 0.311,
+     "changed": 3.06,
      "kind": "month"
     },
     {
      "from": "2025-10-03",
      "to": "2025-11-22",
      "clear": 100.0,
-     "score": 0.456,
-     "changed": 8.1,
+     "score": 0.447,
+     "changed": 7.76,
      "kind": "month"
     },
     {
      "from": "2025-11-22",
      "to": "2025-12-17",
      "clear": 64.8,
-     "score": 0.596,
-     "changed": 19.77,
+     "score": 0.592,
+     "changed": 19.69,
      "kind": "month"
     },
     {
      "from": "2025-12-17",
      "to": "2026-01-03",
      "clear": 61.0,
-     "score": 0.188,
-     "changed": 0.75,
+     "score": 0.177,
+     "changed": 0.62,
      "kind": "month"
     },
     {
      "from": "2026-01-03",
      "to": "2026-02-20",
      "clear": 69.9,
-     "score": 0.537,
-     "changed": 14.07,
+     "score": 0.53,
+     "changed": 13.56,
      "kind": "month"
     },
     {
      "from": "2026-02-20",
      "to": "2026-03-09",
      "clear": 37.3,
-     "score": 0.428,
-     "changed": 8.33,
+     "score": 0.419,
+     "changed": 7.94,
      "kind": "month"
     },
     {
      "from": "2026-03-09",
      "to": "2026-04-23",
      "clear": 37.3,
-     "score": 0.537,
-     "changed": 15.96,
+     "score": 0.531,
+     "changed": 15.84,
      "kind": "month"
     },
     {
      "from": "2026-04-23",
      "to": "2026-05-31",
      "clear": 100.0,
-     "score": 0.347,
-     "changed": 1.1,
+     "score": 0.335,
+     "changed": 0.85,
      "kind": "month"
     },
     {
      "from": "2026-05-31",
      "to": "2026-06-02",
      "clear": 100.0,
-     "score": 0.105,
+     "score": 0.086,
      "changed": 0.01,
      "kind": "month"
     },
@@ -3141,104 +3103,104 @@
      "from": "2026-06-02",
      "to": "2026-08-09",
      "clear": 100.0,
-     "score": 0.665,
-     "changed": 20.46,
+     "score": 0.658,
+     "changed": 20.17,
      "kind": "month"
     },
     {
      "from": "2026-08-09",
      "to": "2026-09-10",
      "clear": 100.0,
-     "score": 0.375,
-     "changed": 5.45,
+     "score": 0.356,
+     "changed": 4.58,
      "kind": "month"
     },
     {
      "from": "2026-09-10",
      "to": "2026-10-08",
      "clear": 100.0,
-     "score": 0.526,
-     "changed": 9.86,
+     "score": 0.511,
+     "changed": 8.82,
      "kind": "month"
     },
     {
      "from": "2024-11-02",
      "to": "2025-11-22",
      "clear": 100.0,
-     "score": 0.324,
-     "changed": 3.85,
+     "score": 0.308,
+     "changed": 3.37,
      "kind": "year"
     },
     {
      "from": "2024-12-24",
      "to": "2025-12-17",
      "clear": 64.8,
-     "score": 0.595,
-     "changed": 20.02,
+     "score": 0.591,
+     "changed": 19.84,
      "kind": "year"
     },
     {
      "from": "2025-01-23",
      "to": "2026-01-03",
      "clear": 70.0,
-     "score": 0.616,
-     "changed": 20.01,
+     "score": 0.613,
+     "changed": 19.94,
      "kind": "year"
     },
     {
      "from": "2025-02-27",
      "to": "2026-02-20",
      "clear": 92.7,
-     "score": 0.407,
-     "changed": 8.45,
+     "score": 0.391,
+     "changed": 8.13,
      "kind": "year"
     },
     {
      "from": "2025-03-19",
      "to": "2026-03-09",
      "clear": 37.1,
-     "score": 0.522,
-     "changed": 14.47,
+     "score": 0.517,
+     "changed": 14.31,
      "kind": "year"
     },
     {
      "from": "2025-04-11",
      "to": "2026-04-23",
      "clear": 100.0,
-     "score": 0.263,
-     "changed": 2.32,
+     "score": 0.244,
+     "changed": 2.1,
      "kind": "year"
     },
     {
      "from": "2025-05-28",
      "to": "2026-05-31",
      "clear": 100.0,
-     "score": 0.179,
-     "changed": 0.41,
+     "score": 0.162,
+     "changed": 0.35,
      "kind": "year"
     },
     {
      "from": "2025-06-02",
      "to": "2026-06-02",
      "clear": 100.0,
-     "score": 0.421,
-     "changed": 8.3,
+     "score": 0.414,
+     "changed": 8.04,
      "kind": "year"
     },
     {
      "from": "2025-09-15",
      "to": "2026-09-10",
      "clear": 100.0,
-     "score": 0.368,
-     "changed": 6.01,
+     "score": 0.346,
+     "changed": 5.27,
      "kind": "year"
     },
     {
      "from": "2025-10-03",
      "to": "2026-10-08",
      "clear": 100.0,
-     "score": 0.393,
-     "changed": 6.16,
+     "score": 0.371,
+     "changed": 5.55,
      "kind": "year"
     }
    ],
@@ -3257,7 +3219,7 @@
    "sizeM": 7680,
    "tile": "MGRS-52TEM",
    "latest": "2026-10-08",
-   "checked": "2026-10-08T17:33Z",
+   "checked": "2026-10-12T15:04Z",
    "images": [
     {
      "date": "2024-11-02",
@@ -3266,8 +3228,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       129.67454,
@@ -3285,8 +3247,8 @@
      "cloud": 0.51,
      "snow": 0.08,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       129.67454,
@@ -3304,8 +3266,8 @@
      "cloud": 0.05,
      "snow": 1.36,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       129.67454,
@@ -3323,8 +3285,8 @@
      "cloud": 0.29,
      "snow": 87.09,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       129.67454,
@@ -3342,8 +3304,8 @@
      "cloud": 0.5,
      "snow": 3.34,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       129.67454,
@@ -3361,8 +3323,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       129.67454,
@@ -3380,8 +3342,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       129.67454,
@@ -3399,8 +3361,8 @@
      "cloud": 0.21,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       129.67454,
@@ -3418,8 +3380,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       129.67454,
@@ -3437,8 +3399,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       129.67454,
@@ -3456,8 +3418,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       129.67454,
@@ -3475,8 +3437,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       129.67454,
@@ -3494,8 +3456,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       129.67454,
@@ -3513,8 +3475,8 @@
      "cloud": 0.41,
      "snow": 0.48,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       129.67454,
@@ -3532,8 +3494,8 @@
      "cloud": 1.03,
      "snow": 13.16,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       129.67454,
@@ -3551,8 +3513,8 @@
      "cloud": 0.01,
      "snow": 1.53,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       129.67454,
@@ -3570,8 +3532,8 @@
      "cloud": 0.69,
      "snow": 0.19,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       129.67454,
@@ -3589,8 +3551,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       129.67454,
@@ -3608,8 +3570,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       129.67454,
@@ -3627,8 +3589,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       129.67454,
@@ -3646,8 +3608,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       129.67454,
@@ -3665,8 +3627,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       129.67454,
@@ -3684,8 +3646,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       129.67454,
@@ -3703,8 +3665,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32652,
      "bbox": [
       129.67454,
@@ -3721,16 +3683,16 @@
      "from": "2024-11-02",
      "to": "2024-12-29",
      "clear": 99.4,
-     "score": 0.368,
-     "changed": 5.24,
+     "score": 0.355,
+     "changed": 4.74,
      "kind": "month"
     },
     {
      "from": "2024-12-29",
      "to": "2025-01-18",
      "clear": 98.1,
-     "score": 0.332,
-     "changed": 4.9,
+     "score": 0.326,
+     "changed": 4.91,
      "kind": "month"
     },
     {
@@ -3753,176 +3715,176 @@
      "from": "2025-03-14",
      "to": "2025-04-16",
      "clear": 96.2,
-     "score": 0.608,
-     "changed": 17.52,
+     "score": 0.598,
+     "changed": 16.91,
      "kind": "month"
     },
     {
      "from": "2025-04-16",
      "to": "2025-05-23",
      "clear": 100.0,
-     "score": 0.449,
-     "changed": 5.89,
+     "score": 0.437,
+     "changed": 5.21,
      "kind": "month"
     },
     {
      "from": "2025-05-23",
      "to": "2025-06-12",
      "clear": 99.8,
-     "score": 0.252,
-     "changed": 2.01,
+     "score": 0.236,
+     "changed": 1.87,
      "kind": "month"
     },
     {
      "from": "2025-06-12",
      "to": "2025-07-07",
      "clear": 99.8,
-     "score": 0.361,
-     "changed": 6.93,
+     "score": 0.35,
+     "changed": 6.68,
      "kind": "month"
     },
     {
      "from": "2025-07-07",
      "to": "2025-08-19",
      "clear": 100.0,
-     "score": 0.428,
-     "changed": 8.0,
+     "score": 0.415,
+     "changed": 7.47,
      "kind": "month"
     },
     {
      "from": "2025-08-19",
      "to": "2025-09-27",
      "clear": 100.0,
-     "score": 0.541,
-     "changed": 14.58,
+     "score": 0.531,
+     "changed": 14.31,
      "kind": "month"
     },
     {
      "from": "2025-09-27",
      "to": "2025-10-03",
      "clear": 100.0,
-     "score": 0.18,
-     "changed": 1.38,
+     "score": 0.161,
+     "changed": 1.32,
      "kind": "month"
     },
     {
      "from": "2025-10-03",
      "to": "2025-11-22",
      "clear": 100.0,
-     "score": 0.39,
-     "changed": 6.16,
+     "score": 0.379,
+     "changed": 5.73,
      "kind": "month"
     },
     {
      "from": "2025-11-22",
      "to": "2025-12-09",
      "clear": 99.1,
-     "score": 0.26,
-     "changed": 2.79,
+     "score": 0.246,
+     "changed": 2.71,
      "kind": "month"
     },
     {
      "from": "2025-12-09",
      "to": "2026-01-03",
      "clear": 85.3,
-     "score": 0.481,
-     "changed": 11.1,
+     "score": 0.476,
+     "changed": 11.05,
      "kind": "month"
     },
     {
      "from": "2026-01-03",
      "to": "2026-02-20",
      "clear": 85.3,
-     "score": 0.429,
-     "changed": 8.91,
+     "score": 0.417,
+     "changed": 8.66,
      "kind": "month"
     },
     {
      "from": "2026-02-20",
      "to": "2026-03-16",
      "clear": 97.8,
-     "score": 0.411,
-     "changed": 6.22,
+     "score": 0.4,
+     "changed": 5.85,
      "kind": "month"
     },
     {
      "from": "2026-03-16",
      "to": "2026-04-18",
      "clear": 99.1,
-     "score": 0.334,
-     "changed": 4.13,
+     "score": 0.321,
+     "changed": 3.92,
      "kind": "month"
     },
     {
      "from": "2026-04-18",
      "to": "2026-05-31",
      "clear": 100.0,
-     "score": 0.354,
-     "changed": 3.54,
+     "score": 0.341,
+     "changed": 3.27,
      "kind": "month"
     },
     {
      "from": "2026-05-31",
      "to": "2026-06-02",
      "clear": 100.0,
-     "score": 0.149,
-     "changed": 0.65,
+     "score": 0.129,
+     "changed": 0.63,
      "kind": "month"
     },
     {
      "from": "2026-06-02",
      "to": "2026-07-22",
      "clear": 100.0,
-     "score": 0.642,
-     "changed": 21.02,
+     "score": 0.636,
+     "changed": 20.89,
      "kind": "month"
     },
     {
      "from": "2026-07-22",
      "to": "2026-08-09",
      "clear": 100.0,
-     "score": 0.343,
-     "changed": 6.05,
+     "score": 0.328,
+     "changed": 5.66,
      "kind": "month"
     },
     {
      "from": "2026-08-09",
      "to": "2026-09-20",
      "clear": 100.0,
-     "score": 0.455,
-     "changed": 10.62,
+     "score": 0.443,
+     "changed": 10.28,
      "kind": "month"
     },
     {
      "from": "2026-09-20",
      "to": "2026-10-08",
      "clear": 100.0,
-     "score": 0.354,
-     "changed": 6.97,
+     "score": 0.339,
+     "changed": 6.53,
      "kind": "month"
     },
     {
      "from": "2024-11-02",
      "to": "2025-11-22",
      "clear": 100.0,
-     "score": 0.416,
-     "changed": 6.99,
+     "score": 0.403,
+     "changed": 6.35,
      "kind": "year"
     },
     {
      "from": "2024-12-29",
      "to": "2025-12-09",
      "clear": 98.5,
-     "score": 0.273,
-     "changed": 2.85,
+     "score": 0.259,
+     "changed": 2.73,
      "kind": "year"
     },
     {
      "from": "2025-01-18",
      "to": "2026-01-03",
      "clear": 85.5,
-     "score": 0.383,
-     "changed": 6.31,
+     "score": 0.372,
+     "changed": 6.11,
      "kind": "year"
     },
     {
@@ -3937,64 +3899,64 @@
      "from": "2025-03-14",
      "to": "2026-03-16",
      "clear": 95.8,
-     "score": 0.569,
-     "changed": 15.41,
+     "score": 0.555,
+     "changed": 14.74,
      "kind": "year"
     },
     {
      "from": "2025-04-16",
      "to": "2026-04-18",
      "clear": 100.0,
-     "score": 0.4,
-     "changed": 7.35,
+     "score": 0.386,
+     "changed": 6.95,
      "kind": "year"
     },
     {
      "from": "2025-05-23",
      "to": "2026-05-31",
      "clear": 100.0,
-     "score": 0.296,
-     "changed": 3.92,
+     "score": 0.281,
+     "changed": 3.72,
      "kind": "year"
     },
     {
      "from": "2025-06-12",
      "to": "2026-06-02",
      "clear": 99.8,
-     "score": 0.213,
-     "changed": 1.7,
+     "score": 0.196,
+     "changed": 1.68,
      "kind": "year"
     },
     {
      "from": "2025-07-07",
      "to": "2026-07-22",
      "clear": 100.0,
-     "score": 0.443,
-     "changed": 9.56,
+     "score": 0.431,
+     "changed": 9.02,
      "kind": "year"
     },
     {
      "from": "2025-08-19",
      "to": "2026-08-09",
      "clear": 100.0,
-     "score": 0.28,
-     "changed": 4.08,
+     "score": 0.258,
+     "changed": 3.68,
      "kind": "year"
     },
     {
      "from": "2025-09-27",
      "to": "2026-09-20",
      "clear": 100.0,
-     "score": 0.325,
-     "changed": 6.19,
+     "score": 0.308,
+     "changed": 5.85,
      "kind": "year"
     },
     {
      "from": "2025-10-03",
      "to": "2026-10-08",
      "clear": 100.0,
-     "score": 0.258,
-     "changed": 3.44,
+     "score": 0.239,
+     "changed": 3.27,
      "kind": "year"
     }
    ],
@@ -4012,8 +3974,8 @@
    "lon": 125.9230614,
    "sizeM": 5120,
    "tile": "MGRS-51TYE",
-   "latest": "2026-10-08",
-   "checked": "2026-10-08T17:33Z",
+   "latest": "2026-10-11",
+   "checked": "2026-10-12T15:01Z",
    "images": [
     {
      "date": "2024-11-15",
@@ -4434,9 +4396,9 @@
      "month": "2026-09"
     },
     {
-     "date": "2026-10-08",
-     "datetime": "2026-10-08T02:36:42.732000Z",
-     "scene": "S2A_51TYE_20261008_1_L2A",
+     "date": "2026-10-11",
+     "datetime": "2026-10-11T02:36:29.412000Z",
+     "scene": "S2B_51TYE_20261011_0_L2A",
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
@@ -4449,7 +4411,7 @@
       125.95399,
       39.73219
      ],
-     "src": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-l2a/items/S2A_51TYE_20261008_1_L2A",
+     "src": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-l2a/items/S2B_51TYE_20261011_0_L2A",
      "month": "2026-10"
     }
    ],
@@ -4624,10 +4586,10 @@
     },
     {
      "from": "2026-09-11",
-     "to": "2026-10-08",
+     "to": "2026-10-11",
      "clear": 100.0,
-     "score": 0.447,
-     "changed": 8.43,
+     "score": 0.471,
+     "changed": 9.21,
      "kind": "month"
     },
     {
@@ -4712,10 +4674,10 @@
     },
     {
      "from": "2025-10-16",
-     "to": "2026-10-08",
+     "to": "2026-10-11",
      "clear": 100.0,
-     "score": 0.361,
-     "changed": 5.07,
+     "score": 0.366,
+     "changed": 5.46,
      "kind": "year"
     }
    ],
@@ -4734,7 +4696,7 @@
    "sizeM": 5120,
    "tile": "MGRS-52TEM",
    "latest": "2026-10-08",
-   "checked": "2026-10-08T17:33Z",
+   "checked": "2026-10-12T15:00Z",
    "images": [
     {
      "date": "2024-11-02",
@@ -5384,8 +5346,8 @@
    "lon": 125.754,
    "sizeM": 7680,
    "tile": "MGRS-51TYE",
-   "latest": "2026-10-06",
-   "checked": "2026-10-08T17:33Z",
+   "latest": "2026-10-11",
+   "checked": "2026-10-12T15:01Z",
    "images": [
     {
      "date": "2024-11-15",
@@ -5394,8 +5356,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32651,
      "bbox": [
       125.70782,
@@ -5413,8 +5375,8 @@
      "cloud": 0.37,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32651,
      "bbox": [
       125.70782,
@@ -5432,8 +5394,8 @@
      "cloud": 0.16,
      "snow": 2.34,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32651,
      "bbox": [
       125.70782,
@@ -5451,8 +5413,8 @@
      "cloud": 1.3,
      "snow": 13.75,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32651,
      "bbox": [
       125.70782,
@@ -5470,8 +5432,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32651,
      "bbox": [
       125.70782,
@@ -5489,8 +5451,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32651,
      "bbox": [
       125.70782,
@@ -5508,8 +5470,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32651,
      "bbox": [
       125.70782,
@@ -5527,8 +5489,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32651,
      "bbox": [
       125.70782,
@@ -5546,8 +5508,8 @@
      "cloud": 0.24,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32651,
      "bbox": [
       125.70782,
@@ -5565,8 +5527,8 @@
      "cloud": 0.14,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32651,
      "bbox": [
       125.70782,
@@ -5584,8 +5546,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32651,
      "bbox": [
       125.70782,
@@ -5603,8 +5565,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32651,
      "bbox": [
       125.70782,
@@ -5622,8 +5584,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32651,
      "bbox": [
       125.70782,
@@ -5641,8 +5603,8 @@
      "cloud": 0.66,
      "snow": 28.07,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32651,
      "bbox": [
       125.70782,
@@ -5660,8 +5622,8 @@
      "cloud": 0.0,
      "snow": 0.38,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32651,
      "bbox": [
       125.70782,
@@ -5679,8 +5641,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32651,
      "bbox": [
       125.70782,
@@ -5698,8 +5660,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32651,
      "bbox": [
       125.70782,
@@ -5717,8 +5679,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32651,
      "bbox": [
       125.70782,
@@ -5736,8 +5698,8 @@
      "cloud": 0.57,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32651,
      "bbox": [
       125.70782,
@@ -5755,8 +5717,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32651,
      "bbox": [
       125.70782,
@@ -5774,8 +5736,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32651,
      "bbox": [
       125.70782,
@@ -5787,14 +5749,14 @@
      "month": "2026-09"
     },
     {
-     "date": "2026-10-06",
-     "datetime": "2026-10-06T02:36:31.663000Z",
-     "scene": "S2C_51TYE_20261006_0_L2A",
+     "date": "2026-10-11",
+     "datetime": "2026-10-11T02:36:29.412000Z",
+     "scene": "S2B_51TYE_20261011_0_L2A",
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32651,
      "bbox": [
       125.70782,
@@ -5802,7 +5764,7 @@
       125.80018,
       39.83554
      ],
-     "src": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-l2a/items/S2C_51TYE_20261006_0_L2A",
+     "src": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-l2a/items/S2B_51TYE_20261011_0_L2A",
      "month": "2026-10"
     }
    ],
@@ -5811,248 +5773,248 @@
      "from": "2024-11-15",
      "to": "2024-12-05",
      "clear": 99.6,
-     "score": 0.315,
-     "changed": 3.58,
+     "score": 0.298,
+     "changed": 3.37,
      "kind": "month"
     },
     {
      "from": "2024-12-05",
      "to": "2025-01-04",
      "clear": 97.3,
-     "score": 0.316,
-     "changed": 4.85,
+     "score": 0.3,
+     "changed": 4.68,
      "kind": "month"
     },
     {
      "from": "2025-01-04",
      "to": "2025-02-23",
      "clear": 84.5,
-     "score": 0.426,
-     "changed": 8.65,
+     "score": 0.413,
+     "changed": 8.28,
      "kind": "month"
     },
     {
      "from": "2025-02-23",
      "to": "2025-03-20",
      "clear": 85.0,
-     "score": 0.463,
-     "changed": 8.95,
+     "score": 0.453,
+     "changed": 8.29,
      "kind": "month"
     },
     {
      "from": "2025-03-20",
      "to": "2025-04-29",
      "clear": 100.0,
-     "score": 0.405,
-     "changed": 5.74,
+     "score": 0.39,
+     "changed": 5.17,
      "kind": "month"
     },
     {
      "from": "2025-04-29",
      "to": "2025-05-29",
      "clear": 100.0,
-     "score": 0.469,
-     "changed": 8.08,
+     "score": 0.456,
+     "changed": 7.46,
      "kind": "month"
     },
     {
      "from": "2025-05-29",
      "to": "2025-06-23",
      "clear": 100.0,
-     "score": 0.479,
-     "changed": 8.91,
+     "score": 0.465,
+     "changed": 7.92,
      "kind": "month"
     },
     {
      "from": "2025-06-23",
      "to": "2025-07-28",
      "clear": 99.8,
-     "score": 0.4,
-     "changed": 6.73,
+     "score": 0.386,
+     "changed": 6.33,
      "kind": "month"
     },
     {
      "from": "2025-07-28",
      "to": "2025-08-07",
      "clear": 99.6,
-     "score": 0.195,
-     "changed": 1.27,
+     "score": 0.172,
+     "changed": 1.15,
      "kind": "month"
     },
     {
      "from": "2025-08-07",
      "to": "2025-09-21",
      "clear": 99.9,
-     "score": 0.453,
-     "changed": 6.99,
+     "score": 0.442,
+     "changed": 6.34,
      "kind": "month"
     },
     {
      "from": "2025-09-21",
      "to": "2025-10-16",
      "clear": 100.0,
-     "score": 0.336,
-     "changed": 3.6,
+     "score": 0.323,
+     "changed": 3.27,
      "kind": "month"
     },
     {
      "from": "2025-10-16",
      "to": "2025-11-22",
      "clear": 100.0,
-     "score": 0.344,
-     "changed": 3.21,
+     "score": 0.328,
+     "changed": 2.63,
      "kind": "month"
     },
     {
      "from": "2025-11-22",
      "to": "2025-12-30",
      "clear": 71.3,
-     "score": 0.538,
-     "changed": 15.08,
+     "score": 0.531,
+     "changed": 14.68,
      "kind": "month"
     },
     {
      "from": "2025-12-30",
      "to": "2026-02-28",
      "clear": 71.3,
-     "score": 0.612,
-     "changed": 19.1,
+     "score": 0.609,
+     "changed": 18.62,
      "kind": "month"
     },
     {
      "from": "2026-02-28",
      "to": "2026-03-20",
      "clear": 99.6,
-     "score": 0.325,
-     "changed": 3.4,
+     "score": 0.308,
+     "changed": 3.18,
      "kind": "month"
     },
     {
      "from": "2026-03-20",
      "to": "2026-04-19",
      "clear": 100.0,
-     "score": 0.352,
-     "changed": 3.41,
+     "score": 0.339,
+     "changed": 3.08,
      "kind": "month"
     },
     {
      "from": "2026-04-19",
      "to": "2026-05-31",
      "clear": 100.0,
-     "score": 0.404,
-     "changed": 5.11,
+     "score": 0.393,
+     "changed": 4.56,
      "kind": "month"
     },
     {
      "from": "2026-05-31",
      "to": "2026-06-13",
      "clear": 99.4,
-     "score": 0.229,
-     "changed": 0.78,
+     "score": 0.212,
+     "changed": 0.64,
      "kind": "month"
     },
     {
      "from": "2026-06-13",
      "to": "2026-08-27",
      "clear": 99.4,
-     "score": 0.581,
-     "changed": 15.45,
+     "score": 0.571,
+     "changed": 15.03,
      "kind": "month"
     },
     {
      "from": "2026-08-27",
      "to": "2026-09-11",
      "clear": 100.0,
-     "score": 0.322,
-     "changed": 4.79,
+     "score": 0.303,
+     "changed": 4.4,
      "kind": "month"
     },
     {
      "from": "2026-09-11",
-     "to": "2026-10-06",
+     "to": "2026-10-11",
      "clear": 100.0,
-     "score": 0.427,
-     "changed": 8.17,
+     "score": 0.439,
+     "changed": 8.07,
      "kind": "month"
     },
     {
      "from": "2024-11-15",
      "to": "2025-11-22",
      "clear": 100.0,
-     "score": 0.445,
-     "changed": 8.48,
+     "score": 0.433,
+     "changed": 8.0,
      "kind": "year"
     },
     {
      "from": "2024-12-05",
      "to": "2025-12-30",
      "clear": 71.2,
-     "score": 0.541,
-     "changed": 15.11,
+     "score": 0.533,
+     "changed": 14.55,
      "kind": "year"
     },
     {
      "from": "2025-02-23",
      "to": "2026-02-28",
      "clear": 84.9,
-     "score": 0.545,
-     "changed": 13.03,
+     "score": 0.536,
+     "changed": 12.6,
      "kind": "year"
     },
     {
      "from": "2025-03-20",
      "to": "2026-03-20",
      "clear": 100.0,
-     "score": 0.325,
-     "changed": 3.73,
+     "score": 0.308,
+     "changed": 3.42,
      "kind": "year"
     },
     {
      "from": "2025-04-29",
      "to": "2026-04-19",
      "clear": 100.0,
-     "score": 0.323,
-     "changed": 4.67,
+     "score": 0.306,
+     "changed": 4.38,
      "kind": "year"
     },
     {
      "from": "2025-05-29",
      "to": "2026-05-31",
      "clear": 100.0,
-     "score": 0.468,
-     "changed": 9.65,
+     "score": 0.452,
+     "changed": 9.23,
      "kind": "year"
     },
     {
      "from": "2025-06-23",
      "to": "2026-06-13",
      "clear": 99.4,
-     "score": 0.384,
-     "changed": 6.16,
+     "score": 0.369,
+     "changed": 5.59,
      "kind": "year"
     },
     {
      "from": "2025-08-07",
      "to": "2026-08-27",
      "clear": 99.9,
-     "score": 0.347,
-     "changed": 5.89,
+     "score": 0.327,
+     "changed": 5.56,
      "kind": "year"
     },
     {
      "from": "2025-09-21",
      "to": "2026-09-11",
      "clear": 100.0,
-     "score": 0.327,
-     "changed": 5.41,
+     "score": 0.306,
+     "changed": 5.02,
      "kind": "year"
     },
     {
      "from": "2025-10-16",
-     "to": "2026-10-06",
+     "to": "2026-10-11",
      "clear": 100.0,
-     "score": 0.323,
-     "changed": 5.37,
+     "score": 0.311,
+     "changed": 4.99,
      "kind": "year"
     }
    ]
@@ -6066,7 +6028,7 @@
    "sizeM": 5120,
    "tile": "MGRS-51SYD",
    "latest": "2026-10-08",
-   "checked": "2026-10-08T17:33Z",
+   "checked": "2026-10-12T15:01Z",
    "images": [
     {
      "date": "2024-11-10",
@@ -6801,7 +6763,7 @@
    "sizeM": 5120,
    "tile": "MGRS-52TEL",
    "latest": "2026-10-08",
-   "checked": "2026-10-08T17:33Z",
+   "checked": "2026-10-12T15:02Z",
    "images": [
     {
      "date": "2024-11-02",
@@ -7295,8 +7257,8 @@
    "lon": 126.432,
    "sizeM": 5120,
    "tile": "MGRS-52SBH",
-   "latest": "2026-10-08",
-   "checked": "2026-10-08T17:33Z",
+   "latest": "2026-10-11",
+   "checked": "2026-10-12T15:01Z",
    "images": [
     {
      "date": "2024-11-12",
@@ -7715,6 +7677,25 @@
      ],
      "src": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-l2a/items/S2A_52SBH_20261008_1_L2A",
      "month": "2026-10"
+    },
+    {
+     "date": "2026-10-11",
+     "datetime": "2026-10-11T02:36:57.156000Z",
+     "scene": "S2B_52SBH_20261011_0_L2A",
+     "cloud": 0.83,
+     "snow": 0.0,
+     "nodata": 0.0,
+     "pixelM": 10.0,
+     "sizePx": 512,
+     "epsg": 32652,
+     "bbox": [
+      126.40201,
+      38.29323,
+      126.46214,
+      38.34061
+     ],
+     "src": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-l2a/items/S2B_52SBH_20261011_0_L2A",
+     "month": null
     }
    ],
    "changes": [
@@ -7976,8 +7957,8 @@
    "lon": 124.705,
    "sizeM": 7680,
    "tile": "MGRS-51SXD",
-   "latest": "2026-10-08",
-   "checked": "2026-10-08T17:33Z",
+   "latest": "2026-10-11",
+   "checked": "2026-10-12T15:03Z",
    "images": [
     {
      "date": "2024-11-20",
@@ -7986,8 +7967,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32651,
      "bbox": [
       124.65941,
@@ -8005,8 +7986,8 @@
      "cloud": 0.42,
      "snow": 0.13,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32651,
      "bbox": [
       124.65941,
@@ -8024,8 +8005,8 @@
      "cloud": 0.29,
      "snow": 2.7,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32651,
      "bbox": [
       124.65941,
@@ -8043,8 +8024,8 @@
      "cloud": 0.26,
      "snow": 80.18,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32651,
      "bbox": [
       124.65941,
@@ -8062,8 +8043,8 @@
      "cloud": 0.31,
      "snow": 1.46,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32651,
      "bbox": [
       124.65941,
@@ -8081,8 +8062,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32651,
      "bbox": [
       124.65941,
@@ -8100,8 +8081,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32651,
      "bbox": [
       124.65941,
@@ -8119,8 +8100,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32651,
      "bbox": [
       124.65941,
@@ -8138,8 +8119,8 @@
      "cloud": 0.12,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32651,
      "bbox": [
       124.65941,
@@ -8157,8 +8138,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32651,
      "bbox": [
       124.65941,
@@ -8176,8 +8157,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32651,
      "bbox": [
       124.65941,
@@ -8195,8 +8176,8 @@
      "cloud": 0.02,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32651,
      "bbox": [
       124.65941,
@@ -8214,8 +8195,8 @@
      "cloud": 2.68,
      "snow": 3.36,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32651,
      "bbox": [
       124.65941,
@@ -8233,8 +8214,8 @@
      "cloud": 0.75,
      "snow": 11.43,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32651,
      "bbox": [
       124.65941,
@@ -8252,8 +8233,8 @@
      "cloud": 0.25,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32651,
      "bbox": [
       124.65941,
@@ -8271,8 +8252,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32651,
      "bbox": [
       124.65941,
@@ -8290,8 +8271,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32651,
      "bbox": [
       124.65941,
@@ -8309,8 +8290,8 @@
      "cloud": 0.05,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32651,
      "bbox": [
       124.65941,
@@ -8328,8 +8309,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32651,
      "bbox": [
       124.65941,
@@ -8347,8 +8328,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32651,
      "bbox": [
       124.65941,
@@ -8366,8 +8347,8 @@
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32651,
      "bbox": [
       124.65941,
@@ -8379,14 +8360,14 @@
      "month": "2026-09"
     },
     {
-     "date": "2026-10-08",
-     "datetime": "2026-10-08T02:37:00.567000Z",
-     "scene": "S2A_51SXD_20261008_0_L2A",
+     "date": "2026-10-11",
+     "datetime": "2026-10-11T02:36:47.232000Z",
+     "scene": "S2B_51SXD_20261011_0_L2A",
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
-     "pixelM": 15.0,
-     "sizePx": 512,
+     "pixelM": 10.0,
+     "sizePx": 768,
      "epsg": 32651,
      "bbox": [
       124.65941,
@@ -8394,7 +8375,7 @@
       124.7506,
       39.69532
      ],
-     "src": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-l2a/items/S2A_51SXD_20261008_0_L2A",
+     "src": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-l2a/items/S2B_51SXD_20261011_0_L2A",
      "month": "2026-10"
     }
    ],
@@ -8403,16 +8384,16 @@
      "from": "2024-11-20",
      "to": "2024-12-10",
      "clear": 99.4,
-     "score": 0.412,
-     "changed": 6.36,
+     "score": 0.398,
+     "changed": 6.11,
      "kind": "month"
     },
     {
      "from": "2024-12-10",
      "to": "2025-01-24",
      "clear": 96.6,
-     "score": 0.384,
-     "changed": 5.39,
+     "score": 0.368,
+     "changed": 5.03,
      "kind": "month"
     },
     {
@@ -8435,152 +8416,152 @@
      "from": "2025-03-05",
      "to": "2025-04-29",
      "clear": 98.2,
-     "score": 0.554,
-     "changed": 10.53,
+     "score": 0.546,
+     "changed": 10.02,
      "kind": "month"
     },
     {
      "from": "2025-04-29",
      "to": "2025-05-29",
      "clear": 100.0,
-     "score": 0.461,
-     "changed": 5.07,
+     "score": 0.457,
+     "changed": 4.51,
      "kind": "month"
     },
     {
      "from": "2025-05-29",
      "to": "2025-06-23",
      "clear": 100.0,
-     "score": 0.35,
-     "changed": 5.13,
+     "score": 0.339,
+     "changed": 4.97,
      "kind": "month"
     },
     {
      "from": "2025-06-23",
      "to": "2025-08-07",
      "clear": 99.9,
-     "score": 0.337,
-     "changed": 6.26,
+     "score": 0.326,
+     "changed": 5.97,
      "kind": "month"
     },
     {
      "from": "2025-08-07",
      "to": "2025-09-21",
      "clear": 99.9,
-     "score": 0.334,
-     "changed": 4.84,
+     "score": 0.321,
+     "changed": 4.49,
      "kind": "month"
     },
     {
      "from": "2025-09-21",
      "to": "2025-10-16",
      "clear": 100.0,
-     "score": 0.401,
-     "changed": 5.86,
+     "score": 0.392,
+     "changed": 5.96,
      "kind": "month"
     },
     {
      "from": "2025-10-16",
      "to": "2025-11-28",
      "clear": 100.0,
-     "score": 0.579,
-     "changed": 13.69,
+     "score": 0.568,
+     "changed": 13.14,
      "kind": "month"
     },
     {
      "from": "2025-11-28",
      "to": "2025-12-30",
      "clear": 94.0,
-     "score": 0.737,
-     "changed": 23.22,
+     "score": 0.732,
+     "changed": 23.0,
      "kind": "month"
     },
     {
      "from": "2025-12-30",
      "to": "2026-02-03",
      "clear": 83.6,
-     "score": 0.652,
-     "changed": 18.2,
+     "score": 0.647,
+     "changed": 17.9,
      "kind": "month"
     },
     {
      "from": "2026-02-03",
      "to": "2026-03-15",
      "clear": 87.6,
-     "score": 0.499,
-     "changed": 8.86,
+     "score": 0.488,
+     "changed": 8.34,
      "kind": "month"
     },
     {
      "from": "2026-03-15",
      "to": "2026-04-01",
      "clear": 99.7,
-     "score": 0.333,
-     "changed": 1.65,
+     "score": 0.323,
+     "changed": 1.5,
      "kind": "month"
     },
     {
      "from": "2026-04-01",
      "to": "2026-05-29",
      "clear": 100.0,
-     "score": 0.767,
-     "changed": 27.82,
+     "score": 0.762,
+     "changed": 27.19,
      "kind": "month"
     },
     {
      "from": "2026-05-29",
      "to": "2026-06-08",
      "clear": 99.9,
-     "score": 0.218,
-     "changed": 1.52,
+     "score": 0.203,
+     "changed": 1.36,
      "kind": "month"
     },
     {
      "from": "2026-06-08",
      "to": "2026-07-18",
      "clear": 99.9,
-     "score": 0.338,
-     "changed": 5.74,
+     "score": 0.326,
+     "changed": 5.43,
      "kind": "month"
     },
     {
      "from": "2026-07-18",
      "to": "2026-08-27",
      "clear": 100.0,
-     "score": 0.33,
-     "changed": 4.2,
+     "score": 0.317,
+     "changed": 3.86,
      "kind": "month"
     },
     {
      "from": "2026-08-27",
      "to": "2026-09-18",
      "clear": 100.0,
-     "score": 0.335,
-     "changed": 3.83,
+     "score": 0.323,
+     "changed": 3.49,
      "kind": "month"
     },
     {
      "from": "2026-09-18",
-     "to": "2026-10-08",
+     "to": "2026-10-11",
      "clear": 100.0,
-     "score": 0.31,
-     "changed": 2.11,
+     "score": 0.322,
+     "changed": 2.3,
      "kind": "month"
     },
     {
      "from": "2024-11-20",
      "to": "2025-11-28",
      "clear": 100.0,
-     "score": 0.401,
-     "changed": 6.12,
+     "score": 0.39,
+     "changed": 5.62,
      "kind": "year"
     },
     {
      "from": "2024-12-10",
      "to": "2025-12-30",
      "clear": 93.7,
-     "score": 0.614,
-     "changed": 18.33,
+     "score": 0.605,
+     "changed": 17.9,
      "kind": "year"
     },
     {
@@ -8595,56 +8576,56 @@
      "from": "2025-03-05",
      "to": "2026-03-15",
      "clear": 98.1,
-     "score": 0.463,
-     "changed": 6.36,
+     "score": 0.45,
+     "changed": 6.11,
      "kind": "year"
     },
     {
      "from": "2025-04-29",
      "to": "2026-04-01",
      "clear": 100.0,
-     "score": 0.369,
-     "changed": 2.2,
+     "score": 0.356,
+     "changed": 1.85,
      "kind": "year"
     },
     {
      "from": "2025-05-29",
      "to": "2026-05-29",
      "clear": 100.0,
-     "score": 0.362,
-     "changed": 5.2,
+     "score": 0.351,
+     "changed": 4.92,
      "kind": "year"
     },
     {
      "from": "2025-06-23",
      "to": "2026-06-08",
      "clear": 99.9,
-     "score": 0.291,
-     "changed": 3.64,
+     "score": 0.278,
+     "changed": 3.37,
      "kind": "year"
     },
     {
      "from": "2025-08-07",
      "to": "2026-08-27",
      "clear": 99.9,
-     "score": 0.37,
-     "changed": 7.39,
+     "score": 0.358,
+     "changed": 7.11,
      "kind": "year"
     },
     {
      "from": "2025-09-21",
      "to": "2026-09-18",
      "clear": 100.0,
-     "score": 0.319,
-     "changed": 3.84,
+     "score": 0.303,
+     "changed": 3.52,
      "kind": "year"
     },
     {
      "from": "2025-10-16",
-     "to": "2026-10-08",
+     "to": "2026-10-11",
      "clear": 100.0,
-     "score": 0.316,
-     "changed": 3.03,
+     "score": 0.449,
+     "changed": 11.68,
      "kind": "year"
     }
    ]
@@ -8657,8 +8638,8 @@
    "lon": 129.6864,
    "sizeM": 5120,
    "tile": "MGRS-52TEL",
-   "latest": "2026-10-08",
-   "checked": "2026-10-08T17:33Z",
+   "latest": "2026-10-10",
+   "checked": "2026-10-12T15:03Z",
    "images": [
     {
      "date": "2024-11-12",
@@ -9115,6 +9096,25 @@
      ],
      "src": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-l2a/items/S2B_52TEL_20261008_0_L2A",
      "month": "2026-10"
+    },
+    {
+     "date": "2026-10-10",
+     "datetime": "2026-10-10T02:16:12.437000Z",
+     "scene": "S2C_52TEL_20261010_0_L2A",
+     "cloud": 1.96,
+     "snow": 0.0,
+     "nodata": 0.0,
+     "pixelM": 10.0,
+     "sizePx": 512,
+     "epsg": 32652,
+     "bbox": [
+      129.65591,
+      40.83511,
+      129.71713,
+      40.88159
+     ],
+     "src": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-l2a/items/S2C_52TEL_20261010_0_L2A",
+     "month": null
     }
    ],
    "changes": [
@@ -9409,7 +9409,7 @@
    "sizeM": 5120,
    "tile": "MGRS-52TDK",
    "latest": "2026-10-08",
-   "checked": "2026-10-08T17:33Z",
+   "checked": "2026-10-12T15:01Z",
    "images": [
     {
      "date": "2024-11-12",
@@ -10089,8 +10089,8 @@
    "lon": 125.22302,
    "sizeM": 5120,
    "tile": "MGRS-51TXE",
-   "latest": "2026-10-01",
-   "checked": "2026-10-08T17:33Z",
+   "latest": "2026-10-11",
+   "checked": "2026-10-12T15:01Z",
    "images": [
     {
      "date": "2024-11-20",
@@ -10473,9 +10473,9 @@
      "month": "2026-09"
     },
     {
-     "date": "2026-10-01",
-     "datetime": "2026-10-01T02:36:32.994000Z",
-     "scene": "S2B_51TXE_20261001_0_L2A",
+     "date": "2026-10-11",
+     "datetime": "2026-10-11T02:36:32.545000Z",
+     "scene": "S2B_51TXE_20261011_0_L2A",
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
@@ -10488,7 +10488,7 @@
       125.25366,
       40.03692
      ],
-     "src": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-l2a/items/S2B_51TXE_20261001_0_L2A",
+     "src": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-l2a/items/S2B_51TXE_20261011_0_L2A",
      "month": "2026-10"
     }
    ],
@@ -10647,10 +10647,10 @@
     },
     {
      "from": "2026-09-18",
-     "to": "2026-10-01",
+     "to": "2026-10-11",
      "clear": 100.0,
-     "score": 0.22,
-     "changed": 2.01,
+     "score": 0.257,
+     "changed": 1.54,
      "kind": "month"
     },
     {
@@ -10727,10 +10727,10 @@
     },
     {
      "from": "2025-10-16",
-     "to": "2026-10-01",
+     "to": "2026-10-11",
      "clear": 100.0,
-     "score": 0.292,
-     "changed": 3.99,
+     "score": 0.309,
+     "changed": 4.05,
      "kind": "year"
     }
    ]
@@ -10744,7 +10744,7 @@
    "sizeM": 5120,
    "tile": "MGRS-51SYD",
    "latest": "2026-10-08",
-   "checked": "2026-10-08T17:33Z",
+   "checked": "2026-10-12T15:03Z",
    "images": [
     {
      "date": "2024-11-20",

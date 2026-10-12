@@ -22,5 +22,8 @@ export const CHIP_M_OVERRIDE: Record<string, number> = {
   yongbyon: 7680,
 };
 
-/** Longest side of the published JPEG in pixels. Wider chips are downsampled to this. */
-export const OUT_PX = 512;
+/**
+ * Longest side of the published JPEG in pixels, at most. Chips are published at Sentinel-2's native 10 m per pixel,
+ * so a 5.12 km chip is 512 px and a 7.68 km chip 768 px; only a chip wider than 7.68 km would be downsampled.
+ */
+export const OUT_PX = 768;
