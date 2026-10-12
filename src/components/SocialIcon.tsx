@@ -1,4 +1,4 @@
-import { siBluesky, siFacebook, siInstagram, siPatreon, siTiktok, siX, siYoutube } from 'simple-icons';
+import { siBluesky, siGithub, siFacebook, siInstagram, siPatreon, siTiktok, siX, siYoutube } from 'simple-icons';
 import type { Social } from '@/content/orgs';
 
 /** simple-icons dropped LinkedIn at LinkedIn's request, so its mark lives here. */
@@ -30,6 +30,15 @@ export function GlobeIcon({ size = 16 }: { size?: number }) {
     <svg viewBox="0 0 24 24" width={size} height={size} fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" aria-hidden="true">
       <circle cx="12" cy="12" r="10" />
       <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20M2 12h20" />
+    </svg>
+  );
+}
+
+/** GitHub mark, for links to the repo (inherits the link colour). */
+export function GithubIcon({ size = 15 }: { size?: number }) {
+  return (
+    <svg className="brand-icon" viewBox="0 0 24 24" width={size} height={size} fill="currentColor" aria-hidden="true">
+      <path d={siGithub.path} />
     </svg>
   );
 }

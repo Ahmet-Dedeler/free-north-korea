@@ -4669,3 +4669,28 @@ a.ltag:hover {
   font-style: normal;
   color: var(--ink-3);
 }
+
+/* home: the contribute line, one quiet row instead of a callout box */
+.home-build {
+  margin-top: 56px !important;
+  padding: 18px 0 0;
+  border-top: 1px solid var(--line);
+  color: var(--ink-2);
+  font-size: 14.5px;
+}
+.home-build a {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  white-space: nowrap;
+}
+.home-build a .brand-icon {
+  margin: 0;
+  vertical-align: 0;
+}
+/* brand marks (simple-icons) sit on the text line before the name they stand for */
+.brand-icon {
+  display: inline-block;
+  vertical-align: -2px;
+  margin-right: 2px;
+}

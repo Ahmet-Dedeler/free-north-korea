@@ -3,6 +3,7 @@ import { ArrowRight, BookOpen, Building2, Footprints, Map, Radiation, Rocket, Sh
 import ArticleCards from '@/components/ArticleCards';
 import Avatar from '@/components/Avatar';
 import { Ext } from '@/components/Ext';
+import { GithubIcon } from '@/components/SocialIcon';
 import Locator from '@/components/Locator';
 import { StatTile } from '@/components/Visual';
 import WatchTeaser from '@/components/WatchTeaser';
@@ -217,16 +218,13 @@ export default function Home() {
         <ArticleCards articles={ARTICLES} lead />
       </section>
 
-      <section className="band callout">
-        <h2>Build this with us</h2>
-        <p>
-          Everything here is open source. If you can code, map, translate Korean, or just spot a wrong fact, you can help make this the
-          reference people find when they search for North Korea.
-        </p>
-        <Ext className="btn" href={REPO_URL}>
+      <p className="home-build">
+        <b>Build this with us.</b> Everything here is open source. If you can code, map, translate Korean or spot a wrong fact, you can help.{' '}
+        <Ext href={REPO_URL}>
+          <GithubIcon />
           Contribute on GitHub
         </Ext>
-      </section>
+      </p>
     </>
   );
 }

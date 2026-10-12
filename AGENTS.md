@@ -123,6 +123,10 @@ before adding any page or article.
   camp and place dossiers; `LatestImagery` from the same file is the "newest images" strip for a hub page. Text in
   `content/satWatch.ts`, chip sizes in `content/satWatchSites.ts`. Only show what the pixels show: change scores
   (`docs/watch/sentinel-changes.md`) are for humans and never go on the site.
+- Links to a known brand or service (GitHub, YouTube, X, an org) get its mark before the name: `simple-icons` through
+  `components/SocialIcon.tsx` (`SocialIcon`, `GithubIcon`), org logos through `orgLogo()`. A small ask (contribute,
+  follow, read more) is one quiet line with the mark and a link, not a boxed callout with a heading and a button; the
+  home page's "Build this with us" row is the pattern.
 - Content pages are visual, not text walls. Reuse the building blocks before writing paragraphs:
   `components/Visual.tsx` (StatTile, icon chips, SourceCards), `AsOf` (date a number is from), `SatView` (Esri satellite
   tiles, no map lib), `Locator` (server SVG of NK from `site/geo.ts`), `HoverLinks` (OrgLink/PlaceLink hover previews,

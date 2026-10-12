@@ -170,12 +170,15 @@ for (const p of PLACES)
     jobs.push({ key: `place:${p.id}`, dest: `/img/places/${p.id}`, minPx: 200, run: async () => [await wikiLeadPhoto(p.source!.url)] });
 
 // Article heroes: a free Wikipedia lead photo that fits each explainer (camps uses a satellite view instead).
+// China repatriation: the Friendship Bridge from Dandong to Sinuiju. Songbun: farm work, where low songbun sends families.
 const ARTICLE_PHOTOS: Record<string, string> = {
   'how-can-north-korea-be-freed': 'Fall_of_the_Berlin_Wall',
   'is-it-possible-to-free-north-korea': 'Pyongyang',
   'how-to-help-north-koreans': 'Korean_Demilitarized_Zone',
   'how-north-koreans-escape': 'Tumen_River',
   'information-into-north-korea': 'Notel',
+  'china-forced-repatriation-north-koreans': 'Sino-Korean_Friendship_Bridge',
+  'north-korea-songbun-caste-system': 'Agriculture_in_North_Korea',
 };
 for (const [slugId, page] of Object.entries(ARTICLE_PHOTOS))
   jobs.push({ key: `article:${slugId}`, dest: `/img/articles/${slugId}`, minPx: 300, run: async () => [await wikiLeadPhoto(`https://en.wikipedia.org/wiki/${page}`)] });
@@ -192,6 +195,12 @@ jobs.push({
 
 /** Hand-picked images where automatic lookup picks the wrong thing (e.g. a foreign edition). */
 const OVERRIDES: Record<string, { url: string; sourceUrl: string; credit: string }> = {
+  // the bridge's lead photo is named after Dandong, which wikiLeadPhoto rejects for place photos
+  'article:china-forced-repatriation-north-koreans': {
+    url: 'https://upload.wikimedia.org/wikipedia/commons/a/ae/Dandong%2C_Liaoning_Province.jpg',
+    sourceUrl: 'https://commons.wikimedia.org/wiki/File:Dandong,_Liaoning_Province.jpg',
+    credit: 'Photo via Wikimedia Commons',
+  },
   'library:escape-from-camp-14': {
     url: 'https://covers.openlibrary.org/b/isbn/9780670023325-L.jpg',
     sourceUrl: 'https://openlibrary.org/isbn/9780670023325',
