@@ -18,7 +18,7 @@
    "sizeM": 7680,
    "tile": "MGRS-52SBJ",
    "latest": "2026-10-11",
-   "checked": "2026-10-12T15:03Z",
+   "checked": "2026-10-12T15:32Z",
    "images": [
     {
      "date": "2024-12-10",
@@ -634,7 +634,7 @@
    "sizeM": 7680,
    "tile": "MGRS-52SCJ",
    "latest": "2026-10-08",
-   "checked": "2026-10-12T15:02Z",
+   "checked": "2026-10-12T15:32Z",
    "images": [
     {
      "date": "2024-11-12",
@@ -1355,7 +1355,7 @@
    "sizeM": 7680,
    "tile": "MGRS-52TEL",
    "latest": "2026-10-08",
-   "checked": "2026-10-12T15:04Z",
+   "checked": "2026-10-12T15:32Z",
    "images": [
     {
      "date": "2024-11-02",
@@ -1882,7 +1882,7 @@
    "sizeM": 7680,
    "tile": "MGRS-52SBJ",
    "latest": "2026-10-11",
-   "checked": "2026-10-12T15:03Z",
+   "checked": "2026-10-12T15:32Z",
    "images": [
     {
      "date": "2024-12-10",
@@ -2533,7 +2533,7 @@
    "sizeM": 7680,
    "tile": "MGRS-52TEN",
    "latest": "2026-10-08",
-   "checked": "2026-10-12T15:04Z",
+   "checked": "2026-10-12T15:32Z",
    "images": [
     {
      "date": "2024-11-02",
@@ -3219,7 +3219,7 @@
    "sizeM": 7680,
    "tile": "MGRS-52TEM",
    "latest": "2026-10-08",
-   "checked": "2026-10-12T15:04Z",
+   "checked": "2026-10-12T15:32Z",
    "images": [
     {
      "date": "2024-11-02",
@@ -3975,7 +3975,7 @@
    "sizeM": 5120,
    "tile": "MGRS-51TYE",
    "latest": "2026-10-11",
-   "checked": "2026-10-12T15:01Z",
+   "checked": "2026-10-12T15:32Z",
    "images": [
     {
      "date": "2024-11-15",
@@ -4696,7 +4696,7 @@
    "sizeM": 5120,
    "tile": "MGRS-52TEM",
    "latest": "2026-10-08",
-   "checked": "2026-10-12T15:00Z",
+   "checked": "2026-10-12T15:32Z",
    "images": [
     {
      "date": "2024-11-02",
@@ -5347,7 +5347,7 @@
    "sizeM": 7680,
    "tile": "MGRS-51TYE",
    "latest": "2026-10-11",
-   "checked": "2026-10-12T15:01Z",
+   "checked": "2026-10-12T15:32Z",
    "images": [
     {
      "date": "2024-11-15",
@@ -6028,7 +6028,7 @@
    "sizeM": 5120,
    "tile": "MGRS-51SYD",
    "latest": "2026-10-08",
-   "checked": "2026-10-12T15:01Z",
+   "checked": "2026-10-12T15:32Z",
    "images": [
     {
      "date": "2024-11-10",
@@ -6763,7 +6763,7 @@
    "sizeM": 5120,
    "tile": "MGRS-52TEL",
    "latest": "2026-10-08",
-   "checked": "2026-10-12T15:02Z",
+   "checked": "2026-10-12T15:32Z",
    "images": [
     {
      "date": "2024-11-02",
@@ -7258,7 +7258,7 @@
    "sizeM": 5120,
    "tile": "MGRS-52SBH",
    "latest": "2026-10-11",
-   "checked": "2026-10-12T15:01Z",
+   "checked": "2026-10-12T15:32Z",
    "images": [
     {
      "date": "2024-11-12",
@@ -7958,7 +7958,7 @@
    "sizeM": 7680,
    "tile": "MGRS-51SXD",
    "latest": "2026-10-11",
-   "checked": "2026-10-12T15:03Z",
+   "checked": "2026-10-12T15:32Z",
    "images": [
     {
      "date": "2024-11-20",
@@ -8639,7 +8639,7 @@
    "sizeM": 5120,
    "tile": "MGRS-52TEL",
    "latest": "2026-10-10",
-   "checked": "2026-10-12T15:03Z",
+   "checked": "2026-10-12T15:32Z",
    "images": [
     {
      "date": "2024-11-12",
@@ -9409,7 +9409,7 @@
    "sizeM": 5120,
    "tile": "MGRS-52TDK",
    "latest": "2026-10-08",
-   "checked": "2026-10-12T15:01Z",
+   "checked": "2026-10-12T15:32Z",
    "images": [
     {
      "date": "2024-11-12",
@@ -10090,7 +10090,7 @@
    "sizeM": 5120,
    "tile": "MGRS-51TXE",
    "latest": "2026-10-11",
-   "checked": "2026-10-12T15:01Z",
+   "checked": "2026-10-12T15:32Z",
    "images": [
     {
      "date": "2024-11-20",
@@ -10744,7 +10744,7 @@
    "sizeM": 5120,
    "tile": "MGRS-51SYD",
    "latest": "2026-10-08",
-   "checked": "2026-10-12T15:03Z",
+   "checked": "2026-10-12T15:32Z",
    "images": [
     {
      "date": "2024-11-20",

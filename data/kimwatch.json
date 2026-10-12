@@ -1,9 +1,9 @@
 {
  "fetched": "2026-10-12",
- "oldestListed": "2025-10-13",
+ "oldestListed": "2025-10-18",
  "coverage": {
   "from": "2025-10-10",
-  "to": "2026-10-11"
+  "to": "2026-10-12"
  },
  "lastAppearance": {
   "date": "2026-10-10",
@@ -4116,6 +4116,62 @@
   }
  ],
  "messages": [
+  {
+   "id": "274fd9d700dba7b0f7abf50a7e0cbb49",
+   "url": "http://www.kcna.kp/en/article/detail/274fd9d700dba7b0f7abf50a7e0cbb49",
+   "date": "2026-10-12",
+   "title": "Respected Comrade Kim Jong Un Receives Greetings from Russian Party Leader",
+   "direction": "received"
+  },
+  {
+   "id": "6c2c6224601156dd1f069bce85886905",
+   "url": "http://www.kcna.kp/en/article/detail/6c2c6224601156dd1f069bce85886905",
+   "date": "2026-10-11",
+   "title": "Letter to Respected Marshal Kim Jong Un from Members of Delegation of Korea University of Chongryon",
+   "direction": "received"
+  },
+  {
+   "id": "4dce118bb6d0ec545d7de9548e6e06d2",
+   "url": "http://www.kcna.kp/en/article/detail/4dce118bb6d0ec545d7de9548e6e06d2",
+   "date": "2026-10-10",
+   "title": "Respected Comrade Kim Jong Un Receives Greetings from General Secretary of C.C., LPRP",
+   "direction": "received"
+  },
+  {
+   "id": "6464b656658c3d79320f30b9fe33d4c7",
+   "url": "http://www.kcna.kp/en/article/detail/6464b656658c3d79320f30b9fe33d4c7",
+   "date": "2026-10-10",
+   "title": "Respected Comrade Kim Jong Un Receives Flower Basket from Russian Political Party Leader",
+   "direction": "received"
+  },
+  {
+   "id": "ea553b002b8f8aa928cfcf4858f03fcc",
+   "url": "http://www.kcna.kp/en/article/detail/ea553b002b8f8aa928cfcf4858f03fcc",
+   "date": "2026-10-10",
+   "title": "Respected Comrade Kim Jong Un Sends Reply Message to Lao President",
+   "direction": "sent"
+  },
+  {
+   "id": "204c765ec5156ff0ab7a35bfb4b31046",
+   "url": "http://www.kcna.kp/en/article/detail/204c765ec5156ff0ab7a35bfb4b31046",
+   "date": "2026-10-09",
+   "title": "Respected Comrade Kim Jong Un Receives Flower Basket from Nigerian President",
+   "direction": "received"
+  },
+  {
+   "id": "5ca8c0de914b5aa25033a37c34a99096",
+   "url": "http://www.kcna.kp/en/article/detail/5ca8c0de914b5aa25033a37c34a99096",
+   "date": "2026-10-09",
+   "title": "Respected Comrade Kim Jong Un Receives Flower Baskets from Foreign Personages",
+   "direction": "received"
+  },
+  {
+   "id": "9092dcd07f962a1917414361242852d8",
+   "url": "http://www.kcna.kp/en/article/detail/9092dcd07f962a1917414361242852d8",
+   "date": "2026-10-09",
+   "title": "Respected Comrade Kim Jong Un Receives Congratulations from Diplomatic Corps",
+   "direction": "received"
+  },
   {
    "id": "0ad7868957edf4262ac9ac97a50d2913",
    "url": "http://www.kcna.kp/en/article/detail/0ad7868957edf4262ac9ac97a50d2913",

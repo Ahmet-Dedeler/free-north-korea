@@ -7028,7 +7028,7 @@
  "national": {
   "uk": {
    "fetched": "2026-10-12",
-   "published": "2026-10-08",
+   "published": "2026-10-12",
    "file": "https://sanctionslist.fcdo.gov.uk/docs/UK-Sanctions-List.xml",
    "entries": [
     {
@@ -10567,8 +10567,8 @@
    ]
   },
   "eu": {
-   "fetched": "2026-10-08",
-   "published": "2026-09-22",
+   "fetched": "2026-10-12",
+   "published": "2026-10-12",
    "file": "https://webgate.ec.europa.eu/fsd/fsf/public/files/xmlFullSanctionsList_1_1/content?token=dG9rZW4tMjAxNw",
    "entries": [
     {
@@ -13288,9 +13288,9 @@
     },
     {
      "id": "EU.8112.63",
-     "name": "Kim Su Gil",
+     "name": "Kim Su-gil",
      "aliases": [
-      "Kim Su-gil"
+      "Kim Su Gil"
      ],
      "kind": "individual",
      "listed": "2022-04-21",
@@ -13300,22 +13300,22 @@
     },
     {
      "id": "EU.8113.62",
-     "name": "Jon Il Ho",
+     "name": "Jon Il-Ho",
      "aliases": [
-      "Jon Il-Ho"
+      "Jon Il Ho"
      ],
      "kind": "individual",
      "listed": "2022-04-21",
      "dob": [
-      "1955",
-      "1956"
+      "1956",
+      "1955"
      ]
     },
     {
      "id": "EU.8114.61",
-     "name": "Jong Sung Il",
+     "name": "Jong Sung-Il",
      "aliases": [
-      "Jong Sung-Il"
+      "Jong Sung Il"
      ],
      "kind": "individual",
      "listed": "2022-04-21",
@@ -13338,9 +13338,9 @@
     },
     {
      "id": "EU.8116.59",
-     "name": "Pak Hwa Song",
+     "name": "Pak Hwa-Song",
      "aliases": [
-      "Pak Hwa-Song"
+      "Pak Hwa Song"
      ],
      "kind": "individual",
      "listed": "2022-04-21",
@@ -13350,9 +13350,9 @@
     },
     {
      "id": "EU.8117.58",
-     "name": "Hwang Kil Su",
+     "name": "Hwang Kil-Su",
      "aliases": [
-      "Hwang Kil-Su"
+      "Hwang Kil Su"
      ],
      "kind": "individual",
      "listed": "2022-04-21",
@@ -13362,9 +13362,9 @@
     },
     {
      "id": "EU.8118.57",
-     "name": "Im Song Sun",
+     "name": "Im Song-Sun",
      "aliases": [
-      "Im Song-Sun"
+      "Im Song Sun"
      ],
      "kind": "individual",
      "listed": "2022-04-21"
@@ -13444,15 +13444,15 @@
       "1985-03-04"
      ],
      "passports": [
-      "745220480",
-      "108220348"
+      "108220348",
+      "745220480"
      ]
     },
     {
      "id": "EU.9428.41",
-     "name": "Bak Gwang Hun",
+     "name": "Pak Kwang Hun",
      "aliases": [
-      "Pak Kwang Hun"
+      "Bak Gwang Hun"
      ],
      "kind": "individual",
      "listed": "2022-12-12",
@@ -13462,9 +13462,9 @@
     },
     {
      "id": "EU.9429.40",
-     "name": "Kim Ho Kyu",
+     "name": "Kim Ho Gyu",
      "aliases": [
-      "Kim Ho Gyu"
+      "Kim Ho Kyu"
      ],
      "kind": "individual",
      "listed": "2022-12-12",
@@ -13487,9 +13487,9 @@
     },
     {
      "id": "EU.9431.17",
-     "name": "Rocket Industry Department",
+     "name": "Ministry of Rocket Industry",
      "aliases": [
-      "Ministry of Rocket Industry"
+      "Rocket Industry Department"
      ],
      "kind": "entity",
      "listed": "2022-12-12"
@@ -13521,8 +13521,8 @@
      "kind": "individual",
      "listed": "2022-12-12",
      "dob": [
-      "1965-08-07",
-      "1972-02-20"
+      "1972-02-20",
+      "1965-08-07"
      ],
      "passports": [
       "472410022",
@@ -21560,19 +21560,6 @@
    ]
   },
   {
-   "name": "Bak Gwang Hun",
-   "kind": "individual",
-   "on": {
-    "EU": [
-     "EU.9428.41"
-    ]
-   },
-   "how": {},
-   "maybe": [
-    "US"
-   ]
-  },
-  {
    "name": "Bank of Dandong",
    "kind": "entity",
    "on": {
@@ -23603,7 +23590,7 @@
    ]
   },
   {
-   "name": "Hwang Kil Su",
+   "name": "Hwang Kil-Su",
    "kind": "individual",
    "on": {
     "EU": [
@@ -23697,7 +23684,7 @@
    ]
   },
   {
-   "name": "Im Song Sun",
+   "name": "Im Song-Sun",
    "kind": "individual",
    "on": {
     "EU": [
@@ -24102,20 +24089,6 @@
    ]
   },
   {
-   "name": "Jon Il Ho",
-   "kind": "individual",
-   "on": {
-    "EU": [
-     "EU.8113.62"
-    ]
-   },
-   "how": {},
-   "maybe": [
-    "US",
-    "JP"
-   ]
-  },
-  {
    "name": "Jon Il-Chun",
    "kind": "individual",
    "on": {
@@ -24129,6 +24102,20 @@
    "how": {
     "EU": "name-dob"
    }
+  },
+  {
+   "name": "Jon Il-Ho",
+   "kind": "individual",
+   "on": {
+    "EU": [
+     "EU.8113.62"
+    ]
+   },
+   "how": {},
+   "maybe": [
+    "US",
+    "JP"
+   ]
   },
   {
    "name": "Jon Jin 2",
@@ -24229,7 +24216,7 @@
    "how": {}
   },
   {
-   "name": "Jong Sung Il",
+   "name": "Jong Sung-Il",
    "kind": "individual",
    "on": {
     "EU": [
@@ -25045,20 +25032,6 @@
    "name": "Kim Su Gil",
    "kind": "individual",
    "on": {
-    "EU": [
-     "EU.8112.63"
-    ]
-   },
-   "how": {},
-   "maybe": [
-    "US",
-    "JP"
-   ]
-  },
-  {
-   "name": "Kim Su Gil",
-   "kind": "individual",
-   "on": {
     "JP": [
      "017-000074"
     ]
@@ -25087,6 +25060,20 @@
     "EU": "passport",
     "JP": "passport"
    }
+  },
+  {
+   "name": "Kim Su-gil",
+   "kind": "individual",
+   "on": {
+    "EU": [
+     "EU.8112.63"
+    ]
+   },
+   "how": {},
+   "maybe": [
+    "US",
+    "JP"
+   ]
   },
   {
    "name": "Kim Su-Kwang",
@@ -27057,6 +27044,20 @@
    "name": "Ministry of Rocket Industry",
    "kind": "entity",
    "on": {
+    "EU": [
+     "EU.9431.17"
+    ]
+   },
+   "how": {},
+   "maybe": [
+    "US",
+    "JP"
+   ]
+  },
+  {
+   "name": "Ministry of Rocket Industry",
+   "kind": "entity",
+   "on": {
     "JP": [
      "016-000063"
     ]
@@ -27962,7 +27963,7 @@
    ]
   },
   {
-   "name": "Pak Hwa Song",
+   "name": "Pak Hwa-Song",
    "kind": "individual",
    "on": {
     "EU": [
@@ -28067,6 +28068,19 @@
    "how": {},
    "maybe": [
     "EU"
+   ]
+  },
+  {
+   "name": "Pak Kwang Hun",
+   "kind": "individual",
+   "on": {
+    "EU": [
+     "EU.9428.41"
+    ]
+   },
+   "how": {},
+   "maybe": [
+    "US"
    ]
   },
   {
@@ -29026,20 +29040,6 @@
     ]
    },
    "how": {}
-  },
-  {
-   "name": "Rocket Industry Department",
-   "kind": "entity",
-   "on": {
-    "EU": [
-     "EU.9431.17"
-    ]
-   },
-   "how": {},
-   "maybe": [
-    "US",
-    "JP"
-   ]
   },
   {
    "name": "Royal Shune Lei",

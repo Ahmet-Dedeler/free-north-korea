@@ -1108,6 +1108,126 @@
  ],
  "search": [
   {
+   "id": "f3ac413a41562d3b4a470a0da01d4f56",
+   "title": "Founding Anniversary of WPK Marked Abroad",
+   "date": "2026-10-12"
+  },
+  {
+   "id": "274fd9d700dba7b0f7abf50a7e0cbb49",
+   "title": "Respected Comrade Kim Jong Un Receives Greetings from Russian Party Leader",
+   "date": "2026-10-12"
+  },
+  {
+   "id": "fb5d30842fbae52f796c06e3fab3b450",
+   "title": "Clear Theme of Design and Construction",
+   "date": "2026-10-11"
+  },
+  {
+   "id": "9217ba8be22948df8af8413177da4440",
+   "title": "Evening Gala of Youth and Students Held to Celebrate Founding Anniversary of WPK",
+   "date": "2026-10-11"
+  },
+  {
+   "id": "6c2c6224601156dd1f069bce85886905",
+   "title": "Letter to Respected Marshal Kim Jong Un from Members of Delegation of Korea University of Chongryon",
+   "date": "2026-10-11"
+  },
+  {
+   "id": "b02c93a6f65593c8d8079e53c4119335",
+   "title": "Members of WPK Central Leadership Visit Party Founding Museum",
+   "date": "2026-10-11"
+  },
+  {
+   "id": "4be6b32d21786a9d3f8c63beb580490d",
+   "title": "Schoolchildren in Ryanggang Province and Rason Municipality Donate Farm Machines",
+   "date": "2026-10-11"
+  },
+  {
+   "id": "169488605cec185187c0fee38192cfca",
+   "title": "Women's Dancing Party Held to Mark Founding Anniversary of WPK",
+   "date": "2026-10-11"
+  },
+  {
+   "id": "1f21d0456e41c4036dbed5459394ac75",
+   "title": "Ceremony of Moving into New Houses Held in Singye County of DPRK",
+   "date": "2026-10-10"
+  },
+  {
+   "id": "c11b9f0e5aa9b902509823383fd9f59b",
+   "title": "Founding Anniversary of Kangdong Hydro-power Construction Complex Marked",
+   "date": "2026-10-10"
+  },
+  {
+   "id": "eb598145498615f7995f7253a7b6b1a8",
+   "title": "Kim Il Sung Prize Conferred on Composer",
+   "date": "2026-10-10"
+  },
+  {
+   "id": "62ea0ab8ca1ad94fb9237a4cf6500954",
+   "title": "Many People Visit Party Founding Museum",
+   "date": "2026-10-10"
+  },
+  {
+   "id": "1bfa8c620a469305b5cefd9164a20eb8",
+   "title": "Meeting Held to Mark 80th Founding Anniversary of JUK",
+   "date": "2026-10-10"
+  },
+  {
+   "id": "a04944153589b37e6bfd422efc4f880b",
+   "title": "Members of WPK Central Leadership Visit Kumsusan Palace of Sun",
+   "date": "2026-10-10"
+  },
+  {
+   "id": "6464b656658c3d79320f30b9fe33d4c7",
+   "title": "Respected Comrade Kim Jong Un Receives Flower Basket from Russian Political Party Leader",
+   "date": "2026-10-10"
+  },
+  {
+   "id": "4dce118bb6d0ec545d7de9548e6e06d2",
+   "title": "Respected Comrade Kim Jong Un Receives Greetings from General Secretary of C.C., LPRP",
+   "date": "2026-10-10"
+  },
+  {
+   "id": "ea553b002b8f8aa928cfcf4858f03fcc",
+   "title": "Respected Comrade Kim Jong Un Sends Reply Message to Lao President",
+   "date": "2026-10-10"
+  },
+  {
+   "id": "1086910aeafc9111b9d8d27fcd77a444",
+   "title": "Workers' Party of Korea Realizing Ideal of People",
+   "date": "2026-10-10"
+  },
+  {
+   "id": "6d4b86a96c121cc7569f0459d3f72ce0",
+   "title": "Performance Given by Women's Union Artistic Information Team",
+   "date": "2026-10-09"
+  },
+  {
+   "id": "5ae1bd8ee365ee295b28e1b21efc7e4b",
+   "title": "Performance Marks WPK's Birthday",
+   "date": "2026-10-09"
+  },
+  {
+   "id": "9092dcd07f962a1917414361242852d8",
+   "title": "Respected Comrade Kim Jong Un Receives Congratulations from Diplomatic Corps",
+   "date": "2026-10-09"
+  },
+  {
+   "id": "204c765ec5156ff0ab7a35bfb4b31046",
+   "title": "Respected Comrade Kim Jong Un Receives Flower Basket from Nigerian President",
+   "date": "2026-10-09"
+  },
+  {
+   "id": "5ca8c0de914b5aa25033a37c34a99096",
+   "title": "Respected Comrade Kim Jong Un Receives Flower Baskets from Foreign Personages",
+   "date": "2026-10-09"
+  },
+  {
+   "id": "7a302e5b6e4dae0631915b7751ee70ba",
+   "title": "Schoolchildren Donate Farm Machines",
+   "date": "2026-10-09"
+  },
+  {
    "id": "535b2b90648e1dc77c774ff2c052c62e",
    "title": "Birthday Spread to Woman Centenarian",
    "date": "2026-10-08"
@@ -6869,8 +6989,8 @@
   }
  ],
  "categoryFetched": "2026-10-12",
- "oldestListed": "2025-10-13",
- "searchFetched": "2026-10-08",
+ "oldestListed": "2025-10-18",
+ "searchFetched": "2026-10-12",
  "titlesKo": {
   "2bd661f15c5178018e860a9ce35e555d": "동부지역에서 전략미싸일발사훈련 진행",
   "736fce24e6b4e2410cc643b05e133ed5": "경애하는 김정은동지께서 김일성종합대학의 교원,연구사들과 기념사진을 찍으시였다",

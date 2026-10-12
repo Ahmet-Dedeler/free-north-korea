@@ -3,7 +3,7 @@
  "built": "2026-10-12",
  "sources": {
   "owid": "2026-10-05",
-  "dailynk": "2026-10-05",
+  "dailynk": "2026-10-12",
   "government": "2026-10-05",
   "local": "2026-10-12"
  },
@@ -24048,7 +24048,7 @@
      ],
      [
       2026,
-      10
+      12
      ]
     ]
    },
@@ -24058,8 +24058,8 @@
     "license": "MIT"
    },
    "fetched": "2026-10-12",
-   "updated": "2026-10-02",
-   "note": "Each missile counts once, so a salvo of four is four. Medium range includes intermediate-range and hypersonic glide missiles; \"other\" is submarine-launched missiles, satellite launches and unknown types. 2026 runs to 2026-10-02."
+   "updated": "2026-10-12",
+   "note": "Each missile counts once, so a salvo of four is four. Medium range includes intermediate-range and hypersonic glide missiles; \"other\" is submarine-launched missiles, satellite launches and unknown types. 2026 runs to 2026-10-12."
   },
   {
    "id": "mobile-phones",
@@ -28585,7 +28585,7 @@
     "name": "Daily NK market price survey",
     "url": "https://www.dailynk.com/english/category/market-indicators/"
    },
-   "fetched": "2026-10-05",
+   "fetched": "2026-10-12",
    "note": "Prices before the November 2009 currency reform were in old won; we divided them by 100 so the line is continuous.",
    "id": "rice-price",
    "title": "Market price of rice",
@@ -29967,6 +29967,10 @@
      [
       "2026-09-27",
       40800
+     ],
+     [
+      "2026-10-11",
+      43500
      ]
     ],
     "sinuiju": [
@@ -31345,6 +31349,10 @@
      [
       "2026-09-27",
       40700
+     ],
+     [
+      "2026-10-11",
+      43700
      ]
     ],
     "hyesan": [
@@ -32723,6 +32731,10 @@
      [
       "2026-09-27",
       41000
+     ],
+     [
+      "2026-10-11",
+      43800
      ]
     ]
    }
@@ -33299,7 +33311,7 @@
     "name": "Daily NK market price survey",
     "url": "https://www.dailynk.com/english/category/market-indicators/"
    },
-   "fetched": "2026-10-05",
+   "fetched": "2026-10-12",
    "note": "Prices before the November 2009 currency reform were in old won; we divided them by 100 so the line is continuous.",
    "id": "won-per-dollar",
    "title": "Market exchange rate: North Korean won per US dollar",
@@ -34677,6 +34689,10 @@
      [
       "2026-09-27",
       69100
+     ],
+     [
+      "2026-10-11",
+      71200
      ]
     ],
     "sinuiju": [
@@ -36051,6 +36067,10 @@
      [
       "2026-09-27",
       69120
+     ],
+     [
+      "2026-10-11",
+      71220
      ]
     ],
     "hyesan": [
@@ -37425,6 +37445,10 @@
      [
       "2026-09-27",
       69120
+     ],
+     [
+      "2026-10-11",
+      71230
      ]
     ]
    }
