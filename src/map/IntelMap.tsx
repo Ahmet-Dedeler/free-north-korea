@@ -129,7 +129,9 @@ function countyLine(base: Basemap, pal: (typeof PAL)[Theme]): ExpressionSpecific
   return ['case', ['boolean', ['feature-state', 'selected'], false], base === 'satellite' ? '#facc15' : pal.ring, base === 'satellite' ? SAT_LINE : pal.line];
 }
 
-export default function IntelMap({ data, visible, shade, base, overlays, year, selected, theme, lang, onSelect }: Props) {
+export default function IntelMap({ data, visible, shade, base, overlays, year, selected, theme: deviceTheme, lang, onSelect }: Props) {
+  // Night lights need a night map: dark around the counties, so unlit reads as dark and lit as glow.
+  const theme: Theme = overlays.has('lights') ? 'dark' : deviceTheme;
   const box = useRef<HTMLDivElement>(null);
   const mapRef = useRef<maplibregl.Map | null>(null);
   const latest = useRef({ data, visible, shade, base, overlays, year, selected, theme, onSelect });

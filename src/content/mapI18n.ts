@@ -98,6 +98,8 @@ export interface MapText {
   // night lights (yearly, per county) and the time pill
   lightsTip: (year: number, share: number | null) => string;
   timeLabel: string;
+  /** Key line in the time pill while night lights are on. */
+  lightsScale: string;
   timePlay: string;
   timePause: string;
   lightsTitle: string;
@@ -208,6 +210,7 @@ export const MAP_TEXT: Record<Lang, MapText> = {
     portNoFlag: 'no flag broadcast',
     lightsTip: (y, s) => (s == null ? `${y}: no clear data` : `${y}: ${(s * 100).toFixed(s < 0.01 ? 2 : 1)}% lit at night`),
     timeLabel: 'Year',
+    lightsScale: 'Share of each county lit at night',
     timePlay: 'Play the years',
     timePause: 'Pause',
     lightsTitle: 'Night lights',
@@ -316,6 +319,7 @@ export const MAP_TEXT: Record<Lang, MapText> = {
     portNoFlag: '국적 미송신',
     lightsTip: (y, s) => (s == null ? `${y}년: 맑은 자료 없음` : `${y}년: 면적의 ${(s * 100).toFixed(s < 0.01 ? 2 : 1)}%가 밤에 밝음`),
     timeLabel: '연도',
+    lightsScale: '시·군 면적 중 밤에 불이 켜진 비율',
     timePlay: '연도 재생',
     timePause: '일시 정지',
     lightsTitle: '야간 불빛',
@@ -424,6 +428,7 @@ export const MAP_TEXT: Record<Lang, MapText> = {
     portNoFlag: '旗国の発信なし',
     lightsTip: (y, s) => (s == null ? `${y}年：晴れた日のデータなし` : `${y}年：面積の${(s * 100).toFixed(s < 0.01 ? 2 : 1)}%が夜に明るい`),
     timeLabel: '年',
+    lightsScale: '郡の面積のうち夜に明るい割合',
     timePlay: '年を再生',
     timePause: '一時停止',
     lightsTitle: '夜間の光',
@@ -532,6 +537,7 @@ export const MAP_TEXT: Record<Lang, MapText> = {
     portNoFlag: '未发送船旗',
     lightsTip: (y, s) => (s == null ? `${y}年：无晴空数据` : `${y}年：${(s * 100).toFixed(s < 0.01 ? 2 : 1)}%的面积夜间有灯光`),
     timeLabel: '年份',
+    lightsScale: '各郡夜间有灯光的面积比例',
     timePlay: '播放各年',
     timePause: '暂停',
     lightsTitle: '夜间灯光',

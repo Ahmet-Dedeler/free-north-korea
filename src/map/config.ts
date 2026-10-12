@@ -57,7 +57,7 @@ export type Overlay = 'lights' | 'radar';
 
 /** `time`: the overlay has a time axis, so the shared time pill (TimePill.tsx) shows while it's on. */
 export const OVERLAYS: { id: Overlay; thumb: string; time?: 'year' }[] = [
-  // yearly night lights per county (public/layers/lights-years.json); the thumb is NASA's Black Marble over Korea
+  // yearly night lights per county (public/layers/lights-years.json); the thumb is this layer itself, 2025, points hidden
   { id: 'lights', thumb: '/img/map/thumb-lights.png', time: 'year' },
   // vessels satellite radar saw in North Korea's waters that sent no AIS, per 0.1° square, latest whole month
   { id: 'radar', thumb: '/img/map/thumb-radar.png' },
@@ -72,13 +72,18 @@ export const RADAR_COLOR = '#c026d3';
 export const RADAR_LEGEND = [1, 20, 200];
 
 /**
- * Night lights: counties shaded by the share of their area that is lit (litShare), dark to warm glow, the same glow
- * as the legend key. The scale is steep at the bottom: outside the cities most counties have under 2% lit.
+ * Night lights: counties shaded by the share of their area that is lit (litShare), from near-black to a warm white
+ * glow. The map switches to its dark basemap while this is on (IntelMap.tsx), so dark means unlit, as in the famous
+ * night photos, instead of reading as "more" the way a dark colour does on a light map. The scale is steep at the
+ * bottom: outside the cities most counties have only a few percent lit. The legend in the time pill reads the same stops.
  */
 export const LIGHTS_STOPS: [number, string][] = [
-  [0, '#05070d'],
-  [0.005, '#1d1a16'],
-  [0.02, '#4a3a1c'],
-  [0.08, '#a67c33'],
-  [0.3, '#ffd27f'],
+  // 2025: half the counties are under 4.6% lit and a quarter under 2.4%, so those stay dark; the glow is for cities
+  [0, '#07080c'],
+  [0.02, '#17130a'],
+  [0.05, '#3d2c0d'],
+  [0.12, '#8f5e13'],
+  [0.25, '#e3a32f'],
+  [0.5, '#ffe9a8'],
+  [0.9, '#fffaf0'],
 ];

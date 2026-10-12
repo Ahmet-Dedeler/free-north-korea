@@ -74,6 +74,9 @@ before adding any page or article.
   VIIRS composites from EOG) writes `public/layers/lights-years.json` and `data/archive/ee/night-lights`; run it by
   hand when EOG publishes a new year. V2.1 → V2.2 in 2022 is a seam and the panel says so. Never monthly per county:
   outside the cities North Korea sits at the sensor's noise floor.
+  While it's on, the map switches to its dark basemap whatever the device theme, so unlit reads as dark (on a light
+  map a dark county reads as "more"). The scale keeps under 2% lit near black; the glow is for cities. Its legend
+  sits inside the time pill, not with the bottom-left legend pills.
 - `data/archive/`: our permanent record of data a source only serves for a while (GFW now; more to come). Append
   and update in place through `scripts/archive.ts`, never delete. One cleaned record per line,
   `<source>/<kind>/<partition>.jsonl`, sorted; each source documented in `data/archive/README.md` with its license.

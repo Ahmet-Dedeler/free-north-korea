@@ -5,7 +5,7 @@ import dynamic from 'next/dynamic';
 import Link from 'next/link';
 import { useTheme } from '../theme';
 import { formatAsOf, isStale } from '@/components/AsOf';
-import { LAYERS, MANIFEST, OVERLAYS, SHADES, SHADE_COLORS, type LayerId, type Overlay, type Shade } from './config';
+import { LAYERS, LIGHTS_STOPS, MANIFEST, OVERLAYS, SHADES, SHADE_COLORS, type LayerId, type Overlay, type Shade } from './config';
 import Detail from './Detail';
 import type { Lang } from '@/site/seo';
 import { localize } from '@/content/chrome';
@@ -33,6 +33,21 @@ function readHash(): Selection | null {
 }
 
 const BASE_KEY = 'map-basemap';
+
+/** The night-lights colour scale as a bar, from the same stops the map paints with (sqrt spacing, like the map). */
+function LightsKey() {
+  const top = LIGHTS_STOPS.at(-1)![0];
+  const stops = LIGHTS_STOPS.map(([t, c]) => `${c} ${Math.round(Math.sqrt(t / top) * 100)}%`).join(', ');
+  return (
+    <span className="tp-key" aria-hidden="true">
+      <i style={{ background: `linear-gradient(90deg, ${stops})` }} />
+      <span>
+        <span>0%</span>
+        <span>{Math.round(top * 100)}%+</span>
+      </span>
+    </span>
+  );
+}
 
 /** `sat` is the Camp Watch index (dates of our Sentinel-2 images per site), built on the server by mapSatIndex(). */
 export default function MapExplorer({ lang = 'en', sat = {} }: { lang?: Lang; sat?: Record<string, MapSatSite> }) {
@@ -231,7 +246,23 @@ export default function MapExplorer({ lang = 'en', sat = {} }: { lang?: Lang; sa
           <div className="map" />
         )}
         <BasemapSwitch base={base} onChange={switchBase} overlays={overlays} onToggle={toggleOverlay} year={year} lang={lang} />
-        {timeOn && data && <TimePill steps={data.lights.years} value={year!} onChange={pickYear} label={tx.timeLabel} playLabel={tx.timePlay} pauseLabel={tx.timePause} />}
+        {timeOn && data && (
+          <TimePill
+            steps={data.lights.years}
+            value={year!}
+            onChange={pickYear}
+            label={tx.timeLabel}
+            playLabel={tx.timePlay}
+            pauseLabel={tx.timePause}
+            head={{
+              keyNode: <LightsKey />,
+              title: tx.overlays.lights.label,
+              sub: `${tx.lightsScale} · ${tx.overlays.lights.sub}`,
+              onClose: () => toggleOverlay('lights'),
+              closeLabel: `${tx.close}: ${tx.overlays.lights.label}`,
+            }}
+          />
+        )}
         {data && sel && <Detail sel={sel} data={data} sat={sat} lang={lang} year={year ?? latestYear ?? 0} lights={overlays.has('lights')} onSelect={select} onClose={() => select(null)} />}
       </main>
     </div>

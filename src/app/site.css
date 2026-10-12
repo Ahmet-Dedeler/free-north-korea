@@ -1751,9 +1751,14 @@ a.card:hover {
   font-weight: 400;
 }
 .bm-legends {
+  /* stacked above the thumbnail, so the bottom edge stays free for the time pill */
+  position: absolute;
+  left: 0;
+  bottom: calc(100% + 8px);
   display: flex;
   flex-direction: column;
   gap: 6px;
+  width: max-content;
 }
 .bm-legend {
   display: flex;
@@ -1812,24 +1817,82 @@ a.card:hover {
   border-radius: 3px;
   background: linear-gradient(90deg, #05070d, #4a3a1c 45%, #ffd27f);
 }
-/* The time pill: one shared year control, bottom centre, while a time-axis overlay is on (TimePill.tsx) */
+/* The time pill: one shared year control with the legend of what it moves through (TimePill.tsx), bottom centre */
 .tp {
   position: absolute;
   left: 50%;
-  /* above the basemap switch and its legend pills, which take the bottom-left corner */
-  bottom: 96px;
+  /* clear of MapLibre's credits line along the bottom edge */
+  bottom: 30px;
   transform: translateX(-50%);
   z-index: 3;
   display: flex;
-  align-items: center;
-  gap: 12px;
-  width: min(460px, calc(100% - 120px));
-  height: 52px;
-  padding: 0 14px 0 8px;
-  border-radius: 999px;
+  flex-direction: column;
+  gap: 6px;
+  width: min(520px, calc(100% - 280px));
+  padding: 8px 12px 8px 8px;
+  border-radius: 14px;
   background: var(--panel);
   border: 1px solid var(--line);
   box-shadow: var(--shadow);
+}
+.tp-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-left: 4px;
+  min-width: 0;
+}
+.tp-title {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  font-size: 12.5px;
+  font-weight: 650;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.tp-title small {
+  margin-left: 4px;
+  color: var(--ink-3);
+  font-size: 11px;
+  font-weight: 400;
+}
+.tp-close {
+  flex: none;
+  width: 22px;
+  height: 22px;
+  border-radius: 6px;
+  color: var(--ink-3);
+  font-size: 11px;
+}
+.tp-close:hover {
+  background: var(--hover);
+  color: var(--ink);
+}
+.tp-key {
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  width: 92px;
+}
+.tp-key i {
+  display: block;
+  height: 8px;
+  border-radius: 2px;
+  box-shadow: inset 0 0 0 1px rgb(255 255 255 / 0.08);
+}
+.tp-key > span {
+  display: flex;
+  justify-content: space-between;
+  color: var(--ink-3);
+  font-size: 9.5px;
+  font-variant-numeric: tabular-nums;
+}
+.tp-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 .tp-play {
   flex: none;
@@ -1874,7 +1937,7 @@ a.card:hover {
 }
 .tp-ticks i.on {
   height: 20px;
-  background: #d4a24c;
+  background: #e0a526;
 }
 .tp-ends {
   display: flex;
@@ -1943,12 +2006,19 @@ a.card:hover {
   }
   /* phones: the time pill runs full width above the basemap switch */
   .tp {
-    left: 12px;
-    right: 12px;
+    left: 8px;
+    right: 8px;
     width: auto;
     transform: none;
-    bottom: 104px;
-    height: 44px;
+    /* above the basemap switch, which sits over MapLibre's credits */
+    bottom: 100px;
+  }
+  .tp-key {
+    width: 64px;
+  }
+  /* the pill spans the phone's width; pinch to zoom instead */
+  .stage:has(.tp) .maplibregl-ctrl-bottom-right .maplibregl-ctrl-group {
+    display: none;
   }
   .tp-play {
     width: 30px;

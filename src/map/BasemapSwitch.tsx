@@ -39,10 +39,11 @@ export default function BasemapSwitch({ base, onChange, overlays, onToggle, year
       <button type="button" className="bm-more" aria-expanded={open} aria-label={tx.layersAria} title={tx.layersAria} onClick={() => setOpen((v) => !v)}>
         <Layers size={16} aria-hidden="true" />
       </button>
-      {!open && overlays.size > 0 && (
+      {!open && OVERLAYS.some((o) => overlays.has(o.id) && !(o.time && year)) && (
         // what's switched on, like Google's traffic legend: a key for each overlay and a way to turn it off
         <div className="bm-legends">
-          {OVERLAYS.filter((o) => overlays.has(o.id)).map((o) => (
+          {/* a time-axis overlay's key lives in the time pill instead */}
+          {OVERLAYS.filter((o) => overlays.has(o.id) && !(o.time && year)).map((o) => (
             <div key={o.id} className="bm-legend">
               {o.id === 'radar' ? (
                 <span className="bm-key-dots" aria-hidden="true">
