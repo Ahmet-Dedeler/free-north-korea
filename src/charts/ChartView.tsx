@@ -166,7 +166,7 @@ export default function ChartView(p: ChartProps) {
   const y0 = log ? yMin : yt[0];
   const y1 = log ? yMax : yt[yt.length - 1];
   const left = Math.max(...yt.map((v) => fmt.axis(v).length + (p.unit === '%' ? 1 : 0))) * 7 + 10;
-  const top = p.bands.length && !stacked ? 22 : 12;
+  const top = p.bands.length ? 22 : 12;
   const bottom = 26;
   const plotW = Math.max(40, width - left - right);
   const plotH = H - top - bottom;
@@ -461,7 +461,29 @@ export default function ChartView(p: ChartProps) {
               {p.bands.map((b) => {
                 const a = Math.max(b.from, xMin);
                 const z = Math.min(b.to, xMax);
-                if (stacked || z <= a) return null;
+                if (stacked) {
+                  // bars: tint the whole slots of the years inside the band, with a line where it starts (a data seam)
+                  let ia = -1;
+                  let iz = -1;
+                  xs.forEach((x, i) => {
+                    if (x >= a && x <= z) {
+                      if (ia < 0) ia = i;
+                      iz = i;
+                    }
+                  });
+                  if (ia < 0) return null;
+                  const x0 = left + ia * band;
+                  return (
+                    <g key={b.label} className="chart-band">
+                      <rect x={x0} y={top} width={(iz - ia + 1) * band} height={plotH} className="band-tint" />
+                      <line x1={x0} x2={x0} y1={top - 14} y2={top + plotH} />
+                      <text x={x0 + 5} y={top - 4} textAnchor="start">
+                        {b.label}
+                      </text>
+                    </g>
+                  );
+                }
+                if (z <= a) return null;
                 const w = Math.max(3, sx(z) - sx(a));
                 return (
                   <g key={b.label} className="chart-band">
@@ -668,7 +690,8 @@ export default function ChartView(p: ChartProps) {
         </p>
         {!p.compact && p.note && (
           <p className="chart-note">
-            <b>{p.ui.note}:</b> {p.note}
+            {/* series notes are written in English only (data/series/series.json) */}
+            <b>{p.ui.note}:</b> <span lang={p.lang === 'en' ? undefined : 'en'}>{p.note}</span>
           </p>
         )}
         {!p.compact && p.pointSources && p.pointSources.length > 0 && (

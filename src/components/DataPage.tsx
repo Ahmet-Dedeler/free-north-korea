@@ -86,7 +86,7 @@ function latestParts(s: Series, lang: Lang): { key: string; who: string; v: stri
   const unit = UNIT_LABEL[s.unit]?.[lang] ?? s.unit;
   const u = unit === '%' ? '%' : ` ${unit}`;
   const keys = Object.keys(s.entities);
-  const kind = defaultsFor(s.id).kind ?? 'line';
+  const kind = defaultsFor(s.id, lang).kind ?? 'line';
   const when = (t: number | string) => (typeof t === 'number' ? String(t) : new Intl.DateTimeFormat(LOCALE[lang], { year: 'numeric', month: 'short', timeZone: 'UTC' }).format(new Date(t + 'T00:00:00Z')));
   if (kind !== 'line') {
     const lastT = keys.map((k) => s.entities[k].at(-1)![0]).sort().at(-1)!;
@@ -115,7 +115,7 @@ function Latest({ s, lang }: { s: Series; lang: Lang }) {
       <em>
         {l.who && (
           <>
-            <i style={{ background: chartProps(s.id, lang, defaultsFor(s.id)).lines.find((x) => x.key === l.key)?.color }} />
+            <i style={{ background: chartProps(s.id, lang, defaultsFor(s.id, lang)).lines.find((x) => x.key === l.key)?.color }} />
             {l.who} ·{' '}
           </>
         )}
@@ -287,7 +287,7 @@ export function SeriesPage({ lang, id }: { lang: Lang; id: string }) {
         )}
       </p>
       <h1>{title}</h1>
-      <ChartView {...chartProps(id, lang, defaultsFor(id))} />
+      <ChartView {...chartProps(id, lang, defaultsFor(id, lang))} />
 
       <section className="data-about">
         <h2>{t.about}</h2>
@@ -314,7 +314,7 @@ export function SeriesPage({ lang, id }: { lang: Lang; id: string }) {
           <h2>{t.related}</h2>
           <div className="chart-grid">
             {related.map((r) => (
-              <ChartView key={r} {...chartProps(r, lang, { ...defaultsFor(r), compact: true })} />
+              <ChartView key={r} {...chartProps(r, lang, { ...defaultsFor(r, lang), compact: true })} />
             ))}
           </div>
         </section>

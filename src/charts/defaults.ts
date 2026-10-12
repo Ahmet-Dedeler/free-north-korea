@@ -1,4 +1,5 @@
 /** How each series is drawn on its own page (/data/<id>) and on /data cards, unless a page chooses otherwise. */
+import type { Lang } from '@/site/seo';
 import type { ChartOptions } from './data';
 
 const COUNTRIES = ['PRK', 'KOR', 'CHN', 'WLD'];
@@ -33,4 +34,18 @@ export const DEFAULTS: Record<string, ChartOptions> = {
   'night-lights': { kind: 'stacked' },
 };
 
-export const defaultsFor = (id: string): ChartOptions => DEFAULTS[id] ?? {};
+/** Era bands with text, per language, added on top of DEFAULTS. */
+const BANDS: Record<string, Record<Lang, ChartOptions['bands']>> = {
+  // EOG's annual product went from V2.1 to V2.2 in 2022; the note on the series explains why the rise after it is real
+  'night-lights': {
+    en: [{ from: 2022, to: 2025, label: 'New satellite product' }],
+    ko: [{ from: 2022, to: 2025, label: '새 위성 자료 버전' }],
+    ja: [{ from: 2022, to: 2025, label: '衛星データの新版' }],
+    zh: [{ from: 2022, to: 2025, label: '卫星数据新版本' }],
+  },
+};
+
+export const defaultsFor = (id: string, lang: Lang = 'en'): ChartOptions => {
+  const bands = BANDS[id]?.[lang];
+  return bands ? { ...DEFAULTS[id], bands } : (DEFAULTS[id] ?? {});
+};
