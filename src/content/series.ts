@@ -26,6 +26,8 @@ export const ENTITY_LABEL: Record<string, T> = {
   people: { en: 'People', ko: '개인', ja: '個人', zh: '个人' },
   entities: { en: 'Organisations', ko: '기관', ja: '団体', zh: '机构' },
   'rest-of-country': { en: 'Rest of the country', ko: '그 밖의 지역', ja: 'その他の地域', zh: '其他地区' },
+  'this-year': { en: 'This year', ko: '올해', ja: '今年', zh: '今年' },
+  'ten-year-average': { en: 'Average of the 10 years before', ko: '직전 10년 평균', ja: '直前10年の平均', zh: '此前10年平均' },
 };
 
 /**
@@ -190,6 +192,50 @@ export const SERIES_TEXT: Record<string, Record<Lang, { title: string; sub: stri
     ja: { title: '夜の北朝鮮', sub: '毎年宇宙から見た光の総量。2022〜2025年に2倍になった。同じデータでソウルと韓国の農村はほぼ横ばいだった。', note: 'EOGが背景ノイズ、火災、その他の一時的な光を取り除いた後、北朝鮮内のすべてのVIIRSピクセルについてその年の平均放射輝度（nW/cm²/sr）を合計した値。平壌はUN OCHAの境界による平壌市（道レベルの行政区域）。{seam}年にデータのバージョンが変わった。2022〜2025年に北朝鮮全体は130%増えたが、同じデータでソウルは3%、江原道（韓国）の農村部は7%、丹東（中国）は28%の増加にとどまったので、この増加は処理方法の変化によるものではない。' },
     zh: { title: '夜晚的朝鲜', sub: '每年从太空看到的灯光总量。2022至2025年翻了一番，而同一数据中首尔和韩国农村基本持平。', note: '在EOG去除背景噪声、火灾和其他短暂光源之后，朝鲜境内每个VIIRS像素当年平均辐亮度（nW/cm²/sr）的总和。平壤指UN OCHA边界中的平壤市（省级行政区）。数据产品在{seam}年更换了版本。2022至2025年，朝鲜总量增长130%，而同一数据中首尔增长3%，韩国江原道农村增长7%，中国丹东增长28%，因此这一增长并非处理方法变化所致。' },
   },
+  'crop-greenness': {
+    en: {
+      title: 'How green the fields are',
+      sub: 'Greenness of North Korea’s cropland from May to September each year, seen from space. Drought and flood years show as dips.',
+      note: 'Mean NDVI from May to September over cropland (MODIS land cover of 2020, croplands and cropland mosaic), from 16-day MODIS composites with snow and cloud removed. Low years match reported droughts and floods: the springs of 2001, 2012, 2014 and 2015, the summers of 2007 and 2020. Greenness is not harvest.',
+    },
+    ko: {
+      title: '들판은 얼마나 푸른가',
+      sub: '해마다 5~9월 우주에서 본 북한 농경지의 녹색 정도. 가뭄과 홍수가 든 해는 움푹 꺼져 보인다.',
+      note: '농경지(2020년 MODIS 토지피복의 농경지와 농경지 혼합지) 위의 5~9월 평균 NDVI. 눈과 구름을 걸러낸 16일 단위 MODIS 합성 영상에서 계산했다. 낮은 해는 보도된 가뭄과 홍수와 일치한다. 2001, 2012, 2014, 2015년의 봄, 2007년과 2020년의 여름. 녹색 정도는 수확량이 아니다.',
+    },
+    ja: {
+      title: '畑はどれだけ緑か',
+      sub: '毎年5〜9月に宇宙から見た北朝鮮の農地の緑の濃さ。干ばつや洪水の年はくぼんで見える。',
+      note: '農地（2020年のMODIS土地被覆の農地と農地モザイク）の5〜9月の平均NDVI。雪と雲を除いた16日ごとのMODIS合成画像から計算した。低い年は報じられた干ばつや洪水と一致する。2001、2012、2014、2015年の春、2007年と2020年の夏。緑の濃さは収穫量ではない。',
+    },
+    zh: {
+      title: '田野有多绿',
+      sub: '每年5至9月从太空看到的朝鲜农田绿度。干旱和洪水年份会出现下凹。',
+      note: '农田（2020年MODIS土地覆盖中的农田和农田混合区）5至9月的平均NDVI，来自去除积雪和云层的16天MODIS合成影像。低值年份与报道的干旱和洪水相符：2001、2012、2014和2015年的春季，2007年和2020年的夏季。绿度不等于收成。',
+    },
+  },
+  'crop-greenness-season': {
+    en: {
+      title: 'This season’s fields',
+      sub: 'Greenness of North Korea’s cropland every 16 days this year, against the average of the 10 years before.',
+      note: 'Mean NDVI over cropland, every 16 days from April. The average is {from}-{to}, the same 16 days of each year. The latest composite starts {date}.',
+    },
+    ko: {
+      title: '올해의 들판',
+      sub: '올해 16일마다 본 북한 농경지의 녹색 정도와 직전 10년 평균.',
+      note: '농경지 위의 평균 NDVI, 4월부터 16일마다. 평균은 {from}~{to}년 같은 16일 기간의 값이다. 가장 최근 합성 영상은 {date}에 시작한다.',
+    },
+    ja: {
+      title: '今シーズンの畑',
+      sub: '今年16日ごとに見た北朝鮮の農地の緑の濃さと、直前10年の平均。',
+      note: '農地の平均NDVI、4月から16日ごと。平均は{from}〜{to}年の同じ16日間の値。最新の合成画像は{date}に始まる。',
+    },
+    zh: {
+      title: '本季的田野',
+      sub: '今年每16天看到的朝鲜农田绿度，与此前10年平均相比。',
+      note: '农田平均NDVI，从4月起每16天一次。平均值为{from}至{to}年同一16天期间的值。最新合成影像始于{date}。',
+    },
+  },
   'un-sanctions-listings': {
     en: { title: 'New names on the UN sanctions list', sub: 'People and organisations added to the UN Security Council’s North Korea list each year.', note: 'By the date each name was added. Russia and China have blocked new listings since 2018.' },
     ko: { title: '유엔 제재 명단 신규 지정', sub: '해마다 유엔 안보리 대북 제재 명단에 오른 개인과 기관.', note: '각 이름이 추가된 날짜 기준. 2018년 이후 러시아와 중국이 신규 지정을 막고 있다.' },
@@ -322,7 +368,7 @@ export const TOPICS: { id: string; title: T; series: string[] }[] = [
   {
     id: 'health',
     title: { en: 'Health and food', ko: '건강과 식량', ja: '健康と食料', zh: '健康与粮食' },
-    series: ['life-expectancy', 'child-mortality', 'calories', 'undernourishment', 'height-men', 'height-women', 'cereal-yield'],
+    series: ['crop-greenness-season', 'crop-greenness', 'life-expectancy', 'child-mortality', 'calories', 'undernourishment', 'height-men', 'height-women', 'cereal-yield'],
   },
   {
     id: 'economy',

@@ -52,6 +52,12 @@ review with test calls and quoted license clauses is in `peer-api-review.md`.
   - Control areas in the same data are steady over 2022-2025: Seoul +3%, rural Gangwon (South Korea) +7%, Dandong
     +28%. North Korea's rise isn't a processing change.
   - Pyongyang is 28-34% of all the light.
+- Crop greenness per province, 2001-2026 (`scripts/ee/crops.py`, about 3 minutes for the full backfill):
+  - 34,407 km² of cropland in the MODIS 2020 land cover.
+  - May-June national NDVI against the 2001-2025 average dips in the reported drought springs (2001 -9%, 2012
+    -4.5%, 2014 -5.6%, 2015 -8.1%), and July-August dips in the flood summers (2007 -4.2%, 2020 -3.9%).
+  - Springs since 2021 are greener than any earlier one (+6% to +14%).
+  - 2026: spring 9-29% above 2016-2025, midsummer +1 to +4%, mid-September level.
 - Findings worth a follow-up:
   - Radar detections per pass day in North Korea's waters fell from 344 (2019) to 81-88 (2020-2022), then
     rose to 208 (2026).

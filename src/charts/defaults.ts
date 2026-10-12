@@ -31,6 +31,7 @@ export const DEFAULTS: Record<string, ChartOptions> = {
   'humanitarian-aid': { kind: 'bar' },
   'missile-launches': { kind: 'stacked', from: 1984 },
   'un-sanctions-listings': { kind: 'stacked' },
+  'crop-greenness': { entities: ['PRK'] },
   'night-lights': { kind: 'stacked' },
 };
 

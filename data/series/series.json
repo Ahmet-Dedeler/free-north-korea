@@ -8543,6 +8543,236 @@
    "updated": "2025-11-13"
   },
   {
+   "id": "crop-greenness",
+   "title": "How green North Korea’s fields are each summer",
+   "unit": "NDVI",
+   "frequency": "annual",
+   "entities": {
+    "PRK": [
+     [
+      2001,
+      0.591
+     ],
+     [
+      2002,
+      0.6077
+     ],
+     [
+      2003,
+      0.6242
+     ],
+     [
+      2004,
+      0.6215
+     ],
+     [
+      2005,
+      0.6292
+     ],
+     [
+      2006,
+      0.6187
+     ],
+     [
+      2007,
+      0.6167
+     ],
+     [
+      2008,
+      0.5967
+     ],
+     [
+      2009,
+      0.5901
+     ],
+     [
+      2010,
+      0.6187
+     ],
+     [
+      2011,
+      0.6038
+     ],
+     [
+      2012,
+      0.6119
+     ],
+     [
+      2013,
+      0.6194
+     ],
+     [
+      2014,
+      0.5816
+     ],
+     [
+      2015,
+      0.596
+     ],
+     [
+      2016,
+      0.6189
+     ],
+     [
+      2017,
+      0.6133
+     ],
+     [
+      2018,
+      0.6317
+     ],
+     [
+      2019,
+      0.6217
+     ],
+     [
+      2020,
+      0.6243
+     ],
+     [
+      2021,
+      0.6496
+     ],
+     [
+      2022,
+      0.6399
+     ],
+     [
+      2023,
+      0.6467
+     ],
+     [
+      2024,
+      0.6586
+     ],
+     [
+      2025,
+      0.6705
+     ],
+     [
+      2026,
+      0.6788
+     ]
+    ]
+   },
+   "source": {
+    "name": "MODIS/Terra Vegetation Indices 16-Day L3 Global 250m (MOD13Q1 v6.1), NASA LP DAAC, over MODIS cropland, in Google Earth Engine",
+    "url": "https://lpdaac.usgs.gov/products/mod13q1v061/",
+    "license": "NASA open data"
+   },
+   "fetched": "2026-10-12",
+   "updated": "2026-09-14",
+   "note": "Mean NDVI from May to September over cropland (MODIS land cover of 2020, croplands and cropland mosaic), from 16-day MODIS composites with snow and cloud removed. Low years match reported droughts and floods: the springs of 2001, 2012, 2014 and 2015, the summers of 2007 and 2020. Greenness is not harvest."
+  },
+  {
+   "id": "crop-greenness-season",
+   "title": "This season’s fields against the last 10 years",
+   "unit": "NDVI",
+   "frequency": "irregular",
+   "entities": {
+    "this-year": [
+     [
+      "2026-04-07",
+      0.2849
+     ],
+     [
+      "2026-04-23",
+      0.42
+     ],
+     [
+      "2026-05-09",
+      0.4692
+     ],
+     [
+      "2026-05-25",
+      0.5552
+     ],
+     [
+      "2026-06-10",
+      0.5934
+     ],
+     [
+      "2026-06-26",
+      0.6657
+     ],
+     [
+      "2026-07-12",
+      0.7694
+     ],
+     [
+      "2026-07-28",
+      0.8129
+     ],
+     [
+      "2026-08-13",
+      0.7942
+     ],
+     [
+      "2026-08-29",
+      0.775
+     ],
+     [
+      "2026-09-14",
+      0.6742
+     ]
+    ],
+    "ten-year-average": [
+     [
+      "2026-04-07",
+      0.2576
+     ],
+     [
+      "2026-04-23",
+      0.3251
+     ],
+     [
+      "2026-05-09",
+      0.4214
+     ],
+     [
+      "2026-05-25",
+      0.4789
+     ],
+     [
+      "2026-06-10",
+      0.5451
+     ],
+     [
+      "2026-06-26",
+      0.655
+     ],
+     [
+      "2026-07-12",
+      0.751
+     ],
+     [
+      "2026-07-28",
+      0.7846
+     ],
+     [
+      "2026-08-13",
+      0.789
+     ],
+     [
+      "2026-08-29",
+      0.7481
+     ],
+     [
+      "2026-09-14",
+      0.675
+     ]
+    ]
+   },
+   "source": {
+    "name": "MODIS/Terra Vegetation Indices 16-Day L3 Global 250m (MOD13Q1 v6.1), NASA LP DAAC, over MODIS cropland, in Google Earth Engine",
+    "url": "https://lpdaac.usgs.gov/products/mod13q1v061/",
+    "license": "NASA open data"
+   },
+   "fetched": "2026-10-12",
+   "updated": "2026-09-14",
+   "note": "Mean NDVI over cropland, every 16 days from April. The average is 2016-2025, the same 16 days of each year. The latest composite starts 2026-09-14."
+  },
+  {
    "id": "defector-arrivals",
    "title": "North Koreans arriving in South Korea each year, by sex",
    "unit": "people",

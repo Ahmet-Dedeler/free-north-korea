@@ -33,3 +33,4 @@ Numbers we computed from satellite data, never imagery. Each line names its data
 | File | One line per | Source and license | Written by |
 |---|---|---|---|
 | `night-lights/annual.jsonl` | county (`pcode`) and year: `sum` of radiance, `litKm2`, `litShare` of the county's area; null when no cloud-free data | Annual VIIRS night-time lights V2.1 (2013-2021) and V2.2 (2022 on), Earth Observation Group, Payne Institute, Colorado School of Mines, https://eogdata.mines.edu/products/vnl/, CC BY 4.0 | `scripts/ee/night_lights.py`, by hand once a year |
+| `crops/<year>.jsonl` | province (`pcode`, or `KP` for the whole country) and 16-day composite (`date`, April to October): mean `ndvi` over cropland, `clearKm2` of cropland seen without snow or cloud | MODIS MOD13Q1 v6.1 NDVI over MODIS MCD12Q1 v6.1 cropland of 2020 (NASA LP DAAC, open data) | `scripts/ee/crops.py`; `--backfill` from 2001 |

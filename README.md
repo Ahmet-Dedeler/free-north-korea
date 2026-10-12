@@ -29,7 +29,7 @@ be freed" gave you close to nothing. So this puts it all in one place, open sour
 
 | | | | | |
 |:-:|:-:|:-:|:-:|:-:|
-| **179** counties mapped | **24** political prison camps & prisons | **358** missile tests since 1984 | **25** open datasets | **159** sources watched weekly |
+| **179** counties mapped | **24** political prison camps & prisons | **358** missile tests since 1984 | **28** open datasets | **159** sources watched weekly |
 
 ## What's inside
 
@@ -38,9 +38,10 @@ be freed" gave you close to nothing. So this puts it all in one place, open sour
     <td width="50%" valign="top">
       <a href="https://liberatenorthkorea.org/map"><img src="docs/readme/map.jpg" alt="Intel map"></a>
       <h3>🗺 Intel map</h3>
-      Prison camps, detention centres, nuclear and missile sites, 421 markets, the escape route through China, and
-      human rights abuses counted per county, on a map or satellite basemap. Click a camp or weapons site to scrub
-      through two years of our own satellite images. Every point has a source.
+      Prison camps, detention centres, nuclear and missile sites, 421 markets, North Korean ports, the escape route
+      through China, and human rights abuses counted per county, on a map or satellite basemap. Layers seen from
+      space: night lights per county for every year since 2013, and ships satellite radar saw that sent no signal.
+      Click a camp or weapons site to scrub through two years of our own satellite images. Every point has a source.
     </td>
     <td width="50%" valign="top">
       <a href="https://liberatenorthkorea.org/north-korea-vs-south-korea"><img src="docs/readme/north-vs-south.jpg" alt="North Korea vs South Korea"></a>
@@ -61,7 +62,8 @@ be freed" gave you close to nothing. So this puts it all in one place, open sour
       <a href="https://liberatenorthkorea.org/data"><img src="docs/readme/data.jpg" alt="Charts and data"></a>
       <h3>📈 Charts & open data</h3>
       Our World in Data style charts: market prices and the won since 2009, defector arrivals, aid, missiles,
-      sanctions. Every chart has a table, a CSV and a citation line.
+      sanctions, night lights since 2013 and how green the fields are each season since 2001, from satellites.
+      Every chart has a table, a CSV and a citation line.
     </td>
   </tr>
   <tr>
@@ -82,7 +84,8 @@ be freed" gave you close to nothing. So this puts it all in one place, open sour
       <a href="https://liberatenorthkorea.org/sanctions"><img src="docs/readme/sanctions.jpg" alt="Sanctions"></a>
       <h3>🚫 Sanctions</h3>
       Everyone on the UN 1718 list, the US Treasury lists and the UK, EU and Japan lists, matched across lists and
-      downloaded fresh every week from the official files.
+      downloaded fresh every week from the official files. Plus the listed ships as their own radio signals show
+      them: the names they use, the foreign ports they call at, and who calls at North Korea's ports.
     </td>
     <td width="50%" valign="top">
       <a href="https://liberatenorthkorea.org"><img src="docs/readme/home.jpg" alt="Home"></a>
@@ -118,6 +121,8 @@ week by a GitHub Action. Use it, check it, build on it.
 - **Dated.** Every series carries the day it was downloaded and the source's own update date, and the site shows it.
 
 The map layers, people graph and sanctions lists have their own builders too (see [LEARN.md](LEARN.md)).
+Data a source only serves for a while (ship port calls and radar counts from Global Fishing Watch) and numbers we
+compute from satellites (night lights, crop greenness) are kept for good in [`data/archive/`](data/archive).
 
 ## Run it locally
 
@@ -149,7 +154,9 @@ Japanese and Chinese.
 ## Credits
 
 Missile data © James Martin Center for Nonproliferation Studies / NTI, via nagix/nk-missile-tests. Basemap by
-[OpenFreeMap](https://openfreemap.org) / OpenStreetMap contributors. Night imagery by NASA Earth Observatory. Share card photos: a street in Wonsan by Mario Micklisch (CC BY 2.0, a wide shot so no one is identifiable) and Panmunjom via Wikimedia Commons. Chart
+[OpenFreeMap](https://openfreemap.org) / OpenStreetMap contributors. Night lights from the Earth Observation Group's annual VIIRS composites (CC BY 4.0) and crop greenness from NASA's
+MODIS, both computed in Google Earth Engine. Ship data powered by [Global Fishing Watch](https://globalfishingwatch.org)
+(CC BY-NC 4.0). Share card photos: a street in Wonsan by Mario Micklisch (CC BY 2.0, a wide shot so no one is identifiable) and Panmunjom via Wikimedia Commons. Chart
 data from the sources named on each chart. Map coordinates from Wikipedia unless marked approximate.
 
 Code is [Apache 2.0](LICENSE). Each dataset keeps its original license.

@@ -77,10 +77,59 @@ function nightLights(): Series {
   };
 }
 
+type Crops = {
+  built: string;
+  year: number;
+  baseYears: [number, number];
+  years: number[];
+  latest: string;
+  source: { ndvi: { name: string; url: string }; license: string };
+  provinces: Record<string, { season: { date: string; ndvi: number; base: number | null }[]; yearly: (number | null)[] }>;
+};
+
+/** Crop greenness, national: the growing-season mean of every year since 2001 (public/layers/crops.json, scripts/ee/crops.py). */
+function cropYears(): Series {
+  const c = read<Crops>('public/layers/crops.json');
+  const kp = c.provinces.KP;
+  return {
+    id: 'crop-greenness',
+    title: 'How green North Korea’s fields are each summer',
+    unit: 'NDVI',
+    frequency: 'annual',
+    entities: { PRK: c.years.flatMap((y, i) => (kp.yearly[i] == null ? [] : [[y, kp.yearly[i]] as Point])) },
+    source: { name: `${c.source.ndvi.name}, over MODIS cropland, in Google Earth Engine`, url: c.source.ndvi.url, license: 'NASA open data' },
+    fetched: c.built,
+    updated: c.latest,
+    note:
+      'Mean NDVI from May to September over cropland (MODIS land cover of 2020, croplands and cropland mosaic), from 16-day MODIS composites with snow and cloud removed. ' +
+      'Low years match reported droughts and floods: the springs of 2001, 2012, 2014 and 2015, the summers of 2007 and 2020. Greenness is not harvest.',
+  };
+}
+
+/** This season's crop greenness against the 10 years before it, every 16 days. */
+function cropSeason(): Series {
+  const c = read<Crops>('public/layers/crops.json');
+  const kp = c.provinces.KP.season;
+  return {
+    id: 'crop-greenness-season',
+    title: 'This season’s fields against the last 10 years',
+    unit: 'NDVI',
+    frequency: 'irregular',
+    entities: {
+      'this-year': kp.map((s) => [s.date, s.ndvi] as Point),
+      'ten-year-average': kp.flatMap((s) => (s.base == null ? [] : [[s.date, s.base] as Point])),
+    },
+    source: { name: `${c.source.ndvi.name}, over MODIS cropland, in Google Earth Engine`, url: c.source.ndvi.url, license: 'NASA open data' },
+    fetched: c.built,
+    updated: c.latest,
+    note: `Mean NDVI over cropland, every 16 days from April. The average is ${c.baseYears[0]}-${c.baseYears[1]}, the same 16 days of each year. The latest composite starts ${c.latest}.`,
+  };
+}
+
 export const local: SeriesSource = {
   name: 'local',
   maxAgeDays: 0, // cheap, always rebuilt
   async build() {
-    return [missiles(), sanctions(), nightLights()];
+    return [missiles(), sanctions(), nightLights(), cropYears(), cropSeason()];
   },
 };

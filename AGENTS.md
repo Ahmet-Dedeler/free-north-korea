@@ -82,6 +82,11 @@ before adding any page or article.
   While it's on, the map switches to its dark basemap whatever the device theme, so unlit reads as dark (on a light
   map a dark county reads as "more"). The scale keeps under 2% lit near black; the glow is for cities. Its legend
   sits inside the time pill, not with the bottom-left legend pills.
+- Crop greenness: `uv run scripts/ee/crops.py` (Earth Engine; MODIS NDVI every 16 days over a fixed 2020 cropland
+  mask, per province and nationally, since 2001) writes `public/layers/crops.json` and `data/archive/ee/crops`. Shown
+  on `/data/crop-greenness` (May-September mean each year) and `/data/crop-greenness-season` (this season against the
+  10 years before it, not the whole record: springs since 2021 are greener than any before). Greenness is not
+  harvest; say so wherever it appears. Run it every couple of weeks in the growing season.
 - `data/archive/`: our permanent record of data a source only serves for a while (GFW now; more to come). Append
   and update in place through `scripts/archive.ts`, never delete. One cleaned record per line,
   `<source>/<kind>/<partition>.jsonl`, sorted; each source documented in `data/archive/README.md` with its license.
