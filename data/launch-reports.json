@@ -1,11 +1,45 @@
 {
- "fetched": "2026-10-08T17:05:27Z",
+ "fetched": "2026-10-12T11:07:01Z",
  "source": {
   "name": "北朝鮮のミサイル等関連情報 (Ministry of Defense of Japan)",
   "publisher": "Ministry of Defense of Japan (防衛省)",
   "url": "https://www.mod.go.jp/j/press/news/index.html"
  },
  "reports": [
+  {
+   "id": "2026-10-12e",
+   "published": "2026-10-12",
+   "timesJst": [
+    "09:19",
+    "09:36"
+   ],
+   "launchJst": "2026-10-12T09:19:00+09:00",
+   "launchUtc": "2026-10-12T00:19:00Z",
+   "precision": "minute",
+   "count": 2,
+   "countNote": "at least",
+   "weapon": "ballistic",
+   "rangeKm": [
+    220,
+    910
+   ],
+   "rangeBound": "over",
+   "apogeeKm": [
+    20,
+    70
+   ],
+   "apogeeBound": null,
+   "flightMinutes": null,
+   "landing": "sea-of-japan",
+   "eez": null,
+   "areaJa": "北朝鮮内陸部",
+   "landingJa": "北朝鮮東岸付近や日本海",
+   "directionJa": "東",
+   "textJa": "北朝鮮は本日９時台、北朝鮮内陸部から、少なくとも２発の弾道ミサイルを、北東及び東方向に向けて発射し、北朝鮮東岸付近や日本海に落下したと推定されます。現時点で我が国領域や排他的経済水域（ＥＥＺ）への飛来は確認されておりません。これらのうち、以下②については変則軌道で飛翔した可能性を含め、詳細を現在日米韓で緊密に連携して分析中です。①９時１９分頃発射され、最高高度約２０ｋｍ程度で、約２２０ｋｍ程度飛翔。②９時３６分頃発射され、最高高度約７０ｋｍ程度で、約９１０ｋｍを超えて飛翔。",
+   "url": "https://www.mod.go.jp/j/press/news/2026/10/12e.pdf",
+   "htmlUrl": "https://www.mod.go.jp/j/press/news/2026/10/12e.html",
+   "fetched": "2026-10-12"
+  },
   {
    "id": "2026-10-03d",
    "published": "2026-10-03",
