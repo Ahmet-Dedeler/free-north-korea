@@ -19,6 +19,7 @@ import {
   type Target,
   type UnEntry,
 } from '@/content/sanctions';
+import { SHIPS_PATHS, SHIPS_TEXT } from '@/content/ships';
 import { ENTITY_ORGS, PEOPLE, currentRole } from '@/entities';
 import { REVIEWED } from '@/site/config';
 import { LANG_TAG, absolute, jsonLd, type Lang } from '@/site/seo';
@@ -232,6 +233,9 @@ export default function SanctionsPage({ lang }: { lang: Lang }) {
             </li>
           ))}
         </ul>
+        <p className="wh-more">
+          <Link href={SHIPS_PATHS[lang]}>{SHIPS_TEXT[lang].h1} →</Link>
+        </p>
       </section>
 
       <section className="index-section">

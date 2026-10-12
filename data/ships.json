@@ -1,0 +1,5222 @@
+{
+ "_doc": "Built by scripts/build-ships.ts from the Global Fishing Watch API and data/sanctions.json. Do not edit by hand.",
+ "fetched": "2026-10-12",
+ "attribution": "Powered by Global Fishing Watch (globalfishingwatch.org). Data: GFW vessel identity v4, port visits v4 and SAR vessel detections, CC BY-NC 4.0.",
+ "sources": {
+  "gfw": "https://globalfishingwatch.org/our-apis/",
+  "license": "https://globalfishingwatch.org/our-apis/documentation/docs/license-rate-limits.md"
+ },
+ "sanctionsFetched": "2026-10-12",
+ "window": {
+  "from": "2025-11-01",
+  "to": "2026-10-12"
+ },
+ "radarThrough": "2026-10-08",
+ "listedImos": 111,
+ "resolved": 105,
+ "ships": [
+  {
+   "name": "Bogatyr",
+   "imo": "9085730",
+   "lists": [
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "SAKHALIN",
+     "flag": "RUS",
+     "mmsi": "273390290",
+     "first": "2016-10-15",
+     "last": "2026-10-10"
+    },
+    {
+     "name": "AFRICAN EXPRESS",
+     "flag": "PLW",
+     "mmsi": "511260000",
+     "first": "2015-11-03",
+     "last": "2016-10-11"
+    },
+    {
+     "name": "STELLANOVA",
+     "flag": "NLD",
+     "mmsi": "245781000",
+     "first": "2012-01-01",
+     "last": "2015-11-03"
+    }
+   ],
+   "lastSeen": "2026-10-10",
+   "visits": [
+    {
+     "start": "2026-08-31",
+     "end": "2026-10-08",
+     "port": "ZHOUSHAN",
+     "country": "CHN",
+     "confidence": 3,
+     "as": "SAKHALIN",
+     "flag": "RUS"
+    },
+    {
+     "start": "2026-08-21",
+     "end": "2026-08-22",
+     "port": "VLADIVOSTOK",
+     "country": "RUS",
+     "confidence": 4,
+     "as": "SAKHALIN",
+     "flag": "RUS"
+    },
+    {
+     "start": "2026-08-14",
+     "end": "2026-08-20",
+     "port": "VLADIVOSTOK",
+     "country": "RUS",
+     "confidence": 4,
+     "as": "SAKHALIN",
+     "flag": "RUS"
+    },
+    {
+     "start": "2026-07-30",
+     "end": "2026-08-01",
+     "port": "",
+     "country": "RUS",
+     "confidence": 4,
+     "as": "SAKHALIN",
+     "flag": "RUS"
+    },
+    {
+     "start": "2026-07-08",
+     "end": "2026-07-08",
+     "port": "VLADIVOSTOK",
+     "country": "RUS",
+     "confidence": 3,
+     "as": "SAKHALIN",
+     "flag": "RUS"
+    },
+    {
+     "start": "2026-07-08",
+     "end": "2026-07-30",
+     "port": "VLADIVOSTOK",
+     "country": "RUS",
+     "confidence": 4,
+     "as": "SAKHALIN",
+     "flag": "RUS"
+    },
+    {
+     "start": "2026-06-26",
+     "end": "2026-07-08",
+     "port": "VLADIVOSTOK",
+     "country": "RUS",
+     "confidence": 4,
+     "as": "SAKHALIN",
+     "flag": "RUS"
+    },
+    {
+     "start": "2026-05-31",
+     "end": "2026-05-31",
+     "port": "HUANGHUA",
+     "country": "CHN",
+     "confidence": 4,
+     "as": "SAKHALIN",
+     "flag": "RUS"
+    },
+    {
+     "start": "2026-05-09",
+     "end": "2026-05-15",
+     "port": "HUANGHUA",
+     "country": "CHN",
+     "confidence": 4,
+     "as": "SAKHALIN",
+     "flag": "RUS"
+    },
+    {
+     "start": "2026-05-04",
+     "end": "2026-05-09",
+     "port": "HUANG HUA",
+     "country": "CHN",
+     "confidence": 4,
+     "as": "SAKHALIN",
+     "flag": "RUS"
+    },
+    {
+     "start": "2026-04-17",
+     "end": "2026-05-04",
+     "port": "HUANGHUA",
+     "country": "CHN",
+     "confidence": 4,
+     "as": "SAKHALIN",
+     "flag": "RUS"
+    },
+    {
+     "start": "2026-04-03",
+     "end": "2026-04-07",
+     "port": "VLADIVOSTOK",
+     "country": "RUS",
+     "confidence": 4,
+     "as": "SAKHALIN",
+     "flag": "RUS"
+    },
+    {
+     "start": "2026-03-25",
+     "end": "2026-03-31",
+     "port": "VLADIVOSTOK",
+     "country": "RUS",
+     "confidence": 4,
+     "as": "SAKHALIN",
+     "flag": "RUS"
+    },
+    {
+     "start": "2026-03-18",
+     "end": "2026-03-20",
+     "port": "VLADIVOSTOK",
+     "country": "RUS",
+     "confidence": 4,
+     "as": "SAKHALIN",
+     "flag": "RUS"
+    },
+    {
+     "start": "2026-03-13",
+     "end": "2026-03-17",
+     "port": "VLADIVOSTOK",
+     "country": "RUS",
+     "confidence": 4,
+     "as": "SAKHALIN",
+     "flag": "RUS"
+    },
+    {
+     "start": "2026-03-11",
+     "end": "2026-03-13",
+     "port": "VLADIVOSTOK",
+     "country": "RUS",
+     "confidence": 4,
+     "as": "SAKHALIN",
+     "flag": "RUS"
+    },
+    {
+     "start": "2026-03-07",
+     "end": "2026-03-11",
+     "port": "VLADIVOSTOK",
+     "country": "RUS",
+     "confidence": 4,
+     "as": "SAKHALIN",
+     "flag": "RUS"
+    },
+    {
+     "start": "2026-03-04",
+     "end": "2026-03-07",
+     "port": "VLADIVOSTOK",
+     "country": "RUS",
+     "confidence": 4,
+     "as": "SAKHALIN",
+     "flag": "RUS"
+    },
+    {
+     "start": "2026-02-08",
+     "end": "2026-03-01",
+     "port": "VLADIVOSTOK",
+     "country": "RUS",
+     "confidence": 4,
+     "as": "SAKHALIN",
+     "flag": "RUS"
+    },
+    {
+     "start": "2026-02-05",
+     "end": "2026-02-08",
+     "port": "VLADIVOSTOK",
+     "country": "RUS",
+     "confidence": 4,
+     "as": "SAKHALIN",
+     "flag": "RUS"
+    },
+    {
+     "start": "2026-02-02",
+     "end": "2026-02-04",
+     "port": "VLADIVOSTOK",
+     "country": "RUS",
+     "confidence": 4,
+     "as": "SAKHALIN",
+     "flag": "RUS"
+    },
+    {
+     "start": "2026-01-31",
+     "end": "2026-02-02",
+     "port": "VLADIVOSTOK",
+     "country": "RUS",
+     "confidence": 4,
+     "as": "SAKHALIN",
+     "flag": "RUS"
+    },
+    {
+     "start": "2026-01-28",
+     "end": "2026-01-31",
+     "port": "VLADIVOSTOK",
+     "country": "RUS",
+     "confidence": 4,
+     "as": "SAKHALIN",
+     "flag": "RUS"
+    },
+    {
+     "start": "2026-01-26",
+     "end": "2026-01-28",
+     "port": "VLADIVOSTOK",
+     "country": "RUS",
+     "confidence": 4,
+     "as": "SAKHALIN",
+     "flag": "RUS"
+    },
+    {
+     "start": "2026-01-09",
+     "end": "2026-01-24",
+     "port": "VLADIVOSTOK",
+     "country": "RUS",
+     "confidence": 4,
+     "as": "SAKHALIN",
+     "flag": "RUS"
+    },
+    {
+     "start": "2026-01-05",
+     "end": "2026-01-05",
+     "port": "VLADIVOSTOK",
+     "country": "RUS",
+     "confidence": 4,
+     "as": "SAKHALIN",
+     "flag": "RUS"
+    },
+    {
+     "start": "2026-01-05",
+     "end": "2026-01-09",
+     "port": "VLADIVOSTOK",
+     "country": "RUS",
+     "confidence": 4,
+     "as": "SAKHALIN",
+     "flag": "RUS"
+    },
+    {
+     "start": "2026-01-04",
+     "end": "2026-01-05",
+     "port": "VLADIVOSTOK",
+     "country": "RUS",
+     "confidence": 4,
+     "as": "SAKHALIN",
+     "flag": "RUS"
+    },
+    {
+     "start": "2026-01-02",
+     "end": "2026-01-04",
+     "port": "VLADIVOSTOK",
+     "country": "RUS",
+     "confidence": 4,
+     "as": "SAKHALIN",
+     "flag": "RUS"
+    },
+    {
+     "start": "2026-01-01",
+     "end": "2026-01-02",
+     "port": "VLADIVOSTOK",
+     "country": "RUS",
+     "confidence": 4,
+     "as": "SAKHALIN",
+     "flag": "RUS"
+    },
+    {
+     "start": "2025-12-30",
+     "end": "2026-01-01",
+     "port": "VLADIVOSTOK",
+     "country": "RUS",
+     "confidence": 4,
+     "as": "SAKHALIN",
+     "flag": "RUS"
+    },
+    {
+     "start": "2025-12-28",
+     "end": "2025-12-30",
+     "port": "VLADIVOSTOK",
+     "country": "RUS",
+     "confidence": 4,
+     "as": "SAKHALIN",
+     "flag": "RUS"
+    },
+    {
+     "start": "2025-12-23",
+     "end": "2025-12-28",
+     "port": "VLADIVOSTOK",
+     "country": "RUS",
+     "confidence": 4,
+     "as": "SAKHALIN",
+     "flag": "RUS"
+    },
+    {
+     "start": "2025-12-15",
+     "end": "2025-12-23",
+     "port": "VLADIVOSTOK",
+     "country": "RUS",
+     "confidence": 4,
+     "as": "SAKHALIN",
+     "flag": "RUS"
+    },
+    {
+     "start": "2025-12-13",
+     "end": "2025-12-15",
+     "port": "VLADIVOSTOK",
+     "country": "RUS",
+     "confidence": 4,
+     "as": "SAKHALIN",
+     "flag": "RUS"
+    },
+    {
+     "start": "2025-12-07",
+     "end": "2025-12-13",
+     "port": "VLADIVOSTOK",
+     "country": "RUS",
+     "confidence": 4,
+     "as": "SAKHALIN",
+     "flag": "RUS"
+    },
+    {
+     "start": "2025-12-06",
+     "end": "2025-12-06",
+     "port": "VLADIVOSTOK",
+     "country": "RUS",
+     "confidence": 4,
+     "as": "SAKHALIN",
+     "flag": "RUS"
+    },
+    {
+     "start": "2025-12-04",
+     "end": "2025-12-06",
+     "port": "VLADIVOSTOK",
+     "country": "RUS",
+     "confidence": 4,
+     "as": "SAKHALIN",
+     "flag": "RUS"
+    },
+    {
+     "start": "2025-11-28",
+     "end": "2025-11-28",
+     "port": "VLADIVOSTOK",
+     "country": "RUS",
+     "confidence": 4,
+     "as": "SAKHALIN",
+     "flag": "RUS"
+    },
+    {
+     "start": "2025-11-28",
+     "end": "2025-12-04",
+     "port": "VLADIVOSTOK",
+     "country": "RUS",
+     "confidence": 4,
+     "as": "SAKHALIN",
+     "flag": "RUS"
+    },
+    {
+     "start": "2025-11-26",
+     "end": "2025-11-28",
+     "port": "VLADIVOSTOK",
+     "country": "RUS",
+     "confidence": 4,
+     "as": "SAKHALIN",
+     "flag": "RUS"
+    },
+    {
+     "start": "2025-11-25",
+     "end": "2025-11-26",
+     "port": "VLADIVOSTOK",
+     "country": "RUS",
+     "confidence": 4,
+     "as": "SAKHALIN",
+     "flag": "RUS"
+    },
+    {
+     "start": "2025-11-22",
+     "end": "2025-11-24",
+     "port": "VLADIVOSTOK",
+     "country": "RUS",
+     "confidence": 4,
+     "as": "SAKHALIN",
+     "flag": "RUS"
+    },
+    {
+     "start": "2025-11-15",
+     "end": "2025-11-21",
+     "port": "VLADIVOSTOK",
+     "country": "RUS",
+     "confidence": 4,
+     "as": "SAKHALIN",
+     "flag": "RUS"
+    },
+    {
+     "start": "2025-09-09",
+     "end": "2025-11-15",
+     "port": "VLADIVOSTOK",
+     "country": "RUS",
+     "confidence": 4,
+     "as": "SAKHALIN",
+     "flag": "RUS"
+    }
+   ],
+   "radarMonths": []
+  },
+  {
+   "name": "South Hill 5",
+   "imo": "9138680",
+   "lists": [
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "NAMDAECHON",
+     "flag": "PRK",
+     "mmsi": "445590000",
+     "first": "2016-12-10",
+     "last": "2026-10-10"
+    },
+    {
+     "name": "SOUTH HILL 5",
+     "flag": "PLW",
+     "mmsi": "511086000",
+     "first": "2014-10-13",
+     "last": "2016-03-03"
+    },
+    {
+     "name": "FREE IMPALA",
+     "flag": "BHS",
+     "mmsi": "311902000",
+     "first": "2012-01-02",
+     "last": "2012-10-10"
+    }
+   ],
+   "lastSeen": "2026-10-10",
+   "visits": [
+    {
+     "start": "2026-08-09",
+     "end": "2026-10-08",
+     "port": "",
+     "country": "PRK",
+     "confidence": 3,
+     "as": "NAMDAECHON",
+     "flag": "PRK"
+    },
+    {
+     "start": "2026-08-04",
+     "end": "2026-08-06",
+     "port": "VLADIVOSTOK",
+     "country": "RUS",
+     "confidence": 4,
+     "as": "NAMDAECHON",
+     "flag": "PRK"
+    },
+    {
+     "start": "2026-07-07",
+     "end": "2026-08-04",
+     "port": "VLADIVOSTOK",
+     "country": "RUS",
+     "confidence": 4,
+     "as": "NAMDAECHON",
+     "flag": "PRK"
+    },
+    {
+     "start": "2026-01-18",
+     "end": "2026-01-22",
+     "port": "GOUQI ISLAND",
+     "country": "CHN",
+     "confidence": 4,
+     "as": "NAMDAECHON",
+     "flag": "PRK"
+    }
+   ],
+   "radarMonths": []
+  },
+  {
+   "name": "Ever Glory",
+   "imo": "8909915",
+   "lists": [
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "EUGENE1HO",
+     "flag": "KOR",
+     "mmsi": "440000450",
+     "first": "2016-10-14",
+     "last": "2026-10-09"
+    },
+    {
+     "name": "HYONG JE BONG",
+     "flag": "PRK",
+     "mmsi": "445589000",
+     "first": "2023-03-09",
+     "last": "2023-06-18"
+    },
+    {
+     "name": "PK@@@@@@@@@@@@@@@@@L",
+     "flag": null,
+     "mmsi": "45441864",
+     "first": "2022-08-09",
+     "last": "2023-01-13"
+    },
+    {
+     "name": "EVER GLORY",
+     "flag": "COM",
+     "mmsi": "620231000",
+     "first": "2017-01-05",
+     "last": "2017-03-15"
+    },
+    {
+     "name": "ELEANOR SUN",
+     "flag": "TZA",
+     "mmsi": "677096800",
+     "first": "2016-09-08",
+     "last": "2017-01-05"
+    },
+    {
+     "name": "ELEANOR SUN",
+     "flag": null,
+     "mmsi": "67709688",
+     "first": "2016-11-09",
+     "last": "2016-11-13"
+    },
+    {
+     "name": "ELEANOR SUN",
+     "flag": "SLE",
+     "mmsi": "667096800",
+     "first": "2016-09-20",
+     "last": "2016-11-04"
+    },
+    {
+     "name": "ELEANOR SUN",
+     "flag": "SLE",
+     "mmsi": "667001378",
+     "first": "2015-05-28",
+     "last": "2016-09-02"
+    },
+    {
+     "name": "ELEANORSUN",
+     "flag": "KIR",
+     "mmsi": "529543000",
+     "first": "2012-11-24",
+     "last": "2015-05-28"
+    },
+    {
+     "name": "JIN KOREA",
+     "flag": "KOR",
+     "mmsi": "441229000",
+     "first": "2012-01-25",
+     "last": "2012-11-24"
+    }
+   ],
+   "lastSeen": "2026-10-09",
+   "visits": [
+    {
+     "start": "2026-10-07",
+     "end": "2026-10-08",
+     "port": "",
+     "country": "KOR",
+     "confidence": 3,
+     "as": "EUGENE1HO",
+     "flag": "KOR"
+    },
+    {
+     "start": "2026-09-29",
+     "end": "2026-10-07",
+     "port": "",
+     "country": "KOR",
+     "confidence": 4,
+     "as": "EUGENE1HO",
+     "flag": "KOR"
+    },
+    {
+     "start": "2026-09-28",
+     "end": "2026-09-29",
+     "port": "",
+     "country": "KOR",
+     "confidence": 4,
+     "as": "EUGENE1HO",
+     "flag": "KOR"
+    },
+    {
+     "start": "2026-09-27",
+     "end": "2026-09-28",
+     "port": "",
+     "country": "KOR",
+     "confidence": 4,
+     "as": "EUGENE1HO",
+     "flag": "KOR"
+    },
+    {
+     "start": "2026-09-16",
+     "end": "2026-09-27",
+     "port": "",
+     "country": "KOR",
+     "confidence": 4,
+     "as": "EUGENE1HO",
+     "flag": "KOR"
+    },
+    {
+     "start": "2026-09-15",
+     "end": "2026-09-16",
+     "port": "",
+     "country": "KOR",
+     "confidence": 4,
+     "as": "EUGENE1HO",
+     "flag": "KOR"
+    },
+    {
+     "start": "2026-09-11",
+     "end": "2026-09-15",
+     "port": "",
+     "country": "KOR",
+     "confidence": 4,
+     "as": "EUGENE1HO",
+     "flag": "KOR"
+    },
+    {
+     "start": "2026-09-10",
+     "end": "2026-09-11",
+     "port": "",
+     "country": "KOR",
+     "confidence": 4,
+     "as": "EUGENE1HO",
+     "flag": "KOR"
+    },
+    {
+     "start": "2026-09-07",
+     "end": "2026-09-10",
+     "port": "",
+     "country": "KOR",
+     "confidence": 4,
+     "as": "EUGENE1HO",
+     "flag": "KOR"
+    },
+    {
+     "start": "2026-09-06",
+     "end": "2026-09-07",
+     "port": "",
+     "country": "KOR",
+     "confidence": 4,
+     "as": "EUGENE1HO",
+     "flag": "KOR"
+    },
+    {
+     "start": "2026-08-28",
+     "end": "2026-09-06",
+     "port": "",
+     "country": "KOR",
+     "confidence": 4,
+     "as": "EUGENE1HO",
+     "flag": "KOR"
+    },
+    {
+     "start": "2026-08-27",
+     "end": "2026-08-28",
+     "port": "",
+     "country": "KOR",
+     "confidence": 4,
+     "as": "EUGENE1HO",
+     "flag": "KOR"
+    },
+    {
+     "start": "2026-08-19",
+     "end": "2026-08-26",
+     "port": "",
+     "country": "KOR",
+     "confidence": 4,
+     "as": "EUGENE1HO",
+     "flag": "KOR"
+    },
+    {
+     "start": "2026-08-18",
+     "end": "2026-08-19",
+     "port": "",
+     "country": "KOR",
+     "confidence": 4,
+     "as": "EUGENE1HO",
+     "flag": "KOR"
+    },
+    {
+     "start": "2026-08-15",
+     "end": "2026-08-18",
+     "port": "",
+     "country": "KOR",
+     "confidence": 4,
+     "as": "EUGENE1HO",
+     "flag": "KOR"
+    },
+    {
+     "start": "2026-08-04",
+     "end": "2026-08-15",
+     "port": "",
+     "country": "KOR",
+     "confidence": 4,
+     "as": "EUGENE1HO",
+     "flag": "KOR"
+    },
+    {
+     "start": "2026-08-03",
+     "end": "2026-08-03",
+     "port": "",
+     "country": "KOR",
+     "confidence": 4,
+     "as": "EUGENE1HO",
+     "flag": "KOR"
+    },
+    {
+     "start": "2026-08-02",
+     "end": "2026-08-02",
+     "port": "",
+     "country": "KOR",
+     "confidence": 4,
+     "as": "EUGENE1HO",
+     "flag": "KOR"
+    },
+    {
+     "start": "2026-08-01",
+     "end": "2026-08-01",
+     "port": "",
+     "country": "KOR",
+     "confidence": 4,
+     "as": "EUGENE1HO",
+     "flag": "KOR"
+    },
+    {
+     "start": "2026-07-20",
+     "end": "2026-07-31",
+     "port": "",
+     "country": "KOR",
+     "confidence": 4,
+     "as": "EUGENE1HO",
+     "flag": "KOR"
+    },
+    {
+     "start": "2026-07-19",
+     "end": "2026-07-19",
+     "port": "",
+     "country": "KOR",
+     "confidence": 4,
+     "as": "EUGENE1HO",
+     "flag": "KOR"
+    },
+    {
+     "start": "2026-07-19",
+     "end": "2026-07-20",
+     "port": "",
+     "country": "KOR",
+     "confidence": 4,
+     "as": "EUGENE1HO",
+     "flag": "KOR"
+    },
+    {
+     "start": "2026-07-18",
+     "end": "2026-07-18",
+     "port": "",
+     "country": "KOR",
+     "confidence": 4,
+     "as": "EUGENE1HO",
+     "flag": "KOR"
+    },
+    {
+     "start": "2026-07-17",
+     "end": "2026-07-17",
+     "port": "",
+     "country": "KOR",
+     "confidence": 4,
+     "as": "EUGENE1HO",
+     "flag": "KOR"
+    },
+    {
+     "start": "2026-07-06",
+     "end": "2026-07-16",
+     "port": "",
+     "country": "KOR",
+     "confidence": 4,
+     "as": "EUGENE1HO",
+     "flag": "KOR"
+    },
+    {
+     "start": "2026-07-05",
+     "end": "2026-07-05",
+     "port": "",
+     "country": "KOR",
+     "confidence": 4,
+     "as": "EUGENE1HO",
+     "flag": "KOR"
+    },
+    {
+     "start": "2026-07-04",
+     "end": "2026-07-04",
+     "port": "",
+     "country": "KOR",
+     "confidence": 4,
+     "as": "EUGENE1HO",
+     "flag": "KOR"
+    },
+    {
+     "start": "2026-07-03",
+     "end": "2026-07-03",
+     "port": "",
+     "country": "KOR",
+     "confidence": 4,
+     "as": "EUGENE1HO",
+     "flag": "KOR"
+    },
+    {
+     "start": "2026-07-02",
+     "end": "2026-07-02",
+     "port": "",
+     "country": "KOR",
+     "confidence": 4,
+     "as": "EUGENE1HO",
+     "flag": "KOR"
+    },
+    {
+     "start": "2026-06-30",
+     "end": "2026-07-01",
+     "port": "",
+     "country": "KOR",
+     "confidence": 4,
+     "as": "EUGENE1HO",
+     "flag": "KOR"
+    },
+    {
+     "start": "2026-06-18",
+     "end": "2026-06-30",
+     "port": "",
+     "country": "KOR",
+     "confidence": 4,
+     "as": "EUGENE1HO",
+     "flag": "KOR"
+    },
+    {
+     "start": "2026-06-17",
+     "end": "2026-06-18",
+     "port": "",
+     "country": "KOR",
+     "confidence": 4,
+     "as": "EUGENE1HO",
+     "flag": "KOR"
+    },
+    {
+     "start": "2026-06-16",
+     "end": "2026-06-17",
+     "port": "",
+     "country": "KOR",
+     "confidence": 4,
+     "as": "EUGENE1HO",
+     "flag": "KOR"
+    },
+    {
+     "start": "2026-06-13",
+     "end": "2026-06-16",
+     "port": "",
+     "country": "KOR",
+     "confidence": 4,
+     "as": "EUGENE1HO",
+     "flag": "KOR"
+    },
+    {
+     "start": "2026-06-12",
+     "end": "2026-06-12",
+     "port": "",
+     "country": "KOR",
+     "confidence": 4,
+     "as": "EUGENE1HO",
+     "flag": "KOR"
+    },
+    {
+     "start": "2026-06-05",
+     "end": "2026-06-11",
+     "port": "",
+     "country": "KOR",
+     "confidence": 4,
+     "as": "EUGENE1HO",
+     "flag": "KOR"
+    },
+    {
+     "start": "2026-06-04",
+     "end": "2026-06-05",
+     "port": "",
+     "country": "KOR",
+     "confidence": 4,
+     "as": "EUGENE1HO",
+     "flag": "KOR"
+    },
+    {
+     "start": "2026-05-27",
+     "end": "2026-06-04",
+     "port": "",
+     "country": "KOR",
+     "confidence": 4,
+     "as": "EUGENE1HO",
+     "flag": "KOR"
+    },
+    {
+     "start": "2026-05-20",
+     "end": "2026-05-26",
+     "port": "",
+     "country": "KOR",
+     "confidence": 4,
+     "as": "EUGENE1HO",
+     "flag": "KOR"
+    },
+    {
+     "start": "2026-05-08",
+     "end": "2026-05-13",
+     "port": "",
+     "country": "KOR",
+     "confidence": 4,
+     "as": "EUGENE1HO",
+     "flag": "KOR"
+    },
+    {
+     "start": "2026-04-30",
+     "end": "2026-05-08",
+     "port": "",
+     "country": "KOR",
+     "confidence": 4,
+     "as": "EUGENE1HO",
+     "flag": "KOR"
+    },
+    {
+     "start": "2026-04-28",
+     "end": "2026-04-29",
+     "port": "",
+     "country": "KOR",
+     "confidence": 4,
+     "as": "EUGENE1HO",
+     "flag": "KOR"
+    },
+    {
+     "start": "2026-04-27",
+     "end": "2026-04-28",
+     "port": "",
+     "country": "KOR",
+     "confidence": 4,
+     "as": "EUGENE1HO",
+     "flag": "KOR"
+    },
+    {
+     "start": "2026-04-20",
+     "end": "2026-04-27",
+     "port": "",
+     "country": "KOR",
+     "confidence": 4,
+     "as": "EUGENE1HO",
+     "flag": "KOR"
+    },
+    {
+     "start": "2026-04-19",
+     "end": "2026-04-20",
+     "port": "",
+     "country": "KOR",
+     "confidence": 4,
+     "as": "EUGENE1HO",
+     "flag": "KOR"
+    },
+    {
+     "start": "2026-04-08",
+     "end": "2026-04-19",
+     "port": "",
+     "country": "KOR",
+     "confidence": 4,
+     "as": "EUGENE1HO",
+     "flag": "KOR"
+    },
+    {
+     "start": "2026-03-31",
+     "end": "2026-04-08",
+     "port": "",
+     "country": "KOR",
+     "confidence": 4,
+     "as": "EUGENE1HO",
+     "flag": "KOR"
+    },
+    {
+     "start": "2026-03-27",
+     "end": "2026-03-30",
+     "port": "",
+     "country": "KOR",
+     "confidence": 4,
+     "as": "EUGENE1HO",
+     "flag": "KOR"
+    },
+    {
+     "start": "2026-03-23",
+     "end": "2026-03-27",
+     "port": "",
+     "country": "KOR",
+     "confidence": 4,
+     "as": "EUGENE1HO",
+     "flag": "KOR"
+    },
+    {
+     "start": "2026-03-19",
+     "end": "2026-03-23",
+     "port": "",
+     "country": "KOR",
+     "confidence": 4,
+     "as": "EUGENE1HO",
+     "flag": "KOR"
+    },
+    {
+     "start": "2026-03-12",
+     "end": "2026-03-19",
+     "port": "",
+     "country": "KOR",
+     "confidence": 4,
+     "as": "EUGENE1HO",
+     "flag": "KOR"
+    },
+    {
+     "start": "2026-03-04",
+     "end": "2026-03-11",
+     "port": "",
+     "country": "KOR",
+     "confidence": 4,
+     "as": "EUGENE1HO",
+     "flag": "KOR"
+    },
+    {
+     "start": "2026-02-20",
+     "end": "2026-03-03",
+     "port": "",
+     "country": "KOR",
+     "confidence": 4,
+     "as": "EUGENE1HO",
+     "flag": "KOR"
+    },
+    {
+     "start": "2026-02-19",
+     "end": "2026-02-20",
+     "port": "",
+     "country": "KOR",
+     "confidence": 4,
+     "as": "EUGENE1HO",
+     "flag": "KOR"
+    },
+    {
+     "start": "2026-02-04",
+     "end": "2026-02-19",
+     "port": "",
+     "country": "KOR",
+     "confidence": 4,
+     "as": "EUGENE1HO",
+     "flag": "KOR"
+    },
+    {
+     "start": "2026-02-03",
+     "end": "2026-02-04",
+     "port": "",
+     "country": "KOR",
+     "confidence": 4,
+     "as": "EUGENE1HO",
+     "flag": "KOR"
+    },
+    {
+     "start": "2026-01-31",
+     "end": "2026-02-03",
+     "port": "",
+     "country": "KOR",
+     "confidence": 4,
+     "as": "EUGENE1HO",
+     "flag": "KOR"
+    },
+    {
+     "start": "2026-01-28",
+     "end": "2026-01-30",
+     "port": "",
+     "country": "KOR",
+     "confidence": 4,
+     "as": "EUGENE1HO",
+     "flag": "KOR"
+    },
+    {
+     "start": "2026-01-25",
+     "end": "2026-01-28",
+     "port": "",
+     "country": "KOR",
+     "confidence": 4,
+     "as": "EUGENE1HO",
+     "flag": "KOR"
+    },
+    {
+     "start": "2025-12-23",
+     "end": "2026-01-25",
+     "port": "",
+     "country": "KOR",
+     "confidence": 4,
+     "as": "EUGENE1HO",
+     "flag": "KOR"
+    },
+    {
+     "start": "2025-12-18",
+     "end": "2025-12-23",
+     "port": "",
+     "country": "KOR",
+     "confidence": 4,
+     "as": "EUGENE1HO",
+     "flag": "KOR"
+    },
+    {
+     "start": "2025-12-09",
+     "end": "2025-12-18",
+     "port": "",
+     "country": "KOR",
+     "confidence": 4,
+     "as": "EUGENE1HO",
+     "flag": "KOR"
+    },
+    {
+     "start": "2025-12-02",
+     "end": "2025-12-09",
+     "port": "",
+     "country": "KOR",
+     "confidence": 4,
+     "as": "EUGENE1HO",
+     "flag": "KOR"
+    },
+    {
+     "start": "2025-11-22",
+     "end": "2025-12-01",
+     "port": "",
+     "country": "KOR",
+     "confidence": 4,
+     "as": "EUGENE1HO",
+     "flag": "KOR"
+    },
+    {
+     "start": "2025-11-19",
+     "end": "2025-11-21",
+     "port": "",
+     "country": "KOR",
+     "confidence": 4,
+     "as": "EUGENE1HO",
+     "flag": "KOR"
+    },
+    {
+     "start": "2025-11-14",
+     "end": "2025-11-19",
+     "port": "",
+     "country": "KOR",
+     "confidence": 4,
+     "as": "EUGENE1HO",
+     "flag": "KOR"
+    },
+    {
+     "start": "2025-11-08",
+     "end": "2025-11-14",
+     "port": "",
+     "country": "KOR",
+     "confidence": 4,
+     "as": "EUGENE1HO",
+     "flag": "KOR"
+    },
+    {
+     "start": "2025-11-07",
+     "end": "2025-11-08",
+     "port": "",
+     "country": "KOR",
+     "confidence": 4,
+     "as": "EUGENE1HO",
+     "flag": "KOR"
+    },
+    {
+     "start": "2025-10-31",
+     "end": "2025-11-06",
+     "port": "",
+     "country": "KOR",
+     "confidence": 4,
+     "as": "EUGENE1HO",
+     "flag": "KOR"
+    }
+   ],
+   "radarMonths": []
+  },
+  {
+   "name": "Po Chon",
+   "imo": "8848276",
+   "lists": [
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "TB",
+     "flag": "KHM",
+     "mmsi": "514339000",
+     "first": "2015-01-07",
+     "last": "2026-10-09"
+    },
+    {
+     "name": "TONGBAEK",
+     "flag": "PRK",
+     "mmsi": "445206000",
+     "first": "2017-05-07",
+     "last": "2026-09-19"
+    },
+    {
+     "name": "TONGBAEK",
+     "flag": "PRK",
+     "mmsi": "445206000",
+     "first": "2017-05-07",
+     "last": "2026-09-19"
+    },
+    {
+     "name": "T.B",
+     "flag": "HKG",
+     "mmsi": "477927500",
+     "first": "2026-01-22",
+     "last": "2026-01-30"
+    },
+    {
+     "name": "ZEBRA",
+     "flag": "FJI",
+     "mmsi": "520377261",
+     "first": "2016-11-12",
+     "last": "2017-03-14"
+    },
+    {
+     "name": "EROS",
+     "flag": "TZA",
+     "mmsi": "677090600",
+     "first": "2016-06-18",
+     "last": "2016-11-07"
+    },
+    {
+     "name": "M/T.EROS",
+     "flag": "SLE",
+     "mmsi": "667001504",
+     "first": "2016-02-03",
+     "last": "2016-04-10"
+    },
+    {
+     "name": "MT DRAGON ACE NO5",
+     "flag": "KOR",
+     "mmsi": "440509000",
+     "first": "2012-01-04",
+     "last": "2015-01-07"
+    }
+   ],
+   "lastSeen": "2026-10-09",
+   "visits": [
+    {
+     "start": "2026-10-06",
+     "end": "2026-10-07",
+     "port": "TAIZHOU",
+     "country": "CHN",
+     "confidence": 4,
+     "as": "TB",
+     "flag": "KHM"
+    },
+    {
+     "start": "2026-06-28",
+     "end": "2026-07-09",
+     "port": "",
+     "country": "PRK",
+     "confidence": 4,
+     "as": "TONGBAEK",
+     "flag": "PRK"
+    },
+    {
+     "start": "2026-03-22",
+     "end": "2026-05-13",
+     "port": "WENZHOU",
+     "country": "CHN",
+     "confidence": 4,
+     "as": "TONGBAEK",
+     "flag": "PRK"
+    },
+    {
+     "start": "2025-12-11",
+     "end": "2025-12-12",
+     "port": "YUSHAN ISLAND",
+     "country": "CHN",
+     "confidence": 4,
+     "as": "TONGBAEK",
+     "flag": "PRK"
+    },
+    {
+     "start": "2025-11-13",
+     "end": "2025-11-21",
+     "port": "PUTIAN",
+     "country": "CHN",
+     "confidence": 4,
+     "as": "TONGBAEK",
+     "flag": "PRK"
+    }
+   ],
+   "radarMonths": []
+  },
+  {
+   "name": "Song Won",
+   "imo": "8613360",
+   "lists": [
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "SONG WON",
+     "flag": "PRK",
+     "mmsi": "445272000",
+     "first": "2017-05-07",
+     "last": "2026-10-09"
+    },
+    {
+     "name": "SONG WON",
+     "flag": "PRK",
+     "mmsi": "445272000",
+     "first": "2017-05-07",
+     "last": "2026-10-09"
+    },
+    {
+     "name": "PUMA",
+     "flag": "FJI",
+     "mmsi": "520377258",
+     "first": "2016-11-11",
+     "last": "2018-04-18"
+    },
+    {
+     "name": "HUMA",
+     "flag": "TZA",
+     "mmsi": "677090400",
+     "first": "2016-05-28",
+     "last": "2016-11-10"
+    },
+    {
+     "name": "DPETRO166",
+     "flag": "KHM",
+     "mmsi": "515756000",
+     "first": "2013-06-21",
+     "last": "2016-04-27"
+    },
+    {
+     "name": "TAEWON166",
+     "flag": "PRK",
+     "mmsi": "445394000",
+     "first": "2012-05-13",
+     "last": "2013-06-25"
+    }
+   ],
+   "lastSeen": "2026-10-09",
+   "visits": [
+    {
+     "start": "2026-07-24",
+     "end": "2026-09-24",
+     "port": "",
+     "country": "PRK",
+     "confidence": 4,
+     "as": "SONG WON",
+     "flag": "PRK"
+    },
+    {
+     "start": "2026-06-16",
+     "end": "2026-06-16",
+     "port": "",
+     "country": "PRK",
+     "confidence": 4,
+     "as": "SONG WON",
+     "flag": "PRK"
+    },
+    {
+     "start": "2026-04-30",
+     "end": "2026-05-22",
+     "port": "",
+     "country": "PRK",
+     "confidence": 4,
+     "as": "SONG WON",
+     "flag": "PRK"
+    }
+   ],
+   "radarMonths": []
+  },
+  {
+   "name": "Hua Fu",
+   "imo": "9020003",
+   "lists": [
+    "UK",
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "PUK DAE BONG",
+     "flag": "PRK",
+     "mmsi": "445333000",
+     "first": "2026-10-03",
+     "last": "2026-10-06"
+    },
+    {
+     "name": "HUA FU",
+     "flag": "PAN",
+     "mmsi": "353715000",
+     "first": "2017-05-18",
+     "last": "2019-05-22"
+    },
+    {
+     "name": "HUA FU",
+     "flag": "FJI",
+     "mmsi": "520377301",
+     "first": "2016-12-12",
+     "last": "2017-05-18"
+    },
+    {
+     "name": "CHANG AN",
+     "flag": "TZA",
+     "mmsi": "677011200",
+     "first": "2016-09-27",
+     "last": "2016-12-10"
+    },
+    {
+     "name": "SN HARMONY",
+     "flag": "KOR",
+     "mmsi": "440991000",
+     "first": "2012-01-01",
+     "last": "2016-09-27"
+    }
+   ],
+   "lastSeen": "2026-10-06",
+   "visits": [],
+   "radarMonths": []
+  },
+  {
+   "name": "An San 1",
+   "imo": "7303803",
+   "lists": [
+    "UK",
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "ANSAN1",
+     "flag": "PRK",
+     "mmsi": "445018000",
+     "first": "2012-05-16",
+     "last": "2026-10-04"
+    },
+    {
+     "name": "AMUDARYIA",
+     "flag": "PRK",
+     "mmsi": "445632178",
+     "first": "2014-07-17",
+     "last": "2014-07-17"
+    }
+   ],
+   "lastSeen": "2026-10-04",
+   "visits": [
+    {
+     "start": "2026-09-21",
+     "end": "2026-09-21",
+     "port": "SHANGHAI",
+     "country": "CHN",
+     "confidence": 4,
+     "as": "ANSAN1",
+     "flag": "PRK"
+    },
+    {
+     "start": "2026-09-21",
+     "end": "2026-09-24",
+     "port": "SHANGHAI",
+     "country": "CHN",
+     "confidence": 4,
+     "as": "ANSAN1",
+     "flag": "PRK"
+    },
+    {
+     "start": "2022-05-20",
+     "end": "2026-09-18",
+     "port": "",
+     "country": "PRK",
+     "confidence": 4,
+     "as": "ANSAN1",
+     "flag": "PRK"
+    }
+   ],
+   "radarMonths": []
+  },
+  {
+   "name": "Chon Ma San",
+   "imo": "8660313",
+   "lists": [
+    "UK",
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "CHON MA SAN",
+     "flag": "PRK",
+     "mmsi": "445082000",
+     "first": "2026-01-26",
+     "last": "2026-10-03"
+    },
+    {
+     "name": "CHONG   SAN",
+     "flag": null,
+     "mmsi": "111122000",
+     "first": "2026-07-19",
+     "last": "2026-07-20"
+    }
+   ],
+   "lastSeen": "2026-10-03",
+   "visits": [
+    {
+     "start": "2026-09-03",
+     "end": "2026-09-04",
+     "port": "",
+     "country": "PRK",
+     "confidence": 4,
+     "as": "CHON MA SAN",
+     "flag": "PRK"
+    },
+    {
+     "start": "2026-03-03",
+     "end": "2026-03-10",
+     "port": "FUZHOU",
+     "country": "CHN",
+     "confidence": 4,
+     "as": "CHON MA SAN",
+     "flag": "PRK"
+    }
+   ],
+   "radarMonths": [
+    "2026-07"
+   ]
+  },
+  {
+   "name": "Dawnlight",
+   "imo": "9110236",
+   "lists": [
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "KOSAN",
+     "flag": "PRK",
+     "mmsi": "445529000",
+     "first": "2017-01-29",
+     "last": "2026-09-27"
+    },
+    {
+     "name": "FIRSTGLEAM",
+     "flag": "TZA",
+     "mmsi": "677085200",
+     "first": "2016-02-19",
+     "last": "2016-12-21"
+    },
+    {
+     "name": "DAWNLIGHT",
+     "flag": "MNG",
+     "mmsi": "457097000",
+     "first": "2014-06-21",
+     "last": "2016-03-11"
+    },
+    {
+     "name": "DAWNLIGHT",
+     "flag": "PAN",
+     "mmsi": "370442000",
+     "first": "2012-01-01",
+     "last": "2014-05-08"
+    }
+   ],
+   "lastSeen": "2026-09-27",
+   "visits": [
+    {
+     "start": "2026-04-12",
+     "end": "2026-04-12",
+     "port": "SHIDAO",
+     "country": "CHN",
+     "confidence": 4,
+     "as": "KOSAN",
+     "flag": "PRK"
+    }
+   ],
+   "radarMonths": []
+  },
+  {
+   "name": "Thae Pyong San",
+   "imo": "9009085",
+   "lists": [
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "THAE PHYONG SAN",
+     "flag": "PRK",
+     "mmsi": "445527000",
+     "first": "2015-09-12",
+     "last": "2026-09-26"
+    },
+    {
+     "name": "PETREL NO1",
+     "flag": "KHM",
+     "mmsi": "515040000",
+     "first": "2015-03-29",
+     "last": "2015-07-28"
+    },
+    {
+     "name": "PETREL1",
+     "flag": "KIR",
+     "mmsi": "529718000",
+     "first": "2014-03-20",
+     "last": "2015-03-29"
+    },
+    {
+     "name": "PETREL 1",
+     "flag": "PAN",
+     "mmsi": "353711000",
+     "first": "2013-06-18",
+     "last": "2014-03-20"
+    },
+    {
+     "name": "MV ATOZ",
+     "flag": "KOR",
+     "mmsi": "440102000",
+     "first": "2012-01-13",
+     "last": "2013-06-18"
+    }
+   ],
+   "lastSeen": "2026-09-26",
+   "visits": [
+    {
+     "start": "2026-09-26",
+     "end": "2026-09-26",
+     "port": "",
+     "country": "PRK",
+     "confidence": 3,
+     "as": "THAE PHYONG SAN",
+     "flag": "PRK"
+    },
+    {
+     "start": "2026-07-22",
+     "end": "2026-07-22",
+     "port": "NAMPO",
+     "country": "PRK",
+     "confidence": 4,
+     "as": "THAE PHYONG SAN",
+     "flag": "PRK"
+    },
+    {
+     "start": "2026-07-09",
+     "end": "2026-07-15",
+     "port": "NAMPO",
+     "country": "PRK",
+     "confidence": 4,
+     "as": "THAE PHYONG SAN",
+     "flag": "PRK"
+    },
+    {
+     "start": "2026-06-30",
+     "end": "2026-07-09",
+     "port": "",
+     "country": "PRK",
+     "confidence": 4,
+     "as": "THAE PHYONG SAN",
+     "flag": "PRK"
+    }
+   ],
+   "radarMonths": []
+  },
+  {
+   "name": "Hoe Ryong",
+   "imo": "9041552",
+   "lists": [
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "HOE RYONG",
+     "flag": "PRK",
+     "mmsi": "445150000",
+     "first": "2014-09-29",
+     "last": "2026-09-24"
+    },
+    {
+     "name": "HOE RYONG",
+     "flag": "PRK",
+     "mmsi": "445150000",
+     "first": "2014-09-29",
+     "last": "2026-09-24"
+    },
+    {
+     "name": "FU HAI 77",
+     "flag": "HKG",
+     "mmsi": "477036200",
+     "first": "2023-12-02",
+     "last": "2023-12-16"
+    },
+    {
+     "name": "FU HAI 77",
+     "flag": "HKG",
+     "mmsi": "477036100",
+     "first": "2023-11-26",
+     "last": "2023-11-26"
+    },
+    {
+     "name": "WANGJAESAN 2",
+     "flag": "PRK",
+     "mmsi": "445039000",
+     "first": "2013-01-17",
+     "last": "2014-09-22"
+    },
+    {
+     "name": "FU HAI NO.10",
+     "flag": "BLZ",
+     "mmsi": "312575000",
+     "first": "2012-01-01",
+     "last": "2013-01-17"
+    }
+   ],
+   "lastSeen": "2026-09-24",
+   "visits": [
+    {
+     "start": "2025-12-20",
+     "end": "2025-12-20",
+     "port": "WONSAN",
+     "country": "PRK",
+     "confidence": 4,
+     "as": "HOE RYONG",
+     "flag": "PRK"
+    }
+   ],
+   "radarMonths": [
+    "2026-09"
+   ]
+  },
+  {
+   "name": "Gold Star 3",
+   "imo": "8405402",
+   "lists": [
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "CHONG AM;",
+     "flag": null,
+     "mmsi": "446632832",
+     "first": "2026-05-10",
+     "last": "2026-09-16"
+    },
+    {
+     "name": "CHONG AM",
+     "flag": "PRK",
+     "mmsi": "445584000",
+     "first": "2017-02-09",
+     "last": "2026-01-04"
+    },
+    {
+     "name": "GOLD STAR 3",
+     "flag": "KHM",
+     "mmsi": "514445000",
+     "first": "2015-04-18",
+     "last": "2016-03-31"
+    },
+    {
+     "name": "BENEVOLENCE 2",
+     "flag": "KIR",
+     "mmsi": "529719000",
+     "first": "2014-04-01",
+     "last": "2015-04-07"
+    },
+    {
+     "name": "BENEVOLENCE 2",
+     "flag": "PAN",
+     "mmsi": "351155000",
+     "first": "2012-02-02",
+     "last": "2014-04-01"
+    }
+   ],
+   "lastSeen": "2026-09-16",
+   "visits": [],
+   "radarMonths": [
+    "2026-08"
+   ]
+  },
+  {
+   "name": "Oriental Treasure",
+   "imo": "9115028",
+   "lists": [
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "SIN HAE",
+     "flag": "PRK",
+     "mmsi": "445058000",
+     "first": "2022-08-24",
+     "last": "2026-09-16"
+    },
+    {
+     "name": "ORIENTAL TREASURE",
+     "flag": "PRK",
+     "mmsi": "445058005",
+     "first": "2020-12-20",
+     "last": "2022-10-24"
+    },
+    {
+     "name": "ORIENTAL TREASURE",
+     "flag": "COM",
+     "mmsi": "620256000",
+     "first": "2017-02-15",
+     "last": "2019-01-20"
+    },
+    {
+     "name": "ORIENTAL TREASURE",
+     "flag": "TZA",
+     "mmsi": "677088900",
+     "first": "2016-09-10",
+     "last": "2017-02-15"
+    },
+    {
+     "name": "ORIENTAL TREASURE",
+     "flag": "KOR",
+     "mmsi": "441715000",
+     "first": "2013-06-13",
+     "last": "2016-09-30"
+    }
+   ],
+   "lastSeen": "2026-09-16",
+   "visits": [],
+   "radarMonths": []
+  },
+  {
+   "name": "Sam Ma 2",
+   "imo": "8106496",
+   "lists": [
+    "UK",
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "SAMMA2",
+     "flag": "PRK",
+     "mmsi": "445220000",
+     "first": "2012-10-27",
+     "last": "2026-09-15"
+    }
+   ],
+   "lastSeen": "2026-09-15",
+   "visits": [],
+   "radarMonths": []
+  },
+  {
+   "name": "Wan Heng 11",
+   "imo": "8791667",
+   "lists": [
+    "UK"
+   ],
+   "ais": [
+    {
+     "name": "KUMJINGANG3",
+     "flag": "PRK",
+     "mmsi": "445815000",
+     "first": "2018-06-21",
+     "last": "2026-09-14"
+    },
+    {
+     "name": "WAN HENG  11",
+     "flag": "BLZ",
+     "mmsi": "312475000",
+     "first": "2017-12-25",
+     "last": "2018-01-10"
+    },
+    {
+     "name": "WAN HENG  11",
+     "flag": "JPN",
+     "mmsi": "431247510",
+     "first": "2017-12-28",
+     "last": "2017-12-28"
+    }
+   ],
+   "lastSeen": "2026-09-14",
+   "visits": [
+    {
+     "start": "2026-08-25",
+     "end": "2026-08-25",
+     "port": "SHANGHAI",
+     "country": "CHN",
+     "confidence": 4,
+     "as": "KUMJINGANG3",
+     "flag": "PRK"
+    },
+    {
+     "start": "2026-08-07",
+     "end": "2026-08-07",
+     "port": "QUANZHOU",
+     "country": "CHN",
+     "confidence": 4,
+     "as": "KUMJINGANG3",
+     "flag": "PRK"
+    },
+    {
+     "start": "2026-08-07",
+     "end": "2026-08-10",
+     "port": "XIAMEN",
+     "country": "CHN",
+     "confidence": 4,
+     "as": "KUMJINGANG3",
+     "flag": "PRK"
+    },
+    {
+     "start": "2026-08-05",
+     "end": "2026-08-07",
+     "port": "FUZHOU",
+     "country": "CHN",
+     "confidence": 4,
+     "as": "KUMJINGANG3",
+     "flag": "PRK"
+    },
+    {
+     "start": "2025-11-05",
+     "end": "2025-11-05",
+     "port": "ZHOUSHAN",
+     "country": "CHN",
+     "confidence": 4,
+     "as": "KUMJINGANG3",
+     "flag": "PRK"
+    }
+   ],
+   "radarMonths": []
+  },
+  {
+   "name": "Yu Son",
+   "imo": "8691702",
+   "lists": [
+    "UK",
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "YU SON",
+     "flag": "PRK",
+     "mmsi": "445604000",
+     "first": "2017-05-16",
+     "last": "2026-08-19"
+    },
+    {
+     "name": "YU SON",
+     "flag": "PRK",
+     "mmsi": "445604000",
+     "first": "2017-05-16",
+     "last": "2026-08-19"
+    },
+    {
+     "name": "Y CHUN",
+     "flag": "FJI",
+     "mmsi": "520377340",
+     "first": "2017-01-09",
+     "last": "2017-04-27"
+    },
+    {
+     "name": "Y CHUN",
+     "flag": "TZA",
+     "mmsi": "677099900",
+     "first": "2016-08-24",
+     "last": "2017-01-09"
+    },
+    {
+     "name": "U SUN",
+     "flag": "PLW",
+     "mmsi": "511329000",
+     "first": "2016-05-11",
+     "last": "2016-08-24"
+    }
+   ],
+   "lastSeen": "2026-08-19",
+   "visits": [
+    {
+     "start": "2026-08-11",
+     "end": "2026-08-15",
+     "port": "FUZHOU",
+     "country": "CHN",
+     "confidence": 4,
+     "as": "YU SON",
+     "flag": "PRK"
+    },
+    {
+     "start": "2026-08-04",
+     "end": "2026-08-07",
+     "port": "FUZHOU",
+     "country": "CHN",
+     "confidence": 4,
+     "as": "YU SON",
+     "flag": "PRK"
+    },
+    {
+     "start": "2026-07-24",
+     "end": "2026-07-26",
+     "port": "SHANGHAI",
+     "country": "CHN",
+     "confidence": 4,
+     "as": "YU SON",
+     "flag": "PRK"
+    },
+    {
+     "start": "2026-05-15",
+     "end": "2026-05-31",
+     "port": "LUHUASHAN ANCHORAGE",
+     "country": "CHN",
+     "confidence": 4,
+     "as": "YU SON",
+     "flag": "PRK"
+    }
+   ],
+   "radarMonths": []
+  },
+  {
+   "name": "So Baek San",
+   "imo": "8658267",
+   "lists": [
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "159",
+     "flag": "PRK",
+     "mmsi": "445843000",
+     "first": "2024-06-20",
+     "last": "2026-08-06"
+    },
+    {
+     "name": "SO BAEK SAN",
+     "flag": "PRK",
+     "mmsi": "445025000",
+     "first": "2012-12-10",
+     "last": "2025-07-28"
+    }
+   ],
+   "lastSeen": "2026-08-06",
+   "visits": [
+    {
+     "start": "2026-08-06",
+     "end": "2026-08-06",
+     "port": "",
+     "country": "PRK",
+     "confidence": 3,
+     "as": "159",
+     "flag": "PRK"
+    },
+    {
+     "start": "2024-06-28",
+     "end": "2026-08-05",
+     "port": "PRK-14",
+     "country": "PRK",
+     "confidence": 3,
+     "as": "159",
+     "flag": "PRK"
+    }
+   ],
+   "radarMonths": []
+  },
+  {
+   "name": "Chong Rim 2",
+   "imo": "8916293",
+   "lists": [
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "POM SAN 3",
+     "flag": "PRK",
+     "mmsi": "445143000",
+     "first": "2016-09-10",
+     "last": "2026-07-30"
+    },
+    {
+     "name": "SAE BYOL",
+     "flag": "PRK",
+     "mmsi": "445143100",
+     "first": "2020-09-26",
+     "last": "2022-09-16"
+    },
+    {
+     "name": "CHONGRIM2",
+     "flag": "PRK",
+     "mmsi": "445175000",
+     "first": "2014-01-02",
+     "last": "2015-12-31"
+    },
+    {
+     "name": "JINJIANG2",
+     "flag": "PAN",
+     "mmsi": "351935000",
+     "first": "2012-04-07",
+     "last": "2013-08-24"
+    }
+   ],
+   "lastSeen": "2026-07-30",
+   "visits": [
+    {
+     "start": "2025-11-04",
+     "end": "2025-11-05",
+     "port": "FUZHOU",
+     "country": "CHN",
+     "confidence": 4,
+     "as": "POM SAN 3",
+     "flag": "PRK"
+    }
+   ],
+   "radarMonths": []
+  },
+  {
+   "name": "Po Thong Gang",
+   "imo": "8829555",
+   "lists": [
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "SP",
+     "flag": "PRK",
+     "mmsi": "445142000",
+     "first": "2014-12-07",
+     "last": "2026-07-02"
+    },
+    {
+     "name": "S P",
+     "flag": "PRK",
+     "mmsi": "445551000",
+     "first": "2019-12-12",
+     "last": "2022-08-10"
+    },
+    {
+     "name": "O RANG",
+     "flag": null,
+     "mmsi": "446173680",
+     "first": "2014-12-19",
+     "last": "2015-01-05"
+    },
+    {
+     "name": "PO THONG GANG",
+     "flag": "PRK",
+     "mmsi": "445127000",
+     "first": "2012-01-01",
+     "last": "2014-11-03"
+    },
+    {
+     "name": "PO THONG GANG",
+     "flag": null,
+     "mmsi": "446175568",
+     "first": "2014-06-06",
+     "last": "2014-08-08"
+    }
+   ],
+   "lastSeen": "2026-07-02",
+   "visits": [
+    {
+     "start": "2026-06-16",
+     "end": "2026-07-02",
+     "port": "",
+     "country": "PRK",
+     "confidence": 3,
+     "as": "SP",
+     "flag": "PRK"
+    },
+    {
+     "start": "2026-06-06",
+     "end": "2026-06-06",
+     "port": "",
+     "country": "PRK",
+     "confidence": 4,
+     "as": "SP",
+     "flag": "PRK"
+    }
+   ],
+   "radarMonths": [
+    "2026-06"
+   ]
+  },
+  {
+   "name": "Mi Rim 2",
+   "imo": "9361407",
+   "lists": [
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "SONG GWAN",
+     "flag": "PRK",
+     "mmsi": "445628000",
+     "first": "2022-03-31",
+     "last": "2026-06-30"
+    },
+    {
+     "name": "MI RIM 2",
+     "flag": "PRK",
+     "mmsi": "445043000",
+     "first": "2014-04-02",
+     "last": "2016-05-16"
+    },
+    {
+     "name": "MI RIM 2",
+     "flag": "PRK",
+     "mmsi": "445716000",
+     "first": "2013-11-03",
+     "last": "2014-03-24"
+    },
+    {
+     "name": "AOYANG 18",
+     "flag": "KHM",
+     "mmsi": "515888000",
+     "first": "2012-01-14",
+     "last": "2013-10-19"
+    }
+   ],
+   "lastSeen": "2026-06-30",
+   "visits": [],
+   "radarMonths": []
+  },
+  {
+   "name": "Un Ryul",
+   "imo": "8514409",
+   "lists": [
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "SIN PHYONG",
+     "flag": "PRK",
+     "mmsi": "445728000",
+     "first": "2021-12-10",
+     "last": "2026-06-21"
+    },
+    {
+     "name": "SP@@@",
+     "flag": "PRK",
+     "mmsi": "445728000",
+     "first": "2022-03-08",
+     "last": "2023-04-14"
+    },
+    {
+     "name": "UN RYUL",
+     "flag": "PRK",
+     "mmsi": "445581000",
+     "first": "2017-03-15",
+     "last": "2020-09-06"
+    },
+    {
+     "name": "CHON WON 67",
+     "flag": "KHM",
+     "mmsi": "515260000",
+     "first": "2013-05-10",
+     "last": "2016-07-07"
+    },
+    {
+     "name": "TAIYO",
+     "flag": "SLE",
+     "mmsi": "667003075",
+     "first": "2012-01-04",
+     "last": "2013-05-10"
+    }
+   ],
+   "lastSeen": "2026-06-21",
+   "visits": [
+    {
+     "start": "2024-11-26",
+     "end": "2026-06-21",
+     "port": "NAMPO",
+     "country": "PRK",
+     "confidence": 4,
+     "as": "SIN PHYONG",
+     "flag": "PRK"
+    }
+   ],
+   "radarMonths": []
+  },
+  {
+   "name": "Nam San 8",
+   "imo": "8122347",
+   "lists": [
+    "UK",
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "NAMSAN8",
+     "flag": "PRK",
+     "mmsi": "445145000",
+     "first": "2012-08-31",
+     "last": "2026-04-20"
+    }
+   ],
+   "lastSeen": "2026-04-20",
+   "visits": [
+    {
+     "start": "2025-12-12",
+     "end": "2025-12-19",
+     "port": "MAJISHAN",
+     "country": "CHN",
+     "confidence": 4,
+     "as": "NAMSAN8",
+     "flag": "PRK"
+    },
+    {
+     "start": "2025-12-11",
+     "end": "2025-12-12",
+     "port": "SHANGHAI",
+     "country": "CHN",
+     "confidence": 4,
+     "as": "NAMSAN8",
+     "flag": "PRK"
+    },
+    {
+     "start": "2025-11-27",
+     "end": "2025-11-28",
+     "port": "GOUQI ISLAND",
+     "country": "CHN",
+     "confidence": 4,
+     "as": "NAMSAN8",
+     "flag": "PRK"
+    }
+   ],
+   "radarMonths": []
+  },
+  {
+   "name": "Pu Hung 1",
+   "imo": "8703933",
+   "lists": [
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "CHONG UN",
+     "flag": "PRK",
+     "mmsi": "445708000",
+     "first": "2017-12-19",
+     "last": "2026-01-20"
+    },
+    {
+     "name": "",
+     "flag": "CHN",
+     "mmsi": "413554000",
+     "first": "2025-04-29",
+     "last": "2025-05-02"
+    },
+    {
+     "name": "PU HUNG 1",
+     "flag": "PRK",
+     "mmsi": "445075000",
+     "first": "2014-06-14",
+     "last": "2017-12-02"
+    },
+    {
+     "name": "BO DA",
+     "flag": "KHM",
+     "mmsi": "514205000",
+     "first": "2013-11-28",
+     "last": "2016-05-16"
+    },
+    {
+     "name": "DONG YOUNG",
+     "flag": "KOR",
+     "mmsi": "440375000",
+     "first": "2012-03-02",
+     "last": "2013-11-28"
+    }
+   ],
+   "lastSeen": "2026-01-20",
+   "visits": [],
+   "radarMonths": []
+  },
+  {
+   "name": "New Regent",
+   "imo": "8312497",
+   "lists": [
+    "UK"
+   ],
+   "ais": [
+    {
+     "name": "SONGWON2",
+     "flag": "PRK",
+     "mmsi": "445743000",
+     "first": "2022-09-27",
+     "last": "2025-09-02"
+    },
+    {
+     "name": "SONGWON2",
+     "flag": "PRK",
+     "mmsi": "445730000",
+     "first": "2025-05-31",
+     "last": "2025-06-05"
+    },
+    {
+     "name": "NEW REGENT",
+     "flag": "PAN",
+     "mmsi": "355976000",
+     "first": "2014-08-02",
+     "last": "2019-10-14"
+    },
+    {
+     "name": "NEW REGENT",
+     "flag": "PAN",
+     "mmsi": "355976000",
+     "first": "2014-08-02",
+     "last": "2019-10-14"
+    },
+    {
+     "name": "NEW REGENT",
+     "flag": "SLE",
+     "mmsi": "667003212",
+     "first": "2012-03-12",
+     "last": "2015-11-13"
+    }
+   ],
+   "lastSeen": "2025-09-02",
+   "visits": [],
+   "radarMonths": []
+  },
+  {
+   "name": "Kum Un San 3",
+   "imo": "8705539",
+   "lists": [
+    "UK",
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "KUMUNSAN3",
+     "flag": "PRK",
+     "mmsi": "445537000",
+     "first": "2016-04-26",
+     "last": "2025-06-09"
+    },
+    {
+     "name": "KUMUNSAN3",
+     "flag": "PRK",
+     "mmsi": "445537000",
+     "first": "2016-04-26",
+     "last": "2025-06-09"
+    },
+    {
+     "name": "YONG WON",
+     "flag": "KHM",
+     "mmsi": "515516000",
+     "first": "2015-03-18",
+     "last": "2016-04-09"
+    },
+    {
+     "name": "KYUNGDONGFRONTIER",
+     "flag": "KOR",
+     "mmsi": "440113170",
+     "first": "2012-07-11",
+     "last": "2015-03-18"
+    }
+   ],
+   "lastSeen": "2025-06-09",
+   "visits": [],
+   "radarMonths": []
+  },
+  {
+   "name": "Hap Jang Gang 6",
+   "imo": "9066540",
+   "lists": [
+    "UK",
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "HAPJANGGANG6",
+     "flag": "PRK",
+     "mmsi": "445045000",
+     "first": "2014-04-28",
+     "last": "2025-03-21"
+    },
+    {
+     "name": "XIN HONG",
+     "flag": "KHM",
+     "mmsi": "515160000",
+     "first": "2012-01-16",
+     "last": "2013-02-02"
+    }
+   ],
+   "lastSeen": "2025-03-21",
+   "visits": [],
+   "radarMonths": []
+  },
+  {
+   "name": "Tong San 2",
+   "imo": "8937675",
+   "lists": [
+    "UK"
+   ],
+   "ais": [
+    {
+     "name": "TONG SAN 2",
+     "flag": "PRK",
+     "mmsi": "445539000",
+     "first": "2016-06-04",
+     "last": "2025-03-19"
+    },
+    {
+     "name": "TN",
+     "flag": "BHS",
+     "mmsi": "309328000",
+     "first": "2021-12-10",
+     "last": "2022-04-15"
+    },
+    {
+     "name": "GENESIS WAVE",
+     "flag": "PAN",
+     "mmsi": "373225000",
+     "first": "2013-12-11",
+     "last": "2016-06-05"
+    },
+    {
+     "name": "GENESIS WAVE",
+     "flag": "KOR",
+     "mmsi": "440372000",
+     "first": "2012-01-03",
+     "last": "2013-10-10"
+    }
+   ],
+   "lastSeen": "2025-03-19",
+   "visits": [],
+   "radarMonths": []
+  },
+  {
+   "name": "Won San 2",
+   "imo": "9159787",
+   "lists": [
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "P,O",
+     "flag": "PRK",
+     "mmsi": "445060000",
+     "first": "2019-02-14",
+     "last": "2025-03-19"
+    },
+    {
+     "name": "WONSAN 2",
+     "flag": "PRK",
+     "mmsi": "445309000",
+     "first": "2012-03-11",
+     "last": "2017-03-24"
+    }
+   ],
+   "lastSeen": "2025-03-19",
+   "visits": [],
+   "radarMonths": []
+  },
+  {
+   "name": "Rung Ra 2",
+   "imo": "9020534",
+   "lists": [
+    "UK",
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "PAEK YANG SAN",
+     "flag": "PRK",
+     "mmsi": "445759000",
+     "first": "2018-07-12",
+     "last": "2025-01-20"
+    },
+    {
+     "name": "L P",
+     "flag": "CHN",
+     "mmsi": "413859000",
+     "first": "2023-10-29",
+     "last": "2023-10-29"
+    },
+    {
+     "name": "RUNGRA2",
+     "flag": "PRK",
+     "mmsi": "445086000",
+     "first": "2015-09-09",
+     "last": "2017-12-20"
+    },
+    {
+     "name": "PEARL 8",
+     "flag": "PAN",
+     "mmsi": "371197000",
+     "first": "2012-01-04",
+     "last": "2015-07-09"
+    }
+   ],
+   "lastSeen": "2025-01-20",
+   "visits": [],
+   "radarMonths": []
+  },
+  {
+   "name": "Yu Jong 2",
+   "imo": "8604917",
+   "lists": [
+    "UK",
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "YUJONG-2",
+     "flag": "PRK",
+     "mmsi": "445190000",
+     "first": "2012-10-23",
+     "last": "2024-11-08"
+    }
+   ],
+   "lastSeen": "2024-11-08",
+   "visits": [],
+   "radarMonths": []
+  },
+  {
+   "name": "Chon Myong 1",
+   "imo": "8712362",
+   "lists": [
+    "UK",
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "CHON MYONG1",
+     "flag": "PRK",
+     "mmsi": "445564000",
+     "first": "2016-08-04",
+     "last": "2024-08-31"
+    },
+    {
+     "name": "CHON MYONG1",
+     "flag": "PRK",
+     "mmsi": "445564008",
+     "first": "2016-10-25",
+     "last": "2017-01-03"
+    },
+    {
+     "name": "EASTERN LUCK",
+     "flag": "TGO",
+     "mmsi": "671380000",
+     "first": "2013-05-11",
+     "last": "2016-07-03"
+    },
+    {
+     "name": "JUJAKBONG-5",
+     "flag": "PRK",
+     "mmsi": "445143000",
+     "first": "2012-04-23",
+     "last": "2013-03-19"
+    }
+   ],
+   "lastSeen": "2024-08-31",
+   "visits": [],
+   "radarMonths": []
+  },
+  {
+   "name": "Goo Ryong",
+   "imo": "8201870",
+   "lists": [
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "GOORYONG",
+     "flag": "PRK",
+     "mmsi": "445155000",
+     "first": "2012-01-02",
+     "last": "2024-08-26"
+    },
+    {
+     "name": "GOORYONG",
+     "flag": null,
+     "mmsi": "446203576",
+     "first": "2013-06-22",
+     "last": "2014-05-14"
+    }
+   ],
+   "lastSeen": "2024-08-26",
+   "visits": [],
+   "radarMonths": []
+  },
+  {
+   "name": "Kum Song 3",
+   "imo": "8661850",
+   "lists": [
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "KUMSONG3",
+     "flag": "PRK",
+     "mmsi": "445596000",
+     "first": "2024-06-27",
+     "last": "2024-08-16"
+    },
+    {
+     "name": "BLUE SKY",
+     "flag": "TZA",
+     "mmsi": "674084125",
+     "first": "2023-02-07",
+     "last": "2023-03-16"
+    },
+    {
+     "name": "LONGGANG  7",
+     "flag": "FJI",
+     "mmsi": "520377364",
+     "first": "2017-01-11",
+     "last": "2017-03-05"
+    },
+    {
+     "name": "LONGGANG  7",
+     "flag": "TZA",
+     "mmsi": "677097000",
+     "first": "2016-07-18",
+     "last": "2017-01-11"
+    },
+    {
+     "name": "LONGGANG7",
+     "flag": "SLE",
+     "mmsi": "667003444",
+     "first": "2013-08-31",
+     "last": "2016-07-18"
+    }
+   ],
+   "lastSeen": "2024-08-16",
+   "visits": [],
+   "radarMonths": []
+  },
+  {
+   "name": "Asia Bridge",
+   "imo": "9010022",
+   "lists": [
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "UN SAN",
+     "flag": "PRK",
+     "mmsi": "445085000",
+     "first": "2019-09-30",
+     "last": "2024-08-15"
+    },
+    {
+     "name": "UNS",
+     "flag": "PRK",
+     "mmsi": "445085010",
+     "first": "2022-04-21",
+     "last": "2022-04-23"
+    },
+    {
+     "name": "UN SAN",
+     "flag": "ATG",
+     "mmsi": "304359548",
+     "first": "2021-06-09",
+     "last": "2021-06-12"
+    },
+    {
+     "name": "ASIA BRIDGE 2",
+     "flag": "TZA",
+     "mmsi": "677094300",
+     "first": "2016-06-17",
+     "last": "2020-07-16"
+    },
+    {
+     "name": "ASIA_BRIDGE",
+     "flag": "TGO",
+     "mmsi": "671924000",
+     "first": "2018-05-05",
+     "last": "2019-06-26"
+    },
+    {
+     "name": "ASIA BRIDGE 2",
+     "flag": "BLZ",
+     "mmsi": "312183000",
+     "first": "2015-08-31",
+     "last": "2016-06-17"
+    },
+    {
+     "name": "SIRIUS",
+     "flag": "KOR",
+     "mmsi": "440187000",
+     "first": "2012-01-03",
+     "last": "2015-08-31"
+    }
+   ],
+   "lastSeen": "2024-08-15",
+   "visits": [],
+   "radarMonths": []
+  },
+  {
+   "name": "Rung Ra Do",
+   "imo": "8989795",
+   "lists": [
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "RYONGYON",
+     "flag": "PRK",
+     "mmsi": "445729000",
+     "first": "2017-12-23",
+     "last": "2024-06-22"
+    },
+    {
+     "name": "RYONWYON",
+     "flag": null,
+     "mmsi": "444680424",
+     "first": "2022-07-26",
+     "last": "2023-08-18"
+    },
+    {
+     "name": "RUNGRADO",
+     "flag": "PRK",
+     "mmsi": "445248000",
+     "first": "2013-01-05",
+     "last": "2017-12-02"
+    }
+   ],
+   "lastSeen": "2024-06-22",
+   "visits": [],
+   "radarMonths": []
+  },
+  {
+   "name": "Ryo Myong",
+   "imo": "8987333",
+   "lists": [
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "RYO MYONG",
+     "flag": "PRK",
+     "mmsi": "445023000",
+     "first": "2012-07-20",
+     "last": "2024-05-02"
+    }
+   ],
+   "lastSeen": "2024-05-02",
+   "visits": [],
+   "radarMonths": []
+  },
+  {
+   "name": "Jang Gyong",
+   "imo": "8203933",
+   "lists": [
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "JANGGYONG",
+     "flag": "PRK",
+     "mmsi": "445536000",
+     "first": "2016-06-08",
+     "last": "2024-04-16"
+    },
+    {
+     "name": "YU HORNG",
+     "flag": "TGO",
+     "mmsi": "671726000",
+     "first": "2016-03-09",
+     "last": "2016-06-03"
+    },
+    {
+     "name": "YU HORNG",
+     "flag": "PAN",
+     "mmsi": "356015000",
+     "first": "2012-01-01",
+     "last": "2016-03-09"
+    }
+   ],
+   "lastSeen": "2024-04-16",
+   "visits": [],
+   "radarMonths": []
+  },
+  {
+   "name": "Jon Jin 2",
+   "imo": "8018912",
+   "lists": [
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "S   P   9     .",
+     "flag": "PRK",
+     "mmsi": "445546000",
+     "first": "2019-12-07",
+     "last": "2024-03-09"
+    },
+    {
+     "name": "RYONG RIM",
+     "flag": "PRK",
+     "mmsi": "445110000",
+     "first": "2014-10-07",
+     "last": "2015-01-17"
+    },
+    {
+     "name": "JON JIN2",
+     "flag": "PRK",
+     "mmsi": "445168000",
+     "first": "2012-10-16",
+     "last": "2014-09-25"
+    }
+   ],
+   "lastSeen": "2024-03-09",
+   "visits": [],
+   "radarMonths": []
+  },
+  {
+   "name": "Za Ryok 2",
+   "imo": "8898738",
+   "lists": [
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "YUSONG2",
+     "flag": "PRK",
+     "mmsi": "445817000",
+     "first": "2023-04-19",
+     "last": "2023-11-04"
+    },
+    {
+     "name": "ZARYOK2",
+     "flag": "PRK",
+     "mmsi": "445020000",
+     "first": "2012-08-26",
+     "last": "2015-01-23"
+    }
+   ],
+   "lastSeen": "2023-11-04",
+   "visits": [],
+   "radarMonths": []
+  },
+  {
+   "name": "Paek Ma",
+   "imo": "9066978",
+   "lists": [
+    "UK",
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "PAEK MA",
+     "flag": "PRK",
+     "mmsi": "445207000",
+     "first": "2017-01-20",
+     "last": "2023-10-31"
+    },
+    {
+     "name": "PAEK MA",
+     "flag": null,
+     "mmsi": "44520700",
+     "first": "2019-09-28",
+     "last": "2020-06-04"
+    },
+    {
+     "name": "ROYAL MIRACLE",
+     "flag": "TZA",
+     "mmsi": "677090200",
+     "first": "2016-06-03",
+     "last": "2016-12-25"
+    },
+    {
+     "name": "ROYAL MIRACLE",
+     "flag": "PAN",
+     "mmsi": "352184000",
+     "first": "2012-08-07",
+     "last": "2016-07-02"
+    }
+   ],
+   "lastSeen": "2023-10-31",
+   "visits": [],
+   "radarMonths": []
+  },
+  {
+   "name": "Baek Ma Kang",
+   "imo": "7944683",
+   "lists": [
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "PEAK MA GANG",
+     "flag": "PRK",
+     "mmsi": "445105000",
+     "first": "2012-01-27",
+     "last": "2023-09-15"
+    }
+   ],
+   "lastSeen": "2023-09-15",
+   "visits": [],
+   "radarMonths": []
+  },
+  {
+   "name": "Ji Song 6",
+   "imo": "8898740",
+   "lists": [
+    "UK",
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "JISONG 6",
+     "flag": "PRK",
+     "mmsi": "445195000",
+     "first": "2012-01-27",
+     "last": "2023-08-29"
+    }
+   ],
+   "lastSeen": "2023-08-29",
+   "visits": [],
+   "radarMonths": []
+  },
+  {
+   "name": "Dai Hong Dan",
+   "imo": "7944695",
+   "lists": [
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "DAI HONG  DAN",
+     "flag": null,
+     "mmsi": "998877665",
+     "first": "2023-04-09",
+     "last": "2023-04-19"
+    },
+    {
+     "name": "DAI HONG DAN",
+     "flag": "PRK",
+     "mmsi": "445125000",
+     "first": "2012-02-22",
+     "last": "2013-07-25"
+    }
+   ],
+   "lastSeen": "2023-04-19",
+   "visits": [],
+   "radarMonths": []
+  },
+  {
+   "name": "Hwa Song",
+   "imo": "8217685",
+   "lists": [
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "HWASONG",
+     "flag": "PRK",
+     "mmsi": "445247000",
+     "first": "2013-06-26",
+     "last": "2023-03-22"
+    },
+    {
+     "name": "SUNSHINE",
+     "flag": "SLE",
+     "mmsi": "667861000",
+     "first": "2012-01-04",
+     "last": "2013-06-12"
+    }
+   ],
+   "lastSeen": "2023-03-22",
+   "visits": [],
+   "radarMonths": []
+  },
+  {
+   "name": "Kum Un San",
+   "imo": "8720436",
+   "lists": [
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "M,T KUM UN SAN",
+     "flag": "PRK",
+     "mmsi": "445228000",
+     "first": "2012-09-05",
+     "last": "2022-08-21"
+    }
+   ],
+   "lastSeen": "2022-08-21",
+   "visits": [],
+   "radarMonths": []
+  },
+  {
+   "name": "Rung Ra 1",
+   "imo": "8713457",
+   "lists": [
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "CHOLBONGSAN",
+     "flag": "PRK",
+     "mmsi": "445756000",
+     "first": "2018-01-20",
+     "last": "2022-08-13"
+    },
+    {
+     "name": "RUNG RA 1",
+     "flag": "PRK",
+     "mmsi": "445172000",
+     "first": "2013-07-08",
+     "last": "2017-12-28"
+    },
+    {
+     "name": "YI SHENG",
+     "flag": "KHM",
+     "mmsi": "515401000",
+     "first": "2012-11-04",
+     "last": "2012-12-26"
+    }
+   ],
+   "lastSeen": "2022-08-13",
+   "visits": [],
+   "radarMonths": []
+  },
+  {
+   "name": "Ji Song 8",
+   "imo": "8503228",
+   "lists": [
+    "UK",
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "JI SONG 8",
+     "flag": "PRK",
+     "mmsi": "445392000",
+     "first": "2012-01-01",
+     "last": "2022-07-25"
+    }
+   ],
+   "lastSeen": "2022-07-25",
+   "visits": [],
+   "radarMonths": []
+  },
+  {
+   "name": "Petrel 8",
+   "imo": "9562233",
+   "lists": [
+    "UK"
+   ],
+   "ais": [
+    {
+     "name": "PETREL 8",
+     "flag": "NIU",
+     "mmsi": "542655110",
+     "first": "2022-07-01",
+     "last": "2022-07-02"
+    },
+    {
+     "name": "PETREL 8",
+     "flag": "COM",
+     "mmsi": "620233000",
+     "first": "2017-01-11",
+     "last": "2017-10-31"
+    },
+    {
+     "name": "JAL VAHINI",
+     "flag": "IND",
+     "mmsi": "419000278",
+     "first": "2012-01-04",
+     "last": "2017-01-11"
+    }
+   ],
+   "lastSeen": "2022-07-02",
+   "visits": [],
+   "radarMonths": []
+  },
+  {
+   "name": "Sevastopol",
+   "imo": "9235127",
+   "lists": [
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "SEVASTOPOL",
+     "flag": "RUS",
+     "mmsi": "273374620",
+     "first": "2014-12-09",
+     "last": "2022-02-15"
+    },
+    {
+     "name": "CLIPPER COPENHAGEN",
+     "flag": "BHS",
+     "mmsi": "311067000",
+     "first": "2012-01-01",
+     "last": "2014-12-09"
+    }
+   ],
+   "lastSeen": "2022-02-15",
+   "visits": [],
+   "radarMonths": []
+  },
+  {
+   "name": "Sam Jong 2",
+   "imo": "7408873",
+   "lists": [
+    "UK",
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "YU JONG 3",
+     "flag": "PRK",
+     "mmsi": "445078000",
+     "first": "2013-05-10",
+     "last": "2021-09-26"
+    },
+    {
+     "name": "AKTIVA",
+     "flag": "RUS",
+     "mmsi": "273316480",
+     "first": "2012-01-01",
+     "last": "2012-12-30"
+    }
+   ],
+   "lastSeen": "2021-09-26",
+   "visits": [],
+   "radarMonths": []
+  },
+  {
+   "name": "Victory 2",
+   "imo": "8312227",
+   "lists": [
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "RYONHWA3",
+     "flag": "PRK",
+     "mmsi": "445202000",
+     "first": "2017-03-02",
+     "last": "2021-09-13"
+    },
+    {
+     "name": "RYONHWA3",
+     "flag": "PRK",
+     "mmsi": "445202000",
+     "first": "2017-03-02",
+     "last": "2021-09-13"
+    },
+    {
+     "name": "WUSAN",
+     "flag": "LBR",
+     "mmsi": "636899242",
+     "first": "2021-09-11",
+     "last": "2021-09-12"
+    },
+    {
+     "name": "VICTORY 2",
+     "flag": "TZA",
+     "mmsi": "677063100",
+     "first": "2016-01-03",
+     "last": "2017-02-26"
+    },
+    {
+     "name": "VICTORY2",
+     "flag": "MNG",
+     "mmsi": "457456000",
+     "first": "2012-01-09",
+     "last": "2015-12-24"
+    },
+    {
+     "name": "VICTORY2",
+     "flag": "MNG",
+     "mmsi": "457456000",
+     "first": "2012-01-09",
+     "last": "2015-12-24"
+    },
+    {
+     "name": "FICTOBY2",
+     "flag": null,
+     "mmsi": "458504576",
+     "first": "2012-08-01",
+     "last": "2012-08-25"
+    }
+   ],
+   "lastSeen": "2021-09-13",
+   "visits": [],
+   "radarMonths": []
+  },
+  {
+   "name": "Star 18",
+   "imo": "9020015",
+   "lists": [
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "STAR 18",
+     "flag": "VNM",
+     "mmsi": "574002230",
+     "first": "2014-04-18",
+     "last": "2021-07-05"
+    },
+    {
+     "name": "STAR 18",
+     "flag": "VNM",
+     "mmsi": "574002230",
+     "first": "2014-04-18",
+     "last": "2021-07-05"
+    },
+    {
+     "name": "SAO KIM",
+     "flag": "VNM",
+     "mmsi": "574275000",
+     "first": "2012-02-07",
+     "last": "2014-04-18"
+    }
+   ],
+   "lastSeen": "2021-07-05",
+   "visits": [],
+   "radarMonths": []
+  },
+  {
+   "name": "Kum Song 5",
+   "imo": "8661719",
+   "lists": [
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "CHONG DAN",
+     "flag": "PRK",
+     "mmsi": "445707000",
+     "first": "2020-05-19",
+     "last": "2020-06-22"
+    },
+    {
+     "name": "LUCIDA189",
+     "flag": "TZA",
+     "mmsi": "677097400",
+     "first": "2016-07-16",
+     "last": "2016-10-19"
+    },
+    {
+     "name": "LUCIDA189",
+     "flag": "TGO",
+     "mmsi": "671633000",
+     "first": "2015-07-14",
+     "last": "2016-07-16"
+    },
+    {
+     "name": "LUCIDA189",
+     "flag": "PAN",
+     "mmsi": "352159000",
+     "first": "2013-06-27",
+     "last": "2015-07-14"
+    }
+   ],
+   "lastSeen": "2020-06-22",
+   "visits": [],
+   "radarMonths": []
+  },
+  {
+   "name": "Ra Nam 3",
+   "imo": "9314650",
+   "lists": [
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "PY 2",
+     "flag": "PRK",
+     "mmsi": "445580000",
+     "first": "2020-05-23",
+     "last": "2020-06-05"
+    },
+    {
+     "name": "RA NAM 3",
+     "flag": "PRK",
+     "mmsi": "445024000",
+     "first": "2012-08-25",
+     "last": "2016-09-25"
+    },
+    {
+     "name": "JUN SHUN",
+     "flag": "CHN",
+     "mmsi": "413374190",
+     "first": "2012-01-02",
+     "last": "2012-05-01"
+    }
+   ],
+   "lastSeen": "2020-06-05",
+   "visits": [],
+   "radarMonths": []
+  },
+  {
+   "name": "Nymex Star",
+   "imo": "9078191",
+   "lists": [
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "B.P.P 501",
+     "flag": "THA",
+     "mmsi": "567002670",
+     "first": "2019-03-01",
+     "last": "2020-03-03"
+    },
+    {
+     "name": "NYMEX STAR",
+     "flag": "SGP",
+     "mmsi": "565170000",
+     "first": "2012-01-03",
+     "last": "2019-05-02"
+    }
+   ],
+   "lastSeen": "2020-03-03",
+   "visits": [],
+   "radarMonths": []
+  },
+  {
+   "name": "Patriot",
+   "imo": "9003550",
+   "lists": [
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "PATRIOT",
+     "flag": "RUS",
+     "mmsi": "273333330",
+     "first": "2012-01-15",
+     "last": "2019-12-07"
+    }
+   ],
+   "lastSeen": "2019-12-07",
+   "visits": [],
+   "radarMonths": []
+  },
+  {
+   "name": "Bella",
+   "imo": "8808264",
+   "lists": [
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "BELLA",
+     "flag": "RUS",
+     "mmsi": "273384940",
+     "first": "2016-04-18",
+     "last": "2019-11-08"
+    },
+    {
+     "name": "BELLA",
+     "flag": "KNA",
+     "mmsi": "341573000",
+     "first": "2012-01-16",
+     "last": "2013-03-25"
+    }
+   ],
+   "lastSeen": "2019-11-08",
+   "visits": [],
+   "radarMonths": []
+  },
+  {
+   "name": "Pho Thae",
+   "imo": "7632955",
+   "lists": [
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "PHO THAE",
+     "flag": "PRK",
+     "mmsi": "445146000",
+     "first": "2012-03-09",
+     "last": "2019-08-23"
+    },
+    {
+     "name": "MYONG SAN 1",
+     "flag": "PRK",
+     "mmsi": "445129000",
+     "first": "2014-08-10",
+     "last": "2014-08-22"
+    }
+   ],
+   "lastSeen": "2019-08-23",
+   "visits": [],
+   "radarMonths": []
+  },
+  {
+   "name": "Neptun",
+   "imo": "8404991",
+   "lists": [
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "NEPTUN",
+     "flag": "RUS",
+     "mmsi": "273391540",
+     "first": "2017-07-05",
+     "last": "2019-08-16"
+    },
+    {
+     "name": "SEA DOCK",
+     "flag": "LBN",
+     "mmsi": "450533000",
+     "first": "2016-01-06",
+     "last": "2017-07-04"
+    },
+    {
+     "name": "CONDOCK V",
+     "flag": "ATG",
+     "mmsi": "305951000",
+     "first": "2013-01-22",
+     "last": "2015-12-08"
+    },
+    {
+     "name": "CONDOCK 5",
+     "flag": "DEU",
+     "mmsi": "218510000",
+     "first": "2012-01-01",
+     "last": "2013-01-22"
+    }
+   ],
+   "lastSeen": "2019-08-16",
+   "visits": [],
+   "radarMonths": []
+  },
+  {
+   "name": "Calm Bridge",
+   "imo": "8318867",
+   "lists": [
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "CALM BRIDGE",
+     "flag": "TZA",
+     "mmsi": "677098900",
+     "first": "2016-09-02",
+     "last": "2019-08-06"
+    },
+    {
+     "name": "CALMBRIDGE",
+     "flag": "KHM",
+     "mmsi": "515487000",
+     "first": "2014-01-15",
+     "last": "2016-09-02"
+    },
+    {
+     "name": "ASIA STAR",
+     "flag": "PAN",
+     "mmsi": "356307000",
+     "first": "2012-01-05",
+     "last": "2014-01-15"
+    }
+   ],
+   "lastSeen": "2019-08-06",
+   "visits": [],
+   "radarMonths": []
+  },
+  {
+   "name": "Jin Tai",
+   "imo": "9163154",
+   "lists": [
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "BOTHWIN 7",
+     "flag": "BLZ",
+     "mmsi": "312066000",
+     "first": "2016-05-17",
+     "last": "2019-07-26"
+    },
+    {
+     "name": "JIN TAI",
+     "flag": "SLE",
+     "mmsi": "667001452",
+     "first": "2015-09-23",
+     "last": "2016-03-04"
+    },
+    {
+     "name": "JIN TAI",
+     "flag": "TUV",
+     "mmsi": "572724210",
+     "first": "2014-08-04",
+     "last": "2015-09-16"
+    },
+    {
+     "name": "JIN TAI",
+     "flag": "PAN",
+     "mmsi": "351641000",
+     "first": "2012-01-11",
+     "last": "2014-08-04"
+    }
+   ],
+   "lastSeen": "2019-07-26",
+   "visits": [],
+   "radarMonths": []
+  },
+  {
+   "name": "Shang Yuan Bao",
+   "imo": "8126070",
+   "lists": [
+    "UK",
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "SHANG YUAN BAO",
+     "flag": "VCT",
+     "mmsi": "375335576",
+     "first": "2019-07-17",
+     "last": "2019-07-18"
+    },
+    {
+     "name": "SHANG YUAN BAO",
+     "flag": "PAN",
+     "mmsi": "374287000",
+     "first": "2016-02-26",
+     "last": "2019-07-17"
+    },
+    {
+     "name": "LUCK GROW 888",
+     "flag": "MNG",
+     "mmsi": "457437000",
+     "first": "2012-04-29",
+     "last": "2015-09-25"
+    }
+   ],
+   "lastSeen": "2019-07-18",
+   "visits": [],
+   "radarMonths": []
+  },
+  {
+   "name": "Chong Bong",
+   "imo": "8909575",
+   "lists": [
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "CHONGBONG",
+     "flag": "PRK",
+     "mmsi": "445528000",
+     "first": "2015-08-22",
+     "last": "2019-07-16"
+    },
+    {
+     "name": "GREENLIGHT",
+     "flag": "KHM",
+     "mmsi": "515721000",
+     "first": "2015-04-15",
+     "last": "2015-07-15"
+    },
+    {
+     "name": "BLUENOUVELLE",
+     "flag": "KIR",
+     "mmsi": "529734000",
+     "first": "2014-05-15",
+     "last": "2015-04-08"
+    },
+    {
+     "name": "U APUS",
+     "flag": "PAN",
+     "mmsi": "372262000",
+     "first": "2012-01-01",
+     "last": "2014-06-25"
+    }
+   ],
+   "lastSeen": "2019-07-16",
+   "visits": [],
+   "radarMonths": []
+  },
+  {
+   "name": "Kum Gang 3",
+   "imo": "8966535",
+   "lists": [
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "XIN LONG2",
+     "flag": "CHN",
+     "mmsi": "413440690",
+     "first": "2018-10-11",
+     "last": "2019-06-08"
+    },
+    {
+     "name": "KUMGANG 3",
+     "flag": "PRK",
+     "mmsi": "445068000",
+     "first": "2012-12-12",
+     "last": "2019-04-01"
+    },
+    {
+     "name": "KUMGANG 3",
+     "flag": null,
+     "mmsi": "446116576",
+     "first": "2014-05-03",
+     "last": "2015-09-21"
+    }
+   ],
+   "lastSeen": "2019-06-08",
+   "visits": [],
+   "radarMonths": []
+  },
+  {
+   "name": "Partizan",
+   "imo": "9113020",
+   "lists": [
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "PARTIZAN",
+     "flag": "RUS",
+     "mmsi": "273370950",
+     "first": "2015-03-30",
+     "last": "2019-04-17"
+    },
+    {
+     "name": "ST.OLGA",
+     "flag": "KNA",
+     "mmsi": "341885000",
+     "first": "2015-01-20",
+     "last": "2015-03-25"
+    },
+    {
+     "name": "ST. OLGA",
+     "flag": "KNA",
+     "mmsi": "341187000",
+     "first": "2014-02-07",
+     "last": "2015-01-20"
+    },
+    {
+     "name": "ASTA",
+     "flag": "LTU",
+     "mmsi": "277063000",
+     "first": "2012-01-02",
+     "last": "2014-02-07"
+    }
+   ],
+   "lastSeen": "2019-04-17",
+   "visits": [],
+   "radarMonths": []
+  },
+  {
+   "name": "Lucky Star",
+   "imo": "9015278",
+   "lists": [
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "LUCKY STAR",
+     "flag": "TGO",
+     "mmsi": "671920000",
+     "first": "2017-12-25",
+     "last": "2019-04-05"
+    },
+    {
+     "name": "ASIA BRIDGE 3",
+     "flag": "BLZ",
+     "mmsi": "312675000",
+     "first": "2015-12-26",
+     "last": "2017-12-25"
+    },
+    {
+     "name": "FAREAST EXPRESS",
+     "flag": "PHL",
+     "mmsi": "548415000",
+     "first": "2012-01-20",
+     "last": "2015-11-27"
+    }
+   ],
+   "lastSeen": "2019-04-05",
+   "visits": [],
+   "radarMonths": []
+  },
+  {
+   "name": "Koti",
+   "imo": "9417115",
+   "lists": [
+    "UK",
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "KOTI",
+     "flag": "PAN",
+     "mmsi": "373095000",
+     "first": "2017-07-05",
+     "last": "2018-10-27"
+    },
+    {
+     "name": "SEMUA SEJATI",
+     "flag": "MYS",
+     "mmsi": "533003390",
+     "first": "2012-01-03",
+     "last": "2017-06-12"
+    }
+   ],
+   "lastSeen": "2018-10-27",
+   "visits": [],
+   "radarMonths": []
+  },
+  {
+   "name": "Orion Star",
+   "imo": "9333589",
+   "lists": [
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "JI XING",
+     "flag": "TZA",
+     "mmsi": "677079000",
+     "first": "2017-07-05",
+     "last": "2018-08-16"
+    },
+    {
+     "name": "JI XING",
+     "flag": "FJI",
+     "mmsi": "520377385",
+     "first": "2017-03-03",
+     "last": "2017-07-05"
+    },
+    {
+     "name": "JI XING",
+     "flag": "MNG",
+     "mmsi": "457267000",
+     "first": "2016-02-25",
+     "last": "2017-03-03"
+    },
+    {
+     "name": "ORION STAR",
+     "flag": "KIR",
+     "mmsi": "529681000",
+     "first": "2013-12-02",
+     "last": "2016-02-25"
+    },
+    {
+     "name": "RICHOCEAN",
+     "flag": "TUV",
+     "mmsi": "572134000",
+     "first": "2012-01-03",
+     "last": "2013-12-17"
+    }
+   ],
+   "lastSeen": "2018-08-16",
+   "visits": [],
+   "radarMonths": []
+  },
+  {
+   "name": "Ever Bright 88",
+   "imo": "8914934",
+   "lists": [
+    "UK",
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "FAN KE",
+     "flag": "FJI",
+     "mmsi": "520377378",
+     "first": "2017-02-01",
+     "last": "2018-07-15"
+    },
+    {
+     "name": "EVER BRIGHT 88",
+     "flag": "SLE",
+     "mmsi": "667077000",
+     "first": "2013-12-31",
+     "last": "2016-03-03"
+    },
+    {
+     "name": "J STAR",
+     "flag": "KOR",
+     "mmsi": "441149000",
+     "first": "2012-01-03",
+     "last": "2013-12-31"
+    }
+   ],
+   "lastSeen": "2018-07-15",
+   "visits": [],
+   "radarMonths": []
+  },
+  {
+   "name": "Yuk Tung",
+   "imo": "9030591",
+   "lists": [
+    "UK",
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "YUK TUNG",
+     "flag": "DMA",
+     "mmsi": "325823000",
+     "first": "2017-05-24",
+     "last": "2018-05-29"
+    },
+    {
+     "name": "SANTRINA",
+     "flag": "PAN",
+     "mmsi": "357285000",
+     "first": "2012-01-14",
+     "last": "2017-05-22"
+    }
+   ],
+   "lastSeen": "2018-05-29",
+   "visits": [],
+   "radarMonths": []
+  },
+  {
+   "name": "Asia Bridge 1",
+   "imo": "8916580",
+   "lists": [
+    "UK",
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "ASIA BRIDGE 1",
+     "flag": "TZA",
+     "mmsi": "677092100",
+     "first": "2016-08-23",
+     "last": "2018-03-01"
+    },
+    {
+     "name": "ASIA BRIDGE 1",
+     "flag": "TZA",
+     "mmsi": "677092100",
+     "first": "2016-08-23",
+     "last": "2018-03-01"
+    },
+    {
+     "name": "ASIA BRIDGE 1",
+     "flag": "BLZ",
+     "mmsi": "312525000",
+     "first": "2014-06-11",
+     "last": "2016-08-23"
+    },
+    {
+     "name": "MV ASIA BRIDGE",
+     "flag": "PHL",
+     "mmsi": "548465000",
+     "first": "2012-01-20",
+     "last": "2014-06-11"
+    }
+   ],
+   "lastSeen": "2018-03-01",
+   "visits": [],
+   "radarMonths": []
+  },
+  {
+   "name": "Hao Fan 2",
+   "imo": "8747604",
+   "lists": [
+    "UK",
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "HAO FAN 2",
+     "flag": "KNA",
+     "mmsi": "341988000",
+     "first": "2017-03-02",
+     "last": "2018-01-27"
+    },
+    {
+     "name": "HAOFAN 2",
+     "flag": "FJI",
+     "mmsi": "520377269",
+     "first": "2016-11-13",
+     "last": "2017-03-19"
+    },
+    {
+     "name": "HAO FAN 2",
+     "flag": null,
+     "mmsi": "452000025",
+     "first": "2016-11-04",
+     "last": "2016-11-05"
+    },
+    {
+     "name": "HAO FAN 2",
+     "flag": "NIU",
+     "mmsi": "542169110",
+     "first": "2015-05-01",
+     "last": "2016-11-04"
+    },
+    {
+     "name": "HAO FAN 2",
+     "flag": "KIR",
+     "mmsi": "529375000",
+     "first": "2012-01-01",
+     "last": "2015-04-29"
+    }
+   ],
+   "lastSeen": "2018-01-27",
+   "visits": [],
+   "radarMonths": []
+  },
+  {
+   "name": "Jin Teng",
+   "imo": "9163166",
+   "lists": [
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "SHENG DA 8",
+     "flag": "BLZ",
+     "mmsi": "312912000",
+     "first": "2016-05-17",
+     "last": "2018-01-26"
+    },
+    {
+     "name": "JIN TENG",
+     "flag": "SLE",
+     "mmsi": "667001458",
+     "first": "2015-10-19",
+     "last": "2016-05-02"
+    },
+    {
+     "name": "JIN TENG",
+     "flag": "TUV",
+     "mmsi": "572701210",
+     "first": "2014-03-21",
+     "last": "2015-10-19"
+    },
+    {
+     "name": "JIN TENG",
+     "flag": "PAN",
+     "mmsi": "351808000",
+     "first": "2012-01-08",
+     "last": "2014-03-20"
+    }
+   ],
+   "lastSeen": "2018-01-26",
+   "visits": [],
+   "radarMonths": []
+  },
+  {
+   "name": "Billions No.18",
+   "imo": "9191773",
+   "lists": [
+    "UK"
+   ],
+   "ais": [
+    {
+     "name": "KINGSWAY",
+     "flag": "PLW",
+     "mmsi": "511647000",
+     "first": "2017-12-09",
+     "last": "2018-01-21"
+    },
+    {
+     "name": "BILLIONS NO.18",
+     "flag": "PAN",
+     "mmsi": "357052000",
+     "first": "2012-01-01",
+     "last": "2017-12-09"
+    }
+   ],
+   "lastSeen": "2018-01-21",
+   "visits": [],
+   "radarMonths": []
+  },
+  {
+   "name": "Dong Feng 6",
+   "imo": "9008201",
+   "lists": [
+    "UK",
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "DONG FENG 6",
+     "flag": "TZA",
+     "mmsi": "677093100",
+     "first": "2016-06-30",
+     "last": "2018-01-12"
+    },
+    {
+     "name": "DONG FENG 6",
+     "flag": "NIU",
+     "mmsi": "542132110",
+     "first": "2014-01-08",
+     "last": "2017-09-10"
+    },
+    {
+     "name": "QU HAI",
+     "flag": "CHN",
+     "mmsi": "412655000",
+     "first": "2012-01-01",
+     "last": "2013-10-17"
+    }
+   ],
+   "lastSeen": "2018-01-12",
+   "visits": [],
+   "radarMonths": []
+  },
+  {
+   "name": "Sam Jong 1",
+   "imo": "8405311",
+   "lists": [
+    "UK",
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "YUJONG1",
+     "flag": "PRK",
+     "mmsi": "445184000",
+     "first": "2013-04-10",
+     "last": "2017-12-24"
+    },
+    {
+     "name": "YUJONG1",
+     "flag": null,
+     "mmsi": "446232576",
+     "first": "2013-06-14",
+     "last": "2014-05-22"
+    }
+   ],
+   "lastSeen": "2017-12-24",
+   "visits": [],
+   "radarMonths": []
+  },
+  {
+   "name": "Hao Fan 6",
+   "imo": "8628597",
+   "lists": [
+    "UK",
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "HAO FAN 6",
+     "flag": "KNA",
+     "mmsi": "341985000",
+     "first": "2017-05-09",
+     "last": "2017-12-18"
+    },
+    {
+     "name": "HAO FAN 6",
+     "flag": "FJI",
+     "mmsi": "520377219",
+     "first": "2016-09-23",
+     "last": "2017-05-09"
+    },
+    {
+     "name": "HAO FAN 6",
+     "flag": "NIU",
+     "mmsi": "542165110",
+     "first": "2015-03-25",
+     "last": "2016-09-27"
+    },
+    {
+     "name": "HAO FAN 6",
+     "flag": "KIR",
+     "mmsi": "529393000",
+     "first": "2012-02-01",
+     "last": "2015-03-25"
+    }
+   ],
+   "lastSeen": "2017-12-18",
+   "visits": [],
+   "radarMonths": []
+  },
+  {
+   "name": "Woory Star",
+   "imo": "8408595",
+   "lists": [
+    "UK",
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "WOORY STAR",
+     "flag": "PRK",
+     "mmsi": "445393000",
+     "first": "2012-01-01",
+     "last": "2017-10-15"
+    }
+   ],
+   "lastSeen": "2017-10-15",
+   "visits": [],
+   "radarMonths": []
+  },
+  {
+   "name": "Yu Phyong 5",
+   "imo": "8605026",
+   "lists": [
+    "UK",
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "YU PHYONG 5",
+     "flag": "PRK",
+     "mmsi": "445372000",
+     "first": "2017-05-05",
+     "last": "2017-09-25"
+    },
+    {
+     "name": "VLADIVOSTOK 5",
+     "flag": "FJI",
+     "mmsi": "520377389",
+     "first": "2017-01-21",
+     "last": "2017-01-24"
+    },
+    {
+     "name": "BOKWANG NO.5",
+     "flag": "KOR",
+     "mmsi": "440100750",
+     "first": "2012-08-23",
+     "last": "2017-01-21"
+    },
+    {
+     "name": "BOKWANG NO.5",
+     "flag": "KOR",
+     "mmsi": "440100750",
+     "first": "2012-08-23",
+     "last": "2017-01-21"
+    }
+   ],
+   "lastSeen": "2017-09-25",
+   "visits": [],
+   "radarMonths": []
+  },
+  {
+   "name": "Ul Ji Bong 6",
+   "imo": "9114555",
+   "lists": [
+    "UK",
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "UL JI BONG 6",
+     "flag": "PRK",
+     "mmsi": "445276000",
+     "first": "2017-03-07",
+     "last": "2017-09-05"
+    },
+    {
+     "name": "GREAT WINNER",
+     "flag": "JAM",
+     "mmsi": "339301070",
+     "first": "2016-12-17",
+     "last": "2017-02-18"
+    },
+    {
+     "name": "SHENG HONG",
+     "flag": "PAN",
+     "mmsi": "352329000",
+     "first": "2012-02-11",
+     "last": "2016-12-04"
+    }
+   ],
+   "lastSeen": "2017-09-05",
+   "visits": [],
+   "radarMonths": []
+  },
+  {
+   "name": "Rye Song Gang 1",
+   "imo": "7389704",
+   "lists": [
+    "UK",
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "RYESONGGANG-1",
+     "flag": "PRK",
+     "mmsi": "445038000",
+     "first": "2013-03-26",
+     "last": "2017-06-10"
+    },
+    {
+     "name": "DEGTYARSK",
+     "flag": "RUS",
+     "mmsi": "273445710",
+     "first": "2012-01-17",
+     "last": "2012-11-10"
+    }
+   ],
+   "lastSeen": "2017-06-10",
+   "visits": [],
+   "radarMonths": []
+  },
+  {
+   "name": "Kum Song 7",
+   "imo": "8739396",
+   "lists": [
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "KUMSONG7",
+     "flag": "PRK",
+     "mmsi": "445208000",
+     "first": "2016-07-25",
+     "last": "2017-06-05"
+    },
+    {
+     "name": "ZHONG LIAN9",
+     "flag": "SLE",
+     "mmsi": "667001483",
+     "first": "2015-11-16",
+     "last": "2016-07-20"
+    },
+    {
+     "name": "ZHONG LIAN9",
+     "flag": "KHM",
+     "mmsi": "514311000",
+     "first": "2012-01-01",
+     "last": "2015-12-25"
+    },
+    {
+     "name": "ZHONWLIAN9",
+     "flag": "KHM",
+     "mmsi": "515359576",
+     "first": "2015-05-10",
+     "last": "2015-05-10"
+    }
+   ],
+   "lastSeen": "2017-06-05",
+   "visits": [],
+   "radarMonths": []
+  },
+  {
+   "name": "Pi Ruy Gang",
+   "imo": "8829593",
+   "lists": [
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "FIREFLY",
+     "flag": "VIR",
+     "mmsi": "379867543",
+     "first": "2016-08-13",
+     "last": "2017-06-03"
+    },
+    {
+     "name": "ATLS 9701",
+     "flag": "USA",
+     "mmsi": "369970276",
+     "first": "2016-10-05",
+     "last": "2016-10-31"
+    },
+    {
+     "name": "ATLS 9701",
+     "flag": "VIR",
+     "mmsi": "379867546",
+     "first": "2016-10-02",
+     "last": "2016-10-05"
+    },
+    {
+     "name": "MV ZUCKISS",
+     "flag": "VIR",
+     "mmsi": "379867542",
+     "first": "2016-10-02",
+     "last": "2016-10-02"
+    },
+    {
+     "name": "KANG GYE",
+     "flag": "PRK",
+     "mmsi": "445106000",
+     "first": "2014-10-24",
+     "last": "2016-03-21"
+    },
+    {
+     "name": "PI RYU GANG",
+     "flag": "PRK",
+     "mmsi": "445122000",
+     "first": "2012-05-13",
+     "last": "2014-10-02"
+    },
+    {
+     "name": "BLUE STAR",
+     "flag": null,
+     "mmsi": "100",
+     "first": "2012-07-19",
+     "last": "2012-08-16"
+    }
+   ],
+   "lastSeen": "2017-06-03",
+   "visits": [],
+   "radarMonths": []
+  },
+  {
+   "name": "Xin Guang Hai",
+   "imo": "9004700",
+   "lists": [
+    "UK",
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "XIN GUANG HAI",
+     "flag": "TGO",
+     "mmsi": "671812000",
+     "first": "2017-01-24",
+     "last": "2017-06-02"
+    },
+    {
+     "name": "SINO7",
+     "flag": "PAN",
+     "mmsi": "371708000",
+     "first": "2012-01-04",
+     "last": "2017-01-24"
+    }
+   ],
+   "lastSeen": "2017-06-02",
+   "visits": [],
+   "radarMonths": []
+  },
+  {
+   "name": "Jin Hye",
+   "imo": "8518572",
+   "lists": [
+    "UK"
+   ],
+   "ais": [
+    {
+     "name": "JIN HYE",
+     "flag": null,
+     "mmsi": "66702500",
+     "first": "2016-04-21",
+     "last": "2017-05-08"
+    },
+    {
+     "name": "VITALY VANUKHIN",
+     "flag": "SLE",
+     "mmsi": "667025000",
+     "first": "2013-12-20",
+     "last": "2016-04-22"
+    },
+    {
+     "name": "VITALY VANUKHIN",
+     "flag": "RUS",
+     "mmsi": "273321440",
+     "first": "2014-03-18",
+     "last": "2016-04-19"
+    },
+    {
+     "name": "PARADISE BAY",
+     "flag": "MLT",
+     "mmsi": "249383000",
+     "first": "2012-02-19",
+     "last": "2013-12-20"
+    }
+   ],
+   "lastSeen": "2017-05-08",
+   "visits": [],
+   "radarMonths": []
+  },
+  {
+   "name": "Yu Song 7",
+   "imo": "8400854",
+   "lists": [
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "YU SONG 7",
+     "flag": "PRK",
+     "mmsi": "445280000",
+     "first": "2012-08-30",
+     "last": "2017-05-08"
+    }
+   ],
+   "lastSeen": "2017-05-08",
+   "visits": [],
+   "radarMonths": []
+  },
+  {
+   "name": "Grand Karo",
+   "imo": "8511823",
+   "lists": [
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "GRANDKARO",
+     "flag": "KHM",
+     "mmsi": "515988000",
+     "first": "2013-11-05",
+     "last": "2017-02-13"
+    },
+    {
+     "name": "SHENGFU",
+     "flag": "PAN",
+     "mmsi": "352389000",
+     "first": "2012-01-01",
+     "last": "2013-11-05"
+    }
+   ],
+   "lastSeen": "2017-02-13",
+   "visits": [],
+   "radarMonths": []
+  },
+  {
+   "name": "Yu Song 12",
+   "imo": "9096791",
+   "lists": [
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "YU SONG 12",
+     "flag": "PRK",
+     "mmsi": "445458000",
+     "first": "2012-07-14",
+     "last": "2016-11-30"
+    }
+   ],
+   "lastSeen": "2016-11-30",
+   "visits": [],
+   "radarMonths": []
+  },
+  {
+   "name": "Jie Shun",
+   "imo": "8518780",
+   "lists": [
+    "UK"
+   ],
+   "ais": [
+    {
+     "name": "JIE SHUN",
+     "flag": "KHM",
+     "mmsi": "514569000",
+     "first": "2012-01-18",
+     "last": "2016-08-28"
+    }
+   ],
+   "lastSeen": "2016-08-28",
+   "visits": [],
+   "radarMonths": []
+  },
+  {
+   "name": "Hyok Sin 2",
+   "imo": "8018900",
+   "lists": [
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "JI HYE SAN",
+     "flag": "PRK",
+     "mmsi": "445128000",
+     "first": "2014-11-04",
+     "last": "2016-07-23"
+    },
+    {
+     "name": "HYOK SIN 2",
+     "flag": "PRK",
+     "mmsi": "445167000",
+     "first": "2012-04-08",
+     "last": "2014-08-20"
+    }
+   ],
+   "lastSeen": "2016-07-23",
+   "visits": [],
+   "radarMonths": []
+  },
+  {
+   "name": "Ra Nam 2",
+   "imo": "8625545",
+   "lists": [
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "RA NAM 2",
+     "flag": "PRK",
+     "mmsi": "445470000",
+     "first": "2012-01-08",
+     "last": "2016-06-30"
+    }
+   ],
+   "lastSeen": "2016-06-30",
+   "visits": [],
+   "radarMonths": []
+  },
+  {
+   "name": "Jh 86",
+   "imo": "8602531",
+   "lists": [
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "JH 86",
+     "flag": "KHM",
+     "mmsi": "514664000",
+     "first": "2013-06-07",
+     "last": "2016-05-23"
+    },
+    {
+     "name": "JH 86",
+     "flag": null,
+     "mmsi": "51466400",
+     "first": "2015-01-12",
+     "last": "2015-02-10"
+    },
+    {
+     "name": "TAN BINH 32",
+     "flag": "MNG",
+     "mmsi": "457211000",
+     "first": "2012-07-05",
+     "last": "2013-06-07"
+    }
+   ],
+   "lastSeen": "2016-05-23",
+   "visits": [],
+   "radarMonths": []
+  },
+  {
+   "name": "Mi Rim",
+   "imo": "8713471",
+   "lists": [
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "MI RIM",
+     "flag": "PRK",
+     "mmsi": "445498000",
+     "first": "2012-01-08",
+     "last": "2016-04-22"
+    }
+   ],
+   "lastSeen": "2016-04-22",
+   "visits": [],
+   "radarMonths": []
+  },
+  {
+   "name": "Hwang Gum San 2",
+   "imo": "8405270",
+   "lists": [
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "HUI CHON",
+     "flag": "PRK",
+     "mmsi": "445113000",
+     "first": "2014-09-22",
+     "last": "2016-03-23"
+    },
+    {
+     "name": "HWANG GUM SAN 2",
+     "flag": "PRK",
+     "mmsi": "445468000",
+     "first": "2012-11-08",
+     "last": "2014-06-25"
+    },
+    {
+     "name": "GREEN OASIS",
+     "flag": "PAN",
+     "mmsi": "352623000",
+     "first": "2012-01-13",
+     "last": "2012-08-09"
+    }
+   ],
+   "lastSeen": "2016-03-23",
+   "visits": [],
+   "radarMonths": []
+  },
+  {
+   "name": "Tong Hung 1",
+   "imo": "8661575",
+   "lists": [
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "TONG HUNG 1",
+     "flag": "PRK",
+     "mmsi": "445141000",
+     "first": "2013-07-21",
+     "last": "2016-03-05"
+    },
+    {
+     "name": "TONGHUNG 1",
+     "flag": "PRK",
+     "mmsi": "445141100",
+     "first": "2013-06-10",
+     "last": "2013-07-12"
+    }
+   ],
+   "lastSeen": "2016-03-05",
+   "visits": [],
+   "radarMonths": []
+  },
+  {
+   "name": "South Hill 2",
+   "imo": "8412467",
+   "lists": [
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "SOUTH HILL 2",
+     "flag": "SLE",
+     "mmsi": "667003342",
+     "first": "2012-07-29",
+     "last": "2016-01-20"
+    },
+    {
+     "name": "RYONG NAM 2",
+     "flag": "PRK",
+     "mmsi": "445198000",
+     "first": "2012-05-17",
+     "last": "2012-07-29"
+    },
+    {
+     "name": "RYONG NAM 2",
+     "flag": "SLE",
+     "mmsi": "667003139",
+     "first": "2012-01-01",
+     "last": "2012-03-16"
+    }
+   ],
+   "lastSeen": "2016-01-20",
+   "visits": [],
+   "radarMonths": []
+  },
+  {
+   "name": "Mu Du Bong",
+   "imo": "8328197",
+   "lists": [
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "MU DU BONG",
+     "flag": "PRK",
+     "mmsi": "445131000",
+     "first": "2012-02-25",
+     "last": "2015-05-18"
+    }
+   ],
+   "lastSeen": "2015-05-18",
+   "visits": [],
+   "radarMonths": []
+  },
+  {
+   "name": "Am Nok Gang",
+   "imo": "8132835",
+   "lists": [
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "TAE RYONG GANG",
+     "flag": "PRK",
+     "mmsi": "445115000",
+     "first": "2014-10-05",
+     "last": "2015-03-25"
+    },
+    {
+     "name": "APROKGANG",
+     "flag": "PRK",
+     "mmsi": "445123000",
+     "first": "2012-01-10",
+     "last": "2014-08-21"
+    }
+   ],
+   "lastSeen": "2015-03-25",
+   "visits": [],
+   "radarMonths": []
+  },
+  {
+   "name": "Jang Ja San Chong Nyon Ho",
+   "imo": "8133530",
+   "lists": [
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "SONGJIN",
+     "flag": "PRK",
+     "mmsi": "445366000",
+     "first": "2014-10-08",
+     "last": "2014-12-25"
+    },
+    {
+     "name": "JANGJASANCHONGNYONHO",
+     "flag": "PRK",
+     "mmsi": "445121000",
+     "first": "2012-06-25",
+     "last": "2014-09-17"
+    }
+   ],
+   "lastSeen": "2014-12-25",
+   "visits": [],
+   "radarMonths": []
+  },
+  {
+   "name": "Ryong Gang 2",
+   "imo": "7640378",
+   "lists": [
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "TAN CHON",
+     "flag": "PRK",
+     "mmsi": "445135000",
+     "first": "2014-09-17",
+     "last": "2014-11-26"
+    },
+    {
+     "name": "RYONG GANG2",
+     "flag": "PRK",
+     "mmsi": "445225000",
+     "first": "2012-03-09",
+     "last": "2014-09-12"
+    }
+   ],
+   "lastSeen": "2014-11-26",
+   "visits": [],
+   "radarMonths": []
+  },
+  {
+   "name": "Chong Chon Gang",
+   "imo": "7937317",
+   "lists": [
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "CHONG CHONGANG",
+     "flag": "PRK",
+     "mmsi": "445114000",
+     "first": "2012-04-11",
+     "last": "2014-11-12"
+    }
+   ],
+   "lastSeen": "2014-11-12",
+   "visits": [],
+   "radarMonths": []
+  },
+  {
+   "name": "O Un Chong Nyon Ho",
+   "imo": "8330815",
+   "lists": [
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "HU CHANG",
+     "flag": "PRK",
+     "mmsi": "445112000",
+     "first": "2014-10-09",
+     "last": "2014-10-17"
+    },
+    {
+     "name": "OUN CHONG NYON HO",
+     "flag": "PRK",
+     "mmsi": "445116000",
+     "first": "2012-02-18",
+     "last": "2014-09-12"
+    }
+   ],
+   "lastSeen": "2014-10-17",
+   "visits": [],
+   "radarMonths": []
+  },
+  {
+   "name": "Tae Dong Gang",
+   "imo": "7738656",
+   "lists": [
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "TAE DONG GANG",
+     "flag": "PRK",
+     "mmsi": "445130000",
+     "first": "2012-05-21",
+     "last": "2014-05-16"
+    }
+   ],
+   "lastSeen": "2014-05-16",
+   "visits": [],
+   "radarMonths": []
+  },
+  {
+   "name": "Ku Bong Ryong",
+   "imo": "8983404",
+   "lists": [
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "KU BONG RYONG",
+     "flag": "PRK",
+     "mmsi": "445091000",
+     "first": "2012-04-27",
+     "last": "2013-09-15"
+    }
+   ],
+   "lastSeen": "2013-09-15",
+   "visits": [],
+   "radarMonths": []
+  },
+  {
+   "name": "Rak Won 2",
+   "imo": "8819017",
+   "lists": [
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "RAK WON 2",
+     "flag": "PRK",
+     "mmsi": "445140000",
+     "first": "2012-03-21",
+     "last": "2012-03-30"
+    }
+   ],
+   "lastSeen": "2012-03-30",
+   "visits": [],
+   "radarMonths": []
+  },
+  {
+   "name": "7-28",
+   "imo": "8898831",
+   "lists": [
+    "US"
+   ],
+   "ais": [],
+   "lastSeen": null,
+   "visits": [],
+   "radarMonths": []
+  },
+  {
+   "name": "Dok Chon",
+   "imo": "7411260",
+   "lists": [
+    "US"
+   ],
+   "ais": [],
+   "lastSeen": null,
+   "visits": [],
+   "radarMonths": []
+  },
+  {
+   "name": "Kang Song 1",
+   "imo": "6908096",
+   "lists": [
+    "US"
+   ],
+   "ais": [],
+   "lastSeen": null,
+   "visits": [],
+   "radarMonths": []
+  },
+  {
+   "name": "Rak Rang",
+   "imo": "7506118",
+   "lists": [
+    "US"
+   ],
+   "ais": [],
+   "lastSeen": null,
+   "visits": [],
+   "radarMonths": []
+  },
+  {
+   "name": "Tong Hung 5",
+   "imo": "8151415",
+   "lists": [
+    "US"
+   ],
+   "ais": [],
+   "lastSeen": null,
+   "visits": [],
+   "radarMonths": []
+  },
+  {
+   "name": "Yang Gak Do",
+   "imo": "6401828",
+   "lists": [
+    "US"
+   ],
+   "ais": [],
+   "lastSeen": null,
+   "visits": [],
+   "radarMonths": []
+  }
+ ],
+ "radar": [
+  {
+   "month": "2025-11",
+   "detections": 2793,
+   "matched": 58,
+   "flags": {
+    "PAN": 4,
+    "CHN": 37,
+    "unknown": 12,
+    "PRK": 3,
+    "TGO": 1,
+    "RUS": 1
+   },
+   "passes": 23
+  },
+  {
+   "month": "2025-12",
+   "detections": 1873,
+   "matched": 32,
+   "flags": {
+    "PRK": 5,
+    "CHN": 18,
+    "unknown": 7,
+    "KOR": 2
+   },
+   "passes": 23
+  },
+  {
+   "month": "2026-01",
+   "detections": 970,
+   "matched": 11,
+   "flags": {
+    "PRK": 4,
+    "KOR": 1,
+    "RUS": 1,
+    "CHN": 3,
+    "unknown": 1,
+    "NOR": 1
+   },
+   "passes": 17
+  },
+  {
+   "month": "2026-02",
+   "detections": 430,
+   "matched": 7,
+   "flags": {
+    "CHN": 4,
+    "LBR": 1,
+    "COK": 1,
+    "KOR": 1
+   },
+   "passes": 13
+  },
+  {
+   "month": "2026-03",
+   "detections": 1185,
+   "matched": 43,
+   "flags": {
+    "CHN": 32,
+    "unknown": 7,
+    "PRK": 3,
+    "KOR": 1
+   },
+   "passes": 17
+  },
+  {
+   "month": "2026-04",
+   "detections": 1322,
+   "matched": 54,
+   "flags": {
+    "CHN": 32,
+    "unknown": 12,
+    "PRK": 1,
+    "KOR": 6,
+    "PAN": 1,
+    "HKG": 1,
+    "IRQ": 1
+   },
+   "passes": 17
+  },
+  {
+   "month": "2026-05",
+   "detections": 1960,
+   "matched": 12,
+   "flags": {
+    "PRK": 4,
+    "PCN": 1,
+    "CHN": 3,
+    "LBR": 1,
+    "RUS": 1,
+    "unknown": 2
+   },
+   "passes": 18
+  },
+  {
+   "month": "2026-06",
+   "detections": 3032,
+   "matched": 14,
+   "flags": {
+    "CHN": 3,
+    "LBR": 1,
+    "PRK": 5,
+    "VNM": 1,
+    "KOR": 1,
+    "unknown": 3
+   },
+   "passes": 12
+  },
+  {
+   "month": "2026-07",
+   "detections": 6663,
+   "matched": 61,
+   "flags": {
+    "KOR": 17,
+    "PAN": 7,
+    "CHN": 13,
+    "PRK": 12,
+    "STP": 1,
+    "RUS": 4,
+    "USA": 1,
+    "unknown": 3,
+    "SLE": 1,
+    "VUT": 1,
+    "CMR": 1
+   },
+   "passes": 20
+  },
+  {
+   "month": "2026-08",
+   "detections": 4367,
+   "matched": 49,
+   "flags": {
+    "STP": 3,
+    "PRK": 7,
+    "PAN": 5,
+    "PRT": 1,
+    "CHN": 12,
+    "TZA": 1,
+    "KOR": 5,
+    "RUS": 3,
+    "unknown": 7,
+    "BLZ": 1,
+    "LBR": 1,
+    "VUT": 1,
+    "ALB": 1,
+    "HKG": 1
+   },
+   "passes": 19
+  },
+  {
+   "month": "2026-09",
+   "detections": 12447,
+   "matched": 104,
+   "flags": {
+    "TGO": 1,
+    "CHN": 37,
+    "CAF": 1,
+    "unknown": 31,
+    "PAN": 4,
+    "RUS": 7,
+    "PRK": 11,
+    "KOR": 2,
+    "GNB": 4,
+    "PLW": 2,
+    "LUX": 2,
+    "BLZ": 1,
+    "VUT": 1
+   },
+   "passes": 20
+  },
+  {
+   "month": "2026-10",
+   "detections": 431,
+   "matched": 4,
+   "flags": {
+    "RUS": 3,
+    "PAN": 1
+   },
+   "passes": 5
+  }
+ ]
+}

@@ -51,6 +51,8 @@ export interface Target {
   how: Partial<Record<ListKey, Method>>;
   /** Lists with an entry of the same name that nothing confirms is the same target. */
   maybe?: ListKey[];
+  /** Ships only: every IMO number the lists give for it (7 digits; company numbers are left out). */
+  imo?: string[];
 }
 
 const SPELLING: [RegExp, string][] = [
@@ -171,6 +173,8 @@ export function matchLists(recs: Rec[]): { targets: Target[]; warnings: string[]
       const prev = t.how[r.list];
       if (m && r.list !== lead.list && (!prev || rank(m) < rank(prev))) t.how[r.list] = m;
     }
+    const imo = [...new Set(sorted.flatMap((i) => (recs[i].kind === 'vessel' ? (recs[i].imo ?? []) : [])))].sort();
+    if (imo.length) t.imo = imo;
     targets.push(t);
     targetOf.set(root, t);
   }

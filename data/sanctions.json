@@ -1,6 +1,6 @@
 {
  "_doc": "Built by scripts/build-sanctions.ts from the live UN, US, UK, EU and Japanese lists. Do not edit by hand.",
- "fetched": "2026-10-08",
+ "fetched": "2026-10-12",
  "sources": {
   "un": "https://scsanctions.un.org/resources/xml/en/consolidated.xml",
   "ofac": "https://www.treasury.gov/ofac/downloads/sdn.csv",
@@ -14,7 +14,7 @@
   "jp": "https://www.mof.go.jp/policy/international_policy/gaitame_kawase/gaitame/economic_sanctions/list.html"
  },
  "un": {
-  "generated": "2026-10-07",
+  "generated": "2026-10-10",
   "individuals": [
    {
     "ref": "KPi.001",
@@ -7027,7 +7027,7 @@
  ],
  "national": {
   "uk": {
-   "fetched": "2026-10-08",
+   "fetched": "2026-10-12",
    "published": "2026-10-08",
    "file": "https://sanctionslist.fcdo.gov.uk/docs/UK-Sanctions-List.xml",
    "entries": [
@@ -13681,7 +13681,7 @@
    ]
   },
   "jp": {
-   "fetched": "2026-10-08",
+   "fetched": "2026-10-12",
    "published": "2026-10-09",
    "file": "https://www.mof.go.jp/policy/international_policy/gaitame_kawase/gaitame/economic_sanctions/shisantouketsu20261009.csv",
    "entries": [
@@ -21184,7 +21184,10 @@
      "23156"
     ]
    },
-   "how": {}
+   "how": {},
+   "imo": [
+    "8898831"
+   ]
   },
   {
    "name": "Academy of National Defence Science",
@@ -21329,7 +21332,10 @@
      "17084"
     ]
    },
-   "how": {}
+   "how": {},
+   "imo": [
+    "8132835"
+   ]
   },
   {
    "name": "Amnokgang Technology Development Company",
@@ -21379,7 +21385,10 @@
    },
    "how": {
     "UK": "imo"
-   }
+   },
+   "imo": [
+    "7303803"
+   ]
   },
   {
    "name": "An Se-Ho",
@@ -21502,6 +21511,9 @@
     ]
    },
    "how": {},
+   "imo": [
+    "9010022"
+   ],
    "maybe": [
     "UK"
    ]
@@ -21519,7 +21531,10 @@
    },
    "how": {
     "UK": "imo"
-   }
+   },
+   "imo": [
+    "8916580"
+   ]
   },
   {
    "name": "Aung Tin Myo",
@@ -21539,7 +21554,10 @@
      "17085"
     ]
    },
-   "how": {}
+   "how": {},
+   "imo": [
+    "7944683"
+   ]
   },
   {
    "name": "Bak Gwang Hun",
@@ -21628,7 +21646,10 @@
      "24510"
     ]
    },
-   "how": {}
+   "how": {},
+   "imo": [
+    "8808264"
+   ]
   },
   {
    "name": "Billions No.18",
@@ -21638,7 +21659,10 @@
      "DPR0092"
     ]
    },
-   "how": {}
+   "how": {},
+   "imo": [
+    "9191773"
+   ]
   },
   {
    "name": "Bluenoroff",
@@ -21674,7 +21698,10 @@
      "24511"
     ]
    },
-   "how": {}
+   "how": {},
+   "imo": [
+    "9085730"
+   ]
   },
   {
    "name": "Budnev Aleksey",
@@ -21694,7 +21721,10 @@
      "27529"
     ]
    },
-   "how": {}
+   "how": {},
+   "imo": [
+    "8318867"
+   ]
   },
   {
    "name": "Celestino Herrera York Louis",
@@ -22286,7 +22316,10 @@
    },
    "how": {
     "UK": "imo"
-   }
+   },
+   "imo": [
+    "8660313"
+   ]
   },
   {
    "name": "Chon Myong 1",
@@ -22301,7 +22334,10 @@
    },
    "how": {
     "UK": "imo"
-   }
+   },
+   "imo": [
+    "8712362"
+   ]
   },
   {
    "name": "Chong Bong",
@@ -22311,7 +22347,10 @@
      "19588"
     ]
    },
-   "how": {}
+   "how": {},
+   "imo": [
+    "8909575"
+   ]
   },
   {
    "name": "Chong Chon Gang",
@@ -22321,7 +22360,10 @@
      "17069"
     ]
    },
-   "how": {}
+   "how": {},
+   "imo": [
+    "7937317"
+   ]
   },
   {
    "name": "Chong Rim 2",
@@ -22331,7 +22373,10 @@
      "19589"
     ]
    },
-   "how": {}
+   "how": {},
+   "imo": [
+    "8916293"
+   ]
   },
   {
    "name": "Chongbong Shipping Co Ltd",
@@ -22458,7 +22503,10 @@
      "17086"
     ]
    },
-   "how": {}
+   "how": {},
+   "imo": [
+    "7944695"
+   ]
   },
   {
    "name": "Dalian Global Unity Shipping Co., Ltd.",
@@ -22672,7 +22720,10 @@
      "18346"
     ]
    },
-   "how": {}
+   "how": {},
+   "imo": [
+    "9110236"
+   ]
   },
   {
    "name": "Defense Engineering Limited Liability Partnership",
@@ -22727,7 +22778,10 @@
      "17091"
     ]
    },
-   "how": {}
+   "how": {},
+   "imo": [
+    "7411260"
+   ]
   },
   {
    "name": "Dong Feng 6",
@@ -22742,7 +22796,10 @@
    },
    "how": {
     "UK": "imo"
-   }
+   },
+   "imo": [
+    "9008201"
+   ]
   },
   {
    "name": "Du Jiaxin",
@@ -22833,7 +22890,10 @@
    },
    "how": {
     "UK": "imo"
-   }
+   },
+   "imo": [
+    "8914934"
+   ]
   },
   {
    "name": "Ever Glory",
@@ -22843,7 +22903,10 @@
      "23522"
     ]
    },
-   "how": {}
+   "how": {},
+   "imo": [
+    "8909915"
+   ]
   },
   {
    "name": "Everlasting Empire Limited",
@@ -22975,7 +23038,10 @@
      "19572"
     ]
    },
-   "how": {}
+   "how": {},
+   "imo": [
+    "8405402"
+   ]
   },
   {
    "name": "Golden Triangle Bank",
@@ -22995,7 +23061,10 @@
      "23511"
     ]
    },
-   "how": {}
+   "how": {},
+   "imo": [
+    "8201870"
+   ]
   },
   {
    "name": "Good Siblings Ltd",
@@ -23025,7 +23094,10 @@
      "19585"
     ]
    },
-   "how": {}
+   "how": {},
+   "imo": [
+    "8511823"
+   ]
   },
   {
    "name": "Green Alpine Trading, Llc",
@@ -23162,7 +23234,10 @@
    },
    "how": {
     "UK": "imo"
-   }
+   },
+   "imo": [
+    "8747604"
+   ]
   },
   {
    "name": "Hao Fan 6",
@@ -23177,7 +23252,10 @@
    },
    "how": {
     "UK": "imo"
-   }
+   },
+   "imo": [
+    "8628597"
+   ]
   },
   {
    "name": "Hap Jang Gang 6",
@@ -23192,7 +23270,10 @@
    },
    "how": {
     "UK": "imo"
-   }
+   },
+   "imo": [
+    "9066540"
+   ]
   },
   {
    "name": "Hapjanggang Trading Corporation",
@@ -23315,7 +23396,10 @@
      "19591"
     ]
    },
-   "how": {}
+   "how": {},
+   "imo": [
+    "9041552"
+   ]
   },
   {
    "name": "Hoeryong Shipping Co Ltd",
@@ -23438,7 +23522,10 @@
    },
    "how": {
     "UK": "imo"
-   }
+   },
+   "imo": [
+    "9020003"
+   ]
   },
   {
    "name": "Huang Wang Ken",
@@ -23484,7 +23571,10 @@
      "23514"
     ]
    },
-   "how": {}
+   "how": {},
+   "imo": [
+    "8217685"
+   ]
   },
   {
    "name": "Hwang Gum San 2",
@@ -23494,7 +23584,10 @@
      "17087"
     ]
    },
-   "how": {}
+   "how": {},
+   "imo": [
+    "8405270"
+   ]
   },
   {
    "name": "Hwang Kil Su",
@@ -23565,7 +23658,10 @@
      "17088"
     ]
    },
-   "how": {}
+   "how": {},
+   "imo": [
+    "8018900"
+   ]
   },
   {
    "name": "Hyon Chol-Hae",
@@ -23688,7 +23784,10 @@
      "23159"
     ]
    },
-   "how": {}
+   "how": {},
+   "imo": [
+    "8203933"
+   ]
   },
   {
    "name": "Jang Ja San Chong Nyon Ho",
@@ -23698,7 +23797,10 @@
      "17089"
     ]
    },
-   "how": {}
+   "how": {},
+   "imo": [
+    "8133530"
+   ]
   },
   {
    "name": "Jang Kuk Chol",
@@ -23728,7 +23830,10 @@
      "19573"
     ]
    },
-   "how": {}
+   "how": {},
+   "imo": [
+    "8602531"
+   ]
   },
   {
    "name": "Ji Sang Jun",
@@ -23758,7 +23863,10 @@
    },
    "how": {
     "UK": "imo"
-   }
+   },
+   "imo": [
+    "8898740"
+   ]
   },
   {
    "name": "Ji Song 8",
@@ -23773,7 +23881,10 @@
    },
    "how": {
     "UK": "imo"
-   }
+   },
+   "imo": [
+    "8503228"
+   ]
   },
   {
    "name": "Jie Shun",
@@ -23783,7 +23894,10 @@
      "DPR0078"
     ]
    },
-   "how": {}
+   "how": {},
+   "imo": [
+    "8518780"
+   ]
   },
   {
    "name": "Jin Hye",
@@ -23793,7 +23907,10 @@
      "DPR0117"
     ]
    },
-   "how": {}
+   "how": {},
+   "imo": [
+    "8518572"
+   ]
   },
   {
    "name": "Jin Tai",
@@ -23803,7 +23920,10 @@
      "19575"
     ]
    },
-   "how": {}
+   "how": {},
+   "imo": [
+    "9163154"
+   ]
   },
   {
    "name": "Jin Teng",
@@ -23813,7 +23933,10 @@
      "19577"
     ]
    },
-   "how": {}
+   "how": {},
+   "imo": [
+    "9163166"
+   ]
   },
   {
    "name": "Jinhou International Holdings Co., Ltd.",
@@ -24015,7 +24138,10 @@
      "17090"
     ]
    },
-   "how": {}
+   "how": {},
+   "imo": [
+    "8018912"
+   ]
   },
   {
    "name": "Jon Jin Yong",
@@ -24288,7 +24414,10 @@
      "23184"
     ]
    },
-   "how": {}
+   "how": {},
+   "imo": [
+    "6908096"
+   ]
   },
   {
    "name": "Kang Song Nam",
@@ -26312,7 +26441,10 @@
    },
    "how": {
     "UK": "imo"
-   }
+   },
+   "imo": [
+    "9417115"
+   ]
   },
   {
    "name": "Koti Corp",
@@ -26353,7 +26485,10 @@
      "23185"
     ]
    },
-   "how": {}
+   "how": {},
+   "imo": [
+    "8983404"
+   ]
   },
   {
    "name": "Ku Sung Sop",
@@ -26373,7 +26508,10 @@
      "23731"
     ]
    },
-   "how": {}
+   "how": {},
+   "imo": [
+    "8966535"
+   ]
   },
   {
    "name": "Kum Song 3",
@@ -26383,7 +26521,10 @@
      "23160"
     ]
    },
-   "how": {}
+   "how": {},
+   "imo": [
+    "8661850"
+   ]
   },
   {
    "name": "Kum Song 5",
@@ -26393,7 +26534,10 @@
      "23161"
     ]
    },
-   "how": {}
+   "how": {},
+   "imo": [
+    "8661719"
+   ]
   },
   {
    "name": "Kum Song 7",
@@ -26403,7 +26547,10 @@
      "23162"
     ]
    },
-   "how": {}
+   "how": {},
+   "imo": [
+    "8739396"
+   ]
   },
   {
    "name": "Kum Un San",
@@ -26413,7 +26560,10 @@
      "23517"
     ]
    },
-   "how": {}
+   "how": {},
+   "imo": [
+    "8720436"
+   ]
   },
   {
    "name": "Kum Un San 3",
@@ -26428,7 +26578,10 @@
    },
    "how": {
     "UK": "imo"
-   }
+   },
+   "imo": [
+    "8705539"
+   ]
   },
   {
    "name": "Kumgang Bank",
@@ -26645,7 +26798,10 @@
      "27528"
     ]
    },
-   "how": {}
+   "how": {},
+   "imo": [
+    "9015278"
+   ]
   },
   {
    "name": "Luo Chuanxu",
@@ -26757,7 +26913,10 @@
      "19592"
     ]
    },
-   "how": {}
+   "how": {},
+   "imo": [
+    "8713471"
+   ]
   },
   {
    "name": "Mi Rim 2",
@@ -26767,7 +26926,10 @@
      "19593"
     ]
    },
-   "how": {}
+   "how": {},
+   "imo": [
+    "9361407"
+   ]
   },
   {
    "name": "Michurin Igor Aleksandrovich",
@@ -27028,7 +27190,10 @@
      "17092"
     ]
    },
-   "how": {}
+   "how": {},
+   "imo": [
+    "8328197"
+   ]
   },
   {
    "name": "Mun Cho'ng-Ch'o'l",
@@ -27105,7 +27270,10 @@
    },
    "how": {
     "UK": "imo"
-   }
+   },
+   "imo": [
+    "8122347"
+   ]
   },
   {
    "name": "Namchongang Trading Corporation",
@@ -27193,7 +27361,10 @@
      "24509"
     ]
    },
-   "how": {}
+   "how": {},
+   "imo": [
+    "8404991"
+   ]
   },
   {
    "name": "New Eastern Shipping Co Ltd",
@@ -27223,7 +27394,10 @@
      "DPR0122"
     ]
    },
-   "how": {}
+   "how": {},
+   "imo": [
+    "8312497"
+   ]
   },
   {
    "name": "Nguyen Quang Viet",
@@ -27299,7 +27473,10 @@
      "25689"
     ]
    },
-   "how": {}
+   "how": {},
+   "imo": [
+    "9078191"
+   ]
   },
   {
    "name": "O Chong Ok",
@@ -27354,7 +27531,10 @@
      "17093"
     ]
    },
-   "how": {}
+   "how": {},
+   "imo": [
+    "8330815"
+   ]
   },
   {
    "name": "O Yong Ho",
@@ -27455,7 +27635,10 @@
      "23766"
     ]
    },
-   "how": {}
+   "how": {},
+   "imo": [
+    "9115028"
+   ]
   },
   {
    "name": "Orion Star",
@@ -27465,7 +27648,10 @@
      "19578"
     ]
    },
-   "how": {}
+   "how": {},
+   "imo": [
+    "9333589"
+   ]
   },
   {
    "name": "P-532",
@@ -27665,7 +27851,10 @@
    },
    "how": {
     "UK": "imo"
-   }
+   },
+   "imo": [
+    "9066978"
+   ]
   },
   {
    "name": "Paek Se-bong",
@@ -28038,7 +28227,10 @@
      "24512"
     ]
    },
-   "how": {}
+   "how": {},
+   "imo": [
+    "9113020"
+   ]
   },
   {
    "name": "Patriot",
@@ -28048,7 +28240,10 @@
      "24508"
     ]
    },
-   "how": {}
+   "how": {},
+   "imo": [
+    "9003550"
+   ]
   },
   {
    "name": "Petrel 8",
@@ -28058,7 +28253,10 @@
      "DPR0075"
     ]
    },
-   "how": {}
+   "how": {},
+   "imo": [
+    "9562233"
+   ]
   },
   {
    "name": "Pho Thae",
@@ -28068,7 +28266,10 @@
      "17095"
     ]
    },
-   "how": {}
+   "how": {},
+   "imo": [
+    "7632955"
+   ]
   },
   {
    "name": "Pi Ruy Gang",
@@ -28078,7 +28279,10 @@
      "17096"
     ]
    },
-   "how": {}
+   "how": {},
+   "imo": [
+    "8829593"
+   ]
   },
   {
    "name": "Pioneer Bencont Star Real Estate",
@@ -28108,7 +28312,10 @@
      "23741"
     ]
    },
-   "how": {}
+   "how": {},
+   "imo": [
+    "8848276"
+   ]
   },
   {
    "name": "Po Thong Gang",
@@ -28118,7 +28325,10 @@
      "17094"
     ]
    },
-   "how": {}
+   "how": {},
+   "imo": [
+    "8829555"
+   ]
   },
   {
    "name": "Pochon Shipping & Management",
@@ -28184,7 +28394,10 @@
      "23165"
     ]
    },
-   "how": {}
+   "how": {},
+   "imo": [
+    "8703933"
+   ]
   },
   {
    "name": "Public Joint-Stock Company Commercial Bank 'sputnik'",
@@ -28356,7 +28569,10 @@
      "19594"
     ]
    },
-   "how": {}
+   "how": {},
+   "imo": [
+    "8625545"
+   ]
   },
   {
    "name": "Ra Nam 3",
@@ -28366,7 +28582,10 @@
      "19595"
     ]
    },
-   "how": {}
+   "how": {},
+   "imo": [
+    "9314650"
+   ]
   },
   {
    "name": "Rafort Limited Liability Company",
@@ -28386,7 +28605,10 @@
      "23164"
     ]
    },
-   "how": {}
+   "how": {},
+   "imo": [
+    "7506118"
+   ]
   },
   {
    "name": "Rak Won 2",
@@ -28396,7 +28618,10 @@
      "17102"
     ]
    },
-   "how": {}
+   "how": {},
+   "imo": [
+    "8819017"
+   ]
   },
   {
    "name": "Rason International Commercial Bank",
@@ -28850,7 +29075,10 @@
      "23168"
     ]
    },
-   "how": {}
+   "how": {},
+   "imo": [
+    "8713457"
+   ]
   },
   {
    "name": "Rung Ra 2",
@@ -28865,7 +29093,10 @@
    },
    "how": {
     "UK": "imo"
-   }
+   },
+   "imo": [
+    "9020534"
+   ]
   },
   {
    "name": "Rung Ra Do",
@@ -28875,7 +29106,10 @@
      "23166"
     ]
    },
-   "how": {}
+   "how": {},
+   "imo": [
+    "8989795"
+   ]
   },
   {
    "name": "Russian Financial Corporation",
@@ -28925,7 +29159,10 @@
    },
    "how": {
     "UK": "imo"
-   }
+   },
+   "imo": [
+    "7389704"
+   ]
   },
   {
    "name": "Ryo Myong",
@@ -28935,7 +29172,10 @@
      "19596"
     ]
    },
-   "how": {}
+   "how": {},
+   "imo": [
+    "8987333"
+   ]
   },
   {
    "name": "Ryom Hui-bong",
@@ -28986,7 +29226,10 @@
      "17103"
     ]
    },
-   "how": {}
+   "how": {},
+   "imo": [
+    "7640378"
+   ]
   },
   {
    "name": "Ryong Gun Bong",
@@ -29057,7 +29300,10 @@
    },
    "how": {
     "UK": "imo"
-   }
+   },
+   "imo": [
+    "8405311"
+   ]
   },
   {
    "name": "Sam Jong 2",
@@ -29072,7 +29318,10 @@
    },
    "how": {
     "UK": "imo"
-   }
+   },
+   "imo": [
+    "7408873"
+   ]
   },
   {
    "name": "Sam Ma 2",
@@ -29087,7 +29336,10 @@
    },
    "how": {
     "UK": "imo"
-   }
+   },
+   "imo": [
+    "8106496"
+   ]
   },
   {
    "name": "Second Academy Of Natural Sciences",
@@ -29201,7 +29453,10 @@
      "24513"
     ]
    },
-   "how": {}
+   "how": {},
+   "imo": [
+    "9235127"
+   ]
   },
   {
    "name": "Shang Yuan Bao",
@@ -29216,7 +29471,10 @@
    },
    "how": {
     "UK": "imo"
-   }
+   },
+   "imo": [
+    "8126070"
+   ]
   },
   {
    "name": "Shanghai Dongfeng Shpg Co Ltd",
@@ -29407,7 +29665,10 @@
      "23187"
     ]
    },
-   "how": {}
+   "how": {},
+   "imo": [
+    "8658267"
+   ]
   },
   {
    "name": "So Hong Chan",
@@ -29591,7 +29852,10 @@
      "23742"
     ]
    },
-   "how": {}
+   "how": {},
+   "imo": [
+    "8613360"
+   ]
   },
   {
    "name": "Songi Trading Company",
@@ -29637,7 +29901,10 @@
      "19582"
     ]
    },
-   "how": {}
+   "how": {},
+   "imo": [
+    "8412467"
+   ]
   },
   {
    "name": "South Hill 5",
@@ -29647,7 +29914,10 @@
      "19584"
     ]
    },
-   "how": {}
+   "how": {},
+   "imo": [
+    "9138680"
+   ]
   },
   {
    "name": "Star 18",
@@ -29657,7 +29927,10 @@
      "28716"
     ]
    },
-   "how": {}
+   "how": {},
+   "imo": [
+    "9020015"
+   ]
   },
   {
    "name": "State Affairs Commission",
@@ -29794,7 +30067,10 @@
      "17105"
     ]
    },
-   "how": {}
+   "how": {},
+   "imo": [
+    "7738656"
+   ]
   },
   {
    "name": "Tan Wee Beng",
@@ -29834,7 +30110,10 @@
      "19597"
     ]
    },
-   "how": {}
+   "how": {},
+   "imo": [
+    "9009085"
+   ]
   },
   {
    "name": "Thaephyongsan Shipping Co Ltd",
@@ -29910,7 +30189,10 @@
      "19598"
     ]
    },
-   "how": {}
+   "how": {},
+   "imo": [
+    "8661575"
+   ]
   },
   {
    "name": "Tong Hung 5",
@@ -29920,7 +30202,10 @@
      "23743"
     ]
    },
-   "how": {}
+   "how": {},
+   "imo": [
+    "8151415"
+   ]
   },
   {
    "name": "Tong San 2",
@@ -29930,7 +30215,10 @@
      "DPR0077"
     ]
    },
-   "how": {}
+   "how": {},
+   "imo": [
+    "8937675"
+   ]
   },
   {
    "name": "Tonghung Shipping & Trading Co",
@@ -30051,7 +30339,10 @@
    },
    "how": {
     "UK": "imo"
-   }
+   },
+   "imo": [
+    "9114555"
+   ]
   },
   {
    "name": "Un Ryul",
@@ -30061,7 +30352,10 @@
      "23521"
     ]
    },
-   "how": {}
+   "how": {},
+   "imo": [
+    "8514409"
+   ]
   },
   {
    "name": "Unchon Trading Corporation",
@@ -30143,7 +30437,10 @@
      "19590"
     ]
    },
-   "how": {}
+   "how": {},
+   "imo": [
+    "8312227"
+   ]
   },
   {
    "name": "Volasys Silver Star",
@@ -30183,7 +30480,10 @@
      "DPR0119"
     ]
    },
-   "how": {}
+   "how": {},
+   "imo": [
+    "8791667"
+   ]
   },
   {
    "name": "Wang Chang Uk",
@@ -30238,7 +30538,10 @@
      "23150"
     ]
    },
-   "how": {}
+   "how": {},
+   "imo": [
+    "9159787"
+   ]
   },
   {
    "name": "Woory Star",
@@ -30253,7 +30556,10 @@
    },
    "how": {
     "UK": "imo"
-   }
+   },
+   "imo": [
+    "8408595"
+   ]
   },
   {
    "name": "Workers' Party Of Korea Central Military Commission",
@@ -30303,7 +30609,10 @@
    },
    "how": {
     "UK": "imo"
-   }
+   },
+   "imo": [
+    "9004700"
+   ]
   },
   {
    "name": "Yan Zhiyong",
@@ -30343,7 +30652,10 @@
      "23167"
     ]
    },
-   "how": {}
+   "how": {},
+   "imo": [
+    "6401828"
+   ]
   },
   {
    "name": "Yidatong Tianjin Metal Materials Co., Ltd",
@@ -30472,7 +30784,10 @@
    },
    "how": {
     "UK": "imo"
-   }
+   },
+   "imo": [
+    "8604917"
+   ]
   },
   {
    "name": "Yu Kwang Ho",
@@ -30502,7 +30817,10 @@
    },
    "how": {
     "UK": "imo"
-   }
+   },
+   "imo": [
+    "8605026"
+   ]
   },
   {
    "name": "Yu Pu Ung",
@@ -30527,7 +30845,10 @@
    },
    "how": {
     "UK": "imo"
-   }
+   },
+   "imo": [
+    "8691702"
+   ]
   },
   {
    "name": "Yu Song 12",
@@ -30537,7 +30858,10 @@
      "23157"
     ]
    },
-   "how": {}
+   "how": {},
+   "imo": [
+    "9096791"
+   ]
   },
   {
    "name": "Yu Song 7",
@@ -30547,7 +30871,10 @@
      "23158"
     ]
    },
-   "how": {}
+   "how": {},
+   "imo": [
+    "8400854"
+   ]
   },
   {
    "name": "Yuk Tung",
@@ -30562,7 +30889,10 @@
    },
    "how": {
     "UK": "imo"
-   }
+   },
+   "imo": [
+    "9030591"
+   ]
   },
   {
    "name": "Yuk Tung Energy Pte Ltd",
@@ -30649,7 +30979,10 @@
      "23155"
     ]
    },
-   "how": {}
+   "how": {},
+   "imo": [
+    "8898738"
+   ]
   },
   {
    "name": "Zeel - M Co., Ltd",

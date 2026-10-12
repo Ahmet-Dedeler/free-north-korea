@@ -5,6 +5,7 @@ import { getAllCamps } from '@/content/camps';
 import { getAllPlaces } from '@/content/places-data';
 import { getAllCounties } from '@/content/counties';
 import { SANCTIONS, SANCTIONS_PATHS } from '@/content/sanctions';
+import { SHIPS, SHIPS_PATHS } from '@/content/ships';
 import { SERIES, SERIES_BUILT } from '@/charts/data';
 import { DATA_PATHS, dataPath } from '@/content/series';
 import { TWO_KOREAS_PATHS } from '@/content/twoKoreas';
@@ -73,6 +74,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...Object.values(KIM_WATCH_PATHS).map((p) => ({ url: absolute(p), lastModified: KIM_WATCH.fetched, priority: 0.8, alternates: alternates(KIM_WATCH_PATHS) })),
     ...Object.values(WATCH_PATHS).map((p) => ({ url: absolute(p), lastModified: KIM_WATCH.fetched, priority: 0.8, alternates: alternates(WATCH_PATHS) })),
     ...Object.values(SANCTIONS_PATHS).map((p) => ({ url: absolute(p), lastModified: SANCTIONS.fetched, priority: 0.8, alternates: alternates(SANCTIONS_PATHS) })),
+    ...Object.values(SHIPS_PATHS).map((p) => ({ url: absolute(p), lastModified: SHIPS.fetched, priority: 0.7, alternates: alternates(SHIPS_PATHS) })),
     ...Object.values(TWO_KOREAS_PATHS).map((p) => ({ url: absolute(p), lastModified: SERIES_BUILT, priority: 0.9, alternates: alternates(TWO_KOREAS_PATHS) })),
     ...Object.values(DATA_PATHS).map((p) => ({ url: absolute(p), lastModified: SERIES_BUILT, priority: 0.8, alternates: alternates(DATA_PATHS) })),
     ...SERIES.flatMap((s) => {

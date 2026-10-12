@@ -50,6 +50,13 @@ before adding any page or article.
 - `/sanctions`: everyone on the UN 1718 list and the US Treasury (OFAC) North Korea programs, plus the UK, EU and
   Japan lists, with entries matched across lists (`targets`). One component
   (`components/SanctionsPage.tsx`) renders every language route.
+- `/sanctions/ships`: every listed ship with an IMO number as Global Fishing Watch sees it (identities broadcast
+  under that IMO, foreign port calls, months seen by radar in North Korea's EEZ) plus monthly Sentinel-1 radar counts
+  with the share that sent no AIS. `scripts/build-ships.ts` → `data/ships.json` (weekly), text in `content/ships.ts`,
+  `components/ShipsPage.tsx`. AIS is self-reported: always show the name and flag a ship broadcast, call a match a
+  lead, and never publish single radar detections. GFW terms: non-commercial, "Powered by Global Fishing Watch" on
+  every page and file using the data, one account only (no extra accounts to raise quota). APIs, keys and limits:
+  `docs/research/data-apis.md`.
 - Event wire (measured events within hours): `src/content/events.ts` reads `data/seismic.json` (USGS catalog, box
   around North Korea) and `data/launch-reports.json` (Japan Ministry of Defense launch PDFs); text in
   `src/content/eventsI18n.ts`. Shown by `components/SeismicBlock.tsx` (/military), `components/LaunchReports.tsx`

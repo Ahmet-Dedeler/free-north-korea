@@ -5,6 +5,7 @@ import EventFeed from '@/components/EventFeed';
 import KimLastSeen from '@/components/KimLastSeen';
 import { LatestImagery } from '@/components/SatWatch';
 import { StatTile } from '@/components/Visual';
+import { SHIPS_PATHS, SHIPS_TEXT } from '@/content/ships';
 import { LISTS, LIST_KEYS, NATIONAL_KEYS, SANCTIONS, SANCTIONS_PATHS, type ListKey } from '@/content/sanctions';
 import { WATCH_TEXT } from '@/content/watch';
 import type { Lang } from '@/site/seo';
@@ -80,6 +81,7 @@ export default function WatchPage({ lang }: { lang: Lang }) {
         </div>
         <p className="wh-more">
           <Link href={SANCTIONS_PATHS[lang]}>{t.sanctionsMore} →</Link>
+          <Link href={SHIPS_PATHS[lang]}>{SHIPS_TEXT[lang].h1} →</Link>
           <Link href={at(lang, '/data')}>{t.dataMore} →</Link>
         </p>
       </section>

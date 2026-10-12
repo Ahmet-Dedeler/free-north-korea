@@ -4627,3 +4627,45 @@ a.ltag:hover {
   border-left: 3px solid var(--line-strong);
   color: var(--ink-2);
 }
+
+/* /sanctions/ships: radar bars (dark = no AIS) and the flag list */
+.sh-dark {
+  background: var(--ink-3);
+}
+.sh-lit {
+  background: var(--warn);
+}
+.year-bars li.partial .yb-stack {
+  opacity: 0.45;
+}
+.ship-flags {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0 0;
+  display: grid;
+  gap: 6px;
+}
+.ship-flags li {
+  display: grid;
+  grid-template-columns: minmax(90px, 9em) 1fr 3.5em;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+.ship-flags i {
+  display: block;
+  height: 10px;
+  min-width: 2px;
+  border-radius: 3px;
+  background: var(--warn);
+}
+.ship-flags b {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}.ship-port {
+  display: block;
+}
+.ship-port em {
+  font-style: normal;
+  color: var(--ink-3);
+}
