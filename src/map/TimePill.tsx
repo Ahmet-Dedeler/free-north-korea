@@ -1,7 +1,7 @@
-"use client";
+'use client';
 
-import { useEffect, useState, type ReactNode } from "react";
-import { Pause, Play } from "lucide-react";
+import { useEffect, useState, type ReactNode } from 'react';
+import { Pause, Play } from 'lucide-react';
 
 /**
  * The one time control on the map, bottom centre, shown while an overlay with a time axis is on (night lights now,
@@ -47,24 +47,14 @@ export default function TimePill({
   }, [playing, at, steps, onChange]);
 
   return (
-    <div
-      className="tp"
-      role="group"
-      aria-label={head ? `${head.title}: ${label}` : label}
-    >
+    <div className="tp" role="group" aria-label={head ? `${head.title}: ${label}` : label}>
       {head && (
         <div className="tp-head">
           {head.keyNode}
           <span className="tp-title">
             {head.title} <small>{head.sub}</small>
           </span>
-          <button
-            type="button"
-            className="tp-close"
-            onClick={head.onClose}
-            aria-label={head.closeLabel}
-            title={head.closeLabel}
-          >
+          <button type="button" className="tp-close" onClick={head.onClose} aria-label={head.closeLabel} title={head.closeLabel}>
             ✕
           </button>
         </div>
@@ -81,17 +71,13 @@ export default function TimePill({
             setPlaying((p) => !p);
           }}
         >
-          {playing ? (
-            <Pause size={16} aria-hidden="true" />
-          ) : (
-            <Play size={16} aria-hidden="true" />
-          )}
+          {playing ? <Pause size={16} aria-hidden="true" /> : <Play size={16} aria-hidden="true" />}
         </button>
         <b className="tp-label">{value}</b>
         <div className="tp-scrub">
           <div className="tp-ticks" aria-hidden="true">
             {steps.map((s, i) => (
-              <i key={s} className={i === at ? "on" : ""} />
+              <i key={s} className={i === at ? 'on' : ''} />
             ))}
           </div>
           <div className="tp-ends" aria-hidden="true">
