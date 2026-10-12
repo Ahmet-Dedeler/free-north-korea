@@ -478,6 +478,8 @@ export const ROLE_TITLES: Record<string, Quad> = {
   "Vice Chairman of the Central Military Commission": q("Vice Chairman of the Central Military Commission", "당중앙군사위원회 부위원장", "党中央軍事委員会副委員長", "党中央军事委员会副委员长"),
   "Vice Chairman of the National Defence Commission": q("Vice Chairman of the National Defence Commission", "국방위원회 부위원장", "国防委員会副委員長", "国防委员会副委员长"),
   "Vice Chairman of the Workers' Party of Korea": q("Vice Chairman of the Workers' Party of Korea", "조선노동당 부위원장", "朝鮮労働党副委員長", "朝鲜劳动党副委员长"),
+  "Vice President of the State Affairs Commission": q("Vice President of the State Affairs Commission", "국무위원회 부위원장", "国務委員会副委員長", "国务委员会副委员长"),
+  "Director of the Economic Affairs Department of the Workers' Party of Korea": q("Director of the Economic Affairs Department of the Workers' Party of Korea", "조선노동당 경제부장", "朝鮮労働党経済部長", "朝鲜劳动党经济部部长"),
   "Vice Premier of North Korea": q("Vice Premier of North Korea", "북한 내각 부총리", "北朝鮮内閣副総理", "朝鲜内阁副总理"),
   "Vice Premier of the Cabinet": q("Vice Premier of the Cabinet", "내각 부총리", "内閣副総理", "内阁副总理"),
   "Vice President of North Korea": q("Vice President of North Korea", "북한 부주석", "北朝鮮副主席", "朝鲜副主席"),
