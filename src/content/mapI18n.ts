@@ -68,6 +68,11 @@ export interface MapText {
   readMore: string;
   csisReport: string;
   // basemap switch (bottom-left thumbnail, like Google Maps)
+  // "Latest" section of the sidebar (content/mapLatest.ts)
+  latestTitle: string;
+  latestSat: (date: string) => string;
+  latestMore: string;
+  latestQuakeAria: (title: string) => string;
   baseMap: string;
   baseSat: string;
   baseAria: string;
@@ -182,6 +187,10 @@ export const MAP_TEXT: Record<Lang, MapText> = {
     siteDossier: 'View full site details →',
     readMore: 'Read more →',
     csisReport: 'CSIS report',
+    latestTitle: 'Latest',
+    latestSat: (d) => `New satellite images · ${d}`,
+    latestMore: 'Everything we watch →',
+    latestQuakeAria: (t) => `Show on the map: ${t}`,
     baseMap: 'Map',
     baseSat: 'Satellite',
     baseAria: 'Switch between map and satellite view',
@@ -291,6 +300,10 @@ export const MAP_TEXT: Record<Lang, MapText> = {
     siteDossier: '장소 상세 페이지 보기 →',
     readMore: '더 읽기 →',
     csisReport: 'CSIS 보고서',
+    latestTitle: '최신 소식',
+    latestSat: (d) => `새 위성 영상 · ${d}`,
+    latestMore: '저희가 지켜보는 모든 것 →',
+    latestQuakeAria: (t) => `지도에서 보기: ${t}`,
     baseMap: '지도',
     baseSat: '위성',
     baseAria: '지도와 위성 보기 전환',
@@ -400,6 +413,10 @@ export const MAP_TEXT: Record<Lang, MapText> = {
     siteDossier: '地点の詳細ページへ →',
     readMore: '続きを読む →',
     csisReport: 'CSIS報告書',
+    latestTitle: '最新',
+    latestSat: (d) => `新しい衛星画像・${d}`,
+    latestMore: '私たちが見守っているもの一覧 →',
+    latestQuakeAria: (t) => `地図で見る：${t}`,
     baseMap: '地図',
     baseSat: '衛星',
     baseAria: '地図と衛星表示を切り替え',
@@ -509,6 +526,10 @@ export const MAP_TEXT: Record<Lang, MapText> = {
     siteDossier: '查看地点详情 →',
     readMore: '阅读更多 →',
     csisReport: 'CSIS 报告',
+    latestTitle: '最新动态',
+    latestSat: (d) => `新卫星图像 · ${d}`,
+    latestMore: '我们持续关注的全部内容 →',
+    latestQuakeAria: (t) => `在地图上查看：${t}`,
     baseMap: '地图',
     baseSat: '卫星',
     baseAria: '切换地图和卫星视图',

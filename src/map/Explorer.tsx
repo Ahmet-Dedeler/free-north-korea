@@ -15,6 +15,8 @@ import type { MapSatSite } from '@/content/satLabels';
 import { type Basemap, type Data, type Selection, loadData } from './types';
 import BasemapSwitch from './BasemapSwitch';
 import TimePill from './TimePill';
+import Latest from './Latest';
+import type { MapLatest } from '@/content/mapLatest';
 
 const IntelMap = dynamic(() => import('./IntelMap'), { ssr: false, loading: () => <div className="map" /> });
 
@@ -50,7 +52,8 @@ function LightsKey() {
 }
 
 /** `sat` is the Camp Watch index (dates of our Sentinel-2 images per site), built on the server by mapSatIndex(). */
-export default function MapExplorer({ lang = 'en', sat = {} }: { lang?: Lang; sat?: Record<string, MapSatSite> }) {
+/** `latest` is the sidebar's "Latest" section (content/mapLatest.ts), also built on the server. */
+export default function MapExplorer({ lang = 'en', sat = {}, latest }: { lang?: Lang; sat?: Record<string, MapSatSite>; latest?: MapLatest }) {
   const tx = MAP_TEXT[lang];
   const { theme } = useTheme();
   const [data, setData] = useState<Data | null>(null);
@@ -83,7 +86,10 @@ export default function MapExplorer({ lang = 'en', sat = {} }: { lang?: Lang; sa
     return () => removeEventListener('hashchange', on);
   }, []);
 
+  // a spot to show without selecting anything (a quake from the Latest list); cleared by any selection
+  const [focus, setFocus] = useState<[number, number] | null>(null);
   const select = useCallback((s: Selection | null) => {
+    setFocus(null);
     touched.current = true;
     setSel(s);
     // make sure the layer of a selected point is visible
@@ -184,6 +190,17 @@ export default function MapExplorer({ lang = 'en', sat = {} }: { lang?: Lang; sa
         </div>
 
         <div className="layer-panel">
+          {latest && !q && (
+            <Latest
+              latest={latest}
+              lang={lang}
+              onSelect={select}
+              onFocus={(p) => {
+                select(null);
+                setFocus(p);
+              }}
+            />
+          )}
           <div className="layer-group">
             <h3>{tx.shadeBy}</h3>
             <div className="chips">
@@ -241,7 +258,7 @@ export default function MapExplorer({ lang = 'en', sat = {} }: { lang?: Lang; sa
 
       <main className="stage">
         {data && year !== null ? (
-          <IntelMap data={data} visible={visible} shade={shade} base={base} overlays={overlays} year={year} selected={sel} theme={theme} lang={lang} onSelect={select} />
+          <IntelMap data={data} visible={visible} shade={shade} base={base} overlays={overlays} year={year} selected={sel} focus={focus} theme={theme} lang={lang} onSelect={select} />
         ) : (
           <div className="map" />
         )}

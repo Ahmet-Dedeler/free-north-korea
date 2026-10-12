@@ -24,6 +24,8 @@ interface Props {
   /** Year shown by time-axis overlays (night lights). */
   year: number;
   selected: Selection | null;
+  /** A spot to point at without selecting a feature (a quake from the Latest list). */
+  focus: [number, number] | null;
   theme: Theme;
   lang: Lang;
   onSelect: (s: Selection | null) => void;
@@ -129,7 +131,7 @@ function countyLine(base: Basemap, pal: (typeof PAL)[Theme]): ExpressionSpecific
   return ['case', ['boolean', ['feature-state', 'selected'], false], base === 'satellite' ? '#facc15' : pal.ring, base === 'satellite' ? SAT_LINE : pal.line];
 }
 
-export default function IntelMap({ data, visible, shade, base, overlays, year, selected, theme: deviceTheme, lang, onSelect }: Props) {
+export default function IntelMap({ data, visible, shade, base, overlays, year, selected, focus, theme: deviceTheme, lang, onSelect }: Props) {
   // Night lights need a night map: dark around the counties, so unlit reads as dark and lit as glow.
   const theme: Theme = overlays.has('lights') ? 'dark' : deviceTheme;
   const box = useRef<HTMLDivElement>(null);
@@ -414,6 +416,19 @@ export default function IntelMap({ data, visible, shade, base, overlays, year, s
     if (!map?.getSource('counties')) return;
     (map.getSource('counties') as GeoJSONSource).setData(data.counties);
   }, [data]);
+
+  // --- focus: a pulsing ring at a spot, and fly there ---
+  const focusMarker = useRef<maplibregl.Marker | null>(null);
+  useEffect(() => {
+    const map = mapRef.current;
+    focusMarker.current?.remove();
+    focusMarker.current = null;
+    if (!map || !focus) return;
+    const el = document.createElement('div');
+    el.className = 'focus-ping';
+    focusMarker.current = new maplibregl.Marker({ element: el }).setLngLat(focus).addTo(map);
+    map.flyTo({ center: focus, zoom: Math.max(map.getZoom(), 7), duration: 900 });
+  }, [focus]);
 
   // --- theme ---
   const appliedTheme = useRef(theme);

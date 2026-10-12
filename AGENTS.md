@@ -26,7 +26,9 @@ before adding any page or article.
   (county and point panels; on phones a bottom sheet), `Photo.tsx` (the picture at the top of a point panel: our own
   Sentinel-2 image with a 24-month scrubber for Camp Watch sites, from `mapSatIndex()` passed in by the route, else an
   Esri aerial labelled as undated), `BasemapSwitch.tsx` (bottom-left Map/Satellite thumbnail plus a Layers menu of
-  satellite overlays, `OVERLAYS` in `config.ts`). The map should feel like Google Maps, not a GIS tool: the sidebar is
+  satellite overlays, `OVERLAYS` in `config.ts`), `Latest.tsx` (top of the sidebar: the latest launches and quakes from
+  the event wire within 120 days and the newest Camp Watch images as thumbnails, built on the server by
+  `content/mapLatest.ts`; quakes fly the map to a pulsing marker, launches link to `/missiles/list`). The map should feel like Google Maps, not a GIS tool: the sidebar is
   for places and county shading; whole-country measurements (night lights, radar, crops) go in the Layers menu, and
   depth goes in the click panel rather than in more toggles. Every word of UI is in `content/mapI18n.ts`; the GeoJSON's own text
   (point names, NKDB types, notes) stays English with `lang="en"`, and each point links to its translated dossier.
