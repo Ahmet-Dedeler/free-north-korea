@@ -1,16 +1,33 @@
 {
- "fetched": "2026-10-12",
+ "fetched": "2026-10-13",
  "oldestListed": "2025-10-18",
  "coverage": {
   "from": "2025-10-10",
-  "to": "2026-10-12"
+  "to": "2026-10-13"
  },
  "lastAppearance": {
-  "date": "2026-10-10",
-  "id": "81d1cc992751a979ee10be7d5d14c786",
-  "title": "Performance Given to Celebrate 81st Founding Anniversary of WPK"
+  "date": "2026-10-11",
+  "id": "e6a262ae36739c46ecd3505ad4b4f68a",
+  "title": "National Defence Revolution Museum Inaugurated in DPRK"
  },
  "records": [
+  {
+   "id": "e6a262ae36739c46ecd3505ad4b4f68a",
+   "url": "http://www.kcna.kp/en/article/detail/e6a262ae36739c46ecd3505ad4b4f68a",
+   "reportDate": "2026-10-13",
+   "title": "National Defence Revolution Museum Inaugurated in DPRK",
+   "eventDate": "2026-10-11",
+   "eventDateFrom": "text",
+   "appearance": true,
+   "kind": "military",
+   "speech": false,
+   "subject": "National Defence Revolution Museum Inaugurated in DPRK",
+   "companions": [],
+   "present": [],
+   "daughter": false,
+   "wife": false,
+   "titleKo": "조선로동당창건 81돐에 즈음하여 제2경제위원회 국방혁명박물관 개관식 성대히 진행"
+  },
   {
    "id": "81d1cc992751a979ee10be7d5d14c786",
    "url": "http://www.kcna.kp/en/article/detail/81d1cc992751a979ee10be7d5d14c786",
