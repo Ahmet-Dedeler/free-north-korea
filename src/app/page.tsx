@@ -1,12 +1,11 @@
 import Link from 'next/link';
-import { ArrowRight, BookOpen, Building2, Footprints, Map, Radiation, Rocket, Shield, Usb, Users } from 'lucide-react';
+import { ArrowRight, BookOpen, Building2, Footprints, Languages, Map, Rocket, Satellite, Shield, Usb, Users } from 'lucide-react';
 import ArticleCards from '@/components/ArticleCards';
 import Avatar from '@/components/Avatar';
 import { Ext } from '@/components/Ext';
 import { GithubIcon } from '@/components/SocialIcon';
 import Locator from '@/components/Locator';
 import HomeMapTour, { type TourStop } from '@/components/HomeMapTour';
-import { StatTile } from '@/components/Visual';
 import WatchTeaser from '@/components/WatchTeaser';
 import { ARTICLES } from '@/content/articles';
 import { getAllCamps } from '@/content/camps';
@@ -22,7 +21,7 @@ import { jsonLd } from '@/site/seo';
 import { HUB_PATHS } from '@/content/translations';
 import { mdPath } from '@/site/agents';
 import { latest } from '@/charts/data';
-import { dayLabel, getSatSite, imgSrc, latestSatSites, satCredit } from '@/content/satWatch';
+import { dayLabel, getSatSite, imgSrc, latestSatSites, satCredit, type SatSite } from '@/content/satWatch';
 
 const HUB_PATHS_WITH_DEFAULT = { ...HUB_PATHS, 'x-default': '/' };
 
@@ -201,16 +200,35 @@ const arrivals = (() => {
   return { total: w.v + m.v, year: w.t };
 })();
 
+/** Thumbnails of the newest Camp Watch images, for the hero's "watched from space" row. */
+function SatStack({ sites }: { sites: SatSite[] }) {
+  return (
+    <span className="sat-stack" aria-hidden>
+      {sites.map((s) => (
+        <img key={s.id} src={imgSrc(s.id, s.latest!)} alt="" />
+      ))}
+    </span>
+  );
+}
+
 export default function Home() {
-  const newest = latestSatSites(1)[0];
-  // the headline's picture pills: our newest Yongbyon chip, and the peninsula at night (the dark North above lit Seoul)
-  const yongbyon = getSatSite('yongbyon');
-  const heroSat = yongbyon?.latest ? { src: imgSrc(yongbyon.id, yongbyon.latest) } : undefined;
+  const watched = latestSatSites(100);
+  const newest = watched[0];
   const night = media('page:korea-at-night');
+  const wall = media('article:how-can-north-korea-be-freed');
   const placeCount = (c: string) => getAllPlaces().filter((p) => p.category === c).length;
   const legend = [
     { label: 'Prison camps', color: '#dc2626', n: getAllCamps().length },
     ...PLACE_CATEGORIES.filter((c) => c.id !== 'camp' && placeCount(c.id) > 0).map((c) => ({ label: c.label, color: c.color, n: placeCount(c.id) })),
+  ];
+  // the band under the hero: what this site counts, each number from the data
+  const ticker: { icon: typeof Map; text: string }[] = [
+    { icon: Shield, text: `${getAllCamps().length} prison camps and prisons mapped` },
+    { icon: Rocket, text: `${TESTS.length} missile launches since 1984` },
+    { icon: Satellite, text: `${watched.length} sites watched from space` },
+    { icon: Building2, text: `${ORGS.length} organizations doing the work` },
+    { icon: BookOpen, text: `${SHELVES.reduce((n, s) => n + s.items.length, 0)} books, films and reports` },
+    { icon: Languages, text: 'English, 한국어, 日本語, 中文' },
   ];
   const flash = orgLogo('flash-drives-for-freedom');
   const link = orgLogo('liberty-in-north-korea');
@@ -221,94 +239,85 @@ export default function Home() {
         dangerouslySetInnerHTML={jsonLd({ '@context': 'https://schema.org', '@type': 'WebSite', name: SITE_NAME, url: SITE_URL })}
       />
 
-      <section className="home-hero">
-        <div className="hero-glow" aria-hidden />
-        <div className="hero-copy">
-          {newest?.latest && (
-            <Link href="/watch" className="hero-badge">
-              <span className="hb-live">
-                <i /> New
-              </span>
-              Satellite image of {newest.name}, {dayLabel('en', newest.latest)}
-              <ArrowRight size={14} aria-hidden />
-            </Link>
-          )}
-          {/* three set lines, each a block, so the pictures always sit where they read best */}
-          <h1>
-            <span className="h1-line">
-              Understand{' '}
-              {heroSat && (
-                <span className="h1-pill sat" aria-hidden>
-                  <img src={heroSat.src} alt="" />
+      <section className="hx night bleed">
+        <div className="hx-orbs" aria-hidden />
+        <div className="hx-in">
+          <div className="hx-copy">
+            <h1>
+              <span className="h1-line dawn">Understand</span> <span className="h1-line dawn">North Korea.</span>{' '}
+              <span className="h1-line">
+                Help free its{' '}
+                {/* the picture never wraps away from the word it stands before */}
+                <span className="nowrap">
+                  {night && (
+                    <span className="h1-pill night" aria-hidden title={night.credit}>
+                      <img src={night.src} alt="" />
+                    </span>
+                  )}{' '}
+                  people.
                 </span>
-              )}
-            </span>{' '}
-            <span className="h1-line">North Korea. Help</span>{' '}
-            <span className="h1-line">
-              free its{' '}
-              {/* the picture never wraps away from the word it stands before */}
-              <span className="nowrap">
-                {night && (
-                  <span className="h1-pill night" aria-hidden title={night.credit}>
-                    <img src={night.src} alt="" />
-                  </span>
-                )}{' '}
-                people.
               </span>
-            </span>
-          </h1>
-          <p className="hero-sub">
-            The map, the military picture, the history and the groups doing the work, plus clear things you can do today. The regime survives on
-            keeping its people in the dark and everyone else uninterested. This site is for fixing both.
-          </p>
-          <div className="hero-cta">
-            <Link className="btn primary pill" href="/act">
-              What can I do? <ArrowRight size={16} aria-hidden />
-            </Link>
-            <Link className="btn ghost pill" href="/learn/how-can-north-korea-be-freed">
-              How could North Korea be freed?
+            </h1>
+            <p className="hx-sub">
+              The map, the military picture, the history and the groups doing the work, plus clear things you can do today. The regime survives on
+              keeping its people in the dark and everyone else uninterested. This site is for fixing both.
+            </p>
+            <div className="hx-cta">
+              <Link className="btn primary" href="/act">
+                What can I do? <ArrowRight size={16} aria-hidden />
+              </Link>
+              <Link className="btn on-night" href="/learn/how-can-north-korea-be-freed">
+                How could North Korea be freed? <ArrowRight size={16} aria-hidden />
+              </Link>
+            </div>
+            {newest?.latest && (
+              <Link href="/watch" className="hx-proof">
+                <SatStack sites={watched.slice(0, 4)} />
+                <span>
+                  <b>{watched.length} camps and weapons sites watched from space</b>
+                  Newest image: {newest.name}, {dayLabel('en', newest.latest)}
+                </span>
+              </Link>
+            )}
+          </div>
+          <div className="home-map">
+            {/* the whole picture opens the map; the dots sit above this link and open their own point */}
+            <Link href="/map" className="home-map-bg" aria-label="Open the intel map" />
+            <MapPreview />
+            <ul className="home-map-legend" aria-label="Map key">
+              {legend.map((l) => (
+                <li key={l.label}>
+                  <i style={{ background: l.color }} /> {l.label} <span>{l.n}</span>
+                </li>
+              ))}
+            </ul>
+            <Link href="/map" className="home-map-cta">
+              <Map size={15} /> Open the intel map
             </Link>
           </div>
-          <ul className="hero-proof">
-            <li>
-              <b>{getAllCamps().length}</b> camps and prisons mapped
-            </li>
-            <li>
-              <b>{TESTS.length}</b> missile launches logged
-            </li>
-            <li>
-              <b>4</b> languages, open source
-            </li>
-          </ul>
-        </div>
-        <div className="home-map">
-          {/* the whole picture opens the map; the dots sit above this link and open their own point */}
-          <Link href="/map" className="home-map-bg" aria-label="Open the intel map" />
-          <MapPreview />
-          <ul className="home-map-legend" aria-label="Map key">
-            {legend.map((l) => (
-              <li key={l.label}>
-                <i style={{ background: l.color }} /> {l.label} <span>{l.n}</span>
-              </li>
-            ))}
-          </ul>
-          <Link href="/map" className="home-map-cta">
-            <Map size={15} /> Open the intel map
-          </Link>
         </div>
       </section>
 
-      <div className="tiles home-stats">
-        <StatTile icon={Users} value="26M" label="people living under the Kim regime" note="UN estimate" />
-        <StatTile icon={Shield} value="80–120k" label="held in political prison camps" note="UN inquiry, 2014. Still the most-cited estimate" tone="danger" />
-        <StatTile icon={Footprints} value={arrivals.total} label={`escapees reached South Korea in ${arrivals.year}`} note="Unification Ministry" tone="ok" />
-        <StatTile icon={Radiation} value="~60" label="assembled nuclear warheads" note="SIPRI, Jan 2026" tone="warn" />
+      {/* the list twice, so the loop is seamless; the copy is hidden from screen readers */}
+      <div className="ticker bleed">
+        {[0, 1].map((k) => (
+          <ul key={k} aria-hidden={k === 1 || undefined}>
+            {ticker.map((t) => (
+              <li key={t.text}>
+                <t.icon size={18} aria-hidden /> {t.text}
+              </li>
+            ))}
+          </ul>
+        ))}
       </div>
 
-      <WatchTeaser lang="en" />
-
       <section className="band">
-        <h2>Do something in the next 10 minutes</h2>
+        <div className="band-head">
+          <h2>Do something in the next 10 minutes</h2>
+          <Link href="/act" className="btn small-btn">
+            All the ways to help <ArrowRight size={15} aria-hidden />
+          </Link>
+        </div>
         <div className="quick-acts">
           <a className="quick-act" href="https://flashdrivesforfreedom.org" target="_blank" rel="noopener noreferrer">
             <span className="hl-logo">{flash ? <img src={flash.src} alt="" /> : <Usb />}</span>
@@ -342,8 +351,55 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="scale night bleed">
+        <div className="scale-in">
+          <div className="scale-copy">
+            <p className="kicker">/ The scale of it /</p>
+            <p className="scale-big">
+              <b>80–120k</b>
+              <span>people held in political prison camps</span>
+              <small>UN inquiry, 2014. Still the most-cited estimate</small>
+            </p>
+            <dl className="scale-grid">
+              <div>
+                <dt>26M</dt>
+                <dd>people living under the Kim regime</dd>
+                <small>UN estimate</small>
+              </div>
+              <div>
+                <dt>{arrivals.total}</dt>
+                <dd>escapees reached South Korea in {arrivals.year}</dd>
+                <small>Unification Ministry</small>
+              </div>
+              <div>
+                <dt>~60</dt>
+                <dd>assembled nuclear warheads</dd>
+                <small>SIPRI, Jan 2026</small>
+              </div>
+              <div>
+                <dt>{TESTS.length}</dt>
+                <dd>missile and space launches since 1984</dd>
+                <small>CNS missile test database</small>
+              </div>
+            </dl>
+          </div>
+          {night && (
+            <figure className="scale-photo">
+              <img src={night.src} alt="The Korean peninsula at night from space: South Korea is covered in lights, North Korea is almost completely dark" />
+              <figcaption>
+                The peninsula at night. North Korea is the dark half. <span>{night.credit}</span>
+              </figcaption>
+            </figure>
+          )}
+        </div>
+      </section>
+
+      <WatchTeaser lang="en" />
+
       <section className="band">
-        <h2>Explore</h2>
+        <div className="band-head">
+          <h2>Explore</h2>
+        </div>
         <ul className="explore">
           {MODULES.map((m) => (
             <li key={m.href}>
@@ -362,8 +418,32 @@ export default function Home() {
       </section>
 
       <section className="band">
-        <h2>Questions people ask</h2>
+        <div className="band-head">
+          <h2>Questions people ask</h2>
+          <Link href="/learn" className="btn small-btn">
+            All explainers <ArrowRight size={15} aria-hidden />
+          </Link>
+        </div>
         <ArticleCards articles={ARTICLES} lead />
+      </section>
+
+      <section className="wall-cta" style={wall ? { ['--photo' as string]: `url(${wall.src})` } : undefined}>
+        <div>
+          <h2>It looked permanent too.</h2>
+          <p>
+            East Germany looked permanent in the summer of 1989. By November the Berlin Wall was open. When North Korea&rsquo;s turn comes, what its
+            people know about the outside world will matter.
+          </p>
+          <div className="hx-cta">
+            <Link className="btn dawn-btn" href="/act">
+              What can I do? <ArrowRight size={16} aria-hidden />
+            </Link>
+            <Link className="btn on-night" href="/learn/how-can-north-korea-be-freed">
+              How it could happen <ArrowRight size={16} aria-hidden />
+            </Link>
+          </div>
+        </div>
+        {wall && <small className="wall-credit">West and East Germans at the Brandenburg Gate, 1989. {wall.credit}</small>}
       </section>
 
       <p className="home-build">

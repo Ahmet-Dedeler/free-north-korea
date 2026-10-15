@@ -10,6 +10,7 @@ import type { Lang } from '@/site/seo';
 import { REPO_URL, REVIEWED } from '../site/config';
 import { BRAND_BLUE, LOGO_STAR } from '../site/brand';
 import { Ext } from './Ext';
+import { GithubIcon } from './SocialIcon';
 
 const LANGS: Lang[] = ['en', 'ko', 'ja', 'zh'];
 const HREFLANG: Record<string, Lang> = { en: 'en', ko: 'ko', ja: 'ja', 'zh-hans': 'zh' };
@@ -96,9 +97,21 @@ export default function SiteChrome({ children }: { children: ReactNode }) {
   useDismiss(menuOpen, () => setMenuOpen(false), barRef, path);
   useDismiss(langOpen, () => setLangOpen(false), langRef, path);
 
+  // The English home page opens on a navy hero: the bar wears the same navy until the reader scrolls.
+  const home = path === '/';
+  const [atTop, setAtTop] = useState(true);
+  useEffect(() => {
+    if (!home) return;
+    const on = () => setAtTop(scrollY < 24);
+    on();
+    addEventListener('scroll', on, { passive: true });
+    return () => removeEventListener('scroll', on);
+  }, [home]);
+  const barClass = ['topbar', menuOpen && 'menu-open', home && atTop && !menuOpen && 'over-night'].filter(Boolean).join(' ');
+
   return (
     <div className={app ? 'shell shell-app' : 'shell'}>
-      <header className={menuOpen ? 'topbar menu-open' : 'topbar'} ref={barRef}>
+      <header className={barClass} ref={barRef}>
         <Link href={to('/')} className="logo" aria-label={t.home}>
           <svg viewBox="0 0 24 24" aria-hidden>
             <circle cx="12" cy="12" r="10" fill={BRAND_BLUE} />
@@ -168,50 +181,72 @@ export default function SiteChrome({ children }: { children: ReactNode }) {
 
       {!app && (
         <footer className="footer">
-          <div className="footer-inner">
-            <div>
-              <b>Free North Korea</b>
-              <p>{t.about}</p>
-              <ul className="footer-langs">
-                {LANGS.filter((l) => l !== lang).map((l) => (
-                  <li key={l}>
-                    <Link href={switchTo[l]} hrefLang={tagOf(l)} lang={tagOf(l)}>
-                      {LANG_FULL[l]}
-                    </Link>
-                  </li>
+          <div className="footer-card">
+            <div className="footer-inner">
+              <div className="footer-brand">
+                <Link href={to('/')} className="footer-logo">
+                  <svg viewBox="0 0 24 24" aria-hidden>
+                    <circle cx="12" cy="12" r="10" fill={BRAND_BLUE} />
+                    <path d={LOGO_STAR} fill="#fff" />
+                  </svg>
+                  Free North Korea
+                </Link>
+                <p>{t.about}</p>
+                <ul className="footer-langs">
+                  {LANGS.filter((l) => l !== lang).map((l) => (
+                    <li key={l}>
+                      <Link href={switchTo[l]} hrefLang={tagOf(l)} lang={tagOf(l)}>
+                        {LANG_FULL[l]}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <nav aria-label={t.explore} className="footer-explore">
+                <b>{t.explore}</b>
+                {t.explore_links.map(([href, label]) => (
+                  <Link key={href} href={to(href)}>
+                    {label}
+                  </Link>
                 ))}
-              </ul>
+              </nav>
+              <nav aria-label={t.help}>
+                <b>{t.help}</b>
+                {t.help_links.map(([href, label]) => (
+                  <Link key={href} href={to(href)}>
+                    {label}
+                  </Link>
+                ))}
+              </nav>
+              <nav aria-label={t.read}>
+                <b>{t.read}</b>
+                {t.read_links.map(([href, label]) => (
+                  <Link key={href} href={to(href)}>
+                    {label}
+                  </Link>
+                ))}
+              </nav>
             </div>
-            <div>
-              <b>{t.explore}</b>
-              {t.explore_links.map(([href, label]) => (
-                <Link key={href} href={to(href)}>
-                  {label}
+            <div className="footer-bottom">
+              <p className="footer-note">
+                {t.reviewed(REVIEWED)} {t.issue[0]} <Ext href={`${REPO_URL}/issues/new`}>{t.issue[1]}</Ext>
+                {t.issue[2]}
+              </p>
+              <div className="footer-actions">
+                <Ext href={REPO_URL} className="footer-gh">
+                  <GithubIcon />
+                  {t.contribute}
+                </Ext>
+                <Link href={to('/act')} className="cta">
+                  {t.cta}
                 </Link>
-              ))}
+              </div>
             </div>
-            <div>
-              <b>{t.help}</b>
-              {t.help_links.map(([href, label]) => (
-                <Link key={href} href={to(href)}>
-                  {label}
-                </Link>
-              ))}
-              <Ext href={REPO_URL}>{t.contribute}</Ext>
-            </div>
-            <div>
-              <b>{t.read}</b>
-              {t.read_links.map(([href, label]) => (
-                <Link key={href} href={to(href)}>
-                  {label}
-                </Link>
-              ))}
-            </div>
+            {/* the name, huge and faint, as the last thing on every page */}
+            <p className="footer-mark" aria-hidden>
+              Free North Korea
+            </p>
           </div>
-          <p className="footer-note">
-            {t.reviewed(REVIEWED)} {t.issue[0]} <Ext href={`${REPO_URL}/issues/new`}>{t.issue[1]}</Ext>
-            {t.issue[2]}
-          </p>
         </footer>
       )}
     </div>

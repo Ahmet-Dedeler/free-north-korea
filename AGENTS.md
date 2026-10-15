@@ -127,11 +127,17 @@ before adding any page or article.
   `components/SocialIcon.tsx` (`SocialIcon`, `GithubIcon`), org logos through `orgLogo()`. A small ask (contribute,
   follow, read more) is one quiet line with the mark and a link, not a boxed callout with a heading and a button; the
   home page's "Build this with us" row is the pattern.
-- Home hero (`app/page.tsx`): the look is a 2026 Framer site, not a 2010 portal: soft colour glow and faint grid
-  behind (`--glow-*`, `--grid-line` in `globals.css`), big tight headline with small pictures set into it, pill buttons,
-  a frosted top bar. The map tours its own dots (`components/HomeMapTour.tsx`): every 6 s the next dot gets a card with
-  our newest Sentinel-2 chip (Camp Watch sites first) or an Esri aerial labelled undated, its kind and one line from
-  its note. Hover pauses it and shows that dot; a pause button stops it; on phones the card docks under the map.
+- Home (`app/page.tsx`): the look is a 2026 Framer non-profit site, not a 2010 portal. Light bands alternate with
+  full-bleed "night" bands (`.night` + `.bleed`: deep navy `--night`, dawn-yellow accent `--dawn`, both in
+  `globals.css`): the hero (headline with the Korea-at-night photo set into it, our newest satellite chips as a "watched
+  from space" row, the map card), a dawn ticker of counts from the data, the scale band (one giant number, four smaller,
+  the night photo in an arch) and a closing Berlin Wall banner. Section heads are title left, "see all" pill right
+  (`.band-head`). On `/` the top bar wears the hero's navy until you scroll (`over-night` in `SiteChrome.tsx`). The
+  map tours its own dots (`components/HomeMapTour.tsx`): every 6 s the next dot gets a card with our newest Sentinel-2
+  chip (Camp Watch sites first) or an Esri aerial labelled undated, its kind and one line from its note. Hover pauses
+  it and shows that dot; a pause button stops it; on phones the card docks under the map.
+- Footer (every content page, `SiteChrome.tsx`): a navy card with the brand, languages, link columns (Explore split in
+  two), the review note, GitHub and Take action, and the name set huge and faint as the last line.
 - Content pages are visual, not text walls. Reuse the building blocks before writing paragraphs:
   `components/Visual.tsx` (StatTile, icon chips, SourceCards), `AsOf` (date a number is from), `SatView` (Esri satellite
   tiles, no map lib), `Locator` (server SVG of NK from `site/geo.ts`), `HoverLinks` (OrgLink/PlaceLink hover previews,

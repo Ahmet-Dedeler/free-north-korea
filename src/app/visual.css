@@ -4653,93 +4653,65 @@ a.ltag:hover {
 }
 
 
-/* ---------- home hero ---------- */
-/* The hero bleeds a soft colour field and a faint grid to the window edges; the copy and map keep the page width. */
-.page:has(> .home-hero) {
+/* ---------- home ---------- */
+/* Home alternates light bands with full-bleed "night" bands (deep navy, dawn-yellow accent): the hero, the scale band.
+   A bleed block spans the window; its inner container keeps the page width. */
+.page:has(> .hx) {
   overflow-x: clip;
-  padding-top: 56px;
+  padding-top: 0;
 }
-.home-hero {
+.page > .bleed {
+  max-width: none;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: 0;
+}
+.night {
   position: relative;
   isolation: isolate;
-  display: grid;
-  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
-  gap: 48px;
-  align-items: center;
-  padding: 8px 0 24px;
+  overflow: hidden;
+  background: var(--night);
+  color: var(--night-ink);
 }
-.hero-glow {
+.night .dawn {
+  color: var(--dawn);
+}
+.kicker {
+  margin: 0 0 18px;
+  color: var(--dawn);
+  font-size: 13.5px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+/* hero */
+.hx {
+  padding: 72px 16px 88px;
+}
+.hx-orbs {
   position: absolute;
+  inset: 0;
   z-index: -1;
-  top: -96px;
-  bottom: -40px;
-  left: calc(50% - 50vw);
-  right: calc(50% - 50vw);
   pointer-events: none;
   background:
-    radial-gradient(38% 46% at 20% 28%, var(--glow-1), transparent 70%),
-    radial-gradient(30% 40% at 46% 6%, var(--glow-2), transparent 72%),
-    radial-gradient(34% 46% at 82% 58%, var(--glow-3), transparent 72%),
-    linear-gradient(var(--grid-line) 1px, transparent 1px) 0 0 / 72px 72px,
-    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px) 0 0 / 72px 72px;
-  mask-image: linear-gradient(to bottom, #000 55%, transparent);
+    radial-gradient(42% 60% at 8% 0%, rgb(59 130 246 / 0.35), transparent 70%),
+    radial-gradient(36% 50% at 92% 100%, rgb(252 211 77 / 0.12), transparent 70%),
+    radial-gradient(circle at 50% 50%, transparent 0 calc(50% - 1px), rgb(255 255 255 / 0.05) calc(50% - 1px) 50%, transparent 50%) 30% 120% / 900px 900px no-repeat,
+    radial-gradient(circle at 50% 50%, transparent 0 calc(50% - 1px), rgb(255 255 255 / 0.05) calc(50% - 1px) 50%, transparent 50%) 30% 120% / 1300px 1300px no-repeat;
 }
-.hero-badge {
-  display: inline-flex;
+.hx-in {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
+  gap: 56px;
   align-items: center;
-  gap: 8px;
-  max-width: 100%;
-  margin-bottom: 22px;
-  padding: 4px 12px 4px 4px;
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  background: var(--glass);
-  backdrop-filter: blur(8px);
-  color: var(--ink-2);
-  font-size: 13px;
-  font-weight: 500;
-  text-decoration: none;
-  box-shadow: 0 1px 2px rgb(15 23 42 / 0.05);
-  transition: border-color 0.15s, color 0.15s;
+  max-width: 1080px;
+  margin: 0 auto;
 }
-.hero-badge:hover {
-  border-color: var(--line-strong);
-  color: var(--ink);
-}
-.hero-badge svg {
-  flex: none;
-  transition: transform 0.2s;
-}
-.hero-badge:hover svg {
-  transform: translateX(2px);
-}
-.hb-live {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  flex: none;
-  padding: 3px 9px;
-  border-radius: 999px;
-  background: var(--accent);
-  color: var(--ink-inverse);
-  font-size: 11.5px;
-  font-weight: 700;
-}
-.hb-live i {
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: currentColor;
-  animation: blink 1.6s ease-in-out infinite;
-}
-@keyframes blink {
-  50% {
-    opacity: 0.35;
-  }
-}
-.page .home-hero h1 {
-  margin: 0 0 22px;
-  font-size: clamp(42px, 5.6vw, 64px);
+.page .hx h1 {
+  margin: 0 0 24px;
+  color: var(--night-ink);
+  /* three set lines; "Help free its [picture] people." is the widest, about 10.1em */
+  font-size: clamp(30px, 4.6vw, 55px);
   font-weight: 800;
   line-height: 1.02;
   letter-spacing: -0.045em;
@@ -4747,32 +4719,92 @@ a.ltag:hover {
 .h1-line {
   display: block;
 }
-/* little pictures set into the headline, the way Framer sites do it */
+
+.hx-sub {
+  max-width: 540px;
+  margin: 0;
+  color: var(--night-ink-2);
+  font-size: 18px;
+  line-height: 1.6;
+}
+.hx-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 32px;
+}
+.btn.on-night {
+  border-color: var(--night-line);
+  background: rgb(255 255 255 / 0.06);
+  color: var(--night-ink);
+  box-shadow: none;
+}
+.btn.on-night:hover {
+  background: rgb(255 255 255 / 0.12);
+}
+.btn.dawn-btn {
+  border-color: var(--dawn);
+  background: var(--dawn);
+  color: #0a1633;
+  box-shadow: 0 10px 24px -10px rgb(252 211 77 / 0.6);
+}
+.btn.dawn-btn:hover {
+  background: #fde68a;
+}
+/* "watched from space": a stack of our newest satellite chips, like a row of faces */
+.hx-proof {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 36px;
+  color: var(--night-ink-2);
+  font-size: 13.5px;
+  line-height: 1.4;
+  text-decoration: none;
+}
+.hx-proof b {
+  display: block;
+  color: var(--dawn);
+  font-weight: 600;
+}
+.hx-proof:hover b {
+  text-decoration: underline;
+}
+.sat-stack {
+  display: flex;
+  flex: none;
+}
+.sat-stack img {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--night);
+  transition: transform 0.25s;
+}
+.sat-stack img + img {
+  margin-left: -12px;
+}
+.hx-proof:hover .sat-stack img:nth-child(odd) {
+  transform: translateY(-3px);
+}
+/* little pictures set into the headline */
 .h1-pill {
   display: inline-flex;
   vertical-align: -0.06em;
   height: 0.8em;
   overflow: hidden;
   border-radius: 0.2em;
-  box-shadow: 0 6px 18px -6px rgb(15 23 42 / 0.45), 0 0 0 2px var(--panel);
-  transform: rotate(-4deg);
+  transform: rotate(3deg);
   transition: transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 .h1-pill:hover {
   transform: rotate(0deg) scale(1.08);
 }
-.h1-pill.sat {
-  width: 1.45em;
-}
-.h1-pill.sat img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
 .h1-pill.night {
   width: 1.45em;
-  transform: rotate(3deg);
   background: #05070d;
+  box-shadow: 0 0 0 1.5px rgb(255 255 255 / 0.22), 0 10px 30px -8px rgb(252 211 77 / 0.35);
 }
 .h1-pill.night img {
   width: 100%;
@@ -4781,41 +4813,15 @@ a.ltag:hover {
   /* the DMZ line: dark North above, Seoul's glow below */
   object-position: 50% 54%;
 }
-.home-hero .hero-sub {
-  max-width: 560px;
-  margin: 0;
-  font-size: 18px;
-  line-height: 1.6;
-}
-.home-hero .hero-cta {
-  margin-top: 30px;
-}
-.hero-proof {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px 22px;
-  margin: 30px 0 0;
-  padding: 0;
-  list-style: none;
-  color: var(--ink-3);
-  font-size: 13.5px;
-}
-.hero-proof b {
-  color: var(--ink);
-  font-weight: 650;
-  font-variant-numeric: tabular-nums;
-}
 
-/* the map card */
+/* the map card, in night colours */
 .home-map {
   position: relative;
   padding: 16px 16px 56px;
-  border: 1px solid transparent;
+  border: 1px solid var(--night-line);
   border-radius: 28px;
-  background:
-    linear-gradient(var(--panel), var(--panel)) padding-box,
-    linear-gradient(150deg, color-mix(in srgb, var(--accent) 45%, var(--line)), var(--line) 40%, var(--line) 70%, color-mix(in srgb, var(--danger) 30%, var(--line))) border-box;
-  box-shadow: var(--shadow-lg);
+  background: linear-gradient(160deg, var(--night-2), color-mix(in srgb, var(--night) 70%, #000));
+  box-shadow: 0 40px 80px -30px rgb(0 0 0 / 0.6), inset 0 1px 0 rgb(255 255 255 / 0.08);
 }
 .home-map::before {
   /* dotted paper under the map */
@@ -4823,8 +4829,7 @@ a.ltag:hover {
   position: absolute;
   inset: 0;
   border-radius: inherit;
-  background: radial-gradient(var(--line-strong) 1px, transparent 1.2px) 0 0 / 16px 16px;
-  opacity: 0.45;
+  background: radial-gradient(rgb(255 255 255 / 0.16) 1px, transparent 1.2px) 0 0 / 16px 16px;
   mask-image: radial-gradient(70% 70% at 50% 45%, #000, transparent);
   pointer-events: none;
 }
@@ -4835,7 +4840,14 @@ a.ltag:hover {
   border-radius: inherit;
 }
 .home-map .locator .prov {
-  fill: color-mix(in srgb, var(--accent) 5%, var(--hover));
+  fill: rgb(255 255 255 / 0.07);
+  stroke: rgb(255 255 255 / 0.2);
+}
+.home-map .locator .prov:hover {
+  fill: rgb(255 255 255 / 0.12);
+}
+.home-map .locator .pin-dot {
+  stroke: var(--night-2);
 }
 .home-map-legend {
   position: absolute;
@@ -4850,7 +4862,7 @@ a.ltag:hover {
   padding: 0;
   list-style: none;
   font-size: 12px;
-  color: var(--ink-2);
+  color: var(--night-ink-2);
   pointer-events: none;
 }
 .home-map-legend li {
@@ -4865,7 +4877,7 @@ a.ltag:hover {
   border-radius: 50%;
 }
 .home-map-legend span {
-  color: var(--ink-3);
+  opacity: 0.7;
   font-variant-numeric: tabular-nums;
 }
 .home-map-cta {
@@ -4880,14 +4892,209 @@ a.ltag:hover {
   border-radius: 999px;
   font-size: 13.5px;
   font-weight: 600;
-  color: var(--ink-inverse);
-  background: var(--ink);
+  color: #0a1633;
+  background: var(--dawn);
   text-decoration: none;
-  box-shadow: 0 8px 20px -8px rgb(15 23 42 / 0.6);
   transition: transform 0.2s;
 }
 .home-map-cta:hover {
   transform: translateY(-1px);
+}
+
+/* the band under the hero: what we count, scrolling */
+.ticker {
+  display: flex;
+  overflow: hidden;
+  background: var(--dawn);
+  color: #0a1633;
+  mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
+}
+.ticker ul {
+  display: flex;
+  flex: none;
+  gap: 48px;
+  margin: 0;
+  padding: 18px 24px;
+  list-style: none;
+  animation: ticker 40s linear infinite;
+}
+.ticker li {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15.5px;
+  font-weight: 650;
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+}
+.ticker:hover ul {
+  animation-play-state: paused;
+}
+@keyframes ticker {
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* section head: title left, "see all" right */
+.band-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  justify-content: space-between;
+  gap: 12px 24px;
+  margin: 0 0 20px;
+}
+.page .band-head h2 {
+  margin: 0;
+  font-size: clamp(28px, 3.6vw, 40px);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 1.08;
+}
+.btn.small-btn {
+  padding: 9px 16px;
+  font-size: 14px;
+}
+.page > .band {
+  margin-top: 88px;
+}
+
+/* the scale band: one giant number, four smaller ones, the peninsula at night in an arch */
+.scale {
+  margin-top: 96px;
+  padding: 96px 16px;
+}
+.scale::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: radial-gradient(40% 60% at 85% 30%, rgb(252 211 77 / 0.1), transparent 70%), radial-gradient(40% 60% at 0% 100%, rgb(59 130 246 / 0.25), transparent 70%);
+}
+.scale-in {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  gap: 64px;
+  align-items: center;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+.scale-big {
+  display: grid;
+  gap: 6px;
+  margin: 0;
+  padding-bottom: 32px;
+  border-bottom: 1px solid var(--night-line);
+}
+.scale-big b {
+  color: var(--dawn);
+  font-size: clamp(64px, 10vw, 124px);
+  font-weight: 800;
+  line-height: 0.95;
+  letter-spacing: -0.055em;
+  font-variant-numeric: tabular-nums;
+}
+.scale-big span {
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+.scale-big small,
+.scale-grid small {
+  color: var(--night-ink-2);
+  font-size: 12.5px;
+}
+.scale-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px 32px;
+  margin: 32px 0 0;
+}
+.scale-grid div {
+  display: grid;
+  gap: 2px;
+}
+.scale-grid dt {
+  font-size: 40px;
+  font-weight: 750;
+  letter-spacing: -0.045em;
+  line-height: 1.05;
+  font-variant-numeric: tabular-nums;
+}
+.scale-grid dd {
+  margin: 0;
+  color: var(--night-ink);
+  font-size: 15px;
+}
+.scale-photo {
+  margin: 0;
+}
+.scale-photo img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: 50% 45%;
+  border-radius: 999px 999px 28px 28px;
+  box-shadow: 0 0 0 1px var(--night-line), 0 40px 80px -30px rgb(0 0 0 / 0.7);
+}
+.scale-photo figcaption {
+  margin-top: 12px;
+  color: var(--night-ink-2);
+  font-size: 13px;
+  text-align: center;
+}
+.scale-photo figcaption span {
+  display: block;
+  font-size: 11.5px;
+  opacity: 0.8;
+}
+
+/* closing banner: a photo of the Berlin Wall in 1989, with the ask on top */
+.wall-cta {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 520px;
+  margin-top: 96px;
+  padding: 56px;
+  overflow: hidden;
+  border-radius: 32px;
+  color: #fff;
+  background:
+    linear-gradient(90deg, rgb(10 22 51 / 0.94) 0%, rgb(10 22 51 / 0.7) 45%, rgb(10 22 51 / 0.15) 100%),
+    var(--photo) center 35% / cover,
+    var(--night);
+}
+.wall-cta > div {
+  max-width: 520px;
+}
+.page .wall-cta h2 {
+  margin: 0 0 16px;
+  color: #fff;
+  font-size: clamp(36px, 5vw, 60px);
+  font-weight: 800;
+  line-height: 1.02;
+  letter-spacing: -0.045em;
+}
+.wall-cta p {
+  margin: 0;
+  color: rgb(255 255 255 / 0.85);
+  font-size: 17px;
+  line-height: 1.6;
+}
+.wall-credit {
+  position: absolute;
+  right: 20px;
+  bottom: 16px;
+  color: rgb(255 255 255 / 0.7);
+  font-size: 11.5px;
+}
+.page > .home-build {
+  margin-top: 24px;
+  text-align: center;
 }
 
 /* the self-running tour over the map's dots */
@@ -5090,8 +5297,7 @@ a.ltag:hover {
   .tour-ring,
   .tour-card,
   .tour-img > img,
-  .tour-tiles,
-  .hb-live i {
+  .tour-tiles {
     animation: none;
   }
   .tour-ring {
@@ -5100,25 +5306,66 @@ a.ltag:hover {
 }
 
 @media (max-width: 1040px) {
-  .home-hero {
+  .page .hx h1 {
+    font-size: min(55px, calc((100vw - 32px) / 10.4));
+  }
+  .hx-in,
+  .scale-in {
     grid-template-columns: 1fr;
-    gap: 36px;
+    gap: 48px;
   }
   .home-map {
     width: 100%;
     max-width: 620px;
     margin: 0 auto;
   }
-  .page:has(> .home-hero) {
-    padding-top: 32px;
+  .scale-photo {
+    max-width: 420px;
+    margin: 0 auto;
   }
 }
 @media (max-width: 560px) {
-  .page .home-hero h1 {
-    font-size: clamp(32px, 11.2vw, 40px);
+  .hx {
+    padding: 44px 16px 56px;
   }
-  .home-hero .hero-sub {
+
+  .hx-sub {
     font-size: 16.5px;
+  }
+  .hx-cta .btn {
+    justify-content: center;
+    width: 100%;
+  }
+  .ticker ul {
+    gap: 32px;
+    padding: 14px 16px;
+  }
+  .ticker li {
+    font-size: 14px;
+  }
+  .page > .band {
+    margin-top: 64px;
+  }
+  .scale {
+    margin-top: 72px;
+    padding: 64px 16px;
+  }
+  .scale-grid dt {
+    font-size: 32px;
+  }
+  .wall-cta {
+    min-height: 0;
+    margin-top: 72px;
+    padding: 220px 22px 56px;
+    border-radius: 24px;
+    background:
+      linear-gradient(180deg, rgb(10 22 51 / 0.1) 0%, rgb(10 22 51 / 0.85) 45%, rgb(10 22 51 / 0.97) 100%),
+      var(--photo) center top / auto 340px no-repeat,
+      var(--night);
+  }
+  .wall-credit {
+    left: 22px;
+    right: 22px;
   }
   .home-map {
     padding: 10px 10px 64px;
@@ -5160,6 +5407,11 @@ a.ltag:hover {
   .tour-body {
     align-content: center;
     padding: 10px 12px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ticker ul {
+    animation: none;
   }
 }
 
