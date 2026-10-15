@@ -127,6 +127,11 @@ before adding any page or article.
   `components/SocialIcon.tsx` (`SocialIcon`, `GithubIcon`), org logos through `orgLogo()`. A small ask (contribute,
   follow, read more) is one quiet line with the mark and a link, not a boxed callout with a heading and a button; the
   home page's "Build this with us" row is the pattern.
+- Home hero (`app/page.tsx`): the look is a 2026 Framer site, not a 2010 portal: soft colour glow and faint grid
+  behind (`--glow-*`, `--grid-line` in `globals.css`), big tight headline with small pictures set into it, pill buttons,
+  a frosted top bar. The map tours its own dots (`components/HomeMapTour.tsx`): every 4 s the next dot gets a card with
+  our newest Sentinel-2 chip (Camp Watch sites first) or an Esri aerial labelled undated, its kind and one line from
+  its note. Hover pauses it and shows that dot; a pause button stops it; on phones the card docks under the map.
 - Content pages are visual, not text walls. Reuse the building blocks before writing paragraphs:
   `components/Visual.tsx` (StatTile, icon chips, SourceCards), `AsOf` (date a number is from), `SatView` (Esri satellite
   tiles, no map lib), `Locator` (server SVG of NK from `site/geo.ts`), `HoverLinks` (OrgLink/PlaceLink hover previews,

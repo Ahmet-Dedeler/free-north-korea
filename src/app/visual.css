@@ -2528,44 +2528,6 @@
 }
 
 /* ---------- home ---------- */
-.home-hero {
-  display: grid;
-  grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
-  gap: 40px;
-  align-items: center;
-  padding: 16px 0 8px;
-}
-.home-hero h1 {
-  font-size: clamp(34px, 5.5vw, 56px) !important;
-  line-height: 1.05 !important;
-}
-.home-map {
-  position: relative;
-  display: block;
-  padding: 14px;
-  border: 1px solid var(--line);
-  border-radius: 22px;
-  background: var(--panel);
-  transition: box-shadow 0.2s, transform 0.2s;
-}
-.home-map:hover {
-  box-shadow: var(--shadow);
-  transform: translateY(-2px);
-}
-.home-map-cta {
-  position: absolute;
-  right: 16px;
-  bottom: 16px;
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  padding: 7px 12px;
-  border-radius: 999px;
-  font-size: 13px;
-  font-weight: 600;
-  color: var(--ink-inverse);
-  background: var(--ink);
-}
 .home-stats {
   margin-top: 28px;
   margin-bottom: 8px;
@@ -2814,11 +2776,6 @@
 .explore-tile:hover .mil-preview i {
   opacity: 1;
   box-shadow: 0 0 8px rgb(220 38 38 / 0.5);
-}
-@media (max-width: 800px) {
-  .home-hero {
-    grid-template-columns: 1fr;
-  }
 }
 
 /* ---------- act ---------- */
@@ -4695,49 +4652,533 @@ a.ltag:hover {
   margin-right: 2px;
 }
 
-/* home hero map: the box opens /map, each dot opens its own point, hover names it */
+
+/* ---------- home hero ---------- */
+/* The hero bleeds a soft colour field and a faint grid to the window edges; the copy and map keep the page width. */
+.page:has(> .home-hero) {
+  overflow-x: clip;
+  padding-top: 56px;
+}
+.home-hero {
+  position: relative;
+  isolation: isolate;
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(0, 1fr);
+  gap: 48px;
+  align-items: center;
+  padding: 8px 0 24px;
+}
+.hero-glow {
+  position: absolute;
+  z-index: -1;
+  top: -96px;
+  bottom: -40px;
+  left: calc(50% - 50vw);
+  right: calc(50% - 50vw);
+  pointer-events: none;
+  background:
+    radial-gradient(38% 46% at 20% 28%, var(--glow-1), transparent 70%),
+    radial-gradient(30% 40% at 46% 6%, var(--glow-2), transparent 72%),
+    radial-gradient(34% 46% at 82% 58%, var(--glow-3), transparent 72%),
+    linear-gradient(var(--grid-line) 1px, transparent 1px) 0 0 / 72px 72px,
+    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px) 0 0 / 72px 72px;
+  mask-image: linear-gradient(to bottom, #000 55%, transparent);
+}
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  max-width: 100%;
+  margin-bottom: 22px;
+  padding: 4px 12px 4px 4px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--glass);
+  backdrop-filter: blur(8px);
+  color: var(--ink-2);
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  box-shadow: 0 1px 2px rgb(15 23 42 / 0.05);
+  transition: border-color 0.15s, color 0.15s;
+}
+.hero-badge:hover {
+  border-color: var(--line-strong);
+  color: var(--ink);
+}
+.hero-badge svg {
+  flex: none;
+  transition: transform 0.2s;
+}
+.hero-badge:hover svg {
+  transform: translateX(2px);
+}
+.hb-live {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  flex: none;
+  padding: 3px 9px;
+  border-radius: 999px;
+  background: var(--accent);
+  color: var(--ink-inverse);
+  font-size: 11.5px;
+  font-weight: 700;
+}
+.hb-live i {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+  animation: blink 1.6s ease-in-out infinite;
+}
+@keyframes blink {
+  50% {
+    opacity: 0.35;
+  }
+}
+.page .home-hero h1 {
+  margin: 0 0 22px;
+  font-size: clamp(42px, 5.8vw, 70px);
+  font-weight: 800;
+  line-height: 1.02;
+  letter-spacing: -0.045em;
+  text-wrap: balance;
+}
+/* little pictures set into the headline, the way Framer sites do it */
+.h1-pill {
+  display: inline-flex;
+  vertical-align: -0.06em;
+  height: 0.8em;
+  overflow: hidden;
+  border-radius: 0.2em;
+  box-shadow: 0 6px 18px -6px rgb(15 23 42 / 0.45), 0 0 0 2px var(--panel);
+  transform: rotate(-4deg);
+  transition: transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.h1-pill:hover {
+  transform: rotate(0deg) scale(1.08);
+}
+.h1-pill.sat {
+  width: 1.45em;
+}
+.h1-pill.sat img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.h1-pill.covers {
+  overflow: visible;
+  box-shadow: none;
+  transform: rotate(3deg);
+  gap: 0;
+}
+.h1-pill.covers img {
+  height: 100%;
+  width: auto;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  border-radius: 0.1em;
+  box-shadow: 0 6px 18px -6px rgb(15 23 42 / 0.5), 0 0 0 2px var(--panel);
+}
+.h1-pill.covers img + img {
+  margin-left: -0.12em;
+  transform: rotate(8deg) translateY(0.04em);
+}
+.home-hero .hero-sub {
+  max-width: 560px;
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.6;
+}
+.home-hero .hero-cta {
+  margin-top: 30px;
+}
+.hero-proof {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 22px;
+  margin: 30px 0 0;
+  padding: 0;
+  list-style: none;
+  color: var(--ink-3);
+  font-size: 13.5px;
+}
+.hero-proof b {
+  color: var(--ink);
+  font-weight: 650;
+  font-variant-numeric: tabular-nums;
+}
+
+/* the map card */
+.home-map {
+  position: relative;
+  padding: 16px 16px 56px;
+  border: 1px solid transparent;
+  border-radius: 28px;
+  background:
+    linear-gradient(var(--panel), var(--panel)) padding-box,
+    linear-gradient(150deg, color-mix(in srgb, var(--accent) 45%, var(--line)), var(--line) 40%, var(--line) 70%, color-mix(in srgb, var(--danger) 30%, var(--line))) border-box;
+  box-shadow: var(--shadow-lg);
+}
+.home-map::before {
+  /* dotted paper under the map */
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: radial-gradient(var(--line-strong) 1px, transparent 1.2px) 0 0 / 16px 16px;
+  opacity: 0.45;
+  mask-image: radial-gradient(70% 70% at 50% 45%, #000, transparent);
+  pointer-events: none;
+}
 .home-map-bg {
   position: absolute;
   inset: 0;
   z-index: 0;
   border-radius: inherit;
 }
-.home-map .pin-tips {
-  position: relative;
-  z-index: 1;
+.home-map .locator .prov {
+  fill: color-mix(in srgb, var(--accent) 5%, var(--hover));
+}
+.home-map-legend {
+  position: absolute;
+  left: 18px;
+  bottom: 16px;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 12px;
+  max-width: calc(100% - 230px);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 12px;
+  color: var(--ink-2);
   pointer-events: none;
 }
-.home-map .pin-link {
+.home-map-legend li {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  white-space: nowrap;
+}
+.home-map-legend i {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+.home-map-legend span {
+  color: var(--ink-3);
+  font-variant-numeric: tabular-nums;
+}
+.home-map-cta {
+  position: absolute;
+  right: 14px;
+  bottom: 12px;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 9px 16px;
+  border-radius: 999px;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--ink-inverse);
+  background: var(--ink);
+  text-decoration: none;
+  box-shadow: 0 8px 20px -8px rgb(15 23 42 / 0.6);
+  transition: transform 0.2s;
+}
+.home-map-cta:hover {
+  transform: translateY(-1px);
+}
+
+/* the self-running tour over the map's dots */
+.tour {
+  position: relative;
+  z-index: 3;
+  pointer-events: none;
+}
+.tour .pin-link {
   pointer-events: auto;
   cursor: pointer;
 }
-.home-map .pin-link:hover .pin-dot,
-.home-map .pin-link:focus-visible .pin-dot {
-  r: 9;
-  stroke: var(--ink);
+.tour .pin-link .pin-dot {
+  transition: r 0.25s, stroke-width 0.25s, opacity 0.25s;
 }
-.home-map-cta {
+.tour .pin-link:hover .pin-dot,
+.tour .pin-link:focus-visible .pin-dot,
+.tour .pin-link.on .pin-dot {
+  r: 9px;
+  stroke: var(--panel);
+  stroke-width: 3;
+}
+.tour-ring {
+  position: absolute;
   z-index: 2;
-  text-decoration: none;
+  width: 36px;
+  height: 36px;
+  margin: -18px 0 0 -18px;
+  border: 2px solid currentColor;
+  border-radius: 50%;
+  pointer-events: none;
+  animation: tour-ring 1.6s ease-out infinite;
+  transition: left 0.45s cubic-bezier(0.2, 0.8, 0.2, 1), top 0.45s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
-.pin-tip {
+@keyframes tour-ring {
+  0% {
+    scale: 0.4;
+    opacity: 0.9;
+  }
+  100% {
+    scale: 1.3;
+    opacity: 0;
+  }
+}
+.tour-card {
   position: absolute;
   z-index: 3;
+  display: flex;
+  flex-direction: column;
+  width: min(280px, calc(100% - 24px));
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--panel);
+  color: var(--ink);
+  text-decoration: none;
+  box-shadow: var(--shadow-lg);
+  pointer-events: auto;
+  transform: translateY(calc(-100% - 20px));
+  animation: tour-in 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.tour-card.below {
+  transform: translateY(20px);
+}
+@keyframes tour-in {
+  from {
+    opacity: 0;
+    translate: 0 8px;
+    scale: 0.97;
+  }
+}
+.tour-img {
+  position: relative;
+  display: block;
+  height: 140px;
+  overflow: hidden;
+  background: #1b2330;
+}
+.tour-img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation: tour-zoom 4.5s ease-out both;
+}
+@keyframes tour-zoom {
+  from {
+    scale: 1.12;
+  }
+}
+.tour-tiles {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 280px;
+  height: 140px;
+  margin-left: -140px;
+  animation: tour-zoom 4.5s ease-out both;
+}
+.tour-tiles img {
+  position: absolute;
+  width: 256px;
+  height: 256px;
+  max-width: none;
+}
+.tour-credit {
+  position: absolute;
+  left: 8px;
+  bottom: 8px;
+  padding: 2px 7px;
+  border-radius: 999px;
+  background: rgb(0 0 0 / 0.55);
+  color: #fff;
+  font-size: 10.5px;
+  backdrop-filter: blur(4px);
+}
+.tour-body {
   display: grid;
-  gap: 1px;
-  width: max-content;
-  max-width: 260px;
-  padding: 6px 10px;
-  border-radius: 8px;
-  background: var(--ink);
-  color: var(--ink-inverse);
-  font-size: 13px;
-  line-height: 1.3;
-  transform: translate(-50%, calc(-100% - 8px));
-  pointer-events: none;
+  gap: 3px;
+  padding: 12px 14px 14px;
+}
+.tour-kind {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--ink-3);
+  font-size: 11.5px;
+  font-weight: 600;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.tour-kind i {
+  flex: none;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--dot);
+}
+.tour-body b {
+  font-size: 15.5px;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+}
+.tour-line {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  color: var(--ink-2);
+  font-size: 12.5px;
+  line-height: 1.45;
+}
+.tour-open {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  margin-top: 4px;
+  color: var(--accent);
+  font-size: 12.5px;
+  font-weight: 600;
+}
+.tour-progress {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 100%;
+  background: var(--dot);
+  transform-origin: left;
+  animation: tour-progress 4s linear both;
+}
+.tour-progress.held {
+  animation-play-state: paused;
+}
+@keyframes tour-progress {
+  from {
+    transform: scaleX(0);
+  }
+}
+.tour-pause {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 4;
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: var(--glass);
+  color: var(--ink-2);
+  pointer-events: auto;
+}
+.tour-pause:hover {
+  color: var(--ink);
+  border-color: var(--line-strong);
+}
+@media (prefers-reduced-motion: reduce) {
+  .tour-ring,
+  .tour-card,
+  .tour-img > img,
+  .tour-tiles,
+  .hb-live i {
+    animation: none;
+  }
+  .tour-ring {
+    transition: none;
+  }
+}
+
+@media (max-width: 860px) {
+  .home-hero {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+  .page:has(> .home-hero) {
+    padding-top: 32px;
+  }
+}
+@media (max-width: 560px) {
+  .page .home-hero h1 {
+    font-size: 40px;
+  }
+  .home-hero .hero-sub {
+    font-size: 16.5px;
+  }
+  .home-map {
+    padding: 10px 10px 64px;
+    border-radius: 22px;
+  }
+  .home-map-legend {
+    position: relative;
+    left: auto;
+    bottom: auto;
+    max-width: none;
+    margin: 12px 4px 0;
+  }
+  /* no room to float: the card docks under the map as one compact row */
+  .tour-card,
+  .tour-card.below {
+    position: relative;
+    left: auto !important;
+    top: auto !important;
+    flex-direction: row;
+    width: 100%;
+    min-height: 112px;
+    margin-top: 10px;
+    transform: none;
+    box-shadow: var(--shadow);
+  }
+  .tour-img {
+    flex: none;
+    width: 112px;
+    height: auto;
+  }
+  .tour-credit {
+    left: 4px;
+    right: 4px;
+    bottom: 4px;
+    font-size: 8.5px;
+    line-height: 1.25;
+    text-align: center;
+  }
+  .tour-body {
+    align-content: center;
+    padding: 10px 12px;
+  }
+}
+
+/* section headings and tiles: bigger, tighter type and softer corners, site-wide */
+.band > h2 {
+  font-size: clamp(26px, 3.2vw, 34px);
+  font-weight: 800;
+  letter-spacing: -0.035em;
+  line-height: 1.1;
+}
+.tile {
+  border-radius: 16px;
+  padding: 16px 18px;
+  transition: border-color 0.15s, box-shadow 0.2s, transform 0.2s;
+}
+.tile:hover {
+  border-color: var(--line-strong);
   box-shadow: var(--shadow);
 }
-.pin-tip small {
-  opacity: 0.75;
-  font-size: 11.5px;
+.home-stats .tile b {
+  font-size: 30px;
+  letter-spacing: -0.035em;
 }

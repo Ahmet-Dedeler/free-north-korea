@@ -5,7 +5,7 @@ import Avatar from '@/components/Avatar';
 import { Ext } from '@/components/Ext';
 import { GithubIcon } from '@/components/SocialIcon';
 import Locator from '@/components/Locator';
-import PinTips from '@/components/PinTips';
+import HomeMapTour, { type TourStop } from '@/components/HomeMapTour';
 import { StatTile } from '@/components/Visual';
 import WatchTeaser from '@/components/WatchTeaser';
 import { ARTICLES } from '@/content/articles';
@@ -22,6 +22,7 @@ import { jsonLd } from '@/site/seo';
 import { HUB_PATHS } from '@/content/translations';
 import { mdPath } from '@/site/agents';
 import { latest } from '@/charts/data';
+import { dayLabel, getSatSite, imgSrc, latestSatSites, satCredit } from '@/content/satWatch';
 
 const HUB_PATHS_WITH_DEFAULT = { ...HUB_PATHS, 'x-default': '/' };
 
@@ -30,20 +31,97 @@ export const metadata = { alternates: { canonical: '/', languages: HUB_PATHS_WIT
 
 const TESTS = (testsRaw as unknown as { timeBins: { data: { date: string }[] }[] }).timeBins.flatMap((b) => b.data);
 
+/** Size of the tour card's picture (matches .tour-tiles in visual.css). */
+const TOUR_IMG_W = 280;
+const TOUR_IMG_H = 140;
+
+/** Esri aerial tiles laid out so (lat, lon) sits in the middle of the tour card's picture. */
+function esriTiles(lat: number, lon: number, z: number) {
+  const world = 256 * 2 ** z;
+  const px = ((lon + 180) / 360) * world;
+  const s = Math.sin((lat * Math.PI) / 180);
+  const py = (0.5 - Math.log((1 + s) / (1 - s)) / (4 * Math.PI)) * world;
+  const left = Math.round(px - TOUR_IMG_W / 2);
+  const top = Math.round(py - TOUR_IMG_H / 2);
+  const out: { src: string; x: number; y: number }[] = [];
+  for (let ty = Math.floor(top / 256); ty <= Math.floor((top + TOUR_IMG_H) / 256); ty++)
+    for (let tx = Math.floor(left / 256); tx <= Math.floor((left + TOUR_IMG_W) / 256); tx++)
+      out.push({ src: `https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/${z}/${ty}/${tx}`, x: tx * 256 - left, y: ty * 256 - top });
+  return out;
+}
+
+/** How close the aerial starts, by kind of place: camps and ranges are big, palaces small. */
+const ESRI_ZOOM: Record<string, number> = { camp: 13, nuclear: 14, missile: 14, regime: 16, border: 14, economy: 14, route: 11 };
+
+/** First sentence of a note, kept short enough for the card. */
+const firstLine = (note: string) => {
+  const t = note.replace(/\s+/g, ' ').trim();
+  const s = t.match(/^.+?[.!?](?=\s|$)/)?.[0] ?? t;
+  return s.length > 120 ? `${s.slice(0, 117).replace(/\s+\S*$/, '')}…` : s;
+};
+
+/** Our newest Sentinel-2 chip of a site, if it is on Camp Watch. */
+function satFor(id: string): TourStop['sat'] {
+  const site = getSatSite(id);
+  if (!site?.latest) return undefined;
+  return { src: imgSrc(site.id, site.latest), date: dayLabel('en', site.latest), credit: satCredit(site.latest.slice(0, 4)) };
+}
+
 /**
- * The hero map: every camp and key site as a dot. Hovering a dot names it, clicking it opens that point on /map;
- * clicking anywhere else opens /map.
+ * The hero map: every camp and key site as a dot. It tours the dots by itself (HomeMapTour), each with a picture;
+ * hovering a dot shows that one, clicking it opens that point on /map, clicking anywhere else opens /map.
  */
 function MapPreview() {
   const cat = Object.fromEntries(PLACE_CATEGORIES.map((c) => [c.id, c.label]));
-  const pins = [
-    ...getAllCamps().map((c) => ({ lat: c.lat, lon: c.lon, title: c.name, color: '#dc2626', r: 7, href: `/map#camps=${c.id}`, tip: `${c.name}|${c.kind}` })),
-    ...getAllPlaces().map((p) => {
-      const layer = p.id.startsWith('base-') ? 'missile-bases' : 'sites';
-      return { lat: p.lat, lon: p.lon, title: p.name, color: PLACE_COLOR[p.category], r: 6, href: `/map#${layer}=${p.id}`, tip: `${p.name}|${cat[p.category]}${p.status ? ` · ${p.status}` : ''}` };
-    }),
-  ];
-  return <Locator pins={pins} label="camps and key sites" ariaLabel="Map of North Korea's prison camps and key sites" />;
+  const camps = getAllCamps().map((c) => ({
+    pin: { lat: c.lat, lon: c.lon, title: c.name, color: '#dc2626', r: 7, href: `/map#camps=${c.id}`, tip: `${c.name}|${c.kind}` },
+    stop: {
+      name: c.name,
+      kind: c.kind.startsWith('Political') ? 'Political prison camp' : 'Prison',
+      line: firstLine(c.facts.summary || c.note) || c.status,
+      color: '#dc2626',
+      href: `/map#camps=${c.id}`,
+      group: 'camp',
+      sat: satFor(c.slug),
+      esri: esriTiles(c.lat, c.lon, ESRI_ZOOM.camp),
+    },
+  }));
+  const places = getAllPlaces().map((p) => {
+    const layer = p.id.startsWith('base-') ? 'missile-bases' : 'sites';
+    const href = `/map#${layer}=${p.id}`;
+    return {
+      pin: { lat: p.lat, lon: p.lon, title: p.name, color: PLACE_COLOR[p.category], r: 6, href, tip: `${p.name}|${cat[p.category]}${p.status ? ` · ${p.status}` : ''}` },
+      stop: {
+        name: p.name,
+        kind: p.status ? `${cat[p.category]} · ${p.status}` : cat[p.category],
+        line: firstLine(p.note),
+        color: PLACE_COLOR[p.category],
+        href,
+        group: p.category as string,
+        sat: satFor(p.id),
+        esri: esriTiles(p.lat, p.lon, ESRI_ZOOM[p.category] ?? 14),
+      },
+    };
+  });
+  const all = [...camps, ...places];
+  // Tour order: our own dated images first, then the rest, taking one kind of place at a time so it never shows
+  // five camps in a row.
+  const interleave = (idx: number[]) => {
+    const groups = new globalThis.Map<string, number[]>();
+    for (const i of idx) groups.set(all[i].stop.group, [...(groups.get(all[i].stop.group) ?? []), i]);
+    const lists = [...groups.values()];
+    const out: number[] = [];
+    for (let k = 0; out.length < idx.length; k++) for (const l of lists) if (l[k] != null) out.push(l[k]);
+    return out;
+  };
+  const ids = all.map((_, i) => i);
+  const order = [...interleave(ids.filter((i) => all[i].stop.sat)), ...interleave(ids.filter((i) => !all[i].stop.sat))];
+  const stops: TourStop[] = all.map(({ stop: { group: _g, ...s } }) => (s.sat ? { ...s, esri: undefined } : s));
+  return (
+    <HomeMapTour stops={stops} order={order}>
+      <Locator pins={all.map((a) => a.pin)} label="camps and key sites" ariaLabel="Map of North Korea's prison camps and key sites" />
+    </HomeMapTour>
+  );
 }
 
 function PeoplePreview() {
@@ -124,6 +202,16 @@ const arrivals = (() => {
 })();
 
 export default function Home() {
+  const newest = latestSatSites(1)[0];
+  // the headline's picture pills: our newest Yongbyon chip and two escapee memoirs with the authors on the cover
+  const yongbyon = getSatSite('yongbyon');
+  const heroSat = yongbyon?.latest ? { src: imgSrc(yongbyon.id, yongbyon.latest) } : undefined;
+  const heroCovers = ['In Order to Live', 'The Girl with Seven Names'].map((t) => cover(t)?.src).filter((x): x is string => !!x);
+  const placeCount = (c: string) => getAllPlaces().filter((p) => p.category === c).length;
+  const legend = [
+    { label: 'Prison camps', color: '#dc2626', n: getAllCamps().length },
+    ...PLACE_CATEGORIES.filter((c) => c.id !== 'camp' && placeCount(c.id) > 0).map((c) => ({ label: c.label, color: c.color, n: placeCount(c.id) })),
+  ];
   const flash = orgLogo('flash-drives-for-freedom');
   const link = orgLogo('liberty-in-north-korea');
   return (
@@ -134,27 +222,67 @@ export default function Home() {
       />
 
       <section className="home-hero">
-        <div>
-          <h1>Understand North Korea. Help free its people.</h1>
+        <div className="hero-glow" aria-hidden />
+        <div className="hero-copy">
+          {newest?.latest && (
+            <Link href="/watch" className="hero-badge">
+              <span className="hb-live">
+                <i /> New
+              </span>
+              Satellite image of {newest.name}, {dayLabel('en', newest.latest)}
+              <ArrowRight size={14} aria-hidden />
+            </Link>
+          )}
+          <h1>
+            Understand{' '}
+            {heroSat && (
+              <span className="h1-pill sat" aria-hidden>
+                <img src={heroSat.src} alt="" />
+              </span>
+            )}{' '}
+            North Korea. Help free its{' '}
+            <span className="h1-pill covers" aria-hidden>
+              {heroCovers.map((c) => (
+                <img key={c} src={c} alt="" />
+              ))}
+            </span>{' '}
+            people.
+          </h1>
           <p className="hero-sub">
             The map, the military picture, the history and the groups doing the work, plus clear things you can do today. The regime survives on
             keeping its people in the dark and everyone else uninterested. This site is for fixing both.
           </p>
           <div className="hero-cta">
-            <Link className="btn primary" href="/act">
-              What can I do?
+            <Link className="btn primary pill" href="/act">
+              What can I do? <ArrowRight size={16} aria-hidden />
             </Link>
-            <Link className="btn" href="/learn/how-can-north-korea-be-freed">
+            <Link className="btn ghost pill" href="/learn/how-can-north-korea-be-freed">
               How could North Korea be freed?
             </Link>
           </div>
+          <ul className="hero-proof">
+            <li>
+              <b>{getAllCamps().length}</b> camps and prisons mapped
+            </li>
+            <li>
+              <b>{TESTS.length}</b> missile launches logged
+            </li>
+            <li>
+              <b>4</b> languages, open source
+            </li>
+          </ul>
         </div>
         <div className="home-map">
           {/* the whole picture opens the map; the dots sit above this link and open their own point */}
           <Link href="/map" className="home-map-bg" aria-label="Open the intel map" />
-          <PinTips>
-            <MapPreview />
-          </PinTips>
+          <MapPreview />
+          <ul className="home-map-legend" aria-label="Map key">
+            {legend.map((l) => (
+              <li key={l.label}>
+                <i style={{ background: l.color }} /> {l.label} <span>{l.n}</span>
+              </li>
+            ))}
+          </ul>
           <Link href="/map" className="home-map-cta">
             <Map size={15} /> Open the intel map
           </Link>

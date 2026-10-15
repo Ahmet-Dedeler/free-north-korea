@@ -9,7 +9,7 @@ export interface Pin {
   /** CSS colour for the dot (defaults to muted grey). */
   color?: string;
   r?: number;
-  /** Hover card text, "name|kind" (shown by PinTips around the map); without it the native <title> shows. */
+  /** Hover card text, "name|kind" (shown by HomeMapTour around the map); without it the native <title> shows. */
   tip?: string;
 }
 

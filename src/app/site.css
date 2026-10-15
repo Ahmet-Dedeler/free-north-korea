@@ -1,7 +1,7 @@
 /* Site chrome and content pages. Colours come from the tokens in globals.css. */
 
 :root {
-  --bar-h: 52px;
+  --bar-h: 60px;
   /* status colours, mostly used as small text: dark enough for WCAG AA (4.5:1) on white and on their own tints */
   --danger: #b91c1c;
   --ok: #166534;
@@ -64,23 +64,38 @@ body {
   align-items: center;
   gap: 18px;
   height: var(--bar-h);
-  padding: 0 16px;
+  padding: 0 20px;
+  /* frosted glass: the page shows through softly as it scrolls under the bar */
+  background: color-mix(in srgb, var(--bg) 78%, transparent);
+  backdrop-filter: saturate(180%) blur(16px);
+  -webkit-backdrop-filter: saturate(180%) blur(16px);
+  border-bottom: 1px solid color-mix(in srgb, var(--line) 80%, transparent);
+}
+/* the map pages sit right under the bar, so it stays solid there */
+.shell-app .topbar {
   background: var(--panel);
-  border-bottom: 1px solid var(--line);
 }
 .logo {
   display: flex;
   align-items: center;
-  gap: 8px;
-  font-weight: 700;
-  font-size: 15px;
+  gap: 9px;
+  margin-right: 6px;
+  font-weight: 750;
+  font-size: 16px;
+  letter-spacing: -0.02em;
   color: var(--ink);
   text-decoration: none;
   white-space: nowrap;
 }
 .logo svg {
-  width: 22px;
-  height: 22px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px -2px rgb(37 99 235 / 0.45);
+  transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.logo:hover svg {
+  transform: rotate(72deg);
 }
 .nav {
   display: flex;
@@ -92,12 +107,14 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 4px;
-  padding: 6px 10px;
-  border-radius: 8px;
+  padding: 7px 11px;
+  border-radius: 999px;
   color: var(--ink-2);
   text-decoration: none;
   white-space: nowrap;
-  font-size: 13.5px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background 0.15s, color 0.15s;
 }
 .nav a:hover {
   background: var(--hover);
@@ -129,14 +146,19 @@ body {
   gap: 8px;
 }
 .cta {
-  padding: 6px 12px;
-  border-radius: 8px;
+  padding: 8px 16px;
+  border-radius: 999px;
   background: var(--danger-fill);
   color: #fff;
   font-weight: 600;
-  font-size: 13.5px;
+  font-size: 14px;
   text-decoration: none;
   white-space: nowrap;
+  box-shadow: 0 6px 16px -6px rgb(220 38 38 / 0.6), inset 0 1px 0 rgb(255 255 255 / 0.18);
+  transition: filter 0.15s, transform 0.15s;
+}
+.cta:hover {
+  transform: translateY(-1px);
 }
 .cta:hover,
 .cta.on {
@@ -261,22 +283,36 @@ body {
 /* ---------- buttons ---------- */
 .btn {
   display: inline-block;
-  padding: 10px 16px;
-  border-radius: 10px;
+  padding: 11px 20px;
+  border-radius: 999px;
   border: 1px solid var(--line-strong);
   color: var(--ink);
   background: var(--panel);
   font-weight: 600;
   text-decoration: none;
   line-height: 1.2;
+  box-shadow: 0 1px 2px rgb(15 23 42 / 0.06);
+  transition: background 0.15s, transform 0.15s, box-shadow 0.15s, filter 0.15s;
 }
 .btn:hover {
   background: var(--hover);
+  transform: translateY(-1px);
+}
+.btn svg {
+  transition: transform 0.2s;
+}
+.btn:hover svg {
+  transform: translateX(2px);
 }
 .btn.primary {
   background: var(--danger-fill);
-  border-color: var(--danger);
+  border-color: var(--danger-fill);
   color: #fff;
+  box-shadow: 0 10px 24px -10px rgb(220 38 38 / 0.7), inset 0 1px 0 rgb(255 255 255 / 0.2);
+}
+.btn.ghost {
+  background: var(--glass);
+  backdrop-filter: blur(8px);
 }
 .btn.primary:hover {
   filter: brightness(0.92);
@@ -2968,11 +3004,11 @@ ul.bars b {
   display: inline-flex;
   align-items: center;
   gap: 5px;
-  height: 34px;
-  padding: 0 9px;
+  height: 36px;
+  padding: 0 12px;
   border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--panel);
+  border-radius: 999px;
+  background: var(--glass);
   color: var(--ink-2);
   font: inherit;
   font-size: 13px;
@@ -2995,8 +3031,8 @@ ul.bars b {
   list-style: none;
   background: var(--panel);
   border: 1px solid var(--line);
-  border-radius: 10px;
-  box-shadow: var(--shadow);
+  border-radius: 14px;
+  box-shadow: var(--shadow-lg);
 }
 .lang-list[hidden] {
   display: none;
@@ -3020,7 +3056,7 @@ ul.bars b {
 }
 .menu-btn {
   display: none;
-  width: 38px;
+  width: 40px;
   justify-content: center;
   padding: 0;
 }
