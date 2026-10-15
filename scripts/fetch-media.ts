@@ -193,6 +193,17 @@ jobs.push({
   run: async () => [{ url: GIBS_NIGHT, sourceUrl: 'https://earthobservatory.nasa.gov/features/NightLights', credit: 'NASA Earth Observatory, Black Marble 2016 (public domain)' }],
 });
 
+// A crowd of North Koreans, for the hero headline ("Help free its people"). The picture came from a Korea Risk Group
+// blog post; its original Flickr upload (id 45490331201) is gone, so no author or licence can be confirmed, and the
+// credit says only where it came from. Swap it for a free-licensed photo if one turns up.
+const CROWD = 'https://assets.korearisk.com/uploads/2019/05/45490331201_a217927afd_b_crowd-935x500.jpg';
+jobs.push({
+  key: 'page:north-koreans',
+  dest: '/img/pages/north-koreans',
+  minPx: 300,
+  run: async () => [{ url: CROWD, sourceUrl: CROWD, credit: 'Photo via Korea Risk Group' }],
+});
+
 /** Hand-picked images where automatic lookup picks the wrong thing (e.g. a foreign edition). */
 const OVERRIDES: Record<string, { url: string; sourceUrl: string; credit: string }> = {
   // the bridge's lead photo is named after Dandong, which wikiLeadPhoto rejects for place photos

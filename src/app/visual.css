@@ -4792,17 +4792,17 @@ a.ltag:hover {
 .h1-pill:hover {
   transform: rotate(0deg) scale(1.08);
 }
-.h1-pill.night {
-  width: 1.45em;
-  background: #05070d;
+.h1-pill.crowd {
+  width: 1.5em;
+  background: #12141a;
   box-shadow: 0 0 0 1.5px rgb(255 255 255 / 0.22), 0 10px 30px -8px rgb(0 0 0 / 0.6);
 }
-.h1-pill.night img {
+.h1-pill.crowd img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  /* the DMZ line: dark North above, Seoul's glow below */
-  object-position: 50% 54%;
+  /* the photo is 1.87:1, the pill is 1.5:0.8, so nothing is lost; keep the faces in the top half */
+  object-position: 50% 46%;
 }
 
 /* the map card, in night colours */

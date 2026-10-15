@@ -260,6 +260,7 @@ export default function HomePage({ lang }: { lang: Lang }) {
   const watched = latestSatSites(100);
   const newest = watched[0];
   const night = media('page:korea-at-night');
+  const people = media('page:north-koreans');
   const fields = media('article:north-korea-songbun-caste-system');
   const placeCount = (c: string) => getAllPlaces().filter((p) => p.category === c).length;
 
@@ -318,9 +319,9 @@ export default function HomePage({ lang }: { lang: Lang }) {
               <span className="h1-line">
                 {t.headline.beforePill}{' '}
                 <span className="nowrap">
-                  {night && (
-                    <span className="h1-pill night" aria-hidden title={night.credit}>
-                      <img src={night.src} alt="" />
+                  {people && (
+                    <span className="h1-pill crowd" aria-hidden title={people.credit}>
+                      <img src={people.src} alt="" />
                     </span>
                   )}{' '}
                   {t.headline.afterPill}

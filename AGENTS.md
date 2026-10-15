@@ -129,7 +129,8 @@ before adding any page or article.
   home page's "Build this with us" row is the pattern.
 - Home (`app/page.tsx`, `app/{ko,ja,zh}/page.tsx`, rendered by `components/HomePage.tsx`, text in `content/home.ts`): the look is a 2026 Framer non-profit site, not a 2010 portal. Light bands alternate with
   full-bleed "night" bands (`.night` + `.bleed`: deep navy `--night` with white type, in `globals.css`; no extra
-  accent colour: a yellow one was tried and read as too loud): the hero (all-white headline with the Korea-at-night photo set into it,
+  accent colour: a yellow one was tried and read as too loud): the hero (all-white headline with a photo of a crowd of
+  North Koreans set into it (`page:north-koreans`, `.h1-pill.crowd`),
   our newest satellite chips as a "watched from space" row, the map card), a quiet ticker of counts from the data, the
   scale band (one giant number, four smaller, the night photo in an arch) and a closing "Ten minutes is enough to
   start" banner. Section heads are title left, "see all" pill right
