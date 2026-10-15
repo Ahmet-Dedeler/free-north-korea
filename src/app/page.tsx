@@ -284,16 +284,19 @@ export default function Home() {
             {/* the whole picture opens the map; the dots sit above this link and open their own point */}
             <Link href="/map" className="home-map-bg" aria-label="Open the intel map" />
             <MapPreview />
-            <ul className="home-map-legend" aria-label="Map key">
-              {legend.map((l) => (
-                <li key={l.label}>
-                  <i style={{ background: l.color }} /> {l.label} <span>{l.n}</span>
-                </li>
-              ))}
-            </ul>
-            <Link href="/map" className="home-map-cta">
-              <Map size={15} /> Open the intel map
-            </Link>
+            {/* key and button in their own row under the map: the tour card stays inside the map, so it never covers them */}
+            <div className="home-map-foot">
+              <ul className="home-map-legend" aria-label="Map key">
+                {legend.map((l) => (
+                  <li key={l.label}>
+                    <i style={{ background: l.color }} /> {l.label} <span>{l.n}</span>
+                  </li>
+                ))}
+              </ul>
+              <Link href="/map" className="home-map-cta">
+                <Map size={15} /> Open the intel map
+              </Link>
+            </div>
           </div>
         </div>
       </section>
@@ -356,7 +359,9 @@ export default function Home() {
           <div className="scale-copy">
             <p className="kicker">The scale of it</p>
             <p className="scale-big">
-              <b>80–120k</b>
+              <b>
+                80<span className="dash">–</span>120k
+              </b>
               <span>people held in political prison camps</span>
               <small>UN inquiry, 2014. Still the most-cited estimate</small>
             </p>
@@ -424,7 +429,8 @@ export default function Home() {
             All explainers <ArrowRight size={15} aria-hidden />
           </Link>
         </div>
-        <ArticleCards articles={ARTICLES} lead />
+        {/* the lead plus two full rows of three; the rest are one click away on /learn */}
+        <ArticleCards articles={ARTICLES.slice(0, 7)} lead />
       </section>
 
       <section className="wall-cta" style={fields ? { ['--photo' as string]: `url(${fields.src})` } : undefined}>

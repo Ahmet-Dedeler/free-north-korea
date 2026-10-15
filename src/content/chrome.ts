@@ -87,7 +87,7 @@ export const CHROME_TEXT: Record<Lang, ChromeText> = {
     explore: 'Explore',
     explore_links: [
       ['/map', 'Intel map'],
-      ['/watch', 'Watch: what can be seen from outside'],
+      ['/watch', 'Watch from outside'],
       ['/camps', 'Prison camps'],
       ['/places', 'Key strategic sites'],
       ['/counties', '179 counties'],
@@ -138,7 +138,7 @@ export const CHROME_TEXT: Record<Lang, ChromeText> = {
     explore: '둘러보기',
     explore_links: [
       ['/map', '정보 지도'],
-      ['/watch', '워치: 밖에서 볼 수 있는 것'],
+      ['/watch', '밖에서 지켜보기'],
       ['/camps', '정치범수용소'],
       ['/places', '주요 전략 시설'],
       ['/counties', '179개 시·군'],
@@ -189,7 +189,7 @@ export const CHROME_TEXT: Record<Lang, ChromeText> = {
     explore: '見る',
     explore_links: [
       ['/map', '情報マップ'],
-      ['/watch', 'ウォッチ：外から見えるもの'],
+      ['/watch', '外から見る'],
       ['/camps', '政治犯収容所'],
       ['/places', '主要な戦略施設'],
       ['/counties', '179の市・郡'],
@@ -239,7 +239,7 @@ export const CHROME_TEXT: Record<Lang, ChromeText> = {
     explore: '浏览',
     explore_links: [
       ['/map', '情报地图'],
-      ['/watch', '观察：从外面能看到什么'],
+      ['/watch', '从外部观察'],
       ['/camps', '政治犯收容所'],
       ['/places', '主要战略设施'],
       ['/counties', '179 个市郡'],

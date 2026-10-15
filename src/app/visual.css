@@ -4784,6 +4784,8 @@ a.ltag:hover {
   height: 0.8em;
   overflow: hidden;
   border-radius: 0.2em;
+  /* the tilt pushes its top-left corner into the word before; a little room keeps both gaps even */
+  margin-left: 0.07em;
   transform: rotate(3deg);
   transition: transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
@@ -4806,7 +4808,7 @@ a.ltag:hover {
 /* the map card, in night colours */
 .home-map {
   position: relative;
-  padding: 16px 16px 56px;
+  padding: 16px 16px 14px;
   border: 1px solid var(--night-line);
   border-radius: 28px;
   background: linear-gradient(160deg, var(--night-2), color-mix(in srgb, var(--night) 70%, #000));
@@ -4838,21 +4840,28 @@ a.ltag:hover {
 .home-map .locator .pin-dot {
   stroke: var(--night-2);
 }
-.home-map-legend {
-  position: absolute;
-  left: 18px;
-  bottom: 16px;
+.home-map-foot {
+  position: relative;
   z-index: 2;
   display: flex;
-  flex-wrap: wrap;
-  gap: 4px 12px;
-  max-width: calc(100% - 230px);
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px 20px;
+  margin: 6px 2px 0;
+  /* clicks on the empty parts fall through to the card's link to /map */
+  pointer-events: none;
+}
+/* two even columns, so six layers read as a tidy 3 x 2 key instead of ragged wrapped lines */
+.home-map-legend {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  justify-content: start;
+  gap: 4px 18px;
   margin: 0;
   padding: 0;
   list-style: none;
   font-size: 12px;
   color: var(--night-ink-2);
-  pointer-events: none;
 }
 .home-map-legend li {
   display: inline-flex;
@@ -4870,10 +4879,7 @@ a.ltag:hover {
   font-variant-numeric: tabular-nums;
 }
 .home-map-cta {
-  position: absolute;
-  right: 14px;
-  bottom: 12px;
-  z-index: 2;
+  flex: none;
   display: inline-flex;
   align-items: center;
   gap: 7px;
@@ -4884,6 +4890,7 @@ a.ltag:hover {
   color: var(--night);
   background: #fff;
   text-decoration: none;
+  pointer-events: auto;
   transition: transform 0.2s;
 }
 .home-map-cta:hover {
@@ -4987,6 +4994,14 @@ a.ltag:hover {
   letter-spacing: -0.055em;
   font-variant-numeric: tabular-nums;
 }
+/* the tight tracking pulls the en dash into the 0 on its left, while the tabular 1 on its right brings its own wide
+   side bearing; uneven margins make the two gaps look the same */
+.scale-big b .dash {
+  margin: 0 -0.03em 0 0.1em;
+  font-size: inherit;
+  font-weight: 700;
+  letter-spacing: 0;
+}
 .scale-big span {
   font-size: 22px;
   font-weight: 600;
@@ -5000,12 +5015,17 @@ a.ltag:hover {
 .scale-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 28px 32px;
+  gap: 0 32px;
   margin: 32px 0 0;
 }
+/* each stat is number / label / source; subgrid lines those rows up across the two columns */
 .scale-grid div {
   display: grid;
+  grid-row: span 3;
+  grid-template-rows: subgrid;
+  align-content: start;
   gap: 2px;
+  margin-bottom: 28px;
 }
 .scale-grid dt {
   font-size: 40px;
@@ -5145,11 +5165,11 @@ a.ltag:hover {
   text-decoration: none;
   box-shadow: var(--shadow-lg);
   pointer-events: auto;
-  transform: translateY(calc(-100% - 20px));
   animation: tour-in 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
-.tour-card.below {
-  transform: translateY(20px);
+/* the credit line under the text, used only on phones where the picture is too small for it */
+.tour-src {
+  display: none;
 }
 @keyframes tour-in {
   from {
@@ -5266,25 +5286,6 @@ a.ltag:hover {
     transform: scaleX(0);
   }
 }
-.tour-pause {
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 4;
-  display: grid;
-  place-items: center;
-  width: 30px;
-  height: 30px;
-  border: 1px solid var(--line);
-  border-radius: 50%;
-  background: var(--glass);
-  color: var(--ink-2);
-  pointer-events: auto;
-}
-.tour-pause:hover {
-  color: var(--ink);
-  border-color: var(--line-strong);
-}
 @media (prefers-reduced-motion: reduce) {
   .tour-ring,
   .tour-card,
@@ -5350,8 +5351,9 @@ a.ltag:hover {
     margin-top: 72px;
     padding: 220px 22px 56px;
     border-radius: 24px;
+    /* the photo is 340px tall; the fade reaches solid navy before its bottom edge so no seam runs through the text */
     background:
-      linear-gradient(180deg, rgb(10 22 51 / 0.1) 0%, rgb(10 22 51 / 0.85) 45%, rgb(10 22 51 / 0.97) 100%),
+      linear-gradient(180deg, rgb(10 22 51 / 0.1) 0, rgb(10 22 51 / 0.8) 200px, var(--night) 320px),
       var(--photo) center top / auto 340px no-repeat,
       var(--night);
   }
@@ -5360,19 +5362,19 @@ a.ltag:hover {
     right: 22px;
   }
   .home-map {
-    padding: 10px 10px 64px;
+    padding: 10px 10px 12px;
     border-radius: 22px;
   }
-  .home-map-legend {
-    position: relative;
-    left: auto;
-    bottom: auto;
-    max-width: none;
+  .home-map-foot {
+    flex-direction: column;
+    align-items: stretch;
     margin: 12px 4px 0;
   }
+  .home-map-cta {
+    justify-content: center;
+  }
   /* no room to float: the card docks under the map as one compact row */
-  .tour-card,
-  .tour-card.below {
+  .tour-card {
     position: relative;
     left: auto !important;
     top: auto !important;
@@ -5380,7 +5382,6 @@ a.ltag:hover {
     width: 100%;
     min-height: 112px;
     margin-top: 10px;
-    transform: none;
     box-shadow: var(--shadow);
   }
   .tour-img {
@@ -5389,12 +5390,13 @@ a.ltag:hover {
     height: auto;
   }
   .tour-credit {
-    left: 4px;
-    right: 4px;
-    bottom: 4px;
-    font-size: 8.5px;
-    line-height: 1.25;
-    text-align: center;
+    display: none;
+  }
+  .tour-src {
+    display: block;
+    margin-top: 2px;
+    color: var(--ink-3);
+    font-size: 10.5px;
   }
   .tour-body {
     align-content: center;

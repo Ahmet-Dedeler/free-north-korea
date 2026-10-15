@@ -135,12 +135,14 @@ before adding any page or article.
   start" banner. Section heads are title left, "see all" pill right
   (`.band-head`). On `/` the top bar wears the hero's navy until you scroll (`over-night` in `SiteChrome.tsx`). The
   map tours its own dots (`components/HomeMapTour.tsx`): every 6 s the next dot gets a card with our newest Sentinel-2
-  chip (Camp Watch sites first) or an Esri aerial labelled undated, its kind and one line from its note. Hover pauses
-  it and shows that dot; a pause button stops it; on phones the card docks under the map.
+  chip (Camp Watch sites first) or an Esri aerial labelled undated, its kind and one line from its note. Hover or focus
+  holds it and shows that dot; reduced motion stops it. The card is placed inside the map box clear of its dot (no
+  pause button, nothing over the key or the Open button, which sit in a row under the map); on phones it docks under
+  the map.
 - Footer (every content page, `SiteChrome.tsx`): a navy card with the brand, languages, link columns (Explore split in
   two), the review note, GitHub and Take action, and the name set huge and faint as the last line.
 - Language switchers (header menu, footer, article "read in" links, the hub chips in `components/HubLangs.tsx`) show a
-  flag before each language name: `components/Flag.tsx` (country-flag-icons SVGs; English is the UK flag, Chinese the
+  flag before each language name: `components/Flag.tsx` (country-flag-icons SVGs; English is the US flag, Chinese the
   mainland flag). A new switcher uses it too.
 - Content pages are visual, not text walls. Reuse the building blocks before writing paragraphs:
   `components/Visual.tsx` (StatTile, icon chips, SourceCards), `AsOf` (date a number is from), `SatView` (Esri satellite

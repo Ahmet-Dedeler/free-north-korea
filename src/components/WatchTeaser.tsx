@@ -10,15 +10,16 @@ export default function WatchTeaser({ lang }: { lang: Lang }) {
   const t = WATCH_TEXT[lang].teaser;
   return (
     <section className="band wh-teaser">
-      <h2>{t.title}</h2>
+      {/* title left, "see all" pill right, like every other section head on the home page */}
+      <div className="band-head">
+        <h2>{t.title}</h2>
+        <Link href={WATCH_PATHS[lang]} className="btn small-btn">
+          {t.more} <ArrowRight size={15} aria-hidden="true" />
+        </Link>
+      </div>
       <p className="muted">{t.intro}</p>
       <EventFeed lang={lang} limit={3} heading={false} />
       <KimLastSeen lang={lang} />
-      <p className="wh-more">
-        <Link href={WATCH_PATHS[lang]}>
-          {t.more} <ArrowRight size={14} aria-hidden="true" />
-        </Link>
-      </p>
     </section>
   );
 }
