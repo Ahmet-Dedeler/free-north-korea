@@ -98,8 +98,8 @@ export default function SiteChrome({ children }: { children: ReactNode }) {
   useDismiss(menuOpen, () => setMenuOpen(false), barRef, path);
   useDismiss(langOpen, () => setLangOpen(false), langRef, path);
 
-  // The English home page opens on a navy hero: the bar wears the same navy until the reader scrolls.
-  const home = path === '/';
+  // The home page opens on a navy hero in every language: the bar wears the same navy until the reader scrolls.
+  const home = base === '/';
   const [atTop, setAtTop] = useState(true);
   useEffect(() => {
     if (!home) return;

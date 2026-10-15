@@ -127,13 +127,13 @@ before adding any page or article.
   `components/SocialIcon.tsx` (`SocialIcon`, `GithubIcon`), org logos through `orgLogo()`. A small ask (contribute,
   follow, read more) is one quiet line with the mark and a link, not a boxed callout with a heading and a button; the
   home page's "Build this with us" row is the pattern.
-- Home (`app/page.tsx`): the look is a 2026 Framer non-profit site, not a 2010 portal. Light bands alternate with
+- Home (`app/page.tsx`, `app/{ko,ja,zh}/page.tsx`, rendered by `components/HomePage.tsx`, text in `content/home.ts`): the look is a 2026 Framer non-profit site, not a 2010 portal. Light bands alternate with
   full-bleed "night" bands (`.night` + `.bleed`: deep navy `--night` with white type, in `globals.css`; no extra
   accent colour: a yellow one was tried and read as too loud): the hero (all-white headline with the Korea-at-night photo set into it,
   our newest satellite chips as a "watched from space" row, the map card), a quiet ticker of counts from the data, the
   scale band (one giant number, four smaller, the night photo in an arch) and a closing "Ten minutes is enough to
   start" banner. Section heads are title left, "see all" pill right
-  (`.band-head`). On `/` the top bar wears the hero's navy until you scroll (`over-night` in `SiteChrome.tsx`). The
+  (`.band-head`). On the home page the top bar wears the hero's navy until you scroll (`over-night` in `SiteChrome.tsx`). The
   map tours its own dots (`components/HomeMapTour.tsx`): every 6 s the next dot gets a card with our newest Sentinel-2
   chip (Camp Watch sites first) or an Esri aerial labelled undated, its kind and one line from its note. Hover or focus
   holds it and shows that dot; reduced motion stops it. The card is placed inside the map box clear of its dot (no
