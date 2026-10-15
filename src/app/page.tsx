@@ -215,7 +215,7 @@ export default function Home() {
   const watched = latestSatSites(100);
   const newest = watched[0];
   const night = media('page:korea-at-night');
-  const wall = media('article:how-can-north-korea-be-freed');
+  const fields = media('article:north-korea-songbun-caste-system');
   const placeCount = (c: string) => getAllPlaces().filter((p) => p.category === c).length;
   const legend = [
     { label: 'Prison camps', color: '#dc2626', n: getAllCamps().length },
@@ -244,7 +244,7 @@ export default function Home() {
         <div className="hx-in">
           <div className="hx-copy">
             <h1>
-              <span className="h1-line dawn">Understand</span> <span className="h1-line dawn">North Korea.</span>{' '}
+              <span className="h1-line">Understand</span> <span className="h1-line">North Korea.</span>{' '}
               <span className="h1-line">
                 Help free its{' '}
                 {/* the picture never wraps away from the word it stands before */}
@@ -354,7 +354,7 @@ export default function Home() {
       <section className="scale night bleed">
         <div className="scale-in">
           <div className="scale-copy">
-            <p className="kicker">/ The scale of it /</p>
+            <p className="kicker">The scale of it</p>
             <p className="scale-big">
               <b>80–120k</b>
               <span>people held in political prison camps</span>
@@ -427,23 +427,20 @@ export default function Home() {
         <ArticleCards articles={ARTICLES} lead />
       </section>
 
-      <section className="wall-cta" style={wall ? { ['--photo' as string]: `url(${wall.src})` } : undefined}>
+      <section className="wall-cta" style={fields ? { ['--photo' as string]: `url(${fields.src})` } : undefined}>
         <div>
-          <h2>It looked permanent too.</h2>
-          <p>
-            East Germany looked permanent in the summer of 1989. By November the Berlin Wall was open. When North Korea&rsquo;s turn comes, what its
-            people know about the outside world will matter.
-          </p>
+          <h2>Ten minutes is enough to start.</h2>
+          <p>Mail a USB drive, fund a rescue, write to your representative. Every way to help, what it costs and who does the work.</p>
           <div className="hx-cta">
-            <Link className="btn dawn-btn" href="/act">
+            <Link className="btn primary" href="/act">
               What can I do? <ArrowRight size={16} aria-hidden />
             </Link>
-            <Link className="btn on-night" href="/learn/how-can-north-korea-be-freed">
-              How it could happen <ArrowRight size={16} aria-hidden />
+            <Link className="btn on-night" href="/organizations">
+              Groups doing the work <ArrowRight size={16} aria-hidden />
             </Link>
           </div>
         </div>
-        {wall && <small className="wall-credit">West and East Germans at the Brandenburg Gate, 1989. {wall.credit}</small>}
+        {fields && <small className="wall-credit">North Korean farmers, 2009. {fields.credit}</small>}
       </section>
 
       <p className="home-build">

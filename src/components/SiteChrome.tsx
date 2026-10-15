@@ -4,12 +4,13 @@ import Link from 'next/link';
 import type { ReactNode } from 'react';
 import { usePathname } from 'next/navigation';
 import { useEffect, useRef, useState } from 'react';
-import { Check, ChevronDown, Globe, Menu, X } from 'lucide-react';
+import { Check, ChevronDown, Menu, X } from 'lucide-react';
 import { CHROME_TEXT, LANG_NAMES, basePath, langOf, localize } from '@/content/chrome';
 import type { Lang } from '@/site/seo';
 import { REPO_URL, REVIEWED } from '../site/config';
 import { BRAND_BLUE, LOGO_STAR } from '../site/brand';
 import { Ext } from './Ext';
+import Flag from './Flag';
 import { GithubIcon } from './SocialIcon';
 
 const LANGS: Lang[] = ['en', 'ko', 'ja', 'zh'];
@@ -145,7 +146,7 @@ export default function SiteChrome({ children }: { children: ReactNode }) {
               aria-label={`${t.langs}: ${LANG_FULL[lang]}`}
               onClick={() => setLangOpen((o) => !o)}
             >
-              <Globe size={15} aria-hidden />
+              <Flag lang={lang} />
               <span>{LANG_NAMES[lang]}</span>
               <ChevronDown size={13} aria-hidden />
             </button>
@@ -154,7 +155,10 @@ export default function SiteChrome({ children }: { children: ReactNode }) {
               {LANGS.map((l) => (
                 <li key={l}>
                   <Link href={switchTo[l]} hrefLang={tagOf(l)} lang={tagOf(l)} aria-current={l === lang ? 'true' : undefined} onClick={() => setLangOpen(false)}>
-                    {LANG_FULL[l]}
+                    <span className="lang-name">
+                      <Flag lang={l} />
+                      {LANG_FULL[l]}
+                    </span>
                     {l === lang && <Check size={14} aria-hidden />}
                   </Link>
                 </li>
@@ -196,6 +200,7 @@ export default function SiteChrome({ children }: { children: ReactNode }) {
                   {LANGS.filter((l) => l !== lang).map((l) => (
                     <li key={l}>
                       <Link href={switchTo[l]} hrefLang={tagOf(l)} lang={tagOf(l)}>
+                        <Flag lang={l} />
                         {LANG_FULL[l]}
                       </Link>
                     </li>

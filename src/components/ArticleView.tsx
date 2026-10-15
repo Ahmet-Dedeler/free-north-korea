@@ -3,6 +3,7 @@
  * so all four get the same hero, visuals, FAQ, sources and structured data.
  */
 import Link from 'next/link';
+import Flag from './Flag';
 import type { Article } from '@/content/articles/types';
 import { articleLanguages } from '@/content/translations';
 import ArticleArt, { artCredit } from './ArticleArt';
@@ -133,6 +134,7 @@ export default function ArticleView({ a, others }: { a: Article; others: Article
             <p className="art-langs">
               {otherLangs.map((l) => (
                 <Link key={l} href={langs[l]!} hrefLang={l} lang={l}>
+                  <Flag lang={l} />
                   {LANG_LABEL[l]}
                 </Link>
               ))}

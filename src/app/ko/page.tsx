@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import HubLangs from '@/components/HubLangs';
 import ArticleCards from '@/components/ArticleCards';
 import WatchTeaser from '@/components/WatchTeaser';
 import { KO_HUB, KO_ARTICLES } from '@/content/translations/ko';
@@ -22,15 +23,7 @@ export default function KoreanHubPage() {
     <div className="wide">
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem' }}>
         <p className="eyebrow" style={{ margin: 0 }}>{KO_HUB.eyebrow}</p>
-        <div style={{ fontSize: '0.85rem' }}>
-          <Link href="/" className="chip">English</Link>
-          {' '}
-          <span className="chip on">한국어</span>
-          {' '}
-          <Link href="/ja" className="chip">日本語</Link>
-          {' '}
-          <Link href="/zh" className="chip">中文</Link>
-        </div>
+        <HubLangs current="ko" />
       </div>
 
       <h1>{KO_HUB.heading}</h1>

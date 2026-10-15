@@ -26,13 +26,12 @@
   --glow-3: rgb(45 212 191 / 0.12);
   --grid-line: rgb(15 23 42 / 0.045);
   --shadow-lg: 0 1px 1px rgb(15 23 42 / 0.04), 0 12px 32px -8px rgb(15 23 42 / 0.14), 0 32px 64px -24px rgb(37 99 235 / 0.18);
-  /* night sections (hero, scale band, footer): deep navy with a dawn-yellow accent, the same in both themes */
+  /* night sections (hero, scale band, footer): deep navy with white type, the same in both themes */
   --night: #0a1633;
   --night-2: #13254f;
   --night-ink: #f1f5ff;
   --night-ink-2: #b4c2df;
   --night-line: rgb(255 255 255 / 0.12);
-  --dawn: #fcd34d;
   color-scheme: light;
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
   font-size: 14px;

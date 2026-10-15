@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import HubLangs from '@/components/HubLangs';
 import ArticleCards from '@/components/ArticleCards';
 import WatchTeaser from '@/components/WatchTeaser';
 import { ZH_HUB, ZH_ARTICLES } from '@/content/translations/zh';
@@ -22,15 +23,7 @@ export default function ChineseHubPage() {
     <div className="wide">
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem' }}>
         <p className="eyebrow" style={{ margin: 0 }}>{ZH_HUB.eyebrow}</p>
-        <div style={{ fontSize: '0.85rem' }}>
-          <Link href="/" className="chip">English</Link>
-          {' '}
-          <Link href="/ko" className="chip">한국어</Link>
-          {' '}
-          <Link href="/ja" className="chip">日本語</Link>
-          {' '}
-          <span className="chip on">中文</span>
-        </div>
+        <HubLangs current="zh" />
       </div>
 
       <h1>{ZH_HUB.heading}</h1>

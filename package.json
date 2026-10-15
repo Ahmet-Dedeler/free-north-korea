@@ -14,6 +14,7 @@
     "check:schema:prod": "node scripts/check-structured-data.mjs --sitemap https://liberatenorthkorea.org/sitemap.xml"
   },
   "dependencies": {
+    "country-flag-icons": "^1.6.20",
     "lucide-react": "^1.50.0",
     "maplibre-gl": "^6.11.2",
     "next": "^16.3.8",

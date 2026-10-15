@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import HubLangs from '@/components/HubLangs';
 import ArticleCards from '@/components/ArticleCards';
 import WatchTeaser from '@/components/WatchTeaser';
 import { JA_HUB, JA_ARTICLES } from '@/content/translations/ja';
@@ -22,15 +23,7 @@ export default function JapaneseHubPage() {
     <div className="wide">
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem' }}>
         <p className="eyebrow" style={{ margin: 0 }}>{JA_HUB.eyebrow}</p>
-        <div style={{ fontSize: '0.85rem' }}>
-          <Link href="/" className="chip">English</Link>
-          {' '}
-          <Link href="/ko" className="chip">한국어</Link>
-          {' '}
-          <span className="chip on">日本語</span>
-          {' '}
-          <Link href="/zh" className="chip">中文</Link>
-        </div>
+        <HubLangs current="ja" />
       </div>
 
       <h1>{JA_HUB.heading}</h1>

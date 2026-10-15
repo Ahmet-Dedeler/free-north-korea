@@ -936,7 +936,7 @@ a.card:hover {
   position: absolute;
   inset: 0;
   z-index: -1;
-  background: radial-gradient(40% 70% at 0% 0%, rgb(59 130 246 / 0.3), transparent 70%), radial-gradient(30% 60% at 100% 100%, rgb(252 211 77 / 0.1), transparent 70%);
+  background: radial-gradient(40% 70% at 0% 0%, rgb(59 130 246 / 0.3), transparent 70%), radial-gradient(30% 60% at 100% 100%, rgb(59 130 246 / 0.12), transparent 70%);
 }
 .footer-inner {
   display: grid;
@@ -960,7 +960,7 @@ a.card:hover {
 }
 .footer-inner nav b {
   margin-bottom: 6px;
-  color: var(--dawn);
+  color: var(--night-ink);
   font-size: 13px;
   font-weight: 600;
 }
@@ -1002,7 +1002,9 @@ a.card:hover {
   list-style: none;
 }
 .footer-langs a {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   padding: 6px 13px;
   border: 1px solid var(--night-line);
   border-radius: 999px;
@@ -3211,6 +3213,11 @@ ul.bars b {
 }
 .lang-list a[aria-current] {
   font-weight: 600;
+}
+.lang-name {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
 }
 .menu-btn {
   display: none;
