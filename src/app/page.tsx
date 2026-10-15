@@ -135,7 +135,6 @@ export default function Home() {
 
       <section className="home-hero">
         <div>
-          <p className="eyebrow">Open source · No ads · No tracking</p>
           <h1>Understand North Korea. Help free its people.</h1>
           <p className="hero-sub">
             The map, the military picture, the history and the groups doing the work, plus clear things you can do today. The regime survives on
