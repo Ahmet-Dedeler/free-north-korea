@@ -11,7 +11,7 @@ import WatchTeaser from '@/components/WatchTeaser';
 import { ARTICLES } from '@/content/articles';
 import { getAllCamps } from '@/content/camps';
 import { SHELVES } from '@/content/library';
-import { cover, orgLogo } from '@/content/media';
+import { cover, media, orgLogo } from '@/content/media';
 import { ORGS } from '@/content/orgs';
 import { getAllPlaces } from '@/content/places-data';
 import { PLACE_CATEGORIES, PLACE_COLOR } from '@/content/places';
@@ -203,10 +203,10 @@ const arrivals = (() => {
 
 export default function Home() {
   const newest = latestSatSites(1)[0];
-  // the headline's picture pills: our newest Yongbyon chip and two escapee memoirs with the authors on the cover
+  // the headline's picture pills: our newest Yongbyon chip, and the peninsula at night (the dark North above lit Seoul)
   const yongbyon = getSatSite('yongbyon');
   const heroSat = yongbyon?.latest ? { src: imgSrc(yongbyon.id, yongbyon.latest) } : undefined;
-  const heroCovers = ['In Order to Live', 'The Girl with Seven Names'].map((t) => cover(t)?.src).filter((x): x is string => !!x);
+  const night = media('page:korea-at-night');
   const placeCount = (c: string) => getAllPlaces().filter((p) => p.category === c).length;
   const legend = [
     { label: 'Prison camps', color: '#dc2626', n: getAllCamps().length },
@@ -233,20 +233,29 @@ export default function Home() {
               <ArrowRight size={14} aria-hidden />
             </Link>
           )}
+          {/* three set lines, each a block, so the pictures always sit where they read best */}
           <h1>
-            Understand{' '}
-            {heroSat && (
-              <span className="h1-pill sat" aria-hidden>
-                <img src={heroSat.src} alt="" />
-              </span>
-            )}{' '}
-            North Korea. Help free its{' '}
-            <span className="h1-pill covers" aria-hidden>
-              {heroCovers.map((c) => (
-                <img key={c} src={c} alt="" />
-              ))}
+            <span className="h1-line">
+              Understand{' '}
+              {heroSat && (
+                <span className="h1-pill sat" aria-hidden>
+                  <img src={heroSat.src} alt="" />
+                </span>
+              )}
             </span>{' '}
-            people.
+            <span className="h1-line">North Korea. Help</span>{' '}
+            <span className="h1-line">
+              free its{' '}
+              {/* the picture never wraps away from the word it stands before */}
+              <span className="nowrap">
+                {night && (
+                  <span className="h1-pill night" aria-hidden title={night.credit}>
+                    <img src={night.src} alt="" />
+                  </span>
+                )}{' '}
+                people.
+              </span>
+            </span>
           </h1>
           <p className="hero-sub">
             The map, the military picture, the history and the groups doing the work, plus clear things you can do today. The regime survives on

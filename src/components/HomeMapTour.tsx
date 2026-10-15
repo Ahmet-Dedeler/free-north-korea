@@ -21,7 +21,7 @@ export interface TourStop {
 
 /** Card width; the picture is 280 x 140 (the Esri tiles are laid out for that box in app/page.tsx, sizes in visual.css). */
 const TOUR_IMG_W = 280;
-const STEP_MS = 4000;
+const STEP_MS = 6000;
 
 /**
  * The home hero map, alive: every few seconds it picks the next dot and shows its card (picture, kind, one line) as if
@@ -161,7 +161,7 @@ export default function HomeMapTour({ stops, order, children }: { stops: TourSto
                 Open on the map <ArrowUpRight size={13} aria-hidden />
               </span>
             </span>
-            {hovered == null && <span key={step} className={`tour-progress ${running ? '' : 'held'}`} aria-hidden />}
+            {hovered == null && <span key={step} className={`tour-progress ${running ? '' : 'held'}`} style={{ animationDuration: `${STEP_MS}ms` }} aria-hidden />}
           </Link>
         </>
       )}
