@@ -69,10 +69,16 @@ async function wikiImage(pageUrl: string) {
 
 /** First-edition cover from the book's Wikipedia infobox (consistent English editions). */
 async function wikiBookCover(title: string, by: string) {
+  const short = title.split(':')[0];
+  try {
+    return await wikiImage(`https://en.wikipedia.org/wiki/${encodeURIComponent(short.replace(/ /g, '_'))}`);
+  } catch {
+    /* try search */
+  }
   const author = by.split(/[&,]/)[0].trim().split(' ').pop();
-  const r = await json(`https://en.wikipedia.org/w/api.php?action=query&format=json&list=search&srlimit=3&srsearch=${encodeURIComponent(`"${title}" ${author} book`)}`);
+  const r = await json(`https://en.wikipedia.org/w/api.php?action=query&format=json&list=search&srlimit=3&srsearch=${encodeURIComponent(`"${short}" ${author} book`)}`);
   for (const hit of r.query.search as { title: string }[]) {
-    if (!hit.title.toLowerCase().includes(title.toLowerCase().split(':')[0].slice(0, 12))) continue;
+    if (!hit.title.toLowerCase().includes(short.toLowerCase().slice(0, 12))) continue;
     try {
       return await wikiImage(`https://en.wikipedia.org/wiki/${encodeURIComponent(hit.title.replace(/ /g, '_'))}`);
     } catch {
@@ -84,12 +90,26 @@ async function wikiBookCover(title: string, by: string) {
 
 /** Last resort: free-text Open Library search (handles pseudonyms and subtitles the field search misses). */
 async function bookCoverLoose(title: string, by: string) {
+  const short = title.split(':')[0];
   const author = by.split(/[&,(]/)[0].trim().split(' ').pop();
-  const r = await json(`https://openlibrary.org/search.json?limit=5&fields=key,title,cover_i&q=${encodeURIComponent(`${title.split(':')[0]} ${author}`)}`);
-  const want = title.toLowerCase().split(':')[0].slice(0, 12);
-  const doc = r.docs?.find((d: { cover_i?: number; title: string }) => d.cover_i && d.title.toLowerCase().includes(want));
-  if (!doc) throw new Error('no cover on Open Library');
-  return { url: `https://covers.openlibrary.org/b/id/${doc.cover_i}-M.jpg`, sourceUrl: `https://openlibrary.org${doc.key}`, credit: 'Cover via Open Library' };
+  const want = short.toLowerCase().replace(/^(the|a|an)\s+/, '').slice(0, 12);
+  for (const q of [`${short} ${author}`, short]) {
+    const r = await json(`https://openlibrary.org/search.json?limit=5&fields=key,title,cover_i&q=${encodeURIComponent(q)}`);
+    const doc = r.docs?.find((d: { cover_i?: number; title: string }) => d.cover_i && d.title.toLowerCase().includes(want));
+    if (doc) return { url: `https://covers.openlibrary.org/b/id/${doc.cover_i}-M.jpg`, sourceUrl: `https://openlibrary.org${doc.key}`, credit: 'Cover via Open Library' };
+  }
+  throw new Error('no cover on Open Library');
+}
+
+/** Film poster from Letterboxd when the Wikipedia article has no infobox poster (or no article). */
+async function letterboxdPoster(title: string) {
+  const pageUrl = `https://letterboxd.com/film/${slug(title)}/`;
+  const res = await fetch(pageUrl, { headers: { 'user-agent': UA }, signal: AbortSignal.timeout(20_000) });
+  if (!res.ok) throw new Error(`${res.status} ${pageUrl}`);
+  const html = await res.text();
+  const m = html.match(/https:\/\/a\.ltrbxd\.com\/resized\/film-poster\/[^"'\s>]+-0-230-0-345-crop\.jpg(?:\?v=\w+)?/i);
+  if (!m) throw new Error('no Letterboxd poster');
+  return { url: m[0].replace('-0-230-0-345-', '-0-600-0-900-'), sourceUrl: pageUrl, credit: 'Poster via Letterboxd (non-free, used for identification)' };
 }
 
 /** Candidate logo URLs for a site. `iconsOnly` skips og:image, which is usually a photo, not a mark. */
@@ -128,7 +148,27 @@ for (const shelf of SHELVES) {
           return out;
         },
       });
-    else if (shelf.id === 'film' && it.url.includes('wikipedia.org/wiki/')) jobs.push({ key, dest: `/img/library/${slug(it.title)}`, run: async () => [await wikiImage(it.url)] });
+    else if (shelf.id === 'film')
+      jobs.push({
+        key,
+        dest: `/img/library/${slug(it.title)}`,
+        run: async () => {
+          const out = [];
+          if (it.url.includes('wikipedia.org/wiki/')) {
+            try {
+              out.push(await wikiImage(it.url));
+            } catch {
+              /* fall back to Letterboxd */
+            }
+          }
+          try {
+            out.push(await letterboxdPoster(it.title));
+          } catch {
+            /* no Letterboxd poster */
+          }
+          return out;
+        },
+      });
   }
 }
 // Publisher icons for reports, regime sources and datasets: one per host, shown next to the title.
@@ -221,6 +261,31 @@ const OVERRIDES: Record<string, { url: string; sourceUrl: string; credit: string
   'library:a-thousand-miles-to-freedom': { url: 'https://covers.openlibrary.org/b/id/9345569-M.jpg', sourceUrl: 'https://openlibrary.org/search?q=A+Thousand+Miles+to+Freedom', credit: 'Cover via Open Library (St. Martin’s, 2015)' },
   'library:this-is-paradise-my-north-korean-childhood': { url: 'https://covers.openlibrary.org/b/id/2406011-M.jpg', sourceUrl: 'https://openlibrary.org/isbn/9780349118659', credit: 'Cover via Open Library (Abacus)' },
   'library:long-road-home-testimony-of-a-north-korean-camp-survivor': { url: 'https://covers.openlibrary.org/b/id/8880404-M.jpg', sourceUrl: 'https://openlibrary.org/isbn/9780231147477', credit: 'Cover via Open Library (Columbia UP, 2009)' },
+  'library:the-hard-road-out-one-woman-s-escape-from-north-korea': {
+    url: 'https://is1-ssl.mzstatic.com/image/thumb/Publication116/v4/b7/19/57/b71957ca-7c62-e676-e61f-6639c21bc572/9780008541422.jpg/400x600bb.jpg',
+    sourceUrl: 'https://openlibrary.org/works/OL27087247W',
+    credit: 'Cover via HarperNorth (2022)',
+  },
+  'library:the-lazarus-heist': {
+    url: 'https://covers.openlibrary.org/b/id/12633402-L.jpg',
+    sourceUrl: 'https://openlibrary.org/works/OL27301791W',
+    credit: 'Cover via Open Library (Penguin, 2022)',
+  },
+  'org:38-north': {
+    url: 'https://upload.wikimedia.org/wikipedia/commons/8/8f/38_North_logo.png',
+    sourceUrl: 'https://en.wikipedia.org/wiki/38_North',
+    credit: 'Logo via Wikipedia',
+  },
+  'host:www.stimson.org': {
+    url: 'https://upload.wikimedia.org/wikipedia/en/b/bf/The_Stimson_Center_logo.svg',
+    sourceUrl: 'https://en.wikipedia.org/wiki/Stimson_Center',
+    credit: 'Logo via Wikipedia',
+  },
+  'host:aleph.occrp.org': {
+    url: 'https://www.occrp.org/build/assets/favicon-1bb04160.png',
+    sourceUrl: 'https://www.occrp.org',
+    credit: 'Icon from occrp.org',
+  },
 };
 
 /** Wikipedia articles whose infobox logo beats the org's own site icon. */

@@ -25,7 +25,11 @@ export const orgLogo = (id: string) => MEDIA[`org:${id}`];
 
 const bare = (host: string) => host.replace(/^www\./, '');
 /** Org logos by hostname, so a report from hrw.org gets the HRW mark. */
-const ORG_BY_HOST = new Map(ORGS.filter((o) => orgLogo(o.id)).map((o) => [bare(new URL(o.url).hostname), orgLogo(o.id)!]));
+const ORG_BY_HOST = new Map([
+  ...ORGS.filter((o) => orgLogo(o.id)).map((o) => [bare(new URL(o.url).hostname), orgLogo(o.id)!] as const),
+  ...(orgLogo('ohchr-seoul') ? [['ohchr.org', orgLogo('ohchr-seoul')!] as const] : []),
+  ...(orgLogo('nkdb') ? [['nkpd.org', orgLogo('nkdb')!] as const] : []),
+]);
 
 /** Best available mark for a link: the org's logo if we list that org, otherwise the site's own icon. */
 export function hostIcon(url: string): Media | undefined {

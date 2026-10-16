@@ -310,7 +310,7 @@ export default function HomePage({ lang }: { lang: Lang }) {
         })}
       />
 
-      <section className="hx night bleed">
+      <section className="hx bleed">
         <div className="hx-orbs" aria-hidden />
         <div className="hx-in">
           <div className="hx-copy">
@@ -333,7 +333,7 @@ export default function HomePage({ lang }: { lang: Lang }) {
               <Link className="btn primary" href={localize(lang, '/act')}>
                 {t.heroCtaPrimary} <ArrowRight size={16} aria-hidden />
               </Link>
-              <Link className="btn on-night" href={localize(lang, '/learn/how-can-north-korea-be-freed')}>
+              <Link className="btn ghost" href={localize(lang, '/learn/how-can-north-korea-be-freed')}>
                 {t.heroCtaSecondary} <ArrowRight size={16} aria-hidden />
               </Link>
             </div>

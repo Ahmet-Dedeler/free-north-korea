@@ -315,7 +315,7 @@ export const SHELVES: { id: ShelfId; title: string; intro: string; items: Item[]
         title: 'A State of Mind',
         by: 'Daniel Gordon',
         year: 2004,
-        url: 'https://en.wikipedia.org/wiki/A_State_of_Mind',
+        url: 'https://en.wikipedia.org/wiki/A_State_of_Mind_(film)',
         note: 'Follows two Pyongyang schoolgirls training for months to perform in the Arirang Mass Games, showing everyday life inside the capital.',
       },
       {

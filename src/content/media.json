@@ -673,5 +673,60 @@
     "src": "/img/orgs/lazarus-bounty.png",
     "credit": "Logo from www.lazarusbounty.com",
     "sourceUrl": "https://www.lazarusbounty.com"
+  },
+  "library:the-tears-of-my-soul": {
+    "src": "/img/library/the-tears-of-my-soul.jpg",
+    "credit": "Poster via Wikipedia (non-free, used for identification)",
+    "sourceUrl": "https://en.wikipedia.org/wiki/The_Tears_of_My_Soul"
+  },
+  "library:the-hard-road-out-one-woman-s-escape-from-north-korea": {
+    "src": "/img/library/the-hard-road-out-one-woman-s-escape-from-north-korea.jpg",
+    "credit": "Cover via HarperNorth (2022)",
+    "sourceUrl": "https://openlibrary.org/works/OL27087247W"
+  },
+  "library:the-lazarus-heist": {
+    "src": "/img/library/the-lazarus-heist.jpg",
+    "credit": "Cover via Open Library (Penguin, 2022)",
+    "sourceUrl": "https://openlibrary.org/works/OL27301791W"
+  },
+  "library:shadow-flowers": {
+    "src": "/img/library/shadow-flowers.jpg",
+    "credit": "Poster via Letterboxd (non-free, used for identification)",
+    "sourceUrl": "https://letterboxd.com/film/shadow-flowers/"
+  },
+  "library:children-of-the-secret-state": {
+    "src": "/img/library/children-of-the-secret-state.jpg",
+    "credit": "Poster via Letterboxd (non-free, used for identification)",
+    "sourceUrl": "https://letterboxd.com/film/children-of-the-secret-state/"
+  },
+  "library:a-state-of-mind": {
+    "src": "/img/library/a-state-of-mind.jpg",
+    "credit": "Poster via Wikipedia (non-free, used for identification)",
+    "sourceUrl": "https://en.wikipedia.org/wiki/A_State_of_Mind_(film)"
+  },
+  "library:i-am-sun-mu": {
+    "src": "/img/library/i-am-sun-mu.jpg",
+    "credit": "Poster via Letterboxd (non-free, used for identification)",
+    "sourceUrl": "https://letterboxd.com/film/i-am-sun-mu/"
+  },
+  "library:secret-state-of-north-korea": {
+    "src": "/img/library/secret-state-of-north-korea.jpg",
+    "credit": "Poster via Letterboxd (non-free, used for identification)",
+    "sourceUrl": "https://letterboxd.com/film/secret-state-of-north-korea/"
+  },
+  "host:www.stimson.org": {
+    "src": "/img/hosts/www-stimson-org.svg",
+    "credit": "Logo via Wikipedia",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Stimson_Center"
+  },
+  "host:aleph.occrp.org": {
+    "src": "/img/hosts/aleph-occrp-org.png",
+    "credit": "Icon from occrp.org",
+    "sourceUrl": "https://www.occrp.org"
+  },
+  "org:38-north": {
+    "src": "/img/orgs/38-north.png",
+    "credit": "Logo via Wikipedia",
+    "sourceUrl": "https://en.wikipedia.org/wiki/38_North"
   }
 }

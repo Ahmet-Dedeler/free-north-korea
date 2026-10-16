@@ -4682,20 +4682,27 @@ a.ltag:hover {
   text-transform: uppercase;
 }
 
-/* hero */
+/* hero: soft colour field + square grid that adapts to light and dark themes */
 .hx {
-  padding: 72px 16px 88px;
+  position: relative;
+  isolation: isolate;
+  padding: 56px 16px 72px;
 }
 .hx-orbs {
   position: absolute;
-  inset: 0;
+  top: -96px;
+  bottom: -40px;
+  left: 0;
+  right: 0;
   z-index: -1;
   pointer-events: none;
   background:
-    radial-gradient(42% 60% at 8% 0%, rgb(59 130 246 / 0.35), transparent 70%),
-    radial-gradient(36% 50% at 92% 100%, rgb(59 130 246 / 0.14), transparent 70%),
-    radial-gradient(circle at 50% 50%, transparent 0 calc(50% - 1px), rgb(255 255 255 / 0.05) calc(50% - 1px) 50%, transparent 50%) 30% 120% / 900px 900px no-repeat,
-    radial-gradient(circle at 50% 50%, transparent 0 calc(50% - 1px), rgb(255 255 255 / 0.05) calc(50% - 1px) 50%, transparent 50%) 30% 120% / 1300px 1300px no-repeat;
+    radial-gradient(38% 46% at 20% 28%, var(--glow-1), transparent 70%),
+    radial-gradient(30% 40% at 46% 6%, var(--glow-2), transparent 72%),
+    radial-gradient(34% 46% at 82% 58%, var(--glow-3), transparent 72%),
+    linear-gradient(var(--grid-line) 1px, transparent 1px) 0 0 / 72px 72px,
+    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px) 0 0 / 72px 72px;
+  mask-image: linear-gradient(to bottom, #000 55%, transparent);
 }
 .hx-in {
   display: grid;
@@ -4707,9 +4714,8 @@ a.ltag:hover {
 }
 .page .hx h1 {
   margin: 0 0 24px;
-  color: var(--night-ink);
-  /* three set lines; "Help free its [picture] people." is the widest, about 10.1em */
-  font-size: clamp(30px, 4.6vw, 55px);
+  color: var(--ink);
+  font-size: clamp(42px, 5.8vw, 70px);
   font-weight: 800;
   line-height: 1.02;
   letter-spacing: -0.045em;
@@ -4721,7 +4727,7 @@ a.ltag:hover {
 .hx-sub {
   max-width: 540px;
   margin: 0;
-  color: var(--night-ink-2);
+  color: var(--ink-body);
   font-size: 18px;
   line-height: 1.6;
 }
@@ -4746,14 +4752,14 @@ a.ltag:hover {
   align-items: center;
   gap: 14px;
   margin-top: 36px;
-  color: var(--night-ink-2);
+  color: var(--ink-2);
   font-size: 13.5px;
   line-height: 1.4;
   text-decoration: none;
 }
 .hx-proof b {
   display: block;
-  color: var(--night-ink);
+  color: var(--ink);
   font-weight: 600;
 }
 .hx-proof:hover b {
@@ -4768,7 +4774,8 @@ a.ltag:hover {
   height: 44px;
   border-radius: 50%;
   object-fit: cover;
-  border: 2px solid var(--night);
+  border: 2px solid var(--panel);
+  box-shadow: 0 2px 6px rgb(15 23 42 / 0.15);
   transition: transform 0.25s;
 }
 .sat-stack img + img {
@@ -4786,6 +4793,7 @@ a.ltag:hover {
   border-radius: 0.2em;
   /* the tilt pushes its top-left corner into the word before; a little room keeps both gaps even */
   margin-left: 0.07em;
+  box-shadow: 0 6px 18px -6px rgb(15 23 42 / 0.45), 0 0 0 2px var(--panel);
   transform: rotate(3deg);
   transition: transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
@@ -4795,7 +4803,6 @@ a.ltag:hover {
 .h1-pill.crowd {
   width: 1.5em;
   background: #12141a;
-  box-shadow: 0 0 0 1.5px rgb(255 255 255 / 0.22), 0 10px 30px -8px rgb(0 0 0 / 0.6);
 }
 .h1-pill.crowd img {
   width: 100%;
@@ -4805,14 +4812,16 @@ a.ltag:hover {
   object-position: 50% 46%;
 }
 
-/* the map card, in night colours */
+/* the map card */
 .home-map {
   position: relative;
   padding: 16px 16px 14px;
-  border: 1px solid var(--night-line);
+  border: 1px solid transparent;
   border-radius: 28px;
-  background: linear-gradient(160deg, var(--night-2), color-mix(in srgb, var(--night) 70%, #000));
-  box-shadow: 0 40px 80px -30px rgb(0 0 0 / 0.6), inset 0 1px 0 rgb(255 255 255 / 0.08);
+  background:
+    linear-gradient(var(--panel), var(--panel)) padding-box,
+    linear-gradient(150deg, color-mix(in srgb, var(--accent) 45%, var(--line)), var(--line) 40%, var(--line) 70%, color-mix(in srgb, var(--danger) 30%, var(--line))) border-box;
+  box-shadow: var(--shadow-lg);
 }
 .home-map::before {
   /* dotted paper under the map */
@@ -4820,7 +4829,8 @@ a.ltag:hover {
   position: absolute;
   inset: 0;
   border-radius: inherit;
-  background: radial-gradient(rgb(255 255 255 / 0.16) 1px, transparent 1.2px) 0 0 / 16px 16px;
+  background: radial-gradient(var(--line-strong) 1px, transparent 1.2px) 0 0 / 16px 16px;
+  opacity: 0.45;
   mask-image: radial-gradient(70% 70% at 50% 45%, #000, transparent);
   pointer-events: none;
 }
@@ -4831,14 +4841,7 @@ a.ltag:hover {
   border-radius: inherit;
 }
 .home-map .locator .prov {
-  fill: rgb(255 255 255 / 0.07);
-  stroke: rgb(255 255 255 / 0.2);
-}
-.home-map .locator .prov:hover {
-  fill: rgb(255 255 255 / 0.12);
-}
-.home-map .locator .pin-dot {
-  stroke: var(--night-2);
+  fill: color-mix(in srgb, var(--accent) 5%, var(--hover));
 }
 .home-map-foot {
   position: relative;
@@ -4861,7 +4864,7 @@ a.ltag:hover {
   padding: 0;
   list-style: none;
   font-size: 12px;
-  color: var(--night-ink-2);
+  color: var(--ink-2);
 }
 .home-map-legend li {
   display: inline-flex;
@@ -4875,7 +4878,7 @@ a.ltag:hover {
   border-radius: 50%;
 }
 .home-map-legend span {
-  opacity: 0.7;
+  color: var(--ink-3);
   font-variant-numeric: tabular-nums;
 }
 .home-map-cta {
@@ -4887,10 +4890,11 @@ a.ltag:hover {
   border-radius: 999px;
   font-size: 13.5px;
   font-weight: 600;
-  color: var(--night);
-  background: #fff;
+  color: var(--ink-inverse);
+  background: var(--ink);
   text-decoration: none;
   pointer-events: auto;
+  box-shadow: 0 8px 20px -8px rgb(15 23 42 / 0.6);
   transition: transform 0.2s;
 }
 .home-map-cta:hover {
@@ -4901,6 +4905,7 @@ a.ltag:hover {
 .ticker {
   display: flex;
   overflow: hidden;
+  border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
   background: var(--panel);
   color: var(--ink-2);
@@ -5299,9 +5304,6 @@ a.ltag:hover {
 }
 
 @media (max-width: 1040px) {
-  .page .hx h1 {
-    font-size: min(55px, calc((100vw - 32px) / 10.4));
-  }
   .hx-in,
   .scale-in {
     grid-template-columns: 1fr;
@@ -5321,7 +5323,9 @@ a.ltag:hover {
   .hx {
     padding: 44px 16px 56px;
   }
-
+  .page .hx h1 {
+    font-size: 40px;
+  }
   .hx-sub {
     font-size: 16.5px;
   }

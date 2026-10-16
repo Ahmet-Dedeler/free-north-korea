@@ -98,17 +98,7 @@ export default function SiteChrome({ children }: { children: ReactNode }) {
   useDismiss(menuOpen, () => setMenuOpen(false), barRef, path);
   useDismiss(langOpen, () => setLangOpen(false), langRef, path);
 
-  // The home page opens on a navy hero in every language: the bar wears the same navy until the reader scrolls.
-  const home = base === '/';
-  const [atTop, setAtTop] = useState(true);
-  useEffect(() => {
-    if (!home) return;
-    const on = () => setAtTop(scrollY < 24);
-    on();
-    addEventListener('scroll', on, { passive: true });
-    return () => removeEventListener('scroll', on);
-  }, [home]);
-  const barClass = ['topbar', menuOpen && 'menu-open', home && atTop && !menuOpen && 'over-night'].filter(Boolean).join(' ');
+  const barClass = ['topbar', menuOpen && 'menu-open'].filter(Boolean).join(' ');
 
   return (
     <div className={app ? 'shell shell-app' : 'shell'}>
