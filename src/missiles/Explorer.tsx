@@ -268,11 +268,11 @@ function Explorer({ data }: { data: Dataset }) {
           {grouped.length === 0 && <li className="empty">No tests match these filters.</li>}
           {grouped.map((g) => (
             <li key={g.year}>
-              <h3>
+              <h2>
                 {g.year} <small>
                   {g.tests.length} {plural(g.tests.length, 'test', 'tests')}
                 </small>
-              </h3>
+              </h2>
               <ul>
                 {g.tests.map((t) => (
                   <li key={t.id} id={`row-${t.id}`}>

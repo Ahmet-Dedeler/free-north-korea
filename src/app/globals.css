@@ -313,7 +313,7 @@ a {
   margin: 0;
   padding: 0 8px;
 }
-.list h3 {
+.list h2 {
   position: sticky;
   top: 0;
   z-index: 1;
@@ -323,7 +323,7 @@ a {
   background: var(--glass);
   backdrop-filter: blur(4px);
 }
-.list h3 small {
+.list h2 small {
   font-weight: 400;
   color: var(--ink-3);
   margin-left: 4px;

@@ -47,9 +47,9 @@ export default function FamilyTree({ lang = 'en' }: { lang?: Lang }) {
           const now = kimFamilyNowText(lang, p.id);
           return [
             (i === 0 || nodes[i - 1].row !== n.row) && (
-              <h3 key={`row-${n.row}`} className="ftree-rowlabel">
+              <h2 key={`row-${n.row}`} className="ftree-rowlabel">
                 {t.rows[n.row as 0 | 1 | 2]}
-              </h3>
+              </h2>
             ),
             <Link
               key={p.id}
