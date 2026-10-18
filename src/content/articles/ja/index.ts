@@ -1,3 +1,4 @@
+import drone from './north-korea-drone-activists';
 import howFreed from './how-can-north-korea-be-freed';
 import isPossible from './is-it-possible-to-free-north-korea';
 import howToHelp from './how-to-help-north-koreans';
@@ -10,4 +11,4 @@ import abductees from './abductees-and-repatriation';
 import type { Article } from '../types';
 
 /** Japanese versions of the /learn articles (same slugs as English), plus the Japan-only abductees piece. */
-export const JA_ARTICLES: Article[] = [howFreed, isPossible, howToHelp, escape, repatriation, camps, songbun, info, abductees];
+export const JA_ARTICLES: Article[] = [drone, howFreed, isPossible, howToHelp, escape, repatriation, camps, songbun, info, abductees];

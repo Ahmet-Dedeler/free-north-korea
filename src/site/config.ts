@@ -9,4 +9,4 @@ export const AUTHOR_NAME = 'Cladius Dedeler';
 export const REPO_URL = 'https://github.com/Ahmet-Dedeler/free-north-korea';
 
 /** "Last reviewed" date shown on content pages. Bump it when facts are re-checked. */
-export const REVIEWED = '2026-10-11';
+export const REVIEWED = '2026-10-18';

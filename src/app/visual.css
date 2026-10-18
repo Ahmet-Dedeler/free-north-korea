@@ -3553,6 +3553,137 @@ a.ltag:hover {
   }
 }
 
+/* ---------- drone case blocks (learn/north-korea-drone-activists) ---------- */
+.drone-trio {
+  margin: 22px 0 26px;
+}
+.drone-trio-head {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-bottom: 10px;
+}
+.drone-trio-head b {
+  font-size: 17px;
+}
+.drone-trio-head small {
+  color: var(--ink-3);
+  font-size: 13px;
+}
+.drone-trio-grid {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 10px;
+}
+.prose .drone-trio-grid > li {
+  margin: 0;
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--panel);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.dt-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
+}
+.dt-num {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  color: var(--accent);
+  font-weight: 700;
+}
+.dt-verdict {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--danger);
+  text-align: right;
+}
+.dt-name {
+  font-size: 16.5px;
+}
+.dt-role {
+  font-size: 13px;
+  color: var(--ink-3);
+}
+.drone-trio-grid ul {
+  margin: 6px 0 0;
+  padding-left: 16px;
+}
+.drone-trio-grid ul li {
+  margin: 5px 0;
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: var(--ink-2);
+}
+.drone-route-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  align-items: start;
+  margin: 20px 0 24px;
+}
+.drone-route-split .border-map {
+  margin: 0;
+}
+.drone-log-fig,
+.drone-wide-fig {
+  margin: 20px 0 24px;
+}
+.drone-route-split .drone-log-fig {
+  margin: 0;
+}
+.drone-log-fig img,
+.drone-wide-fig img,
+.drone-fig img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 14px;
+  border: 1px solid var(--line);
+}
+.drone-log-fig figcaption,
+.drone-wide-fig figcaption,
+.drone-fig figcaption {
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--ink-3);
+  margin-top: 8px;
+}
+.drone-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin: 20px 0 24px;
+}
+.prose .drone-gallery .drone-fig {
+  margin: 0;
+}
+.drone-fig figcaption {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.drone-fig figcaption b {
+  color: var(--ink);
+  font-size: 14px;
+}
+.drone-fig figcaption small {
+  font-size: 12px;
+}
+@media (max-width: 700px) {
+  .drone-route-split,
+  .drone-gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* ---------- event wire: seismic block (/military), MOD launch reports (/missiles/list), EventFeed ---------- */
 .seis {
   margin: 28px 0 8px;
