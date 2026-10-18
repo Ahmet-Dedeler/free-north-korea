@@ -237,10 +237,40 @@ export default function SiteChrome({ children }: { children: ReactNode }) {
                 </Link>
               </div>
             </div>
-            {/* the name, huge and faint, as the last thing on every page */}
+            {/* the name, huge and faint, as the last thing on every page. SVG with textLength so the
+                run is exactly the card width on every device: font metrics differ between machines. */}
             <p className="footer-mark" aria-hidden>
-              <span className="footer-mark-text">Free North Korea</span>
-              &nbsp;<span className="mark-emoji">😁</span>
+              <svg viewBox="0 0 1000 127" preserveAspectRatio="xMidYMax meet">
+                <defs>
+                  <linearGradient id="mark-fade" x1="0" y1="18" x2="0" y2="130" gradientUnits="userSpaceOnUse">
+                    <stop offset="0" stopColor="#fff" stopOpacity="0.22" />
+                    <stop offset="1" stopColor="#fff" stopOpacity="0.03" />
+                  </linearGradient>
+                  <filter id="mark-gray" x="-10%" y="-10%" width="120%" height="120%">
+                    <feColorMatrix type="saturate" values="0" />
+                    <feComponentTransfer>
+                      <feFuncR type="linear" slope="2.1" intercept="0" />
+                      <feFuncG type="linear" slope="2.1" intercept="0" />
+                      <feFuncB type="linear" slope="2.1" intercept="0" />
+                    </feComponentTransfer>
+                  </filter>
+                  {/* the emoji is a colour bitmap glyph: fill and fill-opacity do not touch it, so its
+                      fade has to come from a mask on its own <text> (a tspan cannot carry one either) */}
+                  <linearGradient id="mark-emoji-fade" x1="0" y1="18" x2="0" y2="130" gradientUnits="userSpaceOnUse">
+                    <stop offset="0" stopColor="#fff" stopOpacity="0.25" />
+                    <stop offset="1" stopColor="#fff" stopOpacity="0.05" />
+                  </linearGradient>
+                  <mask id="mark-emoji-mask" maskUnits="userSpaceOnUse" x="0" y="0" width="1000" height="127">
+                    <rect x="885" y="0" width="115" height="127" fill="url(#mark-emoji-fade)" />
+                  </mask>
+                </defs>
+                <text x="0" y="121" fontSize="127" textLength="890" lengthAdjust="spacingAndGlyphs" fill="url(#mark-fade)">
+                  {'Free North Korea\u00A0'}
+                </text>
+                <text x="892" y="121" fontSize="101" filter="url(#mark-gray)" mask="url(#mark-emoji-mask)">
+                  &#x1F601;
+                </text>
+              </svg>
             </p>
           </div>
         </footer>
