@@ -228,6 +228,16 @@ const article: Article = {
         information blackout that the regime defends with labor camps and death sentences. Somebody outside has to keep pushing on
         that wall, carefully, and the people who try deserve a state that knows whether it is behind them or not.
       </p>
+      <p>
+        And Seoul is not the only government that could move an inch here. The US could too, and its step is weirdly small. What
+        stands between a North Korean and the outside internet right now is not physics. It is a sanctions license sitting in
+        Washington and a coverage switch at SpaceX (or at whoever gets there next: Amazon's Kuiper, the direct-to-cell services,
+        whoever). One general license, the kind the US has written before when it wanted information to flow into a closed country,
+        plus the provider agreeing to light up the cells over North Korea, and a smuggled phone or a small terminal stops being a
+        brick. It does not have to be dramatic, nobody has to announce anything on TV. Just make it legal and make it work, quietly
+        and before a crisis, so that when a device does get inside, it connects. If Washington wants North Koreans to hear anything
+        other than their own government, that is probably the cheapest step it could take.
+      </p>
 
       <Tldr
         items={[
