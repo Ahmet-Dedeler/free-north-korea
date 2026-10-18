@@ -239,7 +239,8 @@ export default function SiteChrome({ children }: { children: ReactNode }) {
             </div>
             {/* the name, huge and faint, as the last thing on every page */}
             <p className="footer-mark" aria-hidden>
-              Free North Korea
+              <span className="footer-mark-text">Free North Korea</span>
+              &nbsp;<span className="mark-emoji">😁</span>
             </p>
           </div>
         </footer>
