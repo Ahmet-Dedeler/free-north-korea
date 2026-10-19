@@ -1,6 +1,6 @@
 # Sentinel-2 change scores (for human review)
 
-Built 2026-10-12 by `scripts/sentinel/build.py`. Nothing on this page is shown on the site.
+Built 2026-10-19 by `scripts/sentinel/build.py`. Nothing on this page is shown on the site.
 
 How to read it: each row compares two cloud-free chips of the same place on the same pixel grid, using only
 pixels that are clear in both. Bands are normalised first, so haze and overall brightness mostly cancel.
@@ -246,7 +246,7 @@ Highest year-over-year: 2025-03-14 → 2026-03-16 (0.555), 2025-07-07 → 2026-0
 
 Atlas point `kyohwaso-1` in places.ts is 0.0 km from the dossier point used here.
 
-Highest year-over-year: 2024-11-15 → 2025-11-22 (1.007), 2025-02-23 → 2026-02-28 (0.757), 2024-12-05 → 2025-12-12 (0.53)
+Highest year-over-year: 2024-11-15 → 2025-11-22 (1.007), 2025-10-16 → 2026-10-16 (0.929), 2025-02-23 → 2026-02-28 (0.757)
 
 | kind | from | to | clear % | score | changed % |
 | --- | --- | --- | --- | --- | --- |
@@ -269,7 +269,7 @@ Highest year-over-year: 2024-11-15 → 2025-11-22 (1.007), 2025-02-23 → 2026-0
 | month | 2026-05-31 | 2026-06-23 | 100.0 | 0.408 | 8.71 |
 | month | 2026-06-23 | 2026-08-27 | 100.0 | 0.53 | 12.48 |
 | month | 2026-08-27 | 2026-09-11 | 100.0 | 0.42 | 8.23 |
-| month | 2026-09-11 | 2026-10-11 | 100.0 | 0.471 | 9.21 |
+| month | 2026-09-11 | 2026-10-16 | 100.0 | 0.966 | 34.12 |
 | year | 2024-11-15 | 2025-11-22 | 98.6 | 1.007 | 35.31 |
 | year | 2024-12-05 | 2025-12-12 | 97.0 | 0.53 | 11.85 |
 | year | 2025-02-23 | 2026-02-28 | 65.7 | 0.757 | 21.11 |
@@ -279,7 +279,7 @@ Highest year-over-year: 2024-11-15 → 2025-11-22 (1.007), 2025-02-23 → 2026-0
 | year | 2025-06-23 | 2026-06-23 | 100.0 | 0.358 | 6.67 |
 | year | 2025-08-07 | 2026-08-27 | 100.0 | 0.328 | 3.03 |
 | year | 2025-09-21 | 2026-09-11 | 100.0 | 0.419 | 10.03 |
-| year | 2025-10-16 | 2026-10-11 | 100.0 | 0.366 | 5.46 |
+| year | 2025-10-16 | 2026-10-16 | 100.0 | 0.929 | 32.09 |
 
 ## Kyohwaso No. 12, Chongori (`kyohwaso-12-chongori`)
 

@@ -1,9 +1,9 @@
 {
- "fetched": "2026-10-14",
- "oldestListed": "2025-10-18",
+ "fetched": "2026-10-19",
+ "oldestListed": "2025-10-24",
  "coverage": {
   "from": "2025-10-10",
-  "to": "2026-10-13"
+  "to": "2026-10-17"
  },
  "lastAppearance": {
   "date": "2026-10-11",
@@ -4133,6 +4133,13 @@
   }
  ],
  "messages": [
+  {
+   "id": "6cd15474368c91e250a35212cbf9c11f",
+   "url": "http://www.kcna.kp/en/article/detail/6cd15474368c91e250a35212cbf9c11f",
+   "date": "2026-10-17",
+   "title": "Respected Comrade Kim Jong Un Sends Educational Equipment to Kim Chaek University of Technology",
+   "direction": "sent"
+  },
   {
    "id": "274fd9d700dba7b0f7abf50a7e0cbb49",
    "url": "http://www.kcna.kp/en/article/detail/274fd9d700dba7b0f7abf50a7e0cbb49",

@@ -115,4 +115,4 @@
 {"month":"2026-07","detections":6663,"matched":61,"flags":{"unknown":3,"CHN":13,"RUS":4,"KOR":17,"PRK":12,"PAN":7,"VUT":1,"SLE":1,"STP":1,"USA":1,"CMR":1},"passes":20,"firstFetched":"2026-10-12","updated":"2026-10-12"}
 {"month":"2026-08","detections":4367,"matched":49,"flags":{"KOR":5,"STP":3,"PRK":7,"PAN":5,"CHN":12,"ALB":1,"LBR":1,"RUS":3,"unknown":7,"HKG":1,"PRT":1,"TZA":1,"VUT":1,"BLZ":1},"passes":19,"firstFetched":"2026-10-12","updated":"2026-10-12"}
 {"month":"2026-09","detections":12447,"matched":104,"flags":{"TGO":1,"CHN":37,"unknown":31,"BLZ":1,"PAN":4,"GNB":4,"CAF":1,"PRK":11,"RUS":7,"PLW":2,"VUT":1,"KOR":2,"LUX":2},"passes":20,"firstFetched":"2026-10-12","updated":"2026-10-12"}
-{"month":"2026-10","detections":431,"matched":4,"flags":{"RUS":3,"PAN":1},"passes":5,"firstFetched":"2026-10-12","updated":"2026-10-12"}
+{"month":"2026-10","detections":5367,"matched":67,"flags":{"CHN":29,"SHN":2,"unknown":22,"PRT":1,"RUS":3,"PAN":2,"PRK":7,"VUT":1},"passes":10,"firstFetched":"2026-10-12","updated":"2026-10-19"}

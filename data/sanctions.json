@@ -1,12 +1,12 @@
 {
  "_doc": "Built by scripts/build-sanctions.ts from the live UN, US, UK, EU and Japanese lists. Do not edit by hand.",
- "fetched": "2026-10-12",
+ "fetched": "2026-10-19",
  "sources": {
   "un": "https://scsanctions.un.org/resources/xml/en/consolidated.xml",
   "ofac": "https://www.treasury.gov/ofac/downloads/sdn.csv",
   "uk": "https://sanctionslist.fcdo.gov.uk/docs/UK-Sanctions-List.xml",
   "eu": "https://webgate.ec.europa.eu/fsd/fsf/public/files/xmlFullSanctionsList_1_1/content?token=dG9rZW4tMjAxNw",
-  "jp": "https://www.mof.go.jp/policy/international_policy/gaitame_kawase/gaitame/economic_sanctions/shisantouketsu20261009.csv"
+  "jp": "https://www.mof.go.jp/policy/international_policy/gaitame_kawase/gaitame/economic_sanctions/shisantouketsu20261014.csv"
  },
  "pages": {
   "uk": "https://www.gov.uk/government/publications/the-uk-sanctions-list",
@@ -14,7 +14,7 @@
   "jp": "https://www.mof.go.jp/policy/international_policy/gaitame_kawase/gaitame/economic_sanctions/list.html"
  },
  "un": {
-  "generated": "2026-10-10",
+  "generated": "2026-10-17",
   "individuals": [
    {
     "ref": "KPi.001",
@@ -605,7 +605,7 @@
     ],
     "listed": "2017-12-22",
     "role": "Former overseas Foreign Trade Bank representative",
-    "note": "In 2016, Ch’oe So’k-min was the deputy representative at the Foreign Trade Bank branch office in that overseas location. He has been associated with cash transfers from that overseas Foreign Trade Bank office to banks affiliated with North Korean special organizations and Reconnaissance General Bureau operatives located overseas in an effort to evade sanctions. Gender: male.in response to the DPRK test of an ICBM on 28 November 2017"
+    "note": "In 2016, Ch’oe So’k-min was the deputy representative at the Foreign Trade Bank branch office in that overseas location. He has been associated with cash transfers from that overseas Foreign Trade Bank office to banks affiliated with North Korean special organizations and Reconnaissance General Bureau operatives located overseas in an effort to evade sanctions. Gender: male."
    },
    {
     "ref": "KPi.065",
@@ -7027,8 +7027,8 @@
  ],
  "national": {
   "uk": {
-   "fetched": "2026-10-12",
-   "published": "2026-10-12",
+   "fetched": "2026-10-19",
+   "published": "2026-10-16",
    "file": "https://sanctionslist.fcdo.gov.uk/docs/UK-Sanctions-List.xml",
    "entries": [
     {
@@ -7347,8 +7347,8 @@
      "unBasis": true,
      "dob": [
       "1968-02-19",
-      "1965",
-      "1966"
+      "1966",
+      "1965"
      ]
     },
     {
@@ -7510,8 +7510,8 @@
       "DCBKKPPY"
      ],
      "addr": [
-      "401 ansan dong hotel potonggang suite",
-      "ansan botonggang dong hotel"
+      "ansan botonggang dong hotel",
+      "401 ansan dong hotel potonggang suite"
      ]
     },
     {
@@ -7606,8 +7606,8 @@
      "unBasis": true,
      "addr": [
       "changwang pyongyang street",
-      "central chung district dong guyok kyongrim pyongyang sosong street",
-      "building chongsa chung democratic dong government korea korean kwp of peoples pyongyang republic second town urban ward"
+      "building chongsa chung democratic dong government korea korean kwp of peoples pyongyang republic second town urban ward",
+      "central chung district dong guyok kyongrim pyongyang sosong street"
      ]
     },
     {
@@ -7699,8 +7699,8 @@
      "un": "KPi.016",
      "unBasis": true,
      "dob": [
-      "1958-02-22",
-      "1957-04-15"
+      "1957-04-15",
+      "1958-02-22"
      ],
      "passports": [
       "836110034"
@@ -7733,12 +7733,12 @@
      "un": "KPi.018",
      "unBasis": true,
      "dob": [
-      "1976-08-25",
-      "1976-10-18"
+      "1976-10-18",
+      "1976-08-25"
      ],
      "passports": [
-      "4721202031",
-      "836110035"
+      "836110035",
+      "4721202031"
      ]
     },
     {
@@ -7786,8 +7786,8 @@
      ],
      "passports": [
       "199421147",
-      "381110042",
-      "563210184"
+      "563210184",
+      "381110042"
      ]
     },
     {
@@ -10173,8 +10173,8 @@
       "1934",
       "1935",
       "1936",
-      "1937",
-      "1938"
+      "1938",
+      "1937"
      ]
     },
     {
@@ -10567,8 +10567,8 @@
    ]
   },
   "eu": {
-   "fetched": "2026-10-12",
-   "published": "2026-10-12",
+   "fetched": "2026-10-19",
+   "published": "2026-10-15",
    "file": "https://webgate.ec.europa.eu/fsd/fsf/public/files/xmlFullSanctionsList_1_1/content?token=dG9rZW4tMjAxNw",
    "entries": [
     {
@@ -13681,9 +13681,9 @@
    ]
   },
   "jp": {
-   "fetched": "2026-10-12",
-   "published": "2026-10-09",
-   "file": "https://www.mof.go.jp/policy/international_policy/gaitame_kawase/gaitame/economic_sanctions/shisantouketsu20261009.csv",
+   "fetched": "2026-10-19",
+   "published": "2026-10-14",
+   "file": "https://www.mof.go.jp/policy/international_policy/gaitame_kawase/gaitame/economic_sanctions/shisantouketsu20261014.csv",
    "entries": [
     {
      "id": "013-000001",

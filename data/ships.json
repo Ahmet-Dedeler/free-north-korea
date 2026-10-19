@@ -1,17 +1,17 @@
 {
  "_doc": "Built by scripts/build-ships.ts from the archive in data/archive/gfw (Global Fishing Watch API) and data/sanctions.json. Do not edit by hand.",
- "fetched": "2026-10-12",
+ "fetched": "2026-10-19",
  "attribution": "Powered by Global Fishing Watch (globalfishingwatch.org). Data: GFW vessel identity v4, port visits v4 and SAR vessel detections, CC BY-NC 4.0.",
  "sources": {
   "gfw": "https://globalfishingwatch.org/our-apis/",
   "license": "https://globalfishingwatch.org/our-apis/documentation/docs/license-rate-limits.md"
  },
- "sanctionsFetched": "2026-10-12",
+ "sanctionsFetched": "2026-10-19",
  "window": {
   "from": "2025-11-01",
-  "to": "2026-10-12"
+  "to": "2026-10-19"
  },
- "radarThrough": "2026-10-08",
+ "radarThrough": "2026-10-13",
  "listedImos": 111,
  "resolved": 105,
  "ships": [
@@ -27,7 +27,7 @@
      "flag": "RUS",
      "mmsi": "273390290",
      "first": "2016-10-15",
-     "last": "2026-10-10"
+     "last": "2026-10-17"
     },
     {
      "name": "AFRICAN EXPRESS",
@@ -44,14 +44,23 @@
      "last": "2015-11-03"
     }
    ],
-   "lastSeen": "2026-10-10",
+   "lastSeen": "2026-10-17",
    "visits": [
     {
-     "start": "2026-08-31",
-     "end": "2026-10-08",
-     "port": "ZHOUSHAN",
+     "start": "2026-10-10",
+     "end": "2026-10-15",
+     "port": "SHANGHAI",
      "country": "CHN",
      "confidence": 3,
+     "as": "SAKHALIN",
+     "flag": "RUS"
+    },
+    {
+     "start": "2026-08-31",
+     "end": "2026-10-10",
+     "port": "ZHOUSHAN",
+     "country": "CHN",
+     "confidence": 4,
      "as": "SAKHALIN",
      "flag": "RUS"
     },
@@ -453,83 +462,120 @@
     }
    ],
    "history": {
-    "visits": 380,
-    "foreign": 380,
+    "visits": 381,
+    "foreign": 381,
     "since": "2012-01-01"
    },
    "radarMonths": []
   },
   {
-   "name": "South Hill 5",
-   "imo": "9138680",
+   "name": "Po Chon",
+   "imo": "8848276",
    "lists": [
     "US"
    ],
    "ais": [
     {
-     "name": "NAMDAECHON",
+     "name": "TONGBAEK",
      "flag": "PRK",
-     "mmsi": "445590000",
-     "first": "2016-12-10",
-     "last": "2026-10-10"
+     "mmsi": "445206000",
+     "first": "2017-05-07",
+     "last": "2026-10-17"
     },
     {
-     "name": "SOUTH HILL 5",
-     "flag": "PLW",
-     "mmsi": "511086000",
-     "first": "2014-10-13",
-     "last": "2016-03-03"
+     "name": "TB",
+     "flag": "KHM",
+     "mmsi": "514339000",
+     "first": "2015-01-07",
+     "last": "2026-10-12"
     },
     {
-     "name": "FREE IMPALA",
-     "flag": "BHS",
-     "mmsi": "311902000",
-     "first": "2012-01-02",
-     "last": "2012-10-10"
+     "name": "T.B",
+     "flag": "HKG",
+     "mmsi": "477927500",
+     "first": "2026-01-22",
+     "last": "2026-01-30"
+    },
+    {
+     "name": "ZEBRA",
+     "flag": "FJI",
+     "mmsi": "520377261",
+     "first": "2016-11-12",
+     "last": "2017-03-14"
+    },
+    {
+     "name": "EROS",
+     "flag": "TZA",
+     "mmsi": "677090600",
+     "first": "2016-06-18",
+     "last": "2016-11-07"
+    },
+    {
+     "name": "M/T.EROS",
+     "flag": "SLE",
+     "mmsi": "667001504",
+     "first": "2016-02-03",
+     "last": "2016-04-10"
+    },
+    {
+     "name": "MT DRAGON ACE NO5",
+     "flag": "KOR",
+     "mmsi": "440509000",
+     "first": "2012-01-04",
+     "last": "2015-01-07"
     }
    ],
-   "lastSeen": "2026-10-10",
+   "lastSeen": "2026-10-17",
    "visits": [
     {
-     "start": "2026-08-09",
-     "end": "2026-10-08",
-     "port": "",
-     "country": "PRK",
-     "confidence": 3,
-     "as": "NAMDAECHON",
-     "flag": "PRK"
-    },
-    {
-     "start": "2026-08-04",
-     "end": "2026-08-06",
-     "port": "VLADIVOSTOK",
-     "country": "RUS",
-     "confidence": 4,
-     "as": "NAMDAECHON",
-     "flag": "PRK"
-    },
-    {
-     "start": "2026-07-07",
-     "end": "2026-08-04",
-     "port": "VLADIVOSTOK",
-     "country": "RUS",
-     "confidence": 4,
-     "as": "NAMDAECHON",
-     "flag": "PRK"
-    },
-    {
-     "start": "2026-01-18",
-     "end": "2026-01-22",
-     "port": "GOUQI ISLAND",
+     "start": "2026-10-06",
+     "end": "2026-10-07",
+     "port": "TAIZHOU",
      "country": "CHN",
      "confidence": 4,
-     "as": "NAMDAECHON",
+     "as": "TB",
+     "flag": "KHM"
+    },
+    {
+     "start": "2026-06-28",
+     "end": "2026-07-09",
+     "port": "",
+     "country": "PRK",
+     "confidence": 4,
+     "as": "TONGBAEK",
+     "flag": "PRK"
+    },
+    {
+     "start": "2026-03-22",
+     "end": "2026-05-13",
+     "port": "WENZHOU",
+     "country": "CHN",
+     "confidence": 4,
+     "as": "TONGBAEK",
+     "flag": "PRK"
+    },
+    {
+     "start": "2025-12-11",
+     "end": "2025-12-12",
+     "port": "YUSHAN ISLAND",
+     "country": "CHN",
+     "confidence": 4,
+     "as": "TONGBAEK",
+     "flag": "PRK"
+    },
+    {
+     "start": "2025-11-13",
+     "end": "2025-11-21",
+     "port": "PUTIAN",
+     "country": "CHN",
+     "confidence": 4,
+     "as": "TONGBAEK",
      "flag": "PRK"
     }
    ],
    "history": {
-    "visits": 107,
-    "foreign": 80,
+    "visits": 430,
+    "foreign": 411,
     "since": "2012-01-04"
    },
    "radarMonths": []
@@ -546,7 +592,7 @@
      "flag": "KOR",
      "mmsi": "440000450",
      "first": "2016-10-14",
-     "last": "2026-10-09"
+     "last": "2026-10-15"
     },
     {
      "name": "HYONG JE BONG",
@@ -612,14 +658,32 @@
      "last": "2012-11-24"
     }
    ],
-   "lastSeen": "2026-10-09",
+   "lastSeen": "2026-10-15",
    "visits": [
     {
-     "start": "2026-10-07",
-     "end": "2026-10-08",
+     "start": "2026-10-12",
+     "end": "2026-10-15",
      "port": "",
      "country": "KOR",
      "confidence": 3,
+     "as": "EUGENE1HO",
+     "flag": "KOR"
+    },
+    {
+     "start": "2026-10-09",
+     "end": "2026-10-12",
+     "port": "",
+     "country": "KOR",
+     "confidence": 4,
+     "as": "EUGENE1HO",
+     "flag": "KOR"
+    },
+    {
+     "start": "2026-10-07",
+     "end": "2026-10-09",
+     "port": "",
+     "country": "KOR",
+     "confidence": 4,
      "as": "EUGENE1HO",
      "flag": "KOR"
     },
@@ -1237,120 +1301,83 @@
     }
    ],
    "history": {
-    "visits": 1403,
-    "foreign": 1316,
+    "visits": 1405,
+    "foreign": 1318,
     "since": "2012-01-25"
    },
    "radarMonths": []
   },
   {
-   "name": "Po Chon",
-   "imo": "8848276",
+   "name": "South Hill 5",
+   "imo": "9138680",
    "lists": [
     "US"
    ],
    "ais": [
     {
-     "name": "TB",
-     "flag": "KHM",
-     "mmsi": "514339000",
-     "first": "2015-01-07",
-     "last": "2026-10-09"
-    },
-    {
-     "name": "TONGBAEK",
+     "name": "NAMDAECHON",
      "flag": "PRK",
-     "mmsi": "445206000",
-     "first": "2017-05-07",
-     "last": "2026-09-19"
+     "mmsi": "445590000",
+     "first": "2016-12-10",
+     "last": "2026-10-14"
     },
     {
-     "name": "T.B",
-     "flag": "HKG",
-     "mmsi": "477927500",
-     "first": "2026-01-22",
-     "last": "2026-01-30"
+     "name": "SOUTH HILL 5",
+     "flag": "PLW",
+     "mmsi": "511086000",
+     "first": "2014-10-13",
+     "last": "2016-03-03"
     },
     {
-     "name": "ZEBRA",
-     "flag": "FJI",
-     "mmsi": "520377261",
-     "first": "2016-11-12",
-     "last": "2017-03-14"
-    },
-    {
-     "name": "EROS",
-     "flag": "TZA",
-     "mmsi": "677090600",
-     "first": "2016-06-18",
-     "last": "2016-11-07"
-    },
-    {
-     "name": "M/T.EROS",
-     "flag": "SLE",
-     "mmsi": "667001504",
-     "first": "2016-02-03",
-     "last": "2016-04-10"
-    },
-    {
-     "name": "MT DRAGON ACE NO5",
-     "flag": "KOR",
-     "mmsi": "440509000",
-     "first": "2012-01-04",
-     "last": "2015-01-07"
+     "name": "FREE IMPALA",
+     "flag": "BHS",
+     "mmsi": "311902000",
+     "first": "2012-01-02",
+     "last": "2012-10-10"
     }
    ],
-   "lastSeen": "2026-10-09",
+   "lastSeen": "2026-10-14",
    "visits": [
     {
-     "start": "2026-10-06",
-     "end": "2026-10-07",
-     "port": "TAIZHOU",
-     "country": "CHN",
-     "confidence": 4,
-     "as": "TB",
-     "flag": "KHM"
-    },
-    {
-     "start": "2026-06-28",
-     "end": "2026-07-09",
+     "start": "2026-08-09",
+     "end": "2026-10-14",
      "port": "",
      "country": "PRK",
-     "confidence": 4,
-     "as": "TONGBAEK",
+     "confidence": 3,
+     "as": "NAMDAECHON",
      "flag": "PRK"
     },
     {
-     "start": "2026-03-22",
-     "end": "2026-05-13",
-     "port": "WENZHOU",
-     "country": "CHN",
+     "start": "2026-08-04",
+     "end": "2026-08-06",
+     "port": "VLADIVOSTOK",
+     "country": "RUS",
      "confidence": 4,
-     "as": "TONGBAEK",
+     "as": "NAMDAECHON",
      "flag": "PRK"
     },
     {
-     "start": "2025-12-11",
-     "end": "2025-12-12",
-     "port": "YUSHAN ISLAND",
-     "country": "CHN",
+     "start": "2026-07-07",
+     "end": "2026-08-04",
+     "port": "VLADIVOSTOK",
+     "country": "RUS",
      "confidence": 4,
-     "as": "TONGBAEK",
+     "as": "NAMDAECHON",
      "flag": "PRK"
     },
     {
-     "start": "2025-11-13",
-     "end": "2025-11-21",
-     "port": "PUTIAN",
+     "start": "2026-01-18",
+     "end": "2026-01-22",
+     "port": "GOUQI ISLAND",
      "country": "CHN",
      "confidence": 4,
-     "as": "TONGBAEK",
+     "as": "NAMDAECHON",
      "flag": "PRK"
     }
    ],
    "history": {
-    "visits": 430,
-    "foreign": 411,
+    "visits": 107,
+    "foreign": 80,
     "since": "2012-01-04"
    },
    "radarMonths": []
@@ -5710,15 +5737,21 @@
   },
   {
    "month": "2026-10",
-   "detections": 431,
-   "matched": 4,
+   "detections": 5367,
+   "matched": 67,
    "flags": {
+    "CHN": 29,
+    "SHN": 2,
+    "unknown": 22,
+    "PRT": 1,
     "RUS": 3,
-    "PAN": 1
+    "PAN": 2,
+    "PRK": 7,
+    "VUT": 1
    },
-   "passes": 5,
+   "passes": 10,
    "firstFetched": "2026-10-12",
-   "updated": "2026-10-12"
+   "updated": "2026-10-19"
   }
  ],
  "radarYears": [
@@ -5787,16 +5820,16 @@
   },
   {
    "year": "2026",
-   "detections": 32807,
-   "matched": 359,
-   "passes": 158,
+   "detections": 37743,
+   "matched": 422,
+   "passes": 163,
    "months": 10
   }
  ],
  "ports": {
-  "visits": 666,
-  "vessels": 197,
-  "foreignVisits": 42,
+  "visits": 706,
+  "vessels": 201,
+  "foreignVisits": 44,
   "list": [
    {
     "port": "NAMPO",
@@ -5804,18 +5837,18 @@
     "portId": "prk-nampo",
     "lat": 38.7163,
     "lon": 125.421,
-    "visits": 560,
+    "visits": 598,
     "flags": {
-     "PRK": 531,
-     "TZA": 1,
-     "CHN": 14,
+     "PRK": 566,
+     "TZA": 2,
+     "CHN": 15,
      "PAN": 2,
      "COM": 4,
      "RUS": 4,
-     "unknown": 3,
+     "unknown": 4,
      "SLE": 1
     },
-    "vessels": 166
+    "vessels": 171
    },
    {
     "port": "CHONGJIN",
@@ -5823,11 +5856,11 @@
     "portId": "prk-prk-19",
     "lat": 41.7597,
     "lon": 129.7625,
-    "visits": 30,
+    "visits": 31,
     "flags": {
-     "PRK": 30
+     "PRK": 31
     },
-    "vessels": 23
+    "vessels": 24
    },
    {
     "port": "SONGRIM",
@@ -5835,9 +5868,9 @@
     "portId": "prk-taean",
     "lat": 38.8216,
     "lon": 125.5296,
-    "visits": 25,
+    "visits": 26,
     "flags": {
-     "PRK": 23,
+     "PRK": 24,
      "RUS": 2
     },
     "vessels": 16
@@ -5908,24 +5941,36 @@
   ],
   "foreign": [
    {
-    "name": "FEAN RICH",
-    "mmsi": "667002050",
-    "flag": "SLE",
+    "name": "",
+    "mmsi": "677093800",
+    "flag": "TZA",
     "vtype": "other",
-    "first": "2026-10-08",
-    "last": "2026-10-08",
+    "first": "2024-02-28",
+    "last": "2026-10-14",
+    "visits": 2,
+    "ports": {
+     "~NAMPO": 2
+    }
+   },
+   {
+    "name": "",
+    "mmsi": "412150820",
+    "flag": "CHN",
+    "vtype": "other",
+    "first": "2026-10-09",
+    "last": "2026-10-12",
     "visits": 1,
     "ports": {
      "~NAMPO": 1
     }
    },
    {
-    "name": "",
-    "mmsi": "677093800",
-    "flag": "TZA",
+    "name": "FEAN RICH",
+    "mmsi": "667002050",
+    "flag": "SLE",
     "vtype": "other",
-    "first": "2024-02-28",
-    "last": "2026-10-06",
+    "first": "2026-10-08",
+    "last": "2026-10-08",
     "visits": 1,
     "ports": {
      "~NAMPO": 1

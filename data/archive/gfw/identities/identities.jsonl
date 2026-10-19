@@ -162,11 +162,11 @@
 {"gfwId":"752e51da8-896d-620a-17d5-37702a18c230","imo":"8829593","name":"ATLS 9701","flag":"VIR","mmsi":"379867546","first":"2016-10-02","last":"2016-10-05","firstFetched":"2026-10-12","updated":"2026-10-12"}
 {"gfwId":"117b50e89-919f-44ff-84fe-436e491b9e9a","imo":"8829593","name":"ATLS 9701","flag":"USA","mmsi":"369970276","first":"2016-10-05","last":"2016-10-31","firstFetched":"2026-10-12","updated":"2026-10-12"}
 {"gfwId":"ea8b787cc-cfe3-0f22-0f95-0b4e611fddc5","imo":"8848276","name":"MT DRAGON ACE NO5","flag":"KOR","mmsi":"440509000","first":"2012-01-04","last":"2015-01-07","firstFetched":"2026-10-12","updated":"2026-10-12"}
-{"gfwId":"9822e4cae-ef9f-21b8-1f9b-561e6142b4ed","imo":"8848276","name":"TB","flag":"KHM","mmsi":"514339000","first":"2015-01-07","last":"2026-10-09","firstFetched":"2026-10-12","updated":"2026-10-12"}
+{"gfwId":"9822e4cae-ef9f-21b8-1f9b-561e6142b4ed","imo":"8848276","name":"TB","flag":"KHM","mmsi":"514339000","first":"2015-01-07","last":"2026-10-12","firstFetched":"2026-10-12","updated":"2026-10-19"}
 {"gfwId":"b914d380a-ae8e-2c30-7ef4-eb47f0cfdc12","imo":"8848276","name":"M/T.EROS","flag":"SLE","mmsi":"667001504","first":"2016-02-03","last":"2016-04-10","firstFetched":"2026-10-12","updated":"2026-10-12"}
 {"gfwId":"98d05a565-5583-cd92-d6c0-220fa20364c1","imo":"8848276","name":"EROS","flag":"TZA","mmsi":"677090600","first":"2016-06-18","last":"2016-11-07","firstFetched":"2026-10-12","updated":"2026-10-12"}
 {"gfwId":"76277a618-8da2-cc04-d575-bc61f591024e","imo":"8848276","name":"ZEBRA","flag":"FJI","mmsi":"520377261","first":"2016-11-12","last":"2017-03-14","firstFetched":"2026-10-12","updated":"2026-10-12"}
-{"gfwId":"95d9ec967-78a7-bd79-3669-719e932ab253","imo":"8848276","name":"TONGBAEK","flag":"PRK","mmsi":"445206000","first":"2017-05-07","last":"2026-09-19","firstFetched":"2026-10-12","updated":"2026-10-12"}
+{"gfwId":"95d9ec967-78a7-bd79-3669-719e932ab253","imo":"8848276","name":"TONGBAEK","flag":"PRK","mmsi":"445206000","first":"2017-05-07","last":"2026-10-17","firstFetched":"2026-10-12","updated":"2026-10-19"}
 {"gfwId":"4a92a234c-cbed-31cf-932a-b1364c864ecc","imo":"8848276","name":"T.B","flag":"HKG","mmsi":"477927500","first":"2026-01-22","last":"2026-01-30","firstFetched":"2026-10-12","updated":"2026-10-12"}
 {"gfwId":"bc87f41f1-1700-a22e-e967-72f003d2a840","imo":"8898738","name":"ZARYOK2","flag":"PRK","mmsi":"445020000","first":"2012-08-26","last":"2015-01-23","firstFetched":"2026-10-12","updated":"2026-10-12"}
 {"gfwId":"a9077415e-e1dc-380c-3a7b-bddb3e9db3bf","imo":"8898738","name":"YUSONG2","flag":"PRK","mmsi":"445817000","first":"2023-04-19","last":"2023-11-04","firstFetched":"2026-10-12","updated":"2026-10-12"}
@@ -180,7 +180,7 @@
 {"gfwId":"dedc06ffd-d20d-30bd-5514-83d3ecf8773b","imo":"8909915","name":"ELEANOR SUN","flag":"SLE","mmsi":"667001378","first":"2015-05-28","last":"2016-09-02","firstFetched":"2026-10-12","updated":"2026-10-12"}
 {"gfwId":"6271badbb-b353-dce7-817c-20433e8408b3","imo":"8909915","name":"ELEANOR SUN","flag":"TZA","mmsi":"677096800","first":"2016-09-08","last":"2017-01-05","firstFetched":"2026-10-12","updated":"2026-10-12"}
 {"gfwId":"f8618216a-a1b0-0f44-3b56-f92f54ef9190","imo":"8909915","name":"ELEANOR SUN","flag":"SLE","mmsi":"667096800","first":"2016-09-20","last":"2016-11-04","firstFetched":"2026-10-12","updated":"2026-10-12"}
-{"gfwId":"02caff9c4-46b9-aeed-9768-080bffac0ab8","imo":"8909915","name":"EUGENE1HO","flag":"KOR","mmsi":"440000450","first":"2016-10-14","last":"2026-10-09","firstFetched":"2026-10-12","updated":"2026-10-12"}
+{"gfwId":"02caff9c4-46b9-aeed-9768-080bffac0ab8","imo":"8909915","name":"EUGENE1HO","flag":"KOR","mmsi":"440000450","first":"2016-10-14","last":"2026-10-15","firstFetched":"2026-10-12","updated":"2026-10-19"}
 {"gfwId":"48f3054a0-08d5-6758-da21-8734f53edb56","imo":"8909915","name":"ELEANOR SUN","flag":null,"mmsi":"67709688","first":"2016-11-09","last":"2016-11-13","firstFetched":"2026-10-12","updated":"2026-10-12"}
 {"gfwId":"2af6d0a03-3086-eda7-35f6-889291e8130a","imo":"8909915","name":"EVER GLORY","flag":"COM","mmsi":"620231000","first":"2017-01-05","last":"2017-03-15","firstFetched":"2026-10-12","updated":"2026-10-12"}
 {"gfwId":"391d24af3-38de-dc3e-d553-cd6dea6a4b31","imo":"8909915","name":"PK@@@@@@@@@@@@@@@@@L","flag":null,"mmsi":"45441864","first":"2022-08-09","last":"2023-01-13","firstFetched":"2026-10-12","updated":"2026-10-12"}
@@ -256,7 +256,7 @@
 {"gfwId":"769d13e8a-aa71-f330-1b68-bb5f9695fef7","imo":"9078191","name":"B.P.P 501","flag":"THA","mmsi":"567002670","first":"2019-03-01","last":"2020-03-03","firstFetched":"2026-10-12","updated":"2026-10-12"}
 {"gfwId":"baa06d4bd-d390-5011-cb98-bb3d2408161d","imo":"9085730","name":"STELLANOVA","flag":"NLD","mmsi":"245781000","first":"2012-01-01","last":"2015-11-03","firstFetched":"2026-10-12","updated":"2026-10-12"}
 {"gfwId":"c3a6b60e1-1abf-964b-2e51-9d9fb26474c8","imo":"9085730","name":"AFRICAN EXPRESS","flag":"PLW","mmsi":"511260000","first":"2015-11-03","last":"2016-10-11","firstFetched":"2026-10-12","updated":"2026-10-12"}
-{"gfwId":"2e52296a2-2d00-9251-938b-ea81515c4e3e","imo":"9085730","name":"SAKHALIN","flag":"RUS","mmsi":"273390290","first":"2016-10-15","last":"2026-10-10","firstFetched":"2026-10-12","updated":"2026-10-12"}
+{"gfwId":"2e52296a2-2d00-9251-938b-ea81515c4e3e","imo":"9085730","name":"SAKHALIN","flag":"RUS","mmsi":"273390290","first":"2016-10-15","last":"2026-10-17","firstFetched":"2026-10-12","updated":"2026-10-19"}
 {"gfwId":"8f2ae357f-f942-efe2-81c1-164da0c8ddcf","imo":"9096791","name":"YU SONG 12","flag":"PRK","mmsi":"445458000","first":"2012-07-14","last":"2016-11-30","firstFetched":"2026-10-12","updated":"2026-10-12"}
 {"gfwId":"371153687-722e-c250-7bbc-eaa631ab745f","imo":"9110236","name":"DAWNLIGHT","flag":"PAN","mmsi":"370442000","first":"2012-01-01","last":"2014-05-08","firstFetched":"2026-10-12","updated":"2026-10-12"}
 {"gfwId":"315a22e39-9f9c-0a35-0fdd-276d4d914a6b","imo":"9110236","name":"DAWNLIGHT","flag":"MNG","mmsi":"457097000","first":"2014-06-21","last":"2016-03-11","firstFetched":"2026-10-12","updated":"2026-10-12"}
@@ -276,7 +276,7 @@
 {"gfwId":"40db2821e-ef0c-ba91-ba95-da73375c6fae","imo":"9115028","name":"SIN HAE","flag":"PRK","mmsi":"445058000","first":"2022-08-24","last":"2026-09-16","firstFetched":"2026-10-12","updated":"2026-10-12"}
 {"gfwId":"6b728c9af-f9e5-200c-1aed-4a35d229c077","imo":"9138680","name":"FREE IMPALA","flag":"BHS","mmsi":"311902000","first":"2012-01-02","last":"2012-10-10","firstFetched":"2026-10-12","updated":"2026-10-12"}
 {"gfwId":"da9d1b863-3345-a154-a498-97a036396b72","imo":"9138680","name":"SOUTH HILL 5","flag":"PLW","mmsi":"511086000","first":"2014-10-13","last":"2016-03-03","firstFetched":"2026-10-12","updated":"2026-10-12"}
-{"gfwId":"db44ae1d4-4d89-88dc-14f4-ec5ed45171c4","imo":"9138680","name":"NAMDAECHON","flag":"PRK","mmsi":"445590000","first":"2016-12-10","last":"2026-10-10","firstFetched":"2026-10-12","updated":"2026-10-12"}
+{"gfwId":"db44ae1d4-4d89-88dc-14f4-ec5ed45171c4","imo":"9138680","name":"NAMDAECHON","flag":"PRK","mmsi":"445590000","first":"2016-12-10","last":"2026-10-14","firstFetched":"2026-10-12","updated":"2026-10-19"}
 {"gfwId":"b0768ed4c-cd0e-cc3f-de33-4831d110d14e","imo":"9159787","name":"WONSAN 2","flag":"PRK","mmsi":"445309000","first":"2012-03-11","last":"2017-03-24","firstFetched":"2026-10-12","updated":"2026-10-12"}
 {"gfwId":"5cf2d5864-4f95-1e00-045b-acde3f9b9954","imo":"9159787","name":"P,O","flag":"PRK","mmsi":"445060000","first":"2019-02-14","last":"2025-03-19","firstFetched":"2026-10-12","updated":"2026-10-12"}
 {"gfwId":"3530c127a-adb2-2ef9-7c38-96c061eb0342","imo":"9163154","name":"JIN TAI","flag":"PAN","mmsi":"351641000","first":"2012-01-11","last":"2014-08-04","firstFetched":"2026-10-12","updated":"2026-10-12"}

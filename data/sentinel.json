@@ -1,5 +1,5 @@
 {
- "built": "2026-10-12",
+ "built": "2026-10-19",
  "source": "Copernicus Sentinel-2 L2A via Element84 Earth Search (https://earth-search.aws.element84.com/v1)",
  "credit": "Contains modified Copernicus Sentinel data",
  "rules": {
@@ -18,7 +18,7 @@
    "sizeM": 7680,
    "tile": "MGRS-52SBJ",
    "latest": "2026-10-11",
-   "checked": "2026-10-12T15:32Z",
+   "checked": "2026-10-19T13:37Z",
    "images": [
     {
      "date": "2024-12-10",
@@ -634,7 +634,7 @@
    "sizeM": 7680,
    "tile": "MGRS-52SCJ",
    "latest": "2026-10-08",
-   "checked": "2026-10-12T15:32Z",
+   "checked": "2026-10-19T13:37Z",
    "images": [
     {
      "date": "2024-11-12",
@@ -1355,7 +1355,7 @@
    "sizeM": 7680,
    "tile": "MGRS-52TEL",
    "latest": "2026-10-08",
-   "checked": "2026-10-12T15:32Z",
+   "checked": "2026-10-19T13:37Z",
    "images": [
     {
      "date": "2024-11-02",
@@ -1882,7 +1882,7 @@
    "sizeM": 7680,
    "tile": "MGRS-52SBJ",
    "latest": "2026-10-11",
-   "checked": "2026-10-12T15:32Z",
+   "checked": "2026-10-19T13:37Z",
    "images": [
     {
      "date": "2024-12-10",
@@ -2533,7 +2533,7 @@
    "sizeM": 7680,
    "tile": "MGRS-52TEN",
    "latest": "2026-10-08",
-   "checked": "2026-10-12T15:32Z",
+   "checked": "2026-10-19T13:37Z",
    "images": [
     {
      "date": "2024-11-02",
@@ -3219,7 +3219,7 @@
    "sizeM": 7680,
    "tile": "MGRS-52TEM",
    "latest": "2026-10-08",
-   "checked": "2026-10-12T15:32Z",
+   "checked": "2026-10-19T13:37Z",
    "images": [
     {
      "date": "2024-11-02",
@@ -3974,8 +3974,8 @@
    "lon": 125.9230614,
    "sizeM": 5120,
    "tile": "MGRS-51TYE",
-   "latest": "2026-10-11",
-   "checked": "2026-10-12T15:32Z",
+   "latest": "2026-10-16",
+   "checked": "2026-10-19T13:37Z",
    "images": [
     {
      "date": "2024-11-15",
@@ -4396,9 +4396,9 @@
      "month": "2026-09"
     },
     {
-     "date": "2026-10-11",
-     "datetime": "2026-10-11T02:36:29.412000Z",
-     "scene": "S2B_51TYE_20261011_0_L2A",
+     "date": "2026-10-16",
+     "datetime": "2026-10-16T02:36:31.078000Z",
+     "scene": "S2C_51TYE_20261016_0_L2A",
      "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
@@ -4411,7 +4411,7 @@
       125.95399,
       39.73219
      ],
-     "src": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-l2a/items/S2B_51TYE_20261011_0_L2A",
+     "src": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-l2a/items/S2C_51TYE_20261016_0_L2A",
      "month": "2026-10"
     }
    ],
@@ -4586,10 +4586,10 @@
     },
     {
      "from": "2026-09-11",
-     "to": "2026-10-11",
+     "to": "2026-10-16",
      "clear": 100.0,
-     "score": 0.471,
-     "changed": 9.21,
+     "score": 0.966,
+     "changed": 34.12,
      "kind": "month"
     },
     {
@@ -4674,10 +4674,10 @@
     },
     {
      "from": "2025-10-16",
-     "to": "2026-10-11",
+     "to": "2026-10-16",
      "clear": 100.0,
-     "score": 0.366,
-     "changed": 5.46,
+     "score": 0.929,
+     "changed": 32.09,
      "kind": "year"
     }
    ],
@@ -4696,7 +4696,7 @@
    "sizeM": 5120,
    "tile": "MGRS-52TEM",
    "latest": "2026-10-08",
-   "checked": "2026-10-12T15:32Z",
+   "checked": "2026-10-19T13:37Z",
    "images": [
     {
      "date": "2024-11-02",
@@ -5347,7 +5347,7 @@
    "sizeM": 7680,
    "tile": "MGRS-51TYE",
    "latest": "2026-10-11",
-   "checked": "2026-10-12T15:32Z",
+   "checked": "2026-10-19T13:37Z",
    "images": [
     {
      "date": "2024-11-15",
@@ -6028,7 +6028,7 @@
    "sizeM": 5120,
    "tile": "MGRS-51SYD",
    "latest": "2026-10-08",
-   "checked": "2026-10-12T15:32Z",
+   "checked": "2026-10-19T13:37Z",
    "images": [
     {
      "date": "2024-11-10",
@@ -6763,7 +6763,7 @@
    "sizeM": 5120,
    "tile": "MGRS-52TEL",
    "latest": "2026-10-08",
-   "checked": "2026-10-12T15:32Z",
+   "checked": "2026-10-19T13:37Z",
    "images": [
     {
      "date": "2024-11-02",
@@ -7258,7 +7258,7 @@
    "sizeM": 5120,
    "tile": "MGRS-52SBH",
    "latest": "2026-10-11",
-   "checked": "2026-10-12T15:32Z",
+   "checked": "2026-10-19T13:37Z",
    "images": [
     {
      "date": "2024-11-12",
@@ -7958,7 +7958,7 @@
    "sizeM": 7680,
    "tile": "MGRS-51SXD",
    "latest": "2026-10-11",
-   "checked": "2026-10-12T15:32Z",
+   "checked": "2026-10-19T13:37Z",
    "images": [
     {
      "date": "2024-11-20",
@@ -8639,7 +8639,7 @@
    "sizeM": 5120,
    "tile": "MGRS-52TEL",
    "latest": "2026-10-10",
-   "checked": "2026-10-12T15:32Z",
+   "checked": "2026-10-19T13:37Z",
    "images": [
     {
      "date": "2024-11-12",
@@ -9409,7 +9409,7 @@
    "sizeM": 5120,
    "tile": "MGRS-52TDK",
    "latest": "2026-10-08",
-   "checked": "2026-10-12T15:32Z",
+   "checked": "2026-10-19T13:37Z",
    "images": [
     {
      "date": "2024-11-12",
@@ -10090,7 +10090,7 @@
    "sizeM": 5120,
    "tile": "MGRS-51TXE",
    "latest": "2026-10-11",
-   "checked": "2026-10-12T15:32Z",
+   "checked": "2026-10-19T13:37Z",
    "images": [
     {
      "date": "2024-11-20",
@@ -10744,7 +10744,7 @@
    "sizeM": 5120,
    "tile": "MGRS-51SYD",
    "latest": "2026-10-08",
-   "checked": "2026-10-12T15:32Z",
+   "checked": "2026-10-19T13:37Z",
    "images": [
     {
      "date": "2024-11-20",
