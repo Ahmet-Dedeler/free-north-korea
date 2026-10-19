@@ -1039,7 +1039,8 @@ a.card:hover {
   align-items: center;
   gap: 10px;
 }
-.footer-gh {
+.footer-gh,
+.footer-x {
   display: inline-flex;
   align-items: center;
   gap: 4px;
@@ -1051,7 +1052,8 @@ a.card:hover {
   font-weight: 600;
   text-decoration: none;
 }
-.footer-gh:hover {
+.footer-gh:hover,
+.footer-x:hover {
   background: rgb(255 255 255 / 0.08);
 }
 .footer-mark {

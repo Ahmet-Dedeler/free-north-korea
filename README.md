@@ -17,7 +17,8 @@ the history, and the groups you can actually help.
 **[Intel map](https://savenorthkorea.org/map)** ·
 **[North vs South](https://savenorthkorea.org/north-korea-vs-south-korea)** ·
 **[Data](https://savenorthkorea.org/data)** ·
-**[Take action](https://savenorthkorea.org/act)**
+**[Take action](https://savenorthkorea.org/act)** ·
+**[X](https://x.com/freenorthkorea)**
 
 </div>
 

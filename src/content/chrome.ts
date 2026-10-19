@@ -51,6 +51,7 @@ interface ChromeText {
   help: string;
   help_links: [string, string][];
   contribute: string;
+  xFollow: string;
   read: string;
   read_links: [string, string][];
   reviewed: (d: string) => string;
@@ -107,6 +108,7 @@ export const CHROME_TEXT: Record<Lang, ChromeText> = {
       ['/about', 'About this site'],
     ],
     contribute: 'Contribute on GitHub',
+    xFollow: 'Follow us on X',
     read: 'Read',
     read_links: [
       [LEARN.freed, 'How can North Korea be freed?'],
@@ -158,6 +160,7 @@ export const CHROME_TEXT: Record<Lang, ChromeText> = {
       ['/about', '이 사이트에 대해'],
     ],
     contribute: 'GitHub에서 참여하기',
+    xFollow: 'X에서 팔로우',
     read: '읽기',
     read_links: [
       [LEARN.freed, '북한은 어떻게 자유로워질 수 있을까?'],
@@ -209,6 +212,7 @@ export const CHROME_TEXT: Record<Lang, ChromeText> = {
       ['/about', 'このサイトについて'],
     ],
     contribute: 'GitHubで参加する',
+    xFollow: 'Xでフォロー',
     read: '読む',
     read_links: [
       [LEARN.freed, '北朝鮮はどうすれば自由になれるか'],
@@ -259,6 +263,7 @@ export const CHROME_TEXT: Record<Lang, ChromeText> = {
       ['/about', '关于本站'],
     ],
     contribute: '在 GitHub 上参与',
+    xFollow: '在 X 上关注',
     read: '阅读',
     read_links: [
       [LEARN.freed, '朝鲜怎样才能获得自由？'],

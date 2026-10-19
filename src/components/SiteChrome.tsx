@@ -7,11 +7,11 @@ import { useEffect, useRef, useState } from 'react';
 import { Check, ChevronDown, Menu, X } from 'lucide-react';
 import { CHROME_TEXT, LANG_NAMES, basePath, langOf, localize } from '@/content/chrome';
 import type { Lang } from '@/site/seo';
-import { REPO_URL, REVIEWED } from '../site/config';
+import { REPO_URL, REVIEWED, X_URL } from '../site/config';
 import { BRAND_BLUE, LOGO_STAR } from '../site/brand';
 import { Ext } from './Ext';
 import Flag from './Flag';
-import { GithubIcon } from './SocialIcon';
+import { GithubIcon, SocialIcon } from './SocialIcon';
 
 const LANGS: Lang[] = ['en', 'ko', 'ja', 'zh'];
 const HREFLANG: Record<string, Lang> = { en: 'en', ko: 'ko', ja: 'ja', 'zh-hans': 'zh' };
@@ -231,6 +231,10 @@ export default function SiteChrome({ children }: { children: ReactNode }) {
                 <Ext href={REPO_URL} className="footer-gh">
                   <GithubIcon />
                   {t.contribute}
+                </Ext>
+                <Ext href={X_URL} className="footer-x">
+                  <SocialIcon kind="x" size={14} />
+                  {t.xFollow}
                 </Ext>
                 <Link href={to('/act')} className="cta">
                   {t.cta}

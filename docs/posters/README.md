@@ -19,6 +19,9 @@ Photos in `img/` are from Wikimedia Commons (CC0, public domain, CC BY-SA 3.0); 
 in the footer. Leader portraits come from `public/img/people/` (licenses in `data/entities/people.json`).
 After rendering, the PNGs are reduced to 256 colours with Pillow to keep them under a few MB.
 
+Each poster is posted to X (`@freenorthkorea`) with a short text. The post format and the posts so far are in
+[`docs/brand/x.md`](../brand/x.md).
+
 Rebuild after a data refresh:
 
 ```bash
