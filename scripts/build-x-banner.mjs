@@ -4,113 +4,31 @@
  * from our own data files (public/data/test.en.json, data/sentinel.json) so the banner never drifts from
  * the site. The North Korea outline is taken from docs/brand/liberatenorthkorea-pfp.svg.
  *
- *   node scripts/build-x-banner.mjs
+ *   npm run brand:banner
  *
  * Writes docs/brand/x-banner-1500x500.png and docs/brand/x-banner-3000x1000.png.
  */
 import { chromium } from 'playwright-core';
-import { readFileSync, writeFileSync, mkdirSync, readdirSync } from 'node:fs';
 import path from 'node:path';
-import { fileURLToPath } from 'node:url';
 import { tmpdir } from 'node:os';
-import { execFileSync } from 'node:child_process';
+import { writeFileSync } from 'node:fs';
+import {
+  BRAND_BLUE,
+  BRAND_DIR,
+  STAR,
+  ICON_ROCKET,
+  ICON_SAT,
+  antonFontFile,
+  compress,
+  icon,
+  northKoreaPath,
+  siteFacts,
+  starField,
+} from './brand/shared.mjs';
 
-const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const out = path.join(root, 'docs/brand');
-mkdirSync(out, { recursive: true });
-
-const read = (p) => readFileSync(path.join(root, p), 'utf8');
-const readJson = (p) => JSON.parse(read(p));
-
-/** The site's own numbers, so the banner is never stale. */
-const tests = readJson('public/data/test.en.json');
-const launches = tests.timeBins.reduce((n, b) => n + b.data.length, 0);
-
-const sentinel = readJson('data/sentinel.json');
-const watchedSites = sentinel.sites.length;
-const images = sentinel.sites.reduce((n, s) => n + (s.images?.length ?? 0), 0);
-
-const siteUrl = read('src/site/config.ts').match(/SITE_URL\s*=\s*'([^']+)'/)[1];
-const host = siteUrl.replace(/^https?:\/\//, '').replace(/\/$/, '');
-
-/** North Korea outline, lifted from the old profile picture. */
-const pfp = read('docs/brand/liberatenorthkorea-pfp.svg');
-const mapPath = pfp.match(/<path d="([^"]+)"/)[1];
-
-/** Anton, self-hosted by next/font at build time. */
-const anton = read('src/app/layout.tsx').match(/next\/font\/google/);
-if (!anton) throw new Error('Anton import not found in src/app/layout.tsx');
-const fontFile = readdirFonts();
-
-function readdirFonts() {
-  const media = path.join(root, '.next/static/media');
-  const css = findCss();
-  const m = css.match(/font-family:Anton[^}]*?url\(\.\.\/media\/([^)]+\.woff2)\)/);
-  if (!m) throw new Error('Anton woff2 not found in .next/static/media (run a build first)');
-  return path.join(media, pickLatinFont(css));
-}
-
-function findCss() {
-  const dir = path.join(root, '.next/static/chunks');
-  for (const f of readdirSync(dir)) {
-    if (!f.endsWith('.css')) continue;
-    const css = readFileSync(path.join(dir, f), 'utf8');
-    if (css.includes('font-family:Anton')) return css;
-  }
-  throw new Error('no built CSS with Anton found in .next/static/chunks');
-}
-
-/** The latin subset, not the latin-ext one: the banner is all ASCII. */
-function pickLatinFont(css) {
-  const blocks = css.split('@font-face').filter((b) => b.includes('font-family:Anton'));
-  for (const b of blocks) {
-    if (/unicode-range:[^;]*(U\+0000-00FF|U\+\?\?)/.test(b)) {
-      const m = b.match(/url\(\.\.\/media\/([^)]+\.woff2)\)/);
-      if (m) return m[1];
-    }
-  }
-  const any = css.match(/font-family:Anton[^}]*?url\(\.\.\/media\/([^)]+\.woff2)\)/);
-  if (!any) throw new Error('Anton woff2 not found in the built CSS');
-  return any[1];
-}
-
-const BRAND_BLUE = '#1d4ed8';
-const STAR = 'M12 6.2l1.6 3.9 4.2.3-3.2 2.7 1 4.1L12 15l-3.6 2.2 1-4.1-3.2-2.7 4.2-.3z';
-
-const ICON_ROCKET = [
-  ['path', { d: 'M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5' }],
-  ['path', { d: 'M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09' }],
-  ['path', { d: 'M9 12a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.4 22.4 0 0 1-4 2z' }],
-  ['path', { d: 'M9 12H4s.55-3.03 2-4c1.62-1.08 5 .05 5 .05' }],
-];
-const ICON_SAT = [
-  ['path', { d: 'm13.5 6.5-3.148-3.148a1.205 1.205 0 0 0-1.704 0L6.352 5.648a1.205 1.205 0 0 0 0 1.704L9.5 10.5' }],
-  ['path', { d: 'M16.5 7.5 19 5' }],
-  ['path', { d: 'm17.5 10.5 3.148 3.148a1.205 1.205 0 0 1 0 1.704l-2.296 2.296a1.205 1.205 0 0 1-1.704 0L13.5 14.5' }],
-  ['path', { d: 'M9 21a6 6 0 0 0-6-6' }],
-  ['path', { d: 'M9.352 10.648a1.205 1.205 0 0 0 0 1.704l2.296 2.296a1.205 1.205 0 0 0 1.704 0l4.296-4.296a1.205 1.205 0 0 0 0-1.704l-2.296-2.296a1.205 1.205 0 0 0-1.704 0z' }],
-];
-
-const icon = (nodes, size, color) =>
-  `<svg width="${size}" height="${size}" viewBox="0 0 24 24" fill="none" stroke="${color}" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">${nodes
-    .map(([tag, a]) => `<${tag} d="${a.d}"/>`)
-    .join('')}</svg>`;
-
-/** Deterministic star field, so a rebuild gives the same file. */
-function stars(seed = 20261019) {
-  let s = seed;
-  const rnd = () => {
-    s = (s * 1664525 + 1013904223) % 4294967296;
-    return s / 4294967296;
-  };
-  return Array.from({ length: 90 }, () => {
-    const x = (rnd() * 1500).toFixed(1);
-    const y = (rnd() * 500).toFixed(1);
-    const r = (rnd() * 1.3 + 0.3).toFixed(2);
-    const o = (rnd() * 0.5 + 0.12).toFixed(2);
-    return `<circle cx="${x}" cy="${y}" r="${r}" fill="#9fc0ff" opacity="${o}"/>`;
-  }).join('');
-}
+const { launches, watchedSites, images, host } = siteFacts();
+const mapPath = northKoreaPath();
+const fontFile = antonFontFile();
 
 const html = `<!doctype html>
 <html><head><meta charset="utf-8"><style>
@@ -165,7 +83,7 @@ const html = `<!doctype html>
 </style></head>
 <body>
   <div class="glow"></div>
-  <svg class="stars" width="1500" height="500" xmlns="http://www.w3.org/2000/svg">${stars()}</svg>
+  <svg class="stars" width="1500" height="500" xmlns="http://www.w3.org/2000/svg">${starField(1500, 500, 90)}</svg>
   <div class="left">
     <div class="brand">
       <span class="mark"><svg viewBox="0 0 24 24"><path d="${STAR}" fill="#ffffff"/></svg></span>
@@ -205,14 +123,10 @@ for (const s of shots) {
   const page = await browser.newPage({ viewport: { width: s.width, height: s.height }, deviceScaleFactor: s.scale });
   await page.goto('file://' + tmpHtml);
   await page.waitForTimeout(1200);
-  await page.screenshot({ path: path.join(out, s.file) });
+  const file = path.join(BRAND_DIR, s.file);
+  await page.screenshot({ path: file });
   await page.close();
-  // Quantise in place, so a rebuild gives the same bytes: the night gradient costs a lot in 24-bit PNG.
-  try {
-    execFileSync('pngquant', ['--quality=85-100', '--speed', '1', '--force', '--output', path.join(out, s.file), path.join(out, s.file)], { stdio: 'ignore' });
-  } catch {
-    console.log('pngquant not found, keeping the full-size PNG');
-  }
+  compress(file);
   console.log('wrote', path.join('docs/brand', s.file));
 }
 await browser.close();

@@ -24,6 +24,8 @@ faces, no personal bios, no logo other than the site's (a white star on a blue d
 - `x-pfp-400.png`, `x-pfp-512.png`, `x-pfp-4096.png`: the profile picture. X takes PNG, not SVG, so the SVG
   (`public/favicon.svg`) is rendered to PNG. Blue stands for freedom; red is never used in the brand, only where
   it means danger.
+- The banner script reads the brand colours, the logo, the domain and the numbers through
+  `scripts/brand/shared.mjs`, which the YouTube banner uses too, so the two accounts cannot disagree.
 - `x-avatar-current.jpg`, `x-banner-current.jpg`: what X serves today (snapshot, 19 Oct 2026). Kept so the live
   assets can be compared or re-uploaded without hunting for them.
 

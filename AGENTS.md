@@ -170,6 +170,13 @@ before adding any page or article.
   The old red banner is gone; the red circle and white-K-outline files there are historical. The blue profile picture
   is `x-pfp-400.png` / `-512` / `-4096` (rendered from `public/favicon.svg`); X takes PNG, not SVG, so keep that in
   mind. `liberatenorthkorea-pfp.svg` is kept because the banner script lifts the North Korea outline from it.
+- The YouTube channel banner (`youtube-banner-2560x1440.png`) is built by `npm run brand:youtube`
+  (`scripts/build-youtube-banner.mjs`), with the channel avatar (`youtube-pfp-800.png`). Both banners read the
+  brand colours, the logo, the domain and the numbers through `scripts/brand/shared.mjs`, so the two accounts
+  cannot disagree. YouTube crops one file per device and never resizes it: it takes `y 508` to `y 932` of a
+  2560x1440 source (the 1546x423 safe area), so everything that matters sits in that band and the rest of the
+  canvas is the satellite texture. `docs/brand/crops/` holds what each device shows. `docs/brand/youtube.md`
+  has the details.
 - The X account is `@freenorthkorea` (`X_URL` in `site/config.ts`, linked from the footer). It carries one post per
   poster and nothing else. `docs/brand/x.md` holds the account details, the assets, the post format (a title line,
   then the context, then the numbers; no hashtags, no emoji, no em dashes, no link) and the posts so far. Add a new
