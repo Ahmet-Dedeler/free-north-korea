@@ -8,5 +8,5 @@ export const generateStaticParams = () => ZH_ARTICLES.map((a) => ({ slug: a.slug
 export default async function OgImage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const a = ZH_ARTICLES.find((x) => x.slug === slug);
-  return ogCard({ kicker: '深度解读', title: a?.h1 ?? '自由朝鲜', sub: a?.teaser });
+  return ogCard({ kicker: '深度解读', title: a?.h1 ?? '拯救朝鲜', sub: a?.teaser });
 }

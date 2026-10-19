@@ -1,23 +1,23 @@
 <div align="center">
 
-<a href="https://liberatenorthkorea.org"><img src="docs/readme/banner.png" alt="Free North Korea" width="100%"></a>
+<a href="https://savenorthkorea.org"><img src="docs/readme/banner.png" alt="Save North Korea" width="100%"></a>
 
 ### Understand North Korea. Help free its people.
 
 An open-source hub for the 26 million people living under the Kim regime: the map, the military picture, the data,
 the history, and the groups you can actually help.
 
-[![Live site](https://img.shields.io/badge/live-liberatenorthkorea.org-dc2626?style=flat-square)](https://liberatenorthkorea.org)
+[![Live site](https://img.shields.io/badge/live-savenorthkorea.org-dc2626?style=flat-square)](https://savenorthkorea.org)
 [![Data refresh](https://img.shields.io/github/actions/workflow/status/Ahmet-Dedeler/free-north-korea/check-sources.yml?label=weekly%20data%20refresh&style=flat-square)](.github/workflows/check-sources.yml)
 [![License](https://img.shields.io/badge/license-Apache%202.0-0f172a?style=flat-square)](LICENSE)
 ![Languages](https://img.shields.io/badge/languages-English%20·%20한국어%20·%20日本語%20·%20中文-2563eb?style=flat-square)
 ![No cookies](https://img.shields.io/badge/cookies-none-16a34a?style=flat-square)
 
-**[Open the site](https://liberatenorthkorea.org)** ·
-**[Intel map](https://liberatenorthkorea.org/map)** ·
-**[North vs South](https://liberatenorthkorea.org/north-korea-vs-south-korea)** ·
-**[Data](https://liberatenorthkorea.org/data)** ·
-**[Take action](https://liberatenorthkorea.org/act)**
+**[Open the site](https://savenorthkorea.org)** ·
+**[Intel map](https://savenorthkorea.org/map)** ·
+**[North vs South](https://savenorthkorea.org/north-korea-vs-south-korea)** ·
+**[Data](https://savenorthkorea.org/data)** ·
+**[Take action](https://savenorthkorea.org/act)**
 
 </div>
 
@@ -36,7 +36,7 @@ be freed" gave you close to nothing. So this puts it all in one place, open sour
 <table>
   <tr>
     <td width="50%" valign="top">
-      <a href="https://liberatenorthkorea.org/map"><img src="docs/readme/map.jpg" alt="Intel map"></a>
+      <a href="https://savenorthkorea.org/map"><img src="docs/readme/map.jpg" alt="Intel map"></a>
       <h3>🗺 Intel map</h3>
       Prison camps, detention centres, nuclear and missile sites, 421 markets, North Korean ports, the escape route
       through China, and human rights abuses counted per county, on a map or satellite basemap. Layers seen from
@@ -45,7 +45,7 @@ be freed" gave you close to nothing. So this puts it all in one place, open sour
       Click a camp or weapons site to scrub through two years of our own satellite images. Every point has a source.
     </td>
     <td width="50%" valign="top">
-      <a href="https://liberatenorthkorea.org/north-korea-vs-south-korea"><img src="docs/readme/north-vs-south.jpg" alt="North Korea vs South Korea"></a>
+      <a href="https://savenorthkorea.org/north-korea-vs-south-korea"><img src="docs/readme/north-vs-south.jpg" alt="North Korea vs South Korea"></a>
       <h3>📊 North vs South Korea</h3>
       Same people, split in 1945. Income, life expectancy, food, electricity, height and freedom, side by side.
       In 1990 both lived about 70 years. Then the famine hit.
@@ -53,14 +53,14 @@ be freed" gave you close to nothing. So this puts it all in one place, open sour
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <a href="https://liberatenorthkorea.org/missiles"><img src="docs/readme/missiles.jpg" alt="Missile tests"></a>
+      <a href="https://savenorthkorea.org/missiles"><img src="docs/readme/missiles.jpg" alt="Missile tests"></a>
       <h3>🚀 Missile tests</h3>
       Every launch since 1984 on an interactive map with flight paths, filters and a timeline. A redesign of
       <a href="https://github.com/nagix/nk-missile-tests">nagix/nk-missile-tests</a> (CNS database), plus a plain
-      <a href="https://liberatenorthkorea.org/missiles/list">table version</a>.
+      <a href="https://savenorthkorea.org/missiles/list">table version</a>.
     </td>
     <td width="50%" valign="top">
-      <a href="https://liberatenorthkorea.org/data"><img src="docs/readme/data.jpg" alt="Charts and data"></a>
+      <a href="https://savenorthkorea.org/data"><img src="docs/readme/data.jpg" alt="Charts and data"></a>
       <h3>📈 Charts & open data</h3>
       Our World in Data style charts: market prices and the won since 2009, defector arrivals, aid, missiles,
       sanctions, night lights since 2013 and how green the fields are each season since 2001, from satellites.
@@ -69,12 +69,12 @@ be freed" gave you close to nothing. So this puts it all in one place, open sour
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <a href="https://liberatenorthkorea.org/camps"><img src="docs/readme/camp.jpg" alt="Prison camps"></a>
+      <a href="https://savenorthkorea.org/camps"><img src="docs/readme/camp.jpg" alt="Prison camps"></a>
       <h3>⛓ Prison camps</h3>
       The kwanliso and kyohwaso system: who gets sent there, for what, and satellite views of each camp.
     </td>
     <td width="50%" valign="top">
-      <a href="https://liberatenorthkorea.org/kim-family-tree"><img src="docs/readme/family-tree.jpg" alt="Kim family tree"></a>
+      <a href="https://savenorthkorea.org/kim-family-tree"><img src="docs/readme/family-tree.jpg" alt="Kim family tree"></a>
       <h3>👥 The Kim family & people</h3>
       Who is around Kim Jong Un today, 87 profiles of officials with sourced claims, and hover cards everywhere a
       name comes up.
@@ -82,14 +82,14 @@ be freed" gave you close to nothing. So this puts it all in one place, open sour
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <a href="https://liberatenorthkorea.org/sanctions"><img src="docs/readme/sanctions.jpg" alt="Sanctions"></a>
+      <a href="https://savenorthkorea.org/sanctions"><img src="docs/readme/sanctions.jpg" alt="Sanctions"></a>
       <h3>🚫 Sanctions</h3>
       Everyone on the UN 1718 list, the US Treasury lists and the UK, EU and Japan lists, matched across lists and
       downloaded fresh every week from the official files. Plus the listed ships as their own radio signals show
       them: the names they use, the foreign ports they call at, and who calls at North Korea's ports.
     </td>
     <td width="50%" valign="top">
-      <a href="https://liberatenorthkorea.org"><img src="docs/readme/home.jpg" alt="Home"></a>
+      <a href="https://savenorthkorea.org"><img src="docs/readme/home.jpg" alt="Home"></a>
       <h3>🙋 Learn & act</h3>
       Sourced explainers on the questions people actually search for, a directory of 26 groups doing rescue,
       information and resettlement work, and things you can do in 10 minutes.

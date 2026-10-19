@@ -45,12 +45,12 @@ export const ABOUT_SOURCES = [
 
 export const ABOUT_TEXT: Record<Lang, AboutText> = {
   en: {
-    metaTitle: 'About: who runs Free North Korea and where the data comes from',
+    metaTitle: 'About: who runs Save North Korea and where the data comes from',
     metaDescription:
-      'Free North Korea is an open-source project run by volunteers, not by a company, government or NGO. Who writes it, how the data is collected, why it takes no money, and how to reach us.',
+      'Save North Korea is an open-source project run by volunteers, not by a company, government or NGO. Who writes it, how the data is collected, why it takes no money, and how to reach us.',
     eyebrow: 'About',
     h1: 'Who is behind this site',
-    lede: 'Free North Korea is an open-source project. A small group of volunteers builds it in the open, together with anyone who sends a fix on GitHub. No company, government or NGO runs it, and nobody pays for it.',
+    lede: 'Save North Korea is an open-source project. A small group of volunteers builds it in the open, together with anyone who sends a fix on GitHub. No company, government or NGO runs it, and nobody pays for it.',
     tiles: [
       { value: '0', label: 'ads, sponsors or donations' },
       { value: '0', label: 'cookies; page views are only counted anonymously' },
@@ -69,7 +69,7 @@ export const ABOUT_TEXT: Record<Lang, AboutText> = {
     ],
     notTitle: 'Not affiliated with anyone',
     not: [
-      'We are not Liberty in North Korea (LiNK), and not any other group this site links to. Our address is liberatenorthkorea.org; LiNK’s is libertyinnorthkorea.org.',
+      'We are not Liberty in North Korea (LiNK), and not any other group this site links to. Our address is savenorthkorea.org; LiNK’s is libertyinnorthkorea.org.',
       'We point readers to groups like LiNK because they do the work on the ground. We have no ties to any government.',
     ],
     dataTitle: 'How the data is collected',
@@ -96,12 +96,12 @@ export const ABOUT_TEXT: Record<Lang, AboutText> = {
   },
 
   ko: {
-    metaTitle: '소개: 자유 북한은 누가 만들고 데이터는 어디서 오나',
+    metaTitle: '소개: 북한 구원은 누가 만들고 데이터는 어디서 오나',
     metaDescription:
-      '자유 북한은 회사나 정부, NGO가 아니라 자원봉사자들이 운영하는 오픈소스 프로젝트입니다. 누가 쓰는지, 데이터를 어떻게 모으는지, 왜 돈을 받지 않는지, 어떻게 연락하는지 적었습니다.',
+      '북한 구원은 회사나 정부, NGO가 아니라 자원봉사자들이 운영하는 오픈소스 프로젝트입니다. 누가 쓰는지, 데이터를 어떻게 모으는지, 왜 돈을 받지 않는지, 어떻게 연락하는지 적었습니다.',
     eyebrow: '소개',
     h1: '이 사이트를 만드는 사람들',
-    lede: '자유 북한은 오픈소스 프로젝트입니다. 소수의 자원봉사자가 공개적으로 만들고, GitHub에서 수정을 보내는 누구나 함께 만듭니다. 회사도 정부도 NGO도 운영하지 않으며, 돈을 대는 곳도 없습니다.',
+    lede: '북한 구원은 오픈소스 프로젝트입니다. 소수의 자원봉사자가 공개적으로 만들고, GitHub에서 수정을 보내는 누구나 함께 만듭니다. 회사도 정부도 NGO도 운영하지 않으며, 돈을 대는 곳도 없습니다.',
     tiles: [
       { value: '0', label: '광고, 후원사, 기부금' },
       { value: '0', label: '쿠키. 페이지 조회수는 익명으로만 집계' },
@@ -120,7 +120,7 @@ export const ABOUT_TEXT: Record<Lang, AboutText> = {
     ],
     notTitle: '어느 단체와도 관계없음',
     not: [
-      '우리는 Liberty in North Korea(LiNK)가 아니며, 이 사이트가 링크하는 다른 어떤 단체도 아닙니다. 우리 주소는 liberatenorthkorea.org이고, LiNK는 libertyinnorthkorea.org입니다.',
+      '우리는 Liberty in North Korea(LiNK)가 아니며, 이 사이트가 링크하는 다른 어떤 단체도 아닙니다. 우리 주소는 savenorthkorea.org이고, LiNK는 libertyinnorthkorea.org입니다.',
       'LiNK 같은 단체를 소개하는 것은 그들이 현장에서 일을 하기 때문입니다. 우리는 어느 정부와도 관계가 없습니다.',
     ],
     dataTitle: '데이터를 모으는 방법',
@@ -147,12 +147,12 @@ export const ABOUT_TEXT: Record<Lang, AboutText> = {
   },
 
   ja: {
-    metaTitle: 'このサイトについて：自由北朝鮮を運営しているのは誰か、データはどこから来るか',
+    metaTitle: 'このサイトについて：北朝鮮を救う (Save North Korea) を運営しているのは誰か、データはどこから来るか',
     metaDescription:
-      '自由北朝鮮は、企業や政府、NGOではなく、ボランティアが運営するオープンソースのプロジェクトです。誰が書いているのか、データの集め方、お金を受け取らない理由、連絡の方法をまとめました。',
+      '北朝鮮を救う (Save North Korea) は、企業や政府、NGOではなく、ボランティアが運営するオープンソースのプロジェクトです。誰が書いているのか、データの集め方、お金を受け取らない理由、連絡の方法をまとめました。',
     eyebrow: 'このサイトについて',
     h1: 'このサイトを作っている人たち',
-    lede: '自由北朝鮮はオープンソースのプロジェクトです。少人数のボランティアが公開の場で作り、GitHubで修正を送ってくれる人なら誰でも加わっています。企業も政府もNGOも運営しておらず、お金を出しているところもありません。',
+    lede: '北朝鮮を救う (Save North Korea) はオープンソースのプロジェクトです。少人数のボランティアが公開の場で作り、GitHubで修正を送ってくれる人なら誰でも加わっています。企業も政府もNGOも運営しておらず、お金を出しているところもありません。',
     tiles: [
       { value: '0', label: '広告、スポンサー、寄付' },
       { value: '0', label: 'クッキー。閲覧数は匿名でのみ集計' },
@@ -171,7 +171,7 @@ export const ABOUT_TEXT: Record<Lang, AboutText> = {
     ],
     notTitle: 'どの団体とも関係ありません',
     not: [
-      '私たちはLiberty in North Korea（LiNK）ではなく、このサイトがリンクしている他のどの団体でもありません。私たちのアドレスはliberatenorthkorea.org、LiNKはlibertyinnorthkorea.orgです。',
+      '私たちはLiberty in North Korea（LiNK）ではなく、このサイトがリンクしている他のどの団体でもありません。私たちのアドレスはsavenorthkorea.org、LiNKはlibertyinnorthkorea.orgです。',
       'LiNKのような団体を紹介するのは、彼らが現場で活動しているからです。私たちはどの政府とも関係がありません。',
     ],
     dataTitle: 'データの集め方',
@@ -198,12 +198,12 @@ export const ABOUT_TEXT: Record<Lang, AboutText> = {
   },
 
   zh: {
-    metaTitle: '关于本站：谁在运营自由朝鲜，数据从哪里来',
+    metaTitle: '关于本站：谁在运营拯救朝鲜，数据从哪里来',
     metaDescription:
-      '自由朝鲜是一个由志愿者运营的开源项目，不属于任何公司、政府或非政府组织。这里说明谁在写、数据怎么收集、为什么不收钱，以及怎样联系我们。',
+      '拯救朝鲜是一个由志愿者运营的开源项目，不属于任何公司、政府或非政府组织。这里说明谁在写、数据怎么收集、为什么不收钱，以及怎样联系我们。',
     eyebrow: '关于',
     h1: '谁在做这个网站',
-    lede: '自由朝鲜是一个开源项目。一小群志愿者公开地建设它，任何在 GitHub 上提交修改的人也都参与其中。没有公司、政府或非政府组织在运营它，也没有人为它出钱。',
+    lede: '拯救朝鲜是一个开源项目。一小群志愿者公开地建设它，任何在 GitHub 上提交修改的人也都参与其中。没有公司、政府或非政府组织在运营它，也没有人为它出钱。',
     tiles: [
       { value: '0', label: '广告、赞助商或捐款' },
       { value: '0', label: 'cookie；页面浏览量只做匿名统计' },
@@ -222,7 +222,7 @@ export const ABOUT_TEXT: Record<Lang, AboutText> = {
     ],
     notTitle: '与任何机构都没有关系',
     not: [
-      '我们不是 Liberty in North Korea（LiNK），也不是本站链接的任何其他组织。我们的网址是 liberatenorthkorea.org，LiNK 的是 libertyinnorthkorea.org。',
+      '我们不是 Liberty in North Korea（LiNK），也不是本站链接的任何其他组织。我们的网址是 savenorthkorea.org，LiNK 的是 libertyinnorthkorea.org。',
       '我们向读者介绍 LiNK 这样的组织，是因为他们在一线做事。我们与任何政府都没有关系。',
     ],
     dataTitle: '数据怎么收集',

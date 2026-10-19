@@ -87,7 +87,7 @@ const readme = [
   '# Chart datasets',
   '',
   'Clean, dated time series about North Korea, rebuilt every week by `scripts/build-series.ts` and shown on',
-  '[liberatenorthkorea.org/data](https://liberatenorthkorea.org/data). Each CSV is tidy: `entity,time,value`.',
+  '[savenorthkorea.org/data](https://savenorthkorea.org/data). Each CSV is tidy: `entity,time,value`.',
   'Country entities use ISO codes (PRK North Korea, KOR South Korea, CHN China, JPN Japan, WLD world).',
   '',
   'Please credit the original source listed for each series, plus this project if our processing helped.',

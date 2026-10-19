@@ -1,7 +1,7 @@
 export { JA_ARTICLES } from '@/content/articles/ja';
 
 export const JA_HUB = {
-  title: '自由北朝鮮 (Free North Korea) | 北朝鮮の人権と自由のためのオープンソース・データハブ',
+  title: '北朝鮮を救う (Save North Korea) | 北朝鮮の人権と自由のためのオープンソース・データハブ',
   description:
     '北朝鮮の2,600万人の人々と日本人拉致被害者のためのオープンインテリジェンスハブ：政治犯収容所マップ、日本人拉致問題と帰還事業の記録、脱北ルート、40年間のミサイル実験データベース、支援団体一覧。',
   eyebrow: 'オープンソース・インテリジェンス',

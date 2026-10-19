@@ -81,7 +81,7 @@ export interface HomeText {
 
 export const HOME_TEXT: Record<Lang, HomeText> = {
   en: {
-    metaTitle: 'Free North Korea: understand North Korea, help its people',
+    metaTitle: 'Save North Korea: understand North Korea, help its people',
     metaDescription:
       'An open-source hub on North Korea: a map of prison camps and nuclear sites, military capability, every missile test, a library, and the organizations helping North Koreans, with clear ways to act.',
     headline: {
@@ -189,7 +189,7 @@ export const HOME_TEXT: Record<Lang, HomeText> = {
     buildCta: 'Contribute on GitHub',
   },
   ko: {
-    metaTitle: '자유 북한 (Free North Korea) | 북한 인권과 자유를 위한 오픈소스 정보 허브',
+    metaTitle: '북한 구원 (Save North Korea) | 북한 인권과 자유를 위한 오픈소스 정보 허브',
     metaDescription:
       '2,600만 북한 주민의 자유를 위한 오픈소스 인텔리전스 허브: 정치범수용소 지도, 탈북 경로, 미사일 발사 기록, 북한 핵심 인사 관계도, 탈북민 구출 및 지원 단체 안내.',
     headline: {
@@ -297,7 +297,7 @@ export const HOME_TEXT: Record<Lang, HomeText> = {
     buildCta: 'GitHub에서 기여하기',
   },
   ja: {
-    metaTitle: '自由北朝鮮 (Free North Korea) | 北朝鮮の現実を知り、自由を拓くためのオープンソース情報ハブ',
+    metaTitle: '北朝鮮を救う (Save North Korea) | 北朝鮮の現実を知り、自由を拓くためのオープンソース情報ハブ',
     metaDescription:
       '2600万人の北朝鮮住民の自由のためのオープンソース・インテリジェンス・ハブ：政治犯収容所マップ、脱出ルート、ミサイル発射記録、権力中枢の相関図、脱北者支援団体の案内。',
     headline: {
@@ -405,7 +405,7 @@ export const HOME_TEXT: Record<Lang, HomeText> = {
     buildCta: 'GitHubで貢献する',
   },
   zh: {
-    metaTitle: '自由朝鲜 (Free North Korea) | 了解朝鲜现实、帮助其人民获得自由的开源情报中心',
+    metaTitle: '拯救朝鲜 (Save North Korea) | 了解朝鲜现实、帮助其人民获得自由的开源情报中心',
     metaDescription:
       '为2600万朝鲜居民争取自由的开源情报中心：政治犯收容所地图、脱北路线、导弹试射记录、核心精英图谱以及脱北者援助机构指南。',
     headline: {

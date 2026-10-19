@@ -74,7 +74,7 @@ export function ogCard({ kicker, title, sub, stats }: { kicker?: string; title: 
               <circle cx="12" cy="12" r="10" fill={BRAND_BLUE} />
               <path d={LOGO_STAR} fill="#ffffff" />
             </svg>
-            Free North Korea
+            Save North Korea
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 14 }}>
             {kicker && <div style={{ fontSize: 30, fontWeight: 700, color: '#f87171', textTransform: 'uppercase', letterSpacing: 2 }}>{kicker}</div>}

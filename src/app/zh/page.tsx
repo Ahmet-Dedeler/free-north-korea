@@ -13,7 +13,7 @@ export const metadata = {
     lang: 'zh',
     languages: HUB_PATHS,
   }),
-  // the hub title already names the site, so skip the "| Free North Korea" template
+  // the hub title already names the site, so skip the "| Save North Korea" template
   title: { absolute: t.metaTitle },
 };
 

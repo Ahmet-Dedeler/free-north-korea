@@ -108,7 +108,7 @@ export default function SiteChrome({ children }: { children: ReactNode }) {
             <circle cx="12" cy="12" r="10" fill={BRAND_BLUE} />
             <path d={LOGO_STAR} fill="#fff" />
           </svg>
-          <span>Free North Korea</span>
+          <span>Save North Korea</span>
         </Link>
         <nav className="nav" id="site-nav" aria-label="Main">
           {t.nav.map((n) => (
@@ -183,7 +183,7 @@ export default function SiteChrome({ children }: { children: ReactNode }) {
                     <circle cx="12" cy="12" r="10" fill={BRAND_BLUE} />
                     <path d={LOGO_STAR} fill="#fff" />
                   </svg>
-                  Free North Korea
+                  Save North Korea
                 </Link>
                 <p>{t.about}</p>
                 <ul className="footer-langs">
@@ -265,7 +265,7 @@ export default function SiteChrome({ children }: { children: ReactNode }) {
                   </mask>
                 </defs>
                 <text x="0" y="121" fontSize="127" textLength="890" lengthAdjust="spacingAndGlyphs" fill="url(#mark-fade)">
-                  {'Free North Korea\u00A0'}
+                  {'Save North Korea\u00A0'}
                 </text>
                 <text x="892" y="121" fontSize="101" filter="url(#mark-gray)" mask="url(#mark-emoji-mask)">
                   &#x1F601;

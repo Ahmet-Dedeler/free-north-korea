@@ -58,7 +58,7 @@ export type ActText = {
 
 export const ACT_TEXT: Record<Lang, ActText> = {
   en: {
-    metaTitle: 'How to Help Free North Korea: Things You Can Do Today',
+    metaTitle: 'How to Help North Korea: Things You Can Do Today',
     metaDescription:
       'Practical ways to help North Koreans, sorted by how much time you have: mail USB drives, fund a $3,000 rescue, tutor escapees online, contact lawmakers, contribute code.',
     eyebrow: 'Take action',

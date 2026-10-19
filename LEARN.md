@@ -1,12 +1,12 @@
-# Learning Free North Korea
+# Learning Save North Korea
 
-This guide explains the architecture, design choices, and data workflows behind Free North Korea. It is written for students and developers interested in open-source intelligence (OSINT), web-based GIS (geospatial information systems), and high-performance multilingual web architecture.
+This guide explains the architecture, design choices, and data workflows behind Save North Korea. It is written for students and developers interested in open-source intelligence (OSINT), web-based GIS (geospatial information systems), and high-performance multilingual web architecture.
 
 ---
 
 ## 1. System Architecture
 
-Free North Korea is built as a **100% statically generated web application (SSG)** using:
+Save North Korea is built as a **100% statically generated web application (SSG)** using:
 - **Next.js 16 (App Router + Turbopack)**
 - **React 19 & TypeScript**
 - **MapLibre GL v6** for interactive vector cartography

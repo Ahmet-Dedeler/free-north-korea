@@ -2,7 +2,7 @@ import { latest } from '@/charts/data';
 import { OG_CONTENT_TYPE, OG_SIZE, ogCard } from '@/site/og';
 
 // Default share card. Pages with their own opengraph-image.tsx (articles, camps, people, places) override it.
-export const alt = 'Free North Korea: understand North Korea, help its people';
+export const alt = 'Save North Korea: understand North Korea, help its people';
 export const size = OG_SIZE;
 export const contentType = OG_CONTENT_TYPE;
 

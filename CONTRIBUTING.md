@@ -1,6 +1,6 @@
-# Contributing to Free North Korea
+# Contributing to Save North Korea
 
-Thank you for your interest in contributing. Free North Korea is an open-source hub for understanding North Korea and supporting human rights through verified open data, maps, and research.
+Thank you for your interest in contributing. Save North Korea is an open-source hub for understanding North Korea and supporting human rights through verified open data, maps, and research.
 
 Every page is statically generated (Next.js 16 App Router, Turbopack, TypeScript, MapLibre GL). There is no backend.
 

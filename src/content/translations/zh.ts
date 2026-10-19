@@ -1,7 +1,7 @@
 export { ZH_ARTICLES } from '@/content/articles/zh';
 
 export const ZH_HUB = {
-  title: '自由朝鲜 (Free North Korea) | 关于朝鲜人权与自由的开源数据中心',
+  title: '拯救朝鲜 (Save North Korea) | 关于朝鲜人权与自由的开源数据中心',
   description:
     '为朝鲜2,600万人的自由而建的开源情报中心：政治犯收容所地图、脱北路线、导弹试射记录、朝鲜权力人物关系图，以及营救和帮助脱北者的机构名录。',
   eyebrow: '开源情报中心',

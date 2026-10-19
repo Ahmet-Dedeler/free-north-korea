@@ -1,6 +1,6 @@
 /** Canonical origin used for <link rel=canonical>, Open Graph and the sitemap. */
-export const SITE_URL = 'https://liberatenorthkorea.org';
-export const SITE_NAME = 'Free North Korea';
+export const SITE_URL = 'https://savenorthkorea.org';
+export const SITE_NAME = 'Save North Korea';
 /**
  * Byline on the /learn explainers (they are written in the first person). The site itself speaks as a group;
  * /about explains the difference. Shown in the article header and as the Article JSON-LD author.

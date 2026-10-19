@@ -166,7 +166,7 @@ before adding any page or article.
   ("we"): volunteers and contributors, no company, government or NGO, no money taken. The /learn explainers carry one
   byline, `AUTHOR_NAME` in `site/config.ts` (also the Article JSON-LD author), and may say "I". No faces, photos or
   personal bios of the people behind the site: it is about the people of North Korea, and North Korean state hackers
-  target people who work on North Korea. Free North Korea (liberatenorthkorea.org) is not Liberty in North Korea
+  target people who work on North Korea. Save North Korea (savenorthkorea.org) is not Liberty in North Korea
   (libertyinnorthkorea.org); keep that clear wherever the two could be confused.
 - `/learn` and `/ko/learn`, `/ja/learn`, `/zh/learn` list each language's articles (`components/LearnIndex.tsx`).
 - Accessibility: small grey text uses `--ink-3`, tuned to pass WCAG AA (4.5:1) in both themes; don't lighten it.
@@ -175,7 +175,7 @@ before adding any page or article.
   `next.config.ts` to `app/md/[[...path]]`, which converts the built HTML with `site/markdown.ts`), `/llms.txt` and
   `/llms-full.txt`, `/.well-known/api-catalog` + `/openapi.json` for the people API, and `Link` headers on every
   response. New top-level pages go in the `PAGES` list of `app/llms.txt/route.ts`. Keep `openapi.json` in step with
-  `Person`. Check with `curl -X POST https://isitagentready.com/api/scan -d '{"url":"https://liberatenorthkorea.org"}'`.
+  `Person`. Check with `curl -X POST https://isitagentready.com/api/scan -d '{"url":"https://savenorthkorea.org"}'`.
 
 ## Languages (non-negotiable)
 

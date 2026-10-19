@@ -1,7 +1,7 @@
 export { KO_ARTICLES } from '@/content/articles/ko';
 
 export const KO_HUB = {
-  title: '자유 북한 (Free North Korea) | 북한 인권과 자유를 위한 오픈소스 정보 허브',
+  title: '북한 구원 (Save North Korea) | 북한 인권과 자유를 위한 오픈소스 정보 허브',
   description:
     '2,600만 북한 주민의 자유를 위한 오픈소스 인텔리전스 허브: 정치범수용소 지도, 탈북 경로, 미사일 발사 기록, 북한 핵심 인사 관계도, 탈북민 구출 및 지원 단체 안내.',
   eyebrow: '오픈소스 인텔리전스 허브',

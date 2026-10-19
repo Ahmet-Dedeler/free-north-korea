@@ -67,7 +67,7 @@ const LEARN = {
 
 export const CHROME_TEXT: Record<Lang, ChromeText> = {
   en: {
-    home: 'Free North Korea, home',
+    home: 'Save North Korea, home',
     nav: [
       { href: '/map', label: 'Map' },
       { href: '/watch', label: 'Watch' },
@@ -118,7 +118,7 @@ export const CHROME_TEXT: Record<Lang, ChromeText> = {
     issue: ['Found something wrong or out of date?', 'Open an issue', '. Code: Apache 2.0.'],
   },
   ko: {
-    home: '자유 북한, 홈',
+    home: '북한 구원, 홈',
     nav: [
       { href: '/map', label: '지도' },
       { href: '/watch', label: '워치' },
@@ -169,7 +169,7 @@ export const CHROME_TEXT: Record<Lang, ChromeText> = {
     issue: ['틀리거나 오래된 내용을 발견했나요?', '이슈 열기', '. 코드: Apache 2.0.'],
   },
   ja: {
-    home: '自由北朝鮮、ホーム',
+    home: '北朝鮮を救う、ホーム',
     nav: [
       { href: '/map', label: '地図' },
       { href: '/watch', label: 'ウォッチ' },
@@ -220,7 +220,7 @@ export const CHROME_TEXT: Record<Lang, ChromeText> = {
     issue: ['誤りや古い情報を見つけましたか？', 'Issueを開く', '。コード：Apache 2.0。'],
   },
   zh: {
-    home: '自由朝鲜，首页',
+    home: '拯救朝鲜，首页',
     nav: [
       { href: '/map', label: '地图' },
       { href: '/watch', label: '观察' },

@@ -11,8 +11,8 @@ Comprehensive audit of email outreach, current WHOIS/RDAP ownership, Wayback Mac
 | **`northkorea.org`** | Submitted offer via Saw.com form (~$1,000 min) | **REPLIED (Oct 6, 2026):** Broker Daniel Williams (`dan@saw.com`) replied that the owner declined and countered at **$55,000 USD** (listed price). | Way above the $2k budget, though we uncovered the owner's direct email (`dvlpmntltd@gmail.com`, DVLPMNT Marketing Inc. in Nevis) if you ever want to bypass the broker. |
 | **`freenorthkorea.com`** | Emailed WHOIS privacy proxy (`pwp-5f31a9e1849ce26beed371019d5fc167@privacyguardian.org`) on Sep 30; followed up Oct 5 | **No reply yet** (18 days). | `freenorthkorea.com` 302-redirects to `http://freeassange.com`, which has an active NameSilo **"Submit Offer"** form (`http://www.freeassange.com/offer`). Submitting there reaches the owner's NameSilo account directly. |
 | **`freenorthkorea.org`** | Not emailed yet (no email in WHOIS) | Registered via Squarespace Domains (TX, USA) through **Oct 2031**, renewed Aug 12, 2026. Currently has **no website** (NXDOMAIN). | Contact the registrant via Squarespace's official WHOIS contact form: `https://domains.squarespace.com/whois-contact-form` (enter `freenorthkorea.org`). |
-| **`liberatenorthkorea.org`** | Registered Oct 2, 2026 on Namecheap | **Owned by you & currently live.** | Keep live (and 301-redirect if you switch to a simpler primary domain). |
-| **`savenorthkorea.org`** | Registered Oct 18, 2026 on Namecheap | **Owned by you. DNS on Cloudflare (AhmetBuilds), 301 to `liberatenorthkorea.org`.** | Alias only; the site stays on `liberatenorthkorea.org`. |
+| **`liberatenorthkorea.org`** | Registered Oct 2, 2026 on Namecheap | **Owned by you. Was live Oct 2-19, 2026.** | From Oct 19, 2026: permanent (301/308) page-for-page redirect to `savenorthkorea.org`. Keep registered and redirecting indefinitely. |
+| **`savenorthkorea.org`** | Registered Oct 18, 2026 on Namecheap | **Owned by you. Primary domain and site name (Save North Korea) since Oct 19, 2026.** | Canonical domain. Was a 301 alias to `liberatenorthkorea.org` for its first day; the redirect was then reversed. |
 
 ---
 
@@ -24,9 +24,9 @@ Every domain below was verified against the authoritative PIR (`.org`) and Veris
 
 | Domain | `.org` Status | `.com` Status | Why It Works |
 | :--- | :--- | :--- | :--- |
-| **`savenorthkorea`** | **REGISTERED Oct 18, 2026 (Namecheap; Cloudflare DNS, 301 to `liberatenorthkorea.org`)** | Taken (Broken NGO site) | Simple, urgent 4-letter verb ("Save North Korea"). Formerly used in 2009 by 북한구원운동. (`.net` is also available.) |
+| **`savenorthkorea`** | **REGISTERED Oct 18, 2026 (Namecheap). Became the site's primary domain Oct 19, 2026.** | Taken (Broken NGO site) | Simple, urgent 4-letter verb ("Save North Korea"). Formerly used in 2009 by 북한구원운동. (`.net` is also available.) |
 | **`helpnorthkorea`** | **AVAILABLE ($10/yr)** | **AVAILABLE ($10/yr)** | **Both `.org` and `.com` are available.** "Help" is the simplest, most universal word in English, and owning both `.org` + `.com` for ~$20 total prevents any traffic leakage. |
-| **`freenorthkoreans`** | **AVAILABLE ($10/yr)** | **AVAILABLE ($10/yr)** | **Both `.org` and `.com` are available.** Keeps the word **"Free"** while putting the focus directly on the *people* ("Free North Koreans"). |
+| **`freenorthkoreans`** | **AVAILABLE ($10/yr)** | **AVAILABLE ($10/yr)** | **Both `.org` and `.com` are available.** Keeps the word **"Free"** while putting the focus directly on the *people* ("Save North Koreans"). |
 | **`opennorthkorea`** | **AVAILABLE ($10/yr)** | **AVAILABLE ($10/yr)** | **Both `.org` and `.com` are available.** Double meaning: opening up a closed country + open-source data/satellite transparency. |
 | **`watchnorthkorea`** | **AVAILABLE ($10/yr)** | **AVAILABLE ($10/yr)** | **Both `.org` and `.com` are available.** Also **`northkoreawatch.org`** is available. Matches Camp Watch, satellite imagery, and `/watch`. |
 | **`freekorea`** | **AVAILABLE ($10/yr)** | Taken | Only 9 letters (`freekorea.org`). Ultra-short and iconic. |

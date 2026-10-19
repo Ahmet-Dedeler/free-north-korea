@@ -52,7 +52,7 @@ export const DATA_TEXT: Record<
     csv: 'CSV',
     latestLabel: 'Latest',
     citeTitle: 'How to cite',
-    cite: (title, url, source, year) => `Free North Korea (${year}). “${title}”. Data from ${source}. ${url}`,
+    cite: (title, url, source, year) => `Save North Korea (${year}). “${title}”. Data from ${source}. ${url}`,
     licenseTitle: 'License',
     license:
       'Our code and processing are Apache-2.0. Each dataset keeps its original license (shown next to the source). Please credit the original source first, and us if our cleanup saved you time.',
@@ -85,7 +85,7 @@ export const DATA_TEXT: Record<
     csv: 'CSV',
     latestLabel: '최신',
     citeTitle: '인용 방법',
-    cite: (title, url, source, year) => `Free North Korea (${year}). 「${title}」. 자료: ${source}. ${url}`,
+    cite: (title, url, source, year) => `Save North Korea (${year}). 「${title}」. 자료: ${source}. ${url}`,
     licenseTitle: '라이선스',
     license:
       '코드와 가공은 Apache-2.0입니다. 각 데이터셋은 원래 라이선스를 따릅니다(출처 옆에 표시). 원 출처를 먼저, 그리고 정리 작업이 도움이 되었다면 저희도 밝혀 주세요.',
@@ -118,7 +118,7 @@ export const DATA_TEXT: Record<
     csv: 'CSV',
     latestLabel: '最新',
     citeTitle: '引用のしかた',
-    cite: (title, url, source, year) => `Free North Korea (${year}). 「${title}」. データ: ${source}. ${url}`,
+    cite: (title, url, source, year) => `Save North Korea (${year}). 「${title}」. データ: ${source}. ${url}`,
     licenseTitle: 'ライセンス',
     license:
       'コードと加工はApache-2.0です。各データセットは元のライセンスに従います（出典の横に表示）。まず元の出典を、そして整理が役に立ったなら私たちのことも書いてください。',
@@ -151,7 +151,7 @@ export const DATA_TEXT: Record<
     csv: 'CSV',
     latestLabel: '最新',
     citeTitle: '引用方式',
-    cite: (title, url, source, year) => `Free North Korea (${year}).《${title}》. 数据来源：${source}. ${url}`,
+    cite: (title, url, source, year) => `Save North Korea (${year}).《${title}》. 数据来源：${source}. ${url}`,
     licenseTitle: '许可协议',
     license:
       '我们的代码和处理流程采用Apache-2.0。每个数据集沿用其原始许可（标在来源旁边）。请先注明原始来源；如果我们的整理帮你省了时间，也请提一下我们。',
