@@ -162,6 +162,14 @@ before adding any page or article.
   It used to be the same star on a red disc, which is the emblem on North Korea's own flag, so at a glance the site
   looked pro-regime. Keep the logo blue: no red stars, red discs or other regime colours in branding. Red stays only
   where it means danger (camps, the Take action button, North Korea's colour in charts).
+- Social assets live in `docs/brand/`. The X banner (`x-banner-1500x500.png` and the 2x `x-banner-3000x1000.png`) is
+  built by `npm run brand:banner` (`scripts/build-x-banner.mjs`): it renders the site's own brand colours, takes the
+  domain from `src/site/config.ts` and the numbers from our data files (`public/data/test.en.json` for launches,
+  `data/sentinel.json` for watched sites and images), so the banner never drifts from the site. X overlays the
+  profile picture on the banner's bottom-left, so the banner keeps that corner empty and puts the URL at the top.
+  The old red banner is gone; the red circle and white-K-outline files there are historical. The blue profile picture
+  is `x-pfp-400.png` / `-512` / `-4096` (rendered from `public/favicon.svg`); X takes PNG, not SVG, so keep that in
+  mind. `liberatenorthkorea-pfp.svg` is kept because the banner script lifts the North Korea outline from it.
 - Who is behind it: `/about` (`components/AboutPage.tsx`, text in `content/about.ts`). The site speaks as a group
   ("we"): volunteers and contributors, no company, government or NGO, no money taken. The /learn explainers carry one
   byline, `AUTHOR_NAME` in `site/config.ts` (also the Article JSON-LD author), and may say "I". No faces, photos or
