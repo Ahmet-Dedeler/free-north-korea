@@ -1,16 +1,33 @@
 {
- "fetched": "2026-10-19",
+ "fetched": "2026-10-20",
  "oldestListed": "2025-10-24",
  "coverage": {
   "from": "2025-10-10",
-  "to": "2026-10-17"
+  "to": "2026-10-20"
  },
  "lastAppearance": {
-  "date": "2026-10-11",
-  "id": "e6a262ae36739c46ecd3505ad4b4f68a",
-  "title": "National Defence Revolution Museum Inaugurated in DPRK"
+  "date": "2026-10-19",
+  "id": "a1aa4999d4d6e3129717a015272723eb",
+  "title": "Respected Comrade Kim Jong Un Goes round Venue of Garment and Footwear Exhibition in Light Industry"
  },
  "records": [
+  {
+   "id": "a1aa4999d4d6e3129717a015272723eb",
+   "url": "http://www.kcna.kp/en/article/detail/a1aa4999d4d6e3129717a015272723eb",
+   "reportDate": "2026-10-20",
+   "title": "Respected Comrade Kim Jong Un Goes round Venue of Garment and Footwear Exhibition in Light Industry",
+   "eventDate": "2026-10-19",
+   "eventDateFrom": "text",
+   "appearance": true,
+   "kind": "public",
+   "speech": false,
+   "subject": "Goes round Venue of Garment and Footwear Exhibition in Light Industry",
+   "companions": [],
+   "present": [],
+   "daughter": false,
+   "wife": false,
+   "titleKo": "경애하는 김정은동지께서 경공업부문 피복,신발전시회장을 돌아보시였다"
+  },
   {
    "id": "e6a262ae36739c46ecd3505ad4b4f68a",
    "url": "http://www.kcna.kp/en/article/detail/e6a262ae36739c46ecd3505ad4b4f68a",
