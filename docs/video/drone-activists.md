@@ -2,8 +2,8 @@
 
 Faceless, AI-narrated YouTube explainer made from the article. Plan written 2026-10-18; first cut built 2026-10-19 in
 `~/Code/free-north-korea-videos/drone-activists` (HyperFrames project, its README says how to rebuild). The current cut
-is **v8.1, 12:54, 1920x1080** (`renders/drone-activists-v8.1-final.mp4` in that folder, upload text in its `youtube.md`);
-what changed from v7 (and in v8.1) is in its `docs/v8-notes.md`: a question opens each chapter, the cold open asks "So who did it?",
+is **v8.2, 12:54, 1920x1080** (`renders/drone-activists-v8.2-final.mp4` in that folder, upload text in its `youtube.md`);
+what changed from v7 (and in v8.1, v8.2) is in its `docs/v8-notes.md`: a question opens each chapter, the cold open asks "So who did it?",
 a comments outro, the route camera locked onto the plane, and rigged 3D reconstructions of the office meeting and the
 podcast (Blender, MakeHuman bodies with mannequin faces). Voice picked by
 ear: MiniMax Speech 2.8 HD, `English_Trustworth_Man`. The video adds one fact the article lacks: on June 12, 2026 the
