@@ -1,6 +1,16 @@
 {
  "category": [
   {
+   "id": "922c67bdd9f34fe580d343563b85a42e",
+   "title": "Respected Comrade Kim Jong Un Visits Dandong City, Liaoning Province of PRC",
+   "date": "2026-10-25"
+  },
+  {
+   "id": "448e1f6e97818d709ba8997d086d26bb",
+   "title": "Third Meeting of KPA Company Leaders Held",
+   "date": "2026-10-24"
+  },
+  {
    "id": "a1aa4999d4d6e3129717a015272723eb",
    "title": "Respected Comrade Kim Jong Un Goes round Venue of Garment and Footwear Exhibition in Light Industry",
    "date": "2026-10-20"
@@ -1117,6 +1127,101 @@
   }
  ],
  "search": [
+  {
+   "id": "569745c91a88802f633e003f42638895",
+   "title": "Founding Anniversary of Kulloja Marked in DPRK",
+   "date": "2026-10-26"
+  },
+  {
+   "id": "fdf74246db7f7f0dedd32b1d63280b7e",
+   "title": "Meetings Held at Universities and Schools across DPRK",
+   "date": "2026-10-26"
+  },
+  {
+   "id": "24b912427b77811503415a5550a96390",
+   "title": "Heroic Feats Performed by CPV Soldiers in Korean War",
+   "date": "2026-10-25"
+  },
+  {
+   "id": "c045d2fb4283ad25f0f38dc593803580",
+   "title": "Nordic Regional Seminar for Friendship with Korean People Held",
+   "date": "2026-10-25"
+  },
+  {
+   "id": "2e40d11c81d39fa4fffe0453252050ab",
+   "title": "Performance of Schoolchildren in Pyongyang",
+   "date": "2026-10-24"
+  },
+  {
+   "id": "16e174c4fd4a1881360b1f0ed40680d6",
+   "title": "Taste of Hot Spring Water",
+   "date": "2026-10-24"
+  },
+  {
+   "id": "55f79430e2aa6c0e5ff15fdd8534a11b",
+   "title": "Joint Seminar Held in Brazil",
+   "date": "2026-10-23"
+  },
+  {
+   "id": "443135a8cbe9398a98c3b55344b52046",
+   "title": "Meetings in Field of Education Take Place in Provinces",
+   "date": "2026-10-23"
+  },
+  {
+   "id": "9924230749f20ac5e43c529c2ebc1581",
+   "title": "50th Founding Anniversary of Jangjasan Revolutionary Museum Marked in DPRK",
+   "date": "2026-10-22"
+  },
+  {
+   "id": "07438bc01688bc445305a57d3c1bf6c2",
+   "title": "Birthday Spread to Woman Centenarian in Kangwon Province",
+   "date": "2026-10-22"
+  },
+  {
+   "id": "55520ae428db7f10b8fa663503a8ed37",
+   "title": "National Garment and Footwear Exhibition Opens",
+   "date": "2026-10-22"
+  },
+  {
+   "id": "73eeeeab2f63e82feae5694a75c22f46",
+   "title": "Respected Comrade Kim Jong Un Receives Reply Message from Chinese President",
+   "date": "2026-10-22"
+  },
+  {
+   "id": "cc5cc3bea34623cad40a88ad0a8603d6",
+   "title": "Sokhu Pepper",
+   "date": "2026-10-22"
+  },
+  {
+   "id": "f3e8ebd248d3e9a89f77fc3eea7e3c12",
+   "title": "Worthwhile Life of Blessed Woman of Merit",
+   "date": "2026-10-22"
+  },
+  {
+   "id": "6695f38bbba7b1498df831fd0f23c134",
+   "title": "Birthday Spread to Woman Centenarian",
+   "date": "2026-10-21"
+  },
+  {
+   "id": "bd7a299076f93b845bfd772ab5f4aca7",
+   "title": "Mirae Scientists Street",
+   "date": "2026-10-21"
+  },
+  {
+   "id": "45e56d12bb6648918d605c7f13c35460",
+   "title": "Educational Workers and Students in Pyongyang Meet",
+   "date": "2026-10-20"
+  },
+  {
+   "id": "de0bed1c803c12b0dd09a6baed3e2fae",
+   "title": "Reply Message to Respected Comrade Kim Jong Un from Vietnamese President",
+   "date": "2026-10-20"
+  },
+  {
+   "id": "3a39eba53c3c902eec82a0d331a8c2de",
+   "title": "WPK Founding Anniversary Marked Abroad",
+   "date": "2026-10-20"
+  },
   {
    "id": "c03a728fcda5dfd050d189567defd4fe",
    "title": "DPRK Embassy in Moscow Hosts Reception",
@@ -7133,9 +7238,9 @@
    "date": "2025-10-10"
   }
  ],
- "categoryFetched": "2026-10-20",
- "oldestListed": "2025-10-24",
- "searchFetched": "2026-10-19",
+ "categoryFetched": "2026-10-26",
+ "oldestListed": "2025-10-31",
+ "searchFetched": "2026-10-26",
  "titlesKo": {
   "2bd661f15c5178018e860a9ce35e555d": "동부지역에서 전략미싸일발사훈련 진행",
   "736fce24e6b4e2410cc643b05e133ed5": "경애하는 김정은동지께서 김일성종합대학의 교원,연구사들과 기념사진을 찍으시였다",
@@ -7359,6 +7464,8 @@
   "c546170b2fa45d2dafcb235ef3a1bd87": "조선로동당창건 80돐경축 로씨야예술인들의 공연 진행",
   "81d1cc992751a979ee10be7d5d14c786": "조선로동당창건 81돐 경축공연 진행",
   "e6a262ae36739c46ecd3505ad4b4f68a": "조선로동당창건 81돐에 즈음하여 제2경제위원회 국방혁명박물관 개관식 성대히 진행",
-  "a1aa4999d4d6e3129717a015272723eb": "경애하는 김정은동지께서 경공업부문 피복,신발전시회장을 돌아보시였다"
+  "a1aa4999d4d6e3129717a015272723eb": "경애하는 김정은동지께서 경공업부문 피복,신발전시회장을 돌아보시였다",
+  "922c67bdd9f34fe580d343563b85a42e": "경애하는 김정은동지께서 중화인민공화국 료녕성 단동시를 방문하시였다",
+  "448e1f6e97818d709ba8997d086d26bb": "조선인민군 제3차 중대장대회 진행"
  }
 }

@@ -1,11 +1,11 @@
 {
  "_doc": "Built by scripts/build-series.ts. Do not edit by hand; hand-checked numbers go in data/series/curated/.",
- "built": "2026-10-12",
+ "built": "2026-10-26",
  "sources": {
   "owid": "2026-10-05",
-  "dailynk": "2026-10-12",
-  "government": "2026-10-05",
-  "local": "2026-10-12"
+  "dailynk": "2026-10-26",
+  "government": "2026-10-26",
+  "local": "2026-10-26"
  },
  "series": [
   {
@@ -8980,7 +8980,7 @@
     "url": "https://www.data.go.kr/data/15106185/fileData.do",
     "license": "KOGL Type 1 (public)"
    },
-   "fetched": "2026-10-05",
+   "fetched": "2026-10-26",
    "updated": "2026-09-30",
    "note": "Counted when people reach South Korea, which can be years after they left North Korea. 2002 onward; earlier years are only published as multi-year totals.",
    "pointSources": [
@@ -21701,7 +21701,7 @@
     "url": "https://fts.unocha.org/countries/115/summary/2025",
     "license": "CC BY 4.0"
    },
-   "fetched": "2026-10-05",
+   "fetched": "2026-10-26",
    "note": "Money reported to the UN as received for humanitarian work in North Korea, by the year it was meant for. 2026 is the year so far."
   },
   {
@@ -24057,7 +24057,7 @@
     "url": "https://github.com/nagix/nk-missile-tests",
     "license": "MIT"
    },
-   "fetched": "2026-10-12",
+   "fetched": "2026-10-26",
    "updated": "2026-10-12",
    "note": "Each missile counts once, so a salvo of four is four. Medium range includes intermediate-range and hypersonic glide missiles; \"other\" is submarine-launched missiles, satellite launches and unknown types. 2026 runs to 2026-10-12."
   },
@@ -28585,7 +28585,7 @@
     "name": "Daily NK market price survey",
     "url": "https://www.dailynk.com/english/category/market-indicators/"
    },
-   "fetched": "2026-10-12",
+   "fetched": "2026-10-26",
    "note": "Prices before the November 2009 currency reform were in old won; we divided them by 100 so the line is continuous.",
    "id": "rice-price",
    "title": "Market price of rice",
@@ -29971,6 +29971,10 @@
      [
       "2026-10-11",
       43500
+     ],
+     [
+      "2026-10-25",
+      51700
      ]
     ],
     "sinuiju": [
@@ -31353,6 +31357,10 @@
      [
       "2026-10-11",
       43700
+     ],
+     [
+      "2026-10-25",
+      51800
      ]
     ],
     "hyesan": [
@@ -32735,6 +32743,10 @@
      [
       "2026-10-11",
       43800
+     ],
+     [
+      "2026-10-25",
+      52000
      ]
     ]
    }
@@ -32923,7 +32935,7 @@
     "url": "https://www.un.org/securitycouncil/sanctions/1718",
     "license": "public"
    },
-   "fetched": "2026-10-12",
+   "fetched": "2026-10-26",
    "note": "By the date each name was added. Russia and China have blocked new listings since 2018."
   },
   {
@@ -33311,7 +33323,7 @@
     "name": "Daily NK market price survey",
     "url": "https://www.dailynk.com/english/category/market-indicators/"
    },
-   "fetched": "2026-10-12",
+   "fetched": "2026-10-26",
    "note": "Prices before the November 2009 currency reform were in old won; we divided them by 100 so the line is continuous.",
    "id": "won-per-dollar",
    "title": "Market exchange rate: North Korean won per US dollar",
@@ -34693,6 +34705,10 @@
      [
       "2026-10-11",
       71200
+     ],
+     [
+      "2026-10-25",
+      69200
      ]
     ],
     "sinuiju": [
@@ -36071,6 +36087,10 @@
      [
       "2026-10-11",
       71220
+     ],
+     [
+      "2026-10-25",
+      69210
      ]
     ],
     "hyesan": [
@@ -37449,6 +37469,10 @@
      [
       "2026-10-11",
       71230
+     ],
+     [
+      "2026-10-25",
+      70000
      ]
     ]
    }

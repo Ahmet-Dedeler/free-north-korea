@@ -1,12 +1,12 @@
 {
  "_doc": "Built by scripts/build-sanctions.ts from the live UN, US, UK, EU and Japanese lists. Do not edit by hand.",
- "fetched": "2026-10-19",
+ "fetched": "2026-10-26",
  "sources": {
   "un": "https://scsanctions.un.org/resources/xml/en/consolidated.xml",
   "ofac": "https://www.treasury.gov/ofac/downloads/sdn.csv",
   "uk": "https://sanctionslist.fcdo.gov.uk/docs/UK-Sanctions-List.xml",
   "eu": "https://webgate.ec.europa.eu/fsd/fsf/public/files/xmlFullSanctionsList_1_1/content?token=dG9rZW4tMjAxNw",
-  "jp": "https://www.mof.go.jp/policy/international_policy/gaitame_kawase/gaitame/economic_sanctions/shisantouketsu20261014.csv"
+  "jp": "https://www.mof.go.jp/policy/international_policy/gaitame_kawase/gaitame/economic_sanctions/shisantouketsu20261021.csv"
  },
  "pages": {
   "uk": "https://www.gov.uk/government/publications/the-uk-sanctions-list",
@@ -14,7 +14,7 @@
   "jp": "https://www.mof.go.jp/policy/international_policy/gaitame_kawase/gaitame/economic_sanctions/list.html"
  },
  "un": {
-  "generated": "2026-10-17",
+  "generated": "2026-10-24",
   "individuals": [
    {
     "ref": "KPi.001",
@@ -4629,14 +4629,6 @@
    ]
   },
   {
-   "id": "34024",
-   "name": "Lu Hezheng",
-   "kind": "individual",
-   "programs": [
-    "DPRK3"
-   ]
-  },
-  {
    "id": "52173",
    "name": "Lu Huaying",
    "kind": "individual",
@@ -4850,14 +4842,6 @@
   {
    "id": "30083",
    "name": "Mokran Llc",
-   "kind": "entity",
-   "programs": [
-    "DPRK3"
-   ]
-  },
-  {
-   "id": "31042",
-   "name": "Moxing Cartoon",
    "kind": "entity",
    "programs": [
     "DPRK3"
@@ -6191,14 +6175,6 @@
    ]
   },
   {
-   "id": "34025",
-   "name": "Shanghai Hongman Cartoon And Animation Design Studio",
-   "kind": "entity",
-   "programs": [
-    "DPRK3"
-   ]
-  },
-  {
    "id": "23769",
    "name": "Shen Zhong International Shpg",
    "kind": "entity",
@@ -7027,8 +7003,8 @@
  ],
  "national": {
   "uk": {
-   "fetched": "2026-10-19",
-   "published": "2026-10-16",
+   "fetched": "2026-10-26",
+   "published": "2026-10-26",
    "file": "https://sanctionslist.fcdo.gov.uk/docs/UK-Sanctions-List.xml",
    "entries": [
     {
@@ -10567,18 +10543,18 @@
    ]
   },
   "eu": {
-   "fetched": "2026-10-19",
-   "published": "2026-10-15",
+   "fetched": "2026-10-26",
+   "published": "2026-10-23",
    "file": "https://webgate.ec.europa.eu/fsd/fsf/public/files/xmlFullSanctionsList_1_1/content?token=dG9rZW4tMjAxNw",
    "entries": [
     {
      "id": "EU.4187.20",
-     "name": "‘komid’",
+     "name": "Changgwang Sinyong Corporation",
      "aliases": [
-      "Dprkn Mining Development Trading Cooperation",
       "External Technology General Corporation",
-      "Changgwang Sinyong Corporation",
-      "Korea Mining Development Trading Corporation"
+      "Korea Mining Development Trading Corporation",
+      "‘komid’",
+      "Dprkn Mining Development Trading Cooperation"
      ],
      "kind": "entity",
      "listed": "2009-04-24",
@@ -10588,10 +10564,10 @@
     },
     {
      "id": "EU.4188.82",
-     "name": "Korea Yonbong General Corporation",
+     "name": "Lyon-Gaksan General Trading Corporation",
      "aliases": [
-      "Korea Ryonbong General Corporation",
-      "Lyon-Gaksan General Trading Corporation"
+      "Korea Yonbong General Corporation",
+      "Korea Ryonbong General Corporation"
      ],
      "kind": "entity",
      "listed": "2009-04-24",
@@ -10602,9 +10578,9 @@
     },
     {
      "id": "EU.4189.47",
-     "name": "Changgwang Credit Bank",
+     "name": "Korea Changgwang Credit Bank",
      "aliases": [
-      "Korea Changgwang Credit Bank",
+      "Changgwang Credit Bank",
       "Tanchon Commercial Bank"
      ],
      "kind": "entity",
@@ -10615,9 +10591,9 @@
     },
     {
      "id": "EU.4008.12",
-     "name": "Ri Je-son",
+     "name": "Ri Che son",
      "aliases": [
-      "Ri Che son"
+      "Ri Je-son"
      ],
      "kind": "individual",
      "listed": "2009-07-16",
@@ -10685,9 +10661,9 @@
     },
     {
      "id": "EU.4202.55",
-     "name": "Hong Kong Electronics",
+     "name": "Hong Kong Electronics Kish Co",
      "aliases": [
-      "Hong Kong Electronics Kish Co"
+      "Hong Kong Electronics"
      ],
      "kind": "entity",
      "listed": "2009-07-16"
@@ -10720,13 +10696,13 @@
     },
     {
      "id": "EU.4205.47",
-     "name": "Ryungseng Trading Corporation",
+     "name": "Korean Tangun Trading Corporation",
      "aliases": [
-      "Kuryonggang Trading Corporation",
-      "Korean Tangun Trading Corporation",
-      "Ryung Seng Trading Corporation",
+      "Ryungsong Trading Corporation",
       "Kore Kuryonggang Trading Corporation",
-      "Ryungsong Trading Corporation"
+      "Kuryonggang Trading Corporation",
+      "Ryung Seng Trading Corporation",
+      "Ryungseng Trading Corporation"
      ],
      "kind": "entity",
      "listed": "2009-07-16"
@@ -10848,12 +10824,12 @@
     },
     {
      "id": "EU.4159.44",
-     "name": "Kim Young-Chul",
+     "name": "Kim Yong Chol",
      "aliases": [
+      "Kim Yong-Chol",
+      "Kim Young-Chul",
       "Kim Young-Cheol",
-      "Kim Young-Chol",
-      "Kim Yong Chol",
-      "Kim Yong-Chol"
+      "Kim Young-Chol"
      ],
      "kind": "individual",
      "listed": "2011-12-19",
@@ -10914,13 +10890,13 @@
     },
     {
      "id": "EU.3427.5",
-     "name": "Ra Ky’ong-Su",
+     "name": "Ra Kyong-Su",
      "aliases": [
-      "Chang Myo'ng-Ho",
-      "Chang Myong-Ho",
-      "Ra Kyong-Su",
+      "Ra Ky’ong-Su",
       "Ra Kyung-Su",
-      "Chang Myong Ho"
+      "Chang Myong Ho",
+      "Chang Myong-Ho",
+      "Chang Myo'ng-Ho"
      ],
      "kind": "individual",
      "listed": "2013-01-22",
@@ -10977,25 +10953,25 @@
     },
     {
      "id": "EU.4062.34",
-     "name": "Huichon Ryonha Machinery General Plant",
+     "name": "Korea Ryonha Machinery Joint Venture Corporation",
      "aliases": [
-      "Ryonhwa Machinery JV",
-      "Unsan Solid Tools",
+      "Chosun Yunha Machinery Joint Operation Company",
       "Millim Technology Company",
-      "Unsan",
-      "Ryonhwa Machinery Joint Venture Corporation",
-      "Ryonha Machinery Corp"
+      "Unsan Solid Tools",
+      "Korea Ryenha Machinery J/V Corporation",
+      "Ryonha Machinery Joint Venture Corporation",
+      "Ryonha Machinery Corporation"
      ],
      "kind": "entity",
      "listed": "2013-01-22"
     },
     {
      "id": "EU.4063.96",
-     "name": "Tongbang U'Nhaeng",
+     "name": "Bank of East Land",
      "aliases": [
-      "Tongbang Bank",
       "Dongbang Bank",
-      "Bank of East Land"
+      "Tongbang U'Nhaeng",
+      "Tongbang Bank"
      ],
      "kind": "entity",
      "listed": "2013-01-22",
@@ -11213,11 +11189,11 @@
     },
     {
      "id": "EU.3319.66",
-     "name": "Reconnaissance General Bureau",
+     "name": "Rgb",
      "aliases": [
-      "Chongch’al Ch’ongguk",
-      "Rgb",
-      "KPA Unit 586"
+      "KPA Unit 586",
+      "Reconnaissance General Bureau",
+      "Chongch’al Ch’ongguk"
      ],
      "kind": "entity",
      "listed": "2016-03-02"
@@ -11757,10 +11733,10 @@
     },
     {
      "id": "EU.4105.82",
-     "name": "Korea Daesong Bank",
+     "name": "Taesong Bank",
      "aliases": [
       "Choson Taesong Unhaeng",
-      "Taesong Bank"
+      "Korea Daesong Bank"
      ],
      "kind": "entity",
      "listed": "2016-11-30",
@@ -11811,12 +11787,12 @@
     },
     {
      "id": "EU.4127.14",
-     "name": "Korea Daesong General Trading Corporation",
+     "name": "Korea Daesong Trading Corporation",
      "aliases": [
-      "Daesong Trading",
-      "Daesong Trading Company",
       "Korea Daesong Trading Company",
-      "Korea Daesong Trading Corporation"
+      "Daesong Trading Company",
+      "Daesong Trading",
+      "Korea Daesong General Trading Corporation"
      ],
      "kind": "entity",
      "listed": "2016-11-30",
@@ -13288,9 +13264,9 @@
     },
     {
      "id": "EU.8112.63",
-     "name": "Kim Su-gil",
+     "name": "Kim Su Gil",
      "aliases": [
-      "Kim Su Gil"
+      "Kim Su-gil"
      ],
      "kind": "individual",
      "listed": "2022-04-21",
@@ -13300,22 +13276,22 @@
     },
     {
      "id": "EU.8113.62",
-     "name": "Jon Il-Ho",
+     "name": "Jon Il Ho",
      "aliases": [
-      "Jon Il Ho"
+      "Jon Il-Ho"
      ],
      "kind": "individual",
      "listed": "2022-04-21",
      "dob": [
-      "1956",
-      "1955"
+      "1955",
+      "1956"
      ]
     },
     {
      "id": "EU.8114.61",
-     "name": "Jong Sung-Il",
+     "name": "Jong Sung Il",
      "aliases": [
-      "Jong Sung Il"
+      "Jong Sung-Il"
      ],
      "kind": "individual",
      "listed": "2022-04-21",
@@ -13350,9 +13326,9 @@
     },
     {
      "id": "EU.8117.58",
-     "name": "Hwang Kil-Su",
+     "name": "Hwang Kil Su",
      "aliases": [
-      "Hwang Kil Su"
+      "Hwang Kil-Su"
      ],
      "kind": "individual",
      "listed": "2022-04-21",
@@ -13430,8 +13406,8 @@
       "1966-07-30"
      ],
      "passports": [
-      "563210059",
-      "654410104"
+      "654410104",
+      "563210059"
      ]
     },
     {
@@ -13681,9 +13657,9 @@
    ]
   },
   "jp": {
-   "fetched": "2026-10-19",
-   "published": "2026-10-14",
-   "file": "https://www.mof.go.jp/policy/international_policy/gaitame_kawase/gaitame/economic_sanctions/shisantouketsu20261014.csv",
+   "fetched": "2026-10-26",
+   "published": "2026-10-21",
+   "file": "https://www.mof.go.jp/policy/international_policy/gaitame_kawase/gaitame/economic_sanctions/shisantouketsu20261021.csv",
    "entries": [
     {
      "id": "013-000001",
@@ -23590,7 +23566,7 @@
    ]
   },
   {
-   "name": "Hwang Kil-Su",
+   "name": "Hwang Kil Su",
    "kind": "individual",
    "on": {
     "EU": [
@@ -24089,6 +24065,20 @@
    ]
   },
   {
+   "name": "Jon Il Ho",
+   "kind": "individual",
+   "on": {
+    "EU": [
+     "EU.8113.62"
+    ]
+   },
+   "how": {},
+   "maybe": [
+    "US",
+    "JP"
+   ]
+  },
+  {
    "name": "Jon Il-Chun",
    "kind": "individual",
    "on": {
@@ -24102,20 +24092,6 @@
    "how": {
     "EU": "name-dob"
    }
-  },
-  {
-   "name": "Jon Il-Ho",
-   "kind": "individual",
-   "on": {
-    "EU": [
-     "EU.8113.62"
-    ]
-   },
-   "how": {},
-   "maybe": [
-    "US",
-    "JP"
-   ]
   },
   {
    "name": "Jon Jin 2",
@@ -24216,7 +24192,7 @@
    "how": {}
   },
   {
-   "name": "Jong Sung-Il",
+   "name": "Jong Sung Il",
    "kind": "individual",
    "on": {
     "EU": [
@@ -25032,6 +25008,20 @@
    "name": "Kim Su Gil",
    "kind": "individual",
    "on": {
+    "EU": [
+     "EU.8112.63"
+    ]
+   },
+   "how": {},
+   "maybe": [
+    "US",
+    "JP"
+   ]
+  },
+  {
+   "name": "Kim Su Gil",
+   "kind": "individual",
+   "on": {
     "JP": [
      "017-000074"
     ]
@@ -25060,20 +25050,6 @@
     "EU": "passport",
     "JP": "passport"
    }
-  },
-  {
-   "name": "Kim Su-gil",
-   "kind": "individual",
-   "on": {
-    "EU": [
-     "EU.8112.63"
-    ]
-   },
-   "how": {},
-   "maybe": [
-    "US",
-    "JP"
-   ]
   },
   {
    "name": "Kim Su-Kwang",
@@ -25255,6 +25231,20 @@
    ]
   },
   {
+   "name": "Kim Yong Chol",
+   "kind": "individual",
+   "on": {
+    "EU": [
+     "EU.4159.44"
+    ]
+   },
+   "how": {},
+   "maybe": [
+    "US",
+    "UK"
+   ]
+  },
+  {
    "name": "Kim Yong Ju",
    "kind": "individual",
    "on": {
@@ -25288,20 +25278,6 @@
     ]
    },
    "how": {}
-  },
-  {
-   "name": "Kim Young-Chul",
-   "kind": "individual",
-   "on": {
-    "EU": [
-     "EU.4159.44"
-    ]
-   },
-   "how": {},
-   "maybe": [
-    "US",
-    "UK"
-   ]
   },
   {
    "name": "Kimsuky",
@@ -26758,16 +26734,6 @@
    "how": {}
   },
   {
-   "name": "Lu Hezheng",
-   "kind": "individual",
-   "on": {
-    "US": [
-     "34024"
-    ]
-   },
-   "how": {}
-  },
-  {
    "name": "Lu Huaying",
    "kind": "individual",
    "on": {
@@ -27159,16 +27125,6 @@
    "on": {
     "US": [
      "30083"
-    ]
-   },
-   "how": {}
-  },
-  {
-   "name": "Moxing Cartoon",
-   "kind": "entity",
-   "on": {
-    "US": [
-     "31042"
     ]
    },
    "how": {}
@@ -29482,16 +29438,6 @@
    "on": {
     "US": [
      "23779"
-    ]
-   },
-   "how": {}
-  },
-  {
-   "name": "Shanghai Hongman Cartoon And Animation Design Studio",
-   "kind": "entity",
-   "on": {
-    "US": [
-     "34025"
     ]
    },
    "how": {}

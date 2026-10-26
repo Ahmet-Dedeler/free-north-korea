@@ -1,16 +1,61 @@
 {
- "fetched": "2026-10-20",
- "oldestListed": "2025-10-24",
+ "fetched": "2026-10-26",
+ "oldestListed": "2025-10-31",
  "coverage": {
   "from": "2025-10-10",
-  "to": "2026-10-20"
+  "to": "2026-10-25"
  },
  "lastAppearance": {
-  "date": "2026-10-19",
-  "id": "a1aa4999d4d6e3129717a015272723eb",
-  "title": "Respected Comrade Kim Jong Un Goes round Venue of Garment and Footwear Exhibition in Light Industry"
+  "date": "2026-10-24",
+  "id": "922c67bdd9f34fe580d343563b85a42e",
+  "title": "Respected Comrade Kim Jong Un Visits Dandong City, Liaoning Province of PRC"
  },
  "records": [
+  {
+   "id": "922c67bdd9f34fe580d343563b85a42e",
+   "url": "http://www.kcna.kp/en/article/detail/922c67bdd9f34fe580d343563b85a42e",
+   "reportDate": "2026-10-25",
+   "title": "Respected Comrade Kim Jong Un Visits Dandong City, Liaoning Province of PRC",
+   "eventDate": "2026-10-24",
+   "eventDateFrom": "text",
+   "appearance": true,
+   "kind": "public",
+   "speech": false,
+   "subject": "Visits Dandong City, Liaoning Province of PRC",
+   "companions": [
+    "Jo Yong Won",
+    "Choe Son Hui",
+    "Ri Il Hwan",
+    "Kim Song Nam",
+    "Kim Tok Hun",
+    "Kim Yo Jong",
+    "Kim Jae Ryong",
+    "Ri Ryong Nam"
+   ],
+   "present": [],
+   "daughter": false,
+   "wife": false,
+   "titleKo": "경애하는 김정은동지께서 중화인민공화국 료녕성 단동시를 방문하시였다"
+  },
+  {
+   "id": "448e1f6e97818d709ba8997d086d26bb",
+   "url": "http://www.kcna.kp/en/article/detail/448e1f6e97818d709ba8997d086d26bb",
+   "reportDate": "2026-10-24",
+   "title": "Historic Meeting That Sets New Milestone in Training Elite Strong Army Third Meeting of KPA Company Leaders Held",
+   "eventDate": "2026-10-22",
+   "eventDateEnd": "2026-10-23",
+   "eventDateFrom": "text",
+   "appearance": true,
+   "kind": "military",
+   "speech": false,
+   "subject": "Historic Meeting That Sets New Milestone in Training Elite Strong Army Third Meeting of KPA Company Leaders Held",
+   "region": "Pyongyang",
+   "companions": [],
+   "present": [],
+   "daughter": false,
+   "wife": false,
+   "titleKo": "조선인민군 제3차 중대장대회 진행"
+  },
   {
    "id": "a1aa4999d4d6e3129717a015272723eb",
    "url": "http://www.kcna.kp/en/article/detail/a1aa4999d4d6e3129717a015272723eb",
@@ -4150,6 +4195,13 @@
   }
  ],
  "messages": [
+  {
+   "id": "73eeeeab2f63e82feae5694a75c22f46",
+   "url": "http://www.kcna.kp/en/article/detail/73eeeeab2f63e82feae5694a75c22f46",
+   "date": "2026-10-22",
+   "title": "Respected Comrade Kim Jong Un Receives Reply Message from Chinese President",
+   "direction": "received"
+  },
   {
    "id": "6cd15474368c91e250a35212cbf9c11f",
    "url": "http://www.kcna.kp/en/article/detail/6cd15474368c91e250a35212cbf9c11f",
