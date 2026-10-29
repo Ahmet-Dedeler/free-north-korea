@@ -1,6 +1,11 @@
 {
  "category": [
   {
+   "id": "c1565e56528c4f0e7f747187f80c1aca",
+   "title": "Respected Comrade Kim Jong Un Has Photo Session with Participants in Third Meeting of Company Leaders of KPA",
+   "date": "2026-10-28"
+  },
+  {
    "id": "922c67bdd9f34fe580d343563b85a42e",
    "title": "Respected Comrade Kim Jong Un Visits Dandong City, Liaoning Province of PRC",
    "date": "2026-10-25"
@@ -7238,7 +7243,7 @@
    "date": "2025-10-10"
   }
  ],
- "categoryFetched": "2026-10-27",
+ "categoryFetched": "2026-10-29",
  "oldestListed": "2025-10-31",
  "searchFetched": "2026-10-26",
  "titlesKo": {
@@ -7466,6 +7471,7 @@
   "e6a262ae36739c46ecd3505ad4b4f68a": "조선로동당창건 81돐에 즈음하여 제2경제위원회 국방혁명박물관 개관식 성대히 진행",
   "a1aa4999d4d6e3129717a015272723eb": "경애하는 김정은동지께서 경공업부문 피복,신발전시회장을 돌아보시였다",
   "922c67bdd9f34fe580d343563b85a42e": "경애하는 김정은동지께서 중화인민공화국 료녕성 단동시를 방문하시였다",
-  "448e1f6e97818d709ba8997d086d26bb": "조선인민군 제3차 중대장대회 진행"
+  "448e1f6e97818d709ba8997d086d26bb": "조선인민군 제3차 중대장대회 진행",
+  "c1565e56528c4f0e7f747187f80c1aca": "경애하는 김정은동지께서 조선인민군 제3차 중대장대회 참가자들과 기념사진을 찍으시였다"
  }
 }

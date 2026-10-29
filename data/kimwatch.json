@@ -1,16 +1,39 @@
 {
- "fetched": "2026-10-27",
+ "fetched": "2026-10-29",
  "oldestListed": "2025-10-31",
  "coverage": {
   "from": "2025-10-10",
-  "to": "2026-10-25"
+  "to": "2026-10-28"
  },
  "lastAppearance": {
-  "date": "2026-10-24",
-  "id": "922c67bdd9f34fe580d343563b85a42e",
-  "title": "Respected Comrade Kim Jong Un Visits Dandong City, Liaoning Province of PRC"
+  "date": "2026-10-27",
+  "id": "c1565e56528c4f0e7f747187f80c1aca",
+  "title": "Respected Comrade Kim Jong Un Has Photo Session with Participants in Third Meeting of Company Leaders of KPA"
  },
  "records": [
+  {
+   "id": "c1565e56528c4f0e7f747187f80c1aca",
+   "url": "http://www.kcna.kp/en/article/detail/c1565e56528c4f0e7f747187f80c1aca",
+   "reportDate": "2026-10-28",
+   "title": "Respected Comrade Kim Jong Un Has Photo Session with Participants in Third Meeting of Company Leaders of KPA",
+   "eventDate": "2026-10-27",
+   "eventDateFrom": "text",
+   "appearance": true,
+   "kind": "public",
+   "speech": false,
+   "subject": "Has Photo Session with Participants in Third Meeting of Company Leaders of KPA",
+   "companions": [
+    "Pak Jong Chon"
+   ],
+   "present": [
+    "Kim Song Gi",
+    "Ri Yong Gil",
+    "Yu Kwang"
+   ],
+   "daughter": false,
+   "wife": false,
+   "titleKo": "경애하는 김정은동지께서 조선인민군 제3차 중대장대회 참가자들과 기념사진을 찍으시였다"
+  },
   {
    "id": "922c67bdd9f34fe580d343563b85a42e",
    "url": "http://www.kcna.kp/en/article/detail/922c67bdd9f34fe580d343563b85a42e",
