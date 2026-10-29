@@ -1,11 +1,38 @@
 {
- "fetched": "2026-10-26T20:38:21Z",
+ "fetched": "2026-10-29T10:13:59Z",
  "source": {
   "name": "北朝鮮のミサイル等関連情報 (Ministry of Defense of Japan)",
   "publisher": "Ministry of Defense of Japan (防衛省)",
   "url": "https://www.mod.go.jp/j/press/news/index.html"
  },
  "reports": [
+  {
+   "id": "2026-10-29d",
+   "published": "2026-10-29",
+   "timesJst": [
+    "12:36"
+   ],
+   "launchJst": "2026-10-29T12:36:00+09:00",
+   "launchUtc": "2026-10-29T03:36:00Z",
+   "precision": "minute",
+   "count": null,
+   "countNote": null,
+   "weapon": "possible-ballistic",
+   "rangeKm": [],
+   "rangeBound": null,
+   "apogeeKm": [],
+   "apogeeBound": null,
+   "flightMinutes": null,
+   "landing": "near-east-coast",
+   "eez": "none-seen",
+   "areaJa": null,
+   "landingJa": "発射された弾道ミサイルの可能性があるものは朝鮮半島東岸付近",
+   "directionJa": null,
+   "textJa": "北朝鮮は、本日１２時３６分頃、弾道ミサイルの可能性があるものを発射しました。現在、日米韓で緊密に連携し、その詳細を分析中ですが、発射された弾道ミサイルの可能性があるものは朝鮮半島東岸付近に落下したと推定され、我が国の領域や排他的経済水域（ＥＥＺ）への飛来は確認されておらず、現時点において、付近を航行する航空機や船舶の被害報告等の情報は確認されていません。",
+   "url": "https://www.mod.go.jp/j/press/news/2026/10/29d.pdf",
+   "htmlUrl": "https://www.mod.go.jp/j/press/news/2026/10/29d.html",
+   "fetched": "2026-10-29"
+  },
   {
    "id": "2026-10-12e",
    "published": "2026-10-12",
