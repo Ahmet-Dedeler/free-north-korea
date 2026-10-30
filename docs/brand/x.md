@@ -68,8 +68,12 @@ The house style comes from the first poster post (6 Oct 2026, the army poster):
 The account also replies to people (2 Jul 2026 to @patrickc, and others). A reply is the account talking to a
 person, not a data post, but the same rules apply: no em dashes, no hashtags, no marketing voice.
 
-The other posters in `docs/posters/` (missiles, defector arrivals, divergence, aid, Kims, rice) have not been posted
-yet.
+The other six posters in `docs/posters/` (missiles, defector arrivals, divergence, aid, Kims, rice) are scheduled on
+X too (status as of 30 Oct 2026; their dates weren't written down). When a scheduled post goes out, or a new one is
+scheduled, add it to the table with its date, so this list stays the record of what is posted and what is queued.
+
+The posters still print the old FREENORTHKOREA wordmark with a red ring in the footer. The ones already queued stay
+as they are; new posters should carry SaveNorthKorea.org and the blue logo.
 
 ## Posting a poster
 
