@@ -1,16 +1,33 @@
 {
- "fetched": "2026-10-29",
+ "fetched": "2026-10-30",
  "oldestListed": "2025-10-31",
  "coverage": {
   "from": "2025-10-10",
-  "to": "2026-10-28"
+  "to": "2026-10-30"
  },
  "lastAppearance": {
-  "date": "2026-10-27",
-  "id": "c1565e56528c4f0e7f747187f80c1aca",
-  "title": "Respected Comrade Kim Jong Un Has Photo Session with Participants in Third Meeting of Company Leaders of KPA"
+  "date": "2026-10-29",
+  "id": "7dd30f6614b34a293981479b5e22edfd",
+  "title": "Exhibition \"Unmanned Aeronautical Technology Development-2026\" Held with Splendour"
  },
  "records": [
+  {
+   "id": "7dd30f6614b34a293981479b5e22edfd",
+   "url": "http://www.kcna.kp/en/article/detail/7dd30f6614b34a293981479b5e22edfd",
+   "reportDate": "2026-10-30",
+   "title": "Exhibition \"Unmanned Aeronautical Technology Development-2026\" Held with Splendour",
+   "eventDate": "2026-10-29",
+   "eventDateFrom": "text",
+   "appearance": true,
+   "kind": "public",
+   "speech": false,
+   "subject": "Exhibition \"Unmanned Aeronautical Technology Development-2026\" Held with Splendour",
+   "companions": [],
+   "present": [],
+   "daughter": false,
+   "wife": false,
+   "titleKo": "《무인항공기술발전－2026》전시회 성대히 진행"
+  },
   {
    "id": "c1565e56528c4f0e7f747187f80c1aca",
    "url": "http://www.kcna.kp/en/article/detail/c1565e56528c4f0e7f747187f80c1aca",

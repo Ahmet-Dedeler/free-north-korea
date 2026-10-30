@@ -1,6 +1,11 @@
 {
  "category": [
   {
+   "id": "7dd30f6614b34a293981479b5e22edfd",
+   "title": "Exhibition \"Unmanned Aeronautical Technology Development-2026\" Held with Splendour",
+   "date": "2026-10-30"
+  },
+  {
    "id": "c1565e56528c4f0e7f747187f80c1aca",
    "title": "Respected Comrade Kim Jong Un Has Photo Session with Participants in Third Meeting of Company Leaders of KPA",
    "date": "2026-10-28"
@@ -7243,7 +7248,7 @@
    "date": "2025-10-10"
   }
  ],
- "categoryFetched": "2026-10-29",
+ "categoryFetched": "2026-10-30",
  "oldestListed": "2025-10-31",
  "searchFetched": "2026-10-26",
  "titlesKo": {
@@ -7472,6 +7477,7 @@
   "a1aa4999d4d6e3129717a015272723eb": "경애하는 김정은동지께서 경공업부문 피복,신발전시회장을 돌아보시였다",
   "922c67bdd9f34fe580d343563b85a42e": "경애하는 김정은동지께서 중화인민공화국 료녕성 단동시를 방문하시였다",
   "448e1f6e97818d709ba8997d086d26bb": "조선인민군 제3차 중대장대회 진행",
-  "c1565e56528c4f0e7f747187f80c1aca": "경애하는 김정은동지께서 조선인민군 제3차 중대장대회 참가자들과 기념사진을 찍으시였다"
+  "c1565e56528c4f0e7f747187f80c1aca": "경애하는 김정은동지께서 조선인민군 제3차 중대장대회 참가자들과 기념사진을 찍으시였다",
+  "7dd30f6614b34a293981479b5e22edfd": "《무인항공기술발전－2026》전시회 성대히 진행"
  }
 }
