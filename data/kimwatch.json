@@ -1,9 +1,9 @@
 {
- "fetched": "2026-11-01",
- "oldestListed": "2025-11-02",
+ "fetched": "2026-11-02",
+ "oldestListed": "2025-11-04",
  "coverage": {
   "from": "2025-10-10",
-  "to": "2026-10-30"
+  "to": "2026-11-01"
  },
  "lastAppearance": {
   "date": "2026-10-29",
@@ -4235,6 +4235,20 @@
   }
  ],
  "messages": [
+  {
+   "id": "9066079471701a64a22ee8a6673d338a",
+   "url": "http://www.kcna.kp/en/article/detail/9066079471701a64a22ee8a6673d338a",
+   "date": "2026-11-01",
+   "title": "Respected Comrade Kim Jong Un Receives Greetings from Abroad",
+   "direction": "received"
+  },
+  {
+   "id": "681e077a77c94f8c856d2b9aee0abe53",
+   "url": "http://www.kcna.kp/en/article/detail/681e077a77c94f8c856d2b9aee0abe53",
+   "date": "2026-10-27",
+   "title": "Respected Comrade Kim Jong Un Sends Reply Message to Vietnamese President",
+   "direction": "sent"
+  },
   {
    "id": "73eeeeab2f63e82feae5694a75c22f46",
    "url": "http://www.kcna.kp/en/article/detail/73eeeeab2f63e82feae5694a75c22f46",

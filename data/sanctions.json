@@ -1,12 +1,12 @@
 {
  "_doc": "Built by scripts/build-sanctions.ts from the live UN, US, UK, EU and Japanese lists. Do not edit by hand.",
- "fetched": "2026-10-26",
+ "fetched": "2026-11-02",
  "sources": {
   "un": "https://scsanctions.un.org/resources/xml/en/consolidated.xml",
   "ofac": "https://www.treasury.gov/ofac/downloads/sdn.csv",
   "uk": "https://sanctionslist.fcdo.gov.uk/docs/UK-Sanctions-List.xml",
   "eu": "https://webgate.ec.europa.eu/fsd/fsf/public/files/xmlFullSanctionsList_1_1/content?token=dG9rZW4tMjAxNw",
-  "jp": "https://www.mof.go.jp/policy/international_policy/gaitame_kawase/gaitame/economic_sanctions/shisantouketsu20261021.csv"
+  "jp": "https://www.mof.go.jp/policy/international_policy/gaitame_kawase/gaitame/economic_sanctions/shisantouketsu20261030.csv"
  },
  "pages": {
   "uk": "https://www.gov.uk/government/publications/the-uk-sanctions-list",
@@ -14,7 +14,7 @@
   "jp": "https://www.mof.go.jp/policy/international_policy/gaitame_kawase/gaitame/economic_sanctions/list.html"
  },
  "un": {
-  "generated": "2026-10-24",
+  "generated": "2026-10-31",
   "individuals": [
    {
     "ref": "KPi.001",
@@ -1717,6 +1717,14 @@
    ]
   },
   {
+   "id": "58886",
+   "name": "Boykov Ilya Aleksandrovich",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ]
+  },
+  {
    "id": "48987",
    "name": "Budnev Aleksey",
    "kind": "individual",
@@ -2438,6 +2446,14 @@
    ]
   },
   {
+   "id": "58879",
+   "name": "First Financial And Technical Development Center",
+   "kind": "entity",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
    "id": "23725",
    "name": "First Oil Jv Co Ltd",
    "kind": "entity",
@@ -2631,6 +2647,14 @@
     "DPRK2"
    ],
    "title": "Korea Ryonbong General Corporation Representative in Zhuhai, China"
+  },
+  {
+   "id": "58883",
+   "name": "Han Yu Song",
+   "kind": "individual",
+   "programs": [
+    "DPRK3"
+   ]
   },
   {
    "id": "22986",
@@ -2875,6 +2899,14 @@
     "NPWMD"
    ],
    "title": "Department Director at the National Aerospace Development Administration"
+  },
+  {
+   "id": "58885",
+   "name": "Hyon Se Il",
+   "kind": "individual",
+   "programs": [
+    "DPRK3"
+   ]
   },
   {
    "id": "19508",
@@ -3390,6 +3422,14 @@
    "title": "Korea Ryonbong General Corporation Official"
   },
   {
+   "id": "58888",
+   "name": "Kim Hyo Dong",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ]
+  },
+  {
    "id": "22995",
    "name": "Kim Hyok Chol",
    "kind": "individual",
@@ -3451,6 +3491,14 @@
     "DPRK2"
    ],
    "title": "Director, External Construction Bureau"
+  },
+  {
+   "id": "58887",
+   "name": "Kim Ki Hyok",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ]
   },
   {
    "id": "20126",
@@ -3522,6 +3570,14 @@
     "DPRK2"
    ],
    "title": "Foreign Trade Bank of the Democratic People's Republic of Korea deputy chief representative in Libya"
+  },
+  {
+   "id": "58880",
+   "name": "Kim Kyong Ju",
+   "kind": "individual",
+   "programs": [
+    "DPRK3"
+   ]
   },
   {
    "id": "18554",
@@ -3702,6 +3758,14 @@
    "kind": "individual",
    "programs": [
     "DPRK2"
+   ]
+  },
+  {
+   "id": "58884",
+   "name": "Kim Sung Gwan",
+   "kind": "individual",
+   "programs": [
+    "DPRK3"
    ]
   },
   {
@@ -5074,6 +5138,14 @@
    ]
   },
   {
+   "id": "58889",
+   "name": "Obertas Vitold Viktorovich",
+   "kind": "individual",
+   "programs": [
+    "DPRK2"
+   ]
+  },
+  {
    "id": "19571",
    "name": "Ocean Bunkering Jv Co",
    "kind": "entity",
@@ -5877,6 +5949,14 @@
    "title": "DPRK First Vice Minister of People's Security"
   },
   {
+   "id": "58881",
+   "name": "Ri Thae Chol",
+   "kind": "individual",
+   "programs": [
+    "DPRK3"
+   ]
+  },
+  {
    "id": "23503",
    "name": "Ri Tok Jin",
    "kind": "individual",
@@ -6286,6 +6366,14 @@
    "kind": "vessel",
    "programs": [
     "DPRK4"
+   ]
+  },
+  {
+   "id": "58882",
+   "name": "So Hyong Jin",
+   "kind": "individual",
+   "programs": [
+    "DPRK3"
    ]
   },
   {
@@ -7003,8 +7091,8 @@
  ],
  "national": {
   "uk": {
-   "fetched": "2026-10-26",
-   "published": "2026-10-26",
+   "fetched": "2026-11-02",
+   "published": "2026-10-30",
    "file": "https://sanctionslist.fcdo.gov.uk/docs/UK-Sanctions-List.xml",
    "entries": [
     {
@@ -10543,7 +10631,7 @@
    ]
   },
   "eu": {
-   "fetched": "2026-10-26",
+   "fetched": "2026-11-02",
    "published": "2026-10-23",
    "file": "https://webgate.ec.europa.eu/fsd/fsf/public/files/xmlFullSanctionsList_1_1/content?token=dG9rZW4tMjAxNw",
    "entries": [
@@ -13657,9 +13745,9 @@
    ]
   },
   "jp": {
-   "fetched": "2026-10-26",
-   "published": "2026-10-21",
-   "file": "https://www.mof.go.jp/policy/international_policy/gaitame_kawase/gaitame/economic_sanctions/shisantouketsu20261021.csv",
+   "fetched": "2026-11-02",
+   "published": "2026-10-30",
+   "file": "https://www.mof.go.jp/policy/international_policy/gaitame_kawase/gaitame/economic_sanctions/shisantouketsu20261030.csv",
    "entries": [
     {
      "id": "013-000001",
@@ -21667,6 +21755,16 @@
    ]
   },
   {
+   "name": "Boykov Ilya Aleksandrovich",
+   "kind": "individual",
+   "on": {
+    "US": [
+     "58886"
+    ]
+   },
+   "how": {}
+  },
+  {
    "name": "Budnev Aleksey",
    "kind": "individual",
    "on": {
@@ -22902,6 +23000,16 @@
    "how": {}
   },
   {
+   "name": "First Financial And Technical Development Center",
+   "kind": "entity",
+   "on": {
+    "US": [
+     "58879"
+    ]
+   },
+   "how": {}
+  },
+  {
    "name": "Fortuna Limited Liability Company",
    "kind": "entity",
    "on": {
@@ -23144,6 +23252,16 @@
    "on": {
     "US": [
      "23509"
+    ]
+   },
+   "how": {}
+  },
+  {
+   "name": "Han Yu Song",
+   "kind": "individual",
+   "on": {
+    "US": [
+     "58883"
     ]
    },
    "how": {}
@@ -23632,6 +23750,16 @@
    "on": {
     "UK": [
      "DPR0013"
+    ]
+   },
+   "how": {}
+  },
+  {
+   "name": "Hyon Se Il",
+   "kind": "individual",
+   "on": {
+    "US": [
+     "58885"
     ]
    },
    "how": {}
@@ -24542,6 +24670,16 @@
    }
   },
   {
+   "name": "Kim Hyo Dong",
+   "kind": "individual",
+   "on": {
+    "US": [
+     "58888"
+    ]
+   },
+   "how": {}
+  },
+  {
    "name": "Kim Hyok Chan",
    "kind": "individual",
    "on": {
@@ -24679,6 +24817,16 @@
    "how": {}
   },
   {
+   "name": "Kim Ki Hyok",
+   "kind": "individual",
+   "on": {
+    "US": [
+     "58887"
+    ]
+   },
+   "how": {}
+  },
+  {
    "name": "Kim Ki Nam",
    "kind": "individual",
    "on": {
@@ -24792,6 +24940,16 @@
    "how": {
     "JP": "name-dob"
    }
+  },
+  {
+   "name": "Kim Kyong Ju",
+   "kind": "individual",
+   "on": {
+    "US": [
+     "58880"
+    ]
+   },
+   "how": {}
   },
   {
    "name": "Kim Kyong Nam",
@@ -25069,6 +25227,16 @@
     "UK": "name-dob",
     "EU": "name-dob"
    }
+  },
+  {
+   "name": "Kim Sung Gwan",
+   "kind": "individual",
+   "on": {
+    "US": [
+     "58884"
+    ]
+   },
+   "how": {}
   },
   {
    "name": "Kim Sung Su",
@@ -27513,6 +27681,16 @@
    }
   },
   {
+   "name": "Obertas Vitold Viktorovich",
+   "kind": "individual",
+   "on": {
+    "US": [
+     "58889"
+    ]
+   },
+   "how": {}
+  },
+  {
    "name": "Ocean Bunkering Joint Venture Company",
    "kind": "entity",
    "on": {
@@ -28902,6 +29080,16 @@
    "how": {}
   },
   {
+   "name": "Ri Thae Chol",
+   "kind": "individual",
+   "on": {
+    "US": [
+     "58881"
+    ]
+   },
+   "how": {}
+  },
+  {
    "name": "Ri Tok Jin",
    "kind": "individual",
    "on": {
@@ -29630,6 +29818,16 @@
    "how": {
     "EU": "passport"
    }
+  },
+  {
+   "name": "So Hyong Jin",
+   "kind": "individual",
+   "on": {
+    "US": [
+     "58882"
+    ]
+   },
+   "how": {}
   },
   {
    "name": "So Myong",

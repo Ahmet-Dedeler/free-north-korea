@@ -1,11 +1,11 @@
 {
  "_doc": "Built by scripts/build-series.ts. Do not edit by hand; hand-checked numbers go in data/series/curated/.",
- "built": "2026-10-26",
+ "built": "2026-11-02",
  "sources": {
-  "owid": "2026-10-05",
-  "dailynk": "2026-10-26",
+  "owid": "2026-11-02",
+  "dailynk": "2026-11-02",
   "government": "2026-10-26",
-  "local": "2026-10-26"
+  "local": "2026-11-02"
  },
  "series": [
   {
@@ -690,7 +690,7 @@
     "url": "https://ourworldindata.org/grapher/armed-forces-personnel",
     "license": "CC BY 4.0"
    },
-   "fetched": "2026-10-05",
+   "fetched": "2026-11-02",
    "updated": "2026-07-27"
   },
   {
@@ -1967,7 +1967,7 @@
     "url": "https://ourworldindata.org/grapher/daily-per-capita-caloric-supply",
     "license": "CC BY 4.0"
    },
-   "fetched": "2026-10-05",
+   "fetched": "2026-11-02",
    "updated": "2026-03-02"
   },
   {
@@ -3272,7 +3272,7 @@
     "url": "https://ourworldindata.org/grapher/cereal-yield",
     "license": "CC BY 4.0"
    },
-   "fetched": "2026-10-05",
+   "fetched": "2026-11-02",
    "updated": "2026-02-25"
   },
   {
@@ -4605,7 +4605,7 @@
     "url": "https://ourworldindata.org/grapher/child-mortality-igme",
     "license": "CC BY 4.0"
    },
-   "fetched": "2026-10-05",
+   "fetched": "2026-11-02",
    "updated": "2026-06-09"
   },
   {
@@ -7014,7 +7014,7 @@
     "url": "https://ourworldindata.org/grapher/human-rights-index-vdem",
     "license": "CC BY 4.0"
    },
-   "fetched": "2026-10-05",
+   "fetched": "2026-11-02",
    "updated": "2026-03-17"
   },
   {
@@ -8539,7 +8539,7 @@
     "url": "https://ourworldindata.org/grapher/co-emissions-per-capita",
     "license": "CC BY 4.0"
    },
-   "fetched": "2026-10-05",
+   "fetched": "2026-11-02",
    "updated": "2025-11-13"
   },
   {
@@ -11397,7 +11397,7 @@
     "url": "https://ourworldindata.org/grapher/electoral-democracy-index",
     "license": "CC BY 4.0"
    },
-   "fetched": "2026-10-05",
+   "fetched": "2026-11-02",
    "updated": "2026-03-17"
   },
   {
@@ -11974,7 +11974,7 @@
     "url": "https://ourworldindata.org/grapher/share-of-the-population-with-access-to-electricity",
     "license": "CC BY 4.0"
    },
-   "fetched": "2026-10-05",
+   "fetched": "2026-11-02",
    "updated": "2026-07-27"
   },
   {
@@ -13095,7 +13095,7 @@
     "url": "https://ourworldindata.org/grapher/per-capita-electricity-generation",
     "license": "CC BY 4.0"
    },
-   "fetched": "2026-10-05",
+   "fetched": "2026-11-02",
    "updated": "2026-06-30"
   },
   {
@@ -14344,7 +14344,7 @@
     "url": "https://ourworldindata.org/grapher/per-capita-energy-use",
     "license": "CC BY 4.0"
    },
-   "fetched": "2026-10-05",
+   "fetched": "2026-11-02",
    "updated": "2026-06-30"
   },
   {
@@ -15849,7 +15849,7 @@
     "url": "https://ourworldindata.org/grapher/children-per-woman-un",
     "license": "CC BY 4.0"
    },
-   "fetched": "2026-10-05",
+   "fetched": "2026-11-02",
    "updated": "2024-07-12"
   },
   {
@@ -17486,7 +17486,7 @@
     "url": "https://ourworldindata.org/grapher/gdp-per-capita-maddison-project-database",
     "license": "CC BY 4.0"
    },
-   "fetched": "2026-10-05",
+   "fetched": "2026-11-02",
    "updated": "2024-04-26"
   },
   {
@@ -19531,7 +19531,7 @@
     "url": "https://ourworldindata.org/grapher/average-height-of-men",
     "license": "CC BY 4.0"
    },
-   "fetched": "2026-10-05",
+   "fetched": "2026-11-02",
    "updated": "2019-05-14"
   },
   {
@@ -21576,7 +21576,7 @@
     "url": "https://ourworldindata.org/grapher/average-height-of-women",
     "license": "CC BY 4.0"
    },
-   "fetched": "2026-10-05",
+   "fetched": "2026-11-02",
    "updated": "2019-05-14"
   },
   {
@@ -23346,7 +23346,7 @@
     "url": "https://ourworldindata.org/grapher/life-expectancy",
     "license": "CC BY 4.0"
    },
-   "fetched": "2026-10-05",
+   "fetched": "2026-11-02",
    "updated": "2025-10-22"
   },
   {
@@ -23526,7 +23526,7 @@
      ],
      [
       2026,
-      32
+      47
      ]
     ],
     "medium": [
@@ -24057,9 +24057,9 @@
     "url": "https://github.com/nagix/nk-missile-tests",
     "license": "MIT"
    },
-   "fetched": "2026-10-26",
-   "updated": "2026-10-12",
-   "note": "Each missile counts once, so a salvo of four is four. Medium range includes intermediate-range and hypersonic glide missiles; \"other\" is submarine-launched missiles, satellite launches and unknown types. 2026 runs to 2026-10-12."
+   "fetched": "2026-11-02",
+   "updated": "2026-10-29",
+   "note": "Each missile counts once, so a salvo of four is four. Medium range includes intermediate-range and hypersonic glide missiles; \"other\" is submarine-launched missiles, satellite launches and unknown types. 2026 runs to 2026-10-29."
   },
   {
    "id": "mobile-phones",
@@ -24943,7 +24943,7 @@
     "url": "https://ourworldindata.org/grapher/mobile-cellular-subscriptions-per-100-people",
     "license": "CC BY 4.0"
    },
-   "fetched": "2026-10-05",
+   "fetched": "2026-11-02",
    "updated": "2026-07-27"
   },
   {
@@ -26071,7 +26071,7 @@
     "url": "https://ourworldindata.org/grapher/nuclear-warhead-stockpiles",
     "license": "CC BY 4.0"
    },
-   "fetched": "2026-10-05",
+   "fetched": "2026-11-02",
    "updated": "2026-05-13"
   },
   {
@@ -28576,7 +28576,7 @@
     "url": "https://ourworldindata.org/grapher/population",
     "license": "CC BY 4.0"
    },
-   "fetched": "2026-10-05",
+   "fetched": "2026-11-02",
    "updated": "2024-07-15"
   },
   {
@@ -28585,7 +28585,7 @@
     "name": "Daily NK market price survey",
     "url": "https://www.dailynk.com/english/category/market-indicators/"
    },
-   "fetched": "2026-10-26",
+   "fetched": "2026-11-02",
    "note": "Prices before the November 2009 currency reform were in old won; we divided them by 100 so the line is continuous.",
    "id": "rice-price",
    "title": "Market price of rice",
@@ -32935,7 +32935,7 @@
     "url": "https://www.un.org/securitycouncil/sanctions/1718",
     "license": "public"
    },
-   "fetched": "2026-10-26",
+   "fetched": "2026-11-02",
    "note": "By the date each name was added. Russia and China have blocked new listings since 2018."
   },
   {
@@ -33314,7 +33314,7 @@
     "url": "https://ourworldindata.org/grapher/prevalence-of-undernourishment",
     "license": "CC BY 4.0"
    },
-   "fetched": "2026-10-05",
+   "fetched": "2026-11-02",
    "updated": "2026-02-25"
   },
   {
@@ -33323,7 +33323,7 @@
     "name": "Daily NK market price survey",
     "url": "https://www.dailynk.com/english/category/market-indicators/"
    },
-   "fetched": "2026-10-26",
+   "fetched": "2026-11-02",
    "note": "Prices before the November 2009 currency reform were in old won; we divided them by 100 so the line is continuous.",
    "id": "won-per-dollar",
    "title": "Market exchange rate: North Korean won per US dollar",
