@@ -12,4 +12,4 @@ export const X_URL = 'https://x.com/freenorthkorea';
 export const X_HANDLE = '@freenorthkorea';
 
 /** "Last reviewed" date shown on content pages. Bump it when facts are re-checked. */
-export const REVIEWED = '2026-10-18';
+export const REVIEWED = '2026-11-04';

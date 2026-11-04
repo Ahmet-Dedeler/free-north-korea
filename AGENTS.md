@@ -148,7 +148,7 @@ before adding any page or article.
 - Content pages are visual, not text walls. Reuse the building blocks before writing paragraphs:
   `components/Visual.tsx` (StatTile, icon chips, SourceCards), `AsOf` (date a number is from), `SatView` (Esri satellite
   tiles, no map lib), `Locator` (server SVG of NK from `site/geo.ts`), `HoverLinks` (OrgLink/PlaceLink hover previews,
-  like PersonLink), `ArticleBlocks` (in-article visuals), `CampCard`/`PlaceCard`. Icons come from `lucide-react` (the map's layer marks are our own, `map/LayerGlyph.tsx`), brand
+  like PersonLink), `ArticleBlocks` (in-article visuals: stat tiles, timelines, compare cards, `BarList` for a short ranked list with values printed on every row), `CampCard`/`PlaceCard`. Icons come from `lucide-react` (the map's layer marks are our own, `map/LayerGlyph.tsx`), brand
   marks from `simple-icons`. Their CSS lives in `src/app/visual.css`. Images go through `src/content/media.ts` (lookups
   into media.json) and are downloaded by `scripts/fetch-media.ts`, never hotlinked (satellite tiles are the exception).
 - `src/components/SiteChrome.tsx`: top bar + footer. `/map` (in every language) and `/missiles` are full-screen "app" pages (no footer).

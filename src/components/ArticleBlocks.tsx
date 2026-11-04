@@ -1085,3 +1085,35 @@ export function DroneFrontSites({ lang = 'en' }: { lang?: Lang }) {
   );
 }
 
+
+/**
+ * Plain horizontal bars for a short list of values (a handful of rows, not a time series). Each row prints its own value
+ * text, so the figure reads the same without the bars. `label` names the figure for screen readers.
+ */
+export function BarList({
+  items,
+  label,
+  caption,
+}: {
+  items: { label: string; value: number; text: string; muted?: boolean }[];
+  label: string;
+  caption?: ReactNode;
+}) {
+  const max = Math.max(...items.map((i) => i.value), 1);
+  return (
+    <figure className="barlist" role="group" aria-label={label}>
+      <ol>
+        {items.map((it) => (
+          <li key={it.label} className={it.muted ? 'muted' : ''}>
+            <span className="bl-label">{it.label}</span>
+            <span className="bl-track" aria-hidden="true">
+              <i style={{ width: `${it.value > 0 ? Math.max((it.value / max) * 100, 1.2) : 0}%` }} />
+            </span>
+            <b>{it.text}</b>
+          </li>
+        ))}
+      </ol>
+      {caption && <figcaption>{caption}</figcaption>}
+    </figure>
+  );
+}

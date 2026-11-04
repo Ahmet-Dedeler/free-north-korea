@@ -1,4 +1,5 @@
 import drone from './north-korea-drone-activists';
+import palestine from './north-korea-palestine-relations';
 import howFreed from './how-can-north-korea-be-freed';
 import isPossible from './is-it-possible-to-free-north-korea';
 import howToHelp from './how-to-help-north-koreans';
@@ -10,4 +11,4 @@ import repatriation from './china-forced-repatriation-north-koreans';
 import type { Article } from '../types';
 
 /** Korean versions of the /learn articles, same slugs and order as the English ones. */
-export const KO_ARTICLES: Article[] = [drone, howFreed, isPossible, howToHelp, escape, repatriation, camps, songbun, info];
+export const KO_ARTICLES: Article[] = [palestine, drone, howFreed, isPossible, howToHelp, escape, repatriation, camps, songbun, info];
