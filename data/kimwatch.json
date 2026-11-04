@@ -1,16 +1,36 @@
 {
- "fetched": "2026-11-03",
- "oldestListed": "2025-11-04",
+ "fetched": "2026-11-04",
+ "oldestListed": "2025-11-05",
  "coverage": {
   "from": "2025-10-10",
-  "to": "2026-11-01"
+  "to": "2026-11-04"
  },
  "lastAppearance": {
-  "date": "2026-10-29",
-  "id": "7dd30f6614b34a293981479b5e22edfd",
-  "title": "Exhibition \"Unmanned Aeronautical Technology Development-2026\" Held with Splendour"
+  "date": "2026-11-02",
+  "id": "280532557ce00cf81a6cde850fd4ba96",
+  "title": "Respected Comrade Kim Jong Un Gives Field Guidance at Nampho Shipyard"
  },
  "records": [
+  {
+   "id": "280532557ce00cf81a6cde850fd4ba96",
+   "url": "http://www.kcna.kp/en/article/detail/280532557ce00cf81a6cde850fd4ba96",
+   "reportDate": "2026-11-04",
+   "title": "Respected Comrade Kim Jong Un Gives Field Guidance at Nampho Shipyard",
+   "eventDate": "2026-11-02",
+   "eventDateFrom": "text",
+   "appearance": true,
+   "kind": "economy",
+   "speech": false,
+   "subject": "Gives Field Guidance at Nampho Shipyard",
+   "region": "Nampho",
+   "companions": [
+    "Jo Chun Ryong"
+   ],
+   "present": [],
+   "daughter": false,
+   "wife": false,
+   "titleKo": "경애하는 김정은동지께서 남포조선소를 현지지도하시였다"
+  },
   {
    "id": "7dd30f6614b34a293981479b5e22edfd",
    "url": "http://www.kcna.kp/en/article/detail/7dd30f6614b34a293981479b5e22edfd",
