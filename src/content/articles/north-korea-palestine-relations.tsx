@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { Banknote, Crosshair, Landmark, ShieldAlert, ShieldCheck, ShieldQuestion, Vote } from 'lucide-react';
-import { BarList, Compare, Stats, Timeline, Tldr } from '@/components/ArticleBlocks';
+import { BarList, Compare, Photos, Stats, Timeline, Tldr } from '@/components/ArticleBlocks';
 import type { Article } from './types';
 
 const article: Article = {
@@ -136,6 +136,13 @@ const article: Article = {
             text: 'A senior Israeli Foreign Ministry official visits Pyongyang to talk about investment in a gold mine. Israel says any aid must include ending missile sales to the Middle East, and North Korea wants to be paid for that. Washington objects, a nuclear crisis starts in 1993, and the talks fade.',
           },
         ]}
+      />
+      <Photos
+        items={[
+          { id: 'figure:palestine-kim-berlin-1984', alt: 'Kim Il Sung walking into the Palace of the Republic in East Berlin with Erich Honecker', label: 'Kim Il Sung, June 1, 1984' },
+          { id: 'figure:palestine-arafat-berlin-1982', alt: 'Yasser Arafat greeted by Erich Honecker in East Berlin', label: 'Yasser Arafat, March 10, 1982' },
+        ]}
+        caption="The same host, two visits: East Germany’s leader Erich Honecker with Kim Il Sung (state visit, June 1, 1984) and with PLO chairman Yasser Arafat (official visit, March 10, 1982). They show where Pyongyang and the PLO moved in the same years: the Soviet-aligned bloc. They are not photos of the two men together."
       />
       <p>
         After the Soviet Union fell, the arms-and-training phase faded and the relationship turned mostly diplomatic. The State of

@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { Banknote, Crosshair, Landmark, ShieldAlert, ShieldCheck, ShieldQuestion, Vote } from 'lucide-react';
-import { BarList, Compare, Stats, Timeline, Tldr } from '@/components/ArticleBlocks';
+import { BarList, Compare, Photos, Stats, Timeline, Tldr } from '@/components/ArticleBlocks';
 import en from '../north-korea-palestine-relations';
 import type { Article } from '../types';
 
@@ -126,6 +126,13 @@ const article: Article = {
             text: '以色列外交部一名高级官员到访平壤，商谈对一座金矿的投资。以色列表示任何援助都必须包括停止向中东出口导弹，朝鲜则要求为此得到补偿。美国反对，1993年核危机爆发，谈判不了了之。',
           },
         ]}
+      />
+      <Photos
+        items={[
+          { id: 'figure:palestine-kim-berlin-1984', alt: '金日成与埃里希·昂纳克步入东柏林共和国宫', label: '金日成，1984年6月1日' },
+          { id: 'figure:palestine-arafat-berlin-1982', alt: '亚西尔·阿拉法特在东柏林受到埃里希·昂纳克欢迎', label: '亚西尔·阿拉法特，1982年3月10日' },
+        ]}
+        caption="同一位东道主，两次访问：东德领导人昂纳克接待了金日成（1984年6月1日国事访问）和巴解组织主席阿拉法特（1982年3月10日正式访问）。照片显示同一时期平壤与巴解组织都靠近苏联阵营。这不是两人的合影。"
       />
       <p>
         苏联解体后，武器和训练援助逐渐淡出，两国关系主要转为外交层面。巴勒斯坦国至今在平壤设有大使馆。2025年8月底，中国驻朝鲜使馆确认，曾任驻意大利使馆代办的

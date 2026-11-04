@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { Banknote, Crosshair, Landmark, ShieldAlert, ShieldCheck, ShieldQuestion, Vote } from 'lucide-react';
-import { BarList, Compare, Stats, Timeline, Tldr } from '@/components/ArticleBlocks';
+import { BarList, Compare, Photos, Stats, Timeline, Tldr } from '@/components/ArticleBlocks';
 import en from '../north-korea-palestine-relations';
 import type { Article } from '../types';
 
@@ -131,6 +131,13 @@ const article: Article = {
             text: '이스라엘 외무부 고위 관리가 금광 투자를 논의하러 평양을 찾는다. 이스라엘은 어떤 지원이든 중동 미사일 판매 중단을 포함해야 한다고 했고, 북한은 그 대가를 요구했다. 미국이 반대하고 1993년 핵 위기가 터지면서 협상은 흐지부지된다.',
           },
         ]}
+      />
+      <Photos
+        items={[
+          { id: 'figure:palestine-kim-berlin-1984', alt: '동베를린 공화국궁전에 에리히 호네커와 함께 입장하는 김일성', label: '김일성, 1984년 6월 1일' },
+          { id: 'figure:palestine-arafat-berlin-1982', alt: '동베를린에서 에리히 호네커의 환영을 받는 야세르 아라파트', label: '야세르 아라파트, 1982년 3월 10일' },
+        ]}
+        caption="같은 주인, 두 번의 방문: 동독 지도자 에리히 호네커가 김일성(1984년 6월 1일 국빈 방문), PLO 의장 야세르 아라파트(1982년 3월 10일 공식 방문)를 맞았다. 같은 시기 평양과 PLO가 모두 소련권 가까이에 있었다는 점을 보여 준다. 두 사람이 함께 찍힌 사진은 아니다."
       />
       <p>
         소련이 무너진 뒤 무기와 훈련 지원은 줄었고 관계는 대부분 외교 차원으로 바뀌었다. 팔레스타인국은 지금도 평양에 대사관을 두고 있다. 2025년

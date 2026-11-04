@@ -5652,3 +5652,48 @@ a.ltag:hover {
     font-size: 13px;
   }
 }
+
+/* photos (components/ArticleBlocks.tsx Photos): one or two pictures with labels, a caption and credits */
+.photos {
+  margin: 20px 0 24px;
+}
+.photos-row {
+  display: grid;
+  gap: 12px;
+}
+.photos-row.n2 {
+  grid-template-columns: 1fr 1fr;
+}
+.photos .photo {
+  margin: 0;
+}
+.photos .photo img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 14px;
+  border: 1px solid var(--line);
+}
+.photos .photo span {
+  display: block;
+  margin-top: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink);
+}
+.photos figcaption {
+  margin-top: 8px;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--ink-3);
+}
+.photos figcaption small {
+  display: block;
+  margin-top: 4px;
+  font-size: 12px;
+}
+@media (max-width: 560px) {
+  .photos-row.n2 {
+    grid-template-columns: 1fr;
+  }
+}

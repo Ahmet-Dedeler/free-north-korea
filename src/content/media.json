@@ -733,5 +733,40 @@
     "src": "/img/orgs/38-north.png",
     "credit": "Logo via Wikipedia",
     "sourceUrl": "https://en.wikipedia.org/wiki/38_North"
+  },
+  "host:www.mod.go.jp": {
+    "src": "/img/hosts/www-mod-go-jp.png",
+    "credit": "Icon from www.mod.go.jp",
+    "sourceUrl": "https://www.mod.go.jp"
+  },
+  "host:unibook.unikorea.go.kr": {
+    "src": "/img/hosts/unibook-unikorea-go-kr.ico",
+    "credit": "Icon from unibook.unikorea.go.kr",
+    "sourceUrl": "https://unibook.unikorea.go.kr"
+  },
+  "host:eogdata.mines.edu": {
+    "src": "/img/hosts/eogdata-mines-edu.ico",
+    "credit": "Icon from eogdata.mines.edu",
+    "sourceUrl": "https://eogdata.mines.edu"
+  },
+  "host:www.sukuukai.jp": {
+    "src": "/img/hosts/www-sukuukai-jp.png",
+    "credit": "Icon from www.sukuukai.jp",
+    "sourceUrl": "https://www.sukuukai.jp"
+  },
+  "article:north-korea-palestine-relations": {
+    "src": "/img/articles/north-korea-palestine-relations.jpg",
+    "credit": "United Nations General Assembly Building, New York · Superbass, CC BY-SA 4.0 via Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:United_Nations_General_Assembly_Building.jpg"
+  },
+  "figure:palestine-kim-berlin-1984": {
+    "src": "/img/articles/palestine-kim-berlin-1984.jpg",
+    "credit": "Bundesarchiv, Bild 183-1984-0601-041 / Mittelstädt, Rainer / CC BY-SA 3.0 de",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-1984-0601-041,_Berlin,_Besuch_Kim_Il_Sung-_Erich_Honecker.jpg"
+  },
+  "figure:palestine-arafat-berlin-1982": {
+    "src": "/img/articles/palestine-arafat-berlin-1982.jpg",
+    "credit": "Bundesarchiv, Bild 183-1982-0310-027 / CC BY-SA 3.0 de",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-1982-0310-027,_Berlin,_Yasser_Arafat,_Erich_Honecker.jpg"
   }
 }

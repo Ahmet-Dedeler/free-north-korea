@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { Banknote, Crosshair, Landmark, ShieldAlert, ShieldCheck, ShieldQuestion, Vote } from 'lucide-react';
-import { BarList, Compare, Stats, Timeline, Tldr } from '@/components/ArticleBlocks';
+import { BarList, Compare, Photos, Stats, Timeline, Tldr } from '@/components/ArticleBlocks';
 import en from '../north-korea-palestine-relations';
 import type { Article } from '../types';
 
@@ -131,6 +131,13 @@ const article: Article = {
             text: 'イスラエル外務省の高官が金鉱山への投資を話し合いに平壌を訪れる。イスラエルは、どんな支援も中東へのミサイル輸出の停止を含まねばならないと伝え、北朝鮮はその見返りを求めた。米国が反対し、1993年に核危機が始まって、協議は立ち消えになる。',
           },
         ]}
+      />
+      <Photos
+        items={[
+          { id: 'figure:palestine-kim-berlin-1984', alt: '東ベルリンの共和国宮殿にエーリッヒ・ホーネッカーと入る金日成', label: '金日成、1984年6月1日' },
+          { id: 'figure:palestine-arafat-berlin-1982', alt: '東ベルリンでエーリッヒ・ホーネッカーに迎えられるヤセル・アラファト', label: 'ヤセル・アラファト、1982年3月10日' },
+        ]}
+        caption="同じホスト、二度の訪問。東ドイツの指導者ホーネッカーが、金日成（1984年6月1日の国賓訪問）とPLOのアラファト議長（1982年3月10日の公式訪問）を迎えた。同じ時期に平壌とPLOがどちらもソ連圏寄りにいたことを示す。二人が一緒に写った写真ではない。"
       />
       <p>
         ソ連が崩壊すると、武器と訓練の支援は薄れ、関係は主に外交的なものになった。パレスチナ国は今も平壌に大使館を置いている。2025年8月末、平壌の

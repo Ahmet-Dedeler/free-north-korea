@@ -219,6 +219,7 @@ const ARTICLE_PHOTOS: Record<string, string> = {
   'information-into-north-korea': 'Notel',
   'china-forced-repatriation-north-koreans': 'Sino-Korean_Friendship_Bridge',
   'north-korea-songbun-caste-system': 'Agriculture_in_North_Korea',
+  'north-korea-palestine-relations': 'United_Nations_General_Assembly_Hall',
 };
 for (const [slugId, page] of Object.entries(ARTICLE_PHOTOS))
   jobs.push({ key: `article:${slugId}`, dest: `/img/articles/${slugId}`, minPx: 300, run: async () => [await wikiLeadPhoto(`https://en.wikipedia.org/wiki/${page}`)] });
@@ -244,8 +245,29 @@ jobs.push({
   run: async () => [{ url: CROWD, sourceUrl: CROWD, credit: 'Photo via Korea Risk Group' }],
 });
 
+// Inline photos for articles (components/ArticleBlocks.tsx `Photos`): free-licensed files from Wikimedia Commons, with
+// the licence and author in the credit because CC BY-SA asks for it. Their files are set in OVERRIDES below.
+for (const key of ['figure:palestine-kim-berlin-1984', 'figure:palestine-arafat-berlin-1982'])
+  jobs.push({ key, dest: `/img/articles/${key.slice('figure:'.length)}`, minPx: 300, run: async () => [] });
+
 /** Hand-picked images where automatic lookup picks the wrong thing (e.g. a foreign edition). */
 const OVERRIDES: Record<string, { url: string; sourceUrl: string; credit: string }> = {
+  // the lead photo of the General Assembly Hall page is the exterior of the building (the vote on Palestine happens inside)
+  'article:north-korea-palestine-relations': {
+    url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/United_Nations_General_Assembly_Building.jpg/1280px-United_Nations_General_Assembly_Building.jpg',
+    sourceUrl: 'https://commons.wikimedia.org/wiki/File:United_Nations_General_Assembly_Building.jpg',
+    credit: 'United Nations General Assembly Building, New York · Superbass, CC BY-SA 4.0 via Wikimedia Commons',
+  },
+  'figure:palestine-kim-berlin-1984': {
+    url: 'https://upload.wikimedia.org/wikipedia/commons/5/55/Bundesarchiv_Bild_183-1984-0601-041%2C_Berlin%2C_Besuch_Kim_Il_Sung-_Erich_Honecker.jpg',
+    sourceUrl: 'https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-1984-0601-041,_Berlin,_Besuch_Kim_Il_Sung-_Erich_Honecker.jpg',
+    credit: 'Bundesarchiv, Bild 183-1984-0601-041 / Mittelstädt, Rainer / CC BY-SA 3.0 de',
+  },
+  'figure:palestine-arafat-berlin-1982': {
+    url: 'https://upload.wikimedia.org/wikipedia/commons/c/cd/Bundesarchiv_Bild_183-1982-0310-027%2C_Berlin%2C_Yasser_Arafat%2C_Erich_Honecker.jpg',
+    sourceUrl: 'https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-1982-0310-027,_Berlin,_Yasser_Arafat,_Erich_Honecker.jpg',
+    credit: 'Bundesarchiv, Bild 183-1982-0310-027 / CC BY-SA 3.0 de',
+  },
   // the bridge's lead photo is named after Dandong, which wikiLeadPhoto rejects for place photos
   'article:china-forced-repatriation-north-koreans': {
     url: 'https://upload.wikimedia.org/wikipedia/commons/a/ae/Dandong%2C_Liaoning_Province.jpg',

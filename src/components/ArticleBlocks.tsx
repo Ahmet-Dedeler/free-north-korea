@@ -10,13 +10,14 @@ import type { LucideIcon } from 'lucide-react';
 import { Building2, Footprints, Home, Landmark, Megaphone, Radio, Route, Scale, Search, ShieldOff, Usb, Waves } from 'lucide-react';
 import Avatar from './Avatar';
 import CampCard from './CampCard';
+import { Ext } from './Ext';
 import Locator from './Locator';
 import { StatTile } from './Visual';
 import { person } from '@/entities';
 import { CoverCard } from './Covers';
 import { getAllCamps } from '@/content/camps';
 import { SHELVES } from '@/content/library';
-import { orgLogo } from '@/content/media';
+import { media, orgLogo } from '@/content/media';
 import { ORGS } from '@/content/orgs';
 import { orgHelpLabel, orgHref } from '@/content/orgsI18n';
 import { PLACES } from '@/content/places';
@@ -1114,6 +1115,44 @@ export function BarList({
         ))}
       </ol>
       {caption && <figcaption>{caption}</figcaption>}
+    </figure>
+  );
+}
+
+/**
+ * Photos inside an article: one or two pictures with a label each, a shared caption and the credit line (author and
+ * licence) read from media.json, so the licence text lives in one place (scripts/fetch-media.ts).
+ */
+export function Photos({
+  items,
+  caption,
+}: {
+  items: { id: string; alt: string; label: string }[];
+  caption?: ReactNode;
+}) {
+  const shown = items.map((it) => ({ ...it, m: media(it.id) })).filter((it) => it.m);
+  if (!shown.length) return null;
+  return (
+    <figure className="photos">
+      <div className={`photos-row n${shown.length}`}>
+        {shown.map((it) => (
+          <div key={it.id} className="photo">
+            <img src={it.m!.src} alt={it.alt} loading="lazy" />
+            <span>{it.label}</span>
+          </div>
+        ))}
+      </div>
+      <figcaption>
+        {caption}
+        <small>
+          {shown.map((it, i) => (
+            <span key={it.id}>
+              {i > 0 && ' · '}
+              <Ext href={it.m!.sourceUrl}>{it.m!.credit}</Ext>
+            </span>
+          ))}
+        </small>
+      </figcaption>
     </figure>
   );
 }
