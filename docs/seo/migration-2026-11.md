@@ -55,7 +55,9 @@ these are the likely causes, not proven ones:
 - Person titles use the local script (`리설주 (Ri Sol Ju)`) and are no longer the same bare name in all four languages.
 - Descriptions no longer cut mid-word. Organization and WebSite schema on home, breadcrumbs on people, counties, charts.
 - Sitemap dates only where they are true.
-- Search Console: sitemap resubmitted, indexing requested for the pages that earn clicks. IndexNow sent.
+- Search Console on 2026-11-05: sitemap resubmitted, validation started on the not-indexed group, indexing requested for
+  11 URLs until the daily quota ran out (the top articles, `/learn`, `/camps`, `/people`, `/north-korea-vs-south-korea`, `/map`). `/sanctions`, `/ko` and `/ja`
+  are next. IndexNow sent for all 990 URLs.
 
 ## What to check, and when
 
