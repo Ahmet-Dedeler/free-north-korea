@@ -5,7 +5,7 @@ import { Activity, BookOpen, Building2, CalendarDays, MapPin } from 'lucide-reac
 import Locator from '@/components/Locator';
 import PlaceCard, { PLACE_ICON, placeZoom } from '@/components/PlaceCard';
 import SatView from '@/components/SatView';
-import SatWatch from '@/components/SatWatch';
+import SatWatch, { PlanetWatch } from '@/components/SatWatch';
 import { SourceCards, StatTile } from '@/components/Visual';
 import { getCountyBySlug } from '@/content/counties';
 import { media } from '@/content/media';
@@ -123,6 +123,7 @@ export default function PlaceDossier({ lang, slug }: { lang: Lang; slug: string 
         )}
       </p>
 
+      <PlanetWatch id={place.id} lang={lang} name={place.name} />
       <SatWatch id={place.id} lang={lang} name={place.name} />
 
       {place.source && (

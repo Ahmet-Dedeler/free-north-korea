@@ -1,0 +1,6355 @@
+{
+"kangson|2016-10": {
+"date": "2016-10",
+"valid": 1.0,
+"white": 0.0008,
+"whiteExtra": 0.0007,
+"corrMosaic": 0.739,
+"corr": null,
+"mosaic": "global_monthly_2016_10_mosaic"
+},
+"kangson|2017-10": {
+"date": "2017-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": -0.0001,
+"corrMosaic": 0.822,
+"corr": null,
+"mosaic": "global_monthly_2017_10_mosaic"
+},
+"kangson|2018-10": {
+"date": "2018-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": -0.0001,
+"corrMosaic": 0.827,
+"corr": null,
+"mosaic": "global_monthly_2018_10_mosaic"
+},
+"kangson|2019-10": {
+"date": "2019-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": -0.0001,
+"corrMosaic": 0.826,
+"corr": null,
+"mosaic": "global_monthly_2019_10_mosaic"
+},
+"kangson|2020-10": {
+"date": "2020-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": -0.0001,
+"corrMosaic": 0.807,
+"corr": null,
+"mosaic": "global_monthly_2020_10_mosaic"
+},
+"kangson|2021-10": {
+"date": "2021-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": -0.0001,
+"corrMosaic": 0.875,
+"corr": null,
+"mosaic": "global_monthly_2021_10_mosaic"
+},
+"kangson|2022-10": {
+"date": "2022-10",
+"valid": 1.0,
+"white": 0.0015,
+"whiteExtra": 0.0014,
+"corrMosaic": 0.855,
+"corr": null,
+"mosaic": "global_monthly_2022_10_mosaic"
+},
+"kangson|2023-10": {
+"date": "2023-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": -0.0001,
+"corrMosaic": 0.833,
+"corr": null,
+"mosaic": "global_monthly_2023_10_mosaic"
+},
+"kangson|2024-10": {
+"date": "2024-10",
+"valid": 1.0,
+"white": 0.0008,
+"whiteExtra": 0.0007,
+"corrMosaic": 0.866,
+"corr": null,
+"mosaic": "global_monthly_2024_10_mosaic"
+},
+"kangson|2024-11-10": {
+"date": "2024-11-10",
+"valid": 0.0432,
+"white": 0.0,
+"whiteExtra": -0.0001,
+"corrMosaic": null,
+"corr": null,
+"mosaic": "daily_2024-11-10"
+},
+"kangson|2024-11-20": {
+"date": "2024-11-20",
+"valid": 1.0,
+"white": 0.0991,
+"whiteExtra": 0.099,
+"corrMosaic": 0.777,
+"corr": null,
+"mosaic": "daily_2024-11-20"
+},
+"kangson|2024-12-05": {
+"date": "2024-12-05",
+"valid": 1.0,
+"white": 0.0037,
+"whiteExtra": 0.0036,
+"corrMosaic": 0.691,
+"corr": 0.761,
+"mosaic": "daily_2024-12-05"
+},
+"kangson|2025-01-04": {
+"date": "2025-01-04",
+"valid": 1.0,
+"white": 0.0097,
+"whiteExtra": 0.0096,
+"corrMosaic": 0.724,
+"corr": 0.769,
+"mosaic": "daily_2025-01-04"
+},
+"kangson|2025-01-24": {
+"date": "2025-01-24",
+"valid": 0.9996,
+"white": 0.0351,
+"whiteExtra": 0.035,
+"corrMosaic": 0.588,
+"corr": null,
+"mosaic": "daily_2025-01-24"
+},
+"kangson|2025-02-18": {
+"date": "2025-02-18",
+"valid": 1.0,
+"white": 0.0914,
+"whiteExtra": 0.0913,
+"corrMosaic": 0.175,
+"corr": null,
+"mosaic": "daily_2025-02-18"
+},
+"kangson|2025-02-23": {
+"date": "2025-02-23",
+"valid": 0.0,
+"white": 0.0,
+"whiteExtra": -0.0001,
+"corrMosaic": null,
+"corr": null,
+"mosaic": "daily_2025-02-23"
+},
+"kangson|2025-03-10": {
+"date": "2025-03-10",
+"valid": 0.5996,
+"white": 0.0679,
+"whiteExtra": 0.0678,
+"corrMosaic": 0.028,
+"corr": null,
+"mosaic": "daily_2025-03-10"
+},
+"kangson|2025-03-20": {
+"date": "2025-03-20",
+"valid": 1.0,
+"white": 0.0072,
+"whiteExtra": 0.0071,
+"corrMosaic": 0.636,
+"corr": 0.822,
+"mosaic": "daily_2025-03-20"
+},
+"kangson|2025-04-29": {
+"date": "2025-04-29",
+"valid": 1.0,
+"white": 0.0186,
+"whiteExtra": 0.0185,
+"corrMosaic": 0.541,
+"corr": 0.868,
+"mosaic": "daily_2025-04-29"
+},
+"kangson|2025-05-04": {
+"date": "2025-05-04",
+"valid": 1.0,
+"white": 0.0041,
+"whiteExtra": 0.004,
+"corrMosaic": 0.636,
+"corr": 0.822,
+"mosaic": "daily_2025-05-04"
+},
+"kangson|2025-06-18": {
+"date": "2025-06-18",
+"valid": 1.0,
+"white": 0.0136,
+"whiteExtra": 0.0135,
+"corrMosaic": 0.662,
+"corr": 0.763,
+"mosaic": "daily_2025-06-18"
+},
+"kangson|2025-06-23": {
+"date": "2025-06-23",
+"valid": 1.0,
+"white": 0.0127,
+"whiteExtra": 0.0126,
+"corrMosaic": 0.572,
+"corr": null,
+"mosaic": "daily_2025-06-23"
+},
+"kangson|2025-07-25": {
+"date": "2025-07-25",
+"valid": 1.0,
+"white": 0.062,
+"whiteExtra": 0.0619,
+"corrMosaic": 0.04,
+"corr": null,
+"mosaic": "daily_2025-07-25"
+},
+"kangson|2025-07-28": {
+"date": "2025-07-28",
+"valid": 1.0,
+"white": 0.0088,
+"whiteExtra": 0.0087,
+"corrMosaic": 0.508,
+"corr": 0.825,
+"mosaic": "daily_2025-07-28"
+},
+"kangson|2025-08-07": {
+"date": "2025-08-07",
+"valid": 1.0,
+"white": 0.0074,
+"whiteExtra": 0.0073,
+"corrMosaic": 0.443,
+"corr": 0.865,
+"mosaic": "daily_2025-08-07"
+},
+"kangson|2025-09-21": {
+"date": "2025-09-21",
+"valid": 1.0,
+"white": 0.0012,
+"whiteExtra": 0.0011,
+"corrMosaic": 0.858,
+"corr": 0.808,
+"mosaic": "daily_2025-09-21"
+},
+"kangson|2025-10": {
+"date": "2025-10",
+"valid": 1.0,
+"white": 0.0001,
+"whiteExtra": 0.0,
+"corrMosaic": 1.0,
+"corr": null,
+"mosaic": "global_monthly_2025_10_mosaic"
+},
+"kangson|2025-10-16": {
+"date": "2025-10-16",
+"valid": 1.0,
+"white": 0.002,
+"whiteExtra": 0.0019,
+"corrMosaic": 0.911,
+"corr": 0.796,
+"mosaic": "daily_2025-10-16"
+},
+"kangson|2025-10-21": {
+"date": "2025-10-21",
+"valid": 1.0,
+"bright": 0.0003,
+"contrast": 23.5,
+"corr": null,
+"mosaic": "daily_2025-10-21"
+},
+"kangson|2025-11-05": {
+"date": "2025-11-05",
+"valid": 1.0,
+"white": 0.009,
+"whiteExtra": 0.0089,
+"corrMosaic": 0.884,
+"corr": 0.493,
+"mosaic": "daily_2025-11-05"
+},
+"kangson|2025-11-10": {
+"date": "2025-11-10",
+"valid": 1.0,
+"white": 0.0044,
+"whiteExtra": 0.0043,
+"corrMosaic": 0.897,
+"corr": null,
+"mosaic": "daily_2025-11-10"
+},
+"kangson|2025-12": {
+"date": "2025-12",
+"valid": 1.0,
+"white": 0.0004,
+"whiteExtra": 0.0003,
+"corrMosaic": 0.823,
+"corr": null,
+"mosaic": "global_monthly_2025_12_mosaic"
+},
+"kangson|2025-12-12": {
+"date": "2025-12-12",
+"valid": 0.6882,
+"white": 0.0068,
+"whiteExtra": 0.0067,
+"corrMosaic": 0.227,
+"corr": 0.239,
+"mosaic": "daily_2025-12-12"
+},
+"kangson|2026-01-19": {
+"date": "2026-01-19",
+"valid": 1.0,
+"white": 0.0319,
+"whiteExtra": 0.0318,
+"corrMosaic": 0.544,
+"corr": 0.686,
+"mosaic": "daily_2026-01-19"
+},
+"kangson|2026-02": {
+"date": "2026-02",
+"valid": 1.0,
+"white": 0.0071,
+"whiteExtra": 0.007,
+"corrMosaic": 0.573,
+"corr": null,
+"mosaic": "global_monthly_2026_02_mosaic"
+},
+"kangson|2026-02-03": {
+"date": "2026-02-03",
+"valid": 0.6087,
+"white": 0.0249,
+"whiteExtra": 0.0248,
+"corrMosaic": 0.186,
+"corr": null,
+"mosaic": "daily_2026-02-03"
+},
+"kangson|2026-02-18": {
+"date": "2026-02-18",
+"valid": 1.0,
+"white": 0.0212,
+"whiteExtra": 0.0211,
+"corrMosaic": 0.494,
+"corr": null,
+"mosaic": "daily_2026-02-18"
+},
+"kangson|2026-02-28": {
+"date": "2026-02-28",
+"valid": 0.7705,
+"white": 0.0055,
+"whiteExtra": 0.0054,
+"corrMosaic": 0.176,
+"corr": 0.347,
+"mosaic": "daily_2026-02-28"
+},
+"kangson|2026-03-10": {
+"date": "2026-03-10",
+"valid": 1.0,
+"white": 0.0071,
+"whiteExtra": 0.007,
+"corrMosaic": 0.604,
+"corr": 0.838,
+"mosaic": "daily_2026-03-10"
+},
+"kangson|2026-03-20": {
+"date": "2026-03-20",
+"valid": 0.9704,
+"white": 0.0126,
+"whiteExtra": 0.0125,
+"corrMosaic": 0.4,
+"corr": null,
+"mosaic": "daily_2026-03-20"
+},
+"kangson|2026-03-25": {
+"date": "2026-03-25",
+"valid": 0.0,
+"white": 0.0,
+"whiteExtra": -0.0001,
+"corrMosaic": null,
+"corr": null,
+"mosaic": "daily_2026-03-25"
+},
+"kangson|2026-04": {
+"date": "2026-04",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": -0.0001,
+"corrMosaic": 0.678,
+"corr": null,
+"mosaic": "global_monthly_2026_04_mosaic"
+},
+"kangson|2026-04-19": {
+"date": "2026-04-19",
+"valid": 1.0,
+"white": 0.015,
+"whiteExtra": 0.0149,
+"corrMosaic": 0.612,
+"corr": null,
+"mosaic": "daily_2026-04-19"
+},
+"kangson|2026-04-24": {
+"date": "2026-04-24",
+"valid": 1.0,
+"white": 0.0095,
+"whiteExtra": 0.0094,
+"corrMosaic": 0.575,
+"corr": 0.874,
+"mosaic": "daily_2026-04-24"
+},
+"kangson|2026-05-31": {
+"date": "2026-05-31",
+"valid": 1.0,
+"white": 0.0116,
+"whiteExtra": 0.0115,
+"corrMosaic": 0.636,
+"corr": 0.783,
+"mosaic": "daily_2026-05-31"
+},
+"kangson|2026-06": {
+"date": "2026-06",
+"valid": 1.0,
+"white": 0.0005,
+"whiteExtra": 0.0004,
+"corrMosaic": 0.716,
+"corr": null,
+"mosaic": "global_monthly_2026_06_mosaic"
+},
+"kangson|2026-06-23": {
+"date": "2026-06-23",
+"valid": 1.0,
+"white": 0.0198,
+"whiteExtra": 0.0197,
+"corrMosaic": 0.63,
+"corr": null,
+"mosaic": "daily_2026-06-23"
+},
+"kangson|2026-06-28": {
+"date": "2026-06-28",
+"valid": 0.5,
+"white": 0.0088,
+"whiteExtra": 0.0087,
+"corrMosaic": 0.115,
+"corr": 0.545,
+"mosaic": "daily_2026-06-28"
+},
+"kangson|2026-08": {
+"date": "2026-08",
+"valid": 1.0,
+"white": 0.0006,
+"whiteExtra": 0.0005,
+"corrMosaic": 0.562,
+"corr": null,
+"mosaic": "global_monthly_2026_08_mosaic"
+},
+"kangson|2026-08-12": {
+"date": "2026-08-12",
+"valid": 1.0,
+"white": 0.0119,
+"whiteExtra": 0.0118,
+"corrMosaic": 0.525,
+"corr": null,
+"mosaic": "daily_2026-08-12"
+},
+"kangson|2026-08-27": {
+"date": "2026-08-27",
+"valid": 1.0,
+"white": 0.0063,
+"whiteExtra": 0.0062,
+"corrMosaic": 0.502,
+"corr": 0.875,
+"mosaic": "daily_2026-08-27"
+},
+"kangson|2026-09-06": {
+"date": "2026-09-06",
+"valid": 1.0,
+"white": 0.0089,
+"whiteExtra": 0.0088,
+"corrMosaic": 0.783,
+"corr": null,
+"mosaic": "daily_2026-09-06"
+},
+"kangson|2026-09-11": {
+"date": "2026-09-11",
+"valid": 1.0,
+"white": 0.0072,
+"whiteExtra": 0.0071,
+"corrMosaic": 0.764,
+"corr": 0.835,
+"mosaic": "daily_2026-09-11"
+},
+"kangson|2026-09-16": {
+"date": "2026-09-16",
+"valid": 1.0,
+"white": 0.0068,
+"whiteExtra": 0.0067,
+"corrMosaic": 0.824,
+"corr": null,
+"mosaic": "daily_2026-09-16"
+},
+"kangson|2026-10": {
+"date": "2026-10",
+"valid": 1.0,
+"white": 0.0008,
+"whiteExtra": 0.0007,
+"corrMosaic": 0.891,
+"corr": null,
+"mosaic": "global_monthly_2026_10_mosaic"
+},
+"kangson|2026-10-01": {
+"date": "2026-10-01",
+"valid": 0.5846,
+"white": 0.0016,
+"whiteExtra": 0.0015,
+"corrMosaic": 0.272,
+"corr": 0.257,
+"mosaic": "daily_2026-10-01"
+},
+"kusong|2016-10": {
+"date": "2016-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.918,
+"corr": null,
+"mosaic": "global_monthly_2016_10_mosaic"
+},
+"kusong|2017-10": {
+"date": "2017-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.892,
+"corr": null,
+"mosaic": "global_monthly_2017_10_mosaic"
+},
+"kusong|2018-10": {
+"date": "2018-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.896,
+"corr": null,
+"mosaic": "global_monthly_2018_10_mosaic"
+},
+"kusong|2019-10": {
+"date": "2019-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.877,
+"corr": null,
+"mosaic": "global_monthly_2019_10_mosaic"
+},
+"kusong|2020-10": {
+"date": "2020-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.953,
+"corr": null,
+"mosaic": "global_monthly_2020_10_mosaic"
+},
+"kusong|2021-10": {
+"date": "2021-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.955,
+"corr": null,
+"mosaic": "global_monthly_2021_10_mosaic"
+},
+"kusong|2022-10": {
+"date": "2022-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.968,
+"corr": null,
+"mosaic": "global_monthly_2022_10_mosaic"
+},
+"kusong|2023-10": {
+"date": "2023-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.957,
+"corr": null,
+"mosaic": "global_monthly_2023_10_mosaic"
+},
+"kusong|2024-10": {
+"date": "2024-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.958,
+"corr": null,
+"mosaic": "global_monthly_2024_10_mosaic"
+},
+"kusong|2024-11-20": {
+"date": "2024-11-20",
+"valid": 1.0,
+"bright": 0.0,
+"contrast": 22.5,
+"corr": null,
+"mosaic": "daily_2024-11-20"
+},
+"kusong|2024-12-05": {
+"date": "2024-12-05",
+"valid": 1.0,
+"white": 0.0017,
+"whiteExtra": 0.0017,
+"corrMosaic": 0.925,
+"corr": 0.747,
+"mosaic": "daily_2024-12-05"
+},
+"kusong|2025-01-24": {
+"date": "2025-01-24",
+"valid": 1.0,
+"white": 0.0314,
+"whiteExtra": 0.0314,
+"corrMosaic": 0.911,
+"corr": 0.782,
+"mosaic": "daily_2025-01-24"
+},
+"kusong|2025-02-23": {
+"date": "2025-02-23",
+"valid": 1.0,
+"white": 0.0786,
+"whiteExtra": 0.0786,
+"corrMosaic": 0.553,
+"corr": 0.628,
+"mosaic": "daily_2025-02-23"
+},
+"kusong|2025-03-05": {
+"date": "2025-03-05",
+"valid": 1.0,
+"white": 0.0053,
+"whiteExtra": 0.0053,
+"corrMosaic": 0.884,
+"corr": null,
+"mosaic": "daily_2025-03-05"
+},
+"kusong|2025-03-10": {
+"date": "2025-03-10",
+"valid": 1.0,
+"white": 0.444,
+"whiteExtra": 0.444,
+"corrMosaic": 0.843,
+"corr": 0.791,
+"mosaic": "daily_2025-03-10"
+},
+"kusong|2025-04-29": {
+"date": "2025-04-29",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.907,
+"corr": 0.899,
+"mosaic": "daily_2025-04-29"
+},
+"kusong|2025-05-04": {
+"date": "2025-05-04",
+"valid": 0.8605,
+"white": 0.0005,
+"whiteExtra": 0.0005,
+"corrMosaic": 0.432,
+"corr": 0.455,
+"mosaic": "daily_2025-05-04"
+},
+"kusong|2025-06-23": {
+"date": "2025-06-23",
+"valid": 1.0,
+"white": 0.0003,
+"whiteExtra": 0.0003,
+"corrMosaic": 0.863,
+"corr": 0.913,
+"mosaic": "daily_2025-06-23"
+},
+"kusong|2025-08-07": {
+"date": "2025-08-07",
+"valid": 1.0,
+"white": 0.0012,
+"whiteExtra": 0.0012,
+"corrMosaic": 0.7,
+"corr": 0.872,
+"mosaic": "daily_2025-08-07"
+},
+"kusong|2025-09-21": {
+"date": "2025-09-21",
+"valid": 1.0,
+"white": 0.0003,
+"whiteExtra": 0.0003,
+"corrMosaic": 0.904,
+"corr": 0.901,
+"mosaic": "daily_2025-09-21"
+},
+"kusong|2025-10": {
+"date": "2025-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 1.0,
+"corr": null,
+"mosaic": "global_monthly_2025_10_mosaic"
+},
+"kusong|2025-11-20": {
+"date": "2025-11-20",
+"valid": 1.0,
+"white": 0.0004,
+"whiteExtra": 0.0004,
+"corrMosaic": 0.95,
+"corr": 0.799,
+"mosaic": "daily_2025-11-20"
+},
+"kusong|2025-11-22": {
+"date": "2025-11-22",
+"valid": 0.0,
+"bright": null,
+"contrast": null,
+"corr": null,
+"mosaic": "daily_2025-11-22"
+},
+"kusong|2025-12": {
+"date": "2025-12",
+"valid": 1.0,
+"white": 0.0001,
+"whiteExtra": 0.0001,
+"corrMosaic": 0.924,
+"corr": null,
+"mosaic": "global_monthly_2025_12_mosaic"
+},
+"kusong|2025-12-12": {
+"date": "2025-12-12",
+"valid": 0.0,
+"bright": null,
+"contrast": null,
+"corr": null,
+"mosaic": "daily_2025-12-12"
+},
+"kusong|2026-02": {
+"date": "2026-02",
+"valid": 1.0,
+"white": 0.0024,
+"whiteExtra": 0.0024,
+"corrMosaic": 0.949,
+"corr": null,
+"mosaic": "global_monthly_2026_02_mosaic"
+},
+"kusong|2026-02-23": {
+"date": "2026-02-23",
+"valid": 1.0,
+"white": 0.0041,
+"whiteExtra": 0.0041,
+"corrMosaic": 0.943,
+"corr": 0.845,
+"mosaic": "daily_2026-02-23"
+},
+"kusong|2026-02-28": {
+"date": "2026-02-28",
+"valid": 1.0,
+"white": 0.0022,
+"whiteExtra": 0.0022,
+"corrMosaic": 0.933,
+"corr": null,
+"mosaic": "daily_2026-02-28"
+},
+"kusong|2026-03-10": {
+"date": "2026-03-10",
+"valid": 1.0,
+"bright": 0.0,
+"contrast": 24.4,
+"corr": null,
+"mosaic": "daily_2026-03-10"
+},
+"kusong|2026-03-15": {
+"date": "2026-03-15",
+"valid": 1.0,
+"white": 0.0009,
+"whiteExtra": 0.0009,
+"corrMosaic": 0.931,
+"corr": 0.748,
+"mosaic": "daily_2026-03-15"
+},
+"kusong|2026-04": {
+"date": "2026-04",
+"valid": 1.0,
+"white": 0.0004,
+"whiteExtra": 0.0004,
+"corrMosaic": 0.909,
+"corr": null,
+"mosaic": "global_monthly_2026_04_mosaic"
+},
+"kusong|2026-04-29": {
+"date": "2026-04-29",
+"valid": 0.737,
+"bright": 0.0,
+"contrast": 31.8,
+"corr": 0.266,
+"mosaic": "daily_2026-04-29"
+},
+"kusong|2026-05-31": {
+"date": "2026-05-31",
+"valid": 0.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": null,
+"corr": null,
+"mosaic": "daily_2026-05-31"
+},
+"kusong|2026-06": {
+"date": "2026-06",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.885,
+"corr": null,
+"mosaic": "global_monthly_2026_06_mosaic"
+},
+"kusong|2026-06-28": {
+"date": "2026-06-28",
+"valid": 1.0,
+"white": 0.0017,
+"whiteExtra": 0.0017,
+"corrMosaic": 0.849,
+"corr": 0.918,
+"mosaic": "daily_2026-06-28"
+},
+"kusong|2026-08": {
+"date": "2026-08",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.762,
+"corr": null,
+"mosaic": "global_monthly_2026_08_mosaic"
+},
+"kusong|2026-08-27": {
+"date": "2026-08-27",
+"valid": 1.0,
+"white": 0.0012,
+"whiteExtra": 0.0012,
+"corrMosaic": 0.78,
+"corr": 0.886,
+"mosaic": "daily_2026-08-27"
+},
+"kusong|2026-09-18": {
+"date": "2026-09-18",
+"valid": 1.0,
+"white": 0.0011,
+"whiteExtra": 0.0011,
+"corrMosaic": 0.897,
+"corr": 0.894,
+"mosaic": "daily_2026-09-18"
+},
+"kusong|2026-10": {
+"date": "2026-10",
+"valid": 1.0,
+"white": 0.0006,
+"whiteExtra": 0.0006,
+"corrMosaic": 0.96,
+"corr": null,
+"mosaic": "global_monthly_2026_10_mosaic"
+},
+"kwanliso-14|2016-10": {
+"date": "2016-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": -0.0001,
+"corrMosaic": 0.838,
+"corr": null,
+"mosaic": "global_monthly_2016_10_mosaic"
+},
+"kwanliso-14|2017-10": {
+"date": "2017-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": -0.0001,
+"corrMosaic": 0.884,
+"corr": null,
+"mosaic": "global_monthly_2017_10_mosaic"
+},
+"kwanliso-14|2018-10": {
+"date": "2018-10",
+"valid": 1.0,
+"white": 0.0001,
+"whiteExtra": 0.0,
+"corrMosaic": 0.915,
+"corr": null,
+"mosaic": "global_monthly_2018_10_mosaic"
+},
+"kwanliso-14|2019-10": {
+"date": "2019-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": -0.0001,
+"corrMosaic": 0.906,
+"corr": null,
+"mosaic": "global_monthly_2019_10_mosaic"
+},
+"kwanliso-14|2020-10": {
+"date": "2020-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": -0.0001,
+"corrMosaic": 0.941,
+"corr": null,
+"mosaic": "global_monthly_2020_10_mosaic"
+},
+"kwanliso-14|2021-10": {
+"date": "2021-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": -0.0001,
+"corrMosaic": 0.927,
+"corr": null,
+"mosaic": "global_monthly_2021_10_mosaic"
+},
+"kwanliso-14|2022-10": {
+"date": "2022-10",
+"valid": 1.0,
+"white": 0.0001,
+"whiteExtra": 0.0,
+"corrMosaic": 0.959,
+"corr": null,
+"mosaic": "global_monthly_2022_10_mosaic"
+},
+"kwanliso-14|2023-10": {
+"date": "2023-10",
+"valid": 1.0,
+"white": 0.0001,
+"whiteExtra": 0.0,
+"corrMosaic": 0.892,
+"corr": null,
+"mosaic": "global_monthly_2023_10_mosaic"
+},
+"kwanliso-14|2024-10": {
+"date": "2024-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": -0.0001,
+"corrMosaic": 0.941,
+"corr": null,
+"mosaic": "global_monthly_2024_10_mosaic"
+},
+"kwanliso-14|2024-12-05": {
+"date": "2024-12-05",
+"valid": 1.0,
+"white": 0.0001,
+"whiteExtra": 0.0,
+"corrMosaic": 0.876,
+"corr": null,
+"mosaic": "daily_2024-12-05"
+},
+"kwanliso-14|2024-12-10": {
+"date": "2024-12-10",
+"valid": 1.0,
+"white": 0.001,
+"whiteExtra": 0.0009,
+"corrMosaic": 0.877,
+"corr": 0.364,
+"mosaic": "daily_2024-12-10"
+},
+"kwanliso-14|2025-01-24": {
+"date": "2025-01-24",
+"valid": 1.0,
+"white": 0.0029,
+"whiteExtra": 0.0028,
+"corrMosaic": 0.787,
+"corr": 0.142,
+"mosaic": "daily_2025-01-24"
+},
+"kwanliso-14|2025-02-23": {
+"date": "2025-02-23",
+"valid": 1.0,
+"white": 0.1064,
+"whiteExtra": 0.1063,
+"corrMosaic": 0.191,
+"corr": null,
+"mosaic": "daily_2025-02-23"
+},
+"kwanliso-14|2025-03-20": {
+"date": "2025-03-20",
+"valid": 0.9999,
+"white": 0.0002,
+"whiteExtra": 0.0001,
+"corrMosaic": 0.894,
+"corr": 0.388,
+"mosaic": "daily_2025-03-20"
+},
+"kwanliso-14|2025-04-29": {
+"date": "2025-04-29",
+"valid": 0.0,
+"white": 0.0,
+"whiteExtra": -0.0001,
+"corrMosaic": null,
+"corr": null,
+"mosaic": "daily_2025-04-29"
+},
+"kwanliso-14|2025-05-26": {
+"date": "2025-05-26",
+"valid": 0.6493,
+"white": 0.0003,
+"whiteExtra": 0.0002,
+"corrMosaic": 0.591,
+"corr": 0.547,
+"mosaic": "daily_2025-05-26"
+},
+"kwanliso-14|2025-07-28": {
+"date": "2025-07-28",
+"valid": 1.0,
+"white": 0.0127,
+"whiteExtra": 0.0126,
+"corrMosaic": 0.539,
+"corr": 0.512,
+"mosaic": "daily_2025-07-28"
+},
+"kwanliso-14|2025-09-21": {
+"date": "2025-09-21",
+"valid": 1.0,
+"white": 0.0001,
+"whiteExtra": 0.0,
+"corrMosaic": 0.941,
+"corr": 0.779,
+"mosaic": "daily_2025-09-21"
+},
+"kwanliso-14|2025-10": {
+"date": "2025-10",
+"valid": 1.0,
+"white": 0.0001,
+"whiteExtra": 0.0,
+"corrMosaic": 1.0,
+"corr": null,
+"mosaic": "global_monthly_2025_10_mosaic"
+},
+"kwanliso-14|2025-10-16": {
+"date": "2025-10-16",
+"valid": 0.9998,
+"bright": 0.0,
+"contrast": 21.5,
+"corr": 0.661,
+"mosaic": "daily_2025-10-16"
+},
+"kwanliso-14|2025-10-21": {
+"date": "2025-10-21",
+"valid": 1.0,
+"bright": 0.0,
+"contrast": 24.2,
+"corr": null,
+"mosaic": "daily_2025-10-21"
+},
+"kwanliso-14|2025-11-10": {
+"date": "2025-11-10",
+"valid": 1.0,
+"white": 0.0003,
+"whiteExtra": 0.0002,
+"corrMosaic": 0.91,
+"corr": null,
+"mosaic": "daily_2025-11-10"
+},
+"kwanliso-14|2025-11-22": {
+"date": "2025-11-22",
+"valid": 0.7474,
+"white": 0.0001,
+"whiteExtra": 0.0,
+"corrMosaic": 0.686,
+"corr": 0.408,
+"mosaic": "daily_2025-11-22"
+},
+"kwanliso-14|2025-12-30": {
+"date": "2025-12-30",
+"valid": 1.0,
+"white": 0.1611,
+"whiteExtra": 0.161,
+"corrMosaic": 0.423,
+"corr": 0.548,
+"mosaic": "daily_2025-12-30"
+},
+"kwanliso-14|2026-01-04": {
+"date": "2026-01-04",
+"valid": 1.0,
+"white": 0.4104,
+"whiteExtra": 0.4103,
+"corrMosaic": 0.664,
+"corr": 0.296,
+"mosaic": "daily_2026-01-04"
+},
+"kwanliso-14|2026-02-18": {
+"date": "2026-02-18",
+"valid": 0.9955,
+"white": 0.0009,
+"whiteExtra": 0.0008,
+"corrMosaic": 0.458,
+"corr": null,
+"mosaic": "daily_2026-02-18"
+},
+"kwanliso-14|2026-02-28": {
+"date": "2026-02-28",
+"valid": 1.0,
+"white": 0.0002,
+"whiteExtra": 0.0001,
+"corrMosaic": 0.832,
+"corr": 0.353,
+"mosaic": "daily_2026-02-28"
+},
+"kwanliso-14|2026-03-10": {
+"date": "2026-03-10",
+"valid": 1.0,
+"white": 0.0016,
+"whiteExtra": 0.0015,
+"corrMosaic": 0.674,
+"corr": null,
+"mosaic": "daily_2026-03-10"
+},
+"kwanliso-14|2026-03-20": {
+"date": "2026-03-20",
+"valid": 1.0,
+"white": 0.0004,
+"whiteExtra": 0.0003,
+"corrMosaic": 0.904,
+"corr": 0.27,
+"mosaic": "daily_2026-03-20"
+},
+"kwanliso-14|2026-04": {
+"date": "2026-04",
+"valid": 1.0,
+"white": 0.0001,
+"whiteExtra": 0.0,
+"corrMosaic": 0.921,
+"corr": null,
+"mosaic": "global_monthly_2026_04_mosaic"
+},
+"kwanliso-14|2026-04-24": {
+"date": "2026-04-24",
+"valid": 0.0935,
+"white": 0.0,
+"whiteExtra": -0.0001,
+"corrMosaic": null,
+"corr": null,
+"mosaic": "daily_2026-04-24"
+},
+"kwanliso-14|2026-05-31": {
+"date": "2026-05-31",
+"valid": 0.8313,
+"white": 0.0007,
+"whiteExtra": 0.0006,
+"corrMosaic": 0.684,
+"corr": 0.675,
+"mosaic": "daily_2026-05-31"
+},
+"kwanliso-14|2026-06-23": {
+"date": "2026-06-23",
+"valid": 1.0,
+"white": 0.0009,
+"whiteExtra": 0.0008,
+"corrMosaic": 0.851,
+"corr": 0.829,
+"mosaic": "daily_2026-06-23"
+},
+"kwanliso-14|2026-07": {
+"date": "2026-07",
+"valid": 1.0,
+"white": 0.014,
+"whiteExtra": 0.0139,
+"corrMosaic": 0.059,
+"corr": null,
+"mosaic": "global_monthly_2026_07_mosaic"
+},
+"kwanliso-14|2026-08-27": {
+"date": "2026-08-27",
+"valid": 1.0,
+"white": 0.0031,
+"whiteExtra": 0.003,
+"corrMosaic": 0.764,
+"corr": 0.515,
+"mosaic": "daily_2026-08-27"
+},
+"kwanliso-14|2026-09-16": {
+"date": "2026-09-16",
+"valid": 0.8684,
+"white": 0.0002,
+"whiteExtra": 0.0001,
+"corrMosaic": 0.75,
+"corr": 0.555,
+"mosaic": "daily_2026-09-16"
+},
+"kwanliso-14|2026-10": {
+"date": "2026-10",
+"valid": 1.0,
+"white": 0.0001,
+"whiteExtra": 0.0,
+"corrMosaic": 0.905,
+"corr": null,
+"mosaic": "global_monthly_2026_10_mosaic"
+},
+"kwanliso-14|2026-10-01": {
+"date": "2026-10-01",
+"valid": 1.0,
+"white": 0.0004,
+"whiteExtra": 0.0003,
+"corrMosaic": 0.957,
+"corr": null,
+"mosaic": "daily_2026-10-01"
+},
+"kwanliso-15|2016-10": {
+"date": "2016-10",
+"valid": 1.0,
+"white": 0.0007,
+"whiteExtra": 0.0007,
+"corrMosaic": 0.877,
+"corr": null,
+"mosaic": "global_monthly_2016_10_mosaic"
+},
+"kwanliso-15|2017-10": {
+"date": "2017-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.906,
+"corr": null,
+"mosaic": "global_monthly_2017_10_mosaic"
+},
+"kwanliso-15|2018-10": {
+"date": "2018-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.866,
+"corr": null,
+"mosaic": "global_monthly_2018_10_mosaic"
+},
+"kwanliso-15|2019-10": {
+"date": "2019-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.879,
+"corr": null,
+"mosaic": "global_monthly_2019_10_mosaic"
+},
+"kwanliso-15|2020-10": {
+"date": "2020-10",
+"valid": 1.0,
+"white": 0.0004,
+"whiteExtra": 0.0004,
+"corrMosaic": 0.926,
+"corr": null,
+"mosaic": "global_monthly_2020_10_mosaic"
+},
+"kwanliso-15|2021-10": {
+"date": "2021-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.937,
+"corr": null,
+"mosaic": "global_monthly_2021_10_mosaic"
+},
+"kwanliso-15|2022-10": {
+"date": "2022-10",
+"valid": 1.0,
+"white": 0.0002,
+"whiteExtra": 0.0002,
+"corrMosaic": 0.957,
+"corr": null,
+"mosaic": "global_monthly_2022_10_mosaic"
+},
+"kwanliso-15|2023-10": {
+"date": "2023-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.974,
+"corr": null,
+"mosaic": "global_monthly_2023_10_mosaic"
+},
+"kwanliso-15|2024-10": {
+"date": "2024-10",
+"valid": 1.0,
+"white": 0.0001,
+"whiteExtra": 0.0001,
+"corrMosaic": 0.946,
+"corr": null,
+"mosaic": "global_monthly_2024_10_mosaic"
+},
+"kwanliso-15|2024-11-12": {
+"date": "2024-11-12",
+"valid": 1.0,
+"white": 0.0006,
+"whiteExtra": 0.0006,
+"corrMosaic": 0.953,
+"corr": null,
+"mosaic": "daily_2024-11-12"
+},
+"kwanliso-15|2024-12-10": {
+"date": "2024-12-10",
+"valid": 1.0,
+"white": 0.0012,
+"whiteExtra": 0.0012,
+"corrMosaic": 0.968,
+"corr": 0.595,
+"mosaic": "daily_2024-12-10"
+},
+"kwanliso-15|2025-01-01": {
+"date": "2025-01-01",
+"valid": 1.0,
+"white": 0.0035,
+"whiteExtra": 0.0035,
+"corrMosaic": 0.951,
+"corr": 0.675,
+"mosaic": "daily_2025-01-01"
+},
+"kwanliso-15|2025-03-22": {
+"date": "2025-03-22",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.926,
+"corr": 0.68,
+"mosaic": "daily_2025-03-22"
+},
+"kwanliso-15|2025-04-11": {
+"date": "2025-04-11",
+"valid": 0.5867,
+"white": 0.0001,
+"whiteExtra": 0.0001,
+"corrMosaic": 0.309,
+"corr": 0.09,
+"mosaic": "daily_2025-04-11"
+},
+"kwanliso-15|2025-05-14": {
+"date": "2025-05-14",
+"valid": 1.0,
+"white": 0.0009,
+"whiteExtra": 0.0009,
+"corrMosaic": 0.845,
+"corr": 0.728,
+"mosaic": "daily_2025-05-14"
+},
+"kwanliso-15|2025-05-26": {
+"date": "2025-05-26",
+"valid": 0.5296,
+"white": 0.0307,
+"whiteExtra": 0.0307,
+"corrMosaic": -0.073,
+"corr": null,
+"mosaic": "daily_2025-05-26"
+},
+"kwanliso-15|2025-05-29": {
+"date": "2025-05-29",
+"valid": 1.0,
+"white": 0.0009,
+"whiteExtra": 0.0009,
+"corrMosaic": 0.814,
+"corr": null,
+"mosaic": "daily_2025-05-29"
+},
+"kwanliso-15|2025-06-22": {
+"date": "2025-06-22",
+"valid": 0.7422,
+"white": 0.0086,
+"whiteExtra": 0.0086,
+"corrMosaic": 0.047,
+"corr": 0.017,
+"mosaic": "daily_2025-06-22"
+},
+"kwanliso-15|2025-07-12": {
+"date": "2025-07-12",
+"valid": 1.0,
+"white": 0.0013,
+"whiteExtra": 0.0013,
+"corrMosaic": 0.826,
+"corr": 0.843,
+"mosaic": "daily_2025-07-12"
+},
+"kwanliso-15|2025-08-12": {
+"date": "2025-08-12",
+"valid": 1.0,
+"bright": 0.0052,
+"contrast": 23.8,
+"corr": 0.669,
+"mosaic": "daily_2025-08-12"
+},
+"kwanliso-15|2025-09-21": {
+"date": "2025-09-21",
+"valid": 0.9999,
+"white": 0.0008,
+"whiteExtra": 0.0008,
+"corrMosaic": 0.866,
+"corr": 0.835,
+"mosaic": "daily_2025-09-21"
+},
+"kwanliso-15|2025-10": {
+"date": "2025-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 1.0,
+"corr": null,
+"mosaic": "global_monthly_2025_10_mosaic"
+},
+"kwanliso-15|2025-10-08": {
+"date": "2025-10-08",
+"valid": 0.6966,
+"bright": 0.0,
+"contrast": 25.8,
+"corr": 0.791,
+"mosaic": "daily_2025-10-08"
+},
+"kwanliso-15|2025-11-12": {
+"date": "2025-11-12",
+"valid": 0.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": null,
+"corr": null,
+"mosaic": "daily_2025-11-12"
+},
+"kwanliso-15|2025-12-12": {
+"date": "2025-12-12",
+"valid": 1.0,
+"white": 0.0078,
+"whiteExtra": 0.0078,
+"corrMosaic": 0.795,
+"corr": 0.504,
+"mosaic": "daily_2025-12-12"
+},
+"kwanliso-15|2025-12-22": {
+"date": "2025-12-22",
+"valid": 1.0,
+"white": 0.0033,
+"whiteExtra": 0.0033,
+"corrMosaic": 0.95,
+"corr": null,
+"mosaic": "daily_2025-12-22"
+},
+"kwanliso-15|2026-01-04": {
+"date": "2026-01-04",
+"valid": 1.0,
+"white": 0.2368,
+"whiteExtra": 0.2368,
+"corrMosaic": 0.773,
+"corr": 0.61,
+"mosaic": "daily_2026-01-04"
+},
+"kwanliso-15|2026-02-28": {
+"date": "2026-02-28",
+"valid": 1.0,
+"bright": 0.0002,
+"contrast": 26.0,
+"corr": 0.257,
+"mosaic": "daily_2026-02-28"
+},
+"kwanliso-15|2026-03-25": {
+"date": "2026-03-25",
+"valid": 0.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": null,
+"corr": null,
+"mosaic": "daily_2026-03-25"
+},
+"kwanliso-15|2026-04": {
+"date": "2026-04",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.954,
+"corr": null,
+"mosaic": "global_monthly_2026_04_mosaic"
+},
+"kwanliso-15|2026-04-21": {
+"date": "2026-04-21",
+"valid": 1.0,
+"white": 0.0001,
+"whiteExtra": 0.0001,
+"corrMosaic": 0.905,
+"corr": 0.835,
+"mosaic": "daily_2026-04-21"
+},
+"kwanliso-15|2026-05-09": {
+"date": "2026-05-09",
+"valid": 0.9996,
+"white": 0.0006,
+"whiteExtra": 0.0006,
+"corrMosaic": 0.852,
+"corr": 0.843,
+"mosaic": "daily_2026-05-09"
+},
+"kwanliso-15|2026-06-03": {
+"date": "2026-06-03",
+"valid": 1.0,
+"white": 0.0007,
+"whiteExtra": 0.0007,
+"corrMosaic": 0.812,
+"corr": 0.882,
+"mosaic": "daily_2026-06-03"
+},
+"kwanliso-15|2026-06-28": {
+"date": "2026-06-28",
+"valid": 0.6163,
+"white": 0.0007,
+"whiteExtra": 0.0007,
+"corrMosaic": 0.653,
+"corr": null,
+"mosaic": "daily_2026-06-28"
+},
+"kwanliso-15|2026-07": {
+"date": "2026-07",
+"valid": 1.0,
+"white": 0.1627,
+"whiteExtra": 0.1627,
+"corrMosaic": 0.151,
+"corr": null,
+"mosaic": "global_monthly_2026_07_mosaic"
+},
+"kwanliso-15|2026-08-07": {
+"date": "2026-08-07",
+"valid": 1.0,
+"white": 0.0047,
+"whiteExtra": 0.0047,
+"corrMosaic": 0.746,
+"corr": 0.754,
+"mosaic": "daily_2026-08-07"
+},
+"kwanliso-15|2026-09-11": {
+"date": "2026-09-11",
+"valid": 1.0,
+"white": 0.0005,
+"whiteExtra": 0.0005,
+"corrMosaic": 0.82,
+"corr": 0.846,
+"mosaic": "daily_2026-09-11"
+},
+"kwanliso-15|2026-10": {
+"date": "2026-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.978,
+"corr": null,
+"mosaic": "global_monthly_2026_10_mosaic"
+},
+"kwanliso-16|2016-10": {
+"date": "2016-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.755,
+"corr": null,
+"mosaic": "global_monthly_2016_10_mosaic"
+},
+"kwanliso-16|2017-10": {
+"date": "2017-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.821,
+"corr": null,
+"mosaic": "global_monthly_2017_10_mosaic"
+},
+"kwanliso-16|2018-10": {
+"date": "2018-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.771,
+"corr": null,
+"mosaic": "global_monthly_2018_10_mosaic"
+},
+"kwanliso-16|2019-10": {
+"date": "2019-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.665,
+"corr": null,
+"mosaic": "global_monthly_2019_10_mosaic"
+},
+"kwanliso-16|2020-10": {
+"date": "2020-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.771,
+"corr": null,
+"mosaic": "global_monthly_2020_10_mosaic"
+},
+"kwanliso-16|2021-10": {
+"date": "2021-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.826,
+"corr": null,
+"mosaic": "global_monthly_2021_10_mosaic"
+},
+"kwanliso-16|2022-10": {
+"date": "2022-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.89,
+"corr": null,
+"mosaic": "global_monthly_2022_10_mosaic"
+},
+"kwanliso-16|2023-10": {
+"date": "2023-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.85,
+"corr": null,
+"mosaic": "global_monthly_2023_10_mosaic"
+},
+"kwanliso-16|2024-10": {
+"date": "2024-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.815,
+"corr": null,
+"mosaic": "global_monthly_2024_10_mosaic"
+},
+"kwanliso-16|2024-11-02": {
+"date": "2024-11-02",
+"valid": 0.9095,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.586,
+"corr": null,
+"mosaic": "daily_2024-11-02"
+},
+"kwanliso-16|2025-01-01": {
+"date": "2025-01-01",
+"valid": 1.0,
+"white": 0.001,
+"whiteExtra": 0.001,
+"corrMosaic": 0.833,
+"corr": 0.675,
+"mosaic": "daily_2025-01-01"
+},
+"kwanliso-16|2025-03-14": {
+"date": "2025-03-14",
+"valid": 1.0,
+"white": 0.109,
+"whiteExtra": 0.109,
+"corrMosaic": 0.378,
+"corr": 0.795,
+"mosaic": "daily_2025-03-14"
+},
+"kwanliso-16|2025-04-11": {
+"date": "2025-04-11",
+"valid": 1.0,
+"white": 0.0182,
+"whiteExtra": 0.0182,
+"corrMosaic": 0.268,
+"corr": null,
+"mosaic": "daily_2025-04-11"
+},
+"kwanliso-16|2025-04-21": {
+"date": "2025-04-21",
+"valid": 1.0,
+"white": 0.003,
+"whiteExtra": 0.003,
+"corrMosaic": 0.372,
+"corr": null,
+"mosaic": "daily_2025-04-21"
+},
+"kwanliso-16|2025-04-26": {
+"date": "2025-04-26",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.629,
+"corr": 0.518,
+"mosaic": "daily_2025-04-26"
+},
+"kwanliso-16|2025-05-16": {
+"date": "2025-05-16",
+"valid": 0.9243,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.253,
+"corr": 0.196,
+"mosaic": "daily_2025-05-16"
+},
+"kwanliso-16|2025-07-12": {
+"date": "2025-07-12",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.374,
+"corr": 0.276,
+"mosaic": "daily_2025-07-12"
+},
+"kwanliso-16|2025-09-18": {
+"date": "2025-09-18",
+"valid": 0.4192,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.453,
+"corr": 0.075,
+"mosaic": "daily_2025-09-18"
+},
+"kwanliso-16|2025-10": {
+"date": "2025-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 1.0,
+"corr": null,
+"mosaic": "global_monthly_2025_10_mosaic"
+},
+"kwanliso-16|2025-10-03": {
+"date": "2025-10-03",
+"valid": 0.9999,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.821,
+"corr": 0.224,
+"mosaic": "daily_2025-10-03"
+},
+"kwanliso-16|2025-11-22": {
+"date": "2025-11-22",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.908,
+"corr": 0.41,
+"mosaic": "daily_2025-11-22"
+},
+"kwanliso-16|2026-01-06": {
+"date": "2026-01-06",
+"valid": 1.0,
+"white": 0.0792,
+"whiteExtra": 0.0792,
+"corrMosaic": 0.704,
+"corr": 0.688,
+"mosaic": "daily_2026-01-06"
+},
+"kwanliso-16|2026-02-20": {
+"date": "2026-02-20",
+"valid": 0.9991,
+"white": 0.0043,
+"whiteExtra": 0.0043,
+"corrMosaic": 0.541,
+"corr": 0.471,
+"mosaic": "daily_2026-02-20"
+},
+"kwanliso-16|2026-02-25": {
+"date": "2026-02-25",
+"valid": 1.0,
+"white": 0.0004,
+"whiteExtra": 0.0004,
+"corrMosaic": 0.679,
+"corr": null,
+"mosaic": "daily_2026-02-25"
+},
+"kwanliso-16|2026-03-17": {
+"date": "2026-03-17",
+"valid": 0.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": null,
+"corr": null,
+"mosaic": "daily_2026-03-17"
+},
+"kwanliso-16|2026-04": {
+"date": "2026-04",
+"valid": 1.0,
+"white": 0.0001,
+"whiteExtra": 0.0001,
+"corrMosaic": 0.844,
+"corr": null,
+"mosaic": "global_monthly_2026_04_mosaic"
+},
+"kwanliso-16|2026-04-11": {
+"date": "2026-04-11",
+"valid": 0.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": null,
+"corr": null,
+"mosaic": "daily_2026-04-11"
+},
+"kwanliso-16|2026-04-16": {
+"date": "2026-04-16",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.81,
+"corr": 0.207,
+"mosaic": "daily_2026-04-16"
+},
+"kwanliso-16|2026-04-21": {
+"date": "2026-04-21",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.768,
+"corr": null,
+"mosaic": "daily_2026-04-21"
+},
+"kwanliso-16|2026-05-16": {
+"date": "2026-05-16",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.588,
+"corr": 0.455,
+"mosaic": "daily_2026-05-16"
+},
+"kwanliso-16|2026-05-31": {
+"date": "2026-05-31",
+"valid": 0.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": null,
+"corr": null,
+"mosaic": "daily_2026-05-31"
+},
+"kwanliso-16|2026-07": {
+"date": "2026-07",
+"valid": 1.0,
+"white": 0.0132,
+"whiteExtra": 0.0132,
+"corrMosaic": 0.024,
+"corr": null,
+"mosaic": "global_monthly_2026_07_mosaic"
+},
+"kwanliso-16|2026-08-04": {
+"date": "2026-08-04",
+"valid": 1.0,
+"white": 0.0076,
+"whiteExtra": 0.0076,
+"corrMosaic": 0.244,
+"corr": 0.473,
+"mosaic": "daily_2026-08-04"
+},
+"kwanliso-16|2026-09-18": {
+"date": "2026-09-18",
+"valid": 0.9744,
+"white": 0.0906,
+"whiteExtra": 0.0906,
+"corrMosaic": 0.055,
+"corr": -0.167,
+"mosaic": "daily_2026-09-18"
+},
+"kwanliso-16|2026-10": {
+"date": "2026-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.784,
+"corr": null,
+"mosaic": "global_monthly_2026_10_mosaic"
+},
+"kwanliso-18|2016-10": {
+"date": "2016-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.86,
+"corr": null,
+"mosaic": "global_monthly_2016_10_mosaic"
+},
+"kwanliso-18|2017-10": {
+"date": "2017-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.896,
+"corr": null,
+"mosaic": "global_monthly_2017_10_mosaic"
+},
+"kwanliso-18|2018-10": {
+"date": "2018-10",
+"valid": 1.0,
+"white": 0.0001,
+"whiteExtra": 0.0001,
+"corrMosaic": 0.889,
+"corr": null,
+"mosaic": "global_monthly_2018_10_mosaic"
+},
+"kwanliso-18|2019-10": {
+"date": "2019-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.921,
+"corr": null,
+"mosaic": "global_monthly_2019_10_mosaic"
+},
+"kwanliso-18|2020-10": {
+"date": "2020-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.933,
+"corr": null,
+"mosaic": "global_monthly_2020_10_mosaic"
+},
+"kwanliso-18|2021-10": {
+"date": "2021-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.931,
+"corr": null,
+"mosaic": "global_monthly_2021_10_mosaic"
+},
+"kwanliso-18|2022-10": {
+"date": "2022-10",
+"valid": 1.0,
+"white": 0.0001,
+"whiteExtra": 0.0001,
+"corrMosaic": 0.946,
+"corr": null,
+"mosaic": "global_monthly_2022_10_mosaic"
+},
+"kwanliso-18|2023-10": {
+"date": "2023-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.91,
+"corr": null,
+"mosaic": "global_monthly_2023_10_mosaic"
+},
+"kwanliso-18|2024-10": {
+"date": "2024-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.941,
+"corr": null,
+"mosaic": "global_monthly_2024_10_mosaic"
+},
+"kwanliso-18|2024-12-05": {
+"date": "2024-12-05",
+"valid": 1.0,
+"white": 0.0001,
+"whiteExtra": 0.0001,
+"corrMosaic": 0.91,
+"corr": null,
+"mosaic": "daily_2024-12-05"
+},
+"kwanliso-18|2024-12-10": {
+"date": "2024-12-10",
+"valid": 1.0,
+"white": 0.0007,
+"whiteExtra": 0.0007,
+"corrMosaic": 0.892,
+"corr": 0.474,
+"mosaic": "daily_2024-12-10"
+},
+"kwanliso-18|2025-01-24": {
+"date": "2025-01-24",
+"valid": 1.0,
+"white": 0.0009,
+"whiteExtra": 0.0009,
+"corrMosaic": 0.833,
+"corr": 0.205,
+"mosaic": "daily_2025-01-24"
+},
+"kwanliso-18|2025-03-20": {
+"date": "2025-03-20",
+"valid": 0.9999,
+"white": 0.0001,
+"whiteExtra": 0.0001,
+"corrMosaic": 0.911,
+"corr": 0.523,
+"mosaic": "daily_2025-03-20"
+},
+"kwanliso-18|2025-04-29": {
+"date": "2025-04-29",
+"valid": 0.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": null,
+"corr": null,
+"mosaic": "daily_2025-04-29"
+},
+"kwanliso-18|2025-05-26": {
+"date": "2025-05-26",
+"valid": 0.9425,
+"white": 0.0006,
+"whiteExtra": 0.0006,
+"corrMosaic": 0.726,
+"corr": 0.672,
+"mosaic": "daily_2025-05-26"
+},
+"kwanliso-18|2025-06-23": {
+"date": "2025-06-23",
+"valid": 1.0,
+"white": 0.0165,
+"whiteExtra": 0.0165,
+"corrMosaic": 0.587,
+"corr": 0.511,
+"mosaic": "daily_2025-06-23"
+},
+"kwanliso-18|2025-07-28": {
+"date": "2025-07-28",
+"valid": 1.0,
+"white": 0.0135,
+"whiteExtra": 0.0135,
+"corrMosaic": 0.479,
+"corr": 0.506,
+"mosaic": "daily_2025-07-28"
+},
+"kwanliso-18|2025-09-21": {
+"date": "2025-09-21",
+"valid": 1.0,
+"white": 0.0001,
+"whiteExtra": 0.0001,
+"corrMosaic": 0.92,
+"corr": 0.815,
+"mosaic": "daily_2025-09-21"
+},
+"kwanliso-18|2025-10": {
+"date": "2025-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 1.0,
+"corr": null,
+"mosaic": "global_monthly_2025_10_mosaic"
+},
+"kwanliso-18|2025-10-16": {
+"date": "2025-10-16",
+"valid": 1.0,
+"bright": 0.0,
+"contrast": 21.4,
+"corr": 0.69,
+"mosaic": "daily_2025-10-16"
+},
+"kwanliso-18|2025-10-21": {
+"date": "2025-10-21",
+"valid": 1.0,
+"bright": 0.0,
+"contrast": 23.6,
+"corr": null,
+"mosaic": "daily_2025-10-21"
+},
+"kwanliso-18|2025-11-10": {
+"date": "2025-11-10",
+"valid": 1.0,
+"white": 0.0003,
+"whiteExtra": 0.0003,
+"corrMosaic": 0.934,
+"corr": null,
+"mosaic": "daily_2025-11-10"
+},
+"kwanliso-18|2025-11-22": {
+"date": "2025-11-22",
+"valid": 0.9921,
+"white": 0.0001,
+"whiteExtra": 0.0001,
+"corrMosaic": 0.902,
+"corr": 0.402,
+"mosaic": "daily_2025-11-22"
+},
+"kwanliso-18|2026-01-04": {
+"date": "2026-01-04",
+"valid": 1.0,
+"white": 0.5085,
+"whiteExtra": 0.5085,
+"corrMosaic": 0.589,
+"corr": 0.322,
+"mosaic": "daily_2026-01-04"
+},
+"kwanliso-18|2026-02-28": {
+"date": "2026-02-28",
+"valid": 0.9982,
+"white": 0.0001,
+"whiteExtra": 0.0001,
+"corrMosaic": 0.775,
+"corr": 0.288,
+"mosaic": "daily_2026-02-28"
+},
+"kwanliso-18|2026-03-10": {
+"date": "2026-03-10",
+"valid": 1.0,
+"white": 0.001,
+"whiteExtra": 0.001,
+"corrMosaic": 0.609,
+"corr": null,
+"mosaic": "daily_2026-03-10"
+},
+"kwanliso-18|2026-03-20": {
+"date": "2026-03-20",
+"valid": 1.0,
+"white": 0.0003,
+"whiteExtra": 0.0003,
+"corrMosaic": 0.916,
+"corr": 0.42,
+"mosaic": "daily_2026-03-20"
+},
+"kwanliso-18|2026-04": {
+"date": "2026-04",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.93,
+"corr": null,
+"mosaic": "global_monthly_2026_04_mosaic"
+},
+"kwanliso-18|2026-04-24": {
+"date": "2026-04-24",
+"valid": 0.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": null,
+"corr": null,
+"mosaic": "daily_2026-04-24"
+},
+"kwanliso-18|2026-05-31": {
+"date": "2026-05-31",
+"valid": 1.0,
+"white": 0.0007,
+"whiteExtra": 0.0007,
+"corrMosaic": 0.85,
+"corr": 0.878,
+"mosaic": "daily_2026-05-31"
+},
+"kwanliso-18|2026-07": {
+"date": "2026-07",
+"valid": 1.0,
+"white": 0.0439,
+"whiteExtra": 0.0439,
+"corrMosaic": -0.128,
+"corr": null,
+"mosaic": "global_monthly_2026_07_mosaic"
+},
+"kwanliso-18|2026-08-27": {
+"date": "2026-08-27",
+"valid": 1.0,
+"white": 0.003,
+"whiteExtra": 0.003,
+"corrMosaic": 0.732,
+"corr": 0.666,
+"mosaic": "daily_2026-08-27"
+},
+"kwanliso-18|2026-09-16": {
+"date": "2026-09-16",
+"valid": 0.8697,
+"white": 0.0002,
+"whiteExtra": 0.0002,
+"corrMosaic": 0.757,
+"corr": 0.599,
+"mosaic": "daily_2026-09-16"
+},
+"kwanliso-18|2026-10": {
+"date": "2026-10",
+"valid": 1.0,
+"white": 0.0001,
+"whiteExtra": 0.0001,
+"corrMosaic": 0.933,
+"corr": null,
+"mosaic": "global_monthly_2026_10_mosaic"
+},
+"kwanliso-18|2026-10-01": {
+"date": "2026-10-01",
+"valid": 1.0,
+"white": 0.0004,
+"whiteExtra": 0.0004,
+"corrMosaic": 0.941,
+"corr": null,
+"mosaic": "daily_2026-10-01"
+},
+"kwanliso-22|2016-10": {
+"date": "2016-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.91,
+"corr": null,
+"mosaic": "global_monthly_2016_10_mosaic"
+},
+"kwanliso-22|2017-10": {
+"date": "2017-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.927,
+"corr": null,
+"mosaic": "global_monthly_2017_10_mosaic"
+},
+"kwanliso-22|2018-10": {
+"date": "2018-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.901,
+"corr": null,
+"mosaic": "global_monthly_2018_10_mosaic"
+},
+"kwanliso-22|2019-10": {
+"date": "2019-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.941,
+"corr": null,
+"mosaic": "global_monthly_2019_10_mosaic"
+},
+"kwanliso-22|2020-10": {
+"date": "2020-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.95,
+"corr": null,
+"mosaic": "global_monthly_2020_10_mosaic"
+},
+"kwanliso-22|2021-10": {
+"date": "2021-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.946,
+"corr": null,
+"mosaic": "global_monthly_2021_10_mosaic"
+},
+"kwanliso-22|2022-10": {
+"date": "2022-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.954,
+"corr": null,
+"mosaic": "global_monthly_2022_10_mosaic"
+},
+"kwanliso-22|2023-10": {
+"date": "2023-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.959,
+"corr": null,
+"mosaic": "global_monthly_2023_10_mosaic"
+},
+"kwanliso-22|2024-10": {
+"date": "2024-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.963,
+"corr": null,
+"mosaic": "global_monthly_2024_10_mosaic"
+},
+"kwanliso-22|2024-12-24": {
+"date": "2024-12-24",
+"valid": 1.0,
+"white": 0.0003,
+"whiteExtra": 0.0003,
+"corrMosaic": 0.926,
+"corr": 0.923,
+"mosaic": "daily_2024-12-24"
+},
+"kwanliso-22|2025-04-11": {
+"date": "2025-04-11",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.902,
+"corr": 0.959,
+"mosaic": "daily_2025-04-11"
+},
+"kwanliso-22|2025-05-28": {
+"date": "2025-05-28",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.876,
+"corr": 0.964,
+"mosaic": "daily_2025-05-28"
+},
+"kwanliso-22|2025-09-15": {
+"date": "2025-09-15",
+"valid": 0.0061,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": null,
+"corr": null,
+"mosaic": "daily_2025-09-15"
+},
+"kwanliso-22|2025-10": {
+"date": "2025-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 1.0,
+"corr": null,
+"mosaic": "global_monthly_2025_10_mosaic"
+},
+"kwanliso-22|2025-10-03": {
+"date": "2025-10-03",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.903,
+"corr": 0.937,
+"mosaic": "daily_2025-10-03"
+},
+"kwanliso-22|2025-11-22": {
+"date": "2025-11-22",
+"valid": 1.0,
+"white": 0.0003,
+"whiteExtra": 0.0003,
+"corrMosaic": 0.967,
+"corr": 0.906,
+"mosaic": "daily_2025-11-22"
+},
+"kwanliso-22|2026-04": {
+"date": "2026-04",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.91,
+"corr": null,
+"mosaic": "global_monthly_2026_04_mosaic"
+},
+"kwanliso-22|2026-04-23": {
+"date": "2026-04-23",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.906,
+"corr": 0.949,
+"mosaic": "daily_2026-04-23"
+},
+"kwanliso-22|2026-05-31": {
+"date": "2026-05-31",
+"valid": 0.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": null,
+"corr": null,
+"mosaic": "daily_2026-05-31"
+},
+"kwanliso-22|2026-06-02": {
+"date": "2026-06-02",
+"valid": 1.0,
+"white": 0.0001,
+"whiteExtra": 0.0001,
+"corrMosaic": 0.852,
+"corr": 0.953,
+"mosaic": "daily_2026-06-02"
+},
+"kwanliso-22|2026-07": {
+"date": "2026-07",
+"valid": 1.0,
+"white": 0.1066,
+"whiteExtra": 0.1066,
+"corrMosaic": -0.015,
+"corr": null,
+"mosaic": "global_monthly_2026_07_mosaic"
+},
+"kwanliso-22|2026-08-09": {
+"date": "2026-08-09",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.635,
+"corr": 0.931,
+"mosaic": "daily_2026-08-09"
+},
+"kwanliso-22|2026-09-10": {
+"date": "2026-09-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.789,
+"corr": 0.914,
+"mosaic": "daily_2026-09-10"
+},
+"kwanliso-22|2026-10": {
+"date": "2026-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.967,
+"corr": null,
+"mosaic": "global_monthly_2026_10_mosaic"
+},
+"kwanliso-25|2016-10": {
+"date": "2016-10",
+"valid": 1.0,
+"white": 0.0006,
+"whiteExtra": 0.0004,
+"corrMosaic": 0.91,
+"corr": null,
+"mosaic": "global_monthly_2016_10_mosaic"
+},
+"kwanliso-25|2017-10": {
+"date": "2017-10",
+"valid": 1.0,
+"white": 0.0003,
+"whiteExtra": 0.0001,
+"corrMosaic": 0.874,
+"corr": null,
+"mosaic": "global_monthly_2017_10_mosaic"
+},
+"kwanliso-25|2018-10": {
+"date": "2018-10",
+"valid": 1.0,
+"white": 0.0003,
+"whiteExtra": 0.0001,
+"corrMosaic": 0.852,
+"corr": null,
+"mosaic": "global_monthly_2018_10_mosaic"
+},
+"kwanliso-25|2019-10": {
+"date": "2019-10",
+"valid": 1.0,
+"white": 0.0004,
+"whiteExtra": 0.0002,
+"corrMosaic": 0.86,
+"corr": null,
+"mosaic": "global_monthly_2019_10_mosaic"
+},
+"kwanliso-25|2020-10": {
+"date": "2020-10",
+"valid": 1.0,
+"white": 0.0001,
+"whiteExtra": -0.0001,
+"corrMosaic": 0.891,
+"corr": null,
+"mosaic": "global_monthly_2020_10_mosaic"
+},
+"kwanliso-25|2021-10": {
+"date": "2021-10",
+"valid": 1.0,
+"white": 0.0001,
+"whiteExtra": -0.0001,
+"corrMosaic": 0.914,
+"corr": null,
+"mosaic": "global_monthly_2021_10_mosaic"
+},
+"kwanliso-25|2022-10": {
+"date": "2022-10",
+"valid": 1.0,
+"white": 0.0006,
+"whiteExtra": 0.0004,
+"corrMosaic": 0.932,
+"corr": null,
+"mosaic": "global_monthly_2022_10_mosaic"
+},
+"kwanliso-25|2023-10": {
+"date": "2023-10",
+"valid": 1.0,
+"white": 0.0004,
+"whiteExtra": 0.0002,
+"corrMosaic": 0.939,
+"corr": null,
+"mosaic": "global_monthly_2023_10_mosaic"
+},
+"kwanliso-25|2024-10": {
+"date": "2024-10",
+"valid": 1.0,
+"white": 0.0002,
+"whiteExtra": 0.0,
+"corrMosaic": 0.933,
+"corr": null,
+"mosaic": "global_monthly_2024_10_mosaic"
+},
+"kwanliso-25|2024-11-02": {
+"date": "2024-11-02",
+"valid": 1.0,
+"white": 0.0062,
+"whiteExtra": 0.006,
+"corrMosaic": 0.922,
+"corr": null,
+"mosaic": "daily_2024-11-02"
+},
+"kwanliso-25|2024-12-29": {
+"date": "2024-12-29",
+"valid": 1.0,
+"white": 0.1867,
+"whiteExtra": 0.1865,
+"corrMosaic": 0.861,
+"corr": 0.848,
+"mosaic": "daily_2024-12-29"
+},
+"kwanliso-25|2025-01-18": {
+"date": "2025-01-18",
+"valid": 1.0,
+"white": 0.0205,
+"whiteExtra": 0.0203,
+"corrMosaic": 0.849,
+"corr": 0.819,
+"mosaic": "daily_2025-01-18"
+},
+"kwanliso-25|2025-03-14": {
+"date": "2025-03-14",
+"valid": 0.9525,
+"white": 0.0065,
+"whiteExtra": 0.0063,
+"corrMosaic": 0.588,
+"corr": 0.652,
+"mosaic": "daily_2025-03-14"
+},
+"kwanliso-25|2025-03-19": {
+"date": "2025-03-19",
+"valid": 1.0,
+"white": 0.009,
+"whiteExtra": 0.0088,
+"corrMosaic": 0.64,
+"corr": null,
+"mosaic": "daily_2025-03-19"
+},
+"kwanliso-25|2025-04-16": {
+"date": "2025-04-16",
+"valid": 1.0,
+"white": 0.0007,
+"whiteExtra": 0.0005,
+"corrMosaic": 0.831,
+"corr": 0.939,
+"mosaic": "daily_2025-04-16"
+},
+"kwanliso-25|2025-05-23": {
+"date": "2025-05-23",
+"valid": 0.2013,
+"white": 0.0,
+"whiteExtra": -0.0002,
+"corrMosaic": -0.46,
+"corr": -0.469,
+"mosaic": "daily_2025-05-23"
+},
+"kwanliso-25|2025-06-05": {
+"date": "2025-06-05",
+"valid": 0.9998,
+"white": 0.025,
+"whiteExtra": 0.0248,
+"corrMosaic": 0.77,
+"corr": null,
+"mosaic": "daily_2025-06-05"
+},
+"kwanliso-25|2025-06-12": {
+"date": "2025-06-12",
+"valid": 1.0,
+"white": 0.0085,
+"whiteExtra": 0.0083,
+"corrMosaic": 0.783,
+"corr": 0.899,
+"mosaic": "daily_2025-06-12"
+},
+"kwanliso-25|2025-07-07": {
+"date": "2025-07-07",
+"valid": 0.9999,
+"white": 0.0066,
+"whiteExtra": 0.0064,
+"corrMosaic": 0.812,
+"corr": 0.956,
+"mosaic": "daily_2025-07-07"
+},
+"kwanliso-25|2025-08-19": {
+"date": "2025-08-19",
+"valid": 1.0,
+"white": 0.0035,
+"whiteExtra": 0.0033,
+"corrMosaic": 0.785,
+"corr": 0.952,
+"mosaic": "daily_2025-08-19"
+},
+"kwanliso-25|2025-09-27": {
+"date": "2025-09-27",
+"valid": 0.0,
+"white": 0.0,
+"whiteExtra": -0.0002,
+"corrMosaic": null,
+"corr": null,
+"mosaic": "daily_2025-09-27"
+},
+"kwanliso-25|2025-10": {
+"date": "2025-10",
+"valid": 1.0,
+"white": 0.0002,
+"whiteExtra": 0.0,
+"corrMosaic": 1.0,
+"corr": null,
+"mosaic": "global_monthly_2025_10_mosaic"
+},
+"kwanliso-25|2025-10-03": {
+"date": "2025-10-03",
+"valid": 1.0,
+"white": 0.5875,
+"whiteExtra": 0.5873,
+"corrMosaic": 0.679,
+"corr": 0.664,
+"mosaic": "daily_2025-10-03"
+},
+"kwanliso-25|2025-11-19": {
+"date": "2025-11-19",
+"valid": 1.0,
+"white": 0.0034,
+"whiteExtra": 0.0032,
+"corrMosaic": 0.924,
+"corr": null,
+"mosaic": "daily_2025-11-19"
+},
+"kwanliso-25|2025-11-22": {
+"date": "2025-11-22",
+"valid": 1.0,
+"white": 0.0105,
+"whiteExtra": 0.0103,
+"corrMosaic": 0.909,
+"corr": 0.904,
+"mosaic": "daily_2025-11-22"
+},
+"kwanliso-25|2025-12-09": {
+"date": "2025-12-09",
+"valid": 1.0,
+"white": 0.0388,
+"whiteExtra": 0.0386,
+"corrMosaic": 0.891,
+"corr": 0.867,
+"mosaic": "daily_2025-12-09"
+},
+"kwanliso-25|2026-01-03": {
+"date": "2026-01-03",
+"valid": 1.0,
+"white": 0.1403,
+"whiteExtra": 0.1401,
+"corrMosaic": 0.706,
+"corr": 0.824,
+"mosaic": "daily_2026-01-03"
+},
+"kwanliso-25|2026-02-20": {
+"date": "2026-02-20",
+"valid": 1.0,
+"white": 0.0096,
+"whiteExtra": 0.0094,
+"corrMosaic": 0.863,
+"corr": 0.74,
+"mosaic": "daily_2026-02-20"
+},
+"kwanliso-25|2026-03-16": {
+"date": "2026-03-16",
+"valid": 1.0,
+"white": 0.0105,
+"whiteExtra": 0.0103,
+"corrMosaic": 0.878,
+"corr": 0.845,
+"mosaic": "daily_2026-03-16"
+},
+"kwanliso-25|2026-04": {
+"date": "2026-04",
+"valid": 1.0,
+"white": 0.0004,
+"whiteExtra": 0.0002,
+"corrMosaic": 0.897,
+"corr": null,
+"mosaic": "global_monthly_2026_04_mosaic"
+},
+"kwanliso-25|2026-04-18": {
+"date": "2026-04-18",
+"valid": 0.0,
+"white": 0.0,
+"whiteExtra": -0.0002,
+"corrMosaic": null,
+"corr": null,
+"mosaic": "daily_2026-04-18"
+},
+"kwanliso-25|2026-04-23": {
+"date": "2026-04-23",
+"valid": 1.0,
+"white": 0.004,
+"whiteExtra": 0.0038,
+"corrMosaic": 0.896,
+"corr": null,
+"mosaic": "daily_2026-04-23"
+},
+"kwanliso-25|2026-05-31": {
+"date": "2026-05-31",
+"valid": 0.0,
+"white": 0.0,
+"whiteExtra": -0.0002,
+"corrMosaic": null,
+"corr": null,
+"mosaic": "daily_2026-05-31"
+},
+"kwanliso-25|2026-06-02": {
+"date": "2026-06-02",
+"valid": 1.0,
+"white": 0.0061,
+"whiteExtra": 0.0059,
+"corrMosaic": 0.859,
+"corr": 0.96,
+"mosaic": "daily_2026-06-02"
+},
+"kwanliso-25|2026-07": {
+"date": "2026-07",
+"valid": 1.0,
+"white": 0.0001,
+"whiteExtra": -0.0001,
+"corrMosaic": 0.746,
+"corr": null,
+"mosaic": "global_monthly_2026_07_mosaic"
+},
+"kwanliso-25|2026-08-09": {
+"date": "2026-08-09",
+"valid": 0.9304,
+"white": 0.0015,
+"whiteExtra": 0.0013,
+"corrMosaic": 0.505,
+"corr": 0.613,
+"mosaic": "daily_2026-08-09"
+},
+"kwanliso-25|2026-09-20": {
+"date": "2026-09-20",
+"valid": 1.0,
+"white": 0.0045,
+"whiteExtra": 0.0043,
+"corrMosaic": 0.927,
+"corr": 0.956,
+"mosaic": "daily_2026-09-20"
+},
+"kwanliso-25|2026-10": {
+"date": "2026-10",
+"valid": 1.0,
+"white": 0.0005,
+"whiteExtra": 0.0003,
+"corrMosaic": 0.951,
+"corr": null,
+"mosaic": "global_monthly_2026_10_mosaic"
+},
+"kyohwaso-1-kaechon|2016-10": {
+"date": "2016-10",
+"valid": 1.0,
+"white": 0.0005,
+"whiteExtra": 0.0005,
+"corrMosaic": 0.888,
+"corr": null,
+"mosaic": "global_monthly_2016_10_mosaic"
+},
+"kyohwaso-1-kaechon|2017-10": {
+"date": "2017-10",
+"valid": 1.0,
+"white": 0.0001,
+"whiteExtra": 0.0001,
+"corrMosaic": 0.865,
+"corr": null,
+"mosaic": "global_monthly_2017_10_mosaic"
+},
+"kyohwaso-1-kaechon|2018-10": {
+"date": "2018-10",
+"valid": 1.0,
+"white": 0.0003,
+"whiteExtra": 0.0003,
+"corrMosaic": 0.856,
+"corr": null,
+"mosaic": "global_monthly_2018_10_mosaic"
+},
+"kyohwaso-1-kaechon|2019-10": {
+"date": "2019-10",
+"valid": 1.0,
+"white": 0.0001,
+"whiteExtra": 0.0001,
+"corrMosaic": 0.905,
+"corr": null,
+"mosaic": "global_monthly_2019_10_mosaic"
+},
+"kyohwaso-1-kaechon|2020-10": {
+"date": "2020-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.906,
+"corr": null,
+"mosaic": "global_monthly_2020_10_mosaic"
+},
+"kyohwaso-1-kaechon|2021-10": {
+"date": "2021-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.91,
+"corr": null,
+"mosaic": "global_monthly_2021_10_mosaic"
+},
+"kyohwaso-1-kaechon|2022-10": {
+"date": "2022-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.926,
+"corr": null,
+"mosaic": "global_monthly_2022_10_mosaic"
+},
+"kyohwaso-1-kaechon|2023-10": {
+"date": "2023-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.929,
+"corr": null,
+"mosaic": "global_monthly_2023_10_mosaic"
+},
+"kyohwaso-1-kaechon|2024-10": {
+"date": "2024-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.93,
+"corr": null,
+"mosaic": "global_monthly_2024_10_mosaic"
+},
+"kyohwaso-1-kaechon|2024-12-05": {
+"date": "2024-12-05",
+"valid": 1.0,
+"white": 0.0001,
+"whiteExtra": 0.0001,
+"corrMosaic": 0.885,
+"corr": 0.452,
+"mosaic": "daily_2024-12-05"
+},
+"kyohwaso-1-kaechon|2024-12-15": {
+"date": "2024-12-15",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.863,
+"corr": null,
+"mosaic": "daily_2024-12-15"
+},
+"kyohwaso-1-kaechon|2025-01-04": {
+"date": "2025-01-04",
+"valid": 1.0,
+"white": 0.0234,
+"whiteExtra": 0.0234,
+"corrMosaic": 0.602,
+"corr": 0.561,
+"mosaic": "daily_2025-01-04"
+},
+"kyohwaso-1-kaechon|2025-03-20": {
+"date": "2025-03-20",
+"valid": 1.0,
+"white": 0.0005,
+"whiteExtra": 0.0005,
+"corrMosaic": 0.837,
+"corr": 0.554,
+"mosaic": "daily_2025-03-20"
+},
+"kyohwaso-1-kaechon|2025-04-29": {
+"date": "2025-04-29",
+"valid": 0.7189,
+"white": 0.0008,
+"whiteExtra": 0.0008,
+"corrMosaic": 0.351,
+"corr": 0.272,
+"mosaic": "daily_2025-04-29"
+},
+"kyohwaso-1-kaechon|2025-05-29": {
+"date": "2025-05-29",
+"valid": 1.0,
+"white": 0.0003,
+"whiteExtra": 0.0003,
+"corrMosaic": 0.805,
+"corr": 0.679,
+"mosaic": "daily_2025-05-29"
+},
+"kyohwaso-1-kaechon|2025-06-23": {
+"date": "2025-06-23",
+"valid": 0.8162,
+"white": 0.0009,
+"whiteExtra": 0.0009,
+"corrMosaic": 0.38,
+"corr": 0.461,
+"mosaic": "daily_2025-06-23"
+},
+"kyohwaso-1-kaechon|2025-07-28": {
+"date": "2025-07-28",
+"valid": 1.0,
+"white": 0.0014,
+"whiteExtra": 0.0014,
+"corrMosaic": 0.635,
+"corr": 0.68,
+"mosaic": "daily_2025-07-28"
+},
+"kyohwaso-1-kaechon|2025-08-07": {
+"date": "2025-08-07",
+"valid": 1.0,
+"white": 0.0005,
+"whiteExtra": 0.0005,
+"corrMosaic": 0.652,
+"corr": 0.713,
+"mosaic": "daily_2025-08-07"
+},
+"kyohwaso-1-kaechon|2025-09-21": {
+"date": "2025-09-21",
+"valid": 1.0,
+"white": 0.0001,
+"whiteExtra": 0.0001,
+"corrMosaic": 0.886,
+"corr": 0.776,
+"mosaic": "daily_2025-09-21"
+},
+"kyohwaso-1-kaechon|2025-10": {
+"date": "2025-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 1.0,
+"corr": null,
+"mosaic": "global_monthly_2025_10_mosaic"
+},
+"kyohwaso-1-kaechon|2025-10-16": {
+"date": "2025-10-16",
+"valid": 0.999,
+"bright": 0.0,
+"contrast": 20.1,
+"corr": 0.631,
+"mosaic": "daily_2025-10-16"
+},
+"kyohwaso-1-kaechon|2025-11-22": {
+"date": "2025-11-22",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.896,
+"corr": 0.538,
+"mosaic": "daily_2025-11-22"
+},
+"kyohwaso-1-kaechon|2025-12-12": {
+"date": "2025-12-12",
+"valid": 1.0,
+"white": 0.0002,
+"whiteExtra": 0.0002,
+"corrMosaic": 0.868,
+"corr": 0.4,
+"mosaic": "daily_2025-12-12"
+},
+"kyohwaso-1-kaechon|2026-02-18": {
+"date": "2026-02-18",
+"valid": 1.0,
+"white": 0.002,
+"whiteExtra": 0.002,
+"corrMosaic": 0.814,
+"corr": null,
+"mosaic": "daily_2026-02-18"
+},
+"kyohwaso-1-kaechon|2026-02-28": {
+"date": "2026-02-28",
+"valid": 0.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": null,
+"corr": null,
+"mosaic": "daily_2026-02-28"
+},
+"kyohwaso-1-kaechon|2026-03-10": {
+"date": "2026-03-10",
+"valid": 0.9691,
+"white": 0.0001,
+"whiteExtra": 0.0001,
+"corrMosaic": 0.416,
+"corr": 0.228,
+"mosaic": "daily_2026-03-10"
+},
+"kyohwaso-1-kaechon|2026-03-15": {
+"date": "2026-03-15",
+"valid": 0.0226,
+"white": 0.0002,
+"whiteExtra": 0.0002,
+"corrMosaic": null,
+"corr": null,
+"mosaic": "daily_2026-03-15"
+},
+"kyohwaso-1-kaechon|2026-04": {
+"date": "2026-04",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.856,
+"corr": null,
+"mosaic": "global_monthly_2026_04_mosaic"
+},
+"kyohwaso-1-kaechon|2026-04-19": {
+"date": "2026-04-19",
+"valid": 1.0,
+"white": 0.0003,
+"whiteExtra": 0.0003,
+"corrMosaic": 0.834,
+"corr": 0.799,
+"mosaic": "daily_2026-04-19"
+},
+"kyohwaso-1-kaechon|2026-04-21": {
+"date": "2026-04-21",
+"valid": 0.9947,
+"white": 0.0002,
+"whiteExtra": 0.0002,
+"corrMosaic": 0.761,
+"corr": null,
+"mosaic": "daily_2026-04-21"
+},
+"kyohwaso-1-kaechon|2026-05-31": {
+"date": "2026-05-31",
+"valid": 0.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": null,
+"corr": null,
+"mosaic": "daily_2026-05-31"
+},
+"kyohwaso-1-kaechon|2026-06-23": {
+"date": "2026-06-23",
+"valid": 1.0,
+"white": 0.0011,
+"whiteExtra": 0.0011,
+"corrMosaic": 0.779,
+"corr": 0.789,
+"mosaic": "daily_2026-06-23"
+},
+"kyohwaso-1-kaechon|2026-06-28": {
+"date": "2026-06-28",
+"valid": 0.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": null,
+"corr": null,
+"mosaic": "daily_2026-06-28"
+},
+"kyohwaso-1-kaechon|2026-07": {
+"date": "2026-07",
+"valid": 1.0,
+"white": 0.4457,
+"whiteExtra": 0.4457,
+"corrMosaic": -0.071,
+"corr": null,
+"mosaic": "global_monthly_2026_07_mosaic"
+},
+"kyohwaso-1-kaechon|2026-08-27": {
+"date": "2026-08-27",
+"valid": 0.9999,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.727,
+"corr": 0.77,
+"mosaic": "daily_2026-08-27"
+},
+"kyohwaso-1-kaechon|2026-09-11": {
+"date": "2026-09-11",
+"valid": 0.9068,
+"white": 0.0001,
+"whiteExtra": 0.0001,
+"corrMosaic": 0.52,
+"corr": 0.445,
+"mosaic": "daily_2026-09-11"
+},
+"kyohwaso-1-kaechon|2026-10": {
+"date": "2026-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.929,
+"corr": null,
+"mosaic": "global_monthly_2026_10_mosaic"
+},
+"kyohwaso-1-kaechon|2026-10-01": {
+"date": "2026-10-01",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.912,
+"corr": null,
+"mosaic": "daily_2026-10-01"
+},
+"kyohwaso-12-chongori|2016-10": {
+"date": "2016-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.758,
+"corr": null,
+"mosaic": "global_monthly_2016_10_mosaic"
+},
+"kyohwaso-12-chongori|2017-10": {
+"date": "2017-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.865,
+"corr": null,
+"mosaic": "global_monthly_2017_10_mosaic"
+},
+"kyohwaso-12-chongori|2018-10": {
+"date": "2018-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.867,
+"corr": null,
+"mosaic": "global_monthly_2018_10_mosaic"
+},
+"kyohwaso-12-chongori|2019-10": {
+"date": "2019-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.857,
+"corr": null,
+"mosaic": "global_monthly_2019_10_mosaic"
+},
+"kyohwaso-12-chongori|2020-10": {
+"date": "2020-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.88,
+"corr": null,
+"mosaic": "global_monthly_2020_10_mosaic"
+},
+"kyohwaso-12-chongori|2021-10": {
+"date": "2021-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.884,
+"corr": null,
+"mosaic": "global_monthly_2021_10_mosaic"
+},
+"kyohwaso-12-chongori|2022-10": {
+"date": "2022-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.888,
+"corr": null,
+"mosaic": "global_monthly_2022_10_mosaic"
+},
+"kyohwaso-12-chongori|2023-10": {
+"date": "2023-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.886,
+"corr": null,
+"mosaic": "global_monthly_2023_10_mosaic"
+},
+"kyohwaso-12-chongori|2024-10": {
+"date": "2024-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.877,
+"corr": null,
+"mosaic": "global_monthly_2024_10_mosaic"
+},
+"kyohwaso-12-chongori|2024-11-02": {
+"date": "2024-11-02",
+"valid": 1.0,
+"white": 0.0002,
+"whiteExtra": 0.0002,
+"corrMosaic": 0.856,
+"corr": null,
+"mosaic": "daily_2024-11-02"
+},
+"kyohwaso-12-chongori|2024-12-07": {
+"date": "2024-12-07",
+"valid": 0.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": null,
+"corr": null,
+"mosaic": "daily_2024-12-07"
+},
+"kyohwaso-12-chongori|2025-01-01": {
+"date": "2025-01-01",
+"valid": 1.0,
+"white": 0.0094,
+"whiteExtra": 0.0094,
+"corrMosaic": 0.87,
+"corr": 0.737,
+"mosaic": "daily_2025-01-01"
+},
+"kyohwaso-12-chongori|2025-03-19": {
+"date": "2025-03-19",
+"valid": 1.0,
+"white": 0.2896,
+"whiteExtra": 0.2896,
+"corrMosaic": 0.033,
+"corr": 0.778,
+"mosaic": "daily_2025-03-19"
+},
+"kyohwaso-12-chongori|2025-04-26": {
+"date": "2025-04-26",
+"valid": 0.3097,
+"white": 0.0457,
+"whiteExtra": 0.0457,
+"corrMosaic": -0.04,
+"corr": -0.212,
+"mosaic": "daily_2025-04-26"
+},
+"kyohwaso-12-chongori|2025-05-16": {
+"date": "2025-05-16",
+"valid": 1.0,
+"white": 0.0001,
+"whiteExtra": 0.0001,
+"corrMosaic": 0.888,
+"corr": 0.908,
+"mosaic": "daily_2025-05-16"
+},
+"kyohwaso-12-chongori|2025-09-27": {
+"date": "2025-09-27",
+"valid": 0.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": null,
+"corr": null,
+"mosaic": "daily_2025-09-27"
+},
+"kyohwaso-12-chongori|2025-10": {
+"date": "2025-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 1.0,
+"corr": null,
+"mosaic": "global_monthly_2025_10_mosaic"
+},
+"kyohwaso-12-chongori|2025-10-03": {
+"date": "2025-10-03",
+"valid": 1.0,
+"white": 0.0001,
+"whiteExtra": 0.0001,
+"corrMosaic": 0.979,
+"corr": 0.836,
+"mosaic": "daily_2025-10-03"
+},
+"kyohwaso-12-chongori|2025-11-19": {
+"date": "2025-11-19",
+"valid": 0.901,
+"white": 0.0002,
+"whiteExtra": 0.0002,
+"corrMosaic": 0.698,
+"corr": 0.493,
+"mosaic": "daily_2025-11-19"
+},
+"kyohwaso-12-chongori|2026-04": {
+"date": "2026-04",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.899,
+"corr": null,
+"mosaic": "global_monthly_2026_04_mosaic"
+},
+"kyohwaso-12-chongori|2026-04-23": {
+"date": "2026-04-23",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.89,
+"corr": 0.857,
+"mosaic": "daily_2026-04-23"
+},
+"kyohwaso-12-chongori|2026-05-31": {
+"date": "2026-05-31",
+"valid": 0.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": null,
+"corr": null,
+"mosaic": "daily_2026-05-31"
+},
+"kyohwaso-12-chongori|2026-06-02": {
+"date": "2026-06-02",
+"valid": 1.0,
+"white": 0.0002,
+"whiteExtra": 0.0002,
+"corrMosaic": 0.848,
+"corr": 0.952,
+"mosaic": "daily_2026-06-02"
+},
+"kyohwaso-12-chongori|2026-07": {
+"date": "2026-07",
+"valid": 1.0,
+"white": 0.054,
+"whiteExtra": 0.054,
+"corrMosaic": 0.266,
+"corr": null,
+"mosaic": "global_monthly_2026_07_mosaic"
+},
+"kyohwaso-12-chongori|2026-08-09": {
+"date": "2026-08-09",
+"valid": 1.0,
+"white": 0.0006,
+"whiteExtra": 0.0006,
+"corrMosaic": 0.721,
+"corr": 0.725,
+"mosaic": "daily_2026-08-09"
+},
+"kyohwaso-12-chongori|2026-09-12": {
+"date": "2026-09-12",
+"valid": 1.0,
+"white": 0.0006,
+"whiteExtra": 0.0006,
+"corrMosaic": 0.893,
+"corr": 0.892,
+"mosaic": "daily_2026-09-12"
+},
+"kyohwaso-12-chongori|2026-10": {
+"date": "2026-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.865,
+"corr": null,
+"mosaic": "global_monthly_2026_10_mosaic"
+},
+"punggye-ri|2016-10": {
+"date": "2016-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.667,
+"corr": null,
+"mosaic": "global_monthly_2016_10_mosaic"
+},
+"punggye-ri|2017-10": {
+"date": "2017-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.773,
+"corr": null,
+"mosaic": "global_monthly_2017_10_mosaic"
+},
+"punggye-ri|2018-10": {
+"date": "2018-10",
+"valid": 1.0,
+"white": 0.0015,
+"whiteExtra": 0.0015,
+"corrMosaic": 0.654,
+"corr": null,
+"mosaic": "global_monthly_2018_10_mosaic"
+},
+"punggye-ri|2019-10": {
+"date": "2019-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.689,
+"corr": null,
+"mosaic": "global_monthly_2019_10_mosaic"
+},
+"punggye-ri|2020-10": {
+"date": "2020-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.815,
+"corr": null,
+"mosaic": "global_monthly_2020_10_mosaic"
+},
+"punggye-ri|2021-10": {
+"date": "2021-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.792,
+"corr": null,
+"mosaic": "global_monthly_2021_10_mosaic"
+},
+"punggye-ri|2022-09": {
+"date": "2022-09",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.833,
+"corr": null,
+"mosaic": "global_monthly_2022_09_mosaic"
+},
+"punggye-ri|2022-10": {
+"date": "2022-10",
+"valid": 1.0,
+"white": 0.0376,
+"whiteExtra": 0.0376,
+"corrMosaic": 0.489,
+"corr": null,
+"mosaic": "global_monthly_2022_10_mosaic"
+},
+"punggye-ri|2023-10": {
+"date": "2023-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.817,
+"corr": null,
+"mosaic": "global_monthly_2023_10_mosaic"
+},
+"punggye-ri|2024-10": {
+"date": "2024-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.938,
+"corr": null,
+"mosaic": "global_monthly_2024_10_mosaic"
+},
+"punggye-ri|2024-11-02": {
+"date": "2024-11-02",
+"valid": 0.9999,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.815,
+"corr": null,
+"mosaic": "daily_2024-11-02"
+},
+"punggye-ri|2025-04-11": {
+"date": "2025-04-11",
+"valid": 1.0,
+"white": 0.1155,
+"whiteExtra": 0.1155,
+"corrMosaic": 0.267,
+"corr": 0.95,
+"mosaic": "daily_2025-04-11"
+},
+"punggye-ri|2025-04-26": {
+"date": "2025-04-26",
+"valid": 1.0,
+"white": 0.1407,
+"whiteExtra": 0.1407,
+"corrMosaic": 0.188,
+"corr": null,
+"mosaic": "daily_2025-04-26"
+},
+"punggye-ri|2025-05-11": {
+"date": "2025-05-11",
+"valid": 1.0,
+"white": 0.2129,
+"whiteExtra": 0.2129,
+"corrMosaic": 0.276,
+"corr": null,
+"mosaic": "daily_2025-05-11"
+},
+"punggye-ri|2025-05-16": {
+"date": "2025-05-16",
+"valid": 1.0,
+"white": 0.0112,
+"whiteExtra": 0.0112,
+"corrMosaic": 0.334,
+"corr": 0.901,
+"mosaic": "daily_2025-05-16"
+},
+"punggye-ri|2025-06-05": {
+"date": "2025-06-05",
+"valid": 0.9976,
+"white": 0.0341,
+"whiteExtra": 0.0341,
+"corrMosaic": 0.212,
+"corr": 0.292,
+"mosaic": "daily_2025-06-05"
+},
+"punggye-ri|2025-07-10": {
+"date": "2025-07-10",
+"valid": 1.0,
+"white": 0.0283,
+"whiteExtra": 0.0283,
+"corrMosaic": 0.156,
+"corr": null,
+"mosaic": "daily_2025-07-10"
+},
+"punggye-ri|2025-07-20": {
+"date": "2025-07-20",
+"valid": 0.9992,
+"white": 0.0092,
+"whiteExtra": 0.0092,
+"corrMosaic": 0.187,
+"corr": 0.233,
+"mosaic": "daily_2025-07-20"
+},
+"punggye-ri|2025-09-18": {
+"date": "2025-09-18",
+"valid": 0.9993,
+"white": 0.019,
+"whiteExtra": 0.019,
+"corrMosaic": 0.262,
+"corr": 0.183,
+"mosaic": "daily_2025-09-18"
+},
+"punggye-ri|2025-10": {
+"date": "2025-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 1.0,
+"corr": null,
+"mosaic": "global_monthly_2025_10_mosaic"
+},
+"punggye-ri|2025-10-03": {
+"date": "2025-10-03",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.973,
+"corr": 0.461,
+"mosaic": "daily_2025-10-03"
+},
+"punggye-ri|2025-11-07": {
+"date": "2025-11-07",
+"valid": 1.0,
+"white": 0.0081,
+"whiteExtra": 0.0081,
+"corrMosaic": 0.445,
+"corr": null,
+"mosaic": "daily_2025-11-07"
+},
+"punggye-ri|2025-11-12": {
+"date": "2025-11-12",
+"valid": 0.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": null,
+"corr": null,
+"mosaic": "daily_2025-11-12"
+},
+"punggye-ri|2025-11-22": {
+"date": "2025-11-22",
+"valid": 1.0,
+"white": 0.0159,
+"whiteExtra": 0.0159,
+"corrMosaic": 0.602,
+"corr": 0.738,
+"mosaic": "daily_2025-11-22"
+},
+"punggye-ri|2025-12": {
+"date": "2025-12",
+"valid": 1.0,
+"white": 0.0724,
+"whiteExtra": 0.0724,
+"corrMosaic": 0.679,
+"corr": null,
+"mosaic": "global_monthly_2025_12_mosaic"
+},
+"punggye-ri|2026-01-06": {
+"date": "2026-01-06",
+"valid": 1.0,
+"white": 0.2151,
+"whiteExtra": 0.2151,
+"corrMosaic": 0.649,
+"corr": 0.888,
+"mosaic": "daily_2026-01-06"
+},
+"punggye-ri|2026-02": {
+"date": "2026-02",
+"valid": 1.0,
+"white": 0.0341,
+"whiteExtra": 0.0341,
+"corrMosaic": 0.468,
+"corr": null,
+"mosaic": "global_monthly_2026_02_mosaic"
+},
+"punggye-ri|2026-03-17": {
+"date": "2026-03-17",
+"valid": 1.0,
+"white": 0.2081,
+"whiteExtra": 0.2081,
+"corrMosaic": 0.259,
+"corr": 0.87,
+"mosaic": "daily_2026-03-17"
+},
+"punggye-ri|2026-04": {
+"date": "2026-04",
+"valid": 1.0,
+"white": 0.0002,
+"whiteExtra": 0.0002,
+"corrMosaic": 0.697,
+"corr": null,
+"mosaic": "global_monthly_2026_04_mosaic"
+},
+"punggye-ri|2026-04-08": {
+"date": "2026-04-08",
+"valid": 0.2539,
+"white": 0.0244,
+"whiteExtra": 0.0244,
+"corrMosaic": -0.01,
+"corr": null,
+"mosaic": "daily_2026-04-08"
+},
+"punggye-ri|2026-04-16": {
+"date": "2026-04-16",
+"valid": 1.0,
+"white": 0.0089,
+"whiteExtra": 0.0089,
+"corrMosaic": 0.477,
+"corr": 0.75,
+"mosaic": "daily_2026-04-16"
+},
+"punggye-ri|2026-04-21": {
+"date": "2026-04-21",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.676,
+"corr": null,
+"mosaic": "daily_2026-04-21"
+},
+"punggye-ri|2026-05-16": {
+"date": "2026-05-16",
+"valid": 0.4692,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.112,
+"corr": -0.058,
+"mosaic": "daily_2026-05-16"
+},
+"punggye-ri|2026-05-31": {
+"date": "2026-05-31",
+"valid": 0.9993,
+"white": 0.1276,
+"whiteExtra": 0.1276,
+"corrMosaic": 0.053,
+"corr": null,
+"mosaic": "daily_2026-05-31"
+},
+"punggye-ri|2026-06": {
+"date": "2026-06",
+"valid": 1.0,
+"white": 0.4061,
+"whiteExtra": 0.4061,
+"corrMosaic": 0.13,
+"corr": null,
+"mosaic": "global_monthly_2026_06_mosaic"
+},
+"punggye-ri|2026-08": {
+"date": "2026-08",
+"valid": 1.0,
+"white": 0.0498,
+"whiteExtra": 0.0498,
+"corrMosaic": 0.097,
+"corr": null,
+"mosaic": "global_monthly_2026_08_mosaic"
+},
+"punggye-ri|2026-09-18": {
+"date": "2026-09-18",
+"valid": 0.1738,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": null,
+"corr": null,
+"mosaic": "daily_2026-09-18"
+},
+"punggye-ri|2026-10": {
+"date": "2026-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.791,
+"corr": null,
+"mosaic": "global_monthly_2026_10_mosaic"
+},
+"pyongsan|2016-10": {
+"date": "2016-10",
+"valid": 1.0,
+"white": 0.0009,
+"whiteExtra": 0.0008,
+"corrMosaic": 0.76,
+"corr": null,
+"mosaic": "global_monthly_2016_10_mosaic"
+},
+"pyongsan|2017-10": {
+"date": "2017-10",
+"valid": 1.0,
+"white": 0.0001,
+"whiteExtra": 0.0,
+"corrMosaic": 0.861,
+"corr": null,
+"mosaic": "global_monthly_2017_10_mosaic"
+},
+"pyongsan|2018-10": {
+"date": "2018-10",
+"valid": 1.0,
+"white": 0.0007,
+"whiteExtra": 0.0006,
+"corrMosaic": 0.865,
+"corr": null,
+"mosaic": "global_monthly_2018_10_mosaic"
+},
+"pyongsan|2019-10": {
+"date": "2019-10",
+"valid": 1.0,
+"white": 0.0001,
+"whiteExtra": 0.0,
+"corrMosaic": 0.886,
+"corr": null,
+"mosaic": "global_monthly_2019_10_mosaic"
+},
+"pyongsan|2020-10": {
+"date": "2020-10",
+"valid": 1.0,
+"white": 0.0002,
+"whiteExtra": 0.0001,
+"corrMosaic": 0.88,
+"corr": null,
+"mosaic": "global_monthly_2020_10_mosaic"
+},
+"pyongsan|2021-10": {
+"date": "2021-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": -0.0001,
+"corrMosaic": 0.898,
+"corr": null,
+"mosaic": "global_monthly_2021_10_mosaic"
+},
+"pyongsan|2022-10": {
+"date": "2022-10",
+"valid": 1.0,
+"white": 0.0004,
+"whiteExtra": 0.0003,
+"corrMosaic": 0.92,
+"corr": null,
+"mosaic": "global_monthly_2022_10_mosaic"
+},
+"pyongsan|2023-10": {
+"date": "2023-10",
+"valid": 1.0,
+"white": 0.0001,
+"whiteExtra": 0.0,
+"corrMosaic": 0.936,
+"corr": null,
+"mosaic": "global_monthly_2023_10_mosaic"
+},
+"pyongsan|2024-10": {
+"date": "2024-10",
+"valid": 1.0,
+"white": 0.0001,
+"whiteExtra": 0.0,
+"corrMosaic": 0.946,
+"corr": null,
+"mosaic": "global_monthly_2024_10_mosaic"
+},
+"pyongsan|2024-11-12": {
+"date": "2024-11-12",
+"valid": 1.0,
+"white": 0.0047,
+"whiteExtra": 0.0046,
+"corrMosaic": 0.883,
+"corr": null,
+"mosaic": "daily_2024-11-12"
+},
+"pyongsan|2024-12-05": {
+"date": "2024-12-05",
+"valid": 1.0,
+"white": 0.0018,
+"whiteExtra": 0.0017,
+"corrMosaic": 0.835,
+"corr": 0.716,
+"mosaic": "daily_2024-12-05"
+},
+"pyongsan|2025-01-01": {
+"date": "2025-01-01",
+"valid": 1.0,
+"white": 0.0095,
+"whiteExtra": 0.0094,
+"corrMosaic": 0.816,
+"corr": 0.624,
+"mosaic": "daily_2025-01-01"
+},
+"pyongsan|2025-01-04": {
+"date": "2025-01-04",
+"valid": 1.0,
+"white": 0.0094,
+"whiteExtra": 0.0093,
+"corrMosaic": 0.793,
+"corr": null,
+"mosaic": "daily_2025-01-04"
+},
+"pyongsan|2025-01-11": {
+"date": "2025-01-11",
+"valid": 1.0,
+"white": 0.0407,
+"whiteExtra": 0.0406,
+"corrMosaic": 0.567,
+"corr": null,
+"mosaic": "daily_2025-01-11"
+},
+"pyongsan|2025-01-24": {
+"date": "2025-01-24",
+"valid": 0.5296,
+"white": 0.0197,
+"whiteExtra": 0.0196,
+"corrMosaic": -0.188,
+"corr": null,
+"mosaic": "daily_2025-01-24"
+},
+"pyongsan|2025-02-23": {
+"date": "2025-02-23",
+"valid": 1.0,
+"white": 0.021,
+"whiteExtra": 0.0209,
+"corrMosaic": 0.677,
+"corr": null,
+"mosaic": "daily_2025-02-23"
+},
+"pyongsan|2025-03-22": {
+"date": "2025-03-22",
+"valid": 1.0,
+"white": 0.001,
+"whiteExtra": 0.0009,
+"corrMosaic": 0.836,
+"corr": 0.765,
+"mosaic": "daily_2025-03-22"
+},
+"pyongsan|2025-04-11": {
+"date": "2025-04-11",
+"valid": 1.0,
+"white": 0.0002,
+"whiteExtra": 0.0001,
+"corrMosaic": 0.855,
+"corr": null,
+"mosaic": "daily_2025-04-11"
+},
+"pyongsan|2025-04-26": {
+"date": "2025-04-26",
+"valid": 0.0,
+"white": 0.0,
+"whiteExtra": -0.0001,
+"corrMosaic": null,
+"corr": null,
+"mosaic": "daily_2025-04-26"
+},
+"pyongsan|2025-04-29": {
+"date": "2025-04-29",
+"valid": 0.0,
+"white": 0.0,
+"whiteExtra": -0.0001,
+"corrMosaic": null,
+"corr": null,
+"mosaic": "daily_2025-04-29"
+},
+"pyongsan|2025-05-04": {
+"date": "2025-05-04",
+"valid": 1.0,
+"white": 0.0023,
+"whiteExtra": 0.0022,
+"corrMosaic": 0.834,
+"corr": 0.826,
+"mosaic": "daily_2025-05-04"
+},
+"pyongsan|2025-06-22": {
+"date": "2025-06-22",
+"valid": 0.8563,
+"white": 0.0017,
+"whiteExtra": 0.0016,
+"corrMosaic": 0.625,
+"corr": 0.489,
+"mosaic": "daily_2025-06-22"
+},
+"pyongsan|2025-07-12": {
+"date": "2025-07-12",
+"valid": 1.0,
+"white": 0.0035,
+"whiteExtra": 0.0034,
+"corrMosaic": 0.812,
+"corr": 0.845,
+"mosaic": "daily_2025-07-12"
+},
+"pyongsan|2025-09-10": {
+"date": "2025-09-10",
+"valid": 0.8343,
+"white": 0.0018,
+"whiteExtra": 0.0017,
+"corrMosaic": 0.684,
+"corr": 0.677,
+"mosaic": "daily_2025-09-10"
+},
+"pyongsan|2025-10": {
+"date": "2025-10",
+"valid": 1.0,
+"white": 0.0001,
+"whiteExtra": 0.0,
+"corrMosaic": 1.0,
+"corr": null,
+"mosaic": "global_monthly_2025_10_mosaic"
+},
+"pyongsan|2025-10-08": {
+"date": "2025-10-08",
+"valid": 0.2302,
+"white": 0.0,
+"whiteExtra": -0.0001,
+"corrMosaic": -0.025,
+"corr": 0.02,
+"mosaic": "daily_2025-10-08"
+},
+"pyongsan|2025-11-05": {
+"date": "2025-11-05",
+"valid": 1.0,
+"white": 0.0032,
+"whiteExtra": 0.0031,
+"corrMosaic": 0.924,
+"corr": 0.693,
+"mosaic": "daily_2025-11-05"
+},
+"pyongsan|2025-12": {
+"date": "2025-12",
+"valid": 1.0,
+"white": 0.0001,
+"whiteExtra": 0.0,
+"corrMosaic": 0.84,
+"corr": null,
+"mosaic": "global_monthly_2025_12_mosaic"
+},
+"pyongsan|2025-12-17": {
+"date": "2025-12-17",
+"valid": 1.0,
+"white": 0.0103,
+"whiteExtra": 0.0102,
+"corrMosaic": 0.684,
+"corr": 0.324,
+"mosaic": "daily_2025-12-17"
+},
+"pyongsan|2026-01-31": {
+"date": "2026-01-31",
+"valid": 1.0,
+"white": 0.1871,
+"whiteExtra": 0.187,
+"corrMosaic": 0.37,
+"corr": 0.755,
+"mosaic": "daily_2026-01-31"
+},
+"pyongsan|2026-02": {
+"date": "2026-02",
+"valid": 1.0,
+"white": 0.006,
+"whiteExtra": 0.0059,
+"corrMosaic": 0.699,
+"corr": null,
+"mosaic": "global_monthly_2026_02_mosaic"
+},
+"pyongsan|2026-02-15": {
+"date": "2026-02-15",
+"valid": 0.4102,
+"white": 0.0167,
+"whiteExtra": 0.0166,
+"corrMosaic": -0.235,
+"corr": null,
+"mosaic": "daily_2026-02-15"
+},
+"pyongsan|2026-02-18": {
+"date": "2026-02-18",
+"valid": 1.0,
+"white": 0.0291,
+"whiteExtra": 0.029,
+"corrMosaic": 0.541,
+"corr": null,
+"mosaic": "daily_2026-02-18"
+},
+"pyongsan|2026-02-25": {
+"date": "2026-02-25",
+"valid": 0.1447,
+"white": 0.0025,
+"whiteExtra": 0.0024,
+"corrMosaic": null,
+"corr": null,
+"mosaic": "daily_2026-02-25"
+},
+"pyongsan|2026-02-28": {
+"date": "2026-02-28",
+"valid": 1.0,
+"white": 0.0023,
+"whiteExtra": 0.0022,
+"corrMosaic": 0.824,
+"corr": 0.746,
+"mosaic": "daily_2026-02-28"
+},
+"pyongsan|2026-03-25": {
+"date": "2026-03-25",
+"valid": 0.0,
+"white": 0.0,
+"whiteExtra": -0.0001,
+"corrMosaic": null,
+"corr": null,
+"mosaic": "daily_2026-03-25"
+},
+"pyongsan|2026-04": {
+"date": "2026-04",
+"valid": 1.0,
+"white": 0.0005,
+"whiteExtra": 0.0004,
+"corrMosaic": 0.853,
+"corr": null,
+"mosaic": "global_monthly_2026_04_mosaic"
+},
+"pyongsan|2026-04-08": {
+"date": "2026-04-08",
+"valid": 1.0,
+"white": 0.0012,
+"whiteExtra": 0.0011,
+"corrMosaic": 0.843,
+"corr": 0.817,
+"mosaic": "daily_2026-04-08"
+},
+"pyongsan|2026-04-24": {
+"date": "2026-04-24",
+"valid": 1.0,
+"white": 0.0046,
+"whiteExtra": 0.0045,
+"corrMosaic": 0.861,
+"corr": null,
+"mosaic": "daily_2026-04-24"
+},
+"pyongsan|2026-05-31": {
+"date": "2026-05-31",
+"valid": 1.0,
+"white": 0.005,
+"whiteExtra": 0.0049,
+"corrMosaic": 0.837,
+"corr": 0.85,
+"mosaic": "daily_2026-05-31"
+},
+"pyongsan|2026-06": {
+"date": "2026-06",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": -0.0001,
+"corrMosaic": 0.844,
+"corr": null,
+"mosaic": "global_monthly_2026_06_mosaic"
+},
+"pyongsan|2026-06-15": {
+"date": "2026-06-15",
+"valid": 1.0,
+"white": 0.0051,
+"whiteExtra": 0.005,
+"corrMosaic": 0.857,
+"corr": 0.836,
+"mosaic": "daily_2026-06-15"
+},
+"pyongsan|2026-08": {
+"date": "2026-08",
+"valid": 1.0,
+"white": 0.0003,
+"whiteExtra": 0.0002,
+"corrMosaic": 0.668,
+"corr": null,
+"mosaic": "global_monthly_2026_08_mosaic"
+},
+"pyongsan|2026-08-12": {
+"date": "2026-08-12",
+"valid": 0.0,
+"white": 0.0,
+"whiteExtra": -0.0001,
+"corrMosaic": null,
+"corr": null,
+"mosaic": "daily_2026-08-12"
+},
+"pyongsan|2026-09-16": {
+"date": "2026-09-16",
+"valid": 0.0,
+"white": 0.0,
+"whiteExtra": -0.0001,
+"corrMosaic": null,
+"corr": null,
+"mosaic": "daily_2026-09-16"
+},
+"pyongsan|2026-10": {
+"date": "2026-10",
+"valid": 1.0,
+"white": 0.0002,
+"whiteExtra": 0.0001,
+"corrMosaic": 0.911,
+"corr": null,
+"mosaic": "global_monthly_2026_10_mosaic"
+},
+"sinpo|2016-10": {
+"date": "2016-10",
+"valid": 1.0,
+"white": 0.0152,
+"whiteExtra": 0.0127,
+"corrMosaic": 0.908,
+"corr": null,
+"mosaic": "global_monthly_2016_10_mosaic"
+},
+"sinpo|2017-10": {
+"date": "2017-10",
+"valid": 1.0,
+"white": 0.0068,
+"whiteExtra": 0.0043,
+"corrMosaic": 0.918,
+"corr": null,
+"mosaic": "global_monthly_2017_10_mosaic"
+},
+"sinpo|2018-10": {
+"date": "2018-10",
+"valid": 1.0,
+"white": 0.0008,
+"whiteExtra": -0.0017,
+"corrMosaic": 0.941,
+"corr": null,
+"mosaic": "global_monthly_2018_10_mosaic"
+},
+"sinpo|2019-10": {
+"date": "2019-10",
+"valid": 1.0,
+"white": 0.0028,
+"whiteExtra": 0.0003,
+"corrMosaic": 0.939,
+"corr": null,
+"mosaic": "global_monthly_2019_10_mosaic"
+},
+"sinpo|2020-10": {
+"date": "2020-10",
+"valid": 1.0,
+"white": 0.004,
+"whiteExtra": 0.0015,
+"corrMosaic": 0.94,
+"corr": null,
+"mosaic": "global_monthly_2020_10_mosaic"
+},
+"sinpo|2021-10": {
+"date": "2021-10",
+"valid": 1.0,
+"white": 0.0043,
+"whiteExtra": 0.0018,
+"corrMosaic": 0.938,
+"corr": null,
+"mosaic": "global_monthly_2021_10_mosaic"
+},
+"sinpo|2022-10": {
+"date": "2022-10",
+"valid": 1.0,
+"white": 0.0051,
+"whiteExtra": 0.0026,
+"corrMosaic": 0.96,
+"corr": null,
+"mosaic": "global_monthly_2022_10_mosaic"
+},
+"sinpo|2023-10": {
+"date": "2023-10",
+"valid": 1.0,
+"white": 0.0043,
+"whiteExtra": 0.0018,
+"corrMosaic": 0.966,
+"corr": null,
+"mosaic": "global_monthly_2023_10_mosaic"
+},
+"sinpo|2024-10": {
+"date": "2024-10",
+"valid": 1.0,
+"white": 0.0045,
+"whiteExtra": 0.002,
+"corrMosaic": 0.98,
+"corr": null,
+"mosaic": "global_monthly_2024_10_mosaic"
+},
+"sinpo|2024-11-07": {
+"date": "2024-11-07",
+"valid": 0.0,
+"white": 0.0,
+"whiteExtra": -0.0025,
+"corrMosaic": null,
+"corr": null,
+"mosaic": "daily_2024-11-07"
+},
+"sinpo|2024-11-12": {
+"date": "2024-11-12",
+"valid": 1.0,
+"white": 0.0136,
+"whiteExtra": 0.0111,
+"corrMosaic": 0.943,
+"corr": null,
+"mosaic": "daily_2024-11-12"
+},
+"sinpo|2024-12-02": {
+"date": "2024-12-02",
+"valid": 1.0,
+"white": 0.1204,
+"whiteExtra": 0.1179,
+"corrMosaic": 0.912,
+"corr": 0.54,
+"mosaic": "daily_2024-12-02"
+},
+"sinpo|2024-12-07": {
+"date": "2024-12-07",
+"valid": 1.0,
+"white": 0.0179,
+"whiteExtra": 0.0154,
+"corrMosaic": 0.918,
+"corr": null,
+"mosaic": "daily_2024-12-07"
+},
+"sinpo|2024-12-17": {
+"date": "2024-12-17",
+"valid": 1.0,
+"white": 0.0238,
+"whiteExtra": 0.0213,
+"corrMosaic": 0.908,
+"corr": null,
+"mosaic": "daily_2024-12-17"
+},
+"sinpo|2024-12-22": {
+"date": "2024-12-22",
+"valid": 1.0,
+"white": 0.0205,
+"whiteExtra": 0.018,
+"corrMosaic": 0.899,
+"corr": null,
+"mosaic": "daily_2024-12-22"
+},
+"sinpo|2025-01-01": {
+"date": "2025-01-01",
+"valid": 1.0,
+"white": 0.0271,
+"whiteExtra": 0.0246,
+"corrMosaic": 0.904,
+"corr": 0.933,
+"mosaic": "daily_2025-01-01"
+},
+"sinpo|2025-03-22": {
+"date": "2025-03-22",
+"valid": 1.0,
+"white": 0.0118,
+"whiteExtra": 0.0093,
+"corrMosaic": 0.859,
+"corr": 0.947,
+"mosaic": "daily_2025-03-22"
+},
+"sinpo|2025-04-01": {
+"date": "2025-04-01",
+"valid": 1.0,
+"white": 0.0462,
+"whiteExtra": 0.0437,
+"corrMosaic": 0.885,
+"corr": null,
+"mosaic": "daily_2025-04-01"
+},
+"sinpo|2025-04-06": {
+"date": "2025-04-06",
+"valid": 1.0,
+"white": 0.0114,
+"whiteExtra": 0.0089,
+"corrMosaic": 0.855,
+"corr": 0.967,
+"mosaic": "daily_2025-04-06"
+},
+"sinpo|2025-04-26": {
+"date": "2025-04-26",
+"valid": 1.0,
+"white": 0.0108,
+"whiteExtra": 0.0083,
+"corrMosaic": 0.882,
+"corr": null,
+"mosaic": "daily_2025-04-26"
+},
+"sinpo|2025-05-26": {
+"date": "2025-05-26",
+"valid": 1.0,
+"white": 0.022,
+"whiteExtra": 0.0195,
+"corrMosaic": 0.914,
+"corr": 0.967,
+"mosaic": "daily_2025-05-26"
+},
+"sinpo|2025-05-31": {
+"date": "2025-05-31",
+"valid": 1.0,
+"white": 0.0297,
+"whiteExtra": 0.0272,
+"corrMosaic": 0.9,
+"corr": null,
+"mosaic": "daily_2025-05-31"
+},
+"sinpo|2025-06-22": {
+"date": "2025-06-22",
+"valid": 1.0,
+"white": 0.0217,
+"whiteExtra": 0.0192,
+"corrMosaic": 0.913,
+"corr": 0.95,
+"mosaic": "daily_2025-06-22"
+},
+"sinpo|2025-06-30": {
+"date": "2025-06-30",
+"valid": 0.4459,
+"white": 0.0097,
+"whiteExtra": 0.0072,
+"corrMosaic": 0.279,
+"corr": null,
+"mosaic": "daily_2025-06-30"
+},
+"sinpo|2025-07-10": {
+"date": "2025-07-10",
+"valid": 1.0,
+"white": 0.0416,
+"corrMosaic": 0.705,
+"corr": null,
+"mosaic": "daily_2025-07-10"
+},
+"sinpo|2025-07-12": {
+"date": "2025-07-12",
+"valid": 1.0,
+"white": 0.0196,
+"whiteExtra": 0.0171,
+"corrMosaic": 0.783,
+"corr": 0.806,
+"mosaic": "daily_2025-07-12"
+},
+"sinpo|2025-08-14": {
+"date": "2025-08-14",
+"valid": 1.0,
+"white": 0.0146,
+"whiteExtra": 0.0121,
+"corrMosaic": 0.896,
+"corr": 0.938,
+"mosaic": "daily_2025-08-14"
+},
+"sinpo|2025-08-24": {
+"date": "2025-08-24",
+"valid": 1.0,
+"white": 0.018,
+"corrMosaic": 0.924,
+"corr": null,
+"mosaic": "daily_2025-08-24"
+},
+"sinpo|2025-08-29": {
+"date": "2025-08-29",
+"valid": 1.0,
+"white": 0.0092,
+"whiteExtra": 0.0067,
+"corrMosaic": 0.915,
+"corr": null,
+"mosaic": "daily_2025-08-29"
+},
+"sinpo|2025-09-10": {
+"date": "2025-09-10",
+"valid": 0.9948,
+"white": 0.0098,
+"whiteExtra": 0.0073,
+"corrMosaic": 0.927,
+"corr": 0.958,
+"mosaic": "daily_2025-09-10"
+},
+"sinpo|2025-09-18": {
+"date": "2025-09-18",
+"valid": 1.0,
+"white": 0.0128,
+"corrMosaic": 0.728,
+"corr": null,
+"mosaic": "daily_2025-09-18"
+},
+"sinpo|2025-10": {
+"date": "2025-10",
+"valid": 1.0,
+"white": 0.0025,
+"whiteExtra": 0.0,
+"corrMosaic": 1.0,
+"corr": null,
+"mosaic": "global_monthly_2025_10_mosaic"
+},
+"sinpo|2025-10-03": {
+"date": "2025-10-03",
+"valid": 1.0,
+"white": 0.0774,
+"corrMosaic": 0.604,
+"corr": null,
+"mosaic": "daily_2025-10-03"
+},
+"sinpo|2025-10-08": {
+"date": "2025-10-08",
+"valid": 1.0,
+"white": 0.0101,
+"whiteExtra": 0.0076,
+"corrMosaic": 0.941,
+"corr": 0.959,
+"mosaic": "daily_2025-10-08"
+},
+"sinpo|2025-10-28": {
+"date": "2025-10-28",
+"valid": 1.0,
+"white": 0.0125,
+"corrMosaic": 0.965,
+"corr": null,
+"mosaic": "daily_2025-10-28"
+},
+"sinpo|2025-11-07": {
+"date": "2025-11-07",
+"valid": 1.0,
+"white": 0.017,
+"corrMosaic": 0.95,
+"corr": null,
+"mosaic": "daily_2025-11-07"
+},
+"sinpo|2025-11-09": {
+"date": "2025-11-09",
+"valid": 1.0,
+"white": 0.0084,
+"whiteExtra": 0.0059,
+"corrMosaic": 0.947,
+"corr": null,
+"mosaic": "daily_2025-11-09"
+},
+"sinpo|2025-11-12": {
+"date": "2025-11-12",
+"valid": 0.0,
+"white": 0.0,
+"corrMosaic": null,
+"corr": null,
+"mosaic": "daily_2025-11-12"
+},
+"sinpo|2025-11-22": {
+"date": "2025-11-22",
+"valid": 0.0929,
+"white": 0.0008,
+"whiteExtra": -0.0017,
+"corrMosaic": null,
+"corr": null,
+"mosaic": "daily_2025-11-22"
+},
+"sinpo|2025-12": {
+"date": "2025-12",
+"valid": 1.0,
+"white": 0.0065,
+"whiteExtra": 0.004,
+"corrMosaic": 0.945,
+"corr": null,
+"mosaic": "global_monthly_2025_12_mosaic"
+},
+"sinpo|2025-12-07": {
+"date": "2025-12-07",
+"valid": 1.0,
+"white": 0.0481,
+"whiteExtra": 0.0456,
+"corrMosaic": 0.933,
+"corr": 0.802,
+"mosaic": "daily_2025-12-07"
+},
+"sinpo|2025-12-22": {
+"date": "2025-12-22",
+"valid": 1.0,
+"white": 0.0537,
+"corrMosaic": 0.783,
+"corr": null,
+"mosaic": "daily_2025-12-22"
+},
+"sinpo|2026-01-06": {
+"date": "2026-01-06",
+"valid": 1.0,
+"white": 0.2322,
+"whiteExtra": 0.2297,
+"corrMosaic": 0.688,
+"corr": null,
+"mosaic": "daily_2026-01-06"
+},
+"sinpo|2026-01-08": {
+"date": "2026-01-08",
+"valid": 0.0,
+"white": 0.0,
+"whiteExtra": -0.0025,
+"corrMosaic": null,
+"corr": null,
+"mosaic": "daily_2026-01-08"
+},
+"sinpo|2026-02": {
+"date": "2026-02",
+"valid": 1.0,
+"white": 0.0033,
+"whiteExtra": 0.0008,
+"corrMosaic": 0.93,
+"corr": null,
+"mosaic": "global_monthly_2026_02_mosaic"
+},
+"sinpo|2026-02-05": {
+"date": "2026-02-05",
+"valid": 0.9997,
+"white": 0.606,
+"whiteExtra": 0.6035,
+"corrMosaic": 0.611,
+"corr": null,
+"mosaic": "daily_2026-02-05"
+},
+"sinpo|2026-02-15": {
+"date": "2026-02-15",
+"valid": 1.0,
+"white": 0.074,
+"whiteExtra": 0.0715,
+"corrMosaic": 0.282,
+"corr": null,
+"mosaic": "daily_2026-02-15"
+},
+"sinpo|2026-02-20": {
+"date": "2026-02-20",
+"valid": 1.0,
+"white": 0.0331,
+"whiteExtra": 0.0306,
+"corrMosaic": 0.89,
+"corr": null,
+"mosaic": "daily_2026-02-20"
+},
+"sinpo|2026-02-25": {
+"date": "2026-02-25",
+"valid": 1.0,
+"white": 0.013,
+"whiteExtra": 0.0105,
+"corrMosaic": 0.883,
+"corr": 0.932,
+"mosaic": "daily_2026-02-25"
+},
+"sinpo|2026-03-09": {
+"date": "2026-03-09",
+"valid": 1.0,
+"white": 0.0432,
+"whiteExtra": 0.0407,
+"corrMosaic": 0.697,
+"corr": null,
+"mosaic": "daily_2026-03-09"
+},
+"sinpo|2026-03-17": {
+"date": "2026-03-17",
+"valid": 0.0,
+"white": 0.0,
+"whiteExtra": -0.0025,
+"corrMosaic": null,
+"corr": null,
+"mosaic": "daily_2026-03-17"
+},
+"sinpo|2026-03-19": {
+"date": "2026-03-19",
+"valid": 1.0,
+"white": 0.0201,
+"whiteExtra": 0.0176,
+"corrMosaic": 0.875,
+"corr": null,
+"mosaic": "daily_2026-03-19"
+},
+"sinpo|2026-04": {
+"date": "2026-04",
+"valid": 1.0,
+"white": 0.0036,
+"whiteExtra": 0.0011,
+"corrMosaic": 0.914,
+"corr": null,
+"mosaic": "global_monthly_2026_04_mosaic"
+},
+"sinpo|2026-04-01": {
+"date": "2026-04-01",
+"valid": 1.0,
+"white": 0.027,
+"whiteExtra": 0.0245,
+"corrMosaic": 0.85,
+"corr": null,
+"mosaic": "daily_2026-04-01"
+},
+"sinpo|2026-04-08": {
+"date": "2026-04-08",
+"valid": 0.502,
+"white": 0.012,
+"whiteExtra": 0.0095,
+"corrMosaic": 0.441,
+"corr": null,
+"mosaic": "daily_2026-04-08"
+},
+"sinpo|2026-04-16": {
+"date": "2026-04-16",
+"valid": 1.0,
+"white": 0.0332,
+"whiteExtra": 0.0307,
+"corrMosaic": 0.859,
+"corr": 0.966,
+"mosaic": "daily_2026-04-16"
+},
+"sinpo|2026-05-01": {
+"date": "2026-05-01",
+"valid": 0.0,
+"white": 0.0,
+"whiteExtra": -0.0025,
+"corrMosaic": null,
+"corr": null,
+"mosaic": "daily_2026-05-01"
+},
+"sinpo|2026-05-06": {
+"date": "2026-05-06",
+"valid": 0.0,
+"white": 0.0,
+"whiteExtra": -0.0025,
+"corrMosaic": null,
+"corr": null,
+"mosaic": "daily_2026-05-06"
+},
+"sinpo|2026-05-31": {
+"date": "2026-05-31",
+"valid": 1.0,
+"white": 0.0271,
+"whiteExtra": 0.0246,
+"corrMosaic": 0.893,
+"corr": 0.956,
+"mosaic": "daily_2026-05-31"
+},
+"sinpo|2026-06": {
+"date": "2026-06",
+"valid": 1.0,
+"white": 0.0023,
+"whiteExtra": -0.0002,
+"corrMosaic": 0.899,
+"corr": null,
+"mosaic": "global_monthly_2026_06_mosaic"
+},
+"sinpo|2026-06-10": {
+"date": "2026-06-10",
+"valid": 1.0,
+"white": 0.036,
+"whiteExtra": 0.0335,
+"corrMosaic": 0.727,
+"corr": 0.76,
+"mosaic": "daily_2026-06-10"
+},
+"sinpo|2026-07-05": {
+"date": "2026-07-05",
+"valid": 1.0,
+"white": 0.0414,
+"whiteExtra": 0.0389,
+"corrMosaic": 0.857,
+"corr": null,
+"mosaic": "daily_2026-07-05"
+},
+"sinpo|2026-07-30": {
+"date": "2026-07-30",
+"valid": 1.0,
+"white": 0.024,
+"whiteExtra": 0.0215,
+"corrMosaic": 0.84,
+"corr": 0.881,
+"mosaic": "daily_2026-07-30"
+},
+"sinpo|2026-08": {
+"date": "2026-08",
+"valid": 1.0,
+"white": 0.0042,
+"whiteExtra": 0.0017,
+"corrMosaic": 0.93,
+"corr": null,
+"mosaic": "global_monthly_2026_08_mosaic"
+},
+"sinpo|2026-09-03": {
+"date": "2026-09-03",
+"valid": 0.121,
+"white": 0.0006,
+"whiteExtra": -0.0019,
+"corrMosaic": null,
+"corr": null,
+"mosaic": "daily_2026-09-03"
+},
+"sinpo|2026-09-18": {
+"date": "2026-09-18",
+"valid": 0.062,
+"white": 0.0003,
+"whiteExtra": -0.0022,
+"corrMosaic": null,
+"corr": null,
+"mosaic": "daily_2026-09-18"
+},
+"sinpo|2026-09-28": {
+"date": "2026-09-28",
+"valid": 0.9999,
+"white": 0.0187,
+"whiteExtra": 0.0162,
+"corrMosaic": 0.832,
+"corr": null,
+"mosaic": "daily_2026-09-28"
+},
+"sinpo|2026-10": {
+"date": "2026-10",
+"valid": 1.0,
+"white": 0.0055,
+"whiteExtra": 0.003,
+"corrMosaic": 0.964,
+"corr": null,
+"mosaic": "global_monthly_2026_10_mosaic"
+},
+"sohae|2016-10": {
+"date": "2016-10",
+"valid": 1.0,
+"white": 0.0001,
+"whiteExtra": -0.0009,
+"corrMosaic": 0.816,
+"corr": null,
+"mosaic": "global_monthly_2016_10_mosaic"
+},
+"sohae|2017-10": {
+"date": "2017-10",
+"valid": 1.0,
+"white": 0.0003,
+"whiteExtra": -0.0007,
+"corrMosaic": 0.859,
+"corr": null,
+"mosaic": "global_monthly_2017_10_mosaic"
+},
+"sohae|2018-10": {
+"date": "2018-10",
+"valid": 1.0,
+"white": 0.0003,
+"whiteExtra": -0.0007,
+"corrMosaic": 0.924,
+"corr": null,
+"mosaic": "global_monthly_2018_10_mosaic"
+},
+"sohae|2019-10": {
+"date": "2019-10",
+"valid": 1.0,
+"white": 0.0002,
+"whiteExtra": -0.0008,
+"corrMosaic": 0.892,
+"corr": null,
+"mosaic": "global_monthly_2019_10_mosaic"
+},
+"sohae|2020-10": {
+"date": "2020-10",
+"valid": 1.0,
+"white": 0.0007,
+"whiteExtra": -0.0003,
+"corrMosaic": 0.919,
+"corr": null,
+"mosaic": "global_monthly_2020_10_mosaic"
+},
+"sohae|2021-10": {
+"date": "2021-10",
+"valid": 1.0,
+"white": 0.0001,
+"whiteExtra": -0.0009,
+"corrMosaic": 0.93,
+"corr": null,
+"mosaic": "global_monthly_2021_10_mosaic"
+},
+"sohae|2022-10": {
+"date": "2022-10",
+"valid": 1.0,
+"white": 0.0004,
+"whiteExtra": -0.0006,
+"corrMosaic": 0.928,
+"corr": null,
+"mosaic": "global_monthly_2022_10_mosaic"
+},
+"sohae|2023-10": {
+"date": "2023-10",
+"valid": 1.0,
+"white": 0.0002,
+"whiteExtra": -0.0008,
+"corrMosaic": 0.953,
+"corr": null,
+"mosaic": "global_monthly_2023_10_mosaic"
+},
+"sohae|2024-10": {
+"date": "2024-10",
+"valid": 1.0,
+"white": 0.0004,
+"whiteExtra": -0.0006,
+"corrMosaic": 0.965,
+"corr": null,
+"mosaic": "global_monthly_2024_10_mosaic"
+},
+"sohae|2024-11-20": {
+"date": "2024-11-20",
+"valid": 1.0,
+"white": 0.0025,
+"whiteExtra": 0.0015,
+"corrMosaic": 0.783,
+"corr": null,
+"mosaic": "daily_2024-11-20"
+},
+"sohae|2024-12-05": {
+"date": "2024-12-05",
+"valid": 1.0,
+"white": 0.0015,
+"whiteExtra": 0.0005,
+"corrMosaic": 0.563,
+"corr": null,
+"mosaic": "daily_2024-12-05"
+},
+"sohae|2024-12-10": {
+"date": "2024-12-10",
+"valid": 0.5964,
+"white": 0.0049,
+"whiteExtra": 0.0039,
+"corrMosaic": 0.629,
+"corr": 0.366,
+"mosaic": "daily_2024-12-10"
+},
+"sohae|2024-12-15": {
+"date": "2024-12-15",
+"valid": 0.0795,
+"white": 0.0,
+"whiteExtra": -0.001,
+"corrMosaic": null,
+"corr": null,
+"mosaic": "daily_2024-12-15"
+},
+"sohae|2024-12-25": {
+"date": "2024-12-25",
+"valid": 1.0,
+"white": 0.2913,
+"whiteExtra": 0.2903,
+"corrMosaic": 0.567,
+"corr": null,
+"mosaic": "daily_2024-12-25"
+},
+"sohae|2024-12-30": {
+"date": "2024-12-30",
+"valid": 1.0,
+"white": 0.0333,
+"whiteExtra": 0.0323,
+"corrMosaic": 0.575,
+"corr": null,
+"mosaic": "daily_2024-12-30"
+},
+"sohae|2025-01-24": {
+"date": "2025-01-24",
+"valid": 0.9948,
+"white": 0.0402,
+"whiteExtra": 0.0392,
+"corrMosaic": 0.584,
+"corr": 0.716,
+"mosaic": "daily_2025-01-24"
+},
+"sohae|2025-03-05": {
+"date": "2025-03-05",
+"valid": 1.0,
+"white": 0.009,
+"whiteExtra": 0.008,
+"corrMosaic": 0.25,
+"corr": 0.783,
+"mosaic": "daily_2025-03-05"
+},
+"sohae|2025-03-10": {
+"date": "2025-03-10",
+"valid": 1.0,
+"white": 0.1788,
+"whiteExtra": 0.1778,
+"corrMosaic": 0.702,
+"corr": null,
+"mosaic": "daily_2025-03-10"
+},
+"sohae|2025-03-20": {
+"date": "2025-03-20",
+"valid": 1.0,
+"white": 0.0009,
+"whiteExtra": -0.0001,
+"corrMosaic": 0.444,
+"corr": null,
+"mosaic": "daily_2025-03-20"
+},
+"sohae|2025-04-29": {
+"date": "2025-04-29",
+"valid": 1.0,
+"white": 0.0005,
+"whiteExtra": -0.0005,
+"corrMosaic": 0.768,
+"corr": 0.777,
+"mosaic": "daily_2025-04-29"
+},
+"sohae|2025-05-29": {
+"date": "2025-05-29",
+"valid": 1.0,
+"white": 0.0117,
+"whiteExtra": 0.0107,
+"corrMosaic": 0.84,
+"corr": 0.826,
+"mosaic": "daily_2025-05-29"
+},
+"sohae|2025-06-23": {
+"date": "2025-06-23",
+"valid": 1.0,
+"white": 0.0017,
+"whiteExtra": 0.0007,
+"corrMosaic": 0.575,
+"corr": 0.554,
+"mosaic": "daily_2025-06-23"
+},
+"sohae|2025-08-07": {
+"date": "2025-08-07",
+"valid": 1.0,
+"white": 0.0116,
+"whiteExtra": 0.0106,
+"corrMosaic": 0.698,
+"corr": 0.699,
+"mosaic": "daily_2025-08-07"
+},
+"sohae|2025-09-21": {
+"date": "2025-09-21",
+"valid": 1.0,
+"white": 0.0011,
+"whiteExtra": 0.0001,
+"corrMosaic": 0.911,
+"corr": 0.899,
+"mosaic": "daily_2025-09-21"
+},
+"sohae|2025-10": {
+"date": "2025-10",
+"valid": 1.0,
+"white": 0.001,
+"whiteExtra": 0.0,
+"corrMosaic": 1.0,
+"corr": null,
+"mosaic": "global_monthly_2025_10_mosaic"
+},
+"sohae|2025-11-10": {
+"date": "2025-11-10",
+"valid": 0.0,
+"white": 0.0,
+"whiteExtra": -0.001,
+"corrMosaic": null,
+"corr": null,
+"mosaic": "daily_2025-11-10"
+},
+"sohae|2025-11-20": {
+"date": "2025-11-20",
+"valid": 1.0,
+"white": 0.0015,
+"whiteExtra": 0.0005,
+"corrMosaic": 0.776,
+"corr": null,
+"mosaic": "daily_2025-11-20"
+},
+"sohae|2025-11-22": {
+"date": "2025-11-22",
+"valid": 1.0,
+"white": 0.0027,
+"whiteExtra": 0.0017,
+"corrMosaic": 0.698,
+"corr": null,
+"mosaic": "daily_2025-11-22"
+},
+"sohae|2025-11-28": {
+"date": "2025-11-28",
+"valid": 1.0,
+"white": 0.0028,
+"whiteExtra": 0.0018,
+"corrMosaic": 0.746,
+"corr": 0.55,
+"mosaic": "daily_2025-11-28"
+},
+"sohae|2025-12": {
+"date": "2025-12",
+"valid": 1.0,
+"white": 0.0037,
+"whiteExtra": 0.0027,
+"corrMosaic": 0.897,
+"corr": null,
+"mosaic": "global_monthly_2025_12_mosaic"
+},
+"sohae|2025-12-30": {
+"date": "2025-12-30",
+"valid": 0.0,
+"white": 0.0,
+"whiteExtra": -0.001,
+"corrMosaic": null,
+"corr": null,
+"mosaic": "daily_2025-12-30"
+},
+"sohae|2026-02": {
+"date": "2026-02",
+"valid": 1.0,
+"white": 0.0015,
+"whiteExtra": 0.0005,
+"corrMosaic": 0.765,
+"corr": null,
+"mosaic": "global_monthly_2026_02_mosaic"
+},
+"sohae|2026-02-03": {
+"date": "2026-02-03",
+"valid": 0.0,
+"white": 0.0,
+"whiteExtra": -0.001,
+"corrMosaic": null,
+"corr": null,
+"mosaic": "daily_2026-02-03"
+},
+"sohae|2026-03-10": {
+"date": "2026-03-10",
+"valid": 1.0,
+"white": 0.0014,
+"whiteExtra": 0.0004,
+"corrMosaic": 0.324,
+"corr": null,
+"mosaic": "daily_2026-03-10"
+},
+"sohae|2026-03-15": {
+"date": "2026-03-15",
+"valid": 0.0,
+"white": 0.0,
+"whiteExtra": -0.001,
+"corrMosaic": null,
+"corr": null,
+"mosaic": "daily_2026-03-15"
+},
+"sohae|2026-03-25": {
+"date": "2026-03-25",
+"valid": 1.0,
+"white": 0.3935,
+"whiteExtra": 0.3925,
+"corrMosaic": 0.364,
+"corr": null,
+"mosaic": "daily_2026-03-25"
+},
+"sohae|2026-04": {
+"date": "2026-04",
+"valid": 1.0,
+"white": 0.0004,
+"whiteExtra": -0.0006,
+"corrMosaic": 0.843,
+"corr": null,
+"mosaic": "global_monthly_2026_04_mosaic"
+},
+"sohae|2026-04-01": {
+"date": "2026-04-01",
+"valid": 1.0,
+"white": 0.002,
+"whiteExtra": 0.001,
+"corrMosaic": 0.307,
+"corr": 0.897,
+"mosaic": "daily_2026-04-01"
+},
+"sohae|2026-04-24": {
+"date": "2026-04-24",
+"valid": 1.0,
+"white": 0.0024,
+"whiteExtra": 0.0014,
+"corrMosaic": 0.481,
+"corr": null,
+"mosaic": "daily_2026-04-24"
+},
+"sohae|2026-05-29": {
+"date": "2026-05-29",
+"valid": 0.6122,
+"white": 0.0017,
+"whiteExtra": 0.0007,
+"corrMosaic": 0.242,
+"corr": 0.256,
+"mosaic": "daily_2026-05-29"
+},
+"sohae|2026-06": {
+"date": "2026-06",
+"valid": 1.0,
+"white": 0.0012,
+"whiteExtra": 0.0002,
+"corrMosaic": 0.914,
+"corr": null,
+"mosaic": "global_monthly_2026_06_mosaic"
+},
+"sohae|2026-06-08": {
+"date": "2026-06-08",
+"valid": 0.901,
+"white": 0.0014,
+"whiteExtra": 0.0004,
+"corrMosaic": 0.498,
+"corr": 0.654,
+"mosaic": "daily_2026-06-08"
+},
+"sohae|2026-06-23": {
+"date": "2026-06-23",
+"valid": 1.0,
+"white": 0.0232,
+"whiteExtra": 0.0222,
+"corrMosaic": 0.678,
+"corr": null,
+"mosaic": "daily_2026-06-23"
+},
+"sohae|2026-07-18": {
+"date": "2026-07-18",
+"valid": 1.0,
+"white": 0.0089,
+"whiteExtra": 0.0079,
+"corrMosaic": 0.632,
+"corr": 0.632,
+"mosaic": "daily_2026-07-18"
+},
+"sohae|2026-08": {
+"date": "2026-08",
+"valid": 1.0,
+"white": 0.0015,
+"whiteExtra": 0.0005,
+"corrMosaic": 0.847,
+"corr": null,
+"mosaic": "global_monthly_2026_08_mosaic"
+},
+"sohae|2026-08-07": {
+"date": "2026-08-07",
+"valid": 1.0,
+"white": 0.01,
+"whiteExtra": 0.009,
+"corrMosaic": 0.702,
+"corr": null,
+"mosaic": "daily_2026-08-07"
+},
+"sohae|2026-08-27": {
+"date": "2026-08-27",
+"valid": 0.0007,
+"white": 0.0,
+"whiteExtra": -0.001,
+"corrMosaic": null,
+"corr": null,
+"mosaic": "daily_2026-08-27"
+},
+"sohae|2026-09-18": {
+"date": "2026-09-18",
+"valid": 1.0,
+"white": 0.002,
+"whiteExtra": 0.001,
+"corrMosaic": 0.848,
+"corr": 0.911,
+"mosaic": "daily_2026-09-18"
+},
+"sohae|2026-10": {
+"date": "2026-10",
+"valid": 1.0,
+"white": 0.0008,
+"whiteExtra": -0.0002,
+"corrMosaic": 0.96,
+"corr": null,
+"mosaic": "global_monthly_2026_10_mosaic"
+},
+"sohae|2026-10-01": {
+"date": "2026-10-01",
+"valid": 0.6261,
+"white": 0.0005,
+"whiteExtra": -0.0005,
+"corrMosaic": 0.001,
+"corr": null,
+"mosaic": "daily_2026-10-01"
+},
+"sunan|2016-10": {
+"date": "2016-10",
+"valid": 1.0,
+"white": 0.0005,
+"whiteExtra": -0.0002,
+"corrMosaic": 0.697,
+"corr": null,
+"mosaic": "global_monthly_2016_10_mosaic"
+},
+"sunan|2017-10": {
+"date": "2017-10",
+"valid": 1.0,
+"white": 0.0002,
+"whiteExtra": -0.0005,
+"corrMosaic": 0.709,
+"corr": null,
+"mosaic": "global_monthly_2017_10_mosaic"
+},
+"sunan|2018-10": {
+"date": "2018-10",
+"valid": 1.0,
+"white": 0.0003,
+"whiteExtra": -0.0004,
+"corrMosaic": 0.712,
+"corr": null,
+"mosaic": "global_monthly_2018_10_mosaic"
+},
+"sunan|2019-10": {
+"date": "2019-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": -0.0007,
+"corrMosaic": 0.759,
+"corr": null,
+"mosaic": "global_monthly_2019_10_mosaic"
+},
+"sunan|2020-10": {
+"date": "2020-10",
+"valid": 1.0,
+"white": 0.0008,
+"whiteExtra": 0.0001,
+"corrMosaic": 0.749,
+"corr": null,
+"mosaic": "global_monthly_2020_10_mosaic"
+},
+"sunan|2021-10": {
+"date": "2021-10",
+"valid": 1.0,
+"white": 0.0002,
+"whiteExtra": -0.0005,
+"corrMosaic": 0.784,
+"corr": null,
+"mosaic": "global_monthly_2021_10_mosaic"
+},
+"sunan|2022-10": {
+"date": "2022-10",
+"valid": 1.0,
+"white": 0.0008,
+"whiteExtra": 0.0001,
+"corrMosaic": 0.792,
+"corr": null,
+"mosaic": "global_monthly_2022_10_mosaic"
+},
+"sunan|2023-10": {
+"date": "2023-10",
+"valid": 1.0,
+"white": 0.0004,
+"whiteExtra": -0.0003,
+"corrMosaic": 0.788,
+"corr": null,
+"mosaic": "global_monthly_2023_10_mosaic"
+},
+"sunan|2024-10": {
+"date": "2024-10",
+"valid": 1.0,
+"white": 0.0003,
+"whiteExtra": -0.0004,
+"corrMosaic": 0.809,
+"corr": null,
+"mosaic": "global_monthly_2024_10_mosaic"
+},
+"sunan|2024-11-20": {
+"date": "2024-11-20",
+"valid": 1.0,
+"white": 0.0111,
+"whiteExtra": 0.0104,
+"corrMosaic": 0.755,
+"corr": null,
+"mosaic": "daily_2024-11-20"
+},
+"sunan|2024-12-05": {
+"date": "2024-12-05",
+"valid": 1.0,
+"white": 0.0025,
+"whiteExtra": 0.0018,
+"corrMosaic": 0.72,
+"corr": 0.721,
+"mosaic": "daily_2024-12-05"
+},
+"sunan|2025-01-04": {
+"date": "2025-01-04",
+"valid": 1.0,
+"white": 0.0035,
+"whiteExtra": 0.0028,
+"corrMosaic": 0.756,
+"corr": 0.775,
+"mosaic": "daily_2025-01-04"
+},
+"sunan|2025-01-14": {
+"date": "2025-01-14",
+"valid": 1.0,
+"white": 0.2974,
+"whiteExtra": 0.2967,
+"corrMosaic": 0.566,
+"corr": null,
+"mosaic": "daily_2025-01-14"
+},
+"sunan|2025-01-24": {
+"date": "2025-01-24",
+"valid": 1.0,
+"white": 0.0094,
+"whiteExtra": 0.0087,
+"corrMosaic": 0.738,
+"corr": null,
+"mosaic": "daily_2025-01-24"
+},
+"sunan|2025-02-23": {
+"date": "2025-02-23",
+"valid": 0.0,
+"white": 0.0,
+"whiteExtra": -0.0007,
+"corrMosaic": null,
+"corr": null,
+"mosaic": "daily_2025-02-23"
+},
+"sunan|2025-03-05": {
+"date": "2025-03-05",
+"valid": 1.0,
+"white": 0.0017,
+"whiteExtra": 0.001,
+"corrMosaic": 0.734,
+"corr": 0.759,
+"mosaic": "daily_2025-03-05"
+},
+"sunan|2025-03-10": {
+"date": "2025-03-10",
+"valid": 1.0,
+"white": 0.1177,
+"whiteExtra": 0.117,
+"corrMosaic": 0.658,
+"corr": null,
+"mosaic": "daily_2025-03-10"
+},
+"sunan|2025-04-29": {
+"date": "2025-04-29",
+"valid": 1.0,
+"white": 0.0057,
+"whiteExtra": 0.005,
+"corrMosaic": 0.686,
+"corr": 0.778,
+"mosaic": "daily_2025-04-29"
+},
+"sunan|2025-05-26": {
+"date": "2025-05-26",
+"valid": 1.0,
+"white": 0.0034,
+"whiteExtra": 0.0027,
+"corrMosaic": 0.733,
+"corr": 0.786,
+"mosaic": "daily_2025-05-26"
+},
+"sunan|2025-06-18": {
+"date": "2025-06-18",
+"valid": 1.0,
+"white": 0.0034,
+"whiteExtra": 0.0027,
+"corrMosaic": 0.695,
+"corr": 0.752,
+"mosaic": "daily_2025-06-18"
+},
+"sunan|2025-06-23": {
+"date": "2025-06-23",
+"valid": 1.0,
+"white": 0.0034,
+"whiteExtra": 0.0027,
+"corrMosaic": 0.646,
+"corr": null,
+"mosaic": "daily_2025-06-23"
+},
+"sunan|2025-07-28": {
+"date": "2025-07-28",
+"valid": 1.0,
+"white": 0.0021,
+"whiteExtra": 0.0014,
+"corrMosaic": 0.381,
+"corr": 0.778,
+"mosaic": "daily_2025-07-28"
+},
+"sunan|2025-08-07": {
+"date": "2025-08-07",
+"valid": 1.0,
+"white": 0.0024,
+"whiteExtra": 0.0017,
+"corrMosaic": 0.379,
+"corr": 0.786,
+"mosaic": "daily_2025-08-07"
+},
+"sunan|2025-09-21": {
+"date": "2025-09-21",
+"valid": 0.9996,
+"white": 0.0007,
+"whiteExtra": 0.0,
+"corrMosaic": 0.769,
+"corr": 0.762,
+"mosaic": "daily_2025-09-21"
+},
+"sunan|2025-10": {
+"date": "2025-10",
+"valid": 1.0,
+"white": 0.0007,
+"whiteExtra": 0.0,
+"corrMosaic": 1.0,
+"corr": null,
+"mosaic": "global_monthly_2025_10_mosaic"
+},
+"sunan|2025-10-16": {
+"date": "2025-10-16",
+"valid": 1.0,
+"white": 0.0009,
+"whiteExtra": 0.0002,
+"corrMosaic": 0.904,
+"corr": 0.802,
+"mosaic": "daily_2025-10-16"
+},
+"sunan|2025-10-21": {
+"date": "2025-10-21",
+"valid": 1.0,
+"bright": 0.0004,
+"contrast": 25.3,
+"corr": null,
+"mosaic": "daily_2025-10-21"
+},
+"sunan|2025-11-05": {
+"date": "2025-11-05",
+"valid": 1.0,
+"white": 0.0073,
+"whiteExtra": 0.0066,
+"corrMosaic": 0.789,
+"corr": null,
+"mosaic": "daily_2025-11-05"
+},
+"sunan|2025-11-10": {
+"date": "2025-11-10",
+"valid": 1.0,
+"white": 0.0028,
+"whiteExtra": 0.0021,
+"corrMosaic": 0.81,
+"corr": null,
+"mosaic": "daily_2025-11-10"
+},
+"sunan|2025-11-20": {
+"date": "2025-11-20",
+"valid": 1.0,
+"white": 0.0021,
+"whiteExtra": 0.0014,
+"corrMosaic": 0.336,
+"corr": 0.453,
+"mosaic": "daily_2025-11-20"
+},
+"sunan|2025-12": {
+"date": "2025-12",
+"valid": 1.0,
+"white": 0.0007,
+"whiteExtra": 0.0,
+"corrMosaic": 0.771,
+"corr": null,
+"mosaic": "global_monthly_2025_12_mosaic"
+},
+"sunan|2025-12-10": {
+"date": "2025-12-10",
+"valid": 1.0,
+"white": 1.0,
+"whiteExtra": 0.9993,
+"corrMosaic": 0.324,
+"corr": 0.407,
+"mosaic": "daily_2025-12-10"
+},
+"sunan|2025-12-12": {
+"date": "2025-12-12",
+"valid": 1.0,
+"white": 0.2267,
+"whiteExtra": 0.226,
+"corrMosaic": 0.296,
+"corr": null,
+"mosaic": "daily_2025-12-12"
+},
+"sunan|2026-01-09": {
+"date": "2026-01-09",
+"valid": 1.0,
+"white": 0.9674,
+"whiteExtra": 0.9667,
+"corrMosaic": 0.519,
+"corr": null,
+"mosaic": "daily_2026-01-09"
+},
+"sunan|2026-01-19": {
+"date": "2026-01-19",
+"valid": 1.0,
+"white": 0.2951,
+"whiteExtra": 0.2944,
+"corrMosaic": 0.615,
+"corr": 0.786,
+"mosaic": "daily_2026-01-19"
+},
+"sunan|2026-02": {
+"date": "2026-02",
+"valid": 1.0,
+"white": 0.0007,
+"whiteExtra": 0.0,
+"corrMosaic": 0.721,
+"corr": null,
+"mosaic": "global_monthly_2026_02_mosaic"
+},
+"sunan|2026-02-03": {
+"date": "2026-02-03",
+"valid": 1.0,
+"white": 0.2115,
+"whiteExtra": 0.2108,
+"corrMosaic": 0.422,
+"corr": null,
+"mosaic": "daily_2026-02-03"
+},
+"sunan|2026-02-18": {
+"date": "2026-02-18",
+"valid": 1.0,
+"white": 0.0045,
+"whiteExtra": 0.0038,
+"corrMosaic": 0.714,
+"corr": null,
+"mosaic": "daily_2026-02-18"
+},
+"sunan|2026-02-23": {
+"date": "2026-02-23",
+"valid": 1.0,
+"white": 0.003,
+"whiteExtra": 0.0023,
+"corrMosaic": 0.731,
+"corr": null,
+"mosaic": "daily_2026-02-23"
+},
+"sunan|2026-02-28": {
+"date": "2026-02-28",
+"valid": 0.3193,
+"white": 0.003,
+"whiteExtra": 0.0023,
+"corrMosaic": 0.05,
+"corr": -0.044,
+"mosaic": "daily_2026-02-28"
+},
+"sunan|2026-03-10": {
+"date": "2026-03-10",
+"valid": 1.0,
+"white": 0.0026,
+"whiteExtra": 0.0019,
+"corrMosaic": 0.644,
+"corr": null,
+"mosaic": "daily_2026-03-10"
+},
+"sunan|2026-03-15": {
+"date": "2026-03-15",
+"valid": 0.5885,
+"white": 0.005,
+"whiteExtra": 0.0043,
+"corrMosaic": 0.129,
+"corr": 0.119,
+"mosaic": "daily_2026-03-15"
+},
+"sunan|2026-03-20": {
+"date": "2026-03-20",
+"valid": 0.7368,
+"white": 0.0029,
+"whiteExtra": 0.0022,
+"corrMosaic": 0.095,
+"corr": null,
+"mosaic": "daily_2026-03-20"
+},
+"sunan|2026-03-25": {
+"date": "2026-03-25",
+"valid": 0.0,
+"white": 0.0,
+"whiteExtra": -0.0007,
+"corrMosaic": null,
+"corr": null,
+"mosaic": "daily_2026-03-25"
+},
+"sunan|2026-04": {
+"date": "2026-04",
+"valid": 1.0,
+"white": 0.0004,
+"whiteExtra": -0.0003,
+"corrMosaic": 0.752,
+"corr": null,
+"mosaic": "global_monthly_2026_04_mosaic"
+},
+"sunan|2026-04-19": {
+"date": "2026-04-19",
+"valid": 1.0,
+"white": 0.0033,
+"whiteExtra": 0.0026,
+"corrMosaic": 0.728,
+"corr": 0.798,
+"mosaic": "daily_2026-04-19"
+},
+"sunan|2026-04-21": {
+"date": "2026-04-21",
+"valid": 0.9997,
+"white": 0.0017,
+"whiteExtra": 0.001,
+"corrMosaic": 0.692,
+"corr": null,
+"mosaic": "daily_2026-04-21"
+},
+"sunan|2026-05-31": {
+"date": "2026-05-31",
+"valid": 0.8029,
+"white": 0.0068,
+"whiteExtra": 0.0061,
+"corrMosaic": 0.325,
+"corr": 0.289,
+"mosaic": "daily_2026-05-31"
+},
+"sunan|2026-06": {
+"date": "2026-06",
+"valid": 1.0,
+"white": 0.0003,
+"whiteExtra": -0.0004,
+"corrMosaic": 0.72,
+"corr": null,
+"mosaic": "global_monthly_2026_06_mosaic"
+},
+"sunan|2026-06-23": {
+"date": "2026-06-23",
+"valid": 1.0,
+"white": 0.0126,
+"whiteExtra": 0.0119,
+"corrMosaic": 0.567,
+"corr": 0.667,
+"mosaic": "daily_2026-06-23"
+},
+"sunan|2026-08": {
+"date": "2026-08",
+"valid": 1.0,
+"white": 0.0007,
+"whiteExtra": 0.0,
+"corrMosaic": 0.474,
+"corr": null,
+"mosaic": "global_monthly_2026_08_mosaic"
+},
+"sunan|2026-08-27": {
+"date": "2026-08-27",
+"valid": 1.0,
+"white": 0.0014,
+"whiteExtra": 0.0007,
+"corrMosaic": 0.514,
+"corr": 0.775,
+"mosaic": "daily_2026-08-27"
+},
+"sunan|2026-09-06": {
+"date": "2026-09-06",
+"valid": 1.0,
+"white": 0.0029,
+"whiteExtra": 0.0022,
+"corrMosaic": 0.611,
+"corr": 0.772,
+"mosaic": "daily_2026-09-06"
+},
+"sunan|2026-10": {
+"date": "2026-10",
+"valid": 1.0,
+"white": 0.0009,
+"whiteExtra": 0.0002,
+"corrMosaic": 0.807,
+"corr": null,
+"mosaic": "global_monthly_2026_10_mosaic"
+},
+"sunan|2026-10-01": {
+"date": "2026-10-01",
+"valid": 0.991,
+"white": 0.0011,
+"whiteExtra": 0.0004,
+"corrMosaic": 0.742,
+"corr": null,
+"mosaic": "daily_2026-10-01"
+},
+"tonghae|2016-10": {
+"date": "2016-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.631,
+"corr": null,
+"mosaic": "global_monthly_2016_10_mosaic"
+},
+"tonghae|2017-10": {
+"date": "2017-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.886,
+"corr": null,
+"mosaic": "global_monthly_2017_10_mosaic"
+},
+"tonghae|2018-10": {
+"date": "2018-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.909,
+"corr": null,
+"mosaic": "global_monthly_2018_10_mosaic"
+},
+"tonghae|2019-10": {
+"date": "2019-10",
+"valid": 1.0,
+"white": 0.0009,
+"whiteExtra": 0.0009,
+"corrMosaic": 0.904,
+"corr": null,
+"mosaic": "global_monthly_2019_10_mosaic"
+},
+"tonghae|2020-10": {
+"date": "2020-10",
+"valid": 1.0,
+"white": 0.0003,
+"whiteExtra": 0.0003,
+"corrMosaic": 0.946,
+"corr": null,
+"mosaic": "global_monthly_2020_10_mosaic"
+},
+"tonghae|2021-10": {
+"date": "2021-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.97,
+"corr": null,
+"mosaic": "global_monthly_2021_10_mosaic"
+},
+"tonghae|2022-10": {
+"date": "2022-10",
+"valid": 1.0,
+"white": 0.0001,
+"whiteExtra": 0.0001,
+"corrMosaic": 0.948,
+"corr": null,
+"mosaic": "global_monthly_2022_10_mosaic"
+},
+"tonghae|2023-10": {
+"date": "2023-10",
+"valid": 1.0,
+"white": 0.0002,
+"whiteExtra": 0.0002,
+"corrMosaic": 0.959,
+"corr": null,
+"mosaic": "global_monthly_2023_10_mosaic"
+},
+"tonghae|2024-10": {
+"date": "2024-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.956,
+"corr": null,
+"mosaic": "global_monthly_2024_10_mosaic"
+},
+"tonghae|2024-11-12": {
+"date": "2024-11-12",
+"valid": 1.0,
+"white": 0.0005,
+"whiteExtra": 0.0005,
+"corrMosaic": 0.949,
+"corr": null,
+"mosaic": "daily_2024-11-12"
+},
+"tonghae|2024-12-07": {
+"date": "2024-12-07",
+"valid": 1.0,
+"white": 0.001,
+"whiteExtra": 0.001,
+"corrMosaic": 0.904,
+"corr": 0.647,
+"mosaic": "daily_2024-12-07"
+},
+"tonghae|2025-01-01": {
+"date": "2025-01-01",
+"valid": 1.0,
+"white": 0.2878,
+"whiteExtra": 0.2878,
+"corrMosaic": 0.734,
+"corr": 0.772,
+"mosaic": "daily_2025-01-01"
+},
+"tonghae|2025-03-14": {
+"date": "2025-03-14",
+"valid": 1.0,
+"white": 0.0112,
+"whiteExtra": 0.0112,
+"corrMosaic": 0.478,
+"corr": null,
+"mosaic": "daily_2025-03-14"
+},
+"tonghae|2025-03-19": {
+"date": "2025-03-19",
+"valid": 1.0,
+"white": 0.0831,
+"whiteExtra": 0.0831,
+"corrMosaic": 0.242,
+"corr": null,
+"mosaic": "daily_2025-03-19"
+},
+"tonghae|2025-03-31": {
+"date": "2025-03-31",
+"valid": 0.0242,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": null,
+"corr": null,
+"mosaic": "daily_2025-03-31"
+},
+"tonghae|2025-04-20": {
+"date": "2025-04-20",
+"valid": 1.0,
+"white": 0.0002,
+"whiteExtra": 0.0002,
+"corrMosaic": 0.799,
+"corr": 0.894,
+"mosaic": "daily_2025-04-20"
+},
+"tonghae|2025-04-26": {
+"date": "2025-04-26",
+"valid": 0.9544,
+"white": 0.0001,
+"whiteExtra": 0.0001,
+"corrMosaic": 0.553,
+"corr": null,
+"mosaic": "daily_2025-04-26"
+},
+"tonghae|2025-05-08": {
+"date": "2025-05-08",
+"valid": 0.9997,
+"white": 0.0001,
+"whiteExtra": 0.0001,
+"corrMosaic": 0.861,
+"corr": 0.871,
+"mosaic": "daily_2025-05-08"
+},
+"tonghae|2025-06-12": {
+"date": "2025-06-12",
+"valid": 1.0,
+"white": 0.0002,
+"whiteExtra": 0.0002,
+"corrMosaic": 0.44,
+"corr": 0.458,
+"mosaic": "daily_2025-06-12"
+},
+"tonghae|2025-07-09": {
+"date": "2025-07-09",
+"valid": 1.0,
+"white": 0.0004,
+"whiteExtra": 0.0004,
+"corrMosaic": 0.725,
+"corr": 0.844,
+"mosaic": "daily_2025-07-09"
+},
+"tonghae|2025-08-11": {
+"date": "2025-08-11",
+"valid": 1.0,
+"white": 0.0001,
+"whiteExtra": 0.0001,
+"corrMosaic": 0.816,
+"corr": 0.877,
+"mosaic": "daily_2025-08-11"
+},
+"tonghae|2025-09-27": {
+"date": "2025-09-27",
+"valid": 0.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": null,
+"corr": null,
+"mosaic": "daily_2025-09-27"
+},
+"tonghae|2025-10": {
+"date": "2025-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 1.0,
+"corr": null,
+"mosaic": "global_monthly_2025_10_mosaic"
+},
+"tonghae|2025-10-20": {
+"date": "2025-10-20",
+"valid": 0.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": null,
+"corr": null,
+"mosaic": "daily_2025-10-20"
+},
+"tonghae|2025-11-22": {
+"date": "2025-11-22",
+"valid": 0.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": null,
+"corr": null,
+"mosaic": "daily_2025-11-22"
+},
+"tonghae|2025-12": {
+"date": "2025-12",
+"valid": 1.0,
+"white": 0.0004,
+"whiteExtra": 0.0004,
+"corrMosaic": 0.964,
+"corr": null,
+"mosaic": "global_monthly_2025_12_mosaic"
+},
+"tonghae|2025-12-07": {
+"date": "2025-12-07",
+"valid": 0.9999,
+"white": 0.0024,
+"whiteExtra": 0.0024,
+"corrMosaic": 0.936,
+"corr": 0.335,
+"mosaic": "daily_2025-12-07"
+},
+"tonghae|2025-12-09": {
+"date": "2025-12-09",
+"valid": 1.0,
+"white": 0.0006,
+"whiteExtra": 0.0006,
+"corrMosaic": 0.936,
+"corr": null,
+"mosaic": "daily_2025-12-09"
+},
+"tonghae|2026-01-03": {
+"date": "2026-01-03",
+"valid": 1.0,
+"white": 0.0487,
+"whiteExtra": 0.0487,
+"corrMosaic": 0.776,
+"corr": 0.737,
+"mosaic": "daily_2026-01-03"
+},
+"tonghae|2026-02": {
+"date": "2026-02",
+"valid": 1.0,
+"white": 0.0854,
+"whiteExtra": 0.0854,
+"corrMosaic": 0.629,
+"corr": null,
+"mosaic": "global_monthly_2026_02_mosaic"
+},
+"tonghae|2026-02-25": {
+"date": "2026-02-25",
+"valid": 0.9998,
+"white": 0.0305,
+"whiteExtra": 0.0305,
+"corrMosaic": 0.585,
+"corr": 0.751,
+"mosaic": "daily_2026-02-25"
+},
+"tonghae|2026-03-29": {
+"date": "2026-03-29",
+"valid": 0.9992,
+"white": 0.2626,
+"whiteExtra": 0.2626,
+"corrMosaic": 0.245,
+"corr": 0.113,
+"mosaic": "daily_2026-03-29"
+},
+"tonghae|2026-04": {
+"date": "2026-04",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.915,
+"corr": null,
+"mosaic": "global_monthly_2026_04_mosaic"
+},
+"tonghae|2026-04-16": {
+"date": "2026-04-16",
+"valid": 1.0,
+"white": 0.0002,
+"whiteExtra": 0.0002,
+"corrMosaic": 0.85,
+"corr": 0.881,
+"mosaic": "daily_2026-04-16"
+},
+"tonghae|2026-05-31": {
+"date": "2026-05-31",
+"valid": 0.8246,
+"white": 0.0004,
+"whiteExtra": 0.0004,
+"corrMosaic": 0.574,
+"corr": 0.623,
+"mosaic": "daily_2026-05-31"
+},
+"tonghae|2026-06": {
+"date": "2026-06",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.599,
+"corr": null,
+"mosaic": "global_monthly_2026_06_mosaic"
+},
+"tonghae|2026-06-02": {
+"date": "2026-06-02",
+"valid": 0.083,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": null,
+"corr": null,
+"mosaic": "daily_2026-06-02"
+},
+"tonghae|2026-07-22": {
+"date": "2026-07-22",
+"valid": 1.0,
+"white": 0.0002,
+"whiteExtra": 0.0002,
+"corrMosaic": 0.759,
+"corr": 0.847,
+"mosaic": "daily_2026-07-22"
+},
+"tonghae|2026-08": {
+"date": "2026-08",
+"valid": 1.0,
+"white": 0.0164,
+"whiteExtra": 0.0164,
+"corrMosaic": 0.447,
+"corr": null,
+"mosaic": "global_monthly_2026_08_mosaic"
+},
+"tonghae|2026-08-09": {
+"date": "2026-08-09",
+"valid": 0.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": null,
+"corr": null,
+"mosaic": "daily_2026-08-09"
+},
+"tonghae|2026-09-12": {
+"date": "2026-09-12",
+"valid": 1.0,
+"white": 0.0001,
+"whiteExtra": 0.0001,
+"corrMosaic": 0.869,
+"corr": 0.883,
+"mosaic": "daily_2026-09-12"
+},
+"tonghae|2026-10": {
+"date": "2026-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.947,
+"corr": null,
+"mosaic": "global_monthly_2026_10_mosaic"
+},
+"yongbyon|2016-10": {
+"date": "2016-10",
+"valid": 1.0,
+"white": 0.0012,
+"whiteExtra": 0.0011,
+"corrMosaic": 0.89,
+"corr": null,
+"mosaic": "global_monthly_2016_10_mosaic"
+},
+"yongbyon|2017-10": {
+"date": "2017-10",
+"valid": 1.0,
+"white": 0.0002,
+"whiteExtra": 0.0001,
+"corrMosaic": 0.843,
+"corr": null,
+"mosaic": "global_monthly_2017_10_mosaic"
+},
+"yongbyon|2018-10": {
+"date": "2018-10",
+"valid": 1.0,
+"white": 0.0003,
+"whiteExtra": 0.0002,
+"corrMosaic": 0.847,
+"corr": null,
+"mosaic": "global_monthly_2018_10_mosaic"
+},
+"yongbyon|2019-10": {
+"date": "2019-10",
+"valid": 1.0,
+"white": 0.0001,
+"whiteExtra": 0.0,
+"corrMosaic": 0.861,
+"corr": null,
+"mosaic": "global_monthly_2019_10_mosaic"
+},
+"yongbyon|2020-10": {
+"date": "2020-10",
+"valid": 1.0,
+"white": 0.0001,
+"whiteExtra": 0.0,
+"corrMosaic": 0.922,
+"corr": null,
+"mosaic": "global_monthly_2020_10_mosaic"
+},
+"yongbyon|2021-10": {
+"date": "2021-10",
+"valid": 1.0,
+"white": 0.0001,
+"whiteExtra": 0.0,
+"corrMosaic": 0.904,
+"corr": null,
+"mosaic": "global_monthly_2021_10_mosaic"
+},
+"yongbyon|2022-10": {
+"date": "2022-10",
+"valid": 1.0,
+"white": 0.0001,
+"whiteExtra": 0.0,
+"corrMosaic": 0.925,
+"corr": null,
+"mosaic": "global_monthly_2022_10_mosaic"
+},
+"yongbyon|2023-10": {
+"date": "2023-10",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": -0.0001,
+"corrMosaic": 0.934,
+"corr": null,
+"mosaic": "global_monthly_2023_10_mosaic"
+},
+"yongbyon|2024-10": {
+"date": "2024-10",
+"valid": 1.0,
+"white": 0.0001,
+"whiteExtra": 0.0,
+"corrMosaic": 0.947,
+"corr": null,
+"mosaic": "global_monthly_2024_10_mosaic"
+},
+"yongbyon|2024-11-15": {
+"date": "2024-11-15",
+"valid": 1.0,
+"bright": 0.0,
+"contrast": 23.2,
+"corr": null,
+"mosaic": "daily_2024-11-15"
+},
+"yongbyon|2024-12-05": {
+"date": "2024-12-05",
+"valid": 1.0,
+"white": 0.0074,
+"whiteExtra": 0.0073,
+"corrMosaic": 0.911,
+"corr": 0.788,
+"mosaic": "daily_2024-12-05"
+},
+"yongbyon|2025-01-04": {
+"date": "2025-01-04",
+"valid": 1.0,
+"white": 0.0297,
+"whiteExtra": 0.0296,
+"corrMosaic": 0.904,
+"corr": 0.802,
+"mosaic": "daily_2025-01-04"
+},
+"yongbyon|2025-02-23": {
+"date": "2025-02-23",
+"valid": 0.5864,
+"white": 0.0382,
+"whiteExtra": 0.0381,
+"corrMosaic": 0.509,
+"corr": 0.359,
+"mosaic": "daily_2025-02-23"
+},
+"yongbyon|2025-03-20": {
+"date": "2025-03-20",
+"valid": 1.0,
+"white": 0.0009,
+"whiteExtra": 0.0008,
+"corrMosaic": 0.887,
+"corr": 0.78,
+"mosaic": "daily_2025-03-20"
+},
+"yongbyon|2025-04-29": {
+"date": "2025-04-29",
+"valid": 1.0,
+"bright": 0.0028,
+"contrast": 25.3,
+"corr": 0.767,
+"mosaic": "daily_2025-04-29"
+},
+"yongbyon|2025-05-29": {
+"date": "2025-05-29",
+"valid": 1.0,
+"white": 0.0507,
+"whiteExtra": 0.0506,
+"corrMosaic": 0.843,
+"corr": 0.74,
+"mosaic": "daily_2025-05-29"
+},
+"yongbyon|2025-06-23": {
+"date": "2025-06-23",
+"valid": 1.0,
+"white": 0.0081,
+"whiteExtra": 0.008,
+"corrMosaic": 0.848,
+"corr": 0.815,
+"mosaic": "daily_2025-06-23"
+},
+"yongbyon|2025-07-25": {
+"date": "2025-07-25",
+"valid": 1.0,
+"white": 0.0283,
+"whiteExtra": 0.0282,
+"corrMosaic": 0.334,
+"corr": null,
+"mosaic": "daily_2025-07-25"
+},
+"yongbyon|2025-07-28": {
+"date": "2025-07-28",
+"valid": 1.0,
+"white": 0.0042,
+"whiteExtra": 0.0041,
+"corrMosaic": 0.743,
+"corr": 0.815,
+"mosaic": "daily_2025-07-28"
+},
+"yongbyon|2025-08-07": {
+"date": "2025-08-07",
+"valid": 0.9997,
+"white": 0.0112,
+"whiteExtra": 0.0111,
+"corrMosaic": 0.698,
+"corr": 0.781,
+"mosaic": "daily_2025-08-07"
+},
+"yongbyon|2025-08-12": {
+"date": "2025-08-12",
+"valid": 1.0,
+"white": 0.0087,
+"whiteExtra": 0.0086,
+"corrMosaic": 0.689,
+"corr": null,
+"mosaic": "daily_2025-08-12"
+},
+"yongbyon|2025-09-21": {
+"date": "2025-09-21",
+"valid": 1.0,
+"white": 0.0008,
+"whiteExtra": 0.0007,
+"corrMosaic": 0.922,
+"corr": 0.828,
+"mosaic": "daily_2025-09-21"
+},
+"yongbyon|2025-10": {
+"date": "2025-10",
+"valid": 1.0,
+"white": 0.0001,
+"whiteExtra": 0.0,
+"corrMosaic": 1.0,
+"corr": null,
+"mosaic": "global_monthly_2025_10_mosaic"
+},
+"yongbyon|2025-10-16": {
+"date": "2025-10-16",
+"valid": 1.0,
+"bright": 0.0006,
+"contrast": 29.9,
+"corr": 0.788,
+"mosaic": "daily_2025-10-16"
+},
+"yongbyon|2025-11-22": {
+"date": "2025-11-22",
+"valid": 1.0,
+"white": 0.0026,
+"whiteExtra": 0.0025,
+"corrMosaic": 0.951,
+"corr": 0.813,
+"mosaic": "daily_2025-11-22"
+},
+"yongbyon|2025-12": {
+"date": "2025-12",
+"valid": 1.0,
+"white": 0.0001,
+"whiteExtra": 0.0,
+"corrMosaic": 0.952,
+"corr": null,
+"mosaic": "global_monthly_2025_12_mosaic"
+},
+"yongbyon|2026-02": {
+"date": "2026-02",
+"valid": 1.0,
+"white": 0.0038,
+"whiteExtra": 0.0037,
+"corrMosaic": 0.929,
+"corr": null,
+"mosaic": "global_monthly_2026_02_mosaic"
+},
+"yongbyon|2026-02-18": {
+"date": "2026-02-18",
+"valid": 1.0,
+"white": 0.0179,
+"whiteExtra": 0.0178,
+"corrMosaic": 0.92,
+"corr": null,
+"mosaic": "daily_2026-02-18"
+},
+"yongbyon|2026-02-23": {
+"date": "2026-02-23",
+"valid": 1.0,
+"white": 0.0102,
+"whiteExtra": 0.0101,
+"corrMosaic": 0.924,
+"corr": null,
+"mosaic": "daily_2026-02-23"
+},
+"yongbyon|2026-02-28": {
+"date": "2026-02-28",
+"valid": 1.0,
+"white": 0.0111,
+"whiteExtra": 0.011,
+"corrMosaic": 0.919,
+"corr": 0.831,
+"mosaic": "daily_2026-02-28"
+},
+"yongbyon|2026-03-20": {
+"date": "2026-03-20",
+"valid": 1.0,
+"white": 0.0033,
+"whiteExtra": 0.0032,
+"corrMosaic": 0.903,
+"corr": 0.812,
+"mosaic": "daily_2026-03-20"
+},
+"yongbyon|2026-04": {
+"date": "2026-04",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": -0.0001,
+"corrMosaic": 0.897,
+"corr": null,
+"mosaic": "global_monthly_2026_04_mosaic"
+},
+"yongbyon|2026-04-19": {
+"date": "2026-04-19",
+"valid": 1.0,
+"bright": 0.0025,
+"contrast": 28.7,
+"corr": 0.809,
+"mosaic": "daily_2026-04-19"
+},
+"yongbyon|2026-05-31": {
+"date": "2026-05-31",
+"valid": 1.0,
+"white": 0.0121,
+"whiteExtra": 0.012,
+"corrMosaic": 0.894,
+"corr": 0.827,
+"mosaic": "daily_2026-05-31"
+},
+"yongbyon|2026-06": {
+"date": "2026-06",
+"valid": 1.0,
+"white": 0.0004,
+"whiteExtra": 0.0003,
+"corrMosaic": 0.875,
+"corr": null,
+"mosaic": "global_monthly_2026_06_mosaic"
+},
+"yongbyon|2026-06-13": {
+"date": "2026-06-13",
+"valid": 1.0,
+"white": 0.0172,
+"whiteExtra": 0.0171,
+"corrMosaic": 0.879,
+"corr": 0.836,
+"mosaic": "daily_2026-06-13"
+},
+"yongbyon|2026-06-23": {
+"date": "2026-06-23",
+"valid": 1.0,
+"white": 0.0156,
+"whiteExtra": 0.0155,
+"corrMosaic": 0.855,
+"corr": null,
+"mosaic": "daily_2026-06-23"
+},
+"yongbyon|2026-08": {
+"date": "2026-08",
+"valid": 1.0,
+"white": 0.0003,
+"whiteExtra": 0.0002,
+"corrMosaic": 0.735,
+"corr": null,
+"mosaic": "global_monthly_2026_08_mosaic"
+},
+"yongbyon|2026-08-27": {
+"date": "2026-08-27",
+"valid": 1.0,
+"white": 0.0034,
+"whiteExtra": 0.0033,
+"corrMosaic": 0.747,
+"corr": 0.83,
+"mosaic": "daily_2026-08-27"
+},
+"yongbyon|2026-09-11": {
+"date": "2026-09-11",
+"valid": 1.0,
+"white": 0.0061,
+"whiteExtra": 0.006,
+"corrMosaic": 0.859,
+"corr": 0.835,
+"mosaic": "daily_2026-09-11"
+},
+"yongbyon|2026-10": {
+"date": "2026-10",
+"valid": 1.0,
+"white": 0.0002,
+"whiteExtra": 0.0001,
+"corrMosaic": 0.951,
+"corr": null,
+"mosaic": "global_monthly_2026_10_mosaic"
+},
+"yongbyon|2026-10-01": {
+"date": "2026-10-01",
+"valid": 0.0,
+"bright": null,
+"contrast": null,
+"corr": null,
+"mosaic": "daily_2026-10-01"
+}
+}

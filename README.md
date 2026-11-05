@@ -43,7 +43,7 @@ be freed" gave you close to nothing. So this puts it all in one place, open sour
       through China, and human rights abuses counted per county, on a map or satellite basemap. Layers seen from
       space: night lights per county for every year since 2013, crop health per province every 16 days, and ships
       satellite radar saw that sent no signal.
-      Click a camp or weapons site to scrub through two years of our own satellite images. Every point has a source.
+      Click a camp or weapons site to scrub through two years of our own satellite images, or open sharper Planet images back to 2016. Every point has a source.
     </td>
     <td width="50%" valign="top">
       <a href="https://savenorthkorea.org/north-korea-vs-south-korea"><img src="docs/readme/north-vs-south.jpg" alt="North Korea vs South Korea"></a>
@@ -100,7 +100,7 @@ be freed" gave you close to nothing. So this puts it all in one place, open sour
     <td width="50%" valign="top">
       <h3>📡 Watch</h3>
       What we measure on a schedule: earthquakes in and around North Korea (USGS), missile launches as Japan's defense
-      ministry reports them within hours, and Sentinel-2 satellite images of the prison camps and nuclear and missile sites, month by month.
+      ministry reports them within hours, and satellite images of the prison camps and nuclear and missile sites: Sentinel-2 month by month, and sharper PlanetScope images back to 2016.
     </td>
     <td width="50%" valign="top">
       <h3>👁 Kim Watch</h3>
@@ -157,7 +157,7 @@ Japanese and Chinese.
 
 Missile data © James Martin Center for Nonproliferation Studies / NTI, via nagix/nk-missile-tests. Basemap by
 [OpenFreeMap](https://openfreemap.org) / OpenStreetMap contributors. Night lights from the Earth Observation Group's annual VIIRS composites (CC BY 4.0) and crop greenness from NASA's
-MODIS, both computed in Google Earth Engine. Ship data powered by [Global Fishing Watch](https://globalfishingwatch.org)
+MODIS, both computed in Google Earth Engine. Satellite images from Copernicus Sentinel-2 and Planet (Imagery © Planet Labs PBC). Ship data powered by [Global Fishing Watch](https://globalfishingwatch.org)
 (CC BY-NC 4.0). Share card photos: a street in Wonsan by Mario Micklisch (CC BY 2.0, a wide shot so no one is identifiable) and Panmunjom via Wikimedia Commons. Chart
 data from the sources named on each chart. Map coordinates from Wikipedia unless marked approximate.
 

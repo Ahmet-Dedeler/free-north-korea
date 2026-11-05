@@ -6,6 +6,7 @@
 import { readFileSync } from 'node:fs';
 import path from 'node:path';
 import type { Lang } from '@/site/seo';
+import { getPlanetSite } from './planetWatch';
 import { dayLabel, imgSrc, monthLabel, satCredit, type MapSatSite } from './satLabels';
 
 export { dayLabel, imgSrc, monthLabel, satCredit };
@@ -87,7 +88,14 @@ export function mapSatIndex(): Record<string, MapSatSite> {
   for (const s of manifest().sites) {
     if (!s.latest || s.images.length === 0) continue;
     const frames = [...s.images].sort((a, b) => a.date.localeCompare(b.date));
-    out[s.id] = { sizeM: s.sizeM, latest: s.latest, frames: frames.map((im) => ({ date: im.date, month: im.month })), path: satSitePath(s) };
+    const planet = getPlanetSite(s.id);
+    out[s.id] = {
+      sizeM: s.sizeM,
+      latest: s.latest,
+      frames: frames.map((im) => ({ date: im.date, month: im.month })),
+      path: satSitePath(s),
+      planet: planet && { pixelM: planet.pixelM, frames: planet.images.map((im) => ({ date: im.date, kind: im.kind })) },
+    };
   }
   return out;
 }

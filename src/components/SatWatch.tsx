@@ -3,6 +3,7 @@ import AsOf from '@/components/AsOf';
 import { Ext } from '@/components/Ext';
 import SatCompare, { type SatSlot, type SatViewImage } from '@/components/SatCompare';
 import { hrefFor } from '@/content/campsI18n';
+import { PLANET_CREDIT, PLANET_TEXT, getPlanetSite, planetDayLabel, planetFrameLabel, planetSrc, planetSrcSet } from '@/content/planetWatch';
 import {
   SAT_TEXT,
   copernicusUrl,
@@ -109,6 +110,76 @@ export default function SatWatch({ id, lang, name }: { id: string; lang: Lang; n
         <Ext href="https://registry.opendata.aws/sentinel-2-l2a-cogs/">
           Sentinel-2 L2A COGs (AWS)
         </Ext>
+      </p>
+    </section>
+  );
+}
+
+/**
+ * The sharper layer of Camp Watch on a dossier: PlanetScope images of the same square, about 3.6 m per pixel, back to
+ * 2016. Opens on the oldest composite against the newest, because the long view is what Sentinel-2's 24 months can't
+ * give. Renders nothing for sites without imagery.
+ */
+export function PlanetWatch({ id, lang, name }: { id: string; lang: Lang; name: string }) {
+  const site = getPlanetSite(id);
+  if (!site) return null;
+  const t = PLANET_TEXT[lang];
+  const km = fmtKm(site.sizeM / 1000);
+  const images = [...site.images].sort((a, b) => a.date.localeCompare(b.date));
+  const views: SatViewImage[] = images.map((im) => {
+    const day = planetDayLabel(lang, im);
+    return {
+      src: planetSrc(site.id, im.date),
+      srcSet: planetSrcSet(site.id, im.date, im.sizePx),
+      day,
+      alt: t.alt(name, day, km),
+      cloud: im.kind === 'monthly' || im.s2Cloud === null ? t.composite : t.sameDay(im.s2Cloud),
+      scene: im.mosaic ?? im.date,
+    };
+  });
+  const slotsOf = (kind: 'monthly' | 'daily'): SatSlot[] =>
+    images.flatMap((im, i) => (im.kind === kind ? [{ label: planetFrameLabel(lang, im), idx: i }] : []));
+  // The latest image is the newest composite: daily images run about a month behind.
+  const monthly = slotsOf('monthly');
+  const daily = slotsOf('daily');
+  const afterIdx = monthly.length > 0 ? monthly[monthly.length - 1].idx! : images.length - 1;
+  const latest = images[afterIdx];
+  const years = `${images[0].date.slice(0, 4)}-${latest.date.slice(0, 4)}`;
+
+  return (
+    <section className="satwatch" aria-labelledby={`pw-${site.id}`}>
+      <div className="sw-head">
+        <h2 id={`pw-${site.id}`}>{t.title}</h2>
+        <AsOf date={latest.date} label={t.captured} lang={lang} />
+      </div>
+      <p className="sw-intro">{t.intro(km, site.pixelM.toFixed(1), images[0].date.slice(0, 4))}</p>
+      <SatCompare
+        views={views}
+        afterIdx={afterIdx}
+        defaultBefore={afterIdx > 0 ? 0 : null}
+        groups={[
+          { title: t.pickMonthly, slots: monthly },
+          ...(daily.length > 0 ? [{ title: t.pickDaily, slots: daily }] : []),
+        ]}
+        scale={scaleBar(site.sizeM, lang)}
+        t={{
+          before: t.before,
+          after: t.after,
+          latest: t.latest,
+          compareAria: t.compareAria,
+          noClear: '',
+          scene: t.source,
+          full: t.full,
+        }}
+      />
+      <p className="sw-note">
+        {t.how} {SAT_TEXT[lang].ring}
+      </p>
+      <p className="sw-credit">
+        <span lang="en">
+          {PLANET_CREDIT} {years}
+        </span>
+        {t.creditNote && <> · {t.creditNote}</>} · <Ext href="https://www.planet.com/">Planet</Ext>
       </p>
     </section>
   );

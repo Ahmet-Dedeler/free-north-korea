@@ -2,11 +2,11 @@
 
 import { useCallback, useMemo, useRef, useState } from 'react';
 import Link from 'next/link';
-import { Expand, GitCompareArrows, ZoomIn } from 'lucide-react';
+import { Expand, GitCompareArrows, Sparkles, ZoomIn } from 'lucide-react';
 import SatView from '@/components/SatView';
 import { localize } from '@/content/chrome';
 import { MAP_TEXT } from '@/content/mapI18n';
-import { dayLabel, imgSrc, monthLabel, satCredit, type MapSatSite } from '@/content/satLabels';
+import { PLANET_CREDIT, dayLabel, imgSrc, monthLabel, planetDayLabel, planetSrc, satCredit, type MapSatSite } from '@/content/satLabels';
 import type { Lang } from '@/site/seo';
 import type { LayerId } from './config';
 import SatViewer from './SatViewer';
@@ -108,6 +108,7 @@ function SentinelPhoto({ siteId, site, name, lang, onCloseUp }: { siteId: string
   };
   const years = [frames[0].date.slice(0, 4), latest.slice(0, 4)];
   const [big, setBig] = useState(false);
+  const [sharp, setSharp] = useState(false);
   // arrow keys in the viewer step to the previous or next month that has an image
   const step = useCallback(
     (by: number) => {
@@ -181,12 +182,19 @@ function SentinelPhoto({ siteId, site, name, lang, onCloseUp }: { siteId: string
             {tx.photoCloseUp}
           </button>
         )}
+        {site.planet && (
+          <button type="button" className="pp-act" onClick={() => setSharp(true)} title={tx.photoPlanetHint}>
+            <Sparkles size={15} aria-hidden="true" />
+            {tx.photoPlanet}
+          </button>
+        )}
         <Link className="pp-act" href={`${localize(lang, site.path)}#sw-${siteId}`}>
           <GitCompareArrows size={15} aria-hidden="true" />
           {tx.photoCompare}
         </Link>
         <span lang="en">{satCredit(years[0] === years[1] ? years[0] : `${years[0]}-${years[1]}`)}</span>
       </figcaption>
+      {sharp && site.planet && <PlanetViewer siteId={siteId} planet={site.planet} name={name} lang={lang} onClose={() => setSharp(false)} />}
       {big && (
         <SatViewer
           src={imgSrc(siteId, frame.date)}
@@ -223,5 +231,50 @@ function SentinelPhoto({ siteId, site, name, lang, onCloseUp }: { siteId: string
         />
       )}
     </figure>
+  );
+}
+
+/** Full-screen PlanetScope images of a site, oldest to newest. Opens on the newest; the zoom holds while stepping. */
+function PlanetViewer({ siteId, planet, name, lang, onClose }: { siteId: string; planet: NonNullable<MapSatSite['planet']>; name: string; lang: Lang; onClose: () => void }) {
+  const tx = MAP_TEXT[lang];
+  const { frames, pixelM } = planet;
+  const newest = Math.max(0, frames.findLastIndex((f) => f.kind === 'monthly'));
+  const [at, setAt] = useState(newest);
+  const step = useCallback((by: number) => setAt((a) => Math.max(0, Math.min(frames.length - 1, a + by))), [frames.length]);
+  const frame = frames[at];
+  const day = planetDayLabel(lang, frame);
+  return (
+    <SatViewer
+      src={planetSrc(siteId, frame.date)}
+      alt={tx.photoPlanetAlt(name, day)}
+      caption={
+        <>
+          <strong lang={lang === 'en' ? undefined : 'en'}>{name}</strong> PlanetScope · {day}
+        </>
+      }
+      footer={
+        <>
+          <div className="pp-scrub" title={tx.photoPlanetHint}>
+            {/* The month strip's CSS assumes 24 slots; a site here can have more or fewer frames. */}
+            <div className="pp-ticks" aria-hidden="true" style={{ gridTemplateColumns: `repeat(${frames.length}, 1fr)` }}>
+              {frames.map((f, i) => (
+                <i key={f.date} className={`${i === at ? 'on at' : ''}`} />
+              ))}
+            </div>
+            <input type="range" min={0} max={frames.length - 1} value={at} aria-label={tx.photoPlanetHint} aria-valuetext={day} onChange={(e) => setAt(Number(e.target.value))} />
+            <div className="pp-ends" aria-hidden="true">
+              <span>{planetDayLabel(lang, frames[0])}</span>
+              <span>{planetDayLabel(lang, frames[frames.length - 1])}</span>
+            </div>
+          </div>
+          <p className="sv-note">
+            {tx.photoPlanetNote(pixelM.toFixed(1))} <span lang="en">{PLANET_CREDIT}</span>
+          </p>
+        </>
+      }
+      labels={{ close: tx.close, zoomIn: tx.zoomIn, zoomOut: tx.zoomOut }}
+      onStep={step}
+      onClose={onClose}
+    />
   );
 }

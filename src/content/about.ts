@@ -77,7 +77,7 @@ export const ABOUT_TEXT: Record<Lang, AboutText> = {
     data: [
       'Sanctions lists come straight from the UN 1718 Committee and the US Treasury (OFAC) files, every week.',
       'Earthquakes come from the USGS catalog and missile launches from Japan’s Ministry of Defense, checked every three hours.',
-      'Satellite pictures of the camps and military sites are our own cuts of free Sentinel-2 imagery from Copernicus.',
+      'Satellite pictures of the camps and military sites are our own cuts of free Sentinel-2 imagery from Copernicus, plus sharper PlanetScope images from Planet going back to 2016.',
       'Camp locations, human rights records and missile tests come from documentation groups and researchers (NKDB, HRNK, the CNS missile database). Their numbers keep their names on them.',
       'Facts about people come from Wikidata and official lists. A claim is dropped if its source page doesn’t load or doesn’t say it.',
       'A weekly job checks every source link for changes, moves and dead pages, and shows the result on the Sources page.',
@@ -128,7 +128,7 @@ export const ABOUT_TEXT: Record<Lang, AboutText> = {
     data: [
       '제재 명단은 매주 유엔 1718 위원회와 미국 재무부(OFAC) 파일에서 그대로 받아 옵니다.',
       '지진은 미국 지질조사국(USGS) 목록에서, 미사일 발사는 일본 방위성 발표에서 3시간마다 확인합니다.',
-      '수용소와 군사 시설의 위성 사진은 코페르니쿠스의 무료 Sentinel-2 영상을 우리가 직접 잘라 낸 것입니다.',
+      '수용소와 군사 시설의 위성 사진은 코페르니쿠스의 무료 Sentinel-2 영상을 우리가 직접 잘라 낸 것이고, 2016년까지 거슬러 올라가는 플래닛의 더 선명한 PlanetScope 영상도 함께 씁니다.',
       '수용소 위치, 인권 기록, 미사일 시험은 기록 단체와 연구자들(NKDB, HRNK, CNS 미사일 데이터베이스)의 자료입니다. 그들의 숫자에는 그들의 이름을 붙여 둡니다.',
       '인물에 관한 사실은 위키데이터와 공식 명단에서 가져옵니다. 출처 페이지가 열리지 않거나 그 내용이 없으면 그 주장은 뺍니다.',
       '매주 모든 출처 링크가 바뀌었는지, 옮겨졌는지, 사라졌는지 확인하고 그 결과를 출처 페이지에 보여 줍니다.',
@@ -179,7 +179,7 @@ export const ABOUT_TEXT: Record<Lang, AboutText> = {
     data: [
       '制裁リストは毎週、国連1718委員会と米国財務省（OFAC）のファイルからそのまま取り込みます。',
       '地震は米国地質調査所（USGS）のカタログから、ミサイル発射は日本の防衛省の発表から、3時間ごとに確認します。',
-      '収容所や軍事施設の衛星画像は、コペルニクスの無料のSentinel-2画像を私たちが切り出したものです。',
+      '収容所や軍事施設の衛星画像は、コペルニクスの無料のSentinel-2画像を私たちが切り出したものと、2016年までさかのぼるプラネット社のより鮮明なPlanetScope画像です。',
       '収容所の位置、人権の記録、ミサイル発射は、記録団体や研究者（NKDB、HRNK、CNSのミサイルデータベース）の資料です。彼らの数字には彼らの名前を付けています。',
       '人物についての事実はウィキデータと公式のリストから取ります。出典のページが開かない、またはその内容が書かれていなければ、その主張は外します。',
       '毎週、すべての出典リンクが変わっていないか、移動していないか、消えていないかを確認し、結果を出典のページに載せています。',
@@ -230,7 +230,7 @@ export const ABOUT_TEXT: Record<Lang, AboutText> = {
     data: [
       '制裁名单每周直接从联合国 1718 委员会和美国财政部（OFAC）的文件下载。',
       '地震数据来自美国地质调查局（USGS）的目录，导弹发射来自日本防卫省的通报，每三小时检查一次。',
-      '收容所和军事设施的卫星图片，是我们自己从哥白尼计划免费的 Sentinel-2 影像中截取的。',
+      '收容所和军事设施的卫星图片，是我们自己从哥白尼计划免费的 Sentinel-2 影像中截取的，另有 Planet 公司更清晰的 PlanetScope 图像，可追溯到2016年。',
       '收容所位置、人权记录和导弹试射来自记录机构和研究者（NKDB、HRNK、CNS 导弹数据库）。他们的数字会标上他们的名字。',
       '关于人物的事实来自维基数据和官方名单。如果出处页面打不开，或者页面上没有这项说法，就会把它删掉。',
       '每周有一个任务检查所有出处链接是否改动、搬家或失效，结果公布在“来源”页面。',

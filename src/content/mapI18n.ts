@@ -93,6 +93,10 @@ export interface MapText {
   photoCloseUpHint: string;
   /** Under the full-screen viewer: why a Sentinel-2 image stays soft. */
   photoPixel: string;
+  photoPlanet: string;
+  photoPlanetHint: string;
+  photoPlanetNote: (px: string) => string;
+  photoPlanetAlt: (name: string, date: string) => string;
   zoomIn: string;
   zoomOut: string;
   photoNoClear: string;
@@ -228,6 +232,10 @@ export const MAP_TEXT: Record<Lang, MapText> = {
     photoCloseUp: 'Close-up',
     photoCloseUpHint: 'Fly in on the satellite map: sharper Esri imagery, capture date not given',
     photoPixel: 'One pixel is 10 to 15 m: fields, roads and large buildings, not people.',
+    photoPlanet: 'Sharper images',
+    photoPlanetAlt: (name, date) => `PlanetScope satellite image of ${name}, ${date}`,
+    photoPlanetHint: 'Planet images of this square, about 3.6 m per pixel, back to 2016',
+    photoPlanetNote: (px) => `Planet’s PlanetScope satellites. One pixel is about ${px} m: single large buildings and new construction, not people.`,
     zoomIn: 'Zoom in',
     zoomOut: 'Zoom out',
     photoNoClear: 'no clear image',
@@ -356,6 +364,10 @@ export const MAP_TEXT: Record<Lang, MapText> = {
     photoCloseUp: '가까이 보기',
     photoCloseUpHint: '위성 지도로 확대: 더 선명한 Esri 영상, 촬영일 미상',
     photoPixel: '한 픽셀은 10~15m입니다. 밭과 도로, 큰 건물은 보이지만 사람은 보이지 않습니다.',
+    photoPlanet: '더 선명한 영상',
+    photoPlanetAlt: (name, date) => `${name}의 플래닛스코프 위성 영상, ${date}`,
+    photoPlanetHint: '이 구역의 플래닛 영상, 픽셀당 약 3.6m, 2016년부터',
+    photoPlanetNote: (px) => `플래닛의 플래닛스코프 위성. 한 픽셀은 약 ${px}m입니다. 큰 건물 하나하나와 새 공사는 보이지만 사람은 보이지 않습니다.`,
     zoomIn: '확대',
     zoomOut: '축소',
     photoNoClear: '맑은 영상 없음',
@@ -484,6 +496,10 @@ export const MAP_TEXT: Record<Lang, MapText> = {
     photoCloseUp: 'クローズアップ',
     photoCloseUpHint: '衛星地図で拡大：より鮮明なEsri画像、撮影日不明',
     photoPixel: '1ピクセルは10〜15m。畑や道路、大きな建物は見えますが、人は見えません。',
+    photoPlanet: 'より鮮明な画像',
+    photoPlanetAlt: (name, date) => `${name}のプラネットスコープ衛星画像、${date}`,
+    photoPlanetHint: 'この範囲のプラネット社の画像、1ピクセル約3.6m、2016年から',
+    photoPlanetNote: (px) => `プラネット社のプラネットスコープ衛星。1ピクセルは約${px}m。大きな建物の一つ一つや新しい工事は見えますが、人は見えません。`,
     zoomIn: '拡大',
     zoomOut: '縮小',
     photoNoClear: '晴れた画像なし',
@@ -612,6 +628,10 @@ export const MAP_TEXT: Record<Lang, MapText> = {
     photoCloseUp: '近景',
     photoCloseUpHint: '在卫星地图上放大：更清晰的Esri图像，拍摄日期不详',
     photoPixel: '每个像素为10至15米：能看清农田、道路和大型建筑，但看不到人。',
+    photoPlanet: '更清晰的图像',
+    photoPlanetAlt: (name, date) => `${name}的 PlanetScope 卫星图像，${date}`,
+    photoPlanetHint: '这片区域的 Planet 图像，每像素约3.6米，从2016年起',
+    photoPlanetNote: (px) => `Planet 公司的 PlanetScope 卫星。每个像素约${px}米：能看清单栋大型建筑和新的施工，但看不到人。`,
     zoomIn: '放大',
     zoomOut: '缩小',
     photoNoClear: '无晴空图像',

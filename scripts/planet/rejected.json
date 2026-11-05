@@ -1,0 +1,35 @@
+{
+  "kangson": {
+    "2025-09-21": "no-data seam across the square"
+  },
+  "kusong": {
+    "2025-04-29": "haze over the western half",
+    "2025-08-07": "small clouds at the top",
+    "2026-02-23": "no-data seam across the square"
+  },
+  "kwanliso-14": {
+    "2026-06-23": "no-data seam at the top, small clouds",
+    "2026-07": "cloud over most of the composite"
+  },
+  "kwanliso-15": {
+    "2026-05-09": "no-data seam across the square"
+  },
+  "kwanliso-16": {
+    "2026-07": "cloud over the middle of the composite"
+  },
+  "kwanliso-25": {
+    "2025-04-16": "no-data seam on the east side",
+    "2025-07-07": "no-data seam across the square"
+  },
+  "sinpo": {
+    "2025-09-10": "corner with no imagery"
+  },
+  "sunan": {
+    "2026-08": "rainbow smear in the composite",
+    "2026-10-01": "corner with no imagery"
+  },
+  "tonghae": {
+    "2025-05-08": "haze on the coast, corner with no imagery",
+    "2026-08": "cloud over the composite"
+  }
+}
