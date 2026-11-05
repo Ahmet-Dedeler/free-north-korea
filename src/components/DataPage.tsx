@@ -11,7 +11,7 @@ import { DATA_TEXT } from '@/content/dataPage';
 import { CHART_UI, ENTITY_LABEL, SERIES_TEXT, TOPICS, UNIT_LABEL, dataPath } from '@/content/series';
 import { TWO_KOREAS_PATHS } from '@/content/twoKoreas';
 import { REPO_URL } from '@/site/config';
-import { LANG_TAG, absolute, jsonLd, type Lang } from '@/site/seo';
+import { LANG_TAG, absolute, breadcrumbLd, jsonLd, type Lang } from '@/site/seo';
 import '@/charts/charts.css';
 
 const RAW = `${REPO_URL.replace('github.com', 'raw.githubusercontent.com')}/main/data/series/csv`;
@@ -276,7 +276,7 @@ export function SeriesPage({ lang, id }: { lang: Lang; id: string }) {
   };
   return (
     <div className="data-series">
-      <script type="application/ld+json" dangerouslySetInnerHTML={jsonLd(ld)} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={jsonLd([ld, breadcrumbLd([[t.back, dataPath(lang)], [title, dataPath(lang, id)]])])} />
       <p className="eyebrow">
         <Link href={dataPath(lang)}>{t.back}</Link>
         {topic && (

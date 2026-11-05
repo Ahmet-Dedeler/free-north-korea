@@ -9,9 +9,10 @@ import PlaceCard from '@/components/PlaceCard';
 import { SourceCards, StatTile } from '@/components/Visual';
 import { getAllCamps } from '@/content/camps';
 import { getAllCounties, getCountyBySlug } from '@/content/counties';
+import { countyIsIndexable } from '@/content/countyIndexing';
 import { COUNTIES_PATHS, COUNTIES_TEXT, countyLanguages, decadeShort, decadeTitle, formatCount, provinceName, rightsLabel, sitePath } from '@/content/countiesI18n';
 import { getAllPlaces } from '@/content/places-data';
-import { absolute, jsonLd, pageMeta, type Lang } from '@/site/seo';
+import { absolute, breadcrumbLd, jsonLd, pageMeta, type Lang } from '@/site/seo';
 import { LIGHTS_STOPS } from '@/map/config';
 
 type Lights = { years: number[]; source: { url: string; seam: number }; counties: Record<string, { litShare: (number | null)[] }> };
@@ -104,6 +105,7 @@ export function countyMetadata(lang: Lang, slug: string) {
     path: countyLanguages(county.slug)[lang],
     lang,
     languages: countyLanguages(county.slug),
+    noindex: !countyIsIndexable(county),
   });
 }
 
@@ -175,7 +177,7 @@ export default async function CountyDossier({ lang, slug }: { lang: Lang; slug: 
 
   return (
     <article className="dossier-x">
-      <script type="application/ld+json" dangerouslySetInnerHTML={jsonLd(ld)} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={jsonLd([ld, breadcrumbLd([[t.crumb, COUNTIES_PATHS[lang]], [county.name, countyLanguages(county.slug)[lang]]])])} />
 
       <p className="eyebrow">
         <Link href={COUNTIES_PATHS[lang]}>{t.crumb}</Link> · {province} · {county.pcode}

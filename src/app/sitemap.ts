@@ -4,6 +4,7 @@ import { PEOPLE } from '@/entities';
 import { getAllCamps } from '@/content/camps';
 import { getAllPlaces } from '@/content/places-data';
 import { getAllCounties } from '@/content/counties';
+import { countyIsIndexable } from '@/content/countyIndexing';
 import { SANCTIONS, SANCTIONS_PATHS } from '@/content/sanctions';
 import { SHIPS, SHIPS_PATHS } from '@/content/ships';
 import { SERIES, SERIES_BUILT } from '@/charts/data';
@@ -40,6 +41,10 @@ const alternates = (langs: Languages): Entry['alternates'] => ({
   languages: Object.fromEntries(Object.entries(hreflang(langs)).map(([l, p]) => [l, absolute(p === '/' ? '' : p)])),
 });
 
+/**
+ * `lastModified` only where we know when that page's data really changed (articles, sanctions, charts). REVIEWED was on
+ * every other URL before, so one re-check marked 1,500 pages as changed, which teaches Google to ignore the field.
+ */
 export default function sitemap(): MetadataRoute.Sitemap {
   // Still English-only. Translated pages are listed with their alternates below.
   const pages = ['/missiles'];
@@ -63,13 +68,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const camps = getAllCamps();
   const places = getAllPlaces();
-  const counties = getAllCounties();
+  // thin counties stay on the site but out of search; see countyIsIndexable
+  const counties = getAllCounties().filter(countyIsIndexable);
 
   return [
     ...Object.values(HUB_PATHS).map((p) => ({ url: absolute(p === '/' ? '' : p), lastModified: REVIEWED, priority: p === '/' ? 1 : 0.8, alternates: alternates(HUB_PATHS) })),
-    ...pages.map((p) => ({ url: absolute(p), lastModified: REVIEWED, priority: 0.8 })),
+    ...pages.map((p) => ({ url: absolute(p), priority: 0.8 })),
     ...translated.flatMap((langs) =>
-      Object.values(langs).map((p) => ({ url: absolute(p ?? ''), lastModified: REVIEWED, priority: 0.8, alternates: alternates(langs) })),
+      Object.values(langs).map((p) => ({ url: absolute(p ?? ''), priority: 0.8, alternates: alternates(langs) })),
     ),
     ...Object.values(KIM_WATCH_PATHS).map((p) => ({ url: absolute(p), lastModified: KIM_WATCH.fetched, priority: 0.8, alternates: alternates(KIM_WATCH_PATHS) })),
     ...Object.values(WATCH_PATHS).map((p) => ({ url: absolute(p), lastModified: KIM_WATCH.fetched, priority: 0.8, alternates: alternates(WATCH_PATHS) })),
@@ -87,19 +93,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...ZH_ARTICLES.map((a) => ({ url: absolute(`/zh/learn/${a.slug}`), lastModified: a.updated, priority: 0.85, alternates: alternates(articleLanguages(a.slug)) })),
     ...PEOPLE.flatMap((p) => {
       const langs = personLanguages(p.id);
-      return LANGS.map((l) => ({ url: absolute(langs[l]), lastModified: REVIEWED, priority: 0.6, alternates: alternates(langs) }));
+      return LANGS.map((l) => ({ url: absolute(langs[l]), priority: 0.6, alternates: alternates(langs) }));
     }),
     ...camps.flatMap((c) => {
       const langs = campLanguages(c.slug);
-      return LANGS.map((l) => ({ url: absolute(langs[l]), lastModified: REVIEWED, priority: 0.85, alternates: alternates(langs) }));
+      return LANGS.map((l) => ({ url: absolute(langs[l]), priority: 0.85, alternates: alternates(langs) }));
     }),
     ...places.flatMap((p) => {
       const langs = placeLanguages(p.slug);
-      return LANGS.map((l) => ({ url: absolute(langs[l] ?? ''), lastModified: REVIEWED, priority: 0.75, alternates: alternates(langs) }));
+      return LANGS.map((l) => ({ url: absolute(langs[l] ?? ''), priority: 0.75, alternates: alternates(langs) }));
     }),
     ...counties.flatMap((c) => {
       const langs = countyLanguages(c.slug);
-      return LANGS.map((l) => ({ url: absolute(langs[l]), lastModified: REVIEWED, priority: 0.7, alternates: alternates(langs) }));
+      return LANGS.map((l) => ({ url: absolute(langs[l]), priority: 0.7, alternates: alternates(langs) }));
     }),
   ];
 }

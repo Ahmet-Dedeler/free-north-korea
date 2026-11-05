@@ -23,7 +23,7 @@ import { SANCTIONS_PATHS } from '@/content/sanctions';
 import { RELATION_ORDER, age, currentRole, entityOrg, familyOf, isDead, person } from '@/entities';
 import { familyTreeIds } from '@/entities/familyTree';
 import type { Claim, NumberClaim } from '@/entities/types';
-import { LANG_TAG, absolute, jsonLd, type Lang } from '@/site/seo';
+import { LANG_TAG, absolute, breadcrumbLd, jsonLd, type Lang } from '@/site/seo';
 
 function En({ lang, children }: { lang: Lang; children: React.ReactNode }) {
   return lang === 'en' ? <>{children}</> : <span lang="en">{children}</span>;
@@ -79,7 +79,7 @@ export default function PersonDossier({ lang, id }: { lang: Lang; id: string }) 
 
   return (
     <article className="dossier">
-      <script type="application/ld+json" dangerouslySetInnerHTML={jsonLd(ld)} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={jsonLd([ld, breadcrumbLd([[t.eyebrow, PEOPLE_PATHS[lang]], [p.name_en, paths[lang]]])])} />
       <p className="eyebrow">
         <Link href={PEOPLE_PATHS[lang]}>{t.eyebrow}</Link>
         {' · '}

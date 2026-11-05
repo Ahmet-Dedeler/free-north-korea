@@ -5,6 +5,7 @@
  *   (rewrites in next.config.ts send both to `app/md/[[...path]]/route.ts`, which converts the built HTML).
  * - `/llms.txt` (llmstxt.org) is the reading list; `/llms-full.txt` holds every English article in one file.
  * - `/.well-known/api-catalog` (RFC 9727) lists the JSON API, described by `/openapi.json`.
+ * - Markdown copies are never meant for search: they send `X-Robots-Tag: noindex` and robots.txt keeps Googlebot off them.
  * - Every HTML response sends `Link` headers pointing at the last two, so agents find them without guessing.
  * Check the result with Cloudflare's scanner: POST https://isitagentready.com/api/scan {"url": "<site>"}.
  */
@@ -21,6 +22,8 @@ export const MD_HEADERS = {
   Vary: 'Accept',
   'Content-Signal': CONTENT_SIGNAL,
   'Access-Control-Allow-Origin': '*',
+  // a copy of an HTML page for agents, not a second result in search (robots.ts also keeps Googlebot off them)
+  'X-Robots-Tag': 'noindex',
   // content only changes with a deploy, and a deploy starts a fresh CDN cache
   'Cache-Control': 'public, max-age=3600, s-maxage=86400, stale-while-revalidate=604800',
 };

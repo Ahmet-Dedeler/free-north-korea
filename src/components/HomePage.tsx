@@ -33,7 +33,7 @@ import { PLACE_CATEGORIES, PLACE_COLOR } from '@/content/places';
 import { PLACE_CATEGORY_TEXT, placeFields } from '@/content/placesI18n';
 import { person } from '@/entities';
 import testsRaw from '../../public/data/test.en.json';
-import { REPO_URL, SITE_NAME, SITE_URL } from '@/site/config';
+import { REPO_URL, SITE_NAME, SITE_URL, X_URL } from '@/site/config';
 import { jsonLd, type Lang } from '@/site/seo';
 import { latest } from '@/charts/data';
 import { dayLabel, getSatSite, imgSrc, latestSatSites, satCredit, type SatSite } from '@/content/satWatch';
@@ -301,13 +301,25 @@ export default function HomePage({ lang }: { lang: Lang }) {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={jsonLd({
-          '@context': 'https://schema.org',
-          '@type': 'WebSite',
-          name: SITE_NAME,
-          url: homeUrl,
-          inLanguage: lang === 'zh' ? 'zh-Hans' : lang,
-        })}
+        dangerouslySetInnerHTML={jsonLd([
+          {
+            '@context': 'https://schema.org',
+            '@type': 'WebSite',
+            name: SITE_NAME,
+            // the old name and the bare domain, so Google ties them to this site during the move
+            alternateName: ['savenorthkorea.org', 'Liberate North Korea'],
+            url: homeUrl,
+            inLanguage: lang === 'zh' ? 'zh-Hans' : lang,
+          },
+          {
+            '@context': 'https://schema.org',
+            '@type': 'Organization',
+            name: SITE_NAME,
+            url: SITE_URL,
+            logo: `${SITE_URL}/img/logo-512.png`,
+            sameAs: [X_URL, REPO_URL],
+          },
+        ])}
       />
 
       <section className="hx bleed">

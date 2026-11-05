@@ -220,6 +220,15 @@ exist.
 ## SEO
 
 - `pageMeta()` sets canonical, hreflang, Open Graph and Twitter tags. Never hand-roll these in a page.
+- The site moved from `liberatenorthkorea.org` on 2026-10-19. Search Console reports clicks under whichever URL Google
+  shows, so during the move read both properties plus PostHog's Google referrers before calling traffic zero. Status and
+  history: `docs/seo/migration-2026-11.md`.
+- Not every page belongs in search. `pageMeta({ noindex: true })` keeps a page for readers and out of the index; leave
+  it out of `sitemap.ts` too. County pages use this through `countyIsIndexable()` (`content/countyIndexing.ts`).
+- Sitemap `lastModified` only where we know when that page's data changed. Never stamp `REVIEWED` on a whole group.
+- Meta descriptions go through `clip()` (no word cut in half), never `.slice()`. `breadcrumbLd()` builds BreadcrumbList.
+- Markdown copies (`/x.md`) are for agents: `X-Robots-Tag: noindex`, and robots.txt keeps Googlebot off them.
+- After a change to many pages: `node scripts/indexnow.mjs` once the deploy is live (Bing, Yandex, Naver, Seznam).
 - Share cards: `ogCard()` in `src/site/og.tsx`. A route gets its own card by adding an `opengraph-image.tsx` next to
   the page and passing `image: '<path>/opengraph-image'` to `pageMeta()`. In dynamic segments also export
   `generateStaticParams` from the image file so the cards are prerendered. Articles, camps, places, people and
