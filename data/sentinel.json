@@ -1,5 +1,5 @@
 {
- "built": "2026-11-02",
+ "built": "2026-11-09",
  "source": "Copernicus Sentinel-2 L2A via Element84 Earth Search (https://earth-search.aws.element84.com/v1)",
  "credit": "Contains modified Copernicus Sentinel data",
  "rules": {
@@ -18,7 +18,7 @@
    "sizeM": 7680,
    "tile": "MGRS-52SBJ",
    "latest": "2026-10-31",
-   "checked": "2026-11-02T16:02Z",
+   "checked": "2026-11-09T16:28Z",
    "images": [
     {
      "date": "2024-12-10",
@@ -652,8 +652,8 @@
    "lon": 126.8510413,
    "sizeM": 7680,
    "tile": "MGRS-52SCJ",
-   "latest": "2026-10-31",
-   "checked": "2026-11-02T16:02Z",
+   "latest": "2026-11-07",
+   "checked": "2026-11-09T16:28Z",
    "images": [
     {
      "date": "2024-12-10",
@@ -1074,10 +1074,10 @@
      "month": "2026-10"
     },
     {
-     "date": "2026-10-31",
-     "datetime": "2026-10-31T02:36:40.088000Z",
-     "scene": "S2B_52SCJ_20261031_0_L2A",
-     "cloud": 0.03,
+     "date": "2026-11-04",
+     "datetime": "2026-11-04T02:26:49.652000Z",
+     "scene": "S2A_52SCJ_20261104_1_L2A",
+     "cloud": 0.0,
      "snow": 0.0,
      "nodata": 0.0,
      "pixelM": 10.0,
@@ -1089,7 +1089,26 @@
       126.89673,
       39.70973
      ],
-     "src": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-l2a/items/S2B_52SCJ_20261031_0_L2A",
+     "src": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-l2a/items/S2A_52SCJ_20261104_1_L2A",
+     "month": "2026-11"
+    },
+    {
+     "date": "2026-11-07",
+     "datetime": "2026-11-07T02:26:44.381000Z",
+     "scene": "S2B_52SCJ_20261107_0_L2A",
+     "cloud": 0.05,
+     "snow": 0.0,
+     "nodata": 0.0,
+     "pixelM": 10.0,
+     "sizePx": 768,
+     "epsg": 32652,
+     "bbox": [
+      126.8051,
+      39.63892,
+      126.89673,
+      39.70973
+     ],
+     "src": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-l2a/items/S2B_52SCJ_20261107_0_L2A",
      "month": null
     }
    ],
@@ -1263,6 +1282,14 @@
      "kind": "month"
     },
     {
+     "from": "2026-10-08",
+     "to": "2026-11-04",
+     "clear": 100.0,
+     "score": 0.403,
+     "changed": 3.78,
+     "kind": "month"
+    },
+    {
      "from": "2024-12-10",
      "to": "2025-12-12",
      "clear": 98.7,
@@ -1341,6 +1368,14 @@
      "score": 0.248,
      "changed": 3.16,
      "kind": "year"
+    },
+    {
+     "from": "2025-11-12",
+     "to": "2026-11-04",
+     "clear": 100.0,
+     "score": 0.466,
+     "changed": 8.37,
+     "kind": "year"
     }
    ],
    "atlas": {
@@ -1357,8 +1392,8 @@
    "lon": 129.2683983,
    "sizeM": 7680,
    "tile": "MGRS-52TEL",
-   "latest": "2026-10-28",
-   "checked": "2026-11-02T16:02Z",
+   "latest": "2026-11-04",
+   "checked": "2026-11-09T16:28Z",
    "images": [
     {
      "date": "2025-01-01",
@@ -1663,6 +1698,25 @@
      ],
      "src": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-l2a/items/S2B_52TEL_20261028_0_L2A",
      "month": "2026-10"
+    },
+    {
+     "date": "2026-11-04",
+     "datetime": "2026-11-04T02:26:12.877000Z",
+     "scene": "S2A_52TEL_20261104_2_L2A",
+     "cloud": 0.0,
+     "snow": 0.0,
+     "nodata": 0.0,
+     "pixelM": 10.0,
+     "sizePx": 768,
+     "epsg": 32652,
+     "bbox": [
+      129.22249,
+      41.25218,
+      129.31449,
+      41.32158
+     ],
+     "src": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-l2a/items/S2A_52TEL_20261104_2_L2A",
+     "month": "2026-11"
     }
    ],
    "changes": [
@@ -1787,6 +1841,14 @@
      "kind": "month"
     },
     {
+     "from": "2026-10-28",
+     "to": "2026-11-04",
+     "clear": 100.0,
+     "score": 0.523,
+     "changed": 9.43,
+     "kind": "month"
+    },
+    {
      "from": "2025-01-01",
      "to": "2026-01-06",
      "clear": 95.9,
@@ -1833,6 +1895,14 @@
      "score": 0.78,
      "changed": 24.95,
      "kind": "year"
+    },
+    {
+     "from": "2025-11-22",
+     "to": "2026-11-04",
+     "clear": 100.0,
+     "score": 0.49,
+     "changed": 8.96,
+     "kind": "year"
     }
    ],
    "atlas": {
@@ -1850,7 +1920,7 @@
    "sizeM": 7680,
    "tile": "MGRS-52SBJ",
    "latest": "2026-10-31",
-   "checked": "2026-11-02T16:02Z",
+   "checked": "2026-11-09T16:28Z",
    "images": [
     {
      "date": "2024-12-10",
@@ -2519,8 +2589,8 @@
    "lon": 129.8776233,
    "sizeM": 7680,
    "tile": "MGRS-52TEN",
-   "latest": "2026-10-30",
-   "checked": "2026-11-02T16:02Z",
+   "latest": "2026-11-09",
+   "checked": "2026-11-09T16:28Z",
    "images": [
     {
      "date": "2024-12-24",
@@ -2920,6 +2990,25 @@
      ],
      "src": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-l2a/items/S2C_52TEN_20261030_0_L2A",
      "month": "2026-10"
+    },
+    {
+     "date": "2026-11-09",
+     "datetime": "2026-11-09T02:15:37.674000Z",
+     "scene": "S2C_52TEN_20261109_0_L2A",
+     "cloud": 0.0,
+     "snow": 0.0,
+     "nodata": 0.0,
+     "pixelM": 10.0,
+     "sizePx": 768,
+     "epsg": 32652,
+     "bbox": [
+      129.83044,
+      42.54947,
+      129.925,
+      42.61934
+     ],
+     "src": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-l2a/items/S2C_52TEN_20261109_0_L2A",
+     "month": "2026-11"
     }
    ],
    "changes": [
@@ -3084,6 +3173,14 @@
      "kind": "month"
     },
     {
+     "from": "2026-10-30",
+     "to": "2026-11-09",
+     "clear": 100.0,
+     "score": 0.24,
+     "changed": 1.55,
+     "kind": "month"
+    },
+    {
      "from": "2024-12-24",
      "to": "2025-12-17",
      "clear": 64.8,
@@ -3154,6 +3251,14 @@
      "score": 0.517,
      "changed": 12.0,
      "kind": "year"
+    },
+    {
+     "from": "2025-11-22",
+     "to": "2026-11-09",
+     "clear": 100.0,
+     "score": 0.2,
+     "changed": 0.79,
+     "kind": "year"
     }
    ],
    "atlas": {
@@ -3170,8 +3275,8 @@
    "lon": 129.7210693,
    "sizeM": 7680,
    "tile": "MGRS-52TEM",
-   "latest": "2026-10-30",
-   "checked": "2026-11-02T16:02Z",
+   "latest": "2026-11-09",
+   "checked": "2026-11-09T16:28Z",
    "images": [
     {
      "date": "2024-12-29",
@@ -3609,6 +3714,25 @@
      ],
      "src": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-l2a/items/S2C_52TEM_20261030_0_L2A",
      "month": "2026-10"
+    },
+    {
+     "date": "2026-11-09",
+     "datetime": "2026-11-09T02:15:52.502000Z",
+     "scene": "S2C_52TEM_20261109_0_L2A",
+     "cloud": 0.4,
+     "snow": 0.0,
+     "nodata": 0.0,
+     "pixelM": 10.0,
+     "sizePx": 768,
+     "epsg": 32652,
+     "bbox": [
+      129.67454,
+      41.79806,
+      129.7678,
+      41.86781
+     ],
+     "src": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-l2a/items/S2C_52TEM_20261109_0_L2A",
+     "month": "2026-11"
     }
    ],
    "changes": [
@@ -3789,6 +3913,14 @@
      "kind": "month"
     },
     {
+     "from": "2026-10-30",
+     "to": "2026-11-09",
+     "clear": 99.6,
+     "score": 0.324,
+     "changed": 3.42,
+     "kind": "month"
+    },
+    {
      "from": "2024-12-29",
      "to": "2025-12-09",
      "clear": 98.5,
@@ -3875,6 +4007,14 @@
      "score": 0.413,
      "changed": 6.55,
      "kind": "year"
+    },
+    {
+     "from": "2025-11-22",
+     "to": "2026-11-09",
+     "clear": 99.6,
+     "score": 0.22,
+     "changed": 1.66,
+     "kind": "year"
     }
    ],
    "atlas": {
@@ -3892,7 +4032,7 @@
    "sizeM": 5120,
    "tile": "MGRS-51TYE",
    "latest": "2026-10-31",
-   "checked": "2026-11-02T16:02Z",
+   "checked": "2026-11-09T16:28Z",
    "images": [
     {
      "date": "2024-12-05",
@@ -4596,8 +4736,8 @@
    "lon": 129.7555538,
    "sizeM": 5120,
    "tile": "MGRS-52TEM",
-   "latest": "2026-10-30",
-   "checked": "2026-11-02T16:02Z",
+   "latest": "2026-11-09",
+   "checked": "2026-11-09T16:28Z",
    "images": [
     {
      "date": "2024-12-07",
@@ -4978,6 +5118,44 @@
      ],
      "src": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-l2a/items/S2C_52TEM_20261030_0_L2A",
      "month": "2026-10"
+    },
+    {
+     "date": "2026-11-04",
+     "datetime": "2026-11-04T02:15:56.927000Z",
+     "scene": "S2B_52TEM_20261104_0_L2A",
+     "cloud": 0.0,
+     "snow": 0.0,
+     "nodata": 0.0,
+     "pixelM": 10.0,
+     "sizePx": 512,
+     "epsg": 32652,
+     "bbox": [
+      129.72418,
+      42.1854,
+      129.78675,
+      42.23191
+     ],
+     "src": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-l2a/items/S2B_52TEM_20261104_0_L2A",
+     "month": "2026-11"
+    },
+    {
+     "date": "2026-11-09",
+     "datetime": "2026-11-09T02:15:52.502000Z",
+     "scene": "S2C_52TEM_20261109_0_L2A",
+     "cloud": 0.0,
+     "snow": 0.12,
+     "nodata": 0.0,
+     "pixelM": 10.0,
+     "sizePx": 512,
+     "epsg": 32652,
+     "bbox": [
+      129.72418,
+      42.1854,
+      129.78675,
+      42.23191
+     ],
+     "src": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-l2a/items/S2C_52TEM_20261109_0_L2A",
+     "month": null
     }
    ],
    "changes": [
@@ -5134,6 +5312,14 @@
      "kind": "month"
     },
     {
+     "from": "2026-10-30",
+     "to": "2026-11-04",
+     "clear": 100.0,
+     "score": 0.713,
+     "changed": 25.19,
+     "kind": "month"
+    },
+    {
      "from": "2024-12-07",
      "to": "2025-12-17",
      "clear": 69.6,
@@ -5196,6 +5382,14 @@
      "score": 0.516,
      "changed": 10.28,
      "kind": "year"
+    },
+    {
+     "from": "2025-11-19",
+     "to": "2026-11-04",
+     "clear": 100.0,
+     "score": 0.697,
+     "changed": 22.92,
+     "kind": "year"
     }
    ],
    "atlas": {
@@ -5213,7 +5407,7 @@
    "sizeM": 7680,
    "tile": "MGRS-51TYE",
    "latest": "2026-10-31",
-   "checked": "2026-11-02T16:02Z",
+   "checked": "2026-11-09T16:28Z",
    "images": [
     {
      "date": "2024-12-05",
@@ -5878,7 +6072,7 @@
    "sizeM": 5120,
    "tile": "MGRS-51SYD",
    "latest": "2026-10-31",
-   "checked": "2026-11-02T16:02Z",
+   "checked": "2026-11-09T16:28Z",
    "images": [
     {
      "date": "2024-12-05",
@@ -6577,8 +6771,8 @@
    "lon": 129.0875,
    "sizeM": 5120,
    "tile": "MGRS-52TEL",
-   "latest": "2026-10-28",
-   "checked": "2026-11-02T16:02Z",
+   "latest": "2026-11-04",
+   "checked": "2026-11-09T16:28Z",
    "images": [
     {
      "date": "2025-01-11",
@@ -6864,6 +7058,25 @@
      ],
      "src": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-l2a/items/S2B_52TEL_20261028_0_L2A",
      "month": "2026-10"
+    },
+    {
+     "date": "2026-11-04",
+     "datetime": "2026-11-04T02:26:12.877000Z",
+     "scene": "S2A_52TEL_20261104_2_L2A",
+     "cloud": 0.0,
+     "snow": 13.2,
+     "nodata": 0.0,
+     "pixelM": 10.0,
+     "sizePx": 512,
+     "epsg": 32652,
+     "bbox": [
+      129.05682,
+      41.25507,
+      129.11802,
+      41.30124
+     ],
+     "src": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-l2a/items/S2A_52TEL_20261104_2_L2A",
+     "month": "2026-11"
     }
    ],
    "changes": [
@@ -6980,6 +7193,14 @@
      "kind": "month"
     },
     {
+     "from": "2026-10-28",
+     "to": "2026-11-04",
+     "clear": 86.8,
+     "score": 0.887,
+     "changed": 35.55,
+     "kind": "month"
+    },
+    {
      "from": "2025-01-11",
      "to": "2026-01-06",
      "clear": 70.2,
@@ -7026,6 +7247,14 @@
      "score": 0.645,
      "changed": 16.48,
      "kind": "year"
+    },
+    {
+     "from": "2025-11-22",
+     "to": "2026-11-04",
+     "clear": 86.7,
+     "score": 0.85,
+     "changed": 34.96,
+     "kind": "year"
     }
    ]
   },
@@ -7037,8 +7266,8 @@
    "lon": 126.432,
    "sizeM": 5120,
    "tile": "MGRS-52SBH",
-   "latest": "2026-10-28",
-   "checked": "2026-11-02T16:02Z",
+   "latest": "2026-11-07",
+   "checked": "2026-11-09T16:28Z",
    "images": [
     {
      "date": "2024-12-05",
@@ -7438,6 +7667,44 @@
      ],
      "src": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-l2a/items/S2A_52SBH_20261028_1_L2A",
      "month": "2026-10"
+    },
+    {
+     "date": "2026-11-05",
+     "datetime": "2026-11-05T02:36:53.132000Z",
+     "scene": "S2C_52SBH_20261105_0_L2A",
+     "cloud": 0.0,
+     "snow": 0.0,
+     "nodata": 0.0,
+     "pixelM": 10.0,
+     "sizePx": 512,
+     "epsg": 32652,
+     "bbox": [
+      126.40201,
+      38.29323,
+      126.46214,
+      38.34061
+     ],
+     "src": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-l2a/items/S2C_52SBH_20261105_0_L2A",
+     "month": "2026-11"
+    },
+    {
+     "date": "2026-11-07",
+     "datetime": "2026-11-07T02:27:02.581000Z",
+     "scene": "S2B_52SBH_20261107_0_L2A",
+     "cloud": 1.24,
+     "snow": 0.0,
+     "nodata": 0.0,
+     "pixelM": 10.0,
+     "sizePx": 512,
+     "epsg": 32652,
+     "bbox": [
+      126.40201,
+      38.29323,
+      126.46214,
+      38.34061
+     ],
+     "src": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-l2a/items/S2B_52SBH_20261107_0_L2A",
+     "month": null
     }
    ],
    "changes": [
@@ -7602,6 +7869,14 @@
      "kind": "month"
     },
     {
+     "from": "2026-10-28",
+     "to": "2026-11-05",
+     "clear": 100.0,
+     "score": 0.213,
+     "changed": 1.47,
+     "kind": "month"
+    },
+    {
      "from": "2024-12-05",
      "to": "2025-12-17",
      "clear": 98.7,
@@ -7672,6 +7947,14 @@
      "score": 0.407,
      "changed": 7.06,
      "kind": "year"
+    },
+    {
+     "from": "2025-11-05",
+     "to": "2026-11-05",
+     "clear": 100.0,
+     "score": 0.321,
+     "changed": 2.79,
+     "kind": "year"
     }
    ]
   },
@@ -7684,7 +7967,7 @@
    "sizeM": 7680,
    "tile": "MGRS-51SXD",
    "latest": "2026-10-31",
-   "checked": "2026-11-02T16:02Z",
+   "checked": "2026-11-09T16:28Z",
    "images": [
     {
      "date": "2024-12-10",
@@ -8348,8 +8631,8 @@
    "lon": 129.6864,
    "sizeM": 5120,
    "tile": "MGRS-52TEL",
-   "latest": "2026-10-30",
-   "checked": "2026-11-02T16:02Z",
+   "latest": "2026-11-04",
+   "checked": "2026-11-09T16:28Z",
    "images": [
     {
      "date": "2024-12-07",
@@ -8789,11 +9072,11 @@
      "month": "2026-10"
     },
     {
-     "date": "2026-10-30",
-     "datetime": "2026-10-30T02:16:08.421000Z",
-     "scene": "S2C_52TEL_20261030_0_L2A",
-     "cloud": 0.01,
-     "snow": 0.02,
+     "date": "2026-11-04",
+     "datetime": "2026-11-04T02:26:12.877000Z",
+     "scene": "S2A_52TEL_20261104_2_L2A",
+     "cloud": 0.0,
+     "snow": 0.0,
      "nodata": 0.0,
      "pixelM": 10.0,
      "sizePx": 512,
@@ -8804,8 +9087,8 @@
       129.71713,
       40.88159
      ],
-     "src": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-l2a/items/S2C_52TEL_20261030_0_L2A",
-     "month": null
+     "src": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-l2a/items/S2A_52TEL_20261104_2_L2A",
+     "month": "2026-11"
     }
    ],
    "changes": [
@@ -8986,6 +9269,14 @@
      "kind": "month"
     },
     {
+     "from": "2026-10-22",
+     "to": "2026-11-04",
+     "clear": 100.0,
+     "score": 0.477,
+     "changed": 9.29,
+     "kind": "month"
+    },
+    {
      "from": "2024-12-07",
      "to": "2025-12-07",
      "clear": 99.5,
@@ -9072,6 +9363,14 @@
      "score": 0.249,
      "changed": 1.66,
      "kind": "year"
+    },
+    {
+     "from": "2025-11-22",
+     "to": "2026-11-04",
+     "clear": 100.0,
+     "score": 0.331,
+     "changed": 4.71,
+     "kind": "year"
     }
    ]
   },
@@ -9083,8 +9382,8 @@
    "lon": 128.1856,
    "sizeM": 5120,
    "tile": "MGRS-52TDK",
-   "latest": "2026-10-28",
-   "checked": "2026-11-02T16:02Z",
+   "latest": "2026-11-07",
+   "checked": "2026-11-09T16:28Z",
    "images": [
     {
      "date": "2024-12-02",
@@ -9486,10 +9785,10 @@
      "month": "2026-10"
     },
     {
-     "date": "2026-10-28",
-     "datetime": "2026-10-28T02:26:26.110000Z",
-     "scene": "S2B_52TDK_20261028_0_L2A",
-     "cloud": 0.2,
+     "date": "2026-11-07",
+     "datetime": "2026-11-07T02:26:26.209000Z",
+     "scene": "S2B_52TDK_20261107_0_L2A",
+     "cloud": 0.87,
      "snow": 0.0,
      "nodata": 0.0,
      "pixelM": 10.0,
@@ -9501,8 +9800,8 @@
       128.21589,
       40.05791
      ],
-     "src": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-l2a/items/S2B_52TDK_20261028_0_L2A",
-     "month": null
+     "src": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-l2a/items/S2B_52TDK_20261107_0_L2A",
+     "month": "2026-11"
     }
    ],
    "changes": [
@@ -9667,6 +9966,14 @@
      "kind": "month"
     },
     {
+     "from": "2026-10-08",
+     "to": "2026-11-07",
+     "clear": 99.1,
+     "score": 0.206,
+     "changed": 1.5,
+     "kind": "month"
+    },
+    {
      "from": "2024-12-02",
      "to": "2025-12-07",
      "clear": 99.0,
@@ -9737,6 +10044,14 @@
      "score": 0.198,
      "changed": 1.94,
      "kind": "year"
+    },
+    {
+     "from": "2025-11-22",
+     "to": "2026-11-07",
+     "clear": 99.1,
+     "score": 0.183,
+     "changed": 0.82,
+     "kind": "year"
     }
    ]
   },
@@ -9749,7 +10064,7 @@
    "sizeM": 5120,
    "tile": "MGRS-51TXE",
    "latest": "2026-10-31",
-   "checked": "2026-11-02T16:02Z",
+   "checked": "2026-11-09T16:28Z",
    "images": [
     {
      "date": "2024-12-05",
@@ -10387,7 +10702,7 @@
    "sizeM": 5120,
    "tile": "MGRS-51SYD",
    "latest": "2026-10-31",
-   "checked": "2026-11-02T16:02Z",
+   "checked": "2026-11-09T16:28Z",
    "images": [
     {
      "date": "2024-12-05",

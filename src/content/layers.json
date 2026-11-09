@@ -93,12 +93,12 @@
     {
      "name": "Global Fishing Watch port visits",
      "url": "https://globalfishingwatch.org/",
-     "updated": "2026-11-02"
+     "updated": "2026-11-09"
     }
    ]
   },
   "radar": {
-   "count": 486,
+   "count": 527,
    "sources": [
     {
      "name": "Global Fishing Watch SAR vessel detections",

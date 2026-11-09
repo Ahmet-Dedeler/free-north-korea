@@ -1,12 +1,12 @@
 {
  "_doc": "Built by scripts/build-sanctions.ts from the live UN, US, UK, EU and Japanese lists. Do not edit by hand.",
- "fetched": "2026-11-02",
+ "fetched": "2026-11-09",
  "sources": {
   "un": "https://scsanctions.un.org/resources/xml/en/consolidated.xml",
   "ofac": "https://www.treasury.gov/ofac/downloads/sdn.csv",
   "uk": "https://sanctionslist.fcdo.gov.uk/docs/UK-Sanctions-List.xml",
   "eu": "https://webgate.ec.europa.eu/fsd/fsf/public/files/xmlFullSanctionsList_1_1/content?token=dG9rZW4tMjAxNw",
-  "jp": "https://www.mof.go.jp/policy/international_policy/gaitame_kawase/gaitame/economic_sanctions/shisantouketsu20261030.csv"
+  "jp": "https://www.mof.go.jp/policy/international_policy/gaitame_kawase/gaitame/economic_sanctions/shisantouketsu20261105.csv"
  },
  "pages": {
   "uk": "https://www.gov.uk/government/publications/the-uk-sanctions-list",
@@ -14,7 +14,7 @@
   "jp": "https://www.mof.go.jp/policy/international_policy/gaitame_kawase/gaitame/economic_sanctions/list.html"
  },
  "un": {
-  "generated": "2026-10-31",
+  "generated": "2026-11-08",
   "individuals": [
    {
     "ref": "KPi.001",
@@ -7091,8 +7091,8 @@
  ],
  "national": {
   "uk": {
-   "fetched": "2026-11-02",
-   "published": "2026-10-30",
+   "fetched": "2026-11-09",
+   "published": "2026-11-03",
    "file": "https://sanctionslist.fcdo.gov.uk/docs/UK-Sanctions-List.xml",
    "entries": [
     {
@@ -10631,7 +10631,7 @@
    ]
   },
   "eu": {
-   "fetched": "2026-11-02",
+   "fetched": "2026-11-09",
    "published": "2026-10-23",
    "file": "https://webgate.ec.europa.eu/fsd/fsf/public/files/xmlFullSanctionsList_1_1/content?token=dG9rZW4tMjAxNw",
    "entries": [
@@ -13745,9 +13745,9 @@
    ]
   },
   "jp": {
-   "fetched": "2026-11-02",
-   "published": "2026-10-30",
-   "file": "https://www.mof.go.jp/policy/international_policy/gaitame_kawase/gaitame/economic_sanctions/shisantouketsu20261030.csv",
+   "fetched": "2026-11-09",
+   "published": "2026-11-05",
+   "file": "https://www.mof.go.jp/policy/international_policy/gaitame_kawase/gaitame/economic_sanctions/shisantouketsu20261105.csv",
    "entries": [
     {
      "id": "013-000001",

@@ -1,17 +1,17 @@
 {
  "_doc": "Built by scripts/build-ships.ts from the archive in data/archive/gfw (Global Fishing Watch API) and data/sanctions.json. Do not edit by hand.",
- "fetched": "2026-11-02",
+ "fetched": "2026-11-09",
  "attribution": "Powered by Global Fishing Watch (globalfishingwatch.org). Data: GFW vessel identity v4, port visits v4 and SAR vessel detections, CC BY-NC 4.0.",
  "sources": {
   "gfw": "https://globalfishingwatch.org/our-apis/",
   "license": "https://globalfishingwatch.org/our-apis/documentation/docs/license-rate-limits.md"
  },
- "sanctionsFetched": "2026-11-02",
+ "sanctionsFetched": "2026-11-09",
  "window": {
   "from": "2025-12-01",
-  "to": "2026-11-02"
+  "to": "2026-11-09"
  },
- "radarThrough": "2026-10-30",
+ "radarThrough": "",
  "listedImos": 111,
  "resolved": 105,
  "ships": [
@@ -27,7 +27,7 @@
      "flag": "RUS",
      "mmsi": "273390290",
      "first": "2016-10-15",
-     "last": "2026-10-31"
+     "last": "2026-11-07"
     },
     {
      "name": "AFRICAN EXPRESS",
@@ -44,14 +44,14 @@
      "last": "2015-11-03"
     }
    ],
-   "lastSeen": "2026-10-31",
+   "lastSeen": "2026-11-07",
    "visits": [
     {
      "start": "2026-10-17",
-     "end": "2026-10-29",
+     "end": "2026-11-05",
      "port": "SHANGHAI",
      "country": "CHN",
-     "confidence": 3,
+     "confidence": 4,
      "as": "SAKHALIN",
      "flag": "RUS"
     },
@@ -424,66 +424,56 @@
    "radarMonths": []
   },
   {
-   "name": "Chon Ma San",
-   "imo": "8660313",
+   "name": "Oriental Treasure",
+   "imo": "9115028",
    "lists": [
-    "UK",
     "US"
    ],
    "ais": [
     {
-     "name": "CHON MA SAN",
+     "name": "SIN HAE",
      "flag": "PRK",
-     "mmsi": "445082000",
-     "first": "2026-01-26",
-     "last": "2026-10-31"
+     "mmsi": "445058000",
+     "first": "2022-08-24",
+     "last": "2026-11-07"
     },
     {
-     "name": "CHONG SAN",
-     "flag": null,
-     "mmsi": "111122000",
-     "first": "2026-07-19",
-     "last": "2026-07-20"
+     "name": "ORIENTAL TREASURE",
+     "flag": "PRK",
+     "mmsi": "445058005",
+     "first": "2020-12-20",
+     "last": "2022-10-24"
+    },
+    {
+     "name": "ORIENTAL TREASURE",
+     "flag": "COM",
+     "mmsi": "620256000",
+     "first": "2017-02-15",
+     "last": "2019-01-20"
+    },
+    {
+     "name": "ORIENTAL TREASURE",
+     "flag": "TZA",
+     "mmsi": "677088900",
+     "first": "2016-09-10",
+     "last": "2017-02-15"
+    },
+    {
+     "name": "ORIENTAL TREASURE",
+     "flag": "KOR",
+     "mmsi": "441715000",
+     "first": "2013-06-13",
+     "last": "2016-09-30"
     }
    ],
-   "lastSeen": "2026-10-31",
-   "visits": [
-    {
-     "start": "2026-10-21",
-     "end": "2026-10-27",
-     "port": "FUZHOU",
-     "country": "CHN",
-     "confidence": 4,
-     "as": "CHON MA SAN",
-     "flag": "PRK"
-    },
-    {
-     "start": "2026-09-03",
-     "end": "2026-09-04",
-     "port": "",
-     "country": "PRK",
-     "confidence": 4,
-     "as": "CHON MA SAN",
-     "flag": "PRK"
-    },
-    {
-     "start": "2026-03-03",
-     "end": "2026-03-10",
-     "port": "FUZHOU",
-     "country": "CHN",
-     "confidence": 4,
-     "as": "CHON MA SAN",
-     "flag": "PRK"
-    }
-   ],
+   "lastSeen": "2026-11-07",
+   "visits": [],
    "history": {
-    "visits": 3,
-    "foreign": 2,
-    "since": "2026-03-03"
+    "visits": 185,
+    "foreign": 172,
+    "since": "2013-06-14"
    },
-   "radarMonths": [
-    "2026-07"
-   ]
+   "radarMonths": []
   },
   {
    "name": "South Hill 5",
@@ -497,7 +487,7 @@
      "flag": "PRK",
      "mmsi": "445590000",
      "first": "2016-12-10",
-     "last": "2026-10-31"
+     "last": "2026-11-07"
     },
     {
      "name": "SOUTH HILL 5",
@@ -514,7 +504,7 @@
      "last": "2012-10-10"
     }
    ],
-   "lastSeen": "2026-10-31",
+   "lastSeen": "2026-11-07",
    "visits": [
     {
      "start": "2026-08-09",
@@ -561,61 +551,6 @@
    "radarMonths": []
   },
   {
-   "name": "Dawnlight",
-   "imo": "9110236",
-   "lists": [
-    "US"
-   ],
-   "ais": [
-    {
-     "name": "KOSAN",
-     "flag": "PRK",
-     "mmsi": "445529000",
-     "first": "2017-01-29",
-     "last": "2026-10-30"
-    },
-    {
-     "name": "FIRSTGLEAM",
-     "flag": "TZA",
-     "mmsi": "677085200",
-     "first": "2016-02-19",
-     "last": "2016-12-21"
-    },
-    {
-     "name": "DAWNLIGHT",
-     "flag": "MNG",
-     "mmsi": "457097000",
-     "first": "2014-06-21",
-     "last": "2016-03-11"
-    },
-    {
-     "name": "DAWNLIGHT",
-     "flag": "PAN",
-     "mmsi": "370442000",
-     "first": "2012-01-01",
-     "last": "2014-05-08"
-    }
-   ],
-   "lastSeen": "2026-10-30",
-   "visits": [
-    {
-     "start": "2026-04-12",
-     "end": "2026-04-12",
-     "port": "SHIDAO",
-     "country": "CHN",
-     "confidence": 4,
-     "as": "KOSAN",
-     "flag": "PRK"
-    }
-   ],
-   "history": {
-    "visits": 134,
-    "foreign": 112,
-    "since": "2012-01-01"
-   },
-   "radarMonths": []
-  },
-  {
    "name": "Ever Glory",
    "imo": "8909915",
    "lists": [
@@ -627,7 +562,7 @@
      "flag": "KOR",
      "mmsi": "440000450",
      "first": "2016-10-14",
-     "last": "2026-10-28"
+     "last": "2026-11-05"
     },
     {
      "name": "HYONG JE BONG",
@@ -693,11 +628,11 @@
      "last": "2012-11-24"
     }
    ],
-   "lastSeen": "2026-10-28",
+   "lastSeen": "2026-11-05",
    "visits": [
     {
      "start": "2026-10-28",
-     "end": "2026-10-29",
+     "end": "2026-11-05",
      "port": "",
      "country": "KOR",
      "confidence": 3,
@@ -1334,6 +1269,173 @@
    "radarMonths": []
   },
   {
+   "name": "Chon Ma San",
+   "imo": "8660313",
+   "lists": [
+    "UK",
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "CHON MA SAN",
+     "flag": "PRK",
+     "mmsi": "445082000",
+     "first": "2026-01-26",
+     "last": "2026-11-04"
+    },
+    {
+     "name": "CHONG SAN",
+     "flag": null,
+     "mmsi": "111122000",
+     "first": "2026-07-19",
+     "last": "2026-07-20"
+    }
+   ],
+   "lastSeen": "2026-11-04",
+   "visits": [
+    {
+     "start": "2026-10-21",
+     "end": "2026-10-27",
+     "port": "FUZHOU",
+     "country": "CHN",
+     "confidence": 4,
+     "as": "CHON MA SAN",
+     "flag": "PRK"
+    },
+    {
+     "start": "2026-09-03",
+     "end": "2026-09-04",
+     "port": "",
+     "country": "PRK",
+     "confidence": 4,
+     "as": "CHON MA SAN",
+     "flag": "PRK"
+    },
+    {
+     "start": "2026-03-03",
+     "end": "2026-03-10",
+     "port": "FUZHOU",
+     "country": "CHN",
+     "confidence": 4,
+     "as": "CHON MA SAN",
+     "flag": "PRK"
+    }
+   ],
+   "history": {
+    "visits": 3,
+    "foreign": 2,
+    "since": "2026-03-03"
+   },
+   "radarMonths": [
+    "2026-07"
+   ]
+  },
+  {
+   "name": "So Baek San",
+   "imo": "8658267",
+   "lists": [
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "159",
+     "flag": "PRK",
+     "mmsi": "445843000",
+     "first": "2024-06-20",
+     "last": "2026-11-03"
+    },
+    {
+     "name": "SO BAEK SAN",
+     "flag": "PRK",
+     "mmsi": "445025000",
+     "first": "2012-12-10",
+     "last": "2025-07-28"
+    }
+   ],
+   "lastSeen": "2026-11-03",
+   "visits": [
+    {
+     "start": "2026-08-06",
+     "end": "2026-11-01",
+     "port": "",
+     "country": "PRK",
+     "confidence": 4,
+     "as": "159",
+     "flag": "PRK"
+    },
+    {
+     "start": "2024-06-28",
+     "end": "2026-08-05",
+     "port": "PRK-14",
+     "country": "PRK",
+     "confidence": 3,
+     "as": "159",
+     "flag": "PRK"
+    }
+   ],
+   "history": {
+    "visits": 226,
+    "foreign": 142,
+    "since": "2012-12-10"
+   },
+   "radarMonths": []
+  },
+  {
+   "name": "Dawnlight",
+   "imo": "9110236",
+   "lists": [
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "KOSAN",
+     "flag": "PRK",
+     "mmsi": "445529000",
+     "first": "2017-01-29",
+     "last": "2026-10-30"
+    },
+    {
+     "name": "FIRSTGLEAM",
+     "flag": "TZA",
+     "mmsi": "677085200",
+     "first": "2016-02-19",
+     "last": "2016-12-21"
+    },
+    {
+     "name": "DAWNLIGHT",
+     "flag": "MNG",
+     "mmsi": "457097000",
+     "first": "2014-06-21",
+     "last": "2016-03-11"
+    },
+    {
+     "name": "DAWNLIGHT",
+     "flag": "PAN",
+     "mmsi": "370442000",
+     "first": "2012-01-01",
+     "last": "2014-05-08"
+    }
+   ],
+   "lastSeen": "2026-10-30",
+   "visits": [
+    {
+     "start": "2026-04-12",
+     "end": "2026-04-12",
+     "port": "SHIDAO",
+     "country": "CHN",
+     "confidence": 4,
+     "as": "KOSAN",
+     "flag": "PRK"
+    }
+   ],
+   "history": {
+    "visits": 134,
+    "foreign": 112,
+    "since": "2012-01-01"
+   },
+   "radarMonths": []
+  },
+  {
    "name": "Po Chon",
    "imo": "8848276",
    "lists": [
@@ -1837,58 +1939,6 @@
    ]
   },
   {
-   "name": "Oriental Treasure",
-   "imo": "9115028",
-   "lists": [
-    "US"
-   ],
-   "ais": [
-    {
-     "name": "SIN HAE",
-     "flag": "PRK",
-     "mmsi": "445058000",
-     "first": "2022-08-24",
-     "last": "2026-09-16"
-    },
-    {
-     "name": "ORIENTAL TREASURE",
-     "flag": "PRK",
-     "mmsi": "445058005",
-     "first": "2020-12-20",
-     "last": "2022-10-24"
-    },
-    {
-     "name": "ORIENTAL TREASURE",
-     "flag": "COM",
-     "mmsi": "620256000",
-     "first": "2017-02-15",
-     "last": "2019-01-20"
-    },
-    {
-     "name": "ORIENTAL TREASURE",
-     "flag": "TZA",
-     "mmsi": "677088900",
-     "first": "2016-09-10",
-     "last": "2017-02-15"
-    },
-    {
-     "name": "ORIENTAL TREASURE",
-     "flag": "KOR",
-     "mmsi": "441715000",
-     "first": "2013-06-13",
-     "last": "2016-09-30"
-    }
-   ],
-   "lastSeen": "2026-09-16",
-   "visits": [],
-   "history": {
-    "visits": 185,
-    "foreign": 172,
-    "since": "2013-06-14"
-   },
-   "radarMonths": []
-  },
-  {
    "name": "Sam Ma 2",
    "imo": "8106496",
    "lists": [
@@ -2068,56 +2118,6 @@
     "visits": 35,
     "foreign": 32,
     "since": "2016-05-12"
-   },
-   "radarMonths": []
-  },
-  {
-   "name": "So Baek San",
-   "imo": "8658267",
-   "lists": [
-    "US"
-   ],
-   "ais": [
-    {
-     "name": "159",
-     "flag": "PRK",
-     "mmsi": "445843000",
-     "first": "2024-06-20",
-     "last": "2026-08-06"
-    },
-    {
-     "name": "SO BAEK SAN",
-     "flag": "PRK",
-     "mmsi": "445025000",
-     "first": "2012-12-10",
-     "last": "2025-07-28"
-    }
-   ],
-   "lastSeen": "2026-08-06",
-   "visits": [
-    {
-     "start": "2026-08-06",
-     "end": "2026-08-06",
-     "port": "",
-     "country": "PRK",
-     "confidence": 3,
-     "as": "159",
-     "flag": "PRK"
-    },
-    {
-     "start": "2024-06-28",
-     "end": "2026-08-05",
-     "port": "PRK-14",
-     "country": "PRK",
-     "confidence": 3,
-     "as": "159",
-     "flag": "PRK"
-    }
-   ],
-   "history": {
-    "visits": 226,
-    "foreign": 142,
-    "since": "2012-12-10"
    },
    "radarMonths": []
   },
@@ -5600,74 +5600,38 @@
   {
    "month": "2026-08",
    "detections": 4343,
-   "matched": 53,
-   "flags": {
-    "KOR": 5,
-    "STP": 3,
-    "PRK": 11,
-    "PAN": 5,
-    "CHN": 12,
-    "ALB": 1,
-    "LBR": 1,
-    "RUS": 3,
-    "unknown": 7,
-    "HKG": 1,
-    "PRT": 1,
-    "TZA": 1,
-    "VUT": 1,
-    "BLZ": 1
-   },
+   "matched": 0,
+   "flags": {},
    "passes": 19,
    "firstFetched": "2026-10-12",
-   "updated": "2026-11-02"
+   "updated": "2026-11-09"
   },
   {
    "month": "2026-09",
    "detections": 12427,
-   "matched": 106,
-   "flags": {
-    "TGO": 1,
-    "CHN": 38,
-    "unknown": 29,
-    "BLZ": 1,
-    "PAN": 4,
-    "GNB": 4,
-    "CAF": 1,
-    "PRK": 13,
-    "RUS": 8,
-    "PLW": 2,
-    "VUT": 1,
-    "KOR": 2,
-    "LUX": 2
-   },
+   "matched": 0,
+   "flags": {},
    "passes": 20,
    "firstFetched": "2026-10-12",
-   "updated": "2026-11-02"
+   "updated": "2026-11-09"
   },
   {
    "month": "2026-10",
-   "detections": 9139,
-   "matched": 114,
-   "flags": {
-    "CHN": 45,
-    "SHN": 2,
-    "unknown": 28,
-    "PRK": 11,
-    "HKG": 2,
-    "PRT": 1,
-    "KOR": 7,
-    "GNB": 2,
-    "RUS": 4,
-    "MNG": 1,
-    "PAN": 6,
-    "MNE": 1,
-    "SLB": 1,
-    "BLZ": 2,
-    "VUT": 1
-   },
+   "detections": 9382,
+   "matched": 0,
+   "flags": {},
    "passes": 19,
    "firstFetched": "2026-10-12",
-   "updated": "2026-11-02"
+   "updated": "2026-11-09"
+  },
+  {
+   "month": "2026-11",
+   "detections": 2647,
+   "matched": 0,
+   "flags": {},
+   "passes": 4,
+   "firstFetched": "2026-11-09",
+   "updated": "2026-11-09"
   }
  ],
  "radarYears": [
@@ -5736,16 +5700,16 @@
   },
   {
    "year": "2026",
-   "detections": 41441,
-   "matched": 478,
-   "passes": 172,
-   "months": 10
+   "detections": 44331,
+   "matched": 205,
+   "passes": 176,
+   "months": 11
   }
  ],
  "ports": {
-  "visits": 688,
-  "vessels": 194,
-  "foreignVisits": 43,
+  "visits": 700,
+  "vessels": 198,
+  "foreignVisits": 47,
   "list": [
    {
     "port": "NAMPO",
@@ -5753,9 +5717,9 @@
     "portId": "prk-nampo",
     "lat": 38.7163,
     "lon": 125.421,
-    "visits": 586,
+    "visits": 592,
     "flags": {
-     "PRK": 554,
+     "PRK": 560,
      "TZA": 2,
      "PAN": 2,
      "COM": 4,
@@ -5765,7 +5729,7 @@
      "SLE": 1,
      "LBR": 1
     },
-    "vessels": 170
+    "vessels": 171
    },
    {
     "port": "CHONGJIN",
@@ -5785,9 +5749,9 @@
     "portId": "prk-taean",
     "lat": 38.8216,
     "lon": 125.5296,
-    "visits": 24,
+    "visits": 25,
     "flags": {
-     "PRK": 22,
+     "PRK": 23,
      "RUS": 2
     },
     "vessels": 15
@@ -5798,13 +5762,13 @@
     "portId": "prk-prk-14",
     "lat": 39.8866,
     "lon": 124.281,
-    "visits": 18,
+    "visits": 23,
     "flags": {
-     "PRK": 8,
-     "CHN": 8,
-     "SHN": 2
+     "PRK": 9,
+     "CHN": 11,
+     "SHN": 3
     },
-    "vessels": 12
+    "vessels": 15
    },
    {
     "port": "WONSAN",
@@ -5864,7 +5828,7 @@
     "flag": "CHN",
     "vtype": "other",
     "first": "2025-12-15",
-    "last": "2026-10-29",
+    "last": "2026-11-05",
     "visits": 5,
     "ports": {
      "~SINUIJU": 5
@@ -5876,10 +5840,58 @@
     "flag": "SHN",
     "vtype": "insufficient_data",
     "first": "2026-10-17",
-    "last": "2026-10-29",
-    "visits": 2,
+    "last": "2026-11-05",
+    "visits": 3,
     "ports": {
-     "~SINUIJU": 2
+     "~SINUIJU": 3
+    }
+   },
+   {
+    "name": "",
+    "mmsi": "412221096",
+    "flag": "CHN",
+    "vtype": "fishing",
+    "first": "2026-11-03",
+    "last": "2026-11-04",
+    "visits": 1,
+    "ports": {
+     "~SINUIJU": 1
+    }
+   },
+   {
+    "name": "LIAODANYU23007",
+    "mmsi": "412212085",
+    "flag": "CHN",
+    "vtype": "fishing",
+    "first": "2026-11-03",
+    "last": "2026-11-04",
+    "visits": 1,
+    "ports": {
+     "~SINUIJU": 1
+    }
+   },
+   {
+    "name": "",
+    "mmsi": "412215471",
+    "flag": "CHN",
+    "vtype": "fishing",
+    "first": "2026-10-25",
+    "last": "2026-11-03",
+    "visits": 1,
+    "ports": {
+     "~SINUIJU": 1
+    }
+   },
+   {
+    "name": "LIAODANYU21395",
+    "mmsi": "412212061",
+    "flag": "CHN",
+    "vtype": "fishing",
+    "first": "2026-10-31",
+    "last": "2026-11-01",
+    "visits": 1,
+    "ports": {
+     "~SINUIJU": 1
     }
    },
    {
@@ -5892,18 +5904,6 @@
     "visits": 1,
     "ports": {
      "~NAMPO": 1
-    }
-   },
-   {
-    "name": "",
-    "mmsi": "412215471",
-    "flag": "CHN",
-    "vtype": "fishing",
-    "first": "2026-10-25",
-    "last": "2026-10-28",
-    "visits": 1,
-    "ports": {
-     "~SINUIJU": 1
     }
    },
    {

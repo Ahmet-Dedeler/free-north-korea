@@ -113,6 +113,7 @@
 {"month":"2026-05","detections":1960,"matched":12,"flags":{"PRK":4,"PCN":1,"CHN":3,"LBR":1,"RUS":1,"unknown":2},"passes":18,"firstFetched":"2026-10-12","updated":"2026-10-12"}
 {"month":"2026-06","detections":3032,"matched":14,"flags":{"CHN":3,"LBR":1,"PRK":5,"VNM":1,"KOR":1,"unknown":3},"passes":12,"firstFetched":"2026-10-12","updated":"2026-10-12"}
 {"month":"2026-07","detections":6633,"matched":64,"flags":{"KOR":17,"PAN":8,"CHN":13,"PRK":16,"STP":1,"RUS":4,"USA":1,"TZA":1,"SLE":1,"VUT":1,"CMR":1},"passes":20,"firstFetched":"2026-10-12","updated":"2026-10-26"}
-{"month":"2026-08","detections":4343,"matched":53,"flags":{"KOR":5,"STP":3,"PRK":11,"PAN":5,"CHN":12,"ALB":1,"LBR":1,"RUS":3,"unknown":7,"HKG":1,"PRT":1,"TZA":1,"VUT":1,"BLZ":1},"passes":19,"firstFetched":"2026-10-12","updated":"2026-11-02"}
-{"month":"2026-09","detections":12427,"matched":106,"flags":{"TGO":1,"CHN":38,"unknown":29,"BLZ":1,"PAN":4,"GNB":4,"CAF":1,"PRK":13,"RUS":8,"PLW":2,"VUT":1,"KOR":2,"LUX":2},"passes":20,"firstFetched":"2026-10-12","updated":"2026-11-02"}
-{"month":"2026-10","detections":9139,"matched":114,"flags":{"CHN":45,"SHN":2,"unknown":28,"PRK":11,"HKG":2,"PRT":1,"KOR":7,"GNB":2,"RUS":4,"MNG":1,"PAN":6,"MNE":1,"SLB":1,"BLZ":2,"VUT":1},"passes":19,"firstFetched":"2026-10-12","updated":"2026-11-02"}
+{"month":"2026-08","detections":4343,"matched":0,"flags":{},"passes":19,"firstFetched":"2026-10-12","updated":"2026-11-09"}
+{"month":"2026-09","detections":12427,"matched":0,"flags":{},"passes":20,"firstFetched":"2026-10-12","updated":"2026-11-09"}
+{"month":"2026-10","detections":9382,"matched":0,"flags":{},"passes":19,"firstFetched":"2026-10-12","updated":"2026-11-09"}
+{"month":"2026-11","detections":2647,"matched":0,"flags":{},"passes":4,"firstFetched":"2026-11-09","updated":"2026-11-09"}
