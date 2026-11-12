@@ -1,16 +1,69 @@
 {
- "fetched": "2026-11-09",
+ "fetched": "2026-11-12",
  "oldestListed": "2025-11-19",
  "coverage": {
   "from": "2025-10-10",
-  "to": "2026-11-04"
+  "to": "2026-11-12"
  },
  "lastAppearance": {
-  "date": "2026-11-02",
-  "id": "280532557ce00cf81a6cde850fd4ba96",
-  "title": "Respected Comrade Kim Jong Un Gives Field Guidance at Nampho Shipyard"
+  "date": "2026-11-11",
+  "id": "86248138bcbdc42fce2d1a575777bfc0",
+  "title": "Respected Comrade Kim Jong Un Inspects Newly-built Modern Residential Quarters in Thongchon County of Kangwon Province"
  },
  "records": [
+  {
+   "id": "86248138bcbdc42fce2d1a575777bfc0",
+   "url": "http://www.kcna.kp/en/article/detail/86248138bcbdc42fce2d1a575777bfc0",
+   "reportDate": "2026-11-12",
+   "title": "Respected Comrade Kim Jong Un Inspects Newly-built Modern Residential Quarters in Thongchon County of Kangwon Province",
+   "eventDate": "2026-11-11",
+   "eventDateFrom": "text",
+   "appearance": true,
+   "kind": "public",
+   "speech": false,
+   "subject": "Inspects Newly-built Modern Residential Quarters in Thongchon County of Kangwon Province",
+   "companions": [],
+   "present": [],
+   "daughter": false,
+   "wife": false,
+   "titleKo": "경애하는 김정은동지께서 강원도 통천군일대에 새로 건설한 문화주택구를 돌아보시였다"
+  },
+  {
+   "id": "d087f7540d3b586bb87a65b6b8c2319a",
+   "url": "http://www.kcna.kp/en/article/detail/d087f7540d3b586bb87a65b6b8c2319a",
+   "reportDate": "2026-11-12",
+   "title": "Respected Comrade Kim Jong Un Inspects Major Naval Base under Construction",
+   "eventDate": "2026-11-11",
+   "eventDateFrom": "text",
+   "appearance": true,
+   "kind": "economy",
+   "speech": false,
+   "subject": "Inspects Major Naval Base under Construction",
+   "companions": [
+    "Pak Jong Chon"
+   ],
+   "present": [],
+   "daughter": false,
+   "wife": false,
+   "titleKo": "경애하는 김정은동지께서 중요해군기지건설사업을 현지지도하시였다"
+  },
+  {
+   "id": "84c7cd4e912ccd4915c8b2f6b827eb7c",
+   "url": "http://www.kcna.kp/en/article/detail/84c7cd4e912ccd4915c8b2f6b827eb7c",
+   "reportDate": "2026-11-10",
+   "title": "Respected Comrade Kim Jong Un Has Photo Session with Participants in Tenth Congress of UAWK",
+   "eventDate": "2026-11-09",
+   "eventDateFrom": "text",
+   "appearance": true,
+   "kind": "public",
+   "speech": false,
+   "subject": "Has Photo Session with Participants in Tenth Congress of UAWK",
+   "companions": [],
+   "present": [],
+   "daughter": false,
+   "wife": false,
+   "titleKo": "경애하는 김정은동지께서 조선농업근로자동맹 제10차대회 참가자들을 만나시고 기념사진을 찍으시였다"
+  },
   {
    "id": "280532557ce00cf81a6cde850fd4ba96",
    "url": "http://www.kcna.kp/en/article/detail/280532557ce00cf81a6cde850fd4ba96",

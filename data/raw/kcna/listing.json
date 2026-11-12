@@ -1,6 +1,21 @@
 {
  "category": [
   {
+   "id": "d087f7540d3b586bb87a65b6b8c2319a",
+   "title": "Respected Comrade Kim Jong Un Inspects Major Naval Base under Construction",
+   "date": "2026-11-12"
+  },
+  {
+   "id": "86248138bcbdc42fce2d1a575777bfc0",
+   "title": "Respected Comrade Kim Jong Un Inspects Newly-built Modern Residential Quarters in Thongchon County of Kangwon Province",
+   "date": "2026-11-12"
+  },
+  {
+   "id": "84c7cd4e912ccd4915c8b2f6b827eb7c",
+   "title": "Respected Comrade Kim Jong Un Has Photo Session with Participants in Tenth Congress of UAWK",
+   "date": "2026-11-10"
+  },
+  {
    "id": "280532557ce00cf81a6cde850fd4ba96",
    "title": "Respected Comrade Kim Jong Un Gives Field Guidance at Nampho Shipyard",
    "date": "2026-11-04"
@@ -7428,7 +7443,7 @@
    "date": "2025-10-10"
   }
  ],
- "categoryFetched": "2026-11-09",
+ "categoryFetched": "2026-11-12",
  "oldestListed": "2025-11-19",
  "searchFetched": "2026-11-09",
  "titlesKo": {
@@ -7659,6 +7674,9 @@
   "448e1f6e97818d709ba8997d086d26bb": "조선인민군 제3차 중대장대회 진행",
   "c1565e56528c4f0e7f747187f80c1aca": "경애하는 김정은동지께서 조선인민군 제3차 중대장대회 참가자들과 기념사진을 찍으시였다",
   "7dd30f6614b34a293981479b5e22edfd": "《무인항공기술발전－2026》전시회 성대히 진행",
-  "280532557ce00cf81a6cde850fd4ba96": "경애하는 김정은동지께서 남포조선소를 현지지도하시였다"
+  "280532557ce00cf81a6cde850fd4ba96": "경애하는 김정은동지께서 남포조선소를 현지지도하시였다",
+  "86248138bcbdc42fce2d1a575777bfc0": "경애하는 김정은동지께서 강원도 통천군일대에 새로 건설한 문화주택구를 돌아보시였다",
+  "d087f7540d3b586bb87a65b6b8c2319a": "경애하는 김정은동지께서 중요해군기지건설사업을 현지지도하시였다",
+  "84c7cd4e912ccd4915c8b2f6b827eb7c": "경애하는 김정은동지께서 조선농업근로자동맹 제10차대회 참가자들을 만나시고 기념사진을 찍으시였다"
  }
 }
