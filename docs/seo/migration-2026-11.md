@@ -59,6 +59,18 @@ these are the likely causes, not proven ones:
   11 URLs until the daily quota ran out (the top articles, `/learn`, `/camps`, `/people`, `/north-korea-vs-south-korea`, `/map`). `/sanctions`, `/ko` and `/ja`
   are next. IndexNow sent for all 990 URLs.
 - Search Console on 2026-11-06 (08:05 UTC): indexing requested for no URLs and none found already indexed. `/sanctions` was the first one tried, it is still "Crawled, currently not indexed", and the request hit Quota Exceeded, so the run stopped. Not inspected: `/ko`, `/ja`, `/zh`, `/kim-family-tree`, `/people/kim-yo-jong`, `/people/kim-jong-un`, `/people/ri-sol-ju`, `/people/kim-han-sol`, `/library`, `/organizations`, `/act`.
+- Search Console on 2026-11-15, both properties, 28 days to Nov 13. New: 54 clicks, 60.8K impressions, and near zero
+  since Oct 27 (0 to 3 impressions a day). Old: 204 clicks, 62.8K impressions, 4 to 7 clicks a day and impressions
+  rising (1,108 on Nov 3, 6,198 on Nov 11). Page indexing, both dated Nov 9: new 226 indexed and 1,476 not (1,385
+  "Crawled, currently not indexed", validation Failed; 57 "Duplicate, Google chose different canonical"); old 678
+  indexed and 341 not. For `/camps` and `/map` Google names the old URL as the canonical it chose. So Google is still
+  keeping the old domain, not the new one. Redirects and the new site's HTML were rechecked: no link to the old domain
+  anywhere. External links to the new domain: 102, of which 99 are the old domain itself, 1 GitHub, 2 spam. No manual
+  action or security issue on either. All 16 URLs inspected were "not on Google"; indexing requested for 9
+  (`/learn/how-can-north-korea-be-freed`, `/learn`, `/sanctions`, `/ko`, `/ja`, `/zh`, `/camps`, `/map`,
+  `/kim-family-tree`) before the quota ran out. Not requested: `/north-korea-vs-south-korea`, `/watch`,
+  `/people/kim-yo-jong`, `/people/kim-jong-un`, `/library`, `/organizations`, `/act`. PostHog: 6 to 21 visits a day
+  from Google, Nov 6 to 14.
 
 ## What to check, and when
 
