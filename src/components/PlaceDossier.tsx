@@ -12,7 +12,7 @@ import { media } from '@/content/media';
 import { getAllPlaces, getPlaceBySlug } from '@/content/places-data';
 import { PLACE_COLOR } from '@/content/places';
 import { PLACES_TEXT, placeFields, placeHref } from '@/content/placesI18n';
-import { LANG_TAG, absolute, jsonLd, type Lang } from '@/site/seo';
+import { LANG_TAG, absolute, breadcrumbLd, jsonLd, type Lang } from '@/site/seo';
 
 /** One strategic site, shared by /places/[slug] and the Korean, Japanese and Chinese routes. */
 export default function PlaceDossier({ lang, slug }: { lang: Lang; slug: string }) {
@@ -62,7 +62,7 @@ export default function PlaceDossier({ lang, slug }: { lang: Lang; slug: string 
 
   return (
     <article className="dossier-x">
-      <script type="application/ld+json" dangerouslySetInnerHTML={jsonLd(ld)} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={jsonLd([ld, breadcrumbLd([[t.keySites, placeHref(lang, '/places')], [place.name, path]])])} />
 
       <p className="eyebrow">
         <Link href={placeHref(lang, '/places')}>{t.keySites}</Link> · <Link href={placeHref(lang, `/places#${place.category}`)}>{categoryLabel}</Link>

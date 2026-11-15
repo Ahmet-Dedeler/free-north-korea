@@ -4,10 +4,9 @@ PlanetScope images of the same squares as our Sentinel-2 images: 8 camps and 9 n
 per pixel against Sentinel-2's 10 m. Shown above the Sentinel-2 block on dossiers (`PlanetWatch` in
 `components/SatWatch.tsx`) and behind the "Sharper images" button in the map panel (`PlanetViewer` in `map/Photo.tsx`).
 
-## Permission
+## Credits
 
-Publishing was cleared between lawyers on both sides, per Ahmet, 2026-11-05. Credit `Imagery © Planet Labs PBC` wherever
-an image is shown.
+Credit `Imagery © Planet Labs PBC` wherever an image is shown.
 
 ## API
 

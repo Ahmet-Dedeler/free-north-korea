@@ -58,6 +58,7 @@ these are the likely causes, not proven ones:
 - Search Console on 2026-11-05: sitemap resubmitted, validation started on the not-indexed group, indexing requested for
   11 URLs until the daily quota ran out (the top articles, `/learn`, `/camps`, `/people`, `/north-korea-vs-south-korea`, `/map`). `/sanctions`, `/ko` and `/ja`
   are next. IndexNow sent for all 990 URLs.
+- Search Console on 2026-11-06 (08:05 UTC): indexing requested for no URLs and none found already indexed. `/sanctions` was the first one tried, it is still "Crawled, currently not indexed", and the request hit Quota Exceeded, so the run stopped. Not inspected: `/ko`, `/ja`, `/zh`, `/kim-family-tree`, `/people/kim-yo-jong`, `/people/kim-jong-un`, `/people/ri-sol-ju`, `/people/kim-han-sol`, `/library`, `/organizations`, `/act`.
 
 ## What to check, and when
 

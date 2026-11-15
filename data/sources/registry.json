@@ -592,7 +592,7 @@
   "id": "kinu-white-paper-human-rights",
   "name": "KINU: White Paper on Human Rights in North Korea (북한인권백서)",
   "publisher": "Korea Institute for National Unification (통일연구원)",
-  "url": "https://www.kinu.or.kr/main/kinu/publication/pub_01_01.jsp",
+  "url": "https://www.kinu.or.kr/main/module/report/index.do?category=46&nav_code=mai1674786121",
   "track": "camps",
   "language": "ko",
   "category": "Academic & Policy Research",
@@ -611,7 +611,7 @@
   "usedBy": [],
   "watch": {
    "type": "headers",
-   "url": "https://www.kinu.or.kr/main/kinu/publication/pub_01_01.jsp"
+   "url": "https://www.kinu.or.kr/main/module/report/index.do?category=46&nav_code=mai1674786121"
   }
  },
  {
@@ -876,13 +876,13 @@
  },
  {
   "id": "regional-development-20x10-factories",
-  "name": "Kim Jong Un 'Regional Development 20×10' Factory Construction Tracker (지방발전 20×10)",
-  "publisher": "38 North (Stimson Center) & Daily NK / Rodong Sinmun",
-  "url": "https://www.38north.org/tag/regional-development-20x10/",
+  "name": "38 North: reporting on the 'Regional Development 20×10' policy (지방발전 20×10)",
+  "publisher": "38 North (Stimson Center)",
+  "url": "https://www.38north.org/tag/20x10-regional-development-plan/",
   "track": "economy",
   "language": "ko",
   "category": "infrastructure",
-  "description": "Tracking dataset of North Korea's 10-year policy (2024–2033) building modernized light industry, food, and clothing factories across 20 selected counties per year, combining satellite imagery and state media announcements.",
+  "description": "38 North's articles on North Korea's 10-year policy (2024–2033) of building light industry, food and clothing factories in 20 counties a year, using satellite imagery and state media announcements. A tag page of articles, not a dataset.",
   "format": "html",
   "access": "scrape",
   "has_geo": true,
@@ -897,7 +897,7 @@
   "usedBy": [],
   "watch": {
    "type": "headers",
-   "url": "https://www.38north.org/tag/regional-development-20x10/"
+   "url": "https://www.38north.org/tag/20x10-regional-development-plan/"
   }
  },
  {
@@ -1138,12 +1138,12 @@
   "id": "ngii-nk-spatial-platform",
   "name": "NGII North Korea Topographic & Spatial Data Platform",
   "publisher": "국토지리정보원 (National Geographic Information Institute - NGII)",
-  "url": "https://map.ngii.go.kr/",
+  "url": "https://www.ngii.go.kr/eng/content.do?sq=120",
   "track": "korean_japanese",
   "language": "ko",
   "category": "geography",
   "description": "South Korea's national surveying agency repository of North Korean spatial data: 1:25,000 and 1:50,000 digital topographic maps, satellite orthophotos, road/rail networks, and administrative boundary vectors produced using national satellite imagery.",
-  "format": "geojson",
+  "format": "html",
   "access": "download",
   "has_geo": true,
   "research": {
@@ -1156,8 +1156,8 @@
   "build_idea": "Integrate official South Korean government vector layers for North Korean infrastructure (roads, bridges, railway tunnels, river embankments) into our MapLibre basemap.",
   "usedBy": [],
   "watch": {
-   "type": "content",
-   "url": "https://map.ngii.go.kr/"
+   "type": "headers",
+   "url": "https://www.ngii.go.kr/eng/content.do?sq=120"
   }
  },
  {
@@ -1268,7 +1268,7 @@
   "id": "access-dprk-bogle",
   "name": "AccessDPRK Mapping Project",
   "publisher": "Jacob Bogle",
-  "url": "https://www.jacobbogle.com/accessdprk.html",
+  "url": "https://mynorthkorea.blogspot.com/",
   "track": "military",
   "language": "en",
   "category": "Comprehensive Military & National GIS Database",
@@ -1287,14 +1287,14 @@
   "usedBy": [],
   "watch": {
    "type": "content",
-   "url": "https://www.jacobbogle.com/accessdprk.html"
+   "url": "https://mynorthkorea.blogspot.com/"
   }
  },
  {
   "id": "rusi-dprk-russia-maritime-transfers",
-  "name": "RUSI Open Source Intelligence: DPRK-Russia Maritime Munitions Transfers",
-  "publisher": "Royal United Services Institute (RUSI) - Open Source Intelligence Programme",
-  "url": "https://www.rusi.org/explore-our-research/projects/open-source-intelligence-programme",
+  "name": "RUSI Project Sandstone: open-source investigations of North Korean sanctions evasion at sea",
+  "publisher": "Royal United Services Institute (RUSI)",
+  "url": "https://www.rusi.org/explore-our-research/closed-projects/project-sandstone",
   "track": "military",
   "language": "en",
   "category": "Arms Transfers & Sanctions Evasion",
@@ -1313,7 +1313,7 @@
   "usedBy": [],
   "watch": {
    "type": "headers",
-   "url": "https://www.rusi.org/explore-our-research/projects/open-source-intelligence-programme"
+   "url": "https://www.rusi.org/explore-our-research/closed-projects/project-sandstone"
   }
  },
  {
@@ -1659,7 +1659,7 @@
   "id": "unicef-mics-2017-dprk",
   "name": "UNICEF Multiple Indicator Cluster Survey 2017 (MICS6) DPRK Findings Report",
   "publisher": "Central Bureau of Statistics, Pyongyang & UNICEF",
-  "url": "https://www.unicef.org/dprk/reports/multiple-indicator-cluster-survey-2017",
+  "url": "https://www.unicef.org/dprk/reports/2017-dpr-korea-mics-survey",
   "track": "population",
   "language": "en",
   "category": "Health",
@@ -1678,7 +1678,7 @@
   "usedBy": [],
   "watch": {
    "type": "headers",
-   "url": "https://www.unicef.org/dprk/reports/multiple-indicator-cluster-survey-2017"
+   "url": "https://www.unicef.org/dprk/reports/2017-dpr-korea-mics-survey"
   }
  },
  {
@@ -1964,7 +1964,7 @@
   "usedBy": [],
   "watch": {
    "type": "content",
-   "url": "https://www.jacobbogle.com/accessdprk.html"
+   "url": "https://mynorthkorea.blogspot.com/"
   }
  },
  {
@@ -2075,7 +2075,7 @@
   "id": "asiapress-rimjin-gang-penal",
   "name": "Asia Press / Rimjin-gang: Underground Reporting on North Korea's Penal System",
   "publisher": "Asia Press International (Jiro Ishimaru)",
-  "url": "https://www.asiapress.org/korean/nor-society/",
+  "url": "https://www.asiapress.org/korean/category/society-human-rights/",
   "track": "camps",
   "language": "ja",
   "category": "Field Investigations & News",
@@ -2094,7 +2094,7 @@
   "usedBy": [],
   "watch": {
    "type": "headers",
-   "url": "https://www.asiapress.org/korean/nor-society/"
+   "url": "https://www.asiapress.org/korean/category/society-human-rights/"
   }
  },
  {
@@ -2153,7 +2153,7 @@
   "id": "hrw-dprk-pretrial-detention",
   "name": "Human Rights Watch: \"Worth Less Than An Animal\": Pre-trial Detention & Holding Centres",
   "publisher": "Human Rights Watch (HRW)",
-  "url": "https://www.hrw.org/report/2020/10/19/worth-less-animal/abuses-and-due-process-violations-pretrial-detention-north-korea",
+  "url": "https://www.hrw.org/report/2020/10/19/worth-less-animal/abuses-and-due-process-violations-pretrial-detention-north",
   "track": "camps",
   "language": "en",
   "category": "Human Rights Investigation",
@@ -2172,7 +2172,7 @@
   "usedBy": [],
   "watch": {
    "type": "headers",
-   "url": "https://www.hrw.org/report/2020/10/19/worth-less-animal/abuses-and-due-process-violations-pretrial-detention-north-korea"
+   "url": "https://www.hrw.org/report/2020/10/19/worth-less-animal/abuses-and-due-process-violations-pretrial-detention-north"
   }
  },
  {
@@ -2205,7 +2205,7 @@
   "id": "nkdb-white-paper",
   "name": "NKDB: White Paper on North Korean Human Rights",
   "publisher": "Database Center for North Korean Human Rights (NKDB)",
-  "url": "https://nkdb.org/en/board/publication/list",
+  "url": "https://nkdb.org/publication",
   "track": "camps",
   "language": "ko",
   "category": "Academic & Policy Research",
@@ -2224,7 +2224,7 @@
   "usedBy": [],
   "watch": {
    "type": "headers",
-   "url": "https://nkdb.org/en/board/publication/list"
+   "url": "https://nkdb.org/publication"
   }
  },
  {
@@ -2283,7 +2283,7 @@
   "id": "gacc-china-customs-bulletin",
   "name": "China Customs (GACC) Monthly Trade Statistics Platform",
   "publisher": "General Administration of Customs of the People's Republic of China (海关总署)",
-  "url": "http://43.248.49.97/",
+  "url": "http://stats.customs.gov.cn/",
   "track": "economy",
   "language": "other",
   "category": "trade",
@@ -2302,7 +2302,7 @@
   "usedBy": [],
   "watch": {
    "type": "headers",
-   "url": "http://43.248.49.97/"
+   "url": "http://stats.customs.gov.cn/"
   }
  },
  {
@@ -2644,32 +2644,6 @@
   }
  },
  {
-  "id": "repatriation-project-niigata-archive",
-  "name": "Niigata Port North Korea Repatriation Project (帰国事業) Historical Data",
-  "publisher": "新潟市歴史博物館 (Niigata City History Museum) / 日本赤十字社 (Japanese Red Cross Society)",
-  "url": "https://www.city.niigata.lg.jp/kanko/rekishi/history/kikoku.html",
-  "track": "korean_japanese",
-  "language": "ja",
-  "category": "diaspora",
-  "description": "Historical voyage manifests and passenger statistics for the 1959–1984 'Paradise on Earth' repatriation program that transported 93,340 Zainichi Koreans and Japanese spouses from Niigata Port to Chongjin on Soviet vessels (Kril'on, Tobolsk).",
-  "format": "html",
-  "access": "manual",
-  "has_geo": true,
-  "research": {
-   "last_updated": "2024-10",
-   "maintenance": "active",
-   "cadence": "static",
-   "value": 4,
-   "checked": "2026-10-01"
-  },
-  "build_idea": "A dedicated migration corridor map from Niigata Port to Chongjin: tracing the 187 repatriation voyages, the Niigata Red Cross reception center, and the tragic fate of returnees sent to internal exile and camps.",
-  "usedBy": [],
-  "watch": {
-   "type": "headers",
-   "url": "https://www.city.niigata.lg.jp/kanko/rekishi/history/kikoku.html"
-  }
- },
- {
   "id": "kinu-nkhr-platform",
   "name": "KINU North Korean Human Rights Information Platform",
   "publisher": "통일연구원 (Korea Institute for National Unification - KINU)",
@@ -2829,7 +2803,7 @@
   "id": "kbs-nambook-window",
   "name": "KBS Window on North and South (남북의 창) Broadcast Archive",
   "publisher": "KBS (Korean Broadcasting System 남북교류협력단)",
-  "url": "https://news.kbs.co.kr/special/northkorea/",
+  "url": "https://news.kbs.co.kr/news/pc/program/program.do?bcd=0031",
   "track": "korean_japanese",
   "language": "ko",
   "category": "media",
@@ -2848,7 +2822,7 @@
   "usedBy": [],
   "watch": {
    "type": "headers",
-   "url": "https://news.kbs.co.kr/special/northkorea/"
+   "url": "https://news.kbs.co.kr/news/pc/program/program.do?bcd=0031"
   }
  },
  {
@@ -3030,7 +3004,7 @@
   "usedBy": [],
   "watch": {
    "type": "content",
-   "url": "https://web.archive.org/web/20210211181829/http://www.nkeconwatch.com/nk-uploads/North-Korea-Uncovered-18.kmz"
+   "url": "https://web.archive.org/web/20110813043352/http://bbs.keyhole.com/ubb/ubbthreads.php?ubb=download&Number=794966"
   }
  },
  {
@@ -3636,7 +3610,7 @@
   "id": "jaxa-maff-jasmai-satellite-monitoring",
   "name": "JAXA & MAFF JASMAI: Satellite Agro-Meteorological Monitoring for DPRK",
   "publisher": "Japan Aerospace Exploration Agency (JAXA) & Ministry of Agriculture, Forestry and Fisheries (農林水産省)",
-  "url": "https://www.eorc.jaxa.jp/JASMIN/index.html",
+  "url": "https://suzaku.eorc.jaxa.jp/JASMIN/index.html",
   "track": "population",
   "language": "ja",
   "category": "Food Security",
@@ -3655,7 +3629,7 @@
   "usedBy": [],
   "watch": {
    "type": "headers",
-   "url": "https://www.eorc.jaxa.jp/JASMIN/index.html"
+   "url": "https://suzaku.eorc.jaxa.jp/JASMIN/index.html"
   }
  },
  {
@@ -3688,7 +3662,7 @@
   "id": "comjan-missing-persons-map",
   "name": "COMJAN: Suspected Abduction and Detention Points Archive (特定失踪者問題調査会)",
   "publisher": "Investigation Commission on Missing Japanese Probably Related to North Korea (特定失踪者問題調査会)",
-  "url": "http://www.chousakai.jp/",
+  "url": "https://www.chosa-kai.jp/",
   "track": "camps",
   "language": "ja",
   "category": "Detention & Human Rights Geography",
@@ -3707,14 +3681,14 @@
   "usedBy": [],
   "watch": {
    "type": "headers",
-   "url": "http://www.chousakai.jp/"
+   "url": "https://www.chosa-kai.jp/"
   }
  },
  {
   "id": "renk-camp-survivor-maps",
   "name": "RENK: Pioneer Hand-Drawn Camp Maps & Border Facility Documentation",
   "publisher": "Rescue the North Korean People! Urgent Action Network (RENK / 救え！北朝鮮の民衆/緊急行動ネットワーク)",
-  "url": "http://www.renk-japan.net/",
+  "url": "https://web.archive.org/web/20060207170207/http://www.bekkoame.ne.jp/ro/renk/",
   "track": "camps",
   "language": "ja",
   "category": "Historical & Eyewitness Mapping",
@@ -3733,18 +3707,18 @@
   "usedBy": [],
   "watch": {
    "type": "headers",
-   "url": "http://www.renk-japan.net/"
+   "url": "https://web.archive.org/web/20060207170207/http://www.bekkoame.ne.jp/ro/renk/"
   }
  },
  {
   "id": "nk-pro-dprk-economic-database",
-  "name": "NK Pro DPRK Economic Database & Market Price Index",
+  "name": "NK Pro Currency & Energy Indexes",
   "publisher": "NK News / Korea Risk Group",
-  "url": "https://www.nknews.org/pro/category/economic-data/",
+  "url": "https://signup.nknews.org/nkpro/nk-pro-currency-and-energy-indexes/",
   "track": "economy",
   "language": "en",
   "category": "market-prices",
-  "description": "Proprietary analytical index tracking market commodity prices, domestic currency devaluation, state distribution rationing, and macroeconomic trends.",
+  "description": "Subscription trackers of Pyongyang foreign currency exchange rates and petrol and diesel pump prices.",
   "format": "html",
   "access": "manual",
   "has_geo": true,
@@ -3759,7 +3733,7 @@
   "usedBy": [],
   "watch": {
    "type": "headers",
-   "url": "https://www.nknews.org/pro/category/economic-data/"
+   "url": "https://signup.nknews.org/nkpro/nk-pro-currency-and-energy-indexes/"
   }
  },
  {
@@ -3818,7 +3792,7 @@
   "id": "nk-pro-vessel-tracker",
   "name": "NK Pro Maritime Vessel Tracker",
   "publisher": "NK News / Korea Risk Group",
-  "url": "https://www.nknews.org/pro/vessel-tracker/",
+  "url": "https://www.nknews.org/pro/north-korea-ship-tracking/",
   "track": "economy",
   "language": "en",
   "category": "smuggling",
@@ -3837,7 +3811,7 @@
   "usedBy": [],
   "watch": {
    "type": "headers",
-   "url": "https://www.nknews.org/pro/vessel-tracker/"
+   "url": "https://www.nknews.org/pro/north-korea-ship-tracking/"
   }
  },
  {
@@ -4052,7 +4026,7 @@
   "id": "erina-unp-dprk-regional-economy",
   "name": "ERINA-UNP: North Korea Regional & Special Economic Zones Studies",
   "publisher": "Economic Research Institute for Northeast Asia and the Pacific (ERINA-UNP, University of Niigata Prefecture)",
-  "url": "https://www.erina.or.jp/",
+  "url": "https://www.unii.ac.jp/erina-unp/",
   "track": "population",
   "language": "ja",
   "category": "Economy",
@@ -4071,7 +4045,7 @@
   "usedBy": [],
   "watch": {
    "type": "headers",
-   "url": "https://www.erina.or.jp/"
+   "url": "https://www.unii.ac.jp/erina-unp/"
   }
  },
  {

@@ -9,7 +9,7 @@ import type { Camp } from '@/content/camps';
 import { getAllCamps } from '@/content/camps';
 import { CAMPS_TEXT, agencyBits, campFields, hrefFor, laborLabel, prisonerLabel } from '@/content/campsI18n';
 import { getCountyBySlug } from '@/content/counties';
-import { LANG_TAG, absolute, jsonLd, type Lang } from '@/site/seo';
+import { LANG_TAG, absolute, breadcrumbLd, jsonLd, type Lang } from '@/site/seo';
 
 const LOCALE: Record<Lang, string> = { en: 'en-US', ko: 'ko-KR', ja: 'ja-JP', zh: 'zh-Hans' };
 
@@ -92,7 +92,7 @@ export default function CampDossier({ lang, camp }: { lang: Lang; camp: Camp }) 
 
   return (
     <article className="dossier-x">
-      <script type="application/ld+json" dangerouslySetInnerHTML={jsonLd(ld)} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={jsonLd([ld, breadcrumbLd([[t.crumb, hrefFor(lang, '/camps')], [camp.name, hrefFor(lang, `/camps/${camp.slug}`)]])])} />
 
       <p className="eyebrow">
         <Link href={hrefFor(lang, '/camps')}>{t.crumb}</Link> · {f.province}
