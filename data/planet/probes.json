@@ -259,6 +259,15 @@
 "corr": null,
 "mosaic": "daily_2025-10-21"
 },
+"kangson|2025-11": {
+"date": "2025-11",
+"valid": 1.0,
+"white": 0.0001,
+"whiteExtra": 0.0,
+"corrMosaic": 0.831,
+"corr": null,
+"mosaic": "global_monthly_2025_11_mosaic"
+},
 "kangson|2025-11-05": {
 "date": "2025-11-05",
 "valid": 1.0,
@@ -294,6 +303,15 @@
 "corrMosaic": 0.227,
 "corr": 0.239,
 "mosaic": "daily_2025-12-12"
+},
+"kangson|2026-01": {
+"date": "2026-01",
+"valid": 1.0,
+"white": 0.002,
+"whiteExtra": 0.0019,
+"corrMosaic": 0.604,
+"corr": null,
+"mosaic": "global_monthly_2026_01_mosaic"
 },
 "kangson|2026-01-19": {
 "date": "2026-01-19",
@@ -339,6 +357,15 @@
 "corrMosaic": 0.176,
 "corr": 0.347,
 "mosaic": "daily_2026-02-28"
+},
+"kangson|2026-03": {
+"date": "2026-03",
+"valid": 1.0,
+"white": 0.0002,
+"whiteExtra": 0.0001,
+"corrMosaic": 0.69,
+"corr": null,
+"mosaic": "global_monthly_2026_03_mosaic"
 },
 "kangson|2026-03-10": {
 "date": "2026-03-10",
@@ -394,6 +421,15 @@
 "corr": 0.874,
 "mosaic": "daily_2026-04-24"
 },
+"kangson|2026-05": {
+"date": "2026-05",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": -0.0001,
+"corrMosaic": 0.628,
+"corr": null,
+"mosaic": "global_monthly_2026_05_mosaic"
+},
 "kangson|2026-05-31": {
 "date": "2026-05-31",
 "valid": 1.0,
@@ -430,6 +466,15 @@
 "corr": 0.545,
 "mosaic": "daily_2026-06-28"
 },
+"kangson|2026-07": {
+"date": "2026-07",
+"valid": 1.0,
+"white": 0.0015,
+"whiteExtra": 0.0014,
+"corrMosaic": 0.621,
+"corr": null,
+"mosaic": "global_monthly_2026_07_mosaic"
+},
 "kangson|2026-08": {
 "date": "2026-08",
 "valid": 1.0,
@@ -456,6 +501,15 @@
 "corrMosaic": 0.502,
 "corr": 0.875,
 "mosaic": "daily_2026-08-27"
+},
+"kangson|2026-09": {
+"date": "2026-09",
+"valid": 1.0,
+"white": 0.0007,
+"whiteExtra": 0.0006,
+"corrMosaic": 0.836,
+"corr": null,
+"mosaic": "global_monthly_2026_09_mosaic"
 },
 "kangson|2026-09-06": {
 "date": "2026-09-06",
@@ -501,6 +555,15 @@
 "corrMosaic": 0.272,
 "corr": 0.257,
 "mosaic": "daily_2026-10-01"
+},
+"kangson|2026-10-08": {
+"date": "2026-10-08",
+"valid": 0.0,
+"white": 0.0,
+"whiteExtra": -0.0001,
+"corrMosaic": null,
+"corr": null,
+"mosaic": "daily_2026-10-08"
 },
 "kusong|2016-10": {
 "date": "2016-10",
@@ -690,6 +753,15 @@
 "corr": null,
 "mosaic": "global_monthly_2025_10_mosaic"
 },
+"kusong|2025-11": {
+"date": "2025-11",
+"valid": 1.0,
+"white": 0.0004,
+"whiteExtra": 0.0004,
+"corrMosaic": 0.975,
+"corr": null,
+"mosaic": "global_monthly_2025_11_mosaic"
+},
 "kusong|2025-11-20": {
 "date": "2025-11-20",
 "valid": 1.0,
@@ -724,6 +796,15 @@
 "corr": null,
 "mosaic": "daily_2025-12-12"
 },
+"kusong|2026-01": {
+"date": "2026-01",
+"valid": 1.0,
+"white": 0.0203,
+"whiteExtra": 0.0203,
+"corrMosaic": 0.801,
+"corr": null,
+"mosaic": "global_monthly_2026_01_mosaic"
+},
 "kusong|2026-02": {
 "date": "2026-02",
 "valid": 1.0,
@@ -750,6 +831,15 @@
 "corrMosaic": 0.933,
 "corr": null,
 "mosaic": "daily_2026-02-28"
+},
+"kusong|2026-03": {
+"date": "2026-03",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.928,
+"corr": null,
+"mosaic": "global_monthly_2026_03_mosaic"
 },
 "kusong|2026-03-10": {
 "date": "2026-03-10",
@@ -785,6 +875,15 @@
 "corr": 0.266,
 "mosaic": "daily_2026-04-29"
 },
+"kusong|2026-05": {
+"date": "2026-05",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.938,
+"corr": null,
+"mosaic": "global_monthly_2026_05_mosaic"
+},
 "kusong|2026-05-31": {
 "date": "2026-05-31",
 "valid": 0.0,
@@ -812,6 +911,15 @@
 "corr": 0.918,
 "mosaic": "daily_2026-06-28"
 },
+"kusong|2026-07": {
+"date": "2026-07",
+"valid": 1.0,
+"white": 0.0001,
+"whiteExtra": 0.0001,
+"corrMosaic": 0.754,
+"corr": null,
+"mosaic": "global_monthly_2026_07_mosaic"
+},
 "kusong|2026-08": {
 "date": "2026-08",
 "valid": 1.0,
@@ -829,6 +937,15 @@
 "corrMosaic": 0.78,
 "corr": 0.886,
 "mosaic": "daily_2026-08-27"
+},
+"kusong|2026-09": {
+"date": "2026-09",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.86,
+"corr": null,
+"mosaic": "global_monthly_2026_09_mosaic"
 },
 "kusong|2026-09-18": {
 "date": "2026-09-18",
@@ -1035,6 +1152,15 @@
 "corr": null,
 "mosaic": "daily_2025-10-21"
 },
+"kwanliso-14|2025-11": {
+"date": "2025-11",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": -0.0001,
+"corrMosaic": 0.876,
+"corr": null,
+"mosaic": "global_monthly_2025_11_mosaic"
+},
 "kwanliso-14|2025-11-10": {
 "date": "2025-11-10",
 "valid": 1.0,
@@ -1053,6 +1179,15 @@
 "corr": 0.408,
 "mosaic": "daily_2025-11-22"
 },
+"kwanliso-14|2025-12": {
+"date": "2025-12",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": -0.0001,
+"corrMosaic": 0.774,
+"corr": null,
+"mosaic": "global_monthly_2025_12_mosaic"
+},
 "kwanliso-14|2025-12-30": {
 "date": "2025-12-30",
 "valid": 1.0,
@@ -1062,6 +1197,15 @@
 "corr": 0.548,
 "mosaic": "daily_2025-12-30"
 },
+"kwanliso-14|2026-01": {
+"date": "2026-01",
+"valid": 1.0,
+"white": 0.026,
+"whiteExtra": 0.0259,
+"corrMosaic": 0.621,
+"corr": null,
+"mosaic": "global_monthly_2026_01_mosaic"
+},
 "kwanliso-14|2026-01-04": {
 "date": "2026-01-04",
 "valid": 1.0,
@@ -1070,6 +1214,15 @@
 "corrMosaic": 0.664,
 "corr": 0.296,
 "mosaic": "daily_2026-01-04"
+},
+"kwanliso-14|2026-02": {
+"date": "2026-02",
+"valid": 1.0,
+"white": 0.0004,
+"whiteExtra": 0.0003,
+"corrMosaic": 0.677,
+"corr": null,
+"mosaic": "global_monthly_2026_02_mosaic"
 },
 "kwanliso-14|2026-02-18": {
 "date": "2026-02-18",
@@ -1088,6 +1241,15 @@
 "corrMosaic": 0.832,
 "corr": 0.353,
 "mosaic": "daily_2026-02-28"
+},
+"kwanliso-14|2026-03": {
+"date": "2026-03",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": -0.0001,
+"corrMosaic": 0.899,
+"corr": null,
+"mosaic": "global_monthly_2026_03_mosaic"
 },
 "kwanliso-14|2026-03-10": {
 "date": "2026-03-10",
@@ -1125,6 +1287,15 @@
 "corr": null,
 "mosaic": "daily_2026-04-24"
 },
+"kwanliso-14|2026-05": {
+"date": "2026-05",
+"valid": 1.0,
+"white": 0.0001,
+"whiteExtra": 0.0,
+"corrMosaic": 0.91,
+"corr": null,
+"mosaic": "global_monthly_2026_05_mosaic"
+},
 "kwanliso-14|2026-05-31": {
 "date": "2026-05-31",
 "valid": 0.8313,
@@ -1133,6 +1304,15 @@
 "corrMosaic": 0.684,
 "corr": 0.675,
 "mosaic": "daily_2026-05-31"
+},
+"kwanliso-14|2026-06": {
+"date": "2026-06",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": -0.0001,
+"corrMosaic": 0.86,
+"corr": null,
+"mosaic": "global_monthly_2026_06_mosaic"
 },
 "kwanliso-14|2026-06-23": {
 "date": "2026-06-23",
@@ -1152,6 +1332,15 @@
 "corr": null,
 "mosaic": "global_monthly_2026_07_mosaic"
 },
+"kwanliso-14|2026-08": {
+"date": "2026-08",
+"valid": 1.0,
+"white": 0.0031,
+"whiteExtra": 0.003,
+"corrMosaic": 0.765,
+"corr": null,
+"mosaic": "global_monthly_2026_08_mosaic"
+},
 "kwanliso-14|2026-08-27": {
 "date": "2026-08-27",
 "valid": 1.0,
@@ -1160,6 +1349,15 @@
 "corrMosaic": 0.764,
 "corr": 0.515,
 "mosaic": "daily_2026-08-27"
+},
+"kwanliso-14|2026-09": {
+"date": "2026-09",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": -0.0001,
+"corrMosaic": 0.937,
+"corr": null,
+"mosaic": "global_monthly_2026_09_mosaic"
 },
 "kwanliso-14|2026-09-16": {
 "date": "2026-09-16",
@@ -1187,6 +1385,15 @@
 "corrMosaic": 0.957,
 "corr": null,
 "mosaic": "daily_2026-10-01"
+},
+"kwanliso-14|2026-10-11": {
+"date": "2026-10-11",
+"valid": 0.0,
+"white": 0.0,
+"whiteExtra": -0.0001,
+"corrMosaic": null,
+"corr": null,
+"mosaic": "daily_2026-10-11"
 },
 "kwanliso-15|2016-10": {
 "date": "2016-10",
@@ -1393,6 +1600,15 @@
 "corr": 0.791,
 "mosaic": "daily_2025-10-08"
 },
+"kwanliso-15|2025-11": {
+"date": "2025-11",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.982,
+"corr": null,
+"mosaic": "global_monthly_2025_11_mosaic"
+},
 "kwanliso-15|2025-11-12": {
 "date": "2025-11-12",
 "valid": 0.0,
@@ -1401,6 +1617,15 @@
 "corrMosaic": null,
 "corr": null,
 "mosaic": "daily_2025-11-12"
+},
+"kwanliso-15|2025-12": {
+"date": "2025-12",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.96,
+"corr": null,
+"mosaic": "global_monthly_2025_12_mosaic"
 },
 "kwanliso-15|2025-12-12": {
 "date": "2025-12-12",
@@ -1420,6 +1645,15 @@
 "corr": null,
 "mosaic": "daily_2025-12-22"
 },
+"kwanliso-15|2026-01": {
+"date": "2026-01",
+"valid": 1.0,
+"white": 0.0521,
+"whiteExtra": 0.0521,
+"corrMosaic": 0.807,
+"corr": null,
+"mosaic": "global_monthly_2026_01_mosaic"
+},
 "kwanliso-15|2026-01-04": {
 "date": "2026-01-04",
 "valid": 1.0,
@@ -1429,6 +1663,15 @@
 "corr": 0.61,
 "mosaic": "daily_2026-01-04"
 },
+"kwanliso-15|2026-02": {
+"date": "2026-02",
+"valid": 1.0,
+"white": 0.0011,
+"whiteExtra": 0.0011,
+"corrMosaic": 0.889,
+"corr": null,
+"mosaic": "global_monthly_2026_02_mosaic"
+},
 "kwanliso-15|2026-02-28": {
 "date": "2026-02-28",
 "valid": 1.0,
@@ -1436,6 +1679,15 @@
 "contrast": 26.0,
 "corr": 0.257,
 "mosaic": "daily_2026-02-28"
+},
+"kwanliso-15|2026-03": {
+"date": "2026-03",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.961,
+"corr": null,
+"mosaic": "global_monthly_2026_03_mosaic"
 },
 "kwanliso-15|2026-03-25": {
 "date": "2026-03-25",
@@ -1464,6 +1716,15 @@
 "corr": 0.835,
 "mosaic": "daily_2026-04-21"
 },
+"kwanliso-15|2026-05": {
+"date": "2026-05",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.895,
+"corr": null,
+"mosaic": "global_monthly_2026_05_mosaic"
+},
 "kwanliso-15|2026-05-09": {
 "date": "2026-05-09",
 "valid": 0.9996,
@@ -1472,6 +1733,15 @@
 "corrMosaic": 0.852,
 "corr": 0.843,
 "mosaic": "daily_2026-05-09"
+},
+"kwanliso-15|2026-06": {
+"date": "2026-06",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.818,
+"corr": null,
+"mosaic": "global_monthly_2026_06_mosaic"
 },
 "kwanliso-15|2026-06-03": {
 "date": "2026-06-03",
@@ -1500,6 +1770,15 @@
 "corr": null,
 "mosaic": "global_monthly_2026_07_mosaic"
 },
+"kwanliso-15|2026-08": {
+"date": "2026-08",
+"valid": 1.0,
+"white": 0.0001,
+"whiteExtra": 0.0001,
+"corrMosaic": 0.822,
+"corr": null,
+"mosaic": "global_monthly_2026_08_mosaic"
+},
 "kwanliso-15|2026-08-07": {
 "date": "2026-08-07",
 "valid": 1.0,
@@ -1508,6 +1787,15 @@
 "corrMosaic": 0.746,
 "corr": 0.754,
 "mosaic": "daily_2026-08-07"
+},
+"kwanliso-15|2026-09": {
+"date": "2026-09",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.856,
+"corr": null,
+"mosaic": "global_monthly_2026_09_mosaic"
 },
 "kwanliso-15|2026-09-11": {
 "date": "2026-09-11",
@@ -1526,6 +1814,15 @@
 "corrMosaic": 0.978,
 "corr": null,
 "mosaic": "global_monthly_2026_10_mosaic"
+},
+"kwanliso-15|2026-10-08": {
+"date": "2026-10-08",
+"valid": 0.9999,
+"white": 0.0001,
+"whiteExtra": 0.0001,
+"corrMosaic": 0.929,
+"corr": 0.817,
+"mosaic": "daily_2026-10-08"
 },
 "kwanliso-16|2016-10": {
 "date": "2016-10",
@@ -1707,6 +2004,15 @@
 "corr": 0.224,
 "mosaic": "daily_2025-10-03"
 },
+"kwanliso-16|2025-11": {
+"date": "2025-11",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.908,
+"corr": null,
+"mosaic": "global_monthly_2025_11_mosaic"
+},
 "kwanliso-16|2025-11-22": {
 "date": "2025-11-22",
 "valid": 1.0,
@@ -1716,6 +2022,24 @@
 "corr": 0.41,
 "mosaic": "daily_2025-11-22"
 },
+"kwanliso-16|2025-12": {
+"date": "2025-12",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.859,
+"corr": null,
+"mosaic": "global_monthly_2025_12_mosaic"
+},
+"kwanliso-16|2026-01": {
+"date": "2026-01",
+"valid": 1.0,
+"white": 0.018,
+"whiteExtra": 0.018,
+"corrMosaic": 0.816,
+"corr": null,
+"mosaic": "global_monthly_2026_01_mosaic"
+},
 "kwanliso-16|2026-01-06": {
 "date": "2026-01-06",
 "valid": 1.0,
@@ -1724,6 +2048,15 @@
 "corrMosaic": 0.704,
 "corr": 0.688,
 "mosaic": "daily_2026-01-06"
+},
+"kwanliso-16|2026-02": {
+"date": "2026-02",
+"valid": 1.0,
+"white": 0.0009,
+"whiteExtra": 0.0009,
+"corrMosaic": 0.676,
+"corr": null,
+"mosaic": "global_monthly_2026_02_mosaic"
 },
 "kwanliso-16|2026-02-20": {
 "date": "2026-02-20",
@@ -1742,6 +2075,15 @@
 "corrMosaic": 0.679,
 "corr": null,
 "mosaic": "daily_2026-02-25"
+},
+"kwanliso-16|2026-03": {
+"date": "2026-03",
+"valid": 1.0,
+"white": 0.0001,
+"whiteExtra": 0.0001,
+"corrMosaic": 0.774,
+"corr": null,
+"mosaic": "global_monthly_2026_03_mosaic"
 },
 "kwanliso-16|2026-03-17": {
 "date": "2026-03-17",
@@ -1788,6 +2130,15 @@
 "corr": null,
 "mosaic": "daily_2026-04-21"
 },
+"kwanliso-16|2026-05": {
+"date": "2026-05",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.62,
+"corr": null,
+"mosaic": "global_monthly_2026_05_mosaic"
+},
 "kwanliso-16|2026-05-16": {
 "date": "2026-05-16",
 "valid": 1.0,
@@ -1806,6 +2157,15 @@
 "corr": null,
 "mosaic": "daily_2026-05-31"
 },
+"kwanliso-16|2026-06": {
+"date": "2026-06",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.282,
+"corr": null,
+"mosaic": "global_monthly_2026_06_mosaic"
+},
 "kwanliso-16|2026-07": {
 "date": "2026-07",
 "valid": 1.0,
@@ -1815,6 +2175,15 @@
 "corr": null,
 "mosaic": "global_monthly_2026_07_mosaic"
 },
+"kwanliso-16|2026-08": {
+"date": "2026-08",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.609,
+"corr": null,
+"mosaic": "global_monthly_2026_08_mosaic"
+},
 "kwanliso-16|2026-08-04": {
 "date": "2026-08-04",
 "valid": 1.0,
@@ -1823,6 +2192,15 @@
 "corrMosaic": 0.244,
 "corr": 0.473,
 "mosaic": "daily_2026-08-04"
+},
+"kwanliso-16|2026-09": {
+"date": "2026-09",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.789,
+"corr": null,
+"mosaic": "global_monthly_2026_09_mosaic"
 },
 "kwanliso-16|2026-09-18": {
 "date": "2026-09-18",
@@ -1841,6 +2219,15 @@
 "corrMosaic": 0.784,
 "corr": null,
 "mosaic": "global_monthly_2026_10_mosaic"
+},
+"kwanliso-16|2026-10-08": {
+"date": "2026-10-08",
+"valid": 0.3585,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.458,
+"corr": null,
+"mosaic": "daily_2026-10-08"
 },
 "kwanliso-18|2016-10": {
 "date": "2016-10",
@@ -2029,6 +2416,15 @@
 "corr": null,
 "mosaic": "daily_2025-10-21"
 },
+"kwanliso-18|2025-11": {
+"date": "2025-11",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.909,
+"corr": null,
+"mosaic": "global_monthly_2025_11_mosaic"
+},
 "kwanliso-18|2025-11-10": {
 "date": "2025-11-10",
 "valid": 1.0,
@@ -2047,6 +2443,24 @@
 "corr": 0.402,
 "mosaic": "daily_2025-11-22"
 },
+"kwanliso-18|2025-12": {
+"date": "2025-12",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.8,
+"corr": null,
+"mosaic": "global_monthly_2025_12_mosaic"
+},
+"kwanliso-18|2026-01": {
+"date": "2026-01",
+"valid": 1.0,
+"white": 0.0461,
+"whiteExtra": 0.0461,
+"corrMosaic": 0.64,
+"corr": null,
+"mosaic": "global_monthly_2026_01_mosaic"
+},
 "kwanliso-18|2026-01-04": {
 "date": "2026-01-04",
 "valid": 1.0,
@@ -2056,6 +2470,15 @@
 "corr": 0.322,
 "mosaic": "daily_2026-01-04"
 },
+"kwanliso-18|2026-02": {
+"date": "2026-02",
+"valid": 1.0,
+"white": 0.0003,
+"whiteExtra": 0.0003,
+"corrMosaic": 0.679,
+"corr": null,
+"mosaic": "global_monthly_2026_02_mosaic"
+},
 "kwanliso-18|2026-02-28": {
 "date": "2026-02-28",
 "valid": 0.9982,
@@ -2064,6 +2487,15 @@
 "corrMosaic": 0.775,
 "corr": 0.288,
 "mosaic": "daily_2026-02-28"
+},
+"kwanliso-18|2026-03": {
+"date": "2026-03",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.903,
+"corr": null,
+"mosaic": "global_monthly_2026_03_mosaic"
 },
 "kwanliso-18|2026-03-10": {
 "date": "2026-03-10",
@@ -2101,6 +2533,15 @@
 "corr": null,
 "mosaic": "daily_2026-04-24"
 },
+"kwanliso-18|2026-05": {
+"date": "2026-05",
+"valid": 1.0,
+"white": 0.0001,
+"whiteExtra": 0.0001,
+"corrMosaic": 0.894,
+"corr": null,
+"mosaic": "global_monthly_2026_05_mosaic"
+},
 "kwanliso-18|2026-05-31": {
 "date": "2026-05-31",
 "valid": 1.0,
@@ -2109,6 +2550,15 @@
 "corrMosaic": 0.85,
 "corr": 0.878,
 "mosaic": "daily_2026-05-31"
+},
+"kwanliso-18|2026-06": {
+"date": "2026-06",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.834,
+"corr": null,
+"mosaic": "global_monthly_2026_06_mosaic"
 },
 "kwanliso-18|2026-07": {
 "date": "2026-07",
@@ -2119,6 +2569,15 @@
 "corr": null,
 "mosaic": "global_monthly_2026_07_mosaic"
 },
+"kwanliso-18|2026-08": {
+"date": "2026-08",
+"valid": 1.0,
+"white": 0.0031,
+"whiteExtra": 0.0031,
+"corrMosaic": 0.741,
+"corr": null,
+"mosaic": "global_monthly_2026_08_mosaic"
+},
 "kwanliso-18|2026-08-27": {
 "date": "2026-08-27",
 "valid": 1.0,
@@ -2127,6 +2586,15 @@
 "corrMosaic": 0.732,
 "corr": 0.666,
 "mosaic": "daily_2026-08-27"
+},
+"kwanliso-18|2026-09": {
+"date": "2026-09",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.913,
+"corr": null,
+"mosaic": "global_monthly_2026_09_mosaic"
 },
 "kwanliso-18|2026-09-16": {
 "date": "2026-09-16",
@@ -2154,6 +2622,15 @@
 "corrMosaic": 0.941,
 "corr": null,
 "mosaic": "daily_2026-10-01"
+},
+"kwanliso-18|2026-10-11": {
+"date": "2026-10-11",
+"valid": 0.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": null,
+"corr": null,
+"mosaic": "daily_2026-10-11"
 },
 "kwanliso-22|2016-10": {
 "date": "2016-10",
@@ -2290,6 +2767,15 @@
 "corr": 0.937,
 "mosaic": "daily_2025-10-03"
 },
+"kwanliso-22|2025-11": {
+"date": "2025-11",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.965,
+"corr": null,
+"mosaic": "global_monthly_2025_11_mosaic"
+},
 "kwanliso-22|2025-11-22": {
 "date": "2025-11-22",
 "valid": 1.0,
@@ -2298,6 +2784,42 @@
 "corrMosaic": 0.967,
 "corr": 0.906,
 "mosaic": "daily_2025-11-22"
+},
+"kwanliso-22|2025-12": {
+"date": "2025-12",
+"valid": 1.0,
+"white": 0.0955,
+"whiteExtra": 0.0955,
+"corrMosaic": 0.591,
+"corr": null,
+"mosaic": "global_monthly_2025_12_mosaic"
+},
+"kwanliso-22|2026-01": {
+"date": "2026-01",
+"valid": 1.0,
+"white": 0.0585,
+"whiteExtra": 0.0585,
+"corrMosaic": 0.574,
+"corr": null,
+"mosaic": "global_monthly_2026_01_mosaic"
+},
+"kwanliso-22|2026-02": {
+"date": "2026-02",
+"valid": 1.0,
+"white": 0.0005,
+"whiteExtra": 0.0005,
+"corrMosaic": 0.921,
+"corr": null,
+"mosaic": "global_monthly_2026_02_mosaic"
+},
+"kwanliso-22|2026-03": {
+"date": "2026-03",
+"valid": 1.0,
+"white": 0.0003,
+"whiteExtra": 0.0003,
+"corrMosaic": 0.938,
+"corr": null,
+"mosaic": "global_monthly_2026_03_mosaic"
 },
 "kwanliso-22|2026-04": {
 "date": "2026-04",
@@ -2317,6 +2839,15 @@
 "corr": 0.949,
 "mosaic": "daily_2026-04-23"
 },
+"kwanliso-22|2026-05": {
+"date": "2026-05",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.894,
+"corr": null,
+"mosaic": "global_monthly_2026_05_mosaic"
+},
 "kwanliso-22|2026-05-31": {
 "date": "2026-05-31",
 "valid": 0.0,
@@ -2325,6 +2856,15 @@
 "corrMosaic": null,
 "corr": null,
 "mosaic": "daily_2026-05-31"
+},
+"kwanliso-22|2026-06": {
+"date": "2026-06",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.853,
+"corr": null,
+"mosaic": "global_monthly_2026_06_mosaic"
 },
 "kwanliso-22|2026-06-02": {
 "date": "2026-06-02",
@@ -2344,6 +2884,15 @@
 "corr": null,
 "mosaic": "global_monthly_2026_07_mosaic"
 },
+"kwanliso-22|2026-08": {
+"date": "2026-08",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.636,
+"corr": null,
+"mosaic": "global_monthly_2026_08_mosaic"
+},
 "kwanliso-22|2026-08-09": {
 "date": "2026-08-09",
 "valid": 1.0,
@@ -2352,6 +2901,15 @@
 "corrMosaic": 0.635,
 "corr": 0.931,
 "mosaic": "daily_2026-08-09"
+},
+"kwanliso-22|2026-09": {
+"date": "2026-09",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.865,
+"corr": null,
+"mosaic": "global_monthly_2026_09_mosaic"
 },
 "kwanliso-22|2026-09-10": {
 "date": "2026-09-10",
@@ -2370,6 +2928,15 @@
 "corrMosaic": 0.967,
 "corr": null,
 "mosaic": "global_monthly_2026_10_mosaic"
+},
+"kwanliso-22|2026-10-08": {
+"date": "2026-10-08",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.933,
+"corr": null,
+"mosaic": "daily_2026-10-08"
 },
 "kwanliso-25|2016-10": {
 "date": "2016-10",
@@ -2578,6 +3145,15 @@
 "corr": 0.664,
 "mosaic": "daily_2025-10-03"
 },
+"kwanliso-25|2025-11": {
+"date": "2025-11",
+"valid": 1.0,
+"white": 0.0003,
+"whiteExtra": 0.0001,
+"corrMosaic": 0.906,
+"corr": null,
+"mosaic": "global_monthly_2025_11_mosaic"
+},
 "kwanliso-25|2025-11-19": {
 "date": "2025-11-19",
 "valid": 1.0,
@@ -2596,6 +3172,15 @@
 "corr": 0.904,
 "mosaic": "daily_2025-11-22"
 },
+"kwanliso-25|2025-12": {
+"date": "2025-12",
+"valid": 1.0,
+"white": 0.0003,
+"whiteExtra": 0.0001,
+"corrMosaic": 0.888,
+"corr": null,
+"mosaic": "global_monthly_2025_12_mosaic"
+},
 "kwanliso-25|2025-12-09": {
 "date": "2025-12-09",
 "valid": 1.0,
@@ -2604,6 +3189,15 @@
 "corrMosaic": 0.891,
 "corr": 0.867,
 "mosaic": "daily_2025-12-09"
+},
+"kwanliso-25|2026-01": {
+"date": "2026-01",
+"valid": 1.0,
+"white": 0.0114,
+"whiteExtra": 0.0112,
+"corrMosaic": 0.702,
+"corr": null,
+"mosaic": "global_monthly_2026_01_mosaic"
 },
 "kwanliso-25|2026-01-03": {
 "date": "2026-01-03",
@@ -2614,6 +3208,15 @@
 "corr": 0.824,
 "mosaic": "daily_2026-01-03"
 },
+"kwanliso-25|2026-02": {
+"date": "2026-02",
+"valid": 1.0,
+"white": 0.0017,
+"whiteExtra": 0.0015,
+"corrMosaic": 0.887,
+"corr": null,
+"mosaic": "global_monthly_2026_02_mosaic"
+},
 "kwanliso-25|2026-02-20": {
 "date": "2026-02-20",
 "valid": 1.0,
@@ -2622,6 +3225,15 @@
 "corrMosaic": 0.863,
 "corr": 0.74,
 "mosaic": "daily_2026-02-20"
+},
+"kwanliso-25|2026-03": {
+"date": "2026-03",
+"valid": 1.0,
+"white": 0.0004,
+"whiteExtra": 0.0002,
+"corrMosaic": 0.863,
+"corr": null,
+"mosaic": "global_monthly_2026_03_mosaic"
 },
 "kwanliso-25|2026-03-16": {
 "date": "2026-03-16",
@@ -2659,6 +3271,15 @@
 "corr": null,
 "mosaic": "daily_2026-04-23"
 },
+"kwanliso-25|2026-05": {
+"date": "2026-05",
+"valid": 1.0,
+"white": 0.0005,
+"whiteExtra": 0.0003,
+"corrMosaic": 0.911,
+"corr": null,
+"mosaic": "global_monthly_2026_05_mosaic"
+},
 "kwanliso-25|2026-05-31": {
 "date": "2026-05-31",
 "valid": 0.0,
@@ -2667,6 +3288,15 @@
 "corrMosaic": null,
 "corr": null,
 "mosaic": "daily_2026-05-31"
+},
+"kwanliso-25|2026-06": {
+"date": "2026-06",
+"valid": 1.0,
+"white": 0.0002,
+"whiteExtra": 0.0,
+"corrMosaic": 0.862,
+"corr": null,
+"mosaic": "global_monthly_2026_06_mosaic"
 },
 "kwanliso-25|2026-06-02": {
 "date": "2026-06-02",
@@ -2686,6 +3316,15 @@
 "corr": null,
 "mosaic": "global_monthly_2026_07_mosaic"
 },
+"kwanliso-25|2026-08": {
+"date": "2026-08",
+"valid": 1.0,
+"white": 0.0004,
+"whiteExtra": 0.0002,
+"corrMosaic": 0.727,
+"corr": null,
+"mosaic": "global_monthly_2026_08_mosaic"
+},
 "kwanliso-25|2026-08-09": {
 "date": "2026-08-09",
 "valid": 0.9304,
@@ -2694,6 +3333,15 @@
 "corrMosaic": 0.505,
 "corr": 0.613,
 "mosaic": "daily_2026-08-09"
+},
+"kwanliso-25|2026-09": {
+"date": "2026-09",
+"valid": 1.0,
+"white": 0.0003,
+"whiteExtra": 0.0001,
+"corrMosaic": 0.874,
+"corr": null,
+"mosaic": "global_monthly_2026_09_mosaic"
 },
 "kwanliso-25|2026-09-20": {
 "date": "2026-09-20",
@@ -2901,6 +3549,15 @@
 "corr": 0.631,
 "mosaic": "daily_2025-10-16"
 },
+"kyohwaso-1-kaechon|2025-11": {
+"date": "2025-11",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.895,
+"corr": null,
+"mosaic": "global_monthly_2025_11_mosaic"
+},
 "kyohwaso-1-kaechon|2025-11-22": {
 "date": "2025-11-22",
 "valid": 1.0,
@@ -2910,6 +3567,15 @@
 "corr": 0.538,
 "mosaic": "daily_2025-11-22"
 },
+"kyohwaso-1-kaechon|2025-12": {
+"date": "2025-12",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.859,
+"corr": null,
+"mosaic": "global_monthly_2025_12_mosaic"
+},
 "kyohwaso-1-kaechon|2025-12-12": {
 "date": "2025-12-12",
 "valid": 1.0,
@@ -2918,6 +3584,24 @@
 "corrMosaic": 0.868,
 "corr": 0.4,
 "mosaic": "daily_2025-12-12"
+},
+"kyohwaso-1-kaechon|2026-01": {
+"date": "2026-01",
+"valid": 1.0,
+"white": 0.0274,
+"whiteExtra": 0.0274,
+"corrMosaic": 0.672,
+"corr": null,
+"mosaic": "global_monthly_2026_01_mosaic"
+},
+"kyohwaso-1-kaechon|2026-02": {
+"date": "2026-02",
+"valid": 1.0,
+"white": 0.0002,
+"whiteExtra": 0.0002,
+"corrMosaic": 0.847,
+"corr": null,
+"mosaic": "global_monthly_2026_02_mosaic"
 },
 "kyohwaso-1-kaechon|2026-02-18": {
 "date": "2026-02-18",
@@ -2936,6 +3620,15 @@
 "corrMosaic": null,
 "corr": null,
 "mosaic": "daily_2026-02-28"
+},
+"kyohwaso-1-kaechon|2026-03": {
+"date": "2026-03",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.867,
+"corr": null,
+"mosaic": "global_monthly_2026_03_mosaic"
 },
 "kyohwaso-1-kaechon|2026-03-10": {
 "date": "2026-03-10",
@@ -2982,6 +3675,15 @@
 "corr": null,
 "mosaic": "daily_2026-04-21"
 },
+"kyohwaso-1-kaechon|2026-05": {
+"date": "2026-05",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.854,
+"corr": null,
+"mosaic": "global_monthly_2026_05_mosaic"
+},
 "kyohwaso-1-kaechon|2026-05-31": {
 "date": "2026-05-31",
 "valid": 0.0,
@@ -2990,6 +3692,15 @@
 "corrMosaic": null,
 "corr": null,
 "mosaic": "daily_2026-05-31"
+},
+"kyohwaso-1-kaechon|2026-06": {
+"date": "2026-06",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.802,
+"corr": null,
+"mosaic": "global_monthly_2026_06_mosaic"
 },
 "kyohwaso-1-kaechon|2026-06-23": {
 "date": "2026-06-23",
@@ -3018,6 +3729,15 @@
 "corr": null,
 "mosaic": "global_monthly_2026_07_mosaic"
 },
+"kyohwaso-1-kaechon|2026-08": {
+"date": "2026-08",
+"valid": 1.0,
+"white": 0.0002,
+"whiteExtra": 0.0002,
+"corrMosaic": 0.737,
+"corr": null,
+"mosaic": "global_monthly_2026_08_mosaic"
+},
 "kyohwaso-1-kaechon|2026-08-27": {
 "date": "2026-08-27",
 "valid": 0.9999,
@@ -3026,6 +3746,15 @@
 "corrMosaic": 0.727,
 "corr": 0.77,
 "mosaic": "daily_2026-08-27"
+},
+"kyohwaso-1-kaechon|2026-09": {
+"date": "2026-09",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.894,
+"corr": null,
+"mosaic": "global_monthly_2026_09_mosaic"
 },
 "kyohwaso-1-kaechon|2026-09-11": {
 "date": "2026-09-11",
@@ -3216,6 +3945,15 @@
 "corr": 0.836,
 "mosaic": "daily_2025-10-03"
 },
+"kyohwaso-12-chongori|2025-11": {
+"date": "2025-11",
+"valid": 1.0,
+"white": 0.0002,
+"whiteExtra": 0.0002,
+"corrMosaic": 0.775,
+"corr": null,
+"mosaic": "global_monthly_2025_11_mosaic"
+},
 "kyohwaso-12-chongori|2025-11-19": {
 "date": "2025-11-19",
 "valid": 0.901,
@@ -3224,6 +3962,42 @@
 "corrMosaic": 0.698,
 "corr": 0.493,
 "mosaic": "daily_2025-11-19"
+},
+"kyohwaso-12-chongori|2025-12": {
+"date": "2025-12",
+"valid": 1.0,
+"white": 0.1049,
+"whiteExtra": 0.1049,
+"corrMosaic": 0.674,
+"corr": null,
+"mosaic": "global_monthly_2025_12_mosaic"
+},
+"kyohwaso-12-chongori|2026-01": {
+"date": "2026-01",
+"valid": 1.0,
+"white": 0.0913,
+"whiteExtra": 0.0913,
+"corrMosaic": 0.451,
+"corr": null,
+"mosaic": "global_monthly_2026_01_mosaic"
+},
+"kyohwaso-12-chongori|2026-02": {
+"date": "2026-02",
+"valid": 1.0,
+"white": 0.0033,
+"whiteExtra": 0.0033,
+"corrMosaic": 0.687,
+"corr": null,
+"mosaic": "global_monthly_2026_02_mosaic"
+},
+"kyohwaso-12-chongori|2026-03": {
+"date": "2026-03",
+"valid": 1.0,
+"white": 0.0026,
+"whiteExtra": 0.0026,
+"corrMosaic": 0.761,
+"corr": null,
+"mosaic": "global_monthly_2026_03_mosaic"
 },
 "kyohwaso-12-chongori|2026-04": {
 "date": "2026-04",
@@ -3243,6 +4017,15 @@
 "corr": 0.857,
 "mosaic": "daily_2026-04-23"
 },
+"kyohwaso-12-chongori|2026-05": {
+"date": "2026-05",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.905,
+"corr": null,
+"mosaic": "global_monthly_2026_05_mosaic"
+},
 "kyohwaso-12-chongori|2026-05-31": {
 "date": "2026-05-31",
 "valid": 0.0,
@@ -3251,6 +4034,15 @@
 "corrMosaic": null,
 "corr": null,
 "mosaic": "daily_2026-05-31"
+},
+"kyohwaso-12-chongori|2026-06": {
+"date": "2026-06",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.868,
+"corr": null,
+"mosaic": "global_monthly_2026_06_mosaic"
 },
 "kyohwaso-12-chongori|2026-06-02": {
 "date": "2026-06-02",
@@ -3270,6 +4062,15 @@
 "corr": null,
 "mosaic": "global_monthly_2026_07_mosaic"
 },
+"kyohwaso-12-chongori|2026-08": {
+"date": "2026-08",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.89,
+"corr": null,
+"mosaic": "global_monthly_2026_08_mosaic"
+},
 "kyohwaso-12-chongori|2026-08-09": {
 "date": "2026-08-09",
 "valid": 1.0,
@@ -3278,6 +4079,15 @@
 "corrMosaic": 0.721,
 "corr": 0.725,
 "mosaic": "daily_2026-08-09"
+},
+"kyohwaso-12-chongori|2026-09": {
+"date": "2026-09",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.946,
+"corr": null,
+"mosaic": "global_monthly_2026_09_mosaic"
 },
 "kyohwaso-12-chongori|2026-09-12": {
 "date": "2026-09-12",
@@ -3486,6 +4296,15 @@
 "corr": 0.461,
 "mosaic": "daily_2025-10-03"
 },
+"punggye-ri|2025-11": {
+"date": "2025-11",
+"valid": 1.0,
+"white": 0.0092,
+"whiteExtra": 0.0092,
+"corrMosaic": 0.596,
+"corr": null,
+"mosaic": "global_monthly_2025_11_mosaic"
+},
 "punggye-ri|2025-11-07": {
 "date": "2025-11-07",
 "valid": 1.0,
@@ -3522,6 +4341,15 @@
 "corr": null,
 "mosaic": "global_monthly_2025_12_mosaic"
 },
+"punggye-ri|2026-01": {
+"date": "2026-01",
+"valid": 1.0,
+"white": 0.1141,
+"whiteExtra": 0.1141,
+"corrMosaic": 0.673,
+"corr": null,
+"mosaic": "global_monthly_2026_01_mosaic"
+},
 "punggye-ri|2026-01-06": {
 "date": "2026-01-06",
 "valid": 1.0,
@@ -3539,6 +4367,15 @@
 "corrMosaic": 0.468,
 "corr": null,
 "mosaic": "global_monthly_2026_02_mosaic"
+},
+"punggye-ri|2026-03": {
+"date": "2026-03",
+"valid": 1.0,
+"white": 0.0081,
+"whiteExtra": 0.0081,
+"corrMosaic": 0.268,
+"corr": null,
+"mosaic": "global_monthly_2026_03_mosaic"
 },
 "punggye-ri|2026-03-17": {
 "date": "2026-03-17",
@@ -3585,6 +4422,15 @@
 "corr": null,
 "mosaic": "daily_2026-04-21"
 },
+"punggye-ri|2026-05": {
+"date": "2026-05",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.678,
+"corr": null,
+"mosaic": "global_monthly_2026_05_mosaic"
+},
 "punggye-ri|2026-05-16": {
 "date": "2026-05-16",
 "valid": 0.4692,
@@ -3612,6 +4458,15 @@
 "corr": null,
 "mosaic": "global_monthly_2026_06_mosaic"
 },
+"punggye-ri|2026-07": {
+"date": "2026-07",
+"valid": 1.0,
+"white": 0.0037,
+"whiteExtra": 0.0037,
+"corrMosaic": 0.332,
+"corr": null,
+"mosaic": "global_monthly_2026_07_mosaic"
+},
 "punggye-ri|2026-08": {
 "date": "2026-08",
 "valid": 1.0,
@@ -3620,6 +4475,15 @@
 "corrMosaic": 0.097,
 "corr": null,
 "mosaic": "global_monthly_2026_08_mosaic"
+},
+"punggye-ri|2026-09": {
+"date": "2026-09",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.695,
+"corr": null,
+"mosaic": "global_monthly_2026_09_mosaic"
 },
 "punggye-ri|2026-09-18": {
 "date": "2026-09-18",
@@ -3638,6 +4502,15 @@
 "corrMosaic": 0.791,
 "corr": null,
 "mosaic": "global_monthly_2026_10_mosaic"
+},
+"punggye-ri|2026-10-08": {
+"date": "2026-10-08",
+"valid": 0.9203,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.636,
+"corr": null,
+"mosaic": "daily_2026-10-08"
 },
 "pyongsan|2016-10": {
 "date": "2016-10",
@@ -3873,6 +4746,15 @@
 "corr": 0.02,
 "mosaic": "daily_2025-10-08"
 },
+"pyongsan|2025-11": {
+"date": "2025-11",
+"valid": 1.0,
+"white": 0.0002,
+"whiteExtra": 0.0001,
+"corrMosaic": 0.927,
+"corr": null,
+"mosaic": "global_monthly_2025_11_mosaic"
+},
 "pyongsan|2025-11-05": {
 "date": "2025-11-05",
 "valid": 1.0,
@@ -3899,6 +4781,15 @@
 "corrMosaic": 0.684,
 "corr": 0.324,
 "mosaic": "daily_2025-12-17"
+},
+"pyongsan|2026-01": {
+"date": "2026-01",
+"valid": 1.0,
+"white": 0.0464,
+"whiteExtra": 0.0463,
+"corrMosaic": 0.261,
+"corr": null,
+"mosaic": "global_monthly_2026_01_mosaic"
 },
 "pyongsan|2026-01-31": {
 "date": "2026-01-31",
@@ -3954,6 +4845,15 @@
 "corr": 0.746,
 "mosaic": "daily_2026-02-28"
 },
+"pyongsan|2026-03": {
+"date": "2026-03",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": -0.0001,
+"corrMosaic": 0.842,
+"corr": null,
+"mosaic": "global_monthly_2026_03_mosaic"
+},
 "pyongsan|2026-03-25": {
 "date": "2026-03-25",
 "valid": 0.0,
@@ -3990,6 +4890,15 @@
 "corr": null,
 "mosaic": "daily_2026-04-24"
 },
+"pyongsan|2026-05": {
+"date": "2026-05",
+"valid": 1.0,
+"white": 0.0003,
+"whiteExtra": 0.0002,
+"corrMosaic": 0.839,
+"corr": null,
+"mosaic": "global_monthly_2026_05_mosaic"
+},
 "pyongsan|2026-05-31": {
 "date": "2026-05-31",
 "valid": 1.0,
@@ -4017,6 +4926,15 @@
 "corr": 0.836,
 "mosaic": "daily_2026-06-15"
 },
+"pyongsan|2026-07": {
+"date": "2026-07",
+"valid": 1.0,
+"white": 0.0001,
+"whiteExtra": 0.0,
+"corrMosaic": 0.729,
+"corr": null,
+"mosaic": "global_monthly_2026_07_mosaic"
+},
 "pyongsan|2026-08": {
 "date": "2026-08",
 "valid": 1.0,
@@ -4035,6 +4953,15 @@
 "corr": null,
 "mosaic": "daily_2026-08-12"
 },
+"pyongsan|2026-09": {
+"date": "2026-09",
+"valid": 1.0,
+"white": 0.0003,
+"whiteExtra": 0.0002,
+"corrMosaic": 0.843,
+"corr": null,
+"mosaic": "global_monthly_2026_09_mosaic"
+},
 "pyongsan|2026-09-16": {
 "date": "2026-09-16",
 "valid": 0.0,
@@ -4052,6 +4979,15 @@
 "corrMosaic": 0.911,
 "corr": null,
 "mosaic": "global_monthly_2026_10_mosaic"
+},
+"pyongsan|2026-10-08": {
+"date": "2026-10-08",
+"valid": 1.0,
+"white": 0.0022,
+"whiteExtra": 0.0021,
+"corrMosaic": 0.904,
+"corr": null,
+"mosaic": "daily_2026-10-08"
 },
 "sinpo|2016-10": {
 "date": "2016-10",
@@ -4363,6 +5299,15 @@
 "corr": null,
 "mosaic": "daily_2025-10-28"
 },
+"sinpo|2025-11": {
+"date": "2025-11",
+"valid": 1.0,
+"white": 0.0048,
+"whiteExtra": 0.0023,
+"corrMosaic": 0.982,
+"corr": null,
+"mosaic": "global_monthly_2025_11_mosaic"
+},
 "sinpo|2025-11-07": {
 "date": "2025-11-07",
 "valid": 1.0,
@@ -4422,6 +5367,15 @@
 "corrMosaic": 0.783,
 "corr": null,
 "mosaic": "daily_2025-12-22"
+},
+"sinpo|2026-01": {
+"date": "2026-01",
+"valid": 1.0,
+"white": 0.0224,
+"whiteExtra": 0.0199,
+"corrMosaic": 0.74,
+"corr": null,
+"mosaic": "global_monthly_2026_01_mosaic"
 },
 "sinpo|2026-01-06": {
 "date": "2026-01-06",
@@ -4486,6 +5440,15 @@
 "corr": 0.932,
 "mosaic": "daily_2026-02-25"
 },
+"sinpo|2026-03": {
+"date": "2026-03",
+"valid": 1.0,
+"white": 0.0014,
+"whiteExtra": -0.0011,
+"corrMosaic": 0.938,
+"corr": null,
+"mosaic": "global_monthly_2026_03_mosaic"
+},
 "sinpo|2026-03-09": {
 "date": "2026-03-09",
 "valid": 1.0,
@@ -4549,6 +5512,15 @@
 "corr": 0.966,
 "mosaic": "daily_2026-04-16"
 },
+"sinpo|2026-05": {
+"date": "2026-05",
+"valid": 1.0,
+"white": 0.0085,
+"whiteExtra": 0.006,
+"corrMosaic": 0.904,
+"corr": null,
+"mosaic": "global_monthly_2026_05_mosaic"
+},
 "sinpo|2026-05-01": {
 "date": "2026-05-01",
 "valid": 0.0,
@@ -4594,6 +5566,15 @@
 "corr": 0.76,
 "mosaic": "daily_2026-06-10"
 },
+"sinpo|2026-07": {
+"date": "2026-07",
+"valid": 1.0,
+"white": 0.0068,
+"whiteExtra": 0.0043,
+"corrMosaic": 0.726,
+"corr": null,
+"mosaic": "global_monthly_2026_07_mosaic"
+},
 "sinpo|2026-07-05": {
 "date": "2026-07-05",
 "valid": 1.0,
@@ -4620,6 +5601,15 @@
 "corrMosaic": 0.93,
 "corr": null,
 "mosaic": "global_monthly_2026_08_mosaic"
+},
+"sinpo|2026-09": {
+"date": "2026-09",
+"valid": 1.0,
+"white": 0.0058,
+"whiteExtra": 0.0033,
+"corrMosaic": 0.959,
+"corr": null,
+"mosaic": "global_monthly_2026_09_mosaic"
 },
 "sinpo|2026-09-03": {
 "date": "2026-09-03",
@@ -4656,6 +5646,15 @@
 "corrMosaic": 0.964,
 "corr": null,
 "mosaic": "global_monthly_2026_10_mosaic"
+},
+"sinpo|2026-10-08": {
+"date": "2026-10-08",
+"valid": 0.0,
+"white": 0.0,
+"whiteExtra": -0.0025,
+"corrMosaic": null,
+"corr": null,
+"mosaic": "daily_2026-10-08"
 },
 "sohae|2016-10": {
 "date": "2016-10",
@@ -4882,6 +5881,15 @@
 "corr": null,
 "mosaic": "global_monthly_2025_10_mosaic"
 },
+"sohae|2025-11": {
+"date": "2025-11",
+"valid": 1.0,
+"white": 0.0006,
+"whiteExtra": -0.0004,
+"corrMosaic": 0.929,
+"corr": null,
+"mosaic": "global_monthly_2025_11_mosaic"
+},
 "sohae|2025-11-10": {
 "date": "2025-11-10",
 "valid": 0.0,
@@ -4936,6 +5944,15 @@
 "corr": null,
 "mosaic": "daily_2025-12-30"
 },
+"sohae|2026-01": {
+"date": "2026-01",
+"valid": 1.0,
+"white": 0.0358,
+"whiteExtra": 0.0348,
+"corrMosaic": 0.67,
+"corr": null,
+"mosaic": "global_monthly_2026_01_mosaic"
+},
 "sohae|2026-02": {
 "date": "2026-02",
 "valid": 1.0,
@@ -4953,6 +5970,15 @@
 "corrMosaic": null,
 "corr": null,
 "mosaic": "daily_2026-02-03"
+},
+"sohae|2026-03": {
+"date": "2026-03",
+"valid": 1.0,
+"white": 0.0008,
+"whiteExtra": -0.0002,
+"corrMosaic": 0.736,
+"corr": null,
+"mosaic": "global_monthly_2026_03_mosaic"
 },
 "sohae|2026-03-10": {
 "date": "2026-03-10",
@@ -5008,6 +6034,15 @@
 "corr": null,
 "mosaic": "daily_2026-04-24"
 },
+"sohae|2026-05": {
+"date": "2026-05",
+"valid": 1.0,
+"white": 0.0011,
+"whiteExtra": 0.0001,
+"corrMosaic": 0.866,
+"corr": null,
+"mosaic": "global_monthly_2026_05_mosaic"
+},
 "sohae|2026-05-29": {
 "date": "2026-05-29",
 "valid": 0.6122,
@@ -5043,6 +6078,15 @@
 "corrMosaic": 0.678,
 "corr": null,
 "mosaic": "daily_2026-06-23"
+},
+"sohae|2026-07": {
+"date": "2026-07",
+"valid": 1.0,
+"white": 0.001,
+"whiteExtra": 0.0,
+"corrMosaic": 0.801,
+"corr": null,
+"mosaic": "global_monthly_2026_07_mosaic"
 },
 "sohae|2026-07-18": {
 "date": "2026-07-18",
@@ -5080,6 +6124,15 @@
 "corr": null,
 "mosaic": "daily_2026-08-27"
 },
+"sohae|2026-09": {
+"date": "2026-09",
+"valid": 1.0,
+"white": 0.0017,
+"whiteExtra": 0.0007,
+"corrMosaic": 0.921,
+"corr": null,
+"mosaic": "global_monthly_2026_09_mosaic"
+},
 "sohae|2026-09-18": {
 "date": "2026-09-18",
 "valid": 1.0,
@@ -5106,6 +6159,24 @@
 "corrMosaic": 0.001,
 "corr": null,
 "mosaic": "daily_2026-10-01"
+},
+"sohae|2026-10-08": {
+"date": "2026-10-08",
+"valid": 0.8976,
+"white": 0.0016,
+"whiteExtra": 0.0006,
+"corrMosaic": 0.662,
+"corr": null,
+"mosaic": "daily_2026-10-08"
+},
+"sohae|2026-10-11": {
+"date": "2026-10-11",
+"valid": 0.0,
+"white": 0.0,
+"whiteExtra": -0.001,
+"corrMosaic": null,
+"corr": null,
+"mosaic": "daily_2026-10-11"
 },
 "sunan|2016-10": {
 "date": "2016-10",
@@ -5349,6 +6420,15 @@
 "corr": null,
 "mosaic": "daily_2025-10-21"
 },
+"sunan|2025-11": {
+"date": "2025-11",
+"valid": 1.0,
+"white": 0.0005,
+"whiteExtra": -0.0002,
+"corrMosaic": 0.797,
+"corr": null,
+"mosaic": "global_monthly_2025_11_mosaic"
+},
 "sunan|2025-11-05": {
 "date": "2025-11-05",
 "valid": 1.0,
@@ -5402,6 +6482,15 @@
 "corrMosaic": 0.296,
 "corr": null,
 "mosaic": "daily_2025-12-12"
+},
+"sunan|2026-01": {
+"date": "2026-01",
+"valid": 1.0,
+"white": 0.0014,
+"whiteExtra": 0.0007,
+"corrMosaic": 0.644,
+"corr": null,
+"mosaic": "global_monthly_2026_01_mosaic"
 },
 "sunan|2026-01-09": {
 "date": "2026-01-09",
@@ -5466,6 +6555,15 @@
 "corr": -0.044,
 "mosaic": "daily_2026-02-28"
 },
+"sunan|2026-03": {
+"date": "2026-03",
+"valid": 1.0,
+"white": 0.0003,
+"whiteExtra": -0.0004,
+"corrMosaic": 0.708,
+"corr": null,
+"mosaic": "global_monthly_2026_03_mosaic"
+},
 "sunan|2026-03-10": {
 "date": "2026-03-10",
 "valid": 1.0,
@@ -5529,6 +6627,15 @@
 "corr": null,
 "mosaic": "daily_2026-04-21"
 },
+"sunan|2026-05": {
+"date": "2026-05",
+"valid": 1.0,
+"white": 0.0005,
+"whiteExtra": -0.0002,
+"corrMosaic": 0.7,
+"corr": null,
+"mosaic": "global_monthly_2026_05_mosaic"
+},
 "sunan|2026-05-31": {
 "date": "2026-05-31",
 "valid": 0.8029,
@@ -5556,6 +6663,15 @@
 "corr": 0.667,
 "mosaic": "daily_2026-06-23"
 },
+"sunan|2026-07": {
+"date": "2026-07",
+"valid": 1.0,
+"white": 0.4101,
+"whiteExtra": 0.4094,
+"corrMosaic": 0.049,
+"corr": null,
+"mosaic": "global_monthly_2026_07_mosaic"
+},
 "sunan|2026-08": {
 "date": "2026-08",
 "valid": 1.0,
@@ -5573,6 +6689,15 @@
 "corrMosaic": 0.514,
 "corr": 0.775,
 "mosaic": "daily_2026-08-27"
+},
+"sunan|2026-09": {
+"date": "2026-09",
+"valid": 1.0,
+"white": 0.0003,
+"whiteExtra": -0.0004,
+"corrMosaic": 0.704,
+"corr": null,
+"mosaic": "global_monthly_2026_09_mosaic"
 },
 "sunan|2026-09-06": {
 "date": "2026-09-06",
@@ -5600,6 +6725,15 @@
 "corrMosaic": 0.742,
 "corr": null,
 "mosaic": "daily_2026-10-01"
+},
+"sunan|2026-10-08": {
+"date": "2026-10-08",
+"valid": 0.0,
+"white": 0.0,
+"whiteExtra": -0.0007,
+"corrMosaic": null,
+"corr": null,
+"mosaic": "daily_2026-10-08"
 },
 "tonghae|2016-10": {
 "date": "2016-10",
@@ -5817,6 +6951,15 @@
 "corr": null,
 "mosaic": "daily_2025-10-20"
 },
+"tonghae|2025-11": {
+"date": "2025-11",
+"valid": 1.0,
+"white": 0.0002,
+"whiteExtra": 0.0002,
+"corrMosaic": 0.977,
+"corr": null,
+"mosaic": "global_monthly_2025_11_mosaic"
+},
 "tonghae|2025-11-22": {
 "date": "2025-11-22",
 "valid": 0.0,
@@ -5853,6 +6996,15 @@
 "corr": null,
 "mosaic": "daily_2025-12-09"
 },
+"tonghae|2026-01": {
+"date": "2026-01",
+"valid": 1.0,
+"white": 0.0205,
+"whiteExtra": 0.0205,
+"corrMosaic": 0.802,
+"corr": null,
+"mosaic": "global_monthly_2026_01_mosaic"
+},
 "tonghae|2026-01-03": {
 "date": "2026-01-03",
 "valid": 1.0,
@@ -5879,6 +7031,15 @@
 "corrMosaic": 0.585,
 "corr": 0.751,
 "mosaic": "daily_2026-02-25"
+},
+"tonghae|2026-03": {
+"date": "2026-03",
+"valid": 1.0,
+"white": 0.0002,
+"whiteExtra": 0.0002,
+"corrMosaic": 0.711,
+"corr": null,
+"mosaic": "global_monthly_2026_03_mosaic"
 },
 "tonghae|2026-03-29": {
 "date": "2026-03-29",
@@ -5907,6 +7068,15 @@
 "corr": 0.881,
 "mosaic": "daily_2026-04-16"
 },
+"tonghae|2026-05": {
+"date": "2026-05",
+"valid": 1.0,
+"white": 0.0088,
+"whiteExtra": 0.0088,
+"corrMosaic": 0.872,
+"corr": null,
+"mosaic": "global_monthly_2026_05_mosaic"
+},
 "tonghae|2026-05-31": {
 "date": "2026-05-31",
 "valid": 0.8246,
@@ -5934,6 +7104,15 @@
 "corr": null,
 "mosaic": "daily_2026-06-02"
 },
+"tonghae|2026-07": {
+"date": "2026-07",
+"valid": 1.0,
+"white": 0.0002,
+"whiteExtra": 0.0002,
+"corrMosaic": 0.792,
+"corr": null,
+"mosaic": "global_monthly_2026_07_mosaic"
+},
 "tonghae|2026-07-22": {
 "date": "2026-07-22",
 "valid": 1.0,
@@ -5960,6 +7139,15 @@
 "corrMosaic": null,
 "corr": null,
 "mosaic": "daily_2026-08-09"
+},
+"tonghae|2026-09": {
+"date": "2026-09",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": 0.0,
+"corrMosaic": 0.906,
+"corr": null,
+"mosaic": "global_monthly_2026_09_mosaic"
 },
 "tonghae|2026-09-12": {
 "date": "2026-09-12",
@@ -6192,6 +7380,15 @@
 "corr": 0.788,
 "mosaic": "daily_2025-10-16"
 },
+"yongbyon|2025-11": {
+"date": "2025-11",
+"valid": 1.0,
+"white": 0.0001,
+"whiteExtra": 0.0,
+"corrMosaic": 0.966,
+"corr": null,
+"mosaic": "global_monthly_2025_11_mosaic"
+},
 "yongbyon|2025-11-22": {
 "date": "2025-11-22",
 "valid": 1.0,
@@ -6209,6 +7406,15 @@
 "corrMosaic": 0.952,
 "corr": null,
 "mosaic": "global_monthly_2025_12_mosaic"
+},
+"yongbyon|2026-01": {
+"date": "2026-01",
+"valid": 1.0,
+"white": 0.0332,
+"whiteExtra": 0.0331,
+"corrMosaic": 0.866,
+"corr": null,
+"mosaic": "global_monthly_2026_01_mosaic"
 },
 "yongbyon|2026-02": {
 "date": "2026-02",
@@ -6246,6 +7452,15 @@
 "corr": 0.831,
 "mosaic": "daily_2026-02-28"
 },
+"yongbyon|2026-03": {
+"date": "2026-03",
+"valid": 1.0,
+"white": 0.0,
+"whiteExtra": -0.0001,
+"corrMosaic": 0.906,
+"corr": null,
+"mosaic": "global_monthly_2026_03_mosaic"
+},
 "yongbyon|2026-03-20": {
 "date": "2026-03-20",
 "valid": 1.0,
@@ -6271,6 +7486,15 @@
 "contrast": 28.7,
 "corr": 0.809,
 "mosaic": "daily_2026-04-19"
+},
+"yongbyon|2026-05": {
+"date": "2026-05",
+"valid": 1.0,
+"white": 0.0001,
+"whiteExtra": 0.0,
+"corrMosaic": 0.904,
+"corr": null,
+"mosaic": "global_monthly_2026_05_mosaic"
 },
 "yongbyon|2026-05-31": {
 "date": "2026-05-31",
@@ -6308,6 +7532,15 @@
 "corr": null,
 "mosaic": "daily_2026-06-23"
 },
+"yongbyon|2026-07": {
+"date": "2026-07",
+"valid": 1.0,
+"white": 0.346,
+"whiteExtra": 0.3459,
+"corrMosaic": 0.267,
+"corr": null,
+"mosaic": "global_monthly_2026_07_mosaic"
+},
 "yongbyon|2026-08": {
 "date": "2026-08",
 "valid": 1.0,
@@ -6325,6 +7558,15 @@
 "corrMosaic": 0.747,
 "corr": 0.83,
 "mosaic": "daily_2026-08-27"
+},
+"yongbyon|2026-09": {
+"date": "2026-09",
+"valid": 1.0,
+"white": 0.0002,
+"whiteExtra": 0.0001,
+"corrMosaic": 0.886,
+"corr": null,
+"mosaic": "global_monthly_2026_09_mosaic"
 },
 "yongbyon|2026-09-11": {
 "date": "2026-09-11",

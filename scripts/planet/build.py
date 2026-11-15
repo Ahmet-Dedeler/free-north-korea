@@ -39,8 +39,8 @@ Outputs:
       tiles/<z>/<date>/<x>_<y>.png          lossless originals: what we paid for, never fetched twice
       sheets/<id>.jpg                       preview contact sheets for checking by eye
 
-Accounts: PV_PAT_n / PV_UID_n in .env.local, n = 2, 3, 4 (account 1 is overdrawn). The richest account pays for each
-tile. A run stops at --max-credits, when every account is at FLOOR, or if a tile starts costing more than MAX_TILE_COST.
+Accounts: PV_PAT_n / PV_UID_n in .env.local, n = 1 to 6; an account whose token is refused is skipped. The richest
+account pays for each tile. A run stops at --max-credits, when every account is at FLOOR, or if a tile starts costing more than MAX_TILE_COST.
 """
 
 from __future__ import annotations
@@ -64,7 +64,7 @@ from PIL import Image, ImageDraw
 
 ROOT = Path(__file__).resolve().parents[2]
 API = "https://ai.planet.com/api"
-ACCOUNTS = ("2", "3", "4")
+ACCOUNTS = ("1", "2", "3", "4", "5", "6")
 # Never let an account go below this: keeps some credits for look-ups, and overdrawing is what hurt account 1.
 FLOOR = 300.0
 # Measured 1.00-1.04 per tile. Anything well above means the pricing changed under us: stop and look.
@@ -89,8 +89,8 @@ RECENT_MONTHS = 24
 DAILY_DELAY_DAYS = 31
 WEAPONS_STEP = 2
 CAMP_STEP = 3
-WEAPONS_RECENT_STEP = 2
-CAMP_RECENT_STEP = 3
+WEAPONS_RECENT_STEP = 1
+CAMP_RECENT_STEP = 1
 MAX_CANDIDATES = 6
 # Candidate days: cloud inside the square, from Sentinel-2's scene classification, percent.
 MAX_S2_CLOUD = 5.0
@@ -150,7 +150,16 @@ class Pool:
         }
         self.lock = threading.Lock()
         self.max_credits = max_credits
-        self.balance = {a: self._balance(a) for a in self.headers}
+        self.balance = {}
+        for a in list(self.headers):
+            try:
+                self.balance[a] = self._balance(a)
+            except urllib.error.HTTPError as e:
+                # A refused token (401/403) takes that account out of the run; the others carry on.
+                print(f"account {a}: HTTP {e.code}, skipped", flush=True)
+                del self.headers[a]
+        if not self.balance:
+            raise SystemExit("no Planet account accepted its token")
         self.start = dict(self.balance)
         self.paid = 0  # tiles charged this run
         self.since_check = 0
@@ -329,7 +338,7 @@ def plan_site(site: dict, scl: dict, today: dt.date, rejected: dict) -> list[dic
             frames.append({"slot": d, "kind": "monthly", "candidates": [c for c in cands if c not in no]})
     # Recent months as composites too: unlike the daily images their colours match, so the slider shows real change.
     recent = months_back(dt.date.fromisoformat(last_full + "-01"), 12)
-    picks = recent[:: WEAPONS_RECENT_STEP] if site["category"] in ("nuclear", "missile") else recent[:: CAMP_RECENT_STEP][:3]
+    picks = recent[:: WEAPONS_RECENT_STEP] if site["category"] in ("nuclear", "missile") else recent[:: CAMP_RECENT_STEP]
     for d in picks:
         if d not in [f["slot"] for f in frames] and d not in no:
             frames.append({"slot": d, "kind": "monthly", "candidates": [d]})

@@ -31,7 +31,8 @@ No searches, so dates come from free data.
 
 1. **History:** the monthly mosaic of October each year since 2016, so the season matches (September or November if
    October fails).
-2. **Recent composites:** every 2nd of the last 12 months at weapons sites, every 3rd (three at most) at camps.
+2. **Recent composites:** every recent month at every site (until 2026-11-15: every 2nd at weapons sites, every 3rd
+   and three at most at camps).
 3. **Single days:** one per 2 months (weapons sites) or 3 months (camps) over the last 24 months, from days our Sentinel-2
    run measured as clear inside the square (`data/sentinel/scl-cache.json`).
 
@@ -80,6 +81,12 @@ First full run, 2026-11-05: 17 sites, 336 frames (234 monthly composites, 102 si
 phone copies. It spent about 19,600 credits on the full run and on replacing rejected frames, plus the previews and
 Sohae before that. About 6,330 credits are left across accounts 2, 3 and 4 (2,110 each). Slots with no good candidate
 stay empty, which is why sites have different frame counts: Camp 16 has 1 single day, Kusong has 10.
+
+Second run, 2026-11-15: the recent months that the first run skipped. 110 frames fetched for about 7,360 credits, 5
+rejected by eye (cloud or haze in the July, June and August composites of Camp 14, Camp 15, Camp 18, Kangson and
+Pyongsan). The site now has 441 frames (336 monthly composites, 105 single days), 192 MB including the phone copies.
+The tokens of accounts 2 to 5 are refused, so the script skips them; accounts 1 and 6 paid, and about 3,640 credits
+are left (1,000 and 2,639).
 
 Night lights, crop greenness and ship radar gain nothing from Planet, so they stay as they are. Sentinel-2 stays the
 monthly record: it is free, its colours are comparable, and it runs in the weekly Action.

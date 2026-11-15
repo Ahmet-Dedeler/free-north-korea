@@ -148,6 +148,18 @@
      "bytes": 517088
     },
     {
+     "date": "2025-11",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2025_11_mosaic",
+     "sizePx": 2086,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.876,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 425236
+    },
+    {
      "date": "2025-11-10",
      "kind": "daily",
      "mosaic": "daily_2025-11-10",
@@ -158,6 +170,42 @@
      "s2Cloud": 0.14,
      "s2Scene": "S2C_52SBJ_20251110_0_L2A",
      "bytes": 338998
+    },
+    {
+     "date": "2025-12",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2025_12_mosaic",
+     "sizePx": 2086,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.774,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 461696
+    },
+    {
+     "date": "2026-02",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2026_02_mosaic",
+     "sizePx": 2086,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.677,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 505020
+    },
+    {
+     "date": "2026-03",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2026_03_mosaic",
+     "sizePx": 2086,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.899,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 505170
     },
     {
      "date": "2026-03-10",
@@ -182,6 +230,42 @@
      "s2Cloud": null,
      "s2Scene": null,
      "bytes": 555608
+    },
+    {
+     "date": "2026-05",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2026_05_mosaic",
+     "sizePx": 2086,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.91,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 586660
+    },
+    {
+     "date": "2026-06",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2026_06_mosaic",
+     "sizePx": 2086,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.86,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 433620
+    },
+    {
+     "date": "2026-09",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2026_09_mosaic",
+     "sizePx": 2086,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.937,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 503948
     },
     {
      "date": "2026-10",
@@ -220,7 +304,7 @@
     126.10691,
     39.60618
    ],
-   "checked": "2026-11-05"
+   "checked": "2026-11-15"
   },
   {
    "id": "kwanliso-15",
@@ -382,6 +466,30 @@
      "bytes": 530858
     },
     {
+     "date": "2025-11",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2025_11_mosaic",
+     "sizePx": 2089,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.982,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 474072
+    },
+    {
+     "date": "2025-12",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2025_12_mosaic",
+     "sizePx": 2089,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.96,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 440712
+    },
+    {
      "date": "2025-12-22",
      "kind": "daily",
      "mosaic": "daily_2025-12-22",
@@ -392,6 +500,30 @@
      "s2Cloud": 1.71,
      "s2Scene": "S2B_52SCJ_20251222_0_L2A",
      "bytes": 374424
+    },
+    {
+     "date": "2026-02",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2026_02_mosaic",
+     "sizePx": 2089,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.889,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 559288
+    },
+    {
+     "date": "2026-03",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2026_03_mosaic",
+     "sizePx": 2089,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.961,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 551266
     },
     {
      "date": "2026-04",
@@ -418,6 +550,42 @@
      "bytes": 815104
     },
     {
+     "date": "2026-05",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2026_05_mosaic",
+     "sizePx": 2089,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.895,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 596774
+    },
+    {
+     "date": "2026-08",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2026_08_mosaic",
+     "sizePx": 2089,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.822,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 603368
+    },
+    {
+     "date": "2026-09",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2026_09_mosaic",
+     "sizePx": 2089,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.856,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 539462
+    },
+    {
      "date": "2026-09-11",
      "kind": "daily",
      "mosaic": "daily_2026-09-11",
@@ -440,6 +608,18 @@
      "s2Cloud": null,
      "s2Scene": null,
      "bytes": 667306
+    },
+    {
+     "date": "2026-10-08",
+     "kind": "daily",
+     "mosaic": "daily_2026-10-08",
+     "sizePx": 2089,
+     "valid": 1.0,
+     "corr": 0.817,
+     "corrMosaic": 0.929,
+     "s2Cloud": 0.0,
+     "s2Scene": "S2A_52SCJ_20261008_1_L2A",
+     "bytes": 323584
     }
    ],
    "name": "Camp 15, Yodok",
@@ -454,7 +634,7 @@
     126.89587,
     39.70877
    ],
-   "checked": "2026-11-05"
+   "checked": "2026-11-15"
   },
   {
    "id": "kwanliso-16",
@@ -580,6 +760,66 @@
      "bytes": 540592
     },
     {
+     "date": "2025-11",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2025_11_mosaic",
+     "sizePx": 2139,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.908,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 520950
+    },
+    {
+     "date": "2025-12",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2025_12_mosaic",
+     "sizePx": 2139,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.859,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 301124
+    },
+    {
+     "date": "2026-01",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2026_01_mosaic",
+     "sizePx": 2139,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.816,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 626848
+    },
+    {
+     "date": "2026-02",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2026_02_mosaic",
+     "sizePx": 2139,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.676,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 573870
+    },
+    {
+     "date": "2026-03",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2026_03_mosaic",
+     "sizePx": 2139,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.774,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 519048
+    },
+    {
      "date": "2026-04",
      "kind": "monthly",
      "mosaic": "global_monthly_2026_04_mosaic",
@@ -602,6 +842,42 @@
      "s2Cloud": 0.06,
      "s2Scene": "S2B_52TEL_20260421_0_L2A",
      "bytes": 681300
+    },
+    {
+     "date": "2026-05",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2026_05_mosaic",
+     "sizePx": 2139,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.62,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 424360
+    },
+    {
+     "date": "2026-08",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2026_08_mosaic",
+     "sizePx": 2139,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.609,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 496758
+    },
+    {
+     "date": "2026-09",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2026_09_mosaic",
+     "sizePx": 2139,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.789,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 616088
     },
     {
      "date": "2026-10",
@@ -628,7 +904,7 @@
     129.31432,
     41.32143
    ],
-   "checked": "2026-11-05"
+   "checked": "2026-11-15"
   },
   {
    "id": "kwanliso-18",
@@ -778,6 +1054,18 @@
      "bytes": 557258
     },
     {
+     "date": "2025-11",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2025_11_mosaic",
+     "sizePx": 2085,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.909,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 446548
+    },
+    {
      "date": "2025-11-10",
      "kind": "daily",
      "mosaic": "daily_2025-11-10",
@@ -788,6 +1076,42 @@
      "s2Cloud": 0.08,
      "s2Scene": "S2C_52SBJ_20251110_0_L2A",
      "bytes": 345772
+    },
+    {
+     "date": "2025-12",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2025_12_mosaic",
+     "sizePx": 2085,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.8,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 470186
+    },
+    {
+     "date": "2026-02",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2026_02_mosaic",
+     "sizePx": 2085,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.679,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 481286
+    },
+    {
+     "date": "2026-03",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2026_03_mosaic",
+     "sizePx": 2085,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.903,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 480800
     },
     {
      "date": "2026-03-10",
@@ -814,6 +1138,18 @@
      "bytes": 551548
     },
     {
+     "date": "2026-05",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2026_05_mosaic",
+     "sizePx": 2085,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.894,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 556866
+    },
+    {
      "date": "2026-05-31",
      "kind": "daily",
      "mosaic": "daily_2026-05-31",
@@ -824,6 +1160,30 @@
      "s2Cloud": 0.0,
      "s2Scene": "S2A_52SBJ_20260531_1_L2A",
      "bytes": 807528
+    },
+    {
+     "date": "2026-06",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2026_06_mosaic",
+     "sizePx": 2085,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.834,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 451800
+    },
+    {
+     "date": "2026-09",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2026_09_mosaic",
+     "sizePx": 2085,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.913,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 495524
     },
     {
      "date": "2026-10",
@@ -862,7 +1222,7 @@
     126.13069,
     39.59411
    ],
-   "checked": "2026-11-05"
+   "checked": "2026-11-15"
   },
   {
    "id": "kwanliso-22",
@@ -1036,6 +1396,18 @@
      "bytes": 895166
     },
     {
+     "date": "2025-11",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2025_11_mosaic",
+     "sizePx": 2183,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.965,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 622208
+    },
+    {
      "date": "2025-11-22",
      "kind": "daily",
      "mosaic": "daily_2025-11-22",
@@ -1046,6 +1418,30 @@
      "s2Cloud": 0.0,
      "s2Scene": "S2B_52TEN_20251122_0_L2A",
      "bytes": 503418
+    },
+    {
+     "date": "2026-02",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2026_02_mosaic",
+     "sizePx": 2183,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.921,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 853060
+    },
+    {
+     "date": "2026-03",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2026_03_mosaic",
+     "sizePx": 2183,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.938,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 601622
     },
     {
      "date": "2026-04",
@@ -1072,6 +1468,30 @@
      "bytes": 923788
     },
     {
+     "date": "2026-05",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2026_05_mosaic",
+     "sizePx": 2183,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.894,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 579754
+    },
+    {
+     "date": "2026-06",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2026_06_mosaic",
+     "sizePx": 2183,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.853,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 573584
+    },
+    {
      "date": "2026-06-02",
      "kind": "daily",
      "mosaic": "daily_2026-06-02",
@@ -1082,6 +1502,30 @@
      "s2Cloud": 0.0,
      "s2Scene": "S2C_52TEN_20260602_0_L2A",
      "bytes": 926254
+    },
+    {
+     "date": "2026-08",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2026_08_mosaic",
+     "sizePx": 2183,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.636,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 616840
+    },
+    {
+     "date": "2026-09",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2026_09_mosaic",
+     "sizePx": 2183,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.865,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 634218
     },
     {
      "date": "2026-09-10",
@@ -1106,6 +1550,18 @@
      "s2Cloud": null,
      "s2Scene": null,
      "bytes": 644240
+    },
+    {
+     "date": "2026-10-08",
+     "kind": "daily",
+     "mosaic": "daily_2026-10-08",
+     "sizePx": 2183,
+     "valid": 0.9998,
+     "corr": null,
+     "corrMosaic": 0.933,
+     "s2Cloud": 0.0,
+     "s2Scene": "S2B_52TEN_20261008_0_L2A",
+     "bytes": 977258
     }
    ],
    "name": "Camp 22, Hoeryong",
@@ -1120,7 +1576,7 @@
     129.92445,
     42.61899
    ],
-   "checked": "2026-11-05"
+   "checked": "2026-11-15"
   },
   {
    "id": "kwanliso-25",
@@ -1270,6 +1726,18 @@
      "bytes": 594488
     },
     {
+     "date": "2025-11",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2025_11_mosaic",
+     "sizePx": 2158,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.906,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 600628
+    },
+    {
      "date": "2025-11-19",
      "kind": "daily",
      "mosaic": "daily_2025-11-19",
@@ -1280,6 +1748,54 @@
      "s2Cloud": 0.04,
      "s2Scene": "S2B_52TEM_20251119_0_L2A",
      "bytes": 675518
+    },
+    {
+     "date": "2025-12",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2025_12_mosaic",
+     "sizePx": 2158,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.888,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 408530
+    },
+    {
+     "date": "2026-01",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2026_01_mosaic",
+     "sizePx": 2158,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.702,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 486898
+    },
+    {
+     "date": "2026-02",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2026_02_mosaic",
+     "sizePx": 2158,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.887,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 746258
+    },
+    {
+     "date": "2026-03",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2026_03_mosaic",
+     "sizePx": 2158,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.863,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 585054
     },
     {
      "date": "2026-04",
@@ -1306,6 +1822,30 @@
      "bytes": 978240
     },
     {
+     "date": "2026-05",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2026_05_mosaic",
+     "sizePx": 2158,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.911,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 453950
+    },
+    {
+     "date": "2026-06",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2026_06_mosaic",
+     "sizePx": 2158,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.862,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 654986
+    },
+    {
      "date": "2026-06-02",
      "kind": "daily",
      "mosaic": "daily_2026-06-02",
@@ -1328,6 +1868,30 @@
      "s2Cloud": null,
      "s2Scene": null,
      "bytes": 667666
+    },
+    {
+     "date": "2026-08",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2026_08_mosaic",
+     "sizePx": 2158,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.727,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 623036
+    },
+    {
+     "date": "2026-09",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2026_09_mosaic",
+     "sizePx": 2158,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.874,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 514764
     },
     {
      "date": "2026-09-20",
@@ -1366,7 +1930,7 @@
     129.76737,
     41.86748
    ],
-   "checked": "2026-11-05"
+   "checked": "2026-11-15"
   },
   {
    "id": "kyohwaso-1-kaechon",
@@ -1516,6 +2080,54 @@
      "bytes": 269648
     },
     {
+     "date": "2025-11",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2025_11_mosaic",
+     "sizePx": 1393,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.895,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 275934
+    },
+    {
+     "date": "2025-12",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2025_12_mosaic",
+     "sizePx": 1393,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.859,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 303866
+    },
+    {
+     "date": "2026-02",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2026_02_mosaic",
+     "sizePx": 1393,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.847,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 263402
+    },
+    {
+     "date": "2026-03",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2026_03_mosaic",
+     "sizePx": 1393,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.867,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 244518
+    },
+    {
      "date": "2026-04",
      "kind": "monthly",
      "mosaic": "global_monthly_2026_04_mosaic",
@@ -1540,6 +2152,30 @@
      "bytes": 165416
     },
     {
+     "date": "2026-05",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2026_05_mosaic",
+     "sizePx": 1393,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.854,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 256742
+    },
+    {
+     "date": "2026-06",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2026_06_mosaic",
+     "sizePx": 1393,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.802,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 344640
+    },
+    {
      "date": "2026-06-23",
      "kind": "daily",
      "mosaic": "daily_2026-06-23",
@@ -1550,6 +2186,30 @@
      "s2Cloud": 0.0,
      "s2Scene": "S2B_51TYE_20260623_0_L2A",
      "bytes": 504596
+    },
+    {
+     "date": "2026-08",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2026_08_mosaic",
+     "sizePx": 1393,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.737,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 272298
+    },
+    {
+     "date": "2026-09",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2026_09_mosaic",
+     "sizePx": 1393,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.894,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 286730
     },
     {
      "date": "2026-10",
@@ -1588,7 +2248,7 @@
     125.95297,
     39.73135
    ],
-   "checked": "2026-11-05"
+   "checked": "2026-11-15"
   },
   {
    "id": "kyohwaso-12-chongori",
@@ -1750,6 +2410,42 @@
      "bytes": 400556
     },
     {
+     "date": "2025-11",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2025_11_mosaic",
+     "sizePx": 1447,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.775,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 299098
+    },
+    {
+     "date": "2026-02",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2026_02_mosaic",
+     "sizePx": 1447,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.687,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 295652
+    },
+    {
+     "date": "2026-03",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2026_03_mosaic",
+     "sizePx": 1447,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.761,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 277570
+    },
+    {
      "date": "2026-04",
      "kind": "monthly",
      "mosaic": "global_monthly_2026_04_mosaic",
@@ -1774,6 +2470,30 @@
      "bytes": 418052
     },
     {
+     "date": "2026-05",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2026_05_mosaic",
+     "sizePx": 1447,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.905,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 240352
+    },
+    {
+     "date": "2026-06",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2026_06_mosaic",
+     "sizePx": 1447,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.868,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 260288
+    },
+    {
      "date": "2026-06-02",
      "kind": "daily",
      "mosaic": "daily_2026-06-02",
@@ -1784,6 +2504,30 @@
      "s2Cloud": 0.0,
      "s2Scene": "S2C_52TEM_20260602_0_L2A",
      "bytes": 390538
+    },
+    {
+     "date": "2026-08",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2026_08_mosaic",
+     "sizePx": 1447,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.89,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 248554
+    },
+    {
+     "date": "2026-09",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2026_09_mosaic",
+     "sizePx": 1447,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.946,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 257166
     },
     {
      "date": "2026-09-12",
@@ -1822,7 +2566,7 @@
     129.7866,
     42.2316
    ],
-   "checked": "2026-11-05"
+   "checked": "2026-11-15"
   },
   {
    "id": "yongbyon",
@@ -2008,6 +2752,18 @@
      "bytes": 674592
     },
     {
+     "date": "2025-11",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2025_11_mosaic",
+     "sizePx": 2092,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.966,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 479790
+    },
+    {
      "date": "2025-11-22",
      "kind": "daily",
      "mosaic": "daily_2025-11-22",
@@ -2044,6 +2800,18 @@
      "bytes": 662568
     },
     {
+     "date": "2026-03",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2026_03_mosaic",
+     "sizePx": 2092,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.906,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 579090
+    },
+    {
      "date": "2026-03-20",
      "kind": "daily",
      "mosaic": "daily_2026-03-20",
@@ -2066,6 +2834,18 @@
      "s2Cloud": null,
      "s2Scene": null,
      "bytes": 501588
+    },
+    {
+     "date": "2026-05",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2026_05_mosaic",
+     "sizePx": 2092,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.904,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 504782
     },
     {
      "date": "2026-06",
@@ -2104,6 +2884,18 @@
      "bytes": 952686
     },
     {
+     "date": "2026-09",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2026_09_mosaic",
+     "sizePx": 2092,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.886,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 668710
+    },
+    {
      "date": "2026-09-11",
      "kind": "daily",
      "mosaic": "daily_2026-09-11",
@@ -2140,7 +2932,7 @@
     125.79891,
     39.83448
    ],
-   "checked": "2026-11-05"
+   "checked": "2026-11-15"
   },
   {
    "id": "kangson",
@@ -2314,6 +3106,18 @@
      "bytes": 350146
     },
     {
+     "date": "2025-11",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2025_11_mosaic",
+     "sizePx": 1378,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.831,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 265776
+    },
+    {
      "date": "2025-11-10",
      "kind": "daily",
      "mosaic": "daily_2025-11-10",
@@ -2338,6 +3142,18 @@
      "bytes": 236964
     },
     {
+     "date": "2026-01",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2026_01_mosaic",
+     "sizePx": 1378,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.604,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 198924
+    },
+    {
      "date": "2026-02",
      "kind": "monthly",
      "mosaic": "global_monthly_2026_02_mosaic",
@@ -2348,6 +3164,18 @@
      "s2Cloud": null,
      "s2Scene": null,
      "bytes": 316670
+    },
+    {
+     "date": "2026-03",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2026_03_mosaic",
+     "sizePx": 1378,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.69,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 280736
     },
     {
      "date": "2026-03-10",
@@ -2374,6 +3202,18 @@
      "bytes": 248950
     },
     {
+     "date": "2026-05",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2026_05_mosaic",
+     "sizePx": 1378,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.628,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 196018
+    },
+    {
      "date": "2026-06",
      "kind": "monthly",
      "mosaic": "global_monthly_2026_06_mosaic",
@@ -2396,6 +3236,18 @@
      "s2Cloud": null,
      "s2Scene": null,
      "bytes": 278138
+    },
+    {
+     "date": "2026-09",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2026_09_mosaic",
+     "sizePx": 1378,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.836,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 303834
     },
     {
      "date": "2026-09-16",
@@ -2434,7 +3286,7 @@
     125.64055,
     38.98
    ],
-   "checked": "2026-11-05"
+   "checked": "2026-11-15"
   },
   {
    "id": "punggye-ri",
@@ -2572,6 +3424,18 @@
      "bytes": 354046
     },
     {
+     "date": "2025-11",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2025_11_mosaic",
+     "sizePx": 1426,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.596,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 245672
+    },
+    {
      "date": "2026-04",
      "kind": "monthly",
      "mosaic": "global_monthly_2026_04_mosaic",
@@ -2594,6 +3458,30 @@
      "s2Cloud": 0.29,
      "s2Scene": "S2B_52TEL_20260421_0_L2A",
      "bytes": 409274
+    },
+    {
+     "date": "2026-05",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2026_05_mosaic",
+     "sizePx": 1426,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.678,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 218384
+    },
+    {
+     "date": "2026-09",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2026_09_mosaic",
+     "sizePx": 1426,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.695,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 238854
     },
     {
      "date": "2026-10",
@@ -2620,7 +3508,7 @@
     129.11811,
     41.30109
    ],
-   "checked": "2026-11-05"
+   "checked": "2026-11-15"
   },
   {
    "id": "pyongsan",
@@ -2794,6 +3682,18 @@
      "bytes": 202550
     },
     {
+     "date": "2025-11",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2025_11_mosaic",
+     "sizePx": 1366,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.927,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 282408
+    },
+    {
      "date": "2025-12",
      "kind": "monthly",
      "mosaic": "global_monthly_2025_12_mosaic",
@@ -2830,6 +3730,18 @@
      "bytes": 366752
     },
     {
+     "date": "2026-03",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2026_03_mosaic",
+     "sizePx": 1366,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.842,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 281550
+    },
+    {
      "date": "2026-04",
      "kind": "monthly",
      "mosaic": "global_monthly_2026_04_mosaic",
@@ -2852,6 +3764,18 @@
      "s2Cloud": 0.13,
      "s2Scene": "S2B_52SBH_20260424_0_L2A",
      "bytes": 400020
+    },
+    {
+     "date": "2026-05",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2026_05_mosaic",
+     "sizePx": 1366,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.839,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 291364
     },
     {
      "date": "2026-06",
@@ -2890,6 +3814,18 @@
      "bytes": 306972
     },
     {
+     "date": "2026-09",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2026_09_mosaic",
+     "sizePx": 1366,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.843,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 286136
+    },
+    {
      "date": "2026-10",
      "kind": "monthly",
      "mosaic": "global_monthly_2026_10_mosaic",
@@ -2900,6 +3836,18 @@
      "s2Cloud": null,
      "s2Scene": null,
      "bytes": 326426
+    },
+    {
+     "date": "2026-10-08",
+     "kind": "daily",
+     "mosaic": "daily_2026-10-08",
+     "sizePx": 1366,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.904,
+     "s2Cloud": 0.0,
+     "s2Scene": "S2A_52SBH_20261008_1_L2A",
+     "bytes": 223064
     }
    ],
    "name": "Pyongsan uranium mill",
@@ -2914,7 +3862,7 @@
     126.46131,
     38.34001
    ],
-   "checked": "2026-11-05"
+   "checked": "2026-11-15"
   },
   {
    "id": "sohae",
@@ -3076,6 +4024,18 @@
      "bytes": 495474
     },
     {
+     "date": "2025-11",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2025_11_mosaic",
+     "sizePx": 2088,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.929,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 371302
+    },
+    {
      "date": "2025-11-20",
      "kind": "daily",
      "mosaic": "daily_2025-11-20",
@@ -3112,6 +4072,18 @@
      "bytes": 489928
     },
     {
+     "date": "2026-03",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2026_03_mosaic",
+     "sizePx": 2088,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.736,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 488494
+    },
+    {
      "date": "2026-04",
      "kind": "monthly",
      "mosaic": "global_monthly_2026_04_mosaic",
@@ -3122,6 +4094,18 @@
      "s2Cloud": null,
      "s2Scene": null,
      "bytes": 410496
+    },
+    {
+     "date": "2026-05",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2026_05_mosaic",
+     "sizePx": 2088,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.866,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 387486
     },
     {
      "date": "2026-06",
@@ -3136,6 +4120,18 @@
      "bytes": 426794
     },
     {
+     "date": "2026-07",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2026_07_mosaic",
+     "sizePx": 2088,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.801,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 434614
+    },
+    {
      "date": "2026-08",
      "kind": "monthly",
      "mosaic": "global_monthly_2026_08_mosaic",
@@ -3146,6 +4142,18 @@
      "s2Cloud": null,
      "s2Scene": null,
      "bytes": 487912
+    },
+    {
+     "date": "2026-09",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2026_09_mosaic",
+     "sizePx": 2088,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.921,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 404926
     },
     {
      "date": "2026-09-18",
@@ -3184,7 +4192,7 @@
     124.7498,
     39.69447
    ],
-   "checked": "2026-11-05"
+   "checked": "2026-11-15"
   },
   {
    "id": "tonghae",
@@ -3346,6 +4354,18 @@
      "bytes": 148864
     },
     {
+     "date": "2025-11",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2025_11_mosaic",
+     "sizePx": 1417,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.977,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 202466
+    },
+    {
      "date": "2025-12",
      "kind": "monthly",
      "mosaic": "global_monthly_2025_12_mosaic",
@@ -3368,6 +4388,18 @@
      "s2Cloud": 0.2,
      "s2Scene": "S2B_52TEL_20251209_0_L2A",
      "bytes": 303290
+    },
+    {
+     "date": "2026-03",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2026_03_mosaic",
+     "sizePx": 1417,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.711,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 222300
     },
     {
      "date": "2026-04",
@@ -3394,6 +4426,18 @@
      "bytes": 284214
     },
     {
+     "date": "2026-05",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2026_05_mosaic",
+     "sizePx": 1417,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.872,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 292260
+    },
+    {
      "date": "2026-06",
      "kind": "monthly",
      "mosaic": "global_monthly_2026_06_mosaic",
@@ -3406,6 +4450,18 @@
      "bytes": 325210
     },
     {
+     "date": "2026-07",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2026_07_mosaic",
+     "sizePx": 1417,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.792,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 259102
+    },
+    {
      "date": "2026-07-22",
      "kind": "daily",
      "mosaic": "daily_2026-07-22",
@@ -3416,6 +4472,18 @@
      "s2Cloud": 0.0,
      "s2Scene": "S2C_52TEL_20260722_0_L2A",
      "bytes": 342760
+    },
+    {
+     "date": "2026-09",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2026_09_mosaic",
+     "sizePx": 1417,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.906,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 166756
     },
     {
      "date": "2026-09-12",
@@ -3454,7 +4522,7 @@
     129.71682,
     40.8813
    ],
-   "checked": "2026-11-05"
+   "checked": "2026-11-15"
   },
   {
    "id": "sinpo",
@@ -3604,6 +4672,18 @@
      "bytes": 375814
     },
     {
+     "date": "2025-11",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2025_11_mosaic",
+     "sizePx": 1400,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.982,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 180272
+    },
+    {
      "date": "2025-11-09",
      "kind": "daily",
      "mosaic": "daily_2025-11-09",
@@ -3628,6 +4708,18 @@
      "bytes": 194436
     },
     {
+     "date": "2026-01",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2026_01_mosaic",
+     "sizePx": 1400,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.74,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 165876
+    },
+    {
      "date": "2026-02",
      "kind": "monthly",
      "mosaic": "global_monthly_2026_02_mosaic",
@@ -3638,6 +4730,18 @@
      "s2Cloud": null,
      "s2Scene": null,
      "bytes": 185552
+    },
+    {
+     "date": "2026-03",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2026_03_mosaic",
+     "sizePx": 1400,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.938,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 171172
     },
     {
      "date": "2026-04",
@@ -3652,6 +4756,18 @@
      "bytes": 197998
     },
     {
+     "date": "2026-05",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2026_05_mosaic",
+     "sizePx": 1400,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.904,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 337424
+    },
+    {
      "date": "2026-06",
      "kind": "monthly",
      "mosaic": "global_monthly_2026_06_mosaic",
@@ -3664,6 +4780,18 @@
      "bytes": 318752
     },
     {
+     "date": "2026-07",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2026_07_mosaic",
+     "sizePx": 1400,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.726,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 325956
+    },
+    {
      "date": "2026-08",
      "kind": "monthly",
      "mosaic": "global_monthly_2026_08_mosaic",
@@ -3674,6 +4802,18 @@
      "s2Cloud": null,
      "s2Scene": null,
      "bytes": 217202
+    },
+    {
+     "date": "2026-09",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2026_09_mosaic",
+     "sizePx": 1400,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.959,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 228484
     },
     {
      "date": "2026-10",
@@ -3700,7 +4840,7 @@
     128.21564,
     40.05771
    ],
-   "checked": "2026-11-05"
+   "checked": "2026-11-15"
   },
   {
    "id": "kusong",
@@ -3874,6 +5014,18 @@
      "bytes": 285280
     },
     {
+     "date": "2025-11",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2025_11_mosaic",
+     "sizePx": 1399,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.975,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 270538
+    },
+    {
      "date": "2025-11-20",
      "kind": "daily",
      "mosaic": "daily_2025-11-20",
@@ -3922,6 +5074,18 @@
      "bytes": 343520
     },
     {
+     "date": "2026-03",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2026_03_mosaic",
+     "sizePx": 1399,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.928,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 261046
+    },
+    {
      "date": "2026-03-15",
      "kind": "daily",
      "mosaic": "daily_2026-03-15",
@@ -3944,6 +5108,18 @@
      "s2Cloud": null,
      "s2Scene": null,
      "bytes": 300630
+    },
+    {
+     "date": "2026-05",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2026_05_mosaic",
+     "sizePx": 1399,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.938,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 260880
     },
     {
      "date": "2026-06",
@@ -3970,6 +5146,18 @@
      "bytes": 481192
     },
     {
+     "date": "2026-07",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2026_07_mosaic",
+     "sizePx": 1399,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.754,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 295764
+    },
+    {
      "date": "2026-08",
      "kind": "monthly",
      "mosaic": "global_monthly_2026_08_mosaic",
@@ -3992,6 +5180,18 @@
      "s2Cloud": 0.0,
      "s2Scene": "S2C_51TXE_20260827_0_L2A",
      "bytes": 337512
+    },
+    {
+     "date": "2026-09",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2026_09_mosaic",
+     "sizePx": 1399,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.86,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 267738
     },
     {
      "date": "2026-09-18",
@@ -4030,7 +5230,7 @@
     125.25302,
     40.03622
    ],
-   "checked": "2026-11-05"
+   "checked": "2026-11-15"
   },
   {
    "id": "sunan",
@@ -4216,6 +5416,18 @@
      "bytes": 379730
     },
     {
+     "date": "2025-11",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2025_11_mosaic",
+     "sizePx": 1383,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.797,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 258154
+    },
+    {
      "date": "2025-11-10",
      "kind": "daily",
      "mosaic": "daily_2025-11-10",
@@ -4238,6 +5450,18 @@
      "s2Cloud": null,
      "s2Scene": null,
      "bytes": 263482
+    },
+    {
+     "date": "2026-01",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2026_01_mosaic",
+     "sizePx": 1383,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.644,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 208912
     },
     {
      "date": "2026-02",
@@ -4264,6 +5488,18 @@
      "bytes": 378178
     },
     {
+     "date": "2026-03",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2026_03_mosaic",
+     "sizePx": 1383,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.708,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 304590
+    },
+    {
      "date": "2026-04",
      "kind": "monthly",
      "mosaic": "global_monthly_2026_04_mosaic",
@@ -4288,6 +5524,18 @@
      "bytes": 148750
     },
     {
+     "date": "2026-05",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2026_05_mosaic",
+     "sizePx": 1383,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.7,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 251666
+    },
+    {
      "date": "2026-06",
      "kind": "monthly",
      "mosaic": "global_monthly_2026_06_mosaic",
@@ -4298,6 +5546,18 @@
      "s2Cloud": null,
      "s2Scene": null,
      "bytes": 288878
+    },
+    {
+     "date": "2026-09",
+     "kind": "monthly",
+     "mosaic": "global_monthly_2026_09_mosaic",
+     "sizePx": 1383,
+     "valid": 1.0,
+     "corr": null,
+     "corrMosaic": 0.704,
+     "s2Cloud": null,
+     "s2Scene": null,
+     "bytes": 279984
     },
     {
      "date": "2026-09-06",
@@ -4336,12 +5596,12 @@
     125.73895,
     39.226
    ],
-   "checked": "2026-11-05"
+   "checked": "2026-11-15"
   }
  ],
  "source": "PlanetScope tiles from ai.planet.com (monthly mosaics and daily images)",
  "credit": "Imagery © Planet Labs PBC",
  "zoom": 15,
  "rules": "Monthly mosaics of each October since 2016 plus recent months; daily images on days Sentinel-2 measured as clear inside the square, checked with a preview for coverage, cloud and snow, and agreement with a cloud-free composite and the same day's Sentinel-2 chip.",
- "built": "2026-11-05T18:29Z"
+ "built": "2026-11-15T15:36Z"
 }
