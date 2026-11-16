@@ -1,6 +1,6 @@
 {
  "_doc": "Built by scripts/build-sanctions.ts from the live UN, US, UK, EU and Japanese lists. Do not edit by hand.",
- "fetched": "2026-11-09",
+ "fetched": "2026-11-16",
  "sources": {
   "un": "https://scsanctions.un.org/resources/xml/en/consolidated.xml",
   "ofac": "https://www.treasury.gov/ofac/downloads/sdn.csv",
@@ -14,7 +14,7 @@
   "jp": "https://www.mof.go.jp/policy/international_policy/gaitame_kawase/gaitame/economic_sanctions/list.html"
  },
  "un": {
-  "generated": "2026-11-08",
+  "generated": "2026-11-15",
   "individuals": [
    {
     "ref": "KPi.001",
@@ -1255,7 +1255,7 @@
      "Mansudae Art Studio"
     ],
     "listed": "2017-08-05",
-    "note": "Mansudae Overseas Project Group of Companies engaged in, facilitated, or was responsible for the exportation of workers from the DPRK to other nations for construction-related activities including for statues and monuments to generate revenue for the Government of the DPRK or the Workers’ Party of Korea. The Mansudae Overseas Project Group of Companies has been reported to conduct business in countries in Africa and Southeast Asia including Algeria, Angola, Botswana, Benin, Cambodia, Chad, the Democratic Republic of the Congo, Equatorial Guinea, Malaysia, Mozambique, Madagascar, Namibia, Syria, Togo, and Zimbabwe."
+    "note": "Mansudae Overseas Project Group of Companies engaged in, facilitated, or was responsible for the exportation of workers from the DPRK to other nations for construction-related activities including for statues and monuments to generate revenue for the Government of the DPRK or the Workers’ Party of Korea. The Mansudae Overseas Project Group of Companies has been reported to conduct business in countries in Africa and Southeast Asia including Angola, Botswana, Benin, Cambodia, Chad, the Democratic Republic of the Congo, Equatorial Guinea, Malaysia, Mozambique, Madagascar, Namibia, Syria, Togo, and Zimbabwe."
    },
    {
     "ref": "KPe.051",
@@ -7091,8 +7091,8 @@
  ],
  "national": {
   "uk": {
-   "fetched": "2026-11-09",
-   "published": "2026-11-03",
+   "fetched": "2026-11-16",
+   "published": "2026-11-12",
    "file": "https://sanctionslist.fcdo.gov.uk/docs/UK-Sanctions-List.xml",
    "entries": [
     {
@@ -10631,7 +10631,7 @@
    ]
   },
   "eu": {
-   "fetched": "2026-11-09",
+   "fetched": "2026-11-16",
    "published": "2026-10-23",
    "file": "https://webgate.ec.europa.eu/fsd/fsf/public/files/xmlFullSanctionsList_1_1/content?token=dG9rZW4tMjAxNw",
    "entries": [
@@ -13745,7 +13745,7 @@
    ]
   },
   "jp": {
-   "fetched": "2026-11-09",
+   "fetched": "2026-11-16",
    "published": "2026-11-05",
    "file": "https://www.mof.go.jp/policy/international_policy/gaitame_kawase/gaitame/economic_sanctions/shisantouketsu20261105.csv",
    "entries": [

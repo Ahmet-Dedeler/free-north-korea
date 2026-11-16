@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-15",
+ "fetched": "2026-11-16",
  "oldestListed": "2025-11-19",
  "coverage": {
   "from": "2025-10-10",
@@ -4308,6 +4308,13 @@
   }
  ],
  "messages": [
+  {
+   "id": "a3acea517f0e7690215482c15127c347",
+   "url": "http://www.kcna.kp/en/article/detail/a3acea517f0e7690215482c15127c347",
+   "date": "2026-11-10",
+   "title": "Respected Comrade Kim Jong Un Sends Flower Basket to General Secretary of C.C., LPRP",
+   "direction": "sent"
+  },
   {
    "id": "567a875da4655c7072e73727a315055f",
    "url": "http://www.kcna.kp/en/article/detail/567a875da4655c7072e73727a315055f",

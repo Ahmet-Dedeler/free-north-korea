@@ -804,6 +804,13 @@
    "nodata": 0.0,
    "date": "2026-11-04",
    "tileCloud": 53.22
+  },
+  "S2C_52SCJ_20261115_0_L2A": {
+   "cloud": 0.0,
+   "snow": 0.0,
+   "nodata": 0.0,
+   "date": "2026-11-15",
+   "tileCloud": 6.33
   }
  },
  "kwanliso-25": {
@@ -1590,6 +1597,20 @@
    "nodata": 0.0,
    "date": "2026-11-07",
    "tileCloud": 24.93
+  },
+  "S2C_52TEM_20261112_0_L2A": {
+   "cloud": 0.0,
+   "snow": 0.0,
+   "nodata": 0.0,
+   "date": "2026-11-12",
+   "tileCloud": 27.27
+  },
+  "S2B_52TEM_20261114_0_L2A": {
+   "cloud": 16.1,
+   "snow": 0.0,
+   "nodata": 0.0,
+   "date": "2026-11-14",
+   "tileCloud": 63.0
   }
  },
  "kwanliso-16": {
@@ -2698,6 +2719,20 @@
    "nodata": 0.0,
    "date": "2026-11-07",
    "tileCloud": 17.38
+  },
+  "S2C_52TEL_20261112_0_L2A": {
+   "cloud": 51.63,
+   "snow": 0.0,
+   "nodata": 0.0,
+   "date": "2026-11-12",
+   "tileCloud": 17.37
+  },
+  "S2A_52TEL_20261111_0_L2A": {
+   "cloud": 62.82,
+   "snow": 0.0,
+   "nodata": 32.78,
+   "date": "2026-11-11",
+   "tileCloud": 36.7
   }
  },
  "kwanliso-14": {
@@ -3204,6 +3239,13 @@
    "nodata": 0.0,
    "date": "2026-11-05",
    "tileCloud": 63.36
+  },
+  "S2C_52SBJ_20261115_0_L2A": {
+   "cloud": 0.0,
+   "snow": 0.0,
+   "nodata": 0.0,
+   "date": "2026-11-15",
+   "tileCloud": 0.73
   }
  },
  "kwanliso-22": {
@@ -3976,6 +4018,13 @@
    "nodata": 0.0,
    "date": "2026-11-09",
    "tileCloud": 0.45
+  },
+  "S2B_52TEN_20261114_0_L2A": {
+   "cloud": 0.69,
+   "snow": 0.0,
+   "nodata": 0.0,
+   "date": "2026-11-14",
+   "tileCloud": 11.6
   }
  },
  "kwanliso-18": {
@@ -4468,6 +4517,13 @@
    "nodata": 0.0,
    "date": "2026-11-05",
    "tileCloud": 63.36
+  },
+  "S2C_52SBJ_20261115_0_L2A": {
+   "cloud": 0.0,
+   "snow": 0.0,
+   "nodata": 0.0,
+   "date": "2026-11-15",
+   "tileCloud": 0.73
   }
  },
  "kyohwaso-1-kaechon": {
@@ -4855,6 +4911,20 @@
    "nodata": 0.0,
    "date": "2026-10-31",
    "tileCloud": 1.56
+  },
+  "S2B_51TYE_20261110_0_L2A": {
+   "cloud": 0.0,
+   "snow": 0.0,
+   "nodata": 0.0,
+   "date": "2026-11-10",
+   "tileCloud": 0.16
+  },
+  "S2C_51TYE_20261115_0_L2A": {
+   "cloud": 0.0,
+   "snow": 0.0,
+   "nodata": 0.0,
+   "date": "2026-11-15",
+   "tileCloud": 5.42
   }
  },
  "kyohwaso-12-chongori": {
@@ -5662,6 +5732,27 @@
    "nodata": 0.0,
    "date": "2026-11-09",
    "tileCloud": 14.13
+  },
+  "S2B_52TEM_20261114_0_L2A": {
+   "cloud": 99.3,
+   "snow": 0.0,
+   "nodata": 0.0,
+   "date": "2026-11-14",
+   "tileCloud": 63.0
+  },
+  "S2C_52TEM_20261112_0_L2A": {
+   "cloud": 33.27,
+   "snow": 0.0,
+   "nodata": 0.0,
+   "date": "2026-11-12",
+   "tileCloud": 27.27
+  },
+  "S2A_52TEM_20261111_0_L2A": {
+   "cloud": 65.01,
+   "snow": 0.0,
+   "nodata": 0.0,
+   "date": "2026-11-11",
+   "tileCloud": 54.87
   }
  },
  "yongbyon": {
@@ -6105,6 +6196,20 @@
    "nodata": 0.0,
    "date": "2026-10-31",
    "tileCloud": 1.56
+  },
+  "S2B_51TYE_20261110_0_L2A": {
+   "cloud": 0.0,
+   "snow": 0.0,
+   "nodata": 0.0,
+   "date": "2026-11-10",
+   "tileCloud": 0.16
+  },
+  "S2C_51TYE_20261115_0_L2A": {
+   "cloud": 0.0,
+   "snow": 0.0,
+   "nodata": 0.0,
+   "date": "2026-11-15",
+   "tileCloud": 5.42
   }
  },
  "kangson": {
@@ -6611,6 +6716,20 @@
    "nodata": 0.0,
    "date": "2026-10-31",
    "tileCloud": 0.82
+  },
+  "S2C_51SYD_20261115_0_L2A": {
+   "cloud": 0.22,
+   "snow": 0.0,
+   "nodata": 0.0,
+   "date": "2026-11-15",
+   "tileCloud": 0.47
+  },
+  "S2B_51SYD_20261110_0_L2A": {
+   "cloud": 0.0,
+   "snow": 0.0,
+   "nodata": 0.0,
+   "date": "2026-11-10",
+   "tileCloud": 5.76
   }
  },
  "punggye-ri": {
@@ -7278,6 +7397,13 @@
    "nodata": 0.0,
    "date": "2026-11-07",
    "tileCloud": 17.38
+  },
+  "S2C_52TEL_20261112_0_L2A": {
+   "cloud": 48.88,
+   "snow": 2.8,
+   "nodata": 0.0,
+   "date": "2026-11-12",
+   "tileCloud": 17.37
   }
  },
  "pyongsan": {
@@ -7945,6 +8071,13 @@
    "nodata": 0.0,
    "date": "2026-11-05",
    "tileCloud": 12.61
+  },
+  "S2C_52SBH_20261115_0_L2A": {
+   "cloud": 0.0,
+   "snow": 0.0,
+   "nodata": 0.0,
+   "date": "2026-11-15",
+   "tileCloud": 0.8
   }
  },
  "sohae": {
@@ -9039,6 +9172,27 @@
    "nodata": 4.79,
    "date": "2026-11-03",
    "tileCloud": 0.08
+  },
+  "S2C_51SXD_20261115_0_L2A": {
+   "cloud": 0.04,
+   "snow": 0.0,
+   "nodata": 0.0,
+   "date": "2026-11-15",
+   "tileCloud": 0.08
+  },
+  "S2A_51SXD_20261110_1_L2A": {
+   "cloud": 0.64,
+   "snow": 0.0,
+   "nodata": 9.64,
+   "date": "2026-11-10",
+   "tileCloud": 19.26
+  },
+  "S2B_51SXD_20261110_0_L2A": {
+   "cloud": 0.31,
+   "snow": 0.0,
+   "nodata": 0.0,
+   "date": "2026-11-10",
+   "tileCloud": 22.01
   }
  },
  "tonghae": {
@@ -9755,6 +9909,13 @@
    "nodata": 0.0,
    "date": "2026-11-07",
    "tileCloud": 17.38
+  },
+  "S2C_52TEL_20261112_0_L2A": {
+   "cloud": 0.01,
+   "snow": 0.0,
+   "nodata": 0.0,
+   "date": "2026-11-12",
+   "tileCloud": 17.37
   }
  },
  "sinpo": {
@@ -10534,6 +10695,13 @@
    "nodata": 0.0,
    "date": "2026-11-04",
    "tileCloud": 36.65
+  },
+  "S2C_52TDK_20261112_0_L2A": {
+   "cloud": 0.02,
+   "snow": 0.0,
+   "nodata": 0.0,
+   "date": "2026-11-12",
+   "tileCloud": 13.99
   }
  },
  "kusong": {
@@ -10991,6 +11159,20 @@
    "nodata": 0.0,
    "date": "2026-10-31",
    "tileCloud": 0.69
+  },
+  "S2B_51TXE_20261110_0_L2A": {
+   "cloud": 0.0,
+   "snow": 0.0,
+   "nodata": 0.0,
+   "date": "2026-11-10",
+   "tileCloud": 0.81
+  },
+  "S2C_51TXE_20261115_0_L2A": {
+   "cloud": 0.0,
+   "snow": 0.0,
+   "nodata": 0.0,
+   "date": "2026-11-15",
+   "tileCloud": 2.79
   }
  },
  "sunan": {
@@ -11455,6 +11637,13 @@
    "nodata": 0.0,
    "date": "2026-10-31",
    "tileCloud": 0.82
+  },
+  "S2C_51SYD_20261115_0_L2A": {
+   "cloud": 0.0,
+   "snow": 0.0,
+   "nodata": 0.0,
+   "date": "2026-11-15",
+   "tileCloud": 0.47
   }
  }
 }
