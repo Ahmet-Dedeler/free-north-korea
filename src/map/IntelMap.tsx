@@ -50,6 +50,21 @@ const SAT_LINE = '#f8fafc';
 /** Esri World Imagery, the same tiles as SatView. Esri asks for this credit wherever the imagery is shown. */
 const SATELLITE = 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}';
 const SAT_CREDIT = 'Imagery: Esri, Maxar, Earthstar Geographics';
+/**
+ * Zoom 19 of the same imagery. Esri has it only in patches (around Pyongyang, Sinuiju and a few other towns; checked
+ * 2026-11-16) and answers everywhere else with a grey "Map data not yet available" tile of exactly this many bytes.
+ * The `esri19` protocol swaps that tile for a transparent one, so the zoom 18 layer underneath shows through.
+ */
+const ESRI_PLACEHOLDER_BYTES = 2521;
+let blankTile: Promise<ImageBitmap> | null = null;
+maplibregl.addProtocol('esri19', async (params, abort) => {
+  const res = await fetch(`https://${params.url.slice('esri19://'.length)}`, { signal: abort.signal });
+  if (!res.ok) throw new Error(`Tile fetch error: ${res.status}`);
+  const data = await res.arrayBuffer();
+  if (data.byteLength !== ESRI_PLACEHOLDER_BYTES) return { data };
+  blankTile ??= createImageBitmap(new ImageData(1, 1));
+  return { data: await blankTile };
+});
 const POINT_LAYERS = LAYERS.filter((l) => l.id !== 'escape-route');
 const ROUTE_COLOR = LAYERS.find((l) => l.id === 'escape-route')!.color;
 
@@ -181,9 +196,12 @@ export default function IntelMap({ data, visible, shade, base, overlays, year, c
       const firstLabel = map.getStyle().layers.find((l) => l.type === 'symbol')?.id;
 
       // Satellite sits over the basemap's own fills and roads but under its labels, so place names stay (a hybrid
-      // view, like Google's). Esri serves real imagery to about zoom 18 here; beyond that MapLibre overzooms.
+      // view, like Google's). Esri serves real imagery to zoom 18 everywhere here; beyond that MapLibre overzooms.
       map.addSource('satellite', { type: 'raster', tiles: [SATELLITE], tileSize: 256, maxzoom: 18, attribution: SAT_CREDIT });
       map.addLayer({ id: 'satellite', type: 'raster', source: 'satellite', layout: { visibility: base === 'satellite' ? 'visible' : 'none' } }, firstLabel);
+      // Where Esri has zoom 19, it is drawn over the overzoomed zoom 18 tiles; elsewhere this layer is transparent.
+      map.addSource('satellite-19', { type: 'raster', tiles: [SATELLITE.replace('https://', 'esri19://')], tileSize: 256, minzoom: 19, maxzoom: 19 });
+      map.addLayer({ id: 'satellite-19', type: 'raster', source: 'satellite-19', minzoom: 18.5, layout: { visibility: base === 'satellite' ? 'visible' : 'none' } }, firstLabel);
 
       map.addSource('counties', { type: 'geojson', data: data.counties, promoteId: 'pcode' });
       map.addLayer(
@@ -393,6 +411,7 @@ export default function IntelMap({ data, visible, shade, base, overlays, year, c
     map.setPaintProperty('county-line', 'line-color', countyLine(base, PAL[theme]));
     map.setPaintProperty('province-line', 'line-color', base === 'satellite' ? SAT_LINE : PAL[theme].line);
     map.setLayoutProperty('satellite', 'visibility', base === 'satellite' ? 'visible' : 'none');
+    map.setLayoutProperty('satellite-19', 'visibility', base === 'satellite' ? 'visible' : 'none');
     for (const o of OVERLAYS) if (map.getLayer(o.id)) map.setLayoutProperty(o.id, 'visibility', overlays.has(o.id) ? 'visible' : 'none');
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [shade, base, overlays, theme]);

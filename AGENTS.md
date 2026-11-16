@@ -308,6 +308,9 @@ Run order after a scrape: `node scripts/build-layers.ts && node scripts/build-en
 - Basemap: OpenFreeMap `positron` / `dark` (free, no key). Labels switched to the reader's language on `style.load`
   (`LABEL_FIELDS` in `content/mapI18n.ts`; the two Koreas' country labels use `COUNTRY_NAMES`, not OSM's official names); our layers are
   re-added on every `style.load` because `setStyle` drops them.
+- Satellite basemap: Esri World Imagery to zoom 18 everywhere, plus zoom 19 where Esri has it (patches around Pyongyang,
+  Sinuiju and a few towns; Kangson is the only watched site inside one). Outside those patches Esri answers zoom 19 with a
+  grey placeholder tile; the `esri19` protocol in `IntelMap.tsx` turns it transparent so zoom 18 shows through.
 - Theme: follows device preference (`prefers-color-scheme`). `src/theme.ts` (context provider). The inline script in
   `src/app/layout.tsx` sets `<html data-theme>` before paint so server and client match and avoid flashes. CSS colours are
   tokens in `globals.css` with dark overrides; don't hardcode hex values in components (share cards are the exception:
