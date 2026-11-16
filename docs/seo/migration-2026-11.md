@@ -71,6 +71,15 @@ these are the likely causes, not proven ones:
   `/kim-family-tree`) before the quota ran out. Not requested: `/north-korea-vs-south-korea`, `/watch`,
   `/people/kim-yo-jong`, `/people/kim-jong-un`, `/library`, `/organizations`, `/act`. PostHog: 6 to 21 visits a day
   from Google, Nov 6 to 14.
+- Search Console on 2026-11-16, 28 days to Nov 14. New: 54 clicks, 60.8K impressions, 0 to 3 impressions a day since
+  Nov 5. Old: 206 clicks, 64.8K impressions, 4 to 7 clicks a day, impressions down from 6,198 (Nov 11) to 2,481
+  (Nov 14). Page indexing, both dated Nov 13: new 227 indexed and about 1,480 not (1,420 "Crawled, currently not
+  indexed", validation Failed; 21 "Duplicate, Google chose different canonical", down from 57); old 672 indexed and
+  347 not. All 16 URLs inspected are still "Crawled, currently not indexed", now with the inspected URL as Google's
+  canonical (on Nov 15 `/camps` and `/map` named the old URL). `/learn`, `/camps`, `/map` and `/kim-family-tree` were
+  recrawled on Nov 15 after the request; the other five requested that day were not yet. Indexing requested for no
+  URLs: the first one hit Quota Exceeded, so the same seven wait. External links unchanged at 102 (99 from the old
+  domain). No manual action or security issue. PostHog: 6 to 21 visits a day from Google, Nov 10 to 15.
 
 ## What to check, and when
 
