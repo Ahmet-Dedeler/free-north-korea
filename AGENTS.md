@@ -299,9 +299,10 @@ Run order after a scrape: `node scripts/build-layers.ts && node scripts/build-en
   out before publishing it.
 - Writing: plain, direct, concrete numbers, no em dashes, no marketing voice. Same in Korean, Japanese and Chinese.
 - Analytics: PostHog, initialised in `src/instrumentation-client.ts` from `NEXT_PUBLIC_POSTHOG_KEY` (unset = off, so
-  forks and local dev send nothing). It runs cookieless with no person profiles, no session recording and Do Not
-  Track respected. Keep it that way: readers may be at risk, and the footer promises no cookies. Don't add other
-  trackers, pixels or third-party embeds that set cookies.
+  forks and local dev send nothing). It runs cookieless (`persistence: 'memory'`) with client IPs discarded after GeoIP
+  enrichment (`anonymize_ips: true` on the project, so Web Analytics country/region works without storing IPs), no
+  person profiles, no session recording and Do Not Track respected. Keep it that way: readers may be at risk, and the
+  footer promises no cookies. Don't add other trackers, pixels or third-party embeds that set cookies.
 - MapLibre: import as `import * as maplibregl`. Map components are loaded with `next/dynamic` and `ssr: false`
   (MapLibre touches `window` at import). The worker is copied to `public/maplibre/` by
   `scripts/copy-maplibre-worker.mjs` (runs on predev/prebuild) and set with `setWorkerUrl`.
