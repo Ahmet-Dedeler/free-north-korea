@@ -1,6 +1,11 @@
 {
  "category": [
   {
+   "id": "2c5da78e7c36a67344a7e85fab014ae1",
+   "title": "Respected Comrade Kim Jong Un Inspects Samjiyon City Tourist Zone under Development",
+   "date": "2026-11-17"
+  },
+  {
    "id": "d087f7540d3b586bb87a65b6b8c2319a",
    "title": "Respected Comrade Kim Jong Un Inspects Major Naval Base under Construction",
    "date": "2026-11-12"
@@ -7543,7 +7548,7 @@
    "date": "2025-10-10"
   }
  ],
- "categoryFetched": "2026-11-16",
+ "categoryFetched": "2026-11-18",
  "oldestListed": "2025-11-19",
  "searchFetched": "2026-11-16",
  "titlesKo": {
@@ -7777,6 +7782,7 @@
   "280532557ce00cf81a6cde850fd4ba96": "경애하는 김정은동지께서 남포조선소를 현지지도하시였다",
   "86248138bcbdc42fce2d1a575777bfc0": "경애하는 김정은동지께서 강원도 통천군일대에 새로 건설한 문화주택구를 돌아보시였다",
   "d087f7540d3b586bb87a65b6b8c2319a": "경애하는 김정은동지께서 중요해군기지건설사업을 현지지도하시였다",
-  "84c7cd4e912ccd4915c8b2f6b827eb7c": "경애하는 김정은동지께서 조선농업근로자동맹 제10차대회 참가자들을 만나시고 기념사진을 찍으시였다"
+  "84c7cd4e912ccd4915c8b2f6b827eb7c": "경애하는 김정은동지께서 조선농업근로자동맹 제10차대회 참가자들을 만나시고 기념사진을 찍으시였다",
+  "2c5da78e7c36a67344a7e85fab014ae1": "경애하는 김정은동지께서 삼지연시 관광지구건설사업을 현지에서 지도하시였다"
  }
 }
