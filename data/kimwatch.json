@@ -1,16 +1,56 @@
 {
- "fetched": "2026-11-18",
- "oldestListed": "2025-11-19",
+ "fetched": "2026-11-19",
+ "oldestListed": "2025-11-20",
  "coverage": {
   "from": "2025-10-10",
-  "to": "2026-11-17"
+  "to": "2026-11-19"
  },
  "lastAppearance": {
-  "date": "2026-11-16",
-  "id": "2c5da78e7c36a67344a7e85fab014ae1",
-  "title": "Respected Comrade Kim Jong Un Inspects Samjiyon City Tourist Zone under Development"
+  "date": "2026-11-18",
+  "id": "f4a39ed18a2bceb3f84a1761f010fd35",
+  "title": "Respected Comrade Kim Jong Un Inspects Kim Jong Suk Naval University"
  },
  "records": [
+  {
+   "id": "f4a39ed18a2bceb3f84a1761f010fd35",
+   "url": "http://www.kcna.kp/en/article/detail/f4a39ed18a2bceb3f84a1761f010fd35",
+   "reportDate": "2026-11-19",
+   "title": "Respected Comrade Kim Jong Un Inspects Kim Jong Suk Naval University",
+   "eventDate": "2026-11-18",
+   "eventDateFrom": "text",
+   "appearance": true,
+   "kind": "public",
+   "speech": false,
+   "subject": "Inspects Kim Jong Suk Naval University",
+   "companions": [
+    "Pak Jong Chon"
+   ],
+   "present": [],
+   "daughter": false,
+   "wife": false,
+   "titleKo": "경애하는 김정은동지께서 김정숙명칭 해군대학을 현지지도하시였다"
+  },
+  {
+   "id": "0f19a6fa6a22aa8b88d81a6034ae72e6",
+   "url": "http://www.kcna.kp/en/article/detail/0f19a6fa6a22aa8b88d81a6034ae72e6",
+   "reportDate": "2026-11-19",
+   "title": "Respected Comrade Kim Jong Un Inspects Construction Sites in Riwon and Ragwon Counties of S. Hamgyong Province for Regional Development Policy",
+   "eventDate": "2026-11-17",
+   "eventDateEnd": "2026-11-18",
+   "eventDateFrom": "text",
+   "appearance": true,
+   "kind": "economy",
+   "speech": false,
+   "subject": "Inspects Construction Sites in Riwon and Ragwon Counties of S. Hamgyong Province for Regional Development Policy",
+   "region": "South Hamgyong",
+   "companions": [],
+   "present": [
+    "Ri Jong Nam"
+   ],
+   "daughter": false,
+   "wife": false,
+   "titleKo": "경애하는 김정은동지께서 함경남도 리원군과 락원군의 지방발전정책대상건설장을 현지지도하시였다"
+  },
   {
    "id": "2c5da78e7c36a67344a7e85fab014ae1",
    "url": "http://www.kcna.kp/en/article/detail/2c5da78e7c36a67344a7e85fab014ae1",
