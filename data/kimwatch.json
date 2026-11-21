@@ -1,16 +1,37 @@
 {
- "fetched": "2026-11-20",
- "oldestListed": "2025-11-21",
+ "fetched": "2026-11-21",
+ "oldestListed": "2025-11-27",
  "coverage": {
   "from": "2025-10-10",
-  "to": "2026-11-19"
+  "to": "2026-11-21"
  },
  "lastAppearance": {
-  "date": "2026-11-18",
-  "id": "f4a39ed18a2bceb3f84a1761f010fd35",
-  "title": "Respected Comrade Kim Jong Un Inspects Kim Jong Suk Naval University"
+  "date": "2026-11-20",
+  "id": "9a2c0ab0af5e6a119cfda4fc88bcb54b",
+  "title": "Respected Comrade Kim Jong Un Inspects School Fixtures Factory and Educational Apparatus Factory under Construction"
  },
  "records": [
+  {
+   "id": "9a2c0ab0af5e6a119cfda4fc88bcb54b",
+   "url": "http://www.kcna.kp/en/article/detail/9a2c0ab0af5e6a119cfda4fc88bcb54b",
+   "reportDate": "2026-11-21",
+   "title": "Respected Comrade Kim Jong Un Inspects School Fixtures Factory and Educational Apparatus Factory under Construction",
+   "eventDate": "2026-11-20",
+   "eventDateFrom": "text",
+   "appearance": true,
+   "kind": "economy",
+   "speech": false,
+   "subject": "Inspects School Fixtures Factory and Educational Apparatus Factory under Construction",
+   "companions": [
+    "Jo Yong Won",
+    "Kim Sung Du",
+    "Pak Jong Chon"
+   ],
+   "present": [],
+   "daughter": false,
+   "wife": false,
+   "titleKo": "경애하는 김정은동지께서 교구비품공장과 교육기자재공장건설을 현지지도하시였다"
+  },
   {
    "id": "f4a39ed18a2bceb3f84a1761f010fd35",
    "url": "http://www.kcna.kp/en/article/detail/f4a39ed18a2bceb3f84a1761f010fd35",
