@@ -1,6 +1,6 @@
 # Sentinel-2 change scores (for human review)
 
-Built 2026-11-16 by `scripts/sentinel/build.py`. Nothing on this page is shown on the site.
+Built 2026-11-23 by `scripts/sentinel/build.py`. Nothing on this page is shown on the site.
 
 How to read it: each row compares two cloud-free chips of the same place on the same pixel grid, using only
 pixels that are clear in both. Bands are normalised first, so haze and overall brightness mostly cancel.

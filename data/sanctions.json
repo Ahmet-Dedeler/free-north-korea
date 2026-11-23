@@ -1,12 +1,12 @@
 {
  "_doc": "Built by scripts/build-sanctions.ts from the live UN, US, UK, EU and Japanese lists. Do not edit by hand.",
- "fetched": "2026-11-16",
+ "fetched": "2026-11-23",
  "sources": {
   "un": "https://scsanctions.un.org/resources/xml/en/consolidated.xml",
   "ofac": "https://www.treasury.gov/ofac/downloads/sdn.csv",
   "uk": "https://sanctionslist.fcdo.gov.uk/docs/UK-Sanctions-List.xml",
   "eu": "https://webgate.ec.europa.eu/fsd/fsf/public/files/xmlFullSanctionsList_1_1/content?token=dG9rZW4tMjAxNw",
-  "jp": "https://www.mof.go.jp/policy/international_policy/gaitame_kawase/gaitame/economic_sanctions/shisantouketsu20261105.csv"
+  "jp": "https://www.mof.go.jp/policy/international_policy/gaitame_kawase/gaitame/economic_sanctions/shisantouketsu20261120.csv"
  },
  "pages": {
   "uk": "https://www.gov.uk/government/publications/the-uk-sanctions-list",
@@ -14,7 +14,7 @@
   "jp": "https://www.mof.go.jp/policy/international_policy/gaitame_kawase/gaitame/economic_sanctions/list.html"
  },
  "un": {
-  "generated": "2026-11-15",
+  "generated": "2026-11-22",
   "individuals": [
    {
     "ref": "KPi.001",
@@ -7091,8 +7091,8 @@
  ],
  "national": {
   "uk": {
-   "fetched": "2026-11-16",
-   "published": "2026-11-12",
+   "fetched": "2026-11-23",
+   "published": "2026-11-23",
    "file": "https://sanctionslist.fcdo.gov.uk/docs/UK-Sanctions-List.xml",
    "entries": [
     {
@@ -7574,8 +7574,8 @@
       "DCBKKPPY"
      ],
      "addr": [
-      "ansan botonggang dong hotel",
-      "401 ansan dong hotel potonggang suite"
+      "401 ansan dong hotel potonggang suite",
+      "ansan botonggang dong hotel"
      ]
     },
     {
@@ -7763,8 +7763,8 @@
      "un": "KPi.016",
      "unBasis": true,
      "dob": [
-      "1957-04-15",
-      "1958-02-22"
+      "1958-02-22",
+      "1957-04-15"
      ],
      "passports": [
       "836110034"
@@ -7797,12 +7797,12 @@
      "un": "KPi.018",
      "unBasis": true,
      "dob": [
-      "1976-10-18",
-      "1976-08-25"
+      "1976-08-25",
+      "1976-10-18"
      ],
      "passports": [
-      "836110035",
-      "4721202031"
+      "4721202031",
+      "836110035"
      ]
     },
     {
@@ -7849,8 +7849,8 @@
       "1966-11-07"
      ],
      "passports": [
-      "199421147",
       "563210184",
+      "199421147",
       "381110042"
      ]
     },
@@ -8888,8 +8888,8 @@
       "1966-01-28"
      ],
      "passports": [
-      "927234267",
-      "108120258"
+      "108120258",
+      "927234267"
      ]
     },
     {
@@ -10237,8 +10237,8 @@
       "1934",
       "1935",
       "1936",
-      "1938",
-      "1937"
+      "1937",
+      "1938"
      ]
     },
     {
@@ -10631,8 +10631,8 @@
    ]
   },
   "eu": {
-   "fetched": "2026-11-16",
-   "published": "2026-10-23",
+   "fetched": "2026-11-23",
+   "published": "2026-11-20",
    "file": "https://webgate.ec.europa.eu/fsd/fsf/public/files/xmlFullSanctionsList_1_1/content?token=dG9rZW4tMjAxNw",
    "entries": [
     {
@@ -13352,9 +13352,9 @@
     },
     {
      "id": "EU.8112.63",
-     "name": "Kim Su Gil",
+     "name": "Kim Su-gil",
      "aliases": [
-      "Kim Su-gil"
+      "Kim Su Gil"
      ],
      "kind": "individual",
      "listed": "2022-04-21",
@@ -13364,22 +13364,22 @@
     },
     {
      "id": "EU.8113.62",
-     "name": "Jon Il Ho",
+     "name": "Jon Il-Ho",
      "aliases": [
-      "Jon Il-Ho"
+      "Jon Il Ho"
      ],
      "kind": "individual",
      "listed": "2022-04-21",
      "dob": [
-      "1955",
-      "1956"
+      "1956",
+      "1955"
      ]
     },
     {
      "id": "EU.8114.61",
-     "name": "Jong Sung Il",
+     "name": "Jong Sung-Il",
      "aliases": [
-      "Jong Sung-Il"
+      "Jong Sung Il"
      ],
      "kind": "individual",
      "listed": "2022-04-21",
@@ -13414,9 +13414,9 @@
     },
     {
      "id": "EU.8117.58",
-     "name": "Hwang Kil Su",
+     "name": "Hwang Kil-Su",
      "aliases": [
-      "Hwang Kil-Su"
+      "Hwang Kil Su"
      ],
      "kind": "individual",
      "listed": "2022-04-21",
@@ -13435,9 +13435,9 @@
     },
     {
      "id": "EU.8119.56",
-     "name": "Choe Song-Chol",
+     "name": "Choe Song Chol",
      "aliases": [
-      "Choe Song Chol"
+      "Choe Song-Chol"
      ],
      "kind": "individual",
      "listed": "2022-04-21"
@@ -13454,9 +13454,9 @@
     },
     {
      "id": "EU.8121.33",
-     "name": "Genco",
+     "name": "Kogen",
      "aliases": [
-      "Kogen",
+      "Genco",
       "Korea General Corporation for External Construction"
      ],
      "kind": "entity",
@@ -13467,9 +13467,9 @@
     },
     {
      "id": "EU.8123.31",
-     "name": "Joson Paekho Muyok Hoesa",
+     "name": "Korea Paekho Trading Corporation",
      "aliases": [
-      "Korea Paekho Trading Corporation"
+      "Joson Paekho Muyok Hoesa"
      ],
      "kind": "entity",
      "listed": "2022-04-21",
@@ -13494,8 +13494,8 @@
       "1966-07-30"
      ],
      "passports": [
-      "654410104",
-      "563210059"
+      "563210059",
+      "654410104"
      ]
     },
     {
@@ -13526,9 +13526,9 @@
     },
     {
      "id": "EU.9429.40",
-     "name": "Kim Ho Gyu",
+     "name": "Kim Ho Kyu",
      "aliases": [
-      "Kim Ho Kyu"
+      "Kim Ho Gyu"
      ],
      "kind": "individual",
      "listed": "2022-12-12",
@@ -13745,9 +13745,9 @@
    ]
   },
   "jp": {
-   "fetched": "2026-11-16",
-   "published": "2026-11-05",
-   "file": "https://www.mof.go.jp/policy/international_policy/gaitame_kawase/gaitame/economic_sanctions/shisantouketsu20261105.csv",
+   "fetched": "2026-11-23",
+   "published": "2026-11-20",
+   "file": "https://www.mof.go.jp/policy/international_policy/gaitame_kawase/gaitame/economic_sanctions/shisantouketsu20261120.csv",
    "entries": [
     {
      "id": "013-000001",
@@ -22244,17 +22244,7 @@
    ]
   },
   {
-   "name": "Choe Song Nam",
-   "kind": "individual",
-   "on": {
-    "US": [
-     "23482"
-    ]
-   },
-   "how": {}
-  },
-  {
-   "name": "Choe Song-Chol",
+   "name": "Choe Song Chol",
    "kind": "individual",
    "on": {
     "EU": [
@@ -22265,6 +22255,16 @@
    "maybe": [
     "US"
    ]
+  },
+  {
+   "name": "Choe Song Nam",
+   "kind": "individual",
+   "on": {
+    "US": [
+     "23482"
+    ]
+   },
+   "how": {}
   },
   {
    "name": "Choe Un Hyok",
@@ -23065,20 +23065,6 @@
    "how": {}
   },
   {
-   "name": "Genco",
-   "kind": "entity",
-   "on": {
-    "EU": [
-     "EU.8121.33"
-    ]
-   },
-   "how": {},
-   "maybe": [
-    "US",
-    "JP"
-   ]
-  },
-  {
    "name": "Global Interface Company Inc.",
    "kind": "entity",
    "on": {
@@ -23684,7 +23670,7 @@
    ]
   },
   {
-   "name": "Hwang Kil Su",
+   "name": "Hwang Kil-Su",
    "kind": "individual",
    "on": {
     "EU": [
@@ -24193,20 +24179,6 @@
    ]
   },
   {
-   "name": "Jon Il Ho",
-   "kind": "individual",
-   "on": {
-    "EU": [
-     "EU.8113.62"
-    ]
-   },
-   "how": {},
-   "maybe": [
-    "US",
-    "JP"
-   ]
-  },
-  {
    "name": "Jon Il-Chun",
    "kind": "individual",
    "on": {
@@ -24220,6 +24192,20 @@
    "how": {
     "EU": "name-dob"
    }
+  },
+  {
+   "name": "Jon Il-Ho",
+   "kind": "individual",
+   "on": {
+    "EU": [
+     "EU.8113.62"
+    ]
+   },
+   "how": {},
+   "maybe": [
+    "US",
+    "JP"
+   ]
   },
   {
    "name": "Jon Jin 2",
@@ -24320,7 +24306,7 @@
    "how": {}
   },
   {
-   "name": "Jong Sung Il",
+   "name": "Jong Sung-Il",
    "kind": "individual",
    "on": {
     "EU": [
@@ -24357,19 +24343,6 @@
     ]
    },
    "how": {}
-  },
-  {
-   "name": "Joson Paekho Muyok Hoesa",
-   "kind": "entity",
-   "on": {
-    "EU": [
-     "EU.8123.31"
-    ]
-   },
-   "how": {},
-   "maybe": [
-    "US"
-   ]
   },
   {
    "name": "Ju Chang Il",
@@ -25166,20 +25139,6 @@
    "name": "Kim Su Gil",
    "kind": "individual",
    "on": {
-    "EU": [
-     "EU.8112.63"
-    ]
-   },
-   "how": {},
-   "maybe": [
-    "US",
-    "JP"
-   ]
-  },
-  {
-   "name": "Kim Su Gil",
-   "kind": "individual",
-   "on": {
     "JP": [
      "017-000074"
     ]
@@ -25208,6 +25167,20 @@
     "EU": "passport",
     "JP": "passport"
    }
+  },
+  {
+   "name": "Kim Su-gil",
+   "kind": "individual",
+   "on": {
+    "EU": [
+     "EU.8112.63"
+    ]
+   },
+   "how": {},
+   "maybe": [
+    "US",
+    "JP"
+   ]
   },
   {
    "name": "Kim Su-Kwang",
@@ -25518,6 +25491,20 @@
     ]
    },
    "how": {}
+  },
+  {
+   "name": "Kogen",
+   "kind": "entity",
+   "on": {
+    "EU": [
+     "EU.8121.33"
+    ]
+   },
+   "how": {},
+   "maybe": [
+    "US",
+    "JP"
+   ]
   },
   {
    "name": "Kohas Ag",
@@ -25994,6 +25981,19 @@
    "how": {},
    "maybe": [
     "EU"
+   ]
+  },
+  {
+   "name": "Korea Paekho Trading Corporation",
+   "kind": "entity",
+   "on": {
+    "EU": [
+     "EU.8123.31"
+    ]
+   },
+   "how": {},
+   "maybe": [
+    "US"
    ]
   },
   {

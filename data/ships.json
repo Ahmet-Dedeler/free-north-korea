@@ -1,644 +1,62 @@
 {
  "_doc": "Built by scripts/build-ships.ts from the archive in data/archive/gfw (Global Fishing Watch API) and data/sanctions.json. Do not edit by hand.",
- "fetched": "2026-11-16",
+ "fetched": "2026-11-23",
  "attribution": "Powered by Global Fishing Watch (globalfishingwatch.org). Data: GFW vessel identity v4, port visits v4 and SAR vessel detections, CC BY-NC 4.0.",
  "sources": {
   "gfw": "https://globalfishingwatch.org/our-apis/",
   "license": "https://globalfishingwatch.org/our-apis/documentation/docs/license-rate-limits.md"
  },
- "sanctionsFetched": "2026-11-16",
+ "sanctionsFetched": "2026-11-23",
  "window": {
   "from": "2025-12-01",
-  "to": "2026-11-16"
+  "to": "2026-11-23"
  },
  "radarThrough": "",
  "listedImos": 111,
  "resolved": 105,
  "ships": [
   {
-   "name": "Bogatyr",
-   "imo": "9085730",
+   "name": "Chong Rim 2",
+   "imo": "8916293",
    "lists": [
     "US"
    ],
    "ais": [
     {
-     "name": "SAKHALIN",
-     "flag": "RUS",
-     "mmsi": "273390290",
-     "first": "2016-10-15",
-     "last": "2026-11-14"
-    },
-    {
-     "name": "AFRICAN EXPRESS",
-     "flag": "PLW",
-     "mmsi": "511260000",
-     "first": "2015-11-03",
-     "last": "2016-10-11"
-    },
-    {
-     "name": "STELLANOVA",
-     "flag": "NLD",
-     "mmsi": "245781000",
-     "first": "2012-01-01",
-     "last": "2015-11-03"
-    }
-   ],
-   "lastSeen": "2026-11-14",
-   "visits": [
-    {
-     "start": "2026-11-11",
-     "end": "2026-11-12",
-     "port": "VLADIVOSTOK",
-     "country": "RUS",
-     "confidence": 3,
-     "as": "SAKHALIN",
-     "flag": "RUS"
-    },
-    {
-     "start": "2026-10-17",
-     "end": "2026-11-05",
-     "port": "SHANGHAI",
-     "country": "CHN",
-     "confidence": 4,
-     "as": "SAKHALIN",
-     "flag": "RUS"
-    },
-    {
-     "start": "2026-10-10",
-     "end": "2026-10-16",
-     "port": "SHANGHAI",
-     "country": "CHN",
-     "confidence": 4,
-     "as": "SAKHALIN",
-     "flag": "RUS"
-    },
-    {
-     "start": "2026-08-31",
-     "end": "2026-10-10",
-     "port": "ZHOUSHAN",
-     "country": "CHN",
-     "confidence": 4,
-     "as": "SAKHALIN",
-     "flag": "RUS"
-    },
-    {
-     "start": "2026-08-21",
-     "end": "2026-08-22",
-     "port": "VLADIVOSTOK",
-     "country": "RUS",
-     "confidence": 4,
-     "as": "SAKHALIN",
-     "flag": "RUS"
-    },
-    {
-     "start": "2026-08-14",
-     "end": "2026-08-20",
-     "port": "VLADIVOSTOK",
-     "country": "RUS",
-     "confidence": 4,
-     "as": "SAKHALIN",
-     "flag": "RUS"
-    },
-    {
-     "start": "2026-07-30",
-     "end": "2026-08-01",
-     "port": "",
-     "country": "RUS",
-     "confidence": 4,
-     "as": "SAKHALIN",
-     "flag": "RUS"
-    },
-    {
-     "start": "2026-07-08",
-     "end": "2026-07-30",
-     "port": "VLADIVOSTOK",
-     "country": "RUS",
-     "confidence": 4,
-     "as": "SAKHALIN",
-     "flag": "RUS"
-    },
-    {
-     "start": "2026-07-08",
-     "end": "2026-07-08",
-     "port": "VLADIVOSTOK",
-     "country": "RUS",
-     "confidence": 3,
-     "as": "SAKHALIN",
-     "flag": "RUS"
-    },
-    {
-     "start": "2026-06-26",
-     "end": "2026-07-08",
-     "port": "VLADIVOSTOK",
-     "country": "RUS",
-     "confidence": 4,
-     "as": "SAKHALIN",
-     "flag": "RUS"
-    },
-    {
-     "start": "2026-05-31",
-     "end": "2026-05-31",
-     "port": "HUANGHUA",
-     "country": "CHN",
-     "confidence": 4,
-     "as": "SAKHALIN",
-     "flag": "RUS"
-    },
-    {
-     "start": "2026-05-09",
-     "end": "2026-05-15",
-     "port": "HUANGHUA",
-     "country": "CHN",
-     "confidence": 4,
-     "as": "SAKHALIN",
-     "flag": "RUS"
-    },
-    {
-     "start": "2026-05-04",
-     "end": "2026-05-09",
-     "port": "HUANG HUA",
-     "country": "CHN",
-     "confidence": 4,
-     "as": "SAKHALIN",
-     "flag": "RUS"
-    },
-    {
-     "start": "2026-04-17",
-     "end": "2026-05-04",
-     "port": "HUANGHUA",
-     "country": "CHN",
-     "confidence": 4,
-     "as": "SAKHALIN",
-     "flag": "RUS"
-    },
-    {
-     "start": "2026-04-03",
-     "end": "2026-04-07",
-     "port": "VLADIVOSTOK",
-     "country": "RUS",
-     "confidence": 4,
-     "as": "SAKHALIN",
-     "flag": "RUS"
-    },
-    {
-     "start": "2026-03-25",
-     "end": "2026-03-31",
-     "port": "VLADIVOSTOK",
-     "country": "RUS",
-     "confidence": 4,
-     "as": "SAKHALIN",
-     "flag": "RUS"
-    },
-    {
-     "start": "2026-03-18",
-     "end": "2026-03-20",
-     "port": "VLADIVOSTOK",
-     "country": "RUS",
-     "confidence": 4,
-     "as": "SAKHALIN",
-     "flag": "RUS"
-    },
-    {
-     "start": "2026-03-13",
-     "end": "2026-03-17",
-     "port": "VLADIVOSTOK",
-     "country": "RUS",
-     "confidence": 4,
-     "as": "SAKHALIN",
-     "flag": "RUS"
-    },
-    {
-     "start": "2026-03-11",
-     "end": "2026-03-13",
-     "port": "VLADIVOSTOK",
-     "country": "RUS",
-     "confidence": 4,
-     "as": "SAKHALIN",
-     "flag": "RUS"
-    },
-    {
-     "start": "2026-03-07",
-     "end": "2026-03-11",
-     "port": "VLADIVOSTOK",
-     "country": "RUS",
-     "confidence": 4,
-     "as": "SAKHALIN",
-     "flag": "RUS"
-    },
-    {
-     "start": "2026-03-04",
-     "end": "2026-03-07",
-     "port": "VLADIVOSTOK",
-     "country": "RUS",
-     "confidence": 4,
-     "as": "SAKHALIN",
-     "flag": "RUS"
-    },
-    {
-     "start": "2026-02-08",
-     "end": "2026-03-01",
-     "port": "VLADIVOSTOK",
-     "country": "RUS",
-     "confidence": 4,
-     "as": "SAKHALIN",
-     "flag": "RUS"
-    },
-    {
-     "start": "2026-02-05",
-     "end": "2026-02-08",
-     "port": "VLADIVOSTOK",
-     "country": "RUS",
-     "confidence": 4,
-     "as": "SAKHALIN",
-     "flag": "RUS"
-    },
-    {
-     "start": "2026-02-02",
-     "end": "2026-02-04",
-     "port": "VLADIVOSTOK",
-     "country": "RUS",
-     "confidence": 4,
-     "as": "SAKHALIN",
-     "flag": "RUS"
-    },
-    {
-     "start": "2026-01-31",
-     "end": "2026-02-02",
-     "port": "VLADIVOSTOK",
-     "country": "RUS",
-     "confidence": 4,
-     "as": "SAKHALIN",
-     "flag": "RUS"
-    },
-    {
-     "start": "2026-01-28",
-     "end": "2026-01-31",
-     "port": "VLADIVOSTOK",
-     "country": "RUS",
-     "confidence": 4,
-     "as": "SAKHALIN",
-     "flag": "RUS"
-    },
-    {
-     "start": "2026-01-26",
-     "end": "2026-01-28",
-     "port": "VLADIVOSTOK",
-     "country": "RUS",
-     "confidence": 4,
-     "as": "SAKHALIN",
-     "flag": "RUS"
-    },
-    {
-     "start": "2026-01-09",
-     "end": "2026-01-24",
-     "port": "VLADIVOSTOK",
-     "country": "RUS",
-     "confidence": 4,
-     "as": "SAKHALIN",
-     "flag": "RUS"
-    },
-    {
-     "start": "2026-01-05",
-     "end": "2026-01-09",
-     "port": "VLADIVOSTOK",
-     "country": "RUS",
-     "confidence": 4,
-     "as": "SAKHALIN",
-     "flag": "RUS"
-    },
-    {
-     "start": "2026-01-05",
-     "end": "2026-01-05",
-     "port": "VLADIVOSTOK",
-     "country": "RUS",
-     "confidence": 4,
-     "as": "SAKHALIN",
-     "flag": "RUS"
-    },
-    {
-     "start": "2026-01-04",
-     "end": "2026-01-05",
-     "port": "VLADIVOSTOK",
-     "country": "RUS",
-     "confidence": 4,
-     "as": "SAKHALIN",
-     "flag": "RUS"
-    },
-    {
-     "start": "2026-01-02",
-     "end": "2026-01-04",
-     "port": "VLADIVOSTOK",
-     "country": "RUS",
-     "confidence": 4,
-     "as": "SAKHALIN",
-     "flag": "RUS"
-    },
-    {
-     "start": "2026-01-01",
-     "end": "2026-01-02",
-     "port": "VLADIVOSTOK",
-     "country": "RUS",
-     "confidence": 4,
-     "as": "SAKHALIN",
-     "flag": "RUS"
-    },
-    {
-     "start": "2025-12-30",
-     "end": "2026-01-01",
-     "port": "VLADIVOSTOK",
-     "country": "RUS",
-     "confidence": 4,
-     "as": "SAKHALIN",
-     "flag": "RUS"
-    },
-    {
-     "start": "2025-12-28",
-     "end": "2025-12-30",
-     "port": "VLADIVOSTOK",
-     "country": "RUS",
-     "confidence": 4,
-     "as": "SAKHALIN",
-     "flag": "RUS"
-    },
-    {
-     "start": "2025-12-23",
-     "end": "2025-12-28",
-     "port": "VLADIVOSTOK",
-     "country": "RUS",
-     "confidence": 4,
-     "as": "SAKHALIN",
-     "flag": "RUS"
-    },
-    {
-     "start": "2025-12-15",
-     "end": "2025-12-23",
-     "port": "VLADIVOSTOK",
-     "country": "RUS",
-     "confidence": 4,
-     "as": "SAKHALIN",
-     "flag": "RUS"
-    },
-    {
-     "start": "2025-12-13",
-     "end": "2025-12-15",
-     "port": "VLADIVOSTOK",
-     "country": "RUS",
-     "confidence": 4,
-     "as": "SAKHALIN",
-     "flag": "RUS"
-    },
-    {
-     "start": "2025-12-07",
-     "end": "2025-12-13",
-     "port": "VLADIVOSTOK",
-     "country": "RUS",
-     "confidence": 4,
-     "as": "SAKHALIN",
-     "flag": "RUS"
-    },
-    {
-     "start": "2025-12-06",
-     "end": "2025-12-06",
-     "port": "VLADIVOSTOK",
-     "country": "RUS",
-     "confidence": 4,
-     "as": "SAKHALIN",
-     "flag": "RUS"
-    },
-    {
-     "start": "2025-12-04",
-     "end": "2025-12-06",
-     "port": "VLADIVOSTOK",
-     "country": "RUS",
-     "confidence": 4,
-     "as": "SAKHALIN",
-     "flag": "RUS"
-    },
-    {
-     "start": "2025-11-28",
-     "end": "2025-12-04",
-     "port": "VLADIVOSTOK",
-     "country": "RUS",
-     "confidence": 4,
-     "as": "SAKHALIN",
-     "flag": "RUS"
-    }
-   ],
-   "history": {
-    "visits": 383,
-    "foreign": 383,
-    "since": "2012-01-01"
-   },
-   "radarMonths": []
-  },
-  {
-   "name": "Kum Song 7",
-   "imo": "8739396",
-   "lists": [
-    "US"
-   ],
-   "ais": [
-    {
-     "name": "KUMSONG7",
+     "name": "POM SAN 3",
      "flag": "PRK",
-     "mmsi": "445208000",
-     "first": "2016-07-25",
-     "last": "2026-11-14"
-    },
-    {
-     "name": "ZHONG LIAN9",
-     "flag": "SLE",
-     "mmsi": "667001483",
-     "first": "2015-11-16",
-     "last": "2016-07-20"
-    },
-    {
-     "name": "ZHONG LIAN9",
-     "flag": "KHM",
-     "mmsi": "514311000",
-     "first": "2012-01-01",
-     "last": "2015-12-25"
-    },
-    {
-     "name": "ZHONWLIAN9",
-     "flag": "KHM",
-     "mmsi": "515359576",
-     "first": "2015-05-10",
-     "last": "2015-05-10"
-    }
-   ],
-   "lastSeen": "2026-11-14",
-   "visits": [
-    {
-     "start": "2017-06-04",
-     "end": "2026-11-08",
-     "port": "",
-     "country": "PRK",
-     "confidence": 4,
-     "as": "KUMSONG7",
-     "flag": "PRK"
-    }
-   ],
-   "history": {
-    "visits": 275,
-    "foreign": 199,
-    "since": "2012-01-17"
-   },
-   "radarMonths": []
-  },
-  {
-   "name": "Oriental Treasure",
-   "imo": "9115028",
-   "lists": [
-    "US"
-   ],
-   "ais": [
-    {
-     "name": "SIN HAE",
-     "flag": "PRK",
-     "mmsi": "445058000",
-     "first": "2022-08-24",
-     "last": "2026-11-14"
-    },
-    {
-     "name": "ORIENTAL TREASURE",
-     "flag": "PRK",
-     "mmsi": "445058005",
-     "first": "2020-12-20",
-     "last": "2022-10-24"
-    },
-    {
-     "name": "ORIENTAL TREASURE",
-     "flag": "COM",
-     "mmsi": "620256000",
-     "first": "2017-02-15",
-     "last": "2019-01-20"
-    },
-    {
-     "name": "ORIENTAL TREASURE",
-     "flag": "TZA",
-     "mmsi": "677088900",
+     "mmsi": "445143000",
      "first": "2016-09-10",
-     "last": "2017-02-15"
+     "last": "2026-11-21"
     },
     {
-     "name": "ORIENTAL TREASURE",
-     "flag": "KOR",
-     "mmsi": "441715000",
-     "first": "2013-06-13",
-     "last": "2016-09-30"
-    }
-   ],
-   "lastSeen": "2026-11-14",
-   "visits": [
-    {
-     "start": "2026-11-11",
-     "end": "2026-11-11",
-     "port": "LIANYUNGANG",
-     "country": "CHN",
-     "confidence": 3,
-     "as": "SIN HAE",
-     "flag": "PRK"
-    },
-    {
-     "start": "2026-11-07",
-     "end": "2026-11-11",
-     "port": "LIANYUNGANG",
-     "country": "CHN",
-     "confidence": 4,
-     "as": "SIN HAE",
-     "flag": "PRK"
-    }
-   ],
-   "history": {
-    "visits": 187,
-    "foreign": 174,
-    "since": "2013-06-14"
-   },
-   "radarMonths": []
-  },
-  {
-   "name": "South Hill 5",
-   "imo": "9138680",
-   "lists": [
-    "US"
-   ],
-   "ais": [
-    {
-     "name": "NAMDAECHON",
+     "name": "SAE BYOL",
      "flag": "PRK",
-     "mmsi": "445590000",
-     "first": "2016-12-10",
-     "last": "2026-11-14"
+     "mmsi": "445143100",
+     "first": "2020-09-26",
+     "last": "2022-09-16"
     },
     {
-     "name": "SOUTH HILL 5",
-     "flag": "PLW",
-     "mmsi": "511086000",
-     "first": "2014-10-13",
-     "last": "2016-03-03"
+     "name": "CHONGRIM2",
+     "flag": "PRK",
+     "mmsi": "445175000",
+     "first": "2014-01-02",
+     "last": "2015-12-31"
     },
     {
-     "name": "FREE IMPALA",
-     "flag": "BHS",
-     "mmsi": "311902000",
-     "first": "2012-01-02",
-     "last": "2012-10-10"
+     "name": "JINJIANG2",
+     "flag": "PAN",
+     "mmsi": "351935000",
+     "first": "2012-04-07",
+     "last": "2013-08-24"
     }
    ],
-   "lastSeen": "2026-11-14",
-   "visits": [
-    {
-     "start": "2026-11-12",
-     "end": "2026-11-12",
-     "port": "ZHUHAI",
-     "country": "CHN",
-     "confidence": 3,
-     "as": "NAMDAECHON",
-     "flag": "PRK"
-    },
-    {
-     "start": "2026-08-09",
-     "end": "2026-10-28",
-     "port": "",
-     "country": "PRK",
-     "confidence": 4,
-     "as": "NAMDAECHON",
-     "flag": "PRK"
-    },
-    {
-     "start": "2026-08-04",
-     "end": "2026-08-06",
-     "port": "VLADIVOSTOK",
-     "country": "RUS",
-     "confidence": 4,
-     "as": "NAMDAECHON",
-     "flag": "PRK"
-    },
-    {
-     "start": "2026-07-07",
-     "end": "2026-08-04",
-     "port": "VLADIVOSTOK",
-     "country": "RUS",
-     "confidence": 4,
-     "as": "NAMDAECHON",
-     "flag": "PRK"
-    },
-    {
-     "start": "2026-01-18",
-     "end": "2026-01-22",
-     "port": "GOUQI ISLAND",
-     "country": "CHN",
-     "confidence": 4,
-     "as": "NAMDAECHON",
-     "flag": "PRK"
-    }
-   ],
+   "lastSeen": "2026-11-21",
+   "visits": [],
    "history": {
-    "visits": 108,
-    "foreign": 81,
-    "since": "2012-01-04"
+    "visits": 75,
+    "foreign": 50,
+    "since": "2012-04-07"
    },
    "radarMonths": []
   },
@@ -654,7 +72,7 @@
      "flag": "KOR",
      "mmsi": "440000450",
      "first": "2016-10-14",
-     "last": "2026-11-12"
+     "last": "2026-11-21"
     },
     {
      "name": "HYONG JE BONG",
@@ -720,14 +138,23 @@
      "last": "2012-11-24"
     }
    ],
-   "lastSeen": "2026-11-12",
+   "lastSeen": "2026-11-21",
    "visits": [
     {
-     "start": "2026-11-12",
-     "end": "2026-11-12",
+     "start": "2026-11-17",
+     "end": "2026-11-19",
      "port": "",
      "country": "KOR",
      "confidence": 3,
+     "as": "EUGENE1HO",
+     "flag": "KOR"
+    },
+    {
+     "start": "2026-11-12",
+     "end": "2026-11-17",
+     "port": "",
+     "country": "KOR",
+     "confidence": 4,
      "as": "EUGENE1HO",
      "flag": "KOR"
     },
@@ -1372,9 +799,645 @@
     }
    ],
    "history": {
-    "visits": 1411,
-    "foreign": 1324,
+    "visits": 1412,
+    "foreign": 1325,
     "since": "2012-01-25"
+   },
+   "radarMonths": []
+  },
+  {
+   "name": "Kum Song 7",
+   "imo": "8739396",
+   "lists": [
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "KUMSONG7",
+     "flag": "PRK",
+     "mmsi": "445208000",
+     "first": "2016-07-25",
+     "last": "2026-11-21"
+    },
+    {
+     "name": "ZHONG LIAN9",
+     "flag": "SLE",
+     "mmsi": "667001483",
+     "first": "2015-11-16",
+     "last": "2016-07-20"
+    },
+    {
+     "name": "ZHONG LIAN9",
+     "flag": "KHM",
+     "mmsi": "514311000",
+     "first": "2012-01-01",
+     "last": "2015-12-25"
+    },
+    {
+     "name": "ZHONWLIAN9",
+     "flag": "KHM",
+     "mmsi": "515359576",
+     "first": "2015-05-10",
+     "last": "2015-05-10"
+    }
+   ],
+   "lastSeen": "2026-11-21",
+   "visits": [
+    {
+     "start": "2017-06-04",
+     "end": "2026-11-08",
+     "port": "",
+     "country": "PRK",
+     "confidence": 4,
+     "as": "KUMSONG7",
+     "flag": "PRK"
+    }
+   ],
+   "history": {
+    "visits": 275,
+    "foreign": 199,
+    "since": "2012-01-17"
+   },
+   "radarMonths": []
+  },
+  {
+   "name": "Oriental Treasure",
+   "imo": "9115028",
+   "lists": [
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "SIN HAE",
+     "flag": "PRK",
+     "mmsi": "445058000",
+     "first": "2022-08-24",
+     "last": "2026-11-21"
+    },
+    {
+     "name": "ORIENTAL TREASURE",
+     "flag": "PRK",
+     "mmsi": "445058005",
+     "first": "2020-12-20",
+     "last": "2022-10-24"
+    },
+    {
+     "name": "ORIENTAL TREASURE",
+     "flag": "COM",
+     "mmsi": "620256000",
+     "first": "2017-02-15",
+     "last": "2019-01-20"
+    },
+    {
+     "name": "ORIENTAL TREASURE",
+     "flag": "TZA",
+     "mmsi": "677088900",
+     "first": "2016-09-10",
+     "last": "2017-02-15"
+    },
+    {
+     "name": "ORIENTAL TREASURE",
+     "flag": "KOR",
+     "mmsi": "441715000",
+     "first": "2013-06-13",
+     "last": "2016-09-30"
+    }
+   ],
+   "lastSeen": "2026-11-21",
+   "visits": [
+    {
+     "start": "2026-11-14",
+     "end": "2026-11-19",
+     "port": "LIANYUNGANG",
+     "country": "CHN",
+     "confidence": 3,
+     "as": "SIN HAE",
+     "flag": "PRK"
+    },
+    {
+     "start": "2026-11-11",
+     "end": "2026-11-14",
+     "port": "LIANYUNGANG",
+     "country": "CHN",
+     "confidence": 4,
+     "as": "SIN HAE",
+     "flag": "PRK"
+    },
+    {
+     "start": "2026-11-07",
+     "end": "2026-11-11",
+     "port": "LIANYUNGANG",
+     "country": "CHN",
+     "confidence": 4,
+     "as": "SIN HAE",
+     "flag": "PRK"
+    }
+   ],
+   "history": {
+    "visits": 188,
+    "foreign": 175,
+    "since": "2013-06-14"
+   },
+   "radarMonths": []
+  },
+  {
+   "name": "South Hill 5",
+   "imo": "9138680",
+   "lists": [
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "NAMDAECHON",
+     "flag": "PRK",
+     "mmsi": "445590000",
+     "first": "2016-12-10",
+     "last": "2026-11-21"
+    },
+    {
+     "name": "SOUTH HILL 5",
+     "flag": "PLW",
+     "mmsi": "511086000",
+     "first": "2014-10-13",
+     "last": "2016-03-03"
+    },
+    {
+     "name": "FREE IMPALA",
+     "flag": "BHS",
+     "mmsi": "311902000",
+     "first": "2012-01-02",
+     "last": "2012-10-10"
+    }
+   ],
+   "lastSeen": "2026-11-21",
+   "visits": [
+    {
+     "start": "2026-11-12",
+     "end": "2026-11-17",
+     "port": "ZHUHAI",
+     "country": "CHN",
+     "confidence": 4,
+     "as": "NAMDAECHON",
+     "flag": "PRK"
+    },
+    {
+     "start": "2026-08-09",
+     "end": "2026-10-28",
+     "port": "",
+     "country": "PRK",
+     "confidence": 4,
+     "as": "NAMDAECHON",
+     "flag": "PRK"
+    },
+    {
+     "start": "2026-08-04",
+     "end": "2026-08-06",
+     "port": "VLADIVOSTOK",
+     "country": "RUS",
+     "confidence": 4,
+     "as": "NAMDAECHON",
+     "flag": "PRK"
+    },
+    {
+     "start": "2026-07-07",
+     "end": "2026-08-04",
+     "port": "VLADIVOSTOK",
+     "country": "RUS",
+     "confidence": 4,
+     "as": "NAMDAECHON",
+     "flag": "PRK"
+    },
+    {
+     "start": "2026-01-18",
+     "end": "2026-01-22",
+     "port": "GOUQI ISLAND",
+     "country": "CHN",
+     "confidence": 4,
+     "as": "NAMDAECHON",
+     "flag": "PRK"
+    }
+   ],
+   "history": {
+    "visits": 108,
+    "foreign": 81,
+    "since": "2012-01-04"
+   },
+   "radarMonths": []
+  },
+  {
+   "name": "Bogatyr",
+   "imo": "9085730",
+   "lists": [
+    "US"
+   ],
+   "ais": [
+    {
+     "name": "SAKHALIN",
+     "flag": "RUS",
+     "mmsi": "273390290",
+     "first": "2016-10-15",
+     "last": "2026-11-18"
+    },
+    {
+     "name": "AFRICAN EXPRESS",
+     "flag": "PLW",
+     "mmsi": "511260000",
+     "first": "2015-11-03",
+     "last": "2016-10-11"
+    },
+    {
+     "name": "STELLANOVA",
+     "flag": "NLD",
+     "mmsi": "245781000",
+     "first": "2012-01-01",
+     "last": "2015-11-03"
+    }
+   ],
+   "lastSeen": "2026-11-18",
+   "visits": [
+    {
+     "start": "2026-11-11",
+     "end": "2026-11-18",
+     "port": "VLADIVOSTOK",
+     "country": "RUS",
+     "confidence": 3,
+     "as": "SAKHALIN",
+     "flag": "RUS"
+    },
+    {
+     "start": "2026-10-17",
+     "end": "2026-11-05",
+     "port": "SHANGHAI",
+     "country": "CHN",
+     "confidence": 4,
+     "as": "SAKHALIN",
+     "flag": "RUS"
+    },
+    {
+     "start": "2026-10-10",
+     "end": "2026-10-16",
+     "port": "SHANGHAI",
+     "country": "CHN",
+     "confidence": 4,
+     "as": "SAKHALIN",
+     "flag": "RUS"
+    },
+    {
+     "start": "2026-08-31",
+     "end": "2026-10-10",
+     "port": "ZHOUSHAN",
+     "country": "CHN",
+     "confidence": 4,
+     "as": "SAKHALIN",
+     "flag": "RUS"
+    },
+    {
+     "start": "2026-08-21",
+     "end": "2026-08-22",
+     "port": "VLADIVOSTOK",
+     "country": "RUS",
+     "confidence": 4,
+     "as": "SAKHALIN",
+     "flag": "RUS"
+    },
+    {
+     "start": "2026-08-14",
+     "end": "2026-08-20",
+     "port": "VLADIVOSTOK",
+     "country": "RUS",
+     "confidence": 4,
+     "as": "SAKHALIN",
+     "flag": "RUS"
+    },
+    {
+     "start": "2026-07-30",
+     "end": "2026-08-01",
+     "port": "",
+     "country": "RUS",
+     "confidence": 4,
+     "as": "SAKHALIN",
+     "flag": "RUS"
+    },
+    {
+     "start": "2026-07-08",
+     "end": "2026-07-30",
+     "port": "VLADIVOSTOK",
+     "country": "RUS",
+     "confidence": 4,
+     "as": "SAKHALIN",
+     "flag": "RUS"
+    },
+    {
+     "start": "2026-07-08",
+     "end": "2026-07-08",
+     "port": "VLADIVOSTOK",
+     "country": "RUS",
+     "confidence": 3,
+     "as": "SAKHALIN",
+     "flag": "RUS"
+    },
+    {
+     "start": "2026-06-26",
+     "end": "2026-07-08",
+     "port": "VLADIVOSTOK",
+     "country": "RUS",
+     "confidence": 4,
+     "as": "SAKHALIN",
+     "flag": "RUS"
+    },
+    {
+     "start": "2026-05-31",
+     "end": "2026-05-31",
+     "port": "HUANGHUA",
+     "country": "CHN",
+     "confidence": 4,
+     "as": "SAKHALIN",
+     "flag": "RUS"
+    },
+    {
+     "start": "2026-05-09",
+     "end": "2026-05-15",
+     "port": "HUANGHUA",
+     "country": "CHN",
+     "confidence": 4,
+     "as": "SAKHALIN",
+     "flag": "RUS"
+    },
+    {
+     "start": "2026-05-04",
+     "end": "2026-05-09",
+     "port": "HUANG HUA",
+     "country": "CHN",
+     "confidence": 4,
+     "as": "SAKHALIN",
+     "flag": "RUS"
+    },
+    {
+     "start": "2026-04-17",
+     "end": "2026-05-04",
+     "port": "HUANGHUA",
+     "country": "CHN",
+     "confidence": 4,
+     "as": "SAKHALIN",
+     "flag": "RUS"
+    },
+    {
+     "start": "2026-04-03",
+     "end": "2026-04-07",
+     "port": "VLADIVOSTOK",
+     "country": "RUS",
+     "confidence": 4,
+     "as": "SAKHALIN",
+     "flag": "RUS"
+    },
+    {
+     "start": "2026-03-25",
+     "end": "2026-03-31",
+     "port": "VLADIVOSTOK",
+     "country": "RUS",
+     "confidence": 4,
+     "as": "SAKHALIN",
+     "flag": "RUS"
+    },
+    {
+     "start": "2026-03-18",
+     "end": "2026-03-20",
+     "port": "VLADIVOSTOK",
+     "country": "RUS",
+     "confidence": 4,
+     "as": "SAKHALIN",
+     "flag": "RUS"
+    },
+    {
+     "start": "2026-03-13",
+     "end": "2026-03-17",
+     "port": "VLADIVOSTOK",
+     "country": "RUS",
+     "confidence": 4,
+     "as": "SAKHALIN",
+     "flag": "RUS"
+    },
+    {
+     "start": "2026-03-11",
+     "end": "2026-03-13",
+     "port": "VLADIVOSTOK",
+     "country": "RUS",
+     "confidence": 4,
+     "as": "SAKHALIN",
+     "flag": "RUS"
+    },
+    {
+     "start": "2026-03-07",
+     "end": "2026-03-11",
+     "port": "VLADIVOSTOK",
+     "country": "RUS",
+     "confidence": 4,
+     "as": "SAKHALIN",
+     "flag": "RUS"
+    },
+    {
+     "start": "2026-03-04",
+     "end": "2026-03-07",
+     "port": "VLADIVOSTOK",
+     "country": "RUS",
+     "confidence": 4,
+     "as": "SAKHALIN",
+     "flag": "RUS"
+    },
+    {
+     "start": "2026-02-08",
+     "end": "2026-03-01",
+     "port": "VLADIVOSTOK",
+     "country": "RUS",
+     "confidence": 4,
+     "as": "SAKHALIN",
+     "flag": "RUS"
+    },
+    {
+     "start": "2026-02-05",
+     "end": "2026-02-08",
+     "port": "VLADIVOSTOK",
+     "country": "RUS",
+     "confidence": 4,
+     "as": "SAKHALIN",
+     "flag": "RUS"
+    },
+    {
+     "start": "2026-02-02",
+     "end": "2026-02-04",
+     "port": "VLADIVOSTOK",
+     "country": "RUS",
+     "confidence": 4,
+     "as": "SAKHALIN",
+     "flag": "RUS"
+    },
+    {
+     "start": "2026-01-31",
+     "end": "2026-02-02",
+     "port": "VLADIVOSTOK",
+     "country": "RUS",
+     "confidence": 4,
+     "as": "SAKHALIN",
+     "flag": "RUS"
+    },
+    {
+     "start": "2026-01-28",
+     "end": "2026-01-31",
+     "port": "VLADIVOSTOK",
+     "country": "RUS",
+     "confidence": 4,
+     "as": "SAKHALIN",
+     "flag": "RUS"
+    },
+    {
+     "start": "2026-01-26",
+     "end": "2026-01-28",
+     "port": "VLADIVOSTOK",
+     "country": "RUS",
+     "confidence": 4,
+     "as": "SAKHALIN",
+     "flag": "RUS"
+    },
+    {
+     "start": "2026-01-09",
+     "end": "2026-01-24",
+     "port": "VLADIVOSTOK",
+     "country": "RUS",
+     "confidence": 4,
+     "as": "SAKHALIN",
+     "flag": "RUS"
+    },
+    {
+     "start": "2026-01-05",
+     "end": "2026-01-09",
+     "port": "VLADIVOSTOK",
+     "country": "RUS",
+     "confidence": 4,
+     "as": "SAKHALIN",
+     "flag": "RUS"
+    },
+    {
+     "start": "2026-01-05",
+     "end": "2026-01-05",
+     "port": "VLADIVOSTOK",
+     "country": "RUS",
+     "confidence": 4,
+     "as": "SAKHALIN",
+     "flag": "RUS"
+    },
+    {
+     "start": "2026-01-04",
+     "end": "2026-01-05",
+     "port": "VLADIVOSTOK",
+     "country": "RUS",
+     "confidence": 4,
+     "as": "SAKHALIN",
+     "flag": "RUS"
+    },
+    {
+     "start": "2026-01-02",
+     "end": "2026-01-04",
+     "port": "VLADIVOSTOK",
+     "country": "RUS",
+     "confidence": 4,
+     "as": "SAKHALIN",
+     "flag": "RUS"
+    },
+    {
+     "start": "2026-01-01",
+     "end": "2026-01-02",
+     "port": "VLADIVOSTOK",
+     "country": "RUS",
+     "confidence": 4,
+     "as": "SAKHALIN",
+     "flag": "RUS"
+    },
+    {
+     "start": "2025-12-30",
+     "end": "2026-01-01",
+     "port": "VLADIVOSTOK",
+     "country": "RUS",
+     "confidence": 4,
+     "as": "SAKHALIN",
+     "flag": "RUS"
+    },
+    {
+     "start": "2025-12-28",
+     "end": "2025-12-30",
+     "port": "VLADIVOSTOK",
+     "country": "RUS",
+     "confidence": 4,
+     "as": "SAKHALIN",
+     "flag": "RUS"
+    },
+    {
+     "start": "2025-12-23",
+     "end": "2025-12-28",
+     "port": "VLADIVOSTOK",
+     "country": "RUS",
+     "confidence": 4,
+     "as": "SAKHALIN",
+     "flag": "RUS"
+    },
+    {
+     "start": "2025-12-15",
+     "end": "2025-12-23",
+     "port": "VLADIVOSTOK",
+     "country": "RUS",
+     "confidence": 4,
+     "as": "SAKHALIN",
+     "flag": "RUS"
+    },
+    {
+     "start": "2025-12-13",
+     "end": "2025-12-15",
+     "port": "VLADIVOSTOK",
+     "country": "RUS",
+     "confidence": 4,
+     "as": "SAKHALIN",
+     "flag": "RUS"
+    },
+    {
+     "start": "2025-12-07",
+     "end": "2025-12-13",
+     "port": "VLADIVOSTOK",
+     "country": "RUS",
+     "confidence": 4,
+     "as": "SAKHALIN",
+     "flag": "RUS"
+    },
+    {
+     "start": "2025-12-06",
+     "end": "2025-12-06",
+     "port": "VLADIVOSTOK",
+     "country": "RUS",
+     "confidence": 4,
+     "as": "SAKHALIN",
+     "flag": "RUS"
+    },
+    {
+     "start": "2025-12-04",
+     "end": "2025-12-06",
+     "port": "VLADIVOSTOK",
+     "country": "RUS",
+     "confidence": 4,
+     "as": "SAKHALIN",
+     "flag": "RUS"
+    },
+    {
+     "start": "2025-11-28",
+     "end": "2025-12-04",
+     "port": "VLADIVOSTOK",
+     "country": "RUS",
+     "confidence": 4,
+     "as": "SAKHALIN",
+     "flag": "RUS"
+    }
+   ],
+   "history": {
+    "visits": 383,
+    "foreign": 383,
+    "since": "2012-01-01"
    },
    "radarMonths": []
   },
@@ -2228,51 +2291,6 @@
     "visits": 35,
     "foreign": 32,
     "since": "2016-05-12"
-   },
-   "radarMonths": []
-  },
-  {
-   "name": "Chong Rim 2",
-   "imo": "8916293",
-   "lists": [
-    "US"
-   ],
-   "ais": [
-    {
-     "name": "POM SAN 3",
-     "flag": "PRK",
-     "mmsi": "445143000",
-     "first": "2016-09-10",
-     "last": "2026-07-30"
-    },
-    {
-     "name": "SAE BYOL",
-     "flag": "PRK",
-     "mmsi": "445143100",
-     "first": "2020-09-26",
-     "last": "2022-09-16"
-    },
-    {
-     "name": "CHONGRIM2",
-     "flag": "PRK",
-     "mmsi": "445175000",
-     "first": "2014-01-02",
-     "last": "2015-12-31"
-    },
-    {
-     "name": "JINJIANG2",
-     "flag": "PAN",
-     "mmsi": "351935000",
-     "first": "2012-04-07",
-     "last": "2013-08-24"
-    }
-   ],
-   "lastSeen": "2026-07-30",
-   "visits": [],
-   "history": {
-    "visits": 75,
-    "foreign": 50,
-    "since": "2012-04-07"
    },
    "radarMonths": []
   },
@@ -5691,12 +5709,12 @@
   },
   {
    "month": "2026-11",
-   "detections": 3061,
+   "detections": 4717,
    "matched": 0,
    "flags": {},
-   "passes": 8,
+   "passes": 11,
    "firstFetched": "2026-11-09",
-   "updated": "2026-11-16"
+   "updated": "2026-11-23"
   }
  ],
  "radarYears": [
@@ -5765,16 +5783,16 @@
   },
   {
    "year": "2026",
-   "detections": 44745,
+   "detections": 46401,
    "matched": 205,
-   "passes": 180,
+   "passes": 183,
    "months": 11
   }
  ],
  "ports": {
-  "visits": 717,
+  "visits": 731,
   "vessels": 199,
-  "foreignVisits": 53,
+  "foreignVisits": 57,
   "list": [
    {
     "port": "NAMPO",
@@ -5782,9 +5800,9 @@
     "portId": "prk-nampo",
     "lat": 38.7163,
     "lon": 125.421,
-    "visits": 602,
+    "visits": 611,
     "flags": {
-     "PRK": 570,
+     "PRK": 579,
      "TZA": 2,
      "PAN": 2,
      "COM": 4,
@@ -5802,11 +5820,11 @@
     "portId": "prk-prk-19",
     "lat": 41.7597,
     "lon": 129.7625,
-    "visits": 32,
+    "visits": 33,
     "flags": {
-     "PRK": 32
+     "PRK": 33
     },
-    "vessels": 25
+    "vessels": 26
    },
    {
     "port": "SINUIJU",
@@ -5814,11 +5832,11 @@
     "portId": "prk-prk-14",
     "lat": 39.8866,
     "lon": 124.281,
-    "visits": 29,
+    "visits": 33,
     "flags": {
      "PRK": 9,
-     "CHN": 15,
-     "SHN": 5
+     "CHN": 18,
+     "SHN": 6
     },
     "vessels": 15
    },
@@ -5888,15 +5906,27 @@
   ],
   "foreign": [
    {
-    "name": "DAN HANG 021",
-    "mmsi": "413203220",
+    "name": "1",
+    "mmsi": "608683971",
+    "flag": "SHN",
+    "vtype": "insufficient_data",
+    "first": "2026-10-17",
+    "last": "2026-11-18",
+    "visits": 6,
+    "ports": {
+     "~SINUIJU": 6
+    }
+   },
+   {
+    "name": "QIONGCHANGJIANG",
+    "mmsi": "412150820",
     "flag": "CHN",
     "vtype": "other",
-    "first": "2025-12-15",
-    "last": "2026-11-11",
-    "visits": 5,
+    "first": "2026-05-13",
+    "last": "2026-11-17",
+    "visits": 3,
     "ports": {
-     "~SINUIJU": 5
+     "~NAMPO": 3
     }
    },
    {
@@ -5905,19 +5935,19 @@
     "flag": "CHN",
     "vtype": "fishing",
     "first": "2026-10-31",
-    "last": "2026-11-11",
-    "visits": 4,
+    "last": "2026-11-17",
+    "visits": 7,
     "ports": {
-     "~SINUIJU": 4
+     "~SINUIJU": 7
     }
    },
    {
-    "name": "1",
-    "mmsi": "608683971",
-    "flag": "SHN",
-    "vtype": "insufficient_data",
-    "first": "2026-10-17",
-    "last": "2026-11-09",
+    "name": "DAN HANG 021",
+    "mmsi": "413203220",
+    "flag": "CHN",
+    "vtype": "other",
+    "first": "2025-12-15",
+    "last": "2026-11-11",
     "visits": 5,
     "ports": {
      "~SINUIJU": 5
@@ -6038,18 +6068,6 @@
     "vtype": "fishing",
     "first": "2026-08-10",
     "last": "2026-09-04",
-    "visits": 3,
-    "ports": {
-     "~NAMPO": 3
-    }
-   },
-   {
-    "name": "QIONGCHANGJIANG",
-    "mmsi": "412150820",
-    "flag": "CHN",
-    "vtype": "other",
-    "first": "2026-05-13",
-    "last": "2026-08-28",
     "visits": 3,
     "ports": {
      "~NAMPO": 3
