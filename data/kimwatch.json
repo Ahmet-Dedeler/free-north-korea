@@ -1,16 +1,33 @@
 {
- "fetched": "2026-11-22",
+ "fetched": "2026-11-23",
  "oldestListed": "2025-11-27",
  "coverage": {
   "from": "2025-10-10",
-  "to": "2026-11-21"
+  "to": "2026-11-23"
  },
  "lastAppearance": {
-  "date": "2026-11-20",
-  "id": "9a2c0ab0af5e6a119cfda4fc88bcb54b",
-  "title": "Respected Comrade Kim Jong Un Inspects School Fixtures Factory and Educational Apparatus Factory under Construction"
+  "date": "2026-11-22",
+  "id": "9087fa192bf31ea34e03c5d60eb2d851",
+  "title": "DPRK Head of State Receives Credentials from Newly Appointed Ambassadors of Various Countries"
  },
  "records": [
+  {
+   "id": "9087fa192bf31ea34e03c5d60eb2d851",
+   "url": "http://www.kcna.kp/en/article/detail/9087fa192bf31ea34e03c5d60eb2d851",
+   "reportDate": "2026-11-23",
+   "title": "DPRK Head of State Receives Credentials from Newly Appointed Ambassadors of Various Countries",
+   "eventDate": "2026-11-22",
+   "eventDateFrom": "text",
+   "appearance": true,
+   "kind": "diplomacy",
+   "speech": false,
+   "subject": "DPRK Head of State Receives Credentials from Newly Appointed Ambassadors of Various Countries",
+   "companions": [],
+   "present": [],
+   "daughter": false,
+   "wife": false,
+   "titleKo": "조선민주주의인민공화국주재 여러 나라 신임대사들이 국가수반에게 신임장 봉정"
+  },
   {
    "id": "9a2c0ab0af5e6a119cfda4fc88bcb54b",
    "url": "http://www.kcna.kp/en/article/detail/9a2c0ab0af5e6a119cfda4fc88bcb54b",

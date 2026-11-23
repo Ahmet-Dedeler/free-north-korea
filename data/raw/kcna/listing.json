@@ -1,6 +1,11 @@
 {
  "category": [
   {
+   "id": "9087fa192bf31ea34e03c5d60eb2d851",
+   "title": "DPRK Head of State Receives Credentials from Newly Appointed Ambassadors of Various Countries",
+   "date": "2026-11-23"
+  },
+  {
    "id": "9a2c0ab0af5e6a119cfda4fc88bcb54b",
    "title": "Respected Comrade Kim Jong Un Inspects School Fixtures Factory and Educational Apparatus Factory under Construction",
    "date": "2026-11-21"
@@ -7563,7 +7568,7 @@
    "date": "2025-10-10"
   }
  ],
- "categoryFetched": "2026-11-22",
+ "categoryFetched": "2026-11-23",
  "oldestListed": "2025-11-27",
  "searchFetched": "2026-11-16",
  "titlesKo": {
@@ -7801,6 +7806,7 @@
   "2c5da78e7c36a67344a7e85fab014ae1": "경애하는 김정은동지께서 삼지연시 관광지구건설사업을 현지에서 지도하시였다",
   "0f19a6fa6a22aa8b88d81a6034ae72e6": "경애하는 김정은동지께서 함경남도 리원군과 락원군의 지방발전정책대상건설장을 현지지도하시였다",
   "f4a39ed18a2bceb3f84a1761f010fd35": "경애하는 김정은동지께서 김정숙명칭 해군대학을 현지지도하시였다",
-  "9a2c0ab0af5e6a119cfda4fc88bcb54b": "경애하는 김정은동지께서 교구비품공장과 교육기자재공장건설을 현지지도하시였다"
+  "9a2c0ab0af5e6a119cfda4fc88bcb54b": "경애하는 김정은동지께서 교구비품공장과 교육기자재공장건설을 현지지도하시였다",
+  "9087fa192bf31ea34e03c5d60eb2d851": "조선민주주의인민공화국주재 여러 나라 신임대사들이 국가수반에게 신임장 봉정"
  }
 }
