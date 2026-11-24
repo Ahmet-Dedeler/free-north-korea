@@ -27,7 +27,8 @@ before adding any page or article.
   Sentinel-2 image with a 24-month scrubber for Camp Watch sites, from `mapSatIndex()` passed in by the route, else an
   Esri aerial labelled as undated; clicking it opens `SatViewer.tsx`, a full-screen pan/zoom viewer that keeps the
   month strip, and Close-up flies the map in on the spot in satellite mode, because Sentinel-2's 10 m stays soft at any
-  zoom), `BasemapSwitch.tsx` (bottom-left Map/Satellite thumbnail plus a Layers menu of
+  zoom; dated frames are preloaded before the UI commits to them, so a failed fetch keeps the last loaded image and date
+  and shows the network warning from `satLabels.ts`), `BasemapSwitch.tsx` (bottom-left Map/Satellite thumbnail plus a Layers menu of
   satellite overlays, `OVERLAYS` in `config.ts`), `Latest.tsx` (top of the sidebar: the latest launches and quakes from
   the event wire within 120 days and the newest Camp Watch images as thumbnails, built on the server by
   `content/mapLatest.ts`; quakes fly the map to a pulsing marker, launches link to `/missiles/list`). The map should feel like Google Maps, not a GIS tool: the sidebar is

@@ -1,8 +1,9 @@
 'use client';
 
 import { useCallback, useState } from 'react';
-import { Expand } from 'lucide-react';
+import { Expand, WifiOff } from 'lucide-react';
 import { Ext } from '@/components/Ext';
+import { useSafeImage } from '@/components/useSafeImage';
 import SatViewer from '@/map/SatViewer';
 
 /** One image as the server prepared it. All text is already in the reader's language. */
@@ -42,8 +43,10 @@ export interface SatCompareText {
   noClear: string;
   scene: string;
   openCopernicus?: string;
+  /** Template with `{date}` for when switching frames fails (e.g. offline). */
+  loadError: string;
   /** Labels for the full-size viewer. Given when the images have more detail than the page can show. */
-  full?: { open: string; close: string; zoomIn: string; zoomOut: string };
+  full?: { open: string; close: string; zoomIn: string; zoomOut: string; loadError: string };
 }
 
 /**
@@ -68,12 +71,18 @@ export default function SatCompare({
   scale: { pct: number; label: string };
   t: SatCompareText;
 }) {
-  const [before, setBefore] = useState<number | null>(defaultBefore);
+  const [req, setReq] = useState<{ idx: number | null; attempt: number }>({ idx: defaultBefore, attempt: 0 });
   const [pos, setPos] = useState(50);
+  const [afterFailed, setAfterFailed] = useState(false);
   const after = views[afterIdx];
-  const b = before !== null && before !== afterIdx ? views[before] : null;
   const sets = groups ?? [{ title: t.pickMonth ?? '', slots: slots ?? [] }];
   const sizes = '(max-width: 800px) 100vw, 560px';
+  const target =
+    req.idx !== null && req.idx !== afterIdx
+      ? { ...views[req.idx], idx: req.idx, sizes: views[req.idx].srcSet && sizes }
+      : null;
+  const { shown: b, loading, failed, onShownLoad, onShownError } = useSafeImage(target, req.attempt);
+  const errorDay = failed?.day ?? (afterFailed ? after.day : null);
   // Index of the image open in the full-size viewer; arrow keys step through all of them.
   const [big, setBig] = useState<number | null>(null);
   const step = useCallback((by: number) => setBig((i) => (i === null ? i : Math.max(0, Math.min(views.length - 1, i + by)))), [views.length]);
@@ -82,10 +91,32 @@ export default function SatCompare({
     <div className="sw-body">
       <figure className="sw-figure">
         <div className="sw-stage">
-          <img className="sw-img" src={after.src} srcSet={after.srcSet} sizes={after.srcSet && sizes} alt={after.alt} width={512} height={512} draggable={false} />
+          <img
+            className="sw-img"
+            src={after.src}
+            srcSet={after.srcSet}
+            sizes={after.srcSet && sizes}
+            alt={after.alt}
+            width={512}
+            height={512}
+            draggable={false}
+            onLoad={() => setAfterFailed(false)}
+            onError={() => setAfterFailed(true)}
+          />
           {b && (
             <div className="sw-before" style={{ clipPath: `inset(0 ${100 - pos}% 0 0)` }}>
-              <img className="sw-img" src={b.src} srcSet={b.srcSet} sizes={b.srcSet && sizes} alt={b.alt} width={512} height={512} draggable={false} />
+              <img
+                className="sw-img"
+                src={b.src}
+                srcSet={b.srcSet}
+                sizes={b.srcSet && sizes}
+                alt={b.alt}
+                width={512}
+                height={512}
+                draggable={false}
+                onLoad={onShownLoad}
+                onError={onShownError}
+              />
             </div>
           )}
           <span className="sw-ring" aria-hidden="true" />
@@ -123,9 +154,15 @@ export default function SatCompare({
 
       <div className="sw-side">
         <div className="sw-caps">
-          {b && <Cap v={b} label={t.before} t={t} onOpen={() => before !== null && setBig(before)} />}
+          {b && <Cap v={b} label={t.before} t={t} onOpen={() => setBig(b.idx)} />}
           <Cap v={after} label={b ? t.after : t.latest} t={t} onOpen={() => setBig(afterIdx)} />
         </div>
+        {errorDay && (
+          <p className="sw-error" role="status">
+            <WifiOff size={14} aria-hidden="true" />
+            <span>{t.loadError.replace('{date}', errorDay)}</span>
+          </p>
+        )}
         {sets.map((set) => (
           <div className="sw-months" key={set.title}>
             <p className="sw-pick">{set.title}</p>
@@ -135,9 +172,10 @@ export default function SatCompare({
                   <button
                     type="button"
                     disabled={s.idx === null}
-                    aria-pressed={s.idx !== null && (s.idx === before || (s.idx === afterIdx && b === null))}
+                    aria-pressed={s.idx !== null && (b ? s.idx === b.idx : s.idx === afterIdx)}
+                    aria-busy={loading && s.idx === loading.idx ? true : undefined}
                     title={s.idx === null ? t.noClear : views[s.idx].day}
-                    onClick={() => s.idx !== null && setBefore(s.idx)}
+                    onClick={() => s.idx !== null && setReq((r) => ({ idx: s.idx, attempt: r.attempt + 1 }))}
                   >
                     {s.label}
                   </button>

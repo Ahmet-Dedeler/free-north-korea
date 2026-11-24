@@ -2,11 +2,12 @@
 
 import { useCallback, useMemo, useRef, useState } from 'react';
 import Link from 'next/link';
-import { Expand, GitCompareArrows, Sparkles, ZoomIn } from 'lucide-react';
+import { Expand, GitCompareArrows, Sparkles, WifiOff, ZoomIn } from 'lucide-react';
 import SatView from '@/components/SatView';
+import { useSafeImage } from '@/components/useSafeImage';
 import { localize } from '@/content/chrome';
 import { MAP_TEXT } from '@/content/mapI18n';
-import { PLANET_CREDIT, dayLabel, imgSrc, monthLabel, planetDayLabel, planetSrc, satCredit, type MapSatSite } from '@/content/satLabels';
+import { PLANET_CREDIT, dayLabel, imgSrc, monthLabel, planetDayLabel, planetSrc, satCredit, satLoadError, type MapSatSite } from '@/content/satLabels';
 import type { Lang } from '@/site/seo';
 import type { LayerId } from './config';
 import SatViewer from './SatViewer';
@@ -90,14 +91,28 @@ function SentinelPhoto({ siteId, site, name, lang, onCloseUp }: { siteId: string
   const [hover, setHover] = useState<number | null>(null);
   const slot = hover ?? pinned;
   // an empty month shows the nearest month that has an image, earlier first; the caption always names the real date
-  const shown = useMemo(() => {
+  const requestedIdx = useMemo(() => {
     for (let d = 0; d < SLOTS; d++) {
       for (const s of [slot - d, slot + d]) if (slots[s]?.idx != null) return slots[s].idx!;
     }
     return latestIdx;
   }, [slot, slots, latestIdx]);
+  const requestedFrame = frames[requestedIdx];
+  const requestedDay = dayLabel(lang, requestedFrame.date);
+  const {
+    shown: activeSafe,
+    failed: failedPhoto,
+    onShownLoad,
+    onShownError,
+  } = useSafeImage({
+    src: imgSrc(siteId, requestedFrame.date),
+    idx: requestedIdx,
+    day: requestedDay,
+  });
+  const active = activeSafe!;
+  const shown = active.idx;
   const frame = frames[shown];
-  const day = dayLabel(lang, frame.date);
+  const day = active.day;
 
   // fetch every month's image the first time the reader touches the strip, so scrubbing doesn't flicker
   const warmed = useRef(false);
@@ -165,7 +180,7 @@ function SentinelPhoto({ siteId, site, name, lang, onCloseUp }: { siteId: string
     <figure className="pp">
       <div className="pp-img">
         <button type="button" className="pp-open" onClick={() => setBig(true)} aria-label={tx.photoExpand} title={tx.photoExpand}>
-          <img src={imgSrc(siteId, frame.date)} alt={tx.photoAlt(name, day)} width={512} height={512} />
+          <img src={active.src} alt={tx.photoAlt(name, day)} width={512} height={512} onLoad={onShownLoad} onError={onShownError} />
         </button>
         <span className="pp-ring" aria-hidden="true" />
         <span className="pp-cap">{caption}</span>
@@ -175,6 +190,12 @@ function SentinelPhoto({ siteId, site, name, lang, onCloseUp }: { siteId: string
         {/* the 24-month strip sits on the photo like a video scrubber */}
         {scrub}
       </div>
+      {failedPhoto && (
+        <p className="pp-error" role="status">
+          <WifiOff size={13} aria-hidden="true" />
+          <span>{satLoadError(lang, failedPhoto.day)}</span>
+        </p>
+      )}
       <figcaption className="pp-links">
         {onCloseUp && (
           <button type="button" className="pp-act" onClick={onCloseUp} title={tx.photoCloseUpHint}>
@@ -225,7 +246,8 @@ function SentinelPhoto({ siteId, site, name, lang, onCloseUp }: { siteId: string
               </p>
             </>
           }
-          labels={{ close: tx.close, zoomIn: tx.zoomIn, zoomOut: tx.zoomOut }}
+          error={failedPhoto ? satLoadError(lang, failedPhoto.day) : null}
+          labels={{ close: tx.close, zoomIn: tx.zoomIn, zoomOut: tx.zoomOut, loadError: satLoadError(lang) }}
           onStep={step}
           onClose={() => setBig(false)}
         />
@@ -272,7 +294,7 @@ function PlanetViewer({ siteId, planet, name, lang, onClose }: { siteId: string;
           </p>
         </>
       }
-      labels={{ close: tx.close, zoomIn: tx.zoomIn, zoomOut: tx.zoomOut }}
+      labels={{ close: tx.close, zoomIn: tx.zoomIn, zoomOut: tx.zoomOut, loadError: satLoadError(lang, day) }}
       onStep={step}
       onClose={onClose}
     />

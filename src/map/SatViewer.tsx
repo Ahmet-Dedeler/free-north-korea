@@ -2,7 +2,8 @@
 
 import { useCallback, useEffect, useRef, useState, type ReactNode } from 'react';
 import { createPortal } from 'react-dom';
-import { Minus, Plus, X } from 'lucide-react';
+import { Minus, Plus, WifiOff, X } from 'lucide-react';
+import { useSafeImage } from '@/components/useSafeImage';
 
 const MAX = 8;
 
@@ -12,11 +13,32 @@ const MAX = 8;
  * kept while stepping, so the same spot can be compared across months. Past 4× the real pixels show (no smoothing),
  * so nobody mistakes the blur of a 10 m image for detail.
  */
-export default function SatViewer({ src, alt, caption, footer, labels, onStep, onClose }: { src: string; alt: string; caption: ReactNode; footer?: ReactNode; labels: { close: string; zoomIn: string; zoomOut: string }; onStep?: (by: number) => void; onClose: () => void }) {
+export default function SatViewer({
+  src,
+  alt,
+  caption,
+  footer,
+  error,
+  labels,
+  onStep,
+  onClose,
+}: {
+  src: string;
+  alt: string;
+  caption: ReactNode;
+  footer?: ReactNode;
+  error?: string | null;
+  labels: { close: string; zoomIn: string; zoomOut: string; loadError?: string };
+  onStep?: (by: number) => void;
+  onClose: () => void;
+}) {
   const stage = useRef<HTMLDivElement>(null);
   const [view, setView] = useState({ s: 1, x: 0, y: 0 });
   const pointers = useRef(new Map<number, { x: number; y: number }>());
   const pinch = useRef<{ d: number; s: number } | null>(null);
+  const { shown, failed, onShownLoad, onShownError } = useSafeImage({ src, alt, caption });
+  const current = shown!;
+  const errorText = error || (failed ? (labels.loadError ?? 'Couldn’t load that image. Check your internet connection.') : null);
 
   /** Zoom to scale `to` keeping the point (px, py), relative to the stage centre, where it is. */
   const zoomAt = useCallback((to: number, px = 0, py = 0) => {
@@ -68,7 +90,7 @@ export default function SatViewer({ src, alt, caption, footer, labels, onStep, o
   }, [onClose, onStep, zoomAt, view.s]);
 
   return createPortal(
-    <div className="sv" role="dialog" aria-modal="true" aria-label={alt}>
+    <div className="sv" role="dialog" aria-modal="true" aria-label={current.alt}>
       <div
         ref={stage}
         className={`sv-stage ${view.s > 1 ? 'zoomed' : ''}`}
@@ -103,19 +125,27 @@ export default function SatViewer({ src, alt, caption, footer, labels, onStep, o
         }}
       >
         <img
-          src={src}
-          alt={alt}
+          src={current.src}
+          alt={current.alt}
           draggable={false}
           className={view.s >= 4 ? 'raw' : ''}
           style={{ transform: `translate(${view.x}px, ${view.y}px) scale(${view.s})` }}
+          onLoad={onShownLoad}
+          onError={onShownError}
         />
       </div>
       <div className="sv-top">
-        <span className="sv-cap">{caption}</span>
+        <span className="sv-cap">{current.caption}</span>
         <button type="button" className="sv-btn" onClick={onClose} aria-label={labels.close} title={labels.close}>
           <X size={18} />
         </button>
       </div>
+      {errorText && (
+        <p className="sv-error" role="status">
+          <WifiOff size={14} aria-hidden="true" />
+          <span>{errorText}</span>
+        </p>
+      )}
       <div className="sv-zoom">
         <button type="button" className="sv-btn" onClick={() => zoomAt(view.s * 1.6)} aria-label={labels.zoomIn} title={labels.zoomIn} disabled={view.s >= MAX}>
           <Plus size={18} />

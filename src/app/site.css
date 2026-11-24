@@ -2124,6 +2124,22 @@ a.card:hover {
 .intel-detail .pp-links > span {
   flex-basis: 100%;
 }
+.pp-error {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin: 8px 18px 0;
+  padding: 7px 10px;
+  border: 1px solid color-mix(in srgb, var(--warn) 35%, var(--line));
+  border-radius: 8px;
+  font-size: 12px;
+  line-height: 1.35;
+  color: var(--warn);
+  background: color-mix(in srgb, var(--warn) 10%, transparent);
+}
+.pp-error svg {
+  flex: none;
+}
 
 /* ---------- full-screen satellite viewer (src/map/SatViewer.tsx) ---------- */
 .sv {
@@ -2215,6 +2231,29 @@ a.card:hover {
 }
 .sv-btn:disabled {
   opacity: 0.35;
+}
+.sv-error {
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  max-width: calc(100% - 28px);
+  margin: 0;
+  padding: 7px 12px;
+  border: 1px solid rgb(251 191 36 / 0.45);
+  border-radius: 999px;
+  background: rgb(15 23 42 / 0.85);
+  backdrop-filter: blur(6px);
+  color: #fbbf24;
+  font-size: 12.5px;
+  line-height: 1.3;
+  pointer-events: none;
+}
+.sv-error svg {
+  flex: none;
 }
 .sv-zoom {
   position: absolute;

@@ -17,6 +17,7 @@ import {
   satSitePath,
   type SatSite,
 } from '@/content/satWatch';
+import { satLoadError } from '@/content/satLabels';
 import type { Lang } from '@/site/seo';
 
 /** Largest round distance that fits in 30% of the image width. */
@@ -95,6 +96,7 @@ export default function SatWatch({ id, lang, name }: { id: string; lang: Lang; n
           noClear: t.noClear,
           scene: t.scene,
           openCopernicus: t.openCopernicus,
+          loadError: satLoadError(lang, '{date}'),
         }}
       />
       <p className="sw-note">
@@ -169,7 +171,8 @@ export function PlanetWatch({ id, lang, name }: { id: string; lang: Lang; name: 
           compareAria: t.compareAria,
           noClear: '',
           scene: t.source,
-          full: t.full,
+          full: { ...t.full, loadError: satLoadError(lang) },
+          loadError: satLoadError(lang, '{date}'),
         }}
       />
       <p className="sw-note">

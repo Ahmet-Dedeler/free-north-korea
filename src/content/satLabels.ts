@@ -67,3 +67,26 @@ export interface MapSatSite {
   /** PlanetScope images of the same square, oldest first, when we have them. */
   planet?: { pixelM: number; frames: PlanetFrame[] };
 }
+
+const LOAD_ERROR: Record<Lang, { withDate: (date: string) => string; generic: string }> = {
+  en: {
+    withDate: (date) => `Couldn’t load ${date}. Check your internet connection.`,
+    generic: 'Couldn’t load that image. Check your internet connection.',
+  },
+  ko: {
+    withDate: (date) => `${date} 영상을 불러오지 못했습니다. 인터넷 연결을 확인하세요.`,
+    generic: '영상을 불러오지 못했습니다. 인터넷 연결을 확인하세요.',
+  },
+  ja: {
+    withDate: (date) => `${date}の画像を読み込めませんでした。インターネット接続を確認してください。`,
+    generic: '画像を読み込めませんでした。インターネット接続を確認してください。',
+  },
+  zh: {
+    withDate: (date) => `无法加载${date}的图像，请检查网络连接。`,
+    generic: '无法加载该图像，请检查网络连接。',
+  },
+};
+
+/** Short offline/network error message when switching a satellite frame fails. */
+export const satLoadError = (lang: Lang, date?: string) =>
+  date ? LOAD_ERROR[lang].withDate(date) : LOAD_ERROR[lang].generic;
