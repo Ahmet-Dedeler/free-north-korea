@@ -1,16 +1,88 @@
 {
- "fetched": "2026-11-23",
- "oldestListed": "2025-11-27",
+ "fetched": "2026-11-27",
+ "oldestListed": "2025-11-30",
  "coverage": {
   "from": "2025-10-10",
-  "to": "2026-11-23"
+  "to": "2026-11-27"
  },
  "lastAppearance": {
-  "date": "2026-11-22",
-  "id": "9087fa192bf31ea34e03c5d60eb2d851",
-  "title": "DPRK Head of State Receives Credentials from Newly Appointed Ambassadors of Various Countries"
+  "date": "2026-11-26",
+  "id": "56099cee91ff95e75b43658b5df98931",
+  "title": "Respected Comrade Kim Jong Un Has Photo Session with Participants in Seventh Conference of Cell Secretaries of WPK"
  },
  "records": [
+  {
+   "id": "56099cee91ff95e75b43658b5df98931",
+   "url": "http://www.kcna.kp/en/article/detail/56099cee91ff95e75b43658b5df98931",
+   "reportDate": "2026-11-27",
+   "title": "Respected Comrade Kim Jong Un Has Photo Session with Participants in Seventh Conference of Cell Secretaries of WPK",
+   "eventDate": "2026-11-26",
+   "eventDateFrom": "text",
+   "appearance": true,
+   "kind": "public",
+   "speech": false,
+   "subject": "Has Photo Session with Participants in Seventh Conference of Cell Secretaries of WPK",
+   "companions": [],
+   "present": [
+    "Jo Yong Won",
+    "Ju Chang Il"
+   ],
+   "daughter": false,
+   "wife": false,
+   "titleKo": "경애하는 김정은동지께서 조선로동당 제7차 세포비서대회 참가자들을 만나시고 기념사진을 찍으시였다"
+  },
+  {
+   "id": "e4897efd5d0fb068527247a7b7e9c783",
+   "url": "http://www.kcna.kp/en/article/detail/e4897efd5d0fb068527247a7b7e9c783",
+   "reportDate": "2026-11-27",
+   "title": "Respected Comrade Kim Jong Un Enjoys Performance Given by Visiting Russian Artistes",
+   "eventDate": "2026-11-26",
+   "eventDateFrom": "text",
+   "appearance": true,
+   "kind": "diplomacy",
+   "speech": false,
+   "subject": "Enjoys Performance Given by Visiting Russian Artistes",
+   "region": "Pyongyang",
+   "companions": [],
+   "present": [],
+   "daughter": false,
+   "wife": false,
+   "titleKo": "경애하는 김정은동지께서 우리 나라를 방문한 로씨야예술인들의 공연을 관람하시였다"
+  },
+  {
+   "id": "eb3e26744949129ab39f514e18616423",
+   "url": "http://www.kcna.kp/en/article/detail/eb3e26744949129ab39f514e18616423",
+   "reportDate": "2026-11-26",
+   "title": "Respected Comrade Kim Jong Un Inspects Nuclear Materials Production and Nuclear Weapons Research Field",
+   "eventDate": "2026-11-25",
+   "eventDateFrom": "text",
+   "appearance": true,
+   "kind": "military",
+   "speech": false,
+   "subject": "Inspects Nuclear Materials Production and Nuclear Weapons Research Field",
+   "companions": [],
+   "present": [],
+   "daughter": false,
+   "wife": false,
+   "titleKo": "경애하는 김정은동지께서 핵물질생산 및 핵무기연구부문 사업을 현지에서 지도하시였다"
+  },
+  {
+   "id": "dc8569339807a95fa8b6180c0dea7830",
+   "url": "http://www.kcna.kp/en/article/detail/dc8569339807a95fa8b6180c0dea7830",
+   "reportDate": "2026-11-26",
+   "title": "Respected Comrade Kim Jong Un Sends Important Letter to Participants in Seventh Conference of Cell Secretaries of WPK",
+   "eventDate": "2026-11-24",
+   "eventDateFrom": "text",
+   "appearance": false,
+   "kind": "message",
+   "speech": false,
+   "subject": "Sends Important Letter to Participants in Seventh Conference of Cell Secretaries of WPK",
+   "companions": [],
+   "present": [],
+   "daughter": false,
+   "wife": false,
+   "titleKo": "경애하는 김정은동지께서 조선로동당 제7차 세포비서대회 참가자들에게 강령적인 서한을 보내시였다"
+  },
   {
    "id": "9087fa192bf31ea34e03c5d60eb2d851",
    "url": "http://www.kcna.kp/en/article/detail/9087fa192bf31ea34e03c5d60eb2d851",
@@ -4409,6 +4481,13 @@
   }
  ],
  "messages": [
+  {
+   "id": "dc8569339807a95fa8b6180c0dea7830",
+   "url": "http://www.kcna.kp/en/article/detail/dc8569339807a95fa8b6180c0dea7830",
+   "date": "2026-11-26",
+   "title": "Respected Comrade Kim Jong Un Sends Important Letter to Participants in Seventh Conference of Cell Secretaries of WPK",
+   "direction": "sent"
+  },
   {
    "id": "a3acea517f0e7690215482c15127c347",
    "url": "http://www.kcna.kp/en/article/detail/a3acea517f0e7690215482c15127c347",

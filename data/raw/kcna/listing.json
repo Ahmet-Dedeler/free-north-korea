@@ -1,6 +1,26 @@
 {
  "category": [
   {
+   "id": "e4897efd5d0fb068527247a7b7e9c783",
+   "title": "Respected Comrade Kim Jong Un Enjoys Performance Given by Visiting Russian Artistes",
+   "date": "2026-11-27"
+  },
+  {
+   "id": "56099cee91ff95e75b43658b5df98931",
+   "title": "Respected Comrade Kim Jong Un Has Photo Session with Participants in Seventh Conference of Cell Secretaries of WPK",
+   "date": "2026-11-27"
+  },
+  {
+   "id": "eb3e26744949129ab39f514e18616423",
+   "title": "Respected Comrade Kim Jong Un Inspects Nuclear Materials Production and Nuclear Weapons Research Field",
+   "date": "2026-11-26"
+  },
+  {
+   "id": "dc8569339807a95fa8b6180c0dea7830",
+   "title": "Respected Comrade Kim Jong Un Sends Important Letter to Participants in Seventh Conference of Cell Secretaries of WPK",
+   "date": "2026-11-26"
+  },
+  {
    "id": "9087fa192bf31ea34e03c5d60eb2d851",
    "title": "DPRK Head of State Receives Credentials from Newly Appointed Ambassadors of Various Countries",
    "date": "2026-11-23"
@@ -7648,8 +7668,8 @@
    "date": "2025-10-10"
   }
  ],
- "categoryFetched": "2026-11-23",
- "oldestListed": "2025-11-27",
+ "categoryFetched": "2026-11-27",
+ "oldestListed": "2025-11-30",
  "searchFetched": "2026-11-23",
  "titlesKo": {
   "2bd661f15c5178018e860a9ce35e555d": "동부지역에서 전략미싸일발사훈련 진행",
@@ -7887,6 +7907,10 @@
   "0f19a6fa6a22aa8b88d81a6034ae72e6": "경애하는 김정은동지께서 함경남도 리원군과 락원군의 지방발전정책대상건설장을 현지지도하시였다",
   "f4a39ed18a2bceb3f84a1761f010fd35": "경애하는 김정은동지께서 김정숙명칭 해군대학을 현지지도하시였다",
   "9a2c0ab0af5e6a119cfda4fc88bcb54b": "경애하는 김정은동지께서 교구비품공장과 교육기자재공장건설을 현지지도하시였다",
-  "9087fa192bf31ea34e03c5d60eb2d851": "조선민주주의인민공화국주재 여러 나라 신임대사들이 국가수반에게 신임장 봉정"
+  "9087fa192bf31ea34e03c5d60eb2d851": "조선민주주의인민공화국주재 여러 나라 신임대사들이 국가수반에게 신임장 봉정",
+  "56099cee91ff95e75b43658b5df98931": "경애하는 김정은동지께서 조선로동당 제7차 세포비서대회 참가자들을 만나시고 기념사진을 찍으시였다",
+  "e4897efd5d0fb068527247a7b7e9c783": "경애하는 김정은동지께서 우리 나라를 방문한 로씨야예술인들의 공연을 관람하시였다",
+  "eb3e26744949129ab39f514e18616423": "경애하는 김정은동지께서 핵물질생산 및 핵무기연구부문 사업을 현지에서 지도하시였다",
+  "dc8569339807a95fa8b6180c0dea7830": "경애하는 김정은동지께서 조선로동당 제7차 세포비서대회 참가자들에게 강령적인 서한을 보내시였다"
  }
 }
